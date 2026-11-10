@@ -1,0 +1,371 @@
+{
+  "schema": "source_index_v69",
+  "scope": "Ten area research staging index. Full normalized V69 evidence database exported to ZIP/SQLite in user's ChatGPT research run; not yet committed here.",
+  "date": "2026-11-10",
+  "total_source_links": 35,
+  "areas": [
+    "centro",
+    "tlatelolco",
+    "chapul",
+    "teo",
+    "coyo",
+    "roma",
+    "south",
+    "sanangel",
+    "reforma",
+    "xochimilco"
+  ],
+  "source_index": [
+    {
+      "area_id": "centro",
+      "key": "unesco",
+      "title": "UNESCO Centro Histórico/Xochimilco",
+      "url": "https://whc.unesco.org/en/list/412",
+      "review_status": "official_page",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "centro",
+      "key": "templo",
+      "title": "INAH Templo Mayor stages",
+      "url": "https://lugares.inah.gob.mx/es/node/4463",
+      "review_status": "official_page",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "centro",
+      "key": "mtm",
+      "title": "INAH Museo del Templo Mayor history",
+      "url": "https://www.templomayor.inah.gob.mx/historia",
+      "review_status": "official_page",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "centro",
+      "key": "ptm",
+      "title": "INAH Proyecto Templo Mayor history",
+      "url": "https://templomayor.inah.gob.mx/historia/proyecto-templo-mayor",
+      "review_status": "official_page",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "centro",
+      "key": "zocalo",
+      "title": "Meraz Moreno et al. (2021), Zócalo archaeology",
+      "url": "https://revistas.inah.gob.mx/index.php/boletinmonumentos/article/view/17405",
+      "review_status": "journal_abstract",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "centro",
+      "key": "cathedral",
+      "title": "INAH Cathedral building record",
+      "url": "https://catalogonacionalmhi.inah.gob.mx/consulta_publica/detalle/84725",
+      "review_status": "official_page",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "tlatelolco",
+      "key": "tlat",
+      "title": "INAH archaeological zone Tlatelolco",
+      "url": "https://lugares.inah.gob.mx/es/node/4477",
+      "review_status": "official_page",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "tlatelolco",
+      "key": "m68",
+      "title": "UNAM Monumento a la Ausencia and M68",
+      "url": "https://www.dgcs.unam.mx/boletin/bdboletin/2018_627.html",
+      "review_status": "official_page",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "tlatelolco",
+      "key": "memorial",
+      "title": "UNAM Memorial del 68",
+      "url": "https://tlatelolco.unam.mx/mediaciondememoria/venue/ccut/",
+      "review_status": "official_page",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "tlatelolco",
+      "key": "path",
+      "title": "Sánchez Vázquez and Mena Cruz, Tlatelolco market route",
+      "url": "https://revistas.inah.gob.mx/index.php/arqueologia/article/view/10902",
+      "review_status": "bibliography_record",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "chapul",
+      "key": "castle",
+      "title": "INAH Museo Nacional de Historia Castle",
+      "url": "https://www.inah.gob.mx/museos/museo-nacional-de-historia-castillo-de-chapultepec",
+      "review_status": "official_page",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "chapul",
+      "key": "pueblo",
+      "title": "López Camacho (2020), San Miguel Chapultepec",
+      "url": "https://www.revistas.inah.gob.mx/index.php/arqueologia/article/view/15651",
+      "review_status": "journal_abstract",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "chapul",
+      "key": "mna",
+      "title": "García-García and Medina-González (2023), MNA museum history",
+      "url": "https://revistafiguras.acatlan.unam.mx/index.php/figuras/article/view/258/593",
+      "review_status": "article_excerpt",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "teo",
+      "key": "inah",
+      "title": "INAH Teotihuacán archaeological zone",
+      "url": "https://teotihuacan.inah.gob.mx/",
+      "review_status": "official_page",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "teo",
+      "key": "cow10",
+      "title": "Cowgill (2015), Teotihuacan chapter 10",
+      "url": "https://www.cambridge.org/core/books/abs/ancient-teotihuacan/teotihuacan-in-a-wider-perspective/F7C942AE6B8B105A2512327673598A47",
+      "review_status": "publisher_chapter_summary",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "teo",
+      "key": "cowtoc",
+      "title": "Cowgill (2015), Ancient Teotihuacan contents",
+      "url": "https://www.cambridge.org/core/books/ancient-teotihuacan/contents/FD697693611F1C3ECA2E8B4190D65DCE",
+      "review_status": "publisher_toc",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "teo",
+      "key": "calzada",
+      "title": "INAH Avenue of the Dead",
+      "url": "https://visitateotihuacan.inah.gob.mx/explora/calzada-de-los-muertos/",
+      "review_status": "official_page",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "coyo",
+      "key": "inah",
+      "title": "INAH Historic Coyoacán",
+      "url": "https://lugares.inah.gob.mx/es/node/4791",
+      "review_status": "official_page",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "coyo",
+      "key": "azul",
+      "title": "CDMX Casa Azul museum",
+      "url": "https://www.mexicocity.cdmx.gob.mx/venues/frida-kahlo-museum-casa-azul/",
+      "review_status": "official_page",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "roma",
+      "key": "perlo",
+      "title": "Manuel Perló Cohen (1988), Historias de la Roma",
+      "url": "https://revistas.inah.gob.mx/index.php/historias/article/view/14944",
+      "review_status": "journal_abstract",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "roma",
+      "key": "konove",
+      "title": "Andrew Konove (2019), Modern Barrio",
+      "url": "https://journals.sagepub.com/doi/10.1177/0096144218818825",
+      "review_status": "publisher_abstract",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "roma",
+      "key": "parque",
+      "title": "CDMX Parque México history",
+      "url": "https://mexicocity.pre.cdmx.gob.mx/venues/parque-mexico/",
+      "review_status": "official_page",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "south",
+      "key": "cuic",
+      "title": "INAH Cuicuilco archaeological zone",
+      "url": "https://lugares.inah.gob.mx/es/node/4395",
+      "review_status": "official_page",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "south",
+      "key": "cu",
+      "title": "UNESCO UNAM Central University City Campus",
+      "url": "https://whc.unesco.org/en/list/1250",
+      "review_status": "official_page",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "south",
+      "key": "cuic2026",
+      "title": "Aroche and Ramírez (2026), Cuicuilco later use",
+      "url": "https://revistas.inah.gob.mx/index.php/arqueologia/article/view/24290",
+      "review_status": "journal_abstract",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "sanangel",
+      "key": "carmen",
+      "title": "INAH Museo El Carmen building history",
+      "url": "https://lugares.inah.gob.mx/es/node/5244",
+      "review_status": "official_page",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "sanangel",
+      "key": "studios",
+      "title": "INBAL Rivera/Kahlo studio",
+      "url": "https://inba.gob.mx/recinto/51/museo-casa-estudio-diego-rivera-y-frida-kahlo",
+      "review_status": "official_page",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "reforma",
+      "key": "noelle",
+      "title": "Louise Noelle Gras (2025), Reforma",
+      "url": "https://www.scielo.org.mx/pdf/axxii/v16n31/2594-083X-axxii-16-31-143.pdf",
+      "review_status": "selected_pdf_pages_inspected",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "reforma",
+      "key": "museum",
+      "title": "CDMX National Revolution Museum",
+      "url": "https://mexicocity.cdmx.gob.mx/venues/national-museum-revolution/",
+      "review_status": "official_page",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "reforma",
+      "key": "monument",
+      "title": "Monumento a la Revolución history",
+      "url": "https://www.mrm.mx/historia-del-monumento",
+      "review_status": "operator_page",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "xochimilco",
+      "key": "households",
+      "title": "Mejía Appel and Jiménez González (2025), Xochimilco households",
+      "url": "https://revistas.inah.gob.mx/index.php/arqueologia/article/view/22391",
+      "review_status": "journal_abstract",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "xochimilco",
+      "key": "unesco",
+      "title": "UNESCO chinampas landscape (shared listing)",
+      "url": "https://whc.unesco.org/en/list/412",
+      "review_status": "official_page",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "centro",
+      "key": "loc1906",
+      "title": "LoC Zocalo streetscape 1906",
+      "url": "https://www.loc.gov/item/2021636552/",
+      "review_status": "photo_catalog",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "xochimilco",
+      "key": "loc1900",
+      "title": "LoC Canal de la Viga 1900 (not Xochimilco)",
+      "url": "https://www.loc.gov/item/2021637618/",
+      "review_status": "photo_catalog",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    },
+    {
+      "area_id": "centro",
+      "key": "inah1978",
+      "title": "INAH Raúl Arana excavation image gallery",
+      "url": "https://www.inah.gob.mx/boletines/con-teatro-y-talleres-festejaran-el-aniversario-del-hallazgo-del-monolito-de-la-diosa-coyolxauhqui",
+      "review_status": "photo_gallery",
+      "full_publication_read": false,
+      "last_checked": "2026-11-10",
+      "claim_publication_approval": false
+    }
+  ],
+  "review_note": "Only the designated scholarly PDF had selected pages visually inspected; no full scholarly book or paper line-by-line audit complete; all claim reviews require further editorial verification."
+}
