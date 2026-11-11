@@ -1,0 +1,123 @@
+{
+  "schema_version": 2,
+  "run_id": "20261111T2200Z-auto11-terminus",
+  "storage_role": "staging_only_not_canonical",
+  "baseline_version": 97,
+  "baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "previous_batch": {
+    "path": "research/batches/20261111T2103Z-auto11-areaA-entrance.json",
+    "blob_sha": "1500642b512e1a6845b2368490cde8349b01a89d"
+  },
+  "branch_head_preflight": "a431abc3b065c1ec5f6addff1d7f83e6de3dacf2",
+  "source": {
+    "id": "STG-SRC-SLOAD-FAMSI-2007",
+    "title": "Radiocarbon Dating of Teotihuacán Mapping Project TE28 Material from Cave under Pyramid of the Sun, Teotihuacán, México",
+    "author": "Rebecca Sload",
+    "year": 2007,
+    "url": "https://www.ancientamericas.org/sites/default/files/06017Sload01.pdf",
+    "access": "full original published 2007 report, printed pages 14–15 and 23–25 inspected; original 1978 Altschul field notes NOT accessed",
+    "canonical_source_id": "unresolved_missing_in_provisional_V97"
+  },
+  "findings": [
+    {
+      "id": "STG-20261111T2200Z-F001",
+      "subject": "Area B cave terminus flooring: lack of concrete and possible laja surface",
+      "assertion": "Sload's 2007 analysis of TE28 Area B reports no in-situ Teotihuacan concrete flooring, unlike Areas A, C and D. The west pit had a modern/late packed-earth surface generally only a few centimeters and rarely over 5 cm thick, while in the east pit above INAH backdirt the compacted soil was 2–3 cm thick. Bright yellow crushed tepetate (BYCT) survived beneath this surface in the undisturbed west portion of the east pit and the easternmost approximately 50 cm of the west pit. Hundreds of basalt lajas had reportedly been stacked at the terminus; Sload and Millon proposed these stones may once have formed an earlier laja floor, but no such intact pavement was excavated in Area B.",
+      "place": "Sun Pyramid cave, Area B east and west pits, Teotihuacan, Mexico",
+      "period": "Teotihuacan activity, uncertain dates; excavated 1978",
+      "source_id": "STG-SRC-SLOAD-FAMSI-2007",
+      "source_locator": "Sload 2007 printed p.23, Figure 10 (referenced); original field reports Altschul 1978a:72,91–92; 1978b:8,14 cited but UNEXAMINED",
+      "evidence_type": "direct examination of published original synthesis of 1978 excavation stratigraphy; secondary to field notebook",
+      "evidence_status": "Evidence-examined",
+      "independently_corroborated": false,
+      "limitation": "The absence of concrete is based on limited excavated pits. The laja-floor reconstruction is a hypothesis, not an excavated preserved surface. Figure 10 was referenced but not visually inspected in this run.",
+      "related_existing": [
+        "STG-20261111T2000Z-F001"
+      ],
+      "observation_vs_interpretation": "No concrete, BYCT, compacted-earth thickness and stacked lajas are reported observations; former stone pavement and post-Teotihuacan surface date are interpretations.",
+      "educational_use": "Detailed cross-section of eastern terminus emphasizing cave surfaces and flooring hypotheses."
+    },
+    {
+      "id": "STG-20261111T2200Z-F002",
+      "subject": "Northeast pillar at cave terminus: collapse-derived charcoal Beta 220746",
+      "assertion": "In the 1978 TE28 northeast pit at the North Chamber entrance, removal of rubble exposed the foot of a Teotihuacan-constructed pillar. Part of that pillar collapsed during excavation. Charcoal from the fallen pillar material was submitted as Beta 220746; Sload (2007) reports a conventional 14C age of 1840 ± 40 BP and a calibrated two-sigma interval of 80–250 CE. This material was protected within the constructed pillar until collapse, but its excavation-derived position means it is not evidence of burning in situ at the pillar. Its calibrated date cannot be equated directly with the pillar's construction year.",
+      "place": "North Chamber entrance, cave eastern terminus, Sun Pyramid, Teotihuacan, Mexico",
+      "period": "Charcoal calibrated 80–250 CE (as published in 2007, not recalibrated); excavation in 1978",
+      "source_id": "STG-SRC-SLOAD-FAMSI-2007",
+      "source_locator": "Sload 2007 printed p.24 paragraph on Beta 220746; Table 1 pp13–14; Table 2 p15, original Altschul 1978a:76–81 cited but NOT examined",
+      "evidence_type": "published 1978 field-context synthesis combined with original 2007 radiocarbon determination table",
+      "evidence_status": "Evidence-examined",
+      "independently_corroborated": false,
+      "limitation": "Original field notebook unavailable; no in-situ burning identified. 2007 calibration not independently recomputed; old carbon or redeposition uncertainties remain.",
+      "related_existing": [
+        "v97-sun-03"
+      ],
+      "observation_vs_interpretation": "Collapse, charcoal context, laboratory age are reported data; attribution to a specific construction episode remains interpretive.",
+      "educational_use": "Radiocarbon annotation: material from collapsed pillar is not automatically an ancient fire or direct building date."
+    }
+  ],
+  "enrichments": [
+    {
+      "id": "STG-20261111T2200Z-ENR001",
+      "target_staged_finding": "STG-20261111T2103Z-F002",
+      "operation": "add_nonduplicative_source_and_sample_context_after_manual_review",
+      "source_id": "STG-SRC-SLOAD-FAMSI-2007",
+      "locator": "Sload 2007 printed p.25, Figures 12–13, Table 2 p15, p26",
+      "assertion": "Area D entrance pit approximately 1.05 × 0.90 m: Beta 220766 from lowest leveling fill, calibrated 10 BCE–140 CE; Beta 220764 from ashy layer directly beneath concrete but outside diagonal fire pit, calibrated 40–230 CE; Beta 220763 from diagonal fire pit beneath concrete, calibrated 150–390 CE. All were sealed beneath intact concrete floor. The earlier charcoal does not date the step or concrete directly; their calibrated intervals overlap.",
+      "evidence_status": "Evidence-examined",
+      "independently_corroborated": false
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "STG-INSP-20261111T2200Z-001",
+      "source_id": "STG-SRC-SLOAD-FAMSI-2007",
+      "pages": "printed 23–24 (PDF pages 23–24, zero-index 22–23)",
+      "figures": "Figure 12 page24 visually examined; Figure 10 referenced not visually examined",
+      "access_level": "full-report-passage-and-page-image-examined",
+      "details": "Original published comparison of compacted floor, BYCT, possible laja flooring; North Chamber NE pillar collapse and Beta 220746 context",
+      "not_inspected": "Altschul 1978 field notebooks and actual laja stacks"
+    },
+    {
+      "id": "STG-INSP-20261111T2200Z-002",
+      "source_id": "STG-SRC-SLOAD-FAMSI-2007",
+      "pages": "printed 14–15, 25–26 (PDF zero-index pages 13–14,24–25)",
+      "figures": "Figure 13 and Table 2 visually examined; Figure 12 photograph visually examined",
+      "access_level": "original-report-table-and-figure-examined",
+      "details": "Laboratory samples Beta 220746, 220763, 220764, 220766 and archaeological context of Area D samples",
+      "not_inspected": "Beta Analytic lab certificates, 1978 original field reports, full posterior model data"
+    }
+  ],
+  "visual_leads": [
+    {
+      "reference": "Sload 2007 Figure 12 (printed p24)",
+      "content": "Cave entrance and ancient step labelled",
+      "attribution": "© R. Sload",
+      "rights_status": "not cleared for app reuse"
+    },
+    {
+      "reference": "Sload 2007 Figure 13 (printed p25)",
+      "content": "1978 Area D sample-location photograph",
+      "attribution": "© R. Millon",
+      "rights_status": "not cleared for app reuse"
+    }
+  ],
+  "blocked_sources": [
+    {
+      "title": "Sugiyama, Sugiyama and Sarabia (2013)",
+      "status": "publication abstract/metadata only; original tables and illustrations not inspected",
+      "url": "https://digitalcommons.usf.edu/kip_articles/5943/"
+    },
+    {
+      "title": "Altschul 1978a and 1978b field records",
+      "status": "cited by Sload but direct originals unavailable"
+    },
+    {
+      "title": "Pitt specimen BOTANICAL.TXT",
+      "status": "specimen-level file not retrieved; translation conflict unresolved"
+    }
+  ],
+  "canonical_changes": 0,
+  "pending_source_crosswalk_count_previously_reported": 26,
+  "manual_merge_required": true
+}
