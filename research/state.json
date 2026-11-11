@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "storage_role": "research_staging",
+  "status": "INITIALIZED_NOT_AUTOMATION_VERIFIED",
+  "canonical_source": "ChatGPT Library /MexicoResearch/canonical/CDMX_CANONICAL.sqlite",
+  "canonical_baseline_version": 97,
+  "canonical_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_findings": 68,
+  "accepted_batch": null,
+  "notes": "This branch is isolated from main and is a persistence test. It does not yet contain the canonical SQLite database. Never treat staging data as merged until checksums and IDs are reconciled.",
+  "batches": []
+}
