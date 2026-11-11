@@ -1,0 +1,16 @@
+{
+  "event_id": "20261111T111100Z-priority-candidates",
+  "event_type": "append_only_original_candidate_text_recovery",
+  "branch": "research-persistence",
+  "previous_commit_sha": "bb2f22b557f2496dc871e7d5ac6058754dbecf6b",
+  "canonical_changed": false,
+  "records_original_text_preserved": 14,
+  "records_still_not_git_archived": 46,
+  "source_candidate_ids": [
+    "PROPOSE_SOURCE_2007_SLOAD",
+    "PROPOSE_SOURCE_2013_SUGIYAMA"
+  ],
+  "file": "research/batches/20261111T111100Z-priority-candidates/14_priority_pending_assertions.json",
+  "file_blob_sha": "681cff5aebafeb6c0aa6b5cf441913ed28f3df5c",
+  "warning": "Candidate text and locators archived, not validated as historical facts. No new source-ID assignments to canonical sources."
+}

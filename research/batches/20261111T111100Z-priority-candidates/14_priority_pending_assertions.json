@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "batch_id": "20261111T111100Z-priority-candidates",
+  "scope": "recover_original_candidate_statements_from_prior_local_zip",
+  "base_canonical_status": "provisional_V97_not_currently_readable_in_library",
+  "records": [
+    {
+      "staged_id": "STAGE-SUN-2007-01",
+      "source_candidate_id": "PROPOSE_SOURCE_2007_SLOAD",
+      "assertion": "The cave entrance involved a vertical descent of roughly 6–7 m. Four narrowed passages in the western portion could be traversed only singly while bending; three passages preserve at least two architectural modification phases, one involving a concrete facing. The eastern section was partitioned by approximately 17–19 full-height masonry blockages.",
+      "source_locator": "Sload (2007), printed pp. 5–7, cave section and Fig. 1",
+      "type": "finding_candidate",
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "legacy_content_provenance": "CDMX_STAGE_20261111_1004_GITHUB_LEDGER.zip/pending_candidates_normalized.jsonl",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "STAGE-SUN-2007-02",
+      "source_candidate_id": "PROPOSE_SOURCE_2007_SLOAD",
+      "assertion": "Drain stones, stone covers and silt marks suggest that the presently dry cave encountered or managed water during antiquity. Millon and Altschul proposed that water was brought in from outside; Manzanilla proposed possible seepage from surrounding terrain. None demonstrated an internal spring.",
+      "source_locator": "Sload (2007), printed p. 7",
+      "type": "finding_candidate",
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "legacy_content_provenance": "CDMX_STAGE_20261111_1004_GITHUB_LEDGER.zip/pending_candidates_normalized.jsonl",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "STAGE-SUN-2007-03",
+      "source_candidate_id": "PROPOSE_SOURCE_2007_SLOAD",
+      "assertion": "Before the 1978 archaeological tests, cave blockages had already been breached in their upper portions, and INAH interventions between 1971 and 1976 replaced a damaged rock-cut stairway with a metal staircase, installed electricity, opened blockages and removed substantial rubble, including from the four-chambered terminus. Hence original deposits and later cleared areas cannot automatically be treated as intact ancient strata.",
+      "source_locator": "Sload (2007), printed pp. 7–8; Heyden 1975 and Millon 1981 cited therein",
+      "type": "finding_candidate",
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "legacy_content_provenance": "CDMX_STAGE_20261111_1004_GITHUB_LEDGER.zip/pending_candidates_normalized.jsonl",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "STAGE-SUN-2007-04",
+      "source_candidate_id": "PROPOSE_SOURCE_2007_SLOAD",
+      "assertion": "In two Area A pits measuring 1 × 1.25 m each, excavators recovered only six of TE28’s 273 sherds. Three charcoal samples beneath intact concrete included early Beta 220743 (1930±40 BP; 95% calibrated 10 BCE–140 CE), early Beta 220744 (1970±40 BP; 95% 50 BCE–110 CE), and later Beta 220745 (1830±40 BP; 95% 90–260 CE). Sload interprets this combination as compatible with infrequent activity before a later concrete floor.",
+      "source_locator": "Sload (2007), printed pp. 16–18; Table 2 and Fig. 6",
+      "type": "finding_candidate",
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "legacy_content_provenance": "CDMX_STAGE_20261111_1004_GITHUB_LEDGER.zip/pending_candidates_normalized.jsonl",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "STAGE-SUN-2007-05",
+      "source_candidate_id": "PROPOSE_SOURCE_2007_SLOAD",
+      "assertion": "Area B west excavation exposed a posthole and adjacent charcoal deposits. Beta 220747 occurred in the bright-yellow crushed-tepetate layer (95% calibrated 20–220 CE); Beta 220749 and 220750 came from the posthole (95% ranges 110–330 CE and 60–240 CE respectively). Sload observed that Area B lacked the concrete floor seen elsewhere, and proposed that stacked basalt slabs from the terminus may formerly have served as flooring.",
+      "source_locator": "Sload (2007), printed pp. 21–23; Figs. 10–11 and Tables 1–2",
+      "type": "finding_candidate",
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "legacy_content_provenance": "CDMX_STAGE_20261111_1004_GITHUB_LEDGER.zip/pending_candidates_normalized.jsonl",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "STAGE-SUN-2007-06",
+      "source_candidate_id": "PROPOSE_SOURCE_2007_SLOAD",
+      "assertion": "The 2007 radiocarbon report classified archaeological charcoal into ash-bearing fire pits, ashless compact concentrations, and isolated pieces. These contexts differ in their ability to date in-situ burning. The reported calibration intervals were computed for the published analysis, so comparing them numerically with later Bayesian posterior ranges requires accounting for recalibration and the changing selected sample populations.",
+      "source_locator": "Sload (2007), printed pp. 12–16; Tables 1–2",
+      "type": "finding_candidate",
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "legacy_content_provenance": "CDMX_STAGE_20261111_1004_GITHUB_LEDGER.zip/pending_candidates_normalized.jsonl",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "SUN2013-F01",
+      "source_candidate_id": "PROPOSE_SOURCE_2013_SUGIYAMA",
+      "assertion": "In a bulk preliminary sorting of 37,746 pottery fragments from Front C of the Sun Pyramid, excavators identified 35,736 (94.7%) as Tzacualli, 1,985 (5.2%) as Patlachique, 23 (0.1%) as Miccaotli and two as Cuanalán. The pottery-date majority favors an earlier ceramic-relative chronology than the excavators’ later radiocarbon-based construction estimate.",
+      "source_locator": "2013 printed p.424, Table 1 and adjacent Chronology text",
+      "type": "finding_candidate",
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "legacy_content_provenance": "CDMX_STAGE_20261111_1004_GITHUB_LEDGER.zip/pending_candidates_normalized.jsonl",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "SUN2013-F02",
+      "source_candidate_id": "PROPOSE_SOURCE_2013_SUGIYAMA",
+      "assertion": "Two separate charcoal determinations PPS-1 (Beta-277972, 1780±40 BP; 1σ 220–260 and 290–320 CE) and PPS-2 (Beta-277973, 1820±40 BP; 1σ 130–240 CE) were taken from a carbon concentration burned in place above Floor 2 in Pits 29 and 27. They date burning of sampled wood, not by themselves the initial excavation or deposition of every surrounding floor.",
+      "source_locator": "2013 pp.424–425, Table 2, commentary below table",
+      "type": "finding_candidate",
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "legacy_content_provenance": "CDMX_STAGE_20261111_1004_GITHUB_LEDGER.zip/pending_candidates_normalized.jsonl",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "SUN2013-F03",
+      "source_candidate_id": "PROPOSE_SOURCE_2013_SUGIYAMA",
+      "assertion": "PPS-7 (Beta-277978, 1900±40 BP) came from an ash-rich layer beneath the floor of Structure 1 in Pit 6, yielding 1σ 60–130 CE. It is the earliest of the Sun Pyramid Project sample series and accords more closely with Tzacualli ceramic chronology. Sugiyama and colleagues consider the ash possibly redeposited or from a pre-Structure 1 context, limiting its value for dating the main building; Sload argues the authors’ construction model retains this excluded sample.",
+      "source_locator": "2013 pp.424–425, Table 2; Sload 2020 printed pp.28–29",
+      "type": "finding_candidate",
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "legacy_content_provenance": "CDMX_STAGE_20261111_1004_GITHUB_LEDGER.zip/pending_candidates_normalized.jsonl",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "SUN2013-F04",
+      "source_candidate_id": "PROPOSE_SOURCE_2013_SUGIYAMA",
+      "assertion": "The 2013 excavation reports PPS-5 (Beta-277976; 1820±40 BP; 1σ 130–240 CE) from tibia of Burial 4 in Pits 22–23 and PPS-6 (Beta-277977; 1760±40 BP; 1σ 230–330 CE) from a probable tibia of Burial 2 in Pit 17. Burial 4 was a child aged approximately four to six; Burial 2 was a perinatal infant located near bedrock west of Structure 1. Direct bone dates establish sampled individuals’ radiocarbon age, while the precise relationship of Burial 4 to Structure 1 was not observed stratigraphically.",
+      "source_locator": "2013 pp.415–417 Burial 2 / Burial 4; p.425 Table 2",
+      "type": "finding_candidate",
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "legacy_content_provenance": "CDMX_STAGE_20261111_1004_GITHUB_LEDGER.zip/pending_candidates_normalized.jsonl",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "SUN2013-F05",
+      "source_candidate_id": "PROPOSE_SOURCE_2013_SUGIYAMA",
+      "assertion": "PPS-3 (Beta-277974; 2150±50 radiocarbon BP) dates a conch-shell fragment placed with Offering 1 in Tunnel 2 within the pyramid fill; its publication-calibrated 1σ range is 140–260 CE. The investigators used the Marine04 curve for this shell, distinct from the terrestrial IntCal04 curve used for other samples. The offering also contained obsidian blades, projectile points, pyrite, organic materials and an anthropomorphic obsidian figurine.",
+      "source_locator": "2013 printed pp.416–417, 424–425 Table 2; calibration paragraph p.424",
+      "type": "finding_candidate",
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "legacy_content_provenance": "CDMX_STAGE_20261111_1004_GITHUB_LEDGER.zip/pending_candidates_normalized.jsonl",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "SUN2013-F06",
+      "source_candidate_id": "PROPOSE_SOURCE_2013_SUGIYAMA",
+      "assertion": "PPS-4 (Beta-277975, 1700±40 BP; 1σ 260–290 and 320–400 CE) came from uncharred wood in a posthole at Pit 9, on bedrock approximately 80 m into the west–east archaeological tunnel. The wood was submerged and highly degraded; excavation authors suggested possible contamination by water and treated the anomalously late age with caution.",
+      "source_locator": "2013 printed p.425 Table 2 and accompanying PPS-4 context discussion",
+      "type": "finding_candidate",
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "legacy_content_provenance": "CDMX_STAGE_20261111_1004_GITHUB_LEDGER.zip/pending_candidates_normalized.jsonl",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "SUN2013-F07",
+      "source_candidate_id": "PROPOSE_SOURCE_2013_SUGIYAMA",
+      "assertion": "The only newly obtained Sun Pyramid Project date from the subterranean tunnel was PPS-8 (Beta-277979; 1870±40 BP, 1σ 80–210 CE). It came from carbon fragments in the nucleus of the entrance talud at Front D/Pit 1. The authors considered it evidence for construction of entrance architecture before or roughly contemporaneous with the main pyramid.",
+      "source_locator": "2013 printed pp.424–426, Tables 2–3, Front D description",
+      "type": "finding_candidate",
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "legacy_content_provenance": "CDMX_STAGE_20261111_1004_GITHUB_LEDGER.zip/pending_candidates_normalized.jsonl",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "SUN2013-F08",
+      "source_candidate_id": "PROPOSE_SOURCE_2013_SUGIYAMA",
+      "assertion": "Sugiyama et al. 2013 Table 3 reproduces 16 earlier cave dates and their new PPS-8. Their OxCal model retains seven TMP results classed as postholes or fire pits (Beta-220749, -220750, -220753, -220758, -208984, -220763 and -220764), yielding a modeled 1σ interval roughly 139–240 CE. Nine other TMP dates, largely from fill, were not incorporated. Sload’s subsequent interpretation separates cave excavation, use, and termination, questioning whether these seven samples date a single construction event.",
+      "source_locator": "2013 printed pp.426–428 Table 3 and Figure 14 caption; Sload 2020 printed pp.28–29 and 2020 Ch.5",
+      "type": "finding_candidate",
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "legacy_content_provenance": "CDMX_STAGE_20261111_1004_GITHUB_LEDGER.zip/pending_candidates_normalized.jsonl",
+      "publication_ready": false
+    }
+  ],
+  "untransferred_pending_candidate_count": 46,
+  "verification_note": "These are preserved staged assertions, not new independent findings or confirmed source examinations this run. 2013 original figures remain unreviewed; prior 2007 report excerpt partially visually examined. Do not count as canonical."
+}

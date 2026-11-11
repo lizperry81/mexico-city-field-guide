@@ -1,0 +1,9 @@
+{
+  "checkpoint_id": "20261111T111100Z-priority-candidates",
+  "storage": "GITHUB_STAGING_ONLY_NOT_IN_CANONICAL",
+  "previous_checkpoint": "research/checkpoints/20261111T110600Z-crosswalk.json",
+  "priority_candidate_texts_uploaded": 14,
+  "pending_candidate_texts": 46,
+  "provisional_baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "next_action": "Archive remaining 46 complete staged candidate texts and source locators under immutable GitHub batch files, verify, reconcile against current Library manifest when accessible, then examine original 2013 figures before canonical merge."
+}
