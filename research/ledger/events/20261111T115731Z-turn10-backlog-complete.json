@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "event_id": "20261111T115731Z-turn10-backlog-complete",
+  "previous_event": "research/ledger/events/20261111T115731Z-turn10-sar-18.json",
+  "original_candidate_records_in_this_batch": 19,
+  "backlog_original_candidate_records_total_on_branch": 60,
+  "new_source_examined_findings_this_run": 4,
+  "canonical_mutated": false,
+  "main_mutated": false
+}

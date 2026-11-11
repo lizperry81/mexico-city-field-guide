@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "checkpoint_id": "20261111T115731Z-turn10-backlog-complete",
+  "previous_checkpoint": "research/checkpoints/20261111T115731Z-turn10-sar-18.json",
+  "storage_status": "GITHUB_STAGING_ONLY_NOT_CANONICAL",
+  "provisional_baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "backlog_total": 60,
+  "backlog_archived_before_run": 14,
+  "backlog_original_text_transferred_this_run": 46,
+  "backlog_text_archived_total": 60,
+  "backlog_text_remaining": 0,
+  "new_source_examination_candidate_findings": 4,
+  "new_source_inspection_records": 1,
+  "editorial_alerts": 1,
+  "canonical_modifications": 0,
+  "source_reconciliation_required": 26,
+  "priority_next_action": "Manually reconcile each of 60 original staged candidate records against current canonical SQLite findings and source identities after Library manifest access is restored; inspect original 2013 excavation figures, investigate Sload 2020 macrobotanical carbonization translation inconsistency; do not promote source-linked claims without checked passages."
+}

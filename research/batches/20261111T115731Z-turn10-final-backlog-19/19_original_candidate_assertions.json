@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "batch_id": "20261111T115731Z-turn10-final-backlog-19",
+  "source_bundle": "CDMX_STAGE_20261111_1106_CROSSWALK_AND_EVIDENCE.zip",
+  "source_file": "pending_candidates_normalized.original.jsonl",
+  "storage_role": "GITHUB_STAGING_IMMUTABLE_NOT_CANONICAL",
+  "provisional_V97_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "record_count": 19,
+  "records": [
+    {
+      "staged_id": "stg-20261111-sun-01",
+      "assertion": "In the Sun Pyramid cave, Sload probed both sides of the existing passage at 50-cm horizontal intervals and at three vertical heights. Probe depths indicated up to 1–3 m of additional hollow space behind parts of the present rock facings, reaching 2.95 m behind the south wall near Station 5 at 1.18 m above the floor. Area C excavation found the excavated cave wall over 1 m behind its northern stacked-rock wall and 2 m behind its southern stacked-rock wall.",
+      "source_locator": "Sload 2020, printed pp.93–96, Fig.6.12; underlying Altschul 1978a pp.150–158",
+      "source_id_raw": "v95-sload-cave-2020",
+      "source_id_proposal": null,
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "stg-20261111-sun-02",
+      "assertion": "At the southern transverse chamber (TE 28 Area A, South pit), excavators recorded charcoal band C several centimeters under a concrete floor; the band extended about 17 cm into the underlying cascajo fill. Some charcoal lumps reached roughly 5 cm diameter, but the excavators noted neither ash nor heat discoloration of the surrounding cascajo. Sample Beta 220745 came from this band.",
+      "source_locator": "Sload 2020, printed pp.98–99, Fig.7.2; cites Altschul 1978a:43–49; 1978b:4",
+      "source_id_raw": "v95-sload-cave-2020",
+      "source_id_proposal": null,
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "stg-20261111-sun-03",
+      "assertion": "At TE 28 Area D near the west entrance, a transverse ancient step crossed the cave passage. Excavators found the Teotihuacan concrete floor ending immediately at the step and a few centimeters above its base, without extending beneath it. The overlying cascajo layers thickened toward the east and thinned approaching the step. These relationships indicate that the step was present before the final concrete floor was laid.",
+      "source_locator": "Sload 2020, printed pp.100–101, Figs.7.3–7.4; cites Altschul 1978a:154",
+      "source_id_raw": "v95-sload-cave-2020",
+      "source_id_proposal": null,
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "stg-20261111-sun-04",
+      "assertion": "Area D contained a modern packed-earth surface above a Teotihuacan concrete floor. Below that sealing surface lay distinguishable deposits including a northeast–southwest oriented fire pit (Layer 3, charcoal sample Beta 220763), cascajo fill (Layer 3b, charcoal Beta 220764), a packed earth floor (Layer 3c), and crushed yellow tepetate (BYCT) grading into initial cascajo fill (Layer 4/5 in Sload reconstruction). The northwestern silt deposits were interpreted by excavators as evidence of repeated water entry.",
+      "source_locator": "Sload 2020, printed pp.100–102, Figs.7.4–7.5; cited Altschul 1978a:153–164",
+      "source_id_raw": "v95-sload-cave-2020",
+      "source_id_proposal": null,
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "stg-20261111-sun-05",
+      "assertion": "At Sload’s 2006 reassessment of the 1978 TE 28 collections, she could not locate four small worked/unworked shell finds, one mica fragment, and three worked obsidian items from the terminus contexts; she reports none of the 12 TE28 obsidian pieces could be located. Obsidian from an independent 1977 surface collection was present. The unavailable materials restrict subsequent compositional or use-wear analysis.",
+      "source_locator": "Sload 2020, printed pp.119–120, chapter 8 inventory discussion",
+      "source_id_raw": "v95-sload-cave-2020",
+      "source_id_proposal": null,
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "stg-20261111-sun-06",
+      "assertion": "From the cave’s terminal area, TE28 documented both unworked/minimally modified slate retaining embedded pyrite crystal impressions and a slate fragment with a retouched edge and furrowing. Sload’s illustrated examples distinguish one from INAH backfill in pit B:East from another in the brighter yellow crushed-tepetate (BYCT) layer of B:West. Their distinct proveniences prevent treating both as undisturbed ritual offerings.",
+      "source_locator": "Sload 2020, printed pp.119–121, Fig.8.1",
+      "source_id_raw": "v95-sload-cave-2020",
+      "source_id_proposal": null,
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "stg-20261111-sun-07",
+      "assertion": "An illustrated cleaved slate fragment from the terminus has a drilled hole and secondary mineralization on both faces; Sload notes that known Teotihuacan mirror backings usually carry tesserae on only one face and therefore treats identification as a possible mirror backing rather than secure. Another three-straight-sided slate piece from B:NE has a polygonal form and possible jarosite on its surface; a pendant function is suggested by its outline and hole position, not demonstrated by an in-situ attachment.",
+      "source_locator": "Sload 2020, printed pp.120–121, Fig.8.2a–b; Gazzola et al. 2016 cited but not examined",
+      "source_id_raw": "v95-sload-cave-2020",
+      "source_id_proposal": null,
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "stg-20261111-sun-08",
+      "assertion": "Earlier INAH work in the four-chambered cave terminus reportedly removed and stacked hundreds of basalt lajas (stone slabs) of varied sizes. During later mapping, Millon recorded slab locations and TE28 found no concrete floor in Area B. Sload interprets the slabs and shallow stratigraphy as possible remnants of a slab floor dismantled before cave closure.",
+      "source_locator": "Sload 2020, printed pp.116–117; cites Baker et al. 1974:12,19–20; Altschul 1978a:59",
+      "source_id_raw": "v95-sload-cave-2020",
+      "source_id_proposal": null,
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "STG26NOV11-BRA-01",
+      "assertion": "Braswell documents Chicanel-phase pottery made in the Maya region mixed with Tzacualli ceramics in Sun Pyramid fill, but no Maya Early Classic polychromes of a type dated to after about 150 CE in those reported contexts. He cautions that these are redeposited (tertiary) fill assemblages, so their absence cannot conclusively exclude a Sun Pyramid construction date later than 150 CE.",
+      "source_locator": "pp.403–405, paragraph beginning 'Ceramics manufactured in the Maya area'; online full extract (page breaks not marked)",
+      "source_id_raw": "",
+      "source_id_proposal": "PROPOSE_SOURCE_2018_BRASWELL",
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "STG26NOV11-BRA-02",
+      "assertion": "The assemblages from Kaminaljuyu Mounds A and B in Guatemala included Teotihuacan Xolalpan pottery alongside Early Classic Maya lowland polychromes, as documented by Kidder, Jennings, and Shook (1946). Braswell explains that ceramic comparisons with Holmul and Uaxactun, where inscriptions helped date analogous polychromes, originally supplied an external chronological anchor for Teotihuacan Xolalpan.",
+      "source_locator": "pp.403–405, paragraphs beginning 'Until the advent' and 'Similar pottery'",
+      "source_id_raw": "",
+      "source_id_proposal": "PROPOSE_SOURCE_2018_BRASWELL",
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "STG26NOV11-BRA-03",
+      "assertion": "Braswell reports that Xolalpan ceramics were found at Tikal in the 1960s in Early Classic archaeological contexts with direct, stratigraphic, or iconographic associations to dated Maya hieroglyphic texts. Such cross-dated finds are independent of Sun Pyramid fill and must be considered before shifting the absolute ages of Teotihuacan ceramic phases.",
+      "source_locator": "pp.403–405, paragraph beginning 'In the 1960s'",
+      "source_id_raw": "",
+      "source_id_proposal": "PROPOSE_SOURCE_2018_BRASWELL",
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "STG26NOV11-BRA-04",
+      "assertion": "Braswell distinguishes evidence for earlier Teotihuacan contacts in the Maya area during Miccaotli or Early Tlamimilolpa from the better-attested interaction pulse beginning with the Maya calendar event 11 Eb’ 15 Mak in 378 CE. He places the latter major interaction through approximately 450 CE, and argues that a wholesale later redating could compress the two contact pulses into the fourth and early fifth centuries.",
+      "source_locator": "pp.403–405, paragraphs beginning 'The best known' and 'If Sugiyama'",
+      "source_id_raw": "",
+      "source_id_proposal": "PROPOSE_SOURCE_2018_BRASWELL",
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "STG26NOV11-BRA-05",
+      "assertion": "Braswell identifies concrete consequences of moving Teotihuacan ceramic phases later by about a century: Tikal Manik 1–2 and Uaxactun Tzakol 1–2 ceramic sequences, as well as architectural chronologies at Tikal and Kaminaljuyu, would have to be reassessed. He emphasizes that Maya Long Count inscriptions supply independent chronological constraints and that a Teotihuacan reinterpretation should not be extrapolated across these sequences without evaluating their independent dates.",
+      "source_locator": "pp.403–405, paragraph beginning 'If Sugiyama' and following two paragraphs",
+      "source_id_raw": "",
+      "source_id_proposal": "PROPOSE_SOURCE_2018_BRASWELL",
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "STG26NOV11-BER-01",
+      "assertion": "Beramendi-Orosco and colleagues modeled 33 radiocarbon determinations from Teopancazco in four stratigraphic groups: Tlamimilolpa, its transition to Early Xolalpan, Early Xolalpan, and Late Xolalpan. Five samples were charred roof beams or columns; the remainder were from hearths and activity areas. Two anomalously ancient determinations, Beta-180340 and Beta-180337, each 2460±40 14C BP, were traced to altered contexts and identified as statistical outliers; Beta-180337 was suspected of disturbance during Batres’s 1884 excavations.",
+      "source_locator": "Beramendi-Orosco et al. (2009), printed pp.100–102, Table 1; Methods and Bayesian models, text transcription (table image not verified)",
+      "source_id_raw": "",
+      "source_id_proposal": "PROPOSE_SOURCE_2009_BERAMENDI",
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "STG26NOV11-BER-02",
+      "assertion": "Beramendi-Orosco and colleagues anchored their Teopancazco Bayesian model against archaeomagnetic dates from burned lime plaster: c. 350±25 CE for termination-related flooring and c. 550±25 CE for the major fire affecting Xalla and Teopancazco. The agreement was used to test whether modeled radiocarbon phase boundaries were plausible. The 350 and 550 CE figures are dates of particular sampled thermal events, not direct dates for first construction of the Sun Pyramid.",
+      "source_locator": "Beramendi-Orosco et al. (2009), printed pp.101, 103, 105–107; model setup, results and conclusion",
+      "source_id_raw": "",
+      "source_id_proposal": "PROPOSE_SOURCE_2009_BERAMENDI",
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "STG26NOV11-BER-03",
+      "assertion": "Removing two disturbed-context radiocarbon values from the 33-determination Teopancazco model shifted posterior boundaries later and changed calibrated intervals: model B dates were about 12% wider on average than model A; the estimated end of Late Xolalpan moved to approximately 450–580 CE, compatible with an archaeomagnetic large-fire marker at c. 550±25 CE. The same study found that a third model with different phase-boundary constraints gave intervals averaging 4.7% wider than model B. This is an empirical example of why source selection and prior assumptions must be documented, not an independent rerun of the Sun Pyramid model.",
+      "source_locator": "Beramendi-Orosco et al. (2009), printed pp.105–107, Comparison between Bayesian models A and B; Sensitivity analysis; Conclusions",
+      "source_id_raw": "",
+      "source_id_proposal": "PROPOSE_SOURCE_2009_BERAMENDI",
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "STG20261111T090315Z-CER-01",
+      "assertion": "In Figure 8.13, Sload illustrates two sherds interpreted as parts of Tlaloc-type jars: one 5.7 g fragment recovered in an undisturbed earthen floor deposit at the cave entrance, with paste assigned to Miccaotli or Early Tlamimilolpa, and a separate 5.4 g fragment from Tract 2 of the 1977 surface collection. She compares their profiles with a Miccaotli jar photographed at the Museo Nacional de Antropología. The two recovery contexts must not be merged into one sealed offering.",
+      "source_locator": "Sload 2020, printed p.132, Figure 8.13 and printed pp.131–132 discussion",
+      "source_id_raw": "v95-sload-cave-2020",
+      "source_id_proposal": null,
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "STG20261111T090315Z-CER-02",
+      "assertion": "Sload reports no comales, composite theatre-type censers, candeleros, Copa ware, Copoid ware, cylindrical vases with or without nubbin supports, or polychrome or resist-painted vessels in the mapped cave collections. Fine matte ware was limited to a tiny disturbed-context miniature fragment in Area C; a dense-ware bowl fragment occurred only in Tract 6 of the 1977 surface collection. These absences support her assignment of the principal cave ceramic assemblage to Tzacualli–Early Tlamimilolpa but cannot alone rule out later visits or prove that no such objects were used.",
+      "source_locator": "Sload 2020, printed pp.131–133, Figures 8.11–8.13; references Rattray 2001:119,163,181",
+      "source_id_raw": "v95-sload-cave-2020",
+      "source_id_proposal": null,
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "STG20261111T090315Z-CER-03",
+      "assertion": "Sload interprets the low number of sherds in undisturbed deposits, the mixing of ceramic phases, and the preponderance of small fragments as possible evidence for repeated removal of materials through sweeping during cave use and closure. She explicitly acknowledges that the sherd-size impression is unconfirmed and that statistical representativeness cannot be established. No archaeological sweep marks or securely dated sweep deposits are reported in these passages; the hypothesis cannot be promoted to an observed ancient practice.",
+      "source_locator": "Sload 2020, printed pp.133–135, esp. pp.133–134",
+      "source_id_raw": "v95-sload-cave-2020",
+      "source_id_proposal": null,
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    }
+  ],
+  "warning": "Raw assertions faithfully transferred from prior staged findings; source status is inherited and requires independent checking before merge."
+}
