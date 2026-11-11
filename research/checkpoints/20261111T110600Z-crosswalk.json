@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "checkpoint_id": "20261111T110600Z-crosswalk",
+  "created_utc": "2026-11-11T11:06:00Z",
+  "storage_status": "GITHUB_STAGING_ONLY_NOT_CANONICAL",
+  "event_file": "research/ledger/events/20261111T110600Z-crosswalk.json",
+  "event_blob_sha": "5037a7a939d7811d3a27f65be9dafad70c71fbe0",
+  "previous_checkpoint": "research/checkpoints/20261111T100400Z-ledger1.json",
+  "provisional_V97_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "library_manifest_blocker": "Library path not found: /MexicoResearch/canonical",
+  "candidate_source_groups": 7,
+  "source_map_complete_for_60_ids": true,
+  "full_candidate_text_on_github": false,
+  "next_action": "Transfer 60 full candidate statements/locators in immutable GitHub batch; reconcile IDs and overlaps; verify canonical manifest before any canonical SQLite update."
+}

@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "batch_id": "20261111T110600Z-crosswalk",
+  "source_of_candidates": "CDMX_STAGE_20261111_1004_GITHUB_LEDGER.zip/pending_candidates_normalized.jsonl",
+  "record_count": 60,
+  "findings_candidate": 58,
+  "disputes": 2,
+  "existing_source_ids_resolved": 34,
+  "source_ids_missing_or_blank": 26,
+  "mapping_groups": [
+    {
+      "key": "v95-sload-cave-2020",
+      "status": "existing_source_id",
+      "ids": [
+        "S2200-01",
+        "S2200-02",
+        "S2200-03",
+        "S2200-04",
+        "S2200-05",
+        "S2200-06",
+        "S2200-07",
+        "S2200-08",
+        "S2200-09",
+        "stg-20261111-sun-01",
+        "stg-20261111-sun-02",
+        "stg-20261111-sun-03",
+        "stg-20261111-sun-04",
+        "stg-20261111-sun-05",
+        "stg-20261111-sun-06",
+        "stg-20261111-sun-07",
+        "stg-20261111-sun-08",
+        "STG20261111T090315Z-CER-01",
+        "STG20261111T090315Z-CER-02",
+        "STG20261111T090315Z-CER-03"
+      ]
+    },
+    {
+      "key": "v70-sarabia22",
+      "status": "existing_source_id",
+      "ids": [
+        "SP2300-01",
+        "SP2300-02",
+        "SP2300-03",
+        "SP2300-04",
+        "SP2300-05",
+        "SP2300-09",
+        "SP2300-10",
+        "SP2300-11",
+        "SP2300-12",
+        "SP2300-13",
+        "SP2300-14",
+        "SP2300-15",
+        "SP2300-17",
+        "SP2300-18"
+      ]
+    },
+    {
+      "key": "PROPOSE_SOURCE_2007_SLOAD",
+      "status": "proposed_new_source_no_canonical_id",
+      "ids": [
+        "STAGE-SUN-2007-01",
+        "STAGE-SUN-2007-02",
+        "STAGE-SUN-2007-03",
+        "STAGE-SUN-2007-04",
+        "STAGE-SUN-2007-05",
+        "STAGE-SUN-2007-06"
+      ]
+    },
+    {
+      "key": "PROPOSE_SOURCE_2013_SUGIYAMA",
+      "status": "proposed_new_source_no_canonical_id",
+      "ids": [
+        "SUN2013-F01",
+        "SUN2013-F02",
+        "SUN2013-F03",
+        "SUN2013-F04",
+        "SUN2013-F05",
+        "SUN2013-F06",
+        "SUN2013-F07",
+        "SUN2013-F08"
+      ]
+    },
+    {
+      "key": "PROPOSE_SOURCE_2014_SUGIYAMA",
+      "status": "proposed_new_source_no_canonical_id",
+      "ids": [
+        "SP2300-06",
+        "SP2300-07",
+        "SP2300-08",
+        "SP2300-16"
+      ]
+    },
+    {
+      "key": "PROPOSE_SOURCE_2018_BRASWELL",
+      "status": "proposed_new_source_no_canonical_id",
+      "ids": [
+        "STG26NOV11-BRA-01",
+        "STG26NOV11-BRA-02",
+        "STG26NOV11-BRA-03",
+        "STG26NOV11-BRA-04",
+        "STG26NOV11-BRA-05"
+      ]
+    },
+    {
+      "key": "PROPOSE_SOURCE_2009_BERAMENDI",
+      "status": "proposed_new_source_no_canonical_id",
+      "ids": [
+        "STG26NOV11-BER-01",
+        "STG26NOV11-BER-02",
+        "STG26NOV11-BER-03"
+      ]
+    }
+  ],
+  "proposed_bibliography": [
+    {
+      "id": "PROPOSE_SOURCE_2007_SLOAD",
+      "author": "Rebecca Sload",
+      "year": 2007,
+      "title": "Radiocarbon Dating of Teotihuacán Mapping Project TE28 Material from Cave under Pyramid of the Sun, Teotihuacán, México",
+      "url": "https://www.famsi.org/reports/06017/06017Sload01.pdf",
+      "inspection": "selected pages 3, 5 and 6 of original PDF examined; full report not reread"
+    },
+    {
+      "id": "PROPOSE_SOURCE_2013_SUGIYAMA",
+      "author": "Nawa Sugiyama; Saburo Sugiyama; Alejandro Sarabia",
+      "year": 2013,
+      "title": "Inside the Sun Pyramid at Teotihuacan, Mexico: 2008–2011 Excavations and Preliminary Results",
+      "doi": "10.7183/1045-6635.24.4.403",
+      "inspection": "tables transcribed in earlier staging; original illustrations pending review"
+    },
+    {
+      "id": "PROPOSE_SOURCE_2014_SUGIYAMA",
+      "author": "Saburo Sugiyama; Nawa Sugiyama; Alejandro Sarabia",
+      "year": 2014,
+      "title": "El interior de la Pirámide del Sol en Teotihuacan",
+      "container": "Arqueología Mexicana 21(125):24–29",
+      "url": "https://arqueologiamexicana.mx/mexico-antiguo/el-interior-de-la-piramide-del-sol-en-teotihuacan",
+      "inspection": "partial HTML excerpt only"
+    },
+    {
+      "id": "PROPOSE_SOURCE_2018_BRASWELL",
+      "author": "Geoffrey E. Braswell",
+      "year": 2018,
+      "title": "A Perspective from the Maya Region: Closing Thoughts on Sload and Sugiyama, Sugiyama, and Sarabia G.",
+      "doi": "10.1017/laq.2017.84",
+      "inspection": "prior extracted body passages; figures not confirmed"
+    },
+    {
+      "id": "PROPOSE_SOURCE_2009_BERAMENDI",
+      "author": "Laura E. Beramendi-Orosco et al.",
+      "year": 2009,
+      "title": "High-resolution chronology for the Mesoamerican urban center of Teotihuacan derived from Bayesian statistics of radiocarbon and archaeological data",
+      "doi": "10.1016/j.yqres.2008.10.003",
+      "inspection": "prior transcription read; original figures not confirmed"
+    }
+  ],
+  "resolution_status": "source_identity_proposed_no_canonical_approval",
+  "main_unchanged": true,
+  "source_archive_sha256": "a1fa6044197f10f7cc03ee682c9c9063ac037f9dac3215245334679f73ee0875",
+  "source_archive_name": "CDMX_STAGE_20261111_1106_CROSSWALK_AND_EVIDENCE.zip",
+  "warning": "This mapping stores source association for 60 IDs, not their complete candidate assertions; complete records are preserved only in the downloadable ZIP until separately uploaded and verified. Do not treat this as a merged database."
+}
