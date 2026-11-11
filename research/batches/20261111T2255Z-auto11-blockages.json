@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "run_id": "20261111T2255Z-auto11-blockages",
+  "role": "research_staging_only_not_canonical",
+  "utc_timestamp": "2026-11-11T22:55:49Z",
+  "branch": "research-persistence",
+  "source_baseline": {
+    "version": 97,
+    "sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "verified": "local archived snapshot only, not current Library manifest",
+    "sources": 616,
+    "claims": 422,
+    "claim_source_links": 403,
+    "findings": 68,
+    "inspections": 9,
+    "sqlite_integrity": "ok",
+    "foreign_key_violations": 0
+  },
+  "previous_checkpoint": {
+    "path": "research/checkpoints/20261111T2200Z-auto11-terminus.json",
+    "blob_sha": "0944396e762afed56a29b5f1dd90ea44211ba199"
+  },
+  "storage_probe": {
+    "path": "research/automation-probes/20261111T2255Z-auto11.json",
+    "commit_sha": "202eb30898de20ab2396c62347dbd3e39309241e",
+    "verified": true
+  },
+  "library_access": {
+    "path": "/MexicoResearch/canonical",
+    "read": "Library path not found: /MexicoResearch/canonical",
+    "library_write_attempted": false
+  },
+  "findings": [
+    {
+      "id": "STG-20261111T2255Z-F001",
+      "subject": "Sun Pyramid cave: 17 confirmed internal blockages rather than the earlier mapped 19",
+      "statement": "The 1974 cave mapping identified 19 possible blockages. Sload's 2020 reassessment reports that later inspection did not confirm masonry or mortar at the proposed positions 1 and 19; 17 blockages are presently confirmed. INAH consolidation had dismantled some original barriers and reused their rubble along the cave walls, obscuring archaeological surfaces.",
+      "place": "Artificial cave beneath Sun Pyramid, Teotihuacan, Mexico",
+      "period": "Teotihuacan period, date of barrier construction disputed; cave consolidation in 1970s",
+      "source_id": "v95-sload-cave-2020",
+      "source": "Rebecca Sload, The Cave Beneath the Sun Pyramid (2020)",
+      "locator": "printed pp.89–90, Figure 6.3 and Figure 6.5; cites Baker et al. 1974:Figure 1, Drewitt 1978, Altschul 1978a:51,59 (earlier field materials NOT independently inspected)",
+      "inspected_scope": "full passage examined, relevant figure captions accessed; cited 1974/1978 originals not inspected",
+      "evidence_status": "Evidence-examined",
+      "evidence_type": "published excavation reappraisal and conservation-history synthesis",
+      "observed_vs_interpreted": "The count of 17 is the author's reassessment of surviving physical evidence; original map count 19 is reported history. The status of positions 1 and 19 requires new field examination.",
+      "limitations": "Consolidation conceals/destroys relevant stonework; cannot independently certify precise original number from these later observations.",
+      "independent_corroboration": false,
+      "publication_ready": false,
+      "related_existing": [
+        "v97-sun-07"
+      ],
+      "educational_use": "Field-guide investigation explaining why cave maps show 19 barriers although only 17 are now confirmed."
+    },
+    {
+      "id": "STG-20261111T2255Z-F002",
+      "subject": "Concealed wall surfaces and measured cave width between Sun Pyramid blockages 11 and 12",
+      "statement": "Sload reports 1978 probes at 50 cm intervals and three heights on cave walls, encountering voids or recesses one to three metres beyond current wall faces. The maximum probe reached 2.95 m behind the south-side present wall, 1.7 m east of Station 5 at 1.18 m height. At TE28 Area C, excavations exposed a gap exceeding 1 m behind the north stacked-rock wall and 2 m on the south; Figure 6.12 depicts the differing floor relationships.",
+      "place": "Area C and Station 5, artificial cave beneath Sun Pyramid, Teotihuacan, Mexico",
+      "period": "Ancient wall construction uncertain; data collected in 1978",
+      "source_id": "v95-sload-cave-2020",
+      "source": "Rebecca Sload, The Cave Beneath the Sun Pyramid (2020)",
+      "locator": "printed pp.93–96, especially pp.93 and 96, Figure 6.12; references Sload 1978a:82 and Altschul 1978a:150–158 (unexamined original field records)",
+      "inspected_scope": "original 2020 discussion and published original cross-section Figure 6.12 visually inspected",
+      "evidence_status": "Evidence-examined",
+      "evidence_type": "measurements reported in excavation synthesis with original cross-sectional drawing",
+      "observed_vs_interpreted": "Measured recesses and exposed rock-wall gaps are archaeological observations as reported by Sload; the suggestion that original cave width was larger or that wall-rock was quarried for barrier construction remains unverified interpretation.",
+      "limitations": "Some stacked walls are ancient and others are INAH consolidation; original excavation field notes and profiles not independently consulted.",
+      "independent_corroboration": false,
+      "publication_ready": false,
+      "related_existing": [
+        "v97-sun-07",
+        "STG-20261111T2103Z-F002"
+      ],
+      "educational_use": "Cross-section and field-guide explanation showing why the present cave corridor is not a straightforward reconstruction of its ancient footprint."
+    }
+  ],
+  "proposed_enrichments": [
+    {
+      "id": "STG-20261111T2255Z-ENR001",
+      "target_existing_id": "v97-sun-07",
+      "action": "propose_add_qualified_evidence_reference_not_overwrite",
+      "statement": "Sload's account and Figure 6.6 document concrete laid continuously over the west face of blockage 10 and its adjoining westward floor; an excavation at blockages 11/12 shows absence of concrete directly beneath former barrier locations. Sload interprets the sequence as construction progressing from the terminus east-to-west numbering, with barriers built before successive concrete floor applications. At blockage 11, material from the barrier's interior (SF20) was reportedly identified as sedge with gypsum mineral replacement, but the 1978 laboratory record was not independently examined.",
+      "source_id": "v95-sload-cave-2020",
+      "locator": "Sload 2020 printed pp.91–92 and Figure 6.6 (page-image directly inspected), additional passage p.91 citing Drewitt 1978:3 and Millon 1978:105 (not independently inspected)",
+      "status": "Evidence-examined for published observations; no independent corroboration",
+      "why_enrich": "Canonical v97-sun-07 already addresses mud mortar and concrete-face-to-floor continuity; do not introduce a duplicate finding."
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "STG-INSP-20261111T2255Z-001",
+      "source_id": "v95-sload-cave-2020",
+      "title": "Rebecca Sload (2020), The Cave Beneath the Sun Pyramid",
+      "source_url": "https://sites.pitt.edu/~ccapubs/pdfdownloads/PITTmem26-Sload_2020.pdf",
+      "inspected_text": "printed pp.89–94, chapter 6; physical 1978 notebooks NOT available",
+      "figures_visually_examined": [
+        "Figure 6.6 printed p91"
+      ],
+      "figures_caption_or_text_inspected": [
+        "Figures 6.3, 6.5, 6.7, 6.8"
+      ],
+      "coverage_limitation": "Only subset of figures individually viewed; 1974/1978 originals referenced but not directly inspected."
+    },
+    {
+      "id": "STG-INSP-20261111T2255Z-002",
+      "source_id": "v95-sload-cave-2020",
+      "title": "Sload 2020 Chapter 6 original cross section",
+      "source_url": "https://sites.pitt.edu/~ccapubs/pdfdownloads/PITTmem26-Sload_2020.pdf",
+      "inspected_text": "printed pp.93–96",
+      "figures_visually_examined": [
+        "Figure 6.9 printed p93",
+        "Figure 6.12 printed p96"
+      ],
+      "coverage_limitation": "Altschul 1978 and Sload 1978a field books not directly inspected."
+    }
+  ],
+  "source_access": [
+    {
+      "title": "Sugiyama, Sugiyama & Sarabia 2013, Inside the Sun Pyramid",
+      "url": "https://digitalcommons.usf.edu/kip_articles/5943/",
+      "access": "abstract/catalog and JSTOR external link only; original radiocarbon Table 2 and figures NOT examined; not counted as source-inspected"
+    },
+    {
+      "title": "Millon, Drewitt & Bennyhoff 1965, 1959 Investigations",
+      "url": "https://zenodo.org/records/18944564",
+      "access": "Open repository listing located; linked 18.8 MB source download failed, original pages NOT examined."
+    }
+  ],
+  "visual_provenance": [
+    {
+      "figure": "Sload 2020 Figure 6.6",
+      "location": "printed p91",
+      "role": "original 1978 excavations/photos of blockage faces and concrete floor",
+      "rights": "© R. Millon (per caption); not cleared for reuse"
+    },
+    {
+      "figure": "Sload 2020 Figure 6.12",
+      "location": "printed p96",
+      "role": "Area C cross-section of stacked rock walls",
+      "rights": "Rights unverified; no reproduction authorized"
+    }
+  ],
+  "proposed_merge": {
+    "mode": "manual_only",
+    "requires_current_library_manifest": true,
+    "expected_baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "source_ids_map_to_existing": {
+      "v95-sload-cave-2020": "existing V97 source ID verified"
+    },
+    "add_candidates": [
+      "STG-20261111T2255Z-F001",
+      "STG-20261111T2255Z-F002"
+    ],
+    "enrich_existing": [
+      "STG-20261111T2255Z-ENR001"
+    ],
+    "validate_duplicate_ids_and_text": true,
+    "validate_concurrency": true,
+    "do_not_apply_automatically": true
+  },
+  "open_issues": [
+    "current Library manifest/checkpoint inaccessible",
+    "26 previously identified staged source-ID relationships remain to be reconciled",
+    "original Sugiyama 2013 excavation Table 2 and figures not accessed",
+    "1978 original field notebooks not accessed",
+    "botanical specimen dataset carbonization discrepancy unresolved"
+  ],
+  "next_action": "Reconcile these cave barrier observations with existing v97-sun-07 and prior staged findings; inspect independent Sugiyama 2013 or original 1978 field notes if accessible; resolve source ID relationships only after current canonical SHA verification.",
+  "status": "STAGED ONLY — NOT IN CANONICAL"
+}
