@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "event_id": "20261111T115731Z-turn10-sar-18",
+  "prev_event": "research/ledger/events/20261111T115731Z-turn10-transfer-9-and-sload.json",
+  "record_file": "research/batches/20261111T115731Z-turn10-sar-18/18_original_sarabia_and_2014_assertions.json",
+  "records": 18,
+  "canonical_mutated": false
+}

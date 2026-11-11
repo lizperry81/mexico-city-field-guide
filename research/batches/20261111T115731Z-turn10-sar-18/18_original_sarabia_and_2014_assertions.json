@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "batch_id": "20261111T115731Z-turn10-sar-18",
+  "source_bundle": "CDMX_STAGE_20261111_1106_CROSSWALK_AND_EVIDENCE.zip",
+  "storage_role": "immutable_GitHub_staging_NOT_canonical",
+  "provisional_V97_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "records": [
+    {
+      "staged_id": "SP2300-01",
+      "assertion": "Sarabia describes the Pyramid of the Sun as the center of a walled ceremonial complex measuring roughly 350–400 m per side. Its enclosing platform is reported as 6 m high and 35 m thick; it enclosed the pyramid, a frontal plaza, and residential structures north of that plaza. The main approach was a broad western staircase linking the plaza to the Avenue of the Dead. The compound, not just the pyramid, was the urban planning unit.",
+      "source_locator": "printed p.47, fig.1 and p.48 fig.2; PDF lines 12–15 and figure captions",
+      "source_id_raw": "v70-sarabia22",
+      "source_id_proposal": null,
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "SP2300-02",
+      "assertion": "Sarabia inventories 16 research tunnel entries through the Sun Pyramid, totaling 376.20 m of excavation length. His table distinguishes Gamio’s 97 m east-side tunnel (1917–1918), Pérez and Noguera’s 116 m west-side tunnel (1933), and several shorter later investigations. A 6 m ramp connected the two principal excavations into a 219 m east–west route. These excavations were made by archaeologists, not ancient Teotihuacanos.",
+      "source_locator": "printed pp.51–53, figs.2–4 and tunnel inventory table (PDF lines 107–155)",
+      "source_id_raw": "v70-sarabia22",
+      "source_id_proposal": null,
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "SP2300-03",
+      "assertion": "The 1933 Pérez–Noguera tunnel extended 116 m from the west facade on the pyramid’s east–west axis but remained about 1.5 m above the natural tepetate/rock surface. From 2008 to 2011, researchers excavated 59 test pits from its floor down to the ancient basal level and three short auxiliary tunnels, recovering buried architectural and ritual deposits that earlier exploration could not observe. This is a documented sampling-position effect, not proof that all unexcavated sectors contain similar offerings.",
+      "source_locator": "printed pp.52,54; PDF lines 108–110 and 173–175",
+      "source_id_raw": "v70-sarabia22",
+      "source_id_proposal": null,
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "SP2300-04",
+      "assertion": "Later foundation excavations revealed plaster/mortar floors and a wall approximately 2 m thick and more than 14 m long along a north–south axis; Sarabia reports that two earlier architectural structures were almost entirely dismantled to establish the later pyramid foundation. The overall original floor plan and function cannot securely be reconstructed.",
+      "source_locator": "printed p.54; PDF lines 173–175; corroborating 2014 authors’ excerpt lines 46–49",
+      "source_id_raw": "v70-sarabia22",
+      "source_id_proposal": null,
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "SP2300-05",
+      "assertion": "Sarabia describes the monumental core as stratified deposits of soil, sand and crushed tepetate containing ceramic fragments, obsidian and charcoal, with no substantial organized adobe-block system and no large stone mass in the central fill. He distinguishes this fill from the later protective stone facing and the heavier construction of subsequent additions. The sampled interior is not evidence that no stone was used anywhere in the monument.",
+      "source_locator": "printed pp.54–55; PDF lines 178–180, 190–194; corroborating 2014 authors’ partial excerpt lines 53–55",
+      "source_id_raw": "v70-sarabia22",
+      "source_id_proposal": null,
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "SP2300-06",
+      "assertion": "The excavators report a fetal individual (designated Burial 2) from a level older than a pre-pyramid substructure; a separate child aged about four to six years, with cranial modification, was deposited in a small pit near that pre-pyramid structure when the main pyramid was built. Their distinct stratigraphic contexts preclude treating the two remains as one burial event. Ritual killing is suggested by the authors but is not independently proven by the recorded placement alone.",
+      "source_locator": "journal public excerpt paragraphs Pre-Pirámide and Construcción; HTML lines 46–59 (print pp.24–29 not page-specific from excerpt)",
+      "source_id_raw": "",
+      "source_id_proposal": "PROPOSE_SOURCE_2014_SUGIYAMA",
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "SP2300-07",
+      "assertion": "The authors place Offering 1 in fill that sealed the intentionally destroyed pre-pyramid substructure. The assemblage included worked obsidian blades, projectile points and figurines, a pyrite disk, a large marine shell and organic fragments; it appears to have been deposited and immediately covered as the core was raised. Its stratigraphic position differs from the square bedrock-level pit that held Offering 2.",
+      "source_locator": "public article excerpt, Construcción de la Pirámide del Sol; HTML lines 53–60; printed page not established",
+      "source_id_raw": "",
+      "source_id_proposal": "PROPOSE_SOURCE_2014_SUGIYAMA",
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "SP2300-08",
+      "assertion": "Offering 2 was placed in a square 1.75 × 1.75 m pit excavated down to tepetate. The authors enumerate obsidian prismatic blades, miniatures, points and an anthropomorphic image, three pyrite–slate disks plus an L-shaped object, 11 storm-deity vessels, two complete greenstone figurines and a greenstone mask, a marine shell and eight smaller shells, a puma skull/claws, wolf skull, condor remains and an entire eagle with evidence that it ate two rabbits. Thin wooden pieces were arranged on east–west and north–south axes. Its location was apparently keyed to the earlier underground passage rather than exactly the pyramid center.",
+      "source_locator": "public article excerpt, Offering 2 paragraph; HTML lines 60–62; printed page not established",
+      "source_id_raw": "",
+      "source_id_proposal": "PROPOSE_SOURCE_2014_SUGIYAMA",
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "SP2300-09",
+      "assertion": "Sarabia reports an enlargement approximately 6 m thick on the north, east and south faces, apparently limited to the lowest two pyramid bodies. It used steps of stone-and-mud masonry enclosing tezontle fill, abutting the older pyramid slope. Possible drivers include architectural stabilization or political and ceremonial redesign; he does not claim a settled motive.",
+      "source_locator": "printed pp.55–56; PDF lines 192–199",
+      "source_id_raw": "v70-sarabia22",
+      "source_id_proposal": null,
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "SP2300-10",
+      "assertion": "Along this subsequent expansion, Sarabia recorded a surrounding bench about 3 m wide by 0.60 m high, sloping markedly outward, accompanied by a channel. The channel runs around the monument and directs rainwater toward the southeast corner; natural rock is exposed at its bottom. The physical drainage arrangement is documented, but whether it was the principal motive for all remodeling remains unestablished.",
+      "source_locator": "printed p.56; PDF lines 197–199",
+      "source_id_raw": "v70-sarabia22",
+      "source_id_proposal": null,
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "SP2300-11",
+      "assertion": "Two short tunnels in the adosada platforms, plus stratigraphic cuts in the central and southern sections, led Sarabia to infer at least four building phases. Architectural fragments suggest sculptural programs showing processions of felines, and the author compares the imagery to felids and coyotes in murals from Atetelco and Tetitla. These are reconstructions from fragments; the full original sculptural program is not intact and cannot be described as wholly observable today.",
+      "source_locator": "printed p.55; PDF lines 184–187",
+      "source_id_raw": "v70-sarabia22",
+      "source_id_proposal": null,
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "SP2300-12",
+      "assertion": "Sarabia distinguishes the adosada construction from the largely earthen main-pyramid core: adosada platforms used tezontle and basalt stones joined with mud to create solid support for heavy andesite and basalt sculptures. The construction-material distinction provides physical evidence that the platforms were not simply part of the earliest mass fill.",
+      "source_locator": "printed p.55, PDF lines 185–187",
+      "source_id_raw": "v70-sarabia22",
+      "source_id_proposal": null,
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "SP2300-13",
+      "assertion": "Sarabia summarizes geophysical survey and archaeological work identifying tunnels north/east of the city originally excavated to obtain construction material. Investigations associated with Linda Manzanilla found later post-Teotihuacan domestic, storage and ritual use in four east-side tunnels. The article also points to Gamio’s early-twentieth-century record of Indigenous residents living in modified ancient tunnels. These are not the same structures or time period as the purposeful ceremonial passage beneath the Sun Pyramid.",
+      "source_locator": "printed pp.50–51; PDF lines 76–90",
+      "source_id_raw": "v70-sarabia22",
+      "source_id_proposal": null,
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "SP2300-14",
+      "assertion": "In 1992–1994 a 24 m tunnel opened on the northern face collapsed and was abandoned; the vertical opening was consolidated in 2009 partly because rainwater collected and ran down it. Sarabia records major deterioration of reinforced-concrete tunnel supports, including about 300 columns along a 215 m sector, because they were seated in damp compressed pyramid fill rather than bedrock, which lay about 1.20–2.10 m below. Steel rails installed in 2010 stabilized several of the most damaged sections. Modern interventions therefore alter the physical contexts that later investigators inspect.",
+      "source_locator": "printed pp.54,56; PDF lines 163–164,200–204",
+      "source_id_raw": "v70-sarabia22",
+      "source_id_proposal": null,
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "SP2300-15",
+      "assertion": "Sarabia distinguishes the 103 m ancient passage beneath the Sun Pyramid, accessed by a shaft approximately 6.5 m deep, from the similarly long but approximately 14 m deep passage cut through tepetate beneath the Ciudadela and Feathered Serpent Temple complex. The first was excavated in basaltic bedrock; the latter in consolidated tepetate. These specific passages are not the later archaeological research tunnels excavated through building fill.",
+      "source_locator": "printed p.51; PDF lines 91–96",
+      "source_id_raw": "v70-sarabia22",
+      "source_id_proposal": null,
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "SP2300-16",
+      "assertion": "The 2014 authors give a west Noguera tunnel finding of one unusually thick north–south wall with a 2 m section and more than 14 m preserved length, showing a talud slope on both faces coupled with vertical masonry. The structure was deliberately destroyed during later pyramid construction; its proposed public function remains inferential.",
+      "source_locator": "public online excerpt, Pre-Pirámide del Sol; HTML lines 46–49",
+      "source_id_raw": "",
+      "source_id_proposal": "PROPOSE_SOURCE_2014_SUGIYAMA",
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "SP2300-17",
+      "assertion": "Sarabia’s later overview places original construction between the first and second centuries CE (p.47) and elsewhere describes the original core as Miccaotli/Early Tlamimilolpa with a later phase enlargement. The 2014 joint-authored publication instead suggests around 240 CE, while the 2013 joint article abstract gives a modeled 170–310 CE interval. These are incompatible unless phase conventions, modeled intervals, and specific construction events are explicitly reconciled. Do not publish a unique accepted construction date.",
+      "source_locator": "Sarabia pp.47,55–56; 2014 public excerpt HTML lines 34–38; 2013 abstract at https://digitalcommons.usf.edu/kip_articles/5943",
+      "source_id_raw": "v70-sarabia22",
+      "source_id_proposal": null,
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "SP2300-18",
+      "assertion": "The 2013 excavation-team abstract hypothesizes royal burials or ritual offerings in the underground tunnel; the 2014 authors’ excerpt also proposes a possible burial of a supreme leader. In the later 2022 report Sarabia concludes that deposits under monumental centers are dedicatory offerings rather than formal tombs, even where human remains occur. Disagreement in interpretation should not be silently reconciled as confirmation of a royal tomb.",
+      "source_locator": "Sarabia printed p.56, PDF lines 205–210; 2014 excerpt lines 34–39; 2013 abstract",
+      "source_id_raw": "v70-sarabia22",
+      "source_id_proposal": null,
+      "review_status": "PENDING_SOURCE_AND_DUPLICATE_RECONCILIATION",
+      "publication_ready": false
+    }
+  ],
+  "record_count": 18
+}

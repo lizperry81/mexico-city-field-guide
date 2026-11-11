@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "checkpoint_id": "20261111T115731Z-turn10-sar-18",
+  "previous_checkpoint": "research/checkpoints/20261111T115731Z-turn10.json",
+  "storage": "GITHUB_STAGING_ONLY_NOT_CANONICAL",
+  "baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "previously_immutable_candidate_count": 23,
+  "additional_original_candidate_texts": 18,
+  "candidate_texts_immutable_total": 41,
+  "remaining_untransferred_original_candidates": 19,
+  "canonical_changes": 0,
+  "next_action": "Archive last 19 candidate texts (8 cave 2020, 5 Braswell 2018, 3 Beramendi 2009, 3 Sload 2020 ceramics) with source locators, then reconcile evidence identities and original figures."
+}
