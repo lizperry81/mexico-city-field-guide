@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "batch_id": "20261111T1503Z-auto11",
+  "storage_role": "staging_not_canonical",
+  "canonical_source": "/MexicoResearch/canonical/CDMX_CANONICAL.sqlite",
+  "baseline_v97_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "provisional_counts": {
+    "sources": 616,
+    "claims": 422,
+    "claim_source_links": 403,
+    "findings": 68,
+    "inspections": 9
+  },
+  "new_finding_count": 4,
+  "new_findings": [
+    {
+      "staged_id": "STG20261111T1503Z-CHRON01",
+      "subject": "Beta 208984, Area C:East layer 3a fire pit",
+      "assertion": "Sload reports Beta 208984 1920 ± 60 BP, calibrated 1σ 30–130 CE, 2σ 40 BCE–230 CE, from an apparent fire pit by Rock 1 on early fill. She interprets charcoal as early Use, not direct Sun Pyramid construction dating.",
+      "source_id": "v95-sload-cave-2020",
+      "source_url": "https://sites.pitt.edu/~ccapubs/pdfdownloads/PITTmem26-Sload_2020.pdf",
+      "exact_locator": "Sload 2020 printed p.67, Table 5.3 and associated discussion",
+      "source_passage_examined": true,
+      "original_excavation_notes_examined": false,
+      "evidence_type": "published radiocarbon / context / Bayesian analysis",
+      "verification_status": "evidence-examined; uncorroborated; staged only",
+      "limitation": "Firing episode and its timing need not coincide with initial cave excavation."
+    },
+    {
+      "staged_id": "STG20261111T1503Z-CHRON02",
+      "subject": "Projected profile geometry of Beta 220753",
+      "assertion": "Beta 220753 (C:East layer 4d fire pit, 1810 ± 40 BP, 2σ 110–330 CE) lies farther south of Figure 5.1's projected cross-section. Author notes pit oriented roughly 90 degrees to section; drawing cannot establish direct superposition between Beta 220754 and 208984.",
+      "source_id": "v95-sload-cave-2020",
+      "source_url": "https://sites.pitt.edu/~ccapubs/pdfdownloads/PITTmem26-Sload_2020.pdf",
+      "exact_locator": "Sload 2020 printed pp.69–70, Figures 5.1–5.2, Tables 5.2–5.3",
+      "source_passage_examined": true,
+      "original_excavation_notes_examined": false,
+      "evidence_type": "published radiocarbon / context / Bayesian analysis",
+      "verification_status": "evidence-examined; uncorroborated; staged only",
+      "limitation": "Independent inspection of Altschul 1978a field profile remains pending."
+    },
+    {
+      "staged_id": "STG20261111T1503Z-CHRON03",
+      "subject": "Phase-assignment sensitivity of cave closure model",
+      "assertion": "Sload reran an OxCal overlapping-phase model with Beta 220760 and 220745 moved from Termination to Use. Modeled excavation onset barely changed; Use extended later, while Termination posterior had a second near-mid-fourth-century mode nearly as strong as mid-third-century one.",
+      "source_id": "v95-sload-cave-2020",
+      "source_url": "https://sites.pitt.edu/~ccapubs/pdfdownloads/PITTmem26-Sload_2020.pdf",
+      "exact_locator": "Sload 2020 printed p.71",
+      "source_passage_examined": true,
+      "original_excavation_notes_examined": false,
+      "evidence_type": "published radiocarbon / context / Bayesian analysis",
+      "verification_status": "evidence-examined; uncorroborated; staged only",
+      "limitation": "This is author-reported model sensitivity, not independently recomputed and not proof of fourth-century closure."
+    },
+    {
+      "staged_id": "STG20261111T1503Z-CHRON04",
+      "subject": "Individual model agreement issue for Beta 266130",
+      "assertion": "The most recent cave charcoal sample Beta 266130 from C:West layer 5h below Blockage 12 yielded 1700 ± 40 BP (2σ 240–420 CE); Sload reports an individual agreement index of 57.7, below the discussed 60% threshold.",
+      "source_id": "v95-sload-cave-2020",
+      "source_url": "https://sites.pitt.edu/~ccapubs/pdfdownloads/PITTmem26-Sload_2020.pdf",
+      "exact_locator": "Sload 2020 printed pp.66–67 Tables 5.2–5.3, and p.71 discussion",
+      "source_passage_examined": true,
+      "original_excavation_notes_examined": false,
+      "evidence_type": "published radiocarbon / context / Bayesian analysis",
+      "verification_status": "evidence-examined; uncorroborated; staged only",
+      "limitation": "A low individual agreement index flags model fit; it cannot alone invalidate laboratory age."
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "STG20261111T1503Z-INS-1",
+      "source_id": "v95-sload-cave-2020",
+      "scope": "Sload 2020 printed pp.66–70, Figure 5.1, Figure 5.2, Table 5.2 and Table 5.3",
+      "visuals_examined": true,
+      "full_work_examined": false
+    },
+    {
+      "id": "STG20261111T1503Z-INS-2",
+      "source_id": "v95-sload-cave-2020",
+      "scope": "Sload 2020 printed p.71 Bayesian sensitivity, agreement discussion",
+      "visuals_examined": true,
+      "full_work_examined": false
+    }
+  ],
+  "existing_finding_enrichment": {
+    "id": "v97-sun-05",
+    "operation": "proposed_add_sample_intervals_only_no_duplicate",
+    "source_locator": "printed pp.67 and 69, Tables 5.2–5.3",
+    "sample_2sigma": [
+      "Beta 220760 C:W:5e 1830 ± 40 BP 90–260 CE",
+      "Beta 266129 C:W:5d 1810 ± 40 BP 120–260 and 280–330 CE",
+      "Beta 266130 C:W:5h 1700 ± 40 BP 240–420 CE"
+    ]
+  },
+  "prior_checkpoint_path": "research/checkpoints/20261111T1401Z-a11.json",
+  "pending_prior_candidates": 60,
+  "pending_bibliographic_links": 26,
+  "canonical_database_changed": false,
+  "botanical_dataset_status": "UNAVAILABLE: did not resolve 99.5% translation discrepancy",
+  "permissions": {
+    "github_branch": "research-persistence",
+    "library_read": "PATH_NOT_FOUND",
+    "library_writes": 0,
+    "main_modified": false
+  }
+}
