@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "event_id": "20261111T2255Z-auto11-blockages-ledger",
+  "event_type": "append_research_batch",
+  "branch": "research-persistence",
+  "utc_timestamp": "2026-11-11T22:55:49Z",
+  "previous_checkpoint": {
+    "path": "research/checkpoints/20261111T2200Z-auto11-terminus.json",
+    "blob_sha": "0944396e762afed56a29b5f1dd90ea44211ba199"
+  },
+  "storage_probe": {
+    "path": "research/automation-probes/20261111T2255Z-auto11.json",
+    "commit_sha": "202eb30898de20ab2396c62347dbd3e39309241e",
+    "verified": true
+  },
+  "files": [
+    {
+      "type": "batch",
+      "path": "research/batches/20261111T2255Z-auto11-blockages.json",
+      "commit_sha": "6448df03537682b239b2884181e4f891daafdf47",
+      "blob_sha": "787f06823a0458d826f72b5e20d710c253aeefe8",
+      "verified": true
+    },
+    {
+      "type": "checkpoint",
+      "path": "research/checkpoints/20261111T2255Z-auto11-blockages.json",
+      "commit_sha": "35bbec975b51f729d542eb029d864c4db83c71f3",
+      "blob_sha": "9ce122ba6993c758f0d4944006201b0324fbb6b2",
+      "verified": true
+    }
+  ],
+  "baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_modified": false,
+  "write_model": "separate non-atomic GitHub Contents commits; no CAS lock",
+  "status": "STAGED ONLY — NOT IN CANONICAL"
+}
