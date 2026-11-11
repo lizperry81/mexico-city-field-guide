@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "probe_id": "20261111T2200Z-auto11",
+  "created_at_utc": "2026-11-11T22:00:00Z",
+  "purpose": "scheduled GitHub connector persistence read/write test",
+  "branch": "research-persistence",
+  "verified_read_path": "research/state.json",
+  "verified_read_blob_sha": "501b8084c0be41d03328b32d7400bbde2fd78640",
+  "expected_canonical_role": "PROVISIONAL_V97_NOT_PERSISTED",
+  "mutates_canonical": false
+}
