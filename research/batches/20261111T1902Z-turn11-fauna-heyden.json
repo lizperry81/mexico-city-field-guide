@@ -1,0 +1,137 @@
+{
+  "schema_version": 2,
+  "run_id": "20261111T1902Z-turn11-fauna-heyden",
+  "storage_role": "append_only_research_staging",
+  "baseline": {
+    "provisional_version": 97,
+    "sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "current_canonical_manifest_verified": false
+  },
+  "new_sources": [
+    {
+      "id": "STG-SRC-GRIFFITTS-2007",
+      "author": "Janet Griffitts",
+      "year": 2007,
+      "title": "Faunal analysis of two charcoal samples from the cave beneath the Sun Pyramid",
+      "url": "https://www.cadb.pitt.edu/sload/fauna.pdf",
+      "canonical_id": null
+    },
+    {
+      "id": "STG-SRC-HEYDEN-1974-LETTER",
+      "author": "Doris Heyden",
+      "date": "1974-07-29",
+      "title": "Letter to Jorge Acosta",
+      "url": "https://www.cadb.pitt.edu/sload/letter.pdf",
+      "canonical_id": null
+    }
+  ],
+  "findings": [
+    {
+      "id": "STG-20261111T1902Z-F001",
+      "subject": "Griffitts 2007 faunal specimen distribution",
+      "assertion": "The 2007 laboratory report recorded 978 faunal fragments in two analyzed samples: 969 in TE28:C fire pit and 9 in TE28:B SF15. At least 513 shell fragments were recorded, of which 504 were shorter than 5 mm; columella fragments suggested 3 to 5 individual snails. These numbers describe the analyzed samples only.",
+      "source_id": "STG-SRC-GRIFFITTS-2007",
+      "locator": "Griffitts 2007, PDF printed pp.1,3-4, Tables 2-3; original PDF page screenshots examined",
+      "limitations": "Highly fragmented assemblage; 513+ shell count is minimum; not representative of all deposits; MNI is inferred.",
+      "evidence_status": "Evidence-examined",
+      "evidence_examined": true,
+      "corroboration": "Not independently corroborated",
+      "publication_ready": false,
+      "canonical_id": null,
+      "period": "1978 excavated deposits; examined 2007",
+      "geography": "Sun Pyramid cave, Teotihuacan, México"
+    },
+    {
+      "id": "STG-20261111T1902Z-F002",
+      "subject": "Snail genus ambiguity and unavailable fishbone",
+      "assertion": "Griffitts reports that shell fragments could be Sonorella (terrestrial) or Helisoma (freshwater), which cannot be securely distinguished; fish bone recorded by excavators was no longer available for the 2007 examination. Human transport in fish or attached vegetation and rodent transport remain hypothetical pathways.",
+      "source_id": "STG-SRC-GRIFFITTS-2007",
+      "locator": "Griffitts 2007, PDF pp.1-2, Shell and Fishbone; Cultural Significance and Taphonomy, original screenshots examined",
+      "limitations": "Taxa are ambiguous; missing fishbone prevents independent check; no proof of offerings or freshwater origin.",
+      "evidence_status": "Evidence-examined",
+      "evidence_examined": true,
+      "corroboration": "Not independently corroborated",
+      "publication_ready": false,
+      "canonical_id": null,
+      "period": "1978 excavated deposits; examined 2007",
+      "geography": "Sun Pyramid cave, Teotihuacan, México"
+    },
+    {
+      "id": "STG-20261111T1902Z-F003",
+      "subject": "Blackened rodent fragments and taphonomy",
+      "assertion": "The faunal analyst identified only three blackened rodent-sized fragments, which might reflect heat or mineral staining. She observed no other clear burning or cultural modifications in the analyzed bone and shell and judged identified rodents likely intrusive.",
+      "source_id": "STG-SRC-GRIFFITTS-2007",
+      "locator": "Griffitts 2007, PDF p.2 and p.4 Table 3, original screenshots examined",
+      "limitations": "Report covers a restricted faunal subset; cannot establish absence of ancient ritual in the entire cave; cause of blackening indeterminate.",
+      "evidence_status": "Evidence-examined",
+      "evidence_examined": true,
+      "corroboration": "Not independently corroborated",
+      "publication_ready": false,
+      "canonical_id": null,
+      "period": "1978 excavated deposits; examined 2007",
+      "geography": "Sun Pyramid cave, Teotihuacan, México"
+    },
+    {
+      "id": "STG-20261111T1902Z-F004",
+      "subject": "Heyden July 1974 cave-origin and water hypothesis",
+      "assertion": "In a letter to Jorge Acosta dated 29 July 1974, Doris Heyden stated that the cave appeared after ground subsidence during heavy rains in autumn 1971, interpreted it as a natural grotto, and proposed an ancient stream and sanctuary based partly on stone drain tubes and covers. This documents her 1974 interpretation, not established cave geology or ritual history.",
+      "source_id": "STG-SRC-HEYDEN-1974-LETTER",
+      "locator": "Heyden to Jorge Acosta, 29 July 1974, scanned letter pp.1-2; numbered statements 1-3, original pages visually examined",
+      "limitations": "Later excavators argue the tunnel was artificial; original Acosta field records were not consulted.",
+      "evidence_status": "Evidence-examined",
+      "evidence_examined": true,
+      "corroboration": "Not independently corroborated",
+      "publication_ready": false,
+      "canonical_id": null,
+      "period": "History of scholarship, 1971–1974",
+      "geography": "Sun Pyramid cave, Teotihuacan, México"
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "STG-20261111T1902Z-INSP-01",
+      "source_id": "STG-SRC-GRIFFITTS-2007",
+      "access_level": "original_full_report_inspected",
+      "beyond_abstract": true,
+      "scope": "2007 five-page Griffitts original analysis, Tables 1-3; screenshots of PDF pages 1-4; text for page 5",
+      "unexamined": "original zoological specimens and 1978 fishbone, no longer in 2007 sample",
+      "url": "https://www.cadb.pitt.edu/sload/fauna.pdf"
+    },
+    {
+      "id": "STG-20261111T1902Z-INSP-02",
+      "source_id": "STG-SRC-HEYDEN-1974-LETTER",
+      "access_level": "original_scanned_letter_inspected",
+      "beyond_abstract": true,
+      "scope": "29 July 1974 Heyden letter scanned pages 1-2 with original visual inspection",
+      "unexamined": "Jorge Acosta 1974 response, 1971 precipitation records",
+      "url": "https://www.cadb.pitt.edu/sload/letter.pdf"
+    },
+    {
+      "id": "STG-20261111T1902Z-INSP-03",
+      "source_id": "PROPOSED-SUGIYAMA-2013",
+      "access_level": "abstract_only",
+      "beyond_abstract": false,
+      "scope": "Cambridge, USF abstract, restricted Zenodo record",
+      "unexamined": "Original 2013 main text, Table 2 and stratigraphic figures",
+      "url": "https://digitalcommons.usf.edu/kip_articles/5943/"
+    },
+    {
+      "id": "STG-20261111T1902Z-INSP-04",
+      "source_id": "DATASET-SLOAD-BOTANICAL-2020",
+      "access_level": "data_dictionary_only",
+      "beyond_abstract": false,
+      "scope": "Pittsburgh botanical specimen codebook with 274 rows described",
+      "unexamined": "Actual botanical.txt / xlsx 274 raw records; file downloads failed",
+      "url": "https://www.cadb.pitt.edu/sload/botanical.html"
+    }
+  ],
+  "proposed_merge": {
+    "apply": false,
+    "require_latest_library_manifest": true,
+    "require_baseline_sha_match": true,
+    "require_duplicate_review": true,
+    "require_manual_source_id_reconciliation": true,
+    "canonical_updates": 0
+  },
+  "recovery_zip": "CDMX_STAGE_20261111T1902Z_PRIMARY_FAUNA_HEYDEN.zip"
+}
