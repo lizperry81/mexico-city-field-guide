@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "batch_id": "20261111T1401Z-a11",
+  "storage_role": "append_only_git_staging_not_canonical",
+  "provisional_version": 97,
+  "provisional_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "upstream_staged_commit": "7f81d459a46e03c8c8e40617df53c60b598482b5",
+  "findings": [
+    {
+      "id": "STG20261111T1401Z-MACRO-02",
+      "assertion": "Sload 2020 Table 4.1 reports undisturbed fill: 506 macrobotanical pieces in 168.75 L (3.0/L); undisturbed use: 490 pieces in 105 L (4.67/L). Overall recovery is 1393 pieces and 404.5 L, leaving 397 pieces and 130.75 L outside the undisturbed fill/use subset. These are recovery measurements, not proof of ancient diet or offerings.",
+      "source_id": "v95-sload-cave-2020",
+      "locator": "Printed p.59 Table 4.1; PDF zero-based page 82; screenshot directly inspected",
+      "status": "evidence-examined_staged_only",
+      "corroborated": false,
+      "publication_ready": false,
+      "limitation": "Original raw botanical dataset unexamined; Sload's stratigraphic classifications not independently tested."
+    },
+    {
+      "id": "STG20261111T1401Z-BOTCODE-01",
+      "assertion": "University of Pittsburgh 2020 Sun Pyramid cave botanical codebook explicitly exemplifies registro 050500, TE28B West pit layer 1, with one uncarbonized Argemone (Papaveraceae), and registro 050565, TE28D layer 5, with one uncarbonized Oxalis (Oxalidaceae), 10 L soil floated per registro. Codebook examples only, not full specimen dataset; no ancient dietary or ceremonial interpretation warranted.",
+      "source_id": "PROPOSE_SOURCE_SLOAD_2020_BOTANICAL_DATASET_NOT_IN_CANONICAL",
+      "source_url": "https://www.cadb.pitt.edu/sload/botanical.html",
+      "locator": "HTML documentation lines 21-29 (examples); lines 5-19 (11 field definitions)",
+      "status": "codebook_evidence_examined_not_raw_data",
+      "corroborated": false,
+      "publication_ready": false,
+      "limitation": "Original BOTANICAL.TXT or BOTANICAL.XLSX unavailable to this run."
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "STG20261111T1401Z-INS-01",
+      "url": "https://sites.pitt.edu/~ccapubs/pdfdownloads/PITTmem26-Sload_2020.pdf",
+      "scope": "Printed p.59 Table4.1 and p.60 bilingual translation screenshots; not complete monograph",
+      "verified": true
+    },
+    {
+      "id": "STG20261111T1401Z-INS-02",
+      "url": "https://www.cadb.pitt.edu/sload/botanical.html",
+      "scope": "Full botanical codebook HTML, 274-line dataset description and two sample records; original data not fetched",
+      "verified": true
+    }
+  ],
+  "historical_quality_alert": {
+    "english": "99.5% uncarbonized",
+    "spanish": "99.5% carbonized",
+    "locator": "Sload 2020 printed pp.59-60",
+    "status": "UNRESOLVED_EXAMINE_ORIGINAL_274_ROW_DATASET"
+  },
+  "source_key_reconciliation": {
+    "total_candidates": 60,
+    "existing_source_id_links": 34,
+    "missing_source_key_links": 26,
+    "distinct_bibliographic_publications": 5,
+    "groups": [
+      {
+        "source": "Sload 2007 radiocarbon report",
+        "affected": 6
+      },
+      {
+        "source": "Sugiyama et al. 2013 excavation",
+        "affected": 8
+      },
+      {
+        "source": "Sugiyama et al. 2014 El interior",
+        "affected": 4
+      },
+      {
+        "source": "Braswell 2018 Maya perspective",
+        "affected": 5
+      },
+      {
+        "source": "Beramendi-Orosco et al. 2009 chronology",
+        "affected": 3
+      }
+    ],
+    "validated_against": "provisional V97 sources, v89-v91 DOI metadata; exact URL/title/DOI existing matches absent",
+    "source_ids_assigned": 0
+  },
+  "technical_checks": {
+    "provisional_sqlite_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "integrity_check": "ok",
+    "foreign_key_violations": 0,
+    "counts": {
+      "sources": 616,
+      "claims": 422,
+      "claim_source_links": 403,
+      "canonical_findings": 68,
+      "canonical_inspections": 9
+    }
+  },
+  "canonical_mutations": 0,
+  "noncanonical_details": "Research stage only; 60 original archived candidate records remain in prior verified GitHub batches. Original ZIP retained as downloadable recovery artifact; do not infer canonical continuity."
+}
