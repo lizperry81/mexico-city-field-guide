@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "event_id": "20261111T2000Z-auto11-area-b-radiocarbon",
+  "kind": "research_batch_staged",
+  "branch": "research-persistence",
+  "previous_commit_sha": "4af5fdff9296484fc8bb10a543fc03ed8f0a143d",
+  "previous_checkpoint": "research/checkpoints/20261111T1902Z-turn11-fauna-heyden.json",
+  "batch_path": "research/batches/20261111T2000Z-auto11-area-b-radiocarbon.json",
+  "checkpoint_path": "research/checkpoints/20261111T2000Z-auto11-area-b-radiocarbon.json",
+  "base_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_database_modified": false,
+  "findings": 2,
+  "enrichment": 1,
+  "source_inspections": 2,
+  "verified_probe_path": "research/automation-probes/20261111T1955Z-auto11.json"
+}

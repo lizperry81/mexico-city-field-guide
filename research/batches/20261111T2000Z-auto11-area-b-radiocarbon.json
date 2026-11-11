@@ -1,0 +1,94 @@
+{
+  "schema_version": 2,
+  "run_id": "20261111T2000Z-auto11-area-b-radiocarbon",
+  "storage_role": "append_only_research_staging",
+  "baseline": {
+    "provisional_version": 97,
+    "sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "current_canonical_manifest_verified": false
+  },
+  "previous_batch_path": "research/batches/20261111T1902Z-turn11-fauna-heyden.json",
+  "source_registry_proposal": [
+    {
+      "staging_id": "STG-SRC-SLOAD-FAMSI-2007",
+      "title": "Radiocarbon Dating of Teotihuacán Mapping Project TE28 Material from Cave under Pyramid of the Sun, Teotihuacán, México",
+      "author": "Rebecca Sload",
+      "year": 2007,
+      "url": "https://www.ancientamericas.org/sites/default/files/06017Sload01.pdf",
+      "canonical_source_id": null
+    }
+  ],
+  "findings": [
+    {
+      "id": "STG-20261111T2000Z-F001",
+      "subject": "Area B:West posthole, radiocarbon sample positions and overlapping age ranges",
+      "assertion": "Sload 2007 Figure 10 places Beta 220747 partly in the BYCT layer toward the southeast of Area B:West, whereas Beta 220749 and Beta 220750 cluster in the posthole. Beta 220750 is below Beta 220749. Table 2 gives calibrated 2-sigma intervals of 20–220 CE for 220747, 110–330 CE for 220749 and 60–240 CE for 220750. The dates overlap and their calibration intercepts do not establish separate exact post-use dates.",
+      "source_id": "STG-SRC-SLOAD-FAMSI-2007",
+      "locator": "Sload 2007 FAMSI original PDF, printed pp.14–15 Tables 1–2, p.21 Area B text, p.22 Figures 10–11 (original figure screenshots inspected), p.23 interpretation",
+      "evidence_status": "Evidence-examined",
+      "confidence": "source-context documented; post use and timing interpretive",
+      "corroboration": "Not independently corroborated; 2020 Sload draws on earlier research",
+      "publication_ready": false,
+      "geography": "Teotihuacan Sun Pyramid cave, Area B:West, Mexico",
+      "period": "Approximately 1st–4th centuries CE",
+      "limitations": "Charcoal sample ages do not directly date post installation; original Altschul 1978 notes unavailable; 2007 calibration must be labeled.",
+      "related_canonical_ids": [
+        "v97-sun-05",
+        "v97-sun-10"
+      ]
+    },
+    {
+      "id": "STG-20261111T2000Z-F002",
+      "subject": "SF31 burnt shell concentration near Blockage 12",
+      "assertion": "Sload 2020 describes SF31 in Area C:West as a circular concentration of burnt iridescent shell approximately 20 cm in diameter and 2 cm thick, with charcoal but no ash, in Layer 4d at the upper surface of BYCT Layer 4e and below Layer 3. She reports alignment with the east edge of Blockage 12 and west edge of Rock 2, but ritual significance is a hypothesis.",
+      "source_id": "v95-sload-cave-2020",
+      "locator": "Sload 2020 printed p.112, Chapter 7, section 'A Proposed Sequence of Termination Ritual', citing Altschul 1978a:129,131 and 1978b:26; original text examined but figure screenshot timed out",
+      "evidence_status": "Evidence-examined",
+      "confidence": "reported context and measurements; ritual interpretation unverified",
+      "corroboration": "Not independently corroborated",
+      "publication_ready": false,
+      "geography": "Sun Pyramid cave Area C:West near Blockage 12, Mexico",
+      "period": "Early Teotihuacan period; absolute date unsettled",
+      "limitations": "1978 field notes and artifact not independently examined; not the separate 25 × 35 cm burnt shell-and-fishbone fire feature.",
+      "related_canonical_ids": [
+        "v97-sun-04"
+      ]
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "STG-20261111T2000Z-INSP01",
+      "source_id": "STG-SRC-SLOAD-FAMSI-2007",
+      "publication": "Sload 2007 Radiocarbon Dating of TE28 cave material, FAMSI",
+      "url": "https://www.ancientamericas.org/sites/default/files/06017Sload01.pdf",
+      "scope": "Original report printed pp.13–16, 21–23, Table 1, Table 2, Figures 6,9,10,11; PDF original screenshots inspected",
+      "beyond_abstract": true,
+      "unexamined": "Original Beta Analytic certificates and Altschul 1978 notebook; remaining report sections; visual rights not cleared"
+    },
+    {
+      "id": "STG-20261111T2000Z-INSP02",
+      "source_id": "v95-sload-cave-2020",
+      "publication": "Sload 2020 The Cave Beneath the Sun Pyramid, University of Pittsburgh",
+      "url": "https://sites.pitt.edu/~ccapubs/pdfdownloads/PITTmem26-Sload_2020.pdf",
+      "scope": "Original Chapter 7 printed pp.112–117 text, SF31, posthole and laja-floor discussions; figure captions examined, original figure screenshot timeout",
+      "beyond_abstract": true,
+      "unexamined": "Original 1978 field notes and 2020 figure visual verification"
+    }
+  ],
+  "enrichment": {
+    "id": "STG-20261111T2000Z-ENR001",
+    "target_id": "v95-teo-025",
+    "operation": "add_evidence_link_only_after_canonical_duplicate_and_source_review",
+    "assertion": "Sload 2007 original Table 2 visually confirms Beta 220744 1970 ± 40 BP, calibrated 2σ 50 BCE–110 CE, and Beta 220745 1830 ± 40 BP, 2σ 90–260 CE in Area A; Table 1 differentiates charcoal pieces immediately beneath/in contact with concrete (220744) from concentration deeper below (220745). The ranges do not directly date the concrete floor.",
+    "source_id": "STG-SRC-SLOAD-FAMSI-2007",
+    "locator": "Sload 2007 pp.13–16 Table 1–2 and Figure 6; original screenshots checked",
+    "limitations": "Not independent corroboration; no canonical update"
+  },
+  "source_access_limitations": [
+    "Sugiyama et al. 2013 original radiocarbon Table 2 unavailable",
+    "Sload 2020 screenshots timeout",
+    "Botanical raw specimen dataset unavailable"
+  ],
+  "zip_recovery_sha256": "ed40b13451f2d4a6d4c2a8daada7f7714b220dbe347a263e7c2b591f520c7043",
+  "merge_status": "STAGED ONLY — NOT IN CANONICAL"
+}
