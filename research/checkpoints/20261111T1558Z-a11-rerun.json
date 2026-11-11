@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "run_id": "20261111T1558Z-a11-rerun",
+  "parent_checkpoint": "research/checkpoints/20261111T1503Z-auto11.json",
+  "canonical_baseline_sha256_provisional": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_verified_current": false,
+  "last_successfully_staged_batch": "20261111T1558Z-a11-rerun",
+  "source_inspections_added": 3,
+  "findings_staged": 1,
+  "enrichments_staged": 2,
+  "unresolved_source_id_mappings": 26,
+  "unresolved_earlier_records": 60,
+  "next_action": "Acquire original BOTANICAL.TXT/BOTANICAL.XLSX bytes and compute specimen-weighted carbonization share. Inspect original Sugiyama 2013 Figure 10.4 source p409 and original Manzanilla 2005 p283. Reconcile the 26 source IDs with fresh canonical Library manifest before merging.",
+  "storage_status": "GITHUB_STAGED_NOT_CANONICAL",
+  "main_modified": false
+}
