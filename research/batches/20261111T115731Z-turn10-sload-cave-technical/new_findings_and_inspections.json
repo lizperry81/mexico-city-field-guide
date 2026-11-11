@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "batch_id": "20261111T115731Z-turn10-sload-cave-technical",
+  "storage_role": "append_only_staging_NOT_canonical",
+  "provisional_baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "source_url": "https://sites.pitt.edu/~ccapubs/pdfdownloads/PITTmem26-Sload_2020.pdf",
+  "findings": [
+    {
+      "id": "STG20261111T1157-BLK-01",
+      "subject": "Number and layout of cave-closure blockages",
+      "assertion": "Sload reports that Baker et al. (1974) mapped 19 alleged blockage locations in the eastern passage, but review by Drewitt, Millon, Altschul, and Sload found neither mortar nor concrete at the locations marked for Blockages 1 and 19. Sload therefore treats 17 blockages as confirmed, while noting that new fieldwork would be needed for a definitive count.",
+      "source_id": "v95-sload-cave-2020",
+      "exact_locator": "Sload (2020), printed p.90, Figure 6.5 context and paragraph continuing to p.91",
+      "status": "evidence-examined_not_independently_corroborated",
+      "confidence": "medium",
+      "publication_ready": false
+    },
+    {
+      "id": "STG20261111T1157-BLK-02",
+      "subject": "Sequence of cave closure, Blockages 10–12",
+      "assertion": "At Blockage 10, the west-face concrete merges with the floor immediately to the west; at Blockage 11 the floor continues westward but does not extend below the former footprint of the blockage. Sload interprets the repeated building pattern as installing a stone-and-mud blockage, facing its west side with concrete and continuing that concrete as a floor toward the next planned blockage. This implies a closing sequence progressing from the eastern terminus toward the western entrance.",
+      "source_id": "v95-sload-cave-2020",
+      "exact_locator": "Sload (2020), printed p.91, Figure 6.6a–b, adjacent text; pp.90–91 section “West faces of blockages”",
+      "status": "evidence-examined_not_independently_corroborated",
+      "confidence": "medium",
+      "publication_ready": false
+    },
+    {
+      "id": "STG20261111T1157-BLK-03",
+      "subject": "Mortar constituents in Blockage 11",
+      "assertion": "Sload reports C. Earle Smith’s microscopic identification of sedge in a wattle-and-daub fragment from inside Blockage 11 (C:East SF 20). The plant material had been mineral-replaced by gypsum. Drewitt also noted plant remnants in the south-side mortar at Blockage 2. These observations support the use of plant-containing mud mortar in at least some closure walls but do not independently date their construction.",
+      "source_id": "v95-sload-cave-2020",
+      "exact_locator": "Sload (2020), printed p.91 under “Mud mortar held together the rocks of blockages”; citing Drewitt (1978:3) and Millon (1978:105)",
+      "status": "evidence-examined_secondary-report_not_independently_corroborated",
+      "confidence": "medium",
+      "publication_ready": false
+    },
+    {
+      "id": "STG20261111T1157-MAC-01",
+      "subject": "Macrobotanical composition of TE28 cave deposits",
+      "assertion": "In TE28’s macrobotanical examination, Table 4.1 lists 224 identified pieces and 1,169 unidentified pieces across 404.5 liters of soil. Sload reports 99.5% uncarbonized material and identifies Conyza, Jaltomata and Physalis as the commonest identified genera; she argues that relatively uniform low-density botanical material across fill and use layers favors matrices gathered locally rather than reused construction refuse. The material-source conclusion is an interpretation.",
+      "source_id": "v95-sload-cave-2020",
+      "exact_locator": "Sload (2020), printed p.59 Table 4.1 and surrounding paragraphs; printed p.60 Spanish translation",
+      "status": "evidence-examined_not_independently_corroborated",
+      "confidence": "medium_due_to_translation_discrepancy",
+      "publication_ready": false
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "STG20261111T1157-INSP-01",
+      "source_id": "v95-sload-cave-2020",
+      "access": "original_pdf_text_and_visual_screenshots",
+      "pages_examined": "Sload 2020 printed pp.59–60 and 90–91; Table 4.1, Figure 6.6; screen PDF pages 82,83,113,114",
+      "not_examined": "Baker 1974, Drewitt 1978, Millon 1978, underlying McClung de Tapia dataset; original 2013 figures"
+    }
+  ],
+  "editorial_quality_alerts": [
+    {
+      "id": "STG20261111T1157-QA-01",
+      "locator": "Sload 2020 English printed p.59 versus Spanish printed p.60",
+      "issue": "English reports 99.5% UNcarbonized macrobotanical material; Spanish translation says carbonized. Resolve against underlying laboratory report before publication."
+    }
+  ],
+  "new_publication_ready": 0,
+  "new_independent_corroborations": 0,
+  "manual_merge_only": true
+}

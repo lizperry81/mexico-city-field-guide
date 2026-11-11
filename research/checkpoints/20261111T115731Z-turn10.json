@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "checkpoint_id": "20261111T115731Z-turn10",
+  "storage_status": "GITHUB_STAGING_ONLY_NOT_IN_CANONICAL",
+  "previous_checkpoint": "research/checkpoints/20261111T111100Z-priority-candidates.json",
+  "provisional_V97_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "library_manifest_access": "Library path not found: /MexicoResearch/canonical",
+  "prior_pending_candidate_count": 46,
+  "backlog_fully_preserved_prior_to_run": 14,
+  "backlog_original_text_transferred_this_run": 9,
+  "backlog_original_text_remaining": 37,
+  "new_candidate_findings_staged": 4,
+  "new_inspections_staged": 1,
+  "qa_alerts": 1,
+  "original_pdf_figures_checked": "Sload 2020 Figures 6.5 and 6.6; original Sugiyama et al. 2013 PDF figures still unverified",
+  "next_action": "Transfer remaining 37 full original candidate texts to isolated GitHub staging, reconcile source IDs and duplicated claims, inspect original 2013 excavation figures and underlying botanical dataset; do not promote SQLite while Library manifest inaccessible."
+}

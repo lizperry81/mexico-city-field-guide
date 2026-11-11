@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "batch_id": "20261111T115731Z-turn10-backlog-9",
+  "storage_role": "immutable_GitHub_staging_NOT_canonical",
+  "source_bundle": "CDMX_STAGE_20261111_1106_CROSSWALK_AND_EVIDENCE.zip",
+  "provisional_baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "records": [
+    {
+      "staged_id": "S2200-01",
+      "assertion": "Sload reports Barba Pingarrón and Córdova Frunz’s geological reconstruction that Teotihuacan quarrying targeted loose volcanic scoria (cascajo) beneath a hard, consolidated tepetate/tuff layer: once extracted, quarry roofs were intentionally collapsed. They interpret a network of linear depressions and tunnels as construction-material procurement, not necessarily ritual chambers.",
+      "source_locator": "Sload 2020, printed p.19 (PDF screenshot page 42); citing Barba and Córdova 2010 pp.75–77 and Fig.2.1. Sload Fig.2.2 p.21 (PDF page 44)",
+      "source_id_raw": "v95-sload-cave-2020",
+      "review_status": "PENDING_DUPLICATE_AND_SOURCE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "S2200-02",
+      "assertion": "Linda Manzanilla interpreted the Sun Pyramid cave as an original quarry that later acquired ritual status; Sload objects that cave pottery predates much of the Classic-period mining network, that its layout is unlike quarry tunnels, and that the cave’s end chambers and axial position suggest deliberate independent design. These are competing explanations for the cave’s initial function, not an excavated agreement.",
+      "source_locator": "Sload 2020, printed p.19 (PDF page 42); citing Manzanilla 1994, 2000, 2009; Sugiyama 2011; Diehl 1996",
+      "source_id_raw": "v95-sload-cave-2020",
+      "review_status": "PENDING_DUPLICATE_AND_SOURCE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "S2200-03",
+      "assertion": "Sload maps the Sun Pyramid cave on the main east–west centerline of the monument. She states that the two transverse cave chambers align with the junction of the pyramid and the later adosada platform, while the four-room terminus corresponds to the summit position of the pyramid before addition of its reconstructed fourth and fifth tiers. These correlations form part of her argument for deliberate design.",
+      "source_locator": "Sload 2020, printed p.27 (PDF screenshot page 50), text referring to Fig.1.5 and reconstructed pyramid levels",
+      "source_id_raw": "v95-sload-cave-2020",
+      "review_status": "PENDING_DUPLICATE_AND_SOURCE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "S2200-04",
+      "assertion": "Sload describes a second artificial cave under the Feathered Serpent Pyramid at the Ciudadela, with a west-to-east passage beneath its principal staircase and side chambers near the junction with the adjoining platform; she uses its engineered axial placement to argue that mountain-cave relationships were spatially intentional at more than one monument.",
+      "source_locator": "Sload 2020, printed p.27 (PDF screenshot page 50); cross-references Alire García 2015 and Krauze 2015 Fig.1",
+      "source_id_raw": "v95-sload-cave-2020",
+      "review_status": "PENDING_DUPLICATE_AND_SOURCE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "S2200-05",
+      "assertion": "Sload distinguishes seven reported radiocarbon samples taken within the Sun Pyramid along the Noguera tunnel: PPS-7 came from an ash lens in the pyramid fill and agreed with Tzacualli ceramic dating, while PPS-1 through PPS-6 came from features placed at ground level on the monument’s east–west centerline; the latter cluster later and their 68% calibrated ranges do not overlap PPS-7. The event represented by the later cluster remains disputed.",
+      "source_locator": "Sload 2020, printed p.29 (PDF screenshot page 52), referring to Sugiyama et al. 2013 Table 2 pp.423–425",
+      "source_id_raw": "v95-sload-cave-2020",
+      "review_status": "PENDING_DUPLICATE_AND_SOURCE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "S2200-06",
+      "assertion": "Sload argues that Sugiyama et al. included PPS-7 in a Bayesian model that yielded a 170–310 CE construction interval but discounted PPS-7 in their narrative interpretation; she contends that dropping it and rerunning the model would change the reported interval. This is a published methodological criticism, not a demonstrated recalculation undertaken in this batch.",
+      "source_locator": "Sload 2020, printed p.29 (PDF page 52), citing Sugiyama et al. 2013 Table 2 and Table 3, p.425; Sload 2018",
+      "source_id_raw": "v95-sload-cave-2020",
+      "review_status": "PENDING_DUPLICATE_AND_SOURCE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "S2200-07",
+      "assertion": "Sload describes a concrete-covered floor and wall segment labeled Structure 1, buried within the pyramid. She reports that the 2013 excavation team classified it as preceding the main pyramid, while she considers a later insertion plausible because Structure 1 is oriented to Teotihuacan north and aligns with the reconstructed summit of the later, enlarged pyramid.",
+      "source_locator": "Sload 2020, printed pp.29–31 (PDF screenshots pages 52 and 54); Sload refers to Sugiyama et al. 2013 pp.413,415 and Sload 2015 Fig.8",
+      "source_id_raw": "v95-sload-cave-2020",
+      "review_status": "PENDING_DUPLICATE_AND_SOURCE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "S2200-08",
+      "assertion": "A 1977 photograph reproduced as Sload Figure 2.7 shows the surviving original north corner of the adosada-platform stair relative to the metal door of the cave entrance; small stones embedded in cement identify an INAH reconstruction. Thus not all masonry visible at this entrance represents an untouched Teotihuacan building surface.",
+      "source_locator": "Sload 2020, printed p.31 Fig.2.7 (PDF screenshot page 54), photograph R. Millon 1977",
+      "source_id_raw": "v95-sload-cave-2020",
+      "review_status": "PENDING_DUPLICATE_AND_SOURCE_RECONCILIATION",
+      "publication_ready": false
+    },
+    {
+      "staged_id": "S2200-09",
+      "assertion": "Sload records the hypothesis that a principal tomb once occupied the four-chambered cave terminus and subsequent stone blockages created burial chambers. She objects that no positive grave context has been identified and that invoking complete prehistoric looting is an unverified explanation for the missing physical evidence. This challenges, but does not conclusively exclude, funerary use.",
+      "source_locator": "Sload 2020, printed p.17 (PDF screenshot page 40); referencing Sugiyama 2011 pp.188–190 and Cowgill 2015 p.68",
+      "source_id_raw": "v95-sload-cave-2020",
+      "review_status": "PENDING_DUPLICATE_AND_SOURCE_RECONCILIATION",
+      "publication_ready": false
+    }
+  ],
+  "record_count": 9
+}
