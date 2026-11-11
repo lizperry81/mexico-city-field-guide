@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "run_id": "20261111T1302Z-turn11",
+  "storage_role": "checkpoint_immutable_staging",
+  "canonical_persisted": false,
+  "provisional_version": 97,
+  "provisional_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "read_probe_commit": "3a07fcde306ec19ba8c82bf30680e1ec3278b479",
+  "research_batch_path": "research/batches/20261111T1302Z-turn11/evidence_and_source_reconciliation.json",
+  "new_candidate_findings": 1,
+  "new_source_inspections": 3,
+  "source_candidates_need_new_bibliography": 5,
+  "affected_staged_findings": 26,
+  "legacy_v87_provenance_issue": "v87-claim-006",
+  "next_action": "Read authoritative Library manifest when accessible; resolve 26 source-key references; download botanical.txt and check carbonization percentages; repair V87 primary link; review original 2013 excavation figures and full 2018 responses."
+}
