@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "batch_id": "20261111T1655Z-a11-ch8-artifacts",
+  "branch": "research-persistence",
+  "record_status": "append-only research staging; NOT canonical SQLite",
+  "provisional_baseline": {
+    "version": 97,
+    "sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "source_count": 616,
+    "claims_count": 422,
+    "claim_source_links": 403,
+    "canonical_findings": 68,
+    "source_inspections": 9,
+    "library_manifest_access": "Library path not found: /MexicoResearch/canonical"
+  },
+  "source": {
+    "id": "v95-sload-cave-2020",
+    "title": "The Cave Beneath the Sun Pyramid, Teotihuacan: Narrative of a Reverentially Terminated Mountain-Cave",
+    "author": "Rebecca Sload",
+    "year": 2020,
+    "url": "https://sites.pitt.edu/~ccapubs/pdfdownloads/PITTmem26-Sload_2020.pdf"
+  },
+  "findings": [
+    {
+      "id": "STG-20261111T1655Z-CH8-01",
+      "subject": "Painted flower-pot censer in the Sun Pyramid cave entrance",
+      "assertion": "In TE28's undisturbed Area D fire-pit deposit associated with radiocarbon sample Beta 220763, excavators recovered a flower-pot-type censer rim/body fragment reported to weigh 68.1 g and to bear a post-firing whitewash with fugitive cinnabar-red paint. Sload identifies it as a Tzacualli–Miccaotli or possibly Miccaotli–Early Tlamimilolpa example; the charcoal date pertains to the deposit, not directly to the manufacture of the vessel.",
+      "place": "Area D, cave entrance below Sun Pyramid, Teotihuacan, Mexico",
+      "period": "Early Teotihuacan; phase attribution debated (Tzacualli–Miccaotli or Miccaotli–Early Tlamimilolpa)",
+      "source_id": "v95-sload-cave-2020",
+      "locators": [
+        "Sload 2020:125–126, paragraph 'Flower pot' censers",
+        "Sload 2020:128, Figure 8.9 photograph and caption"
+      ],
+      "evidence_type": "Excavated ceramic object described in archaeological monograph; illustrated photo/drawing; contextual charcoal association",
+      "inspection_status": "evidence-examined (publication text and original page image)",
+      "verification_status": "not independently corroborated",
+      "confidence": "moderate that published catalog reports described object; ceramic phase and ritual significance unresolved",
+      "limitations": [
+        "Cinnabar designation attributed to publication; no independent pigment analysis inspected",
+        "A cave fire-pit carbon sample does not directly date firing/painting of the vessel",
+        "Sload explicitly leaves alternative early ceramic-phase attribution open"
+      ],
+      "educational_uses": [
+        "Sun Pyramid cave artifact investigation",
+        "Contextual sidebar: color and ceramic rituals"
+      ]
+    },
+    {
+      "id": "STG-20261111T1655Z-CH8-02",
+      "subject": "Introduced minerals in the Sun Pyramid cave terminus",
+      "assertion": "Sload documents magnetite fragments from a bright-yellow crushed-tepetate (BYCT) layer in TE28 Area B:West and a gypsum specimen from INAH backfill in Area B:East, illustrated in Figure 8.5. Field identification of the magnetite was followed by S. Davidovits' magnet test in the laboratory in 2009. Figure 8.5 also depicts a green stone with incised lines on its polished face. The differing contexts must be maintained: backfill specimens cannot be assigned to an undisturbed original placement.",
+      "place": "Area B:West and Area B:East, eastern terminus of cave beneath Sun Pyramid, Teotihuacan, Mexico",
+      "period": "Early cave use proposed; original placement of several pieces uncertain",
+      "source_id": "v95-sload-cave-2020",
+      "locators": [
+        "Sload 2020:121–123, section 'Introduced Stone and Minerals'",
+        "Sload 2020:123, Figure 8.5 and caption"
+      ],
+      "evidence_type": "Excavated geological/stone specimens, photos and lab magnet test reported by excavation synthesis",
+      "inspection_status": "evidence-examined (publication text and original page image)",
+      "verification_status": "not independently corroborated",
+      "confidence": "moderate for published objects and separate stated contexts; low for intended symbolic function",
+      "limitations": [
+        "Original mineral identification and specimen inventory are not independently inspected",
+        "Magnetism test is reported, not reproduced here",
+        "Ritual/numinous association is authorial interpretation, not directly demonstrable",
+        "Some specimens came from disturbed INAH backfill"
+      ],
+      "educational_uses": [
+        "Sun Pyramid cave mineral technology and deposition dossier",
+        "Museum object investigation into magnetite, gypsum, and greenstone"
+      ]
+    }
+  ],
+  "enrichments": [
+    {
+      "existing_id": "v97-sun-06",
+      "source_id": "v95-sload-cave-2020",
+      "locators": [
+        "Sload 2020:126, Figure 8.6 (shape N=90, weight N=88)",
+        "Sload 2020:129, Table 8.1 (all collection contexts)"
+      ],
+      "proposed_addition": "TE28's 90 undisturbed sherds in Table 8.1 comprise 33 ollas, 36 bowls, 8 jars, 9 plates/low dishes, 2 censers, and 2 with missing shape data. The 183 disturbed TE28 sherds are separate from 148 items in a 1977 surface collection; together the three collections total 421 sherds. These shape counts enrich the already existing v97-sun-06 finding without counting a duplicate canonical finding.",
+      "change_type": "append_evidence_only",
+      "do_not_apply_until_canonical_verified": true
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "STG-20261111T1655Z-CH8-INS-01",
+      "source_id": "v95-sload-cave-2020",
+      "access": "University of Pittsburgh published monograph full PDF; original page images and text inspected",
+      "inspected": "Printed pp.119,121,123,125–129; Figures 8.2, 8.4–8.6, 8.9 and Table 8.1; PDF screenshot pages at zero-based 142,144,146,149,150,151,152.",
+      "not_inspected": "Original TE28 artifact catalog, pigment assays, geological identification lab sheets; remaining portions of Chapter 8",
+      "source_examined_beyond_abstract": true
+    }
+  ],
+  "quality_alerts": [
+    {
+      "id": "STG-20261111T1655Z-CH8-QA-01",
+      "issue": "In Figure 8.8, English caption reports low dish mass 87 g whereas Spanish caption says 8.7 g; both refer to item a. No mass should be adopted from this caption without reviewing original artifact catalog or errata.",
+      "source_id": "v95-sload-cave-2020",
+      "locator": "Sload 2020:127, Figure 8.8 original bilingual captions",
+      "status": "unresolved publication discrepancy",
+      "action": "seek original specimen registry; do not prefer either value arbitrarily"
+    }
+  ],
+  "visual_rights_leads": [
+    {
+      "figure": "8.5",
+      "photo_credit": "S. Davidovits, 2009",
+      "rights": "not cleared",
+      "locators": [
+        "Sload 2020:123"
+      ]
+    },
+    {
+      "figure": "8.9",
+      "photo_credit": "S. Davidovits, 2009",
+      "rights": "not cleared",
+      "locators": [
+        "Sload 2020:128"
+      ]
+    }
+  ],
+  "access_blockers": [
+    {
+      "resource": "/MexicoResearch/canonical/manifest.json and checkpoint.json",
+      "detail": "parent Library path not found; no Library write attempted"
+    },
+    {
+      "resource": "https://www.cadb.pitt.edu/sload/botanical.txt and botanical.xlsx",
+      "detail": "raw specimen dataset URLs inaccessible through web retrieval; cannot adjudicate carbonization discrepancy; dictionary-only evidence from earlier batch"
+    }
+  ],
+  "independent_corroborations_added": 0,
+  "canonical_changes": 0,
+  "proposed_merge": {
+    "apply": false,
+    "require_current_manifest_and_checkpoint": true,
+    "require_current_baseline_sha_match": true,
+    "source_key": "v95-sload-cave-2020",
+    "insert_candidates_only_after_dedup": [
+      "STG-20261111T1655Z-CH8-01",
+      "STG-20261111T1655Z-CH8-02"
+    ],
+    "enrich_existing": [
+      "v97-sun-06"
+    ],
+    "no_assignments_of_new_canonical_ids": true,
+    "preserve_all_prior_ids": true,
+    "notes": "Screen against GitHub's 60 older candidates and current canonical, especially mineral records S2200 and v97-sun-06; maintain context distinctions."
+  }
+}

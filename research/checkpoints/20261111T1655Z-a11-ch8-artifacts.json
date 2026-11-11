@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "checkpoint_id": "20261111T1655Z-a11-ch8-artifacts",
+  "baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "status": "STAGED ONLY — NOT IN CANONICAL",
+  "last_batch": "20261111T1655Z-a11-ch8-artifacts",
+  "active_assignment": "Teotihuacan Sun Pyramid evidence and candidate reconciliation",
+  "candidate_ids": [
+    "STG-20261111T1655Z-CH8-01",
+    "STG-20261111T1655Z-CH8-02"
+  ],
+  "new_findings": 2,
+  "source_inspections": 1,
+  "enrichments": 1,
+  "editorial_alerts": 1,
+  "previous_checkpoint": "20261111T1558Z-a11-rerun",
+  "completed_actions": [
+    "GitHub state.json read and new unique readback-verified probe",
+    "Inspected Sload 2020 Chapter 8 primary PDF pages/figures and Table 8.1",
+    "Screened overlap against V97 and 60 pending candidates",
+    "Prepared two new evidence-examined candidate records and one enrichment, one discrepant caption alert"
+  ],
+  "next_action": "Acquire botanical raw dataset from authorized site and compute specimen-weighted carbonization; if blocked, continue original 2013 figure and independent artifact lab reports; later reconcile source IDs and proposed merges against fresh canonical Library manifest.",
+  "open_issues": [
+    "Library canonical path missing",
+    "botanical raw files inaccessible",
+    "original 2013 Sun Pyramid excavation figure not independently seen",
+    "26 old candidate source links await reconciliation",
+    "Figure 8.8 bilingual mass discrepancy 87 g versus 8.7 g"
+  ]
+}
