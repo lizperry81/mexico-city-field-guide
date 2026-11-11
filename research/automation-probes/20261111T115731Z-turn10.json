@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "run_id": "20261111T115731Z-turn10",
+  "probe_type": "scheduled-runtime-read-write-readback",
+  "branch": "research-persistence",
+  "baseline_role": "provisional_V97",
+  "baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "state_file_blob_sha": "501b8084c0be41d03328b32d7400bbde2fd78640",
+  "test": "No canonical database, ledger or state mutation",
+  "created_utc": "2026-11-11T11:57:31Z"
+}
