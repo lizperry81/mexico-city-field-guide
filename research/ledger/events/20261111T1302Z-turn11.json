@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "event_id": "20261111T1302Z-turn11-ledger",
+  "type": "research_staging_batch",
+  "canonical_changed": false,
+  "staging_batch_path": "research/batches/20261111T1302Z-turn11/evidence_and_source_reconciliation.json",
+  "checkpoint_path": "research/checkpoints/20261111T1302Z-turn11.json",
+  "provisional_baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "prior_total_pending_staged": 60,
+  "unmerged_new_findings": 1,
+  "description": "Source-key reconciliation and botanicals/V87 source provenance; no canonical promotion"
+}
