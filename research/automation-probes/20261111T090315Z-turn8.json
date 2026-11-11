@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "probe_id": "20261111T090315Z-turn8",
+  "read_reference": "research/state.json",
+  "read_branch": "research-persistence",
+  "state_blob_sha": "501b8084c0be41d03328b32d7400bbde2fd78640",
+  "expected_canonical_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "probe_type": "scheduled_runtime_read_write_test",
+  "status": "write_probe_only_not_canonical",
+  "do_not_interpret_as_sqlite_persistence": true
+}
