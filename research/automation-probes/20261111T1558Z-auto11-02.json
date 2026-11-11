@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "probe_id": "20261111T1558Z-auto11-02",
+  "branch": "research-persistence",
+  "purpose": "scheduled-runtime-read-write-readback",
+  "read_state_path": "research/state.json",
+  "state_sha": "501b8084c0be41d03328b32d7400bbde2fd78640",
+  "baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_updated": false
+}
