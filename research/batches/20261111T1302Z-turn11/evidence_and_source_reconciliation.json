@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "run_id": "20261111T1302Z-turn11",
+  "storage_role": "immutable_research_staging",
+  "canonical_merged": false,
+  "provisional_database_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "manifest_read": "Library path not found: /MexicoResearch/canonical",
+  "source_crosswalk_summary": {
+    "candidate_total": 60,
+    "canonical_existing_source_id": 34,
+    "missing_source_id": 26,
+    "missing_distinct_publications": 5
+  },
+  "source_id_reconciliation": [
+    {
+      "work": "Sload 2007 FAMSI report 06017",
+      "proposed_id": "PROPOSE_SOURCE_2007_SLOAD",
+      "doi": null,
+      "staged_ids": [
+        "STAGE-SUN-2007-01",
+        "STAGE-SUN-2007-02",
+        "STAGE-SUN-2007-03",
+        "STAGE-SUN-2007-04",
+        "STAGE-SUN-2007-05",
+        "STAGE-SUN-2007-06"
+      ]
+    },
+    {
+      "work": "Sugiyama Sugiyama Sarabia 2013 Inside the Sun Pyramid",
+      "proposed_id": "PROPOSE_SOURCE_2013_SUGIYAMA",
+      "doi": "10.7183/1045-6635.24.4.403",
+      "staged_ids": [
+        "SUN2013-F01",
+        "SUN2013-F02",
+        "SUN2013-F03",
+        "SUN2013-F04",
+        "SUN2013-F05",
+        "SUN2013-F06",
+        "SUN2013-F07",
+        "SUN2013-F08"
+      ]
+    },
+    {
+      "work": "Sugiyama Sugiyama Sarabia 2014 El interior de la pirámide del Sol",
+      "proposed_id": "PROPOSE_SOURCE_2014_SUGIYAMA",
+      "doi": null,
+      "staged_ids": [
+        "SP2300-06",
+        "SP2300-07",
+        "SP2300-08",
+        "SP2300-16"
+      ],
+      "access_caution": "Only online excerpt examined, do not state full printed paper examined."
+    },
+    {
+      "work": "Braswell 2018 Perspective from the Maya Region",
+      "proposed_id": "PROPOSE_SOURCE_2018_BRASWELL",
+      "doi": "10.1017/laq.2017.84",
+      "staged_ids": [
+        "STG26NOV11-BRA-01",
+        "STG26NOV11-BRA-02",
+        "STG26NOV11-BRA-03",
+        "STG26NOV11-BRA-04",
+        "STG26NOV11-BRA-05"
+      ]
+    },
+    {
+      "work": "Beramendi-Orosco et al. 2009 Teopancazco Bayesian chronology",
+      "proposed_id": "PROPOSE_SOURCE_2009_BERAMENDI",
+      "doi": "10.1016/j.yqres.2008.10.003",
+      "staged_ids": [
+        "STG26NOV11-BER-01",
+        "STG26NOV11-BER-02",
+        "STG26NOV11-BER-03"
+      ]
+    }
+  ],
+  "new_findings": [
+    {
+      "id": "STG20261111T1302Z-MACRO-01",
+      "status": "evidence_examined_not_independently_corroborated",
+      "claim": "Sload 2020 Table 4.1 reports 911 macrobotanical specimens across 225 L in Area C (Blockages 11–12) versus 33 specimens across 49.5 L in Area D (cave entrance); these represent assemblage counts and do not identify ritual offerings.",
+      "source_id": "v95-sload-cave-2020",
+      "source_locator": "Sload 2020 printed p.59 Table 4.1; original PDF screenshot page index 82",
+      "limit": "Original 274-row botanical dataset not independently aggregated."
+    }
+  ],
+  "documentary_findings": [
+    {
+      "id": "STG20261111T1302Z-RECON-V87-PRIMARY-001",
+      "category": "provenance_repair",
+      "legacy_excerpt_id": "v87-primary-001",
+      "existing_claim_id": "v87-claim-006",
+      "issue": "Claim links to secondary v86-source-006 (2019 study), not direct 1998 transcription of 1789 Magdalena water allocation; primary scanned excerpt exists in legacy table but not normalized source/inspection.",
+      "original_source": "Boletín del Archivo Histórico del Agua 1998, v5 no13, PDF page index 28; AHA, Aprovechamientos Superficiales, caja 571, exp 8315, ff 68v–69v",
+      "source_access": "original published one-page PDF facsimile visually examined",
+      "resolution": "Preserve secondary link, propose adding separate primary document source and source link, no automatic merge."
+    }
+  ],
+  "evidence_quality_alerts": [
+    {
+      "id": "STG20261111T1302Z-BOTANICAL-TRANSLATION",
+      "issue": "English Sload 2020 printed p59 says 99.5% uncarbonized; Spanish printed p60 says 99.5% carbonized. Both original PDF pages were visually inspected; online extracted Spanish text incorrectly inserts 'no'.",
+      "dataset_codebook": "University of Pittsburgh Comparative Archaeology Database /sload/botanical.html defines field 7: C=yes carbonized, blank=no.",
+      "status": "unresolved; full botanical.txt not accessed"
+    }
+  ],
+  "inspected_passages": [
+    {
+      "source": "Sload 2020",
+      "locator": "printed 58–60, PDF zero-based pages 81–83; Fig.4.2, Table 4.1",
+      "level": "original PDF and figures visually inspected"
+    },
+    {
+      "source": "Pittsburgh CADB botanical.html",
+      "locator": "description of 274-line botanical dataset, field 7 carbonized code",
+      "level": "HTML codebook only (not underlying file)"
+    },
+    {
+      "source": "1789 Magdalena water order published 1998",
+      "locator": "PDF zero-based page 28 only",
+      "level": "original published facsimile visually inspected; archival originals not accessed"
+    }
+  ],
+  "warnings": [
+    "Not canonical; no changes to SQLite, manifest, checkpoint, main or app.",
+    "Do not assume any staged finding is unique based only on low token-overlap scores.",
+    "No independent corroboration or editorial approval.",
+    "Need current Library manifest for version-safe canonical merge."
+  ]
+}
