@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "run_id": "20261111T100400Z-ledger1",
+  "pending_prior_records": 60,
+  "pending_prior_type_counts": {
+    "finding_candidate": 58,
+    "dispute": 2
+  },
+  "archive_sha256": [
+    {
+      "filename": "CDMX_STAGE_20261110_2100_SUN_PYRAMID.zip",
+      "sha256": "dff018effb267d78e37a62123e6a7d1667407e6d6b77bb2cb83488f76634bc5b",
+      "storage": "LOCAL_RECOVERY_ZIP_ONLY_NOT_GITHUB"
+    },
+    {
+      "filename": "CDMX_STAGE_20261110_2200_SUN_PYRAMID.zip",
+      "sha256": "0160427e17ead66e5a32c96e3e83ab95d357c4d0fa1b156c6fdd1098dcc74dc8",
+      "storage": "LOCAL_RECOVERY_ZIP_ONLY_NOT_GITHUB"
+    },
+    {
+      "filename": "CDMX_STAGE_20261110_2300_SUN_PYRAMID.zip",
+      "sha256": "c502917496bdf208115bab4d2fa5752787e95ef0a19f5884e33557ede5f56b61",
+      "storage": "LOCAL_RECOVERY_ZIP_ONLY_NOT_GITHUB"
+    },
+    {
+      "filename": "CDMX_STAGE_20261111_0004_SUN_CAVE.zip",
+      "sha256": "2d523fefd79a72ca12f0445a4ba8855a2c198730cc0e5000d8ce94f12f9cc070",
+      "storage": "LOCAL_RECOVERY_ZIP_ONLY_NOT_GITHUB"
+    },
+    {
+      "filename": "CDMX_STAGE_20261111_0055_ORIGINAL_2013_TABLES.zip",
+      "sha256": "ff07abf55a04e69aea554a3f91ae8a5d04b83a2aece3398b1611b9c0d866c5f4",
+      "storage": "LOCAL_RECOVERY_ZIP_ONLY_NOT_GITHUB"
+    },
+    {
+      "filename": "CDMX_STAGE_20261111_0158_MAYA_CHRONOLOGY.zip",
+      "sha256": "728b49e361c82a5164dec6ce6a2c9e13245394ad159727f5b38d66dd96298f4c",
+      "storage": "LOCAL_RECOVERY_ZIP_ONLY_NOT_GITHUB"
+    },
+    {
+      "filename": "CDMX_STAGE_20261111_0903_GITHUB_PROBE_AND_CERAMICS.zip",
+      "sha256": "e33119c9abbc1a2d85f556f6093c22cfedf9900ddbb3a2a7cb75ad3169722d96",
+      "storage": "LOCAL_RECOVERY_ZIP_ONLY_NOT_GITHUB"
+    }
+  ],
+  "manual_review": [
+    {
+      "a": "SP2300-04",
+      "b": "SP2300-16",
+      "status": "POSSIBLE_DUPLICATE_SAME_WALL"
+    },
+    {
+      "a": "SP2300-07",
+      "b": "SUN2013-F05",
+      "status": "SAME_OFFERING_DIFFERENT_EVIDENCE"
+    },
+    {
+      "a": "STAGE-SUN-2007-01",
+      "b": "SP2300-15",
+      "status": "SAME_CAVE_SHAFT_PARTIAL_OVERLAP"
+    },
+    {
+      "a": "stg-20261111-sun-03",
+      "b": "stg-20261111-sun-04",
+      "status": "RELATED_AREA_D_STRATIGRAPHY"
+    }
+  ],
+  "unmapped_raw_source_ids": 14,
+  "prior_archives_upload_complete": false,
+  "notes": "60 candidate rows NOT 60 unique findings. Prior ZIP bytes not yet on GitHub."
+}

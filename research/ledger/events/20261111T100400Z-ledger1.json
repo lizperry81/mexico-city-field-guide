@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "event_id": "20261111T100400Z-ledger1",
+  "event_type": "staged_research_append_only",
+  "created_utc": "2026-11-11T10:04:00Z",
+  "parent_branch_head": "5155fff85c51e8a83e142e026237443a6661b016",
+  "baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_updated": false,
+  "library_manifest_read": false,
+  "files": [
+    {
+      "path": "research/batches/20261111T100400Z-ledger1/findings_and_inspection.json",
+      "blob_sha": "548f19e4960125ac0f78fe6ec5dc36db4e4a6bac"
+    },
+    {
+      "path": "research/batches/20261111T100400Z-ledger1/unmerged_archive_inventory.json",
+      "blob_sha": "427129b7031b8ae38f8f8fd93fb68447676f2ca3"
+    }
+  ],
+  "new_candidates": 3,
+  "prior_candidate_rows_pending": 60,
+  "readiness": "NOT_PUBLICATION_READY"
+}

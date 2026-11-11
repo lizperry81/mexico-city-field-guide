@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "checkpoint_id": "20261111T100400Z-ledger1",
+  "event_file": "research/ledger/events/20261111T100400Z-ledger1.json",
+  "event_blob_sha": "2d0b783418135c8d4ef7cbbf4d3179a3f23130a7",
+  "created_utc": "2026-11-11T10:04:00Z",
+  "storage": "append_only_staging_branch_only",
+  "canonical_persisted": false,
+  "provisional_V97_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "provisional_counts": {
+    "sources": 616,
+    "claims": 422,
+    "links": 403,
+    "findings": 68,
+    "inspections": 9
+  },
+  "local_integrity": "ok",
+  "local_fk_violations": 0,
+  "library_manifest_blocker": "Library path not found: /MexicoResearch/canonical",
+  "prev_git_head_sha": "5155fff85c51e8a83e142e026237443a6661b016",
+  "next_action": "Read Library manifest/checkpoint non-destructively; reconcile pending 60 candidate rows including duplicate/source IDs and original 2013 figures before canonical import. Archive older ZIPs on GitHub in a separate append-only event; never overwrite state.json."
+}
