@@ -146,6 +146,9 @@ jobs:
           assert 'width=device-width' in mobile_html
           assert 'data-mode="focus"' in mobile_html
           assert 'data-choose-thread="water"' in mobile_html
+          for marker in ('id="locate-nearest"','id="disable-location"','id="location-status"',
+                         'id="nearest-link"','navigator.geolocation.getCurrentPosition'):
+              assert marker in mobile_html, f'Missing optional location UI: {marker}'
           print('MOBILE UA ROUTE VERIFIED:',mobile_target,'chars:',len(mobile_html),flush=True)
           PY
 
