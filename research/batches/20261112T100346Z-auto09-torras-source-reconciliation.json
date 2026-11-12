@@ -1,0 +1,119 @@
+{
+  "schema_version": 2,
+  "run_id": "20261112T100346Z-auto09-torras-source-reconciliation",
+  "branch": "research-persistence",
+  "status": "STAGED_ONLY_NOT_IN_CANONICAL",
+  "baseline": {
+    "version": "V97 provisional",
+    "sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "counts": {
+      "sources": 616,
+      "claims": 422,
+      "claim_sources": 403,
+      "canonical_findings": 68,
+      "canonical_source_inspections": 9
+    },
+    "sqlite_integrity": "ok",
+    "foreign_key_violations": 0
+  },
+  "source": {
+    "id": "stage-torras-freixa-2018-monumentality",
+    "author": "Maria Torras Freixa",
+    "title": "Rethinking monumentality in Teotihuacan, Mexico",
+    "year": 2018,
+    "container": "Constructing Monuments, Perceiving Monumentality & the Economics of Building",
+    "pages": "219–240",
+    "url": "https://www.aegeussociety.org/wp-content/uploads/2021/12/Brysbaert-et-al-2018-Monuments.pdf",
+    "access": "Selected chapter pages 219–235 text reviewed, p.223 fig 10.2 and pp.224,225,231–235 screenshot reviewed; figures 10.4 and 2013 original assays not directly inspected",
+    "rights": "copyright respective authors; figure reuse not cleared"
+  },
+  "source_inspection": {
+    "id": "STAGE-INSPECT-20261112T100346Z-TORRAS",
+    "inspected": true,
+    "scope": "2018 chapter 10 selected pages 219–235 original PDF + page screenshots",
+    "primary_2013_radiocarbon_tables_inspected": false,
+    "independent_of_sugiyama_2013": false
+  },
+  "candidate_findings": [
+    {
+      "id": "STG-20261112T100346Z-MON-01",
+      "subject": "Teotihuacan monumental construction fill comparison",
+      "assertion": "Torras Freixa distinguishes earth-and-stone fills of Moon Pyramid Buildings 1–3, earth-dominant Building 4, earth/tepetate Sun Pyramid fill, and stone/mud compartment-cell construction of the Feathered Serpent Pyramid, associated with contrasting talud and talud-tablero façades.",
+      "locator": "2018 pp.224–225,226–227,233–234",
+      "source_id": "stage-torras-freixa-2018-monumentality",
+      "level": "Evidence-examined (secondary synthesis)",
+      "corroboration": "not_assessed",
+      "limitations": "Building 4 cell-system proposal tentative; comparison not a secure relative dating tool",
+      "related": [
+        "v96-teo-03"
+      ]
+    },
+    {
+      "id": "STG-20261112T100346Z-MON-02",
+      "subject": "Teotihuacan labor-duration model assumptions",
+      "assertion": "Torras Freixa reports Murakami's assumptions: one worker per five-person household, five hours per day procurement and transport, eight hours manufacture and assembly, 30/60/100 construction days per year, yielding conditional estimates of under ten years per pyramid; notes 50-year discrepancy in Early Tlamimilolpa placement relative to Rattray chronology.",
+      "locator": "2018 p.234 and notes 603–607, p.235",
+      "source_id": "stage-torras-freixa-2018-monumentality",
+      "level": "Evidence-examined (secondary methodological synthesis)",
+      "corroboration": "not_assessed",
+      "limitations": "Under ten years is a modeled output, not observed duration; primary Murakami data not checked",
+      "related": [
+        "v94-teo-15"
+      ]
+    }
+  ],
+  "enrichment_not_new_findings": [
+    {
+      "id": "STG-20261112T100346Z-ENRICH-01",
+      "target": "v94-teo-06",
+      "assertion": "Building 1 base 23.5m, Building 3 base 31.3m, early Moon Pyramid building orientations shift from approx 11° toward 15°30′ east of astronomical north; absence of lime plaster.",
+      "locator": "Torras Freixa 2018 p.224; Fig 10.2 p.223"
+    },
+    {
+      "id": "STG-20261112T100346Z-ENRICH-02",
+      "target": "v94-teo-15",
+      "assertion": "Torras Freixa 2018 pp.219–220,225–226,232,235 presents a 200–250 CE monumentalization hypothesis, explicitly dependent on Sugiyama and contested by older construction models and redeposited ceramic fill.",
+      "locator": "pp.219–220,225–226,232,235"
+    }
+  ],
+  "source_repair": {
+    "newly_reviewed_existing_finding_id": "v94-teo-15",
+    "old_source_id": null,
+    "proposed_source_id": "stage-torras-freixa-2018-monumentality",
+    "also_link_legacy_inspection": "v94-inspection-torras",
+    "additional_proposed_links_this_run": 1,
+    "prior_20_repairs_to_reconcile": 20,
+    "complex_unresolved": [
+      "v97-sun-09",
+      "v97-sun-10"
+    ],
+    "applied": 0,
+    "requires": "manual dedupe and conditional transaction on checksum-matched canonical copy"
+  },
+  "issues": [
+    {
+      "id": "2013-original-tables",
+      "state": "unexamined",
+      "note": "Sugiyama et al 2013 sample-level tables unavailable from accessible sources; 2018 synthesis does not substitute original tables"
+    },
+    {
+      "id": "older-fill-shards",
+      "state": "disputed",
+      "note": "Torras 2018 p235 argues older ceramic sherds can be redeposited; primary ceramic and 14C contexts not directly rechecked"
+    },
+    {
+      "id": "canonical-authority",
+      "state": "unresolved",
+      "note": "Library /MexicoResearch/canonical path not found. GitHub staging research/canonical/ contains a 2609152-byte V97 file and matching manifest but is not promoted, and GitHub binary hash was not independently checked"
+    }
+  ],
+  "research_package": {
+    "filename": "CDMX_STAGE_20261112T100346Z-auto09_TORRAS_SOURCE_RECONCILIATION.zip",
+    "sha256": "b19653f6ff3353738632b826c7f0c6a4eeb478a593ca0c96fadb400548b523d3",
+    "contents": "new batch and proposed merge JSON + intact previous complete recovery archive + unmodified V97 SQLite"
+  },
+  "continuity": {
+    "previous_ledger": "research/ledger-events/20261112T0902Z-auto09-moon-source-recovery.json",
+    "checkpoint_next": "Obtain Sugiyama 2013 original sample-level radiocarbon tables; check Murakami original construction estimates, reconcile 21 source-ID patches and two remaining compound claims; no canonical mutation"
+  }
+}

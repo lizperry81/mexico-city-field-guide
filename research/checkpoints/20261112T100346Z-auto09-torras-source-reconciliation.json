@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "run_id": "20261112T100346Z-auto09-torras-source-reconciliation",
+  "base_version": "V97 provisional",
+  "base_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "accepted_batch": null,
+  "canonical_updates_this_run": 0,
+  "new_staged_findings": 2,
+  "staged_enrichments": 2,
+  "source_repairs_proposed_this_run": 1,
+  "all_21_proposals_unapplied": true,
+  "unresolved_compound_ids": [
+    "v97-sun-09",
+    "v97-sun-10"
+  ],
+  "last_source": {
+    "id": "stage-torras-freixa-2018-monumentality",
+    "examined_printed_pages": "selected 219–235"
+  },
+  "library_access": "path_not_found",
+  "github_state_path": "research/state.json",
+  "github_canonical_copy": "V97 provisional only, no authority promotion",
+  "next_action": "Inspect original Sugiyama 2013 radiocarbon tables, original Murakami model inputs and unresolved source IDs; dedupe staged candidates before transactional controlled canonical merge",
+  "previous_checkpoint": "research/checkpoints/20261112T0902Z-auto09-moon-source-recovery.json",
+  "status": "STAGED_ONLY_NOT_IN_CANONICAL"
+}
