@@ -22,6 +22,22 @@ assert all(x in walk for x in ['data-mode="outdoor"','data-mode="focus"','data-m
                               'data-choose-thread="water"','data-choose-thread="public"',
                               'aria-live="polite"','id="stop-templo-mayor"'])
 assert "page-specific scholarly review" in walk.lower()
+# Location is an explicit opt-in for the four known stops, not background tracking.
+for marker in ('id="locate-nearest"','id="disable-location"','id="location-status"',
+               'id="nearest-link"','navigator.geolocation.getCurrentPosition',
+               'requestVersion','maximumAge:0','role="status"'):
+    assert marker in walk, ("missing opt-in location feature",marker)
+assert "__GEO_SITES__" not in walk and "watchPosition" not in walk
+assert "localStorage" not in walk and "sessionStorage" not in walk
+geo_match=re.search(r"var geoSites=(\\[.*?\\]);",walk,re.S)
+assert geo_match, "Missing generated location coordinate data"
+geo_sites=json.loads(geo_match.group(1))
+assert len(geo_sites)==4
+for site in geo_sites:
+    key={"templo-mayor":"templo","metropolitan-cathedral":"catedral",
+         "zocalo":"zocalo","national-palace":"palacio"}[site["slug"]]
+    assert [site["lat"],site["lon"]]==src["stops"][key]["ll"]
+    assert -90<=site["lat"]<=90 and -180<=site["lon"]<=180
 expected={"templo-mayor":("templo",5),"zocalo":("zocalo",6),
           "metropolitan-cathedral":("catedral",7),"national-palace":("palacio",5)}
 for slug,(key,n) in expected.items():
