@@ -32,16 +32,6 @@ jobs:
           # Restore source-accurate V81 JSON (8 chapters, 21 claims, 12 sources).
           python scripts/recover_templo.py site
           python scripts/build_poi.py
-          mkdir -p site/feedback
-          cp feedback/annotate.js site/feedback/annotate.js
-          python - <<'PY'
-          from pathlib import Path
-          p=Path('site/poi/templo-mayor/index.html')
-          s=p.read_text(encoding='utf-8')
-          script='<script src="../../feedback/annotate.js" defer></script>'
-          assert '</body>' in s
-          p.write_text(s.replace('</body>',script+'</body>'),encoding='utf-8')
-          PY
           python scripts/test_poi.py
           python scripts/build_centro_pois.py
           python scripts/test_centro_pois.py
@@ -58,6 +48,11 @@ jobs:
           # Additive learning walk generated from preserved Centro source, after POI checks.
           python scripts/build_centro_walk.py
           python scripts/test_centro_walk.py
+          # Enable comments after generators have finished; preserve all original historical content.
+          mkdir -p site/feedback
+          cp feedback/annotate.js site/feedback/annotate.js
+          python scripts/enable_reader_feedback.py
+          python scripts/test_reader_feedback.py
           mkdir -p site/preview/teotihuacan
           cp preview/teotihuacan/index.html site/preview/teotihuacan/index.html
           mkdir -p site/preview/atlas
@@ -106,7 +101,7 @@ jobs:
           python - <<'PY'
           import os,urllib.request,time
           url=os.environ['PAGE_URL'].rstrip('/')+'/poi/templo-mayor/'
-          required=('Templo Mayor','What to look for during the visit','History behind the excavated site','Tlaltecuhtli','Coyolxauhqui','id="museum"','id="claimlist"')
+          required=('Templo Mayor','What to look for during the visit','History behind the excavated site','Tlaltecuhtli','Coyolxauhqui','id="museum"','id="claimlist"','../../feedback/annotate.js')
           error=None
           for attempt in range(10):
               try:
@@ -129,11 +124,12 @@ jobs:
           root=os.environ['PAGE_URL'].rstrip('/')+'/'
           for path, markers in {
               '': ('Templo Mayor','</body>'),
-              'poi/zocalo/': ('What to look for on site','The day the poor burned the palace'),
-              'poi/metropolitan-cathedral/': ('What to look for on site','The floor isn'),
-              'poi/national-palace/': ('What to look for on site','Rivera'),
-              'walks/historic-center/': ('From Tenochtitlan to Mexico City','data-mode="outdoor"','data-choose-thread="conquest"','stop-national-palace'),
+              'poi/zocalo/': ('What to look for on site','The day the poor burned the palace','../../feedback/annotate.js'),
+              'poi/metropolitan-cathedral/': ('What to look for on site','The floor isn','../../feedback/annotate.js'),
+              'poi/national-palace/': ('What to look for on site','Rivera','../../feedback/annotate.js'),
+              'walks/historic-center/': ('From Tenochtitlan to Mexico City','data-mode="outdoor"','data-choose-thread="conquest"','stop-national-palace','../../feedback/annotate.js'),
               'data/historic-center-walk.json': ('"historic-center-walk-1"','"original_source_ids"'),
+              'feedback/annotate.js': ('function allNotes()', 'Comment on this passage', 'feedback-open'),
               'data/research/templo_walk_v63.json': ('"chapters"','field_instruction'),
               'data/research/templo_mayor_pilot.json': ('"claims"','source_ids'),
               'data/research/templo_verified_discoveries_v68.json': ('"title"','"id"'),
