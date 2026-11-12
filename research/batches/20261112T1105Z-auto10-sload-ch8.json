@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "run_id": "20261112T1105Z-auto10-sload-ch8",
+  "storage_status": "STAGED_ONLY_NOT_IN_CANONICAL",
+  "baseline": {
+    "version": "V97",
+    "sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "source": "last locally verified immutable V97 recovered from prior staging archive; current Library folder missing",
+    "counts": {
+      "sources": 616,
+      "claims": 422,
+      "claim_sources": 403,
+      "canonical_findings": 68,
+      "canonical_inspections": 9
+    },
+    "sqlite_integrity": "ok",
+    "foreign_key_violations": 0
+  },
+  "source_inspection": {
+    "id": "STG-20261112T1105Z-INSP-01",
+    "source_id": "v95-sload-cave-2020",
+    "authors": "Rebecca Sload",
+    "title": "The Cave Beneath the Sun Pyramid, Teotihuacan: Narrative of a Reverentially Terminated Mountain-Cave",
+    "year": 2020,
+    "publisher": "University of Pittsburgh Center for Comparative Archaeology",
+    "url": "https://sites.pitt.edu/~ccapubs/pdfdownloads/PITTmem26-Sload_2020.pdf",
+    "inspected": "Original full-text PDF selected printed pp.119–124 and 125–130; directly inspected original illustrated page 121, 123, 126, 128 and Table 8.1 p.129",
+    "not_inspected": "Other chapters not exhaustively re-read; Gazzola 2016 laboratory analyses and individual original excavation inventories not independently inspected"
+  },
+  "findings": [
+    {
+      "id": "STG-20261112T1105Z-TEO-01",
+      "action": "ADD_IF_NO_CONCEPTUAL_DUPLICATE",
+      "subject": "Sun Pyramid cave terminal chamber: introduced minerals and worked slate",
+      "statement": "Sload documents more than 20 pieces of slate at the cave's eastern terminus, with only two likely slate pieces in a C:West Layer 5f rodent burrow outside that concentration; terminal specimens include pyrite-bearing slate and cleaved pieces with drilled holes, some interpreted cautiously as possible mirror backs or pendants. Magnetite from the B:West BYCT layer and gypsum from B:East excavation backdirt were also illustrated.",
+      "site": "Cave beneath the Sun Pyramid, Teotihuacan",
+      "period": "mainly Tzacualli–Miccaotli association inferred; deposition and reworking uncertain",
+      "source_id": "v95-sload-cave-2020",
+      "locators": [
+        "printed pp.119–124",
+        "figs.8.1,8.2,8.4,8.5"
+      ],
+      "evidence_type": "artifact inventory, photographs and investigator interpretation",
+      "status": "Evidence-examined",
+      "uncertainty": "Mirror-back and pendant functional attributions speculative; exact terminal placement may be affected by earlier excavation/backdirt; pyrite alteration minerals on these individual pieces not chemically established; not independently corroborated",
+      "educational_use": "object investigation: pyrite-bearing slate and potential reflective objects in the Sun Pyramid cave"
+    },
+    {
+      "id": "STG-20261112T1105Z-TEO-02",
+      "action": "ADD_IF_NO_CONCEPTUAL_DUPLICATE",
+      "subject": "Sun Pyramid cave Area D ceramic censer associated with dated firepit",
+      "statement": "The TE28 Area D fire pit associated with charcoal determination Beta-220763 yielded a flower-pot censer rim and body fragment weighing 68.1 g. Sload illustrates a white post-firing wash and red fugitive pigment identified in the caption as cinnabar. The object may represent ritual use before emplacement of the overlying concrete floor; that activity sequence remains the excavator's interpretation.",
+      "site": "Cave beneath the Sun Pyramid, Teotihuacan, entrance Area D",
+      "period": "Tzacualli–Miccaotli or Miccaotli–Early Tlamimilolpa ceramic attribution debated",
+      "source_id": "v95-sload-cave-2020",
+      "locators": [
+        "printed pp.126 and 128",
+        "fig.8.9"
+      ],
+      "evidence_type": "excavated pottery fragment, photographs, ceramic attribution, radiocarbon-associated context",
+      "status": "Evidence-examined",
+      "uncertainty": "Cinnabar is the author's reported pigment description, not verified here by compositional assay; charcoal dates activity context, not direct object manufacture; phase range not fixed",
+      "educational_use": "object dossier: painted censer rim and last-fire hypothesis"
+    }
+  ],
+  "enrichments": [
+    {
+      "id": "STG-20261112T1105Z-ENRICH-01",
+      "action": "ENRICH_EXISTING_NOT_NEW_FINDING",
+      "target_id": "v97-sun-06",
+      "subject": "Ceramic types and contexts beneath Sun Pyramid",
+      "statement": "Sload's Table 8.1 subdivides the existing 273 TE28 sherds into 90 undisturbed and 183 disturbed: undisturbed counts are 33 ollas, 36 bowls, 8 jars, 9 plates/low dishes, 2 censers and 2 other/missing-data sherds; disturbed counts are 71 ollas, 39 bowls, 31 jars, 11 plates, 15 censers, 10 vases and 6 other. The 1977 surface collection adds 148 sherds, making the separately tabulated whole cave sample 421, not 421 TE28 sherds.",
+      "source_id": "v95-sload-cave-2020",
+      "locator": "printed p.129, Table 8.1; p.126 Figure 8.6",
+      "status": "Evidence-examined",
+      "uncertainty": "Small condition-specific samples, disturbed provenience, no whole pots, typological identifications of individual sherds may be revised; descriptive counts only"
+    }
+  ],
+  "issues": [
+    {
+      "id": "STG-20261112T1105Z-ISSUE-01",
+      "type": "interpretive_attribution",
+      "statement": "No chemical assay of putative jarosite/limonite or pigment on specific reviewed slate/censer objects was inspected; separate Gazzola research cited by Sload is not independent confirmation here."
+    },
+    {
+      "id": "STG-20261112T1105Z-ISSUE-02",
+      "type": "source_availability",
+      "statement": "Original Sugiyama/Sugiyama/Sarabia 2013 Sun Pyramid sample-level Table 2 and figures remain unexamined; this batch does not resolve the Sun Pyramid construction chronology."
+    }
+  ],
+  "proposed_merge": {
+    "authority": "DO_NOT_APPLY",
+    "requires": [
+      "fresh successful manifest/checkpoint read and SHA comparison",
+      "crosswalk with previously staged candidate concepts and existing canonical IDs",
+      "retain unchanged V97 as backup",
+      "transactional import into new versioned copy with independent readback verification",
+      "do not count 2020 discussion as independent corroboration of the author's 2007 material"
+    ],
+    "operations": [
+      {
+        "kind": "conditional_insert",
+        "id": "STG-20261112T1105Z-TEO-01"
+      },
+      {
+        "kind": "conditional_insert",
+        "id": "STG-20261112T1105Z-TEO-02"
+      },
+      {
+        "kind": "enrich",
+        "target": "v97-sun-06"
+      }
+    ]
+  },
+  "next_action": "Review Sload 2020 original 1978 photographs and downloadable terminal inventory, seek original 2013 Sugiyama radiocarbon tables and Murakami 2015 experimental measurements; resolve two composite source-link cases and audit V87 unmerged records before manual canonical promotion."
+}
