@@ -79,7 +79,10 @@ for(const [id] of tabs){
   section.id='review-'+id;section.className='review-screen';
   section.setAttribute('aria-label',id+' reading mode');
   if(id==='discover')section.classList.add('active');
-  bar.after(section);screens[id]=section;
+  const previous=tabs.findIndex(row=>row[0]===id);
+  if(previous===0){bar.after(section);}
+  else{screens[tabs[previous-1][0]].after(section);}
+  screens[id]=section;
 }
 function caption(text){
   const el=document.createElement('p');el.className='review-count';el.textContent=text;return el;
@@ -127,6 +130,10 @@ const fieldIntro=card();fieldIntro.innerHTML='<h2>Follow the excavations</h2><p>
 screens.explore.append(fieldIntro);
 const fieldHolder=document.createElement('div');screens.explore.append(fieldHolder);
 const chooseField=pager(fieldHolder,storyChapters,'Field stop');
+// Original containers now hold only obsolete 7-tab navigation chrome.
+// The historical sections have been MOVED, not copied, into the reader.
+originals.story.remove();
+originals.dossier.remove();
 const onSite=document.createElement('details');onSite.className='review-collapsible';
 onSite.innerHTML='<summary>What to look for and optional route directions</summary>';
 onSite.append(originals.site);screens.explore.append(onSite);
