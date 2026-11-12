@@ -1,0 +1,9 @@
+{
+  "run_id": "20261112T2058Z-auto9-r4d86b",
+  "runtime": "scheduled",
+  "read_path": "research/state.json",
+  "read_blob_sha": "501b8084c0be41d03328b32d7400bbde2fd78640",
+  "branch": "research-persistence",
+  "storage_role": "staging",
+  "canonical_promoted": false
+}
