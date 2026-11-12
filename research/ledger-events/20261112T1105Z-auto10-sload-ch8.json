@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "run_id": "20261112T1105Z-auto10-sload-ch8",
+  "record_type": "staged_research_batch",
+  "baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "batch_path": "research/batches/20261112T1105Z-auto10-sload-ch8.json",
+  "checkpoint_path": "research/checkpoints/20261112T1105Z-auto10-sload-ch8.json",
+  "provisional": true,
+  "canonical_records_modified": 0,
+  "previous_stage_run": "20261112T100346Z-auto09",
+  "probe_path": "research/automation-probes/20261112T105730Z-auto10.json",
+  "write_model": "sequential append-only create_file; not atomic across multiple files and not a compare-and-swap ledger"
+}
