@@ -57,6 +57,9 @@ jobs:
           # Do not publish the older static preview snapshot as the review site.
           python scripts/build_templo_review.py
           python scripts/test_templo_review.py
+          # Generate the other three reader layouts from complete preserved dossiers.
+          python scripts/build_centro_reviews.py
+          python scripts/test_centro_reviews.py
           mkdir -p site/preview/teotihuacan
           cp preview/teotihuacan/index.html site/preview/teotihuacan/index.html
           mkdir -p site/preview/atlas
@@ -131,6 +134,9 @@ jobs:
               'poi/zocalo/': ('What to look for on site','The day the poor burned the palace','../../feedback/annotate.js'),
               'poi/metropolitan-cathedral/': ('What to look for on site','The floor isn','../../feedback/annotate.js'),
               'poi/national-palace/': ('What to look for on site','Rivera','../../feedback/annotate.js'),
+              'poi/zocalo/review/': ('id="centro-review-script"','id="centro-review-styles"','src="../../../feedback/annotate.js"','What to look for on site','The day the poor burned the palace'),
+              'poi/metropolitan-cathedral/review/': ('id="centro-review-script"','id="centro-review-styles"','src="../../../feedback/annotate.js"','What to look for on site','The floor isn'),
+              'poi/national-palace/review/': ('id="centro-review-script"','id="centro-review-styles"','src="../../../feedback/annotate.js"','What to look for on site','Rivera'),
               'walks/historic-center/': ('From Tenochtitlan to Mexico City','data-mode="outdoor"','data-choose-thread="conquest"','stop-national-palace','../../feedback/annotate.js'),
               'data/historic-center-walk.json': ('"historic-center-walk-1"','"original_source_ids"'),
               'feedback/annotate.js': ('function allNotes()', 'Comment on this passage', 'feedback-open'),
