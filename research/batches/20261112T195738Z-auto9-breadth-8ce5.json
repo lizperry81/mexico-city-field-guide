@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "run_id": "20261112T195738Z-auto9-breadth-8ce5",
+  "storage_role": "staging_not_canonical",
+  "baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "previous_archive": "CDMX_STAGE_20261112T1859Z_1692_RIOT_COLONIAL_URBAN_GOVERNMENT.zip",
+  "previous_archive_sha256": "26cd110c5cf213aa431d3092b6810ff2764090a82d1e9a07817367da47c30ffd",
+  "new_findings": [
+    {
+      "id": "stg-20261112T195738Z-auto9-breadth-8ce5-f01",
+      "assertion": "24 Oct 1985 First Forum and Coordinadora Única de Damnificados formed at Auditorio 5 de Mayo in Nonoalco-Tlatelolco",
+      "source_ids": [
+        "stg-src-massolo-1986"
+      ],
+      "locator": "p.195,204",
+      "poi_ids": [
+        "poi-tlatelolco"
+      ],
+      "status": "evidence-examined_candidate",
+      "independent_corroboration": "not_awarded",
+      "publication_ready": false
+    },
+    {
+      "id": "stg-20261112T195738Z-auto9-breadth-8ce5-f02",
+      "assertion": "26 Oct 1985 petition says representatives of 28 neighborhood and earthquake-victim organizations met in Tlatelolco",
+      "source_ids": [
+        "stg-src-cud-petition-1985"
+      ],
+      "locator": "p.293",
+      "poi_ids": [
+        "poi-tlatelolco"
+      ],
+      "status": "evidence-examined_candidate",
+      "independent_corroboration": "not_awarded",
+      "publication_ready": false
+    },
+    {
+      "id": "stg-20261112T195738Z-auto9-breadth-8ce5-f03",
+      "assertion": "27 Sep 1985 residents of Morelos, Tepito, Guerrero, Valle Gómez, Tlatelolco and Multifamiliar Juárez attempted to reach president at Los Pinos about emergency response and eviction fears (as reported by Massolo)",
+      "source_ids": [
+        "stg-src-massolo-1986"
+      ],
+      "locator": "p.196 citing La Jornada 28 Sep (not inspected)",
+      "poi_ids": [
+        "poi-tlatelolco",
+        "poi-centro-historico"
+      ],
+      "status": "evidence-examined_candidate",
+      "independent_corroboration": "not_awarded",
+      "publication_ready": false
+    },
+    {
+      "id": "stg-20261112T195738Z-auto9-breadth-8ce5-f04",
+      "assertion": "Sindicato Nacional de Costureras 19 de Septiembre organized on 20 Oct 1985 on San Antonio Abad, per Massolo",
+      "source_ids": [
+        "stg-src-massolo-1986"
+      ],
+      "locator": "p.196",
+      "poi_ids": [
+        "poi-san-antonio-abad"
+      ],
+      "status": "evidence-examined_candidate",
+      "independent_corroboration": "not_awarded",
+      "publication_ready": false
+    },
+    {
+      "id": "stg-20261112T195738Z-auto9-breadth-8ce5-f05",
+      "assertion": "11 Oct 1985 decree expropriated designated damaged properties in Cuauhtémoc, Venustiano Carranza, Benito Juárez and Gustavo A. Madero (decree original not inspected)",
+      "source_ids": [
+        "stg-src-massolo-1986",
+        "stg-src-gonzalez-1985"
+      ],
+      "locator": "p.201; p.14 n.3",
+      "poi_ids": [
+        "poi-centro-historico"
+      ],
+      "status": "evidence-examined_candidate",
+      "independent_corroboration": "not_awarded",
+      "publication_ready": false
+    },
+    {
+      "id": "stg-20261112T195738Z-auto9-breadth-8ce5-f06",
+      "assertion": "14 Oct 1985 emergence of Renovación Habitacional Popular governmental body and program (formal relationship still requires decree)",
+      "source_ids": [
+        "stg-src-massolo-1986",
+        "stg-src-gonzalez-1985"
+      ],
+      "locator": "p.203; p.14 n.3",
+      "poi_ids": [
+        "poi-centro-historico"
+      ],
+      "status": "evidence-examined_candidate",
+      "independent_corroboration": "not_awarded",
+      "publication_ready": false
+    },
+    {
+      "id": "stg-20261112T195738Z-auto9-breadth-8ce5-f07",
+      "assertion": "CUD demanded social housing, residence rights, collective affordable loans, rent control and halt to evictions; demands not achieved outcomes",
+      "source_ids": [
+        "stg-src-cud-petition-1985"
+      ],
+      "locator": "p.294 section II 1-8",
+      "poi_ids": [
+        "poi-tlatelolco",
+        "poi-colonia-roma"
+      ],
+      "status": "evidence-examined_candidate",
+      "independent_corroboration": "not_awarded",
+      "publication_ready": false
+    },
+    {
+      "id": "stg-20261112T195738Z-auto9-breadth-8ce5-f08",
+      "assertion": "CUD requested independent and geotechnical structural assessments, including soil mechanics, geology, geophysics and construction elements",
+      "source_ids": [
+        "stg-src-cud-petition-1985"
+      ],
+      "locator": "p.294 section II 11-12",
+      "poi_ids": [
+        "poi-tlatelolco",
+        "poi-colonia-roma"
+      ],
+      "status": "evidence-examined_candidate",
+      "independent_corroboration": "not_awarded",
+      "publication_ready": false
+    },
+    {
+      "id": "stg-20261112T195738Z-auto9-breadth-8ce5-f09",
+      "assertion": "Colonia Roma's Unión de Vecinos y Damnificados 19 de Septiembre was established 5 Oct 1985 with claimed representation of 289 buildings, reported by Massolo",
+      "source_ids": [
+        "stg-src-massolo-1986"
+      ],
+      "locator": "p.224",
+      "poi_ids": [
+        "poi-colonia-roma"
+      ],
+      "status": "evidence-examined_candidate",
+      "independent_corroboration": "not_awarded",
+      "publication_ready": false
+    },
+    {
+      "id": "stg-20261112T195738Z-auto9-breadth-8ce5-f10",
+      "assertion": "Contemporary preliminary report counted 5,728 damaged properties of which 3,745 residential; 47% minor, 38% structural, 15% partial/total collapse, not final census",
+      "source_ids": [
+        "stg-src-gonzalez-1985"
+      ],
+      "locator": "p.14 paragraphs 1-3",
+      "poi_ids": [
+        "poi-centro-historico",
+        "poi-tlatelolco"
+      ],
+      "status": "evidence-examined_candidate",
+      "independent_corroboration": "not_awarded",
+      "publication_ready": false
+    },
+    {
+      "id": "stg-20261112T195738Z-auto9-breadth-8ce5-f11",
+      "assertion": "CUD demanded work cooperatives, unemployment insurance, reinstatement and sanctions for labor exploitation in the garment industry, not proof of enforcement",
+      "source_ids": [
+        "stg-src-cud-petition-1985"
+      ],
+      "locator": "p.295 section IV",
+      "poi_ids": [
+        "poi-san-antonio-abad"
+      ],
+      "status": "evidence-examined_candidate",
+      "independent_corroboration": "not_awarded",
+      "publication_ready": false
+    },
+    {
+      "id": "stg-20261112T195738Z-auto9-breadth-8ce5-f12",
+      "assertion": "CUD petition requested civic-leader protection against repression, local decision making and debt-service moratorium for reconstruction funding",
+      "source_ids": [
+        "stg-src-cud-petition-1985"
+      ],
+      "locator": "p.296 sections V,VII",
+      "poi_ids": [
+        "poi-tlatelolco",
+        "poi-zocalo"
+      ],
+      "status": "evidence-examined_candidate",
+      "independent_corroboration": "not_awarded",
+      "publication_ready": false
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "stg-src-cud-petition-1985",
+      "title": "Pliego de demandas presentado por la Coordinadora Única de Damnificados al presidente de la República",
+      "access": "printed pp.293-297 PDF; original 1985 petition reprinted 1986, screenshots pp.293-296",
+      "url": "https://revistamexicanadesociologia.unam.mx/index.php/rms/article/download/61590/54387/174372"
+    },
+    {
+      "id": "stg-src-massolo-1986",
+      "title": "Alejandra Massolo, ¡Que el gobierno entienda, lo primero es la vivienda!",
+      "access": "selected original article pp.195-204,223-225 (not whole article); screenshots pp.196,197,204,224",
+      "url": "https://revistamexicanadesociologia.unam.mx/index.php/rms/article/download/61585/54382/174362"
+    },
+    {
+      "id": "stg-src-gonzalez-1985",
+      "title": "Gloria González Salazar, Sismos, vivienda y reordenación urbana en el Distrito Federal",
+      "access": "original article printed pp.14-16; all three page images inspected",
+      "url": "https://ru.iiec.unam.mx/1508/1/num19-20-articulo3_Gonralez.pdf"
+    }
+  ],
+  "canonical_records_changed": 0,
+  "canonical_counts": {
+    "sources": 616,
+    "claims": 422,
+    "claim_sources": 403,
+    "canonical_findings": 68,
+    "canonical_source_inspections": 9
+  },
+  "new_source_records_proposed": 3,
+  "duplicate_review": [
+    "v74-city-claim-014",
+    "v74-city-claim-016",
+    "v74-city-claim-017",
+    "v74-city-claim-018",
+    "v78-claim-006",
+    "v90-claim-012",
+    "v91-claim-018"
+  ],
+  "continuation": "Inspect October 11 and 14 1985 original Diario Oficial texts; reconcile prior staging and legacy claims; progress into 1968 Tlatelolco source-first research",
+  "limitation": "No Library canonical path visible in this scheduled execution; original decrees, union minutes and signed CUD petition not examined; archival ZIP separately downloadable",
+  "recovery_archive_sha256": "1c15f90bc638fff690ffb0005271eb7fe218f5f90ea76474deb0f4405fb10adf"
+}
