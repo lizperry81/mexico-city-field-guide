@@ -49,8 +49,30 @@ openBtn.onclick=()=>open();$('feedback-close').onclick=()=>overlay.classList.rem
 $('feedback-save').onclick=()=>{const comment=$('feedback-text').value.trim();if(!comment){$('feedback-message').textContent='Please write a comment first.';return}notes.push({page:PAGE,section:overlay.dataset.section,context,comment,date:new Date().toISOString()});persist();$('feedback-text').value=''};
 $('feedback-copy').onclick=async()=>{try{await navigator.clipboard.writeText(report());$('feedback-message').textContent='Report copied. Paste it into our ChatGPT conversation.'}catch(e){$('feedback-message').textContent='Copy unavailable; try Share all comments.'}};
 $('feedback-share').onclick=async()=>{const text=report();if(!allNotes().length){$('feedback-message').textContent='Save at least one comment first.';return}if(navigator.share){try{await navigator.share({title:'Templo Mayor guide feedback',text});return}catch(e){if(e.name==='AbortError')return}}try{await navigator.clipboard.writeText(text);$('feedback-message').textContent='Report copied. Paste it into ChatGPT.'}catch(e){$('feedback-message').textContent='Select and copy the report using your browser.';const ta=$('feedback-text');ta.value=text;ta.select()}};
+// Review screens move historical sections and can create new reading passages later.
+// Observe additions so paragraph-specific comments work in Discover / Explore / Plan,
+// including chapters reached by "Next", without duplicate annotation controls.
 const root=document.querySelector('main')||document.body;
-let section='Templo Mayor';
-root.querySelectorAll('h1,h2,h3,h4,p').forEach((el,i)=>{if(el.closest('nav,header,footer,#feedback-overlay')||el.textContent.trim().length<55)return;if(el.matches('h1,h2,h3,h4'))section=el.textContent.trim();const btn=document.createElement('button');btn.type='button';btn.className='cdmx-comment-btn';btn.textContent='✎ Comment on this passage';const snippet=el.textContent.trim().slice(0,480);const heading=el.closest('section')?.querySelector('h2,h3')?.textContent?.trim()||section;btn.onclick=()=>open(snippet,heading);el.insertAdjacentElement('afterend',btn)});
+function annotatePassages(){
+  root.querySelectorAll('h1,h2,h3,h4,p').forEach(el=>{
+    if(el.dataset.cdmxCommentBound==='1' || el.closest('nav,header,footer,#feedback-overlay,.cdmx-no-comment'))return;
+    if(el.textContent.trim().length<55)return;
+    el.dataset.cdmxCommentBound='1';
+    const btn=document.createElement('button');btn.type='button';btn.className='cdmx-comment-btn';
+    btn.textContent='✎ Comment on this passage';
+    const heading=el.closest('section')?.querySelector('h2,h3')?.textContent?.trim()||
+                  el.closest('article')?.querySelector('h2,h3')?.textContent?.trim()||
+                  document.querySelector('h1')?.textContent?.trim()||'Guide';
+    btn.onclick=()=>open(el.textContent.trim().slice(0,480),heading);
+    el.insertAdjacentElement('afterend',btn);
+  });
+}
+annotatePassages();
+let commentScanQueued=false;
+new MutationObserver(()=>{
+  if(commentScanQueued)return;
+  commentScanQueued=true;
+  queueMicrotask(()=>{commentScanQueued=false;annotatePassages()});
+}).observe(root,{childList:true,subtree:true});
 draw();
 })();
