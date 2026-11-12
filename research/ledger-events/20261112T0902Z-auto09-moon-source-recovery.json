@@ -1,0 +1,13 @@
+{
+  "event_id": "20261112T0902Z-auto09-moon-source-recovery",
+  "event_type": "append_only_staged_research",
+  "baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "batch_path": "research/batches/20261112T0902Z-auto09-moon-source-recovery.json",
+  "checkpoint_path": "research/checkpoints/20261112T0902Z-auto09-moon-source-recovery.json",
+  "finding_candidates": 4,
+  "legacy_normalization_candidates": 1,
+  "canonical_source_repairs_proposed": 20,
+  "canonical_repairs_applied": 0,
+  "previous_probe_commit": "a12b0ea3b7e981004cdc361c437f4e840379d58e",
+  "not_authoritative": true
+}
