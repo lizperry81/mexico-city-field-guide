@@ -8,6 +8,9 @@ def read(name):
 walk=read("research/templo_walk_v63.json")
 pilot=read("research/templo_mayor_pilot.json")
 discovery=read("research/templo_verified_discoveries_v68.json")
+centro=read("centro.json")
+site_record=centro["stops"]["templo"]
+museum=next(t for t in centro.get("tours",[]) if t.get("id")=="templomuseo")
 
 def e(x):return html.escape(str(x or ""),quote=True)
 chapters=walk.get("chapters",[])
@@ -35,6 +38,68 @@ sections="".join(chapter(c,i) for i,c in enumerate(chapters,1))
 claims="".join(claim(c) for c in pilot["claims"])
 sources="".join(source(d) for d in discovery)
 toc="".join(f'<a href="#walk-{i}">{i}. {e(c.get("title","Field stop"))}</a>' for i,c in enumerate(chapters,1))
+
+def cited(p):
+    """Render a quotation-safe, provenance-preserving prior guide note."""
+    if isinstance(p,list):
+        body=p[0] if p else ""
+        refs=p[1] if len(p)>1 and isinstance(p[1],list) else []
+    else:
+        body,refs=p,[]
+    return f'<p class="prose">{e(body)}</p><p class="muted"><small>Existing guide sources: {e(", ".join(refs) or "not recorded")}; independently recheck before publication.</small></p>'
+
+def detailed_blocks(blocks):
+    out=[]
+    for block in blocks:
+        if "p" in block:
+            out.append(cited(block["p"]))
+        elif "h" in block:
+            out.append(f'<h3>{e(block["h"])}</h3>')
+        elif "obj" in block:
+            o=block["obj"]
+            out.append(f'<div class="card"><h3>{e(o.get("name","Museum object"))}</h3>')
+            if o.get("p"):out.append(cited(o["p"]))
+            for look in o.get("look",[]):out.append(f'<div class="aside"><b>Look for</b>{cited(look)}</div>')
+            out.append('</div>')
+        elif "where" in block:
+            out.append(f'<p class="eyebrow">{e(block["where"])}</p>')
+        elif "take" in block:
+            out.append(f'<div class="aside"><b>Interpretation prompt</b><p>{e(block["take"])}</p></div>')
+        elif "fork" in block:
+            fork=block["fork"]
+            out.append(f'<details><summary>{e(fork.get("q","Choose a route"))}</summary><p>{e("; ".join(x[1] for x in fork.get("opts",[]) if len(x)>1))}</p></details>')
+    return "".join(out)
+
+def historical_dossier():
+    parts=['<section class="section"><h2>History behind the excavated site</h2><p>Recovered from the previous full Centro guide. Source IDs are retained, but not automatically considered verified.</p></section>']
+    for b in site_record.get("read",[]):
+        if "pt" not in b:continue
+        pt=b["pt"]
+        parts.append(f'<section class="section"><h2>{e(pt.get("h","Historical question"))}</h2>')
+        parts.append(detailed_blocks(pt.get("blocks",[])))
+        for more in pt.get("more",[]):
+            parts.append(f'<details><summary>{e(more.get("label","Explore further"))}</summary>{detailed_blocks(more.get("blocks",[]))}</details>')
+        parts.append('</section>')
+    return "".join(parts)
+
+def route_guide():
+    parts=['<section class="section"><h2>What to look for during the visit</h2><p>Use these observations alongside the eight evidence-led field stops. Routes and displays can change.</p>']
+    parts.extend(f'<div class="aside">{e(x)}</div>' for x in site_record.get("find",[]))
+    parts.append('</section>')
+    for b in site_record.get("read",[]):
+        if "steps" not in b:continue
+        st=b["steps"]
+        if not st.get("title","").startswith(("Part 1:","Part 2:")):continue
+        parts.append(f'<section class="section"><h2>{e(st["title"])}</h2><p class="muted">{e(st.get("time",""))}</p><p>{e(st.get("intro",""))}</p>')
+        for item in st.get("items",[]):
+            parts.append('<div class="card">'+cited(item)+'</div>')
+        parts.append('</section>')
+    return "".join(parts)
+
+dossier_sections=historical_dossier()
+route_sections=route_guide()
+museum_sections='<section class="section"><h2>Museum of the Templo Mayor</h2><p>'+e(museum.get("summary",""))+'</p><p class="muted">Historic exhibit descriptions from the recovered guide; gallery arrangements and access may change.</p></section>'+detailed_blocks(museum.get("blocks",[]))+'<section class="section"><h2>Excavation and rediscovery</h2>'+detailed_blocks(museum.get("background",[]))+'</section>'
+
 page="""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Templo Mayor | Ciudad Viva Field Guide</title>
 <style>
 :root{--ink:#142531;--muted:#526774;--jade:#0d746e;--paper:#fff;--line:#dce5e8}
@@ -44,8 +109,11 @@ page="""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="v
 <main class="shell"><div class="eyebrow">POINT OF INTEREST · HISTORIC CENTER</div><h1>Templo Mayor</h1><p class="lead">Explore the excavated ceremonial center of Tenochtitlan through historical interpretation, archaeological evidence, and a field sequence built from the project's earlier research—not a new short-form summary.</p>
 <div class="meta"><span>Mexica</span><span>Archaeology</span><span>Construction phases</span><span>Conquest</span><span>Centro Histórico</span></div>
 <div class="notice"><b>Editorial status:</b> Research-stage guide. Claims with incomplete page verification are labeled. Check official sources for current opening hours and accessibility; no live availability is claimed.</div>
-<div class="tabs" role="tablist" aria-label="Point of interest sections"><button class="active" data-panel="story">Field experience</button><button data-panel="evidence">Claims & evidence</button><button data-panel="sources">Sources</button><button data-panel="visit">Visit & connections</button></div>
+<div class="tabs" role="tablist" aria-label="Point of interest sections"><button class="active" data-panel="story">Field experience</button><button data-panel="site">Site guide</button><button data-panel="dossier">Historical dossier</button><button data-panel="museum">Museum</button><button data-panel="evidence">Claims & evidence</button><button data-panel="sources">Sources</button><button data-panel="visit">Visit & connections</button></div>
 <div id="story" class="panel active"><div class="layout"><article>""" + sections + """</article><aside class="side"><b>Explore the field sequence</b>""" + toc + """</aside></div></div>
+<div id="site" class="panel">""" + route_sections + """</div>
+<div id="dossier" class="panel">""" + dossier_sections + """</div>
+<div id="museum" class="panel">""" + museum_sections + """</div>
 <div id="evidence" class="panel"><section class="section"><h2>Historical claims and review status</h2><p>These """ + str(len(pilot["claims"])) + """ research claims are recovered from the Templo Mayor pilot, with their original status and source identifiers. They are not automatically treated as verified conclusions.</p><input id="claimsearch" placeholder="Filter claims by topic or wording" aria-label="Search historical claims"><div id="claimlist">""" + claims + """</div></section></div>
 <div id="sources" class="panel"><section class="section"><h2>Excavation and scholarly source records</h2><p>Research archive records include original citations, links, and verification notes. A publisher page being checked does not mean a full publication was read.</p>""" + sources + """</section></div>
 <div id="visit" class="panel"><section class="section"><h2>Use this guide on site</h2><p>Begin with the excavation's surviving structures, follow the field stops in order where accessible, then use the museum to connect objects to excavation contexts. Exact route and object visibility depend on current site access.</p><div class="card"><h3>Official access and visitor information</h3><p><a href="https://www.inah.gob.mx/zonas/zona-arqueologica-templo-mayor" target="_blank" rel="noopener">INAH Templo Mayor archaeological zone ↗</a></p><p>Hours, admission, and accessibility require a current official check.</p></div><h3>Related historical places</h3><p>Historic Center · Zócalo · Metropolitan Cathedral · National Palace · Tlatelolco. These relationships will support the future walk planner.</p><p><a href="../../">Return to the full Field Guide</a></p></section></div>
@@ -53,5 +121,7 @@ page="""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="v
 out=root/"poi"/"templo-mayor"/"index.html"
 out.parent.mkdir(parents=True,exist_ok=True)
 out.write_text(page,encoding="utf-8")
+planning={"id":"templo","name":site_record["name"],"coordinates":{"lat":site_record["ll"][0],"lon":site_record["ll"][1]},"duration_minutes_estimate":site_record.get("mins"),"categories":site_record.get("types",[]),"related_stop_ids":[site_record.get("walkon",{}).get("to")],"research_status":"review_in_progress","opening_hours_status":"not_live_verified","source":"existing Centro POI data from preserved application"}
+(out.parent/"poi.json").write_text(json.dumps(planning,ensure_ascii=False,indent=2),encoding="utf-8")
 assert len(page)>10000
 print(f"Built {out}: {len(chapters)} field chapters, {len(pilot['claims'])} research claims, {len(discovery)} scholarly records")
