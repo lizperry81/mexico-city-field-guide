@@ -1,0 +1,144 @@
+{
+  "scope": "Evidence-led Templo Mayor walking and museum pilot",
+  "disclaimer": "Source-backed institutional interpretation; not a comprehensive scholarly audit. Route access and object visibility unverified.",
+  "sources": [
+    {
+      "id": "INAH-ZONE",
+      "url": "https://www.inah.gob.mx/zonas/zona-arqueologica-templo-mayor"
+    },
+    {
+      "id": "INAH-ROUTE",
+      "url": "https://www.templomayor.inah.gob.mx/images/home/tripticos/zona_arqueologica.pdf"
+    },
+    {
+      "id": "INAH-MAP",
+      "url": "https://lugares.inah.gob.mx/sites/default/files/zonasf/templo_mayor_cdmx.pdf"
+    },
+    {
+      "id": "INAH-MUSEUM",
+      "url": "https://www.templomayor.inah.gob.mx/historia/acerca-del-museo"
+    },
+    {
+      "id": "INAH-ROOMS",
+      "url": "https://www.difusion.inah.gob.mx/images/guias/120_museo_de_templo_mayor.pdf"
+    },
+    {
+      "id": "INAH-EXHIBITS",
+      "url": "https://lugares.inah.gob.mx/es/node/4236"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "tm-guide-01",
+      "title": "Orientation: what survives",
+      "core_text": "The archaeological zone contains remains of the principal double temple and adjacent buildings of the Mexica sacred precinct. The full final-period pyramid does not survive intact: the site presents exposed phases and nearby structures, not a complete standing pyramid.",
+      "field_instruction": "Use the official archaeological site map to distinguish the Templo Mayor from the Casa de las Águilas, the Templo Rojo and other structures. Do not assume every exposed wall belonged to the main pyramid.",
+      "deep_dive_question": "How does the map distinguish the main temple from other buildings?",
+      "source_ids": [
+        "INAH-ZONE",
+        "INAH-MAP"
+      ],
+      "verification": "institutional_text_checked_2026-11-09",
+      "field_verified": false,
+      "expert_reviewed": false
+    },
+    {
+      "id": "tm-guide-02",
+      "title": "How construction stages work",
+      "core_text": "The Mexica enlarged the principal temple by building new masonry around earlier structures. INAH describes seven major construction stages; partial enlargements are also distinguished. These labels describe archaeological sequences, not seven entirely separate temples standing side by side.",
+      "field_instruction": "Compare the labeled Stage II, III and IVb areas on the INAH visitor map. Look for stairways and architectural edges assigned to different stages; the map, not stone color alone, establishes their labels.",
+      "deep_dive_question": "What would archaeologists need besides appearance to date a wall?",
+      "source_ids": [
+        "INAH-ROUTE",
+        "INAH-MAP"
+      ],
+      "verification": "institutional_text_checked_2026-11-09",
+      "field_verified": false,
+      "expert_reviewed": false
+    },
+    {
+      "id": "tm-guide-03",
+      "title": "Stage IVb: the twin stairways",
+      "core_text": "INAH attributes Stage IVb to the reign of Axayácatl (1469–1481). The official visitor guide identifies four steps leading to the platform and a double staircase toward the former upper shrines. The southern side is associated with Huitzilopochtli; the northern side with Tláloc.",
+      "field_instruction": "Find Stage IVb on the official plan. On the southern side, identify serpent-head sculpture locations and the Coyolxauhqui position; on the northern side, locate the small frog altar. Some objects or positions may be represented by replicas or be inaccessible.",
+      "deep_dive_question": "Which features are physically present, and which are indicated by signs or replicas?",
+      "source_ids": [
+        "INAH-ROUTE",
+        "INAH-MAP"
+      ],
+      "verification": "institutional_text_checked_2026-11-09",
+      "field_verified": false,
+      "expert_reviewed": false
+    },
+    {
+      "id": "tm-guide-04",
+      "title": "Stage III: sculptures and interpretation",
+      "core_text": "INAH assigns Stage III to the reign of Itzcóatl (1427–1440). Its visitor guide identifies figures beside the southern stairway that may represent the Centzonhuitznahua. That identification is an archaeological interpretation, not a direct inscription naming the figures.",
+      "field_instruction": "Locate the Stage III southern staircase on the map and compare the placement of the sculptures with the explanation. Look for the perforations described in the official guide, if visible from the permitted route.",
+      "deep_dive_question": "Why is the interpretation of these figures qualified as probable?",
+      "source_ids": [
+        "INAH-ROUTE"
+      ],
+      "verification": "institutional_text_checked_2026-11-09",
+      "field_verified": false,
+      "expert_reviewed": false
+    },
+    {
+      "id": "tm-guide-05",
+      "title": "Two shrines, different associations",
+      "core_text": "The northern shrine was dedicated to Tláloc, associated with rain and agriculture; the southern shrine to Huitzilopochtli, the Mexica patron deity associated with war and solar power. The museum uses the same north–south division to organize its eight galleries.",
+      "field_instruction": "Use the site map to establish north and south. Then compare that arrangement with the museum guide: the division is a deliberate interpretive choice, not simply a modern exhibit sequence.",
+      "deep_dive_question": "What kinds of evidence link a shrine to a deity?",
+      "source_ids": [
+        "INAH-MUSEUM",
+        "INAH-ZONE"
+      ],
+      "verification": "institutional_text_checked_2026-11-09",
+      "field_verified": false,
+      "expert_reviewed": false
+    },
+    {
+      "id": "tm-guide-06",
+      "title": "Coyolxauhqui: sculpture and excavation",
+      "core_text": "The Coyolxauhqui stone relief depicts a dismembered female figure and is associated with a Mexica narrative of Huitzilopochtli and Coyolxauhqui. INAH’s museum history dates its accidental discovery to the early hours of 21 February 1978; some published accounts give other dates, so the exact discovery-day discrepancy should remain flagged in the research audit. The original monolith is displayed in the museum.",
+      "field_instruction": "Use the museum map to locate the Coyolxauhqui monolith. Distinguish the original museum display from any replica or marker near the archaeological staircase.",
+      "deep_dive_question": "How does the sculpture’s archaeological position affect its interpretation?",
+      "source_ids": [
+        "INAH-MUSEUM",
+        "INAH-ROOMS",
+        "INAH-ZONE"
+      ],
+      "verification": "institutional_text_checked_2026-11-09",
+      "field_verified": false,
+      "expert_reviewed": false
+    },
+    {
+      "id": "tm-guide-07",
+      "title": "Offerings: what objects can establish",
+      "core_text": "Excavated offerings include objects from different environments and regions, including marine materials, greenstone, ceramics and animal remains. Archaeologists interpret them using their findspots, associations and deposits—not simply the intrinsic value of individual objects. The museum’s ritual, tribute and ecology galleries provide different contexts for these finds.",
+      "field_instruction": "In the museum, compare the explanations in the Ritual and Sacrifice, Tribute and Commerce, and Flora and Fauna rooms. Note which objects are identified as excavated offerings and which are interpretive models.",
+      "deep_dive_question": "Can an object’s place of origin prove whether it arrived through tribute or trade?",
+      "source_ids": [
+        "INAH-ROOMS",
+        "INAH-EXHIBITS"
+      ],
+      "verification": "institutional_text_checked_2026-11-09",
+      "field_verified": false,
+      "expert_reviewed": false
+    },
+    {
+      "id": "tm-guide-08",
+      "title": "The modern excavation and museum",
+      "core_text": "The Proyecto Templo Mayor began after the 1978 discovery and excavated the site during its first major season from 1978 to 1982 under Eduardo Matos Moctezuma. The museum opened on 12 October 1987. Its eight galleries present archaeological research, ritual, tribute, deities, ecology, agriculture and colonial transformation.",
+      "field_instruction": "Use the museum’s official floor plan to choose a route: Room 1 for excavation history, Rooms 4–5 for the two principal deities, and Room 8 for later transformations. Confirm which galleries are open on the day.",
+      "deep_dive_question": "How did the archaeological discoveries change what could be exhibited?",
+      "source_ids": [
+        "INAH-MUSEUM",
+        "INAH-ROOMS"
+      ],
+      "verification": "institutional_text_checked_2026-11-09",
+      "field_verified": false,
+      "expert_reviewed": false
+    }
+  ]
+}

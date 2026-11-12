@@ -1,0 +1,332 @@
+{
+  "pilot": "Templo Mayor",
+  "scope": "integrated research and usability pilot, not complete scholarly validation",
+  "last_built": "2026-11-09",
+  "claim_count": 21,
+  "claims": [
+    {
+      "id": "v57-ptm-1978",
+      "statement": "The February 1978 discovery of the Coyolxauhqui monolith prompted the Proyecto Templo Mayor excavations.",
+      "source_ids": [
+        "v57-ptm-history"
+      ],
+      "source_locator": "",
+      "status": "awaiting_primary_text_check",
+      "expert_reviewed": false,
+      "page_verified": false,
+      "original_collection": "claim_audit_v57",
+      "editorially_approved": false
+    },
+    {
+      "id": "v57-ptm-founder",
+      "statement": "Eduardo Matos Moctezuma founded the Proyecto Templo Mayor.",
+      "source_ids": [
+        "v57-ptm-history"
+      ],
+      "source_locator": "",
+      "status": "awaiting_primary_text_check",
+      "expert_reviewed": false,
+      "page_verified": false,
+      "original_collection": "claim_audit_v57",
+      "editorially_approved": false
+    },
+    {
+      "id": "v57-ptm-structure",
+      "statement": "The project excavated the main Mexica temple and other structures of the sacred precinct.",
+      "source_ids": [
+        "v57-ptm-history"
+      ],
+      "source_locator": "",
+      "status": "awaiting_primary_text_check",
+      "expert_reviewed": false,
+      "page_verified": false,
+      "original_collection": "claim_audit_v57",
+      "editorially_approved": false
+    },
+    {
+      "id": "v57-ptm-nested",
+      "statement": "Archaeological work has documented enlargements of the Templo Mayor.",
+      "source_ids": [
+        "v57-ptm-history"
+      ],
+      "source_locator": "",
+      "status": "awaiting_primary_text_check",
+      "expert_reviewed": false,
+      "page_verified": false,
+      "original_collection": "claim_audit_v57",
+      "editorially_approved": false
+    },
+    {
+      "id": "v57-ptm-deities",
+      "statement": "The Templo Mayor was dedicated to Huitzilopochtli and Tláloc.",
+      "source_ids": [
+        "v57-inah-ptm-2025"
+      ],
+      "source_locator": "",
+      "status": "awaiting_primary_text_check",
+      "expert_reviewed": false,
+      "page_verified": false,
+      "original_collection": "claim_audit_v57",
+      "editorially_approved": false
+    },
+    {
+      "id": "v57-ptm-topography",
+      "statement": "The 2025 INAH reconstruction exhibition used topographic surveys of excavated architectural remains.",
+      "source_ids": [
+        "v57-inah-ptm-2025"
+      ],
+      "source_locator": "",
+      "status": "awaiting_primary_text_check",
+      "expert_reviewed": false,
+      "page_verified": false,
+      "original_collection": "claim_audit_v57",
+      "editorially_approved": false
+    },
+    {
+      "id": "v57-ptm-visibility",
+      "statement": "Every construction stage can be identified and dated by a visitor from exposed stone color alone.",
+      "source_ids": [],
+      "source_locator": "",
+      "status": "awaiting_primary_text_check",
+      "expert_reviewed": false,
+      "page_verified": false,
+      "original_collection": "claim_audit_v57",
+      "editorially_approved": false
+    },
+    {
+      "id": "v57-ptm-output",
+      "statement": "An INAH October 2024 report stated that the project had produced more than 1,300 academic publications and 118 theses.",
+      "source_ids": [
+        "v57-inah-ptm-outputs"
+      ],
+      "source_locator": "",
+      "status": "awaiting_primary_text_check",
+      "expert_reviewed": false,
+      "page_verified": false,
+      "original_collection": "claim_audit_v57",
+      "editorially_approved": false
+    },
+    {
+      "id": "v58-seven-stages",
+      "statement": "The Templo Mayor has seven identified major construction stages, with additional partial enlargements.",
+      "source_ids": [
+        "v58-inah-guide",
+        "v58-inah-phases"
+      ],
+      "source_locator": "INAH miniguía: construction stages section",
+      "status": "awaiting_primary_text_check",
+      "expert_reviewed": false,
+      "page_verified": false,
+      "original_collection": "claim_audit_v58",
+      "editorially_approved": false
+    },
+    {
+      "id": "v58-nested",
+      "statement": "Successive enlargements covered earlier temple structures, producing nested archaeological building phases.",
+      "source_ids": [
+        "v58-inah-phases",
+        "v58-inah-guide"
+      ],
+      "source_locator": "INAH stages leaflet: Etapas Constructivas",
+      "status": "awaiting_primary_text_check",
+      "expert_reviewed": false,
+      "page_verified": false,
+      "original_collection": "claim_audit_v58",
+      "editorially_approved": false
+    },
+    {
+      "id": "v58-dual",
+      "statement": "The Templo Mayor had twin upper shrines and a double stairway, a form retained across enlargements.",
+      "source_ids": [
+        "v58-inah-guide",
+        "v58-inah-phases"
+      ],
+      "source_locator": "INAH miniguía: building description",
+      "status": "awaiting_primary_text_check",
+      "expert_reviewed": false,
+      "page_verified": false,
+      "original_collection": "claim_audit_v58",
+      "editorially_approved": false
+    },
+    {
+      "id": "v58-1978",
+      "statement": "Workers discovered the Coyolxauhqui monolith on 21 February 1978, initiating archaeological rescue and the Proyecto Templo Mayor.",
+      "source_ids": [
+        "v57-ptm-history"
+      ],
+      "source_locator": "INAH Proyecto Templo Mayor: opening paragraph",
+      "status": "awaiting_primary_text_check",
+      "expert_reviewed": false,
+      "page_verified": false,
+      "original_collection": "claim_audit_v58",
+      "editorially_approved": false
+    },
+    {
+      "id": "v58-urban1991",
+      "statement": "The Programa de Arqueología Urbana was created in 1991 to investigate the former sacred precinct and later urban layers.",
+      "source_ids": [
+        "v58-inah-urban"
+      ],
+      "source_locator": "INAH Programa de Arqueología Urbana: first paragraph",
+      "status": "awaiting_primary_text_check",
+      "expert_reviewed": false,
+      "page_verified": false,
+      "original_collection": "claim_audit_v58",
+      "editorially_approved": false
+    },
+    {
+      "id": "v58-gamio1913",
+      "statement": "Manuel Gamio excavated the southwest corner of the Templo Mayor in 1913.",
+      "source_ids": [
+        "v58-inah-urban"
+      ],
+      "source_locator": "INAH Programa de Arqueología Urbana: final paragraph",
+      "status": "awaiting_primary_text_check",
+      "expert_reviewed": false,
+      "page_verified": false,
+      "original_collection": "claim_audit_v58",
+      "editorially_approved": false
+    },
+    {
+      "id": "v58-calmecac",
+      "statement": "The urban archaeology program reports locating remains of the Calmécac in the historic center.",
+      "source_ids": [
+        "v58-inah-urban"
+      ],
+      "source_locator": "INAH Programa de Arqueología Urbana: second paragraph",
+      "status": "awaiting_primary_text_check",
+      "expert_reviewed": false,
+      "page_verified": false,
+      "original_collection": "claim_audit_v58",
+      "editorially_approved": false
+    },
+    {
+      "id": "v58-stage-dating-caution",
+      "statement": "A visitor cannot reliably date an exposed wall solely from its stone color or apparent age.",
+      "source_ids": [
+        "v58-inah-phases"
+      ],
+      "source_locator": "Editorial methodological caution, not a quotation",
+      "status": "awaiting_primary_text_check",
+      "expert_reviewed": false,
+      "page_verified": false,
+      "original_collection": "claim_audit_v58",
+      "editorially_approved": false
+    },
+    {
+      "id": "v59-urban-precinct",
+      "statement": "The Programa de Arqueología Urbana began in 1991 to investigate the former ceremonial precinct beneath the historic center.",
+      "source_ids": [
+        "v59-matos-urban-1992",
+        "v59-inah-research"
+      ],
+      "source_locator": "Matos 1992 abstract; INAH research overview",
+      "status": "awaiting_primary_text_check",
+      "expert_reviewed": false,
+      "page_verified": false,
+      "original_collection": "claim_audit_v59",
+      "editorially_approved": false
+    },
+    {
+      "id": "v59-east-boundary",
+      "statement": "Matos Moctezuma reported that excavation evidence suggested an eastern sacred-precinct boundary near Licenciado Verdad rather than the earlier proposed Correo Mayor/El Carmen alignment.",
+      "source_ids": [
+        "v59-matos-urban-1992"
+      ],
+      "source_locator": "Matos 1992 article abstract (provisional language preserved)",
+      "status": "awaiting_primary_text_check",
+      "expert_reviewed": false,
+      "page_verified": false,
+      "original_collection": "claim_audit_v59",
+      "editorially_approved": false
+    },
+    {
+      "id": "v59-discovery-date",
+      "statement": "INAH dates the discovery of the Coyolxauhqui monolith to February 21, 1978.",
+      "source_ids": [
+        "v59-inah-ptm"
+      ],
+      "source_locator": "INAH Proyecto Templo Mayor project-history paragraph 1",
+      "status": "awaiting_primary_text_check",
+      "expert_reviewed": false,
+      "page_verified": false,
+      "original_collection": "claim_audit_v59",
+      "editorially_approved": false
+    },
+    {
+      "id": "v59-research-scope",
+      "statement": "INAH identifies archaeological investigations at the Cathedral, north side of Palacio Nacional, and several nearby Centro Histórico addresses.",
+      "source_ids": [
+        "v59-inah-research"
+      ],
+      "source_locator": "INAH research program overview, Programa de Arqueología Urbana paragraph",
+      "status": "awaiting_primary_text_check",
+      "expert_reviewed": false,
+      "page_verified": false,
+      "original_collection": "claim_audit_v59",
+      "editorially_approved": false
+    },
+    {
+      "id": "v59-codex-scholarly",
+      "statement": "The scholarly edition of the Códice mexicanus contains dedicated chapters on its pre-Hispanic and colonial annals and on dating its production phases.",
+      "source_ids": [
+        "v59-codex-mexicanus"
+      ],
+      "source_locator": "UNAM edition table of contents, chapters III–V",
+      "status": "awaiting_primary_text_check",
+      "expert_reviewed": false,
+      "page_verified": false,
+      "original_collection": "claim_audit_v59",
+      "editorially_approved": false
+    }
+  ],
+  "features": [
+    {
+      "id": "tm-01",
+      "name": "Successive temple enlargements",
+      "visitor_instruction": "Find the official site diagram showing the successive construction stages. Compare the outlines and stairways of the nested phases; do not assign dates to an individual wall without its labeled stage.",
+      "explanation": "Archaeologists distinguish successive building campaigns through superimposed architecture, construction interfaces, and excavation context. The common seven-stage framework summarizes major phases, but the dating and identification of individual subphases require specific archaeological documentation.",
+      "claim_ids": [
+        "v58-seven-stages"
+      ],
+      "visual_needed": "Official labeled construction-stage diagram",
+      "access": "Museum or site admission may be required; sightline unverified"
+    },
+    {
+      "id": "tm-02",
+      "name": "Twin shrines and stairways",
+      "visitor_instruction": "Use the official site plan to locate the paired summit sanctuary arrangement and the stairways that approached it. Check what remains are actually visible from your position.",
+      "explanation": "The main temple was associated with Huitzilopochtli and Tlaloc. The arrangement and its interpretations must be documented using excavation publications, archaeological finds, and historical accounts rather than assuming every feature can be seen today.",
+      "claim_ids": [],
+      "visual_needed": "Plan of summit and labeled reconstructed elevation",
+      "access": "Visibility unverified"
+    },
+    {
+      "id": "tm-03",
+      "name": "Coyolxauhqui monolith discovery",
+      "visitor_instruction": "Locate the museum or site interpretation identifying the Coyolxauhqui monolith, then compare the dated discovery photograph with a modern museum image if licensing permits.",
+      "explanation": "The 1978 discovery became a pivotal event in the modern archaeological project. The discovery circumstances, iconographic interpretation, and chronology are separate claims and need separate evidence.",
+      "claim_ids": [],
+      "visual_needed": "Rights-cleared 1978 excavation photograph and object record",
+      "access": "Museum display and current access unverified"
+    },
+    {
+      "id": "tm-04",
+      "name": "Offerings and excavation context",
+      "visitor_instruction": "Find an object label that identifies an offering number and excavation context. Compare the object-level label with a published excavation report.",
+      "explanation": "An offering is not simply a collection of objects: its position, stratigraphy, association, and recorded deposition are central to interpretation.",
+      "claim_ids": [],
+      "visual_needed": "Published offering plan and catalog image",
+      "access": "Current display unverified"
+    }
+  ],
+  "release_gate": {
+    "source_metadata": "partially checked",
+    "exact_page_evidence": "incomplete",
+    "independent_corroboration": "incomplete",
+    "external_expert_review": "not performed",
+    "on_site_visibility": "not performed",
+    "photographic_rights": "not cleared",
+    "publication_approved": false
+  }
+}
