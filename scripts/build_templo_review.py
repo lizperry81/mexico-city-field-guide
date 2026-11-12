@@ -190,7 +190,7 @@ def build():
     assert page != base
     # This preview lives one directory deeper than the canonical POI.
     # Preserve the meaning of all original relative navigation and feedback links.
-    page = re.sub(r'(?P<attr>(?:href|src))="(?P<parents>(?:\\.\\./)+)',
+    page = re.sub(r'(?P<attr>(?:href|src))="(?P<parents>(?:\.\./)+)',
                   lambda m: m.group('attr') + '=\"../' + m.group('parents'), page)
     page = page.replace("</head>", STYLE + "</head>", 1)
     page = page.replace("</body>", JS + "</body>", 1)
