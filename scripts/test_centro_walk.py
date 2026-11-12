@@ -45,6 +45,9 @@ templo=(root/"poi"/"templo-mayor"/"index.html").read_text(encoding="utf-8")
 assert 'id="hash-to-panel-walk"' in templo
 assert 'id="dossier"' in templo
 assert 'data-panel="dossier"' in templo
+assert all('id="dossier-topic-'+str(i)+'"' in templo for i in range(1,7))
+assert '#dossier-topic-' in walk
+assert "id.indexOf('dossier-topic-')" in templo
 # Validate new standalone inline JavaScript syntax without requiring a browser.
 scripts=re.findall(r"<script[^>]*>(.*?)</script>",walk,flags=re.S)
 assert len(scripts)==1
