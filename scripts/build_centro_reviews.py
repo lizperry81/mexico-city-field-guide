@@ -110,6 +110,8 @@ function reader(host,items,kind){
     cards.forEach((frame,j)=>frame.hidden=j!==active);
     prev.disabled=active===0;next.disabled=active===items.length-1;
     if(selectMenu)selectMenu.value=String(active);
+    // Back from another connected POI returns to this exact chapter/observation.
+    if(scroll && items[active].id)window.history.replaceState(null,'','#'+encodeURIComponent(items[active].id));
     if(scroll)bar.scrollIntoView({block:'start',behavior:'auto'});
   }
   prev.onclick=()=>select(active-1,true);next.onclick=()=>select(active+1,true);
