@@ -6,6 +6,7 @@ This creates an alternate presentation of the actual current full historical pag
 Run after the historical POI, cross-links, and feedback script have been built.
 """
 from pathlib import Path
+import re
 
 ROOT = Path("site")
 SOURCE = ROOT / "poi/templo-mayor/index.html"
@@ -133,7 +134,7 @@ const museum=document.createElement('details');museum.className='review-collapsi
 museum.innerHTML='<summary>Templo Mayor Museum — objects and archaeological contexts</summary>';
 museum.append(originals.museum);screens.explore.append(museum);
 const planning=card();planning.append(originals.visit);screens.plan.append(planning);
-screens.plan.insertAdjacentHTML('beforeend','<p><a href="../../walks/historic-center/">Continue to the connected Historic Center learning walk</a></p>');
+screens.plan.insertAdjacentHTML('beforeend','<p><a href="../../../walks/historic-center/">Continue to the connected Historic Center learning walk</a></p>');
 // Keep evidence and sources complete and accessible without leaving the reading position.
 const overlay=document.createElement('div');
 overlay.id='review-overlay';
@@ -187,6 +188,10 @@ def build():
     page = base.replace("<title>Templo Mayor | Ciudad Viva Field Guide</title>",
                         "<title>Templo Mayor | Discover, Explore, Plan</title>", 1)
     assert page != base
+    # This preview lives one directory deeper than the canonical POI.
+    # Preserve the meaning of all original relative navigation and feedback links.
+    page = re.sub(r'(?P<attr>(?:href|src))="(?P<parents>(?:\\.\\./)+)',
+                  lambda m: m.group('attr') + '=\"../' + m.group('parents'), page)
     page = page.replace("</head>", STYLE + "</head>", 1)
     page = page.replace("</body>", JS + "</body>", 1)
     assert page.count(SCRIPT) == 1
