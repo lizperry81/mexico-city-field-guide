@@ -1,0 +1,7 @@
+{
+  "run_id": "20261112T0144Z-research",
+  "branch": "research-persistence",
+  "purpose": "read_write_persistence_probe",
+  "baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_modified": false
+}
