@@ -1,0 +1,298 @@
+{
+  "schema_version": 2,
+  "run_id": "20261112T165754Z-scheduled9-breadth-9e6d",
+  "canonical_baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_baseline_version": "V97",
+  "baseline_counts": {
+    "sources": 616,
+    "legacy_claims": 422,
+    "claim_sources": 403,
+    "normalized_findings": 68
+  },
+  "status": "STAGED ONLY — NOT IN CANONICAL",
+  "source_inspection_count": 6,
+  "focus": "Mexica Tenochtitlan and Mexico City's early colonial architectural layers; source-first INAH evidence",
+  "sources": [
+    {
+      "source_id": "v69-inah-templo",
+      "url": "https://lugares.inah.gob.mx/es/node/4463",
+      "access": "INAH institutional passage examined, not primary full field report"
+    },
+    {
+      "source_id": "stg-breadth2-inah-cathedral-window1",
+      "url": "https://lugares.inah.gob.mx/es/node/4779",
+      "access": "INAH institutional passage examined, not primary full field report"
+    },
+    {
+      "source_id": "stg-breadth2-inah-sagrario",
+      "url": "https://lugares.inah.gob.mx/es/node/5900",
+      "access": "INAH institutional passage examined, not primary full field report"
+    },
+    {
+      "source_id": "stg-breadth2-inah-palace-window1",
+      "url": "https://lugares.inah.gob.mx/es/node/4759",
+      "access": "INAH institutional passage examined, not primary full field report"
+    },
+    {
+      "source_id": "stg-breadth2-inah-palace-window2",
+      "url": "https://lugares.inah.gob.mx/es/node/4760",
+      "access": "INAH institutional passage examined, not primary full field report"
+    },
+    {
+      "source_id": "stg-breadth2-inah-palace-window3",
+      "url": "https://lugares.inah.gob.mx/es/node/4761",
+      "access": "INAH institutional passage examined, not primary full field report"
+    }
+  ],
+  "findings": [
+    {
+      "id": "stg-breadth2-01",
+      "statement": "The expansion associated with Axayácatl (1469–1481) includes sculpted serpent heads, an Altar of Frogs on Tláloc's north side, and a Coyolxauhqui replica at Huitzilopochtli's south stair.",
+      "period": "Mexica Tenochtitlan",
+      "poi_ids": [
+        "poi-templo-mayor",
+        "poi-zocalo"
+      ],
+      "source_id": "v69-inah-templo",
+      "source_url": "https://lugares.inah.gob.mx/es/node/4463",
+      "locator": "Punto 1, Etapa IVb (Axayácatl)",
+      "what_to_look_for": "Look for serpent heads, frog altar and a replica (not original) monolith",
+      "evidence_status": "institutional_passage_examined_not_original_excavation_report",
+      "independent_corroboration": false,
+      "editorial_review": false,
+      "merge_status": "pending"
+    },
+    {
+      "id": "stg-breadth2-02",
+      "statement": "The earliest excavated temple phase preserves colored walls at Tláloc's shrine and a painted Chac-Mool near its entrance; the Huitzilopochtli side includes a téchcatl ritual stone.",
+      "period": "Mexica Tenochtitlan",
+      "poi_ids": [
+        "poi-templo-mayor"
+      ],
+      "source_id": "v69-inah-templo",
+      "source_url": "https://lugares.inah.gob.mx/es/node/4463",
+      "locator": "Punto 3, Etapa II",
+      "what_to_look_for": "Inspect original paint remnants and distinguish ritual interpretation from stone evidence",
+      "evidence_status": "institutional_passage_examined_not_original_excavation_report",
+      "independent_corroboration": false,
+      "editorial_review": false,
+      "merge_status": "pending"
+    },
+    {
+      "id": "stg-breadth2-03",
+      "statement": "The Casa de las Águilas was built and enlarged three times during c.1430–1500; three rooms are visible, others lie beneath Justo Sierra Street. Interior benches bear processions and two ceramic eagle-warrior figures were found there.",
+      "period": "Mexica Tenochtitlan",
+      "poi_ids": [
+        "poi-templo-mayor"
+      ],
+      "source_id": "v69-inah-templo",
+      "source_url": "https://lugares.inah.gob.mx/es/node/4463",
+      "locator": "Punto 5, Casa de las Águilas",
+      "what_to_look_for": "Identify column bases, benches and sculpted eagle-head stair elements",
+      "evidence_status": "institutional_passage_examined_not_original_excavation_report",
+      "independent_corroboration": false,
+      "editorial_review": false,
+      "merge_status": "pending"
+    },
+    {
+      "id": "stg-breadth2-04",
+      "statement": "Several superimposed floor surfaces in the north patio are associated by INAH with subsidence and flooding. Phase VI Building B, the tzompantli altar, is decorated with stone-carved human skulls.",
+      "period": "Mexica Tenochtitlan",
+      "poi_ids": [
+        "poi-templo-mayor"
+      ],
+      "source_id": "v69-inah-templo",
+      "source_url": "https://lugares.inah.gob.mx/es/node/4463",
+      "locator": "Punto 6, north patio, Etapa VI",
+      "what_to_look_for": "Compare successive paving levels and sculpture; dates/cause need original report",
+      "evidence_status": "institutional_passage_examined_not_original_excavation_report",
+      "independent_corroboration": false,
+      "editorial_review": false,
+      "merge_status": "pending"
+    },
+    {
+      "id": "stg-breadth2-05",
+      "statement": "A brick drain installed around 1900 beneath present Guatemala Street sliced across Templo Mayor's successive building phases in a strip about two metres wide.",
+      "period": "Porfiriato",
+      "poi_ids": [
+        "poi-templo-mayor",
+        "poi-zocalo"
+      ],
+      "source_id": "v69-inah-templo",
+      "source_url": "https://lugares.inah.gob.mx/es/node/4463",
+      "locator": "Etapa IV y V > Colector de agua",
+      "what_to_look_for": "Find brick collector under metal walkway",
+      "evidence_status": "institutional_passage_examined_not_original_excavation_report",
+      "independent_corroboration": false,
+      "editorial_review": false,
+      "merge_status": "pending"
+    },
+    {
+      "id": "stg-breadth2-06",
+      "statement": "Utility workers exposed the Coyolxauhqui stone at Argentina and Guatemala on 21 February 1978, leading to Proyecto Templo Mayor; the museum opened in 1987.",
+      "period": "Mexico City 1940–1980",
+      "poi_ids": [
+        "poi-templo-mayor",
+        "poi-zocalo"
+      ],
+      "source_id": "v69-inah-templo",
+      "source_url": "https://lugares.inah.gob.mx/es/node/4463",
+      "locator": "introductory historical section",
+      "what_to_look_for": "Original sculpture in museum versus replica at temple stair; 1978 event may duplicate legacy claims",
+      "evidence_status": "institutional_passage_examined_not_original_excavation_report",
+      "independent_corroboration": false,
+      "editorial_review": false,
+      "merge_status": "pending"
+    },
+    {
+      "id": "stg-breadth2-07",
+      "statement": "Four cathedral-atrial archaeological windows show walls tentatively assigned to side chapels and sacristy of a 1525 church commissioned by Cortés, likely completed c.1532 and demolished in 1626.",
+      "period": "Early colonial 1521–1600",
+      "poi_ids": [
+        "poi-cathedral",
+        "poi-zocalo"
+      ],
+      "source_id": "stg-breadth2-inah-cathedral-window1",
+      "source_url": "https://lugares.inah.gob.mx/es/node/4779",
+      "locator": "Ventana 1, first descriptive paragraph",
+      "what_to_look_for": "Four atrium windows; specific wall identifications tentative",
+      "evidence_status": "institutional_passage_examined_not_original_excavation_report",
+      "independent_corroboration": false,
+      "editorial_review": false,
+      "merge_status": "pending"
+    },
+    {
+      "id": "stg-breadth2-08",
+      "statement": "The 4.0 × 2.2 m atrium window displays colonial tezontle-and-mud masonry with lime-sand plaster and red paint; beneath lie walls and a possibly Mexica flagstone floor.",
+      "period": "Early colonial 1521–1600",
+      "poi_ids": [
+        "poi-cathedral",
+        "poi-zocalo"
+      ],
+      "source_id": "stg-breadth2-inah-cathedral-window1",
+      "source_url": "https://lugares.inah.gob.mx/es/node/4779",
+      "locator": "Ventana 1, second and third descriptive paragraphs",
+      "what_to_look_for": "Compare layered colonial wall and lower pavement; possible Mexica attribution",
+      "evidence_status": "institutional_passage_examined_not_original_excavation_report",
+      "independent_corroboration": false,
+      "editorial_review": false,
+      "merge_status": "pending"
+    },
+    {
+      "id": "stg-breadth2-09",
+      "statement": "Excavations during 1975–76 underpinning exposed two phases of a north talud wall assigned to the Mexica Templo del Sol. Tezontle and andesite were mud-set beneath lime-sand-volcanic aggregate stucco.",
+      "period": "Mexica Tenochtitlan",
+      "poi_ids": [
+        "poi-cathedral",
+        "poi-templo-mayor"
+      ],
+      "source_id": "stg-breadth2-inah-sagrario",
+      "source_url": "https://lugares.inah.gob.mx/es/node/5900",
+      "locator": "Sagrario, excavations 1975–76 and first-window material description",
+      "what_to_look_for": "See lower basement windows; original field report not yet inspected",
+      "evidence_status": "institutional_passage_examined_not_original_excavation_report",
+      "independent_corroboration": false,
+      "editorial_review": false,
+      "merge_status": "pending"
+    },
+    {
+      "id": "stg-breadth2-10",
+      "statement": "The second Sagrario window exposes a painted solar-disk pink-andesite plaque with four chalchihuite corner designs, beside wooden foundation piles of the 1749–1768 Sagrario.",
+      "period": "Colonial 1600–1810",
+      "poi_ids": [
+        "poi-cathedral",
+        "poi-templo-mayor"
+      ],
+      "source_id": "stg-breadth2-inah-sagrario",
+      "source_url": "https://lugares.inah.gob.mx/es/node/5900",
+      "locator": "Sagrario, second-window carved plaque and northwest corner",
+      "what_to_look_for": "Look for plaque's colors and colonial wooden piles; interpretations may need corroboration",
+      "evidence_status": "institutional_passage_examined_not_original_excavation_report",
+      "independent_corroboration": false,
+      "editorial_review": false,
+      "merge_status": "pending"
+    },
+    {
+      "id": "stg-breadth2-11",
+      "statement": "A 12 × 4 m archaeological window at the Second Patio Mariano reveals three construction phases of a pre-Hispanic stair, with five andesite-block steps in the latest phase and earlier basalt-slab foundations.",
+      "period": "Mexica Tenochtitlan",
+      "poi_ids": [
+        "poi-national-palace",
+        "poi-zocalo"
+      ],
+      "source_id": "stg-breadth2-inah-palace-window1",
+      "source_url": "https://lugares.inah.gob.mx/es/node/4759",
+      "locator": "Palacio Nacional Ventana 1, final descriptive paragraph",
+      "what_to_look_for": "Identify five steps and distinct layers",
+      "evidence_status": "institutional_passage_examined_not_original_excavation_report",
+      "independent_corroboration": false,
+      "editorial_review": false,
+      "merge_status": "pending"
+    },
+    {
+      "id": "stg-breadth2-12",
+      "statement": "A 3.5 × 1.6 m window excavated in 2003–2004 contains a balustraded stair linking plaza to Mexica shrine. Attribution to a Tezcatlipoca complex remains a hypothesis.",
+      "period": "Mexica Tenochtitlan",
+      "poi_ids": [
+        "poi-national-palace",
+        "poi-zocalo"
+      ],
+      "source_id": "stg-breadth2-inah-palace-window2",
+      "source_url": "https://lugares.inah.gob.mx/es/node/4760",
+      "locator": "Palacio Nacional Ventana 2, 2003–04 excavation paragraph",
+      "what_to_look_for": "Observe stair, orientation and explicit uncertainty about temple dedication",
+      "evidence_status": "institutional_passage_examined_not_original_excavation_report",
+      "independent_corroboration": false,
+      "editorial_review": false,
+      "merge_status": "pending"
+    },
+    {
+      "id": "stg-breadth2-13",
+      "statement": "A 6 × 4 m Palace excavation exposes pre-Hispanic stair, ceramic-tube drains, stone pavement and cruciform column support, plus later tezontle drain; the column's association with Cortés's residence is interpretive.",
+      "period": "Early colonial 1521–1600",
+      "poi_ids": [
+        "poi-national-palace",
+        "poi-zocalo"
+      ],
+      "source_id": "stg-breadth2-inah-palace-window3",
+      "source_url": "https://lugares.inah.gob.mx/es/node/4761",
+      "locator": "Palacio Nacional Ventana 3, stratigraphic description",
+      "what_to_look_for": "Locate separate drainage phases and the column base",
+      "evidence_status": "institutional_passage_examined_not_original_excavation_report",
+      "independent_corroboration": false,
+      "editorial_review": false,
+      "merge_status": "pending"
+    },
+    {
+      "id": "stg-breadth2-14",
+      "statement": "Cortés occupied the former Casas Nuevas of Moctezuma after conquest; his heirs sold the property to the Crown in 1562 for viceregal and Audiencia use; after independence in 1821 the site became Palacio Nacional.",
+      "period": "Early colonial 1521–1600",
+      "poi_ids": [
+        "poi-national-palace",
+        "poi-zocalo"
+      ],
+      "source_id": "stg-breadth2-inah-palace-window1",
+      "source_url": "https://lugares.inah.gob.mx/es/node/4759",
+      "locator": "Palacio Nacional Ventana 1, historical overview",
+      "what_to_look_for": "Distinguish successive Indigenous, colonial and national political uses",
+      "evidence_status": "institutional_passage_examined_not_original_excavation_report",
+      "independent_corroboration": false,
+      "editorial_review": false,
+      "merge_status": "pending"
+    }
+  ],
+  "inspection_limitations": [
+    "No full original excavation monograph inspected in this run",
+    "Some interpretations explicitly tentative (Palace Tezcatlipoca; cathedral early walls; 1978 discovery may duplicate legacy records)",
+    "No independent corroboration awarded"
+  ],
+  "coverage_proposals": "14 matrix intersections from missing/sparse to developing in separate recovery ZIP, never substantial",
+  "poi_scope": [
+    "poi-templo-mayor",
+    "poi-zocalo",
+    "poi-cathedral",
+    "poi-national-palace"
+  ],
+  "next_action": "Reconcile V97 against all staged findings and legacy V87; locate original INAH archaeology field reports for Palace and Cathedral windows; examine primary Indigenous siege narratives and colonial reconstruction records",
+  "canonical_modified": false
+}
