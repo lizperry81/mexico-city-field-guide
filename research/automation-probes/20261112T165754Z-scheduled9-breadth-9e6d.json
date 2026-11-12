@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "probe_id": "20261112T165754Z-scheduled9-breadth-9e6d",
+  "run_kind": "scheduled",
+  "read": {
+    "path": "research/state.json",
+    "blob_sha": "501b8084c0be41d03328b32d7400bbde2fd78640",
+    "succeeded": true
+  },
+  "write_target": "research/automation-probes/20261112T165754Z-scheduled9-breadth-9e6d.json",
+  "canonical_promoted": false,
+  "scope": "isolated_research_staging"
+}
