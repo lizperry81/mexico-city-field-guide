@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "run_id": "20261112T130305Z-auto11-carballo-moon",
+  "status": "STAGED_ONLY_NOT_IN_CANONICAL",
+  "canonical_version": "V97 provisional",
+  "canonical_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_findings": 68,
+  "canonical_changes": 0,
+  "library_access": "path not found",
+  "current_assignment": "Teotihuacan and source reconciliation",
+  "current_subtopic": "Moon Pyramid lithic workshop evidence: Carballo 2011",
+  "last_staged_batch": "research/batches/20261112T130305Z-auto11-carballo-moon.json",
+  "last_source_inspected": "STG-SRC-CARBALLO-2011-MOON-PYRAMID",
+  "new_evidence_examined_candidate_findings": 5,
+  "source_inspections": 1,
+  "unresolved": [
+    "Reported Table 3.1 categories transcribed from web PDF text sum to 536 whereas its displayed total is 534: 1+7+157+173+168+27+3=536. Verify visual page before import and do not use unqualified 534 as checked sum.",
+    "Carballo 2007 article and 2011 monograph overlap excavation data; not two independent confirmations. Barnes 2024 TE5 mirror production suggestion must not be conflated with Carballo's evidence for obsidian projectile production.",
+    "Original Sugiyama et al. 2013 Sun Pyramid radiocarbon tables still uninspected; Cambridge page supplies abstract only. Large original Carballo 2011 PDF screenshot unavailable even though tabular text accessed.",
+    "23 canonical finding source IDs blank; previously proposed repairs unmerged"
+  ],
+  "next_action": "Inspect Turner 1992 TE5 original and Carballo 2011 Appendix A source table and map; check Table 3.1 apparent 536-vs-534 discrepancy; obtain Sugiyama et al. 2013 original radiocarbon tables; reconcile and validate source mappings before canonical promotion.",
+  "previous_checkpoint": "research/checkpoints/20261112T1203Z-auto11-mirror-photo.json",
+  "next_action_canonical_precondition": "Read authorized current canonical manifest/checkpoint, compare SHA, reconcile all staged batches; never assume V97 authority."
+}
