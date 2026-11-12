@@ -26,6 +26,8 @@ jobs:
           unzip cdmx-fieldguide-redesign.zip -d extracted
           cp -a extracted/cdmx-fieldguide-build/. site/
           # Preserve the existing published homepage; no replacement with an older ZIP.\n          cp recovered/mexico-city-field-guide.html site/index.html
+          mkdir -p site/poi/templo-mayor
+          cp poi/templo-mayor/index.html site/poi/templo-mayor/index.html
           # Restore source-accurate V81 JSON (8 chapters, 21 claims, 12 sources). Fail closed.\n          python scripts/recover_templo.py site\n          python scripts/build_poi.py\n          python scripts/test_poi.py\n          if [ -f site/poi/templo-mayor/index.html ]; then
             python - <<'PY'
           from pathlib import Path
