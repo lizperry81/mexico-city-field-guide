@@ -1,0 +1,140 @@
+{
+  "schema": "cdmx_staged_evidence_v1",
+  "run_id": "20261112T0201Z-auto09",
+  "canonical_status": "STAGED ONLY — NOT IN CANONICAL",
+  "baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "branch": "research-persistence",
+  "source_inspections": [
+    {
+      "source": {
+        "id": "STG-SRC-MANZANILLA-MCCLUNG-1996-FAMSI",
+        "title": "Patterns of Resource Utilization in Post-Teotihuacán Tunnel Occupations",
+        "authors": "Linda Manzanilla; Emily McClung de Tapia",
+        "year": 1996,
+        "report": "Conference paper reproduced in FAMSI report",
+        "url": "https://www.famsi.org/reports/95007/95007Manzanilla01.pdf"
+      },
+      "access": "original 14-page FAMSI PDF",
+      "inspected": "printed pp.6–7 (PDF indices 5–6), botanical sections; screenshot visual verification p.6",
+      "not_inspected": "entire specimen catalog and original notebooks"
+    },
+    {
+      "source": {
+        "id": "STAGE-SRC-MCCLUNG-2025-LAQ",
+        "title": "Subsistence Procurement and Production after the Demise of Teotihuacan",
+        "authors": "Emily McClung de Tapia; Diana Martínez-Yrízar; Carmen Cristina Adriano-Morán; Emilio Ibarra-Morales",
+        "year_online": 2025,
+        "issue": "Latin American Antiquity 37(1) (March 2026), pp. 163–171",
+        "doi": "10.1017/laq.2025.13",
+        "url": "https://www.cambridge.org/core/journals/latin-american-antiquity/article/subsistence-procurement-and-production-after-the-demise-of-teotihuacan/D083317AF446A4F07B9025E23C5CFF0B"
+      },
+      "access": "open-access published article original PDF",
+      "inspected": "journal pp.165,167,169; PDF indices 2,4,6 screenshot verification; relevant text and Table 3",
+      "not_inspected": "2025 supplementary Tables 1–3 and the source specimen inventory (not retrieved)"
+    }
+  ],
+  "findings": [
+    {
+      "id": "STG-20261112T0201Z-01",
+      "subject": "Cueva del Pirul Coyotlatelco archaeobotanical contextual distributions",
+      "assertion": "In Coyotlatelco contexts at Cueva del Pirul, the 2025 report identifies chenopod and maize macrobotanical remains in silo, hearth and burial contexts; amaranth in silos and burials; beans and purslane in silos; nopal/tuna and jaltomate in hearths and burials; chia in hearths.",
+      "source_id": "STAGE-SRC-MCCLUNG-2025-LAQ",
+      "source_locator": "journal p.165 (PDF page index 2), paragraph 'In the Cueva del Pirul'",
+      "evidence_type": "published context-by-taxon excavation analysis",
+      "evidence_status": "evidence-examined",
+      "independence": "not independently corroborated; original 1993–1996 assemblages revisited",
+      "limitations": "No original sample-by-sample supplementary Table 1 or laboratory catalog inspected; phase attribution not independently verified",
+      "period": "Coyotlatelco (2025 Table 1 approx. AD 600–900)",
+      "location": "Cueva del Pirul, Teotihuacan, State of Mexico",
+      "educational_use": "Post-Teotihuacan food processing and reuse of quarry cavities"
+    },
+    {
+      "id": "STG-20261112T0201Z-02",
+      "subject": "Cueva del Pirul Mazapa and later botanical contexts",
+      "assertion": "For Mazapa contexts at Cueva del Pirul, the 2025 report identifies amaranth, chenopod, maize, jaltomate and purslane in hearths and burials, with Phaseolus limited to silo contexts and chia in hearths; its Aztec-period samples yielded maize, amaranth and chenopod in hearths.",
+      "source_id": "STAGE-SRC-MCCLUNG-2025-LAQ",
+      "source_locator": "journal p.165 (PDF page index 2), same Cueva del Pirul paragraph",
+      "evidence_type": "published context-by-taxon analysis",
+      "evidence_status": "evidence-examined",
+      "independence": "not independent",
+      "limitations": "Cannot infer taxonomic consumption, quantities or absence outside examined samples; supplemental context register not inspected",
+      "period": "Mazapa approx. AD 900–1150 and subsequent Aztec occupation",
+      "location": "Cueva del Pirul, Teotihuacan, State of Mexico",
+      "educational_use": "Chronology of domestic use in quarry tunnels"
+    }
+  ],
+  "disputes": [
+    {
+      "id": "STG-20261112T0201Z-D01",
+      "topic": "Coyotlatelco Amaranthus context discrepancy in Cueva de las Varillas",
+      "earlier": "1996 printed p.6 says clearly identified Amaranthus occurred in 21.4% of contexts, ONLY associated with burials",
+      "later": "2025 journal p.165 says Coyotlatelco Varillas amaranth occurred in silos and hearths, ABSENT from burials",
+      "assessment": "unresolved conflicting descriptions of same excavations; not independent corroboration",
+      "potential_causes": [
+        "different sample subset",
+        "phase reclassification",
+        "taxonomic reidentification",
+        "change in context classification"
+      ],
+      "next_check": "2025 supplementary Table 1, lab context register; compare 1996 sample list"
+    },
+    {
+      "id": "STG-20261112T0201Z-D02",
+      "topic": "Coyotlatelco Zea mays association discrepancy",
+      "earlier": "1996 printed p.6 says maize 35.7% of Varillas Coyotlatelco/Late Coyotlatelco contexts, in hearths AND associated with burials",
+      "later": "2025 journal p.165 says Coyotlatelco Varillas maize in silos and hearths, ABSENT from burials",
+      "assessment": "unresolved change in phase/context/sample selection; no automatic evidence promotion",
+      "next_check": "match maize samples to burial context identities in 1996 and 2025 supplemental inventory"
+    },
+    {
+      "id": "STG-20261112T0201Z-D03",
+      "topic": "Coyotlatelco Phaseolus discrepancy",
+      "earlier": "1996 printed p.7 says Phaseolus not present in preceding Coyotlatelco/Late Coyotlatelco analyzed context group (appears in Mazapa)",
+      "later": "2025 journal p.165 says beans in Varillas Coyotlatelco silos and hearths",
+      "assessment": "unresolved; may reflect reanalysis, more samples or revised phase attribution",
+      "next_check": "retrieve individual Varillas bean contexts and dates"
+    },
+    {
+      "id": "STG-20261112T0201Z-D04",
+      "topic": "chronological category non-equivalence",
+      "earlier": "1996 report printed p.6 pools Coyotlatelco and Late Coyotlatelco contexts approx. AD 512–1000",
+      "later": "2025 Table 1 assigns Coyotlatelco approx. AD 600–900",
+      "assessment": "different temporal groupings make aggregate frequencies and contexts non-directly comparable",
+      "next_check": "review phase-specific original context allocation"
+    }
+  ],
+  "non_independence": "1996 and 2025 syntheses share the 1993–1996 excavations and must not be counted as independent archaeological samples",
+  "merge": {
+    "automatic": false,
+    "operation": "manual_source_ID_and_duplicate_reconciliation",
+    "findings_actions": [
+      {
+        "finding_id": "STG-20261112T0201Z-01",
+        "action": "propose_insert_after_review"
+      },
+      {
+        "finding_id": "STG-20261112T0201Z-02",
+        "action": "propose_insert_after_review"
+      }
+    ],
+    "dispute_actions": [
+      {
+        "issue_id": "STG-20261112T0201Z-D01",
+        "action": "flag_for_manual_resolution"
+      },
+      {
+        "issue_id": "STG-20261112T0201Z-D02",
+        "action": "flag_for_manual_resolution"
+      },
+      {
+        "issue_id": "STG-20261112T0201Z-D03",
+        "action": "flag_for_manual_resolution"
+      },
+      {
+        "issue_id": "STG-20261112T0201Z-D04",
+        "action": "flag_for_manual_resolution"
+      }
+    ]
+  },
+  "next_action": "Retrieve 2025 supplementary Tables 1–3; crosswalk Varillas AA identifiers and ceramic phases to 1996 contexts; inspect Sugiyama/Sugiyama/Sarabia 2013 original Sun Pyramid tables; recheck latest canonical manifest and V87 reconciliation."
+}
