@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "probe_id": "20261112T1203Z-auto11-4e6f82",
+  "purpose": "scheduled runtime GitHub read-write verification",
+  "branch": "research-persistence",
+  "baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "state_blob_sha": "501b8084c0be41d03328b32d7400bbde2fd78640",
+  "canonical_persisted": false
+}
