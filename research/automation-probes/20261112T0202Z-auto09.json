@@ -1,0 +1,8 @@
+{
+  "run_id": "20261112T0202Z-auto09",
+  "read_state_ok": true,
+  "branch": "research-persistence",
+  "canonical_baseline": "V97 provisional",
+  "purpose": "scheduled_runtime_persistence_probe",
+  "not_a_canonical_write": true
+}
