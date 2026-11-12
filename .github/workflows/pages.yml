@@ -134,5 +134,18 @@ jobs:
                   assert response.status==200, f'HTTP {response.status}: {target}'
               assert all(t in body for t in markers), f'Incomplete content at {target}'
               print('LIVE ROUTE VERIFIED:',target,'chars:',len(body),flush=True)
+          # Mobile-User-Agent HTTP check (not a substitute for Safari interaction testing).
+          mobile_target=root+'walks/historic-center/'
+          mobile_req=urllib.request.Request(mobile_target,headers={
+              'User-Agent':'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Version/17.0 Mobile/15E148 Safari/604.1'
+          })
+          with urllib.request.urlopen(mobile_req,timeout=25) as response:
+              mobile_html=response.read().decode('utf-8')
+              assert response.status==200
+          assert 'name="viewport"' in mobile_html
+          assert 'width=device-width' in mobile_html
+          assert 'data-mode="focus"' in mobile_html
+          assert 'data-choose-thread="water"' in mobile_html
+          print('MOBILE UA ROUTE VERIFIED:',mobile_target,'chars:',len(mobile_html),flush=True)
           PY
 
