@@ -1,0 +1,187 @@
+{
+  "schema": "cdmx_staged_evidence_v1",
+  "run_id": "20261112T0302Z-auto09",
+  "branch": "research-persistence",
+  "canonical_status": "STAGED ONLY — NOT IN CANONICAL",
+  "provisional_baseline": {
+    "version": "V97",
+    "sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "counts": {
+      "sources": 616,
+      "claims": 422,
+      "claim_sources": 403,
+      "canonical_findings": 68,
+      "canonical_source_inspections": 9
+    },
+    "access": "Library read returned path not found; recovered unmodified SQLite from prior staging archive SHA verified"
+  },
+  "source_inspections": [
+    {
+      "inspection_id": "20261112T0302Z-auto09-S1",
+      "source_id": "STG-SRC-SUGIYAMA-SUGIYAMA-SARABIA-2014-AM125",
+      "authors": "Saburo Sugiyama; Nawa Sugiyama; Alejandro Sarabia G.",
+      "title": "El interior de la Pirámide del Sol en Teotihuacan",
+      "publication": "Arqueología Mexicana 125 (Jan–Feb 2014), 24–29",
+      "url": "https://arqueologiamexicana.mx/mexico-antiguo/el-interior-de-la-piramide-del-sol-en-teotihuacan",
+      "locator": "online excerpt: Pre-Pirámide del Sol and Construcción de la Pirámide del Sol",
+      "access": "original investigator-authored excerpt examined; complete print edition not examined"
+    },
+    {
+      "inspection_id": "20261112T0302Z-auto09-S2",
+      "source_id": "STG-SRC-MANZANILLA-LOPEZ-FRETER-1996",
+      "authors": "Linda Manzanilla; Claudia López; AnnCorinne Freter",
+      "title": "Dating Results from Excavations in Quarry Tunnels Behind the Pyramid of the Sun at Teotihuacan",
+      "publication": "Ancient Mesoamerica 7, 245–266 (1996)",
+      "url": "https://colnal.mx/wp-content/uploads/2023/04/Manzanilla-Lopez-Freter-1996-Tuneles_compressed.pdf",
+      "locator": "Appendix Table 1 printed p260 and Burial 3 context printed p265, both examined; PDF page 16 screenshot",
+      "access": "original article table visually examined; relevant context text examined; not full publication"
+    },
+    {
+      "inspection_id": "20261112T0302Z-auto09-S3",
+      "source_id": "STAGE-SRC-MCCLUNG-2025-LAQ",
+      "authors": "McClung de Tapia; Martínez-Yrízar; Adriano-Morán; Ibarra-Morales",
+      "title": "Subsistence Procurement and Production after the Demise of Teotihuacan",
+      "publication": "Latin American Antiquity 37(1) (2026):163–171, online 2025",
+      "url": "https://www.cambridge.org/core/journals/latin-american-antiquity/article/subsistence-procurement-and-production-after-the-demise-of-teotihuacan/D083317AF446A4F07B9025E23C5CFF0B",
+      "locator": "pp165,167 Figure 2a,168 Figure 3a; actual PDF page images inspected",
+      "access": "article passage, figure captions and photo panels inspected; supplementary Tables 1–3 inaccessible"
+    },
+    {
+      "inspection_id": "20261112T0302Z-auto09-S4",
+      "source_id": "STG-SRC-MANZANILLA-MCCLUNG-1996-FAMSI",
+      "authors": "Linda Manzanilla; Emily McClung de Tapia",
+      "title": "Patterns of Resource Utilization in Post-Teotihuacán Tunnel Occupations",
+      "publication": "1996 conference paper at FAMSI",
+      "url": "https://www.famsi.org/reports/95007/95007Manzanilla01.pdf",
+      "locator": "printed p6 Coyotlatelco botanical grouping, image inspected",
+      "access": "partial original PDF passage and image inspected; specimen catalog not examined"
+    }
+  ],
+  "findings": [
+    {
+      "id": "20261112T0302Z-auto09-F01",
+      "kind": "enrichment",
+      "proposed_target": "v94-teo-13",
+      "subject": "Pre-Sun Pyramid substructure geometry and demolition",
+      "assertion": "Sugiyama, Sugiyama and Sarabia describe a pre-main-pyramid wall approximately 2 m thick and more than 14 m long on a north–south axis, combining sloping talud and vertical faces; associated floors and Structure 1 were demolished as the large Sun Pyramid was built.",
+      "source_id": "STG-SRC-SUGIYAMA-SUGIYAMA-SARABIA-2014-AM125",
+      "locator": "Arqueología Mexicana 125, online excerpt, 'Pre-Pirámide del Sol' (print pp24–29, exact individual page unavailable)",
+      "status": "evidence-examined excerpt; uncorroborated",
+      "limitations": "Overall substructure plan and function unknown; prior canonical v94-teo-13 already notes >13.5 m wall, treat as enrichment not new finding"
+    },
+    {
+      "id": "20261112T0302Z-auto09-F02",
+      "kind": "candidate",
+      "subject": "Sun Pyramid foundation offering 1",
+      "assertion": "Offering 1 was placed in pyramid fill over the demolished earlier substructure and contained worked obsidian blades, projectile points and figurines, a pyrite disk, a large marine shell and organic fragments; excavators infer it was promptly covered during construction.",
+      "source_id": "STG-SRC-SUGIYAMA-SUGIYAMA-SARABIA-2014-AM125",
+      "locator": "Arqueología Mexicana 125 online excerpt, 'Construcción de la Pirámide del Sol', paragraph beginning 'La ofrenda 1'",
+      "status": "evidence-examined excerpt; uncorroborated",
+      "limitations": "No excavation inventory table inspected; cannot infer who placed the offering"
+    },
+    {
+      "id": "20261112T0302Z-auto09-F03",
+      "kind": "candidate",
+      "subject": "Sun Pyramid foundation offering 2",
+      "assertion": "Offering 2 was recovered from a 1.75 × 1.75 m square pit cut to tepetate; published contents include 11 vessels with Tláloc effigies, two whole greenstone human figurines and a greenstone mask, worked obsidian, three pyrite-slate disks, a whole eagle containing two rabbits, and puma, wolf, condor and marine-shell remains.",
+      "source_id": "STG-SRC-SUGIYAMA-SUGIYAMA-SARABIA-2014-AM125",
+      "locator": "Arqueología Mexicana 125 online excerpt, 'Construcción de la Pirámide del Sol', 'La ofrenda 2'",
+      "status": "evidence-examined excerpt; uncorroborated",
+      "limitations": "Inventory and taxonomic identifications from investigator summary, not independently checked; author's ceremonial meaning interpretive"
+    },
+    {
+      "id": "20261112T0302Z-auto09-F04",
+      "kind": "candidate",
+      "subject": "Main Sun Pyramid core and later adosada platform",
+      "assertion": "Investigators report the main Sun Pyramid body as one principal construction phase, comprising layers of soil and pulverized tepetate mixed with stone, sherds, lithic material and charcoal, rather than large blocks or adobe; exposure of the west talud in Noguera's tunnel indicates the adosada platform was not part of the initial core.",
+      "source_id": "STG-SRC-SUGIYAMA-SUGIYAMA-SARABIA-2014-AM125",
+      "locator": "Arqueología Mexicana 125 online excerpt, 'Construcción de la Pirámide del Sol', first two paragraphs",
+      "status": "evidence-examined excerpt; uncorroborated",
+      "limitations": "Core-fill materials may duplicate staged STG-20261111T1558Z-SUN-MATERIALS-01: merge/enrich not duplicate; phase interpretation debated in wider chronology literature"
+    },
+    {
+      "id": "20261112T0302Z-auto09-F05",
+      "kind": "candidate",
+      "subject": "Cueva de las Varillas Burial 3: dated charcoal and late reuse",
+      "assertion": "The 1996 excavation report associates charcoal sample Beta-75379 (520 ± 60 radiocarbon years BP) with Cueva de las Varillas Burial 3 in Chamber 2, stratum 1k; Appendix Table 1 gives a late calendrical intercept of 1430 CE. The narrative calls the burial possibly Mazapa with Aztec intrusion. Consequently the 2025 Figure 2a Amaranthus specimen labeled Burial 3 cannot be assigned to Coyotlatelco solely from its caption.",
+      "source_id": "STG-SRC-MANZANILLA-LOPEZ-FRETER-1996",
+      "secondary_source_id": "STAGE-SRC-MCCLUNG-2025-LAQ",
+      "locator": "Manzanilla et al. 1996 Appendix Table 1 printed p260 and burial description printed p265; McClung de Tapia et al. 2025 Figure 2a printed p167",
+      "status": "evidence-examined multiple passages; chronological interpretation disputed",
+      "limitations": "1996 table and prose have inconsistent printed calibrated range and intercept transcriptions; exact burial depositional age not secured by sample alone"
+    }
+  ],
+  "issues": [
+    {
+      "id": "20261112T0302Z-auto09-ISS01",
+      "type": "phase_correlation_not_resolved",
+      "assertion": "1996 botanical conference report says amaranth 21.4% of combined ca.512–1000 CE contexts and only in burials, while 2025 paper reports no amaranth in Coyotlatelco burials. 2025 Figure 2a does depict Amaranthus from Burial 3, but 1996 associates Burial 3 with a much later radiocarbon determination. Without crosswalking all burials, subset/phase revisions unresolved.",
+      "locators": [
+        "1996 FAMSI printed p6",
+        "2025 journal printed pp165,167 Figure 2a",
+        "1996 Ancient Mesoamerica printed pp260,265"
+      ]
+    },
+    {
+      "id": "20261112T0302Z-auto09-ISS02",
+      "type": "botanical_phase_unknown",
+      "assertion": "2025 Figure 3a depicts maize cob from Cueva de las Varillas AA98 Burial 13, but figure caption lacks calendar/ceramic phase. It cannot rebut a statement specifically limited to Coyotlatelco burial contexts without phase matching.",
+      "locators": [
+        "2025 journal p168 Figure 3a"
+      ]
+    },
+    {
+      "id": "20261112T0302Z-auto09-ISS03",
+      "type": "2013_primary_not_obtained",
+      "assertion": "The complete 2013 Sugiyama/Sugiyama/Sarabia journal article and Table 2 radiocarbon sample contexts were not retrieved. The 2014 investigator-authored summary is a different publication, not proof original 2013 tables were inspected.",
+      "locators": [
+        "2013 DOI 10.7183/1045-6635.24.4.403; Arqueología Mexicana no125"
+      ]
+    },
+    {
+      "id": "20261112T0302Z-auto09-ISS04",
+      "type": "supplement_not_obtained",
+      "assertion": "2025 supplementary Tables 1–3 listed with DOI sm001–sm003 were identified but direct DOI retrieval was inaccessible; no specimen-by-feature crosswalk performed.",
+      "locators": [
+        "2025 Cambridge paper supplementary section, DOIs 10.1017/laq.2025.13.sm001–.sm003"
+      ]
+    }
+  ],
+  "proposed_merge": {
+    "automatic": false,
+    "require_baseline_manifest_readback": true,
+    "duplicate_checks": [
+      {
+        "candidate": "20261112T0302Z-auto09-F01",
+        "prior": "v94-teo-13",
+        "action": "enrich"
+      },
+      {
+        "candidate": "20261112T0302Z-auto09-F04",
+        "prior": "STG-20261111T1558Z-SUN-MATERIALS-01",
+        "action": "review for enrichment"
+      }
+    ],
+    "source_ids_to_reconcile": [
+      "STG-SRC-SUGIYAMA-SUGIYAMA-SARABIA-2014-AM125",
+      "STG-SRC-MANZANILLA-LOPEZ-FRETER-1996",
+      "STAGE-SRC-MCCLUNG-2025-LAQ",
+      "STG-SRC-MANZANILLA-MCCLUNG-1996-FAMSI"
+    ],
+    "preserve_previous_pending": true
+  },
+  "source_access_log": [
+    {
+      "url": "https://doi.org/10.1017/laq.2025.13.sm001",
+      "result": "web retrieval inaccessible"
+    },
+    {
+      "url": "https://doi.org/10.1017/laq.2025.13.sm002",
+      "result": "web retrieval inaccessible"
+    },
+    {
+      "url": "https://doi.org/10.1017/laq.2025.13.sm003",
+      "result": "web retrieval inaccessible"
+    }
+  ]
+}
