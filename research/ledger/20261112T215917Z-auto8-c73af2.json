@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "run_id": "20261112T215917Z-auto8-c73af2",
+  "event": "append_only_staging",
+  "branch": "research-persistence",
+  "source_batch": "research/batches/20261112T215917Z-auto8-c73af2.json",
+  "source_commit": "32035c2e747f535e18fc8191cfc0e8158df497de",
+  "probe_commit": "5b592eacb985c46b035244607e613c148f6bd2cb",
+  "archive_sha256": "a6bb88228bf62d742f3cf7ecd94bc4fb975ee7d6ee16b38686bb5de2624ebecb",
+  "staged_sqlite_sha256": "b2661a9adfa6d9ab9ec7b26813b3de2e3a6fb4b3b7b56e22863b2fa03cdd8656",
+  "canonical_database_mutated": false,
+  "readback_check": "files fetched after each commit; no atomic transaction; unique append-only paths",
+  "status": "staged_only"
+}
