@@ -26,7 +26,7 @@ for slug,(key,min_chapters,min_observations) in pages.items():
     assert 'src="../../../feedback/annotate.js"' in page
     assert 'href="../../../research-library/"' in page
     assert 'href="../../../"' in page, "Homepage link must be rebased for nested review"
-    for x in ('review-switch','data-mode','review-chapter-select',
+    for x in ('review-switch','dataset.mode','review-chapter-select',
               'review-observation-','Choose guide mode','Discover','Explore','Plan',
               'Page-specific verification pending','What to look for on site'):
         assert x in page, (slug,x)
