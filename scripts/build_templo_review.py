@@ -194,7 +194,7 @@ def build():
                   lambda m: m.group('attr') + '=\"../' + m.group('parents'), page)
     page = page.replace("</head>", STYLE + "</head>", 1)
     page = page.replace("</body>", JS + "</body>", 1)
-    assert page.count(SCRIPT) == 1
+    assert page.count('<script src="../../../feedback/annotate.js" defer></script>') == 1
     DEST.parent.mkdir(parents=True, exist_ok=True)
     DEST.write_text(page, encoding="utf-8")
     # Link to the review while leaving every original tab and historical paragraph intact.
