@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "run_id": "20261112T1557Z-auto10-carballo-crosscheck",
+  "baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "storage_role": "immutable_staging_only",
+  "canonical_persisted": false,
+  "source_inspection": {
+    "source": "https://sites.pitt.edu/~ccapubs/pdfdownloads/PITTmem21-Carballo_2011.pdf",
+    "parts_inspected": [
+      "pp.51–55",
+      "pp.61–63",
+      "Figure 3.2 caption",
+      "Tables 3.1,3.2,3.3 parsed PDF text"
+    ],
+    "unexamined": [
+      "original figure images",
+      "original Sugiyama et al. 2013 radiocarbon tables",
+      "original INAH 2009 report"
+    ],
+    "limitation": "Web screenshot of 16-MB PDF rejected for size; no original page-image check. Never mark table numeric anomalies resolved."
+  },
+  "findings": [
+    {
+      "id": "20261112T1557Z-auto10-carballo-crosscheck-F01",
+      "subject": "Moon Pyramid west/east obsidian debris contrast",
+      "assertion": "Carballo reports 22 kg obsidian from 8.1 m3 in 6:N5W1 (2.72 kg/m3) versus 1.7 kg from 13.6 m3 in 22:N5E1 (0.13 kg/m3); obsidian-to-sherd weight ratios 61.7% versus 5.9%. Assemblages were secondary/tertiary mixed refuse, not intact knapping floors.",
+      "locator": "Carballo 2011 printed p.52, Chapter 3",
+      "status": "Evidence-examined (PDF text)",
+      "limit": "Spanish translation uses 8.31 m3; visually resolve before publication.",
+      "source_id": "STG-SRC-CARBALLO-2011-MOON-PYRAMID",
+      "source_url": "https://sites.pitt.edu/~ccapubs/pdfdownloads/PITTmem21-Carballo_2011.pdf",
+      "independent_corroboration": "none"
+    },
+    {
+      "id": "20261112T1557Z-auto10-carballo-crosscheck-F02",
+      "subject": "Polished bone pressure-reduction implement, Moon Pyramid west",
+      "assertion": "A polished bone tip was excavated from Deposit 3, Trench 8 Unit R; Carballo describes this as the sole pressure tool within three analyzed deposits. Deposit 3 was mixed secondary lithic refuse, not intact manufacturing floor.",
+      "locator": "Carballo 2011 p.63 and Figure 3.7",
+      "status": "Evidence-examined (PDF text; image unverified)",
+      "limit": "Tool-function interpretation rests on monograph; usewear not independently inspected.",
+      "source_id": "STG-SRC-CARBALLO-2011-MOON-PYRAMID",
+      "source_url": "https://sites.pitt.edu/~ccapubs/pdfdownloads/PITTmem21-Carballo_2011.pdf",
+      "independent_corroboration": "none"
+    },
+    {
+      "id": "20261112T1557Z-auto10-carballo-crosscheck-F03",
+      "subject": "Trapeze-and-ray roof fragment at Complex 6:N5W1",
+      "assertion": "A roof-adornment fragment recovered between Structures 6B and 6E retained red stucco and a trapeze-and-ray/Year Sign motif; a thicker stone variety is reported for the same complex.",
+      "locator": "Carballo 2011 p.52 Figure 3.2 caption",
+      "status": "Source-linked, figure-caption inspected; image unverified",
+      "limit": "Do not infer original in situ roof placement or fixed iconographic meaning.",
+      "source_id": "STG-SRC-CARBALLO-2011-MOON-PYRAMID",
+      "source_url": "https://sites.pitt.edu/~ccapubs/pdfdownloads/PITTmem21-Carballo_2011.pdf",
+      "independent_corroboration": "none"
+    }
+  ],
+  "enrichment": {
+    "target_prior_finding": "20261112T130305Z-auto11-carballo-moon-F03",
+    "proposed": "More than 4,400 flakes picked from a 1-litre Deposit 1 sediment sample, with thousands of smaller pieces; Deposit 3 yielded 39 and 19 flakes from two samples, supporting secondary-discard differentiation. Not directly comparable standardized rates.",
+    "locator": "Carballo 2011 pp.61–63, Table 3.3 Figure 3.6"
+  },
+  "evidence_quality_issues": [
+    {
+      "id": "20261112T1557Z-auto10-carballo-crosscheck-Q01",
+      "locator": "Table 3.1 p.55",
+      "issue": "Miccaotli unit counts 50+52+64=166 but displayed total 168; rows total 536 while columns total 534.",
+      "status": "unresolved image verification"
+    },
+    {
+      "id": "20261112T1557Z-auto10-carballo-crosscheck-Q02",
+      "locator": "Table 3.2 p.55",
+      "issue": "Level IV phase entries sum 180 but displayed total 280; displayed column totals sum 780 vs phase-row sums 680.",
+      "status": "unresolved image verification"
+    },
+    {
+      "id": "20261112T1557Z-auto10-carballo-crosscheck-Q03",
+      "locator": "pp.51–52 parallel text",
+      "issue": "English passage 8.1 m3 vs Spanish passage 8.31 m3; reported 2.72 kg/m3 corresponds to English 8.1 m3.",
+      "status": "unresolved bilingual text discrepancy"
+    }
+  ],
+  "proposed_merge": {
+    "mode": "manual conflict-checked only",
+    "required_baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "do_not_modify_canonical": true
+  },
+  "local_recovery_zip": {
+    "filename": "CDMX_STAGE_20261112T1557Z_CARBALLO_SOURCE_AUDIT_COMPLETE.zip",
+    "sha256": "ed0b21519796c5d1177f162d5d82849128f9e63055e39466afa8385547c02e43"
+  },
+  "preceding_staged_batch": "20261112T1515Z-interactive-c42e7",
+  "canonical_records_added": 0
+}
