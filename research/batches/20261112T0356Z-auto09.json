@@ -1,0 +1,62 @@
+{
+  "batch_id": "20261112T0356Z-auto09",
+  "storage_role": "staging_only_not_canonical",
+  "base_version": "V97",
+  "base_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "source": {
+    "id": "STG-SRC-BRASWELL-2018-MAYA-CROSSDATING",
+    "author": "Geoffrey E. Braswell",
+    "title": "A Perspective from the Maya Region: Closing Thoughts on Sload and Sugiyama, Sugiyama, and Sarabia G.",
+    "year": 2018,
+    "journal": "Latin American Antiquity",
+    "pages": "403–405",
+    "doi": "10.1017/laq.2017.84",
+    "url": "https://www.cambridge.org/core/journals/latin-american-antiquity/article/perspective-from-the-maya-region-closing-thoughts-on-sload-and-sugiyama-sugiyama-and-sarabia-g/A382B7CF6C10E6982D898A8EC565947C",
+    "inspected": "Publisher full HTML article, paragraphs on Maya ceramics and chronology; primary excavation reports not examined"
+  },
+  "source_inspection": {
+    "id": "STG-INSP-20261112T0356Z-BRASWELL-2018",
+    "scope": "Publisher full HTML article, paragraphs on Maya ceramics and chronology; primary excavation reports not examined",
+    "status": "partial follow-up source inspection, primary evidence not examined"
+  },
+  "findings": [
+    {
+      "id": "STG-20261112T0356Z-MAYA-01",
+      "subject": "Maya Chicanel and Teotihuacan Tzacualli ceramics in Sun Pyramid fill",
+      "assertion": "Braswell reports Chicanel pottery mixed with Tzacualli sherds in Sun Pyramid fill, without Early Classic Maya polychromes dating after 150 CE in those contexts. Because fill ceramics are redeposited, the absence of Early Classic polychromes does not exclude later monument construction.",
+      "evidence_type": "secondary scholarly synthesis",
+      "source_id": "STG-SRC-BRASWELL-2018-MAYA-CROSSDATING",
+      "locator": "Braswell 2018, publisher HTML paragraph beginning 'Ceramics manufactured in the Maya area'; printed pages 403–405 (specific page not verified)",
+      "status": "evidence-examined; not independently corroborated",
+      "limits": "Underlying sherd catalogs not inspected; reported absence, not a secure terminus ante quem."
+    },
+    {
+      "id": "STG-20261112T0356Z-MAYA-02",
+      "subject": "Cross-regional Xolalpan and Early Classic Maya chronology",
+      "assertion": "Braswell traces Xolalpan pottery in Kaminaljuyu Mounds A/B with Early Classic Maya polychromes, and in Tikal contexts associated with dated hieroglyphic inscriptions; he cites the 11 Eb' 15 Mak event of AD 378 as an anchor for a later pulse of Teotihuacan–Maya interaction. Redating earlier Miccaotli and Tlamimilolpa phases would affect these independent cross-ties.",
+      "source_id": "STG-SRC-BRASWELL-2018-MAYA-CROSSDATING",
+      "locator": "Braswell 2018 publisher HTML paragraphs beginning 'Until the advent of radiocarbon dating' to 'If Sugiyama and colleagues are correct'; printed pages 403–405 (specific page not verified)",
+      "status": "evidence-examined; not independently corroborated",
+      "evidence_type": "secondary scholarly chronology synthesis",
+      "limits": "Original Kaminaljuyu/Tikal excavations and epigraphic sources not examined."
+    }
+  ],
+  "merge": "manual source identifier reconciliation; baseline SHA check; do not auto promote",
+  "research_blockers": [
+    "Sugiyama 2013 30pp original tables inaccessible; Cambridge abstract-only, Zenodo record restricted",
+    "2025 McClung de Tapia supplementary DOIs sm001-sm003 inaccessible via tool"
+  ],
+  "provisional_V97_audit": {
+    "sources": 616,
+    "claims": 422,
+    "claim_source_links": 403,
+    "normalized_findings": 68,
+    "inspections": 9,
+    "sqlite_integrity": "ok",
+    "foreign_key_violations": 0,
+    "unlinked_legacy_claims": 22,
+    "canonical_findings_missing_source_refs": 0,
+    "available_unmerged_candidate_records_before_this_run": 47,
+    "known_source_ids_to_reconcile": 9
+  }
+}

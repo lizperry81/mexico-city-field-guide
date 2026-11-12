@@ -1,0 +1,11 @@
+{
+  "checkpoint_id": "20261112T0356Z-auto09",
+  "status": "STAGED ONLY — NOT IN CANONICAL",
+  "branch": "research-persistence",
+  "last_stage_batch": "20261112T0356Z-auto09",
+  "expected_baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_last_accepted_batch": "v97-sun-pyramid-evidence",
+  "next_action": "Obtain and inspect 2013 Sugiyama/Sugiyama/Sarabia original Sun Pyramid radiocarbon tables and figures, then reconcile 1996 vs 2025 botanical context IDs and 47 earlier staged records against latest manifest",
+  "known_library_blocker": "Library path not found, no writes attempted",
+  "note": "immutable checkpoint entry; does not alter research/state.json"
+}

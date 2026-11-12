@@ -1,0 +1,14 @@
+{
+  "ledger_event": "20261112T0356Z-auto09",
+  "action": "append_only_stage_batch",
+  "batch_path": "research/batches/20261112T0356Z-auto09.json",
+  "expected_parent_commit": "03d624100d46125f8d0e77d99dbc5b42693c867e",
+  "baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "new_candidate_ids": [
+    "STG-20261112T0356Z-MAYA-01",
+    "STG-20261112T0356Z-MAYA-02"
+  ],
+  "no_canonical_merge": true,
+  "concurrency_policy": "expected_sha branch compare-and-swap; no force",
+  "source_inspection_id": "STG-INSP-20261112T0356Z-BRASWELL-2018"
+}
