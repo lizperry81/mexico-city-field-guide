@@ -1,0 +1,41 @@
+{
+  "batch_id": "20261112T0202Z-2025-botanical-table3",
+  "status": "STAGED_ONLY_NOT_CANONICAL",
+  "canonical_baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "source": {
+    "authors": "McClung de Tapia et al.",
+    "year": 2025,
+    "title": "Subsistence Procurement and Production after the Demise of Teotihuacan",
+    "doi": "10.1017/laq.2025.13",
+    "inspection": "main article PDF pages 1–9; supplemental data not inspected"
+  },
+  "findings": [
+    {
+      "id": "stage-20261112-bot-2025-01",
+      "locator": "p.3",
+      "claim": "More than 1680 sediment samples from quarry tunnels analyzed at UNAM 1994–1997"
+    },
+    {
+      "id": "stage-20261112-bot-2025-02",
+      "locator": "p.7 Table 3",
+      "claim": "Selected silo botanical counts Varillas Chenopodium 8642 Amaranthus 56 maize 66 other 50; Pirul 212, 10, 5, 70 respectively"
+    },
+    {
+      "id": "stage-20261112-bot-2025-03",
+      "locator": "p.6–7",
+      "claim": "Chenopodium berlandieri achenes generally nondomesticated morphology; cultivation versus foraging unresolved"
+    },
+    {
+      "id": "stage-20261112-bot-2025-04",
+      "locator": "p.3",
+      "claim": "Coyotlatelco Varillas chenopods in silos hearths burials; maize amaranth purslane chia beans in silos/hearths but not burials"
+    },
+    {
+      "id": "stage-20261112-bot-2025-05",
+      "locator": "p.7 Table 3",
+      "claim": "Two-sample KS maximum cumulative difference 0.26668 exceeds stated critical values 0.08023 and 0.11504"
+    }
+  ],
+  "merge_policy": "manual deduplication, source-ID reconciliation and baseline SHA recheck required; no automatic promotion",
+  "next_action": "Inspect 2025 supplementary tables, compare 1996 dataset, then 2013 Sun Pyramid radiocarbon figures"
+}
