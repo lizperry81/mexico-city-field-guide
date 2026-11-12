@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "run_id": "20261112T1501Z-auto11-cave-blockage-materials",
+  "status": "STAGED_ONLY_NOT_IN_CANONICAL",
+  "previous_batch_path": "research/batches/20261112T140057Z-auto11-tlajinga-comp17.json",
+  "baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "source_inspection": {
+    "source_id": "v95-sload-cave-2020",
+    "title": "The Cave Beneath the Sun Pyramid, Teotihuacan",
+    "author": "Rebecca Sload",
+    "year": 2020,
+    "publisher": "University of Pittsburgh Center for Comparative Archaeology",
+    "url": "https://sites.pitt.edu/~ccapubs/pdfdownloads/PITTmem26-Sload_2020.pdf",
+    "printed_pages_inspected": "90-95",
+    "figures_inspected": "6.5-6.10, Fig.6.12 textual caption",
+    "pdf_screenshots_checked": [
+      113,
+      114,
+      115,
+      116,
+      117
+    ],
+    "not_inspected": [
+      "Drewitt 1978 original",
+      "Altschul 1978a original",
+      "C. Earle Smith specimen report",
+      "Sugiyama 2013 tables"
+    ],
+    "independent_confirmation": false
+  },
+  "findings": [
+    {
+      "id": "20261112T1501Z-auto11-cave-blockage-materials-F01",
+      "subject": "Sedge inclusions in Sun Pyramid cave wall closure mortar",
+      "assertion": "At Blockage 11 in TE28 C:East SF20, Sload reports C. Earle Smith identified sedge material with gypsum mineral replacement in a wattle-and-daub fragment examined under magnification; Drewitt also reported plant remains in mud mortar of Blockage 2 south side. Neither directly dates construction nor establishes deliberate sedge addition.",
+      "source_id": "v95-sload-cave-2020",
+      "locator": "Sload 2020 p.91; cites Millon 1978 p.105 and Drewitt 1978 p.3",
+      "evidence_type": "excavation construction material, specialist identification reported secondhand",
+      "evidence_status": "Evidence-examined",
+      "source_inspected": "Sload 2020 printed p.91 full original page PDF screenshot; Millon/Drewitt reports not inspected",
+      "confidence": "moderate on report; limited on inference",
+      "independent_corroboration": false
+    },
+    {
+      "id": "20261112T1501Z-auto11-cave-blockage-materials-F02",
+      "subject": "Sun Pyramid cave lateral probing and original vs restored wall boundaries",
+      "assertion": "Sload reports 1978 probing every 50 cm at three heights, with lateral depths of 1-3 m beyond modern visible faces and a maximum of 2.95 m south of Station 5. In TE28 Area C, excavation found more than 1 m behind northern stacked facing and 2 m on southern side. Some visible rock walls are ancient and some later INAH consolidation; these readings cannot establish the original cross-section throughout the cave.",
+      "source_id": "v95-sload-cave-2020",
+      "locator": "Sload 2020 printed pp.93-95 Fig.6.12; references Altschul 1978a pp.150-158 and Sload 1978a pp.53-84",
+      "evidence_type": "probing measurements and excavation wall sections",
+      "evidence_status": "Evidence-examined",
+      "source_inspected": "Sload p.93-94 original PDF screenshots and p.95 text; 1978 notes unexamined",
+      "confidence": "moderate for reported local measurements; low for reconstructed cave-wide shape",
+      "independent_corroboration": false
+    },
+    {
+      "id": "20261112T1501Z-auto11-cave-blockage-materials-F03",
+      "subject": "Worked architectural materials in Sun Pyramid cave blockages",
+      "assertion": "Excavation photos captioned in Sload Fig.6.8 depict an overturned stone drain in the mud-mortared interior of Blockage 12 north side and a dressed stone at the ceiling junction within Blockage 3 north side. Original location and ritual use of the worked stones remain unknown.",
+      "source_id": "v95-sload-cave-2020",
+      "locator": "Sload 2020 printed p.92 Fig.6.8a-b, photo credit Sload 1978 © R. Millon",
+      "evidence_type": "excavation photograph and caption",
+      "evidence_status": "Evidence-examined",
+      "source_inspected": "Original figure screenshot visually inspected",
+      "confidence": "moderate for object attribution, low for previous function",
+      "independent_corroboration": false
+    }
+  ],
+  "enrichments": [
+    {
+      "target_id": "v97-sun-07",
+      "type": "proposed_enrichment_not_new_finding",
+      "source_id": "v95-sload-cave-2020",
+      "locator": "Sload 2020 pp.90-93, Fig.6.6",
+      "detail": "At least 17 blockage walls confirmed versus earlier 19 mapped; ~25 m occupied of ~55 m between chambers and terminus. Mud-mortared rock blockages had smooth west-face concrete continuing into adjacent west floor; concrete absent under former blockage footprints. Repeated east-to-west closure sequence is inferred. Distinguish closure architecture from disputed date and motivation."
+    }
+  ],
+  "qa": [
+    {
+      "issue": "17 confirmed walls vs 19 in prior mapped account",
+      "locator": "Sload 2020 p.90",
+      "status": "unresolved count identification"
+    },
+    {
+      "issue": "Original sidewalls versus INAH consolidation are not distinguishable everywhere",
+      "locator": "Sload 2020 pp.90,93-95",
+      "status": "interpretation limitation"
+    },
+    {
+      "issue": "Smith sedge identification not verified against original specialist records",
+      "locator": "Sload 2020 p.91",
+      "status": "secondary inspection"
+    }
+  ],
+  "new_candidates": 3,
+  "canonical_changes": 0
+}
