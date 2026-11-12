@@ -4,6 +4,10 @@ import json
 from pathlib import Path
 from html import escape
 root = Path("site")
+original_home = Path("recovered/mexico-city-field-guide.html").read_bytes()
+built_home = (root / "index.html").read_bytes()
+assert len(original_home) > 500_000, "The recovered rich homepage is unexpectedly short"
+assert built_home == original_home, "Base homepage differs from richer preserved original; potential regression"
 research = root / "data" / "research"
 walk = json.loads((research / "templo_walk_v63.json").read_text(encoding="utf-8"))
 pilot = json.loads((research / "templo_mayor_pilot.json").read_text(encoding="utf-8"))
