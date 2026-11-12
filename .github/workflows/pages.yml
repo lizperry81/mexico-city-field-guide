@@ -29,6 +29,27 @@ jobs:
           cp preview/teotihuacan/index.html site/preview/teotihuacan/index.html
           mkdir -p site/preview/atlas
           cp preview/atlas/index.html site/preview/atlas/index.html
+          # Incorporate the canonical research database from the separate research branch.
+          git fetch origin research-persistence:refs/remotes/origin/research-persistence
+          git show origin/research-persistence:research/canonical/CDMX_CANONICAL.sqlite > /tmp/cdmx-canonical.sqlite
+          git show origin/research-persistence:research/canonical/manifest.json > /tmp/cdmx-manifest.json
+          python - <<'PY'
+          import sqlite3,hashlib,json,pathlib,sys
+          db=pathlib.Path('/tmp/cdmx-canonical.sqlite')
+          m=json.loads(pathlib.Path('/tmp/cdmx-manifest.json').read_text())
+          assert hashlib.sha256(db.read_bytes()).hexdigest()==m['database']['sha256'], 'Research database checksum mismatch'
+          c=sqlite3.connect(str(db))
+          assert c.execute('PRAGMA integrity_check').fetchone()[0]=='ok'
+          assert not c.execute('PRAGMA foreign_key_check').fetchall()
+          c.row_factory=sqlite3.Row
+          rows=[dict(x) for x in c.execute('SELECT * FROM canonical_findings ORDER BY id')]
+          assert len(rows)>=68, 'Unexpected loss of historical findings'
+          out=pathlib.Path('site/data/canonical-findings-v97.json');out.parent.mkdir(parents=True,exist_ok=True)
+          out.write_text(json.dumps({'version':m['database']['version'],'count':len(rows),'findings':rows},ensure_ascii=False),encoding='utf-8')
+          print('Exported',len(rows),'real historical findings from GitHub SQLite')
+          PY
+          mkdir -p site/research-library
+          cp research-library/index.html site/research-library/index.html
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
