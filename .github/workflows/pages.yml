@@ -25,6 +25,8 @@ jobs:
           mkdir site extracted
           unzip cdmx-fieldguide-redesign.zip -d extracted
           cp -a extracted/cdmx-fieldguide-build/. site/
+          # Publish the recovered comprehensive application as the primary site.
+          cp recovered/mexico-city-field-guide.html site/index.html
           mkdir -p site/preview/teotihuacan
           cp preview/teotihuacan/index.html site/preview/teotihuacan/index.html
           mkdir -p site/preview/atlas
