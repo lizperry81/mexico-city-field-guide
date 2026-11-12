@@ -56,7 +56,7 @@ def topic_link(slug,heading):
     matches=[(i,p) for i,p in enumerate(chapters(slug),1) if p["h"]==heading]
     assert len(matches)==1,(slug,heading,"missing or changed archived heading")
     i,p=matches[0]
-    anchor="dossier" if slug=="templo-mayor" else "chapter-"+str(i)
+    anchor="dossier-topic-"+str(i) if slug=="templo-mayor" else "chapter-"+str(i)
     return "../../poi/"+slug+"/#"+anchor,p
 def refs_from(p):
     refs=[]
@@ -201,8 +201,15 @@ h1{font:700 clamp(37px,6vw,69px)/1.07 Georgia,serif;margin:12px 0 17px;max-width
         if 'historic-walk-crosslink' not in content:
             assert content.count("</main>")==1,stop["slug"]
             content=content.replace("</main>",box+"</main>")
+        if stop["slug"]=="templo-mayor":
+            # Give each preserved historical chapter a stable anchor.
+            for i,pt in enumerate(chapters("templo-mayor"),1):
+                before='<section class="section"><h2>'+h(pt["h"])+'</h2>'
+                after='<section class="section" id="dossier-topic-'+str(i)+'"><h2>'+h(pt["h"])+'</h2>'
+                assert content.count(before)==1,("templo missing topic",pt["h"])
+                content=content.replace(before,after)
         if stop["slug"]=="templo-mayor" and 'hash-to-panel-walk' not in content:
-            adapter='''<script id="hash-to-panel-walk">(function(){function select(){var id=location.hash.slice(1);if(!id)return;var p=document.getElementById(id);if(!p||!p.classList.contains('panel'))return;document.querySelectorAll('[data-panel]').forEach(function(b){b.classList.toggle('active',b.dataset.panel===id);});document.querySelectorAll('.panel').forEach(function(el){el.classList.toggle('active',el.id===id);});p.scrollIntoView({block:'start'});}window.addEventListener('hashchange',select);select();})();</script>'''
+            adapter='''<script id="hash-to-panel-walk">(function(){function select(){var id=location.hash.slice(1);if(!id)return;var p=document.getElementById(id);if(!p)return;var panel=p.classList.contains('panel')?id:(id.indexOf('dossier-topic-')===0?'dossier':null);if(!panel)return;document.querySelectorAll('[data-panel]').forEach(function(b){b.classList.toggle('active',b.dataset.panel===panel);});document.querySelectorAll('.panel').forEach(function(el){el.classList.toggle('active',el.id===panel);});p.scrollIntoView({block:'start'});}window.addEventListener('hashchange',select);select();})();</script>'''
             content=content.replace("</body>",adapter+"</body>")
         target.write_text(content,encoding="utf-8")
     homepage=SITE/"index.html"
