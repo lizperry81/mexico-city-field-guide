@@ -26,6 +26,15 @@ jobs:
           unzip cdmx-fieldguide-redesign.zip -d extracted
           cp -a extracted/cdmx-fieldguide-build/. site/
           cp recovered/mexico-city-field-guide.html site/index.html
+          python scripts/build_poi.py
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('site/index.html')
+          s=p.read_text(encoding='utf-8')
+          link='<a href="poi/templo-mayor/" style="display:block;background:#0d746e;color:white;padding:16px;border-radius:12px;text-align:center;font-weight:700;margin:16px auto;max-width:700px;text-decoration:none">Explore the full Templo Mayor point of interest →</a>'
+          s=s.replace('</body>',link+'</body>')
+          p.write_text(s,encoding='utf-8')
+          PY
           mkdir -p site/preview/teotihuacan
           cp preview/teotihuacan/index.html site/preview/teotihuacan/index.html
           mkdir -p site/preview/atlas
