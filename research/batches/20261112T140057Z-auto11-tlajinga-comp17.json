@@ -1,0 +1,376 @@
+{
+  "schema_version": 1,
+  "run_id": "20261112T140057Z-auto11-tlajinga-comp17",
+  "status": "STAGED_ONLY_NOT_IN_CANONICAL",
+  "previous_batch_path": "research/batches/20261112T130305Z-auto11-carballo-moon.json",
+  "baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "source_inspection": {
+    "source": {
+      "id": "STG-SRC-HIRTH-2019-COMPOUND17",
+      "title": "Excavation of an Obsidian Craft Workshop at Teotihuacan, Mexico",
+      "authors": [
+        "Kenneth G. Hirth",
+        "David M. Carballo",
+        "Mark Dennison",
+        "Sean Carr",
+        "Sarah Imfeld",
+        "Eric Dyrdahl"
+      ],
+      "year": 2019,
+      "journal": "Ancient Mesoamerica",
+      "volume": 30,
+      "issue": 1,
+      "pages": "163–179",
+      "doi": "10.1017/S0956536118000561",
+      "text_url": "https://www.scribd.com/document/930787135/Hirth-EXCAVATIONOBSIDIANCRAFT-2019",
+      "publisher_url": "https://www.cambridge.org/core/journals/ancient-mesoamerica/article/abs/excavation-of-an-obsidian-craft-workshop-at-teotihuacan-mexico/7B5C11FC597CA0454561F3726E1E1D4B"
+    },
+    "inspected_printed_pages": "167–175, selected passages and tables",
+    "access": "third-party HTML text reproduction of printed study; publisher abstract crosschecked",
+    "original_figure_or_table_images_inspected": false,
+    "scope": "source text examined beyond abstract; 18 Table 1 rows transcribed provisionally",
+    "unexamined": [
+      "original radiocarbon figure images",
+      "underlying laboratory certificates",
+      "2013 Sugiyama radiocarbon Tables 2–3"
+    ]
+  },
+  "findings": [
+    {
+      "id": "20261112T140057Z-auto11-tlajinga-comp17-F01",
+      "subject": "Obsidian-working floors west of Compound 17",
+      "assertion": "Four successive compacted earthen floors appeared within a 16-square-metre excavation west of the compound. Embedded microdebitage indicates direct blade-production activity on these surfaces.",
+      "source_id": "STG-SRC-HIRTH-2019-COMPOUND17",
+      "source_locator": "pp.168–169; Figures 3,6,7",
+      "evidence_type": "in-situ work surfaces",
+      "status": "Evidence-examined",
+      "corroborated": false,
+      "source_image_inspected": false,
+      "limitations": "Work-area extent inferred from probes, not completely excavated.",
+      "place": "Compound 17:S3E1, Tlajinga, Teotihuacan"
+    },
+    {
+      "id": "20261112T140057Z-auto11-tlajinga-comp17-F02",
+      "subject": "Excavated obsidian assemblage scale",
+      "assertion": "Operation 17 yielded 406.8 kg of obsidian and 799,384 pieces. Researchers analyzed 329,370 pieces (41.2%); 325,213 in the analyzed sample were core/blade-related artifacts.",
+      "source_id": "STG-SRC-HIRTH-2019-COMPOUND17",
+      "source_locator": "pp.167,169–170; Tables 2–3",
+      "evidence_type": "quantified lithic assemblage",
+      "status": "Evidence-examined",
+      "corroborated": false,
+      "source_image_inspected": false,
+      "limitations": "Counts include small waste flakes; not a citywide production estimate.",
+      "place": "Compound 17:S3E1, Tlajinga, Teotihuacan"
+    },
+    {
+      "id": "20261112T140057Z-auto11-tlajinga-comp17-F03",
+      "subject": "Feature 5 Room 3 obsidian cache",
+      "assertion": "In a Room 3 drain-bend cist, excavators identified 16 macrocores, two unused pressure cores, an exhausted-core fragment, 72 bifacial dart points and two knives; they favor dedicatory deposition.",
+      "source_id": "STG-SRC-HIRTH-2019-COMPOUND17",
+      "source_locator": "pp.168–169; Figures 8–9",
+      "evidence_type": "archaeological cache",
+      "status": "Evidence-examined",
+      "corroborated": false,
+      "source_image_inspected": false,
+      "limitations": "Dedicatory meaning interpreted; images and context figures not visually inspected.",
+      "place": "Compound 17:S3E1, Tlajinga, Teotihuacan"
+    },
+    {
+      "id": "20261112T140057Z-auto11-tlajinga-comp17-F04",
+      "subject": "Workshop activity and intrusive burial chronology",
+      "assertion": "Eighteen AMS radiocarbon determinations include thirteen from floors or work surfaces; many fall around 250–450 CE, whereas two intrusive Mazapan burials yield later ranges.",
+      "source_id": "STG-SRC-HIRTH-2019-COMPOUND17",
+      "source_locator": "pp.169–171; Table 1",
+      "evidence_type": "radiocarbon chronology",
+      "status": "Evidence-examined",
+      "corroborated": false,
+      "source_image_inspected": false,
+      "limitations": "Radiocarbon distributions are multimodal; web text is not full image verification.",
+      "place": "Compound 17:S3E1, Tlajinga, Teotihuacan"
+    },
+    {
+      "id": "20261112T140057Z-auto11-tlajinga-comp17-F05",
+      "subject": "Tlajinga obsidian raw-material origins",
+      "assertion": "Researchers classified 95.4% of obsidian visually as green and 4.6% gray. Portable XRF of 409 gray objects attributed 90.5% of that selected subset to Otumba.",
+      "source_id": "STG-SRC-HIRTH-2019-COMPOUND17",
+      "source_locator": "p.169, material-source discussion",
+      "evidence_type": "visual and pXRF source attribution",
+      "status": "Evidence-examined",
+      "corroborated": false,
+      "source_image_inspected": false,
+      "limitations": "Source proportion of gray subsample not interchangeable with entire assemblage; green identification primarily visual.",
+      "place": "Compound 17:S3E1, Tlajinga, Teotihuacan"
+    }
+  ],
+  "provisional_radiocarbon_matrix": [
+    {
+      "record_id": "20261112T140057Z-auto11-tlajinga-comp17-RC01",
+      "unit": "K21",
+      "lot": 10,
+      "material": "twig",
+      "bp": 1745,
+      "uncertainty_bp": 20,
+      "calibrated_CE_segments_transcribed": "238–349",
+      "visible_segments_probability_sum": 0.94,
+      "source_locator": "Hirth et al. 2019 Table 1, p.171",
+      "status": "PROVISIONAL_TEXT_TRANSCRIPTION_REQUIRES_TABLE_IMAGE",
+      "warning": "Not necessarily full 2-sigma interval"
+    },
+    {
+      "record_id": "20261112T140057Z-auto11-tlajinga-comp17-RC02",
+      "unit": "K21",
+      "lot": 179,
+      "material": "single charcoal",
+      "bp": 1705,
+      "uncertainty_bp": 20,
+      "calibrated_CE_segments_transcribed": "320–395",
+      "visible_segments_probability_sum": 0.744,
+      "source_locator": "Hirth et al. 2019 Table 1, p.171",
+      "status": "PROVISIONAL_TEXT_TRANSCRIPTION_REQUIRES_TABLE_IMAGE",
+      "warning": "Not necessarily full 2-sigma interval"
+    },
+    {
+      "record_id": "20261112T140057Z-auto11-tlajinga-comp17-RC03",
+      "unit": "K21",
+      "lot": 179,
+      "material": ">30kDa gelatin",
+      "bp": 1710,
+      "uncertainty_bp": 25,
+      "calibrated_CE_segments_transcribed": "313–395",
+      "visible_segments_probability_sum": 0.66,
+      "source_locator": "Hirth et al. 2019 Table 1, p.171",
+      "status": "PROVISIONAL_TEXT_TRANSCRIPTION_REQUIRES_TABLE_IMAGE",
+      "warning": "Not necessarily full 2-sigma interval"
+    },
+    {
+      "record_id": "20261112T140057Z-auto11-tlajinga-comp17-RC04",
+      "unit": "I19",
+      "lot": 180,
+      "material": "outer wood",
+      "bp": 1690,
+      "uncertainty_bp": 20,
+      "calibrated_CE_segments_transcribed": "325–406",
+      "visible_segments_probability_sum": 0.879,
+      "source_locator": "Hirth et al. 2019 Table 1, p.171",
+      "status": "PROVISIONAL_TEXT_TRANSCRIPTION_REQUIRES_TABLE_IMAGE",
+      "warning": "Not necessarily full 2-sigma interval"
+    },
+    {
+      "record_id": "20261112T140057Z-auto11-tlajinga-comp17-RC05",
+      "unit": "I19",
+      "lot": 183,
+      "material": "single charcoal",
+      "bp": 1750,
+      "uncertainty_bp": 15,
+      "calibrated_CE_segments_transcribed": "242–336",
+      "visible_segments_probability_sum": 0.954,
+      "source_locator": "Hirth et al. 2019 Table 1, p.171",
+      "status": "PROVISIONAL_TEXT_TRANSCRIPTION_REQUIRES_TABLE_IMAGE",
+      "warning": "Not necessarily full 2-sigma interval"
+    },
+    {
+      "record_id": "20261112T140057Z-auto11-tlajinga-comp17-RC06",
+      "unit": "I19",
+      "lot": 186,
+      "material": "outer wood",
+      "bp": 1790,
+      "uncertainty_bp": 25,
+      "calibrated_CE_segments_transcribed": "136–260",
+      "visible_segments_probability_sum": 0.702,
+      "source_locator": "Hirth et al. 2019 Table 1, p.171",
+      "status": "PROVISIONAL_TEXT_TRANSCRIPTION_REQUIRES_TABLE_IMAGE",
+      "warning": "Not necessarily full 2-sigma interval"
+    },
+    {
+      "record_id": "20261112T140057Z-auto11-tlajinga-comp17-RC07",
+      "unit": "J16",
+      "lot": 77,
+      "material": "charred material",
+      "bp": 1530,
+      "uncertainty_bp": 30,
+      "calibrated_CE_segments_transcribed": "428–599",
+      "visible_segments_probability_sum": 0.954,
+      "source_locator": "Hirth et al. 2019 Table 1, p.171",
+      "status": "PROVISIONAL_TEXT_TRANSCRIPTION_REQUIRES_TABLE_IMAGE",
+      "warning": "Not necessarily full 2-sigma interval"
+    },
+    {
+      "record_id": "20261112T140057Z-auto11-tlajinga-comp17-RC08",
+      "unit": "I17",
+      "lot": 76,
+      "material": "single charcoal",
+      "bp": 1625,
+      "uncertainty_bp": 15,
+      "calibrated_CE_segments_transcribed": "389–432",
+      "visible_segments_probability_sum": 0.806,
+      "source_locator": "Hirth et al. 2019 Table 1, p.171",
+      "status": "PROVISIONAL_TEXT_TRANSCRIPTION_REQUIRES_TABLE_IMAGE",
+      "warning": "Not necessarily full 2-sigma interval"
+    },
+    {
+      "record_id": "20261112T140057Z-auto11-tlajinga-comp17-RC09",
+      "unit": "I17",
+      "lot": 87,
+      "material": "single charcoal",
+      "bp": 1730,
+      "uncertainty_bp": 15,
+      "calibrated_CE_segments_transcribed": "251–358",
+      "visible_segments_probability_sum": 0.896,
+      "source_locator": "Hirth et al. 2019 Table 1, p.171",
+      "status": "PROVISIONAL_TEXT_TRANSCRIPTION_REQUIRES_TABLE_IMAGE",
+      "warning": "Not necessarily full 2-sigma interval"
+    },
+    {
+      "record_id": "20261112T140057Z-auto11-tlajinga-comp17-RC10",
+      "unit": "I16",
+      "lot": 103,
+      "material": "outer wood",
+      "bp": 1695,
+      "uncertainty_bp": 20,
+      "calibrated_CE_segments_transcribed": "324–401",
+      "visible_segments_probability_sum": 0.849,
+      "source_locator": "Hirth et al. 2019 Table 1, p.171",
+      "status": "PROVISIONAL_TEXT_TRANSCRIPTION_REQUIRES_TABLE_IMAGE",
+      "warning": "Not necessarily full 2-sigma interval"
+    },
+    {
+      "record_id": "20261112T140057Z-auto11-tlajinga-comp17-RC11",
+      "unit": "I16",
+      "lot": 110,
+      "material": "single charcoal",
+      "bp": 1600,
+      "uncertainty_bp": 15,
+      "calibrated_CE_segments_transcribed": "485–535;407–475",
+      "visible_segments_probability_sum": 0.954,
+      "source_locator": "Hirth et al. 2019 Table 1, p.171",
+      "status": "PROVISIONAL_TEXT_TRANSCRIPTION_REQUIRES_TABLE_IMAGE",
+      "warning": "Not necessarily full 2-sigma interval"
+    },
+    {
+      "record_id": "20261112T140057Z-auto11-tlajinga-comp17-RC12",
+      "unit": "I16",
+      "lot": 114,
+      "material": "outer wood",
+      "bp": 1625,
+      "uncertainty_bp": 20,
+      "calibrated_CE_segments_transcribed": "383–435;486–535",
+      "visible_segments_probability_sum": 0.921,
+      "source_locator": "Hirth et al. 2019 Table 1, p.171",
+      "status": "PROVISIONAL_TEXT_TRANSCRIPTION_REQUIRES_TABLE_IMAGE",
+      "warning": "Not necessarily full 2-sigma interval"
+    },
+    {
+      "record_id": "20261112T140057Z-auto11-tlajinga-comp17-RC13",
+      "unit": "I16",
+      "lot": 123,
+      "material": "outer wood",
+      "bp": 1760,
+      "uncertainty_bp": 20,
+      "calibrated_CE_segments_transcribed": "229–340",
+      "visible_segments_probability_sum": 0.954,
+      "source_locator": "Hirth et al. 2019 Table 1, p.171",
+      "status": "PROVISIONAL_TEXT_TRANSCRIPTION_REQUIRES_TABLE_IMAGE",
+      "warning": "Not necessarily full 2-sigma interval"
+    },
+    {
+      "record_id": "20261112T140057Z-auto11-tlajinga-comp17-RC14",
+      "unit": "I19",
+      "lot": 136,
+      "material": "charred material",
+      "bp": 1135,
+      "uncertainty_bp": 50,
+      "calibrated_CE_segments_transcribed": "772–997",
+      "visible_segments_probability_sum": 0.948,
+      "source_locator": "Hirth et al. 2019 Table 1, p.171",
+      "status": "PROVISIONAL_TEXT_TRANSCRIPTION_REQUIRES_TABLE_IMAGE",
+      "warning": "Not necessarily full 2-sigma interval"
+    },
+    {
+      "record_id": "20261112T140057Z-auto11-tlajinga-comp17-RC15",
+      "unit": "J19",
+      "lot": 146,
+      "material": "XAD amino acids",
+      "bp": 1185,
+      "uncertainty_bp": 15,
+      "calibrated_CE_segments_transcribed": "775–887",
+      "visible_segments_probability_sum": 0.954,
+      "source_locator": "Hirth et al. 2019 Table 1, p.171",
+      "status": "PROVISIONAL_TEXT_TRANSCRIPTION_REQUIRES_TABLE_IMAGE",
+      "warning": "Not necessarily full 2-sigma interval"
+    },
+    {
+      "record_id": "20261112T140057Z-auto11-tlajinga-comp17-RC16",
+      "unit": "I20",
+      "lot": 175,
+      "material": "XAD amino acids",
+      "bp": 1690,
+      "uncertainty_bp": 15,
+      "calibrated_CE_segments_transcribed": "330–400",
+      "visible_segments_probability_sum": 0.917,
+      "source_locator": "Hirth et al. 2019 Table 1, p.171",
+      "status": "PROVISIONAL_TEXT_TRANSCRIPTION_REQUIRES_TABLE_IMAGE",
+      "warning": "Not necessarily full 2-sigma interval"
+    },
+    {
+      "record_id": "20261112T140057Z-auto11-tlajinga-comp17-RC17",
+      "unit": "G22",
+      "lot": 220,
+      "material": "single charcoal",
+      "bp": 1790,
+      "uncertainty_bp": 15,
+      "calibrated_CE_segments_transcribed": "209–259;283–323",
+      "visible_segments_probability_sum": 0.797,
+      "source_locator": "Hirth et al. 2019 Table 1, p.171",
+      "status": "PROVISIONAL_TEXT_TRANSCRIPTION_REQUIRES_TABLE_IMAGE",
+      "warning": "Not necessarily full 2-sigma interval"
+    },
+    {
+      "record_id": "20261112T140057Z-auto11-tlajinga-comp17-RC18",
+      "unit": "K21",
+      "lot": 182,
+      "material": "multiple charcoal",
+      "bp": 1780,
+      "uncertainty_bp": 15,
+      "calibrated_CE_segments_transcribed": "212–264;275–330",
+      "visible_segments_probability_sum": 0.932,
+      "source_locator": "Hirth et al. 2019 Table 1, p.171",
+      "status": "PROVISIONAL_TEXT_TRANSCRIPTION_REQUIRES_TABLE_IMAGE",
+      "warning": "Not necessarily full 2-sigma interval"
+    }
+  ],
+  "evidence_issues": [
+    "Table 1 two-column text rendering requires original page image verification",
+    "2019 report 406.8 kg/76 m2 not directly equivalent to PATT web summary >415kg/77m3",
+    "23 canonical source IDs remain blank; no repairs applied",
+    "BU project page reflects same excavation and is not independent corroboration"
+  ],
+  "proposed_merge": {
+    "mode": "conditional_only_not_applied",
+    "source_id": "STG-SRC-HIRTH-2019-COMPOUND17",
+    "operations": [
+      {
+        "id": "20261112T140057Z-auto11-tlajinga-comp17-F01",
+        "action": "dedupe_and_check_evidence_then_insert"
+      },
+      {
+        "id": "20261112T140057Z-auto11-tlajinga-comp17-F02",
+        "action": "dedupe_and_check_evidence_then_insert"
+      },
+      {
+        "id": "20261112T140057Z-auto11-tlajinga-comp17-F03",
+        "action": "dedupe_and_check_evidence_then_insert"
+      },
+      {
+        "id": "20261112T140057Z-auto11-tlajinga-comp17-F04",
+        "action": "dedupe_and_check_evidence_then_insert"
+      },
+      {
+        "id": "20261112T140057Z-auto11-tlajinga-comp17-F05",
+        "action": "dedupe_and_check_evidence_then_insert"
+      }
+    ],
+    "radiocarbon_rows": "hold_until_visual_verification"
+  },
+  "recovery_archive_filename": "CDMX_STAGE_20261112T140057Z-auto11-tlajinga-comp17_TLAJINGA17_WORKSHOP_EVIDENCE.zip",
+  "recovery_archive_sha256": "7d3b9fc2e8d79233dc76405a4cecc3ee35f8696fc19c04991ce6e4897f01f342"
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "event_id": "20261112T140057Z-auto11-tlajinga-comp17",
+  "event_type": "APPEND_ONLY_STAGED_RESEARCH_BATCH",
+  "branch": "research-persistence",
+  "baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "previous_batch_path": "research/batches/20261112T130305Z-auto11-carballo-moon.json",
+  "batch_path": "research/batches/20261112T140057Z-auto11-tlajinga-comp17.json",
+  "checkpoint_path": "research/checkpoints/20261112T140057Z-auto11-tlajinga-comp17.json",
+  "canonical_modified": false,
+  "findings_candidate_count": 5,
+  "provisional_sample_rows": 18,
+  "probe_commit": "b0c310340b7ca34a908c17e27e653ee5005fc147",
+  "expected_parent_commit": "b0c310340b7ca34a908c17e27e653ee5005fc147",
+  "recovery_archive_sha256": "7d3b9fc2e8d79233dc76405a4cecc3ee35f8696fc19c04991ce6e4897f01f342"
+}
