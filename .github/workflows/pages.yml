@@ -51,6 +51,8 @@ jobs:
           # Enable comments after generators have finished; preserve all original historical content.
           mkdir -p site/feedback
           cp feedback/annotate.js site/feedback/annotate.js
+          mkdir -p site/poi/templo-mayor/review
+          cp poi/templo-mayor/review/index.html site/poi/templo-mayor/review/index.html
           python scripts/enable_reader_feedback.py
           python scripts/test_reader_feedback.py
           mkdir -p site/preview/teotihuacan
