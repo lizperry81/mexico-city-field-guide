@@ -23,7 +23,7 @@ STYLE = """
 .historical-connection{position:static;top:auto;display:block;margin:16px 0 24px;
   padding:16px;background:#edf5f4;border:1px solid #bfdbd7;border-radius:12px;
   color:#173c44;font:14px/1.5 system-ui,-apple-system,sans-serif}
-.historical-connection .connection-label{font-weight:750;letter-spacing:.06em;
+.historical-connection .connection-label{cursor:pointer;font-weight:750;letter-spacing:.06em;
   text-transform:uppercase;font-size:12px;color:#126c69;margin:0 0 4px}
 .historical-connection p{margin:6px 0 10px}
 .historical-connection ul{padding:0;margin:0;list-style:none}
@@ -97,15 +97,15 @@ def build():
                 for other in others
             )
             panel = (
-                f'<aside class="historical-connection" role="complementary" '
+                f'<details class="historical-connection" '
                 f'data-historical-thread="{escape(thread["id"], quote=True)}">'
-                '<p class="connection-label">Compare this history nearby</p>'
+                '<summary class="connection-label">Compare this history nearby</summary>'
                 f'<p><strong>{escape(thread["title"])}</strong> — '
                 f'{escape(thread["question"])}</p>'
                 f'<ul>{links}</ul>'
                 '<small>These links connect archived historical chapters. '
                 'Source IDs are retained; page-level independent verification '
-                'is still pending.</small></aside>'
+                'is still pending.</small></details>'
             )
             work[slug].append((anchor, heading, panel))
             manifest.append({
