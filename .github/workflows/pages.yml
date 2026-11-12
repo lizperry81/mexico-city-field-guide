@@ -60,6 +60,9 @@ jobs:
           # Generate the other three reader layouts from complete preserved dossiers.
           python scripts/build_centro_reviews.py
           python scripts/test_centro_reviews.py
+          # Contextual links use the actual archived chapters and the existing walk threads.
+          python scripts/build_thread_connections.py
+          python scripts/test_thread_connections.py
           mkdir -p site/preview/teotihuacan
           cp preview/teotihuacan/index.html site/preview/teotihuacan/index.html
           mkdir -p site/preview/atlas
@@ -134,11 +137,12 @@ jobs:
               'poi/zocalo/': ('What to look for on site','The day the poor burned the palace','../../feedback/annotate.js'),
               'poi/metropolitan-cathedral/': ('What to look for on site','The floor isn','../../feedback/annotate.js'),
               'poi/national-palace/': ('What to look for on site','Rivera','../../feedback/annotate.js'),
-              'poi/zocalo/review/': ('id="centro-review-script"','id="centro-review-styles"','src="../../../feedback/annotate.js"','What to look for on site','The day the poor burned the palace'),
-              'poi/metropolitan-cathedral/review/': ('id="centro-review-script"','id="centro-review-styles"','src="../../../feedback/annotate.js"','What to look for on site','The floor isn'),
-              'poi/national-palace/review/': ('id="centro-review-script"','id="centro-review-styles"','src="../../../feedback/annotate.js"','What to look for on site','Rivera'),
+              'poi/zocalo/review/': ('id="centro-review-script"','id="centro-review-styles"','src="../../../feedback/annotate.js"','What to look for on site','The day the poor burned the palace','data-historical-thread'),
+              'poi/metropolitan-cathedral/review/': ('id="centro-review-script"','id="centro-review-styles"','src="../../../feedback/annotate.js"','What to look for on site','The floor isn','data-historical-thread'),
+              'poi/national-palace/review/': ('id="centro-review-script"','id="centro-review-styles"','src="../../../feedback/annotate.js"','What to look for on site','Rivera','data-historical-thread'),
               'walks/historic-center/': ('From Tenochtitlan to Mexico City','data-mode="outdoor"','data-choose-thread="conquest"','stop-national-palace','../../feedback/annotate.js'),
               'data/historic-center-walk.json': ('"historic-center-walk-1"','"original_source_ids"'),
+              'data/historic-center-connections.json': ('"historic-center-chapter-comparisons-1"','"related_readings"','"count": 12'),
               'feedback/annotate.js': ('function allNotes()', 'Comment on this passage', 'feedback-open'),
               'data/research/templo_walk_v63.json': ('"chapters"','field_instruction'),
               'data/research/templo_mayor_pilot.json': ('"claims"','source_ids'),
@@ -165,7 +169,7 @@ jobs:
                             'src="../../../feedback/annotate.js"',
                             'History behind the excavated site','What to look for during the visit',
                             'Tlaltecuhtli','Coyolxauhqui','id="claimlist"',
-                            'review-switch','data-open-research']
+                            'review-switch','data-open-research','data-historical-thread']
                   assert all(x in html for x in required), 'Review missing preserved content or navigation'
                   assert len(html)>35000, 'Truncated review page'
                   print('LIVE COMMENTABLE REVIEW VERIFIED:',review_target,len(html),flush=True)
