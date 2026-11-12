@@ -1,0 +1,10 @@
+{
+  "run_id": "20261112T1458Z-auto11-16d5d1d4",
+  "test": "scheduled_github_read_write",
+  "branch": "research-persistence",
+  "read_state_success": true,
+  "state_blob_sha": "501b8084c0be41d03328b32d7400bbde2fd78640",
+  "baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_status": "provisional_not_reconciled",
+  "created_at": "2026-11-12T14:58:00Z"
+}
