@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "run_id": "20261112T0700Z-auto09",
+  "status": "STAGED ONLY — NOT IN CANONICAL",
+  "storage_role": "append_only_immutable_batch_with_embedded_ledger_checkpoint",
+  "baseline": {
+    "version": "V97 provisional",
+    "sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "counts": {
+      "sources": 616,
+      "claims": 422,
+      "claim_sources": 403,
+      "canonical_findings": 68,
+      "canonical_source_inspections": 9
+    },
+    "canonical_read_error": "Library path not found",
+    "canonical_updated": false
+  },
+  "source_inspection": {
+    "id": "STG-SRC-SLOAD-2007-FAMSI-TE28",
+    "author": "Rebecca Sload",
+    "title": "Radiocarbon Dating of Teotihuacán Mapping Project TE28 Material from Cave under Pyramid of the Sun, Teotihuacán, México",
+    "year": 2007,
+    "url": "https://www.famsi.org/reports/06017/06017Sload01.pdf",
+    "inspected": "PDF printed pages 13-26, Tables 1-2, Figures 6,10,11 inspected visually beyond abstract",
+    "uninspected": "Original 1978 field notebooks; original lab sheets; Sugiyama et al 2013 full paper"
+  },
+  "findings": [
+    {
+      "id": "20261112T0700Z-auto09-F01",
+      "operation": "NEW_OR_ENRICH",
+      "subject": "Area B eastern posthole and possible basalt laja floor",
+      "evidence": "Beta-220750 beneath Beta-220749 in posthole: 1870±40 and 1810±40 BP respectively; calibrated 2σ 60–240 CE and 110–330 CE. Beta-220747 1910±40 BP 2σ 20–220 CE in adjacent BYCT. No intact concrete floor in this area; original laja floor hypothesis unconfirmed.",
+      "loc": "pp.21-24 Figs 10-11 Tables 1-2"
+    },
+    {
+      "id": "20261112T0700Z-auto09-F02",
+      "operation": "NEW_OR_ENRICH",
+      "subject": "Area D western entrance: sequence below intact concrete floor",
+      "evidence": "Beta-220766 in basal fill 1930±40 BP 2σ 10 BCE–140 CE; Beta-220764 hearth 1890±40 BP 2σ 40–230 CE; Beta-220763 hearth 1760±40 BP 2σ 150–390 CE. Floor laid after deposits; precise construction year uncertain.",
+      "loc": "pp.25-26 Tables 1-2"
+    },
+    {
+      "id": "20261112T0700Z-auto09-F03",
+      "operation": "ENRICH_v97-sun-04_v97-sun-07",
+      "subject": "Blockages 11-12 dated fires and shell/fish-bone deposit",
+      "evidence": "Beta-220753 1810±40 BP, 220756 1750±40 BP, 220758 1790±40 BP near blockages; author suggests related sealing episode but overlapping 2σ ranges cannot prove a single event.",
+      "loc": "pp.19-21 Table 1-2"
+    },
+    {
+      "id": "20261112T0700Z-auto09-F04",
+      "operation": "ENRICH_v97-sun-08",
+      "subject": "South Transverse Chamber sample and ceramic counts",
+      "evidence": "Six of 273 total TE28 sherds in Area A, all Tzacualli/Miccaotli; Beta-220743 and 220744 early under concrete, 220745 later; reconcile with V97 four disturbed sherds subset.",
+      "loc": "pp.16-18 Fig 6"
+    },
+    {
+      "id": "20261112T0700Z-auto09-F05",
+      "operation": "ENRICH_v97-sun-05",
+      "subject": "Stratigraphically anomalous sample Beta-220760",
+      "evidence": "Sample dated 1830±40 BP 2σ 90–260 CE from lowest fill versus Beta-220754 1970±40 BP 2σ 50 BCE–110 CE in another lowest fill; source calls 220760 anomalous.",
+      "loc": "pp.19-20 Tables 1-2"
+    }
+  ],
+  "radicarbon_sample_ids": [
+    220743,
+    220744,
+    220745,
+    220746,
+    220747,
+    220749,
+    220750,
+    220753,
+    220754,
+    220756,
+    220758,
+    220760,
+    208984,
+    220763,
+    220764,
+    220766
+  ],
+  "full_matrix": "CDMX_STAGE_20261112T0700Z_TE28_CAVE_2007_SAMPLE_MATRIX.zip / RADIOCARBON_SAMPLES.json",
+  "issues": [
+    "Sload 2007 and Sload 2020 reuse TE28 dates; not independent corroboration",
+    "Reconcile six total sherds with four disturbed sherds V97 sample subset",
+    "Sugiyama et al 2013 original radiocarbon tables unexamined"
+  ],
+  "ledger": {
+    "previous_archive": "CDMX_STAGE_20261112T060230Z-auto09_QUARRY_RADIOCARBON_QA.zip",
+    "previous_archive_sha256": "",
+    "immutable": true,
+    "merge_applied": false,
+    "observed_head_before_commit": "7d246d197e5df51b07f8db82496991253a73421f"
+  },
+  "checkpoint": {
+    "last_accepted_canonical_batch": "v97-sun-pyramid-evidence",
+    "next_action": "Inspect 2013 Sugiyama source radiocarbon tables; compare TE28 sample contexts against 2020 Sload, reconcile staging source IDs and V87 before any V98 import"
+  },
+  "proposed_merge": {
+    "manual_review": true,
+    "recheck_baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "no_auto_promotion": true,
+    "no_main_changes": true
+  }
+}
