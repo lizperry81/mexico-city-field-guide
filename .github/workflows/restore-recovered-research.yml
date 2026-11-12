@@ -1,0 +1,46 @@
+name: Preserve recovered V81 Templo research as original JSON
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/restore-recovered-research.yml
+      - research/recovered/templo_v81_original_json.zlib.b64
+      - scripts/recover_templo.py
+
+permissions:
+  contents: write
+
+concurrency:
+  group: restore-original-templo-v81
+  cancel-in-progress: false
+
+jobs:
+  preserve:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Restore and SHA-verify the three original research documents
+        run: |
+          python scripts/recover_templo.py .
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          r=Path("data/research")
+          a=json.loads((r/"templo_walk_v63.json").read_text(encoding="utf-8"))
+          b=json.loads((r/"templo_mayor_pilot.json").read_text(encoding="utf-8"))
+          c=json.loads((r/"templo_verified_discoveries_v68.json").read_text(encoding="utf-8"))
+          assert len(a["chapters"])==8 and len(b["claims"])==21 and len(c)==12
+          print("PASS: 8 source chapters, 21 claims, 12 scholarly records restored")
+          PY
+      - name: Commit source-accurate JSON only if not yet tracked
+        run: |
+          git add -- data/research/templo_walk_v63.json data/research/templo_mayor_pilot.json data/research/templo_verified_discoveries_v68.json
+          if git diff --cached --quiet; then
+            echo "Original files already committed and identical"
+          else
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m "Preserve 8 original field chapters, 21 claims and 12 source records as tracked JSON"
+            git push origin HEAD:main
+          fi
