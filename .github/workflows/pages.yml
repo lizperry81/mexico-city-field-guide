@@ -25,13 +25,8 @@ jobs:
           mkdir site extracted
           unzip cdmx-fieldguide-redesign.zip -d extracted
           cp -a extracted/cdmx-fieldguide-build/. site/
-          cp recovered/mexico-city-field-guide.html site/index.html
-          if [ -f site/data/research/templo_walk_v63.json ] && [ -f site/data/research/templo_mayor_pilot.json ] && [ -f site/data/research/templo_verified_discoveries_v68.json ]; then
-            python scripts/build_poi.py
-          else
-            echo 'Original ZIP lacks V81 Templo Mayor data; keeping published site unchanged until research files are added'
-          fi
-          if [ -f site/poi/templo-mayor/index.html ]; then
+          # Preserve the existing published homepage; no replacement with an older ZIP.\n          cp recovered/mexico-city-field-guide.html site/index.html
+          # Restore source-accurate V81 JSON (8 chapters, 21 claims, 12 sources). Fail closed.\n          python scripts/recover_templo.py site\n          python scripts/build_poi.py\n          python scripts/test_poi.py\n          if [ -f site/poi/templo-mayor/index.html ]; then
             python - <<'PY'
           from pathlib import Path
           p=Path('site/index.html')
