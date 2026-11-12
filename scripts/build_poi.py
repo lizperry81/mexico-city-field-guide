@@ -8,14 +8,14 @@ def read(name):
 walk=read("research/templo_walk_v63.json")
 pilot=read("research/templo_mayor_pilot.json")
 discovery=read("research/templo_verified_discoveries_v68.json")
-centro=read("centro.json")
+
 def e(x):return html.escape(str(x or ""),quote=True)
 chapters=walk.get("chapters",[])
 assert len(chapters)>=3, "Missing historic walk chapters"
 assert len(pilot.get("claims",[]))>=15, "Missing claims"
 def chapter(c,i):
     title=e(c.get("title",f"Section {i}"))
-    body=e(c.get("core_text","")).replace("\n","<br>")
+    body=e(c.get("core_text") or c.get("narrative") or c.get("text") or "").replace("\n","<br>")
     extras=[]
     for k in ("what_to_look_for","look_for","field_prompt","evidence","uncertainty","historical_context","deep_dive","source_note"):
         v=c.get(k)
