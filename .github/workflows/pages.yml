@@ -26,8 +26,13 @@ jobs:
           unzip cdmx-fieldguide-redesign.zip -d extracted
           cp -a extracted/cdmx-fieldguide-build/. site/
           cp recovered/mexico-city-field-guide.html site/index.html
-          python scripts/build_poi.py
-          python - <<'PY'
+          if [ -f site/data/research/templo_walk_v63.json ] && [ -f site/data/research/templo_mayor_pilot.json ] && [ -f site/data/research/templo_verified_discoveries_v68.json ]; then
+            python scripts/build_poi.py
+          else
+            echo 'Original ZIP lacks V81 Templo Mayor data; keeping published site unchanged until research files are added'
+          fi
+          if [ -f site/poi/templo-mayor/index.html ]; then
+            python - <<'PY'
           from pathlib import Path
           p=Path('site/index.html')
           s=p.read_text(encoding='utf-8')
@@ -35,6 +40,7 @@ jobs:
           s=s.replace('</body>',link+'</body>')
           p.write_text(s,encoding='utf-8')
           PY
+          fi
           mkdir -p site/preview/teotihuacan
           cp preview/teotihuacan/index.html site/preview/teotihuacan/index.html
           mkdir -p site/preview/atlas
