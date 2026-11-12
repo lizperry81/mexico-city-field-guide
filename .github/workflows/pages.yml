@@ -30,7 +30,10 @@ jobs:
           mkdir -p site/poi/templo-mayor
           cp poi/templo-mayor/index.html site/poi/templo-mayor/index.html
           # Restore source-accurate V81 JSON (8 chapters, 21 claims, 12 sources).
-          python scripts/recover_templo.py site\n          python scripts/build_poi.py\n          python scripts/test_poi.py\n          if [ -f site/poi/templo-mayor/index.html ]; then
+          python scripts/recover_templo.py site
+          python scripts/build_poi.py
+          python scripts/test_poi.py
+          if [ -f site/poi/templo-mayor/index.html ]; then
             python - <<'PY'
           from pathlib import Path
           p=Path('site/index.html')
