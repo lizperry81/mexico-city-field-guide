@@ -9,6 +9,13 @@ built_home = (root / "index.html").read_bytes()
 assert len(original_home) > 500_000, "The recovered rich homepage is unexpectedly short"
 assert built_home == original_home, "Base homepage differs from richer preserved original; potential regression"
 research = root / "data" / "research"
+# The original research JSON must be tracked in main as well as restored to the
+# deployed site. Reject silent divergence between preserved originals and pages.
+originals = Path("data/research")
+for name in ("templo_walk_v63.json", "templo_mayor_pilot.json",
+             "templo_verified_discoveries_v68.json"):
+    assert (originals/name).is_file(), f"Original archival JSON not committed: {name}"
+    assert (originals/name).read_bytes() == (research/name).read_bytes(), f"Preservation regression: {name}"
 walk = json.loads((research / "templo_walk_v63.json").read_text(encoding="utf-8"))
 pilot = json.loads((research / "templo_mayor_pilot.json").read_text(encoding="utf-8"))
 sources = json.loads((research / "templo_verified_discoveries_v68.json").read_text(encoding="utf-8"))
