@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "run_id": "20261112T1203Z-auto11-mirror-photo",
+  "status": "STAGED_ONLY_NOT_IN_CANONICAL",
+  "baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "source_inspection": {
+    "id": "STG-20261112T1203Z-INSP01",
+    "source_id": "STG-SRC-BARNES-2024-MIRRORS",
+    "author": "Trenton D. Barnes",
+    "title": "Blood, obsidian, and the Teotihuacan cult of the mirror",
+    "journal": "Ancient Mesoamerica 35 (2024):451-471",
+    "doi": "10.1017/S0956536123000238",
+    "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/4278B64ABA09FDAE789A9AD4AF03FF69/S0956536123000238a.pdf/blood-obsidian-and-the-teotihuacan-cult-of-the-mirror.pdf",
+    "inspected": [
+      "original PDF printed p.453 Fig.2 screenshot",
+      "original PDF printed p.458 Fig.6 screenshot",
+      "printed p.461 discussion and publisher full HTML pp.457–462"
+    ],
+    "not_inspected": [
+      "Sugiyama 2013 radiocarbon tables",
+      "Turner 1992 excavation original",
+      "Carballo 2007 original workshop",
+      "site restoration records"
+    ],
+    "rights": "Barnes (2024) OA CC BY 4.0, author-credited photographs"
+  },
+  "new_findings": [
+    {
+      "id": "STG-20261112T1203Z-F01",
+      "place": "Pyramid of the Feathered Serpent, Ciudadela, Teotihuacan",
+      "period": "Early Classic Teotihuacan",
+      "assertion": "One surviving Feathered Serpent tenoned head on the west facade retains two obsidian disk eye inlays. Barnes's photograph documents this head only; it does not establish the total number of heads once inlaid.",
+      "source_id": "STG-SRC-BARNES-2024-MIRRORS",
+      "locator": "Barnes 2024 p.453 Fig.2; pp.457–458",
+      "status": "Evidence-examined",
+      "method": "author photograph visually inspected",
+      "uncertainty": "Whether other eroded heads held disks is an interpretation, not direct archaeological observation",
+      "operation": "conditional_insert_after_duplicate_and_source_check"
+    },
+    {
+      "id": "STG-20261112T1203Z-F02",
+      "place": "Palace of Quetzalpapalotl, Teotihuacan",
+      "period": "Early Classic Teotihuacan",
+      "assertion": "Author photographs and discussion document obsidian insets in Quetzalpapalotl patio-carved columns in three motifs: mythological bird eyes, separate eye disks, and profile mirror-bowl patterns in bird tails. Not all empty sockets prove original obsidian inlays.",
+      "source_id": "STG-SRC-BARNES-2024-MIRRORS",
+      "locator": "Barnes 2024 p.458 Fig.6a–b and pp.458–459",
+      "status": "Evidence-examined",
+      "method": "author figures inspected",
+      "uncertainty": "Profile mirror interpretation is iconographic; restoration history unexamined",
+      "operation": "conditional_insert_after_duplicate_and_source_check"
+    }
+  ],
+  "secondary_research_lead": {
+    "id": "STG-20261112T1203Z-LEAD-01",
+    "assertion": "Barnes cites TMP TE 5 6G:N5W1 pyrite and slate concentration adjacent to obsidian working, but specialized mirror-workshop status is not excavationally confirmed.",
+    "locator": "Barnes 2024 pp.461–462, citing Turner 1992 and Carballo 2007",
+    "status": "Source-linked; primary uninspected"
+  },
+  "visuals": [
+    {
+      "id": "STG-VIS-20261112T1203Z-01",
+      "figure": "Fig.2 p.453",
+      "rights": "author photo; article states CC BY 4.0; attribution and site rights check required"
+    },
+    {
+      "id": "STG-VIS-20261112T1203Z-02",
+      "figure": "Fig.6 p.458",
+      "rights": "author photo; article states CC BY 4.0; attribution and restoration rights check required"
+    }
+  ],
+  "source_link_repair_proposals": [
+    {
+      "finding_id": "v97-sun-09",
+      "operation": "add bibliographic source/link only, no evidence promotion",
+      "doi": "10.7183/1045-6635.24.4.403",
+      "access": "abstract_only"
+    },
+    {
+      "finding_id": "v97-sun-10",
+      "operation": "represent two distinct sources/contrasting interpretations in junction table; preserve legacy finding",
+      "links": [
+        {
+          "id": "v95-sload-cave-2020",
+          "access": "source text inspected prior run"
+        },
+        {
+          "doi": "10.7183/1045-6635.24.4.403",
+          "access": "abstract_only"
+        }
+      ]
+    }
+  ],
+  "canonical_modifications": 0,
+  "verification": {
+    "v97_sqlite_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "integrity_check": "ok",
+    "foreign_key_check": [],
+    "counts": {
+      "sources": 616,
+      "claims": 422,
+      "claim_sources": 403,
+      "canonical_findings": 68
+    },
+    "current_library_access": "path_not_found"
+  },
+  "next_action": "Obtain original Sugiyama et al. 2013 Tables 2–3 and original Turner 1992 TE5 documentation; perform conceptual duplicate audit and conflict-checked merge only with fresh canonical authority"
+}
