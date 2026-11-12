@@ -26,6 +26,7 @@ for slug,page in page_map.items():
     assert "Discover" in page and "Explore" in page and "Plan" in page,slug
     assert "page-level independent verification" in page
     assert "location.hash" in page, "Review reader must support incoming chapter deep links"
+    assert "history.replaceState" in page, "Reader must remember current chapter when following cross-site links"
 for row in rows:
     slug=row["slug"]
     source_page=page_map[slug]
