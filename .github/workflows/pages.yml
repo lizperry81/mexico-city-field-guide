@@ -77,4 +77,31 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Verify deployed mobile POI entry
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          python - <<'PY'
+          import os,urllib.request,time
+          url=os.environ['PAGE_URL'].rstrip('/')+'/poi/templo-mayor/'
+          required=('Templo Mayor','What to look for during the visit','History behind the excavated site','Tlaltecuhtli','Coyolxauhqui','id="museum"','id="claimlist"')
+          error=None
+          for attempt in range(10):
+              try:
+                  req=urllib.request.Request(url,headers={'User-Agent':'MexicoCityFieldGuide-deploy-smoke/1.0'})
+                  with urllib.request.urlopen(req,timeout=25) as response:
+                      page=response.read().decode('utf-8')
+                      assert response.status==200
+                  missing=[x for x in required if x not in page]
+                  assert not missing, f'Missing deployed content: {missing}'
+                  assert len(page)>17000, f'Truncated deployed page: {len(page)} bytes'
+                  print('LIVE POI VERIFIED:',url,'HTML chars:',len(page),flush=True)
+                  break
+              except Exception as ex:
+                  error=ex
+                  print(f'Live verification attempt {attempt+1} failed: {ex}',flush=True)
+                  time.sleep(8)
+          else:
+              raise SystemExit(f'Live site NOT verified: {url}, final error: {error}')
+          PY
 
