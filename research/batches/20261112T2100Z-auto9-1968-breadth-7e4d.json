@@ -1,0 +1,251 @@
+{
+  "schema_version": 1,
+  "run_id": "20261112T2100Z-auto9-1968-breadth-7e4d",
+  "branch": "research-persistence",
+  "role": "append_only_research_staging",
+  "status": "STAGED ONLY — NOT IN CANONICAL",
+  "baseline": {
+    "version": "V97 provisional",
+    "sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "findings": 68,
+    "sources": 616,
+    "claims": 422
+  },
+  "archive": {
+    "filename": "CDMX_STAGE_20261112T2100Z-auto9-1968-breadth-7e4d_1968_STUDENT_MOVEMENT_POI.zip",
+    "sha256": "961c8ec69dc5067948e1c6a822a2558b94b0bb2cd866f1a83a71900e22bde4fb"
+  },
+  "sources": {
+    "s1": {
+      "url": "https://www.gaceta.unam.mx/index/wp-content/uploads/2018/08/Suplemento-68-04.pdf",
+      "scope": "substantial UNAM institutional retrospective inspected; no 1968 original directly inspected"
+    },
+    "s2": {
+      "url": "https://www.gaceta.unam.mx/marchan-400-mil-al-zocalo/",
+      "scope": "substantial UNAM institutional retrospective inspected; no 1968 original directly inspected"
+    },
+    "s3": {
+      "url": "https://www.gaceta.unam.mx/gobierno-endurece-su-postura/",
+      "scope": "substantial UNAM institutional retrospective inspected; no 1968 original directly inspected"
+    },
+    "s4": {
+      "url": "https://www.gaceta.unam.mx/1968-bazucazo-contra-san-ildefonso-el-ejercito-asalta-cu/",
+      "scope": "substantial UNAM institutional retrospective inspected; no 1968 original directly inspected"
+    },
+    "s5": {
+      "url": "https://www.gaceta.unam.mx/resguarda-la-unam-unica-serie-radial-del-68/",
+      "scope": "substantial UNAM institutional retrospective inspected; no 1968 original directly inspected"
+    },
+    "s6": {
+      "url": "https://www.gaceta.unam.mx/inauguran-monumento-a-la-ausencia/",
+      "scope": "substantial UNAM institutional retrospective inspected; no 1968 original directly inspected"
+    }
+  },
+  "findings": [
+    {
+      "id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-f01",
+      "date": "July 22–30",
+      "assertion": "Police intervention after student clashes; Army breached San Ildefonso school door with bazooka early July 30",
+      "source_id": "s4",
+      "exact_locator": "El bazucazo y la protesta de rector",
+      "poi_ids": [
+        "sanildefonso",
+        "zocalo"
+      ],
+      "status": "evidence-examined-secondary",
+      "independent_corroboration": false,
+      "editorial": "not_ready"
+    },
+    {
+      "id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-f02",
+      "date": "Aug 2",
+      "assertion": "CNH constituted with three assembly-elected delegates per striking school and no political-party delegation",
+      "source_id": "s1",
+      "exact_locator": "PDF p.2, 2 August",
+      "poi_ids": [
+        "cu",
+        "ipn"
+      ],
+      "status": "evidence-examined-secondary",
+      "independent_corroboration": false,
+      "editorial": "not_ready"
+    },
+    {
+      "id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-f03",
+      "date": "Aug 2",
+      "assertion": "Six demands include release of political prisoners, end to granaderos, repeal of Penal Code 145/145 bis, reparations and accountability",
+      "source_id": "s1",
+      "exact_locator": "PDF p.2, numbered demands",
+      "poi_ids": [
+        "zocalo",
+        "cu"
+      ],
+      "status": "evidence-examined-secondary",
+      "independent_corroboration": false,
+      "editorial": "not_ready"
+    },
+    {
+      "id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-f04",
+      "date": "Aug 5",
+      "assertion": "UNAM retrospective estimates 100,000 on Zacatenco–Casco Santo Tomás march; participants proposed 72-hour ultimatum",
+      "source_id": "s1",
+      "exact_locator": "PDF p.4, 5 August",
+      "poi_ids": [
+        "ipn"
+      ],
+      "status": "evidence-examined-secondary",
+      "independent_corroboration": false,
+      "editorial": "not_ready"
+    },
+    {
+      "id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-f05",
+      "date": "Aug 27",
+      "assertion": "March from Anthropology Museum to Zócalo; El Día's estimate of 400,000 is not verified headcount",
+      "source_id": "s2",
+      "exact_locator": "Marchan 400 mil al Zócalo opening",
+      "poi_ids": [
+        "antropologia",
+        "zocalo"
+      ],
+      "status": "evidence-examined-secondary",
+      "independent_corroboration": false,
+      "editorial": "not_ready"
+    },
+    {
+      "id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-f06",
+      "date": "Aug 27",
+      "assertion": "UNAM lists UNAM/IPN/Chapingo student speakers, teachers, worker and mother; letter from jailed railroad leader read",
+      "source_id": "s2",
+      "exact_locator": "Marchan 400 mil al Zócalo speakers",
+      "poi_ids": [
+        "zocalo"
+      ],
+      "status": "evidence-examined-secondary",
+      "independent_corroboration": false,
+      "editorial": "not_ready"
+    },
+    {
+      "id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-f07",
+      "date": "Aug 27",
+      "assertion": "Student participants allegedly obtained ecclesiastical permission to ring Cathedral bells",
+      "source_id": "s2",
+      "exact_locator": "Varios estudiantes piden permiso",
+      "poi_ids": [
+        "catedral"
+      ],
+      "status": "evidence-examined-secondary",
+      "independent_corroboration": false,
+      "editorial": "not_ready"
+    },
+    {
+      "id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-f08",
+      "date": "Aug 27",
+      "assertion": "CNH speaker publicly proposed broadcast government talks in Zócalo on Sept 1; proposal not outcome",
+      "source_id": "s2",
+      "exact_locator": "Hacia el final del mitin",
+      "poi_ids": [
+        "zocalo",
+        "palacio"
+      ],
+      "status": "evidence-examined-secondary",
+      "independent_corroboration": false,
+      "editorial": "not_ready"
+    },
+    {
+      "id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-f09",
+      "date": "Aug 28",
+      "assertion": "Predawn forces cleared Zócalo campers; UNAM reconstructs nearby pursuit through Madero, 5 de Mayo, 16 de Septiembre",
+      "source_id": "s2",
+      "exact_locator": "Expulsan a estudiantes en la madrugada",
+      "poi_ids": [
+        "zocalo",
+        "palacio"
+      ],
+      "status": "evidence-examined-secondary",
+      "independent_corroboration": false,
+      "editorial": "not_ready"
+    },
+    {
+      "id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-f10",
+      "date": "Aug 29–Sept 3",
+      "assertion": "UNAM reports solidarity strike by 220 medical trainees at Hospital General",
+      "source_id": "s3",
+      "exact_locator": "Gobierno endurece su postura, Sep 3",
+      "poi_ids": [],
+      "status": "evidence-examined-secondary",
+      "independent_corroboration": false,
+      "editorial": "not_ready"
+    },
+    {
+      "id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-f11",
+      "date": "Sept 5",
+      "assertion": "CNH proposed public broadcast IMSS Centro Médico talks; campaign target one million signatures, not actual total",
+      "source_id": "s3",
+      "exact_locator": "Pláticas para la semana próxima",
+      "poi_ids": [
+        "cu"
+      ],
+      "status": "evidence-examined-secondary",
+      "independent_corroboration": false,
+      "editorial": "not_ready"
+    },
+    {
+      "id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-f12",
+      "date": "Sept 18–19",
+      "assertion": "Army occupied Ciudad Universitaria and Rector Barros Sierra condemned action next day; UNAM reports detentions including Ifigenia Martínez",
+      "source_id": "s4",
+      "exact_locator": "Ocupación de CU",
+      "poi_ids": [
+        "cu"
+      ],
+      "status": "evidence-examined-secondary",
+      "independent_corroboration": false,
+      "editorial": "not_ready"
+    },
+    {
+      "id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-f13",
+      "date": "July–Oct 1968",
+      "assertion": "Radio UNAM preserves 17 reels of student-produced news; archived audio not personally heard",
+      "source_id": "s5",
+      "exact_locator": "Resguarda la UNAM única serie radial del 68",
+      "poi_ids": [
+        "cu"
+      ],
+      "status": "evidence-examined-secondary",
+      "independent_corroboration": false,
+      "editorial": "not_ready"
+    },
+    {
+      "id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-f14",
+      "date": "Oct 2",
+      "assertion": "UNAM retrospective reports rally of approximately 5,000 at Tlatelolco; fatality and injury totals remain unresolved",
+      "source_id": "s4",
+      "exact_locator": "2 de octubre, matanza en Tlatelolco",
+      "poi_ids": [
+        "tlatelolco"
+      ],
+      "status": "evidence-examined-secondary",
+      "independent_corroboration": false,
+      "editorial": "not_ready"
+    },
+    {
+      "id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-f15",
+      "date": "Oct 2018",
+      "assertion": "UNAM inaugurated Monumento a la Ausencia at CCUT, with archival victim categorization (dead, injured, detained, disappeared)",
+      "source_id": "s6",
+      "exact_locator": "Inauguran Monumento a la Ausencia; Deudas",
+      "poi_ids": [
+        "tlatelolco"
+      ],
+      "status": "evidence-examined-secondary",
+      "independent_corroboration": false,
+      "editorial": "not_ready"
+    }
+  ],
+  "coverage_proposed": {
+    "period": "Mexico City 1940–1980",
+    "cells_improved": 7,
+    "qualification": "provisional, not substantial"
+  },
+  "notes": "This GitHub record is a condensed extract; complete source inspections, qualifications, matrices, POI links, baseline and prior cumulative recovery archive are in the separately generated ZIP. Do not merge without current canonical manifest read."
+}
