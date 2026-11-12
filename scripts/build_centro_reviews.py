@@ -127,7 +127,7 @@ screens.explore.append(exploreIntro);
 const obsHeading=observations.querySelector('h2');
 const obsSpot=observations.querySelector('p');
 if(obsSpot)exploreIntro.append(obsSpot);
-if(obsHeading)obsHeading.remove();
+if(obsHeading)exploreIntro.querySelector('h2').replaceWith(obsHeading);
 const stopHost=document.createElement('div');screens.explore.append(stopHost);
 const stopSections=stops.map((li,i)=>{
   const section=document.createElement('section');section.id='review-observation-'+(i+1);
