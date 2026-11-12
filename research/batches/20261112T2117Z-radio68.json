@@ -1,0 +1,13 @@
+{
+  "batch_id": "20261112T2117Z-radio68",
+  "status": "STAGED ONLY",
+  "source": "https://www.gaceta.unam.mx/resguarda-la-unam-unica-serie-radial-del-68/",
+  "finding_ids": [
+    "stg-20261112-radio68-01",
+    "stg-20261112-radio68-02",
+    "stg-20261112-radio68-03"
+  ],
+  "baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "archive": "/MexicoResearch/staging/CDMX_STAGE_20261112T2117Z_RADIO_UNAM_1968.zip",
+  "next_action": "Inspect original Radio UNAM recordings"
+}
