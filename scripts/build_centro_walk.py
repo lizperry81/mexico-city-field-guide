@@ -139,6 +139,7 @@ h1{font:700 clamp(37px,6vw,69px)/1.07 Georgia,serif;margin:12px 0 17px;max-width
 .stop{background:white;margin:17px 0;border:1px solid var(--line);border-radius:15px;padding:22px;scroll-margin-top:18px}.stop h2{margin-top:4px}.field{border-left:3px solid var(--jade);background:#edf5f4;padding:14px 16px}.field strong{display:block;margin-bottom:6px;color:#095a57}.access,.trace{font-size:13px;color:var(--muted)}.read{display:block;font-weight:700;margin:18px 0 5px}.walk-flow{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding:4px 0 17px}.walk-flow a{padding:8px 10px;background:#e6f1f0;border-radius:9px;text-decoration:none;font-size:14px}
 .thread{border-top:1px solid var(--line);padding:21px 0}.thread-question{font-weight:750}.thread ol{list-style:none;padding:0;margin:16px 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.thread li{border:1px solid var(--line);border-radius:12px;background:white;padding:15px}.thread li a{text-decoration:none;display:block}.thread li span{display:block;color:var(--muted);font-size:12px}.thread li strong{display:block;margin:6px 0}.thread li small{font-size:12px;color:var(--muted)}.navrow{display:flex;gap:8px;flex-wrap:wrap}.navrow button{background:#e6f1f0;border:1px solid #c8d6da;border-radius:10px;padding:10px}
 @media(max-width:690px){.thread ol{display:block}.thread li{margin:10px 0}.choice button{flex:1 1 145px}.stop{padding:17px}.lede{font-size:19px}}
+.location-controls{margin-top:16px}.location-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.location-actions button{border:1px solid var(--jade);color:var(--ink);background:#e6f1f0;border-radius:10px;padding:11px 15px;font-weight:700}.location-actions button:focus-visible,.choice button:focus-visible,.navrow button:focus-visible{outline:3px solid #bd7835;outline-offset:3px}.location-status{margin:10px 0 0;color:var(--muted)}.nearest-link{font-weight:700;display:inline-block;margin:6px 0}.nearest-link[hidden]{display:none}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style></head><body>
 <header><a href="../../">← Main field guide</a><a href="../../research-library/">Research evidence library</a></header>
@@ -154,6 +155,11 @@ h1{font:700 clamp(37px,6vw,69px)/1.07 Georgia,serif;margin:12px 0 17px;max-width
 <button type="button" data-mode="focus" aria-pressed="false">Archaeology focus <small>2–3 hours · optional excavation entry</small></button>
 <button type="button" data-mode="deep" aria-pressed="false">Full historic center <small>4–6+ hours · interiors when available</small></button>
 </div><p class="plan" id="plan-message" aria-live="polite">Outdoor circuit: a four-stop, exterior-only walk. No ticketed entry assumed.</p></section>
+<section class="controls location-controls" aria-labelledby="location-title"><h2 id="location-title">Find my nearest walk stop</h2>
+<p id="location-explain">Optional, one-time device location. Your coordinates are used only in this page and are not saved or transmitted by the guide. Distances are straight-line estimates, not walking directions.</p>
+<div class="location-actions"><button type="button" id="locate-nearest" aria-describedby="location-explain">Find things near me</button><button type="button" id="disable-location" hidden>Stop using location</button></div>
+<p class="location-status" id="location-status" role="status" aria-live="polite">Location off. You can follow the four stops in their historical sequence without sharing your location.</p>
+<a class="nearest-link" id="nearest-link" href="#stop-templo-mayor" hidden>Go to nearest stop</a></section>
 <div class="walk-flow" aria-label="Route sequence"><a href="#stop-templo-mayor">1 · Templo Mayor</a><span aria-hidden="true">→</span><a href="#stop-metropolitan-cathedral">2 · Cathedral</a><span aria-hidden="true">→</span><a href="#stop-zocalo">3 · Zócalo</a><span aria-hidden="true">→</span><a href="#stop-national-palace">4 · National Palace</a></div>
 <section aria-label="Four historical stops">__STOPS__</section>
 <section aria-labelledby="threads-title"><p class="eyebrow">CASCADING HISTORY · FOLLOW A QUESTION</p><h2 id="threads-title">Take the same question through different places</h2>
@@ -186,9 +192,67 @@ h1{font:700 clamp(37px,6vw,69px)/1.07 Georgia,serif;margin:12px 0 17px;max-width
  }
  tbuttons.forEach(function(b){b.addEventListener('click',function(){chooseThread(b.getAttribute('data-choose-thread'));});});
  chooseThread('conquest');
+ // Browser location is requested only by explicit click; never persisted or transmitted by the guide.
+ var geoSites=__GEO_SITES__;
+ var locate=document.getElementById('locate-nearest');
+ var disable=document.getElementById('disable-location');
+ var status=document.getElementById('location-status');
+ var nearest=document.getElementById('nearest-link');
+ var requestVersion=0;
+ function distanceMeters(lat,lon,site){
+   var toRad=Math.PI/180;
+   var dlat=(site.lat-lat)*toRad,dlon=(site.lon-lon)*toRad;
+   var a=Math.sin(dlat/2)**2+Math.cos(lat*toRad)*Math.cos(site.lat*toRad)*Math.sin(dlon/2)**2;
+   return 6371000*2*Math.atan2(Math.sqrt(a),Math.sqrt(Math.max(0,1-a)));
+ }
+ function distanceLabel(m){return m<1000?Math.round(m)+' m':(m/1000).toFixed(1)+' km';}
+ locate.addEventListener('click',function(){
+   if(!navigator.geolocation){
+     status.textContent='Device location is unavailable. Use the four-stop links below.';
+     return;
+   }
+   var version=++requestVersion;
+   locate.disabled=true;
+   status.textContent='Requesting location permission from your device…';
+   navigator.geolocation.getCurrentPosition(function(position){
+     if(version!==requestVersion)return;
+     locate.disabled=false;
+     var lat=position.coords.latitude,lon=position.coords.longitude;
+     if(!Number.isFinite(lat)||!Number.isFinite(lon)){
+       status.textContent='The device returned an invalid location. Use the four-stop route instead.';return;
+     }
+     var ranked=geoSites.map(function(s){return {site:s,meters:distanceMeters(lat,lon,s)};})
+       .sort(function(a,b){return a.meters-b.meters;});
+     var first=ranked[0];
+     if(!first||!Number.isFinite(first.meters)){
+       status.textContent='Could not determine a nearby stop.';return;
+     }
+     var accuracy=position.coords.accuracy;
+     var caveat=Number.isFinite(accuracy)&&accuracy>250?
+       ' Device accuracy is only about '+distanceLabel(accuracy)+'; the nearest stop may be uncertain.':'';
+     status.textContent='Nearest walk stop: '+first.site.name+' (about '+distanceLabel(first.meters)+' straight-line).'+caveat;
+     nearest.href='#stop-'+first.site.slug;
+     nearest.textContent='Jump to '+first.site.name;
+     nearest.hidden=false;
+     disable.hidden=false;
+   },function(){
+     if(version!==requestVersion)return;
+     locate.disabled=false;
+     status.textContent='Location permission was denied or unavailable. Use the four-stop route without location.';
+   },{enableHighAccuracy:false,timeout:10000,maximumAge:0});
+ });
+ disable.addEventListener('click',function(){
+   ++requestVersion;
+   locate.disabled=false;
+   disable.hidden=true;
+   nearest.hidden=true;
+   status.textContent='Location off. No location is saved by the guide. Follow the four-stop route below.';
+ });
 })();
 </script></body></html>'''
-    page=page.replace("__STOPS__","".join(stop_html)).replace("__THREADS__","".join(thread_html)).replace("__THREAD_BUTTONS__",button_html)
+    geo_sites=[{"slug":s["slug"],"name":s["name"],"lat":CENTRO[s["key"]]["ll"][0],"lon":CENTRO[s["key"]]["ll"][1]} for s in STOPS]
+    page=(page.replace("__STOPS__","".join(stop_html)).replace("__THREADS__","".join(thread_html))
+               .replace("__THREAD_BUTTONS__",button_html).replace("__GEO_SITES__",json.dumps(geo_sites,ensure_ascii=False)))
     assert len(page)>12000 and "__THREADS__" not in page
     dest=SITE/"walks"/"historic-center"/"index.html"
     dest.parent.mkdir(parents=True,exist_ok=True)
