@@ -51,10 +51,12 @@ jobs:
           # Enable comments after generators have finished; preserve all original historical content.
           mkdir -p site/feedback
           cp feedback/annotate.js site/feedback/annotate.js
-          mkdir -p site/poi/templo-mayor/review
-          cp poi/templo-mayor/review/index.html site/poi/templo-mayor/review/index.html
           python scripts/enable_reader_feedback.py
           python scripts/test_reader_feedback.py
+          # Regenerate the commentable reader from the currently built, richer POI.
+          # Do not publish the older static preview snapshot as the review site.
+          python scripts/build_templo_review.py
+          python scripts/test_templo_review.py
           mkdir -p site/preview/teotihuacan
           cp preview/teotihuacan/index.html site/preview/teotihuacan/index.html
           mkdir -p site/preview/atlas
@@ -142,6 +144,32 @@ jobs:
                   assert response.status==200, f'HTTP {response.status}: {target}'
               assert all(t in body for t in markers), f'Incomplete content at {target}'
               print('LIVE ROUTE VERIFIED:',target,'chars:',len(body),flush=True)
+          # Verify the current-source, commentable Discover/Explore/Plan phone page.
+          # This is a network smoke check, not a real touchscreen Safari test.
+          review_target=root+'poi/templo-mayor/review/'
+          review_error=None
+          for attempt in range(8):
+              try:
+                  req=urllib.request.Request(review_target,headers={
+                      'User-Agent':'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Version/17.0 Mobile/15E148 Safari/604.1'})
+                  with urllib.request.urlopen(req,timeout=25) as response:
+                      html=response.read().decode('utf-8')
+                      assert response.status==200
+                  required=['id="review-layout-script"','id="review-layout-styles"',
+                            'src="../../../feedback/annotate.js"',
+                            'History behind the excavated site','What to look for during the visit',
+                            'Tlaltecuhtli','Coyolxauhqui','id="claimlist"',
+                            'review-switch','data-open-research']
+                  assert all(x in html for x in required), 'Review missing preserved content or navigation'
+                  assert len(html)>35000, 'Truncated review page'
+                  print('LIVE COMMENTABLE REVIEW VERIFIED:',review_target,len(html),flush=True)
+                  break
+              except Exception as ex:
+                  review_error=ex
+                  print('Review verification attempt',attempt+1,'failed:',ex,flush=True)
+                  time.sleep(8)
+          else:
+              raise SystemExit(f'Published commentable review NOT verified: {review_error}')
           # Mobile-User-Agent HTTP check (not a substitute for Safari interaction testing).
           mobile_target=root+'walks/historic-center/'
           mobile_req=urllib.request.Request(mobile_target,headers={
