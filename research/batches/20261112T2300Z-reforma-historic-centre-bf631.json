@@ -1,0 +1,311 @@
+{
+  "schema_version": 1,
+  "batch_id": "20261112T2300Z-reforma-historic-centre-bf631",
+  "created_utc": "2026-11-12T23:00:06Z",
+  "status": "STAGED ONLY — NOT IN CANONICAL",
+  "canonical_baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_counts": {
+    "sources": 616,
+    "legacy_claims": 422,
+    "normalized_findings": 68
+  },
+  "prior_staged_findings": 84,
+  "new_candidate_findings": 12,
+  "combined_staged_findings": 96,
+  "prior_staged_inspections": 24,
+  "new_source_inspections": 7,
+  "combined_source_inspections": 31,
+  "source_register": [
+    {
+      "id": "stg-src-1856-lerdo-edited-transcript",
+      "creator": "Ignacio Comonfort / Ministerio de Hacienda",
+      "url": "https://memoriapoliticademexico.org/Textos/3Reforma/1856LEL.html",
+      "scope": "edited decree transcription inspected; original print not inspected"
+    },
+    {
+      "id": "stg-src-1856-munguia-opposition",
+      "creator": "Clemente de Jesús Munguía",
+      "url": "https://memoriapoliticademexico.org/Textos/3Reforma/1856-POM-LL.html",
+      "scope": "selected 1856 protest transcription paragraphs inspected, not facsimile"
+    },
+    {
+      "id": "stg-src-1859-nationalization-decree",
+      "creator": "Benito Juárez / Secretaría de Justicia",
+      "url": "https://memoriapoliticademexico.org/Textos/3Reforma/1859LBE.html",
+      "scope": "articles 1–18 of edited 1859 decree transcription inspected"
+    },
+    {
+      "id": "stg-src-1865-maximilian-properties",
+      "creator": "Maximiliano / Consejo de Estado",
+      "url": "https://memoriapoliticademexico.org/Textos/4IntFrancesa/1865-LNBE-M.html",
+      "scope": "articles 1–19 of edited 1865 decree transcription inspected"
+    },
+    {
+      "id": "stg-src-unam-muco-history",
+      "creator": "UNAM Museo de las Constituciones",
+      "url": "https://museodelasconstituciones.unam.mx/recinto-historico/",
+      "scope": "institutional building chronology inspected; no original building plans"
+    },
+    {
+      "id": "stg-src-inah-centro-reforma",
+      "creator": "INAH Centro Histórico",
+      "url": "https://lugares.inah.gob.mx/en/node/4833",
+      "scope": "official interpretive description inspected; no demolition plans"
+    },
+    {
+      "id": "stg-src-inah-sanfrancisco-catalog",
+      "creator": "INAH monument catalogue",
+      "url": "https://catalogonacionalmhi.inah.gob.mx/consulta_publica/detalle/11753",
+      "scope": "search excerpt only; full page inaccessible; not evidence-examined"
+    }
+  ],
+  "findings": [
+    {
+      "id": "stg-20261112-reforma-01",
+      "subject": "First Constituent Congress in former Jesuit church",
+      "assertion": "On 24 February 1822 the First Constituent Congress convened in the former church of San Pedro y San Pablo; on 21 May Iturbide took the oath there as emperor, while the coronation was held at the Cathedral.",
+      "date_or_range": "1822",
+      "source_ids": [
+        "stg-src-unam-muco-history"
+      ],
+      "locator": "UNAM museum chronology, 1822",
+      "poi_ids": [
+        "poi-museo-constituciones"
+      ],
+      "status": "evidence-examined-institutional-secondary",
+      "independently_corroborated": false,
+      "editorial_status": "candidate_not_publication_ready"
+    },
+    {
+      "id": "stg-20261112-reforma-02",
+      "subject": "Federal constitution and national legislature",
+      "assertion": "UNAM locates the Second Constituent Congress and the 4 October 1824 federal constitution promulgation at San Pedro y San Pablo; the legislature remained there until the 1829 move to the National Palace.",
+      "date_or_range": "1824–1829",
+      "source_ids": [
+        "stg-src-unam-muco-history"
+      ],
+      "locator": "UNAM museum chronology, 1824–1829 and 1829–1850",
+      "poi_ids": [
+        "poi-museo-constituciones",
+        "poi-palacio-nacional"
+      ],
+      "status": "evidence-examined-institutional-secondary",
+      "independently_corroborated": false,
+      "editorial_status": "candidate_not_publication_ready"
+    },
+    {
+      "id": "stg-20261112-reforma-03",
+      "subject": "Lerdo Law rental-capitalization mechanism",
+      "assertion": "The 1856 Lerdo Law directed that certain corporate properties rented to tenants be adjudicated at a capital value derived from annual rent calculated at 6 percent; unleased eligible properties went to auction. These are provisions of law, not proof of individual implementation.",
+      "date_or_range": "1856",
+      "source_ids": [
+        "stg-src-1856-lerdo-edited-transcript"
+      ],
+      "locator": "Lerdo Law articles 1–2 and 5",
+      "poi_ids": [
+        "poi-centro-historico"
+      ],
+      "status": "evidence-examined-edited-primary-transcription",
+      "independently_corroborated": false,
+      "editorial_status": "candidate_not_publication_ready"
+    },
+    {
+      "id": "stg-20261112-reforma-04",
+      "subject": "Civil institutions and exceptions in Lerdo Law",
+      "assertion": "The 1856 law applied to civil corporations including municipalities and schools, but article 8 exempted institutional direct-use buildings and municipal lands devoted exclusively to public services. It did not itself command universal demolition of convents.",
+      "date_or_range": "1856",
+      "source_ids": [
+        "stg-src-1856-lerdo-edited-transcript"
+      ],
+      "locator": "Lerdo Law articles 3 and 8",
+      "poi_ids": [
+        "poi-san-francisco"
+      ],
+      "status": "evidence-examined-edited-primary-transcription",
+      "independently_corroborated": false,
+      "editorial_status": "candidate_not_publication_ready"
+    },
+    {
+      "id": "stg-20261112-reforma-05",
+      "subject": "Contemporary episcopal resistance",
+      "assertion": "On 26 July 1856 Bishop Clemente de Jesús Munguía protested the Lerdo Law as forced sales to specified buyers and argued Church property rights were independent of state authorization; this documents his partisan position, not the truth of his legal contention.",
+      "date_or_range": "1856-07-26",
+      "source_ids": [
+        "stg-src-1856-munguia-opposition"
+      ],
+      "locator": "Munguía protest opening property-rights paragraphs",
+      "poi_ids": [
+        "poi-catedral-metropolitana"
+      ],
+      "status": "evidence-examined-edited-primary-transcription",
+      "independently_corroborated": false,
+      "editorial_status": "candidate_not_publication_ready"
+    },
+    {
+      "id": "stg-20261112-reforma-06",
+      "subject": "Juárez nationalization and separation",
+      "assertion": "On 12 July 1859 the Juárez government decreed that property administered by regular and secular clergy would enter the national domain and declared institutional separation of state and church. Its legal mechanism was distinct from the 1856 tenant-adjudication regime.",
+      "date_or_range": "1859-07-12",
+      "source_ids": [
+        "stg-src-1859-nationalization-decree"
+      ],
+      "locator": "Nationalization Law articles 1 and 3; compare 1856 articles 1–2",
+      "poi_ids": [
+        "poi-palacio-nacional",
+        "poi-catedral-metropolitana"
+      ],
+      "status": "evidence-examined-edited-primary-transcription",
+      "independently_corroborated": false,
+      "editorial_status": "candidate_not_publication_ready"
+    },
+    {
+      "id": "stg-20261112-reforma-07",
+      "subject": "Inventory rules for religious cultural objects",
+      "assertion": "The 1859 law assigned sacred vessels, liturgical vestments and images of suppressed orders to diocesan bishops under formal inventory while directing manuscripts, books, paintings and antiquities to public collections. Actual transfer of any particular object still requires separate evidence.",
+      "date_or_range": "1859-07-12",
+      "source_ids": [
+        "stg-src-1859-nationalization-decree"
+      ],
+      "locator": "Nationalization Law articles 10–12",
+      "poi_ids": [
+        "poi-san-francisco",
+        "poi-catedral-metropolitana"
+      ],
+      "status": "evidence-examined-edited-primary-transcription",
+      "independently_corroborated": false,
+      "editorial_status": "candidate_not_publication_ready"
+    },
+    {
+      "id": "stg-20261112-reforma-08",
+      "subject": "1859 distinction between male and female communities",
+      "assertion": "The nationalization law suppressed male regular orders but permitted existing women's convents to continue. Exclaustrated nuns were to recover their dowries; mendicant nuns without dowries were promised 500 pesos. The later 1863 expulsion was a distinct measure.",
+      "date_or_range": "1859-07-12",
+      "source_ids": [
+        "stg-src-1859-nationalization-decree"
+      ],
+      "locator": "Nationalization Law articles 5 and 14–17",
+      "poi_ids": [
+        "poi-centro-historico"
+      ],
+      "status": "evidence-examined-edited-primary-transcription",
+      "independently_corroborated": false,
+      "editorial_status": "candidate_not_publication_ready"
+    },
+    {
+      "id": "stg-20261112-reforma-09",
+      "subject": "1865 imperial law did not blanket-reverse liberal property changes",
+      "assertion": "Maximilian's decree of 26 February 1865 ordered review of transactions under the 1856 and 1859 laws, confirmed those made legally and authorized invalidation or rehabilitation of others, with certain latter cases subject to a 25 percent payment.",
+      "date_or_range": "1865-02-26",
+      "source_ids": [
+        "stg-src-1865-maximilian-properties"
+      ],
+      "locator": "Imperial decree articles 1–2 and 5–7",
+      "poi_ids": [
+        "poi-palacio-nacional"
+      ],
+      "status": "evidence-examined-edited-primary-transcription",
+      "independently_corroborated": false,
+      "editorial_status": "candidate_not_publication_ready"
+    },
+    {
+      "id": "stg-20261112-reforma-10",
+      "subject": "1865 protection for certain women's property rights",
+      "assertion": "Article 9 of the 1865 imperial review decree rejected certain renunciations by women owning no other real property and by guardians on behalf of minors. This is a statutory restriction; actual enforcement has not been researched.",
+      "date_or_range": "1865-02-26",
+      "source_ids": [
+        "stg-src-1865-maximilian-properties"
+      ],
+      "locator": "Imperial decree article 9",
+      "poi_ids": [
+        "poi-centro-historico"
+      ],
+      "status": "evidence-examined-edited-primary-transcription",
+      "independently_corroborated": false,
+      "editorial_status": "candidate_not_publication_ready"
+    },
+    {
+      "id": "stg-20261112-reforma-11",
+      "subject": "San Francisco convent subdivision reshaped streets",
+      "assertion": "INAH reports that the Reforma-era division of the San Francisco complex opened the street connections associated with present-day Gante and 16 de Septiembre; former convent spaces were later used for a circus, stables, hotel and Protestant worship.",
+      "date_or_range": "1861–late 19th century",
+      "source_ids": [
+        "stg-src-inah-centro-reforma"
+      ],
+      "locator": "INAH Centro Histórico Reform-era paragraph",
+      "poi_ids": [
+        "poi-san-francisco",
+        "poi-calle-gante",
+        "poi-calle-madero"
+      ],
+      "status": "evidence-examined-institutional-secondary",
+      "independently_corroborated": false,
+      "editorial_status": "candidate_not_publication_ready"
+    },
+    {
+      "id": "stg-20261112-reforma-12",
+      "subject": "Multi-era civic use of San Pedro y San Pablo",
+      "assertion": "UNAM traces the former church's use as a military college in 1858–1860, later school/hospital/warehouse uses, its 1920–21 restoration and murals, and its role as National Newspaper Library from 1944 through 1979.",
+      "date_or_range": "1858–1979",
+      "source_ids": [
+        "stg-src-unam-muco-history"
+      ],
+      "locator": "UNAM museum chronology 1858–1860; 1860–1920; 1920–1921; 1944–1979",
+      "poi_ids": [
+        "poi-museo-constituciones"
+      ],
+      "status": "evidence-examined-institutional-secondary",
+      "independently_corroborated": false,
+      "editorial_status": "candidate_not_publication_ready"
+    }
+  ],
+  "quality_issues": [
+    {
+      "id": "date-1856",
+      "issue": "Edited 1856 Lerdo transcript heading gives 23 June while the promulgation date is widely recorded as 25 June; original issue needs confirmation"
+    },
+    {
+      "id": "law-difference",
+      "issue": "Do not conflate 1856 tenant-adjudication law with 1859 nationalization and differing treatment of female convents"
+    },
+    {
+      "id": "1968-original",
+      "issue": "Colmex catalog item d-562 locates original 5 December 1968 El Día manifesto, but original facsimile not yet inspected"
+    }
+  ],
+  "coverage_proposals": [
+    {
+      "period": "1821–1850",
+      "theme": "formation of republic",
+      "status": "developing_candidate_only"
+    },
+    {
+      "period": "1855–1867",
+      "theme": "property law and church-state",
+      "status": "developing_candidate_only"
+    },
+    {
+      "period": "1855–1867",
+      "theme": "gender and contested land",
+      "status": "developing_candidate_only"
+    },
+    {
+      "period": "1855–1867",
+      "theme": "urban changes to San Francisco",
+      "status": "developing_candidate_only"
+    }
+  ],
+  "research_integrity": {
+    "baseline_88_tables_unchanged": true,
+    "prior_84_staged_rows_preserved": true,
+    "sqlite_integrity": "ok",
+    "foreign_key_violations": 0,
+    "previous_unresolved_source_ids": 20,
+    "independent_corroboration_new": 0
+  },
+  "assets": {
+    "new_staging_sqlite_sha256": "44b66192f709542e96cd944a513be069b3cf4cf3680d406a52f215bbd331d5c5",
+    "recovery_archive_sha256": "5ef83184ba3a9d32f1012fa4ebdd685ac08ba92adfe663e6567f26cbeda7740e"
+  },
+  "original_facsimiles_inspected": false,
+  "canonical_updated": false
+}

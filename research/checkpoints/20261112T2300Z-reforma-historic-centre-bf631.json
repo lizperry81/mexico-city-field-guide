@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "id": "20261112T2300Z-reforma-historic-centre-bf631",
+  "batch_path": "research/batches/20261112T2300Z-reforma-historic-centre-bf631.json",
+  "baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_status": "provisional V97 unchanged",
+  "staged_findings_total": 96,
+  "source_inspections_staged_total": 31,
+  "next_action": "Reconcile prior 20 unmapped source IDs and duplicate candidates; inspect 1856 official gazette and original 1861 reform decrees; original El Día 1968 manifesto d-562; only then transactionally promote into verified versioned canonical.",
+  "blocked": "current Library manifest and checkpoint invisible to scheduled runtime; no canonical write attempted",
+  "source_of_truth": "GitHub isolated research-persistence for structured batch; downloadable staging archive for complete SQLite"
+}

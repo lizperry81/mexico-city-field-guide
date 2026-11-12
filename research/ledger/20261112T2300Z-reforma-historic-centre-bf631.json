@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "id": "20261112T2300Z-reforma-historic-centre-bf631",
+  "event": "batch_staged",
+  "batch_path": "research/batches/20261112T2300Z-reforma-historic-centre-bf631.json",
+  "checkpoint_path": "research/checkpoints/20261112T2300Z-reforma-historic-centre-bf631.json",
+  "baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "delta_findings": 12,
+  "status": "STAGED_ONLY_NOT_CANONICAL",
+  "canonical_write": false
+}
