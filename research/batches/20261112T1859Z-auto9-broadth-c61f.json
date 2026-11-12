@@ -1,0 +1,326 @@
+{
+  "schema_version": 1,
+  "run_id": "20261112T1859Z-auto9-broadth-c61f",
+  "status": "STAGED_ONLY_NOT_CANONICAL",
+  "baseline_version": "V97",
+  "baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "original_archival_manuscripts_inspected": 0,
+  "source_scope": "two edited historical sources and one peer-reviewed research article, selected sections",
+  "sources": [
+    {
+      "id": "stg-src-1692-siguenza",
+      "author": "Carlos de Sigüenza y Góngora",
+      "title": "Alboroto y motín de México del 8 de junio de 1692",
+      "edition": "Relaciones históricas, UNAM 1992 edition, printed pp.81–151",
+      "url": "https://docs.enriquedussel.com/txt/Textos_200_Obras/Filosofos_siglo_XVII-XVIII/Relaciones_historicas-Singuenza_Gongora.pdf",
+      "examined": "selected text pp.110–112, 124–131; modern edition of contemporary eyewitness narrative; manuscript not inspected"
+    },
+    {
+      "id": "stg-src-1692-actas",
+      "title": "Actas del Cabildo de la Ciudad de México, 1692 (edited chronological abstracts)",
+      "publisher": "Biblioteca Francisco Xavier Clavigero, Universidad Iberoamericana",
+      "url": "https://www.bib.ibero.mx/actasc/files/original/1d847b92ed0800f6b8ac296777b51397.pdf",
+      "examined": "PDF pp.1–3; editorial abstracts of 16 June through 4 July acts, not archival facsimiles"
+    },
+    {
+      "id": "stg-src-1692-exbalin",
+      "author": "Arnaud Exbalin",
+      "title": "Riot in Mexico City: a challenge to the colonial order?",
+      "publication": "Urban History 43(2) (2016), 215–231; published online 2015",
+      "doi": "10.1017/S0963926815000279",
+      "url": "https://www.cambridge.org/core/journals/urban-history/article/riot-in-mexico-city-a-challenge-to-the-colonial-order/B4B6FA5F0DA8B9E3B5109C9060311456",
+      "examined": "HTML text sections The riot as expression of urban government in crisis; Weakness of forces of law and order; Restoring order"
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "stg-20261112T1859Z-auto9-broadth-c61f-f01",
+      "batch_id": "20261112T1859Z-auto9-broadth-c61f",
+      "subject": "Food procurement before the riot",
+      "assertion": "In a 29 April 1692 consultation, viceregal authorities allowed broad trading in maize and wheat while trying to secure maize already arranged from Celaya, Toluca and Chalco; Sigüenza later described late-May shortages when the expected shipments lagged.",
+      "date_range": "1692–1697",
+      "period": "Colonial Mexico 1600–1810",
+      "geography": "Mexico City, New Spain",
+      "source_id": "stg-src-1692-siguenza",
+      "exact_locator": "printed pp.110–112; 29 April grain consultation; last week of May",
+      "poi_ids": [
+        "poi-zocalo",
+        "poi-national-palace"
+      ],
+      "themes": [
+        "economy and labor"
+      ],
+      "evidence_status": "evidence-examined-at-stated-source-scope",
+      "independent_corroboration": "not awarded",
+      "confidence": "moderate; qualified",
+      "limitations": "Sigüenza praises the viceroy; his account of the causes and legality of purchases is partisan.",
+      "editorial_status": "research candidate; not publication-ready"
+    },
+    {
+      "finding_id": "stg-20261112T1859Z-auto9-broadth-c61f-f02",
+      "batch_id": "20261112T1859Z-auto9-broadth-c61f",
+      "subject": "Women supplying stones in the Plaza Mayor",
+      "assertion": "At about 6:30 p.m. on 8 June, eyewitness Sigüenza says Indigenous women supplied stones to people attacking the viceregal palace; his account also describes participants including Indigenous people, Black and mixed-ancestry residents.",
+      "date_range": "1692–1697",
+      "period": "Colonial Mexico 1600–1810",
+      "geography": "Mexico City, New Spain",
+      "source_id": "stg-src-1692-siguenza",
+      "exact_locator": "printed pp.128–129; eyewitness begins at 'A nada... me hallé presente'",
+      "poi_ids": [
+        "poi-zocalo",
+        "poi-national-palace"
+      ],
+      "themes": [
+        "gender and political resistance"
+      ],
+      "evidence_status": "evidence-examined-at-stated-source-scope",
+      "independent_corroboration": "not awarded",
+      "confidence": "moderate; qualified",
+      "limitations": "Witness observed only a portion of the riot and uses overtly contemptuous language about the urban poor.",
+      "editorial_status": "research candidate; not publication-ready"
+    },
+    {
+      "finding_id": "stg-20261112T1859Z-auto9-broadth-c61f-f03",
+      "batch_id": "20261112T1859Z-auto9-broadth-c61f",
+      "subject": "Movement between institutions during the riot",
+      "assertion": "Exbalin reconstructs protesters seeking the corregidor, then the archbishop, and finally the viceroy before destructive attacks on the buildings around the central plaza.",
+      "date_range": "1692–1697",
+      "period": "Colonial Mexico 1600–1810",
+      "geography": "Mexico City, New Spain",
+      "source_id": "stg-src-1692-exbalin",
+      "exact_locator": "section 'The riot as the expression of an urban government in crisis', Figure 1 and paragraphs on the protesters' trajectory",
+      "poi_ids": [
+        "poi-zocalo",
+        "poi-metropolitan-cathedral",
+        "poi-national-palace"
+      ],
+      "themes": [
+        "political institutions"
+      ],
+      "evidence_status": "evidence-examined-at-stated-source-scope",
+      "independent_corroboration": "not awarded",
+      "confidence": "moderate; qualified",
+      "limitations": "Sequence is historian's reconstruction from Sigüenza, Robles and later scholarship; exact movements and the alleged dead woman are contested.",
+      "editorial_status": "research candidate; not publication-ready"
+    },
+    {
+      "finding_id": "stg-20261112T1859Z-auto9-broadth-c61f-f04",
+      "batch_id": "20261112T1859Z-auto9-broadth-c61f",
+      "subject": "Disruption of city-government premises",
+      "assertion": "The cabildo abstract dated 16 June 1692 records damage from the 8 June uprising and orders repair of the Alhóndiga, temporary use of the pósito room for council meetings, and return of capitular books held by Sigüenza.",
+      "date_range": "1692–1697",
+      "period": "Colonial Mexico 1600–1810",
+      "geography": "Mexico City, New Spain",
+      "source_id": "stg-src-1692-actas",
+      "exact_locator": "edited cabildo abstract, PDF p.1, meeting 16 June 1692",
+      "poi_ids": [
+        "poi-zocalo",
+        "poi-national-palace"
+      ],
+      "themes": [
+        "architecture and institutions"
+      ],
+      "evidence_status": "evidence-examined-at-stated-source-scope",
+      "independent_corroboration": "not awarded",
+      "confidence": "moderate; qualified",
+      "limitations": "Only an editorial summary inspected; surviving original municipal minutes not inspected.",
+      "editorial_status": "research candidate; not publication-ready"
+    },
+    {
+      "finding_id": "stg-20261112T1859Z-auto9-broadth-c61f-f05",
+      "batch_id": "20261112T1859Z-auto9-broadth-c61f",
+      "subject": "Thirteen canoes of maize from Chalco",
+      "assertion": "A 26 June 1692 council abstract records councilor Juan de Aguirre's report that, on viceregal orders, he obtained and forwarded thirteen canoes of maize from Chalco to Mexico City.",
+      "date_range": "1692–1697",
+      "period": "Colonial Mexico 1600–1810",
+      "geography": "Mexico City, New Spain",
+      "source_id": "stg-src-1692-actas",
+      "exact_locator": "edited cabildo abstract, PDF p.1, 26 June, 'TESTIMONIO DEL REGIDOR AGUIRRE'",
+      "poi_ids": [
+        "poi-zocalo"
+      ],
+      "themes": [
+        "food supply and waterways"
+      ],
+      "evidence_status": "evidence-examined-at-stated-source-scope",
+      "independent_corroboration": "not awarded",
+      "confidence": "moderate; qualified",
+      "limitations": "Aguirre's retrospective self-report, mediated by an editorial abstract; no independent measurement or delivery receipt checked.",
+      "editorial_status": "research candidate; not publication-ready"
+    },
+    {
+      "finding_id": "stg-20261112T1859Z-auto9-broadth-c61f-f06",
+      "batch_id": "20261112T1859Z-auto9-broadth-c61f",
+      "subject": "Indigenous neighborhood officials in grain distribution plan",
+      "assertion": "On 27 June 1692, the city council proposed allocating a share of daily maize deliveries to governors of San Juan and Santiago and other neighborhood leaders to distribute to Indigenous families alongside parish ministers.",
+      "date_range": "1692–1697",
+      "period": "Colonial Mexico 1600–1810",
+      "geography": "Mexico City, New Spain",
+      "source_id": "stg-src-1692-actas",
+      "exact_locator": "edited cabildo abstract, PDF p.2, 27 June, 'DISPENDIO DE MAÍCES'",
+      "poi_ids": [
+        "poi-zocalo",
+        "poi-san-juan-moyotlan",
+        "poi-tlatelolco"
+      ],
+      "themes": [
+        "Indigenous governance and food policy"
+      ],
+      "evidence_status": "evidence-examined-at-stated-source-scope",
+      "independent_corroboration": "not awarded",
+      "confidence": "moderate; qualified",
+      "limitations": "Proposed consultation with viceroy; does not prove the distribution system was implemented.",
+      "editorial_status": "research candidate; not publication-ready"
+    },
+    {
+      "finding_id": "stg-20261112T1859Z-auto9-broadth-c61f-f07",
+      "batch_id": "20261112T1859Z-auto9-broadth-c61f",
+      "subject": "Vaulted market stalls proposed after the fire",
+      "assertion": "A 26 June council proposal sought two rows of lime-and-stone vaulted market stalls with iron-faced doors around Plaza Mayor; a 4 July abstract reports viceregal approval and instruction to master builder Cristóbal de Molina Vargas to draft the plan.",
+      "date_range": "1692–1697",
+      "period": "Colonial Mexico 1600–1810",
+      "geography": "Mexico City, New Spain",
+      "source_id": "stg-src-1692-actas",
+      "exact_locator": "edited abstracts, PDF pp.2–3, 26 June and 4 July 1692",
+      "poi_ids": [
+        "poi-zocalo",
+        "poi-national-palace"
+      ],
+      "themes": [
+        "urban rebuilding and material technology"
+      ],
+      "evidence_status": "evidence-examined-at-stated-source-scope",
+      "independent_corroboration": "not awarded",
+      "confidence": "moderate; qualified",
+      "limitations": "Approval of design is not proof that these specific stalls were constructed or survive today.",
+      "editorial_status": "research candidate; not publication-ready"
+    },
+    {
+      "finding_id": "stg-20261112T1859Z-auto9-broadth-c61f-f08",
+      "batch_id": "20261112T1859Z-auto9-broadth-c61f",
+      "subject": "Damaged public archives and rescued paintings",
+      "assertion": "On 11 July 1692 the council recorded Sigüenza's delivery of rescued royal and viceregal portraits and books; Antonio de Ocaña and two colleagues were assigned a total of 18 pesos for helping save documents.",
+      "date_range": "1692–1697",
+      "period": "Colonial Mexico 1600–1810",
+      "geography": "Mexico City, New Spain",
+      "source_id": "stg-src-1692-actas",
+      "exact_locator": "edited cabildo abstract, PDF p.3, 11 July, 'ENTREGA DE ALHAJAS'",
+      "poi_ids": [
+        "poi-zocalo"
+      ],
+      "themes": [
+        "archival preservation and political iconography"
+      ],
+      "evidence_status": "evidence-examined-at-stated-source-scope",
+      "independent_corroboration": "not awarded",
+      "confidence": "moderate; qualified",
+      "limitations": "Documentation from an abstract; precise identity and later whereabouts of objects not established.",
+      "editorial_status": "research candidate; not publication-ready"
+    },
+    {
+      "finding_id": "stg-20261112T1859Z-auto9-broadth-c61f-f09",
+      "batch_id": "20261112T1859Z-auto9-broadth-c61f",
+      "subject": "New militia after the uprising",
+      "assertion": "Exbalin reports that on 9 June the viceroy organized a review of Spanish militia and subsequently two cavalry units and two Black and mulatto militia companies, while reforming the palace halberdiers.",
+      "date_range": "1692–1697",
+      "period": "Colonial Mexico 1600–1810",
+      "geography": "Mexico City, New Spain",
+      "source_id": "stg-src-1692-exbalin",
+      "exact_locator": "section 'Restoring order', paragraphs on 9 June military review and militia",
+      "poi_ids": [
+        "poi-national-palace",
+        "poi-zocalo"
+      ],
+      "themes": [
+        "military organization and race"
+      ],
+      "evidence_status": "evidence-examined-at-stated-source-scope",
+      "independent_corroboration": "not awarded",
+      "confidence": "moderate; qualified",
+      "limitations": "Different from claims of a modern standing police force; Exbalin characterizes the units as improvised.",
+      "editorial_status": "research candidate; not publication-ready"
+    },
+    {
+      "finding_id": "stg-20261112T1859Z-auto9-broadth-c61f-f10",
+      "batch_id": "20261112T1859Z-auto9-broadth-c61f",
+      "subject": "Summary trial and punitive sentencing",
+      "assertion": "Exbalin reports an investigation launched 11 June; within twenty days about eighty accused people faced the Audiencia criminal chamber; twelve death sentences, thirty-two sentences of forced labor and flogging, and nine flogging-only sentences are reported.",
+      "date_range": "1692–1697",
+      "period": "Colonial Mexico 1600–1810",
+      "geography": "Mexico City, New Spain",
+      "source_id": "stg-src-1692-exbalin",
+      "exact_locator": "section 'Restoring order', paragraphs on judicial inquiry, penalties",
+      "poi_ids": [
+        "poi-zocalo",
+        "poi-national-palace"
+      ],
+      "themes": [
+        "justice and colonial repression"
+      ],
+      "evidence_status": "evidence-examined-at-stated-source-scope",
+      "independent_corroboration": "not awarded",
+      "confidence": "moderate; qualified",
+      "limitations": "These figures are Exbalin's analysis of court materials, not an independent examination of case files; other defendants' dispositions not resolved.",
+      "editorial_status": "research candidate; not publication-ready"
+    },
+    {
+      "finding_id": "stg-20261112T1859Z-auto9-broadth-c61f-f11",
+      "batch_id": "20261112T1859Z-auto9-broadth-c61f",
+      "subject": "Attempted ethnic segregation and its uncertain enforcement",
+      "assertion": "After the riot the viceregal government reissued restrictions on Indigenous residence inside the Spanish traza, granting a twenty-day departure period and threatening severe penalties; Exbalin explicitly states the actual degree of enforcement remains unknown.",
+      "date_range": "1692–1697",
+      "period": "Colonial Mexico 1600–1810",
+      "geography": "Mexico City, New Spain",
+      "source_id": "stg-src-1692-exbalin",
+      "exact_locator": "section 'Restoring order', paragraphs on delimiting traza and 20-day notice",
+      "poi_ids": [
+        "poi-zocalo",
+        "poi-metropolitan-cathedral",
+        "poi-san-juan-moyotlan"
+      ],
+      "themes": [
+        "race law and urban social geography"
+      ],
+      "evidence_status": "evidence-examined-at-stated-source-scope",
+      "independent_corroboration": "not awarded",
+      "confidence": "moderate; qualified",
+      "limitations": "Edicts do not establish that Indigenous families were effectively expelled; never describe it as completed removal.",
+      "editorial_status": "research candidate; not publication-ready"
+    },
+    {
+      "finding_id": "stg-20261112T1859Z-auto9-broadth-c61f-f12",
+      "batch_id": "20261112T1859Z-auto9-broadth-c61f",
+      "subject": "Pulque prohibition changed quickly",
+      "assertion": "Exbalin documents a pulque ban dated 19 July 1692, partial relaxation to medicinal white pulque on 31 July and renewed legalization in June 1697, connecting regulatory shifts partly to tax revenues and naval funding.",
+      "date_range": "1692–1697",
+      "period": "Colonial Mexico 1600–1810",
+      "geography": "Mexico City, New Spain",
+      "source_id": "stg-src-1692-exbalin",
+      "exact_locator": "section 'Restoring order', paragraphs on 19 and 31 July 1692 and June 1697",
+      "poi_ids": [
+        "poi-zocalo"
+      ],
+      "themes": [
+        "everyday consumption and colonial taxation"
+      ],
+      "evidence_status": "evidence-examined-at-stated-source-scope",
+      "independent_corroboration": "not awarded",
+      "confidence": "moderate; qualified",
+      "limitations": "This is legal policy chronology, not direct evidence of market enforcement or consumption patterns.",
+      "editorial_status": "research candidate; not publication-ready"
+    }
+  ],
+  "disputes": [
+    {
+      "topic": "Alleged death of a woman at alhóndiga",
+      "source_ids": [
+        "stg-src-1692-siguenza",
+        "stg-src-1692-exbalin"
+      ],
+      "problem": "Exbalin relates contemporary reports of a pregnant woman dying; Sigüenza claims women staged a death and even says a purported corpse moved. Neither suffices to establish her death or a hoax without reading competing testimonies; withhold from factual narrative.",
+      "status": "DISPUTED_UNRESOLVED"
+    }
+  ],
+  "no_main_branch_writes": true,
+  "canonical_records_modified": 0
+}
