@@ -106,6 +106,8 @@ function pager(host,items,label){
     active=Math.max(0,Math.min(i,cards.length-1));
     cards.forEach((c,j)=>c.hidden=j!==active);
     prev.disabled=active===0;next.disabled=active===cards.length-1;
+    // Preserve the current reading position when following another site's link.
+    if(scroll && items[active].id)window.history.replaceState(null,'','#'+encodeURIComponent(items[active].id));
     if(scroll)bar.scrollIntoView({block:'start',behavior:'auto'});
   }
   prev.onclick=()=>select(active-1,true);next.onclick=()=>select(active+1,true);
