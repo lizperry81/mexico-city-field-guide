@@ -1,0 +1,251 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261112T175903Z-auto9-71cf2",
+  "canonical_status": "STAGED ONLY — NOT IN CANONICAL",
+  "baseline": {
+    "version": "V97",
+    "sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "counts": {
+      "sources": 616,
+      "claims": 422,
+      "claim_sources": 403,
+      "canonical_findings": 68,
+      "canonical_source_inspections": 9
+    }
+  },
+  "library_access": "Library path not found: /MexicoResearch/canonical",
+  "probe": {
+    "path": "research/automation-probes/20261112T175903Z-auto9-71cf2.json",
+    "commit_sha": "8461b849cc199af28e6e510abb2c96e2e88989b9",
+    "readback_verified": true
+  },
+  "source_inspections": [
+    {
+      "source_id": "v82-citywide-014",
+      "author": "Barbara E. Mundy",
+      "title": "La fuente del tianguis de San Juan de México-Tenochtitlan y el segundo acueducto de Chapultepec",
+      "full_article_sections_examined": "printed pp.9–17",
+      "url": "https://revistas.inah.gob.mx/index.php/boletinmonumentos/article/download/11047/11830",
+      "original_primary_documents_inspected": false,
+      "pdf_figures_visually_verified": false
+    },
+    {
+      "source_id": "v70-terra13",
+      "author": "Kevin Terraciano",
+      "title": "Narrativas de Tlatelolco sobre la Conquista de México",
+      "publication_year_corrected": 2014,
+      "full_article_sections_examined": "printed pp.212–227",
+      "url": "https://www.scielo.org.mx/pdf/ecn/v47/v47a6.pdf",
+      "original_primary_manuscripts_inspected": false,
+      "pdf_first_page_visually_verified": true
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "stg-20261112T175903Z-auto9-71cf2-f01",
+      "subject": "Indigenous responsibility for aqueduct",
+      "assertion": "1591 viceregal order charged two Indigenous alcaldes to protect second Chapultepec aqueduct, paid from caja de comunidad.",
+      "source_id": "v82-citywide-014",
+      "exact_locator": "p.10, note 8: AGN Indios vol.5 exp.958 f.316 [246]v",
+      "poi_ids": [
+        "poi-zocalo",
+        "poi-san-juan-moyotlan"
+      ],
+      "limitation": "Original AGN order not viewed",
+      "evidence_status": "evidence-examined-secondary-source",
+      "independent_corroboration": false,
+      "publication_ready": false
+    },
+    {
+      "finding_id": "stg-20261112T175903Z-auto9-71cf2-f02",
+      "subject": "San Juan market water access",
+      "assertion": "Public fountain and paid water distribution required traders in San Juan Moyotlan to carry water approximately an extra 1.5km before the new market fountain; Mundy documents water transport by canoe and mule.",
+      "source_id": "v82-citywide-014",
+      "exact_locator": "pp.13–14, authorial distance estimate and water-vendor discussion",
+      "poi_ids": [
+        "poi-san-juan-moyotlan",
+        "poi-zocalo"
+      ],
+      "limitation": "1.5km contextual estimate; not modern route",
+      "evidence_status": "evidence-examined-secondary-source",
+      "independent_corroboration": false,
+      "publication_ready": false
+    },
+    {
+      "finding_id": "stg-20261112T175903Z-auto9-71cf2-f03",
+      "subject": "Inauguration chronologies",
+      "assertion": "Chimalpahin and Codex Aubin record completion of San Juan aqueduct/fountain in 1582; Chimalpahin gives December 31 whereas Aubin translation has an inconsistent December day.",
+      "source_id": "v82-citywide-014",
+      "exact_locator": "pp.15–17; Chimalpahin note 31; Aubin fol.63r and note 34",
+      "poi_ids": [
+        "poi-san-juan-moyotlan"
+      ],
+      "limitation": "Conflicting dates; original manuscripts not visually checked",
+      "evidence_status": "evidence-examined-secondary-source",
+      "independent_corroboration": false,
+      "publication_ready": false
+    },
+    {
+      "finding_id": "stg-20261112T175903Z-auto9-71cf2-f04",
+      "subject": "Aqueduct pictography",
+      "assertion": "Mundy interprets Codex Aubin water signs with white-edged blue bands as plaster-lined aqueduct, unlike unlined navigable canals; year signs connect work to Valeriano government in 1575 and 1582.",
+      "source_id": "v82-citywide-014",
+      "exact_locator": "pp.16–17, figs.4–6, Aubin fols.78v,59v,63r",
+      "poi_ids": [
+        "poi-san-juan-moyotlan",
+        "poi-chapultepec"
+      ],
+      "limitation": "Original pictorial folios not directly inspected",
+      "evidence_status": "evidence-examined-secondary-source",
+      "independent_corroboration": false,
+      "publication_ready": false
+    },
+    {
+      "finding_id": "stg-20261112T175903Z-auto9-71cf2-f05",
+      "subject": "Valeriano and Nahua governance",
+      "assertion": "Antonio Valeriano governed Indigenous Mexico-Tenochtitlan from 1573 to 1599 and had taught at Colegio de Santa Cruz de Tlatelolco, per Mundy citing 1554 Cervantes de Salazar.",
+      "source_id": "v82-citywide-014",
+      "exact_locator": "p.11, note 15; pp.11–12",
+      "poi_ids": [
+        "poi-tlatelolco",
+        "poi-zocalo",
+        "poi-national-palace"
+      ],
+      "limitation": "1554 primary text not independently viewed",
+      "evidence_status": "evidence-examined-secondary-source",
+      "independent_corroboration": false,
+      "publication_ready": false
+    },
+    {
+      "finding_id": "stg-20261112T175903Z-auto9-71cf2-f06",
+      "subject": "Tlatelolco early colonial fountain",
+      "assertion": "Sixteenth-century Uppsala city map depicts water reservoir at Tlatelolco market; Codex Tlatelolco year 1555 depicts possible bird fountain; not proven the same fountain.",
+      "source_id": "v82-citywide-014",
+      "exact_locator": "pp.14–15, figs.2–3",
+      "poi_ids": [
+        "poi-tlatelolco"
+      ],
+      "limitation": "Specific identification and survival uncertain",
+      "evidence_status": "evidence-examined-secondary-source",
+      "independent_corroboration": false,
+      "publication_ready": false
+    },
+    {
+      "finding_id": "stg-20261112T175903Z-auto9-71cf2-f07",
+      "subject": "Tlatelolco manuscript redaction",
+      "assertion": "Anales de Tlatelolco survives in BNF ms22 on 21 amate leaves and later ms22bis with added or variant material; copy of Rulers List likely seventeenth century.",
+      "source_id": "v70-terra13",
+      "exact_locator": "pp.217–219, notes 3–6",
+      "poi_ids": [
+        "poi-tlatelolco",
+        "poi-templo-mayor"
+      ],
+      "limitation": "Original BNF manuscripts not viewed",
+      "evidence_status": "evidence-examined-secondary-source",
+      "independent_corroboration": false,
+      "publication_ready": false
+    },
+    {
+      "finding_id": "stg-20261112T175903Z-auto9-71cf2-f08",
+      "subject": "Cuauhtemoc 1515 disputed",
+      "assertion": "Tlatelolco Rulers List claims Cuauhtemoc accession 1515, contradicting other Tlatelolco and Florentine Codex accounts naming Itzquauhtzin; treat as contested political memory.",
+      "source_id": "v70-terra13",
+      "exact_locator": "pp.225–226",
+      "poi_ids": [
+        "poi-tlatelolco",
+        "poi-templo-mayor"
+      ],
+      "limitation": "Do not promote 1515 as historical fact",
+      "evidence_status": "evidence-examined-secondary-source",
+      "independent_corroboration": false,
+      "publication_ready": false
+    },
+    {
+      "finding_id": "stg-20261112T175903Z-auto9-71cf2-f09",
+      "subject": "Temilotzin war and governance",
+      "assertion": "Florentine Codex XII remembers Temilotzin resisting Spanish-Xochimilca forces with Coyohuehuetzin and wielding captured sword; Book VIII associates him with restoration of Tlatelolco governance.",
+      "source_id": "v70-terra13",
+      "exact_locator": "pp.220–221; Lockhart 1993 pp.226,234,236; Sahagun 1979 pp.7–8",
+      "poi_ids": [
+        "poi-tlatelolco"
+      ],
+      "limitation": "Military narrative not independent archaeological proof",
+      "evidence_status": "evidence-examined-secondary-source",
+      "independent_corroboration": false,
+      "publication_ready": false
+    },
+    {
+      "finding_id": "stg-20261112T175903Z-auto9-71cf2-f10",
+      "subject": "Ecatzin captured banner variants",
+      "assertion": "Florentine XII remembers Ecatzin as Tlatelolca commander; captured-banner mention appears only in later Anales ms22bis, not earlier ms22.",
+      "source_id": "v70-terra13",
+      "exact_locator": "pp.221–222, note 19",
+      "poi_ids": [
+        "poi-tlatelolco"
+      ],
+      "limitation": "Later-copy addition not an eyewitness account",
+      "evidence_status": "evidence-examined-secondary-source",
+      "independent_corroboration": false,
+      "publication_ready": false
+    },
+    {
+      "finding_id": "stg-20261112T175903Z-auto9-71cf2-f11",
+      "subject": "Cuauhtemoc execution divergent accounts",
+      "assertion": "Nahua Rulers List says Cuauhtemoc, Coanacoc and Tetlepanquetza hanged at Acalan without inquiry; Spanish accounts differ on conspiracy and whether two or three leaders executed.",
+      "source_id": "v70-terra13",
+      "exact_locator": "pp.213–215,219–224; p.223 note 22",
+      "poi_ids": [
+        "poi-tlatelolco",
+        "poi-zocalo",
+        "poi-templo-mayor"
+      ],
+      "limitation": "Conflicting sources; fictional Spain voyage in Rulers List not fact",
+      "evidence_status": "evidence-examined-secondary-source",
+      "independent_corroboration": false,
+      "publication_ready": false
+    }
+  ],
+  "duplicate_avoidance": [
+    {
+      "existing_claim_id": "v87-claim-010",
+      "action": "enrich_original_source_locator_not_new_finding",
+      "source_id": "v82-citywide-014",
+      "locator": "p.9 28 June 1575 cabildo account"
+    },
+    {
+      "existing_claim_id": "v87-claim-011",
+      "action": "enrich_original_source_locator_not_new_finding",
+      "source_id": "v82-citywide-014",
+      "locator": "p.10 Indigenous labour/stone, Spanish lime financed wine sales tax"
+    }
+  ],
+  "coverage_proposals": [
+    {
+      "period": "Conquest 1519–1521",
+      "themes": [
+        "Indigenous perspectives",
+        "politics",
+        "historical debates"
+      ],
+      "max_status": "developing"
+    },
+    {
+      "period": "Early colonial 1521–1600",
+      "themes": [
+        "Indigenous perspectives",
+        "water and environment",
+        "economy and labor",
+        "architecture and technology",
+        "politics"
+      ],
+      "max_status": "developing"
+    }
+  ],
+  "archive": {
+    "filename": "CDMX_STAGE_20261112T175903Z-auto9-71cf2_INDIGENOUS_CONQUEST_COLONIAL_WATER_RESEARCH.zip",
+    "sha256": "92a66e059cb447a45a1edea56ccccb620a8ecc8ec41a02f91b6c47735ff254e2",
+    "notes": "complete recoverable ZIP contains original V97 snapshot, full finding metadata, evidence issues, coverage and proposed merge"
+  },
+  "canonical_db_modified": false,
+  "main_modified": false
+}
