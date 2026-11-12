@@ -180,6 +180,20 @@ jobs:
                   time.sleep(8)
           else:
               raise SystemExit(f'Published commentable review NOT verified: {review_error}')
+          # All four commentable POIs must return the new linked chapters to an iPhone user agent.
+          iphone_agent='Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Version/17.0 Mobile/15E148 Safari/604.1'
+          for slug in ('zocalo','metropolitan-cathedral','national-palace'):
+              phone_url=root+'poi/'+slug+'/review/'
+              with urllib.request.urlopen(urllib.request.Request(phone_url,headers={
+                  'User-Agent':iphone_agent}),timeout=25) as response:
+                  phone_body=response.read().decode('utf-8')
+                  assert response.status==200
+              for marker in ('name="viewport"','width=device-width',
+                             'id="centro-review-script"','id="historical-connections-styles"',
+                             'data-historical-thread','src="../../../feedback/annotate.js"'):
+                  assert marker in phone_body, f'{slug}: mobile route missing {marker}'
+              assert len(phone_body)>14000, f'{slug}: truncated mobile guide'
+              print('IPHONE UA COMMENTABLE POI VERIFIED:',phone_url,len(phone_body),flush=True)
           # Mobile-User-Agent HTTP check (not a substitute for Safari interaction testing).
           mobile_target=root+'walks/historic-center/'
           mobile_req=urllib.request.Request(mobile_target,headers={
