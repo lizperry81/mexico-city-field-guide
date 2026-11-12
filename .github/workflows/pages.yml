@@ -27,6 +27,8 @@ jobs:
           cp -a extracted/cdmx-fieldguide-build/. site/
           mkdir -p site/preview/teotihuacan
           cp preview/teotihuacan/index.html site/preview/teotihuacan/index.html
+          mkdir -p site/preview/atlas
+          cp preview/atlas/index.html site/preview/atlas/index.html
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
