@@ -45,6 +45,9 @@ jobs:
           p.write_text(s,encoding='utf-8')
           PY
           fi
+          # Additive learning walk generated from preserved Centro source, after POI checks.
+          python scripts/build_centro_walk.py
+          python scripts/test_centro_walk.py
           mkdir -p site/preview/teotihuacan
           cp preview/teotihuacan/index.html site/preview/teotihuacan/index.html
           mkdir -p site/preview/atlas
@@ -119,6 +122,8 @@ jobs:
               'poi/zocalo/': ('What to look for on site','The day the poor burned the palace'),
               'poi/metropolitan-cathedral/': ('What to look for on site','The floor isn'),
               'poi/national-palace/': ('What to look for on site','Rivera'),
+              'walks/historic-center/': ('From Tenochtitlan to Mexico City','data-mode="outdoor"','data-choose-thread="conquest"','stop-national-palace'),
+              'data/historic-center-walk.json': ('"historic-center-walk-1"','"original_source_ids"'),
               'data/research/templo_walk_v63.json': ('"chapters"','field_instruction'),
               'data/research/templo_mayor_pilot.json': ('"claims"','source_ids'),
               'data/research/templo_verified_discoveries_v68.json': ('"title"','"id"'),
