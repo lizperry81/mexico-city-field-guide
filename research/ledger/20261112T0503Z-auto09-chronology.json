@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "record_type": "append_only_stage_ledger_entry",
+  "run_id": "20261112T0503Z-auto09-chronology",
+  "branch": "research-persistence",
+  "canonical_baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "parent_stage_archive": "CDMX_STAGE_20261112T0356Z_MAYA_CROSSDATING_AND_RECONCILIATION.zip",
+  "candidate_ids": [
+    "STG-20261112T0503Z-DATE-01",
+    "STG-20261112T0503Z-DATE-02"
+  ],
+  "source_ids_pending": [
+    "STG-SRC-MANZANILLA-2009-CHRONOLOGY"
+  ],
+  "new_candidate_count": 2,
+  "unresolved_issues": 3,
+  "source_inspections": 2,
+  "source_access_only": 1,
+  "canonical_integration": false,
+  "previous_candidate_registry_size": 49,
+  "archive_sha256": "fac2c60baa8ab24be95a7accf52eb7477e0089ca2b3fc7ce79d4512ba659be95",
+  "parent_expected_git_commit_sha": "cbc0b8c0c803cab187d3b87054b5b2c0c1a960b3"
+}

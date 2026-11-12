@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "run_id": "20261112T0503Z-auto09-chronology",
+  "kind": "append_only_research_batch",
+  "status": "STAGED ONLY — NOT IN CANONICAL",
+  "canonical_baseline": {
+    "version": "V97",
+    "sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "read_result": "Library path not found",
+    "recovered_local_sqlite_verified": true,
+    "counts": {
+      "sources": 616,
+      "claims": 422,
+      "claim_sources": 403,
+      "canonical_findings": 68,
+      "canonical_source_inspections": 9
+    }
+  },
+  "source_inspection": [
+    {
+      "source_id": "STG-SRC-MANZANILLA-2009-CHRONOLOGY",
+      "title": "Nuevos datos sobre la cronología de Teotihuacan. Correlación de técnicas de fechamiento",
+      "author": "Linda R. Manzanilla",
+      "year": 2009,
+      "locators": "printed pp. 50–52, ResearchGate published text transcription",
+      "access": "examined table text beyond abstract; page images and lab reports unexamined",
+      "url": "https://www.researchgate.net/publication/265126200_Nuevos_datos_sobre_la_cronologia_de_Teotihuacan"
+    },
+    {
+      "source_id": "STAGE-SRC-MCCLUNG-2025-LAQ",
+      "title": "Subsistence Procurement and Production after the Demise of Teotihuacan",
+      "authors": "McClung de Tapia et al.",
+      "year": 2025,
+      "locators": "published pp. 167–169 Figures 2–4 and Table 3",
+      "access": "selected original publisher PDF page images inspected; supplements unexamined",
+      "url": "https://doi.org/10.1017/laq.2025.13"
+    },
+    {
+      "source_id": "STG-SRC-SUGIYAMA-2013-LAQ",
+      "title": "Inside the Sun Pyramid at Teotihuacan, Mexico: 2008–2011 Excavations and Preliminary Results",
+      "year": 2013,
+      "access": "ABSTRACT ONLY; original radiocarbon tables NOT inspected",
+      "url": "https://doi.org/10.7183/1045-6635.24.4.403"
+    }
+  ],
+  "candidate_findings": [
+    {
+      "id": "STG-20261112T0503Z-DATE-01",
+      "subject": "Varillas Chamber 2 multiple burial date associations",
+      "source_id": "STG-SRC-MANZANILLA-2009-CHRONOLOGY",
+      "locator": "published p.50",
+      "evidence_status": "evidence-examined (published table text; no lab recheck)",
+      "statement": "Radiocarbon samples linked to Varillas Chamber 2 Burials 2 (Beta-75377, 1020±90 BP; 865–1220 CE), 3 (Beta-75379, 520±60 BP; 1310–1360/1380–1470 CE), 5 (Beta-75380, 1030±80 BP; 875–1195 CE), and 6 (Beta-75381, 1220±60 BP; 670–970 CE) are not one closely coeval group. Sample materials and direct burial association require further checking.",
+      "independently_corroborated": false
+    },
+    {
+      "id": "STG-20261112T0503Z-DATE-02",
+      "subject": "Pirul differentiated funerary and reuse date contexts",
+      "source_id": "STG-SRC-MANZANILLA-2009-CHRONOLOGY",
+      "locator": "published pp.51–52",
+      "evidence_status": "evidence-examined (published table text; no lab recheck)",
+      "statement": "Pirul excavation register distinguishes Beta-90279 (Burial 15; 1540±70 BP, 2σ 395–650 CE), Beta-90280 (Burials 24/25/27; 1270±50 BP, 2σ 665–885 CE), Beta-90282 (Burial 27; 1170±50 BP, 2σ 770–990 CE), and Beta-90284 (above AA228; 560±60 BP, 2σ 1295–1450 CE). Dates span different contexts; avoid merging into one phase.",
+      "independently_corroborated": false
+    }
+  ],
+  "evidence_issues": [
+    {
+      "id": "STG-20261112T0503Z-QA-AA100",
+      "type": "radiocarbon_internal_inconsistency",
+      "source_id": "STG-SRC-MANZANILLA-2009-CHRONOLOGY",
+      "locator": "p.51",
+      "detail": "AA100 Beta-75378 lists 670±50 conventional BP but calibrated 630–780 CE; incompatible as transcribed. Verify original image or lab certificate; DO NOT infer a correction."
+    },
+    {
+      "id": "STG-20261112T0503Z-QA-BURIAL3",
+      "type": "botanical_phase_context_collision",
+      "detail": "2025 Fig2a Amaranthus Burial3 layer1j compared with 2009 Beta-75379 Burial3 layer1k, later calibrated dates. Botanical sample and dated sample not directly reconciled."
+    },
+    {
+      "id": "STG-20261112T0503Z-QA-2013",
+      "type": "original_radiocarbon_tables_inaccessible",
+      "detail": "2013 Sugiyama et al. source abstract available, original PPS radiocarbon tables and model details NOT inspected."
+    }
+  ],
+  "reconciliation": {
+    "prior_candidate_ids": 49,
+    "prior_candidate_id_collisions": 0,
+    "prior_staged_source_ids_absent_from_v97": 9,
+    "prior_candidate_records_missing_source_id": 5,
+    "baseline_legacy_unlinked_claims": 22,
+    "canonical_findings_added": 0
+  },
+  "archive": {
+    "filename": "CDMX_STAGE_20261112T0503Z-auto09-chronology_BURIAL_CHRONOLOGY_AND_QA.zip",
+    "sha256": "fac2c60baa8ab24be95a7accf52eb7477e0089ca2b3fc7ce79d4512ba659be95",
+    "contains_recovered_provisional_v97": true,
+    "contains_previous_complete_stage_archive": true
+  },
+  "proposed_merge": {
+    "automatic": false,
+    "require_latest_manifest_same_sha": true,
+    "require_source_id_reconciliation": true,
+    "require_conflict_checks": true,
+    "require_readback_before_manifest_update": true
+  }
+}
