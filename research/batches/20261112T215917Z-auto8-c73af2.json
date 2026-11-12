@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "batch_id": "20261112T215917Z-auto8-c73af2",
+  "branch": "research-persistence",
+  "mode": "staged_only_not_canonical",
+  "canonical_version": "V97",
+  "canonical_baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "library_canonical_read": "denied_or_invisible_in_scheduled_runtime",
+  "github_probe_verified": true,
+  "findings": [
+    {
+      "finding_id": "stg-20261112T215917Z-auto8-c73af2-f01",
+      "subject": "CNH six demands and public dialogue",
+      "locator": "Manifiesto paragraphs: La ausencia de actitudes críticas; Al responder a las arbitrariedades",
+      "source_id": "stg-src-cnh-manifiesto-1968-dec5",
+      "verification_status": "evidence-examined-limited-scope",
+      "independent_corroboration": false,
+      "editorial_status": "candidate"
+    },
+    {
+      "finding_id": "stg-20261112T215917Z-auto8-c73af2-f02",
+      "subject": "CNH school assemblies and its plenary as sovereign bodies",
+      "locator": "Paragraph: El Consejo Nacional de Huelga ha demandado",
+      "source_id": "stg-src-cnh-manifiesto-1968-dec5",
+      "verification_status": "evidence-examined-limited-scope",
+      "independent_corroboration": false,
+      "editorial_status": "candidate"
+    },
+    {
+      "finding_id": "stg-20261112T215917Z-auto8-c73af2-f03",
+      "subject": "CNH expressly disclaimed ideological homogeneity",
+      "locator": "Paragraph: El Consejo Nacional de Huelga, máxima expresión",
+      "source_id": "stg-src-cnh-manifiesto-1968-dec5",
+      "verification_status": "evidence-examined-limited-scope",
+      "independent_corroboration": false,
+      "editorial_status": "candidate"
+    },
+    {
+      "finding_id": "stg-20261112T215917Z-auto8-c73af2-f04",
+      "subject": "CNH named Vallejo and Campa as political prisoners",
+      "locator": "Paragraph: Hemos demandado la libertad de los presos políticos",
+      "source_id": "stg-src-cnh-manifiesto-1968-dec5",
+      "verification_status": "evidence-examined-limited-scope",
+      "independent_corroboration": false,
+      "editorial_status": "candidate"
+    },
+    {
+      "finding_id": "stg-20261112T215917Z-auto8-c73af2-f05",
+      "subject": "CNH reported political brigades in factories, neighborhoods, Topilejo",
+      "locator": "Paragraphs: Ha demostrado que en México; En las colonias proletarias",
+      "source_id": "stg-src-cnh-manifiesto-1968-dec5",
+      "verification_status": "evidence-examined-limited-scope",
+      "independent_corroboration": false,
+      "editorial_status": "candidate"
+    },
+    {
+      "finding_id": "stg-20261112T215917Z-auto8-c73af2-f06",
+      "subject": "CNH retrospectively justified return to classrooms despite unmet demands",
+      "locator": "Paragraph: Se ha acusado a los estudiantes de intransigentes",
+      "source_id": "stg-src-cnh-manifiesto-1968-dec5",
+      "verification_status": "evidence-examined-limited-scope",
+      "independent_corroboration": false,
+      "editorial_status": "candidate"
+    },
+    {
+      "finding_id": "stg-20261112T215917Z-auto8-c73af2-f07",
+      "subject": "CNH proposed long-term alliance with urban and rural productive sectors",
+      "locator": "Paragraph: Las perspectivas que se ofrecen al movimiento",
+      "source_id": "stg-src-cnh-manifiesto-1968-dec5",
+      "verification_status": "evidence-examined-limited-scope",
+      "independent_corroboration": false,
+      "editorial_status": "candidate"
+    },
+    {
+      "finding_id": "stg-20261112T215917Z-auto8-c73af2-f08",
+      "subject": "AGN dates Demetrio Vallejo release from Lecumberri to July 29, 1970",
+      "locator": "AGN article concluding paragraphs on liberation",
+      "source_id": "stg-src-agn-vallejo-2021",
+      "verification_status": "evidence-examined-limited-scope",
+      "independent_corroboration": false,
+      "editorial_status": "candidate"
+    },
+    {
+      "finding_id": "stg-20261112T215917Z-auto8-c73af2-f09",
+      "subject": "FICUNAM identifies four contemporaneous short films of student statements",
+      "locator": "Film metadata and Sinopsis Español",
+      "source_id": "stg-src-ficunam-cnh-comunicados",
+      "verification_status": "evidence-examined-limited-scope",
+      "independent_corroboration": false,
+      "editorial_status": "candidate"
+    }
+  ],
+  "source_access": {
+    "manifesto": "edited full HTML transcription examined; original 1968 El Día scan NOT seen",
+    "agn": "institutional article seen; prison record NOT seen",
+    "ficunam": "film catalog viewed; film NOT watched"
+  },
+  "quality_issues": [
+    {
+      "id": "stg-20261112T215917Z-auto8-c73af2-issue01",
+      "issue": "December 1968 CNH transcription appears to call Demetrio Vallejo assassinated. AGN records release July 29, 1970. Requires original newspaper comparison."
+    }
+  ],
+  "reconciliation": {
+    "archives_scanned": 10,
+    "prior_staged_candidates": 75,
+    "new_candidates": 9,
+    "combined_staged_candidates": 84,
+    "original_sqlite_tables_preserved": 88,
+    "canonical_findings_unchanged": 68,
+    "staged_inspection_records_extracted": 24,
+    "sqlite_integrity": "ok",
+    "foreign_key_violations": 0
+  },
+  "download_archive": {
+    "name": "CDMX_STAGE_20261112T215917Z-auto8-c73af2_1968_PRIMARY_AND_CUMULATIVE_RECONCILIATION.zip",
+    "sha256": "a6bb88228bf62d742f3cf7ecd94bc4fb975ee7d6ee16b38686bb5de2624ebecb"
+  },
+  "staged_sqlite_sha256": "b2661a9adfa6d9ab9ec7b26813b3de2e3a6fb4b3b7b56e22863b2fa03cdd8656",
+  "next_action": "Verify original El Día 5 Dec 1968 and crosswalk pending source identifiers; commit to canonical only after fresh manifest read and verified snapshot."
+}
