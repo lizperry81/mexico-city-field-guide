@@ -29,7 +29,7 @@ for marker in ('id="locate-nearest"','id="disable-location"','id="location-statu
     assert marker in walk, ("missing opt-in location feature",marker)
 assert "__GEO_SITES__" not in walk and "watchPosition" not in walk
 assert "localStorage" not in walk and "sessionStorage" not in walk
-geo_match=re.search(r"var geoSites=(\\[.*?\\]);",walk,re.S)
+geo_match=re.search(r"var geoSites=(\[.*?\]);",walk,re.S)
 assert geo_match, "Missing generated location coordinate data"
 geo_sites=json.loads(geo_match.group(1))
 assert len(geo_sites)==4
