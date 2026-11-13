@@ -57,5 +57,23 @@ class EditorialGuardTests(unittest.TestCase):
         self.git("commit", "-qm", "proposed protected archive")
         self.assertNotEqual(self.check("--base-ref", "HEAD~1").returncode, 0)
 
+    def test_manuscript_status_change_requires_approval(self):
+        d = self.root / "editorial" / "discover"
+        d.mkdir()
+        p = d / "templo-mayor.json"
+        p.write_text('{"status": "draft"}\n', encoding="utf-8")
+        self.git("add", ".")
+        self.git("commit", "-qm", "draft manuscript")
+        p.write_text('{"status": "approved"}\n', encoding="utf-8")
+        self.assertNotEqual(self.check("--base-ref", "HEAD").returncode, 0)
+        self.git("add", ".")
+        self.git("commit", "-qm", "unauthorized editorial approval")
+        self.assertNotEqual(self.check("--base-ref", "HEAD~1").returncode, 0)
+    def test_orphan_approval_checksum_is_rejected(self):
+        d = self.root / "editorial" / "approved"
+        d.mkdir()
+        (d / "missing.md.sha256").write_text("a" * 64 + "  missing.md\n", encoding="utf-8")
+        self.assertNotEqual(self.check().returncode, 0)
+
 if __name__ == "__main__":
     unittest.main()
