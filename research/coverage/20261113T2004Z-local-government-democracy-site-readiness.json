@@ -1,0 +1,173 @@
+{
+  "schema_version": 3,
+  "generated_at": "2026-11-13T20:04:28Z",
+  "kind": "period_x_theme_x_geography_explanatory_readiness_delta",
+  "branch": "research-persistence",
+  "source_batch_path": "research/batches/20261113T2004Z-capital-representation-1928-1999-and-templo-museum.json",
+  "evidence_status": "noncanonical_candidates_not_editorially_approved",
+  "rating_definitions": {
+    "substantial": "Coherent source-critical explanation, independent locators and independently validated place observation",
+    "developing": "Useful mechanism and credible localized evidence with archival/spatial gap",
+    "sparse": "Preliminary fact or relationship without sufficient social and physical interpretation",
+    "missing": "Key evidence or physical link not yet available"
+  },
+  "cells": [
+    {
+      "id": "1928-ARTICLE73-CENTRO",
+      "period": "1928–1929",
+      "theme": "Constitutional suppression of elected city councils",
+      "geography": "Mexico City / Zócalo",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113T2004Z-CAP-01",
+        "STG-20261113T2004Z-CAP-03"
+      ],
+      "explanatory_readiness": "Clear constitutional mechanism and conflicting political rationales; edited text only",
+      "next_evidence_needed": "DOF August 20 1928 and Diario de los Debates primary scans"
+    },
+    {
+      "id": "1929-DELEGACIONES-SPATIAL",
+      "period": "1928–1930",
+      "theme": "Departamento Central, 13 delegations, merged former municipalities",
+      "geography": "Tacuba / Tacubaya / Mixcoac / Centro",
+      "rating": "sparse",
+      "linked_assertion_ids": [
+        "STG-20261113T2004Z-CAP-02"
+      ],
+      "explanatory_readiness": "Named historical geographies not validated against period cartography",
+      "next_evidence_needed": "DOF Dec 31 1928 list and municipal cadastral overlays"
+    },
+    {
+      "id": "1928-MOTIVES-POLITICS",
+      "period": "1920–1934",
+      "theme": "Political centralization versus urban-service arguments",
+      "geography": "Distrito Federal",
+      "rating": "sparse",
+      "linked_assertion_ids": [
+        "STG-20261113T2004Z-CAP-03"
+      ],
+      "explanatory_readiness": "Competing explanation has been identified; still abstract-level history",
+      "next_evidence_needed": "Read Miranda full monograph and Obregón-era debate, finance statements"
+    },
+    {
+      "id": "1987-ASSEMBLY",
+      "period": "1987–1994",
+      "theme": "Restoration of representative assembly elections",
+      "geography": "Capital",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113T2004Z-CAP-04",
+        "STG-20261113T2004Z-CAP-05"
+      ],
+      "explanatory_readiness": "Institutional chronology clear but electoral rules not established from originals",
+      "next_evidence_needed": "1987 original reform, composition and vote records"
+    },
+    {
+      "id": "1993-1996-ARTICLE122",
+      "period": "1993–1996",
+      "theme": "Article 122 and gradual devolution",
+      "geography": "Capital",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113T2004Z-CAP-05",
+        "STG-20261113T2004Z-CAP-06"
+      ],
+      "explanatory_readiness": "Distinguishes local institutions from federal power",
+      "next_evidence_needed": "Original constitutional texts with clause-by-clause comparison"
+    },
+    {
+      "id": "1997-DIRECT-VOTE",
+      "period": "1997",
+      "theme": "First direct election of head of government",
+      "geography": "Distrito Federal / Zócalo",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113T2004Z-CAP-06",
+        "STG-20261113T2004Z-CAP-08"
+      ],
+      "explanatory_readiness": "Specific legal mechanics plus contemporaneous account",
+      "next_evidence_needed": "Final IFE certified vote returns and precinct geography"
+    },
+    {
+      "id": "1997-1999-ELECTORAL-BODIES",
+      "period": "1997–1999",
+      "theme": "Federal-to-local election administration",
+      "geography": "Capital",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113T2004Z-CAP-07"
+      ],
+      "explanatory_readiness": "Unusual transitional responsibility documented by electoral tribunal",
+      "next_evidence_needed": "Original COFIPE and local electoral code, local archive"
+    },
+    {
+      "id": "2000-DELEGATE-ELECTIONS",
+      "period": "2000",
+      "theme": "Direct vote for delegated local leadership",
+      "geography": "City boroughs",
+      "rating": "sparse",
+      "linked_assertion_ids": [
+        "STG-20261113T2004Z-CAP-04"
+      ],
+      "explanatory_readiness": "Timeline only; no voter or local governance case studies",
+      "next_evidence_needed": "IECM 2000 returns and local case studies"
+    },
+    {
+      "id": "AYUNTAMIENTO-FABRIC",
+      "period": "1721–2026",
+      "theme": "Municipal chamber layers and historical visibility",
+      "geography": "Plaza de la Constitución 2",
+      "rating": "sparse",
+      "linked_assertion_ids": [
+        "STG-20261113T2004Z-CAP-09"
+      ],
+      "explanatory_readiness": "Official site identifies decorated hall and changes but no conservation dossier",
+      "next_evidence_needed": "Architectural conservation survey, room field observations, current visitor access"
+    },
+    {
+      "id": "TEMPLO-COYOLXA-1978",
+      "period": "1978–present",
+      "theme": "Excavation trigger, original and outdoor copy",
+      "geography": "Templo Mayor and museum",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113T2004Z-CAP-10"
+      ],
+      "explanatory_readiness": "Specific date and display location; physical verification absent",
+      "next_evidence_needed": "1978 salvage record and museum walk survey"
+    },
+    {
+      "id": "TEMPLO-TLALTECUHTLI-2006",
+      "period": "2006–present",
+      "theme": "Original findspot vs museum exhibition",
+      "geography": "Templo Mayor museum",
+      "rating": "sparse",
+      "linked_assertion_ids": [
+        "STG-20261113T2004Z-CAP-11"
+      ],
+      "explanatory_readiness": "Institutional source provides date and historically described exhibit; not current",
+      "next_evidence_needed": "Museum current floor map, excavation register, display inventory"
+    },
+    {
+      "id": "MODERN-POLITICAL-VISITOR-WALK",
+      "period": "1928–2026",
+      "theme": "Verified sequence of governance locations and public memorials",
+      "geography": "Centro / former municipalities",
+      "rating": "missing",
+      "linked_assertion_ids": [
+        "STG-20261113T2004Z-CAP-02",
+        "STG-20261113T2004Z-CAP-04",
+        "STG-20261113T2004Z-CAP-09"
+      ],
+      "explanatory_readiness": "No verified historic municipal-government walking route from contemporary mapped sites",
+      "next_evidence_needed": "Period maps, municipal cabildo records, modern local access and responsible route"
+    }
+  ],
+  "publication_approved": false,
+  "summary": {
+    "substantial": 0,
+    "developing": 6,
+    "sparse": 5,
+    "missing": 1
+  }
+}

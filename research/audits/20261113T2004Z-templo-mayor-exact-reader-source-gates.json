@@ -1,0 +1,135 @@
+{
+  "schema_version": 4,
+  "generated_at": "2026-11-13T20:04:28Z",
+  "kind": "templo_mayor_discover_exact_reader_seven_topic_source_locator_audit",
+  "branch": "research-persistence",
+  "target_branch_read_only": "main",
+  "target_path": "poi/templo-mayor/reader.html",
+  "target_main_blob_sha": "fa46cf6054566adb6bf881e665eb102f2ee0e7c3",
+  "original_text_was_re_read": true,
+  "source_batch_path": "research/batches/20261113T2004Z-capital-representation-1928-1999-and-templo-museum.json",
+  "publication_approved": false,
+  "ready_for_editorial_review": false,
+  "gates": [
+    {
+      "topic": "Triple Alliance founding circa 1428",
+      "reader_anchor": "In the late 1420s, Tenochtitlan joined Texcoco and Tlacopan in the Triple Alliance.",
+      "source_locator_matrix": [
+        {
+          "source": "research/audits/templo-mayor-discover-20261113T1427Z-triple-alliance-dating-contrast.json",
+          "locator": "Prior bibliography cites 1427 versus 1430"
+        }
+      ],
+      "status": "retain_late_1420s_qualified",
+      "uncertainty": "No manuscript-first review of Tezozómoc, Chimalpahin or chronicle-derived 1428 date",
+      "historical_addition": "Explain the Azcapotzalco war and coalition mechanics without an unqualified founding year; map tributary obligations separately from offerings"
+    },
+    {
+      "topic": "Seven construction stages",
+      "reader_anchor": "Archaeologists group the work into seven major stages and give substantial additions lettered labels.",
+      "source_locator_matrix": [
+        {
+          "source": "poi/templo-mayor/reader.html",
+          "locator": "dossier-topic-2 masonry sequence and relative dating sidebar"
+        },
+        {
+          "source": "research/audits/20261113T1803Z-templo-mayor-gamio-1913-1914-primary-gates.json",
+          "locator": "Prior stage/early excavation gates"
+        }
+      ],
+      "status": "retain_relative_stratigraphy_vs_ruler_distinction",
+      "uncertainty": "Individual wall-phase drawings and attribution to reigns not independently checked",
+      "historical_addition": "Pre-read: evidence for nested rebuilds; on-site: identify sealed stair and Stage II shrine by actual sign after route verification"
+    },
+    {
+      "topic": "Coatepec / Coyolxauhqui",
+      "reader_anchor": "The disk’s position gave the story a place in the building.",
+      "source_locator_matrix": [
+        {
+          "source": "poi/templo-mayor/reader.html",
+          "locator": "dossier-topic-3 Stage IVb stair/disk and myth paragraph"
+        },
+        {
+          "source": "STG-SRC-20261113-INAH-TEMPLO-MAYOR-PROJECT-AND-MUSEUM",
+          "locator": "INAH official museum history, original Coyolxauhqui displayed on upper floor"
+        }
+      ],
+      "status": "distinguish_myth_interpretation_from_stone_position",
+      "uncertainty": "Original 1978 disk find plan and Nahuatl textual source not examined",
+      "historical_addition": "Museum original vs outdoor replica; treat Coatepec as interpretive ritual analogy, not excavation proof of historical event"
+    },
+    {
+      "topic": "Conquest 1520–1521 and Tóxcatl",
+      "reader_anchor": "In May 1520, while Cortés was away, Pedro de Alvarado’s men attacked people celebrating Tóxcatl in the sacred precinct.",
+      "source_locator_matrix": [
+        {
+          "source": "https://florentinecodex.getty.edu/book/12/folio/30r",
+          "locator": "Getty manuscript page metadata for bk.12 fol.30r accessed; transcriptions shown as selectable, not text-extracted from manuscript"
+        },
+        {
+          "source": "poi/templo-mayor/reader.html",
+          "locator": "dossier-topic-4 source block and 1520–1521 prose"
+        }
+      ],
+      "status": "claim_maintained_as_unapproved_reader_claim_requiring_crosscheck",
+      "uncertainty": "Book 12 precise massacre passage folio alignment, original Nahuatl column, Florentine variant, allied Indigenous coalition details NOT independently compared",
+      "historical_addition": "Separate eyewitness tradition and later compilation; compare Nahua and Spanish accounts and specify who is the author of each passage"
+    },
+    {
+      "topic": "1913 versus 1914 Gamio excavation",
+      "reader_anchor": "In 1913, archaeologist Manuel Gamio uncovered the pyramid’s southwest corner.",
+      "source_locator_matrix": [
+        {
+          "source": "research/audits/20261113T1803Z-templo-mayor-gamio-1913-1914-primary-gates.json",
+          "locator": "Previously examined 2023 archaeological historiography places excavation 6–16 May 1914"
+        }
+      ],
+      "status": "correction_candidate_1913_demolition_preparation_vs_1914_excavation",
+      "uncertainty": "Gamio original May 1914 report has not been directly examined",
+      "historical_addition": "Differentiate 1913 demolition preparations, 1914 excavation, and 1978 Coyolxauhqui discovery; do not change live reader until editorial verification"
+    },
+    {
+      "topic": "21 February 1978 Coyolxauhqui recovery",
+      "reader_anchor": "In February 1978, electrical workers digging near República de Argentina and República de Guatemala struck the carved Coyolxauhqui disk.",
+      "source_locator_matrix": [
+        {
+          "source": "STG-SRC-20261113-INAH-TEMPLO-MAYOR-PROJECT-AND-MUSEUM",
+          "locator": "INAH Proyecto Templo Mayor official historical opening: 21 February 1978"
+        },
+        {
+          "source": "https://templomayor.inah.gob.mx/historia/proyecto-templo-mayor",
+          "locator": "INAH official project chronology"
+        },
+        {
+          "source": "poi/templo-mayor/reader.html",
+          "locator": "dossier-topic-6"
+        }
+      ],
+      "status": "add_specific_date_to_editorial_candidate_not_published",
+      "uncertainty": "Original rescue record not accessed; source is INAH retrospective",
+      "historical_addition": "Specific date 21 February 1978 and provenance of electrical workers' discovery; show museum original when relevant"
+    },
+    {
+      "topic": "2006 Tlaltecuhtli exhibit visibility",
+      "reader_anchor": "In 2006, archaeologists found a relief of the earth deity Tlaltecuhtli",
+      "source_locator_matrix": [
+        {
+          "source": "STG-SRC-20261113-INAH-TEMPLO-MAYOR-PROJECT-AND-MUSEUM",
+          "locator": "INAH Museo history: 2 October 2006 find, 2010 museum vestibule placement"
+        }
+      ],
+      "status": "review_current_gallery_floor_location",
+      "uncertainty": "Museum display current state/visitor route not checked in 2026",
+      "historical_addition": "Pre-read: archaeological find/conservation; on-site: if still displayed, find original polychrome relief and distinguish it from site void"
+    }
+  ],
+  "artifacts_preserved": [
+    "research/audits/templo-mayor-discover-20261113T1710Z-main-current-blob-claim-source-gates.json",
+    "research/audits/20261113T1803Z-templo-mayor-gamio-1913-1914-primary-gates.json"
+  ],
+  "blocked_by": [
+    "Original Book 12 and Gamio documents not fully collated",
+    "No site visit confirming visitor paths and current display",
+    "Alliance 1427/1428/1430 chronology not resolved"
+  ]
+}

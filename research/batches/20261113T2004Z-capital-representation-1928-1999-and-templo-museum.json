@@ -1,0 +1,433 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261113T2004Z-capital-representation-1928-1999-and-templo-museum",
+  "generated_at": "2026-11-13T20:04:28Z",
+  "branch": "research-persistence",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "storage_role": "immutable_noncanonical_research_batch",
+  "previous_verified_replay": "research/reconciled/v4_2453a0545a41/replay_report.json",
+  "prior_verified_counts": {
+    "github_batches": 71,
+    "assertion_bearing_findings": 392,
+    "source_candidates": 128,
+    "source_inspections": 166,
+    "unknown_source_references": 1,
+    "metadata_collisions": 2
+  },
+  "research_scope": "1928–1999 municipal and electoral government of Mexico City, anchored to city hall; two narrowly documented Templo Mayor visitor-context checks; explicit separation of legal effect, retrospective account and museum originals",
+  "sources": [
+    {
+      "id": "STG-SRC-20261113-CONSTIT-1928-ARTICLE73-EDITED",
+      "title": "Reforma constitucional del artículo 73, fracción VI, 20 agosto 1928 (edited transcription)",
+      "authors": "Constituent legislature; transcription and commentary by Doralicia Carmona Dávila",
+      "year": 1928,
+      "publication": "Memoria Política de México, historical chronology entry",
+      "url": "https://www.memoriapoliticademexico.org/Efemerides/8/20081928.html",
+      "access_scope": "Entire online edited chronology examined; constitutional wording and date at page lines 11–20; ORIGINAL Diario Oficial issue NOT opened",
+      "status": "provisional_edited_constitutional_excerpt_not_original_dof"
+    },
+    {
+      "id": "STG-SRC-20261113-MIRANDA-2008-DDF-UNAM-RECORD",
+      "title": "La creación del Departamento del Distrito Federal: urbanización, política y cambio institucional, 1920–1934",
+      "authors": "Sergio Miranda Pacheco",
+      "year": 2008,
+      "publication": "UNAM Instituto de Investigaciones Históricas, printed ISBN 9786072001572; open catalog lists another 2016 edition ISBN 9789703251063",
+      "url": "https://librosoa.unam.mx/handle/123456789/2636",
+      "access_scope": "UNAM open-access catalog abstract only, page lines 55–64; full monograph inaccessible and NOT read",
+      "status": "bibliographic_summary_only_not_book_examination",
+      "identity_caution": "Two UNAM catalog publication dates/ISBNs may describe editions: do not merge until checked"
+    },
+    {
+      "id": "STG-SRC-20261113-IECM-CAPITAL-ELECTORAL-HISTORY",
+      "title": "Sistema Electoral del Distrito Federal, capítulo 1: marco jurídico",
+      "authors": "Instituto Electoral del Distrito Federal (archival institutional site)",
+      "year": 2010,
+      "publication": "IEDF institutional electoral education portal (historical snapshot)",
+      "url": "https://www.iecm.mx/www/sites/SistemaElectoralDFbis/sp.php",
+      "access_scope": "Full HTML section read; lines 38–46 on 1928, 1987, 1993, 1996, 1997 and 2000",
+      "status": "official_institutional_summary_not_original_decree"
+    },
+    {
+      "id": "STG-SRC-20261113-TEPJF-TEDF-LEGAL-CHRONOLOGY",
+      "title": "Reseña histórica del Tribunal Electoral del Distrito Federal",
+      "authors": "Tribunal Electoral del Poder Judicial de la Federación historic collection",
+      "publication": "TEPJF Juriselectoral hosted institutional history",
+      "url": "https://www.te.gob.mx/juriselectoral/Juris/node/24",
+      "access_scope": "Read online history lines 78–90: 1996/1997 statutes, 1997 IFE administration, local court 1999",
+      "status": "official_institutional_history_not_original_statutes"
+    },
+    {
+      "id": "STG-SRC-20261113-CDMX-OLD-CITY-HALL-GUIDE",
+      "title": "Antiguo Palacio del Ayuntamiento",
+      "authors": "Government of Mexico City, historical and cultural tourism guide",
+      "publication": "Mexico City official site entry",
+      "url": "https://www.mexicocity.cdmx.gob.mx/venues/palacio-del-ayuntamiento/",
+      "access_scope": "Read official venue history incl. Salón de Cabildos and building renovations; site schedule not checked live",
+      "status": "official_site_background_heterogeneous_dates_require_architectural_validation"
+    },
+    {
+      "id": "STG-SRC-20261113-WAPO-CARDENAS-1997-07-07",
+      "title": "Ruling Party Defeated in Mexico City",
+      "authors": "John Ward Anderson and Molly Moore",
+      "year": 1997,
+      "publication": "The Washington Post, 7 July 1997, reporting events of 6 July",
+      "url": "https://www.washingtonpost.com/archive/politics/1997/07/07/ruling-party-defeated-in-mexico-city/ec4bd5dc-65bb-4db4-9578-0ea5ea6b3c54/",
+      "access_scope": "Contemporaneous article summary text examined, election-night estimates are NOT final tabulation",
+      "status": "contemporaneous_journalism_no_original_ballot_or_official_return"
+    },
+    {
+      "id": "STG-SRC-20261113-INAH-TEMPLO-MAYOR-PROJECT-AND-MUSEUM",
+      "title": "Proyecto Templo Mayor; Acerca del museo",
+      "authors": "Instituto Nacional de Antropología e Historia / Museo del Templo Mayor",
+      "publication": "INAH official history and museum descriptions",
+      "url": "https://templomayor.inah.gob.mx/historia/proyecto-templo-mayor",
+      "alternate_url": "https://www.templomayor.inah.gob.mx/historia/acerca-del-museo",
+      "access_scope": "INAH indexed official content explicitly states 21 February 1978; museum description identifies second-floor original; full original excavators' field reports not examined",
+      "status": "institutional_retrospective_not_original_1978_field_record"
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "20261113T2004Z-INS-01",
+      "source_id": "STG-SRC-20261113-CONSTIT-1928-ARTICLE73-EDITED",
+      "locator": "Entire online edited chronology examined; constitutional wording and date at page lines 11–20; ORIGINAL Diario Oficial issue NOT opened",
+      "access": "Visited identified public web page or indexed institutional result; original archival records not accessed",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261113T2004Z-INS-02",
+      "source_id": "STG-SRC-20261113-MIRANDA-2008-DDF-UNAM-RECORD",
+      "locator": "UNAM open-access catalog abstract only, page lines 55–64; full monograph inaccessible and NOT read",
+      "access": "Visited identified public web page or indexed institutional result; original archival records not accessed",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261113T2004Z-INS-03",
+      "source_id": "STG-SRC-20261113-IECM-CAPITAL-ELECTORAL-HISTORY",
+      "locator": "Full HTML section read; lines 38–46 on 1928, 1987, 1993, 1996, 1997 and 2000",
+      "access": "Visited identified public web page or indexed institutional result; original archival records not accessed",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261113T2004Z-INS-04",
+      "source_id": "STG-SRC-20261113-TEPJF-TEDF-LEGAL-CHRONOLOGY",
+      "locator": "Read online history lines 78–90: 1996/1997 statutes, 1997 IFE administration, local court 1999",
+      "access": "Visited identified public web page or indexed institutional result; original archival records not accessed",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261113T2004Z-INS-05",
+      "source_id": "STG-SRC-20261113-CDMX-OLD-CITY-HALL-GUIDE",
+      "locator": "Read official venue history incl. Salón de Cabildos and building renovations; site schedule not checked live",
+      "access": "Visited identified public web page or indexed institutional result; original archival records not accessed",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261113T2004Z-INS-06",
+      "source_id": "STG-SRC-20261113-WAPO-CARDENAS-1997-07-07",
+      "locator": "Contemporaneous article summary text examined, election-night estimates are NOT final tabulation",
+      "access": "Visited identified public web page or indexed institutional result; original archival records not accessed",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261113T2004Z-INS-07",
+      "source_id": "STG-SRC-20261113-INAH-TEMPLO-MAYOR-PROJECT-AND-MUSEUM",
+      "locator": "INAH indexed official content explicitly states 21 February 1978; museum description identifies second-floor original; full original excavators' field reports not examined",
+      "access": "Visited identified public web page or indexed institutional result; original archival records not accessed",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    }
+  ],
+  "findings": [
+    {
+      "id": "STG-20261113T2004Z-CAP-01",
+      "assertion": "An amendment published 20 August 1928 recast Article 73(VI) so Mexico City's federal-district government would be exercised by the President through legally designated organs, displacing the constitutional basis for locally elected municipal councils; the reform entered into force 1 January 1929. Distinguish publication from effective date.",
+      "date_or_range": "1928-08-20 to 1929-01-01",
+      "period": "Postrevolutionary federal capital",
+      "geographies": [
+        "Distrito Federal"
+      ],
+      "themes": [
+        "Constitutional history",
+        "Local representation"
+      ],
+      "poi_ids": [
+        "antiguo-palacio-ayuntamiento"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-CONSTIT-1928-ARTICLE73-EDITED",
+        "STG-SRC-20261113-IECM-CAPITAL-ELECTORAL-HISTORY"
+      ],
+      "source_locator": "Carmona edited 1928 constitutional excerpt, HTML lines 11–17; IEDF marco jurídico lines 39–41",
+      "limitations": "Original 20 August 1928 Diario Oficial facsimile not inspected; transcribed clause may contain editorial modernization.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2004Z-CAP-02",
+      "assertion": "A later organic-law account describes a Departamento Central encompassing the former México, Tacuba, Tacubaya and Mixcoac municipalities, alongside 13 delegaciones. This should not be conflated with today's borough boundaries or assumed to be visible from a modern street map.",
+      "date_or_range": "1928-12-31 to 1929",
+      "period": "Postrevolutionary metropolitan reorganization",
+      "geographies": [
+        "Centro; Tacuba; Tacubaya; Mixcoac; remaining federal district"
+      ],
+      "themes": [
+        "Administrative geography",
+        "Urbanization"
+      ],
+      "poi_ids": [
+        "antiguo-palacio-ayuntamiento"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-CONSTIT-1928-ARTICLE73-EDITED",
+        "STG-SRC-20261113-MIRANDA-2008-DDF-UNAM-RECORD"
+      ],
+      "source_locator": "Carmona chronological narrative HTML lines 17–18; Miranda Pacheco UNAM catalog summary lines 55–64",
+      "limitations": "Exact 1928 statute's 13-delegation schedule and contemporary cadastral map remain to be inspected in primary print.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2004Z-CAP-03",
+      "assertion": "The 1928 replacement of elected city councils had competing explanations: administrative coordination and local-service financing on one hand, and struggles for political control in the succession crisis on the other. Both are historical interpretations to test, not proof of the private intentions of every legislator.",
+      "date_or_range": "1928",
+      "period": "Postrevolutionary Mexico",
+      "geographies": [
+        "Mexico City"
+      ],
+      "themes": [
+        "Political conflict",
+        "Urban governance"
+      ],
+      "poi_ids": [
+        "antiguo-palacio-ayuntamiento"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-CONSTIT-1928-ARTICLE73-EDITED",
+        "STG-SRC-20261113-MIRANDA-2008-DDF-UNAM-RECORD"
+      ],
+      "source_locator": "Carmona historical commentary lines 18–20; Miranda catalog summary lines 61–64",
+      "limitations": "Full Miranda monograph and legislative debate not read; two modern summaries are not sufficient to adjudicate motives.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2004Z-CAP-04",
+      "assertion": "The institutional timeline distinguishes 1987 election of representatives to a Distrito Federal assembly from 1997 direct election of a head of government and from election of delegated area heads beginning in 2000. Calling 1997 the first local election of any kind is misleading.",
+      "date_or_range": "1987–2000",
+      "period": "Late twentieth-century democratic reforms",
+      "geographies": [
+        "Mexico City"
+      ],
+      "themes": [
+        "Democratization",
+        "Representative institutions"
+      ],
+      "poi_ids": [
+        "antiguo-palacio-ayuntamiento"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-IECM-CAPITAL-ELECTORAL-HISTORY"
+      ],
+      "source_locator": "IEDF marco jurídico online lines 40–43",
+      "limitations": "1978/1987 reforms and individual office terms require primary statute review. This is a chronology of different offices, not a measure of full political autonomy.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2004Z-CAP-05",
+      "assertion": "The 1993 constitutional change amended Article 122 and authorized Congress to adopt a Distrito Federal government statute; a 1996 reform renamed and expanded local executive and legislative offices. The new offices remained legally constrained by federal powers.",
+      "date_or_range": "1993–1996",
+      "period": "Democratic constitutional transition",
+      "geographies": [
+        "Mexico City"
+      ],
+      "themes": [
+        "Constitutional division of powers"
+      ],
+      "poi_ids": [
+        "antiguo-palacio-ayuntamiento"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-IECM-CAPITAL-ELECTORAL-HISTORY",
+        "STG-SRC-20261113-TEPJF-TEDF-LEGAL-CHRONOLOGY"
+      ],
+      "source_locator": "IEDF marco jurídico lines 43–46; electoral court historical summary lines 80–84",
+      "limitations": "Original constitutional amendment DOF scans and 1994 statute not read; do not treat the change as equivalent to statehood.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2004Z-CAP-06",
+      "assertion": "The electoral court's historical account identifies a 22 November 1996 reform to the Distrito Federal government statute, whose transitory rule specified that 6 July 1997 local balloting would cover the Jefe de Gobierno and Asamblea Legislativa seats, not elected territorial delegates.",
+      "date_or_range": "1996-11-22 to 1997-07-06",
+      "period": "Capital electoral transition",
+      "geographies": [
+        "Distrito Federal"
+      ],
+      "themes": [
+        "Electoral law",
+        "Representation"
+      ],
+      "poi_ids": [
+        "antiguo-palacio-ayuntamiento"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-TEPJF-TEDF-LEGAL-CHRONOLOGY"
+      ],
+      "source_locator": "TEPJF Juriselectoral historical account lines 80–83 (third transitory article)",
+      "limitations": "Original 22 November decree not examined; source is a court retrospective with possible typos.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2004Z-CAP-07",
+      "assertion": "The July 1997 Distrito Federal elections were administered by federal electoral authorities because the capital had not yet established its own local electoral bodies; later rules created a local electoral institute and court in January 1999.",
+      "date_or_range": "1997–1999",
+      "period": "Capital electoral transition",
+      "geographies": [
+        "Mexico City"
+      ],
+      "themes": [
+        "Electoral administration",
+        "Institutional development"
+      ],
+      "poi_ids": [
+        "antiguo-palacio-ayuntamiento"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-TEPJF-TEDF-LEGAL-CHRONOLOGY"
+      ],
+      "source_locator": "TEPJF Juriselectoral account lines 82–90; 1999 local court inauguration detail",
+      "limitations": "Institutional self-description; ballot archive, fiscal autonomy and legislative debates remain unreviewed.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2004Z-CAP-08",
+      "assertion": "Contemporary reporting on 6 July 1997 described opposition candidate Cuauhtémoc Cárdenas as the winner of the capital's first directly elected head-of-government contest; the report discusses election-night polling rather than certified final vote totals.",
+      "date_or_range": "1997-07-06",
+      "period": "Late twentieth-century political transition",
+      "geographies": [
+        "Mexico City"
+      ],
+      "themes": [
+        "Election history",
+        "Journalistic source criticism"
+      ],
+      "poi_ids": [
+        "antiguo-palacio-ayuntamiento"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-WAPO-CARDENAS-1997-07-07",
+        "STG-SRC-20261113-IECM-CAPITAL-ELECTORAL-HISTORY"
+      ],
+      "source_locator": "Washington Post 7 July 1997 opening election account; IEDF institutional timeline lines 42–43",
+      "limitations": "Do not use 1997 exit poll percentages as certified results; obtain actual 1997 IFE district returns.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2004Z-CAP-09",
+      "assertion": "The present Antiguo Palacio del Ayuntamiento at Plaza de la Constitución 2 contains the Salón de Cabildos, with nineteenth-century decoration and later alterations; it is a place to discuss the loss and later recovery of electoral representation, but its visible room cannot be represented as an untouched 1928 chamber.",
+      "date_or_range": "1721–1999 with present-day place interpretation",
+      "period": "Colonial to modern government fabric",
+      "geographies": [
+        "Zócalo south side"
+      ],
+      "themes": [
+        "Architectural layers",
+        "Civic heritage"
+      ],
+      "poi_ids": [
+        "antiguo-palacio-ayuntamiento"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-CDMX-OLD-CITY-HALL-GUIDE",
+        "STG-SRC-20261113-IECM-CAPITAL-ELECTORAL-HISTORY"
+      ],
+      "source_locator": "Mexico City official palace description: Sala de Cabildos and 1893 decoration; IEDF marco jurídico lines 39–43",
+      "limitations": "Modern access/room layout not site-verified; palace source itself gives multiple period-specific construction dates; no 1928 photographs compared.",
+      "learning_mode": "poi_context_pre_read_then_optional_on_site",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2004Z-CAP-10",
+      "assertion": "INAH's Proyecto Templo Mayor history dates the Coyolxauhqui sculpture discovery by electrical-utility workers to 21 February 1978, while its museum narrative identifies the monumental original on the museum's second level. The 1978 finding precipitated the archaeological project; it was not the first excavation of the ancient precinct.",
+      "date_or_range": "1978-02-21",
+      "period": "Modern archaeological rediscovery",
+      "geographies": [
+        "Templo Mayor archaeological zone and museum"
+      ],
+      "themes": [
+        "Archaeological method",
+        "Public display provenance"
+      ],
+      "poi_ids": [
+        "templo-mayor"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-INAH-TEMPLO-MAYOR-PROJECT-AND-MUSEUM"
+      ],
+      "source_locator": "INAH Proyecto Templo Mayor history opening paragraph; Acerca del museo: Coyolxauhqui display and discovery, introductory museum history",
+      "limitations": "INAH retrospective, original rescue report and 1978 photographs not inspected. Distinguish outdoor copy from indoor original in a separate field-walk check.",
+      "learning_mode": "on_site_observation_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2004Z-CAP-11",
+      "assertion": "The INAH museum account links discovery of the Tlaltecuhtli slab on 2 October 2006 to its subsequent conservation and displays the polychrome relief in the museum vestibule from 2010. A modern visitor should be told where to view the original rather than asked to find the slab in its excavated 2006 street location.",
+      "date_or_range": "2006-10-02 to 2010",
+      "period": "Twenty-first-century urban archaeology",
+      "geographies": [
+        "Templo Mayor museum; urban excavations"
+      ],
+      "themes": [
+        "Conservation",
+        "Archaeological find context"
+      ],
+      "poi_ids": [
+        "templo-mayor"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-INAH-TEMPLO-MAYOR-PROJECT-AND-MUSEUM"
+      ],
+      "source_locator": "INAH Acerca del museo/Historia overview: opening museum section Tlaltecuhtli 2006 and display 2010",
+      "limitations": "Museum display configuration as of late 2026 not verified; source is a circa-2014 retrospective, not a live map.",
+      "learning_mode": "on_site_observation_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    }
+  ],
+  "integrity_notes": {
+    "independently_corroborated_new_findings": 0,
+    "original_statutes_examined": 0,
+    "full_miranda_book_examined": false,
+    "live_venue_inspection": false,
+    "original_archaeological_field_records_examined": false,
+    "publication_approved": false
+  }
+}
