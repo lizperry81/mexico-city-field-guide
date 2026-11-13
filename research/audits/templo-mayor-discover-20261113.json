@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-13T02:03:34Z",
+  "audit_kind": "provisional claim-topic-to-source audit",
+  "chapter": "Templo Mayor Discover opening",
+  "scope_limit": "The exact app chapter prose was not retrieved because the deployed app is packaged as a binary ZIP; claims are topics to check, not quoted or verified sentences from the app.",
+  "claims": [
+    {
+      "claim_id": "TM-OP-01",
+      "topic": "Triple Alliance around 1428",
+      "evidence": "Arqueología Mexicana, Centro de México, Los últimos en llegar",
+      "source": "https://arqueologiamexicana.mx/mexico-antiguo/centro-de-mexico",
+      "status": "qualified_conventional_chronology",
+      "risk": "A single 1428 foundation date obscures the multiphase anti-Tepanec alignment and possible later Tlacopan entry",
+      "fix": "Explain defeat of Azcapotzalco and subsequent consolidation; optional chronological debate sidebar"
+    },
+    {
+      "claim_id": "TM-OP-02",
+      "topic": "Successive temple construction, Tláloc and Huitzilopochtli",
+      "evidence": "INAH site Templo Mayor, twin shrines and seven enlargements",
+      "source": "https://lugares.inah.gob.mx/es/node/4463",
+      "status": "institutional_description_examined",
+      "risk": "Do not conflate excavated stages with final exterior in 1519",
+      "fix": "Use north/south shrines and nested phase IV as physical teaching prompts"
+    },
+    {
+      "claim_id": "TM-OP-03",
+      "topic": "Coatepec-Coyolxauhqui at stage IVa and IVb",
+      "evidence": "Leonardo López Luján, Las otras imágenes de Coyolxauhqui, Arqueología Mexicana 102 pp.48–54, online relevant passage",
+      "source": "https://www.arqueologiamexicana.mx/mexico-antiguo/las-otras-imagenes-de-coyolxauhqui",
+      "status": "authored_secondary_passage_examined_print_not_examined",
+      "risk": "Repeated material representations; ritual choreography inferred, not directly witnessed",
+      "fix": "Introduce earlier IVa-1 relief and IVb monolith before explaining Coatepec"
+    },
+    {
+      "claim_id": "TM-OP-04",
+      "topic": "Conquest and colonial destruction",
+      "evidence": "INAH El Museo del Templo Mayor, La Conquista, ¿Qué ocurrió con el Templo Mayor?",
+      "source": "https://lugares.inah.gob.mx/es/node/5284",
+      "status": "institutional_description_examined",
+      "risk": "Exact demolition timetable and masonry reuse require original excavation and archival evidence",
+      "fix": "Explain survival of buried earlier phases and colonial buildings above"
+    },
+    {
+      "claim_id": "TM-OP-05",
+      "topic": "Porfiriato water collector cuts ruins",
+      "evidence": "INAH Templo Mayor, Etapa IV y V, Colector de agua",
+      "source": "https://lugares.inah.gob.mx/es/node/4463",
+      "status": "institutional_description_examined",
+      "risk": "Engineering plan unexamined",
+      "fix": "Explicit 'what to look for' for the ~1900 brick collector and 2 m cut"
+    },
+    {
+      "claim_id": "TM-OP-06",
+      "topic": "21 February 1978 Coyolxauhqui discovery",
+      "evidence": "INAH Proyecto Templo Mayor, opening discovery and project founding paragraphs",
+      "source": "https://templomayor.inah.gob.mx/historia/proyecto-templo-mayor",
+      "status": "institutional_description_examined",
+      "risk": "Discovery is not first archaeology at the site",
+      "fix": "Distinguish 1914 Gamio work and later 1978 project"
+    },
+    {
+      "claim_id": "TM-OP-07",
+      "topic": "1914 Gamio and 1987 museum chronology",
+      "evidence": "INAH Templo Mayor English site history",
+      "source": "https://lugares.inah.gob.mx/en/node/4463",
+      "status": "institutional_description_examined",
+      "risk": "Original Gamio field report not inspected; don't claim 1978 began research",
+      "fix": "1914 / 1978 / 1987 visual timeline"
+    }
+  ],
+  "ready_for_editorial_review": false,
+  "publication_status": "not_publication_ready",
+  "unresolved": [
+    "Original Triple Alliance Nahuatl source comparison",
+    "Original excavation phase reports and figures",
+    "Exact chapter prose and sentence-level audit",
+    "Independent corroboration of each educational statement"
+  ]
+}
