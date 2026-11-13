@@ -101,6 +101,20 @@ def render(record):
         for dive in chapter.get("deep_dives", []):
             parts.append("<details><summary>" + escape(dive["title"]) +
                          "</summary><p>" + escape(dive["text"]) + "</p></details>")
+        # Adjacent chapter links use only the approved manuscript sequence.
+        # A Discover page never points to or rewrites the Explore field chapters.
+        pager = []
+        if i > 1:
+            previous = record["chapters"][i - 2]
+            pager.append('<a rel="prev" href="#' + previous["id"] +
+                         '">← Previous chapter: ' + escape(previous["title"]) + '</a>')
+        if i < len(record["chapters"]):
+            following = record["chapters"][i]
+            pager.append('<a rel="next" href="#' + following["id"] +
+                         '">Next chapter: ' + escape(following["title"]) + ' →</a>')
+        if pager:
+            parts.append('<nav class="chapter-pager" aria-label="Continue reading">' +
+                         "".join(pager) + '</nav>')
         parts.append("</article>")
         chunks.append("".join(parts))
     title = "Templo Mayor" if slug == "templo-mayor" else slug.replace("-", " ").title()
@@ -113,16 +127,21 @@ header,main{{max-width:850px;margin:auto;padding:18px 22px}}
 header{{font:15px system-ui}}a{{color:#126c69}}
 h1{{font:700 clamp(34px,6vw,58px)/1.12 Georgia,serif}}h2{{font:700 32px/1.2 Georgia,serif}}
 nav{{display:grid;gap:10px;padding:18px;background:#e9f2f1;border-radius:12px;font:16px system-ui}}
+.chapter-pager{{display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px;margin-top:26px;border-top:1px solid #d5e1e3;padding:16px 0 0}}
+.chapter-pager a{{display:inline-flex;min-height:44px;align-items:center}}
+.skip-link{{position:absolute;left:-9999px;top:8px;padding:12px;background:white;z-index:2}}
+.skip-link:focus{{left:8px}}
 .chapter{{background:white;padding:22px;margin:26px 0;border:1px solid #d5e1e3;border-radius:14px;scroll-margin-top:20px}}
 .references{{font:13px/1.5 system-ui;color:#445d66}}
 .count{{font:700 13px system-ui;letter-spacing:.08em;color:#126c69}}
 details{{border-top:1px solid #d5e1e3;padding:14px 0}}summary{{cursor:pointer;font:700 16px system-ui}}
 a:focus-visible,summary:focus-visible{{outline:3px solid #126c69;outline-offset:3px}}
 </style></head><body>
+<a class="skip-link" href="#chapter-navigation">Skip to chapters</a>
 <header><a href="../review/">← Back to the complete research dossier and field guide</a></header>
 <main><p class="count">EDITORIALLY APPROVED · DISCOVER</p><h1>{escape(title)}</h1>
 <p>This narrative has passed the recorded editorial and page-specific evidence review. For field stops, museum information, and visit planning, use Explore and Plan in the original reader.</p>
-<nav aria-label="Chapters">{''.join(toc)}</nav>
+<nav id="chapter-navigation" aria-label="Chapters">{''.join(toc)}</nav>
 {''.join(chunks)}
 </main></body></html>"""
 
