@@ -1,0 +1,175 @@
+{
+  "schema_version": 3,
+  "kind": "templo_mayor_discover_actual_reader_claim_to_source_locator_audit",
+  "generated_at": "2026-11-13T17:11:45.473Z",
+  "branch": "research-persistence",
+  "target_branch_read_only": "main",
+  "target_path": "poi/templo-mayor/reader.html",
+  "target_main_blob_sha": "554967627ef9685aed68b64e511f15def00ab2d6",
+  "scope": "Audited actual current main reader prose without modifying it; previous audit anchored to old blob 3051c5... must not be assumed byte-identical.",
+  "evidence_status": "research_only_chapter_audit_not_publication_ready",
+  "prior_audit_paths": [
+    "research/audits/templo-mayor-reader-20261113T1058Z-exact-prose-audit.json",
+    "research/audits/templo-mayor-discover-20261113T1427Z-triple-alliance-dating-contrast.json"
+  ],
+  "passages": [
+    {
+      "id": "TM-DISCOVER-GATE-01",
+      "anchor": "In the late 1420s, Tenochtitlan joined Texcoco and Tlacopan in the Triple Alliance.",
+      "reader_section": "dossier-topic-3",
+      "learning_mode": "pre_read_history",
+      "status": "wording_provisional_date_undetermined",
+      "source_locator_matrix": [
+        {
+          "url": "https://lugares.inah.gob.mx/es/node/4416",
+          "locator": "INAH Huexotla history section: 1427",
+          "scope": "institutional interpretive page inspected in prior audit"
+        },
+        {
+          "url": "https://arqueologiamexicana.mx/node/2250",
+          "locator": "Frances Berdan, El tributo a la Triple Alianza, public excerpt: 1430",
+          "scope": "scholar-authored excerpt previously inspected; complete printed pp.49–55 not accessed"
+        }
+      ],
+      "risk": "Chronology varies between 1427 and 1430; 1428 convention useful but not uniquely proven. Avoid silently replacing late 1420s with an absolute date.",
+      "editorial_action": "Retain approximate framing, add a concise 1427/1428/1430 note in a contested-date sidebar only when ready."
+    },
+    {
+      "id": "TM-DISCOVER-GATE-02",
+      "anchor": "An enlargement under Motecuhzoma I bears the date glyph 1 Rabbit, corresponding to 1454.",
+      "reader_section": "dossier-topic-3",
+      "learning_mode": "pre_read_history",
+      "status": "hold_specific_glyph_to_phase_until_original_locator_review",
+      "source_locator_matrix": [
+        {
+          "url": "https://lugares.inah.gob.mx/en/node/4463",
+          "locator": "INAH Templo Mayor tourist archaeology page: stage IVb Axayácatl 1469–1481; four serpent heads retain color",
+          "scope": "full HTML interpretive section checked"
+        }
+      ],
+      "risk": "Dated inscription, phase assignment and ruler association are three distinct evidentiary steps. Current proof for 1 Rabbit glyph is not resolved in this audit.",
+      "editorial_action": "Provide stage diagram or remove unverified ruler/glyph pairing until excavation plan and inscribed stone catalogue are checked."
+    },
+    {
+      "id": "TM-DISCOVER-GATE-03",
+      "anchor": "At the foot of the south stair of that platform lay a stone disk carved with the dismembered Coyolxauhqui.",
+      "reader_section": "dossier-topic-3",
+      "learning_mode": "split_pre_read_myth_and_on_site_observation",
+      "status": "physical_original_vs_replica_must_be_flagged",
+      "source_locator_matrix": [
+        {
+          "url": "https://lugares.inah.gob.mx/en/node/4463",
+          "locator": "INAH guided point 1: IVb, south staircase, an outdoor COPY of Coyolxauhqui at its foot",
+          "scope": "full institutional HTML site point inspected"
+        },
+        {
+          "url": "https://www.inah.gob.mx/boletines/el-museo-del-templo-mayor-celebra-los-45-anos-del-descubrimiento-de-coyolxauhqui",
+          "locator": "INAH 20 February 2023 bulletin: original monolith recovered 21 February 1978",
+          "scope": "institutional bulletin inspected"
+        }
+      ],
+      "risk": "An outdoor object encountered by visitor is replica, not original archaeological stone; stories about Coatepec are iconographic interpretations, not literal excavation records.",
+      "editorial_action": "For the guided walk explicitly say 'look at the copy below the Huitzilopochtli stair; the original is preserved in the museum'. In history article retain myth with evidence/interpretation distinction."
+    },
+    {
+      "id": "TM-DISCOVER-GATE-04",
+      "anchor": "In May 1520, while Cortés was away, Pedro de Alvarado’s men attacked people celebrating Tóxcatl in the sacred precinct.",
+      "reader_section": "dossier-topic-4",
+      "learning_mode": "pre_read_history",
+      "status": "historical_primary_account_locator_not_examined_this_session",
+      "source_locator_matrix": [
+        {
+          "document": "Florentine Codex Book 12, Nahua account",
+          "locator": "Reader identifies Book 12 but manuscript text/image witness and translation lines have not been inspected within this run",
+          "scope": "not_verified_for_editorial_approval"
+        }
+      ],
+      "risk": "Later-recorded Nahua narrative has temporal, linguistic and editorial mediation; avoid pretending it is a contemporaneous eyewitness transcript or that all conqueror accounts agree.",
+      "editorial_action": "Audit Book 12 folio/chapter alongside other Nahua and Spanish accounts, record translation/edition and contested details, before approval."
+    },
+    {
+      "id": "TM-DISCOVER-GATE-05",
+      "anchor": "In 1913, archaeologist Manuel Gamio uncovered the pyramid’s southwest corner.",
+      "reader_section": "dossier-topic-6",
+      "learning_mode": "pre_read_discovery_history",
+      "status": "date_conflict_do_not_silently_change",
+      "source_locator_matrix": [
+        {
+          "url": "https://catalogonacionalmhi.inah.gob.mx/consulta_publica/detalle/12629",
+          "locator": "INAH historical-monument catalog: 1913 excavations at Seminario and Santa Teresa (Guatemala)",
+          "scope": "institutional catalog HTML inspected"
+        },
+        {
+          "url": "https://lugares.inah.gob.mx/es/node/5502",
+          "locator": "INAH Lugares 'Origen y ombligo': first vestiges May 1914",
+          "scope": "institutional HTML inspected"
+        },
+        {
+          "url": "https://revistas.inah.gob.mx/index.php/boletinmonumentos/article/download/12890/14004/25723",
+          "locator": "Sánchez Reyes 2017 pp.15–16: 1913 building demolition, Gamio's 15 April 1914 report; historical note",
+          "scope": "PDF search extract only; primary report not examined in this run"
+        }
+      ],
+      "risk": "1913 demolition/exploration context and 1914 identification/report may be different milestones; institutional summaries conflict.",
+      "editorial_action": "Use a neutral '1913–1914 demolition and excavation work exposed remains' pending inspection of Gamio's April 1914 report and original journal."
+    },
+    {
+      "id": "TM-DISCOVER-GATE-06",
+      "anchor": "In February 1978, electrical workers digging near República de Argentina and República de Guatemala struck the carved Coyolxauhqui disk.",
+      "reader_section": "dossier-topic-6",
+      "learning_mode": "pre_read_history_with_optional_on_site_locator",
+      "status": "date_established_in_institutional_project_history",
+      "source_locator_matrix": [
+        {
+          "url": "https://www.templomayor.inah.gob.mx/historia/proyecto-templo-mayor",
+          "locator": "INAH project history opening: 21 February 1978, Compañía de Luz y Fuerza; rescue archaeological team, creation of Proyecto",
+          "scope": "institutional full HTML inspected"
+        },
+        {
+          "url": "https://www.inah.gob.mx/boletines/el-museo-del-templo-mayor-celebra-los-45-anos-del-descubrimiento-de-coyolxauhqui",
+          "locator": "INAH 20 February 2023 bulletin: Argentina/Guatemala street intersection",
+          "scope": "institutional full HTML inspected"
+        }
+      ],
+      "risk": "Discovery by workers, subsequent rescue excavation, and extended project research are sequential events, not one instant.",
+      "editorial_action": "Add exact date and explain that 1978 was transformative, not first scholarly suspicion of the temple's location."
+    },
+    {
+      "id": "TM-DISCOVER-GATE-07",
+      "anchor": "The site museum opened in 1987.",
+      "reader_section": "dossier-topic-6",
+      "learning_mode": "pre_read_museum_history",
+      "status": "institutional_secondary_confirmation",
+      "source_locator_matrix": [
+        {
+          "url": "https://templomayor.inah.gob.mx/expo/14-exposiciones-temporales/43-revolucion-y-estabilidad-exposicion-temporal",
+          "locator": "INAH museum exhibition history notes opening in 1987",
+          "scope": "institutional HTML inspected"
+        },
+        {
+          "url": "https://templomayor.inah.gob.mx/images/home/agenda/agenda.pdf",
+          "locator": "INAH museum programme states 12 October 1987",
+          "scope": "PDF search excerpt; visual page not verified this run"
+        }
+      ],
+      "risk": "Museum opening is not archaeological project's founding date; 1978 and 1987 should not be collapsed.",
+      "editorial_action": "Clarify 1978 rescue/project vs 1987 museum public opening."
+    }
+  ],
+  "cross_chapter_improvements": [
+    "Use one clear 'Read before visiting' section for warfare, tribute, myth, colonial destruction and excavation historiography.",
+    "Use a separate physical field walk with entrance/viewpoints, stage IVb serpents retaining paint, copy vs original of Coyolxauhqui, and exposed former water-collector cut; only include features with verified access.",
+    "Link every staged historical sentence to specific edition, page, structure or institutional page section before publication; claim-to-source mapping is not independent corroboration."
+  ],
+  "open_gaps": [
+    "Resolve Triple Alliance 1427/1428/1430 with critically compared historical scholarship",
+    "Directly inspect Gamio report and documentation distinguishing 1913 demolition from April–May 1914 archaeological report",
+    "Inspect Book 12 indigenous manuscript/edition for 1520 Tóxcatl language and limits",
+    "Check original stratigraphic publication for 1454 glyph and IVb assignments",
+    "Verify field-route physical visibility and image reproduction rights"
+  ],
+  "canonical_modified": false,
+  "main_modified": false,
+  "ready_for_editorial_review": false,
+  "ready_for_publication": false
+}
