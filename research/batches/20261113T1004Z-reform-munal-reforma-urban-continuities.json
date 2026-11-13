@@ -1,0 +1,285 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261113T1004Z-reform-munal-reforma-urban-continuities",
+  "generated_at": "2026-11-13T10:04:00Z",
+  "branch": "research-persistence",
+  "storage_role": "immutable_research_staging",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_modified": false,
+  "published_to_app": false,
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "scope": "7 nineteenth-century/early-twentieth and 1 colonial-to-modern urban-site contextual findings, centered on Mexico City rather than archaeology",
+  "sources": [
+    {
+      "id": "STG20261113-INAH-MUNAL-SITE",
+      "title": "Museo Nacional de Arte",
+      "organization": "INAH Lugares",
+      "url": "https://lugares.inah.gob.mx/es/pagina-de-elemento/3332",
+      "locator": "Main historic building description, HTML lines 29–32",
+      "access": "public HTML inspected; institutional historic summary, not original construction/ownership records"
+    },
+    {
+      "id": "STG20261113-INEHRM-REFORM-CHRON",
+      "title": "Gobierno de Benito Juárez: Leyes de Reforma timeline",
+      "organization": "INEHRM",
+      "url": "https://inehrm.gob.mx/es/Constitucion1917/Gobierno_de_Benito_Juarez",
+      "locator": "Listado de Leyes de Reforma, 12 July 1859, 23/28 July 1859, 2 February 1861",
+      "access": "web search-index excerpt only: HTML retrieval timed out; original decrees not read"
+    },
+    {
+      "id": "STG20261113-UNAM-CCH-URBAN",
+      "title": "La Ciudad de México durante la segunda mitad del siglo XIX",
+      "organization": "CCH UNAM Portal Académico",
+      "url": "https://e1.portalacademico.cch.unam.mx/alumno/historiademexico1/unidad5/culturaMexicana/ciudadMexico",
+      "locator": "HTML sections Desarrollo urbano, lines 33–45 and 91–98",
+      "access": "full public educational HTML inspected; cited secondary historical synthesis, not primary data"
+    },
+    {
+      "id": "STG20261113-UNAM-REFORMA-NOELLE",
+      "title": "El Paseo de la Reforma. De Calzada Imperial a manifestódromo: acometidas y permanencias",
+      "author": "Louise Noelle Gras",
+      "organization": "UNAM Instituto de Investigaciones Estéticas",
+      "url": "https://revistas.unam.mx/index.php/aca/article/view/91581",
+      "locator": "Abstract, opening sentences on Maximilian's commission, later enlargements and monument changes",
+      "access": "search-index abstract inspected; source website 403 for full article, so no full text review"
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "inspection-STG20261113-INAH-MUNAL-SITE",
+      "source_id": "STG20261113-INAH-MUNAL-SITE",
+      "access_scope": "public HTML inspected; institutional historic summary, not original construction/ownership records",
+      "locator": "Main historic building description, HTML lines 29–32",
+      "url": "https://lugares.inah.gob.mx/es/pagina-de-elemento/3332",
+      "review_status": "source_access_level_only",
+      "original_archival_material_examined": false
+    },
+    {
+      "id": "inspection-STG20261113-INEHRM-REFORM-CHRON",
+      "source_id": "STG20261113-INEHRM-REFORM-CHRON",
+      "access_scope": "web search-index excerpt only: HTML retrieval timed out; original decrees not read",
+      "locator": "Listado de Leyes de Reforma, 12 July 1859, 23/28 July 1859, 2 February 1861",
+      "url": "https://inehrm.gob.mx/es/Constitucion1917/Gobierno_de_Benito_Juarez",
+      "review_status": "source_access_level_only",
+      "original_archival_material_examined": false
+    },
+    {
+      "id": "inspection-STG20261113-UNAM-CCH-URBAN",
+      "source_id": "STG20261113-UNAM-CCH-URBAN",
+      "access_scope": "full public educational HTML inspected; cited secondary historical synthesis, not primary data",
+      "locator": "HTML sections Desarrollo urbano, lines 33–45 and 91–98",
+      "url": "https://e1.portalacademico.cch.unam.mx/alumno/historiademexico1/unidad5/culturaMexicana/ciudadMexico",
+      "review_status": "source_access_level_only",
+      "original_archival_material_examined": false
+    },
+    {
+      "id": "inspection-STG20261113-UNAM-REFORMA-NOELLE",
+      "source_id": "STG20261113-UNAM-REFORMA-NOELLE",
+      "access_scope": "search-index abstract inspected; source website 403 for full article, so no full text review",
+      "locator": "Abstract, opening sentences on Maximilian's commission, later enlargements and monument changes",
+      "url": "https://revistas.unam.mx/index.php/aca/article/view/91581",
+      "review_status": "source_access_level_only",
+      "original_archival_material_examined": false
+    }
+  ],
+  "findings": [
+    {
+      "id": "STG-20261113-REFORM-01",
+      "assertion": "The Juárez administration's nationalization of ecclesiastical property (12 July 1859) and the secularization decree for hospitals and charities (2 February 1861) were separate measures, not one law.",
+      "source_ids": [
+        "STG20261113-INEHRM-REFORM-CHRON"
+      ],
+      "source_locator": "INEHRM indexed reform-law list; dates under Gobierno de Benito Juárez",
+      "period": "Reform and intervention 1855–1876",
+      "themes": [
+        "law",
+        "religion",
+        "health",
+        "public administration"
+      ],
+      "geographies": [
+        "centro"
+      ],
+      "poi_ids": [
+        "munal",
+        "hospital-de-jesus"
+      ],
+      "limitations": "Texts of both original decrees and local implementation in Mexico City have not been read; do not presume a particular hospital changed ownership on these dates",
+      "evidence_status": "source_index_linked_unverified"
+    },
+    {
+      "id": "STG-20261113-REFORM-02",
+      "assertion": "The 1859 laws separately listed civil marriage (23 July) and civil registration (28 July), alongside the 12 July nationalization law; these chronology entries should not be collapsed into a generic single Reform Laws event.",
+      "source_ids": [
+        "STG20261113-INEHRM-REFORM-CHRON"
+      ],
+      "source_locator": "INEHRM reform-law chronological list",
+      "period": "Reform and intervention 1855–1876",
+      "themes": [
+        "civil law",
+        "public administration"
+      ],
+      "geographies": [
+        "all_city"
+      ],
+      "poi_ids": [
+        "centro-historico"
+      ],
+      "limitations": "INEHRM listing accessed in index excerpt; official decrees, wording and application not inspected",
+      "evidence_status": "source_index_linked_unverified"
+    },
+    {
+      "id": "STG-20261113-MUNAL-01",
+      "assertion": "On the present Museo Nacional de Arte site, a former Jesuit college property completed in 1695 was reused as the Hospital de San Andrés beginning in November 1770; these dates concern predecessors of the current building.",
+      "source_ids": [
+        "STG20261113-INAH-MUNAL-SITE"
+      ],
+      "source_locator": "INAH Lugares MUNAL building history, lines 29–31",
+      "period": "Colonial 1600–1810",
+      "themes": [
+        "health",
+        "religious institutions",
+        "urban reuse"
+      ],
+      "geographies": [
+        "centro"
+      ],
+      "poi_ids": [
+        "museo-nacional-de-arte"
+      ],
+      "limitations": "Narrative relates several earlier property uses; original plans and archival records uninspected",
+      "evidence_status": "institutional_html_evidence_not_corroborated"
+    },
+    {
+      "id": "STG-20261113-MUNAL-02",
+      "assertion": "The Hospital de San Andrés building was demolished in 1904; Silvio Contri designed its replacement as the Ministry of Communications and Public Works building, inaugurated in 1911. The existing MUNAL structure should not be presented as an intact eighteenth-century hospital.",
+      "source_ids": [
+        "STG20261113-INAH-MUNAL-SITE"
+      ],
+      "source_locator": "INAH Lugares MUNAL history, lines 31–32",
+      "period": "Porfiriato 1876–1911",
+      "themes": [
+        "architecture",
+        "public works",
+        "heritage"
+      ],
+      "geographies": [
+        "centro"
+      ],
+      "poi_ids": [
+        "museo-nacional-de-arte"
+      ],
+      "limitations": "Demolition, technical design and inauguration documented in one institutional summary; original engineering and demolition files unexamined",
+      "evidence_status": "institutional_html_evidence_not_corroborated"
+    },
+    {
+      "id": "STG-20261113-MUNAL-03",
+      "assertion": "The Communications building housed the Archivo General de la Nación from 1973 to 1977 and was converted into the Museo Nacional de Arte in 1982.",
+      "source_ids": [
+        "STG20261113-INAH-MUNAL-SITE"
+      ],
+      "source_locator": "INAH Lugares MUNAL history, line 32",
+      "period": "Mexico City 1940–1980",
+      "themes": [
+        "archives",
+        "heritage",
+        "state institutions"
+      ],
+      "geographies": [
+        "centro"
+      ],
+      "poi_ids": [
+        "museo-nacional-de-arte"
+      ],
+      "limitations": "Institutional brief does not specify the extent of AGN occupation or renovation chronology; AGN records not examined",
+      "evidence_status": "institutional_html_evidence_not_corroborated"
+    },
+    {
+      "id": "STG-20261113-REFORMA-01",
+      "assertion": "Paseo de la Reforma's initial route was commissioned during Maximilian's Second Empire, prior to Porfirio Díaz's later expansions and monumental redesign; describing its creation as Porfirian erases the imperial origin.",
+      "source_ids": [
+        "STG20261113-UNAM-REFORMA-NOELLE",
+        "STG20261113-UNAM-CCH-URBAN"
+      ],
+      "source_locator": "UNAM journal abstract first paragraph; CCH UNAM city history sections on Maximilian and Porfiriato",
+      "period": "Reform and intervention 1855–1876",
+      "themes": [
+        "urban planning",
+        "imperial politics",
+        "monuments"
+      ],
+      "geographies": [
+        "reforma",
+        "chapul"
+      ],
+      "poi_ids": [
+        "paseo-de-la-reforma",
+        "castillo-de-chapultepec"
+      ],
+      "limitations": "Journal full text not inspected; original 1864 plans and precise commission date need confirmation; source summaries not independent primary corroboration",
+      "evidence_status": "secondary_summary_multi_source_not_corroborated"
+    },
+    {
+      "id": "STG-20261113-PORF-01",
+      "assertion": "UNAM's historical synthesis dates replacement of gas street lighting with electric lighting to 1888 and electric streetcar inauguration to 1900, while distinguishing these projects from early imperial gas illumination.",
+      "source_ids": [
+        "STG20261113-UNAM-CCH-URBAN"
+      ],
+      "source_locator": "CCH UNAM nineteenth-century Mexico City history, line 40",
+      "period": "Porfiriato 1876–1911",
+      "themes": [
+        "infrastructure",
+        "transport",
+        "energy"
+      ],
+      "geographies": [
+        "centro"
+      ],
+      "poi_ids": [
+        "zocalo",
+        "paseo-de-la-reforma"
+      ],
+      "limitations": "Exact dates require independent contemporary engineering/concession sources; likely semantic overlap with earlier staged electric tram entries",
+      "evidence_status": "institutional_educational_summary_single_source"
+    },
+    {
+      "id": "STG-20261113-PORF-02",
+      "assertion": "The UNAM urban-history overview contrasts improved central boulevards, illumination and transit with districts lacking basic sanitation, water and reliable transport during the late Porfiriato; infrastructural modernization was unevenly distributed.",
+      "source_ids": [
+        "STG20261113-UNAM-CCH-URBAN"
+      ],
+      "source_locator": "CCH UNAM urban history lines 38–45, 91–95",
+      "period": "Porfiriato 1876–1911",
+      "themes": [
+        "inequality",
+        "infrastructure",
+        "water",
+        "urbanization"
+      ],
+      "geographies": [
+        "centro",
+        "all_city"
+      ],
+      "poi_ids": [
+        "paseo-de-la-reforma",
+        "centro-historico"
+      ],
+      "limitations": "Specific neighborhood-level distribution needs archival maps and social history; avoid treating an educational synthesis as a primary survey",
+      "evidence_status": "institutional_educational_summary_single_source"
+    }
+  ],
+  "semantic_duplicate_policy": "Do not merge proposed source or finding IDs on title similarity; review existing Porfiriato tram entries before publication",
+  "review_priorities": [
+    "Check official law facsimiles and original city administration records for 1859/1861",
+    "Locate MUNAL 1904 demolition plans and 1911 inauguration records",
+    "Verify 1864 imperial route from primary urban plan",
+    "Resolve earlier tram/date duplicate candidates"
+  ],
+  "target_split": {
+    "historical_breadth": 0.625,
+    "poi_readiness": 0.375,
+    "specialist_archaeology": 0
+  },
+  "next_action": "Replay all batches and compare finding and source identities; no canonical promotion"
+}
