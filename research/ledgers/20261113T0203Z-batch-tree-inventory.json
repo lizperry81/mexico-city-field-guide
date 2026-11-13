@@ -1,0 +1,276 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-13T02:03:34Z",
+  "branch_head_scanned": "71199ef0e2e835c4a36bb495dff9264ff89414d3",
+  "scope": "All JSON blobs in research/batches on research-persistence",
+  "file_count": 53,
+  "status": "file_presence_and_git_blob_provenance_verified_no_full_content_replay",
+  "note": "Each Git blob SHA is SHA-1, not content SHA-256; import script validates per-file content SHA-256 during actual checkout run. This manifest is not a proof of unique finding counts.",
+  "files": [
+    {
+      "path": "research/batches/20261111T100400Z-ledger1/findings_and_inspection.json",
+      "size_bytes": 2406,
+      "git_blob_sha1": "548f19e4960125ac0f78fe6ec5dc36db4e4a6bac"
+    },
+    {
+      "path": "research/batches/20261111T100400Z-ledger1/unmerged_archive_inventory.json",
+      "size_bytes": 2382,
+      "git_blob_sha1": "427129b7031b8ae38f8f8fd93fb68447676f2ca3"
+    },
+    {
+      "path": "research/batches/20261111T110600Z-crosswalk/inspected_material_and_visuals.json",
+      "size_bytes": 2837,
+      "git_blob_sha1": "a3aba0b487586af7a4f2b02106e328cac978c403"
+    },
+    {
+      "path": "research/batches/20261111T110600Z-crosswalk/pending_source_crosswalk.json",
+      "size_bytes": 5312,
+      "git_blob_sha1": "142f1374256447941ff67ef1c322cb381a18a562"
+    },
+    {
+      "path": "research/batches/20261111T111100Z-priority-candidates/14_priority_pending_assertions.json",
+      "size_bytes": 12937,
+      "git_blob_sha1": "681cff5aebafeb6c0aa6b5cf441913ed28f3df5c"
+    },
+    {
+      "path": "research/batches/20261111T115731Z-turn10-backlog-9/nine_remaining_candidate_assertions.json",
+      "size_bytes": 7030,
+      "git_blob_sha1": "1d5ce37959164a5d1f5b5c6e06abffa7840e7af1"
+    },
+    {
+      "path": "research/batches/20261111T115731Z-turn10-final-backlog-19/19_original_candidate_assertions.json",
+      "size_bytes": 16497,
+      "git_blob_sha1": "bfb909a9f1659c435f1362205f4c6203cf41986e"
+    },
+    {
+      "path": "research/batches/20261111T115731Z-turn10-sar-18/18_original_sarabia_and_2014_assertions.json",
+      "size_bytes": 14828,
+      "git_blob_sha1": "531d595939a0d182e8f1a09b5bd64a5df3ea2936"
+    },
+    {
+      "path": "research/batches/20261111T115731Z-turn10-sload-cave-technical/new_findings_and_inspections.json",
+      "size_bytes": 4781,
+      "git_blob_sha1": "d20c38189dcb8c5b2d7b112af9980316916935d2"
+    },
+    {
+      "path": "research/batches/20261111T1302Z-turn11/evidence_and_source_reconciliation.json",
+      "size_bytes": 5246,
+      "git_blob_sha1": "d178f63ef2024fb03cbf36edbe36b07b01b2c92b"
+    },
+    {
+      "path": "research/batches/20261111T1401Z-a11/botanical_and_source_reconciliation.json",
+      "size_bytes": 4267,
+      "git_blob_sha1": "9c6442a91cfcf76ed5a3656fb2d18f51ba6c9c75"
+    },
+    {
+      "path": "research/batches/20261111T1503Z-auto11/sload_radiocarbon_model_review.json",
+      "size_bytes": 5715,
+      "git_blob_sha1": "a20f0aa4bdc12559629ccf252a2a139ed394ea5f"
+    },
+    {
+      "path": "research/batches/20261111T1558Z-a11-rerun/source_context_and_materials.json",
+      "size_bytes": 6321,
+      "git_blob_sha1": "88b2e10a128d970187a972a992d5e9758f1f5577"
+    },
+    {
+      "path": "research/batches/20261111T1655Z-a11-ch8-artifacts.json",
+      "size_bytes": 8169,
+      "git_blob_sha1": "27c3480c6aaf5cff59af24cc3fb1730e167e7e91"
+    },
+    {
+      "path": "research/batches/20261111T1804Z-auto11-ch9.json",
+      "size_bytes": 9636,
+      "git_blob_sha1": "88f1ba0f7a30a7ad6625bba94ed792d7d449ae66"
+    },
+    {
+      "path": "research/batches/20261111T1902Z-turn11-fauna-heyden.json",
+      "size_bytes": 7216,
+      "git_blob_sha1": "5dc8d8e95f14a78374ffc30a3973478a45edebb8"
+    },
+    {
+      "path": "research/batches/20261111T2000Z-auto11-area-b-radiocarbon.json",
+      "size_bytes": 5887,
+      "git_blob_sha1": "832aef0d2a89a5a70ef9d4b65832cbd363a23382"
+    },
+    {
+      "path": "research/batches/20261111T2103Z-auto11-areaA-entrance.json",
+      "size_bytes": 7549,
+      "git_blob_sha1": "1500642b512e1a6845b2368490cde8349b01a89d"
+    },
+    {
+      "path": "research/batches/20261111T2200Z-auto11-terminus.json",
+      "size_bytes": 8311,
+      "git_blob_sha1": "ab1b24ddbb46ba6d21b539977dd0b059f7cd5bf6"
+    },
+    {
+      "path": "research/batches/20261111T2255Z-auto11-blockages.json",
+      "size_bytes": 10026,
+      "git_blob_sha1": "787f06823a0458d826f72b5e20d710c253aeefe8"
+    },
+    {
+      "path": "research/batches/20261112T0002Z-auto11-water-and-provenance.json",
+      "size_bytes": 8401,
+      "git_blob_sha1": "274e7b2108981ebb905a80ab021822e494d19f2c"
+    },
+    {
+      "path": "research/batches/20261112T011308Z-auto11-quarry-reuse.json",
+      "size_bytes": 6810,
+      "git_blob_sha1": "94209e1b5a5595408669f4bccc7a1bfd84c3f578"
+    },
+    {
+      "path": "research/batches/20261112T0201Z-auto09.json",
+      "size_bytes": 7789,
+      "git_blob_sha1": "1c541be3ed6b3f208ce7585385344c4226865228"
+    },
+    {
+      "path": "research/batches/20261112T0202Z-2025-botanical-table3.json",
+      "size_bytes": 1787,
+      "git_blob_sha1": "9945056336f4608a8b8741cb40ecd5b198747015"
+    },
+    {
+      "path": "research/batches/20261112T0302Z-auto09.json",
+      "size_bytes": 11109,
+      "git_blob_sha1": "d12efea331ecfa7a5e32f6cb0b2720a6580ae193"
+    },
+    {
+      "path": "research/batches/20261112T0356Z-auto09.json",
+      "size_bytes": 3864,
+      "git_blob_sha1": "6815f9277f8308359ade81f5e4ce2cf7f3b3b5a0"
+    },
+    {
+      "path": "research/batches/20261112T0503Z-auto09-chronology.json",
+      "size_bytes": 5090,
+      "git_blob_sha1": "50f87e21b10256e8cc01e0bbaa5a133d0d4dafd7"
+    },
+    {
+      "path": "research/batches/20261112T060230Z-auto09.json",
+      "size_bytes": 4245,
+      "git_blob_sha1": "88395606402e8637f26426e440437b229e00c64e"
+    },
+    {
+      "path": "research/batches/20261112T0700Z-auto09-te28-2007.json",
+      "size_bytes": 4596,
+      "git_blob_sha1": "22225732c18323c2c2f7e188f43b7e54e9a2a6bd"
+    },
+    {
+      "path": "research/batches/20261112T080125Z-auto09-te28-2009.json",
+      "size_bytes": 5050,
+      "git_blob_sha1": "18182074aa73cb8b3e9d0a083fd143cc8a2788e9"
+    },
+    {
+      "path": "research/batches/20261112T0902Z-auto09-moon-source-recovery.json",
+      "size_bytes": 6108,
+      "git_blob_sha1": "d94c9902ae11621a0b9237bf43f70993148c2807"
+    },
+    {
+      "path": "research/batches/20261112T100346Z-auto09-torras-source-reconciliation.json",
+      "size_bytes": 5935,
+      "git_blob_sha1": "5a3213d97c2d6dcb4cf83d756377dce0ec2881b7"
+    },
+    {
+      "path": "research/batches/20261112T1105Z-auto10-sload-ch8.json",
+      "size_bytes": 6927,
+      "git_blob_sha1": "9cbe79f98a3ff8aee7111f0311eaf13024cb6a2f"
+    },
+    {
+      "path": "research/batches/20261112T1203Z-auto11-mirror-photo.json",
+      "size_bytes": 4857,
+      "git_blob_sha1": "7747894438d05e21e2a2dffc8857133f99b508c4"
+    },
+    {
+      "path": "research/batches/20261112T130305Z-auto11-carballo-moon.json",
+      "size_bytes": 12209,
+      "git_blob_sha1": "5529259e00f6f6b8f3bd17322dc59de1a29e4b66"
+    },
+    {
+      "path": "research/batches/20261112T140057Z-auto11-tlajinga-comp17.json",
+      "size_bytes": 15863,
+      "git_blob_sha1": "de642a4273e897dcb03b498d80a92f7b9f45be63"
+    },
+    {
+      "path": "research/batches/20261112T1501Z-auto11-cave-blockage-materials.json",
+      "size_bytes": 5354,
+      "git_blob_sha1": "296b23d0b22adf88aa661ee27d08d243a88eb882"
+    },
+    {
+      "path": "research/batches/20261112T1557Z-auto10-carballo-crosscheck.json",
+      "size_bytes": 5033,
+      "git_blob_sha1": "8c04caf5c18aa6903d7da5192f54b8570e8a11c9"
+    },
+    {
+      "path": "research/batches/20261112T165754Z-scheduled9-breadth-9e6d.json",
+      "size_bytes": 14416,
+      "git_blob_sha1": "62e72d171d8a3dc995f009601f66350058a548e6"
+    },
+    {
+      "path": "research/batches/20261112T175903Z-auto9-71cf2.json",
+      "size_bytes": 10783,
+      "git_blob_sha1": "2a18743ef074ff3e6f5c5dccee45aa1d599a2106"
+    },
+    {
+      "path": "research/batches/20261112T1859Z-auto9-broadth-c61f.json",
+      "size_bytes": 17295,
+      "git_blob_sha1": "9a7674fce14de78cc4c51eecf92cd09b73ba0fb0"
+    },
+    {
+      "path": "research/batches/20261112T195738Z-auto9-breadth-8ce5.json",
+      "size_bytes": 8955,
+      "git_blob_sha1": "abb67110d22e9830a36f746d2cddab95df24c88b"
+    },
+    {
+      "path": "research/batches/20261112T2100Z-auto9-1968-breadth-7e4d.json",
+      "size_bytes": 9621,
+      "git_blob_sha1": "92964a9db35cbd29dad088b5717f6b9dcbfb99ac"
+    },
+    {
+      "path": "research/batches/20261112T2117Z-radio68.json",
+      "size_bytes": 507,
+      "git_blob_sha1": "5ba6e1643c9e53a9d7ffddbaadcdb539aa3263fe"
+    },
+    {
+      "path": "research/batches/20261112T215917Z-auto8-c73af2.json",
+      "size_bytes": 5640,
+      "git_blob_sha1": "cfa2abcec73368ab6b8d5a6a9acefc75e56e7f24"
+    },
+    {
+      "path": "research/batches/20261112T2300Z-reforma-historic-centre-bf631.json",
+      "size_bytes": 13904,
+      "git_blob_sha1": "e176f7af33d766dc72441531b3f0baae30569b80"
+    },
+    {
+      "path": "research/batches/20261112T2359Z_reforma_libertad_cultos_crosswalk.json",
+      "size_bytes": 13611,
+      "git_blob_sha1": "846287cebbab66efb16f8d1c4bc07171bf9cf012"
+    },
+    {
+      "path": "research/batches/20261113-hospital-jesus-archival-chronology.json",
+      "size_bytes": 450,
+      "git_blob_sha1": "7beb789bb5715386b16e3f4c75a42f2d69eb9731"
+    },
+    {
+      "path": "research/batches/20261113-hospital-jesus-foundation.json",
+      "size_bytes": 798,
+      "git_blob_sha1": "e569a42b94cd5a9537e2582c0cbc258cddf3fc44"
+    },
+    {
+      "path": "research/batches/20261113-source-crosswalk-review.json",
+      "size_bytes": 371,
+      "git_blob_sha1": "40918fb06dc62e6d6b4e45eda63da8c165af2307"
+    },
+    {
+      "path": "research/batches/20261113T0055Z_hospital_beneficencia_1b6a.json",
+      "size_bytes": 10820,
+      "git_blob_sha1": "6cceb55e964dd716c9a17bd1cfe50404ef6cf59c"
+    },
+    {
+      "path": "research/batches/20261113T0120Z-source-identity-audit.json",
+      "size_bytes": 608,
+      "git_blob_sha1": "cc2ce4c4d369fa7169f8181a5d7d0207186fb267"
+    },
+    {
+      "path": "research/batches/20261113T0203Z-templo-mayor-discover-eight.json",
+      "size_bytes": 11591,
+      "git_blob_sha1": "63ed0fa23a927ff6f8ce40c3c4b8c750f716394d"
+    }
+  ]
+}
