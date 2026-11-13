@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "kind": "app_editorial_private_research_handoff_validation",
+  "recorded_at_utc": "2026-11-13T18:04:00Z",
+  "application_branch": "main",
+  "validated_application_commit": "1920f53f1c8d9d0defe422abdecf835dc6dfe8c2",
+  "validation_actions_run": "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/43478680892",
+  "research_branch": "research-persistence",
+  "research_branch_head_examined": "548a99c756572eb4de32755baabd6181f68c494a",
+  "latest_consumed_research_input_sha": "f4c7a5ae2eb8dd28a6358f2b64e4e993657695c9",
+  "manifest_path": "research/handoff/manifest.json",
+  "immutable_handoff_path": "research/handoff/history/20261113T1718Z-1913-visual-history-69-batch-verified.json",
+  "immutable_handoff_blob_sha": "1c0e4b5f371fbc53de90b3d084e7367df4fa5002",
+  "referenced_paths_present_in_research_tree": 94,
+  "canonical_database": "V97 unchanged, provisional, not promoted",
+  "staged_research": {
+    "batches": 69,
+    "candidate_finding_ids": 375,
+    "provisional_source_candidates": 124,
+    "source_inspection_metadata_entries": 162,
+    "unresolved_unregistered_source_refs": 1,
+    "source_metadata_conflicts": 2
+  },
+  "private_editorial_review": {
+    "audit_topics": 63,
+    "existing_reader_narrative_passages_pending_line_review": 13,
+    "new_current_reader_blob_checked": "554967627ef9685aed68b64e511f15def00ab2d6",
+    "new_current_reader_source_gates": 7,
+    "stale_earlier_reader_audits_flagged": true,
+    "new_1985_legal_source_review_clauses": 7,
+    "reading_mode_source_review_assignments": 5,
+    "new_cross_period_coverage_cells": {
+      "developing": 9,
+      "sparse": 5,
+      "missing": 1
+    }
+  },
+  "status": {
+    "research_handoff_provenance_validated": true,
+    "private_review_queue_generated": true,
+    "ready_for_editorial_review": false,
+    "ready_for_publication": false,
+    "any_staged_findings_published": false,
+    "approved_discover_chapter_archives_present": false
+  },
+  "editorial_baseline": "editorial/DISCOVER_APPROVED_BASELINE_2026-11-13.md",
+  "approved_chapter_text_archival_blocker": "Exact verbatim approved prose for The Basin Before the Mexica and The Heart of Tenochtitlan is not present in accessible editorial artifacts; no substitute or invented checksum created.",
+  "outstanding_evidence_limitations": [
+    "Original historic photographs and reproduction rights unverified",
+    "Triple Alliance 1427/1428/1430 scholarly and source comparison outstanding",
+    "Manuel Gamio 1913/1914 historical date discrepancy not resolved",
+    "One unregistered botanical DATASET placeholder and two bibliographic metadata conflicts",
+    "1847 archival thesis and 1985 reconstruction records not fully inspected",
+    "Real iPhone Safari interaction testing outstanding"
+  ],
+  "preservation_policy": "Keep rich homepage, existing Explore field chapters, 21 claims, 12 sources, and browser-local comments unchanged. Never publish research leads as history. Human editorial approval and verified verbatim archive required."
+}
