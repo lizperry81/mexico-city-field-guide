@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-13T07:16:00Z",
+  "canonical_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "source_commit_sha": "c8217101f8e3ed83670358d205408411b2e35e83",
+  "github_workflow_readback_commit_sha": "d5e8b2593806ab123beabc4147512b082642a465",
+  "verified_replay_path": "research/reconciled/v4_c8217101f8e3/replay_report.json",
+  "research_sqlite_gz_path": "research/reconciled/v4_c8217101f8e3/research_only.sqlite.gz",
+  "before": {
+    "github_batches": 58,
+    "full_finding_ids": 300,
+    "github_inspection_entries": 80,
+    "source_candidate_identities": 58,
+    "unresolved_source_refs": 22,
+    "source_conflicts": 2,
+    "index_only_refs_unresolved": 16
+  },
+  "after": {
+    "github_batches": 58,
+    "full_finding_ids": 300,
+    "github_inspection_entries": 84,
+    "unique_inspection_payload_rows": 84,
+    "source_candidate_identities": 66,
+    "unresolved_source_refs": 14,
+    "source_conflicts": 2,
+    "index_only_refs_unresolved": 16
+  },
+  "change_reason": "Importer previously discarded source dictionaries keyed by source ID; source inspection arrays named source_material_accessed were omitted. New importer indexes both without changing historical records.",
+  "source_access_semantics": "84 are inspection-like metadata entries; they are NOT 84 independently examined complete publications",
+  "external_detached_sqlite_sha256": "d6990fed66528a542f84689f99773ab3f43c039dfa16ae0f402b1b9f6feec611",
+  "external_detached_source_inspections": {
+    "count": 37,
+    "distinct_inspection_ids": 37,
+    "distinct_source_ids": 37,
+    "raw_records_preserved_in": "CDMX_V97_CUMULATIVE_STAGING_20261113T0055Z_HOSPITAL_BENEFICENCIA.sqlite, existing Library/conversation archive",
+    "source_reconciliation_status": "not yet imported; do not add 37 to 84 or assume nonoverlap",
+    "local_lossless_extraction_path": "/mnt/data/cdmx_20261113T0710/research/batches/20261113T0710Z-detached-inspections-37.json"
+  },
+  "integrity": "ok",
+  "foreign_key_violations": 0,
+  "original_88_tables_preserved": true,
+  "canonical_changed": false,
+  "publication_ready": false,
+  "blockers": [
+    "37 detached source-inspection records still require durable repository ingestion and semantic crosswalk against 84 GitHub metadata entries",
+    "14 candidate source IDs are not yet linked to the canonical 616 without review",
+    "16 index-only finding references lack substantive evidence text",
+    "2 cross-batch source identity metadata collisions persist"
+  ]
+}
