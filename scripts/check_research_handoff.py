@@ -83,6 +83,29 @@ def validate_versioned_handoff(manifest, immutable_manifest, snapshot_sha):
             raise ValueError("v4 requires a fully provenance-bound snapshot")
         if immutable_manifest == manifest:
             return
+        # Some v4 producers commit a complete frozen copy of the manifest,
+        # then append just two Git provenance fields to the moving pointer.
+        # Bind the frozen object byte-for-byte by Git blob ID: never allow
+        # different research counts, approval flags, or citation metadata.
+        if immutable_manifest.get("kind") == "research_to_app_handoff":
+            provenance_keys = {"immutable_handoff_blob_sha",
+                               "handoff_history_commit_sha"}
+            if (set(manifest) - set(immutable_manifest) != provenance_keys
+                    or set(immutable_manifest) - set(manifest)
+                    or any(manifest[k] != v for k, v in immutable_manifest.items())
+                    or manifest.get("immutable_handoff_blob_sha") != snapshot_sha
+                    or not isinstance(manifest.get("handoff_history_commit_sha"), str)
+                    or not HEX40.fullmatch(manifest["handoff_history_commit_sha"])
+                    or manifest.get("canonical_promoted") is not False
+                    or manifest.get("ready_for_publication") is not False
+                    or manifest.get("ready_for_editorial_review") is not False
+                    or manifest.get("evidence_status", {}).get("publication_approved") is not False
+                    or manifest.get("replay_evidence", {}).get("integrity") != "ok"
+                    or manifest.get("replay_evidence", {}).get("foreign_key_violations") != 0
+                    or manifest.get("replay_evidence", {}).get("canonical_rows_unchanged") is not True
+                    or manifest.get("replay_evidence", {}).get("github_readback_verified") is not True):
+                raise ValueError("Frozen v4 handoff disagrees with its Git-provenance-bound manifest")
+            return
         # New v4 history records pin an independent replay, review audit and
         # coverage delta. Validate its complete metadata before accepting.
         if immutable_manifest.get("kind") == "verified_research_to_app_handoff_history":
