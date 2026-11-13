@@ -1,0 +1,405 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261113T0310Z-transit-revolution-1985-breadth",
+  "canonical_v97_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "status": "research_candidates_only_not_canonical",
+  "sources": [
+    {
+      "id": "cdmx-source-camarena-1992-tranvia",
+      "creator": "Mario Camarena",
+      "title": "El tranvía en época de cambio",
+      "year": "1992",
+      "url": "https://revistas.inah.gob.mx/index.php/historias/article/view/14443",
+      "access_scope": "Journal abstract; complete article not examined"
+    },
+    {
+      "id": "cdmx-source-inah-tlalpan-place",
+      "creator": "INAH",
+      "title": "Tlalpan",
+      "year": null,
+      "url": "https://lugares.inah.gob.mx/es/node/4792",
+      "access_scope": "Institutional web page Porfiriato paragraph examined"
+    },
+    {
+      "id": "cdmx-source-unam-cch-urban-growth",
+      "creator": "UNAM CCH",
+      "title": "Ciudad de México",
+      "year": 2013,
+      "url": "https://e1.portalacademico.cch.unam.mx/alumno/historiademexico1/unidad5/culturaMexicana/ciudadMexico",
+      "access_scope": "Teaching web page; original statistical series not examined"
+    },
+    {
+      "id": "cdmx-source-inehrm-revolucion-1913",
+      "creator": "INEHRM",
+      "title": "Revolución Mexicana: La Decena Trágica",
+      "year": null,
+      "url": "https://www.inehrm.gob.mx/es/inehrm/Revolucion_Mexicana",
+      "access_scope": "Published book synopsis; book not examined"
+    },
+    {
+      "id": "cdmx-source-inah-san-francisco-catalog",
+      "creator": "INAH",
+      "title": "San Francisco monument catalogue",
+      "year": null,
+      "url": "https://catalogonacionalmhi.inah.gob.mx/consulta_publica/detalle/11735",
+      "access_scope": "Institutional web catalogue description; cited deeds and archival originals not examined"
+    },
+    {
+      "id": "cdmx-source-rabell-mier-1986",
+      "creator": "Cecilia Rabell; Martha Mier y Terán",
+      "title": "Los damnificados por los sismos de 1985...",
+      "year": 1986,
+      "url": "https://revistamexicanadesociologia.unam.mx/index.php/rms/article/view/61580",
+      "access_scope": "Journal abstract and bibliographic details; complete paper not examined"
+    },
+    {
+      "id": "cdmx-source-unam-tlatelolco-convenios-1986",
+      "creator": "Revista Mexicana de Sociología",
+      "title": "Convenios de concertación para la reconstrucción de Tlatelolco",
+      "year": 1986,
+      "url": "https://revistamexicanadesociologia.unam.mx/index.php/rms/article/view/62560",
+      "access_scope": "Excerpt of official directives in journal abstract; full document not examined"
+    },
+    {
+      "id": "cdmx-source-alvarez-mosso-1985-costureras",
+      "creator": "Lucía Álvarez Mosso",
+      "title": "Costureras e industria de la construcción",
+      "year": 1985,
+      "url": "https://ru.iiec.unam.mx/1542/",
+      "access_scope": "UNAM repository abstract; full article PDF not examined"
+    },
+    {
+      "id": "cdmx-source-allier-2018-memory",
+      "creator": "Eugenia Allier Montaño",
+      "title": "Memorias imbricadas: terremotos en México, 1985 y 2017",
+      "year": 2018,
+      "url": "https://revistamexicanadesociologia.unam.mx/index.php/rms/article/view/57772",
+      "access_scope": "Journal abstract; full article not examined"
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "cdmx-inspect-20261113-urban-01",
+      "source_id": "cdmx-source-camarena-1992-tranvia",
+      "access_scope": "Journal abstract; complete article not examined",
+      "full_original_examined": false,
+      "url": "https://revistas.inah.gob.mx/index.php/historias/article/view/14443"
+    },
+    {
+      "id": "cdmx-inspect-20261113-urban-02",
+      "source_id": "cdmx-source-inah-tlalpan-place",
+      "access_scope": "Institutional web page Porfiriato paragraph examined",
+      "full_original_examined": false,
+      "url": "https://lugares.inah.gob.mx/es/node/4792"
+    },
+    {
+      "id": "cdmx-inspect-20261113-urban-03",
+      "source_id": "cdmx-source-unam-cch-urban-growth",
+      "access_scope": "Teaching web page; original statistical series not examined",
+      "full_original_examined": false,
+      "url": "https://e1.portalacademico.cch.unam.mx/alumno/historiademexico1/unidad5/culturaMexicana/ciudadMexico"
+    },
+    {
+      "id": "cdmx-inspect-20261113-urban-04",
+      "source_id": "cdmx-source-inehrm-revolucion-1913",
+      "access_scope": "Published book synopsis; book not examined",
+      "full_original_examined": false,
+      "url": "https://www.inehrm.gob.mx/es/inehrm/Revolucion_Mexicana"
+    },
+    {
+      "id": "cdmx-inspect-20261113-urban-05",
+      "source_id": "cdmx-source-inah-san-francisco-catalog",
+      "access_scope": "Institutional web catalogue description; cited deeds and archival originals not examined",
+      "full_original_examined": false,
+      "url": "https://catalogonacionalmhi.inah.gob.mx/consulta_publica/detalle/11735"
+    },
+    {
+      "id": "cdmx-inspect-20261113-urban-06",
+      "source_id": "cdmx-source-rabell-mier-1986",
+      "access_scope": "Journal abstract and bibliographic details; complete paper not examined",
+      "full_original_examined": false,
+      "url": "https://revistamexicanadesociologia.unam.mx/index.php/rms/article/view/61580"
+    },
+    {
+      "id": "cdmx-inspect-20261113-urban-07",
+      "source_id": "cdmx-source-unam-tlatelolco-convenios-1986",
+      "access_scope": "Excerpt of official directives in journal abstract; full document not examined",
+      "full_original_examined": false,
+      "url": "https://revistamexicanadesociologia.unam.mx/index.php/rms/article/view/62560"
+    },
+    {
+      "id": "cdmx-inspect-20261113-urban-08",
+      "source_id": "cdmx-source-alvarez-mosso-1985-costureras",
+      "access_scope": "UNAM repository abstract; full article PDF not examined",
+      "full_original_examined": false,
+      "url": "https://ru.iiec.unam.mx/1542/"
+    },
+    {
+      "id": "cdmx-inspect-20261113-urban-09",
+      "source_id": "cdmx-source-allier-2018-memory",
+      "access_scope": "Journal abstract; full article not examined",
+      "full_original_examined": false,
+      "url": "https://revistamexicanadesociologia.unam.mx/index.php/rms/article/view/57772"
+    }
+  ],
+  "findings": [
+    {
+      "id": "cdmx-stg-20261113-urban-01",
+      "subject": "1900 electric tram to Tacubaya",
+      "assertion": "Mario Camarena describes the 1900 inauguration of an electric tram line serving Tacubaya, linking the old core of Mexico City with western settlements; the same abstract discusses drainage and lighting changes.",
+      "date_or_range": "1900",
+      "period": "Porfiriato",
+      "geography": "Mexico City",
+      "source_ids": [
+        "cdmx-source-camarena-1992-tranvia"
+      ],
+      "evidence_locators": [
+        "Camarena (1992) journal abstract, opening description"
+      ],
+      "poi_ids": [
+        "poi-zocalo",
+        "poi-tacubaya"
+      ],
+      "remaining_uncertainty": "Specific route schedule, operators, exact inauguration day not independently examined",
+      "evidence_status": "institutional_web_text_or_scholarly_abstract_examined_full_publication_not_examined",
+      "independently_corroborated": false,
+      "editorial_status": "candidate_not_publication_ready",
+      "suggested_educational_use": "Place-based chronological narrative or optional evidence caveat"
+    },
+    {
+      "id": "cdmx-stg-20261113-urban-02",
+      "subject": "Tlalpan animal-drawn and electric trams",
+      "assertion": "INAH dates the start of animal-drawn tram service in Tlalpan to 1891 and describes a 1900 electric tram connection from the Zócalo to San Fernando.",
+      "date_or_range": "1891–1900",
+      "period": "Porfiriato",
+      "geography": "Mexico City",
+      "source_ids": [
+        "cdmx-source-inah-tlalpan-place"
+      ],
+      "evidence_locators": [
+        "INAH Tlalpan, Porfiriato history paragraph"
+      ],
+      "poi_ids": [
+        "poi-zocalo",
+        "poi-tlalpan-centre"
+      ],
+      "remaining_uncertainty": "Contemporary schedules not examined; connection may involve more than one operational stage",
+      "evidence_status": "institutional_web_text_or_scholarly_abstract_examined_full_publication_not_examined",
+      "independently_corroborated": false,
+      "editorial_status": "candidate_not_publication_ready",
+      "suggested_educational_use": "Place-based chronological narrative or optional evidence caveat"
+    },
+    {
+      "id": "cdmx-stg-20261113-urban-03",
+      "subject": "Urban growth from 1858 to 1910",
+      "assertion": "UNAM CCH's teaching material reports an area of 8.5 square kilometres for Mexico City in 1858 and 40.5 in 1910; their underlying boundary and measurement definitions have not yet been validated.",
+      "date_or_range": "1858–1910",
+      "period": "Porfiriato",
+      "geography": "Mexico City",
+      "source_ids": [
+        "cdmx-source-unam-cch-urban-growth"
+      ],
+      "evidence_locators": [
+        "UNAM CCH, urban growth section"
+      ],
+      "poi_ids": [
+        "poi-zocalo",
+        "poi-paseo-reforma"
+      ],
+      "remaining_uncertainty": "Do not publish the two numbers until definition of urban area and source series are checked",
+      "evidence_status": "institutional_web_text_or_scholarly_abstract_examined_full_publication_not_examined",
+      "independently_corroborated": false,
+      "editorial_status": "candidate_not_publication_ready",
+      "suggested_educational_use": "Place-based chronological narrative or optional evidence caveat"
+    },
+    {
+      "id": "cdmx-stg-20261113-urban-04",
+      "subject": "February 1913 coup in Mexico City",
+      "assertion": "INEHRM describes the Decena Trágica as the February 9–23, 1913 Mexico City upheaval in which Victoriano Huerta's military coup overthrew President Francisco I. Madero and Vice President José María Pino Suárez.",
+      "date_or_range": "1913-02-09/1913-02-23",
+      "period": "Mexican Revolution",
+      "geography": "Mexico City",
+      "source_ids": [
+        "cdmx-source-inehrm-revolucion-1913"
+      ],
+      "evidence_locators": [
+        "INEHRM Revolution catalogue, La Decena Trágica synopsis"
+      ],
+      "poi_ids": [
+        "poi-national-palace",
+        "poi-ciudadela"
+      ],
+      "remaining_uncertainty": "Detailed daily chronology and military geography require primary-source scrutiny",
+      "evidence_status": "institutional_web_text_or_scholarly_abstract_examined_full_publication_not_examined",
+      "independently_corroborated": false,
+      "editorial_status": "candidate_not_publication_ready",
+      "suggested_educational_use": "Place-based chronological narrative or optional evidence caveat"
+    },
+    {
+      "id": "cdmx-stg-20261113-urban-05",
+      "subject": "San Francisco convent 1861 closure",
+      "assertion": "INAH describes the main San Francisco church's 1861 closure, dismantling of some altarpieces, tribunes and choir furnishings, transfer of paintings to the Academy of Fine Arts, and destruction or division of convent spaces.",
+      "date_or_range": "1861",
+      "period": "Liberal Reform",
+      "geography": "Mexico City",
+      "source_ids": [
+        "cdmx-source-inah-san-francisco-catalog"
+      ],
+      "evidence_locators": [
+        "INAH monument catalogue entry 11735, 1861 section"
+      ],
+      "poi_ids": [
+        "poi-san-francisco-convent",
+        "poi-madero"
+      ],
+      "remaining_uncertainty": "Potential duplicate of stg-20261112-reforma-11; requires enrichment mapping rather than double teaching",
+      "evidence_status": "institutional_web_text_or_scholarly_abstract_examined_full_publication_not_examined",
+      "independently_corroborated": false,
+      "editorial_status": "candidate_not_publication_ready",
+      "suggested_educational_use": "Place-based chronological narrative or optional evidence caveat"
+    },
+    {
+      "id": "cdmx-stg-20261113-urban-06",
+      "subject": "San Francisco later ownership history",
+      "assertion": "The INAH monument catalogue describes the post-Reform transfer of the San Francisco church to an Episcopal Protestant congregation, its sale to the Jesuits on June 21, 1898, and Franciscan return around 1948.",
+      "date_or_range": "1861–1948",
+      "period": "Reform to postrevolutionary Mexico",
+      "geography": "Mexico City",
+      "source_ids": [
+        "cdmx-source-inah-san-francisco-catalog"
+      ],
+      "evidence_locators": [
+        "INAH monument catalogue entry 11735, later institutional ownership"
+      ],
+      "poi_ids": [
+        "poi-san-francisco-convent"
+      ],
+      "remaining_uncertainty": "Property deeds and building-by-building ownership not independently examined",
+      "evidence_status": "institutional_web_text_or_scholarly_abstract_examined_full_publication_not_examined",
+      "independently_corroborated": false,
+      "editorial_status": "candidate_not_publication_ready",
+      "suggested_educational_use": "Place-based chronological narrative or optional evidence caveat"
+    },
+    {
+      "id": "cdmx-stg-20261113-urban-07",
+      "subject": "Tlatelolco reconstruction and tenure",
+      "assertion": "An official reconstruction directive reproduced in a UNAM-published 1986 documentary abstract states that reconstruction work at the Nonoalco-Tlatelolco housing complex would not be conditional on changes to residents' existing property regime.",
+      "date_or_range": "1985–1986",
+      "period": "Mexico City 1980–present",
+      "geography": "Mexico City",
+      "source_ids": [
+        "cdmx-source-unam-tlatelolco-convenios-1986"
+      ],
+      "evidence_locators": [
+        "Revista Mexicana de Sociología 48(2), documentary excerpt in published abstract, directives 1 and 3"
+      ],
+      "poi_ids": [
+        "poi-tlatelolco",
+        "poi-plaza-tres-culturas"
+      ],
+      "remaining_uncertainty": "Prescribed government policy, not proof of implementation",
+      "evidence_status": "institutional_web_text_or_scholarly_abstract_examined_full_publication_not_examined",
+      "independently_corroborated": false,
+      "editorial_status": "candidate_not_publication_ready",
+      "suggested_educational_use": "Place-based chronological narrative or optional evidence caveat"
+    },
+    {
+      "id": "cdmx-stg-20261113-urban-08",
+      "subject": "Tlatelolco reconstruction financing",
+      "assertion": "The same official Tlatelolco reconstruction directive envisaged paying rebuilding costs from insurance proceeds and congressionally approved reconstruction resources.",
+      "date_or_range": "1985–1986",
+      "period": "Mexico City 1980–present",
+      "geography": "Mexico City",
+      "source_ids": [
+        "cdmx-source-unam-tlatelolco-convenios-1986"
+      ],
+      "evidence_locators": [
+        "Revista Mexicana de Sociología 48(2), documentary excerpt in published abstract, directive 2"
+      ],
+      "poi_ids": [
+        "poi-tlatelolco"
+      ],
+      "remaining_uncertainty": "Insurance settlements, real expenditures and resident charges not verified",
+      "evidence_status": "institutional_web_text_or_scholarly_abstract_examined_full_publication_not_examined",
+      "independently_corroborated": false,
+      "editorial_status": "candidate_not_publication_ready",
+      "suggested_educational_use": "Place-based chronological narrative or optional evidence caveat"
+    },
+    {
+      "id": "cdmx-stg-20261113-urban-09",
+      "subject": "Incomparable estimates of 1985 housing damage",
+      "assertion": "Rabell and Mier y Terán's 1986 abstract juxtaposes 3,745 damaged residential buildings, about 90,000 affected dwellings (30,000 requiring demolition), and 46,000 families needing assistance from different agencies; these refer to different units and measurement scopes.",
+      "date_or_range": "1985–1986",
+      "period": "Mexico City 1980–present",
+      "geography": "Mexico City",
+      "source_ids": [
+        "cdmx-source-rabell-mier-1986"
+      ],
+      "evidence_locators": [
+        "Rabell and Mier y Terán (1986), abstract paragraph on damage estimates"
+      ],
+      "poi_ids": [
+        "poi-tlatelolco",
+        "poi-centro-historico"
+      ],
+      "remaining_uncertainty": "Original government counts, survey definitions and uncertainty ranges not checked",
+      "evidence_status": "institutional_web_text_or_scholarly_abstract_examined_full_publication_not_examined",
+      "independently_corroborated": false,
+      "editorial_status": "candidate_not_publication_ready",
+      "suggested_educational_use": "Place-based chronological narrative or optional evidence caveat"
+    },
+    {
+      "id": "cdmx-stg-20261113-urban-10",
+      "subject": "Post-quake garment workers",
+      "assertion": "Lucía Álvarez Mosso's December 1985 abstract describes low wages, long hours and intense production demands in garment work, and discusses workplace closures and insecure employment after the September earthquakes.",
+      "date_or_range": "1985",
+      "period": "Mexico City 1980–present",
+      "geography": "Mexico City",
+      "source_ids": [
+        "cdmx-source-alvarez-mosso-1985-costureras"
+      ],
+      "evidence_locators": [
+        "UNAM IIEc, Momento Económico (21), abstract; article pp.14–15 not read"
+      ],
+      "poi_ids": [
+        "poi-san-antonio-abad",
+        "poi-centro-historico"
+      ],
+      "remaining_uncertainty": "Factory payrolls and survivor testimony needed before quantification",
+      "evidence_status": "institutional_web_text_or_scholarly_abstract_examined_full_publication_not_examined",
+      "independently_corroborated": false,
+      "editorial_status": "candidate_not_publication_ready",
+      "suggested_educational_use": "Place-based chronological narrative or optional evidence caveat"
+    },
+    {
+      "id": "cdmx-stg-20261113-urban-11",
+      "subject": "Collective memory of the 1985 and 2017 earthquakes",
+      "assertion": "In a 2018 journal abstract, Eugenia Allier Montaño reports that the September 2017 national press frequently compared the 2017 earthquake with 1985, discussing rescue volunteers, affected areas and government actions.",
+      "date_or_range": "1985–2017",
+      "period": "Mexico City 1980–present",
+      "geography": "Mexico City",
+      "source_ids": [
+        "cdmx-source-allier-2018-memory"
+      ],
+      "evidence_locators": [
+        "Allier Montaño (2018), journal abstract on newspaper analysis"
+      ],
+      "poi_ids": [
+        "poi-tlatelolco",
+        "poi-centro-historico"
+      ],
+      "remaining_uncertainty": "Full news corpus not independently inspected; findings concern published press discussion, not all residents",
+      "evidence_status": "institutional_web_text_or_scholarly_abstract_examined_full_publication_not_examined",
+      "independently_corroborated": false,
+      "editorial_status": "candidate_not_publication_ready",
+      "suggested_educational_use": "Place-based chronological narrative or optional evidence caveat"
+    }
+  ],
+  "duplicate_review": [
+    {
+      "candidate_id": "cdmx-stg-20261113-urban-05",
+      "possible_duplicate_of": "stg-20261112-reforma-11"
+    }
+  ],
+  "source_access_warning": "Primary newspapers and original books not examined. Sources inspected at published abstract or institutional webpage scope. No independently corroborated/publication-ready claims."
+}
