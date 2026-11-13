@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-13T13:30:00Z",
+  "generated_at": "2026-11-13T13:12:00Z",
   "kind": "post_replay_verified_reconciliation_ledger",
   "branch": "research-persistence",
   "research_batch_commit_sha": "81c9ef0cdda555e41853d8ebda6455d9ffd2e49e",
@@ -119,5 +119,6 @@
   ],
   "canonical_promoted": false,
   "main_modified": false,
-  "ready_for_editorial_review": false
+  "ready_for_editorial_review": false,
+  "timestamp_note": "Corrected generated_at from prematurely labeled artifact filename time; prior revision remains in Git history and artifact paths are stable. No historical findings changed."
 }
