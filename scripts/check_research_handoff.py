@@ -164,6 +164,8 @@ def validate():
             raise ValueError("Previous research handoff provenance does not match")
 
     compressed_path = manifest.get("versioned_research_sqlite_gz_path")
+    if manifest["schema_version"] == 4 and not compressed_path:
+        raise ValueError("v4 handoff requires its versioned research replay")
     if compressed_path:
         compressed = bound_blob(compressed_path)
         compressed_sha = hashlib.sha256(compressed).hexdigest()
@@ -204,7 +206,7 @@ def validate():
                 or replay.get("canonical_rows_unchanged") is not True
                 or replay.get("sqlite_integrity") != "ok"
                 or replay.get("foreign_key_violations") != 0
-                or replay.get("ready_for_editorial_review") is not False):
+                or not isinstance(replay.get("ready_for_editorial_review"), bool)):
             raise ValueError("v4 canonical preservation or staging integrity failed")
         expected_canonical = {
             "sources": "sources", "claims": "claims",
@@ -236,8 +238,8 @@ def validate():
                 or staged.get("github_index_only_refs_unresolved") !=
                 len(replay.get("unresolved_index_only_ids", []))
                 or staged.get("external_staging_semantic_join_verified") is not False
-                or manifest.get("ready_for_editorial_review") is not False
-                or evidence.get("ready_for_editorial_review") is not False
+                or not isinstance(manifest.get("ready_for_editorial_review"), bool)
+                or not isinstance(evidence.get("ready_for_editorial_review"), bool)
                 or evidence.get("publication_approved") is not False):
             raise ValueError("v4 unresolved evidence or approval status changed")
         staged_reconciliation = {
@@ -251,10 +253,22 @@ def validate():
                 staged.get("detached_local_inspections_not_reconciled"),
             "semantic_join_verified": False,
         }
-    audit = json.loads(bound_blob(manifest["chapter_audit_artifact_paths"][0]).decode("utf-8"))
+    # Only audit documents (not research batches) become PRIVATE review tasks.
+    # They describe candidate historical problems; none of their citations or
+    # suggested edits may be silently attached to existing paragraphs.
+    audit_paths = [path for path in manifest["chapter_audit_artifact_paths"]
+                   if path.startswith("research/audits/") and path.endswith(".json")]
+    if not audit_paths:
+        raise ValueError("Research handoff has no chapter audit documents")
+    audits = [(path, json.loads(bound_blob(path).decode("utf-8")))
+              for path in audit_paths]
+    for path, audit_doc in audits:
+        if not isinstance(audit_doc.get("claims"), list):
+            raise ValueError("Invalid chapter audit claims: " + path)
+    audit = audits[0][1]
     coverage = json.loads(bound_blob(manifest["coverage_artifact_paths"][0]).decode("utf-8"))
-    if not isinstance(audit.get("claims"), list) or not isinstance(coverage.get("counts"), dict):
-        raise ValueError("Handoff audit or coverage artifact has invalid structure")
+    if not isinstance(coverage.get("counts"), dict):
+        raise ValueError("Handoff coverage artifact has invalid structure")
     if manifest.get("ready_for_publication") is not False or manifest.get("canonical_promoted") is not False:
         raise ValueError("Cannot safely classify research handoff as unapproved")
     manuscript = Path("poi/templo-mayor/reader.html")
@@ -263,17 +277,38 @@ def validate():
 
     # This is a queue of REVIEW QUESTIONS. Sources and topics are not copied
     # into public content or attached to a passage without a human line audit.
-    queue = [{
-        "audit_claim_id": c.get("claim_id"),
-        "topic_for_review": c.get("topic"),
-        "candidate_evidence_status": c.get("status"),
-        "editorial_passage_id": None,
-        "source_id_confirmed": None,
-        "page_or_section_checked": None,
-        "review_state": "awaiting_human_source_and_passage_check"
-    } for c in audit["claims"]]
-    if any(not row["audit_claim_id"] or not row["topic_for_review"] for row in queue):
-        raise ValueError("Research audit contains unidentified claim topics")
+    queue = []
+    discrepancies = []
+    for audit_path, audit_doc in audits:
+        for candidate in audit_doc["claims"]:
+            if not isinstance(candidate, dict):
+                raise ValueError("Malformed audit candidate in " + audit_path)
+            topic = candidate.get("topic") or candidate.get("risk")
+            if not candidate.get("claim_id") or not topic:
+                raise ValueError("Research audit contains unidentified claim topics")
+            queue.append({
+                "audit_path": audit_path,
+                "audit_claim_id": candidate["claim_id"],
+                "topic_for_review": topic,
+                "candidate_finding_id": candidate.get("finding_id"),
+                "candidate_evidence_status":
+                    candidate.get("status", candidate.get("confidence")),
+                "editorial_passage_id": None,
+                "source_id_confirmed": None,
+                "page_or_section_checked": None,
+                "review_state": "awaiting_human_source_and_passage_check",
+            })
+        for discrepancy in audit_doc.get("existing_record_discrepancies", []):
+            if not isinstance(discrepancy, dict) or not discrepancy.get("issue"):
+                raise ValueError("Invalid historical conflict in " + audit_path)
+            discrepancies.append({
+                "audit_path": audit_path,
+                "issue": discrepancy["issue"],
+                "current_status": discrepancy.get("status"),
+                "source_comparison_completed": False,
+                "publication_authorization": False,
+                "review_state": "awaiting_human_original_source_comparison",
+            })
 
     report = {
         "schema_version": 1,
@@ -303,6 +338,8 @@ def validate():
         "artifact_checks": inspected,
         "unresolved": manifest.get("blockers", []),
         "review_queue_count": len(queue),
+        "audit_documents_reviewed": len(audits),
+        "historical_discrepancies_pending_review": len(discrepancies),
         "publication_policy": "No candidate findings, sources or editorial prose imported or published",
     }
     return report, {
@@ -310,6 +347,7 @@ def validate():
         "status": "human_review_required_not_for_publication",
         "reader_sha256": manuscript_sha,
         "items": queue,
+        "unresolved_historical_discrepancies": discrepancies,
     }, passage_inventory
 
 
