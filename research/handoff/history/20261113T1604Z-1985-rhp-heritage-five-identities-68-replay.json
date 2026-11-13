@@ -1,0 +1,86 @@
+{
+  "schema_version": 4,
+  "generated_at": "2026-11-13T16:12:31.981Z",
+  "kind": "append_only_research_to_app_handoff_history",
+  "research_commit_sha": "24db1c702d544d8cba623dd13e622edc0b65a069",
+  "previous_handoff_blob_sha": "1a220b8867cd9792b5c7676a98b43801c1291b23",
+  "previous_manifest_generated_at": "2026-11-13T15:06:03.926Z",
+  "canonical_version": "V97",
+  "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_status": "unchanged_not_promoted",
+  "canonical_counts": {
+    "sources": 616,
+    "claims": 422,
+    "claim_sources": 403,
+    "canonical_findings": 68,
+    "canonical_source_inspections": 9
+  },
+  "staged_counts": {
+    "github_batches_replayed": 68,
+    "github_distinct_substantive_finding_ids": 366,
+    "github_inspection_entries": 158,
+    "github_source_candidates": 120,
+    "unknown_source_refs": 4,
+    "source_metadata_collisions": 2,
+    "detached_original_inspections_preserved": 37,
+    "detached_semantic_overlap_review_pending": 37,
+    "new_finding_candidates": 6,
+    "newly_recovered_existing_source_ids": 5,
+    "new_source_candidate_ids": 4,
+    "new_inspections": 4
+  },
+  "artifacts": {
+    "research_batch_paths": [
+      "research/batches/20261113T1604Z-1985-housing-architectural-outcomes-source-repair.json"
+    ],
+    "coverage_artifact_paths": [
+      "research/coverage/20261113T1604Z-1985-design-heritage-urban-readiness.json"
+    ],
+    "chapter_audit_artifact_paths": [
+      "research/audits/20261113T1604Z-templo-mayor-historical-vs-site-reading-gates.json"
+    ],
+    "reconciliation_artifact_paths": [
+      "research/ledgers/20261113T1604Z-nine-unregistered-source-disposition.json",
+      "research/reconciled/v4_24db1c702d54/replay_report.json"
+    ],
+    "binary_path": "research/reconciled/v4_24db1c702d54/research_only.sqlite.gz"
+  },
+  "verification": {
+    "output_sha256": "7f6bc6df7b4a8ddac4f1067cef6dac66a2b536cdb7d611e11dd0a4353e6e1e15",
+    "canonical_counts": {
+      "sources": 616,
+      "claims": 422,
+      "claim_sources": 403,
+      "canonical_findings": 68,
+      "canonical_source_inspections": 9
+    },
+    "canonical_tables_preserved": 88,
+    "canonical_rows_unchanged": true,
+    "sqlite_integrity": "ok",
+    "foreign_key_violations": 0,
+    "github_readback_verified": true,
+    "versioned_sqlite_path": "research/reconciled/v4_24db1c702d54/research_only.sqlite.gz",
+    "replay_report_path": "research/reconciled/v4_24db1c702d54/replay_report.json",
+    "verified_replay_commit_sha": "ec6c9f136d7ec665c35d52a5f94dec096b46c7ec"
+  },
+  "evidence_status": {
+    "source_access": "One official 2000 plan PDF machine-extracted text printed pp.62–63 examined; PDF screenshot calls attempted twice and timed out, so original layout not visually verified. INAH 2004 journal abstract and 1987/1988 book catalogs examined only.",
+    "new_findings_editorially_corroborated": 0,
+    "independent_corroboration": false,
+    "ready_for_editorial_review": false,
+    "ready_for_publication": false
+  },
+  "blockers": [
+    "4 remaining unregistered source references: proposed Sload dataset (not a verified source), McClung 2025, Manzanilla 2009, Sugiyama/Sugiyama/Sarabia 2014",
+    "2 source metadata collisions still unresolved",
+    "9 possible overlapping inspection URLs and 28 other detached inspection records without automated match require manual scope review",
+    "RHP 2000 program numbers not independently crosschecked against 1987 contemporaneous completion ledger or project-level administrative records",
+    "2000 Gaceta PDF screenshot failed; citation based on extracted text, no visual page confirmation",
+    "1988 UAM work and 1987 Architects volume only public catalogs examined, not books",
+    "Templo Mayor Triple Alliance 1427/1428/1430 and Gamio 1913/1914 date conflicts unresolved"
+  ],
+  "publication_approved": false,
+  "canonical_promoted": false,
+  "main_modified": false,
+  "automatic_merge": false
+}
