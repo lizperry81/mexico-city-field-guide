@@ -19,6 +19,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: Verify batch-schema parser regression tests
+        run: python3 -m unittest discover -s research/pipeline -p 'test_*.py' -v
       - name: Reconcile complete GitHub research-batch tree (fail closed)
         shell: bash
         run: |
