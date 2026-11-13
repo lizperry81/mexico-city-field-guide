@@ -75,9 +75,53 @@ def validate_versioned_handoff(manifest, immutable_manifest, snapshot_sha):
     # second form on exact full-object equality; no unbound fields allowed.
     if version == 4:
         if "immutable_handoff_snapshot_sha" in manifest:
-            raise ValueError("v4 requires a complete inline-provenance snapshot")
-        if immutable_manifest != manifest:
-            raise ValueError("Versioned v4 handoff differs from immutable snapshot")
+            raise ValueError("v4 requires a fully provenance-bound snapshot")
+        if immutable_manifest == manifest:
+            return
+        # Research now emits an independently committed, test-verified replay
+        # record as the immutable anchor. It intentionally is NOT a copy of the
+        # rolling manifest. Bind all essential immutable facts, rather than
+        # treating a different object schema as an invalid or approved handoff.
+        if immutable_manifest.get("kind") != "verified_replay_after_schema_unit_tests":
+            raise ValueError("Unrecognized v4 immutable research snapshot")
+        must_match = (
+            "research_commit_sha", "canonical_version", "canonical_hash",
+            "versioned_research_sqlite_gz_path", "versioned_research_sha256",
+            "compressed_sha256", "replay_report_path",
+            "previous_manifest_blob_sha", "previous_manifest_generated_at",
+            "ready_for_editorial_review", "canonical_promoted",
+        )
+        for field in must_match:
+            if immutable_manifest.get(field) != manifest.get(field):
+                raise ValueError("Versioned v4 research snapshot drift: " + field)
+        if (immutable_manifest.get("canonical_status") != "unchanged_not_promoted"
+                or immutable_manifest.get("canonical_rows_unchanged") is not True
+                or immutable_manifest.get("publication_approved") is not False
+                or immutable_manifest.get("integrity") != "ok"
+                or immutable_manifest.get("foreign_key_violations") != 0
+                or not immutable_manifest.get("unit_tests_path")
+                or not immutable_manifest.get("workflow_path")):
+            raise ValueError("Unverified research-only v4 replay status")
+        required_staged = {
+            "github_batches_replayed": "github_batches_replayed",
+            "github_distinct_substantive_finding_ids": "github_distinct_substantive_finding_ids",
+            "github_inspection_entries": "github_inspection_metadata_entries",
+            "github_source_candidates": "candidate_source_identities",
+            "unknown_source_refs": "unresolved_source_refs",
+            "source_metadata_collisions": "source_metadata_collisions",
+            "github_index_only_refs_unresolved": "unresolved_index_only_refs",
+            "detached_local_inspections_not_reconciled":
+                "detached_inspections_not_in_github_replay",
+        }
+        producer_counts = immutable_manifest.get("staged_counts", {})
+        current_counts = manifest.get("staged_counts", {})
+        for current_key, snapshot_key in required_staged.items():
+            if current_counts.get(current_key) != producer_counts.get(snapshot_key):
+                raise ValueError("Versioned v4 staged counts drift: " + current_key)
+        for group in ("chapter_audit_artifact_paths", "coverage_artifact_paths"):
+            if not set(immutable_manifest.get(group, [])).issubset(
+                    set(manifest.get(group, []))):
+                raise ValueError("Versioned v4 removed snapshot audit: " + group)
         return
     if "immutable_handoff_snapshot_sha" not in manifest:
         if immutable_manifest != manifest:
@@ -263,8 +307,15 @@ def validate():
     audits = [(path, json.loads(bound_blob(path).decode("utf-8")))
               for path in audit_paths]
     for path, audit_doc in audits:
-        if not isinstance(audit_doc.get("claims"), list):
-            raise ValueError("Invalid chapter audit claims: " + path)
+        # Original chapter audits carry "claims". Later supplementary audits
+        # carry "evidence_entries" with source locators, not publication-ready
+        # claim records. Both belong in PRIVATE review, never the app itself.
+        if (not isinstance(audit_doc, dict) or
+                not (isinstance(audit_doc.get("claims"), list) or
+                     isinstance(audit_doc.get("evidence_entries"), list))):
+            raise ValueError("Invalid chapter audit format: " + path)
+        if audit_doc.get("ready_for_publication") is True or audit_doc.get("editorial_approved") is True:
+            raise ValueError("Unreviewed audit incorrectly marked as approved: " + path)
     audit = audits[0][1]
     coverage = json.loads(bound_blob(manifest["coverage_artifact_paths"][0]).decode("utf-8"))
     if not isinstance(coverage.get("counts"), dict):
@@ -280,22 +331,34 @@ def validate():
     queue = []
     discrepancies = []
     for audit_path, audit_doc in audits:
-        for candidate in audit_doc["claims"]:
+        for candidate in audit_doc.get("claims", []) + audit_doc.get("evidence_entries", []):
             if not isinstance(candidate, dict):
                 raise ValueError("Malformed audit candidate in " + audit_path)
-            topic = candidate.get("topic") or candidate.get("risk")
-            if not candidate.get("claim_id") or not topic:
-                raise ValueError("Research audit contains unidentified claim topics")
+            is_evidence = "claim_key" in candidate
+            claim_id = candidate.get("claim_id") or candidate.get("claim_key")
+            topic = (candidate.get("topic") or candidate.get("risk") or
+                     candidate.get("event"))
+            if not claim_id or not topic:
+                raise ValueError("Research audit contains unidentified review topics")
             queue.append({
                 "audit_path": audit_path,
-                "audit_claim_id": candidate["claim_id"],
+                "audit_claim_id": claim_id,
                 "topic_for_review": topic,
                 "candidate_finding_id": candidate.get("finding_id"),
                 "candidate_evidence_status":
-                    candidate.get("status", candidate.get("confidence")),
+                    candidate.get("evidence_status", candidate.get("status",
+                                                                   candidate.get("confidence"))),
+                "source_url_proposed": candidate.get("source_url") if is_evidence else None,
+                "source_locator_proposed":
+                    candidate.get("exact_locator") if is_evidence else None,
+                "source_access_claimed":
+                    candidate.get("access_scope") if is_evidence else None,
+                "remaining_source_check":
+                    candidate.get("remaining_gap") if is_evidence else None,
                 "editorial_passage_id": None,
                 "source_id_confirmed": None,
                 "page_or_section_checked": None,
+                "publication_authorization": False,
                 "review_state": "awaiting_human_source_and_passage_check",
             })
         for discrepancy in audit_doc.get("existing_record_discrepancies", []):
@@ -310,6 +373,27 @@ def validate():
                 "review_state": "awaiting_human_original_source_comparison",
             })
 
+    # The research team also publishes an explanatory-coverage assessment.
+    # Retain the gaps as structured human assignments, NOT as app content.
+    coverage_gaps = []
+    for coverage_path in manifest["coverage_artifact_paths"]:
+        coverage_doc = json.loads(bound_blob(coverage_path).decode("utf-8"))
+        for cell in coverage_doc.get("cells", []):
+            if not all(isinstance(cell.get(key), str) and cell[key]
+                       for key in ("period", "theme", "geography", "rating", "why", "next")):
+                raise ValueError("Malformed private coverage gap: " + coverage_path)
+            coverage_gaps.append({
+                "coverage_path": coverage_path,
+                "period": cell["period"],
+                "theme": cell["theme"],
+                "geography": cell["geography"],
+                "readiness": cell["rating"],
+                "explanation": cell["why"],
+                "research_needed": cell["next"],
+                "assigned_to_published_chapter": None,
+                "review_state": "awaiting_human_evidence_and_editorial_review",
+                "publication_authorization": False,
+            })
     report = {
         "schema_version": 1,
         "status": "verified_handoff_not_approved",
@@ -338,6 +422,7 @@ def validate():
         "artifact_checks": inspected,
         "unresolved": manifest.get("blockers", []),
         "review_queue_count": len(queue),
+        "coverage_gap_review_count": len(coverage_gaps),
         "audit_documents_reviewed": len(audits),
         "historical_discrepancies_pending_review": len(discrepancies),
         "publication_policy": "No candidate findings, sources or editorial prose imported or published",
@@ -348,6 +433,7 @@ def validate():
         "reader_sha256": manuscript_sha,
         "items": queue,
         "unresolved_historical_discrepancies": discrepancies,
+        "coverage_gaps": coverage_gaps,
     }, passage_inventory
 
 
