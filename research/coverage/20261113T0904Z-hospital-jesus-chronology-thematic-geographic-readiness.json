@@ -1,0 +1,132 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-11-13T09:10:00Z",
+  "batch_path": "research/batches/20261113T0904Z-hospital-jesus-recovery-and-building-phases.json",
+  "method": "Hand-assessed explanation readiness of specific Centro Histórico cells using assertion, spatial visibility, phase chronology and unresolved limitations, NOT citation counts. Does not rewrite existing 2112-cell heuristic coverage matrix.",
+  "scope": "Centro Histórico / Hospital de Jesús and adjacent Jesús Nazareno; 16x12x11 matrix remains provisional",
+  "criteria": {
+    "substantial": "Coherent historical causes and sequence, several independently inspected scholarly/primary sources, confirmed surviving field objects",
+    "developing": "Specific dated explanatory sequence and mapped building phases but single-source or access gaps",
+    "sparse": "Specific anchored assertion but not enough for self-contained historical explanation",
+    "missing": "No reliable evidence found for this intersection; not proof historical material does not exist"
+  },
+  "cells": [
+    {
+      "period": "Early colonial 1521–1600",
+      "theme": "infrastructure",
+      "geography": "centro",
+      "rating": "developing",
+      "evidence_findings": [
+        "stg-20261113T0904Z-hjesus-1535-east-infirmary",
+        "stg-20261113T0904Z-hjesus-1579-1587-arciniega",
+        "stg-20261113-hjesus-building-survival"
+      ],
+      "explanatory_readiness": "Construction phases can be presented chronologically, but original structural features and altered arcade must be differentiated",
+      "blockers": [
+        "No building-phase archaeological plan checked",
+        "Present visitor access to cloisters unknown"
+      ]
+    },
+    {
+      "period": "Early colonial 1521–1600",
+      "theme": "society",
+      "geography": "centro",
+      "rating": "sparse",
+      "evidence_findings": [
+        "stg-20261113-hjesus-foundation-date-conflict",
+        "stg-20261113-hj-06"
+      ],
+      "explanatory_readiness": "Foundation and municipal reference identified; no treatment of patients, caregivers, funding, admission rules or demographic access",
+      "blockers": [
+        "1524 cabildo original unexamined",
+        "1528/1529 foundation dispute unresolved"
+      ]
+    },
+    {
+      "period": "Early colonial 1521–1600",
+      "theme": "religion",
+      "geography": "centro",
+      "rating": "sparse",
+      "evidence_findings": [
+        "stg-20261113-hjesus-temple-construction",
+        "stg-20261113-hjesus-original-names"
+      ],
+      "explanatory_readiness": "Hospital and adjacent church must be narrated separately",
+      "blockers": [
+        "Church building contracts and original patronage not examined"
+      ]
+    },
+    {
+      "period": "Colonial 1600–1810",
+      "theme": "indigenous",
+      "geography": "centro",
+      "rating": "sparse",
+      "evidence_findings": [
+        "stg-20261113T0904Z-hjesus-1663-petronila"
+      ],
+      "explanatory_readiness": "One named Indigenous woman is documented in a catalog but this cannot sustain broad institutional or demographic claims",
+      "blockers": [
+        "1663 original donation document unexamined",
+        "Social role beyond donation undocumented"
+      ]
+    },
+    {
+      "period": "Colonial 1600–1810",
+      "theme": "environment",
+      "geography": "centro",
+      "rating": "sparse",
+      "evidence_findings": [
+        "stg-20261113T0904Z-hjesus-subsidence-1800"
+      ],
+      "explanatory_readiness": "Repeated subsidence and post-earthquake building changes provide a potential city-environment link; source is one provisional catalog",
+      "blockers": [
+        "No engineering or hydrological analysis linked"
+      ]
+    },
+    {
+      "period": "Colonial 1600–1810",
+      "theme": "poi",
+      "geography": "centro",
+      "rating": "developing",
+      "evidence_findings": [
+        "stg-20261113T0904Z-hjesus-subsidence-1800",
+        "stg-20261113T0904Z-hjesus-1663-petronila"
+      ],
+      "explanatory_readiness": "Strong continuity-versus-rebuilding interpretive opportunity, but no confirmed visitor access or visible dating of interior features",
+      "blockers": [
+        "No in-person observation",
+        "No rights-cleared photo showing phases"
+      ]
+    },
+    {
+      "period": "Postrevolutionary institutions",
+      "theme": "infrastructure",
+      "geography": "centro",
+      "rating": "sparse",
+      "evidence_findings": [
+        "stg-20261113T0904Z-hjesus-villagran-1934"
+      ],
+      "explanatory_readiness": "One dated urban road and building redevelopment link, but architect plans and policy context missing",
+      "blockers": [
+        "No 1934 road construction or Villagrán original plan examined"
+      ]
+    },
+    {
+      "period": "Mexico City 1940–1980",
+      "theme": "infrastructure",
+      "geography": "centro",
+      "rating": "sparse",
+      "evidence_findings": [
+        "stg-20261113T0904Z-hjesus-1963-loss"
+      ],
+      "explanatory_readiness": "Clear reported demolition due to street widening but missing urban planning records and ground truth",
+      "blockers": [
+        "1963 demolition authorization and maps unexamined"
+      ]
+    }
+  ],
+  "substantial_promotions": 0,
+  "publication_approved": false,
+  "reviewer_role": "source-constrained research auditor",
+  "next_coverage_action": "Complete a locational before/after architectural phase diagram from 1934 plans and 1963 street widening records before creating field-walk interpretation"
+}
