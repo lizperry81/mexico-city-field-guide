@@ -14,6 +14,7 @@ import re
 import subprocess
 from pathlib import Path, PurePosixPath
 from editorial_passage_inventory import inventory
+from handoff_verified_history import validate_verified_history_v4
 
 RESEARCH_REF = "refs/remotes/origin/research-persistence"
 MANIFEST_PATH = "research/handoff/manifest.json"
@@ -81,6 +82,11 @@ def validate_versioned_handoff(manifest, immutable_manifest, snapshot_sha):
         if "immutable_handoff_snapshot_sha" in manifest:
             raise ValueError("v4 requires a fully provenance-bound snapshot")
         if immutable_manifest == manifest:
+            return
+        # New v4 history records pin an independent replay, review audit and
+        # coverage delta. Validate its complete metadata before accepting.
+        if immutable_manifest.get("kind") == "verified_research_to_app_handoff_history":
+            validate_verified_history_v4(manifest, immutable_manifest)
             return
         # Newer handoffs use an append-only, research-only snapshot containing
         # a before/after reconciliation record instead of a rolling-manifest
@@ -373,6 +379,18 @@ def validate():
     if immutable_manifest.get("research_commit_sha") != sha:
         raise ValueError("Versioned handoff snapshot points to a different research commit")
     validate_versioned_handoff(manifest, immutable_manifest, snapshot_blob_sha)
+    if immutable_manifest.get("kind") == "verified_research_to_app_handoff_history":
+        # The producer pins the Git blob identities after a successful readback.
+        # Compare to the committed artifact, not merely a self-asserted hash.
+        readback = immutable_manifest["verification"]["github_readback"]
+        for key, path in (
+            ("replay_report_blob_sha", manifest["replay_report_path"]),
+            ("compressed_sha_file_blob_sha",
+             immutable_manifest["artifact_paths"]["compressed_sha"]),
+        ):
+            actual = git("rev-parse", f"{handoff_commit}:{path}").decode().strip()
+            if actual != readback[key]:
+                raise ValueError("Research handoff Git readback mismatch: " + key)
     if manifest["schema_version"] in (3, 4):
         # Validate provenance against the actual previous committed manifest,
         # not merely a 40-character value copied into the new handoff.
@@ -503,7 +521,9 @@ def validate():
                 not any(isinstance(audit_doc.get(key), list)
                         for key in ("claims", "evidence_entries", "claim_to_source"))):
             raise ValueError("Invalid chapter audit format: " + path)
-        if audit_doc.get("ready_for_publication") is True or audit_doc.get("editorial_approved") is True:
+        if (audit_doc.get("ready_for_publication") is True or
+                audit_doc.get("editorial_approved") is True or
+                audit_doc.get("publication_approved") is True):
             raise ValueError("Unreviewed audit incorrectly marked as approved: " + path)
     audit = audits[0][1]
     coverage = json.loads(bound_blob(manifest["coverage_artifact_paths"][0]).decode("utf-8"))
@@ -519,22 +539,76 @@ def validate():
     # into public content or attached to a passage without a human line audit.
     queue = []
     discrepancies = []
+    source_locator_slots = []
+    exact_reader_audits = []
     for audit_path, audit_doc in audits:
-        for candidate in (audit_doc.get("claims", []) +
-                          audit_doc.get("evidence_entries", []) +
-                          audit_doc.get("claim_to_source", [])):
+        is_exact_reader_audit = (
+            audit_doc.get("kind") == "exact_main_branch_reader_prose_audit")
+        matches_reader = None
+        if is_exact_reader_audit:
+            inspected_reader = audit_doc.get("inspected_repository_file") or {}
+            if (inspected_reader.get("path") != "poi/templo-mayor/reader.html"
+                    or not isinstance(inspected_reader.get("blob_sha"), str)
+                    or not HEX40.fullmatch(inspected_reader["blob_sha"])):
+                raise ValueError("Exact-prose audit has no pinned reader Git blob")
+            matches_reader = (
+                git("rev-parse", "HEAD:poi/templo-mayor/reader.html")
+                .decode().strip() == inspected_reader["blob_sha"])
+            exact_reader_audits.append({
+                "audit_path": audit_path,
+                "reader_blob_sha_in_research": inspected_reader["blob_sha"],
+                "matches_current_main_reader": matches_reader,
+                "publication_authorization": False,
+            })
+            for source in audit_doc.get("source_locators", []):
+                if (not isinstance(source, dict) or
+                        not all(isinstance(source.get(k), str) and source[k]
+                                for k in ("id", "url", "locator", "access"))):
+                    raise ValueError("Malformed exact-prose source locator")
+                source_locator_slots.append({
+                    "audit_path": audit_path,
+                    "source_id_proposed": source["id"],
+                    "source_url_proposed": source["url"],
+                    "source_locator_proposed": source["locator"],
+                    "source_access_claimed": source["access"],
+                    "source_locator_confirmed": False,
+                    "publication_authorization": False,
+                })
+        candidates = (audit_doc.get("claims", []) +
+                      audit_doc.get("evidence_entries", []) +
+                      audit_doc.get("claim_to_source", []))
+        for candidate_index, candidate in enumerate(candidates, 1):
             if not isinstance(candidate, dict):
                 raise ValueError("Malformed audit candidate in " + audit_path)
             is_evidence = "claim_key" in candidate or "source_url" in candidate
-            claim_id = candidate.get("claim_id") or candidate.get("claim_key")
+            is_reader_prose = is_exact_reader_audit and "reader_paragraph" in candidate
+            claim_id = (candidate.get("claim_id") or candidate.get("claim_key") or
+                        (f"reader-prose-review-{candidate_index:02d}"
+                         if is_reader_prose else None))
             topic = (candidate.get("topic") or candidate.get("risk") or
                      candidate.get("event"))
             if not claim_id or not topic:
                 raise ValueError("Research audit contains unidentified review topics")
+            if is_reader_prose and candidate.get("status") == "historical_date_conflict":
+                discrepancies.append({
+                    "audit_path": audit_path, "issue": candidate.get("finding"),
+                    "current_status": candidate.get("status"),
+                    "reader_paragraph_index_proposed": candidate.get("reader_paragraph"),
+                    "source_comparison_completed": False,
+                    "publication_authorization": False,
+                    "review_state": "awaiting_human_original_source_comparison",
+                })
             queue.append({
                 "audit_path": audit_path,
                 "audit_claim_id": claim_id,
                 "topic_for_review": topic,
+                "reader_paragraph_index_proposed":
+                    candidate.get("reader_paragraph") if is_reader_prose else None,
+                "reader_anchor_proposed":
+                    candidate.get("anchor") if is_reader_prose else None,
+                "reader_audit_matches_main_blob": matches_reader if is_reader_prose else None,
+                "candidate_evidence_summary_unverified":
+                    candidate.get("finding") if is_reader_prose else None,
                 "candidate_finding_id": candidate.get("finding_id"),
                 "candidate_evidence_status":
                     candidate.get("evidence_status", candidate.get("status",
@@ -548,7 +622,8 @@ def validate():
                     if is_evidence else None,
                 "remaining_source_check":
                     (candidate.get("remaining_gap") or candidate.get("uncertainty")
-                     or candidate.get("editorial_action")) if is_evidence else None,
+                     or candidate.get("editorial_action") or candidate.get("action"))
+                    if (is_evidence or is_reader_prose) else None,
                 "read_before_context_proposed":
                     candidate.get("read_before") if is_evidence else None,
                 "on_site_context_proposed":
@@ -557,7 +632,10 @@ def validate():
                 "source_id_confirmed": None,
                 "page_or_section_checked": None,
                 "publication_authorization": False,
-                "review_state": "awaiting_human_source_and_passage_check",
+                "review_state": (
+                    "stale_reader_blob_requires_reaudit"
+                    if is_reader_prose and not matches_reader
+                    else "awaiting_human_source_and_passage_check"),
             })
         for discrepancy in audit_doc.get("existing_record_discrepancies", []):
             if not isinstance(discrepancy, dict) or not discrepancy.get("issue"):
@@ -594,7 +672,11 @@ def validate():
             theme = cell.get("theme")
             rating = cell.get("rating") or cell.get("new_rating")
             explanation = (cell.get("why") or cell.get("assessment")
-                           or cell.get("explanatory_readiness") or cell.get("reason"))
+                           or cell.get("explanatory_readiness") or cell.get("reason")
+                           or (coverage_doc.get("rating_method")
+                               if coverage_doc.get("kind") ==
+                               "historically_grounded_explanatory_readiness_delta"
+                               else None))
             next_task = cell.get("next") or cell.get("remaining_gap") or cell.get("gap")
             # Focused 2026-11-13 coverage deltas record evidence limitations
             # as explicit blocker lists, not a single "next" string. Preserve
@@ -653,6 +735,8 @@ def validate():
         "coverage_gap_review_count": len(coverage_gaps),
         "audit_documents_reviewed": len(audits),
         "historical_discrepancies_pending_review": len(discrepancies),
+        "source_locator_review_count": len(source_locator_slots),
+        "exact_reader_audit_status": exact_reader_audits,
         "publication_policy": "No candidate findings, sources or editorial prose imported or published",
     }
     return report, {
@@ -661,6 +745,8 @@ def validate():
         "reader_sha256": manuscript_sha,
         "items": queue,
         "unresolved_historical_discrepancies": discrepancies,
+        "source_locator_slots": source_locator_slots,
+        "exact_reader_audit_status": exact_reader_audits,
         "coverage_gaps": coverage_gaps,
     }, passage_inventory
 
