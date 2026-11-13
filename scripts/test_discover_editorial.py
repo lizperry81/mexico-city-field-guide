@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """Regression tests: drafted Discover prose must never be published by the builder."""
 import copy
+import hashlib
 import json
+import tempfile
 from pathlib import Path
 
-from build_discover_editorial import EDITORIAL, SITE, render, validate
+from build_discover_editorial import EDITORIAL, SITE, render, validate, verify_verbatim_archives
 
 draft_file = EDITORIAL / "templo-mayor.json"
 draft = json.loads(draft_file.read_text(encoding="utf-8"))
@@ -52,4 +54,37 @@ except ValueError:
     pass
 else:
     raise AssertionError("Missing page locator allowed to publish")
-print("PASS: draft Discover stays unpublished; reviewed/cited future prose has a safe, navigable publishing route")
+# A manuscript with self-asserted approval still cannot be published without
+# the exact independently archived prose and a matching adjacent checksum.
+with tempfile.TemporaryDirectory() as temp:
+    root = Path(temp)
+    try:
+        verify_verbatim_archives(example, root)
+    except ValueError as exc:
+        assert "Missing exact approved chapter archive" in str(exc)
+    else:
+        raise AssertionError("Unarchived approved prose passed publication gate")
+    archive = root / "editorial/approved/templo-mayor--example-test-only.md"
+    archive.parent.mkdir(parents=True)
+    original = "# Test-only chapter\\n\\n" + example["chapters"][0]["paragraphs"][0]["text"] + "\\n"
+    archive.write_text(original, encoding="utf-8")
+    checksum = archive.with_suffix(".md.sha256")
+    checksum.write_text(hashlib.sha256(archive.read_bytes()).hexdigest() + "  " + archive.name + "\\n",
+                        encoding="utf-8")
+    verify_verbatim_archives(example, root)
+    modified = copy.deepcopy(example)
+    modified["chapters"][0]["paragraphs"][0]["text"] += " An unauthorized alteration."
+    try:
+        verify_verbatim_archives(modified, root)
+    except ValueError as exc:
+        assert "not verbatim" in str(exc)
+    else:
+        raise AssertionError("Rewritten approved prose passed archival comparison")
+    archive.write_text(original + "Tampered\\n", encoding="utf-8")
+    try:
+        verify_verbatim_archives(example, root)
+    except ValueError as exc:
+        assert "checksum mismatch" in str(exc)
+    else:
+        raise AssertionError("Altered approved archive passed checksum gate")
+print("PASS: draft Discover unpublished; archive and checksum required for future approved prose")
