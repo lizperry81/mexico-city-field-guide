@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "segment": 1,
+  "tree_head": "9cc22576c24bbaa1041a96d3dd4ef8b6eebfb696",
+  "scope": "full_content_checked_against_Git_blob_SHA",
+  "records": [
+    {
+      "path": "research/batches/20261111T100400Z-ledger1/findings_and_inspection.json",
+      "git_blob_sha1": "548f19e4960125ac0f78fe6ec5dc36db4e4a6bac",
+      "verified": true,
+      "arrays": {
+        "findings": 3,
+        "source_inspection": 1
+      },
+      "finding_like_entries": 3,
+      "identified_ids": 3
+    },
+    {
+      "path": "research/batches/20261111T100400Z-ledger1/unmerged_archive_inventory.json",
+      "git_blob_sha1": "427129b7031b8ae38f8f8fd93fb68447676f2ca3",
+      "verified": true,
+      "arrays": {},
+      "finding_like_entries": 0,
+      "identified_ids": 0
+    },
+    {
+      "path": "research/batches/20261111T110600Z-crosswalk/inspected_material_and_visuals.json",
+      "git_blob_sha1": "a3aba0b487586af7a4f2b02106e328cac978c403",
+      "verified": true,
+      "arrays": {
+        "new_findings": 1,
+        "source_inspections": 1
+      },
+      "finding_like_entries": 1,
+      "identified_ids": 1
+    },
+    {
+      "path": "research/batches/20261111T110600Z-crosswalk/pending_source_crosswalk.json",
+      "git_blob_sha1": "142f1374256447941ff67ef1c322cb381a18a562",
+      "verified": true,
+      "arrays": {},
+      "finding_like_entries": 0,
+      "identified_ids": 0
+    },
+    {
+      "path": "research/batches/20261111T111100Z-priority-candidates/14_priority_pending_assertions.json",
+      "git_blob_sha1": "681cff5aebafeb6c0aa6b5cf441913ed28f3df5c",
+      "verified": true,
+      "arrays": {
+        "records": 14
+      },
+      "finding_like_entries": 14,
+      "identified_ids": 14
+    },
+    {
+      "path": "research/batches/20261111T115731Z-turn10-backlog-9/nine_remaining_candidate_assertions.json",
+      "git_blob_sha1": "1d5ce37959164a5d1f5b5c6e06abffa7840e7af1",
+      "verified": true,
+      "arrays": {
+        "records": 9
+      },
+      "finding_like_entries": 9,
+      "identified_ids": 9
+    },
+    {
+      "path": "research/batches/20261111T115731Z-turn10-final-backlog-19/19_original_candidate_assertions.json",
+      "git_blob_sha1": "bfb909a9f1659c435f1362205f4c6203cf41986e",
+      "verified": true,
+      "arrays": {
+        "records": 19
+      },
+      "finding_like_entries": 19,
+      "identified_ids": 19
+    },
+    {
+      "path": "research/batches/20261111T115731Z-turn10-sar-18/18_original_sarabia_and_2014_assertions.json",
+      "git_blob_sha1": "531d595939a0d182e8f1a09b5bd64a5df3ea2936",
+      "verified": true,
+      "arrays": {
+        "records": 18
+      },
+      "finding_like_entries": 18,
+      "identified_ids": 18
+    },
+    {
+      "path": "research/batches/20261111T115731Z-turn10-sload-cave-technical/new_findings_and_inspections.json",
+      "git_blob_sha1": "d20c38189dcb8c5b2d7b112af9980316916935d2",
+      "verified": true,
+      "arrays": {
+        "findings": 4,
+        "source_inspections": 1
+      },
+      "finding_like_entries": 4,
+      "identified_ids": 4
+    },
+    {
+      "path": "research/batches/20261111T1302Z-turn11/evidence_and_source_reconciliation.json",
+      "git_blob_sha1": "d178f63ef2024fb03cbf36edbe36b07b01b2c92b",
+      "verified": true,
+      "arrays": {
+        "new_findings": 1,
+        "documentary_findings": 1
+      },
+      "finding_like_entries": 1,
+      "identified_ids": 2
+    },
+    {
+      "path": "research/batches/20261111T1401Z-a11/botanical_and_source_reconciliation.json",
+      "git_blob_sha1": "9c6442a91cfcf76ed5a3656fb2d18f51ba6c9c75",
+      "verified": true,
+      "arrays": {
+        "findings": 2,
+        "source_inspections": 2
+      },
+      "finding_like_entries": 2,
+      "identified_ids": 2
+    },
+    {
+      "path": "research/batches/20261111T1503Z-auto11/sload_radiocarbon_model_review.json",
+      "git_blob_sha1": "a20f0aa4bdc12559629ccf252a2a139ed394ea5f",
+      "verified": true,
+      "arrays": {
+        "new_findings": 4,
+        "source_inspections": 2
+      },
+      "finding_like_entries": 4,
+      "identified_ids": 4
+    },
+    {
+      "path": "research/batches/20261111T1558Z-a11-rerun/source_context_and_materials.json",
+      "git_blob_sha1": "88b2e10a128d970187a972a992d5e9758f1f5577",
+      "verified": true,
+      "arrays": {
+        "findings": 1,
+        "source_inspections": 3
+      },
+      "finding_like_entries": 1,
+      "identified_ids": 1
+    },
+    {
+      "path": "research/batches/20261111T1655Z-a11-ch8-artifacts.json",
+      "git_blob_sha1": "27c3480c6aaf5cff59af24cc3fb1730e167e7e91",
+      "verified": true,
+      "arrays": {
+        "findings": 2,
+        "source_inspections": 1
+      },
+      "finding_like_entries": 2,
+      "identified_ids": 2
+    }
+  ]
+}
