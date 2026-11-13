@@ -1,0 +1,74 @@
+{
+  "schema_version": 2,
+  "kind": "research_input_evidence_and_reconciliation_preflight",
+  "generated_at": "2026-11-13T23:05:54.363Z",
+  "baseline_branch_head_sha": "d6be7086c310a39bbef90b51886ef6a3986cb9d8",
+  "canonical_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "baseline_verified_replay": "research/reconciled/v4_9e393787d50e/replay_report.json",
+  "before": {
+    "github_batches": 74,
+    "assertion_bearing_findings": 421,
+    "source_candidates": 143,
+    "source_inspections": 181,
+    "unregistered_refs": 1,
+    "metadata_conflicts": 2
+  },
+  "delta": {
+    "batches": 1,
+    "assertion_bearing_findings": 11,
+    "source_candidates": 4,
+    "source_inspection_metadata": 4
+  },
+  "expected_after_if_replay_passes": {
+    "github_batches": 75,
+    "assertion_bearing_findings": 432,
+    "source_candidates": 147,
+    "source_inspections": 185,
+    "unregistered_refs": 1,
+    "metadata_conflicts_at_least": 2
+  },
+  "source_access_tiers": {
+    "full_html_with_original_newspaper_transcription": 1,
+    "full_government_institutional_html": 1,
+    "institutional_search_excerpt_only": 2,
+    "fully_collated_original_newspaper_issue": 0,
+    "forensic_primary_reports_read": 0
+  },
+  "source_identity_note": "All four source candidate IDs newly minted, no previous sources updated or merged; existing source candidates retained.",
+  "key_conflicts": [
+    {
+      "topic": "1925 identity counts",
+      "report_1925": "Newspaper's quoted journalist lists twelve/attributions ambiguously",
+      "report_2010": "INAH government's 2010 retrospective says 14 and omits Pedro Moreno and Victor Rosales in 1925 inscription",
+      "status": "retain both with provenance, do not infer forensic certainty"
+    },
+    {
+      "topic": "Route descriptions",
+      "report_1925": "Cathedral to Column about one hour; partial path only",
+      "report_2010": "Chapultepec to Palacio Nacional via Reforma/Juárez/Eje Central/5 de Mayo",
+      "status": "do_not_merge_period_routes"
+    },
+    {
+      "topic": "Leona Vicario origin",
+      "generic_report": "1925 transfer from Cathedral",
+      "culture_2020": "Leona from Rotonda de las Personas Ilustres after 1900 move from Santa Paula",
+      "status": "do_not_generalize_cathedral_origin_to_all_heroes"
+    }
+  ],
+  "original_publications_unexamined": [
+    "El Universal complete original issue of 17 Sep 1925; only 2019 republished transcription inspected",
+    "Original 1923 monument adaptation blueprints and 1925 transfer decree",
+    "2010 INAH osteological identification and 2011 return records",
+    "García, Crónica Oficial de las Fiestas del Primer Centenario de la Independencia (1911), pp.74–75 and 167 (discovered digitized copies but full scan not collated)"
+  ],
+  "photo_rights": "Historic newspaper image located, permission/licensing not established; never embed in published application",
+  "editorial_status": "staged_not_corroborated",
+  "publication_approved": false,
+  "provenance_and_licensing": [
+    "El Universal 2019 article with quoted 1925 press, access 2026-11-13",
+    "Secretaría de Cultura official 2010 HTML, access 2026-11-13",
+    "Secretaría de Cultura 2020 indexed search snippet, direct open 403",
+    "Palacio Nacional 2023 indexed search snippet, direct open 403"
+  ],
+  "commit_and_readback_status": "preflight_only_awaiting_github_replay"
+}

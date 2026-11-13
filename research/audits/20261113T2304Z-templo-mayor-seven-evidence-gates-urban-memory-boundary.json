@@ -1,0 +1,122 @@
+{
+  "schema_version": 4,
+  "kind": "templo_mayor_discover_opening_chapter_source_locator_matrix_and_cross_period_boundary",
+  "generated_at": "2026-11-13T23:05:54.363Z",
+  "branch": "research-persistence",
+  "target_branch_read_only": "main",
+  "target_path": "poi/templo-mayor/reader.html",
+  "target_main_blob_sha": "f24cdc57b814575c2204fe4d960b9760abb69396",
+  "original_reader_re_read": true,
+  "new_batch_path": "research/batches/20261113T2304Z-1925-independence-mausoleum-and-2010-identification.json",
+  "new_period_not_inserted_into_templo_mayor": true,
+  "publication_approved": false,
+  "ready_for_editorial_review": false,
+  "gates": [
+    {
+      "topic": "Triple Alliance circa 1428",
+      "reader_anchor": "In the late 1420s, Tenochtitlan joined Texcoco and Tlacopan in the Triple Alliance.",
+      "locators": [
+        {
+          "path": "research/audits/templo-mayor-discover-20261113T1427Z-triple-alliance-dating-contrast.json",
+          "detail": "INAH Huexotla 1427 vs Berdan article excerpt 1430; broader late-1420s appropriate pending chronicle scrutiny"
+        }
+      ],
+      "status": "historical_date_open",
+      "uncertainty": "1427/1428/1430 founding convention unresolved; neither 1428 decree nor primary chronicle comparison",
+      "historical_addition": "Explain Azcapotzalco war, redistribution of tributary power and regional economic consequences; keep founding year qualified"
+    },
+    {
+      "topic": "Nested temple construction phases",
+      "reader_anchor": "Archaeologists group the work into seven major stages and give substantial additions lettered labels.",
+      "locators": [
+        {
+          "path": "poi/templo-mayor/reader.html",
+          "detail": "Construction dossier-topic-2; seven stages, later letters"
+        },
+        {
+          "path": "research/audits/20261113T1803Z-templo-mayor-gamio-1913-1914-primary-gates.json",
+          "detail": "Archival reconstruction as of early twentieth-century excavation"
+        }
+      ],
+      "status": "relative_stage_sequence_needs_archaeological_plan_comparison",
+      "uncertainty": "Site plan and phase-to-reign assignments not independently compared",
+      "historical_addition": "Pre-read distinction between visible nested walls and historical reign attributions; on-site use verified label-specific stairs"
+    },
+    {
+      "topic": "Coatepec/Coyolxauhqui",
+      "reader_anchor": "The disk’s position gave the story a place in the building.",
+      "locators": [
+        {
+          "path": "research/audits/templo-mayor-discover-20261113T1710Z-main-current-blob-claim-source-gates.json",
+          "detail": "Coyolxauhqui Stage IVb stair and source account; museum original vs outdoor replica"
+        },
+        {
+          "path": "poi/templo-mayor/reader.html",
+          "detail": "dossier-topic-3"
+        }
+      ],
+      "status": "myth_archaeology_analogy_not_literally_equivalent",
+      "uncertainty": "Original 1978 find diagram and Nahuatl source variant uncollated",
+      "historical_addition": "Describe carving, stratigraphic position and interpretive Coatepec connection separately"
+    },
+    {
+      "topic": "Conquest and 1520 Tóxcatl massacre",
+      "reader_anchor": "In May 1520, while Cortés was away, Pedro de Alvarado’s men attacked people celebrating Tóxcatl in the sacred precinct.",
+      "locators": [
+        {
+          "path": "research/audits/20261113T2004Z-templo-mayor-exact-reader-source-gates.json",
+          "detail": "Florentine Codex Book XII metadata, precise folio and Nahuatl/Spanish collation outstanding"
+        }
+      ],
+      "status": "cross_tradition_comparison_pending",
+      "uncertainty": "Do not turn one account into a single eyewitness chronology; Indigenous coalition context incomplete",
+      "historical_addition": "Add witnessed destruction detail and align Nahuatl/Spanish testimony with named author and date"
+    },
+    {
+      "topic": "Gamio preparations 1913 and excavation 1914",
+      "reader_anchor": "In 1913, archaeologist Manuel Gamio uncovered the pyramid’s southwest corner.",
+      "locators": [
+        {
+          "path": "research/audits/20261113T1803Z-templo-mayor-gamio-1913-1914-primary-gates.json",
+          "detail": "2023 archaeologists document 1913 demolition preparations vs 6–16 May 1914 excavations"
+        }
+      ],
+      "status": "editorial_correction_candidate_requires_original_report",
+      "uncertainty": "Original dated Gamio May 1914 report not checked",
+      "historical_addition": "Separate land clearance 1913, archaeological excavation 1914, and later systematic 1978 work"
+    },
+    {
+      "topic": "February 21 1978 Coyolxauhqui and 1987 museum",
+      "reader_anchor": "In February 1978, electrical workers digging near República de Argentina and República de Guatemala struck the carved Coyolxauhqui disk.",
+      "locators": [
+        {
+          "path": "research/audits/20261113T2004Z-templo-mayor-exact-reader-source-gates.json",
+          "detail": "INAH institutional history identifies exact 21 Feb 1978; original field records needed"
+        }
+      ],
+      "status": "institutional_supported_original_rescue_report_missing",
+      "uncertainty": "Original discovery record, subsequent measured find-plan, museum floor display need checking",
+      "historical_addition": "Use 21 Feb 1978 as qualified evidence-located candidate and distinguish museum original from in-situ copy"
+    },
+    {
+      "topic": "Historical layering boundary, 1925 and Templo Mayor",
+      "reader_anchor": "What Mexico City dug up",
+      "locators": [
+        {
+          "path": "research/batches/20261113T2304Z-1925-independence-mausoleum-and-2010-identification.json",
+          "detail": "New 1925 Cathedral-to-Reforma and 2010 route findings RM-01 through RM-11; separate monuments and periods"
+        }
+      ],
+      "status": "thematic_cross_link_only_not_templo_chapter_addition",
+      "uncertainty": "Later republic processions are not evidence of Mexica temple function; current city-route integrity unverified",
+      "historical_addition": "A separate historical-thread link can contrast colonial Zócalo and national commemoration on Reforma; do not insert 1925 story into Templo Mayor chronology"
+    }
+  ],
+  "blockers": [
+    "No new Templo Mayor primary material independently examined this batch",
+    "Triple Alliance founding convention 1427/1428/1430 unresolved",
+    "Nahuatl Book XII and Gamio 1914 original report not collated",
+    "Current site visitor route and museum exhibit checked neither in person nor real-time"
+  ],
+  "no_publication_of_unverified_claims": true
+}

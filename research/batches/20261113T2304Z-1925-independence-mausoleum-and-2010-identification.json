@@ -1,0 +1,379 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261113T2304Z-1925-independence-mausoleum-and-2010-identification",
+  "generated_at": "2026-11-13T23:05:54.363Z",
+  "branch": "research-persistence",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "storage_role": "immutable_noncanonical_research_batch",
+  "previous_verified_replay": "research/reconciled/v4_9e393787d50e/replay_report.json",
+  "prior_verified_counts": {
+    "github_batches": 74,
+    "assertion_bearing_findings": 421,
+    "source_candidates": 143,
+    "source_inspections": 181,
+    "unregistered_refs": 1,
+    "metadata_conflicts": 2
+  },
+  "research_scope": "Post-1910 change of the Independence Column's use into a mausoleum; original 17 September 1925 newspaper excerpts, later government retrospective, and 2010 conservation and identification review; distinguish mixed source access and conflicting identifications.",
+  "sources": [
+    {
+      "id": "STG-SRC-20261113-ELUNIVERSAL-1925-REPUB",
+      "title": "Cuando 20 mil soldados trasladaron los restos de los héroes de la Independencia al Ángel",
+      "authors": "Brenda Garduño y Fernanda Ramírez R., El Universal (2019; reproduces excerpts from El Universal 17 Sep 1925, Jacobo Dalevuelta section)",
+      "url": "https://www.eluniversal.com.mx/cultura/cuando-20-mil-soldados-trasladaron-los-restos-de-los-heroes-de-la-independencia-al-angel/",
+      "access_scope": "Complete 2019 HTML republication read, web lines 16–100; attributed 17 September 1925 passages and later editorial text; 1925 paper originals, untruncated pages and photo rights NOT independently checked",
+      "status": "secondary_web_full_text_with_transcribed_primary_excerpt"
+    },
+    {
+      "id": "STG-SRC-20261113-CULTURA-2010-REMAINS-IDENTIFICATION",
+      "title": "Aclaman miles de personas los restos de los héroes de la patria, durante su recorrido rumbo a Palacio Nacional",
+      "authors": "Secretaría de Cultura, Comunicado 1258/2010 (16 Aug 2010)",
+      "url": "https://www.cultura.gob.mx/noticias/patrimonio-cultural-arquitectura-y-turismo/6832-aclaman-miles-de-personas-los-restos-de-los-heroes-de-la-patria-durante-su-recorrido-rumbo-a-palacio-nacional.html",
+      "access_scope": "Full institutional government HTML read, lines 66–89; reports 2010 INAH restorer's statements and 1925 historical omission; underlying anthropological dossier not examined",
+      "status": "full_government_html_read"
+    },
+    {
+      "id": "STG-SRC-20261113-CULTURA-2020-LEONA-VICARIO",
+      "title": "Leona Vicario, la mujer fuerte de la Independencia",
+      "authors": "Secretaría de Cultura, Gobierno de México (23 Jan 2020)",
+      "url": "https://www.gob.mx/cultura/prensa/leona-vicario-la-mujer-fuerte-de-la-independencia",
+      "access_scope": "Long institutional search-index excerpt verified; full page open returned 403; records 1900 Rotonda transfer, 1925 removal and north niche; original cemetery/transfer registers not examined",
+      "status": "institutional_search_excerpt_only"
+    },
+    {
+      "id": "STG-SRC-20261113-PALACIO-2023-CATEDRAL",
+      "title": "Efeméride histórica: 200 años del traslado de los restos de los héroes de la Independencia a la Catedral de México",
+      "authors": "Palacio Nacional, Gobierno de México (2023)",
+      "url": "https://www.gob.mx/palacionacional/articulos/efemeride-historica-200-anos-del-traslado-de-los-restos-de-los-heroes-de-la-independencia-a-la-catedral-de-mexico?idiom=es",
+      "access_scope": "Institutional indexed article excerpt only; 1823 Cathedral, 1895 San José chapel at worker societies' request, 1925 Reforma transfer; full page returned HTTP 403",
+      "status": "institutional_search_excerpt_only"
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "20261113T2304Z-INS-01",
+      "source_id": "STG-SRC-20261113-ELUNIVERSAL-1925-REPUB",
+      "locator": "El Universal reprint lines 16–33,37–58,63–100: original newspaper attributed 17 September 1925, with clear distinction between 2019 reporter narration and newspaper quotations",
+      "access": "Complete 2019 HTML republication read, web lines 16–100; attributed 17 September 1925 passages and later editorial text; 1925 paper originals, untruncated pages and photo rights NOT independently checked",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261113T2304Z-INS-02",
+      "source_id": "STG-SRC-20261113-CULTURA-2010-REMAINS-IDENTIFICATION",
+      "locator": "Secretaría de Cultura 2010 comunicado 1258, full HTML lines 66–89; identification discrepancy at 81–88; 2010 procession route at 72–80",
+      "access": "Full institutional government HTML read, lines 66–89; reports 2010 INAH restorer's statements and 1925 historical omission; underlying anthropological dossier not examined",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261113T2304Z-INS-03",
+      "source_id": "STG-SRC-20261113-CULTURA-2020-LEONA-VICARIO",
+      "locator": "Secretaría de Cultura 23 January 2020 indexed institutional excerpt: Leona Vicario 1900 move to Rotonda, 1925 removal, northern niche with named figures (full HTML inaccessible)",
+      "access": "Long institutional search-index excerpt verified; full page open returned 403; records 1900 Rotonda transfer, 1925 removal and north niche; original cemetery/transfer registers not examined",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261113T2304Z-INS-04",
+      "source_id": "STG-SRC-20261113-PALACIO-2023-CATEDRAL",
+      "locator": "Palacio Nacional 2023 200-year 1823 commemorative indexed paragraph: Cathedral arrival, 1895 relocation to San José at request of worker societies (full HTML inaccessible)",
+      "access": "Institutional indexed article excerpt only; 1823 Cathedral, 1895 San José chapel at worker societies' request, 1925 Reforma transfer; full page returned HTTP 403",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    }
+  ],
+  "findings": [
+    {
+      "id": "STG-20261113T2304Z-RM-01",
+      "assertion": "A 2023 Palacio Nacional historical retrospective places insurgent remains in the Metropolitan Cathedral from 1823, and says patriotic workers' societies requested their transfer to the San José chapel in 1895; the 17 September 1925 El Universal account also places the urns in that chapel. This is a history of successive locations, not a claim that every named insurgent passed through Cathedral.",
+      "date_or_range": "1823–1895",
+      "period": "Early republic and civic ritual",
+      "themes": [
+        "Funerary custody",
+        "Worker patriotic associations"
+      ],
+      "geographies": [
+        "Catedral Metropolitana",
+        "Capilla de San José"
+      ],
+      "poi_ids": [
+        "catedral-metropolitana"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-ELUNIVERSAL-1925-REPUB",
+        "STG-SRC-20261113-PALACIO-2023-CATEDRAL"
+      ],
+      "source_locator": "Palacio Nacional 2023 indexed paragraph on 1823/1895; El Universal 17 Sep 1925 reprint lines 37–39",
+      "limitations": "Gov original 2023 article returned 403; 1823/1895 transfer minutes and Cathedral inventory absent.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2304Z-RM-02",
+      "assertion": "El Universal's 2019 framing says the Column's interior was modified in 1923 to make niches for urns later brought in 1925. The building's use as a funerary mausoleum therefore postdates the 1910 dedication and should not be described as part of the architect's original inauguration.",
+      "date_or_range": "1910–1925",
+      "period": "Revolutionary and postrevolutionary city",
+      "themes": [
+        "Changing monument functions",
+        "Funerary architecture"
+      ],
+      "geographies": [
+        "Columna de la Independencia"
+      ],
+      "poi_ids": [
+        "angel-de-la-independencia"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-ELUNIVERSAL-1925-REPUB"
+      ],
+      "source_locator": "El Universal 2019 reporter introduction lines 21–27; 2017 INBAL technical bulletin separate earlier batch",
+      "limitations": "1923 adaptation date is reporter narrative, not 1923 building-plan primary evidence; label a lead not a verified construction date.",
+      "learning_mode": "guided_walk_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2304Z-RM-03",
+      "assertion": "The 17 September 1925 newspaper's retrospective of the previous day's ceremony describes a procession from the Metropolitan Cathedral to the Column of Independence that took about one hour and ended with a 21-gun salute. The reported duration is a period witness's ceremonial journey, not a modern walk time.",
+      "date_or_range": "1925-09-16",
+      "period": "Postrevolutionary political commemoration",
+      "themes": [
+        "Urban ceremonial route",
+        "Military honors"
+      ],
+      "geographies": [
+        "Catedral Metropolitana",
+        "Paseo de la Reforma",
+        "Columna de la Independencia"
+      ],
+      "poi_ids": [
+        "catedral-metropolitana",
+        "angel-de-la-independencia"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-ELUNIVERSAL-1925-REPUB"
+      ],
+      "source_locator": "El Universal 17 Sep 1925 reproduced passages lines 50–58",
+      "limitations": "Original 1925 page facsimile has not been collated in full; street-by-street 1925 route not verified and must not be inferred.",
+      "learning_mode": "guided_walk_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2304Z-RM-04",
+      "assertion": "The 1925 newspaper describes spectators on Reforma balconies—especially women—throwing flowers over the passing urns, and soldiers honoring the cortege along the avenue. The report supports a history of civilian participation that is distinct from the state’s formal military arrangements.",
+      "date_or_range": "1925-09-16",
+      "period": "Postrevolutionary public ceremony",
+      "themes": [
+        "Gender and street spectatorship",
+        "State ritual"
+      ],
+      "geographies": [
+        "Paseo de la Reforma"
+      ],
+      "poi_ids": [
+        "angel-de-la-independencia"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-ELUNIVERSAL-1925-REPUB"
+      ],
+      "source_locator": "El Universal 1925 reprint lines 50–55",
+      "limitations": "A single contemporary journalist's language does not establish a demographic count or public unanimity.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2304Z-RM-05",
+      "assertion": "The 17 September 1925 newspaper explicitly questioned whether a cranium attributed to José María Morelos might instead be that of Francisco Xavier Mina or Pedro Moreno. This is evidence of contemporary uncertainty about relic identification, not evidence identifying any person's remains.",
+      "date_or_range": "1925-09-17",
+      "period": "Postrevolutionary memory",
+      "themes": [
+        "Relic identification",
+        "Historical uncertainty"
+      ],
+      "geographies": [
+        "Columna de la Independencia"
+      ],
+      "poi_ids": [
+        "angel-de-la-independencia"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-ELUNIVERSAL-1925-REPUB"
+      ],
+      "source_locator": "El Universal 1925 reproduced 'Cómo quedaron los restos' lines 43–48",
+      "limitations": "Do not resolve biological identity from a journalist's uncertainty; full chain of custody, forensic and INAH archives required.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2304Z-RM-06",
+      "assertion": "A contemporary 1925 report describes President Plutarco Elías Calles lifting the lid of an urn attributed to Miguel Hidalgo and placing inside a card bearing his signature, date and time. This is a specific presidential gesture reported at the time, not independently verified inventory evidence.",
+      "date_or_range": "1925-09-16",
+      "period": "Calles presidency",
+      "themes": [
+        "Presidential symbolic authority",
+        "Reburial ritual"
+      ],
+      "geographies": [
+        "Columna de la Independencia"
+      ],
+      "poi_ids": [
+        "angel-de-la-independencia"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-ELUNIVERSAL-1925-REPUB"
+      ],
+      "source_locator": "El Universal 1925 reproduced 'Postrer ofrenda' lines 81–85",
+      "limitations": "Locate the contemporary issue scan or photographed card/inventory before treating as materially corroborated.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2304Z-RM-07",
+      "assertion": "The newspaper records bronze niche closures, presidential and diplomatic wreaths, roughly fifty floral wreaths, and temporary public access to view the crypt immediately after the 1925 ceremony. Those historical access arrangements must not be offered as a claim about 2026 visitor access.",
+      "date_or_range": "1925-09-16",
+      "period": "Postrevolutionary ceremonial space",
+      "themes": [
+        "Material commemoration",
+        "Public viewing"
+      ],
+      "geographies": [
+        "Columna de la Independencia"
+      ],
+      "poi_ids": [
+        "angel-de-la-independencia"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-ELUNIVERSAL-1925-REPUB"
+      ],
+      "source_locator": "El Universal 1925 reproduced 'Postrer ofrenda' lines 83–92",
+      "limitations": "Single paper's report; current crypt access and surviving original wreaths/bronze plaques unverified.",
+      "learning_mode": "guided_walk_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2304Z-RM-08",
+      "assertion": "The 2020 Secretaría de Cultura retrospective distinguishes Leona Vicario's reburial history from the story of remains held in Cathedral: it reports her transfer with Andrés Quintana Roo from Santa Paula to the Rotonda de las Personas Ilustres in 1900, followed by her removal to the Column in 1925. Thus an undifferentiated 'all came from Cathedral' account would be inaccurate.",
+      "date_or_range": "1842–1925",
+      "period": "Nineteenth-century cemeteries to postrevolutionary memory",
+      "themes": [
+        "Women in national memory",
+        "Cemetery relocation"
+      ],
+      "geographies": [
+        "Panteón de Santa Paula",
+        "Rotonda de las Personas Ilustres",
+        "Columna de la Independencia"
+      ],
+      "poi_ids": [
+        "angel-de-la-independencia"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-CULTURA-2020-LEONA-VICARIO"
+      ],
+      "source_locator": "Secretaría de Cultura 23 Jan 2020 indexed article, paragraphs on 28 May 1900 and 1925; full text 403",
+      "limitations": "Specific Rotonda and niche details are excerpt-only; cemetery inventories and 1925 transfer list not inspected.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2304Z-RM-09",
+      "assertion": "An official 16 August 2010 Secretaría de Cultura release reports INAH physical-anthropology reviewers identifying a historical omission: 1925 door inscriptions named twelve insurgents, whereas officials then assessed remains of fourteen, with Pedro Moreno and Víctor Rosales absent from the inscriptions. This reports the institution's 2010 conclusion, not final independent forensic proof of identification.",
+      "date_or_range": "1925–2010",
+      "period": "Heritage science and changing commemoration",
+      "themes": [
+        "Name inventories",
+        "Conservation and uncertainty"
+      ],
+      "geographies": [
+        "Columna de la Independencia"
+      ],
+      "poi_ids": [
+        "angel-de-la-independencia"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-CULTURA-2010-REMAINS-IDENTIFICATION"
+      ],
+      "source_locator": "Secretaría de Cultura 2010 comunicado 1258, lines 81–85",
+      "limitations": "Original osteological report, inscription images before/after, and chain-of-custody records not inspected.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2304Z-RM-10",
+      "assertion": "The 2010 government account describes conservation work on the insurgents' remains in two stages, remineralization and consolidation, and a plan for controlled humidity and temperature. It also says a July 2011 return and inscription correction were intended—neither actual completion nor present conditions are established by this prospective release.",
+      "date_or_range": "2010–2011",
+      "period": "Modern cultural heritage",
+      "themes": [
+        "Osteological conservation",
+        "Preventive museum climate"
+      ],
+      "geographies": [
+        "Columna de la Independencia",
+        "Castillo de Chapultepec"
+      ],
+      "poi_ids": [
+        "angel-de-la-independencia"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-CULTURA-2010-REMAINS-IDENTIFICATION"
+      ],
+      "source_locator": "Secretaría de Cultura 2010 comunicado 1258, lines 83–89",
+      "limitations": "2010 press summary not technical conservation report; proposed 2011 completion must be verified against completion records.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2304Z-RM-11",
+      "assertion": "The August 2010 transfer procession with fourteen urns traveled from Chapultepec along Reforma, Avenida Juárez, Eje Central and Cinco de Mayo to the Zócalo and Palacio Nacional, according to the contemporary government release. This is a different 2010 route and ceremonial context from the 1925 Cathedral-to-Column procession and must not be conflated in a historical walk.",
+      "date_or_range": "2010-08-16",
+      "period": "Bicentennial urban memory",
+      "themes": [
+        "Ceremonial reuse of streets",
+        "Source chronology discipline"
+      ],
+      "geographies": [
+        "Chapultepec",
+        "Paseo de la Reforma",
+        "Avenida Juárez",
+        "Zócalo",
+        "Palacio Nacional"
+      ],
+      "poi_ids": [
+        "angel-de-la-independencia",
+        "catedral-metropolitana"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-CULTURA-2010-REMAINS-IDENTIFICATION"
+      ],
+      "source_locator": "Secretaría de Cultura 2010 comunicado 1258, lines 66–80",
+      "limitations": "The 2010 published route is a government account and not route geometry for a 1925 procession.",
+      "learning_mode": "guided_walk_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    }
+  ],
+  "editorial_status": "noncanonical_findings_not_corroborated",
+  "publication_approved": false,
+  "source_rights_note": "Visible 1925 El Universal issue scan/photographs and government 2023 Fototeca Nacional image were NOT licensed or uploaded; any app photography requires independent rights clearance.",
+  "known_blockers": [
+    "1925 original newspaper facsimile and full text not collated",
+    "2020 and 2023 government original pages returned 403; excerpts only",
+    "1923 original adaptation plan and 1925 executive transfer decree not inspected",
+    "2010 original INAH forensic and 2011 return reports not inspected",
+    "Live monument crypt access and fabric unverified"
+  ]
+}

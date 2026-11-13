@@ -1,0 +1,138 @@
+{
+  "schema_version": 3,
+  "kind": "period_x_theme_x_geography_explanatory_readiness_delta",
+  "generated_at": "2026-11-13T23:05:54.363Z",
+  "branch": "research-persistence",
+  "source_batch_path": "research/batches/20261113T2304Z-1925-independence-mausoleum-and-2010-identification.json",
+  "evidence_status": "noncanonical_candidates_not_editorially_approved",
+  "rating_definitions": {
+    "substantial": "Evidence-rich explanation and primary independent corroboration with verified physical site reading",
+    "developing": "Concrete explanatory material with unresolved primary, interpretive or physical-context gap",
+    "sparse": "Single mediated excerpt, uncertain interpretation or underdetermined physical site link",
+    "missing": "Site knowledge or archival evidence not sufficient to support field interpretation"
+  },
+  "cells": [
+    {
+      "id": "1823-1895-CATHEDRAL",
+      "period": "1823–1895",
+      "theme": "Custody of insurgent remains and workers' interventions",
+      "geography": "Catedral Metropolitana, Capilla San José",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113T2304Z-RM-01"
+      ],
+      "explanatory_readiness": "Two different mediated texts give a linked placement narrative; archival acts missing",
+      "next_evidence_needed": "1823 transfer record, 1895 chapel acts and cathedral plans"
+    },
+    {
+      "id": "1923-1925-MAUSOLEUM",
+      "period": "1923–1925",
+      "theme": "Modifying the monument to receive remains",
+      "geography": "Columna de la Independencia",
+      "rating": "sparse",
+      "linked_assertion_ids": [
+        "STG-20261113T2304Z-RM-02"
+      ],
+      "explanatory_readiness": "1923 building work comes from modern journalistic framing",
+      "next_evidence_needed": "Original 1923 building plan and 1925 execution decree"
+    },
+    {
+      "id": "1925-PUBLIC-ROUTE",
+      "period": "16 Sep 1925",
+      "theme": "Ceremonial transfer and civilian spectators",
+      "geography": "Catedral→Paseo de la Reforma→Columna",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113T2304Z-RM-03",
+        "STG-20261113T2304Z-RM-04"
+      ],
+      "explanatory_readiness": "Historical report provides observation and ceremonial geography; street route segment uncertain",
+      "next_evidence_needed": "Full 17 Sep 1925 newspaper facsimile and city street maps"
+    },
+    {
+      "id": "1925-STATE-RITUAL",
+      "period": "16 Sep 1925",
+      "theme": "Calles's symbolic interventions and public crypt access",
+      "geography": "Columna de la Independencia",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113T2304Z-RM-06",
+        "STG-20261113T2304Z-RM-07"
+      ],
+      "explanatory_readiness": "Contemporary report describes concrete acts and visitors; still one uncorroborated source",
+      "next_evidence_needed": "Original program, signed-card inventory and photograph locators"
+    },
+    {
+      "id": "1925-RELIC-IDENTITY",
+      "period": "1925",
+      "theme": "Ambiguity in the labeled remains",
+      "geography": "Columna de la Independencia",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113T2304Z-RM-05",
+        "STG-20261113T2304Z-RM-09"
+      ],
+      "explanatory_readiness": "Contemporary doubt and later government discrepancy frame a careful historical account, not a settled biological identification",
+      "next_evidence_needed": "INAH 2010 osteology dossier and burial chain of custody"
+    },
+    {
+      "id": "1842-1925-LEONA",
+      "period": "1842–1925",
+      "theme": "Leona Vicario's distinct burial route",
+      "geography": "Santa Paula→Rotonda→Columna",
+      "rating": "sparse",
+      "linked_assertion_ids": [
+        "STG-20261113T2304Z-RM-08"
+      ],
+      "explanatory_readiness": "2020 government search excerpt specifies movements; original documents absent",
+      "next_evidence_needed": "Cemetery removal registers and transfer decrees"
+    },
+    {
+      "id": "2010-CONSERVATION",
+      "period": "2010–2011",
+      "theme": "Heritage science, new containers and inscription revisions",
+      "geography": "Columna de la Independencia / Chapultepec",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113T2304Z-RM-09",
+        "STG-20261113T2304Z-RM-10"
+      ],
+      "explanatory_readiness": "Dated government conservation statements; completion after 2010 not established",
+      "next_evidence_needed": "INAH conservation report and 2011 return photos"
+    },
+    {
+      "id": "1925-2010-ROUTE-DIFFERENCES",
+      "period": "1925 versus 2010",
+      "theme": "Changing state procession geography",
+      "geography": "Reforma, Zócalo and Chapultepec",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113T2304Z-RM-03",
+        "STG-20261113T2304Z-RM-11"
+      ],
+      "explanatory_readiness": "Specific contemporary 2010 itinerary and partial 1925 path allow informed comparison",
+      "next_evidence_needed": "Historical route map for 1925 and image rights"
+    },
+    {
+      "id": "PRESENT-DAY-CRYPT-WALK",
+      "period": "2026",
+      "theme": "Legible original versus modified elements and visitor access",
+      "geography": "Columna de la Independencia",
+      "rating": "missing",
+      "linked_assertion_ids": [
+        "STG-20261113T2304Z-RM-02",
+        "STG-20261113T2304Z-RM-07",
+        "STG-20261113T2304Z-RM-10"
+      ],
+      "explanatory_readiness": "No defensible current access rules or object-level architectural chronology",
+      "next_evidence_needed": "Monument authority visitor access, original/current architectural overlays"
+    }
+  ],
+  "summary": {
+    "substantial": 0,
+    "developing": 6,
+    "sparse": 2,
+    "missing": 1
+  },
+  "publication_approved": false
+}
