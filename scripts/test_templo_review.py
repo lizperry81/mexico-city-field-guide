@@ -16,6 +16,8 @@ class Page(HTMLParser):
         super().__init__()
         self.ids = set()
         self.urls = []
+        self.images = []
+        self.photo_zoom_links = []
         self.feed(path.read_text(encoding="utf-8"))
 
     def handle_starttag(self, tag, attributes):
@@ -23,6 +25,12 @@ class Page(HTMLParser):
         if identifier := attributes.get("id"):
             assert identifier not in self.ids, f"Duplicate id: {identifier}"
             self.ids.add(identifier)
+        if tag == "img":
+            self.images.append(attributes.get("src"))
+        if tag == "a" and attributes.get("class") == "photo-zoom":
+            assert attributes.get("target") == "_blank"
+            assert "noopener" in attributes.get("rel", "").split()
+            self.photo_zoom_links.append(attributes["href"])
         for key in ("href", "src"):
             if url := attributes.get(key):
                 self.urls.append(url)
@@ -62,7 +70,16 @@ for folder, feedback_path in (
         if parts.fragment:
             target_ids = page.ids if target == path else Page(target).ids
             assert parts.fragment in target_ids, (target, url)
-    assert sum(url.endswith(".webp") for url in page.urls) == 7
+    # Keep Discover history and Explore's on-site photo references separate.
+    assert '<a href="#history">Discover <small>History · Read before visiting</small></a>' in text
+    assert '<a href="#explore">Explore <small>Guided walk · Follow on site</small></a>' in text
+    assert '<a href="#plan">Plan <small>Access and directions</small></a>' in text
+    assert len(page.images) == 7, "One overview plus six preserved field photos"
+    assert len(page.photo_zoom_links) == 6, "Every field photo must be enlargeable"
+    assert sorted(page.photo_zoom_links) == sorted(
+        image for image in page.images
+        if not image.endswith("ruins-and-cathedral.webp")
+    ), "Never link field stops to unrelated, invented, or nonlocal imagery"
 
 archive = (POI / "archive/index.html").read_text(encoding="utf-8")
 research = ROOT / "data/research"
