@@ -649,7 +649,7 @@ def validate():
                 "page_or_section_checked": None,
                 "publication_authorization": False,
                 "review_state": (
-                    "stale_reader_blob_requires_reaudit"
+                    "awaiting_human_stale_reader_blob_reaudit"
                     if is_reader_prose and not matches_reader
                     else "awaiting_human_source_and_passage_check"),
             })
