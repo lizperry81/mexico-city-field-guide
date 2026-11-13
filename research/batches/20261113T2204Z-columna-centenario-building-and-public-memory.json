@@ -1,0 +1,338 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261113T2204Z-columna-centenario-building-and-public-memory",
+  "generated_at": "2026-11-13T22:05:06.659Z",
+  "branch": "research-persistence",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "storage_role": "immutable_noncanonical_research_batch",
+  "previous_verified_replay": "research/reconciled/v4_95d08cf4af2c/replay_report.json",
+  "prior_verified_counts": {
+    "github_batches": 73,
+    "assertion_bearing_findings": 412,
+    "source_candidates": 138,
+    "source_inspections": 176,
+    "unregistered_refs": 1,
+    "metadata_conflicts": 2
+  },
+  "research_scope": "Porfirian city/1910 centenary public works and post-1957 monument fabric; original cited 1910 Rivas Mercado account via government transcription, institutional conservation observations, and conflicting official chronologies. Explicitly not publication approval.",
+  "sources": [
+    {
+      "id": "STG-SRC-20261113-MIRADOR-SCOP-COLUMNA",
+      "title": "La SCOP en el Centenario de la Independencia de México",
+      "authors": "Secretaría de Infraestructura, Comunicaciones y Transportes, El Mirador",
+      "url": "https://elmirador.sct.gob.mx/manos-a-la-obra/la-scop-en-el-centenario-de-la-independencia-de-mexico",
+      "access_scope": "Government historical essay and lengthy extracts attributed to Rivas Mercado's 16 September 1910 inaugural speech in García, Crónica Oficial (1911), pp.74–75; original printed crónica NOT inspected",
+      "status": "full_html_read"
+    },
+    {
+      "id": "STG-SRC-20261113-INBAL-2017-COLUMNA",
+      "title": "La Columna de la Independencia se encuentra estable",
+      "authors": "Instituto Nacional de Bellas Artes, Boletín 1276 (29 Sep 2017)",
+      "url": "https://inba.gob.mx/prensa/6948/la-columna-de-la-independencia-se-encuentra-estable",
+      "access_scope": "Full government technical-preservation HTML reviewed, sections Antecedentes and 2017 inspection",
+      "status": "full_html_read"
+    },
+    {
+      "id": "STG-SRC-20261113-INBAL-2020-COLUMNA",
+      "title": "Antonio Rivas Mercado, artífice del Ángel de la Independencia",
+      "authors": "Instituto Nacional de Bellas Artes, Boletín 2 (3 Jan 2020)",
+      "url": "https://inba.gob.mx/prensa/13591/antonio-rivas-mercado-artifice-del-angel-de-la-independencia",
+      "access_scope": "Web-indexed official excerpt; full webpage retrieval timed out. Contains anomalous 1952 year attributed to Plutarco Elías Calles; reject as authoritative dating",
+      "status": "search_excerpt_only"
+    },
+    {
+      "id": "STG-SRC-20261113-INBAL-2025-COLUMNA",
+      "title": "La Columna de la Independencia, uno de los monumentos artísticos más emblemáticos del país",
+      "authors": "Instituto Nacional de Bellas Artes, Boletín 1105 (15 Sep 2025)",
+      "url": "https://inba.gob.mx/prensa/22720/la-columna-de-la-independencia-uno-de-los-monumentos-art-iacutesticos-m-aacutes-emblem-aacuteticos-del-pa-iacutes",
+      "access_scope": "Web-indexed institutional excerpt; full webpage retrieval timed out; says 1925 conversion to mausoleum and reports 2024–25 conservation",
+      "status": "search_excerpt_only"
+    },
+    {
+      "id": "STG-SRC-20261113-INAH-CATALOG-COLUMNA",
+      "title": "Catálogo Nacional de Monumentos Históricos Inmuebles: Monumento a la Independencia, ficha 12713",
+      "authors": "Instituto Nacional de Antropología e Historia",
+      "url": "https://catalogonacionalmhi.inah.gob.mx/consulta_publica/detalle/12713",
+      "access_scope": "Official heritage-register indexed excerpt only; live open failed 502. Gives stoppage 12 Nov 1906 and new cornerstone 2 Apr 1909; verify archival project records",
+      "status": "search_excerpt_only"
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "20261113T2204Z-INS-01",
+      "source_id": "STG-SRC-20261113-MIRADOR-SCOP-COLUMNA",
+      "locator": "Full El Mirador HTML lines 5–20,25–57,63–74; quoted 1910 Rivas Mercado report identified as García 1911, pp.74–75; 1906 failure cited García 1911 p.167",
+      "access": "Retrospective government article with cited primary text excerpt, no examination of 1911 book",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261113T2204Z-INS-02",
+      "source_id": "STG-SRC-20261113-INBAL-2017-COLUMNA",
+      "locator": "INBAL 2017 bulletin 1276, lines 25–38; 2017 inspection and 1957 retrofit in ANTECEDENTES",
+      "access": "Institutional conservation bulletin directly read in HTML",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261113T2204Z-INS-03",
+      "source_id": "STG-SRC-20261113-INBAL-2020-COLUMNA",
+      "locator": "INBAL 3 Jan 2020 indexed excerpt: paragraph beginning 'La construcción del monumento se inició'; contradictory mausoleum passage 'en 1952, por instrucciones ... Plutarco Elías Calles'",
+      "access": "Search-index excerpt only, webpage retrieval timed out; historical date conflict flagged",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261113T2204Z-INS-04",
+      "source_id": "STG-SRC-20261113-INBAL-2025-COLUMNA",
+      "locator": "INBAL bulletin 1105 (15 Sept 2025) search excerpt: 'En 1925 se convirtió en mausoleo'; 2024–25 conservation paragraph",
+      "access": "Official search-index excerpt only; full retrieval failed",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261113T2204Z-INS-05",
+      "source_id": "STG-SRC-20261113-INAH-CATALOG-COLUMNA",
+      "locator": "INAH register ficha 12713 indexed paragraph: 'suspendió la obra el 12 de noviembre de 1906' / '2 de abril de 1909'",
+      "access": "Official heritage-record search excerpt; source page returns 502",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    }
+  ],
+  "findings": [
+    {
+      "id": "STG-20261113T2204Z-COL-01",
+      "assertion": "The historical government account says construction of the commemorative column was entrusted to Antonio Rivas Mercado in 1900, under a project originally directed by the Secretaría de Comunicaciones y Obras Públicas (SCOP). A 1903 legal transfer placed monuments under Gobernación, so commissioning agency and subsequent oversight must not be conflated.",
+      "date_or_range": "1900–1903",
+      "period": "Porfiriato and national commemoration",
+      "themes": [
+        "Federal patronage",
+        "State urban planning"
+      ],
+      "geographies": [
+        "Paseo de la Reforma"
+      ],
+      "poi_ids": [
+        "angel-de-la-independencia"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-MIRADOR-SCOP-COLUMNA"
+      ],
+      "source_locator": "El Mirador SCOP lines 13–20",
+      "limitations": "Historical government essay; original agency correspondence and 1903 law not checked.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2204Z-COL-02",
+      "assertion": "Rivas Mercado's 1910 inaugural report, as excerpted in the SICT retrospective, specifies two official design constraints: a commemorative column and its siting in the fourth roundabout of Paseo de la Reforma. The siting was a political/urban design decision, not simply an artist's choice.",
+      "date_or_range": "1900–1910",
+      "period": "Porfiriato monumental capital",
+      "themes": [
+        "Political geography of monuments",
+        "Urban landscape"
+      ],
+      "geographies": [
+        "Cuarta glorieta, Paseo de la Reforma"
+      ],
+      "poi_ids": [
+        "angel-de-la-independencia"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-MIRADOR-SCOP-COLUMNA"
+      ],
+      "source_locator": "El Mirador SCOP lines 37–41; identifies García 1911 Crónica Oficial p.74",
+      "limitations": "Original 1911 printed report and changing numbering of Reforma roundabouts have not been checked against historical maps.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2204Z-COL-03",
+      "assertion": "The first construction attempt suffered differential subsidence in 1906; an INAH register excerpt dates suspension to 12 November 1906 and a renewed cornerstone to 2 April 1909. INBAL's retrospective dates the initial work to January 1902; the SICT text instead says '1892' in its first-stone paragraph. Treat 1892 as an unresolved apparent typographic/transcription discrepancy, not an established cornerstone date.",
+      "date_or_range": "1902–1909",
+      "period": "Porfiriato urban engineering",
+      "themes": [
+        "Foundation failure and rebuild",
+        "Conflicting official dates"
+      ],
+      "geographies": [
+        "Monumento a la Independencia"
+      ],
+      "poi_ids": [
+        "angel-de-la-independencia"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-MIRADOR-SCOP-COLUMNA",
+        "STG-SRC-20261113-INBAL-2020-COLUMNA",
+        "STG-SRC-20261113-INAH-CATALOG-COLUMNA"
+      ],
+      "source_locator": "El Mirador lines 15–19,25–31; INBAL 2020 construction excerpt; INAH ficha 12713 indexed 1906/1909 passage",
+      "limitations": "Original construction ledgers, photographs and official cornerstone invitations not inspected; do not publish exact 1909 refoundation date unqualified.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2204Z-COL-04",
+      "assertion": "Rivas Mercado's reported 1910 material specification identifies grey-blue chiluca from Santo Tomás Tlalmanalco for contrasts of light/shadow. Marble figures were begun in Carrara and finished in Mexico; bronzes were cast in Florence; ornament models were executed in Paris. This is evidence of transatlantic production, not a claim that all visible surviving material is unaltered.",
+      "date_or_range": "1900–1910",
+      "period": "Porfiriato monumental capital",
+      "themes": [
+        "Masonry provenance",
+        "Transatlantic labor and supply"
+      ],
+      "geographies": [
+        "Columna de la Independencia"
+      ],
+      "poi_ids": [
+        "angel-de-la-independencia"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-MIRADOR-SCOP-COLUMNA"
+      ],
+      "source_locator": "El Mirador lines 49–52 and notes 9, citing 1910 Rivas Mercado inaugural report in García 1911",
+      "limitations": "This is an excerpted architect account, not audited stone provenance or foundry archives; conservation replacements may differ.",
+      "learning_mode": "guided_walk_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2204Z-COL-05",
+      "assertion": "The monument's base has four seated allegories identified as Law, Justice, War and Peace; its lion led by a child was explained by Rivas Mercado as the people strong in war and peaceful in peace. The Victory above bears a laurel and broken chain. These meanings are documented as the designer's stated iconography, not timeless or politically neutral symbols.",
+      "date_or_range": "1910",
+      "period": "Centenary visual rhetoric",
+      "themes": [
+        "State iconography",
+        "Designed allegory"
+      ],
+      "geographies": [
+        "Paseo de la Reforma, Columna de la Independencia"
+      ],
+      "poi_ids": [
+        "angel-de-la-independencia"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-MIRADOR-SCOP-COLUMNA"
+      ],
+      "source_locator": "El Mirador lines 45–52, attributed to Rivas Mercado 1910 speech, García 1911 pp.74–75",
+      "limitations": "Check original speech, original 1910 photos and whether all visible sculptures are original vs post-1957 or later restorations.",
+      "learning_mode": "guided_walk_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2204Z-COL-06",
+      "assertion": "After the government inauguration on 16 September 1910, a mechanics-and-railway-workers committee organized a popular procession to the column on 17 September. This complicates a ceremony-only narrative and supplies an example of workers actively appropriating a state monument.",
+      "date_or_range": "1910-09-16–1910-09-17",
+      "period": "Porfirian centenary and labor public space",
+      "themes": [
+        "Worker association",
+        "Public commemoration"
+      ],
+      "geographies": [
+        "Paseo de la Reforma"
+      ],
+      "poi_ids": [
+        "angel-de-la-independencia"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-MIRADOR-SCOP-COLUMNA"
+      ],
+      "source_locator": "El Mirador lines 55–57, footnote 10 citing Virginia Guedea, Asedio a los Centenarios (2009), p.60",
+      "limitations": "Original demonstration press coverage, union records and Guedea printed p.60 not directly inspected.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2204Z-COL-07",
+      "assertion": "The column became a mausoleum for independence figures in 1925 according to INBAL's September 2025 release. An INBAL 2020 release contains an internally impossible '1952, under Plutarco Elías Calles' description; that later date must not be recycled as fact. Separate original 1910 monument purpose from 1920s funerary reuse and from later inventory of remains.",
+      "date_or_range": "1910–1925",
+      "period": "Postrevolutionary public memory",
+      "themes": [
+        "Funerary transformation",
+        "Conflicting institutional chronology"
+      ],
+      "geographies": [
+        "Monumento a la Independencia"
+      ],
+      "poi_ids": [
+        "angel-de-la-independencia"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-INBAL-2025-COLUMNA",
+        "STG-SRC-20261113-INBAL-2020-COLUMNA"
+      ],
+      "source_locator": "INBAL bulletin 1105 2025 paragraph on 1925 conversion; INBAL bulletin 2 2020 indexed paragraph on 1952/Calles",
+      "limitations": "Search-excerpt evidence only; consult 1925 decree and transfer records before editorial corroboration.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2204Z-COL-08",
+      "assertion": "After the 1957 earthquake, engineer Samuel Ruiz installed an interior steel cylinder and central staircase; INBAL says the original quarry-stone courses previously had structural load-bearing functions. Present-day visitor-facing monument fabric therefore includes substantial 20th-century reinforcement and cannot be interpreted wholesale as 1910 construction.",
+      "date_or_range": "1957–2017",
+      "period": "Modern seismic conservation",
+      "themes": [
+        "Structural retrofit",
+        "Site authenticity"
+      ],
+      "geographies": [
+        "Columna de la Independencia"
+      ],
+      "poi_ids": [
+        "angel-de-la-independencia"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-INBAL-2017-COLUMNA"
+      ],
+      "source_locator": "INBAL 2017 bulletin 1276 'ANTECEDENTES', lines 34–38",
+      "limitations": "The structural drawings and original retrofit report have not been inspected; route access/visibility of intervention unverified.",
+      "learning_mode": "guided_walk_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2204Z-COL-09",
+      "assertion": "A September 2017 technical visit after earthquakes found no damage in the marble pavement, bronze/marble sculptures or Victory, but did document internal impacts around the sixth stone course, similar to a third-course issue seen in 2005–06. This does NOT establish present-day 2026 safety or access; it is a dated conservation observation.",
+      "date_or_range": "2017-09-26–2017-09-29",
+      "period": "Twenty-first-century conservation",
+      "themes": [
+        "Dated engineering inspection",
+        "Historical materials"
+      ],
+      "geographies": [
+        "Columna de la Independencia"
+      ],
+      "poi_ids": [
+        "angel-de-la-independencia"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-INBAL-2017-COLUMNA"
+      ],
+      "source_locator": "INBAL 2017 bulletin 1276 lines 27–38",
+      "limitations": "2017 observational scope only; 2019 and 2024–2025 intervention reports and today's site access not verified.",
+      "learning_mode": "guided_walk_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    }
+  ],
+  "editorial_status": "staged_only",
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "source_risks": [
+    "1902 construction versus apparent erroneous 1892 first-stone date in El Mirador retrospective",
+    "1925 mausoleum conversion versus impossible 1952/Calles statement in INBAL 2020",
+    "Secondary excerpt of García 1911 Rivas Mercado speech, original scanned pages unexamined",
+    "INAH heritage ficha and INBAL 2020/2025 source pages indexed only, not fully opened",
+    "No confirmed on-site access or determination which sculptural elements were replaced after 1957"
+  ]
+}

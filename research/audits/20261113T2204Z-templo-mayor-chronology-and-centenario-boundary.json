@@ -1,0 +1,72 @@
+{
+  "schema_version": 4,
+  "kind": "templo_mayor_chapter_evidence_maintenance_and_1910_chronology_boundary",
+  "generated_at": "2026-11-13T22:05:06.659Z",
+  "branch": "research-persistence",
+  "target_branch_read_only": "main",
+  "target_path": "poi/templo-mayor/reader.html",
+  "target_main_blob_sha": "f24cdc57b814575c2204fe4d960b9760abb69396",
+  "original_text_was_re_read": true,
+  "publication_approved": false,
+  "source_batch_path": "research/batches/20261113T2204Z-columna-centenario-building-and-public-memory.json",
+  "prior_claim_matrix": "research/audits/20261113T2004Z-templo-mayor-exact-reader-source-gates.json",
+  "claim_source_locator_matrix": [
+    {
+      "topic": "Triple Alliance and Azcapotzalco 1427/1428/1430",
+      "reader_anchor": "In the late 1420s, Tenochtitlan joined Texcoco and Tlacopan in the Triple Alliance.",
+      "source_locator": "research/audits/templo-mayor-discover-20261113T1427Z-triple-alliance-dating-contrast.json",
+      "status": "date_not_resolved",
+      "next": "Critical early annals and historian source comparison"
+    },
+    {
+      "topic": "Construction phases and Huitzilopochtli-Coatepec/Coyolxauhqui",
+      "reader_anchor": "At the foot of the south stair of that platform lay a stone disk carved with the dismembered Coyolxauhqui.",
+      "source_locator": "research/audits/20261113T2004Z-templo-mayor-exact-reader-source-gates.json",
+      "status": "stage_plan_and_literary_source_needed",
+      "next": "Archaeological stage section and Nahua variant/specific folio comparisons"
+    },
+    {
+      "topic": "Conquest and Tóxcatl massacre",
+      "reader_anchor": "Pedro de Alvarado’s men attacked people celebrating Tóxcatl in the sacred precinct.",
+      "source_locator": "research/audits/20261113T2004Z-templo-mayor-exact-reader-source-gates.json",
+      "status": "source_comparison_pending",
+      "next": "Book 12 Nahuatl textual source and Spanish chronicle passages"
+    },
+    {
+      "topic": "Gamio excavations 1913 vs 1914",
+      "reader_anchor": "In 1913, archaeologist Manuel Gamio uncovered the pyramid’s southwest corner.",
+      "source_locator": "research/audits/20261113T1803Z-templo-mayor-gamio-1913-1914-primary-gates.json",
+      "status": "correction_candidate_1914_not_published",
+      "next": "Original Gamio May 16 1914 report; separate demolition preparation in 1913"
+    },
+    {
+      "topic": "Coyolxauhqui discovery 1978",
+      "reader_anchor": "In February 1978, electrical workers digging near República de Argentina and República de Guatemala struck the carved Coyolxauhqui disk.",
+      "source_locator": "research/audits/20261113T1710Z-main-current-blob-claim-source-gates.json",
+      "status": "prior_1978_exact_date_gate_preserved",
+      "next": "Contemporaneous excavation report and urban map"
+    }
+  ],
+  "concrete_editorial_additions": [
+    {
+      "section": "Separate chapter: The Monument to Independence as public infrastructure",
+      "text": "Explain that the 1910 column underwent an unsuccessful foundation phase and later post-1957 steel reinforcement; make visitors distinguish 1910 sculpture iconography from structural fabric altered after 1957.",
+      "evidence_ids": [
+        "STG-20261113T2204Z-COL-03",
+        "STG-20261113T2204Z-COL-05",
+        "STG-20261113T2204Z-COL-08"
+      ],
+      "approval": "blocked_pending_original_and_site_comparison"
+    },
+    {
+      "section": "Templo Mayor vs modern memorial",
+      "text": "Present the Templo Mayor's 1978 rediscovery and the Independence Column's 1902–1910 construction as distinct urban-history episodes rather than a single archaeological sequence.",
+      "evidence_ids": [
+        "STG-20261113T2204Z-COL-03"
+      ],
+      "approval": "separate_chapter_not_publish"
+    }
+  ],
+  "boundary": "New 1900–2017 monument research belongs to Modern City / Reforma pre-read and optional on-site sequence; do not attach it to Mexica construction stages or Tenochtitlan conquest.",
+  "ready_for_editorial_review": false
+}

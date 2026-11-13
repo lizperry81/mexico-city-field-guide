@@ -1,0 +1,124 @@
+{
+  "schema_version": 3,
+  "kind": "period_x_theme_x_geography_explanatory_readiness_delta",
+  "generated_at": "2026-11-13T22:05:06.659Z",
+  "branch": "research-persistence",
+  "source_batch_path": "research/batches/20261113T2204Z-columna-centenario-building-and-public-memory.json",
+  "evidence_status": "noncanonical_candidates_not_editorially_approved",
+  "rating_definitions": {
+    "substantial": "Coherent historical mechanism with independently validated primary evidence and defensible site reading",
+    "developing": "Specific observed evidence and explanation, but at least one primary or physical-evidence gap",
+    "sparse": "Single mediated source, disputed date or untested site link",
+    "missing": "No defensible archival/physical grounding for proposed field observation"
+  },
+  "cells": [
+    {
+      "id": "1910-STATE-COMMISSION",
+      "period": "1900–1910",
+      "theme": "Government commissioning and monument siting",
+      "geography": "Paseo de la Reforma",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113T2204Z-COL-01",
+        "STG-20261113T2204Z-COL-02"
+      ],
+      "explanatory_readiness": "Commissioning and fourth-glorieta constraint form a coherent public-space story; original agency archive missing",
+      "next_evidence_needed": "SCOP/Gobernación contract and 1903 legislation"
+    },
+    {
+      "id": "1902-1909-FOUNDATION",
+      "period": "1902–1909",
+      "theme": "Lakebed subsidence and reconstruction",
+      "geography": "Columna de la Independencia",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113T2204Z-COL-03"
+      ],
+      "explanatory_readiness": "Engineering problem concretely documented; exact 1892/1902 source contradiction and original construction papers unresolved",
+      "next_evidence_needed": "Original invitation, project ledgers and dated engineering drawings"
+    },
+    {
+      "id": "1910-ICONOGRAPHY",
+      "period": "1910",
+      "theme": "Allegory, sculptural choices and materials",
+      "geography": "Columna de la Independencia",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113T2204Z-COL-04",
+        "STG-20261113T2204Z-COL-05"
+      ],
+      "explanatory_readiness": "Specific objects and designer explanations; no original speech collation or present-fabric mapping",
+      "next_evidence_needed": "García 1911 pp.74–75 facsimile, recent conservation inventory"
+    },
+    {
+      "id": "1910-LABOR-PROCESSION",
+      "period": "Sept 1910",
+      "theme": "Popular labor procession after official ceremony",
+      "geography": "Reforma",
+      "rating": "sparse",
+      "linked_assertion_ids": [
+        "STG-20261113T2204Z-COL-06"
+      ],
+      "explanatory_readiness": "Named workers' group and day but one retrospective synthesis",
+      "next_evidence_needed": "1910 period press and Guedea 2009 p.60"
+    },
+    {
+      "id": "1925-MAUSOLEUM",
+      "period": "1925",
+      "theme": "State memorial re-use and burial",
+      "geography": "Columna de la Independencia",
+      "rating": "sparse",
+      "linked_assertion_ids": [
+        "STG-20261113T2204Z-COL-07"
+      ],
+      "explanatory_readiness": "INBAL 2025 gives date but INBAL 2020 prints impossible Calles/1952 claim",
+      "next_evidence_needed": "1925 original decree and transfer list"
+    },
+    {
+      "id": "1957-STEEL-RETROFIT",
+      "period": "1957",
+      "theme": "Seismic structural reinforcement",
+      "geography": "Columna de la Independencia",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113T2204Z-COL-08"
+      ],
+      "explanatory_readiness": "INBAL technical source specifies cylinder and stair, but visibility and drawing not known",
+      "next_evidence_needed": "1957 drawings, conservation sections"
+    },
+    {
+      "id": "2017-CONSERVATION",
+      "period": "2017",
+      "theme": "Structural condition, historic layers and earthquake inspection",
+      "geography": "Columna de la Independencia",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113T2204Z-COL-09"
+      ],
+      "explanatory_readiness": "Dated observation differentiates stone and bronze, not current condition",
+      "next_evidence_needed": "2024–25 conservation technical files"
+    },
+    {
+      "id": "1910-CURRENT-FABRIC-MAP",
+      "period": "1902–2026",
+      "theme": "Attribution of original versus restored elements on walk",
+      "geography": "Columna de la Independencia",
+      "rating": "missing",
+      "linked_assertion_ids": [
+        "STG-20261113T2204Z-COL-04",
+        "STG-20261113T2204Z-COL-05",
+        "STG-20261113T2204Z-COL-08",
+        "STG-20261113T2204Z-COL-09"
+      ],
+      "explanatory_readiness": "No sculpture-by-sculpture or stone-by-stone layer attribution; cannot promise that today's visible detail is original",
+      "next_evidence_needed": "Condition survey, photographic dates, intervention drawings and visitor accessibility"
+    }
+  ],
+  "summary": {
+    "substantial": 0,
+    "developing": 5,
+    "sparse": 2,
+    "missing": 1
+  },
+  "publication_approved": false
+}

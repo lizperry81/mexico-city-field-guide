@@ -1,0 +1,52 @@
+{
+  "schema_version": 2,
+  "kind": "research_input_evidence_and_conflict_preflight",
+  "generated_at": "2026-11-13T22:05:06.659Z",
+  "baseline_branch_head_sha": "c5038b30c473113822f8aa11f8df19c22e2c45ae",
+  "canonical_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "baseline_verified_replay": "research/reconciled/v4_95d08cf4af2c/replay_report.json",
+  "before": {
+    "github_batches": 73,
+    "substantive_findings": 412,
+    "sources": 138,
+    "inspections": 176,
+    "unknown_source_references": 1,
+    "metadata_collisions": 2
+  },
+  "proposed_delta": {
+    "github_batches": 1,
+    "substantive_findings": 9,
+    "sources": 5,
+    "inspections": 5
+  },
+  "expected_after_if_validation_passes": {
+    "github_batches": 74,
+    "substantive_findings": 421,
+    "sources": 143,
+    "inspections": 181,
+    "unknown_source_references": 1,
+    "metadata_collisions_at_least": 2
+  },
+  "source_conflicts": [
+    {
+      "issue": "1892 vs 1902 starting date",
+      "first_source": "STG-SRC-20261113-MIRADOR-SCOP-COLUMNA",
+      "counter_source": "STG-SRC-20261113-INBAL-2020-COLUMNA",
+      "status": "unresolved_apparent_editorial_error_do_not_promote_1892"
+    },
+    {
+      "issue": "1925 mausoleum vs 1952 under Plutarco Elías Calles",
+      "first_source": "STG-SRC-20261113-INBAL-2025-COLUMNA",
+      "counter_source": "STG-SRC-20261113-INBAL-2020-COLUMNA",
+      "status": "1952_statement_internally_impossible_requires_original_transfer_records"
+    }
+  ],
+  "original_publications_unexamined": [
+    "García, Crónica Oficial de las Fiestas del Primer Centenario (1911), pp.74–75,167",
+    "Original 1902/1909 foundation reports and engineer plans",
+    "Original 1925 transfer decree and burial registers"
+  ],
+  "changes_are_noncanonical": true,
+  "approval_status": "staging_only",
+  "publication_approved": false
+}
