@@ -61,7 +61,8 @@ def verified_index_only_total(declared, replay_total, te28_reclassified, snapsho
     if (type(declared) is not int or type(replay_total) is not int
             or type(te28_reclassified) is not int or te28_reclassified < 0):
         return False
-    if snapshot_kind in ("research_to_app_handoff", "immutable_research_batch_handoff"):
+    if snapshot_kind in ("research_to_app_handoff", "immutable_research_batch_handoff",
+                         "research_to_app_handoff_immutable_snapshot"):
         return declared == replay_total
     return declared == replay_total + te28_reclassified
 
@@ -441,6 +442,40 @@ def validate_versioned_handoff(manifest, immutable_manifest, snapshot_sha):
             safe_path(source_inventory)
             return
 
+        # The latest producer freezes the entire rolling manifest under a
+        # different kind, then intends to pin its Git blob and history commit
+        # from the moving pointer. Reject missing pins: existence of a file on
+        # a mutable branch is insufficient provenance for editorial ingestion.
+        if immutable_manifest.get("kind") == "research_to_app_handoff_immutable_snapshot":
+            if immutable_manifest.get("schema_version") != 4:
+                raise ValueError("Frozen v4 research snapshot schema changed")
+            frozen = dict(immutable_manifest)
+            pointer = dict(manifest)
+            frozen.pop("kind", None)
+            pointer.pop("kind", None)
+            for provenance in ("immutable_handoff_blob_sha", "handoff_history_commit_sha"):
+                if frozen.pop(provenance, None) is not None:
+                    raise ValueError("Immutable v4 snapshot has a mutable self-reference")
+                pointer.pop(provenance, None)
+            if pointer != frozen:
+                raise ValueError("Immutable v4 research snapshot differs from rolling manifest")
+            if manifest.get("immutable_handoff_blob_sha") != snapshot_sha:
+                raise ValueError("Immutable v4 research snapshot lacks an exact Git blob SHA pin")
+            origin = manifest.get("handoff_history_commit_sha")
+            if not isinstance(origin, str) or not HEX40.fullmatch(origin):
+                raise ValueError("Immutable v4 research snapshot lacks a history commit SHA pin")
+            if (manifest.get("canonical_promoted") is not False
+                    or manifest.get("ready_for_publication") is not False
+                    or manifest.get("ready_for_editorial_review") is not False
+                    or manifest.get("evidence_status", {}).get("publication_approved") is not False
+                    or manifest.get("evidence_status", {}).get("ready_for_editorial_review") is not False
+                    or manifest.get("replay_evidence", {}).get("sqlite_integrity") != "ok"
+                    or manifest.get("replay_evidence", {}).get("foreign_key_violations") != 0
+                    or manifest.get("replay_evidence", {}).get("canonical_rows_unchanged") is not True
+                    or manifest.get("replay_evidence", {}).get("github_snapshot_readback") is not True):
+                raise ValueError("Immutable v4 research snapshot is not verified or unapproved")
+            return
+
         # Research previously emitted an independently committed, verified replay
         # record as the immutable anchor. It intentionally is NOT a copy of the
         # rolling manifest. Bind all essential immutable facts, rather than
@@ -580,7 +615,8 @@ def validate():
     validate_versioned_handoff(manifest, immutable_manifest, snapshot_blob_sha)
     if (manifest["schema_version"] == 4
             and immutable_manifest.get("kind") in ("research_to_app_handoff",
-                                                   "immutable_research_batch_handoff")
+                                                   "immutable_research_batch_handoff",
+                                                   "research_to_app_handoff_immutable_snapshot")
             and immutable_manifest != manifest):
         # Verify the claimed history commit actually contains this immutable
         # Git blob, and is an ancestor of the manifest-publishing commit.
