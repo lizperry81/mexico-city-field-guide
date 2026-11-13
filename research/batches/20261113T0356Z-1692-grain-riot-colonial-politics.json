@@ -1,0 +1,260 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261113T0356Z-1692-grain-riot-colonial-politics",
+  "canonical_v97_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "status": "research_candidates_only_not_canonical",
+  "sources": [
+    {
+      "id": "cdmx-src-exbalin-2016-1692-riot",
+      "author": "Arnaud Exbalin",
+      "title": "Riot in Mexico City: a challenge to the colonial order?",
+      "year": 2016,
+      "doi": "10.1017/S0963926815000279",
+      "access": "full_html_directly_examined",
+      "url": "https://www.cambridge.org/core/journals/urban-history/article/riot-in-mexico-city-a-challenge-to-the-colonial-order/B4B6FA5F0DA8B9E3B5109C9060311456"
+    },
+    {
+      "id": "cdmx-src-gonzalbo-2008-nacimiento-miedo",
+      "author": "Pilar Gonzalbo Aizpuru",
+      "title": "El nacimiento del miedo, 1692. Indios y españoles en la Ciudad de México",
+      "year": 2008,
+      "doi": "10.3989/revindias.2008.001",
+      "access": "abstract_only",
+      "url": "https://revistadeindias.revistas.csic.es/index.php/revistadeindias/article/view/655/0"
+    },
+    {
+      "id": "cdmx-src-silva-prada-2001-migration",
+      "author": "Natalia Silva Prada",
+      "title": "Impacto de la migración urbana en el proceso de separación de repúblicas. El caso de dos parroquias indígenas de la parcialidad de San Juan Tenochtitlán, 1688-1692",
+      "year": 2001,
+      "doi": "10.22201/iih.24486922e.2001.024.3532",
+      "access": "abstract_only",
+      "url": "https://novohispana.historicas.unam.mx/index.php/ehn/article/view/3532"
+    },
+    {
+      "id": "cdmx-src-rivera-ayala-2009-siguenza",
+      "author": "Sergio Rivera Ayala",
+      "title": "En defensa de la nación criolla: Carlos de Sigüenza y Góngora y el Alboroto y motín de los indios de México",
+      "year": 2009,
+      "doi": "10.19130/iifl.litmex.20.2.2009.618",
+      "access": "abstract_only",
+      "url": "https://www.revistas-filologicas.unam.mx/literatura-mexicana/index.php/lm/article/view/618"
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "inspect-cdmx-src-exbalin-2016-1692-riot",
+      "source_id": "cdmx-src-exbalin-2016-1692-riot",
+      "access_status": "full_html_directly_examined",
+      "primary_original_inspected": false
+    },
+    {
+      "id": "inspect-cdmx-src-gonzalbo-2008-nacimiento-miedo",
+      "source_id": "cdmx-src-gonzalbo-2008-nacimiento-miedo",
+      "access_status": "abstract_only",
+      "primary_original_inspected": false
+    },
+    {
+      "id": "inspect-cdmx-src-silva-prada-2001-migration",
+      "source_id": "cdmx-src-silva-prada-2001-migration",
+      "access_status": "abstract_only",
+      "primary_original_inspected": false
+    },
+    {
+      "id": "inspect-cdmx-src-rivera-ayala-2009-siguenza",
+      "source_id": "cdmx-src-rivera-ayala-2009-siguenza",
+      "access_status": "abstract_only",
+      "primary_original_inspected": false
+    }
+  ],
+  "findings": [
+    {
+      "id": "cdmx-stg-20261113-colonial1692-01",
+      "assertion": "On 8 June 1692 a disturbance centered on the Mexico City Plaza Mayor occurred during a shortage of maize; an episode at the municipal alhóndiga triggered the confrontation.",
+      "source_ids": [
+        "cdmx-src-exbalin-2016-1692-riot",
+        "cdmx-src-gonzalbo-2008-nacimiento-miedo"
+      ],
+      "locator": "The riot as the expression of an urban government in crisis, Figure 1 and text following it; Gonzalbo abstract",
+      "poi_ids": [
+        "zocalo",
+        "national_palace"
+      ],
+      "confidence": "strong_secondary_consensus",
+      "period": "Colonial Mexico 1600–1810",
+      "geography": "Centro Histórico / Plaza Mayor",
+      "editorial_status": "unreviewed_research_candidate",
+      "primary_documents_directly_examined": false
+    },
+    {
+      "id": "cdmx-stg-20261113-colonial1692-02",
+      "assertion": "Accounts disagree in detail about the initial confrontation at the grain exchange: Gonzalbo describes women being struck when protesting the maize shortage; Exbalin describes a pregnant woman collapsing and dying before demonstrators moved toward the town hall.",
+      "source_ids": [
+        "cdmx-src-exbalin-2016-1692-riot",
+        "cdmx-src-gonzalbo-2008-nacimiento-miedo"
+      ],
+      "locator": "Exbalin, The riot as the expression of an urban government in crisis, paragraph beginning The trajectory; Gonzalbo abstract",
+      "poi_ids": [
+        "zocalo"
+      ],
+      "confidence": "debated_account_detail",
+      "period": "Colonial Mexico 1600–1810",
+      "geography": "Centro Histórico / Plaza Mayor",
+      "editorial_status": "unreviewed_research_candidate",
+      "primary_documents_directly_examined": false
+    },
+    {
+      "id": "cdmx-stg-20261113-colonial1692-03",
+      "assertion": "The June 1692 crowd included Indigenous people as well as mestizos and poorer non-Indigenous residents, so the archival label tumulto de los indios is not an adequate description of all participants.",
+      "source_ids": [
+        "cdmx-src-exbalin-2016-1692-riot",
+        "cdmx-src-gonzalbo-2008-nacimiento-miedo"
+      ],
+      "locator": "Exbalin introduction paragraphs on crowd composition; Gonzalbo abstract",
+      "poi_ids": [
+        "zocalo"
+      ],
+      "confidence": "strong_secondary_consensus",
+      "period": "Colonial Mexico 1600–1810",
+      "geography": "Centro Histórico / Plaza Mayor",
+      "editorial_status": "unreviewed_research_candidate",
+      "primary_documents_directly_examined": false
+    },
+    {
+      "id": "cdmx-stg-20261113-colonial1692-04",
+      "assertion": "Exbalin reconstructs a route of protest through the Plaza Mayor: the crowd sought the corregidor at the town hall, went toward the archbishop's palace, and approached the viceroy's palace; the route is interpreted as a sequence of attempts to petition authorities.",
+      "source_ids": [
+        "cdmx-src-exbalin-2016-1692-riot"
+      ],
+      "locator": "The riot as the expression of an urban government in crisis, Figure 1 and following three paragraphs",
+      "poi_ids": [
+        "zocalo",
+        "national_palace",
+        "metropolitan_cathedral"
+      ],
+      "confidence": "scholarly_interpretation",
+      "period": "Colonial Mexico 1600–1810",
+      "geography": "Centro Histórico / Plaza Mayor",
+      "editorial_status": "unreviewed_research_candidate",
+      "primary_documents_directly_examined": false
+    },
+    {
+      "id": "cdmx-stg-20261113-colonial1692-05",
+      "assertion": "The 1692 disturbances involved fires and damage at the viceregal palace, city hall and market structures of the Plaza Mayor; the present National Palace should not be represented as an unchanged building from 1692.",
+      "source_ids": [
+        "cdmx-src-exbalin-2016-1692-riot",
+        "cdmx-src-gonzalbo-2008-nacimiento-miedo"
+      ],
+      "locator": "Exbalin introduction and section on fires; Gonzalbo abstract",
+      "poi_ids": [
+        "national_palace",
+        "zocalo"
+      ],
+      "confidence": "strong_secondary_consensus",
+      "period": "Colonial Mexico 1600–1810",
+      "geography": "Centro Histórico / Plaza Mayor",
+      "editorial_status": "unreviewed_research_candidate",
+      "primary_documents_directly_examined": false
+    },
+    {
+      "id": "cdmx-stg-20261113-colonial1692-06",
+      "assertion": "According to Antonio de Robles as presented by Exbalin, a cathedral-associated religious procession and later preaching in Nahuatl by a cathedral cantor were attempts to pacify participants during the riot.",
+      "source_ids": [
+        "cdmx-src-exbalin-2016-1692-riot"
+      ],
+      "locator": "The weakness of the forces of law and order, two paragraphs beginning It is remarkable and The second initiative; fn 22 cites Robles p. 251",
+      "poi_ids": [
+        "metropolitan_cathedral",
+        "zocalo"
+      ],
+      "confidence": "reported_primary_testimony_via_secondary",
+      "period": "Colonial Mexico 1600–1810",
+      "geography": "Centro Histórico / Plaza Mayor",
+      "editorial_status": "unreviewed_research_candidate",
+      "primary_documents_directly_examined": false
+    },
+    {
+      "id": "cdmx-stg-20261113-colonial1692-07",
+      "assertion": "Exbalin reports that a summary criminal proceeding launched 11 June 1692 resulted within 20 days in 80 defendants tried, with 12 death sentences, 32 forced-labor-and-flogging sentences, and nine flogging-only sentences.",
+      "source_ids": [
+        "cdmx-src-exbalin-2016-1692-riot"
+      ],
+      "locator": "Restoring order, two paragraphs beginning The judicial investigation and The sentences were heavy; fn 32",
+      "poi_ids": [
+        "zocalo",
+        "national_palace"
+      ],
+      "confidence": "single_secondary_quantification",
+      "period": "Colonial Mexico 1600–1810",
+      "geography": "Centro Histórico / Plaza Mayor",
+      "editorial_status": "unreviewed_research_candidate",
+      "primary_documents_directly_examined": false
+    },
+    {
+      "id": "cdmx-stg-20261113-colonial1692-08",
+      "assertion": "Colonial authorities ordered a ban on producing and selling pulque on 19 July 1692, but by 31 July had relaxed the restriction for medicinal white pulque, according to Exbalin's reconstruction.",
+      "source_ids": [
+        "cdmx-src-exbalin-2016-1692-riot"
+      ],
+      "locator": "Restoring order, paragraph beginning We saw that the prohibition of pulque; fns 35–37 AHDF Pulquerías vol. 3719",
+      "poi_ids": [
+        "zocalo"
+      ],
+      "confidence": "supported_single_secondary",
+      "period": "Colonial Mexico 1600–1810",
+      "geography": "Centro Histórico / Plaza Mayor",
+      "editorial_status": "unreviewed_research_candidate",
+      "primary_documents_directly_examined": false
+    },
+    {
+      "id": "cdmx-stg-20261113-colonial1692-09",
+      "assertion": "In July–August 1692 viceregal measures sought to restrict Indigenous residents' presence and dress in the Spanish city; Exbalin emphasizes that enforcing these boundaries in a mixed urban society was difficult.",
+      "source_ids": [
+        "cdmx-src-exbalin-2016-1692-riot"
+      ],
+      "locator": "Restoring order, paragraphs beginning Among the series of ordinances and The prohibition against wearing; fn 38 AGN Historia vol. 413 fol. 1",
+      "poi_ids": [
+        "zocalo",
+        "national_palace"
+      ],
+      "confidence": "supported_interpretation_enforcement_unverified",
+      "period": "Colonial Mexico 1600–1810",
+      "geography": "Centro Histórico / Plaza Mayor",
+      "editorial_status": "unreviewed_research_candidate",
+      "primary_documents_directly_examined": false
+    },
+    {
+      "id": "cdmx-stg-20261113-colonial1692-10",
+      "assertion": "Exbalin describes short-term security measures after the riot, including new cavalry detachments, mixed-race militia companies and patrols; the two cavalry units were dissolved by royal order in 1694.",
+      "source_ids": [
+        "cdmx-src-exbalin-2016-1692-riot"
+      ],
+      "locator": "Restoring order, paragraphs beginning In the afternoon of 9 June and In addition to these two cavalry units; fn 42 AHDF Historia en General vol.1 dossier 1",
+      "poi_ids": [
+        "national_palace",
+        "zocalo"
+      ],
+      "confidence": "single_secondary_with_archival_locator",
+      "period": "Colonial Mexico 1600–1810",
+      "geography": "Centro Histórico / Plaza Mayor",
+      "editorial_status": "unreviewed_research_candidate",
+      "primary_documents_directly_examined": false
+    }
+  ],
+  "coverage_proposals": [
+    {
+      "period": "Colonial 1600–1810",
+      "geography": "centro",
+      "themes": [
+        "politics",
+        "society",
+        "resistance",
+        "poi",
+        "indigenous"
+      ],
+      "classification": "developing_or_retained_developing",
+      "no_substantial_promotion": true
+    }
+  ],
+  "reconciliation_note": "Local expanded SQLite includes the same stable 10 finding IDs and full evidence metadata; this GitHub batch is a compact research staging record. Primary documents not directly inspected."
+}
