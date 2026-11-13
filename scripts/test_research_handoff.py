@@ -57,12 +57,29 @@ for mutation in (
         pass
     else:
         raise AssertionError("Unsafe dated reader audit admitted: " + str(mutation))
+# Older gates sometimes cite a previous audit without a newly inspected
+# primary source; preserve the audit pointer without upgrading it to evidence.
+_prior = dict(_audit, gates=[{
+    "id": "G-prior", "reader_anchor": "Existing dated claim",
+    "source_locator_matrix": [{"prior_audit": "research/audits/earlier.json"}],
+    "hold": "Original witness remains unexamined", "disposition": "retain"}])
+_prior_result = parse_new_audit("research/audits/prior.json", _prior, _blob)
+assert _prior_result[0]["source_ids_unverified"] == []
+assert (_prior_result[0]["source_locator_candidates_unverified"][0]["document"]
+        == "research/audits/earlier.json")
 _cross = dict(_audit,
     kind="templo_mayor_discover_cross_period_and_current_reader_evidence_gate",
     gates=[{"topic": "Chronology", "reader_anchor": "Late 1420s",
             "status": "retain qualified date", "uncertainty": "Original not read",
             "source_locator_matrix": [{"source": "prior audit", "locator": "gate 2"}]}])
 assert len(parse_new_audit("research/audits/cross.json", _cross, _blob)) == 1
+# A gated chronology topic may explicitly lack any new source locator.
+_no_source = dict(_cross, gates=[dict(_cross["gates"][0],
+    source_locator_matrix=[])])
+_no_source_items = parse_new_audit("research/audits/cross.json", _no_source, _blob)
+assert _no_source_items[0]["source_locator_candidates_unverified"] == []
+assert _no_source_items[0]["publication_authorization"] is False
+
 _seven = dict(_cross,
     kind="templo_mayor_discover_exact_reader_seven_topic_source_locator_audit")
 assert len(parse_new_audit("research/audits/seven.json", _seven, _blob)) == 1

@@ -29,12 +29,13 @@ def text(value):
 
 def review_item(path, ident, topic, *, anchor=None, reader_match=None,
                 locators=None, source_ids=None, status=None, gap=None,
-                proposed_addition=None):
+                proposed_addition=None, allow_missing_sources=False):
     require(text(ident) and text(topic), "missing candidate ID or subject")
     require(anchor is None or text(anchor), "invalid proposed reader anchor")
     locators = locators if locators is not None else []
     source_ids = source_ids if source_ids is not None else []
-    require(isinstance(locators, list) and bool(locators), "source locator absent")
+    require(isinstance(locators, list) and (bool(locators) or allow_missing_sources),
+            "source locator absent")
     require(isinstance(source_ids, list) and all(text(x) for x in source_ids),
             "source identities malformed")
     require(all(isinstance(x, dict) and text(x.get("locator")) and
@@ -66,6 +67,8 @@ def review_item(path, ident, topic, *, anchor=None, reader_match=None,
         "publication_authorization": False,
         "review_state": ("awaiting_human_stale_reader_blob_reaudit"
                          if reader_match is False else
+                         "awaiting_human_missing_original_source"
+                         if not locators else
                          "awaiting_human_source_and_passage_check"),
     }
 
@@ -215,16 +218,29 @@ def parse_new_audit(path, doc, current_reader_blob):
             require(isinstance(row, dict) and text(row.get("reader_anchor")),
                     "dated reader gate lacks an exact prose anchor")
             ident = row.get("id") or f"dated-reader-gate-{index:02d}"
-            topic = row.get("topic") or row.get("historical_correction")
+            topic = (row.get("topic") or row.get("historical_correction")
+                     or row["reader_anchor"])
             require(text(topic) and text(ident),
                     "dated reader gate has no identifiable historical question")
             source_rows = row.get("source_locator_matrix")
-            require(isinstance(source_rows, list) and bool(source_rows),
+            require(isinstance(source_rows, list) and
+                    (bool(source_rows) or
+                     kind == "templo_mayor_discover_cross_period_and_current_reader_evidence_gate"),
                     "dated reader gate has no traceable source comparison")
             locators = []
             for source_row in source_rows:
                 require(isinstance(source_row, dict),
                         "dated reader source locator is malformed")
+                prior_audit = source_row.get("prior_audit")
+                if prior_audit is not None:
+                    require(text(prior_audit) and
+                            prior_audit.startswith("research/audits/") and
+                            prior_audit.endswith(".json"),
+                            "previous evidence audit reference is unsafe")
+                    # This is a pointer to earlier work, not new corroboration.
+                    locators.append({"document": prior_audit,
+                                     "locator": "prior audit only; original source check pending"})
+                    continue
                 source = source_row.get("source_id") or source_row.get("source")
                 locator = source_row.get("pages") or source_row.get("locator")
                 require(text(source) and text(locator),
@@ -235,11 +251,12 @@ def parse_new_audit(path, doc, current_reader_blob):
             result.append(review_item(
                 path, ident, topic, anchor=row["reader_anchor"],
                 reader_match=matches, locators=locators,
-                source_ids=[x["source"] for x in locators],
+                source_ids=[x["source"] for x in locators if x.get("source")],
                 status=row.get("status") or row.get("disposition") or "unapproved",
                 gap=row.get("hold") or row.get("uncertainty"),
                 proposed_addition=row.get("draft_candidate") or
-                                  row.get("historical_addition")))
+                                  row.get("historical_addition"),
+                allow_missing_sources=not bool(locators)))
         return result
     # A new seven-passage audit includes the ACTUAL reader Git blob identity.
     require(kind == "templo_mayor_discover_actual_reader_claim_to_source_locator_audit",
