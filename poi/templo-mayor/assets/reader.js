@@ -22,8 +22,12 @@
   next.closest('.stop-pager').hidden = false;
 
   function goToStop(stop) {
+    if (!stop) return;
     focusStop = true;
-    location.hash = stop.id;
+    // Safari does not dispatch hashchange when the user reselects the active
+    // stop. Restore focus and scroll explicitly rather than leaving stale state.
+    if (location.hash === '#' + stop.id) navigateHash();
+    else location.hash = stop.id;
   }
 
   jump.addEventListener('change', () => goToStop(document.getElementById(jump.value)));
