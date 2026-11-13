@@ -1,0 +1,353 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261113T1708Z-decena-civilian-photographic-breadth-source-identity-recovery",
+  "generated_at": "2026-11-13T17:09:14.188Z",
+  "branch": "research-persistence",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "storage_role": "immutable_research_batch_noncanonical",
+  "prior_replay_report": "research/reconciled/v4_24db1c702d54/replay_report.json",
+  "prior_verified_counts": {
+    "github_batches": 68,
+    "github_findings": 366,
+    "source_candidates": 120,
+    "source_inspections": 158,
+    "unknown_source_refs": 4,
+    "metadata_collisions": 2,
+    "canonical_sources": 616,
+    "canonical_claims": 422,
+    "canonical_links": 403,
+    "canonical_findings": 68
+  },
+  "scope": "Retain 3 previously unresolved source IDs with publisher/university bibliographic metadata; add distinct photo-located 1913 civilian/built-space evidence, not another general revolution narrative.",
+  "sources": [
+    {
+      "id": "STAGE-SRC-MCCLUNG-2025-LAQ",
+      "title": "Subsistence Procurement and Production after the Demise of Teotihuacan",
+      "authors": "Emily McClung de Tapia; Diana Martínez-Yrízar; Carmen Cristina Adriano-Morán; Emilio Ibarra-Morales",
+      "published_online": "2025-07-10",
+      "print_citation": "Latin American Antiquity 37(1) (March 2026): 163–171",
+      "doi": "10.1017/laq.2025.13",
+      "url": "https://www.cambridge.org/core/journals/latin-american-antiquity/article/subsistence-procurement-and-production-after-the-demise-of-teotihuacan/D083317AF446A4F07B9025E23C5CFF0B",
+      "status": "provisional_existing_source_id_identity_from_publisher_metadata",
+      "prior_inspection_path": "research/batches/20261112T0503Z-auto09-chronology.json",
+      "note": "Online publication year 2025, print issue 2026: distinct dates, not contradictory editions; prior selected PDF pages inspected in prior run, supplements still unverified."
+    },
+    {
+      "id": "STG-SRC-MANZANILLA-2009-CHRONOLOGY",
+      "title": "Nuevos datos sobre la cronología de Teotihuacan. Correlación de técnicas de fechamiento",
+      "authors": "Linda R. Manzanilla",
+      "year": 2009,
+      "publication": "In V Coloquio Pedro Bosch Gimpera. Cronología y Periodización de Mesoamérica y el Norte de México (ed. Annick Daneels), Instituto de Investigaciones Antropológicas, UNAM, pp.21–52",
+      "url": "https://www.researchgate.net/publication/265126200_Nuevos_datos_sobre_la_cronologia_de_Teotihuacan",
+      "status": "provisional_existing_source_id_bibliographic_crosswalk",
+      "prior_inspection_path": "research/batches/20261112T0503Z-auto09-chronology.json",
+      "note": "Author-hosted chapter transcription and printed pagination inspected, not original laboratory records; no editorial validation of anomalous radiocarbon transcriptions."
+    },
+    {
+      "id": "STG-SRC-SUGIYAMA-SUGIYAMA-SARABIA-2014-AM125",
+      "title": "El interior de la pirámide del sol en Teotihuacan",
+      "authors": "Saburo Sugiyama; Nawa Sugiyama; Alejandro Sarabia G.",
+      "year": 2014,
+      "publication": "Arqueología Mexicana 21(125):24–29, January 2014",
+      "url": "https://asu.elsevierpure.com/en/publications/el-interior-de-la-pir%C3%A1mide-del-sol-en-teotihuacan/",
+      "status": "provisional_existing_source_id_university_bibliography_checked",
+      "note": "Institutional ASU bibliographic record examined; complete article contents not inspected in this run; do not merge with different 2013 Latin American Antiquity publication."
+    },
+    {
+      "id": "STG-SRC-INEHRM-DECENA-110-2023-ICONOGRAFIA",
+      "title": "110 años: La Decena Trágica",
+      "creator": "Instituto Nacional de Estudios Históricos de las Revoluciones de México (INEHRM), Secretaría de Cultura",
+      "year": 2023,
+      "format": "Iconographic exhibition PDF with curated historical photographs",
+      "url": "https://inehrm.gob.mx/recursos/Expos/ExpoDecenatragica.pdf",
+      "status": "provisional_scholarly_institutional_visual_source_selected_pages_checked",
+      "note": "Exhibition interpretation and reproductions of original historical photos; image rights belong to cited source collections; selected pages visually checked, not entire archival fonds."
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "CDMX-20261113T1708-INS-01",
+      "source_id": "STAGE-SRC-MCCLUNG-2025-LAQ",
+      "access": "Cambridge published HTML metadata and article opening; published online 10 Jul 2025; 2026 volume 37(1) pp.163–171; DOI matched. No supplementary datasets independently inspected.",
+      "locator": "Cambridge HTML title/byline, Information section and Supplementary Material section",
+      "primary_source_full_text_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "CDMX-20261113T1708-INS-02",
+      "source_id": "STG-SRC-MANZANILLA-2009-CHRONOLOGY",
+      "access": "Author-uploaded ResearchGate chapter bibliographic entry, title page, pp.21–22 text; existing inspection previously covered tables pp.50–52. Lab sheets unexamined.",
+      "locator": "ResearchGate HTML heading / bibliographic 'In book' and text printed pp.21–22",
+      "primary_source_full_text_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "CDMX-20261113T1708-INS-03",
+      "source_id": "STG-SRC-SUGIYAMA-SUGIYAMA-SARABIA-2014-AM125",
+      "access": "Arizona State University publication record inspected; authors, journal volume/issue/pages; the original 2014 article body was not opened.",
+      "locator": "ASU Pure lines 5–24 and 43–51",
+      "primary_source_full_text_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "CDMX-20261113T1708-INS-04",
+      "source_id": "STG-SRC-INEHRM-DECENA-110-2023-ICONOGRAFIA",
+      "access": "Institutional exhibition PDF text inspected; page images 0, 8, 12, 14, 17 and 20 visibly inspected; rest not systematically validated; historical photographs displayed only as reproductions; no original archival object/rights inspected.",
+      "locator": "PDF indexed pages 0,8,12,14,17,20 and article text headings 'La población civil', 'La prensa y la noticia nacional', 'La captura de Madero' ",
+      "primary_source_full_text_examined": false,
+      "original_photo_negatives_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    }
+  ],
+  "findings": [
+    {
+      "id": "STG-20261113-1708-1913-DECENA-PHOTO-01",
+      "assertion": "On 9 February 1913, forces loyal to Madero under Lauro Villar recaptured the National Palace from the rebel Aspirants; INEHRM records the 20th and 24th infantry battalions defending the site and troops, machine guns and mortars positioned to protect palace entrances and roof.",
+      "date_or_range": "9 February 1913",
+      "period": "1910–1920 Mexican Revolution",
+      "geographies": [
+        "Palacio Nacional / Zócalo"
+      ],
+      "themes": [
+        "urban warfare",
+        "military architecture"
+      ],
+      "poi_ids": [
+        "poi-national-palace",
+        "poi-zocalo"
+      ],
+      "source_ids": [
+        "STG-SRC-INEHRM-DECENA-110-2023-ICONOGRAFIA"
+      ],
+      "source_locator": "INEHRM exhibition 'La recuperación de Palacio Nacional', text by photograph of palace defenders and SINAFO no.287566",
+      "limitations": "Photo of palace defense is a curated reproduction, not proof of surviving physical firing positions.",
+      "status": "research_only_source_linked_candidate",
+      "source_access": "curated_institutional_exhibition_selected_PDF_pages_visual_check",
+      "original_archival_objects_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113-1708-1913-DECENA-PHOTO-02",
+      "assertion": "The Ciudadela served as the rebels' fortified military depot after the failed 9 February palace assault; INEHRM describes a frontal attack on 11 February, with fire from emplacements in the depot and nearby street mouths.",
+      "date_or_range": "9–11 February 1913",
+      "period": "1910–1920 Mexican Revolution",
+      "geographies": [
+        "La Ciudadela / Centro"
+      ],
+      "themes": [
+        "military geography",
+        "urban warfare"
+      ],
+      "poi_ids": [
+        "poi-ciudadela"
+      ],
+      "source_ids": [
+        "STG-SRC-INEHRM-DECENA-110-2023-ICONOGRAFIA"
+      ],
+      "source_locator": "INEHRM exhibition 'Escenarios de guerra. La Ciudadela', artillery photograph Sabino Osuna SINAFO no.451537 and 11 Feb paragraph",
+      "limitations": "The exhibition's battlefield reconstruction should be checked against military dispatches; present-day building layout must not be equated with 1913 configuration.",
+      "status": "research_only_source_linked_candidate",
+      "source_access": "curated_institutional_exhibition_selected_PDF_pages_visual_check",
+      "original_archival_objects_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113-1708-1913-DECENA-PHOTO-03",
+      "assertion": "The INEHRM exhibition includes a photograph catalogued by SINAFO as no.37342 depicting war-damaged buildings on Avenida Juárez in February 1913, documenting material damage beyond the Ciudadela itself.",
+      "date_or_range": "February 1913",
+      "period": "1910–1920 Mexican Revolution",
+      "geographies": [
+        "Avenida Juárez / Centro Histórico"
+      ],
+      "themes": [
+        "built environment",
+        "civilian impact"
+      ],
+      "poi_ids": [
+        "poi-avenida-juarez"
+      ],
+      "source_ids": [
+        "STG-SRC-INEHRM-DECENA-110-2023-ICONOGRAFIA"
+      ],
+      "source_locator": "INEHRM exhibition 'Huellas de la guerra. La ciudad de México', Avenida Juárez photo caption, SINAFO 37342",
+      "limitations": "Exact buildings in photograph not independently geolocated; absence of confirmed modern survivors.",
+      "status": "research_only_source_linked_candidate",
+      "source_access": "curated_institutional_exhibition_selected_PDF_pages_visual_check",
+      "original_archival_objects_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113-1708-1913-DECENA-PHOTO-04",
+      "assertion": "INEHRM identifies the Madero family house on Avenida Berlín in Colonia Juárez as burned on 14 February 1913 and reproduces Miret photographs of the property after the fire.",
+      "date_or_range": "14 February 1913",
+      "period": "1910–1920 Mexican Revolution",
+      "geographies": [
+        "Avenida Berlín / Colonia Juárez"
+      ],
+      "themes": [
+        "political intimidation",
+        "residential urban change"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-INEHRM-DECENA-110-2023-ICONOGRAFIA"
+      ],
+      "source_locator": "INEHRM exhibition 'Huellas de la guerra. La casa de Francisco I. Madero'; photograph by Félix Miret, credited to AGN",
+      "limitations": "Exact historic house number and any present-day remnant not verified; cannot use as a live location pin without address research.",
+      "status": "research_only_source_linked_candidate",
+      "source_access": "curated_institutional_exhibition_selected_PDF_pages_visual_check",
+      "original_archival_objects_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113-1708-1913-DECENA-PHOTO-05",
+      "assertion": "A photograph credited to Manuel Ramos and the Elmer and Diane Powell collection at Southern Methodist University shows civilians leaving a conflict zone with a white flag during February 1913.",
+      "date_or_range": "February 1913",
+      "period": "1910–1920 Mexican Revolution",
+      "geographies": [
+        "Central Mexico City; precise intersection unknown"
+      ],
+      "themes": [
+        "civilian survival",
+        "documentary photography"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-INEHRM-DECENA-110-2023-ICONOGRAFIA"
+      ],
+      "source_locator": "INEHRM exhibition PDF indexed p.12 'La población civil', upper photograph and credit line",
+      "limitations": "Image attribution and caption from curator; precise locality and identities of persons undetermined; photo rights not cleared.",
+      "status": "research_only_source_linked_candidate",
+      "source_access": "curated_institutional_exhibition_selected_PDF_pages_visual_check",
+      "original_archival_objects_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113-1708-1913-DECENA-PHOTO-06",
+      "assertion": "INEHRM reproduces a SINAFO photograph catalogued no.37465 with the caption 'Incineración de cadáveres en Balbuena, febrero de 1913', evidence for a documented emergency response to deaths in the capital during fighting.",
+      "date_or_range": "February 1913",
+      "period": "1910–1920 Mexican Revolution",
+      "geographies": [
+        "Balbuena, eastern Mexico City"
+      ],
+      "themes": [
+        "civilian mortality",
+        "public health"
+      ],
+      "poi_ids": [
+        "poi-balbuena"
+      ],
+      "source_ids": [
+        "STG-SRC-INEHRM-DECENA-110-2023-ICONOGRAFIA"
+      ],
+      "source_locator": "INEHRM exhibition PDF indexed p.13 (caption adjacent to civilian casualties), SINAFO no.37465",
+      "limitations": "No verified death count or exact location; caption is evidence for image attribution, not independent confirmation of all circumstances.",
+      "status": "research_only_source_linked_candidate",
+      "source_access": "curated_institutional_exhibition_selected_PDF_pages_visual_check",
+      "original_archival_objects_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113-1708-1913-DECENA-PHOTO-07",
+      "assertion": "The INEHRM exhibition identifies a photographed fire and looting episode at the newspaper Nueva Era during February 1913 (SINAFO image no.451515), illustrating direct disruption of the capital's press during the coup.",
+      "date_or_range": "February 1913",
+      "period": "1910–1920 Mexican Revolution",
+      "geographies": [
+        "Historic Centre / newspaper location unverified"
+      ],
+      "themes": [
+        "press freedom",
+        "political violence"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-INEHRM-DECENA-110-2023-ICONOGRAFIA"
+      ],
+      "source_locator": "INEHRM exhibition PDF indexed p.14 'La prensa y la noticia nacional', photographic caption, SINAFO no.451515",
+      "limitations": "Photograph and institutional description verified; precise building location, attack responsibility and image reuse rights require research.",
+      "status": "research_only_source_linked_candidate",
+      "source_access": "curated_institutional_exhibition_selected_PDF_pages_visual_check",
+      "original_archival_objects_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113-1708-1913-DECENA-PHOTO-08",
+      "assertion": "An INEHRM exhibition reproduction shows the Diario Oficial issue of 20 February 1913, documenting formal publication of the transfer of executive authority after the coerced resignations on 19 February.",
+      "date_or_range": "19–20 February 1913",
+      "period": "1910–1920 Mexican Revolution",
+      "geographies": [
+        "Palacio Nacional / historic federal executive"
+      ],
+      "themes": [
+        "legal legitimacy",
+        "constitutional breakdown"
+      ],
+      "poi_ids": [
+        "poi-national-palace"
+      ],
+      "source_ids": [
+        "STG-SRC-INEHRM-DECENA-110-2023-ICONOGRAFIA"
+      ],
+      "source_locator": "INEHRM exhibition PDF indexed p.20 showing Diario Oficial front page, adjacent institutional narrative",
+      "limitations": "Facsimile in a modern exhibit, not a direct inspection of the original complete issue; legal mechanism needs textual analysis of original parliamentary records.",
+      "status": "research_only_source_linked_candidate",
+      "source_access": "curated_institutional_exhibition_selected_PDF_pages_visual_check",
+      "original_archival_objects_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113-1708-1913-DECENA-PHOTO-09",
+      "assertion": "INEHRM's exhibition describes the 16 February 1913 temporary armistice as permitting civilians to leave the fighting area and records that hostilities resumed around 2 p.m., earlier than planned.",
+      "date_or_range": "16 February 1913",
+      "period": "1910–1920 Mexican Revolution",
+      "geographies": [
+        "Ciudadela / central Mexico City"
+      ],
+      "themes": [
+        "humanitarian relief",
+        "military conflict"
+      ],
+      "poi_ids": [
+        "poi-ciudadela"
+      ],
+      "source_ids": [
+        "STG-SRC-INEHRM-DECENA-110-2023-ICONOGRAFIA"
+      ],
+      "source_locator": "INEHRM exhibition 'El armisticio', Casasola SINAFO no.5664 and adjacent explanation",
+      "limitations": "Exact operational timing based on exhibition; seek original military communiqué and contemporary press accounts before presenting minute-specific reconstruction.",
+      "status": "research_only_source_linked_candidate",
+      "source_access": "curated_institutional_exhibition_selected_PDF_pages_visual_check",
+      "original_archival_objects_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    }
+  ],
+  "source_identity_policy": "Re-register exact existing IDs only provisionally. Proposed SLOAD dataset remains unresolved; do not auto-alias or infer a new publication. Do not conflate McClung online 2025 and print 2026, or Sugiyama 2014 with Sugiyama 2013.",
+  "source_readback": {
+    "mcclung": "Cambridge published metadata volume 37 issue 1 March 2026, DOI 10.1017/laq.2025.13",
+    "manzanilla": "Author-uploaded chapter pp.21-52, UNAM 2009",
+    "sugiyama": "ASU institutional listing Arqueología Mexicana 21(125):24-29"
+  },
+  "new_assertion_bearing_finding_candidates": 9,
+  "source_identity_recoveries": 3,
+  "new_scholarly_source_candidates": 1,
+  "new_inspection_metadata_rows": 4,
+  "evidence_status": "research_only_not_publication_ready",
+  "copyright_policy": "Historical photographs are catalogued as research leads; never embed images in the live guide without rights clearance.",
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "canonical_modified": false,
+  "main_modified": false
+}
