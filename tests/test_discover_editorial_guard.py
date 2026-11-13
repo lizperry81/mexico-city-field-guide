@@ -53,7 +53,9 @@ class EditorialGuardTests(unittest.TestCase):
         d = self.root / "editorial" / "approved"
         d.mkdir()
         (d / "chapter.md").write_text("Proposed archive\n", encoding="utf-8")
-        self.assertNotEqual(self.check("--base-ref", "HEAD").returncode, 0)
+        self.git("add", ".")
+        self.git("commit", "-qm", "proposed protected archive")
+        self.assertNotEqual(self.check("--base-ref", "HEAD~1").returncode, 0)
 
 if __name__ == "__main__":
     unittest.main()
