@@ -40,6 +40,83 @@ v4 = dict(inline_v3, schema_version=4, canonical_status="unchanged_provisional_V
           staged_counts={"github_batches_replayed": 58, "unknown_source_refs": 22},
           evidence_status={"publication_approved": False})
 validate_versioned_handoff(v4, copy.deepcopy(v4), "d" * 40)
+# New research handoffs anchor immutable verified-replay metadata rather than
+# copying the moving manifest. All critical identities, counts and audit paths
+# must still be pinned, and approval can never be inferred from staging.
+v4_replay = dict(v4,
+                 research_commit_sha="a" * 40,
+                 canonical_hash="b" * 64,
+                 canonical_version="V97",
+                 versioned_research_sqlite_gz_path="research/reconciled/v4_a/research_only.sqlite.gz",
+                 versioned_research_sha256="c" * 64,
+                 compressed_sha256="d" * 64,
+                 replay_report_path="research/reconciled/v4_a/replay_report.json",
+                 previous_manifest_blob_sha="c" * 40,
+                 previous_manifest_generated_at="2026-11-13T04:14:00Z",
+                 ready_for_editorial_review=False,
+                 canonical_promoted=False,
+                 staged_counts={
+                     "github_batches_replayed": 58,
+                     "github_distinct_substantive_finding_ids": 300,
+                     "github_inspection_entries": 84,
+                     "github_source_candidates": 66,
+                     "unknown_source_refs": 14,
+                     "source_metadata_collisions": 2,
+                     "github_index_only_refs_unresolved": 16,
+                     "detached_local_inspections_not_reconciled": 37,
+                 },
+                 chapter_audit_artifact_paths=["research/audits/base.json",
+                                               "research/audits/addendum.json"],
+                 coverage_artifact_paths=["research/coverage/one.json"])
+immutable_replay = {
+    "kind": "verified_replay_after_schema_unit_tests",
+    "research_commit_sha": v4_replay["research_commit_sha"],
+    "canonical_hash": v4_replay["canonical_hash"],
+    "canonical_version": "V97",
+    "canonical_status": "unchanged_not_promoted",
+    "canonical_rows_unchanged": True,
+    "versioned_research_sqlite_gz_path": v4_replay["versioned_research_sqlite_gz_path"],
+    "versioned_research_sha256": v4_replay["versioned_research_sha256"],
+    "compressed_sha256": v4_replay["compressed_sha256"],
+    "replay_report_path": v4_replay["replay_report_path"],
+    "previous_manifest_blob_sha": v4_replay["previous_manifest_blob_sha"],
+    "previous_manifest_generated_at": v4_replay["previous_manifest_generated_at"],
+    "ready_for_editorial_review": False,
+    "canonical_promoted": False,
+    "publication_approved": False,
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "unit_tests_path": "research/pipeline/test_reconcile_batch_schemas.py",
+    "workflow_path": ".github/workflows/research-replay-staging.yml",
+    "chapter_audit_artifact_paths": ["research/audits/base.json"],
+    "coverage_artifact_paths": ["research/coverage/one.json"],
+    "staged_counts": {
+        "github_batches_replayed": 58,
+        "github_distinct_substantive_finding_ids": 300,
+        "github_inspection_metadata_entries": 84,
+        "candidate_source_identities": 66,
+        "unresolved_source_refs": 14,
+        "source_metadata_collisions": 2,
+        "unresolved_index_only_refs": 16,
+        "detached_inspections_not_in_github_replay": 37,
+    }
+}
+validate_versioned_handoff(v4_replay, immutable_replay, "d" * 40)
+for mutation in (
+    {"canonical_hash": "f" * 64},
+    {"publication_approved": True},
+    {"integrity": "corrupt"},
+    {"chapter_audit_artifact_paths": ["research/audits/not-in-handoff.json"]},
+    {"staged_counts": dict(immutable_replay["staged_counts"],
+                           unresolved_source_refs=15)},
+):
+    try:
+        validate_versioned_handoff(
+            v4_replay, dict(immutable_replay, **mutation), "d" * 40)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("Modified immutable replay was trusted: " + str(mutation))
 for altered, immutable in (
     (dict(v4, ready_for_publication=True), v4),
     (dict(v4, staged_counts={"github_batches_replayed": 59}), v4),
@@ -129,6 +206,12 @@ else:
     assert queue["status"] == "human_review_required_not_for_publication"
     assert len(queue["items"]) == report["review_queue_count"]
     assert report["audit_documents_reviewed"] >= 1
+    assert report["coverage_gap_review_count"] == len(queue["coverage_gaps"])
+    for gap in queue["coverage_gaps"]:
+        assert gap["coverage_path"].startswith("research/coverage/")
+        assert gap["research_needed"]
+        assert gap["assigned_to_published_chapter"] is None
+        assert gap["publication_authorization"] is False
     assert report["historical_discrepancies_pending_review"] == len(
         queue["unresolved_historical_discrepancies"])
     assert len({item["audit_path"] for item in queue["items"]}) == report["audit_documents_reviewed"]
@@ -142,6 +225,10 @@ else:
         assert any(item["audit_claim_id"].startswith("DTR-")
                    for item in queue["items"])
         assert report["historical_discrepancies_pending_review"] >= 1
+        # Source-locator addenda are provisional private evidence tasks.
+        # They are not full-text archaeology checks or published sources.
+        assert any("DETAIL" in item["audit_claim_id"] for item in queue["items"])
+        assert report["coverage_gap_review_count"] >= 4
     for discrepancy in queue["unresolved_historical_discrepancies"]:
         assert discrepancy["audit_path"].startswith("research/audits/")
         assert discrepancy["issue"]
@@ -154,6 +241,11 @@ else:
         assert item["source_id_confirmed"] is None
         assert item["page_or_section_checked"] is None
         assert item["review_state"].startswith("awaiting_human")
+        assert item["publication_authorization"] is False
+        if "DETAIL" in item["audit_claim_id"]:
+            assert item["source_url_proposed"].startswith("https://")
+            assert item["source_locator_proposed"]
+            assert item["source_id_confirmed"] is None
     passages = json.loads((OUT / "editorial-passage-inventory.json").read_text(encoding="utf-8"))
     assert passages["status"] == "private_passage_inventory_human_evidence_review_required"
     assert passages["source_sha256"] == report["app_reader_sha256"]
