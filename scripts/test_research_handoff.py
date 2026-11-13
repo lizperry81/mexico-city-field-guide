@@ -167,6 +167,98 @@ v4_append["evidence_status"] = {
 v4_append["chapter_audit_artifact_paths"].append("research/audits/new.json")
 v4_append["coverage_artifact_paths"].append("research/coverage/new.json")
 validate_versioned_handoff(v4_append, append_snapshot, "d" * 40)
+
+# The November 13 research producer moved database provenance into a nested
+# object and renamed its before/after metrics. This is a different immutable
+# encoding; a changed checksum, source count, or false approval must be blocked.
+v4_nested = copy.deepcopy(v4_append)
+v4_nested["canonical"] = {
+    "sources": 616, "claims": 422, "claim_source_links": 403,
+    "findings": 68, "source_inspections": 9,
+}
+v4_nested["staged_counts"].update({
+    "github_batches_replayed": 61,
+    "github_distinct_substantive_finding_ids": 329,
+    "github_inspection_entries": 126,
+    "github_source_candidates": 79,
+    "unknown_source_refs": 14,
+    "source_metadata_collisions": 2,
+    "github_index_only_refs_unresolved": 1,
+})
+v4_nested["evidence_status"].update({
+    "new_historical_finding_candidates_researched_this_run": 8,
+    "new_public_institutional_html_source_inspections_this_run": 2,
+})
+v4_nested["reconciliation_artifact_paths"] = ["research/reconciled/new.json"]
+nested_snapshot = {
+    "schema_version": 4,
+    "kind": "append_only_research_handoff_snapshot",
+    "research_branch": "research-persistence",
+    "research_commit_sha": v4_nested["research_commit_sha"],
+    "pipeline_fix_commit_sha": "f" * 40,
+    "verified_replay_commit_sha": v4_nested["verified_replay_commit_sha"],
+    "canonical_version": "V97",
+    "canonical_hash": v4_nested["canonical_hash"],
+    "canonical_status": "unchanged_not_promoted",
+    "canonical_counts": copy.deepcopy(v4_nested["canonical"]),
+    "before": {
+        "github_batch_files": 60, "assertion_bearing_staged_finding_ids": 316,
+        "inspection_metadata": 122, "source_candidate_ids": 75,
+        "index_only_unresolved": 6, "unresolved_source_ids": 14,
+        "source_metadata_collisions": 2,
+    },
+    "after": {
+        "github_batch_files": 61, "assertion_bearing_staged_finding_ids": 329,
+        "inspection_metadata": 126, "source_candidate_ids": 79,
+        "index_only_unresolved": 1, "unresolved_source_ids": 14,
+        "source_metadata_collisions": 2,
+    },
+    "changes": {
+        "legacy_TE28_findings_reclassified_from_index_only_to_substantive": 5,
+        "new_historical_finding_candidates": 8,
+        "new_source_candidates": 4,
+        "new_inspection_metadata_entries": 4,
+    },
+    "database": {
+        "sqlite_gz": v4_nested["versioned_research_sqlite_gz_path"],
+        "replay_report": v4_nested["replay_report_path"],
+        "compressed_sha256": v4_nested["compressed_sha256"],
+        "sqlite_sha256": v4_nested["versioned_research_sha256"],
+        "integrity": "ok", "foreign_key_violations": 0,
+        "original_V97_tables_preserved": 88,
+        "canonical_rows_unchanged": True,
+    },
+    "evidence_status": {
+        "publication_approved": False, "ready_for_editorial_review": False,
+        "full_public_institutional_html_pages_examined_this_run": 2,
+        "independently_corroborated_new_findings": 0,
+    },
+    "canonical_promoted": False, "publication_approved": False,
+    "ready_for_editorial_review": False,
+    "chapter_audit_artifact_paths": ["research/audits/new.json"],
+    "coverage_artifact_paths": ["research/coverage/new.json"],
+    "research_batch_artifact_paths": ["research/batches/new.json"],
+    "reconciliation_artifact_paths": ["research/reconciled/new.json"],
+}
+validate_versioned_handoff(v4_nested, nested_snapshot, "d" * 40)
+for mutation in (
+    {"canonical_counts": dict(nested_snapshot["canonical_counts"], sources=617)},
+    {"canonical_promoted": True},
+    {"ready_for_editorial_review": True},
+    {"database": dict(nested_snapshot["database"], integrity="corrupt")},
+    {"database": dict(nested_snapshot["database"], sqlite_sha256="0" * 64)},
+    {"after": dict(nested_snapshot["after"], source_candidate_ids=80)},
+    {"changes": dict(nested_snapshot["changes"], new_historical_finding_candidates=9)},
+    {"evidence_status": dict(nested_snapshot["evidence_status"], publication_approved=True)},
+    {"coverage_artifact_paths": ["research/coverage/unknown.json"]},
+):
+    try:
+        validate_versioned_handoff(
+            v4_nested, dict(nested_snapshot, **mutation), "d" * 40)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("Unsafe nested v4 snapshot accepted: " + str(mutation))
 for mutation in (
     {"canonical_hash": "f" * 64},
     {"verified_replay_commit_sha": "0" * 40},
@@ -313,6 +405,14 @@ else:
         # They are not full-text archaeology checks or published sources.
         assert any("DETAIL" in item["audit_claim_id"] for item in queue["items"])
         assert report["coverage_gap_review_count"] >= 4
+        # New period/theme/site readiness deltas must not vanish when the
+        # research producer calls the array 'readiness' rather than 'cells'.
+        reform = [gap for gap in queue["coverage_gaps"]
+                  if "reform-munal-reforma-readiness" in gap["coverage_path"]]
+        if "reform-munal-reforma-readiness" in " ".join(report["coverage_artifact_paths"]):
+            assert len(reform) == 6, "New research readiness cells were dropped"
+            assert all(gap["research_needed"] and gap["publication_authorization"] is False
+                       for gap in reform)
         # Newer research coverage carries site-specific readiness and blockers.
         hospital = [gap for gap in queue["coverage_gaps"]
                     if "hospital-jesus-" in gap["coverage_path"]]
