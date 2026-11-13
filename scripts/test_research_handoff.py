@@ -16,6 +16,16 @@ for unsafe in ("../site/index.html", "research/../../site/index.html",
     else:
         raise AssertionError("Unsafe handoff path accepted: " + unsafe)
 assert safe_path("research/audits/valid.json") == "research/audits/valid.json"
+assert (safe_path(".github/workflows/research-replay-staging.yml") ==
+        ".github/workflows/research-replay-staging.yml")
+for unsafe_workflow in (".github/workflows/pages.yml",
+                        ".github/workflows/../deploy.yml", "site/index.html"):
+    try:
+        safe_path(unsafe_workflow)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("Non-research path accepted: " + unsafe_workflow)
 
 # Schema v2 requires exact equality; v3 has two historically valid provenance
 # formats; v4 requires the complete immutable record, including audit flags.
