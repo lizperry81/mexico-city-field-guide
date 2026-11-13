@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-13T07:16:00Z",
+  "chapter": "Templo Mayor Discover opening",
+  "audit_scope": "additional source-locator checks against publicly accessible INAH site sections; NOT sentence-level check of unpublished app chapter",
+  "supersedes": [],
+  "extends": "research/audits/templo-mayor-discover-20261113.json",
+  "evidence_entries": [
+    {
+      "claim_key": "TM-OP-02-DETAIL-01",
+      "event": "Etapa IVb",
+      "statement": "INAH locates four serpent-head carvings beside the Etapa IVb stairs, with traces of original coloring; its visitor text identifies the Coyolxauhqui object at the stair foot as a COPY.",
+      "source_url": "https://lugares.inah.gob.mx/es/node/4463",
+      "exact_locator": "Punto 1. Etapa IVb. Gobierno de Axayácatl (1469–1481): Cabeza de serpiente and La Coyolxauhqui al pie de la escalinata",
+      "access_scope": "institutional HTML passage examined; excavation publication and object conservation record not independently examined",
+      "evidence_status": "institutional_description_not_independent_excavation_confirmation",
+      "educational_use": "Ask visitors to compare the polychrome serpent heads and the replica; do not present the replica as the original monolith",
+      "remaining_gap": "verify on-site display placement and color preservation from museum conservation report"
+    },
+    {
+      "claim_key": "TM-OP-05-DETAIL-02",
+      "event": "Water collector ca. 1900",
+      "statement": "INAH identifies a brick water-collector duct underneath the metal walkway; says its construction cut about two metres through all temple building phases and passes under Guatemala street.",
+      "source_url": "https://lugares.inah.gob.mx/es/node/4463",
+      "exact_locator": "Etapa IV y V > Colector de agua",
+      "access_scope": "INAH institutional HTML section examined; original 1900 engineering plan unexamined",
+      "evidence_status": "institutional_description_not_independent_engineering_confirmation",
+      "educational_use": "Point out red-brick duct below walkway as direct evidence of modern infrastructure severing older construction",
+      "remaining_gap": "inspect engineering plans, stratigraphy and exact construction date"
+    },
+    {
+      "claim_key": "TM-OP-06-DETAIL-03",
+      "event": "1978 discovery",
+      "statement": "INAH dates discovery of Coyolxauhqui sculpture by Compañía de Luz y Fuerza workers to 21 February 1978; Salvamento Arqueológico subsequently excavated the monument and the original museum plan evolved into Proyecto Templo Mayor.",
+      "source_url": "https://templomayor.inah.gob.mx/historia/proyecto-templo-mayor",
+      "exact_locator": "Proyecto Templo Mayor, first paragraph",
+      "access_scope": "INAH project-history HTML examined; original discovery field notes and photographs not inspected",
+      "evidence_status": "institutional_chronology_secondary",
+      "educational_use": "Distinguish accidental utility-work discovery, rescue excavation and subsequent planned project; 1914 Gamio investigations predate it",
+      "remaining_gap": "inspect field excavation chronology and contemporary photographs"
+    }
+  ],
+  "editorial_approved": false,
+  "ready_for_publication": false,
+  "claim_count": 3
+}
