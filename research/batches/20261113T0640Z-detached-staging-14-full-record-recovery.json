@@ -1,0 +1,373 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261113T0640Z-detached-staging-full-record-recovery",
+  "status": "recovery_of_preexisting_unpublished_research_not_new_source_examination",
+  "canonical_v97_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "origin": {
+    "detached_sqlite_sha256": "fff6d249afb4f8c7773cde56c662227c885e2f274a7e088a18d5ba8687b68efe",
+    "detached_archive": "CDMX_RESEARCH_20261113T0356Z_1692_COLONIAL_INTEGRATION.zip",
+    "recover_exact_ids": true,
+    "reason": "Two IDs absent from GitHub batch corpus and twelve IDs present only as index references; complete assertions recovered from original staging SQLite without altering it"
+  },
+  "findings": [
+    {
+      "id": "stage-20261112-1515-cave-firepits",
+      "subject": "Sun Pyramid cave, Teotihuacan",
+      "assertion": "Two superposed fire features in Area C:East layer 4 BYCT are separated by approximately 10 cm of intervening BYCT sediment, demonstrating at least two burning episodes rather than one continuous fire.",
+      "source_ids": [
+        "v95-sload-cave-2020"
+      ],
+      "evidence_locators": [
+        "Sload (2020) chapter 7, Area C East / Blockage 11, printed p.111 vicinity, fig.5.2a; Sload cites Altschul 1978a:113"
+      ],
+      "evidence_type": "inherited_source_extraction_not_reexamined_this_run",
+      "source_access": "as_recorded_in_detached_archive_no_new_inspection",
+      "original_primary_material_examined": false,
+      "independent_corroboration": "not_established",
+      "confidence": "inherited_candidate_unverified_this_run",
+      "uncertainty": "Original interval unknown; Altschul field notes not independently inspected",
+      "period": "Classic Teotihuacan archaeology",
+      "poi_ids": [
+        "poi-pyramid-of-the-sun"
+      ],
+      "editorial_status": "not_publication_ready",
+      "provenance_original_id": "stage-20261112-1515-cave-firepits",
+      "provenance_sqlite_sha256": "fff6d249afb4f8c7773cde56c662227c885e2f274a7e088a18d5ba8687b68efe"
+    },
+    {
+      "id": "stage-20261112-1515-cave-placed-rocks",
+      "subject": "Sun Pyramid cave, Teotihuacan",
+      "assertion": "Excavators recorded a series of deliberately placed small rocks in Layer 5 fill at about 25, 43 and 60 cm depths, with sample Beta-220754 near the deepest group and associated with a Tzacualli polished jar sherd (SF54) and calcium-carbonate ring (SF55).",
+      "source_ids": [
+        "v95-sload-cave-2020"
+      ],
+      "evidence_locators": [
+        "Sload (2020) chapter 7, Area C East, printed p.104; cites Altschul 1978a:115,118"
+      ],
+      "evidence_type": "inherited_source_extraction_not_reexamined_this_run",
+      "source_access": "as_recorded_in_detached_archive_no_new_inspection",
+      "original_primary_material_examined": false,
+      "independent_corroboration": "not_established",
+      "confidence": "inherited_candidate_unverified_this_run",
+      "uncertainty": "Rocks as boundary-markers is interpretive; charcoal date does not date placement directly",
+      "period": "Classic Teotihuacan archaeology",
+      "poi_ids": [
+        "poi-pyramid-of-the-sun"
+      ],
+      "editorial_status": "not_publication_ready",
+      "provenance_original_id": "stage-20261112-1515-cave-placed-rocks",
+      "provenance_sqlite_sha256": "fff6d249afb4f8c7773cde56c662227c885e2f274a7e088a18d5ba8687b68efe"
+    },
+    {
+      "id": "stg-20261112-radio68-01",
+      "subject": "Mexico City 1968 student movement and civic politics",
+      "assertion": "Radio UNAM preserved 17 reel-to-reel tapes of the student-produced 1968 news program El movimiento estudiantil informa, whose episodes averaged approximately 20 minutes.",
+      "source_ids": [
+        "stg-src-gaceta-unam-frias-2019"
+      ],
+      "evidence_locators": [
+        "Gaceta UNAM, Frías (2019), paragraphs 1–4"
+      ],
+      "evidence_type": "inherited_source_extraction_not_reexamined_this_run",
+      "source_access": "as_recorded_in_detached_archive_no_new_inspection",
+      "original_primary_material_examined": false,
+      "independent_corroboration": "not_established",
+      "confidence": "inherited_candidate_unverified_this_run",
+      "uncertainty": "Original tapes were not listened to; institutional report only",
+      "period": "1968 student movement",
+      "poi_ids": [
+        "poi-zocalo",
+        "poi-ciudad-universitaria"
+      ],
+      "editorial_status": "not_publication_ready",
+      "provenance_original_id": "stg-20261112-radio68-01",
+      "provenance_sqlite_sha256": "fff6d249afb4f8c7773cde56c662227c885e2f274a7e088a18d5ba8687b68efe"
+    },
+    {
+      "id": "stg-20261112-radio68-02",
+      "subject": "Mexico City 1968 student movement and civic politics",
+      "assertion": "According to UNAM reporting, student-produced broadcasts documented the police clearance of the Zócalo on August 28, 1968, including allegations of severe injuries and deaths.",
+      "source_ids": [
+        "stg-src-gaceta-unam-frias-2019"
+      ],
+      "evidence_locators": [
+        "Gaceta UNAM, Frías (2019), Contenidos, paragraph 2"
+      ],
+      "evidence_type": "inherited_source_extraction_not_reexamined_this_run",
+      "source_access": "as_recorded_in_detached_archive_no_new_inspection",
+      "original_primary_material_examined": false,
+      "independent_corroboration": "not_established",
+      "confidence": "inherited_candidate_unverified_this_run",
+      "uncertainty": "Allegations in broadcast must be attributed; casualty counts not independently verified",
+      "period": "1968 student movement",
+      "poi_ids": [
+        "poi-zocalo",
+        "poi-ciudad-universitaria"
+      ],
+      "editorial_status": "not_publication_ready",
+      "provenance_original_id": "stg-20261112-radio68-02",
+      "provenance_sqlite_sha256": "fff6d249afb4f8c7773cde56c662227c885e2f274a7e088a18d5ba8687b68efe"
+    },
+    {
+      "id": "stg-20261112-radio68-03",
+      "subject": "Mexico City 1968 student movement and civic politics",
+      "assertion": "UNAM reports that a student broadcast recorded the October 5, 1968 press conference at Ciudad Universitaria, where students renewed their demand for dialogue on the six-point petition.",
+      "source_ids": [
+        "stg-src-gaceta-unam-frias-2019"
+      ],
+      "evidence_locators": [
+        "Gaceta UNAM, Frías (2019), Contenidos, final paragraph"
+      ],
+      "evidence_type": "inherited_source_extraction_not_reexamined_this_run",
+      "source_access": "as_recorded_in_detached_archive_no_new_inspection",
+      "original_primary_material_examined": false,
+      "independent_corroboration": "not_established",
+      "confidence": "inherited_candidate_unverified_this_run",
+      "uncertainty": "Original audio not listened to",
+      "period": "1968 student movement",
+      "poi_ids": [
+        "poi-zocalo",
+        "poi-ciudad-universitaria"
+      ],
+      "editorial_status": "not_publication_ready",
+      "provenance_original_id": "stg-20261112-radio68-03",
+      "provenance_sqlite_sha256": "fff6d249afb4f8c7773cde56c662227c885e2f274a7e088a18d5ba8687b68efe"
+    },
+    {
+      "id": "stg-20261112T215917Z-auto8-c73af2-f01",
+      "subject": "Mexico City 1968 student movement and civic politics",
+      "assertion": "In its December 1968 manifesto, the CNH characterized its six-point petition and demand for public dialogue as a challenge to the political structure, demanding open discussion rather than confidential settlement.",
+      "source_ids": [
+        "stg-src-cnh-manifiesto-1968-dec5"
+      ],
+      "evidence_locators": [
+        "Edited HTML, paragraphs beginning El carácter antidemocrático; La ausencia de actitudes críticas; Al responder a las arbitrariedades"
+      ],
+      "evidence_type": "inherited_source_extraction_not_reexamined_this_run",
+      "source_access": "as_recorded_in_detached_archive_no_new_inspection",
+      "original_primary_material_examined": false,
+      "independent_corroboration": "not_established",
+      "confidence": "inherited_candidate_unverified_this_run",
+      "uncertainty": "Edited transcription only; original El Día newsprint not inspected",
+      "period": "1968 student movement",
+      "poi_ids": [
+        "poi-zocalo",
+        "poi-ciudad-universitaria"
+      ],
+      "editorial_status": "not_publication_ready",
+      "provenance_original_id": "stg-20261112T215917Z-auto8-c73af2-f01",
+      "provenance_sqlite_sha256": "fff6d249afb4f8c7773cde56c662227c885e2f274a7e088a18d5ba8687b68efe"
+    },
+    {
+      "id": "stg-20261112T215917Z-auto8-c73af2-f02",
+      "subject": "Mexico City 1968 student movement and civic politics",
+      "assertion": "The CNH December manifesto described school student assemblies and the full CNH plenary as the movement’s sovereign decision-making organs, with participating schools represented through those bodies.",
+      "source_ids": [
+        "stg-src-cnh-manifiesto-1968-dec5"
+      ],
+      "evidence_locators": [
+        "Edited HTML paragraphs beginning El Consejo Nacional de Huelga; El Consejo Nacional de Huelga ha demandado"
+      ],
+      "evidence_type": "inherited_source_extraction_not_reexamined_this_run",
+      "source_access": "as_recorded_in_detached_archive_no_new_inspection",
+      "original_primary_material_examined": false,
+      "independent_corroboration": "not_established",
+      "confidence": "inherited_candidate_unverified_this_run",
+      "uncertainty": "Movement self-description; verify with archival meeting records",
+      "period": "1968 student movement",
+      "poi_ids": [
+        "poi-zocalo",
+        "poi-ciudad-universitaria"
+      ],
+      "editorial_status": "not_publication_ready",
+      "provenance_original_id": "stg-20261112T215917Z-auto8-c73af2-f02",
+      "provenance_sqlite_sha256": "fff6d249afb4f8c7773cde56c662227c885e2f274a7e088a18d5ba8687b68efe"
+    },
+    {
+      "id": "stg-20261112T215917Z-auto8-c73af2-f03",
+      "subject": "Mexico City 1968 student movement and civic politics",
+      "assertion": "The CNH publicly denied that it represented a homogeneous political ideology; it said it brought together political currents cooperating around democratic rights and the Mexican Constitution.",
+      "source_ids": [
+        "stg-src-cnh-manifiesto-1968-dec5"
+      ],
+      "evidence_locators": [
+        "Edited HTML paragraph beginning El Consejo Nacional de Huelga, máxima expresión"
+      ],
+      "evidence_type": "inherited_source_extraction_not_reexamined_this_run",
+      "source_access": "as_recorded_in_detached_archive_no_new_inspection",
+      "original_primary_material_examined": false,
+      "independent_corroboration": "not_established",
+      "confidence": "inherited_candidate_unverified_this_run",
+      "uncertainty": "Political self-description from edited transcription",
+      "period": "1968 student movement",
+      "poi_ids": [
+        "poi-zocalo",
+        "poi-ciudad-universitaria"
+      ],
+      "editorial_status": "not_publication_ready",
+      "provenance_original_id": "stg-20261112T215917Z-auto8-c73af2-f03",
+      "provenance_sqlite_sha256": "fff6d249afb4f8c7773cde56c662227c885e2f274a7e088a18d5ba8687b68efe"
+    },
+    {
+      "id": "stg-20261112T215917Z-auto8-c73af2-f04",
+      "subject": "Mexico City 1968 student movement and civic politics",
+      "assertion": "The CNH December manifesto singled out Demetrio Vallejo and Valentín Campa by name as political prisoners and linked the call for their release to detentions of 1968 demonstrators.",
+      "source_ids": [
+        "stg-src-cnh-manifiesto-1968-dec5"
+      ],
+      "evidence_locators": [
+        "Edited HTML paragraphs beginning Hemos demandado la libertad de los presos políticos; Y son presos políticos"
+      ],
+      "evidence_type": "inherited_source_extraction_not_reexamined_this_run",
+      "source_access": "as_recorded_in_detached_archive_no_new_inspection",
+      "original_primary_material_examined": false,
+      "independent_corroboration": "not_established",
+      "confidence": "inherited_candidate_unverified_this_run",
+      "uncertainty": "Primary movement position via edited transcript; confirm original copy",
+      "period": "1968 student movement",
+      "poi_ids": [
+        "poi-zocalo",
+        "poi-ciudad-universitaria"
+      ],
+      "editorial_status": "not_publication_ready",
+      "provenance_original_id": "stg-20261112T215917Z-auto8-c73af2-f04",
+      "provenance_sqlite_sha256": "fff6d249afb4f8c7773cde56c662227c885e2f274a7e088a18d5ba8687b68efe"
+    },
+    {
+      "id": "stg-20261112T215917Z-auto8-c73af2-f05",
+      "subject": "Mexico City 1968 student movement and civic politics",
+      "assertion": "The CNH manifesto reported that students undertook political brigades in working-class neighborhoods and factories, naming Topilejo as an encounter with social and community problems beyond university campuses.",
+      "source_ids": [
+        "stg-src-cnh-manifiesto-1968-dec5"
+      ],
+      "evidence_locators": [
+        "Edited HTML paragraphs beginning Ha demostrado que en México; En las colonias proletarias; Por otra parte, en las brigadas"
+      ],
+      "evidence_type": "inherited_source_extraction_not_reexamined_this_run",
+      "source_access": "as_recorded_in_detached_archive_no_new_inspection",
+      "original_primary_material_examined": false,
+      "independent_corroboration": "not_established",
+      "confidence": "inherited_candidate_unverified_this_run",
+      "uncertainty": "Movement self-report, not independent evidence of each visit",
+      "period": "1968 student movement",
+      "poi_ids": [
+        "poi-zocalo",
+        "poi-ciudad-universitaria"
+      ],
+      "editorial_status": "not_publication_ready",
+      "provenance_original_id": "stg-20261112T215917Z-auto8-c73af2-f05",
+      "provenance_sqlite_sha256": "fff6d249afb4f8c7773cde56c662227c885e2f274a7e088a18d5ba8687b68efe"
+    },
+    {
+      "id": "stg-20261112T215917Z-auto8-c73af2-f06",
+      "subject": "Mexico City 1968 student movement and civic politics",
+      "assertion": "The CNH manifesto acknowledged a tactical return to classes despite unmet demands, explaining that protecting the institutional autonomy and continued democratic structures of UNAM and IPN had become an immediate priority.",
+      "source_ids": [
+        "stg-src-cnh-manifiesto-1968-dec5"
+      ],
+      "evidence_locators": [
+        "Edited HTML paragraphs beginning Estos triunfos parciales; Se ha acusado a los estudiantes de intransigentes"
+      ],
+      "evidence_type": "inherited_source_extraction_not_reexamined_this_run",
+      "source_access": "as_recorded_in_detached_archive_no_new_inspection",
+      "original_primary_material_examined": false,
+      "independent_corroboration": "not_established",
+      "confidence": "inherited_candidate_unverified_this_run",
+      "uncertainty": "Official declaration, not proof all participants agreed",
+      "period": "1968 student movement",
+      "poi_ids": [
+        "poi-zocalo",
+        "poi-ciudad-universitaria"
+      ],
+      "editorial_status": "not_publication_ready",
+      "provenance_original_id": "stg-20261112T215917Z-auto8-c73af2-f06",
+      "provenance_sqlite_sha256": "fff6d249afb4f8c7773cde56c662227c885e2f274a7e088a18d5ba8687b68efe"
+    },
+    {
+      "id": "stg-20261112T215917Z-auto8-c73af2-f07",
+      "subject": "Mexico City 1968 student movement and civic politics",
+      "assertion": "The December manifesto proposed extending the movement beyond students by organizing with productive sectors in both urban and rural Mexico.",
+      "source_ids": [
+        "stg-src-cnh-manifiesto-1968-dec5"
+      ],
+      "evidence_locators": [
+        "Edited HTML paragraphs beginning Las perspectivas que se ofrecen al movimiento; Los estudiantes nos aliaremos"
+      ],
+      "evidence_type": "inherited_source_extraction_not_reexamined_this_run",
+      "source_access": "as_recorded_in_detached_archive_no_new_inspection",
+      "original_primary_material_examined": false,
+      "independent_corroboration": "not_established",
+      "confidence": "inherited_candidate_unverified_this_run",
+      "uncertainty": "Declared intention, not evidence proposal implemented",
+      "period": "1968 student movement",
+      "poi_ids": [
+        "poi-zocalo",
+        "poi-ciudad-universitaria"
+      ],
+      "editorial_status": "not_publication_ready",
+      "provenance_original_id": "stg-20261112T215917Z-auto8-c73af2-f07",
+      "provenance_sqlite_sha256": "fff6d249afb4f8c7773cde56c662227c885e2f274a7e088a18d5ba8687b68efe"
+    },
+    {
+      "id": "stg-20261112T215917Z-auto8-c73af2-f08",
+      "subject": "Mexico City 1968 student movement and civic politics",
+      "assertion": "The Archivo General de la Nación dates the release of railroad labor leader Demetrio Vallejo from Lecumberri prison to 29 July 1970; a December 1968 document cannot truthfully state that Vallejo had already been assassinated.",
+      "source_ids": [
+        "stg-src-agn-vallejo-2021"
+      ],
+      "evidence_locators": [
+        "AGN historical article closing paragraphs beginning Finalmente, el combatiente obrero Demetrio Vallejo"
+      ],
+      "evidence_type": "inherited_source_extraction_not_reexamined_this_run",
+      "source_access": "as_recorded_in_detached_archive_no_new_inspection",
+      "original_primary_material_examined": false,
+      "independent_corroboration": "not_established",
+      "confidence": "inherited_candidate_unverified_this_run",
+      "uncertainty": "AGN institutional historical account; prison file not directly inspected",
+      "period": "1968 student movement",
+      "poi_ids": [
+        "poi-zocalo",
+        "poi-ciudad-universitaria"
+      ],
+      "editorial_status": "not_publication_ready",
+      "provenance_original_id": "stg-20261112T215917Z-auto8-c73af2-f08",
+      "provenance_sqlite_sha256": "fff6d249afb4f8c7773cde56c662227c885e2f274a7e088a18d5ba8687b68efe"
+    },
+    {
+      "id": "stg-20261112T215917Z-auto8-c73af2-f09",
+      "subject": "Mexico City 1968 student movement and civic politics",
+      "assertion": "FICUNAM catalogs a 1968 series of four short films produced with still photographs and audio recordings of public student statements, with Paul Leduc, Rafael Castanedo, Óscar Menéndez and others credited as makers.",
+      "source_ids": [
+        "stg-src-ficunam-cnh-comunicados"
+      ],
+      "evidence_locators": [
+        "FICUNAM Comunicados del Consejo Nacional de Huelga, film metadata and Sinopsis Español"
+      ],
+      "evidence_type": "inherited_source_extraction_not_reexamined_this_run",
+      "source_access": "as_recorded_in_detached_archive_no_new_inspection",
+      "original_primary_material_examined": false,
+      "independent_corroboration": "not_established",
+      "confidence": "inherited_candidate_unverified_this_run",
+      "uncertainty": "Catalogue only; no footage inspected or rights cleared",
+      "period": "1968 student movement",
+      "poi_ids": [
+        "poi-zocalo",
+        "poi-ciudad-universitaria"
+      ],
+      "editorial_status": "not_publication_ready",
+      "provenance_original_id": "stg-20261112T215917Z-auto8-c73af2-f09",
+      "provenance_sqlite_sha256": "fff6d249afb4f8c7773cde56c662227c885e2f274a7e088a18d5ba8687b68efe"
+    }
+  ],
+  "prior_record_counts": {
+    "github_56_batch_substantive_ids": 286,
+    "github_index_only_ids": 28,
+    "local_staging_rows": 118,
+    "local_exact_id_overlap_with_github_full_or_index": 116,
+    "local_ids_missing_from_github": 2,
+    "local_index_only_ids_recovered_here": 12
+  },
+  "source_inspections_added": 0,
+  "source_metadata_added": 0,
+  "publication_approval": false
+}
