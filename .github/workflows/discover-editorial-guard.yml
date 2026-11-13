@@ -1,0 +1,28 @@
+name: Discover editorial guard
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  editorial-integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate baseline archive integrity
+        run: python scripts/check_discover_editorial_baseline.py
+      - name: Block unapproved edits to approved Discover files
+        if: github.event_name == 'pull_request'
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: python scripts/check_discover_editorial_baseline.py --base-ref "$BASE_SHA"
