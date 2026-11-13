@@ -162,6 +162,11 @@ def validate_versioned_handoff(manifest, immutable_manifest, snapshot_sha):
                     raise ValueError("Nested v4 restoration/evidence metrics drift")
                 evidence = immutable_manifest.get("evidence_status", {})
                 current_evidence = manifest.get("evidence_status", {})
+                if (evidence.get("publication_approved") is not False
+                        or evidence.get("ready_for_editorial_review") is not False
+                        or current_evidence.get("publication_approved") is not False
+                        or current_evidence.get("ready_for_editorial_review") is not False):
+                    raise ValueError("Nested v4 evidence cannot authorize publication")
                 for snapshot_key, current_key in (
                     ("full_public_institutional_html_pages_examined_this_run",
                      "new_public_institutional_html_source_inspections_this_run"),
@@ -444,8 +449,22 @@ def validate():
             "source_metadata_collisions": "cross_batch_conflict_count",
         }
         for handoff_key, replay_key in metric_map.items():
-            if (not isinstance(staged.get(handoff_key), int)
-                    or staged[handoff_key] != replay.get(replay_key)):
+            actual = replay.get(replay_key)
+            declared = staged.get(handoff_key)
+            if handoff_key == "github_index_only_refs_total":
+                # The TE28 repair reclassified five previously index-only
+                # identifiers as assertion-bearing records. The handoff keeps
+                # the historical total; the latest replay counts the remaining
+                # index-only references. Require the exact documented delta.
+                changes = immutable_manifest.get("changes", {})
+                restored = changes.get(
+                    "legacy_TE28_findings_reclassified_from_index_only_to_substantive", 0)
+                if (not isinstance(declared, int) or not isinstance(actual, int)
+                        or not isinstance(restored, int)
+                        or declared != actual + restored):
+                    raise ValueError("v4 index-only recovery totals unverified")
+                continue
+            if not isinstance(declared, int) or declared != actual:
                 raise ValueError("v4 staged count mismatch: " + handoff_key)
         if (staged.get("unknown_source_refs") !=
                 len(replay.get("unknown_source_ids", []))
