@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "kind": "app_read_only_research_handoff_validation",
+  "observed_at_utc": "2026-11-13T14:53:00Z",
+  "research_branch": "research-persistence",
+  "research_branch_head": "e042e55d2c2250dc297f31ebdc7a2c4f1e3941bc",
+  "manifest_path": "research/handoff/manifest.json",
+  "manifest_blob_sha": "8c6d4f87bb9f4b65a32c1a27b2e13dc2f3c74f32",
+  "manifest_research_input_sha": "cf51ff15192e292eb8d11c504488e72dab59ddb1",
+  "manifest_replay_commit_sha": "b80900069ed4648ff81a2cd4c3ad89ce8b7bd2a0",
+  "manifest_immutable_path": "research/handoff/history/20261113T1436Z-replay-semantic-correction.json",
+  "manifest_claimed_immutable_blob_sha": "a18824d9615cf46d5e03b2030c6d2335d7a3db06",
+  "observed_immutable_blob_sha": "a67921f84c659bdc8aa3abd71a356e139fc1a45e",
+  "artifact_paths_checked_unique": 75,
+  "missing_referenced_artifact_paths": [],
+  "verified_replay_report_blob_matches_manifest": true,
+  "blocking_issues": [
+    "Immutable semantic-correction history does not contain research_commit_sha; the main validator rejects it before further provenance checks",
+    "The Git blob SHA for the immutable history file differs from the checksum identity claimed in the rolling manifest",
+    "Editorial readiness and publication approval flags are false"
+  ],
+  "main_build_run": "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/43446904220",
+  "main_build_result": "application deployed successfully; research handoff validation explicitly warned and did not consume new research",
+  "requested_producer_action": "Publish a corrected, internally consistent immutable handoff with bound research commit identity and correct Git blob SHA on research-persistence. Preserve append-only history and do not mark historical claims as approved.",
+  "publication_approved": false,
+  "research_import_performed": false,
+  "app_public_content_modified_by_this_artifact": false
+}
