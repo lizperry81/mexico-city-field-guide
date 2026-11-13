@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "batch_id": "20261113T0310Z-transit-revolution-1985-breadth",
+  "review_type": "focused_explanatory_readiness_assessment",
+  "these_cells_override_machine_keyword_proxy": true,
+  "not_full_matrix_review": true,
+  "criteria": {
+    "substantial": "Multiple specific and independently examined source passages sufficient to teach main question and counterarguments",
+    "developing": "Specific site/date evidence supports a focused explanation but essential questions remain",
+    "sparse": "A few preliminaries, description or abstracts insufficient for responsible treatment",
+    "missing": "No meaningful subject evidence in inspected corpus"
+  },
+  "cells": [
+    {
+      "period": "12 Porfiriato",
+      "theme": "architecture, technology and infrastructure",
+      "geography": "Centro Histórico–Tacubaya–Tlalpan",
+      "rating": "developing",
+      "review_basis": "Institutional descriptions specify the 1900 electric tram to Tacubaya and 1891 animal-drawn versus 1900 electric tram service toward Tlalpan; still lacks route maps, operator records, fare structures and independently checked opening dates.",
+      "finding_ids": [
+        "cdmx-stg-20261113-urban-01",
+        "cdmx-stg-20261113-urban-02"
+      ],
+      "scope": "Web abstracts and INAH page, not original timetables"
+    },
+    {
+      "period": "12 Porfiriato",
+      "theme": "urban environment and population",
+      "geography": "Mexico City",
+      "rating": "sparse",
+      "review_basis": "UNAM teaching page provides 1858 and 1910 area figures but does not define urban boundary or original calculation; cannot responsibly teach quantitative growth yet.",
+      "finding_ids": [
+        "cdmx-stg-20261113-urban-03"
+      ],
+      "scope": "Teaching page only; no original cartography"
+    },
+    {
+      "period": "13 Mexican Revolution",
+      "theme": "political conflict and historical geography",
+      "geography": "Centro Histórico–Ciudadela",
+      "rating": "sparse",
+      "review_basis": "INEHRM synopsis supplies February 9–23 Decena Trágica framing, but no claim-to-day or site-specific military chronology. Not yet sufficient for field walk.",
+      "finding_ids": [
+        "cdmx-stg-20261113-urban-04"
+      ],
+      "scope": "Catalogue synopsis; book and contemporary sources not examined"
+    },
+    {
+      "period": "11 Reform and foreign intervention",
+      "theme": "religion, urban property, architectural reuse",
+      "geography": "Centro Histórico, former San Francisco convent",
+      "rating": "developing",
+      "review_basis": "Monument catalogue identifies 1861 closure and later transfers, but the structural-survival inventory and ownership history remain single-source; duplicate-map previous 1861 claim before integration.",
+      "finding_ids": [
+        "cdmx-stg-20261113-urban-05",
+        "cdmx-stg-20261113-urban-06",
+        "stg-20261112-reforma-11"
+      ],
+      "scope": "INAH web monument record; deed originals unexamined"
+    },
+    {
+      "period": "16 Mexico City 1980–present",
+      "theme": "government, resident rights and reconstruction",
+      "geography": "Nonoalco-Tlatelolco",
+      "rating": "developing",
+      "review_basis": "Contemporary directive excerpt offers property-right and financing terms; earlier 1985 material records CUD formation and demands, allowing a provisional policy-versus-implementation comparison. Resident case studies and actual budgets missing.",
+      "finding_ids": [
+        "cdmx-stg-20261113-urban-07",
+        "cdmx-stg-20261113-urban-08",
+        "stg-20261112T195738Z-auto9-breadth-8ce5-f01"
+      ],
+      "scope": "Official directive excerpt and secondary scholarly material; no implementation audit"
+    },
+    {
+      "period": "16 Mexico City 1980–present",
+      "theme": "gender, work and social inequality",
+      "geography": "Centro Histórico–San Antonio Abad",
+      "rating": "developing",
+      "review_basis": "Period labor commentary and earlier staged union-formation research offer concrete chronology and workplace vulnerabilities; original factory records and individual testimonies remain unexamined.",
+      "finding_ids": [
+        "cdmx-stg-20261113-urban-10",
+        "stg-20261112T195738Z-auto9-breadth-8ce5-f04"
+      ],
+      "scope": "Contemporary published abstract + prior staged research, no factory archives"
+    },
+    {
+      "period": "16 Mexico City 1980–present",
+      "theme": "housing damage statistics and methodological debates",
+      "geography": "Mexico City",
+      "rating": "sparse",
+      "review_basis": "1986 article abstract contrasts several incompatible categories of loss; adequate to teach uncertainty itself, not to assert one definitive total or explain district distributions.",
+      "finding_ids": [
+        "cdmx-stg-20261113-urban-09"
+      ],
+      "scope": "Abstract and conflicting agency estimates"
+    },
+    {
+      "period": "16 Mexico City 1980–present",
+      "theme": "memory, culture and public history",
+      "geography": "Mexico City, including Tlatelolco",
+      "rating": "sparse",
+      "review_basis": "Single later newspaper-content study identifies the reuse of 1985 disaster memory in 2017 reporting; no primary newspaper corpus or reception research examined.",
+      "finding_ids": [
+        "cdmx-stg-20261113-urban-11"
+      ],
+      "scope": "Academic abstract only"
+    }
+  ],
+  "review_ready": false,
+  "publication_ready": false,
+  "canonical_promoted": false
+}
