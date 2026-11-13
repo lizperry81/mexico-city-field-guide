@@ -1,0 +1,542 @@
+{
+  "schema_version": 1,
+  "origin_tree_sha": "6c908b34ddcee6d629d40624faffaa59c258ecf2",
+  "total_batch_files": 56,
+  "chunk": 4,
+  "range": [
+    42,
+    55
+  ],
+  "files": [
+    {
+      "path": "research/batches/20261112T2100Z-auto9-1968-breadth-7e4d.json",
+      "blob_sha": "92964a9db35cbd29dad088b5717f6b9dcbfb99ac",
+      "entries": [
+        {
+          "id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-f01",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-f02",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-f03",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-f04",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-f05",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-f06",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-f07",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-f08",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-f09",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-f10",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-f11",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-f12",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-f13",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-f14",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-f15",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261112T2117Z-radio68.json",
+      "blob_sha": "5ba6e1643c9e53a9d7ffddbaadcdb539aa3263fe",
+      "entries": [
+        {
+          "id": "stg-20261112-radio68-01",
+          "has_assertion": false,
+          "index_only": true
+        },
+        {
+          "id": "stg-20261112-radio68-02",
+          "has_assertion": false,
+          "index_only": true
+        },
+        {
+          "id": "stg-20261112-radio68-03",
+          "has_assertion": false,
+          "index_only": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261112T215917Z-auto8-c73af2.json",
+      "blob_sha": "cfa2abcec73368ab6b8d5a6a9acefc75e56e7f24",
+      "entries": [
+        {
+          "id": "stg-20261112T215917Z-auto8-c73af2-f01",
+          "has_assertion": false
+        },
+        {
+          "id": "stg-20261112T215917Z-auto8-c73af2-f02",
+          "has_assertion": false
+        },
+        {
+          "id": "stg-20261112T215917Z-auto8-c73af2-f03",
+          "has_assertion": false
+        },
+        {
+          "id": "stg-20261112T215917Z-auto8-c73af2-f04",
+          "has_assertion": false
+        },
+        {
+          "id": "stg-20261112T215917Z-auto8-c73af2-f05",
+          "has_assertion": false
+        },
+        {
+          "id": "stg-20261112T215917Z-auto8-c73af2-f06",
+          "has_assertion": false
+        },
+        {
+          "id": "stg-20261112T215917Z-auto8-c73af2-f07",
+          "has_assertion": false
+        },
+        {
+          "id": "stg-20261112T215917Z-auto8-c73af2-f08",
+          "has_assertion": false
+        },
+        {
+          "id": "stg-20261112T215917Z-auto8-c73af2-f09",
+          "has_assertion": false
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261112T2300Z-reforma-historic-centre-bf631.json",
+      "blob_sha": "e176f7af33d766dc72441531b3f0baae30569b80",
+      "entries": [
+        {
+          "id": "stg-20261112-reforma-01",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112-reforma-02",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112-reforma-03",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112-reforma-04",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112-reforma-05",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112-reforma-06",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112-reforma-07",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112-reforma-08",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112-reforma-09",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112-reforma-10",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112-reforma-11",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112-reforma-12",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261112T2359Z_reforma_libertad_cultos_crosswalk.json",
+      "blob_sha": "846287cebbab66efb16f8d1c4bc07171bf9cf012",
+      "entries": [
+        {
+          "id": "stg-20261112T2359Z_REFORMA_LIBERTAD_CULTOS_CROSSWALK-F01",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T2359Z_REFORMA_LIBERTAD_CULTOS_CROSSWALK-F02",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T2359Z_REFORMA_LIBERTAD_CULTOS_CROSSWALK-F03",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T2359Z_REFORMA_LIBERTAD_CULTOS_CROSSWALK-F04",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T2359Z_REFORMA_LIBERTAD_CULTOS_CROSSWALK-F05",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T2359Z_REFORMA_LIBERTAD_CULTOS_CROSSWALK-F06",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T2359Z_REFORMA_LIBERTAD_CULTOS_CROSSWALK-F07",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T2359Z_REFORMA_LIBERTAD_CULTOS_CROSSWALK-F08",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T2359Z_REFORMA_LIBERTAD_CULTOS_CROSSWALK-F09",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261113-hospital-jesus-archival-chronology.json",
+      "blob_sha": "7beb789bb5715386b16e3f4c75a42f2d69eb9731",
+      "entries": [
+        {
+          "id": "stg-20261113-hj-06",
+          "has_assertion": false,
+          "index_only": true
+        },
+        {
+          "id": "stg-20261113-hj-07",
+          "has_assertion": false,
+          "index_only": true
+        },
+        {
+          "id": "stg-20261113-hj-08",
+          "has_assertion": false,
+          "index_only": true
+        },
+        {
+          "id": "stg-20261113-hj-09",
+          "has_assertion": false,
+          "index_only": true
+        },
+        {
+          "id": "stg-20261113-hj-10",
+          "has_assertion": false,
+          "index_only": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261113-hospital-jesus-foundation.json",
+      "blob_sha": "e569a42b94cd5a9537e2582c0cbc258cddf3fc44",
+      "entries": [
+        {
+          "id": "stg-20261113-hjesus-foundation-date-conflict",
+          "has_assertion": false
+        },
+        {
+          "id": "stg-20261113-hjesus-original-names",
+          "has_assertion": false
+        },
+        {
+          "id": "stg-20261113-hjesus-building-survival",
+          "has_assertion": false
+        },
+        {
+          "id": "stg-20261113-hjesus-urban-site",
+          "has_assertion": false
+        },
+        {
+          "id": "stg-20261113-hjesus-temple-construction",
+          "has_assertion": false
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261113-source-crosswalk-review.json",
+      "blob_sha": "40918fb06dc62e6d6b4e45eda63da8c165af2307",
+      "entries": []
+    },
+    {
+      "path": "research/batches/20261113T0055Z_hospital_beneficencia_1b6a.json",
+      "blob_sha": "6cceb55e964dd716c9a17bd1cfe50404ef6cf59c",
+      "entries": [
+        {
+          "id": "stg-20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-F01",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-F02",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-F03",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-F04",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-F05",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-F06",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-F07",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-F08",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-F09",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-F10",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-F11",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-F12",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-F13",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261113T0120Z-source-identity-audit.json",
+      "blob_sha": "cc2ce4c4d369fa7169f8181a5d7d0207186fb267",
+      "entries": []
+    },
+    {
+      "path": "research/batches/20261113T0203Z-templo-mayor-discover-eight.json",
+      "blob_sha": "63ed0fa23a927ff6f8ce40c3c4b8c750f716394d",
+      "entries": [
+        {
+          "id": "stg-20261113-tm-audit-01",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261113-tm-audit-02",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261113-tm-audit-03",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261113-tm-audit-04",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261113-tm-audit-05",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261113-tm-audit-06",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261113-tm-audit-07",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261113-tm-audit-08",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261113T0310Z-transit-revolution-1985-breadth.json",
+      "blob_sha": "cf5b59165b2cd7cc177583e13b756dd8a996a093",
+      "entries": [
+        {
+          "id": "cdmx-stg-20261113-urban-01",
+          "has_assertion": true
+        },
+        {
+          "id": "cdmx-stg-20261113-urban-02",
+          "has_assertion": true
+        },
+        {
+          "id": "cdmx-stg-20261113-urban-03",
+          "has_assertion": true
+        },
+        {
+          "id": "cdmx-stg-20261113-urban-04",
+          "has_assertion": true
+        },
+        {
+          "id": "cdmx-stg-20261113-urban-05",
+          "has_assertion": true
+        },
+        {
+          "id": "cdmx-stg-20261113-urban-06",
+          "has_assertion": true
+        },
+        {
+          "id": "cdmx-stg-20261113-urban-07",
+          "has_assertion": true
+        },
+        {
+          "id": "cdmx-stg-20261113-urban-08",
+          "has_assertion": true
+        },
+        {
+          "id": "cdmx-stg-20261113-urban-09",
+          "has_assertion": true
+        },
+        {
+          "id": "cdmx-stg-20261113-urban-10",
+          "has_assertion": true
+        },
+        {
+          "id": "cdmx-stg-20261113-urban-11",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261113T0356Z-1692-grain-riot-colonial-politics.json",
+      "blob_sha": "f5d6c709f881a7acddd59608938ca9b3ec81b6fe",
+      "entries": [
+        {
+          "id": "cdmx-stg-20261113-colonial1692-01",
+          "has_assertion": true
+        },
+        {
+          "id": "cdmx-stg-20261113-colonial1692-02",
+          "has_assertion": true
+        },
+        {
+          "id": "cdmx-stg-20261113-colonial1692-03",
+          "has_assertion": true
+        },
+        {
+          "id": "cdmx-stg-20261113-colonial1692-04",
+          "has_assertion": true
+        },
+        {
+          "id": "cdmx-stg-20261113-colonial1692-05",
+          "has_assertion": true
+        },
+        {
+          "id": "cdmx-stg-20261113-colonial1692-06",
+          "has_assertion": true
+        },
+        {
+          "id": "cdmx-stg-20261113-colonial1692-07",
+          "has_assertion": true
+        },
+        {
+          "id": "cdmx-stg-20261113-colonial1692-08",
+          "has_assertion": true
+        },
+        {
+          "id": "cdmx-stg-20261113-colonial1692-09",
+          "has_assertion": true
+        },
+        {
+          "id": "cdmx-stg-20261113-colonial1692-10",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261113T0610Z-decena-tragica-national-palace-source-audit.json",
+      "blob_sha": "8f940264f24c45a207653e35e71286a1919dd030",
+      "entries": [
+        {
+          "id": "cdmx-stg-20261113-decena-01",
+          "has_assertion": true
+        },
+        {
+          "id": "cdmx-stg-20261113-decena-02",
+          "has_assertion": true
+        },
+        {
+          "id": "cdmx-stg-20261113-decena-03",
+          "has_assertion": true
+        },
+        {
+          "id": "cdmx-stg-20261113-decena-04",
+          "has_assertion": true
+        },
+        {
+          "id": "cdmx-stg-20261113-decena-05",
+          "has_assertion": true
+        },
+        {
+          "id": "cdmx-stg-20261113-decena-06",
+          "has_assertion": true
+        },
+        {
+          "id": "cdmx-stg-20261113-decena-07",
+          "has_assertion": true
+        },
+        {
+          "id": "cdmx-stg-20261113-decena-08",
+          "has_assertion": true
+        },
+        {
+          "id": "cdmx-stg-20261113-decena-09",
+          "has_assertion": true
+        },
+        {
+          "id": "cdmx-stg-20261113-decena-10",
+          "has_assertion": true
+        }
+      ]
+    }
+  ]
+}
