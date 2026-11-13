@@ -483,6 +483,16 @@ def validate():
     if immutable_manifest.get("research_commit_sha") != sha:
         raise ValueError("Versioned handoff snapshot points to a different research commit")
     validate_versioned_handoff(manifest, immutable_manifest, snapshot_blob_sha)
+    if (manifest["schema_version"] == 4
+            and immutable_manifest.get("kind") == "research_to_app_handoff"
+            and immutable_manifest != manifest):
+        # Verify the claimed history commit actually contains this immutable
+        # Git blob, and is an ancestor of the manifest-publishing commit.
+        origin = manifest["handoff_history_commit_sha"]
+        subprocess.run(["git", "merge-base", "--is-ancestor", origin, handoff_commit],
+                       check=True, capture_output=True)
+        if git("rev-parse", f"{origin}:{immutable}").decode().strip() != snapshot_blob_sha:
+            raise ValueError("Frozen v4 snapshot not present at pinned history commit")
     if immutable_manifest.get("kind") == "verified_research_to_app_handoff_history":
         # The producer pins the Git blob identities after a successful readback.
         # Compare to the committed artifact, not merely a self-asserted hash.
