@@ -1,0 +1,77 @@
+{
+  "schema_version": 4,
+  "generated_at": "2026-11-13T07:14:10Z",
+  "kind": "verified_research_staging_handoff",
+  "research_commit_sha": "ae2969bef3e48db2e2f91247624f7bf29185379c",
+  "pipeline_fix_commit_sha": "c8217101f8e3ed83670358d205408411b2e35e83",
+  "persisted_snapshot_commit_sha": "d5e8b2593806ab123beabc4147512b082642a465",
+  "canonical": {
+    "version": "V97",
+    "sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "status": "unchanged_provisional_NOT_PROMOTED",
+    "sources": 616,
+    "claims": 422,
+    "claim_source_links": 403,
+    "findings": 68,
+    "source_inspections": 9
+  },
+  "versioned_research": {
+    "database": "research/reconciled/v4_c8217101f8e3/research_only.sqlite.gz",
+    "sha256_uncompressed": "d25c8e3d4e48f79bf70fe7489b619ebe1e4faabc09f7081df7c79e3fd7fbb0f7",
+    "sha256_gzip": "e6b5880f192298be5e431e8d9c51cf9e3482b74518b95174dbcb41ebd27d13d6",
+    "replay_report": "research/reconciled/v4_c8217101f8e3/replay_report.json",
+    "sqlite_integrity": "ok",
+    "foreign_key_violations": 0,
+    "canonical_rows_unchanged": true
+  },
+  "staged_counts": {
+    "github_batches_replayed": 58,
+    "github_substantive_finding_ids": 300,
+    "github_inspection_metadata_entries": 84,
+    "source_candidate_identities": 66,
+    "unresolved_source_references": 14,
+    "bibliographic_metadata_conflicts": 2,
+    "index_only_unresolved": 16,
+    "detached_inspections_not_merged": 37
+  },
+  "comparison": {
+    "github_inspection_entries_before": 80,
+    "after": 14,
+    "source_candidate_identities_before": 58,
+    "unresolved_source_references_before": 22,
+    "distinct_historical_findings_added": 0
+  },
+  "chapter_audit_artifact_paths": [
+    "research/audits/templo-mayor-discover-20261113.json",
+    "research/audits/templo-mayor-discover-20261113T0716Z-inah-physical-evidence-addendum.json"
+  ],
+  "coverage_artifact_paths": [
+    "research/coverage/coverage-matrix-20261113-compact.json",
+    "research/coverage/20261113T0716Z-four-poi-explanatory-readiness.json"
+  ],
+  "reconciliation_artifact_paths": [
+    "research/ledgers/20261113T0716Z-inspection-schema-replay-and-detached-gap.json",
+    "research/pipeline/reconcile_git_batches.py",
+    "research/reconciled/v4_c8217101f8e3/replay_report.json"
+  ],
+  "evidence_status": {
+    "new_primary_source_originals_examined": 0,
+    "new_historical_finding_candidates": 0,
+    "physical_evidence_entries_added_to_templo_audit": 3,
+    "source_access": "INAH institutional HTML passages, not original excavation reports",
+    "independent_corroboration_added": 0
+  },
+  "ready_for_editorial_review": false,
+  "ready_for_publication": false,
+  "canonical_promoted": false,
+  "app_main_untouched": true,
+  "blockers": [
+    "37 detached source-inspection raw records still require unique-preserving import and semantic crosswalk against 84 GitHub metadata entries",
+    "14 unresolved source references",
+    "2 cross-batch bibliographic metadata collisions",
+    "16 index-only finding references lack assertions",
+    "Templo Mayor exact Discover prose still inaccessible for sentence-by-sentence audit"
+  ],
+  "previous_handoff_blob_sha": "f5c1e6669f1e33f17b2c18a183799d77fcbbade9",
+  "previous_handoff_generated_at": "2026-11-13T06:58:00Z"
+}
