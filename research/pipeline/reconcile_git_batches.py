@@ -7,6 +7,7 @@ Creates a NEW versioned research-only SQLite, preserving originals and raw
 provenance. No canonical promotion, editorial approval, or merge is performed.
 """
 import argparse, gzip, hashlib, json, re, sqlite3
+from urllib.parse import urlsplit, parse_qsl, urlencode
 from pathlib import Path
 
 PIN = "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846"
@@ -74,6 +75,32 @@ def inspection_source_id(item):
         return str(original.get("source_id") or original.get("id") or "")
     return ""
 
+def inspection_identity_fields(item):
+    """Weak candidate keys, never automatic source-identity equivalence."""
+    raw = item.get("original_inspection") if isinstance(item.get("original_inspection"),dict) else item
+    def pick(*names):
+        return next((str(raw[n]).strip() for n in names if isinstance(raw.get(n),str) and raw[n].strip()),"")
+    url=pick("source_url","url","link","web_url","landing_page")
+    if not url:
+        url=next((str(item[n]).strip() for n in ("source_url","url") if isinstance(item.get(n),str) and item[n].strip()),"")
+    if url:
+        try:
+            parts=urlsplit(url)
+            if parts.scheme not in ("https","http"): url=""
+            else:
+                host=parts.netloc.lower().removeprefix("www.")
+                # Preserve substantive query parameters; discard only tracking.
+                query=urlencode(sorted((k,v) for k,v in parse_qsl(parts.query,keep_blank_values=True)
+                                       if not k.lower().startswith(("utm_","fbclid","gclid"))))
+                url=(host+parts.path.rstrip("/").lower()+("?"+query if query else ""))
+        except ValueError: url=""
+    doi=pick("doi","DOI")
+    if not doi and "doi.org/" in url:
+        doi=url.split("doi.org/",1)[1]
+    doi=doi.lower().removeprefix("https://doi.org/").removeprefix("http://doi.org/")
+    title=re.sub(r"\\s+"," ",pick("source_title","title")).strip().casefold()
+    return {"url":url,"doi":doi,"title":title}
+
 def detached_inspection_crosswalk(conn, detached_batch):
     """Status is strictly possible identity overlap, never editorial equivalence."""
     rows = [(p, i, json.loads(raw))
@@ -90,12 +117,24 @@ def detached_inspection_crosswalk(conn, detached_batch):
                         and isinstance(wrapped.get("original_inspection"), dict)})
         same_source = sorted({bid for _, bid, existing in base
                               if sid and inspection_source_id(existing) == sid})
+        key=inspection_identity_fields(wrapped)
+        same_url=sorted({bid for _, bid, existing in base
+                         if key["url"] and inspection_identity_fields(existing)["url"]==key["url"]})
+        same_doi=sorted({bid for _, bid, existing in base
+                         if key["doi"] and inspection_identity_fields(existing)["doi"]==key["doi"]})
+        same_title=sorted({bid for _, bid, existing in base
+                           if len(key["title"])>=20 and inspection_identity_fields(existing)["title"]==key["title"]})
         if exact: status = "same_structured_payload_candidate"
         elif same_source: status = "same_source_identity_scope_unverified"
-        else: status = "no_existing_source_identity_match"
+        elif same_doi: status = "same_doi_candidate"
+        elif same_url: status = "same_source_url_candidate"
+        elif same_title: status = "same_title_candidate"
+        else: status = "no_existing_candidate_match"
         result.append({"detached_inspection_id":iid, "source_id":sid,
-                       "status":status, "exact_candidates":exact,
-                       "same_source_candidates":same_source})
+                       "status":status,"exact_candidates":exact,
+                       "same_source_candidates":same_source,
+                       "same_url_candidates":same_url,"same_doi_candidates":same_doi,
+                       "same_title_candidates":same_title})
     return result
 
 def main():
@@ -245,7 +284,8 @@ def main():
     detached_status_counts={k:sum(x["status"]==k for x in detached_crosswalk)
                             for k in ("same_structured_payload_candidate",
                                       "same_source_identity_scope_unverified",
-                                      "no_existing_source_identity_match")}
+                                      "same_doi_candidate","same_source_url_candidate",
+                                      "same_title_candidate","no_existing_candidate_match")}
     report={"schema_version":2,"canonical_sha256":PIN,
        "staging_sha256":hashfile(staging),"output_sha256":hashfile(dest),
        "canonical_tables_preserved":len(baseline),"canonical_rows_unchanged":preserved,

@@ -21,6 +21,27 @@ class ReplaySchemaTests(unittest.TestCase):
             self.assertEqual(decoded,raw)
             self.assertEqual([x["id"] for x in importer.inspection_records(obj)],["i1","i2"])
 
+    def test_inspection_url_matching_ignores_tracking_not_path(self):
+        a={"url":"https://www.INAH.gob.mx/research/report/?utm_source=test"}
+        b={"url":"http://inah.gob.mx/research/report"}
+        c={"url":"http://inah.gob.mx/research/other"}
+        self.assertEqual(importer.inspection_identity_fields(a)["url"],
+                         importer.inspection_identity_fields(b)["url"])
+        self.assertNotEqual(importer.inspection_identity_fields(a)["url"],
+                            importer.inspection_identity_fields(c)["url"])
+
+    def test_detached_crosswalk_flags_same_url_across_id_namespaces(self):
+        import sqlite3
+        db=sqlite3.connect(":memory:")
+        db.execute("CREATE TABLE research_batch_inspections(source_path TEXT,inspection_id TEXT,payload_json TEXT)")
+        old={"id":"old","source_id":"OLD-ID","url":"https://example.edu/source/a"}
+        new={"id":"new","source_id":"NEW-ID","original_inspection":{"source_url":"https://example.edu/source/a","portion_examined":"another section"}}
+        db.execute("INSERT INTO research_batch_inspections VALUES(?,?,?)",("old.json","old",json.dumps(old)))
+        db.execute("INSERT INTO research_batch_inspections VALUES(?,?,?)",
+                   ("20261113T0803Z-detached-original-inspections-37.json.gz","new",json.dumps(new)))
+        self.assertEqual(importer.detached_inspection_crosswalk(db,"20261113T0803Z-detached-original-inspections-37.json.gz")[0]["status"],
+                         "same_source_url_candidate")
+
     def test_detached_inspection_crosswalk_does_not_auto_merge(self):
         import sqlite3
         db=sqlite3.connect(":memory:")
