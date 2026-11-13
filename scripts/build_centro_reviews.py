@@ -31,6 +31,7 @@ STYLE = r"""
 .review-pager button{border:0;border-radius:9px;padding:12px 15px;background:#126c69;color:#fff;font:700 14px system-ui;cursor:pointer}
 .review-pager button:disabled{opacity:.35;cursor:not-allowed}
 .review-chapter-select{max-width:100%;width:100%;border:1px solid #9abdc0;background:white;padding:12px;border-radius:9px;font:15px system-ui;margin:7px 0}
+.review-switch button:focus-visible,.review-pager button:focus-visible,.review-chapter-select:focus-visible{outline:3px solid #126c69;outline-offset:3px}
 .review-screen .observations{margin:0;background:transparent;padding:0}
 .review-screen .observations li{display:block;padding:0;border:0}
 .review-screen .observations li span{display:none}
@@ -154,11 +155,20 @@ layout.remove();observations.remove();
 const closing=document.createElement('p');closing.className='review-nav-footer';
 closing.textContent='This is an alternative reading layout. All historical text, source IDs and observations come from the preserved guide, which is still available separately.';
 screens.plan.append(closing);
-const hash=decodeURIComponent(location.hash.slice(1));
-const historicalIndex=chapters.findIndex(c=>c.id===hash);
-if(historicalIndex>=0){activate('discover',false);chooseChapter(historicalIndex,false)}
-const observationIndex=stopSections.findIndex(c=>c.id===hash);
-if(observationIndex>=0){activate('explore',false);chooseStop(observationIndex,false)}
+// The reader must also handle links opened after initial load (hashchange).
+// Cross-site reading links resolve to exact historical chapters, not the top.
+function navigateHash(){
+  let hash;
+  try{hash=decodeURIComponent(location.hash.slice(1))}
+  catch{hash=location.hash.slice(1)}
+  if(!hash)return;
+  const historicalIndex=chapters.findIndex(c=>c.id===hash);
+  if(historicalIndex>=0){activate('discover',false);chooseChapter(historicalIndex,false);return}
+  const observationIndex=stopSections.findIndex(c=>c.id===hash);
+  if(observationIndex>=0){activate('explore',false);chooseStop(observationIndex,false)}
+}
+navigateHash();
+window.addEventListener('hashchange',navigateHash);
 });
 </script>
 """
