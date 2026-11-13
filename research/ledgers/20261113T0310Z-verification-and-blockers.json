@@ -1,0 +1,95 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261113T0310Z-transit-revolution-1985-breadth",
+  "canonical_v97": {
+    "sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "sources": 616,
+    "claims": 422,
+    "claim_sources": 403,
+    "findings": 68,
+    "source_inspections": 9,
+    "baseline_tables_preserved": 88,
+    "unchanged": true
+  },
+  "local_versioned_staging": {
+    "before_distinct_candidate_ids": 136,
+    "added_candidate_ids": 11,
+    "after_distinct_candidate_ids": 147,
+    "before_inspection_metadata": 52,
+    "additional_inspection_metadata": 9,
+    "after_inspection_metadata": 61,
+    "sqlite_sha256": "82d837596ed6c52f8268882e9718539f89dd68425295af101d3df65f4ced7a08",
+    "bytes": 3710976,
+    "sqlite_integrity": "ok",
+    "foreign_key_violations": 0,
+    "recovery_archive": "sandbox:/mnt/data/cdmx_run_20261113T0310Z/output/CDMX_20261113T0310Z_URBAN_BREADTH_RESEARCH_ONLY.zip",
+    "archive_sha256": "ba11ac3b17f547512a7b80628177a6fbfc51557ec65cb97b45cb5d769a80a77f",
+    "persistent_Library_upload": "failed_Invalid_FileDrive_root",
+    "git_binary_committed": false,
+    "status": "local_research_snapshot_only_not_canonical"
+  },
+  "github_batch_content_audit": {
+    "batch_files": 54,
+    "content_read": 54,
+    "matching_git_blob_sha": 54,
+    "finding_like_entries_count": 266,
+    "independent_findings_count": "NOT ESTABLISHED; duplicates possible",
+    "index_paths": [
+      "research/ledgers/20261113T0310Z-batch-schema-01.json",
+      "research/ledgers/20261113T0310Z-batch-schema-02.json",
+      "research/ledgers/20261113T0310Z-batch-schema-03.json",
+      "research/ledgers/20261113T0310Z-batch-schema-04.json"
+    ],
+    "full_content_sqlite_replay": false
+  },
+  "pipeline": {
+    "repository_path": "research/pipeline/reconcile_git_batches.py",
+    "patched_to_recognize_legacy_staged_id_and_all_finding_arrays": true,
+    "repository_readback_verified": true,
+    "full_54_file_checkout_execution": false,
+    "partial_local_three_file_replay_test_passed": true
+  },
+  "coverage": {
+    "provisional_machine_cells": 2112,
+    "developing": 177,
+    "sparse": 212,
+    "missing": 1723,
+    "substantial_verified": 0,
+    "human_reviewed_cells": 8,
+    "review_path": "research/coverage/20261113T0310Z-human-reviewed-urban-gap-cells.json"
+  },
+  "new_research": {
+    "candidate_findings": 11,
+    "new_source_records": 9,
+    "new_web_source_inspection_records": 9,
+    "independently_corroborated": 0,
+    "editorial_approved": 0,
+    "possible_duplicate_mapping": [
+      {
+        "id": "cdmx-stg-20261113-urban-05",
+        "maybe_same_topic_as": "stg-20261112-reforma-11"
+      }
+    ]
+  },
+  "lineage": {
+    "pipeline_patch_commit": "1518834e53b2d93135fd2e75636fa330b684ea0d",
+    "new_batch_commit": "1896dd427498b88b2046a5b1249f11dc1f4ad6be",
+    "coverage_review_commit": "9cc22576c24bbaa1041a96d3dd4ef8b6eebfb696",
+    "batch_inventories": [
+      "7579fa569131cc81021a53fddfd9c074f5dee627",
+      "d059fa448bc1cabcecf5f54c77b2e916bee1f283",
+      "058159feba4de784dfecc61f0fe290f205386f7a",
+      "2cda95d961a645babd2282f2ebb2fce82e26fbaa"
+    ]
+  },
+  "blockers": [
+    "Complete 54-file replay in a checkout against pinned canonical SQLite and durable versioned staging SQLite",
+    "Durable binary artifact write/readback: Library reported Invalid FileDrive root",
+    "Verify source aliases and same-finding duplicates before any merge",
+    "Full-text original source checks and independent editorial review before publication",
+    "Templo Mayor Discover source prose not available for line-by-line audit"
+  ],
+  "ready_for_editorial_review": false,
+  "ready_for_publication": false,
+  "canonical_promoted": false
+}
