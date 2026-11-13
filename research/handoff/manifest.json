@@ -23,5 +23,13 @@
     "Research automation must validate staged artifacts and write a commit-specific handoff",
     "Canonical database not yet reconciled with staged findings"
   ],
-  "instructions": "Research task must replace nulls only with independently verified counts, add immutable artifact paths and research commit SHA, and commit updated manifest. App task must validate referenced SHA and files before consuming; never publish unapproved research."
+  "instructions": "Research task must replace nulls only with independently verified counts, add immutable artifact paths and research commit SHA, and commit updated manifest. App task must validate referenced SHA and files before consuming; never publish unapproved research.",
+  "integration_test": {
+    "type": "contract_round_trip",
+    "result": "pending_readback",
+    "scope": "GitHub manifest write/read and cross-branch consumer read only; not a scheduled automation execution",
+    "canonical_hash_checked": true,
+    "canonical_count_checked": true,
+    "publication_guard_checked": true
+  }
 }
