@@ -1,0 +1,110 @@
+{
+  "schema_version": 3,
+  "generated_at": "2026-11-13T19:02:04.275Z",
+  "kind": "period_x_theme_x_geography_explanatory_readiness_delta",
+  "source_batch_path": "research/batches/20261113T1858Z-1692-archival-voices-and-urban-aftermath.json",
+  "branch": "research-persistence",
+  "evidence_status": "research_staged_not_approved",
+  "rating_definitions": {
+    "substantial": "Source-critical coherent explanation plus independent document locators and validated spatial observation",
+    "developing": "Explanatory mechanism and site are meaningful but primary/archive or map gap remains",
+    "sparse": "Some differentiated observations without enough evidence for a full chapter/site walk",
+    "missing": "Essential explanatory or physical evidence absent"
+  },
+  "cells": [
+    {
+      "id": "COL1691-FOOD-DISEASE-CITY",
+      "period": "1691–1692",
+      "theme": "Flooding, crop disease and food-price vulnerability",
+      "geography": "Mexico City basin",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113T1858Z-COL1692-01"
+      ],
+      "explanatory_readiness": "Explanatory causal chain from named chronicles is present, but no quantitative environmental/price series.",
+      "next_evidence_needed": "Contemporary alcabala, alhóndiga and epidemic returns; check flood chronology."
+    },
+    {
+      "id": "COL1692-WOMEN-ALHONDIGA",
+      "period": "8 June 1692",
+      "theme": "Women, tortilla production and market politics",
+      "geography": "Alhóndiga / Plaza Mayor",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113T1858Z-COL1692-03",
+        "STG-20261113T1858Z-COL1692-04"
+      ],
+      "explanatory_readiness": "Social mechanism and approximate place documented through published scholarly reconstruction and 1693 account.",
+      "next_evidence_needed": "Original municipal alhóndiga records and independent women's testimonies; plot the historic site."
+    },
+    {
+      "id": "COL1692-MARKET-FIRE-GOV",
+      "period": "8 June 1692",
+      "theme": "Market stalls and political architecture",
+      "geography": "Plaza Mayor / palace / cabildo",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113T1858Z-COL1692-05",
+        "STG-20261113T1858Z-COL1692-06"
+      ],
+      "explanatory_readiness": "Distinct structures and fuel mechanism locatable, but no verified building map.",
+      "next_evidence_needed": "Contemporary architectural plan and post-fire restoration accounts."
+    },
+    {
+      "id": "COL1692-COURTS-POSTRIOT",
+      "period": "June–July 1692",
+      "theme": "Court operations, administration and repression",
+      "geography": "Viceregal palace",
+      "rating": "sparse",
+      "linked_assertion_ids": [
+        "STG-20261113T1858Z-COL1692-06"
+      ],
+      "explanatory_readiness": "Institutional disruption reported; exact span and judicial impact not reconstructed.",
+      "next_evidence_needed": "Cabildo minutes, Audiencia registers and case files."
+    },
+    {
+      "id": "COL1692-INDIGENOUS-LABOR",
+      "period": "1692–1693",
+      "theme": "Labor displacement and tertiary chapel construction",
+      "geography": "Colonial traza / Dominican chapel",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113T1858Z-COL1692-07"
+      ],
+      "explanatory_readiness": "Specific ten-month work stoppage mechanism published from near-contemporary witness.",
+      "next_evidence_needed": "Inspect AGN manuscript and pin chapel footprint and building contract."
+    },
+    {
+      "id": "COL1692-SOURCE-PERSPECTIVES",
+      "period": "1692",
+      "theme": "Conflicting witness narratives and elite bias",
+      "geography": "Plaza Mayor",
+      "rating": "sparse",
+      "linked_assertion_ids": [
+        "STG-20261113T1858Z-COL1692-02",
+        "STG-20261113T1858Z-COL1692-08"
+      ],
+      "explanatory_readiness": "Witness limits and different positions recognized; Indigenous first-person testimony absent.",
+      "next_evidence_needed": "Compare original Robles, de la Fuente, Sigüenza, trial depositions and Indigenous petitions."
+    },
+    {
+      "id": "COL1692-MODERN-VISIBILITY",
+      "period": "2026",
+      "theme": "Surviving architectural fabric and accessible interpretation",
+      "geography": "National Palace / Zócalo",
+      "rating": "missing",
+      "linked_assertion_ids": [
+        "STG-20261113T1858Z-COL1692-05"
+      ],
+      "explanatory_readiness": "Text says where the events occurred, not which specific 1692 architectural material survives.",
+      "next_evidence_needed": "Conservation inventories, historic parcel overlays, site access and current signage."
+    }
+  ],
+  "summary": {
+    "substantial": 0,
+    "developing": 4,
+    "sparse": 2,
+    "missing": 1
+  },
+  "publication_approved": false
+}

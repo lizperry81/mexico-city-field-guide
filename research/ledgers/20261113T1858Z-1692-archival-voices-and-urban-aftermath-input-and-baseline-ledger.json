@@ -1,0 +1,69 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-11-13T19:02:04.275Z",
+  "kind": "append_only_git_research_batch_input_inventory_and_nonpromotion",
+  "branch": "research-persistence",
+  "parent_sha": "af6d33066ed1bef27136f12a3eb2deffb800bad5",
+  "canonical": {
+    "version": "V97",
+    "hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "status": "unchanged",
+    "sources": 616,
+    "claims": 422,
+    "links": 403,
+    "findings": 68
+  },
+  "prior_verified_replay": {
+    "commit_sha": "d4d77f0dbb00376d2ee6b84d9e1f488c0ce689da",
+    "path": "research/reconciled/v4_fbdbd48c02a9/replay_report.json",
+    "batch_count": 70,
+    "findings": 384,
+    "provisional_sources": 126,
+    "inspection_metadata": 164,
+    "unknown_source_references": 1,
+    "source_metadata_collisions": 2
+  },
+  "new_research_input": {
+    "batch_path": "research/batches/20261113T1858Z-1692-archival-voices-and-urban-aftermath.json",
+    "coverage_path": "research/coverage/20261113T1858Z-1692-archival-voices-and-urban-aftermath-readiness.json",
+    "chapter_audit_path": "research/audits/20261113T1858Z-1692-archival-voices-and-urban-aftermath-templo-mayor-chronology-boundary.json",
+    "finding_ids": [
+      "STG-20261113T1858Z-COL1692-01",
+      "STG-20261113T1858Z-COL1692-02",
+      "STG-20261113T1858Z-COL1692-03",
+      "STG-20261113T1858Z-COL1692-04",
+      "STG-20261113T1858Z-COL1692-05",
+      "STG-20261113T1858Z-COL1692-06",
+      "STG-20261113T1858Z-COL1692-07",
+      "STG-20261113T1858Z-COL1692-08"
+    ],
+    "source_ids": [
+      "STG-SRC-MURIEL-1998-EHN18-1692-DOCUMENTARIA",
+      "STG-SRC-SIGUENZA-1692-ALBOROTO-TRANSCRIPTION"
+    ],
+    "inspection_ids": [
+      "20261113T1858Z-INS-MURIEL-1692",
+      "20261113T1858Z-INS-SIGUENZA-1692"
+    ],
+    "findings_count": 8,
+    "source_candidates_count": 2,
+    "inspections_count": 2
+  },
+  "optimistic_staged_counts_pending_replay": {
+    "batch_files": 71,
+    "assertion_bearing_finding_ids": 392,
+    "source_candidates": 128,
+    "inspection_metadata": 166,
+    "unregistered_source_refs": "not_checked_new_replay"
+  },
+  "verification_limits": {
+    "original_1693_agn_manuscript_unseen": true,
+    "web_pdf_text_examined": true,
+    "pdf_screenshot_failed_http_502": true,
+    "original_sigüenza_manuscript_unseen": true,
+    "source_identity_dedupe_not_automatic": true,
+    "new_sqlite_generated_this_commit": false,
+    "editorial_corroboration": false
+  },
+  "nonpromotion": "No canonical copy or live app modification; after CI, inspect replay/hash and GitHub readback before referencing any new versioned SQLite in current handoff."
+}

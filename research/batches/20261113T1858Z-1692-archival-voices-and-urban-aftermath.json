@@ -1,0 +1,259 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261113T1858Z-1692-archival-voices-and-urban-aftermath",
+  "generated_at": "2026-11-13T19:02:04.275Z",
+  "branch": "research-persistence",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "storage_role": "immutable_noncanonical_research_batch",
+  "previous_verified_replay": "research/reconciled/v4_fbdbd48c02a9/replay_report.json",
+  "prior_verified_counts": {
+    "github_batches": 70,
+    "assertion_bearing_findings": 384,
+    "source_candidates": 126,
+    "source_inspections": 164,
+    "unregistered_source_refs": 1,
+    "metadata_collisions": 2
+  },
+  "research_scope": "Urban social and institutional aftermath of the June 1692 riot from Muriel's publication of Thomas de la Fuente Salazar's 1693 chronicle, contextualized against the online Sigüenza narrative; prioritize specific explanatory mechanisms over duplicated casualty estimates.",
+  "sources": [
+    {
+      "id": "STG-SRC-MURIEL-1998-EHN18-1692-DOCUMENTARIA",
+      "title": "Una nueva versión del motín del 8 de junio de 1692",
+      "authors": "Josefina Muriel",
+      "year": 1998,
+      "publication": "Estudios de Historia Novohispana 18 (1998), pp. 107–115, Documentaria",
+      "doi": "10.22201/iih.24486922e.1998.018.3466",
+      "url": "https://novohispana.historicas.unam.mx/index.php/ehn/article/download/3466/3021/3417",
+      "access_scope": "Complete extracted machine-readable journal PDF text consulted, printed pp.107–115; screenshot attempts on pages 5 and 6 returned HTTP 502. Includes excerpt of de la Fuente Salazar's 1693 manuscript, NOT direct archival original.",
+      "status": "provisional_text_extracted_page_located_not_archivally_verified",
+      "reproduction_rights": "No article figures or document facsimiles copied"
+    },
+    {
+      "id": "STG-SRC-SIGUENZA-1692-ALBOROTO-TRANSCRIPTION",
+      "title": "Alboroto y motín de México del 8 de junio de 1692 (digitized transcription)",
+      "authors": "Carlos de Sigüenza y Góngora",
+      "year": 1692,
+      "publication": "Contemporary witness letter to Admiral Andrés de Pez; modern online edited transcription, editorial provenance not yet independently validated",
+      "url": "https://www.memoriapoliticademexico.org/Textos/1Independencia/1692AMM.html",
+      "access_scope": "Online narrative transcription, paragraphs at lines 13–60; no 1692 manuscript, no 1932 Leonard edition facsimile examined",
+      "status": "historic_primary_text_in_modern_secondary_transcription_provisional",
+      "reproduction_rights": "No reproduction of original source images"
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "20261113T1858Z-INS-MURIEL-1692",
+      "source_id": "STG-SRC-MURIEL-1998-EHN18-1692-DOCUMENTARIA",
+      "locator": "Printed pp.107–115, especially pp.109–114; web PDF extracted lines 78–279; screenshot pages 5 and 6 attempted but service returned HTTP 502",
+      "access": "Entire article machine-extracted text manually examined. NOT original AGN folios, and screenshots unavailable.",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261113T1858Z-INS-SIGUENZA-1692",
+      "source_id": "STG-SRC-SIGUENZA-1692-ALBOROTO-TRANSCRIPTION",
+      "locator": "Transcription lines 13–60, paragraphs about initial eyewitness limits, plaza market stalls, palace/cabildo and fires",
+      "access": "Online edited text, not manuscript or Leonard 1932 physical edition",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    }
+  ],
+  "findings": [
+    {
+      "id": "STG-20261113T1858Z-COL1692-01",
+      "assertion": "Muriel's comparison of three chroniclers links the maize and wheat shortages to 1691 flooding, crop blight (chahuistle), rising prices and a measles epidemic that especially affected Indigenous residents. These interacting shocks should not be flattened to a single bad-harvest explanation.",
+      "date_or_range": "1691–1692",
+      "period": "Colonial New Spain (1691–1693)",
+      "geographies": [
+        "Mexico City and basin"
+      ],
+      "themes": [
+        "Colonial environmental and food history"
+      ],
+      "poi_ids": [
+        "zocalo-national-palace"
+      ],
+      "source_ids": [
+        "STG-SRC-MURIEL-1998-EHN18-1692-DOCUMENTARIA"
+      ],
+      "source_locator": "Muriel 1998, printed pp.109–110; PDF extracted lines 78–90",
+      "limitations": "Muriel synthesizes original chroniclers; original rainfall, crop and health records not inspected.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T1858Z-COL1692-02",
+      "assertion": "Muriel contrasts the responses of Antonio de Robles, Thomas de la Fuente Salazar and astronomer Sigüenza y Góngora to the 23 August 1691 solar eclipse. Sigüenza explicitly described an observed and predicted astronomical event. This is evidence about contemporary interpretation, not evidence that an eclipse caused the June 1692 riot.",
+      "date_or_range": "1691-08-23",
+      "period": "Colonial New Spain (1691–1693)",
+      "geographies": [
+        "Mexico City"
+      ],
+      "themes": [
+        "Colonial science and competing accounts"
+      ],
+      "poi_ids": [
+        "zocalo-national-palace"
+      ],
+      "source_ids": [
+        "STG-SRC-MURIEL-1998-EHN18-1692-DOCUMENTARIA"
+      ],
+      "source_locator": "Muriel 1998, printed pp.109–110; extracted lines 91–131",
+      "limitations": "Exact original diaries and astronomic observations not read; the causal caveat is editorial inference.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T1858Z-COL1692-03",
+      "assertion": "Muriel identifies Indigenous women obtaining maize at the alhóndiga both to feed households and to make tortillas for sale, placing food-provisioning work and women's protests at the center of the June 1692 confrontation.",
+      "date_or_range": "1692-06-08",
+      "period": "Colonial New Spain (1691–1693)",
+      "geographies": [
+        "Alhóndiga and Plaza Mayor"
+      ],
+      "themes": [
+        "Food systems, gender, urban markets"
+      ],
+      "poi_ids": [
+        "zocalo-national-palace"
+      ],
+      "source_ids": [
+        "STG-SRC-MURIEL-1998-EHN18-1692-DOCUMENTARIA"
+      ],
+      "source_locator": "Muriel 1998, printed p.111; extracted lines 167–177",
+      "limitations": "Describes a scholarly synthesis of Sigüenza and Robles, not testimony from the women themselves; no generalized claims about every participant.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T1858Z-COL1692-04",
+      "assertion": "In Thomas de la Fuente Salazar's retrospective account, transcribed by Muriel, the gathering began near the alhóndiga and Plaza Mayor at about five in the afternoon on 8 June 1692, while the viceroy was at San Francisco. This is one witness's chronology, not an established exact onset time.",
+      "date_or_range": "1692-06-08",
+      "period": "Colonial New Spain (1691–1693)",
+      "geographies": [
+        "Alhóndiga; Plaza Mayor; San Francisco"
+      ],
+      "themes": [
+        "Urban geography, eyewitness chronology"
+      ],
+      "poi_ids": [
+        "zocalo-national-palace"
+      ],
+      "source_ids": [
+        "STG-SRC-MURIEL-1998-EHN18-1692-DOCUMENTARIA"
+      ],
+      "source_locator": "Muriel 1998, printed p.112; extracted lines 185–205; manuscript locator AGN Templos y Conventos t.74 exp.4 §3 fol.132ff",
+      "limitations": "The AGN manuscript itself was not viewed; note variants in times across witnesses.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T1858Z-COL1692-05",
+      "assertion": "Sigüenza describes the wooden merchant stalls and Indigenous vendors' reed-and-mat structures in the Plaza Mayor as accessible fuel for fires affecting the viceroyal palace and cabildo. The passage links market architecture, official buildings and damage pathways; it does not establish survival of any 1692 façade in the present National Palace.",
+      "date_or_range": "1692-06-08",
+      "period": "Colonial New Spain (1691–1693)",
+      "geographies": [
+        "Plaza Mayor; Palacio Virreinal; Cabildo"
+      ],
+      "themes": [
+        "Market infrastructure and urban fire"
+      ],
+      "poi_ids": [
+        "zocalo-national-palace"
+      ],
+      "source_ids": [
+        "STG-SRC-MURIEL-1998-EHN18-1692-DOCUMENTARIA",
+        "STG-SRC-SIGUENZA-1692-ALBOROTO-TRANSCRIPTION"
+      ],
+      "source_locator": "Sigüenza transcription, lines 26–36; Muriel 1998, printed p.112, lines 203–214",
+      "limitations": "Eyewitness describes causation from vantage points with moral/racial biases; confirm original layout with contemporary maps and building accounts.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T1858Z-COL1692-06",
+      "assertion": "The 1693 Dominican tertiary chronicle excerpt published by Muriel reports that after the fire, court and administrative functions were disrupted because official rooms could not be used. This is a specific institutional effect beyond the damage to the palace exterior.",
+      "date_or_range": "1692-06–1693",
+      "period": "Colonial New Spain (1691–1693)",
+      "geographies": [
+        "Palacio Virreinal and Casas del Cabildo"
+      ],
+      "themes": [
+        "Colonial justice and archival offices"
+      ],
+      "poi_ids": [
+        "zocalo-national-palace"
+      ],
+      "source_ids": [
+        "STG-SRC-MURIEL-1998-EHN18-1692-DOCUMENTARIA"
+      ],
+      "source_locator": "Muriel 1998, printed p.113; extracted lines 220–242; AGN Templos y Conventos t.74 exp.4 §3",
+      "limitations": "Not independently checked against administrative minute books or original manuscript; duration of interruption not precisely quantified.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T1858Z-COL1692-07",
+      "assertion": "The same Dominican source, as published by Muriel, says restrictions and fear after the 1692 riot displaced Indigenous laborers from the Spanish urban center and suspended construction of a Dominican tertiary chapel for almost ten months. The reported duration refers to that chapel, not every construction project in Mexico City.",
+      "date_or_range": "1692–1693",
+      "period": "Colonial New Spain (1691–1693)",
+      "geographies": [
+        "Colonial traza and Dominican tertiary chapel (exact site unconfirmed)"
+      ],
+      "themes": [
+        "Labor control and building projects"
+      ],
+      "poi_ids": [
+        "centro-historico"
+      ],
+      "source_ids": [
+        "STG-SRC-MURIEL-1998-EHN18-1692-DOCUMENTARIA"
+      ],
+      "source_locator": "Muriel 1998, printed p.113; extracted lines 233–245; AGN Templos y Conventos t.74 exp.4 §3",
+      "limitations": "Specific chapel location and original administrative restrictions not independently checked; avoid implying all Indigenous residents were removed.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T1858Z-COL1692-08",
+      "assertion": "Sigüenza explicitly admits he did not witness the initial moments of the June 1692 disturbance, then describes a crowd of multiple social and racial categories at the Plaza Mayor. His narrative is valuable for what he says he saw, but his hostile characterizations and unobserved early chronology require comparison with other testimonies.",
+      "date_or_range": "1692-06-08",
+      "period": "Colonial New Spain (1691–1693)",
+      "geographies": [
+        "Plaza Mayor and surrounding streets"
+      ],
+      "themes": [
+        "Source criticism and Indigenous/non-Indigenous perspectives"
+      ],
+      "poi_ids": [
+        "zocalo-national-palace"
+      ],
+      "source_ids": [
+        "STG-SRC-MURIEL-1998-EHN18-1692-DOCUMENTARIA",
+        "STG-SRC-SIGUENZA-1692-ALBOROTO-TRANSCRIPTION"
+      ],
+      "source_locator": "Sigüenza online transcription, lines 13–25, 39–42; Muriel 1998 printed p.111, lines 140–157",
+      "limitations": "The web transcription may have editorial modernization; does not substitute Indigenous first-person accounts or the original manuscript.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    }
+  ],
+  "bibliography_identity_notes": [
+    "A prior staging batch already registers Gonzalbo 2008 as cdmx-src-gonzalbo-2008-nacimiento-miedo; this session does not duplicate it.",
+    "Sigüenza text may overlap earlier source discussions; candidate record is not a source merge or new independent eyewitness.",
+    "Muriel's article includes a transcription of 1693 de la Fuente Salazar witness text, but this does NOT constitute an independent 2026 examination of AGN manuscript."
+  ],
+  "batch_integrity": "All findings have stable IDs, source locators, caveats and no publication approval.",
+  "ready_for_editorial_review": false,
+  "publication_approved": false
+}

@@ -1,0 +1,96 @@
+{
+  "schema_version": 3,
+  "generated_at": "2026-11-13T19:02:04.275Z",
+  "kind": "templo_mayor_discover_cross_period_and_current_reader_evidence_gate",
+  "branch": "research-persistence",
+  "target_branch_read_only": "main",
+  "target_path": "poi/templo-mayor/reader.html",
+  "target_main_blob_sha": "fa46cf6054566adb6bf881e665eb102f2ee0e7c3",
+  "previous_audit_paths": [
+    "research/audits/templo-mayor-discover-20261113T1710Z-main-current-blob-claim-source-gates.json",
+    "research/audits/20261113T1803Z-templo-mayor-gamio-1913-1914-primary-gates.json"
+  ],
+  "scope": "Cross-period historical guardrails after examination of 1692 primary-text transcriptions and recent full Templo Mayor reader; no claim of new Templo Mayor excavation evidence.",
+  "gates": [
+    {
+      "topic": "Triple Alliance 1427/1428/1430",
+      "reader_anchor": "In the late 1420s, Tenochtitlan joined Texcoco and Tlacopan in the Triple Alliance.",
+      "status": "retain_qualified_approximation",
+      "source_locator_matrix": [
+        {
+          "source": "prior 1427/1430 contrast",
+          "locator": "research/audits/templo-mayor-discover-20261113T1427Z-triple-alliance-dating-contrast.json"
+        }
+      ],
+      "uncertainty": "No primary alliance chronicle examined this run.",
+      "publication_approved": false
+    },
+    {
+      "topic": "Construction stages",
+      "reader_anchor": "They covered an existing building partly or entirely with fill and new masonry",
+      "status": "distinguish_relative_stratigraphy_from_calendar_king_reign",
+      "source_locator_matrix": [
+        {
+          "source": "prior archaeological phase review",
+          "locator": "research/audits/20261113T1803Z-templo-mayor-gamio-1913-1914-primary-gates.json"
+        }
+      ],
+      "uncertainty": "Current on-site wall identification not checked.",
+      "publication_approved": false
+    },
+    {
+      "topic": "Coatepec / Coyolxauhqui",
+      "reader_anchor": "At the foot of the south stair of that platform lay a stone disk carved with the dismembered Coyolxauhqui.",
+      "status": "preserve_original_vs_replica_and_myth_vs_stratigraphy",
+      "source_locator_matrix": [
+        {
+          "source": "previous reader-linked audit",
+          "locator": "research/audits/templo-mayor-discover-20261113T1710Z-main-current-blob-claim-source-gates.json"
+        }
+      ],
+      "uncertainty": "Nahua-language myth and original find context not newly checked.",
+      "publication_approved": false
+    },
+    {
+      "topic": "Conquest 1520–1521",
+      "reader_anchor": "The pyramid was dismantled after the conquest.",
+      "status": "no_new_corrob",
+      "source_locator_matrix": [],
+      "uncertainty": "Florentine Codex Book 12 manuscript folio and conquest archaeology are still unexamined in this run.",
+      "publication_approved": false
+    },
+    {
+      "topic": "1978 rediscovery",
+      "reader_anchor": "The original Coyolxauhqui stone",
+      "status": "retain_distinction_1914_vs_1978",
+      "source_locator_matrix": [
+        {
+          "source": "prior 1978 audit",
+          "locator": "research/audits/templo-mayor-discover-20261113T1710Z-main-current-blob-claim-source-gates.json"
+        }
+      ],
+      "uncertainty": "No new 1978 firsthand evidence.",
+      "publication_approved": false
+    },
+    {
+      "topic": "Urban chronology separation",
+      "reader_anchor": "The excavation beside the Metropolitan Cathedral exposes several generations of the pyramid",
+      "status": "proposed_contextual_editorial_note_only",
+      "source_locator_matrix": [
+        {
+          "source_id": "STG-SRC-MURIEL-1998-EHN18-1692-DOCUMENTARIA",
+          "locator": "Muriel 1998 printed pp.112–113; 1692 palace/cabildo/alhóndiga; source findings COL1692-05/06"
+        },
+        {
+          "source_id": "STG-SRC-SIGUENZA-1692-ALBOROTO-TRANSCRIPTION",
+          "locator": "Sigüenza online transcription lines 26–36"
+        }
+      ],
+      "historical_addition": "The 1692 riot belongs in the Zócalo/National Palace colonial history, not as a Temple Mayor construction or 1521 destruction event. A linked separate chapter could explain this later layer without conflating buildings.",
+      "uncertainty": "No parcel overlay demonstrating survival of the 1692 palace fabric. Current Templo Mayor article must not be silently altered.",
+      "publication_approved": false
+    }
+  ],
+  "ready_for_editorial_review": false,
+  "publication_approved": false
+}
