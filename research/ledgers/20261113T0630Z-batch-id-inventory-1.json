@@ -1,0 +1,410 @@
+{
+  "schema_version": 1,
+  "origin_tree_sha": "d8bafea1a5b24651a90c72277482152c8b8dbe32",
+  "total_batch_files": 56,
+  "chunk": 1,
+  "range": [
+    0,
+    13
+  ],
+  "files": [
+    {
+      "path": "research/batches/20261111T100400Z-ledger1/findings_and_inspection.json",
+      "blob_sha": "548f19e4960125ac0f78fe6ec5dc36db4e4a6bac",
+      "entries": [
+        {
+          "id": "STG20261111T100400Z-FAU-01",
+          "has_assertion": true
+        },
+        {
+          "id": "STG20261111T100400Z-FAU-02",
+          "has_assertion": true
+        },
+        {
+          "id": "STG20261111T100400Z-RIT-03",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261111T100400Z-ledger1/unmerged_archive_inventory.json",
+      "blob_sha": "427129b7031b8ae38f8f8fd93fb68447676f2ca3",
+      "entries": []
+    },
+    {
+      "path": "research/batches/20261111T110600Z-crosswalk/inspected_material_and_visuals.json",
+      "blob_sha": "a3aba0b487586af7a4f2b02106e328cac978c403",
+      "entries": [
+        {
+          "id": "STG20261111T110600Z-MAT-01",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261111T110600Z-crosswalk/pending_source_crosswalk.json",
+      "blob_sha": "142f1374256447941ff67ef1c322cb381a18a562",
+      "entries": []
+    },
+    {
+      "path": "research/batches/20261111T111100Z-priority-candidates/14_priority_pending_assertions.json",
+      "blob_sha": "681cff5aebafeb6c0aa6b5cf441913ed28f3df5c",
+      "entries": [
+        {
+          "id": "STAGE-SUN-2007-01",
+          "has_assertion": true
+        },
+        {
+          "id": "STAGE-SUN-2007-02",
+          "has_assertion": true
+        },
+        {
+          "id": "STAGE-SUN-2007-03",
+          "has_assertion": true
+        },
+        {
+          "id": "STAGE-SUN-2007-04",
+          "has_assertion": true
+        },
+        {
+          "id": "STAGE-SUN-2007-05",
+          "has_assertion": true
+        },
+        {
+          "id": "STAGE-SUN-2007-06",
+          "has_assertion": true
+        },
+        {
+          "id": "SUN2013-F01",
+          "has_assertion": true
+        },
+        {
+          "id": "SUN2013-F02",
+          "has_assertion": true
+        },
+        {
+          "id": "SUN2013-F03",
+          "has_assertion": true
+        },
+        {
+          "id": "SUN2013-F04",
+          "has_assertion": true
+        },
+        {
+          "id": "SUN2013-F05",
+          "has_assertion": true
+        },
+        {
+          "id": "SUN2013-F06",
+          "has_assertion": true
+        },
+        {
+          "id": "SUN2013-F07",
+          "has_assertion": true
+        },
+        {
+          "id": "SUN2013-F08",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261111T115731Z-turn10-backlog-9/nine_remaining_candidate_assertions.json",
+      "blob_sha": "1d5ce37959164a5d1f5b5c6e06abffa7840e7af1",
+      "entries": [
+        {
+          "id": "S2200-01",
+          "has_assertion": true
+        },
+        {
+          "id": "S2200-02",
+          "has_assertion": true
+        },
+        {
+          "id": "S2200-03",
+          "has_assertion": true
+        },
+        {
+          "id": "S2200-04",
+          "has_assertion": true
+        },
+        {
+          "id": "S2200-05",
+          "has_assertion": true
+        },
+        {
+          "id": "S2200-06",
+          "has_assertion": true
+        },
+        {
+          "id": "S2200-07",
+          "has_assertion": true
+        },
+        {
+          "id": "S2200-08",
+          "has_assertion": true
+        },
+        {
+          "id": "S2200-09",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261111T115731Z-turn10-final-backlog-19/19_original_candidate_assertions.json",
+      "blob_sha": "bfb909a9f1659c435f1362205f4c6203cf41986e",
+      "entries": [
+        {
+          "id": "stg-20261111-sun-01",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261111-sun-02",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261111-sun-03",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261111-sun-04",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261111-sun-05",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261111-sun-06",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261111-sun-07",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261111-sun-08",
+          "has_assertion": true
+        },
+        {
+          "id": "STG26NOV11-BRA-01",
+          "has_assertion": true
+        },
+        {
+          "id": "STG26NOV11-BRA-02",
+          "has_assertion": true
+        },
+        {
+          "id": "STG26NOV11-BRA-03",
+          "has_assertion": true
+        },
+        {
+          "id": "STG26NOV11-BRA-04",
+          "has_assertion": true
+        },
+        {
+          "id": "STG26NOV11-BRA-05",
+          "has_assertion": true
+        },
+        {
+          "id": "STG26NOV11-BER-01",
+          "has_assertion": true
+        },
+        {
+          "id": "STG26NOV11-BER-02",
+          "has_assertion": true
+        },
+        {
+          "id": "STG26NOV11-BER-03",
+          "has_assertion": true
+        },
+        {
+          "id": "STG20261111T090315Z-CER-01",
+          "has_assertion": true
+        },
+        {
+          "id": "STG20261111T090315Z-CER-02",
+          "has_assertion": true
+        },
+        {
+          "id": "STG20261111T090315Z-CER-03",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261111T115731Z-turn10-sar-18/18_original_sarabia_and_2014_assertions.json",
+      "blob_sha": "531d595939a0d182e8f1a09b5bd64a5df3ea2936",
+      "entries": [
+        {
+          "id": "SP2300-01",
+          "has_assertion": true
+        },
+        {
+          "id": "SP2300-02",
+          "has_assertion": true
+        },
+        {
+          "id": "SP2300-03",
+          "has_assertion": true
+        },
+        {
+          "id": "SP2300-04",
+          "has_assertion": true
+        },
+        {
+          "id": "SP2300-05",
+          "has_assertion": true
+        },
+        {
+          "id": "SP2300-06",
+          "has_assertion": true
+        },
+        {
+          "id": "SP2300-07",
+          "has_assertion": true
+        },
+        {
+          "id": "SP2300-08",
+          "has_assertion": true
+        },
+        {
+          "id": "SP2300-09",
+          "has_assertion": true
+        },
+        {
+          "id": "SP2300-10",
+          "has_assertion": true
+        },
+        {
+          "id": "SP2300-11",
+          "has_assertion": true
+        },
+        {
+          "id": "SP2300-12",
+          "has_assertion": true
+        },
+        {
+          "id": "SP2300-13",
+          "has_assertion": true
+        },
+        {
+          "id": "SP2300-14",
+          "has_assertion": true
+        },
+        {
+          "id": "SP2300-15",
+          "has_assertion": true
+        },
+        {
+          "id": "SP2300-16",
+          "has_assertion": true
+        },
+        {
+          "id": "SP2300-17",
+          "has_assertion": true
+        },
+        {
+          "id": "SP2300-18",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261111T115731Z-turn10-sload-cave-technical/new_findings_and_inspections.json",
+      "blob_sha": "d20c38189dcb8c5b2d7b112af9980316916935d2",
+      "entries": [
+        {
+          "id": "STG20261111T1157-BLK-01",
+          "has_assertion": true
+        },
+        {
+          "id": "STG20261111T1157-BLK-02",
+          "has_assertion": true
+        },
+        {
+          "id": "STG20261111T1157-BLK-03",
+          "has_assertion": true
+        },
+        {
+          "id": "STG20261111T1157-MAC-01",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261111T1302Z-turn11/evidence_and_source_reconciliation.json",
+      "blob_sha": "d178f63ef2024fb03cbf36edbe36b07b01b2c92b",
+      "entries": [
+        {
+          "id": "STG20261111T1302Z-MACRO-01",
+          "has_assertion": true
+        },
+        {
+          "id": "STG20261111T1302Z-RECON-V87-PRIMARY-001",
+          "has_assertion": false
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261111T1401Z-a11/botanical_and_source_reconciliation.json",
+      "blob_sha": "9c6442a91cfcf76ed5a3656fb2d18f51ba6c9c75",
+      "entries": [
+        {
+          "id": "STG20261111T1401Z-MACRO-02",
+          "has_assertion": true
+        },
+        {
+          "id": "STG20261111T1401Z-BOTCODE-01",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261111T1503Z-auto11/sload_radiocarbon_model_review.json",
+      "blob_sha": "a20f0aa4bdc12559629ccf252a2a139ed394ea5f",
+      "entries": [
+        {
+          "id": "STG20261111T1503Z-CHRON01",
+          "has_assertion": true
+        },
+        {
+          "id": "STG20261111T1503Z-CHRON02",
+          "has_assertion": true
+        },
+        {
+          "id": "STG20261111T1503Z-CHRON03",
+          "has_assertion": true
+        },
+        {
+          "id": "STG20261111T1503Z-CHRON04",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261111T1558Z-a11-rerun/source_context_and_materials.json",
+      "blob_sha": "88b2e10a128d970187a972a992d5e9758f1f5577",
+      "entries": [
+        {
+          "id": "STG-20261111T1558Z-SUN-MATERIALS-01",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261111T1655Z-a11-ch8-artifacts.json",
+      "blob_sha": "27c3480c6aaf5cff59af24cc3fb1730e167e7e91",
+      "entries": [
+        {
+          "id": "STG-20261111T1655Z-CH8-01",
+          "has_assertion": true
+        },
+        {
+          "id": "STG-20261111T1655Z-CH8-02",
+          "has_assertion": true
+        }
+      ]
+    }
+  ]
+}
