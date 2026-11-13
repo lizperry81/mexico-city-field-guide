@@ -35,11 +35,12 @@ def key(obj,keys):
     return result
 def main():
     p=argparse.ArgumentParser()
-    for a in ("canonical","staging","batch-dir","output","report"):
+    for a in ("canonical","batch-dir","output","report"):
         p.add_argument("--"+a,required=True)
-    p.add_argument('--min-files',type=int,default=1,help='Fail closed if fewer than verified historical GitHub files')
+    p.add_argument("--staging",help="Optional previously validated cumulative staging SQLite; omitted runs from unchanged V97")
+    p.add_argument('--min-files',type=int,default=53,help='Fail closed if fewer than verified historical GitHub files')
     a=p.parse_args()
-    canonical=Path(a.canonical);staging=Path(a.staging);dest=Path(a.output)
+    canonical=Path(a.canonical);staging=Path(a.staging) if a.staging else canonical;dest=Path(a.output)
     if dest.exists():raise SystemExit("BLOCKED: output exists; choose a new versioned name")
     if not canonical.is_file() or not staging.is_file():raise SystemExit("BLOCKED: inputs absent")
     if hashfile(canonical)!=PIN:raise SystemExit("BLOCKED: V97 baseline hash mismatch")
@@ -57,6 +58,11 @@ def main():
     s.close()
     db=sqlite3.connect(dest)
     db.executescript("""
+        CREATE TABLE IF NOT EXISTS research_batch_raw_documents(
+           path TEXT PRIMARY KEY,content_sha256 TEXT NOT NULL,raw_json TEXT NOT NULL);
+        CREATE TABLE IF NOT EXISTS research_batch_index_only(
+           path TEXT NOT NULL,record_key TEXT NOT NULL,finding_id TEXT NOT NULL,
+           payload_json TEXT NOT NULL,PRIMARY KEY(path,record_key));
         CREATE TABLE IF NOT EXISTS research_batch_files(
            path TEXT PRIMARY KEY,content_sha256 TEXT NOT NULL,ingest_status TEXT NOT NULL);
         CREATE TABLE IF NOT EXISTS research_batch_findings(
@@ -75,9 +81,10 @@ def main():
            conflict_sha256 TEXT PRIMARY KEY,reason TEXT NOT NULL,details_json TEXT NOT NULL);
     """)
     baseline_ids={r[0] for r in db.execute("SELECT id FROM canonical_findings")}
-    staged={r[0]:r[1] for r in db.execute("SELECT finding_id,assertion FROM staged_findings")}
-    known_sources={r[0] for r in db.execute("SELECT id FROM sources")}|{
-        r[0] for r in db.execute("SELECT id FROM staged_source_register")}
+    staged={r[0]:r[1] for r in db.execute("SELECT finding_id,assertion FROM staged_findings")} if "staged_findings" in tables(db) else {}
+    known_sources={r[0] for r in db.execute("SELECT id FROM sources")}
+    if "staged_source_register" in tables(db):
+        known_sources.update(r[0] for r in db.execute("SELECT id FROM staged_source_register"))
     conflicts=[];pending=set();missing_source_ids=set();file_count=0;inspection_count=0
     paths=sorted(Path(a.batch_dir).rglob("*.json"))
     if len(paths)<a.min_files:raise SystemExit(f'BLOCKED: only {len(paths)} batch files; expected at least {a.min_files}')
@@ -88,6 +95,13 @@ def main():
         db.execute("INSERT OR IGNORE INTO research_batch_files VALUES(?,?,?)",
                    (rel,hashfile(f),"raw_source_preserved_in_checkout"))
         file_count+=1
+        db.execute("INSERT OR IGNORE INTO research_batch_raw_documents VALUES(?,?,?)",
+                   (rel,hashfile(f),f.read_text(encoding="utf-8")))
+        if isinstance(v,dict) and isinstance(v.get("finding_ids"),list):
+            for ix,fid in enumerate(v["finding_ids"]):
+                if isinstance(fid,str) and fid.strip():
+                    db.execute("INSERT OR IGNORE INTO research_batch_index_only VALUES(?,?,?,?)",
+                               (rel,"finding_ids:"+str(ix),fid,enc({"id":fid})))
         if isinstance(v,list):findings=v;sources=[];inspections=[]
         elif isinstance(v,dict):
             findings=key(v,("findings","records","new_findings","candidate_findings","findings_candidate","documentary_findings"))
@@ -113,8 +127,12 @@ def main():
             inspection_count+=1
         for item in findings:
             if not isinstance(item,dict):continue
-            claim=str(item.get("assertion") or item.get("statement") or item.get("claim") or item.get("text") or "")
-            if not claim:continue
+            claim=str(item.get("assertion") or item.get("statement") or item.get("claim") or item.get("finding") or item.get("text") or "")
+            if not claim:
+                fid=str(item.get("id") or item.get("finding_id") or item.get("staged_id") or item.get("record_id") or "anon-"+hashbytes(enc(item).encode())[:20])
+                db.execute("INSERT OR IGNORE INTO research_batch_index_only VALUES(?,?,?,?)",
+                           (rel,"item:"+str(len(pending))+":"+hashbytes(enc(item).encode())[:16],fid,enc(item)))
+                continue
             fid=str(item.get("id") or item.get("finding_id") or item.get("staged_id") or item.get("record_id") or "anon-"+hashbytes(enc(item).encode())[:20])
             if fid in baseline_ids or fid in staged and claim!=staged[fid]:
                 conflicts.append({"finding_id":fid,"source_path":rel,"reason":"identity_collision_needs_manual_review"})
@@ -141,6 +159,8 @@ def main():
        "canonical_counts":EXPECTED,"existing_staged_findings":len(staged),
        "github_batch_json_files_examined":file_count,
        "github_candidate_finding_ids":len(ids),
+       "index_only_finding_refs":db.execute("SELECT COUNT(*) FROM research_batch_index_only").fetchone()[0],
+       "raw_batch_documents_in_sqlite":db.execute("SELECT COUNT(*) FROM research_batch_raw_documents").fetchone()[0],
        "combined_distinct_candidate_ids":len(total),
        "github_inspection_entries":inspection_count,
        "candidate_source_identities":len(pending),
