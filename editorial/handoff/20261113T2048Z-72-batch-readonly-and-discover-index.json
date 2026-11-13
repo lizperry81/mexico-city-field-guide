@@ -1,0 +1,32 @@
+{
+  "kind": "app_development_read_only_handoff",
+  "recorded_date": "2026-11-13",
+  "source_branch": "research-persistence",
+  "research_input_commit": "24bcc70ea26399e6dc88cc43e105b3193c0b1705",
+  "source_branch_head_at_check": "4b79950a080efce4e978ccd44c97f610f7e90296",
+  "manifest_path": "research/handoff/manifest.json",
+  "manifest_blob_sha": "8ead8bb4aaa662855f34b94e51df0079db86c39d",
+  "immutable_snapshot_path": "research/handoff/history/20261113T201057Z-capital-democracy-and-templo-72-replay.json",
+  "actual_immutable_blob_sha": "03a8bafd4c98e7bf4c44d14e451ff89ff863bd9d",
+  "declared_immutable_blob_sha": null,
+  "immutable_record_research_commit": "24bcc70ea26399e6dc88cc43e105b3193c0b1705",
+  "unique_referenced_artifact_paths_checked": 114,
+  "missing_referenced_artifact_paths": [],
+  "candidate_findings_staged": 403,
+  "batch_count": 72,
+  "chapter_audits_count": 15,
+  "coverage_artifacts_count": 17,
+  "new_audit_artifacts": [
+    "research/audits/20261113T2004Z-templo-mayor-exact-reader-source-gates.json",
+    "research/coverage/20261113T2004Z-local-government-democracy-site-readiness.json"
+  ],
+  "ready_for_editorial_review": false,
+  "ready_for_publication": false,
+  "canonical_promoted": false,
+  "handoff_consumer_status": "NOT_ACCEPTED_for_new_editorial_queue: the manifest does not pin an immutable blob SHA; producer marks evidence as not ready for editorial review.",
+  "last_previously_verified_consumed_research_input_sha": "f4c7a5ae2eb8dd28a6358f2b64e4e993657695c9",
+  "approved_chapter_archive_status": "unavailable: exact user-approved prose not present in currently retrievable repository, library, or editorial context; no replacement or fabricated checksum",
+  "development_change": "Add section navigation to the existing Discover Templo Mayor article only; preserve exact prose, five physical Explore stops, existing imagery and local comments.",
+  "nonpublication": true,
+  "changes_only_on_main": true
+}

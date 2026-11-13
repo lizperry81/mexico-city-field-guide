@@ -60,6 +60,26 @@ for folder, feedback_path in (
         "How does the map distinguish", "historic-walk-crosslink", "data-historical-thread",
     ):
         assert marker not in text, marker
+    # Discover's section index must link only to actual historical sections
+    # in the current pre-visit article, in their existing narrative order.
+    # It must never relabel Explore stops as Discover history chapters.
+    history_html = text.split('<article id="history"', 1)[1].split('</article>', 1)[0]
+    contents = re.search(r'<nav class="history-chapters[^"]*"[^>]*>(.*?)</nav>', history_html, re.DOTALL)
+    assert contents, "Missing accessible Discover article contents"
+    contents_html = contents.group(1)
+    toc = re.findall(r'<a href="#([^"]+)">([^<]+)</a>', contents_html)
+    assert [anchor for anchor, _ in toc] == [
+        "dossier-topic-1", "dossier-topic-2", "dossier-topic-3",
+        "dossier-topic-5", "dossier-topic-4", "dossier-topic-6",
+    ], "Discover index must mirror the existing article, without claiming new approved chapters"
+    for anchor, title in toc:
+        section = re.search(
+            r'<section id="' + re.escape(anchor) +
+            r'" class="history-section">\\s*<h3>([^<]+)</h3>', history_html
+        )
+        assert section and title == section.group(1), (anchor, title)
+    assert history_html.index('history-chapters') < history_html.index('id="dossier-topic-1"')
+    assert 'history-chapters' not in text.split('<section id="explore"', 1)[1]
     # Every physical stop must remain actionable on location, with a
     # standing position, a visible feature, and its existing photo reference.
     # Keep these field instructions separate from pre-visit Discover history.
