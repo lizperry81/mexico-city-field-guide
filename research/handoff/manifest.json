@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "kind": "research_to_app_handoff",
+  "status": "initialized_no_verified_batch_handoff",
+  "canonical": {
+    "version": "V97",
+    "sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "manifest_path": "research/canonical/manifest.json",
+    "authority_status": "provisional",
+    "expected_findings": 68
+  },
+  "latest_verified_research_commit": null,
+  "staged_counts": {
+    "findings": null,
+    "source_inspections": null,
+    "reason": "Not reverified from complete staged ledger in this handoff initialization"
+  },
+  "chapter_audit_artifact_paths": [],
+  "coverage_artifact_paths": [],
+  "ready_for_editorial_review": false,
+  "ready_for_publication": false,
+  "blockers": [
+    "Research automation must validate staged artifacts and write a commit-specific handoff",
+    "Canonical database not yet reconciled with staged findings"
+  ],
+  "instructions": "Research task must replace nulls only with independently verified counts, add immutable artifact paths and research commit SHA, and commit updated manifest. App task must validate referenced SHA and files before consuming; never publish unapproved research."
+}
