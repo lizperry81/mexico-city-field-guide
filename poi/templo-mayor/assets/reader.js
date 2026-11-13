@@ -12,6 +12,7 @@
   const progress = document.getElementById('stop-progress');
   let activeStop = 0;
   let focusStop = false;
+  let focusMode = false;
 
   for (const stop of stops) {
     const title = stop.querySelector('h3');
@@ -33,6 +34,16 @@
   jump.addEventListener('change', () => goToStop(document.getElementById(jump.value)));
   previous.addEventListener('click', () => goToStop(stops[activeStop - 1]));
   next.addEventListener('click', () => goToStop(stops[activeStop + 1]));
+
+  // Clicking a mode moves keyboard and VoiceOver focus to its visible heading.
+  // Deep links and browser Back/Forward keep their existing focus behavior.
+  for (const link of modeLinks) {
+    link.addEventListener('click', () => {
+      focusMode = true;
+      // Safari does not emit hashchange when the active mode is selected again.
+      if (location.hash === link.hash) navigateHash();
+    });
+  }
 
   function navigateHash() {
     let fragment = location.hash.slice(1);
@@ -58,6 +69,14 @@
     next.disabled = activeStop === stops.length - 1;
     progress.textContent = `Stop ${activeStop + 1} of ${stops.length}`;
 
+    if (focusMode) {
+      const heading = panel.querySelector('h2');
+      if (heading) {
+        heading.tabIndex = -1;
+        heading.focus({ preventScroll: true });
+      }
+    }
+    focusMode = false;
     if (focusStop) stops[activeStop].querySelector('h3').focus({ preventScroll: true });
     focusStop = false;
     if (target) {

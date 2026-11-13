@@ -10,6 +10,11 @@ const panels = Object.fromEntries(['history', 'explore', 'plan'].map(id => [
     return selector === '[data-reader-panel]' ? this : null;
   }}
 ]));
+for (const panel of Object.values(panels)) {
+  const heading = {focused: 0, focus() {this.focused += 1;}};
+  panel.heading = heading;
+  panel.querySelector = selector => {assert.equal(selector, 'h2'); return heading;};
+}
 const stops = ['plaza', 'twin-stairs', 'older-stairs'].map(id => {
   const heading = {textContent: id, focused: 0, focus() {this.focused += 1;}};
   return {
@@ -24,7 +29,8 @@ const stops = ['plaza', 'twin-stairs', 'older-stairs'].map(id => {
   };
 });
 const links = Object.keys(panels).map(id => ({
-  hash: '#' + id, current: false,
+  hash: '#' + id, current: false, click: null,
+  addEventListener(type, fn) {assert.equal(type, 'click'); this.click = fn;},
   setAttribute(name) {assert.equal(name, 'aria-current'); this.current = true;},
   removeAttribute(name) {assert.equal(name, 'aria-current'); this.current = false;}
 }));
@@ -92,4 +98,23 @@ location.hash = '#plaza'; // Restore an Explore deep link.
 assert.equal(panels.explore.hidden, false);
 assert.equal(jump.value, 'plaza');
 assert.equal(progress.textContent, 'Stop 1 of 3');
-console.log('PASS: same-anchor Safari navigation, focus, pager and browser-history transitions');
+assert.equal(panels.history.heading.focused, 0, 'Back/Forward must not steal heading focus');
+const historyLink = links.find(link => link.hash === '#history');
+historyLink.click();
+location.hash = '#history';
+assert.equal(panels.history.heading.focused, 1, 'Choosing Discover should focus its heading');
+assert.equal(panels.history.heading.tabIndex, -1);
+historyLink.click(); // No hashchange on repeated Discover tap in Safari.
+assert.equal(panels.history.heading.focused, 2, 'Repeated mode tap should refocus the visible heading');
+const planLink = links.find(link => link.hash === '#plan');
+planLink.click();
+location.hash = '#plan';
+assert.equal(panels.plan.heading.focused, 1, 'Choosing Plan should focus its heading');
+assert.equal(panels.explore.hidden, true);
+location.hash = '#explore'; // History navigation does not trigger tab-click focus.
+assert.equal(panels.explore.heading.focused, 0);
+const exploreLink = links.find(link => link.hash === '#explore');
+exploreLink.click(); // The current Explore mode can be tapped again.
+assert.equal(panels.explore.heading.focused, 1);
+assert.equal(stops[0].heading.focused, 1, 'Mode navigation must not alter stop selection');
+console.log('PASS: same-anchor Safari mode/stop navigation, accessible focus, pager and browser-history transitions');
