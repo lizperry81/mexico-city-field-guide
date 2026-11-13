@@ -75,7 +75,7 @@ for folder, feedback_path in (
     for anchor, title in toc:
         section = re.search(
             r'<section id="' + re.escape(anchor) +
-            r'" class="history-section">\\s*<h3>([^<]+)</h3>', history_html
+            r'" class="history-section">\s*<h3>([^<]+)</h3>', history_html
         )
         assert section and title == section.group(1), (anchor, title)
     assert history_html.index('history-chapters') < history_html.index('id="dossier-topic-1"')
