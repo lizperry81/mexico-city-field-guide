@@ -59,6 +59,7 @@ jobs:
           # Publish the revised reader at both POI URLs and retain the research dossier.
           python scripts/build_templo_review.py
           python scripts/test_templo_review.py
+          node scripts/test_reader_navigation.js site/poi/templo-mayor/assets/reader.js
           # Generate the other three reader layouts from complete preserved dossiers.
           python scripts/build_centro_reviews.py
           python scripts/test_centro_reviews.py
