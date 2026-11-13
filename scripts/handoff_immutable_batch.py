@@ -72,16 +72,21 @@ def validate_immutable_batch_v4(manifest, snapshot, blob_sha):
         require(type(staged.get(key)) is int and staged[key] >= 0 and
                 staged[key] == current.get(manifest_key),
                 "new staged count differs: " + key)
-        require(type(baseline.get(key)) is int and baseline[key] >= 0,
-                "baseline count missing: " + key)
+        # The producer records metadata collisions only in the final snapshot.
+        # They remain unresolved and are checked against the rolling manifest;
+        # never invent a missing earlier conflict count.
+        if key != "metadata_collisions" or key in baseline:
+            require(type(baseline.get(key)) is int and baseline[key] >= 0,
+                    "baseline count missing: " + key)
     for key in ("batches", "assertion_bearing_findings",
                 "source_candidates", "source_inspection_metadata"):
         require(baseline[key] <= staged[key],
                 "staged counter regressed: " + key)
     require(staged["unregistered_source_ids"] <= baseline["unregistered_source_ids"],
             "unregistered reference count regressed")
-    require(staged["metadata_collisions"] == baseline["metadata_collisions"],
-            "bibliographic conflict records changed without review")
+    if "metadata_collisions" in baseline:
+        require(staged["metadata_collisions"] == baseline["metadata_collisions"],
+                "bibliographic conflict records changed without review")
 
     changes = {
         "new_candidate_findings": ("assertion_bearing_findings",
