@@ -1,0 +1,13 @@
+{
+  "batch": "20261113-hospital-jesus-archival-chronology",
+  "baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "finding_ids": [
+    "stg-20261113-hj-06",
+    "stg-20261113-hj-07",
+    "stg-20261113-hj-08",
+    "stg-20261113-hj-09",
+    "stg-20261113-hj-10"
+  ],
+  "status": "STAGED ONLY — NOT IN CANONICAL",
+  "archive": "/MexicoResearch/staging/CDMX_STAGE_20261113_HOSPITAL_JESUS_ARCHIVAL_CHRONOLOGY.zip"
+}
