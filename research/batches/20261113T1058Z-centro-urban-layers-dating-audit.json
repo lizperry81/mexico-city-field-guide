@@ -1,0 +1,259 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261113T1058Z-centro-urban-layers-dating-audit",
+  "generated_at": "2026-11-13T10:58:34Z",
+  "branch": "research-persistence",
+  "storage_role": "immutable_research_staging",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_modified": false,
+  "published_to_app": false,
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "sources": [
+    {
+      "id": "STG-INAH-SANCHEZREYES-2017",
+      "title": "El padrón de Alonso de Ávila Alvarado de 1567 y el templo de Huitzilopochtli",
+      "author": "Gabriela Sánchez Reyes",
+      "publication": "Boletín de Monumentos Históricos 41 (2017)",
+      "url": "https://revistas.inah.gob.mx/index.php/boletinmonumentos/article/download/12890/14004/25723",
+      "locator": "printed pp. 5–6, 10, 13 and 16–17",
+      "access": "Publisher PDF text examined; screenshot requested but timed out; archival originals and figures unexamined"
+    },
+    {
+      "id": "STG-INAH-PAU-HISTORY-1991",
+      "title": "Programa de Arqueología Urbana",
+      "organization": "INAH",
+      "url": "https://www.templomayor.inah.gob.mx/historia/programa-de-arqueologia-urbana",
+      "locator": "opening and closing paragraphs, 1991 program; 1900 sewer; Gamio about 1913",
+      "access": "institutional public HTML reviewed, no excavation originals"
+    },
+    {
+      "id": "STG-INAH-OMBLIGO-2018",
+      "title": "Origen y ombligo de nuestra ciudad",
+      "organization": "INAH",
+      "url": "https://lugares.inah.gob.mx/es/node/5502",
+      "locator": "last paragraph dates Gamio to May 1914",
+      "access": "institutional public HTML reviewed"
+    },
+    {
+      "id": "STG-INAH-TM-PROJECT-1978",
+      "title": "Proyecto Templo Mayor",
+      "organization": "INAH",
+      "url": "https://templomayor.inah.gob.mx/historia/proyecto-templo-mayor",
+      "locator": "opening paragraphs, 21 February 1978 discovery and rescue",
+      "access": "institutional public HTML reviewed"
+    },
+    {
+      "id": "STG-INAH-TM-ZONE-2026",
+      "title": "Templo Mayor",
+      "organization": "INAH Lugares",
+      "url": "https://lugares.inah.gob.mx/es/node/4463",
+      "locator": "Etapa IVb, Etapa IV y V > Colector de agua and institutional discovery chronology",
+      "access": "institutional public HTML reviewed"
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "inspect-STG-INAH-SANCHEZREYES-2017",
+      "source_id": "STG-INAH-SANCHEZREYES-2017",
+      "source_url": "https://revistas.inah.gob.mx/index.php/boletinmonumentos/article/download/12890/14004/25723",
+      "locator": "printed pp. 5–6, 10, 13 and 16–17",
+      "access_scope": "Publisher PDF text examined; screenshot requested but timed out; archival originals and figures unexamined",
+      "original_archival_material_examined": false
+    },
+    {
+      "id": "inspect-STG-INAH-PAU-HISTORY-1991",
+      "source_id": "STG-INAH-PAU-HISTORY-1991",
+      "source_url": "https://www.templomayor.inah.gob.mx/historia/programa-de-arqueologia-urbana",
+      "locator": "opening and closing paragraphs, 1991 program; 1900 sewer; Gamio about 1913",
+      "access_scope": "institutional public HTML reviewed, no excavation originals",
+      "original_archival_material_examined": false
+    },
+    {
+      "id": "inspect-STG-INAH-OMBLIGO-2018",
+      "source_id": "STG-INAH-OMBLIGO-2018",
+      "source_url": "https://lugares.inah.gob.mx/es/node/5502",
+      "locator": "last paragraph dates Gamio to May 1914",
+      "access_scope": "institutional public HTML reviewed",
+      "original_archival_material_examined": false
+    },
+    {
+      "id": "inspect-STG-INAH-TM-PROJECT-1978",
+      "source_id": "STG-INAH-TM-PROJECT-1978",
+      "source_url": "https://templomayor.inah.gob.mx/historia/proyecto-templo-mayor",
+      "locator": "opening paragraphs, 21 February 1978 discovery and rescue",
+      "access_scope": "institutional public HTML reviewed",
+      "original_archival_material_examined": false
+    },
+    {
+      "id": "inspect-STG-INAH-TM-ZONE-2026",
+      "source_id": "STG-INAH-TM-ZONE-2026",
+      "source_url": "https://lugares.inah.gob.mx/es/node/4463",
+      "locator": "Etapa IVb, Etapa IV y V > Colector de agua and institutional discovery chronology",
+      "access_scope": "institutional public HTML reviewed",
+      "original_archival_material_examined": false
+    }
+  ],
+  "findings": [
+    {
+      "id": "STG-20261113-LAYERS-01",
+      "assertion": "INAH historian Gabriela Sánchez Reyes reports a Franciscan lot assigned in the former Mexica sacred precinct on 2 June 1524 and offered for sale by May 1525; this short tenure does not establish a completed substantial monastery.",
+      "source_ids": [
+        "STG-INAH-SANCHEZREYES-2017"
+      ],
+      "source_locator": "Sánchez Reyes 2017 printed pp. 5–6",
+      "period": "Early colonial 1521–1600",
+      "themes": [
+        "religion",
+        "property",
+        "urban transformation"
+      ],
+      "poi_ids": [
+        "templo-mayor"
+      ],
+      "limitations": "Municipal cabildo originals and mapped lot boundaries not examined",
+      "geographies": [
+        "centro"
+      ],
+      "evidence_status": "research_candidate_source_linked_not_editorially_approved"
+    },
+    {
+      "id": "STG-20261113-LAYERS-02",
+      "assertion": "The criminal sentence arising from the 1566 Alonso de Ávila Alvarado affair included demolition of his house and erection of an inscribed stone warning about treason; the later fate of this plot formed part of the colonial urban history near Templo Mayor.",
+      "source_ids": [
+        "STG-INAH-SANCHEZREYES-2017"
+      ],
+      "source_locator": "Sánchez Reyes 2017 printed pp. 9–11",
+      "period": "Early colonial 1521–1600",
+      "themes": [
+        "politics",
+        "law",
+        "land tenure"
+      ],
+      "poi_ids": [
+        "centro-historico"
+      ],
+      "limitations": "Primary trial and punishment documents were not independently reviewed; exact geographic reconstruction tentative",
+      "geographies": [
+        "centro"
+      ],
+      "evidence_status": "research_candidate_source_linked_not_editorially_approved"
+    },
+    {
+      "id": "STG-20261113-LAYERS-03",
+      "assertion": "Sánchez Reyes reports a royal grant dated 1 July 1574 for the former Ávila property to support educational construction associated with the Royal University; grant date should not be confused with documented completion of a university building.",
+      "source_ids": [
+        "STG-INAH-SANCHEZREYES-2017"
+      ],
+      "source_locator": "Sánchez Reyes 2017 printed p. 13, citing AGN Universidad vol. 7 folios 12–13",
+      "period": "Early colonial 1521–1600",
+      "themes": [
+        "education",
+        "land tenure"
+      ],
+      "poi_ids": [
+        "centro-historico"
+      ],
+      "limitations": "AGN original file not accessed and subsequent property occupation not established",
+      "geographies": [
+        "centro"
+      ],
+      "evidence_status": "research_candidate_source_linked_not_editorially_approved"
+    },
+    {
+      "id": "STG-20261113-LAYERS-04",
+      "assertion": "The demolition of overlying colonial houses began around 1913, but Sánchez Reyes cites a report dated 15 April 1914 in which Manuel Gamio announced locating the ancient pyramid. INAH web pages alternately date excavation to around 1913 and discovery to May 1914.",
+      "source_ids": [
+        "STG-INAH-SANCHEZREYES-2017",
+        "STG-INAH-PAU-HISTORY-1991",
+        "STG-INAH-OMBLIGO-2018"
+      ],
+      "source_locator": "Sánchez Reyes 2017 printed pp. 16–17; INAH PAU closing paragraph; INAH Origen y ombligo closing paragraph",
+      "period": "Revolution and urban change 1910–1920",
+      "themes": [
+        "archaeological history",
+        "urban demolition",
+        "dating dispute"
+      ],
+      "poi_ids": [
+        "templo-mayor",
+        "plaza-manuel-gamio"
+      ],
+      "limitations": "Conflicting institutional datings; original Gamio field report remains unexamined; distinction between demolition, fieldwork and public announcement provisional",
+      "geographies": [
+        "centro"
+      ],
+      "evidence_status": "research_candidate_source_linked_not_editorially_approved"
+    },
+    {
+      "id": "STG-20261113-LAYERS-05",
+      "assertion": "An approximately 1900 brick wastewater collector was driven across Templo Mayor construction phases, causing destruction in a corridor roughly two metres wide; INAH identifies this modern intervention below the visitor walkway.",
+      "source_ids": [
+        "STG-INAH-PAU-HISTORY-1991",
+        "STG-INAH-TM-ZONE-2026"
+      ],
+      "source_locator": "INAH PAU final paragraph and INAH Templo Mayor Etapa IV y V / Colector de agua",
+      "period": "Porfiriato",
+      "themes": [
+        "infrastructure",
+        "heritage",
+        "archaeology"
+      ],
+      "poi_ids": [
+        "templo-mayor"
+      ],
+      "limitations": "Original city engineering and archaeological section drawings not inspected; visitor sightline unverified",
+      "geographies": [
+        "centro"
+      ],
+      "evidence_status": "research_candidate_source_linked_not_editorially_approved"
+    },
+    {
+      "id": "STG-20261113-LAYERS-06",
+      "assertion": "Electricity workers encountered the Coyolxauhqui monolith on 21 February 1978 and INAH salvage excavations followed before the broader Proyecto Templo Mayor; 1978 cannot be described as the first-ever excavation of the site.",
+      "source_ids": [
+        "STG-INAH-TM-PROJECT-1978",
+        "STG-INAH-TM-ZONE-2026"
+      ],
+      "source_locator": "INAH Proyecto Templo Mayor opening paragraph; INAH Lugares archaeological history",
+      "period": "Mexico City 1940–1980",
+      "themes": [
+        "archaeology",
+        "public infrastructure",
+        "museum history"
+      ],
+      "poi_ids": [
+        "templo-mayor"
+      ],
+      "limitations": "Institutional retellings; original rescue field sheets not examined",
+      "geographies": [
+        "centro"
+      ],
+      "evidence_status": "research_candidate_source_linked_not_editorially_approved"
+    },
+    {
+      "id": "STG-20261113-LAYERS-07",
+      "assertion": "The INAH Programa de Arqueología Urbana was established in 1991 to excavate and study the multiple centuries represented in properties around the former Mexica sacred precinct, including colonial and later deposits.",
+      "source_ids": [
+        "STG-INAH-PAU-HISTORY-1991"
+      ],
+      "source_locator": "INAH PAU opening paragraphs",
+      "period": "Mexico City 1980–present",
+      "themes": [
+        "cultural heritage",
+        "research infrastructure",
+        "historical layers"
+      ],
+      "poi_ids": [
+        "templo-mayor",
+        "catedral-metropolitana"
+      ],
+      "limitations": "Institutional program description; individual post-1991 site reports not yet read",
+      "geographies": [
+        "centro"
+      ],
+      "evidence_status": "research_candidate_source_linked_not_editorially_approved"
+    }
+  ],
+  "scope": "Seven staged historical research findings on colonial precinct properties, Porfirian infrastructure, rediscovery dates and ongoing urban archaeology"
+}

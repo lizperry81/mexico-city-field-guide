@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-13T10:58:34Z",
+  "kind": "historically_grounded_explanatory_readiness_delta",
+  "rating_method": "Read evidence assertions and limitations; not based on number of citations. No substantial rating issued.",
+  "cells": [
+    {
+      "period": "Early colonial 1521–1600",
+      "theme": "religion",
+      "geography": "centro",
+      "rating": "developing",
+      "evidence_ids": [
+        "STG-20261113-LAYERS-01"
+      ],
+      "gap": "original municipal allotments"
+    },
+    {
+      "period": "Early colonial 1521–1600",
+      "theme": "politics",
+      "geography": "centro",
+      "rating": "developing",
+      "evidence_ids": [
+        "STG-20261113-LAYERS-02"
+      ],
+      "gap": "1566 trial records and property bounds"
+    },
+    {
+      "period": "Early colonial 1521–1600",
+      "theme": "culture",
+      "geography": "centro",
+      "rating": "sparse",
+      "evidence_ids": [
+        "STG-20261113-LAYERS-03"
+      ],
+      "gap": "subsequent university occupation and buildings"
+    },
+    {
+      "period": "Porfiriato",
+      "theme": "infrastructure",
+      "geography": "centro",
+      "rating": "developing",
+      "evidence_ids": [
+        "STG-20261113-LAYERS-05"
+      ],
+      "gap": "municipal drainage plans and site visibility"
+    },
+    {
+      "period": "Mexican Revolution",
+      "theme": "culture",
+      "geography": "centro",
+      "rating": "sparse",
+      "evidence_ids": [
+        "STG-20261113-LAYERS-04"
+      ],
+      "gap": "1913 vs 1914 source disagreement unresolved"
+    },
+    {
+      "period": "Mexico City 1940–1980",
+      "theme": "poi",
+      "geography": "centro",
+      "rating": "developing",
+      "evidence_ids": [
+        "STG-20261113-LAYERS-06"
+      ],
+      "gap": "archival rescue photographs and excavation documentation"
+    },
+    {
+      "period": "Mexico City 1980–present",
+      "theme": "culture",
+      "geography": "centro",
+      "rating": "sparse",
+      "evidence_ids": [
+        "STG-20261113-LAYERS-07"
+      ],
+      "gap": "specific PAU site publications by decade"
+    }
+  ],
+  "substantial_rating_count": 0,
+  "publication_approved": false
+}

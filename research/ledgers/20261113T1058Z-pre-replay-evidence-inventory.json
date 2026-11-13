@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-13T10:58:34Z",
+  "kind": "pre_replay_baseline_verification",
+  "before": {
+    "canonical_V97": {
+      "sources": 616,
+      "claims": 422,
+      "claim_links": 403,
+      "findings": 68
+    },
+    "reconciled_batched_documents": 61,
+    "unique_staged_assertions": 329,
+    "source_inspection_metadata": 126,
+    "source_candidates": 79,
+    "unknown_source_refs": 14,
+    "source_metadata_conflicts": 2
+  },
+  "after_staging_commit_expected": {
+    "new_batches": 1,
+    "additional_assertions": 7,
+    "additional_inspections": 5,
+    "additional_source_candidates": 5
+  },
+  "after_replay_status": "UNVERIFIED_PENDING_WORKFLOW",
+  "canonical_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "never_promote_without_github_readback": true
+}

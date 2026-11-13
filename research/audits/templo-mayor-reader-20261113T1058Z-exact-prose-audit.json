@@ -1,0 +1,139 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-11-13T10:58:34Z",
+  "kind": "exact_main_branch_reader_prose_audit",
+  "chapter": "Templo Mayor Discover and field walk",
+  "inspected_repository_file": {
+    "path": "poi/templo-mayor/reader.html",
+    "branch": "main",
+    "blob_sha": "3051c5b14f20a47048e3e8e512843ff5d3952211",
+    "method": "Extract and read individual narrative paragraphs from live-site reader HTML; paragraph indices use h/p/li order"
+  },
+  "editorial_source_stub": {
+    "path": "editorial/discover/templo-mayor.json",
+    "blob_sha": "daad546905d0c24098edf08ca3cd470ff3eb472f",
+    "state": "draft chapters empty"
+  },
+  "source_locators": [
+    {
+      "id": "STG-INAH-SANCHEZREYES-2017",
+      "url": "https://revistas.inah.gob.mx/index.php/boletinmonumentos/article/download/12890/14004/25723",
+      "locator": "printed pp. 5–6, 10, 13 and 16–17",
+      "access": "Publisher PDF text examined; screenshot requested but timed out; archival originals and figures unexamined"
+    },
+    {
+      "id": "STG-INAH-PAU-HISTORY-1991",
+      "url": "https://www.templomayor.inah.gob.mx/historia/programa-de-arqueologia-urbana",
+      "locator": "opening and closing paragraphs, 1991 program; 1900 sewer; Gamio about 1913",
+      "access": "institutional public HTML reviewed, no excavation originals"
+    },
+    {
+      "id": "STG-INAH-OMBLIGO-2018",
+      "url": "https://lugares.inah.gob.mx/es/node/5502",
+      "locator": "last paragraph dates Gamio to May 1914",
+      "access": "institutional public HTML reviewed"
+    },
+    {
+      "id": "STG-INAH-TM-PROJECT-1978",
+      "url": "https://templomayor.inah.gob.mx/historia/proyecto-templo-mayor",
+      "locator": "opening paragraphs, 21 February 1978 discovery and rescue",
+      "access": "institutional public HTML reviewed"
+    },
+    {
+      "id": "STG-INAH-TM-ZONE-2026",
+      "url": "https://lugares.inah.gob.mx/es/node/4463",
+      "locator": "Etapa IVb, Etapa IV y V > Colector de agua and institutional discovery chronology",
+      "access": "institutional public HTML reviewed"
+    }
+  ],
+  "claim_to_source": [
+    {
+      "reader_paragraph": 16,
+      "topic": "Triple Alliance 1428",
+      "anchor": "In the late 1420s",
+      "finding": "Reasonable chronological hedge, but no cited primary or critical secondary support for precise 1428 date",
+      "status": "needs_source_comparison",
+      "action": "Retain late 1420s until 1428 political chronology and Tlacopan's role verified"
+    },
+    {
+      "reader_paragraph": 11,
+      "topic": "Templo Mayor building stages",
+      "anchor": "oldest excavated phase",
+      "finding": "Distinguishes stage II from later construction; ruler-stage attribution requires stratigraphic locator",
+      "status": "partial",
+      "action": "Add staged section diagram and connect each reign label to excavation publications"
+    },
+    {
+      "reader_paragraph": 18,
+      "topic": "Coatepec and Coyolxauhqui",
+      "anchor": "At the foot of the south stair",
+      "finding": "Disk location and myth are coherent; physical position does not independently prove actual ritual enactment",
+      "status": "source_linked_interpretation",
+      "action": "Retain myth vs archaeological observation distinction; keep outdoor replica vs museum original explicit"
+    },
+    {
+      "reader_paragraph": 27,
+      "topic": "Tóxcatl 1520",
+      "anchor": "In May 1520",
+      "finding": "Nahua account's retrospective authorship acknowledged, but Book 12 line locator needs checking",
+      "status": "review_required",
+      "action": "Review Florentine Codex Book 12 alongside scholarly translation before strengthening motive claims"
+    },
+    {
+      "reader_paragraph": 28,
+      "topic": "Conquest and dismantling",
+      "anchor": "Spaniards dismantled",
+      "finding": "Broad sequence supported; building reutilization and colonial arch by stage V absent",
+      "status": "needs_feature_crosswalk",
+      "action": "Add observable stage V colonial arch with exact INAH site locator"
+    },
+    {
+      "reader_paragraph": 31,
+      "topic": "1913 / 1914 Gamio dating",
+      "anchor": "In 1913, archaeologist Manuel Gamio uncovered",
+      "finding": "HIGH: current text gives 1913 as unqualified. Sánchez Reyes documents 1913 demolition but 15 April 1914 reported identification; other INAH pages alternatively say around 1913 and May 1914",
+      "status": "historical_date_conflict",
+      "action": "Qualify as investigation spanning 1913–1914 and independently inspect original Gamio report before selecting discovery date"
+    },
+    {
+      "reader_paragraph": 31,
+      "topic": "Coyolxauhqui 1978 discovery",
+      "anchor": "In February 1978",
+      "finding": "INAH documents 21 February 1978; rescue then broader project must be distinguished",
+      "status": "supported_with_precision_gap",
+      "action": "Specify 21 February 1978 and distinguish initial salvage from 1978–1982 research"
+    },
+    {
+      "reader_paragraph": 45,
+      "topic": "Exterior Coyolxauhqui reproduction",
+      "anchor": "Coyolxauhqui replica",
+      "finding": "Main reader correctly distinguishes outdoor replica and indoor original",
+      "status": "source_linked",
+      "action": "Retain distinction; verify any changed route/barriers before publication"
+    },
+    {
+      "reader_paragraph": null,
+      "topic": "1900 brick collector field feature",
+      "anchor": "not present in reader",
+      "finding": "INAH documents brick collector under steel walkway crossing excavation and damaging phases; current reader omits this unusually tangible historical continuity",
+      "status": "identified_gap",
+      "action": "Add an on-site 'look under walkway' observation if current visibility confirmed; clarify 1900 modern pipe not Mexica system"
+    },
+    {
+      "reader_paragraph": null,
+      "topic": "Urban Archaeology Program after 1991",
+      "anchor": "not present in reader",
+      "finding": "Reader can imply archaeology concluded in 1982; INAH's research program founded 1991 documents continuing work",
+      "status": "identified_gap",
+      "action": "Add one brief closing paragraph or expandable sidebar on ongoing site-wide research"
+    }
+  ],
+  "limitations": [
+    "No modifications to main or live app",
+    "Historical source review not a final copyedit or publication approval",
+    "Original Gamio field report and original colonial documents not examined",
+    "2017 PDF text inspected; screenshot attempt timed out"
+  ],
+  "ready_for_editorial_review": false,
+  "publication_approved": false
+}
