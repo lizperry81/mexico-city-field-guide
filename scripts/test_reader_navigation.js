@@ -6,7 +6,9 @@ const vm = require('node:vm');
 const code = fs.readFileSync(process.argv[2] || 'site/poi/templo-mayor/assets/reader.js', 'utf8');
 const listeners = {};
 const panels = Object.fromEntries(['history', 'explore', 'plan'].map(id => [
-  id, {id, hidden: false, scrollIntoView() {}, closest() { return this; }}
+  id, {id, hidden: false, scrollIntoView() {}, closest(selector) {
+    return selector === '[data-reader-panel]' ? this : null;
+  }}
 ]));
 const stops = ['plaza', 'twin-stairs', 'older-stairs'].map(id => {
   const heading = {textContent: id, focused: 0, focus() {this.focused += 1;}};
