@@ -1,8 +1,8 @@
 {
   "schema_version": 4,
   "kind": "research_to_app_handoff",
-  "generated_at": "2026-11-13T06:22:00Z",
-  "research_commit_sha": "b87d88746044606eb5286af8b65757361bab943c",
+  "generated_at": "2026-11-13T06:58:00Z",
+  "research_commit_sha": "ad9c6755585c5c3360d747b4db4f04fafc0a4201",
   "canonical_version": "V97",
   "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
   "canonical_status": "unchanged_provisional_V97_not_promoted",
@@ -14,31 +14,36 @@
     "source_inspections": 9
   },
   "staged_counts": {
-    "scope": "All 56 GitHub research/batches JSON files in verified replay; detached local SQLite not merged",
-    "github_batches_replayed": 56,
-    "github_distinct_finding_ids": 286,
-    "github_index_only_refs": 28,
-    "raw_batch_documents_in_new_sqlite": 56,
+    "scope": "Complete 58 GitHub research-batch documents at verified replay; 118-ID detached SQLite crosswalk checked, detached source inspections not merged",
+    "github_batches_replayed": 58,
+    "github_distinct_substantive_finding_ids": 300,
+    "github_index_only_refs_total": 28,
+    "github_index_only_refs_unresolved": 16,
+    "raw_batch_documents_in_new_sqlite": 58,
     "github_inspection_entries": 80,
-    "github_source_candidates": 54,
+    "github_source_candidates": 58,
     "unknown_source_refs": 22,
     "source_metadata_collisions": 2,
-    "local_archive_staged_findings_table_rows_verified": 118,
-    "local_archive_staged_inspections_table_rows_verified": 37,
-    "previous_external_local_aggregate_candidate_ids_reported": 157,
-    "external_staging_join_verified": false
+    "detached_local_staging_findings_table_rows": 118,
+    "detached_local_findings_ids_represented_by_full_github_assertions": 118,
+    "detached_local_inspections_not_reconciled": 37,
+    "external_staging_semantic_join_verified": false
   },
-  "versioned_research_sqlite_gz_path": "research/reconciled/v4_241fa524c476/research_only.sqlite.gz",
-  "versioned_research_sha256": "c3c129dfd211fcf5cc052be99ad0b254be8e7b0b37ef1e0148c87f761b5ea215",
-  "compressed_sha256": "acc70dfa4faa16d2901f2f21bea5fbfc41b1a64bcd20b9272be53c160b711c7d",
-  "replay_report_path": "research/reconciled/v4_241fa524c476/replay_report.json",
+  "versioned_research_sqlite_gz_path": "research/reconciled/v4_4607611b4843/research_only.sqlite.gz",
+  "versioned_research_sha256": "9f55303dbe335ba146cb6db45042a5d35fa95d778bb8c1b82fbc5f89636de377",
+  "compressed_sha256": "4c8c70ad7bb66a12ed188fabdf59682e4f9154d6a1ca243bf195866789aac43c",
+  "replay_report_path": "research/reconciled/v4_4607611b4843/replay_report.json",
   "reconciliation_artifact_paths": [
     "research/ledgers/20261113T051238Z-github-full-replay-verified.json",
     "research/reconciled/v4_fd07cfbc7f22/replay_report.json",
     "research/reconciled/v4_fd07cfbc7f22/compressed_sha256.txt",
     "research/reconciled/v4_241fa524c476/replay_report.json",
     "research/reconciled/v4_241fa524c476/compressed_sha256.txt",
-    "research/ledgers/20261113T0620Z-decena-full-replay-verification.json"
+    "research/ledgers/20261113T0620Z-decena-full-replay-verification.json",
+    "research/ledgers/20261113T0635Z-exact-detached-staging-id-crosswalk.json",
+    "research/ledgers/20261113T0655Z-cross-corpus-recovery-verified.json",
+    "research/reconciled/v4_4607611b4843/replay_report.json",
+    "research/reconciled/v4_4607611b4843/compressed_sha256.txt"
   ],
   "chapter_audit_artifact_paths": [
     "research/audits/templo-mayor-discover-20261113.json",
@@ -49,34 +54,33 @@
   "coverage_artifact_paths": [
     "research/coverage/coverage-matrix-20261113-compact.json",
     "research/coverage/20261113T0356Z-colonial-1692-coverage-delta.json",
-    "research/coverage/20261113T0610Z-revolution-national-palace-explanatory-delta.json"
+    "research/coverage/20261113T0610Z-revolution-national-palace-explanatory-delta.json",
+    "research/coverage/20261113T0650Z-detached-1968-and-cave-recovery-delta.json"
   ],
   "evidence_status": {
-    "new_findings_this_run": 10,
-    "scope": "Revolution-era National Palace source-linked candidates and reconciliation safety patch",
-    "institutional_html_sources_examined": 3,
-    "abstract_only_source_entries": 1,
-    "primary_source_originals_examined": 0,
-    "replay_copies_unreviewed_findings_only": true,
-    "corroboration_added": 0,
-    "publication_approved": false,
-    "legacy_claim_conflicts_flagged": 3,
-    "source_identity_conflicts_flagged": 2
+    "new_historical_finding_candidates_researched_this_run": 10,
+    "previously_staged_assertions_restored_to_github": 14,
+    "source_identities_restored_to_github": 4,
+    "new_primary_source_originals_examined": 0,
+    "independently_corroborated_new_findings": 0,
+    "source_access": "Institutional HTML synthesis + one abstract; 14 older candidates preserved with inherited status; original documentary and audio materials not re-examined",
+    "ready_for_editorial_review": false,
+    "publication_approved": false
   },
   "ready_for_editorial_review": false,
   "ready_for_publication": false,
   "canonical_promoted": false,
   "blockers": [
-    "Detached local staged SQLite contains 118 findings rows and 37 staged source-inspection rows, not all reported 157 aggregated candidates; must compare 118 IDs plus 39 archive/batch candidate identifiers against 286 GitHub IDs before cross-corpus claim",
-    "22 unresolved source references remain after forward reference correction",
-    "Two source IDs have competing metadata across batches; no automatic identities merged",
-    "28 index-only research references lack complete assertions in GitHub index",
-    "1913 Decena Trágica historical date and arrest/death chronology conflicts require original archival evidence",
-    "Templo Mayor Discover exact current prose still not inspected sentence-by-sentence"
+    "Local staged SQLite has 118 preserved finding rows with 118 exact IDs now represented by full GitHub assertions, but 37 local source-inspection records and source/locator semantic comparisons remain unmerged",
+    "16 GitHub index-only research references still lack full assertions",
+    "22 unresolved source references and 2 duplicate-ID bibliographic metadata conflicts",
+    "1913 Decena Tragica legacy date and competing accounts of arrest/death chronology require original document comparison",
+    "Templo Mayor Discover exact prose still needs sentence-by-sentence audit",
+    "No unreviewed findings may be automatically published"
   ],
-  "consumer_instruction": "Research-only SQLite and historical candidates only. Do not automatically publish, promote canonical or merge into main. The 1913 evidence audit flags contested legacy historical claims; publication requires original-source checks and editorial approval.",
-  "immutable_handoff_path": "research/handoff/history/20261113T0622Z-decena-replay-56.json",
-  "previous_manifest_generated_at": "2026-11-13T05:12:38.011Z",
-  "previous_manifest_blob_sha": "fd24ca62c4ce0a9fe14b6208bc51200e60ce566d",
+  "consumer_instruction": "For the other automation: research-persistence only. Versioned 58-batch SQLite is VERIFIED STAGED RESEARCH, NOT canonical/app content. Do not merge or publish automatically. Read conflict audits and source-access flags.",
+  "immutable_handoff_path": "research/handoff/history/20261113T0658Z-cross-corpus-58.json",
+  "previous_manifest_generated_at": "2026-11-13T06:22:00Z",
+  "previous_manifest_blob_sha": "1c16d600a4b3d5deee3ce2cdca92cffcef6cbc4f",
   "handoff_history_append_only": true
 }
