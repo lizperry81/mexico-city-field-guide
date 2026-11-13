@@ -1,0 +1,71 @@
+name: Replay all research batches into versioned staging
+on:
+  push:
+    branches: [research-persistence]
+    paths:
+      - 'research/pipeline/reconcile_git_batches.py'
+      - 'research/batches/**'
+      - '.github/workflows/research-replay-staging.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: research-replay-staging-only
+  cancel-in-progress: false
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Reconcile complete GitHub research-batch tree (fail closed)
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 research/pipeline/reconcile_git_batches.py \
+            --canonical research/canonical/CDMX_CANONICAL.sqlite \
+            --batch-dir research/batches --min-files 53 \
+            --output "$RUNNER_TEMP/CDMX_RESEARCH_ONLY.sqlite" \
+            --report "$RUNNER_TEMP/replay_report.json"
+          python3 - "$RUNNER_TEMP/CDMX_RESEARCH_ONLY.sqlite" <<'PY'
+          import sqlite3,sys
+          c=sqlite3.connect(sys.argv[1])
+          assert c.execute('PRAGMA integrity_check').fetchone()[0]=='ok'
+          assert not c.execute('PRAGMA foreign_key_check').fetchall()
+          assert c.execute('SELECT COUNT(*) FROM canonical_findings').fetchone()[0]==68
+          assert c.execute('SELECT COUNT(*) FROM research_batch_raw_documents').fetchone()[0]>=53
+          PY
+      - name: Package immutable research-only output and verify gzip
+        shell: bash
+        run: |
+          set -euo pipefail
+          OUT="research/reconciled/v4_${GITHUB_SHA:0:12}"
+          mkdir -p "$OUT"
+          gzip -n -9 -c "$RUNNER_TEMP/CDMX_RESEARCH_ONLY.sqlite" > "$OUT/research_only.sqlite.gz"
+          cp "$RUNNER_TEMP/replay_report.json" "$OUT/replay_report.json"
+          sha256sum "$OUT/research_only.sqlite.gz" > "$OUT/compressed_sha256.txt"
+          gzip -t "$OUT/research_only.sqlite.gz"
+          test "$(gzip -dc "$OUT/research_only.sqlite.gz" | sha256sum | cut -d' ' -f1)" = "$(python3 -c 'import json,os;print(json.load(open(os.environ["RUNNER_TEMP"]+"/replay_report.json"))["output_sha256"])')"
+          echo "OUTPUT_DIR=$OUT" >> "$GITHUB_ENV"
+      - name: Upload complete replay as recoverable workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: research-replay-${{ github.sha }}
+          path: ${{ env.OUTPUT_DIR }}
+          if-no-files-found: error
+      - name: Commit validated research-only snapshot without changing V97
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$OUTPUT_DIR"
+          git commit -m "research: immutable staged full replay for ${GITHUB_SHA:0:12} [skip ci]"
+          git push origin HEAD:research-persistence
+          git fetch origin research-persistence
+          test "$(git rev-parse HEAD)" = "$(git rev-parse origin/research-persistence)"
+          ACTUAL="$(git show "origin/research-persistence:$OUTPUT_DIR/research_only.sqlite.gz" | sha256sum | cut -d' ' -f1)"
+          EXPECTED="$(cut -d' ' -f1 "$OUTPUT_DIR/compressed_sha256.txt")"
+          test "$ACTUAL" = "$EXPECTED"
+          echo "Verified persisted research-only SQLite.gz and report at $OUTPUT_DIR"
