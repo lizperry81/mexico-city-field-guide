@@ -27,6 +27,27 @@ v3 = dict(snap, immutable_handoff_snapshot_sha="b" * 40,
           previous_manifest_generated_at="2026-11-13T03:14:04Z",
           handoff_history_append_only=True)
 validate_versioned_handoff(v3, snap, "b" * 40)
+
+# The latest research handoff has inline provenance: its immutable historical
+# file is byte-identical to the moving manifest, without a separate snapshot
+# SHA. Validate it without accepting altered or missing fields.
+inline_v3 = dict(snap, previous_manifest_blob_sha="c" * 40,
+                 previous_manifest_generated_at="2026-11-13T04:14:00Z",
+                 handoff_history_append_only=True)
+validate_versioned_handoff(inline_v3, copy.deepcopy(inline_v3), "d" * 40)
+for invalid_manifest, invalid_history in (
+    (dict(inline_v3, handoff_history_append_only=False), inline_v3),
+    (dict(inline_v3, previous_manifest_blob_sha="not-a-sha"), inline_v3),
+    (dict(inline_v3, ready_for_publication=True), inline_v3),
+    (inline_v3, dict(inline_v3, rogue_field=True)),
+    (dict(inline_v3, unreviewed_extra=True), inline_v3),
+):
+    try:
+        validate_versioned_handoff(invalid_manifest, invalid_history, "d" * 40)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("Altered inline v3 handoff was accepted")
 v2 = {"schema_version": 2, "kind": "research_to_app_handoff"}
 validate_versioned_handoff(v2, v2, "")
 for changed, old_snapshot, actual_blob in (
@@ -61,6 +82,10 @@ else:
     assert report["status"] == "verified_handoff_not_approved"
     assert len(report["research_commit_sha"]) == 40
     assert report["handoff_schema_version"] in (2, 3)
+    assert len(report["handoff_manifest_commit_sha"]) == 40
+    if any(x["group"] == "versioned_research_sqlite_gz_path"
+           for x in report["artifact_checks"]):
+        assert report["handoff_schema_version"] == 3
     assert report["immutable_handoff_path"].startswith("research/handoff/history/")
     assert len(report["immutable_handoff_blob_sha"]) == 40
     assert not report["canonical_promoted"]
