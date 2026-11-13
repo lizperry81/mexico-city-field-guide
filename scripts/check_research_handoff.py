@@ -363,6 +363,59 @@ def validate_versioned_handoff(manifest, immutable_manifest, snapshot_sha):
                     raise ValueError("Cross-automation v4 research artifacts drift: " + group)
             return
 
+        # The current producer emits an immutable, research-only audit record
+        # with its own source/coverage/batch path lists. Bind its entire staged
+        # identity to the rolling manifest and the EXACT committed Git blob.
+        # A missing or mismatched claimed blob is a hard failure, never a
+        # reason to accept the most recent moving branch head instead.
+        if immutable_manifest.get("kind") == "immutable_research_to_app_handoff":
+            shared = (
+                "schema_version", "research_commit_sha",
+                "verified_replay_commit_sha", "previous_manifest_blob_sha",
+                "previous_manifest_generated_at", "canonical_version",
+                "canonical_hash", "canonical_status", "canonical",
+                "staged_counts", "versioned_research_sqlite_gz_path",
+                "versioned_research_sha256", "compressed_sha256",
+                "replay_report_path", "evidence_status", "replay_evidence",
+                "ready_for_editorial_review", "ready_for_publication",
+                "blockers",
+            )
+            for field in shared:
+                if immutable_manifest.get(field) != manifest.get(field):
+                    raise ValueError("Immutable v4 research record drift: " + field)
+            if manifest.get("immutable_handoff_blob_sha") != snapshot_sha:
+                raise ValueError("Immutable v4 Git blob SHA does not match rolling manifest")
+            if (manifest.get("canonical_promoted") is not False
+                    or manifest.get("ready_for_publication") is not False
+                    or manifest.get("ready_for_editorial_review") is not False
+                    or manifest.get("canonical_status") !=
+                    "unchanged_provisional_V97_not_promoted"
+                    or manifest.get("evidence_status", {}).get("publication_approved") is not False
+                    or manifest.get("evidence_status", {}).get("ready_for_editorial_review") is not False
+                    or manifest.get("replay_evidence", {}).get("integrity") != "ok"
+                    or manifest.get("replay_evidence", {}).get("foreign_key_violations") != 0
+                    or manifest.get("replay_evidence", {}).get("canonical_rows_unchanged") is not True
+                    or manifest.get("replay_evidence", {}).get("github_readback_verified") is not True):
+                raise ValueError("Immutable v4 research evidence remains unverified")
+            for record_key, manifest_key in (
+                ("chapter_audit_artifact_paths", "chapter_audit_artifact_paths"),
+                ("coverage_artifact_paths", "coverage_artifact_paths"),
+                ("source_audit_paths", "chapter_audit_artifact_paths"),
+                ("batch_artifact_paths", "research_batch_artifact_paths"),
+            ):
+                paths = immutable_manifest.get(record_key)
+                if (not isinstance(paths, list) or not paths
+                        or not set(paths).issubset(set(manifest.get(manifest_key, [])))):
+                    raise ValueError("Immutable v4 audit artifact drift: " + record_key)
+                for path in paths:
+                    safe_path(path)
+            source_inventory = immutable_manifest.get("inventory_path")
+            if (not isinstance(source_inventory, str)
+                    or source_inventory not in manifest.get("reconciliation_artifact_paths", [])):
+                raise ValueError("Immutable v4 source inventory not bound to manifest")
+            safe_path(source_inventory)
+            return
+
         # Research previously emitted an independently committed, verified replay
         # record as the immutable anchor. It intentionally is NOT a copy of the
         # rolling manifest. Bind all essential immutable facts, rather than
