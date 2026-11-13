@@ -1,0 +1,14 @@
+{
+  "event_id": "20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a",
+  "event_type": "append_only_staging_batch",
+  "batch_path": "research/batches/20261113T0055Z_hospital_beneficencia_1b6a.json",
+  "finding_delta": 13,
+  "previous_staged_total": 105,
+  "staged_total_after": 118,
+  "source_inspections_delta": 4,
+  "baseline_tables_untouched": 88,
+  "canonical_modified": false,
+  "staging_sqlite_sha256": "d6990fed66528a542f84689f99773ab3f43c039dfa16ae0f402b1b9f6feec611",
+  "predecessor_archive": "CDMX_STAGE_20261112T2359Z_REFORMA_LIBERTAD_CULTOS_CROSSWALK_COMPLETE.zip",
+  "research_archive": "CDMX_STAGE_20261113T0055Z_HOSPITAL_BENEFICENCIA.zip"
+}
