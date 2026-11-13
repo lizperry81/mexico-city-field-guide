@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "segment": 4,
+  "tree_head": "058159feba4de784dfecc61f0fe290f205386f7a",
+  "scope": "full_content_checked_against_Git_blob_SHA",
+  "records": [
+    {
+      "path": "research/batches/20261112T2100Z-auto9-1968-breadth-7e4d.json",
+      "git_blob_sha1": "92964a9db35cbd29dad088b5717f6b9dcbfb99ac",
+      "verified": true,
+      "arrays": {
+        "findings": 15,
+        "sources": 1
+      },
+      "finding_like_entries": 15,
+      "identified_ids": 15
+    },
+    {
+      "path": "research/batches/20261112T2117Z-radio68.json",
+      "git_blob_sha1": "5ba6e1643c9e53a9d7ffddbaadcdb539aa3263fe",
+      "verified": true,
+      "arrays": {},
+      "finding_like_entries": 0,
+      "identified_ids": 0
+    },
+    {
+      "path": "research/batches/20261112T215917Z-auto8-c73af2.json",
+      "git_blob_sha1": "cfa2abcec73368ab6b8d5a6a9acefc75e56e7f24",
+      "verified": true,
+      "arrays": {
+        "findings": 9
+      },
+      "finding_like_entries": 0,
+      "identified_ids": 9
+    },
+    {
+      "path": "research/batches/20261112T2300Z-reforma-historic-centre-bf631.json",
+      "git_blob_sha1": "e176f7af33d766dc72441531b3f0baae30569b80",
+      "verified": true,
+      "arrays": {
+        "findings": 12,
+        "source_register": 7
+      },
+      "finding_like_entries": 12,
+      "identified_ids": 12
+    },
+    {
+      "path": "research/batches/20261112T2359Z_reforma_libertad_cultos_crosswalk.json",
+      "git_blob_sha1": "846287cebbab66efb16f8d1c4bc07171bf9cf012",
+      "verified": true,
+      "arrays": {
+        "findings": 9,
+        "sources": 1
+      },
+      "finding_like_entries": 9,
+      "identified_ids": 9
+    },
+    {
+      "path": "research/batches/20261113-hospital-jesus-archival-chronology.json",
+      "git_blob_sha1": "7beb789bb5715386b16e3f4c75a42f2d69eb9731",
+      "verified": true,
+      "arrays": {},
+      "finding_like_entries": 0,
+      "identified_ids": 0
+    },
+    {
+      "path": "research/batches/20261113-hospital-jesus-foundation.json",
+      "git_blob_sha1": "e569a42b94cd5a9537e2582c0cbc258cddf3fc44",
+      "verified": true,
+      "arrays": {
+        "findings": 5
+      },
+      "finding_like_entries": 0,
+      "identified_ids": 5
+    },
+    {
+      "path": "research/batches/20261113-source-crosswalk-review.json",
+      "git_blob_sha1": "40918fb06dc62e6d6b4e45eda63da8c165af2307",
+      "verified": true,
+      "arrays": {},
+      "finding_like_entries": 0,
+      "identified_ids": 0
+    },
+    {
+      "path": "research/batches/20261113T0055Z_hospital_beneficencia_1b6a.json",
+      "git_blob_sha1": "6cceb55e964dd716c9a17bd1cfe50404ef6cf59c",
+      "verified": true,
+      "arrays": {
+        "new_findings": 13
+      },
+      "finding_like_entries": 13,
+      "identified_ids": 13
+    },
+    {
+      "path": "research/batches/20261113T0120Z-source-identity-audit.json",
+      "git_blob_sha1": "cc2ce4c4d369fa7169f8181a5d7d0207186fb267",
+      "verified": true,
+      "arrays": {},
+      "finding_like_entries": 0,
+      "identified_ids": 0
+    },
+    {
+      "path": "research/batches/20261113T0203Z-templo-mayor-discover-eight.json",
+      "git_blob_sha1": "63ed0fa23a927ff6f8ce40c3c4b8c750f716394d",
+      "verified": true,
+      "arrays": {
+        "findings": 8,
+        "source_inspections": 6,
+        "sources": 6
+      },
+      "finding_like_entries": 8,
+      "identified_ids": 8
+    },
+    {
+      "path": "research/batches/20261113T0310Z-transit-revolution-1985-breadth.json",
+      "git_blob_sha1": "cf5b59165b2cd7cc177583e13b756dd8a996a093",
+      "verified": true,
+      "arrays": {
+        "findings": 11,
+        "source_inspections": 9,
+        "sources": 9
+      },
+      "finding_like_entries": 11,
+      "identified_ids": 11
+    }
+  ]
+}
