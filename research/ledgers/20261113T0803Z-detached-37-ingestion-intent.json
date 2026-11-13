@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-11-13T08:03:00Z",
+  "purpose": "Preserve and replay the 37 original structured detached source-inspection records without fabricating source examination",
+  "input_archive": "CDMX_DETACHED_INSPECTIONS_RECOVERY_20261113T0710Z.zip",
+  "input_archive_member": "research/batches/20261113T0710Z-detached-inspections-37.json",
+  "input_json_sha256": "c13a8016c3fe5a1455a8ae3628720f2199238c9c96f51d58a8fda5ed44d20ebf",
+  "input_sqlite_sha256": "d6990fed66528a542f84689f99773ab3f43c039dfa16ae0f402b1b9f6feec611",
+  "preserved_original_structured_rows": 37,
+  "new_path": "research/batches/20261113T0803Z-detached-original-inspections-37.json.gz",
+  "new_gzip_sha256": "fa25a053a6e78761aff6e5df2c042bbd76fdbce24f96e4fc392135f15cfc78a6",
+  "new_uncompressed_json_sha256": "c6a038ac221bb76570c8b1f731f0085b258162f5cb667be02f3f06fd846a4528",
+  "baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "before": {
+    "replayed_batches": 58,
+    "github_inspection_entries": 84
+  },
+  "expected_after_replay": {
+    "replayed_batches": 59,
+    "github_inspection_entries": 121
+  },
+  "interpretation": "121 replayed inspection metadata entries, not necessarily 121 independent original source inspections; no automatic deduplication or editorial approval",
+  "status": "REPLAY_PENDING_VERIFIED_GITHUB_ACTIONS_OUTPUT",
+  "ready_for_editorial_review": false
+}

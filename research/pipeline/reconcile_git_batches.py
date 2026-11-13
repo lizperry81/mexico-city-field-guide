@@ -6,7 +6,7 @@ snapshot, and EVERY JSON file from a GitHub research/batches checkout.
 Creates a NEW versioned research-only SQLite, preserving originals and raw
 provenance. No canonical promotion, editorial approval, or merge is performed.
 """
-import argparse, hashlib, json, re, sqlite3
+import argparse, gzip, hashlib, json, re, sqlite3
 from pathlib import Path
 
 PIN = "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846"
@@ -59,6 +59,45 @@ def key(obj,keys):
         if isinstance(value,list):result.extend(value)
         elif isinstance(value,dict):result.append(value)
     return result
+def load_batch_json(path):
+    """Read UTF-8 JSON or immutable gzip-compressed UTF-8 JSON without losing raw content."""
+    with (gzip.open(path, "rt", encoding="utf-8") if path.name.endswith(".json.gz")
+          else path.open("rt", encoding="utf-8")) as stream:
+        raw = stream.read()
+    return json.loads(raw), raw
+
+def inspection_source_id(item):
+    if item.get("source_id"):
+        return str(item["source_id"])
+    original = item.get("original_inspection")
+    if isinstance(original, dict):
+        return str(original.get("source_id") or original.get("id") or "")
+    return ""
+
+def detached_inspection_crosswalk(conn, detached_batch):
+    """Status is strictly possible identity overlap, never editorial equivalence."""
+    rows = [(p, i, json.loads(raw))
+            for p, i, raw in conn.execute(
+                "SELECT source_path, inspection_id, payload_json FROM research_batch_inspections")]
+    base = [(p, i, x) for p, i, x in rows if p != detached_batch]
+    detached = [(p, i, x) for p, i, x in rows if p == detached_batch]
+    result = []
+    for _, iid, wrapped in detached:
+        sid = inspection_source_id(wrapped)
+        exact = sorted({bid for _, bid, existing in base
+                        if (existing == wrapped.get("original_inspection")
+                            or existing.get("original_inspection") == wrapped.get("original_inspection"))
+                        and isinstance(wrapped.get("original_inspection"), dict)})
+        same_source = sorted({bid for _, bid, existing in base
+                              if sid and inspection_source_id(existing) == sid})
+        if exact: status = "same_structured_payload_candidate"
+        elif same_source: status = "same_source_identity_scope_unverified"
+        else: status = "no_existing_source_identity_match"
+        result.append({"detached_inspection_id":iid, "source_id":sid,
+                       "status":status, "exact_candidates":exact,
+                       "same_source_candidates":same_source})
+    return result
+
 def main():
     p=argparse.ArgumentParser()
     for a in ("canonical","batch-dir","output","report"):
@@ -114,11 +153,16 @@ def main():
     conflicts=[];pending=set();missing_source_ids=set();file_count=0;inspection_count=0
     # Track cross-batch identity conflicts; never collapse distinct assertions.
     github_assertions={};source_metadata={};changed_input_paths=[]
-    paths=sorted(Path(a.batch_dir).rglob("*.json"))
+    paths=sorted([*Path(a.batch_dir).rglob("*.json"), *Path(a.batch_dir).rglob("*.json.gz")])
     if len(paths)<a.min_files:raise SystemExit(f'BLOCKED: only {len(paths)} batch files; expected at least {a.min_files}')
     for f in paths:
-        try:v=json.loads(f.read_text())
-        except (ValueError,UnicodeDecodeError) as e:raise SystemExit(f'BLOCKED: unparseable batch file {f}: {e}')
+        try:v,raw_text=load_batch_json(f)
+        except (ValueError,UnicodeError,OSError) as e:
+            raise SystemExit(f'BLOCKED: unreadable or invalid JSON batch {f}: {e}')
+        if isinstance(v,dict) and "row_count" in v and "source_inspections" in v:
+            actual=len(listify(v["source_inspections"]))
+            if int(v["row_count"])!=actual:
+                raise SystemExit(f"BLOCKED: declared source inspection count differs in {f}")
         rel=f.relative_to(Path(a.batch_dir)).as_posix()
         # A previously ingested path changing bytes is a provenance conflict.
         old=db.execute("SELECT content_sha256 FROM research_batch_files WHERE path=?",(rel,)).fetchone()
@@ -129,7 +173,7 @@ def main():
                    (rel,hashfile(f),"raw_source_preserved_in_checkout"))
         file_count+=1
         db.execute("INSERT OR IGNORE INTO research_batch_raw_documents VALUES(?,?,?)",
-                   (rel,hashfile(f),f.read_text(encoding="utf-8")))
+                   (rel,hashfile(f),raw_text))
         if isinstance(v,dict) and isinstance(v.get("finding_ids"),list):
             for ix,fid in enumerate(v["finding_ids"]):
                 if isinstance(fid,str) and fid.strip():
@@ -154,7 +198,7 @@ def main():
             pending.add(sid)
         for item in inspections:
             if not isinstance(item,dict):continue
-            iid=str(item.get("id") or item.get("source_id") or hashbytes(enc(item).encode())[:20])
+            iid=str(item.get("id") or item.get("inspection_id") or item.get("source_id") or hashbytes(enc(item).encode())[:20])
             h=hashbytes(enc(item).encode())
             db.execute("INSERT OR IGNORE INTO research_batch_inspections VALUES(?,?,?,?)",
                        (iid,h,rel,enc(item)))
@@ -194,7 +238,15 @@ def main():
     index_ids={r[0] for r in db.execute("SELECT DISTINCT finding_id FROM research_batch_index_only")}
     unresolved_index_only=sorted(index_ids-ids-set(staged)-baseline_ids)
     total=ids|set(staged)
-    report={"schema_version":1,"canonical_sha256":PIN,
+    detached_file="20261113T0803Z-detached-original-inspections-37.json.gz"
+    detached_crosswalk=detached_inspection_crosswalk(db,detached_file)
+    if detached_file in {p.name for p in paths} and len(detached_crosswalk)!=37:
+        raise SystemExit("BLOCKED: detached inspection record count was not exactly 37")
+    detached_status_counts={k:sum(x["status"]==k for x in detached_crosswalk)
+                            for k in ("same_structured_payload_candidate",
+                                      "same_source_identity_scope_unverified",
+                                      "no_existing_source_identity_match")}
+    report={"schema_version":2,"canonical_sha256":PIN,
        "staging_sha256":hashfile(staging),"output_sha256":hashfile(dest),
        "canonical_tables_preserved":len(baseline),"canonical_rows_unchanged":preserved,
        "canonical_counts":EXPECTED,"existing_staged_findings":len(staged),
@@ -206,8 +258,13 @@ def main():
        "unresolved_index_only_ids":unresolved_index_only,
        "unresolved_index_only_count":len(unresolved_index_only),
        "raw_batch_documents_in_sqlite":db.execute("SELECT COUNT(*) FROM research_batch_raw_documents").fetchone()[0],
+       "batch_file_inventory":[{"path":p.relative_to(Path(a.batch_dir)).as_posix(),
+           "sha256":hashfile(p)} for p in paths],
        "combined_distinct_candidate_ids":len(total),
        "github_inspection_entries":inspection_count,
+       "detached_inspection_crosswalk":{"incoming_rows":len(detached_crosswalk),
+           "status_counts":detached_status_counts, "entries":detached_crosswalk,
+           "semantics":"Same source is NOT a duplicate inspection; retain all records pending manual comparison"},
        "unique_inspection_payload_rows":db.execute("SELECT COUNT(*) FROM research_batch_inspections").fetchone()[0],
        "inspection_count_semantics":"Metadata/partial scopes as recorded; not verified direct full-source inspections",
        "candidate_source_identities":len(pending),
