@@ -277,6 +277,68 @@ nested_snapshot = {
     "reconciliation_artifact_paths": ["research/reconciled/new.json"],
 }
 validate_versioned_handoff(v4_nested, nested_snapshot, "d" * 40)
+# Latest 1985 legal/architecture research uses a separate immutable v4 record.
+# Matching source claims and audit paths are insufficient if its Git blob SHA
+# disagrees with the rolling pointer. The bad snapshot must remain unpublished.
+legal_manifest = copy.deepcopy(v4_nested)
+legal_manifest.update({
+    "canonical_status": "unchanged_provisional_V97_not_promoted",
+    "immutable_handoff_blob_sha": "d" * 40,
+    "canonical_promoted": False,
+    "ready_for_editorial_review": False,
+    "ready_for_publication": False,
+    "replay_evidence": {
+        "integrity": "ok", "foreign_key_violations": 0,
+        "canonical_rows_unchanged": True, "github_readback_verified": True,
+    },
+    "blockers": ["Original image annexes not examined"],
+    "reconciliation_artifact_paths": [
+        "research/reconciled/new.json", "research/ledgers/legal-inventory.json",
+    ],
+})
+legal_manifest["evidence_status"]["ready_for_editorial_review"] = False
+legal_manifest["evidence_status"]["publication_approved"] = False
+legal_shared = (
+    "schema_version", "research_commit_sha", "verified_replay_commit_sha",
+    "previous_manifest_blob_sha", "previous_manifest_generated_at",
+    "canonical_version", "canonical_hash", "canonical_status", "canonical",
+    "staged_counts", "versioned_research_sqlite_gz_path",
+    "versioned_research_sha256", "compressed_sha256", "replay_report_path",
+    "evidence_status", "replay_evidence", "ready_for_editorial_review",
+    "ready_for_publication", "blockers",
+)
+legal_immutable = {key: copy.deepcopy(legal_manifest[key]) for key in legal_shared}
+legal_immutable.update({
+    "kind": "immutable_research_to_app_handoff",
+    "source_audit_paths": ["research/audits/new.json"],
+    "chapter_audit_artifact_paths": ["research/audits/new.json"],
+    "coverage_artifact_paths": ["research/coverage/new.json"],
+    "batch_artifact_paths": ["research/batches/new.json"],
+    "inventory_path": "research/ledgers/legal-inventory.json",
+})
+validate_versioned_handoff(legal_manifest, legal_immutable, "d" * 40)
+for mutated_manifest, mutated_immutable, actual_blob in (
+    (dict(legal_manifest, immutable_handoff_blob_sha="a" * 40),
+     legal_immutable, "d" * 40),
+    (legal_manifest,
+     dict(legal_immutable, staged_counts={"github_batches_replayed": 999}),
+     "d" * 40),
+    (legal_manifest,
+     dict(legal_immutable, ready_for_publication=True), "d" * 40),
+    (legal_manifest,
+     dict(legal_immutable, source_audit_paths=["research/audits/unknown.json"]),
+     "d" * 40),
+    (legal_manifest,
+     dict(legal_immutable, inventory_path="research/ledgers/unknown.json"),
+     "d" * 40),
+):
+    try:
+        validate_versioned_handoff(mutated_manifest, mutated_immutable, actual_blob)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("Tampered immutable legal research handoff was accepted")
+
 for mutation in (
     {"canonical_counts": dict(nested_snapshot["canonical_counts"], sources=617)},
     {"canonical_promoted": True},
