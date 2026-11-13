@@ -1,0 +1,90 @@
+{
+  "schema_version": 4,
+  "kind": "append_only_research_handoff_snapshot",
+  "generated_at": "2026-11-13T10:13:01.987Z",
+  "research_branch": "research-persistence",
+  "research_commit_sha": "3d19ea09c49f75e6e2460181144b502bc8df0b82",
+  "pipeline_fix_commit_sha": "9e797d37f2c60201f0215a219eff0c60901c3f41",
+  "verified_replay_commit_sha": "9e83868c4f81cb10f4a9b1982a596a91e4523128",
+  "canonical_version": "V97",
+  "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_status": "unchanged_not_promoted",
+  "canonical_counts": {
+    "sources": 616,
+    "claims": 422,
+    "claim_source_links": 403,
+    "findings": 68,
+    "source_inspections": 9
+  },
+  "before": {
+    "github_batch_files": 60,
+    "assertion_bearing_staged_finding_ids": 316,
+    "inspection_metadata": 122,
+    "source_candidate_ids": 75,
+    "index_only_unresolved": 6,
+    "unresolved_source_ids": 14,
+    "source_metadata_collisions": 2
+  },
+  "after": {
+    "github_batch_files": 61,
+    "assertion_bearing_staged_finding_ids": 329,
+    "inspection_metadata": 126,
+    "source_candidate_ids": 79,
+    "index_only_unresolved": 1,
+    "unresolved_source_ids": 14,
+    "source_metadata_collisions": 2
+  },
+  "changes": {
+    "legacy_TE28_findings_reclassified_from_index_only_to_substantive": 5,
+    "new_historical_finding_candidates": 8,
+    "new_source_candidates": 4,
+    "new_inspection_metadata_entries": 4,
+    "source_grounded_readiness_cells": 6
+  },
+  "database": {
+    "sqlite_gz": "research/reconciled/v4_3d19ea09c49f/research_only.sqlite.gz",
+    "replay_report": "research/reconciled/v4_3d19ea09c49f/replay_report.json",
+    "compressed_sha256": "44bad95a9dfc615366a37b8aacf6c5b1e9a53526aa0d55e8f25c120ba6d0b2b2",
+    "sqlite_sha256": "32ea0d7d367c6ad61e223a0b3e3fadd609fa0f2d2f15dd2910c28e529bd99199",
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "original_V97_tables_preserved": 88,
+    "canonical_rows_unchanged": true,
+    "persisted_git_readback": "verified by GitHub Actions replay commit and current GitHub report/file readback"
+  },
+  "research_batch_artifact_paths": [
+    "research/batches/20261113T1004Z-reform-munal-reforma-urban-continuities.json"
+  ],
+  "coverage_artifact_paths": [
+    "research/coverage/20261113T1004Z-reform-munal-reforma-readiness.json"
+  ],
+  "reconciliation_artifact_paths": [
+    "research/ledgers/20261113T1004Z-te28-subject-evidence-import-repair.json",
+    "research/pipeline/reconcile_git_batches.py",
+    "research/pipeline/test_reconcile_batch_schemas.py"
+  ],
+  "chapter_audit_artifact_paths": [
+    "research/audits/templo-mayor-discover-20261113T0910Z-read-before-vs-on-site-recheck.json"
+  ],
+  "evidence_status": {
+    "publication_approved": false,
+    "ready_for_editorial_review": false,
+    "primary_archival_documents_examined_this_run": 0,
+    "full_public_institutional_html_pages_examined_this_run": 2,
+    "search_index_or_abstract_only_sources": 2,
+    "independently_corroborated_new_findings": 0,
+    "normalization_not_corrobation": true
+  },
+  "blockers": [
+    "1 provenance-only documentary ID remains index-only: STG20261111T1302Z-RECON-V87-PRIMARY-001",
+    "14 unresolved source references; 2 bibliographic metadata collisions",
+    "7 potential URL matches among 37 detached inspections remain unreviewed for scope",
+    "Reform-era original decrees and MUNAL demolition and imperial Reforma survey documents unexamined",
+    "Exact deployed Templo Mayor Discover narrative not examined; no line-by-line approval",
+    "No automatic promotion, source semantic merge, or app publication"
+  ],
+  "canonical_promoted": false,
+  "main_modified": false,
+  "ready_for_editorial_review": false,
+  "publication_approved": false
+}
