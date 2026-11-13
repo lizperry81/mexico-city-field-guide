@@ -1,0 +1,30 @@
+{
+  "batch_id": "20261113-hospital-jesus",
+  "baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "status": "STAGED ONLY — NOT IN CANONICAL",
+  "findings": [
+    {
+      "id": "stg-20261113-hjesus-foundation-date-conflict",
+      "status": "Disputed",
+      "source_ids": [
+        "INAH-MHI-I-09-00419",
+        "UNAM-IIB-HOSPITALES-2016",
+        "INAH-ANALES-116"
+      ]
+    },
+    {
+      "id": "stg-20261113-hjesus-original-names"
+    },
+    {
+      "id": "stg-20261113-hjesus-building-survival"
+    },
+    {
+      "id": "stg-20261113-hjesus-urban-site"
+    },
+    {
+      "id": "stg-20261113-hjesus-temple-construction"
+    }
+  ],
+  "archive": "/MexicoResearch/staging/CDMX_STAGE_20261113_HOSPITAL_JESUS_FOUNDATION.zip",
+  "canonical_modified": false
+}
