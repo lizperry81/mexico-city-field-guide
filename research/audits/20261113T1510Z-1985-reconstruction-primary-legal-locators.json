@@ -1,0 +1,72 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-11-13T15:10:00Z",
+  "kind": "1985_reconstruction_legal_text_to_site_locator_audit",
+  "batch_path": "research/batches/20261113T1510Z-1985-legal-and-neighborhood-reconstruction.json",
+  "site": "Centro / colonia Guerrero / Morelos",
+  "clauses": [
+    {
+      "finding_id": "STG-20261113-1985-LEGAL-01",
+      "source_ids": [
+        "STG-20261113-DOF-1985-OCT-REFORM"
+      ],
+      "locator": "DOF 4771337, CONSIDERANDO paras 1–4 and ARTICULO 1o; DOF 4775636 CONSIDERANDO first paragraph",
+      "uncertainty": "The amended DOF HTML property list consists of scanned images not examined. DOF amendment HTML footer says 'Día 22' while later official DOF refers to publication 21 October; resolve issue-date disagreement. Do not state property counts or original publication date as verified from original cover."
+    },
+    {
+      "finding_id": "STG-20261113-1985-LEGAL-02",
+      "source_ids": [
+        "STG-20261113-DOF-1985-OCT-REFORM"
+      ],
+      "locator": "DOF 4771337, CONSIDERANDO third and fourth paragraphs and ARTICULO 1o",
+      "uncertainty": "The exact revised lots are embedded as unexamined images. Do not assert a given address was included or excluded or quote unverified parcel totals."
+    },
+    {
+      "finding_id": "STG-20261113-1985-LEGAL-03",
+      "source_ids": [
+        "STG-20261113-DOF-1986-APR-CONSTRUCTION"
+      ],
+      "locator": "DOF 4791760, second CONSIDERANDO",
+      "uncertainty": "This is official recital of the earlier decree, not direct inspection of the 14 October original. The legal objective does not establish household-level achievement."
+    },
+    {
+      "finding_id": "STG-20261113-1985-LEGAL-04",
+      "source_ids": [
+        "STG-20261113-DOF-1986-APR-CONSTRUCTION"
+      ],
+      "locator": "DOF 4791760, PRIMERO–SEXTO",
+      "uncertainty": "Do not confuse exemption from specific zoning/special-use paperwork with blanket permission to build without any license. No parcel-level permit files were inspected."
+    },
+    {
+      "finding_id": "STG-20261113-1985-LEGAL-05",
+      "source_ids": [
+        "STG-20261113-DOF-1985-DEC-BORES"
+      ],
+      "locator": "DOF 4775636, CUARTO I–IV and agreement PRIMERO–TERCERO",
+      "uncertainty": "Nominal authorization and schedule are in 1985 pesos; they are not proof of issuance, actual fiscal disbursement, converted modern value or program costs. Check print edition for typographic errors."
+    },
+    {
+      "finding_id": "STG-20261113-1985-LEGAL-06",
+      "source_ids": [
+        "STG-20261113-LINCOLN-AZUELA-2014"
+      ],
+      "locator": "Lincoln Institute public working-paper HTML, description paragraphs 3–7",
+      "uncertainty": "Publisher introduction inspected, not the 38-page study, individual court filings or interviews. This documents study methodology only, not the outcome of each case."
+    },
+    {
+      "finding_id": "STG-20261113-1985-LEGAL-07",
+      "source_ids": [
+        "STG-20261113-BUAP-LOPEZ-LEYVA-1988"
+      ],
+      "locator": "BUAP catalog item 98c2cdd4-b368-48f9-bc05-422e19991174, title, author, date, abstract",
+      "uncertainty": "A thesis title is not proof that the 30 units were built, are extant, or may be visited. Floor plans, completion documents, field verification and photographic rights remain unexamined."
+    }
+  ],
+  "high_priority_conflicts": [
+    "October decree publication: 21 October according to later official agreement, while source HTML footer says Día 22; inspect print issue",
+    "1985 expropriated parcel totals vary across sources and revisions; scanned lists unexamined",
+    "Reconstruction in place is formal policy objective, not evidence of actual resident retention at each address"
+  ],
+  "physical_site_check": "Degollado 38 claimed in BUAP thesis title; no present-day existence/access confirmed",
+  "evidence_status": "partial_source_based_chapter_audit_not_approved"
+}

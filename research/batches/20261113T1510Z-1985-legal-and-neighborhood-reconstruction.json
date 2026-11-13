@@ -1,0 +1,295 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261113T1510Z-1985-legal-and-neighborhood-reconstruction",
+  "generated_at": "2026-11-13T15:10:00Z",
+  "storage_role": "append_only_research_only",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "previous_batch_count": 66,
+  "previous_distinct_assertion_ids": 353,
+  "prior_batch_paths": [
+    "research/batches/20261113T1408Z-1985-housing-policy-and-organizing.json",
+    "research/batches/20261113T1418Z-1985-inah-source-identity-link-repair.json"
+  ],
+  "sources": [
+    {
+      "id": "STG-20261113-DOF-1985-OCT-REFORM",
+      "title": "Decreto por el que se expropian por causa de utilidad pública los inmuebles de propiedad privada que se señalan (reforma al decreto de 10 octubre 1985)",
+      "issuer": "Presidencia de la República / Diario Oficial de la Federación",
+      "signed_date": "1985-10-18",
+      "publication_date": "1985-10-21 (cross-referenced by official December agreement; source HTML page footer reads 'Día 22'—verify print issue)",
+      "url": "https://sidof.segob.gob.mx/notas/docFuente/4771337",
+      "access_scope": "Full machine-readable legal considerations and operative Article 1 inspected; scanned property roster image attachments NOT examined",
+      "identity_status": "provisional_original_publication_not_canonical"
+    },
+    {
+      "id": "STG-20261113-DOF-1985-DEC-BORES",
+      "title": "Acuerdo por el que se establecen las reglas para el pago de indemnización y Bonos de Renovación Urbana del Distrito Federal",
+      "issuer": "Departamento del Distrito Federal / Diario Oficial de la Federación",
+      "signed_date": "1985-12-02",
+      "url": "https://sidof.segob.gob.mx/notas/docFuente/4775636",
+      "access_scope": "Full machine-readable agreement inspected, recitals, clauses PRIMERO-CUARTO and bond terms; archival print facsimile not inspected",
+      "identity_status": "provisional_original_publication_not_canonical"
+    },
+    {
+      "id": "STG-20261113-DOF-1986-APR-CONSTRUCTION",
+      "title": "Acuerdo que establece normas de construcción y uso del suelo para Programa Emergente de Renovación Habitacional Popular",
+      "issuer": "Departamento del Distrito Federal / Diario Oficial de la Federación",
+      "signed_date": "1986-04-08",
+      "publication_date": "1986-04-23 (HTML Día 23; source search index)",
+      "url": "https://sidof.segob.gob.mx/notas/docFuente/4791760",
+      "access_scope": "Full machine-readable agreement inspected, recitals and PRIMERO–SEXTO; original October program decree not directly read",
+      "identity_status": "provisional_original_publication_not_canonical"
+    },
+    {
+      "id": "STG-20261113-LINCOLN-AZUELA-2014",
+      "title": "Un instrumento en condiciones de emergencia: Expropiación y reconstrucción habitacional en la Ciudad de México después del sismo de 1985",
+      "author": "Antonio Azuela",
+      "year": 2014,
+      "publication": "Lincoln Institute of Land Policy, working paper",
+      "url": "https://www.lincolninst.edu/es/publications/working-papers/un-instrumento-en-condiciones-emergencia/",
+      "access_scope": "Publisher HTML summary paragraphs only; 38-page full PDF, court files and interviews not examined",
+      "identity_status": "provisional_not_canonical"
+    },
+    {
+      "id": "STG-20261113-BUAP-LOPEZ-LEYVA-1988",
+      "title": "Construccion de la infraestructura y estructura del prototipo 1A, utilizado para la vivienda de intereses social por renovacion habitacional popular (Degollado N. 38, colonia Guerrero, 30 viviendas)",
+      "author": "José Narciso Roberto López Leyva",
+      "year": 1988,
+      "publication": "BUAP thesis / institutional repository catalog",
+      "url": "https://repositorioinstitucional.buap.mx/items/98c2cdd4-b368-48f9-bc05-422e19991174",
+      "access_scope": "Repository title, author, date and abstract inspected only; architectural drawings, built outcome and present existence not checked",
+      "identity_status": "provisional_poi_lead_not_canonical"
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "STG-20261113-1510-INS-1",
+      "source_id": "STG-20261113-DOF-1985-OCT-REFORM",
+      "source_url": "https://sidof.segob.gob.mx/notas/docFuente/4771337",
+      "portion_examined": "Full machine-readable legal considerations and operative Article 1 inspected; scanned property roster image attachments NOT examined",
+      "full_original_document_examined": true,
+      "original_document_meaning": "Official transcribed primary legal text inspected, but scans/facsimile not inspected",
+      "full_pdf_examined": false,
+      "independent_corroboration": false,
+      "inspection_status": "source_passage_visited_not_editorial_approval"
+    },
+    {
+      "id": "STG-20261113-1510-INS-2",
+      "source_id": "STG-20261113-DOF-1985-DEC-BORES",
+      "source_url": "https://sidof.segob.gob.mx/notas/docFuente/4775636",
+      "portion_examined": "Full machine-readable agreement inspected, recitals, clauses PRIMERO-CUARTO and bond terms; archival print facsimile not inspected",
+      "full_original_document_examined": true,
+      "original_document_meaning": "Official transcribed primary legal text inspected, but scans/facsimile not inspected",
+      "full_pdf_examined": false,
+      "independent_corroboration": false,
+      "inspection_status": "source_passage_visited_not_editorial_approval"
+    },
+    {
+      "id": "STG-20261113-1510-INS-3",
+      "source_id": "STG-20261113-DOF-1986-APR-CONSTRUCTION",
+      "source_url": "https://sidof.segob.gob.mx/notas/docFuente/4791760",
+      "portion_examined": "Full machine-readable agreement inspected, recitals and PRIMERO–SEXTO; original October program decree not directly read",
+      "full_original_document_examined": true,
+      "original_document_meaning": "Official transcribed primary legal text inspected, but scans/facsimile not inspected",
+      "full_pdf_examined": false,
+      "independent_corroboration": false,
+      "inspection_status": "source_passage_visited_not_editorial_approval"
+    },
+    {
+      "id": "STG-20261113-1510-INS-4",
+      "source_id": "STG-20261113-LINCOLN-AZUELA-2014",
+      "source_url": "https://www.lincolninst.edu/es/publications/working-papers/un-instrumento-en-condiciones-emergencia/",
+      "portion_examined": "Publisher HTML summary paragraphs only; 38-page full PDF, court files and interviews not examined",
+      "full_original_document_examined": false,
+      "original_document_meaning": "No",
+      "full_pdf_examined": false,
+      "independent_corroboration": false,
+      "inspection_status": "source_passage_visited_not_editorial_approval"
+    },
+    {
+      "id": "STG-20261113-1510-INS-5",
+      "source_id": "STG-20261113-BUAP-LOPEZ-LEYVA-1988",
+      "source_url": "https://repositorioinstitucional.buap.mx/items/98c2cdd4-b368-48f9-bc05-422e19991174",
+      "portion_examined": "Repository title, author, date and abstract inspected only; architectural drawings, built outcome and present existence not checked",
+      "full_original_document_examined": false,
+      "original_document_meaning": "No",
+      "full_pdf_examined": false,
+      "independent_corroboration": false,
+      "inspection_status": "source_passage_visited_not_editorial_approval"
+    }
+  ],
+  "findings": [
+    {
+      "id": "STG-20261113-1985-LEGAL-01",
+      "assertion": "The decree signed 18 October 1985 amended Article Two of a decree dated 10 October and published 11 October, specifically changing the list of properties designated for postearthquake housing expropriation. The December 1985 official agreement refers to the amendment as published 21 October.",
+      "source_ids": [
+        "STG-20261113-DOF-1985-OCT-REFORM"
+      ],
+      "source_locator": "DOF 4771337, CONSIDERANDO paras 1–4 and ARTICULO 1o; DOF 4775636 CONSIDERANDO first paragraph",
+      "period": "1985–1988 reconstruction",
+      "themes": [
+        "legislation",
+        "earthquake and housing"
+      ],
+      "geographies": [
+        "Centro Histórico"
+      ],
+      "poi_ids": [
+        "poi-centro-historico"
+      ],
+      "limitations": "The amended DOF HTML property list consists of scanned images not examined. DOF amendment HTML footer says 'Día 22' while later official DOF refers to publication 21 October; resolve issue-date disagreement. Do not state property counts or original publication date as verified from original cover.",
+      "status": "research_only_source_linked_candidate",
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113-1985-LEGAL-02",
+      "assertion": "The October 1985 amendment's preamble expressly says some parcels were removed from the initial list and others were added following further examination. The two published decree lists therefore cannot be treated as interchangeable boundaries for a specific block or property.",
+      "source_ids": [
+        "STG-20261113-DOF-1985-OCT-REFORM"
+      ],
+      "source_locator": "DOF 4771337, CONSIDERANDO third and fourth paragraphs and ARTICULO 1o",
+      "period": "1985–1988 reconstruction",
+      "themes": [
+        "property selection and urban geography",
+        "earthquake and housing"
+      ],
+      "geographies": [
+        "Centro / Guerrero / Morelos"
+      ],
+      "poi_ids": [
+        "poi-colonia-guerrero"
+      ],
+      "limitations": "The exact revised lots are embedded as unexamined images. Do not assert a given address was included or excluded or quote unverified parcel totals.",
+      "status": "research_only_source_linked_candidate",
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113-1985-LEGAL-03",
+      "assertion": "An April 1986 regulations agreement states that a presidential decree signed 12 October 1985 and published 14 October created the Programa Emergente de Renovación Habitacional Popular; its enumerated objectives included reconstruction with attention to neighbors' arraigo, housing ownership and neighborhood services.",
+      "source_ids": [
+        "STG-20261113-DOF-1986-APR-CONSTRUCTION"
+      ],
+      "source_locator": "DOF 4791760, second CONSIDERANDO",
+      "period": "1985–1988 reconstruction",
+      "themes": [
+        "urban housing policy",
+        "earthquake and housing"
+      ],
+      "geographies": [
+        "Centro Histórico"
+      ],
+      "poi_ids": [
+        "poi-centro-historico"
+      ],
+      "limitations": "This is official recital of the earlier decree, not direct inspection of the 14 October original. The legal objective does not establish household-level achievement.",
+      "status": "research_only_source_linked_candidate",
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113-1985-LEGAL-04",
+      "assertion": "The April 1986 construction agreement applied to program works in Gustavo A. Madero, Cuauhtémoc and Venustiano Carranza, exempted program land uses from certain special-use licenses/zoning certificates, while expressly retaining delegated licensing for construction, repair and demolition and requiring Department-approved projects.",
+      "source_ids": [
+        "STG-20261113-DOF-1986-APR-CONSTRUCTION"
+      ],
+      "source_locator": "DOF 4791760, PRIMERO–SEXTO",
+      "period": "1985–1988 reconstruction",
+      "themes": [
+        "regulatory reconstruction",
+        "earthquake and housing"
+      ],
+      "geographies": [
+        "Cuauhtémoc / Venustiano Carranza / Gustavo A. Madero"
+      ],
+      "poi_ids": [
+        "poi-centro-historico"
+      ],
+      "limitations": "Do not confuse exemption from specific zoning/special-use paperwork with blanket permission to build without any license. No parcel-level permit files were inspected.",
+      "status": "research_only_source_linked_candidate",
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113-1985-LEGAL-05",
+      "assertion": "A Department of the Federal District indemnification agreement dated 2 December 1985 set out an estimated 25-billion-old-peso nominal bond issue (Bonos de Renovación Urbana), a ten-year term including three grace years and a seven-installment amortization schedule; this compensated expropriated owners rather than describing direct grants to displaced tenants.",
+      "source_ids": [
+        "STG-20261113-DOF-1985-DEC-BORES"
+      ],
+      "source_locator": "DOF 4775636, CUARTO I–IV and agreement PRIMERO–TERCERO",
+      "period": "1985–1988 reconstruction",
+      "themes": [
+        "property compensation and finance",
+        "earthquake and housing"
+      ],
+      "geographies": [
+        "Mexico City central districts"
+      ],
+      "poi_ids": [
+        "poi-centro-historico"
+      ],
+      "limitations": "Nominal authorization and schedule are in 1985 pesos; they are not proof of issuance, actual fiscal disbursement, converted modern value or program costs. Check print edition for typographic errors.",
+      "status": "research_only_source_linked_candidate",
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113-1985-LEGAL-06",
+      "assertion": "Antonio Azuela's 2014 working-paper publisher summary reports that his legal study drew upon 80 amparo case files filed by property owners and eight interviews with key participants, an evidence base for examining resistance to expropriation that cannot be inferred from official decrees alone.",
+      "source_ids": [
+        "STG-20261113-LINCOLN-AZUELA-2014"
+      ],
+      "source_locator": "Lincoln Institute public working-paper HTML, description paragraphs 3–7",
+      "period": "1985–1988 reconstruction",
+      "themes": [
+        "historiography and legal disputes",
+        "earthquake and housing"
+      ],
+      "geographies": [
+        "Mexico City"
+      ],
+      "poi_ids": [
+        "poi-centro-historico"
+      ],
+      "limitations": "Publisher introduction inspected, not the 38-page study, individual court filings or interviews. This documents study methodology only, not the outcome of each case.",
+      "status": "research_only_source_linked_candidate",
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113-1985-LEGAL-07",
+      "assertion": "A BUAP institutional catalog identifies a 1988 civil-engineering thesis focused on a Prototype 1A social-housing structure at Degollado 38, colonia Guerrero, described in its title as '30 viviendas', making this a precise address-level lead for investigating reconstruction building typologies.",
+      "source_ids": [
+        "STG-20261113-BUAP-LOPEZ-LEYVA-1988"
+      ],
+      "source_locator": "BUAP catalog item 98c2cdd4-b368-48f9-bc05-422e19991174, title, author, date, abstract",
+      "period": "1985–1988 reconstruction",
+      "themes": [
+        "POI architectural reconstruction lead",
+        "earthquake and housing"
+      ],
+      "geographies": [
+        "Colonia Guerrero"
+      ],
+      "poi_ids": [
+        "poi-colonia-guerrero"
+      ],
+      "limitations": "A thesis title is not proof that the 30 units were built, are extant, or may be visited. Floor plans, completion documents, field verification and photographic rights remain unexamined.",
+      "status": "research_only_source_linked_candidate",
+      "independent_corroboration": false,
+      "publication_approved": false
+    }
+  ],
+  "source_access_limitations": [
+    "Three official DOF machine-readable legal texts read; attached scanned parcel rosters and original facsimiles unexamined",
+    "BUAP engineering thesis and Lincoln study metadata or introductions only; no full PDF examined",
+    "No new findings editorially approved or independently corroborated"
+  ],
+  "count_new_finding_candidates": 7,
+  "count_new_source_candidates": 5,
+  "count_new_inspection_metadata": 5,
+  "evidence_status": "primary_legal_text_examined_with_scanned_roster_gap; research_only",
+  "ready_for_editorial_review": false,
+  "publication_approved": false
+}

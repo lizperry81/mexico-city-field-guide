@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-13T15:10:00Z",
+  "kind": "append_only_input_research_ledger",
+  "research_baseline": {
+    "canonical_version": "V97",
+    "sources": 616,
+    "claims": 422,
+    "links": 403,
+    "findings": 68,
+    "sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846"
+  },
+  "prior_verified": {
+    "batch_count": 66,
+    "assertion_ids": 353,
+    "source_candidates": 106,
+    "inspection_metadata": 149,
+    "unknown_source_refs": 9,
+    "conflicts": 2
+  },
+  "incoming": {
+    "new_batch_path": "research/batches/20261113T1510Z-1985-legal-and-neighborhood-reconstruction.json",
+    "findings": 7,
+    "provisional_sources": 5,
+    "inspection_metadata": 5
+  },
+  "status": "awaiting complete GitHub Actions SQLite replay and verified readback; do not increment manifest counts until verified"
+}

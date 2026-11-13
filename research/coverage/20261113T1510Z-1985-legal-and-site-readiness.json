@@ -1,0 +1,115 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-11-13T15:10:00Z",
+  "kind": "chronological_x_thematic_x_geographic_explanatory_readiness_delta",
+  "mode": "append_only_not_replacement",
+  "batch_path": "research/batches/20261113T1510Z-1985-legal-and-neighborhood-reconstruction.json",
+  "base_matrix": "research/coverage/coverage-matrix-20261113-compact.json",
+  "rating_method": "Substantial requires close reading multiple independent explanatory sources plus specific sites and uncertainty; developing has coherent mechanism but missing outcome or detail; sparse is a promising partial study/lead; missing lacks site-specific explanation.",
+  "cells": [
+    {
+      "period": "1985 October",
+      "theme": "decree chronology and property selection",
+      "geography": "Centro Histórico",
+      "rating": "developing",
+      "finding_ids": [
+        "STG-20261113-1985-LEGAL-01",
+        "STG-20261113-1985-LEGAL-02"
+      ],
+      "explanatory_readiness": "Official decree text and its amendment mechanism examined; property lists only as embedded images",
+      "gaps": [
+        "Inspect 11 October original scanned list, 21 October issue, all revised addresses; resolve page footer"
+      ],
+      "publication_approved": false
+    },
+    {
+      "period": "1985–1987",
+      "theme": "postdisaster housing rights and neighborhood continuity",
+      "geography": "Cuauhtémoc / Centro",
+      "rating": "developing",
+      "finding_ids": [
+        "STG-20261113-1985-LEGAL-03"
+      ],
+      "explanatory_readiness": "Official 1986 summary identifies neighborhood rootedness objective, not outcomes",
+      "gaps": [
+        "Read 14 October 1985 decree, agreement with residents; inspect delivery outcomes"
+      ],
+      "publication_approved": false
+    },
+    {
+      "period": "1986 reconstruction",
+      "theme": "land use and construction licensing",
+      "geography": "Cuauhtémoc / Venustiano Carranza / Gustavo A. Madero",
+      "rating": "developing",
+      "finding_ids": [
+        "STG-20261113-1985-LEGAL-04"
+      ],
+      "explanatory_readiness": "Operative 1986 regulations distinguish exemptions from retained permit requirements",
+      "gaps": [
+        "Compare individual building approvals and engineering standards"
+      ],
+      "publication_approved": false
+    },
+    {
+      "period": "1985–1995",
+      "theme": "property expropriation financing",
+      "geography": "Mexico City central districts",
+      "rating": "developing",
+      "finding_ids": [
+        "STG-20261113-1985-LEGAL-05"
+      ],
+      "explanatory_readiness": "Original DOF indemnification instrument inspected; issue denomination and grace period located",
+      "gaps": [
+        "Trace actual issuance, redemptions, disputes and current-value method"
+      ],
+      "publication_approved": false
+    },
+    {
+      "period": "1985–2014",
+      "theme": "property owner appeals and litigation",
+      "geography": "Mexico City",
+      "rating": "sparse",
+      "finding_ids": [
+        "STG-20261113-1985-LEGAL-06"
+      ],
+      "explanatory_readiness": "Researcher summary identifies 80 court files and 8 interviews; no files personally inspected",
+      "gaps": [
+        "Inspect Azuela complete text, court cases and contrary jurisprudence"
+      ],
+      "publication_approved": false
+    },
+    {
+      "period": "1985–1988",
+      "theme": "reconstruction architectural prototype and building",
+      "geography": "Colonia Guerrero, Degollado 38",
+      "rating": "sparse",
+      "finding_ids": [
+        "STG-20261113-1985-LEGAL-07"
+      ],
+      "explanatory_readiness": "BUAP thesis title provides exact site and purported 30-home prototype, no physical building check",
+      "gaps": [
+        "Retrieve thesis drawings and completion records; street survey and present access"
+      ],
+      "publication_approved": false
+    },
+    {
+      "period": "1985–1987",
+      "theme": "completed housing stock and neighborhood outcomes",
+      "geography": "Colonia Morelos / Tepito",
+      "rating": "missing",
+      "finding_ids": [],
+      "explanatory_readiness": "Legal objectives documented, household outcomes and surviving buildings not established for these addresses",
+      "gaps": [
+        "Investigate RHP handover records, neighborhood oral history and representative occupied buildings"
+      ],
+      "publication_approved": false
+    }
+  ],
+  "counts": {
+    "substantial": 0,
+    "developing": 4,
+    "sparse": 2,
+    "missing": 1
+  },
+  "ready_for_editorial_review": false
+}
