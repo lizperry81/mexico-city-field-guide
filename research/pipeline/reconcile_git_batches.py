@@ -25,6 +25,32 @@ def listify(x):
     if isinstance(x,list):return x
     if isinstance(x,dict):return [x]
     return []
+def source_records(obj):
+    """Preserve source arrays AND named source maps (e.g. {'s1': {'url': ...}}).
+
+    Source IDs embedded in map keys were silently dropped by earlier imports.
+    Each original raw batch remains stored independently of this normalized index.
+    """
+    result=[]
+    for field in ("sources","new_sources","source_register","source_proposals","proposed_bibliography","source"):
+        val=obj.get(field)
+        if isinstance(val,list):
+            result.extend(x for x in val if isinstance(x,dict))
+        elif isinstance(val,dict):
+            if any(k in val for k in ("id","source_id","title","url","author","creator")):
+                result.append(val)
+            else:
+                for sid,record in val.items():
+                    if isinstance(record,dict):
+                        if record.get("id") and str(record["id"])!=str(sid):
+                            raise SystemExit("BLOCKED: conflicting source-map key and source ID")
+                        result.append({"id":str(sid),**record})
+    return result
+def inspection_records(obj):
+    """Capture multiple schema versions; do not confuse scalar counts with evidence."""
+    return key(obj,("source_inspections","source_inspection",
+                    "new_source_inspections","combined_source_inspections",
+                    "source_material_accessed"))
 def key(obj,keys):
     # Preserve every array and singleton; earlier version read only first matching key.
     result=[]
@@ -112,10 +138,8 @@ def main():
         if isinstance(v,list):findings=v;sources=[];inspections=[]
         elif isinstance(v,dict):
             findings=key(v,("findings","records","new_findings","candidate_findings","findings_candidate","documentary_findings"))
-            sources=key(v,("sources","new_sources","source_register","source_proposals","proposed_bibliography"))
-            if not sources:sources=listify(v.get("source"))
-            inspections=key(v,("source_inspections","source_inspection"))
-            if not inspections:inspections=listify(v.get("source_inspection"))
+            sources=source_records(v)
+            inspections=inspection_records(v)
         else:continue
         for item in sources:
             if not isinstance(item,dict):continue
@@ -184,6 +208,8 @@ def main():
        "raw_batch_documents_in_sqlite":db.execute("SELECT COUNT(*) FROM research_batch_raw_documents").fetchone()[0],
        "combined_distinct_candidate_ids":len(total),
        "github_inspection_entries":inspection_count,
+       "unique_inspection_payload_rows":db.execute("SELECT COUNT(*) FROM research_batch_inspections").fetchone()[0],
+       "inspection_count_semantics":"Metadata/partial scopes as recorded; not verified direct full-source inspections",
        "candidate_source_identities":len(pending),
        "unknown_source_ids":sorted(missing_source_ids),"conflicts":conflicts,
        "cross_batch_conflict_count":len(conflicts),"changed_input_paths":changed_input_paths,
