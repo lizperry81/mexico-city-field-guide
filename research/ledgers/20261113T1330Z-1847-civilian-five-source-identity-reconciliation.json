@@ -1,0 +1,123 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-11-13T13:30:00Z",
+  "kind": "post_replay_verified_reconciliation_ledger",
+  "branch": "research-persistence",
+  "research_batch_commit_sha": "81c9ef0cdda555e41853d8ebda6455d9ffd2e49e",
+  "persisted_replay_commit_sha": "0b6b643790fba6cff10caaf4027755b7455d5921",
+  "coverage_commit_sha": "7bbda0e98fe48560f55ea5c4592872f91f3dd673",
+  "templo_mayor_evidence_gate_commit_sha": "2f76b66549512e0cb0c79c5b6ebaf63375e7b5bc",
+  "canonical_baseline": {
+    "version": "V97",
+    "sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "status": "unchanged_not_promoted",
+    "sources": 616,
+    "claims": 422,
+    "claim_source_links": 403,
+    "findings": 68,
+    "inspections": 9,
+    "original_tables": 88
+  },
+  "counts": {
+    "before": {
+      "batches": 63,
+      "assertion_bearing_staged_finding_ids": 342,
+      "provisional_staged_source_candidate_ids": 89,
+      "inspection_payload_rows": 137,
+      "unregistered_source_references": 14,
+      "source_metadata_conflicts": 2,
+      "unresolved_index_only_refs": 1
+    },
+    "after": {
+      "batches": 64,
+      "assertion_bearing_staged_finding_ids": 346,
+      "provisional_staged_source_candidate_ids": 99,
+      "inspection_payload_rows": 142,
+      "unregistered_source_references": 9,
+      "source_metadata_conflicts": 2,
+      "unresolved_index_only_refs": 1
+    }
+  },
+  "five_staged_source_identities_recovered_from_prior_inspections": [
+    {
+      "id": "STG-SRC-CARBALLO-2011-MOON-PYRAMID",
+      "source_batch": "research/batches/20261112T130305Z-auto11-carballo-moon.json",
+      "blob_sha": "5529259e00f6f6b8f3bd17322dc59de1a29e4b66"
+    },
+    {
+      "id": "STG-SRC-HIRTH-2019-COMPOUND17",
+      "source_batch": "research/batches/20261112T140057Z-auto11-tlajinga-comp17.json",
+      "blob_sha": "de642a4273e897dcb03b498d80a92f7b9f45be63"
+    },
+    {
+      "id": "stg-src-cud-petition-1985",
+      "source_batch": "research/batches/20261112T195738Z-auto9-breadth-8ce5.json",
+      "blob_sha": "abb67110d22e9830a36f746d2cddab95df24c88b"
+    },
+    {
+      "id": "stg-src-massolo-1986",
+      "source_batch": "research/batches/20261112T195738Z-auto9-breadth-8ce5.json",
+      "blob_sha": "abb67110d22e9830a36f746d2cddab95df24c88b"
+    },
+    {
+      "id": "stg-src-gonzalez-1985",
+      "source_batch": "research/batches/20261112T195738Z-auto9-breadth-8ce5.json",
+      "blob_sha": "abb67110d22e9830a36f746d2cddab95df24c88b"
+    }
+  ],
+  "interpretation": "Five IDs now have separate provisional source candidate entries in the versioned research-only SQLite. This closes their missing-staged-source-reference bookkeeping status; it does not establish that their metadata match unique canonical publications, repeat independent inspection, or corroborate claims.",
+  "new_research": {
+    "finding_candidates": 4,
+    "new_1847_source_candidate_entries": 5,
+    "web_institutional_catalog_inspection_metadata": 5,
+    "full_granados_thesis_or_book_read": false,
+    "primary_1847_cabildo_text_read": false,
+    "independently_corroborated_new_findings": 0,
+    "publication_approved": false
+  },
+  "replay_verification": {
+    "report_path": "research/reconciled/v4_81c9ef0cdda5/replay_report.json",
+    "report_blob_sha": "f3c8d494f46e8adeb00de73a5a6439495e5620bb",
+    "sqlite_gzip_path": "research/reconciled/v4_81c9ef0cdda5/research_only.sqlite.gz",
+    "sqlite_gzip_github_blob_sha": "0c8ea0efb37708002c61c58365ee5b8362912422",
+    "sqlite_sha256_uncompressed": "36f2c40e151dcd529a8f7fbf916f32986d18559764be002c6cbf628e92b503a4",
+    "sqlite_sha256_compressed": "26f920424babb0e2a21f0687f72187d651af6ae9ce42590b4bb43e39aa33a00d",
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "original_88_tables_preserved": true,
+    "original_rows_unchanged": true,
+    "github_report_readback": true,
+    "github_binary_blob_readback": true,
+    "workflow_binary_sha256_readback_validation": "enforced_by_existing_GitHub_Actions_commit_step"
+  },
+  "new_artifacts": {
+    "batch": "research/batches/20261113T1302Z-1847-civilian-resistance-and-bibliographic-recovery.json",
+    "coverage": "research/coverage/20261113T1320Z-1847-civilian-source-recovery-explanatory-readiness.json",
+    "templo_mayor_audit": "research/audits/templo-mayor-discover-20261113T1320Z-chapter-evidence-gates.json"
+  },
+  "remaining_unregistered_source_refs": [
+    "PROPOSE_SOURCE_SLOAD_2020_BOTANICAL_DATASET_NOT_IN_CANONICAL",
+    "STAGE-SRC-MCCLUNG-2025-LAQ",
+    "STG-SRC-BARNES-2024-MIRRORS",
+    "STG-SRC-MANZANILLA-2009-CHRONOLOGY",
+    "STG-SRC-SUGIYAMA-SUGIYAMA-SARABIA-2014-AM125",
+    "stg-src-cdmx-hospital-jesus-guide",
+    "stg-src-leon-garduno-2021-beneficencia",
+    "stg-src-lozada-munal-sanandres",
+    "stg-src-unam-1861-compiled-laws"
+  ],
+  "unresolved_conflict_source_ids": [
+    "STG-SRC-MANZANILLA-LOPEZ-FRETER-1996",
+    "v95-sload-cave-2020"
+  ],
+  "blockers": [
+    "Nine source references still not represented in formal staged-source candidate rows (one is a proposed placeholder, not a verified bibliographic work)",
+    "Two conflicting source metadata identity records still need comparison",
+    "Seven detached inspection URL-overlap candidates require scope review",
+    "Direct examination of Granados/Reyes Tosqui full theses and 1847 municipal proceedings needed",
+    "Templo Mayor Gamio 1913/14 unresolved original report and no editorial approval"
+  ],
+  "canonical_promoted": false,
+  "main_modified": false,
+  "ready_for_editorial_review": false
+}
