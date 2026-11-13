@@ -42,9 +42,43 @@ def safe_path(path):
     return path
 
 
+def validate_versioned_handoff(manifest, immutable_manifest, snapshot_sha):
+    """Check complete immutable handoff; v3 appends provenance to the moving manifest.
+
+    v2 used an exact copy. v3 adds metadata to the current manifest, but not the
+    immutable snapshot. Unknown or altered snapshot fields fail validation.
+    """
+    version = manifest.get("schema_version")
+    if version == 2:
+        if immutable_manifest != manifest:
+            raise ValueError("Versioned v2 handoff differs from current manifest")
+        return
+    if version != 3:
+        raise ValueError("Unsupported handoff schema")
+    if not isinstance(snapshot_sha, str) or not HEX40.fullmatch(snapshot_sha):
+        raise ValueError("Missing immutable snapshot blob SHA")
+    if manifest.get("immutable_handoff_snapshot_sha") != snapshot_sha:
+        raise ValueError("Immutable v3 snapshot blob SHA mismatch")
+    if manifest.get("handoff_history_append_only") is not True:
+        raise ValueError("v3 handoff must record append-only history")
+    previous = manifest.get("previous_manifest_blob_sha")
+    if not isinstance(previous, str) or not HEX40.fullmatch(previous):
+        raise ValueError("v3 handoff missing previous manifest provenance")
+    if not isinstance(manifest.get("previous_manifest_generated_at"), str):
+        raise ValueError("v3 handoff missing previous handoff date")
+    extensions = {
+        "immutable_handoff_snapshot_sha", "handoff_history_append_only",
+        "previous_manifest_blob_sha", "previous_manifest_generated_at",
+    }
+    base = {key: value for key, value in manifest.items() if key not in extensions}
+    if immutable_manifest != base:
+        raise ValueError("Versioned v3 handoff differs from immutable snapshot")
+
+
 def validate():
     manifest = git_json(RESEARCH_REF, MANIFEST_PATH)
-    if manifest.get("schema_version") != 2 or manifest.get("kind") != "research_to_app_handoff":
+    if (manifest.get("schema_version") not in (2, 3)
+            or manifest.get("kind") != "research_to_app_handoff"):
         raise ValueError("Unrecognized research handoff schema")
     sha = manifest.get("research_commit_sha", "")
     if not isinstance(sha, str) or not HEX40.fullmatch(sha):
@@ -72,11 +106,11 @@ def validate():
         raise ValueError("Research handoff lacks audit or coverage artifacts")
 
     immutable = safe_path(manifest.get("immutable_handoff_path"))
+    snapshot_blob_sha = git("rev-parse", f"{RESEARCH_REF}:{immutable}").decode().strip()
     immutable_manifest = git_json(RESEARCH_REF, immutable)
     if immutable_manifest.get("research_commit_sha") != sha:
         raise ValueError("Versioned handoff snapshot points to a different research commit")
-    if immutable_manifest != manifest:
-        raise ValueError("Versioned handoff differs from the current manifest")
+    validate_versioned_handoff(manifest, immutable_manifest, snapshot_blob_sha)
     audit = git_json(sha, manifest["chapter_audit_artifact_paths"][0])
     coverage = git_json(sha, manifest["coverage_artifact_paths"][0])
     if not isinstance(audit.get("claims"), list) or not isinstance(coverage.get("counts"), dict):
@@ -105,6 +139,9 @@ def validate():
         "schema_version": 1,
         "status": "verified_handoff_not_approved",
         "research_commit_sha": sha,
+        "handoff_schema_version": manifest["schema_version"],
+        "immutable_handoff_path": immutable,
+        "immutable_handoff_blob_sha": snapshot_blob_sha,
         "research_branch_at_build": git("rev-parse", RESEARCH_REF).decode().strip(),
         "handoff_manifest_blob_sha256": hashlib.sha256(
             git("show", f"{RESEARCH_REF}:{MANIFEST_PATH}")).hexdigest(),
@@ -138,6 +175,9 @@ def main():
         report, queue, passages = validate()
     except (subprocess.CalledProcessError, ValueError, KeyError,
             TypeError, json.JSONDecodeError) as exc:
+        # No stale verified queue may survive a failed newer handoff.
+        for stale in ("editorial-review-queue.json", "editorial-passage-inventory.json"):
+            (OUT / stale).unlink(missing_ok=True)
         blocked = {"schema_version": 1, "status": "no_verified_handoff",
                    "reason": str(exc), "ready_for_publication": False}
         (OUT / "handoff-report.json").write_text(
