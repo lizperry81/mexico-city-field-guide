@@ -27,6 +27,8 @@ STYLE = r"""
 .review-pager{display:flex;justify-content:space-between;gap:10px;margin:18px 0 0}
 .review-pager button,.review-deep-button{border:0;border-radius:10px;padding:12px 15px;background:#0d746e;color:white;font:700 14px system-ui;cursor:pointer}
 .review-pager button:disabled{opacity:.35;cursor:not-allowed}
+.review-jump{width:100%;max-width:100%;padding:12px 13px;margin:4px 0 14px;background:#fff;border:1px solid #8db7b8;border-radius:9px;font:15px system-ui}
+.review-switch button:focus-visible,.review-pager button:focus-visible,.review-jump:focus-visible,.review-deep-button:focus-visible{outline:3px solid #0d746e;outline-offset:3px}
 .review-deep-button{display:inline-block;margin:7px 8px 7px 0;background:#dcefeb;color:#195b60;border:1px solid #97c5c2}
 .review-count{font:700 12px system-ui;letter-spacing:.07em;color:#0d746e;text-transform:uppercase}
 .review-collapsible{border:1px solid var(--line);background:white;border-radius:12px;padding:15px 18px;margin:18px 0}
@@ -98,19 +100,32 @@ function pager(host,items,label){
     host.append(wrap);
     return wrap;
   });
+  // Give phone readers direct access to all chapters without forcing 7-8 Next taps.
+  const jump=document.createElement('select');
+  jump.className='review-jump';
+  jump.setAttribute('aria-label','Jump to '+label.toLowerCase());
+  items.forEach((item,i)=>{
+    const option=document.createElement('option');option.value=String(i);
+    const heading=item.querySelector('h2')?.textContent?.trim()||label;
+    option.textContent=(i+1)+'. '+heading;
+    jump.append(option);
+  });
+  host.insertBefore(jump,cards[0]);
   const nav=document.createElement('div');nav.className='review-pager';
-  const prev=document.createElement('button');prev.textContent='← Previous';
-  const next=document.createElement('button');next.textContent='Next →';
+  const prev=document.createElement('button');prev.type='button';prev.textContent='← Previous';
+  const next=document.createElement('button');next.type='button';next.textContent='Next →';
   nav.append(prev,next);host.append(nav);
   function select(i,scroll=false){
     active=Math.max(0,Math.min(i,cards.length-1));
     cards.forEach((c,j)=>c.hidden=j!==active);
     prev.disabled=active===0;next.disabled=active===cards.length-1;
+    jump.value=String(active);
     // Preserve the current reading position when following another site's link.
     if(scroll && items[active].id)window.history.replaceState(null,'','#'+encodeURIComponent(items[active].id));
     if(scroll)bar.scrollIntoView({block:'start',behavior:'auto'});
   }
   prev.onclick=()=>select(active-1,true);next.onclick=()=>select(active+1,true);
+  jump.onchange=()=>select(Number(jump.value),true);
   select(0);return select;
 }
 function activate(id,scroll=true){
@@ -158,29 +173,54 @@ function showResearch(name){
   for(const type of ['evidence','sources'])originals[type].classList.toggle('active',type===name);
   overlay.querySelectorAll('[data-research]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.research===name)));
 }
-function openResearch(name){
+let researchReturnFocus=null;
+let previousOverflow='';
+function openResearch(name,source){
+  researchReturnFocus=source||document.activeElement;
+  previousOverflow=document.body.style.overflow;
+  document.body.style.overflow='hidden';
   showResearch(name);overlay.classList.add('open');document.getElementById('review-close').focus();
 }
-const close=()=>{overlay.classList.remove('open');};
+const close=()=>{
+  if(!overlay.classList.contains('open'))return;
+  overlay.classList.remove('open');
+  document.body.style.overflow=previousOverflow;
+  if(researchReturnFocus?.isConnected)researchReturnFocus.focus();
+};
 document.getElementById('review-close').onclick=close;
 overlay.querySelectorAll('[data-research]').forEach(b=>b.onclick=()=>showResearch(b.dataset.research));
 overlay.addEventListener('click',e=>{if(e.target===overlay)close()});
-document.addEventListener('keydown',e=>{if(e.key==='Escape'&&overlay.classList.contains('open'))close()});
+document.addEventListener('keydown',e=>{
+  if(!overlay.classList.contains('open'))return;
+  if(e.key==='Escape'){e.preventDefault();close();return}
+  if(e.key!=='Tab')return;
+  const focusable=Array.from(overlay.querySelectorAll('button:not([disabled]),a[href],input:not([disabled]),select:not([disabled]),summary'))
+    .filter(el=>el.getClientRects().length);
+  if(!focusable.length)return;
+  const first=focusable[0],last=focusable[focusable.length-1];
+  if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}
+  else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}
+});
 for(const name of ['discover','explore']){
   const actions=document.createElement('div');actions.className='review-card';
   actions.innerHTML='<strong>Investigate the evidence</strong><p>Original research claims and source records are available as optional panels. Their editorial review statuses remain intact.</p><button type="button" class="review-deep-button" data-open-research="evidence">Claims & evidence</button><button type="button" class="review-deep-button" data-open-research="sources">Scholarly sources</button>';
   screens[name].append(actions);
 }
-main.querySelectorAll('[data-open-research]').forEach(b=>b.onclick=()=>openResearch(b.dataset.openResearch));
+main.querySelectorAll('[data-open-research]').forEach(b=>b.onclick=()=>openResearch(b.dataset.openResearch,b));
 showResearch('evidence');
 // Original walk deep-links still refer to dossier-topic-N and field-stop anchors.
-const hash=decodeURIComponent(location.hash.slice(1));
-let found=hist.findIndex(node=>node.id===hash||!!node.querySelector('#'+CSS.escape(hash||'__none__')));
-if(found>=0){activate('discover',false);chooseHistory(found);}
-else {
+function navigateHash(){
+  let hash;
+  try{hash=decodeURIComponent(location.hash.slice(1))}
+  catch{hash=location.hash.slice(1)}
+  if(!hash)return;
+  let found=hist.findIndex(node=>node.id===hash||!!node.querySelector('#'+CSS.escape(hash)));
+  if(found>=0){activate('discover',false);chooseHistory(found);return}
   found=storyChapters.findIndex(node=>node.id===hash);
-  if(found>=0){activate('explore',false);chooseField(found);}
+  if(found>=0){activate('explore',false);chooseField(found)}
 }
+navigateHash();
+window.addEventListener('hashchange',navigateHash);
 });
 </script>
 """
