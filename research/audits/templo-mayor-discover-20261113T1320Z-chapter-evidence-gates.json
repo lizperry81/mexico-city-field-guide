@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-13T13:20:00Z",
+  "generated_at": "2026-11-13T13:12:00Z",
   "kind": "Templo_Mayor_Discover_editorial_evidence_gate_addendum",
   "branch": "research-persistence",
   "target_main_file": "poi/templo-mayor/reader.html",
@@ -130,5 +130,6 @@
     "Coyolxauhqui on-site replica and collector line of sight not checked",
     "Conquest Nahua and Spanish accounts require full locators",
     "Imagery rights not cleared"
-  ]
+  ],
+  "timestamp_note": "Corrected generated_at from prematurely labeled artifact filename time; prior revision remains in Git history and artifact paths are stable. No historical findings changed."
 }
