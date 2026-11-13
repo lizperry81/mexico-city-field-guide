@@ -538,6 +538,40 @@ else:
             assert all(isinstance(gap["candidate_finding_ids_unverified"], list)
                        and gap["publication_authorization"] is False
                        for gap in hospital)
+        # The source team's exact published-reader audit is a separate,
+        # paragraph-indexed human-review queue, never an approved chapter.
+        exact_name = "templo-mayor-reader-20261113T1058Z-exact-prose-audit.json"
+        if exact_name in " ".join(report["chapter_audit_artifact_paths"]):
+            prose = [item for item in queue["items"]
+                     if exact_name in item["audit_path"]]
+            assert len(prose) == 10, "Exact published-reader checks were lost"
+            assert len({x["audit_claim_id"] for x in prose}) == 10
+            assert all(x["audit_claim_id"].startswith("reader-prose-review-")
+                       and x["editorial_passage_id"] is None
+                       and x["reader_audit_matches_main_blob"] is True
+                       and x["publication_authorization"] is False for x in prose)
+            assert any(x["reader_paragraph_index_proposed"] == 31
+                       and x["candidate_evidence_status"] == "historical_date_conflict"
+                       for x in prose)
+            assert any("1913" in d["issue"] and "1914" in d["issue"]
+                       for d in queue["unresolved_historical_discrepancies"])
+            assert report["source_locator_review_count"] >= 5
+            assert len([slot for slot in queue["source_locator_slots"]
+                        if exact_name in slot["audit_path"]]) == 5
+            assert all(slot["source_locator_confirmed"] is False and
+                       slot["publication_authorization"] is False and
+                       slot["source_locator_proposed"]
+                       for slot in queue["source_locator_slots"])
+            assert any(exact_name in status["audit_path"] and
+                       status["matches_current_main_reader"] is True
+                       for status in report["exact_reader_audit_status"])
+        centro = [gap for gap in queue["coverage_gaps"]
+                  if "centro-layered-city-readiness" in gap["coverage_path"]]
+        if "centro-layered-city-readiness" in " ".join(report["coverage_artifact_paths"]):
+            assert len(centro) == 7, "New Centro historical coverage gaps were dropped"
+            assert all(gap["readiness"] in ("sparse", "developing")
+                       and gap["research_needed"]
+                       and gap["publication_authorization"] is False for gap in centro)
         new_templo_audit = [item for item in queue["items"]
                            if item["audit_claim_id"].startswith("TM-DISC-")]
         if new_templo_audit:
