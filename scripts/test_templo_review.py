@@ -27,6 +27,10 @@ for token in ('History behind the excavated site','What to look for during the v
               'Tlaltecuhtli','Coyolxauhqui','review-deep-button','review-switch',
               'Research-stage guide','data-open-research'):
     assert token in review, ("Missing reader content or feature",token)
+for token in ('review-jump', "jump.onchange=()=>select(Number(jump.value),true)",
+              "window.addEventListener('hashchange',navigateHash)",
+              "researchReturnFocus", "previousOverflow", "aria-label','Jump to "):
+    assert token in review, ("Missing mobile navigation or accessible evidence controls",token)
 assert 'MutationObserver' in feedback, "Comments won't attach to dynamically moved chapters"
 assert 'dataset.cdmxCommentBound' in feedback, "Comment buttons may be duplicated"
 data=ROOT/"data/research"
