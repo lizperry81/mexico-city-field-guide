@@ -112,6 +112,78 @@ immutable_replay = {
     }
 }
 validate_versioned_handoff(v4_replay, immutable_replay, "d" * 40)
+# Schema v4 append-only snapshots require identity, before/after count and
+# evidence-status agreement; none of their proposed citations are approved.
+v4_append = dict(v4_replay,
+                 verified_replay_commit_sha="e" * 40,
+                 research_batch_artifact_paths=["research/batches/new.json"])
+append_snapshot = {
+    "schema_version": 4,
+    "kind": "append_only_research_handoff_snapshot",
+    "research_branch": "research-persistence",
+    "research_commit_sha": v4_append["research_commit_sha"],
+    "batch_commit_sha": "f" * 40,
+    "verified_replay_commit_sha": v4_append["verified_replay_commit_sha"],
+    "canonical_version": "V97",
+    "canonical_hash": v4_append["canonical_hash"],
+    "canonical_status": "unchanged_not_promoted",
+    "canonical_counts": {"sources": 616, "claims": 422},
+    "versioned_research_sqlite_gz_path": v4_append["versioned_research_sqlite_gz_path"],
+    "versioned_research_sha256": v4_append["versioned_research_sha256"],
+    "compressed_sha256": v4_append["compressed_sha256"],
+    "replay_report_path": v4_append["replay_report_path"],
+    "before": {"batches": 59, "staged_finding_ids_with_assertions": 300,
+               "inspection_metadata_entries": 121, "source_candidate_ids": 66},
+    "after": {"batches": 60, "staged_finding_ids_with_assertions": 316,
+              "inspection_metadata_entries": 122, "source_candidate_ids": 75,
+              "unknown_source_refs": 14, "source_metadata_collisions": 2,
+              "unresolved_index_only_ids": 6},
+    "evidence_status": {"previously_staged_full_assertions_restored": 10,
+                        "new_source_linked_candidate_findings": 6,
+                        "new_public_html_catalogue_inspections": 1,
+                        "independently_corroborated_new_claims": 0,
+                        "publication_approved": False,
+                        "ready_for_editorial_review": False},
+    "chapter_audit_artifact_paths": ["research/audits/new.json"],
+    "coverage_artifact_paths": ["research/coverage/new.json"],
+    "research_batch_artifact_paths": ["research/batches/new.json"],
+}
+v4_append["canonical"] = {"sources": 616, "claims": 422}
+v4_append["staged_counts"] = {
+    **v4_append["staged_counts"],
+    "github_batches_replayed": 60,
+    "github_distinct_substantive_finding_ids": 316,
+    "github_inspection_entries": 122,
+    "github_source_candidates": 75,
+    "github_index_only_refs_unresolved": 6,
+}
+v4_append["evidence_status"] = {
+    "restored_prior_staged_findings_this_run": 10,
+    "new_historical_finding_candidates_researched_this_run": 6,
+    "new_public_institutional_html_source_inspections_this_run": 1,
+    "independently_corroborated_new_findings": 0,
+    "ready_for_editorial_review": False, "publication_approved": False,
+}
+v4_append["chapter_audit_artifact_paths"].append("research/audits/new.json")
+v4_append["coverage_artifact_paths"].append("research/coverage/new.json")
+validate_versioned_handoff(v4_append, append_snapshot, "d" * 40)
+for mutation in (
+    {"canonical_hash": "f" * 64},
+    {"verified_replay_commit_sha": "0" * 40},
+    {"canonical_counts": {"sources": 617, "claims": 422}},
+    {"after": dict(append_snapshot["after"], unresolved_index_only_ids=7)},
+    {"evidence_status": dict(append_snapshot["evidence_status"],
+                             publication_approved=True)},
+    {"chapter_audit_artifact_paths": ["research/audits/unseen.json"]},
+    {"research_batch_artifact_paths": ["research/batches/missing.json"]},
+):
+    try:
+        validate_versioned_handoff(v4_append, dict(append_snapshot, **mutation), "d" * 40)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("Unbound append-only v4 handoff accepted: " + str(mutation))
+
 for mutation in (
     {"canonical_hash": "f" * 64},
     {"publication_approved": True},

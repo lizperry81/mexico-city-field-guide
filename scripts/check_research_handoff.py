@@ -21,7 +21,8 @@ OUT = Path("artifacts/editorial-handoff")
 HEX40 = re.compile(r"^[0-9a-f]{40}$")
 GROUPS = ("chapter_audit_artifact_paths", "coverage_artifact_paths",
           "research_pipeline_paths", "reconciliation_artifact_paths",
-          "new_research_artifact_paths")
+          "new_research_artifact_paths", "research_batch_artifact_paths",
+          "handoff_history_paths")
 
 
 def git(*args):
@@ -49,10 +50,10 @@ def safe_path(path):
 def validate_versioned_handoff(manifest, immutable_manifest, snapshot_sha):
     """Verify complete immutable handoffs without accepting snapshot drift.
 
-    v2 required identical files. v3 permits either an inline immutable copy or
-    a base snapshot with explicit hash-bound provenance. v4 uses the inline,
-    byte-identical form: the complete record (including detached research
-    reconciliation flags) must be present in immutable Git history.
+    v2 requires identical files. v3 accepts two explicitly bound encodings.
+    v4 accepts identical manifests, verified replay records, or a new
+    append-only research snapshot with individually cross-checked identities,
+    evidence counts, source manifests, and immutable artifacts.
     """
     version = manifest.get("schema_version")
     if version == 2:
@@ -81,7 +82,85 @@ def validate_versioned_handoff(manifest, immutable_manifest, snapshot_sha):
             raise ValueError("v4 requires a fully provenance-bound snapshot")
         if immutable_manifest == manifest:
             return
-        # Research now emits an independently committed, test-verified replay
+        # Newer handoffs use an append-only, research-only snapshot containing
+        # a before/after reconciliation record instead of a rolling-manifest
+        # copy. Bind every key input/output to that immutable object. Only
+        # separately reviewed evidence may ever be published.
+        if immutable_manifest.get("kind") == "append_only_research_handoff_snapshot":
+            if immutable_manifest.get("schema_version") != 4:
+                raise ValueError("Append-only snapshot has wrong schema")
+            shared = (
+                "research_commit_sha", "canonical_version", "canonical_hash",
+                "versioned_research_sqlite_gz_path", "versioned_research_sha256",
+                "compressed_sha256", "replay_report_path", "verified_replay_commit_sha",
+            )
+            for field in shared:
+                if immutable_manifest.get(field) != manifest.get(field):
+                    raise ValueError("Append-only v4 identity drift: " + field)
+            if (immutable_manifest.get("canonical_status") != "unchanged_not_promoted"
+                    or immutable_manifest.get("ready_for_publication") is True
+                    or immutable_manifest.get("canonical_promoted") is True
+                    or manifest.get("canonical_promoted") is not False
+                    or manifest.get("ready_for_publication") is not False
+                    or immutable_manifest.get("research_branch") != "research-persistence"
+                    or not isinstance(immutable_manifest.get("batch_commit_sha"), str)
+                    or not HEX40.fullmatch(immutable_manifest["batch_commit_sha"])):
+                raise ValueError("Append-only v4 snapshot is not safe staged research")
+            snapshot_canonical = immutable_manifest.get("canonical_counts")
+            if not isinstance(snapshot_canonical, dict):
+                raise ValueError("Append-only v4 missing canonical count provenance")
+            for key, value in manifest.get("canonical", {}).items():
+                if snapshot_canonical.get(key) != value:
+                    raise ValueError("Append-only v4 canonical counts drift: " + key)
+            after = immutable_manifest.get("after")
+            before = immutable_manifest.get("before")
+            if not isinstance(after, dict) or not isinstance(before, dict):
+                raise ValueError("Append-only v4 missing before/after metrics")
+            count_keys = {
+                "github_batches_replayed": "batches",
+                "github_distinct_substantive_finding_ids": "staged_finding_ids_with_assertions",
+                "github_inspection_entries": "inspection_metadata_entries",
+                "github_source_candidates": "source_candidate_ids",
+                "unknown_source_refs": "unknown_source_refs",
+                "source_metadata_collisions": "source_metadata_collisions",
+                "github_index_only_refs_unresolved": "unresolved_index_only_ids",
+            }
+            for key, after_key in count_keys.items():
+                value = manifest.get("staged_counts", {}).get(key)
+                if not isinstance(value, int) or after.get(after_key) != value:
+                    raise ValueError("Append-only v4 staged count drift: " + key)
+            for key in ("batches", "staged_finding_ids_with_assertions",
+                        "inspection_metadata_entries", "source_candidate_ids"):
+                if (not isinstance(before.get(key), int)
+                        or after[key] < before[key]):
+                    raise ValueError("Append-only v4 inconsistent research history: " + key)
+            snapshot_evidence = immutable_manifest.get("evidence_status", {})
+            current_evidence = manifest.get("evidence_status", {})
+            evidence_keys = {
+                "previously_staged_full_assertions_restored": "restored_prior_staged_findings_this_run",
+                "new_source_linked_candidate_findings": "new_historical_finding_candidates_researched_this_run",
+                "new_public_html_catalogue_inspections": "new_public_institutional_html_source_inspections_this_run",
+                "independently_corroborated_new_claims": "independently_corroborated_new_findings",
+            }
+            for source_key, current_key in evidence_keys.items():
+                if snapshot_evidence.get(source_key) != current_evidence.get(current_key):
+                    raise ValueError("Append-only v4 evidence status drift: " + current_key)
+            if (snapshot_evidence.get("publication_approved") is not False
+                    or snapshot_evidence.get("ready_for_editorial_review") is not False
+                    or manifest.get("ready_for_editorial_review") is not False
+                    or current_evidence.get("publication_approved") is not False
+                    or current_evidence.get("ready_for_editorial_review") is not False):
+                raise ValueError("Append-only v4 falsely authorized research")
+            for group in ("chapter_audit_artifact_paths", "coverage_artifact_paths",
+                          "research_batch_artifact_paths"):
+                snapshot_paths = immutable_manifest.get(group, [])
+                current_paths = manifest.get(group, [])
+                if (not isinstance(snapshot_paths, list) or not snapshot_paths
+                        or not set(snapshot_paths).issubset(set(current_paths))):
+                    raise ValueError("Append-only v4 lost evidence artifacts: " + group)
+            return
+
+        # Research previously emitted an independently committed, verified replay
         # record as the immutable anchor. It intentionally is NOT a copy of the
         # rolling manifest. Bind all essential immutable facts, rather than
         # treating a different object schema as an invalid or approved handoff.
@@ -310,12 +389,12 @@ def validate():
     audits = [(path, json.loads(bound_blob(path).decode("utf-8")))
               for path in audit_paths]
     for path, audit_doc in audits:
-        # Original chapter audits carry "claims". Later supplementary audits
-        # carry "evidence_entries" with source locators, not publication-ready
-        # claim records. Both belong in PRIVATE review, never the app itself.
+        # Historical audits supply "claims", locator "evidence_entries",
+        # or an explicit "claim_to_source" review matrix. All are private
+        # human-review assignments, never publication-ready claim records.
         if (not isinstance(audit_doc, dict) or
-                not (isinstance(audit_doc.get("claims"), list) or
-                     isinstance(audit_doc.get("evidence_entries"), list))):
+                not any(isinstance(audit_doc.get(key), list)
+                        for key in ("claims", "evidence_entries", "claim_to_source"))):
             raise ValueError("Invalid chapter audit format: " + path)
         if audit_doc.get("ready_for_publication") is True or audit_doc.get("editorial_approved") is True:
             raise ValueError("Unreviewed audit incorrectly marked as approved: " + path)
@@ -334,10 +413,12 @@ def validate():
     queue = []
     discrepancies = []
     for audit_path, audit_doc in audits:
-        for candidate in audit_doc.get("claims", []) + audit_doc.get("evidence_entries", []):
+        for candidate in (audit_doc.get("claims", []) +
+                          audit_doc.get("evidence_entries", []) +
+                          audit_doc.get("claim_to_source", [])):
             if not isinstance(candidate, dict):
                 raise ValueError("Malformed audit candidate in " + audit_path)
-            is_evidence = "claim_key" in candidate
+            is_evidence = "claim_key" in candidate or "source_url" in candidate
             claim_id = candidate.get("claim_id") or candidate.get("claim_key")
             topic = (candidate.get("topic") or candidate.get("risk") or
                      candidate.get("event"))
@@ -353,11 +434,18 @@ def validate():
                                                                    candidate.get("confidence"))),
                 "source_url_proposed": candidate.get("source_url") if is_evidence else None,
                 "source_locator_proposed":
-                    candidate.get("exact_locator") if is_evidence else None,
+                    (candidate.get("exact_locator") or candidate.get("locator"))
+                    if is_evidence else None,
                 "source_access_claimed":
-                    candidate.get("access_scope") if is_evidence else None,
+                    (candidate.get("access_scope") or candidate.get("access"))
+                    if is_evidence else None,
                 "remaining_source_check":
-                    candidate.get("remaining_gap") if is_evidence else None,
+                    (candidate.get("remaining_gap") or candidate.get("uncertainty")
+                     or candidate.get("editorial_action")) if is_evidence else None,
+                "read_before_context_proposed":
+                    candidate.get("read_before") if is_evidence else None,
+                "on_site_context_proposed":
+                    candidate.get("on_site") if is_evidence else None,
                 "editorial_passage_id": None,
                 "source_id_confirmed": None,
                 "page_or_section_checked": None,
