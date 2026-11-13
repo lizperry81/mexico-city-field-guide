@@ -690,6 +690,35 @@ else:
             assert all(gap["publication_authorization"] is False and
                        gap["assigned_to_published_chapter"] is None
                        for gap in war1847)
+        # The 13:20 Templo Mayor source matrix records seven paragraph-
+        # specific research proposals. It is a PRIVATE evidence queue, and
+        # neither proposed copy nor locator strings are approved citations.
+        gate_name = "templo-mayor-discover-20261113T1320Z-chapter-evidence-gates.json"
+        if gate_name in " ".join(report["chapter_audit_artifact_paths"]):
+            gates = [item for item in queue["items"]
+                     if gate_name in item["audit_path"]]
+            assert len(gates) == 7, "Seven Templo Mayor evidence gates were not retained"
+            assert len({item["audit_claim_id"] for item in gates}) == 7
+            assert all(item["source_locator_candidates_unverified"]
+                       and item["proposed_editorial_addition_unapproved"]
+                       and item["reader_audit_matches_main_blob"] is True
+                       and item["editorial_passage_id"] is None
+                       and item["publication_authorization"] is False
+                       for item in gates)
+            assert any(item["reader_paragraph_index_proposed"] == 31
+                       and item["candidate_evidence_status"] ==
+                       "historical_chronology_conflict_blocker"
+                       for item in gates)
+        # The research producer's new 1847 readiness matrix contains ten
+        # evidence-limited cells. Every missing-source reason stays private.
+        civilian_1847 = [gap for gap in queue["coverage_gaps"]
+                         if "1847-civilian-source-recovery" in gap["coverage_path"]]
+        if "1847-civilian-source-recovery" in " ".join(report["coverage_artifact_paths"]):
+            assert len(civilian_1847) == 10, "1847 readiness cells disappeared"
+            assert all(gap["research_needed"] and gap["explanation"]
+                       and gap["assigned_to_published_chapter"] is None
+                       and gap["publication_authorization"] is False
+                       for gap in civilian_1847)
         new_templo_audit = [item for item in queue["items"]
                            if item["audit_claim_id"].startswith("TM-DISC-")]
         if new_templo_audit:
