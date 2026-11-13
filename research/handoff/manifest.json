@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "kind": "research_to_app_handoff",
-  "generated_at": "2026-11-13T02:03:34Z",
-  "research_commit_sha": "66a1d5159f1c705c073023fd8e14c5a002ee550a",
+  "generated_at": "2026-11-13T03:14:04Z",
+  "research_commit_sha": "95f48b6a92bbed8a6e6e9441a7f080b313fd0c11",
   "canonical_version": "V97",
   "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
-  "canonical_status": "provisional_V97_unchanged_not_promoted",
+  "canonical_status": "unchanged_provisional_V97_not_promoted",
   "canonical": {
     "version": "V97",
     "sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
@@ -17,14 +17,16 @@
     "source_inspections": 9
   },
   "staged_counts": {
-    "verified_scope": "local staging SQLite plus three new/recovered JSON batches, incomplete historical GitHub replay",
-    "findings_before": 118,
-    "findings_added": 18,
-    "findings_after": 136,
-    "source_inspections_before": 37,
-    "inspection_metadata_added": 15,
-    "inspection_metadata_after": 52,
-    "github_staging_json_files_inventory": 53,
+    "verified_scope": "local versioned staging snapshot; NOT full GitHub replay",
+    "findings_before": 136,
+    "findings_added": 11,
+    "findings_after": 147,
+    "source_inspection_metadata_before": 52,
+    "inspection_metadata_added": 9,
+    "source_inspection_metadata_after": 61,
+    "github_batch_files_read_and_sha_verified": 54,
+    "github_finding_like_entries": 266,
+    "github_distinct_findings": "not_verified",
     "github_batch_complete_replay": false
   },
   "chapter_audit_artifact_paths": [
@@ -32,27 +34,35 @@
     "research/batches/20261113T0203Z-templo-mayor-discover-eight.json"
   ],
   "coverage_artifact_paths": [
-    "research/coverage/coverage-matrix-20261113-compact.json"
+    "research/coverage/coverage-matrix-20261113-compact.json",
+    "research/coverage/20261113T0310Z-human-reviewed-urban-gap-cells.json"
   ],
   "research_pipeline_paths": [
     "research/pipeline/reconcile_git_batches.py",
-    "research/pipeline/README.md"
+    "research/pipeline/20261113_replay_upgrade.md"
   ],
   "reconciliation_artifact_paths": [
-    "research/ledgers/20261113T0203Z-reconciliation-verification.json",
-    "research/ledgers/20261113T0203Z-batch-tree-inventory.json"
+    "research/ledgers/20261113T0310Z-batch-schema-01.json",
+    "research/ledgers/20261113T0310Z-batch-schema-02.json",
+    "research/ledgers/20261113T0310Z-batch-schema-03.json",
+    "research/ledgers/20261113T0310Z-batch-schema-04.json",
+    "research/ledgers/20261113T0310Z-verification-and-blockers.json"
   ],
-  "immutable_handoff_path": "research/handoff/history/20261113T0203Z-research-batch.json",
-  "evidence_status": "staged_evidence_linked_candidates; no independent corroboration or editorial approval conferred",
+  "new_research_artifact_paths": [
+    "research/batches/20261113T0310Z-transit-revolution-1985-breadth.json"
+  ],
+  "local_versioned_research_sha256": "82d837596ed6c52f8268882e9718539f89dd68425295af101d3df65f4ced7a08",
+  "local_versioned_research_status": "locally integrity_verified but not durable Library/GitHub binary, NOT CANONICAL",
+  "evidence_status": "11 new research candidate IDs and 9 abstract/web-scope source inspections; 0 new independent corroborations; 1 possible duplicate; not publication approved",
   "ready_for_editorial_review": false,
   "ready_for_publication": false,
   "canonical_promoted": false,
   "blockers": [
-    "Full replay of all 53 GitHub batch JSON files against the cumulative staging snapshot still required",
-    "Versioned cumulative SQLite created and integrity-checked locally; binary GitHub commit was not performed",
-    "ChatGPT Library upload failed: Invalid FileDrive root",
-    "Unresolved source identity reconciliation and potential candidate duplicates",
-    "Actual Templo Mayor Discover opening prose not accessible for line-by-line audit"
+    "54 GitHub research batch JSON files content-inventoried but not fully replayed to a cumulative SQLite; 266 finding-like entries may include duplicates",
+    "Durable binary write failed (ChatGPT Library Invalid FileDrive root); GitHub repo holds JSON and importer only",
+    "Full-length source and original primary evidence audits pending; 19 staged source identities await reconciliation",
+    "Actual Templo Mayor Discover opening prose not inspected line by line"
   ],
-  "consumer_instruction": "Do not treat this handoff as publication authorization. Only load research as unapproved candidates after checking exact commit SHA and artifact paths; no automatic merge."
+  "immutable_handoff_path": "research/handoff/history/20261113T0314Z-urban-breadth-replay-audit.json",
+  "consumer_instruction": "Machine handoff is informational only. Do not publish or merge. Load only unapproved staged research under explicit editorial safeguards."
 }
