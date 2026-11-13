@@ -60,6 +60,23 @@ def key(obj,keys):
         if isinstance(value,list):result.extend(value)
         elif isinstance(value,dict):result.append(value)
     return result
+def extract_claim(item):
+    """Extract a research assertion without pretending an audit note is one.
+
+    Older TE28 research uses a 'subject' and a substantive 'evidence' paragraph,
+    instead of the later 'claim'/'assertion' schema. Retain this material in the
+    finding index, while preserving the original payload and its caveats.
+    Provenance-only issue/resolution records intentionally remain index-only.
+    """
+    claim = next((item[k] for k in ("assertion", "statement", "claim", "finding", "text")
+                  if isinstance(item.get(k), str) and item[k].strip()), "")
+    if claim:
+        return claim
+    subject, evidence = item.get("subject"), item.get("evidence")
+    if isinstance(subject, str) and subject.strip() and isinstance(evidence, str) and evidence.strip():
+        return subject.strip() + ": " + evidence.strip()
+    return ""
+
 def load_batch_json(path):
     """Read UTF-8 JSON or immutable gzip-compressed UTF-8 JSON without losing raw content."""
     with (gzip.open(path, "rt", encoding="utf-8") if path.name.endswith(".json.gz")
@@ -244,7 +261,7 @@ def main():
             inspection_count+=1
         for item in findings:
             if not isinstance(item,dict):continue
-            claim=str(item.get("assertion") or item.get("statement") or item.get("claim") or item.get("finding") or item.get("text") or "")
+            claim=extract_claim(item)
             if not claim:
                 fid=str(item.get("id") or item.get("finding_id") or item.get("staged_id") or item.get("record_id") or "anon-"+hashbytes(enc(item).encode())[:20])
                 db.execute("INSERT OR IGNORE INTO research_batch_index_only VALUES(?,?,?,?)",
