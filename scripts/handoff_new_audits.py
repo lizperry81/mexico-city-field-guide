@@ -90,12 +90,19 @@ def parse_new_audit(path, doc, current_reader_blob):
         for row in rows:
             require(isinstance(row, dict) and
                     text(row.get("source")) and text(row.get("locator")) and
-                    text(row.get("url")), "incomplete chronological source locator")
+                    (text(row.get("url")) or
+                     (row.get("repository_path") ==
+                      "poi/templo-mayor/reader.html" and
+                      isinstance(row.get("blob_sha"), str) and
+                      HEX40.fullmatch(row["blob_sha"]))),
+                    "incomplete chronological source locator")
         return [review_item(
             path, doc["claim_id"], doc.get("topic") or doc["reader_anchor"],
             anchor=doc["reader_anchor"],
             locators=[{"source": row["source"], "url": row["url"],
                        "locator": row["locator"],
+                       "repository_path": row.get("repository_path"),
+                       "blob_sha": row.get("blob_sha"),
                        "access_scope": row.get("access_scope"),
                        "does_not_establish": row.get("does_not_establish")}
                       for row in rows],
