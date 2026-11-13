@@ -20,6 +20,8 @@ for slug,(key,min_chapters,min_observations) in pages.items():
     assert len(page)>len(base)+4500 and len(page)>14000,(slug,len(page),len(base))
     assert 'id="centro-reader-link"' in base
     assert 'href="review/"' in base
+    assert "window.addEventListener('hashchange',navigateHash)" in page, slug
+    assert ':focus-visible' in page, slug
     assert 'id="centro-review-script"' in page
     assert 'id="centro-review-styles"' in page
     assert 'name="viewport"' in page and 'width=device-width' in page
