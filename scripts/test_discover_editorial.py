@@ -87,4 +87,24 @@ with tempfile.TemporaryDirectory() as temp:
         assert "checksum mismatch" in str(exc)
     else:
         raise AssertionError("Altered approved archive passed checksum gate")
+# Adjacent chapter links are navigational only; Explore stops are never
+# imported as chapters. Test escaping and first/last boundary behavior.
+chapter_two = copy.deepcopy(example["chapters"][0])
+chapter_two["id"] = "second-test-chapter"
+chapter_two["title"] = "Second & <chapter>"
+chapter_two["paragraphs"][0]["text"] = (
+    "This second nonhistorical test paragraph verifies chapter navigation "
+    "without creating any real historical manuscript."
+)
+two_chapters = copy.deepcopy(example)
+two_chapters["chapters"].append(chapter_two)
+page = render(two_chapters)
+assert 'class="skip-link" href="#chapter-navigation"' in page
+assert 'id="chapter-navigation" aria-label="Chapters"' in page
+assert 'rel="next" href="#second-test-chapter"' in page
+assert 'Next chapter: Second &amp; &lt;chapter&gt;' in page
+assert 'rel="prev" href="#example-test-only"' in page
+assert page.count('rel="next"') == 1
+assert page.count('rel="prev"') == 1
+assert 'href="#explore"' not in page
 print("PASS: draft Discover unpublished; archive and checksum required for future approved prose")
