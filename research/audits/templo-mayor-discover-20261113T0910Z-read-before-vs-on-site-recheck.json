@@ -1,0 +1,120 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-11-13T09:11:00Z",
+  "chapter": "Templo Mayor / Discover opening",
+  "audit_kind": "claim-to-source locator and visitor/read-before division; full chapter source not available",
+  "scope_limit": "No exact deployed Discover chapter text examined. This audit is a source-constrained chapter topic matrix, NOT approval or direct editing of app.",
+  "sources_examined_now": [
+    {
+      "id": "INAH-TM-PORTAL-2026",
+      "url": "https://lugares.inah.gob.mx/es/node/4463",
+      "sections": [
+        "VISÍTANOS",
+        "Punto 1 Etapa IVb",
+        "Etapa IV y V: Colector de agua"
+      ],
+      "access": "public institutional HTML article inspected; no field manual or original excavation monograph accessed"
+    },
+    {
+      "id": "INAH-PTM-HISTORY-2026",
+      "url": "https://templomayor.inah.gob.mx/historia/proyecto-templo-mayor",
+      "sections": [
+        "Proyecto Templo Mayor introductory paragraphs"
+      ],
+      "access": "public institutional HTML inspected"
+    }
+  ],
+  "claim_to_source": [
+    {
+      "claim_id": "TM-DISC-1428",
+      "topic": "War against Azcapotzalco and formation of Triple Alliance around 1428",
+      "source_url": "https://arqueologiamexicana.mx/mexico-antiguo/centro-de-mexico",
+      "locator": "Centro de México / Los últimos en llegar; legacy audit locator, not re-inspected this run",
+      "access": "previous topical review only",
+      "confidence": "qualified_and_not_reaudited",
+      "uncertainty": "Do not compress evolving alliance into an uncontested single treaty date; Tlacopan involvement and sequence need source comparison",
+      "read_before": "Explain political situation and defeat of Azcapotzalco before temple building sequence",
+      "on_site": "No physical feature can be dated to treaty itself solely from archaeological visitor view",
+      "editorial_action": "Keep interpretive chronology provisional, consult histories and primary chronicles"
+    },
+    {
+      "claim_id": "TM-DISC-STAGES",
+      "topic": "Excavated phases are nested; stage IVb is not the full pyramid of 1519",
+      "source_url": "https://lugares.inah.gob.mx/es/node/4463",
+      "locator": "VISÍTANOS and Punto 1 Etapa IVb; later Etapa IV y V",
+      "access": "public institutional HTML examined",
+      "confidence": "source_linked_not_primary_excavation_checked",
+      "uncertainty": "Count seven enlargement episodes is institutional simplification, and exact phase-to-reign linkage depends on archaeological chronology",
+      "read_before": "Explain why archaeologists find earlier building phases inside/under later renovations",
+      "on_site": "At stage IVb inspect four serpent-head sculptures at the staircase and distinguish them from surviving final exterior",
+      "editorial_action": "Avoid describing exposed stages as the entire 1519 temple"
+    },
+    {
+      "claim_id": "TM-DISC-COATEPEC",
+      "topic": "Coatepec myth encoded in the southern Huitzilopochtli side",
+      "source_url": "https://lugares.inah.gob.mx/es/node/4463",
+      "locator": "VISÍTANOS, paired sacred mountain discussion",
+      "access": "public institutional HTML examined",
+      "confidence": "institutional_interpretation",
+      "uncertainty": "Do not treat ritual reenactment inference as directly observed event; separate mythic cosmology from excavated sculpture",
+      "read_before": "Explain Coatepec and Coyolxauhqui story in a concise illustrated sidebar after physical shrine orientation",
+      "on_site": "Look at south-side staircase and Coyolxauhqui location; note outdoor monolith is a copy",
+      "editorial_action": "Check museum-original access; keep earlier IVa vs IVb representations distinct"
+    },
+    {
+      "claim_id": "TM-DISC-CONQUEST",
+      "topic": "Spanish conquest destroyed latest Templo Mayor phases; later colonial masonry sits on buried Mexica remains",
+      "source_url": "https://lugares.inah.gob.mx/es/node/4463",
+      "locator": "Etapa IV y V, Spanish-built colonial arch directly on platform and use of former pyramid stones",
+      "access": "public institutional HTML examined",
+      "confidence": "source_linked_specific_physical_feature",
+      "uncertainty": "Precise demolition dates and whether every visible reused stone originated from particular pyramid phase not verified",
+      "read_before": "Narrate 1519–1521 conquest and later reconstruction as distinct sequences",
+      "on_site": "Examine surviving Tízoc-stage platform and colonial arch; do not describe site as untouched ruin",
+      "editorial_action": "Acquire excavation stratigraphy before finer attribution"
+    },
+    {
+      "claim_id": "TM-DISC-1900",
+      "topic": "Brick water collector cut through archaeological layers around 1900",
+      "source_url": "https://lugares.inah.gob.mx/es/node/4463",
+      "locator": "Etapa IV y V / Colector de agua",
+      "access": "public institutional HTML examined",
+      "confidence": "institutional_site_description",
+      "uncertainty": "Engineering plans unexamined; one institutional statement says cut ~2 metres wide",
+      "read_before": "Explain that modern city utilities sometimes crossed archaeological architecture before full temple location was accepted",
+      "on_site": "Beneath steel walkway look for brick duct crossing under Guatemala Street and stratigraphic cut; do not imply it is Aztec infrastructure",
+      "editorial_action": "Locate damage in photographic site plan, confirm current visibility"
+    },
+    {
+      "claim_id": "TM-DISC-1978",
+      "topic": "1978 discovery is turning point, not first archaeological work",
+      "source_url": "https://templomayor.inah.gob.mx/historia/proyecto-templo-mayor",
+      "locator": "Proyecto Templo Mayor, first paragraph",
+      "secondary_locator": "https://lugares.inah.gob.mx/en/node/4463, Manuel Gamio 1914 / 1978–1982 / museum 1987",
+      "access": "public institutional HTML examined",
+      "confidence": "institutional_chronology",
+      "uncertainty": "Rescue excavation and subsequent project distinguishable; original 1914 excavation report not examined",
+      "read_before": "Timeline: Gamio work 1914; workers find Coyolxauhqui on 21 February 1978; salvage excavates; later research project and museum opening 1987",
+      "on_site": "Discuss why utilities work revealed monument and relate it to modern excavations",
+      "editorial_action": "Do not write 'temple was discovered in 1978' without qualification"
+    }
+  ],
+  "red_flags": [
+    "No claim shown here is a verbatim line from current deployed Discover article",
+    "No automatic publication or site UI changes",
+    "INAH site guidance is not a substitute for primary excavation plans",
+    "Replica and original location must be distinguished"
+  ],
+  "chapter_structure_recommendation": [
+    "Pre-read: concrete location and surviving fragment; original pyramid lost",
+    "Pre-read: political chronology 1428 and construction stages",
+    "Pre-read: north Tláloc / south Huitzilopochtli and Coatepec",
+    "Pre-read: conquest, dismantling and overbuilding",
+    "On-site: phase IVb serpent heads and Coyolxauhqui copy",
+    "On-site: colonial arch over stage V platform",
+    "On-site: circa-1900 brick water collector under footbridge",
+    "On-site: 1914 and 1978 archaeological discovery context"
+  ],
+  "ready_for_editorial_review": false,
+  "publication_approved": false
+}
