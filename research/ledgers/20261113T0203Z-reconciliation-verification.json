@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "run_id": "20261113T0203Z-research-integration-and-breadth",
+  "canonical": {
+    "version": "V97",
+    "sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "counts": {
+      "sources": 616,
+      "claims": 422,
+      "claim_sources": 403,
+      "normalized_findings": 68,
+      "source_inspections": 9
+    },
+    "tables_preserved_row_for_row": 88,
+    "modified": false
+  },
+  "local_cumulative_staging": {
+    "input_staging_sha256": "7a8bef527bcdfea615ec6928e250815c484d094723440f9fad50abad896341ea",
+    "output_filename": "CDMX_RESEARCH_CUMULATIVE_v20261113T0203Z.sqlite",
+    "output_sha256": "2432f6e34546a68a350c101e1f767c838e0997a8488d06e6c503f1a8e4e5b520",
+    "bytes": 3641344,
+    "sqlite_integrity": "ok",
+    "foreign_key_violations": 0,
+    "canonical_tables_preserved": 88,
+    "previous_staged_findings": 118,
+    "added_unique_candidate_ids": 18,
+    "after_local_staged_candidate_ids": 136,
+    "previous_staged_source_inspections": 37,
+    "imported_source_inspection_metadata": 15,
+    "after_source_inspection_metadata": 52,
+    "ingested_batch_files": 3,
+    "source_identity_candidates_added": 15,
+    "new_independent_corroboration": 0,
+    "editorial_approval": false
+  },
+  "github_inventory": {
+    "batch_files_found": 53,
+    "tree_path": "research/ledgers/20261113T0203Z-batch-tree-inventory.json",
+    "complete_file_content_replay_in_this_run": false
+  },
+  "coverage": {
+    "periods": 16,
+    "themes": 12,
+    "geographies": 11,
+    "cells": 2112,
+    "substantial": 0,
+    "developing": 170,
+    "sparse": 216,
+    "missing": 1726,
+    "mapping": "automated_provisional_keywords_locators_only"
+  },
+  "chapter_audit": {
+    "poi": "Templo Mayor",
+    "candidate_findings": 8,
+    "claim_locator_rows": 7,
+    "source_pages_examined": "institutional and authored online passages only",
+    "actual_app_chapter_prose_examined": false
+  },
+  "persistence": {
+    "github_script_readback": true,
+    "github_batch_readback": true,
+    "github_audit_readback": true,
+    "github_coverage_readback": true,
+    "versioned_sqlite_persisted_to_github": false,
+    "library_upload_succeeded": false,
+    "library_upload_failure": "Invalid FileDrive root",
+    "published_app_modified": false,
+    "main_modified": false
+  },
+  "status": "STAGED_RESEARCH_ONLY_NOT_CANONICAL",
+  "blockers": [
+    "Replay all 53 GitHub batch JSON files through repository importer against verified cumulative staging input",
+    "Upload/readback versioned research SQLite to a durable store when binary write becomes available",
+    "Reconcile source identities, collisions and independent corroboration before any editorial promotion",
+    "Retrieve actual Templo Mayor Discover chapter source for sentence-level audit",
+    "Library upload currently fails: Invalid FileDrive root"
+  ]
+}
