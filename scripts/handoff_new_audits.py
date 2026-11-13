@@ -99,7 +99,7 @@ def parse_new_audit(path, doc, current_reader_blob):
         return [review_item(
             path, doc["claim_id"], doc.get("topic") or doc["reader_anchor"],
             anchor=doc["reader_anchor"],
-            locators=[{"source": row["source"], "url": row["url"],
+            locators=[{"source": row["source"], "url": row.get("url"),
                        "locator": row["locator"],
                        "repository_path": row.get("repository_path"),
                        "blob_sha": row.get("blob_sha"),
