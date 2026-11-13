@@ -50,6 +50,42 @@ v4 = dict(inline_v3, schema_version=4, canonical_status="unchanged_provisional_V
           staged_counts={"github_batches_replayed": 58, "unknown_source_refs": 22},
           evidence_status={"publication_approved": False})
 validate_versioned_handoff(v4, copy.deepcopy(v4), "d" * 40)
+
+# A frozen v4 handoff may be followed by exactly two Git provenance fields.
+# This must not become a permissive schema fallback: EVERY earlier field,
+# including historical evidence flags and staged counts, must remain identical.
+frozen = dict(v4,
+              canonical_promoted=False, ready_for_publication=False,
+              ready_for_editorial_review=False,
+              replay_evidence={"integrity": "ok", "foreign_key_violations": 0,
+                               "canonical_rows_unchanged": True,
+                               "github_readback_verified": True})
+with_provenance = dict(frozen, immutable_handoff_blob_sha="d" * 40,
+                       handoff_history_commit_sha="e" * 40)
+validate_versioned_handoff(with_provenance, copy.deepcopy(frozen), "d" * 40)
+for tampered in (
+    dict(with_provenance, immutable_handoff_blob_sha="a" * 40),
+    dict(with_provenance, ready_for_publication=True),
+    dict(with_provenance, canonical_promoted=True),
+    dict(with_provenance, evidence_status={"publication_approved": True}),
+    dict(with_provenance, staged_counts={"github_batches_replayed": 999}),
+    dict(with_provenance, unknown_approval="allowed"),
+):
+    try:
+        validate_versioned_handoff(tampered, frozen, "d" * 40)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("Tampered frozen v4 handoff was accepted")
+altered_archive = copy.deepcopy(frozen)
+altered_archive["staged_counts"]["github_batches_replayed"] = 999
+try:
+    validate_versioned_handoff(with_provenance, altered_archive, "d" * 40)
+except ValueError:
+    pass
+else:
+    raise AssertionError("Edited frozen v4 staged counts were accepted")
+
 # New research handoffs anchor immutable verified-replay metadata rather than
 # copying the moving manifest. All critical identities, counts and audit paths
 # must still be pinned, and approval can never be inferred from staging.
