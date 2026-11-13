@@ -68,7 +68,10 @@
     const target = document.getElementById(fragment);
     const panel = target?.closest('[data-reader-panel]') ?? history;
     const stop = target?.closest('[data-stop]');
-    activeStop = stop ? stops.indexOf(stop) : 0;
+    // Switching to Discover or Plan must not discard a visitor's position
+    // in the guided walk. A direct link to a different stop still takes priority.
+    // On an initial visit activeStop starts at the first stop.
+    if (stop) activeStop = stops.indexOf(stop);
 
     for (const item of panels) item.hidden = item !== panel;
     for (const link of modeLinks) {
