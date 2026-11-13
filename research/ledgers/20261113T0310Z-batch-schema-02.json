@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "segment": 2,
+  "tree_head": "7579fa569131cc81021a53fddfd9c074f5dee627",
+  "scope": "full_content_checked_against_Git_blob_SHA",
+  "records": [
+    {
+      "path": "research/batches/20261111T1804Z-auto11-ch9.json",
+      "git_blob_sha1": "88f1ba0f7a30a7ad6625bba94ed792d7d449ae66",
+      "verified": true,
+      "arrays": {
+        "findings": 5,
+        "source_inspections": 2
+      },
+      "finding_like_entries": 5,
+      "identified_ids": 5
+    },
+    {
+      "path": "research/batches/20261111T1902Z-turn11-fauna-heyden.json",
+      "git_blob_sha1": "5dc8d8e95f14a78374ffc30a3973478a45edebb8",
+      "verified": true,
+      "arrays": {
+        "findings": 4,
+        "source_inspections": 4
+      },
+      "finding_like_entries": 4,
+      "identified_ids": 4
+    },
+    {
+      "path": "research/batches/20261111T2000Z-auto11-area-b-radiocarbon.json",
+      "git_blob_sha1": "832aef0d2a89a5a70ef9d4b65832cbd363a23382",
+      "verified": true,
+      "arrays": {
+        "findings": 2,
+        "source_inspections": 2
+      },
+      "finding_like_entries": 2,
+      "identified_ids": 2
+    },
+    {
+      "path": "research/batches/20261111T2103Z-auto11-areaA-entrance.json",
+      "git_blob_sha1": "1500642b512e1a6845b2368490cde8349b01a89d",
+      "verified": true,
+      "arrays": {
+        "findings": 2,
+        "source_inspections": 3
+      },
+      "finding_like_entries": 2,
+      "identified_ids": 2
+    },
+    {
+      "path": "research/batches/20261111T2200Z-auto11-terminus.json",
+      "git_blob_sha1": "ab1b24ddbb46ba6d21b539977dd0b059f7cd5bf6",
+      "verified": true,
+      "arrays": {
+        "findings": 2,
+        "source_inspections": 2
+      },
+      "finding_like_entries": 2,
+      "identified_ids": 2
+    },
+    {
+      "path": "research/batches/20261111T2255Z-auto11-blockages.json",
+      "git_blob_sha1": "787f06823a0458d826f72b5e20d710c253aeefe8",
+      "verified": true,
+      "arrays": {
+        "findings": 2,
+        "source_inspections": 2
+      },
+      "finding_like_entries": 2,
+      "identified_ids": 2
+    },
+    {
+      "path": "research/batches/20261112T0002Z-auto11-water-and-provenance.json",
+      "git_blob_sha1": "274e7b2108981ebb905a80ab021822e494d19f2c",
+      "verified": true,
+      "arrays": {
+        "findings": 2,
+        "source_inspections": 2
+      },
+      "finding_like_entries": 2,
+      "identified_ids": 2
+    },
+    {
+      "path": "research/batches/20261112T011308Z-auto11-quarry-reuse.json",
+      "git_blob_sha1": "94209e1b5a5595408669f4bccc7a1bfd84c3f578",
+      "verified": true,
+      "arrays": {
+        "findings": 5,
+        "source_inspections": 3
+      },
+      "finding_like_entries": 5,
+      "identified_ids": 5
+    },
+    {
+      "path": "research/batches/20261112T0201Z-auto09.json",
+      "git_blob_sha1": "1c541be3ed6b3f208ce7585385344c4226865228",
+      "verified": true,
+      "arrays": {
+        "findings": 2,
+        "source_inspections": 2
+      },
+      "finding_like_entries": 2,
+      "identified_ids": 2
+    },
+    {
+      "path": "research/batches/20261112T0202Z-2025-botanical-table3.json",
+      "git_blob_sha1": "9945056336f4608a8b8741cb40ecd5b198747015",
+      "verified": true,
+      "arrays": {
+        "findings": 5
+      },
+      "finding_like_entries": 5,
+      "identified_ids": 5
+    },
+    {
+      "path": "research/batches/20261112T0302Z-auto09.json",
+      "git_blob_sha1": "d12efea331ecfa7a5e32f6cb0b2720a6580ae193",
+      "verified": true,
+      "arrays": {
+        "findings": 5,
+        "source_inspections": 4
+      },
+      "finding_like_entries": 5,
+      "identified_ids": 5
+    },
+    {
+      "path": "research/batches/20261112T0356Z-auto09.json",
+      "git_blob_sha1": "6815f9277f8308359ade81f5e4ce2cf7f3b3b5a0",
+      "verified": true,
+      "arrays": {
+        "findings": 2,
+        "source_inspection": 1
+      },
+      "finding_like_entries": 2,
+      "identified_ids": 2
+    },
+    {
+      "path": "research/batches/20261112T0503Z-auto09-chronology.json",
+      "git_blob_sha1": "50f87e21b10256e8cc01e0bbaa5a133d0d4dafd7",
+      "verified": true,
+      "arrays": {
+        "candidate_findings": 2,
+        "source_inspection": 3
+      },
+      "finding_like_entries": 2,
+      "identified_ids": 2
+    },
+    {
+      "path": "research/batches/20261112T060230Z-auto09.json",
+      "git_blob_sha1": "88395606402e8637f26426e440437b229e00c64e",
+      "verified": true,
+      "arrays": {
+        "findings": 3
+      },
+      "finding_like_entries": 3,
+      "identified_ids": 3
+    }
+  ]
+}
