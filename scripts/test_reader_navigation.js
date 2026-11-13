@@ -28,6 +28,21 @@ const stops = ['plaza', 'twin-stairs', 'older-stairs'].map(id => {
     scrollIntoView() {this.scrolled += 1;}
   };
 });
+const sections = ['dossier-topic-1', 'dossier-topic-2'].map(id => {
+  const heading = {focused: 0, focus() {this.focused += 1;}};
+  return {
+    id, heading, scrolled: 0, tagName: 'SECTION',
+    querySelector(selector) {assert.equal(selector, 'h3'); return heading;},
+    closest(selector) {
+      return selector === '[data-reader-panel]' ? panels.history : null;
+    },
+    scrollIntoView() {this.scrolled += 1;}
+  };
+});
+const sectionLinks = sections.map(section => ({
+  hash: '#' + section.id, click: null,
+  addEventListener(type, fn) {assert.equal(type, 'click'); this.click = fn;}
+}));
 const links = Object.keys(panels).map(id => ({
   hash: '#' + id, current: false, click: null,
   addEventListener(type, fn) {assert.equal(type, 'click'); this.click = fn;},
@@ -49,11 +64,13 @@ function button() {
 }
 const prev = button(), next = button(), progress = {textContent: ''};
 const ids = {...panels, ...Object.fromEntries(stops.map(stop => [stop.id, stop])),
+  ...Object.fromEntries(sections.map(section => [section.id, section])),
   'choose-stop': jump, 'previous-stop': prev, 'next-stop': next,
   'stop-progress': progress};
 const doc = {
   querySelectorAll(selector) {
     if (selector === '.reader-nav a') return links;
+    if (selector === '.history-chapters a[href^="#"]') return sectionLinks;
     if (selector === '[data-reader-panel]') return Object.values(panels);
     throw new Error('Unexpected document query: ' + selector);
   },
@@ -117,4 +134,18 @@ const exploreLink = links.find(link => link.hash === '#explore');
 exploreLink.click(); // The current Explore mode can be tapped again.
 assert.equal(panels.explore.heading.focused, 1);
 assert.equal(stops[0].heading.focused, 1, 'Mode navigation must not alter stop selection');
-console.log('PASS: same-anchor Safari mode/stop navigation, accessible focus, pager and browser-history transitions');
+// The Discover contents links must handle the same-hash Safari case while
+// keeping ordinary direct links and browser Back/Forward free of focus jumps.
+sectionLinks[0].click();
+location.hash = '#dossier-topic-1';
+assert.equal(panels.history.hidden, false);
+assert.equal(sections[0].heading.focused, 1);
+assert.equal(sections[0].heading.tabIndex, -1);
+assert.equal(sections[0].scrolled, 1);
+sectionLinks[0].click(); // Same article heading: no hashchange event.
+assert.equal(sections[0].heading.focused, 2);
+assert.equal(sections[0].scrolled, 2);
+location.hash = '#dossier-topic-2'; // Direct/history navigation must not steal focus.
+assert.equal(sections[1].heading.focused, 0);
+assert.equal(sections[1].scrolled, 1);
+console.log('PASS: Discover TOC, same-anchor Safari mode/stop navigation, accessible focus, pager and browser-history transitions');

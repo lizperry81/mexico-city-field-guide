@@ -2,6 +2,7 @@
   'use strict';
 
   const modeLinks = Array.from(document.querySelectorAll('.reader-nav a'));
+  const sectionLinks = Array.from(document.querySelectorAll('.history-chapters a[href^="#"]'));
   const panels = Array.from(document.querySelectorAll('[data-reader-panel]'));
   const history = document.getElementById('history');
   const explore = document.getElementById('explore');
@@ -13,6 +14,7 @@
   let activeStop = 0;
   let focusStop = false;
   let focusMode = false;
+  let focusSection = false;
 
   for (const stop of stops) {
     const title = stop.querySelector('h3');
@@ -41,6 +43,17 @@
     link.addEventListener('click', () => {
       focusMode = true;
       // Safari does not emit hashchange when the active mode is selected again.
+      if (location.hash === link.hash) navigateHash();
+    });
+  }
+
+  // A table-of-contents activation should identify the newly visible section
+  // to keyboard and screen-reader users. Browser history/deep links must not
+  // move focus without a deliberate reader action.
+  for (const link of sectionLinks) {
+    link.addEventListener('click', () => {
+      focusSection = true;
+      // iOS Safari does not fire hashchange when the same link is tapped again.
       if (location.hash === link.hash) navigateHash();
     });
   }
@@ -77,6 +90,15 @@
       }
     }
     focusMode = false;
+    if (focusSection && panel === history && target &&
+        sectionLinks.some(link => link.hash === '#' + target.id)) {
+      const heading = target.querySelector('h3');
+      if (heading) {
+        heading.tabIndex = -1;
+        heading.focus({ preventScroll: true });
+      }
+    }
+    focusSection = false;
     if (focusStop) stops[activeStop].querySelector('h3').focus({ preventScroll: true });
     focusStop = false;
     if (target) {

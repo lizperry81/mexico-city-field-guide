@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-13T21:47:56Z",
+  "task": "read-only research handoff validation and Discover section-navigation regression",
+  "application_branch": "main",
+  "application_base_commit_sha": "3e3c225b24a1020d933fb0fb713243da9bb6ddb9",
+  "research_branch": "research-persistence",
+  "latest_research_commit_sha": "95d08cf4af2c52faa16741676edff3dd1c5a0e7c",
+  "research_manifest_blob_sha": "0e99fec0f62d7adb897bf5f754fa8f518bc45e08",
+  "immutable_history_blob_sha": "0e99fec0f62d7adb897bf5f754fa8f518bc45e08",
+  "immutable_history_identical_to_manifest": true,
+  "research_commit_exists": true,
+  "unique_artifact_paths_verified": 121,
+  "missing_artifact_paths": [],
+  "staged_batches": 73,
+  "staged_distinct_finding_ids": 412,
+  "new_audit_artifacts": [
+    "research/audits/20261113T2100Z-templo-mayor-reader-blob-and-chronological-boundary.json",
+    "research/coverage/20261113T2100Z-1928-political-urban-councils-readiness.json"
+  ],
+  "ready_for_editorial_review": false,
+  "ready_for_publication": false,
+  "published_historical_prose_changed": false,
+  "approved_discover_chapter_archives_recovered": false,
+  "blocker": "Full verbatim approved Discover manuscripts remain unavailable from accessible provenance; no archive/checksum generated.",
+  "unresolved_research": [
+    "1928 legislative vote tally disagreement",
+    "Original 1928 DOF and Diario de los Debates not checked",
+    "Templo Mayor Gamio 1913/1914 disagreement",
+    "source identity collisions and photo rights"
+  ],
+  "action": "Preserve private review-only status; improve Safari TOC focus without changing Discover prose or Explore stops."
+}
