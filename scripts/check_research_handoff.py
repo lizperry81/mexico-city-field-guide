@@ -838,11 +838,13 @@ def validate():
             rating = cell.get("rating") or cell.get("new_rating")
             explanation = (cell.get("why") or cell.get("assessment")
                            or cell.get("explanatory_readiness") or cell.get("reason")
+                           or cell.get("readiness")
                            or (coverage_doc.get("rating_method")
                                if coverage_doc.get("kind") ==
                                "historically_grounded_explanatory_readiness_delta"
                                else None))
-            next_task = cell.get("next") or cell.get("remaining_gap") or cell.get("gap")
+            next_task = (cell.get("next") or cell.get("remaining_gap")
+                         or cell.get("gap") or cell.get("missing"))
             # Focused 2026-11-13 coverage deltas record evidence limitations
             # as explicit blocker lists, not a single "next" string. Preserve
             # the actual research gaps rather than rejecting a valid handoff.
