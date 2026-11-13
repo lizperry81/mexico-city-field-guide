@@ -44,7 +44,10 @@ for slug,(key,n) in expected.items():
     poi=(root/"poi"/slug/"index.html").read_text(encoding="utf-8")
     parts=[item["pt"] for item in src["stops"][key]["read"] if "pt" in item]
     assert len(parts)>=n
-    assert "historic-walk-crosslink" in poi and 'href="../../walks/historic-center/"' in poi
+    if slug == "templo-mayor":
+        assert 'href="../../poi/templo-mayor/#explore"' in walk and "Plaza Manuel Gamio" in walk
+    else:
+        assert "historic-walk-crosslink" in poi and 'href="../../walks/historic-center/"' in poi
     assert len(poi)>9000
     assert slug in walk
     assert len(src["stops"][key]["find"])>=3

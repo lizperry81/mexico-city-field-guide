@@ -1,59 +1,81 @@
 #!/usr/bin/env python3
-"""Guard the phone review against stale research, missing pages, and broken UX scripts."""
+"""Check the reader's layout, anchors, and preservation of the research dossier."""
 import json
-import re
 from html import escape
+from html.parser import HTMLParser
 from pathlib import Path
-from subprocess import run, PIPE
-from tempfile import TemporaryDirectory
+from subprocess import run
+from urllib.parse import urlsplit
 
-ROOT=Path("site")
-main=(ROOT/"poi/templo-mayor/index.html").read_text(encoding="utf-8")
-review=(ROOT/"poi/templo-mayor/review/index.html").read_text(encoding="utf-8")
-feedback=(ROOT/"feedback/annotate.js").read_text(encoding="utf-8")
-assert len(main)>35000, "Canonical rich POI was truncated"
-assert len(review)>len(main), "Review appears to be a shortened stale copy"
-assert 'id="review-reader-link"' in main, "Missing link to commentable layout"
-assert 'href="review/"' in main
-assert 'name="viewport"' in review
-assert 'id="review-layout-script"' in review
-assert 'id="review-layout-styles"' in review
-assert 'src="../../../feedback/annotate.js"' in review, "Broken nested comment script"
-assert 'href="../../../walks/historic-center/"' in review, "Broken nested walk link"
-assert 'href="../../../research-library/"' in review, "Broken research-library link"
-for id in ("story","site","dossier","museum","evidence","sources","visit","claimlist","walk-1","walk-8"):
-    assert f'id="{id}"' in review, ("Lost historical section",id)
-for token in ('History behind the excavated site','What to look for during the visit',
-              'Tlaltecuhtli','Coyolxauhqui','review-deep-button','review-switch',
-              'Research-stage guide','data-open-research'):
-    assert token in review, ("Missing reader content or feature",token)
-for token in ('review-jump', "jump.onchange=()=>select(Number(jump.value),true)",
-              "window.addEventListener('hashchange',navigateHash)",
-              "researchReturnFocus", "previousOverflow", "aria-label','Jump to "):
-    assert token in review, ("Missing mobile navigation or accessible evidence controls",token)
-assert 'MutationObserver' in feedback, "Comments won't attach to dynamically moved chapters"
-assert 'dataset.cdmxCommentBound' in feedback, "Comment buttons may be duplicated"
-data=ROOT/"data/research"
-walk=json.loads((data/"templo_walk_v63.json").read_text(encoding="utf-8"))
-pilot=json.loads((data/"templo_mayor_pilot.json").read_text(encoding="utf-8"))
-sources=json.loads((data/"templo_verified_discoveries_v68.json").read_text(encoding="utf-8"))
-assert len(walk["chapters"])==8 and len(pilot["claims"])==21 and len(sources)==12
-for record in walk["chapters"]:
-    assert escape(record["core_text"],quote=True) in review, ("Lost field text",record["title"])
-for claim in pilot["claims"]:
-    assert escape(claim["statement"],quote=True) in review, ("Lost claim",claim["id"])
-for source in sources:
-    assert escape(source["title"],quote=True) in review, ("Lost research source",source["id"])
-js=re.search(r'<script id="review-layout-script">(.*?)</script>',review,re.S)
-assert js, "Review behavior not embedded"
-assert "storyChapters.length!==8" in js.group(1)
-assert "hist.length<7" in js.group(1)
-assert "location.hash" in js.group(1), "Source-linked chapters must stay deep-linkable"
-with TemporaryDirectory() as temp:
-    f=Path(temp)/"review.js"
-    f.write_text(js.group(1),encoding="utf-8")
-    check=run(["node","--check",str(f)],capture_output=True,text=True)
-    assert check.returncode==0,check.stderr
-    check=run(["node","--check",str(ROOT/"feedback/annotate.js")],capture_output=True,text=True)
-    assert check.returncode==0,check.stderr
-print("PASS: current complete Templo Mayor data (8 chapters, 21 claims, 12 sources), nested mobile navigation, source-preserving review UI and live comment binding")
+ROOT = Path("site")
+POI = ROOT / "poi/templo-mayor"
+
+
+class Page(HTMLParser):
+    def __init__(self, path):
+        super().__init__()
+        self.ids = set()
+        self.urls = []
+        self.feed(path.read_text(encoding="utf-8"))
+
+    def handle_starttag(self, tag, attributes):
+        attributes = dict(attributes)
+        if identifier := attributes.get("id"):
+            assert identifier not in self.ids, f"Duplicate id: {identifier}"
+            self.ids.add(identifier)
+        for key in ("href", "src"):
+            if url := attributes.get(key):
+                self.urls.append(url)
+
+
+for folder, feedback_path in (
+    (POI, "../../feedback/annotate.js"),
+    (POI / "review", "../../../feedback/annotate.js"),
+):
+    path = folder / "index.html"
+    page = Page(path)
+    text = path.read_text(encoding="utf-8")
+    assert feedback_path in page.urls
+    assert "@POI@" not in text and "@GUIDE@" not in text
+    assert {"history", "explore", "plan", "plaza", "twin-stairs", "museum-stone"} <= page.ids
+    assert all(f"dossier-topic-{n}" in page.ids for n in range(1, 7))
+    assert all(f"walk-{n}" in page.ids for n in range(1, 9))
+    for marker in (
+        "Read before visiting", "Follow on site", "How can archaeologists date a wall?",
+        "Offering 125", "Plaza Manuel Gamio", "Coyolxauhqui replica",
+        "The original Coyolxauhqui stone", "photo-marker", "See a photograph of the 1978 excavation",
+    ):
+        assert marker in text, marker
+    for marker in (
+        "Eight recovered field chapters", "Field experience", "deep_dive_question",
+        "How does the map distinguish", "historic-walk-crosslink", "data-historical-thread",
+    ):
+        assert marker not in text, marker
+    for url in page.urls:
+        parts = urlsplit(url)
+        if parts.scheme or parts.netloc:
+            continue
+        target = folder / parts.path
+        if target.is_dir():
+            target /= "index.html"
+        assert target.is_file(), (folder, url)
+        if parts.fragment:
+            target_ids = page.ids if target == path else Page(target).ids
+            assert parts.fragment in target_ids, (target, url)
+    assert sum(url.endswith(".webp") for url in page.urls) == 7
+
+archive = (POI / "archive/index.html").read_text(encoding="utf-8")
+research = ROOT / "data/research"
+for filename, key, field in (
+    ("templo_walk_v63.json", "chapters", "core_text"),
+    ("templo_mayor_pilot.json", "claims", "statement"),
+    ("templo_verified_discoveries_v68.json", None, "title"),
+):
+    data = json.loads((research / filename).read_text(encoding="utf-8"))
+    records = data[key] if key else data
+    for record in records:
+        assert escape(record[field], quote=True) in archive, record[field]
+
+for js in (POI / "assets/reader.js", ROOT / "feedback/annotate.js"):
+    run(["node", "--check", str(js)], check=True)
+print("PASS: both Templo Mayor routes, local assets and anchors, and original research in the archive")

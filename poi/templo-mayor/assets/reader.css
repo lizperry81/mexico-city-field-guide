@@ -1,0 +1,191 @@
+:root {
+  color-scheme: light;
+  --ink: #142b38;
+  --muted: #405765;
+  --jade: #086460;
+  --line: #cbdce0;
+  --wash: #e7f2f0;
+  font: 16px/1.6 system-ui, -apple-system, sans-serif;
+  color: var(--ink);
+  background: #f5f8f9;
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 88px; }
+body { margin: 0; }
+a { color: var(--jade); text-underline-offset: .18em; }
+button, select { font: inherit; }
+:focus-visible { outline: 3px solid #088582; outline-offset: 3px; }
+[hidden] { display: none !important; }
+.shell { width: min(100% - 36px, 1050px); margin: 0 auto; }
+.site-header { background: #112b3c; padding: 11px 0; }
+.site-header a { color: #c6ebe7; font-size: .9rem; }
+main { padding: 26px 0 108px; }
+
+.overview {
+  display: grid;
+  grid-template-columns: minmax(0, 1.18fr) minmax(0, 1fr);
+  gap: 26px;
+  align-items: center;
+  margin-bottom: 17px;
+}
+h1, h2, h3 { line-height: 1.14; }
+h1, h2 { font-family: Georgia, serif; }
+h1 { margin: 5px 0 12px; font-size: clamp(2.85rem, 7vw, 4.5rem); }
+h2 { margin: 0 0 14px; font-size: clamp(1.85rem, 4vw, 2.65rem); }
+h3 { margin: 0 0 9px; font-size: 1.18rem; }
+.location { margin: 0; color: var(--jade); font-weight: 700; font-size: .85rem; }
+.lead, .article-lead, .history-section > p { font: 1.19rem/1.68 Georgia, serif; }
+.lead { margin: 0; }
+figure { margin: 0; }
+figure img { display: block; width: 100%; height: auto; border-radius: 10px; }
+figcaption { padding-top: 7px; color: var(--muted); font-size: .78rem; line-height: 1.45; }
+figcaption a { white-space: normal; }
+
+.reader-nav {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 7px;
+  background: #f5f8f9;
+  padding: 8px 0 10px;
+  margin-bottom: 13px;
+}
+.reader-nav a {
+  min-height: 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 4px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: white;
+  color: var(--jade);
+  font-weight: 750;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+}
+.reader-nav small { margin-top: 3px; font-size: .74rem; font-weight: 500; }
+.reader-nav a[aria-current] { background: var(--jade); border-color: var(--jade); color: white; }
+[data-reader-panel] {
+  max-width: 765px;
+  margin: 0 auto 22px;
+  padding: clamp(17px, 4vw, 36px);
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+}
+.article-lead, .history-section p, .walk-stop p, .walk-intro, .plan-card p {
+  margin: 0 0 .65em;
+}
+.history-section { margin-top: 28px; padding-top: 22px; border-top: 1px solid var(--line); }
+.history-section h3 { font: 700 1.51rem/1.2 Georgia, serif; }
+.source-note, .sidebar { padding: 9px 0; }
+.source-note { color: var(--muted); font-size: .86rem; }
+.source-note p { margin: 8px 0 0; }
+.sidebar {
+  margin: 13px 0;
+  padding: 10px 13px;
+  background: var(--wash);
+  border-left: 3px solid var(--jade);
+  border-radius: 0 7px 7px 0;
+}
+.sidebar p { margin: 8px 0 0; }
+summary { width: fit-content; color: var(--jade); font-weight: 700; cursor: pointer; }
+
+.walk-stop { margin-top: 12px; }
+.walk-stop h3 { font: 700 1.62rem/1.2 Georgia, serif; }
+.walk-stop p > strong:first-child { color: #164e51; }
+.walk-cue {
+  background: var(--wash);
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-top: 15px !important;
+}
+.field-photo { margin: 12px 0; }
+.field-photo img.portrait { width: min(100%, 420px); }
+.photo-markers { position: relative; }
+.photo-marker {
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%, -50%);
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border: 2px solid white;
+  border-radius: 50%;
+  color: white;
+  background: #124f5c;
+  font-size: .8rem;
+  font-weight: 800;
+  box-shadow: 0 1px 5px #142b3870;
+}
+.facing { margin: 8px 0 14px; }
+.facing figcaption { font-size: .84rem; font-weight: 700; padding-bottom: 5px; }
+.facing dl { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; margin: 0; }
+.facing dl > div { padding: 8px 10px; border: 1px solid var(--line); border-radius: 7px; background: #f4f8f8; }
+.facing dt { font-weight: 700; }
+.facing dd { margin: 0; color: var(--muted); font-size: .86rem; }
+
+.stop-select { margin: 18px 0; }
+.stop-select label { display: block; font-size: .84rem; font-weight: 700; }
+.stop-select select {
+  width: 100%;
+  margin-top: 4px;
+  padding: 7px 9px;
+  min-height: 44px;
+  border: 1px solid #88a9ad;
+  border-radius: 7px;
+  background: white;
+  color: var(--ink);
+}
+.stop-pager {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 7px;
+  margin: 15px 0 7px;
+}
+.stop-pager button {
+  min-height: 44px;
+  padding: 6px;
+  border: 1px solid var(--jade);
+  border-radius: 8px;
+  background: var(--jade);
+  color: white;
+  font-size: .85rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.stop-pager button:disabled { background: #f1f5f5; color: #526875; border-color: var(--line); cursor: default; }
+#stop-progress { font-size: .81rem; color: var(--muted); white-space: nowrap; }
+.plan-card h3:not(:first-child) { margin-top: 21px; }
+
+/* Keep passage annotation within reach without making it the primary action. */
+main .cdmx-comment-btn {
+  display: block;
+  margin: 0 0 .85rem;
+  border: 0;
+  padding: 3px 0;
+  background: transparent;
+  color: var(--jade);
+  text-decoration: underline;
+  text-underline-offset: .14em;
+}
+.overview .cdmx-comment-btn { margin: .35rem 0 0; }
+.source-note .cdmx-comment-btn { display: none; }
+
+@media (max-width: 680px) {
+  html { scroll-padding-top: 112px; }
+  main { padding-top: 17px; }
+  .overview { grid-template-columns: 1fr; gap: 10px; margin-bottom: 8px; }
+  .overview-photo img { aspect-ratio: 2.36; object-fit: cover; object-position: center 47%; }
+  .lead, .article-lead, .history-section > p { font-size: 1.12rem; line-height: 1.55; }
+  .reader-nav a { font-size: .88rem; }
+  .reader-nav small { font-size: .68rem; }
+}

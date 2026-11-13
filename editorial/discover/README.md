@@ -30,6 +30,7 @@ check page locators, provenance, Indigenous scholarship, and contested facts.
 
 `python scripts/build_discover_editorial.py` stages reviewed HTML in
 `site/poi/<poi_slug>/discover/index.html` and writes a public status manifest.
-The Templo Mayor review reader adds a link *only if* that approved page exists.
+This is the separate manuscript route. The Templo Mayor review reader at
+`/poi/templo-mayor/review/` contains the cited article prepared for reader feedback.
 `python scripts/test_discover_editorial.py` guards the unpublished draft state
 and verifies the gate against a synthetic nonhistorical manuscript.

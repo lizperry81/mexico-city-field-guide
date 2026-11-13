@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Add evidence-traceable, chapter-specific comparisons to the FOUR current mobile POIs.
+"""Add chapter-specific comparisons to the Centro mobile readers.
 
 This is an additive post-build step. It imports the historical threads already
-maintained for the Historic Center walk and links precisely matched archived
-chapters between the four Discover readers; no historical text is rewritten.
+maintained for the Historic Center walk. The Templo Mayor reader remains
+reachable at its existing chapter anchors while its outgoing comparisons are paused.
 """
 from __future__ import annotations
 
@@ -18,6 +18,7 @@ from build_centro_walk import THREADS, STOPS, chapters, refs_from
 ROOT = Path("site")
 SLUGS = [stop["slug"] for stop in STOPS]
 NAMES = {stop["slug"]: stop["name"] for stop in STOPS}
+READERS_WITH_COMPARISONS = [slug for slug in SLUGS if slug != "templo-mayor"]
 STYLE = """
 <style id="historical-connections-styles">
 .historical-connection{position:static;top:auto;display:block;margin:16px 0 24px;
@@ -49,13 +50,8 @@ def target_url(slug: str, heading: str) -> str:
     return f"../../../poi/{slug}/review/#{anchor}"
 
 
-def insert_after_heading(page: str, slug: str, anchor: str, heading: str, panel: str):
+def insert_after_heading(page: str, anchor: str, heading: str, panel: str):
     heading_html = escape(heading, quote=True)
-    if slug == "templo-mayor":
-        # IDs were added to the recovered historical sections by build_centro_walk.
-        marker = f'<section class="section" id="{anchor}"><h2>{heading_html}</h2>'
-        assert page.count(marker) == 1, ("lost original Templo topic anchor", anchor)
-        return page.replace(marker, marker + panel, 1)
     # The preserved Centro dossiers include a dated eyebrow between the section
     # opening and heading. Match only this section and the correct archived h2.
     pattern = (r'(<section class="chapter" id="' + re.escape(anchor)
@@ -63,7 +59,7 @@ def insert_after_heading(page: str, slug: str, anchor: str, heading: str, panel:
                re.escape(heading_html) + r'</h2>)')
     page, count = re.subn(pattern, lambda m: m.group(1) + panel,
                           page, count=1, flags=re.DOTALL)
-    assert count == 1, ("lost original Centro chapter anchor", slug, anchor, heading)
+    assert count == 1, ("lost original Centro chapter anchor", anchor, heading)
     return page
 
 
@@ -73,6 +69,8 @@ def build():
     for thread in THREADS:
         assert len(thread["entries"]) >= 3, thread["id"]
         for slug, heading in thread["entries"]:
+            if slug not in READERS_WITH_COMPARISONS:
+                continue
             anchor, chapter = archival_chapter(slug, heading)
             original_refs = refs_from(chapter)
             assert original_refs, ("historical chapter has no archived source ID", slug, heading)
@@ -116,9 +114,8 @@ def build():
                 "related_readings": others,
             })
 
-    # Validate ALL four inputs and produce all outputs before writing anything.
     outputs = {}
-    for slug in SLUGS:
+    for slug in READERS_WITH_COMPARISONS:
         path = ROOT / "poi" / slug / "review" / "index.html"
         page = path.read_text(encoding="utf-8")
         assert "Discover" in page and "Explore" in page and "Plan" in page
@@ -126,7 +123,7 @@ def build():
         assert "historical-connections-styles" not in page, "Builder called twice without a clean rebuild"
         assert "</head>" in page
         for anchor, heading, panel in work[slug]:
-            page = insert_after_heading(page, slug, anchor, heading, panel)
+            page = insert_after_heading(page, anchor, heading, panel)
         page = page.replace("</head>", STYLE + "</head>", 1)
         assert page.count('class="historical-connection"') == len(work[slug]), slug
         outputs[path] = page
@@ -141,9 +138,8 @@ def build():
         "count": len(manifest),
         "comparisons": manifest,
     }, indent=2, ensure_ascii=False), encoding="utf-8")
-    assert len(manifest) == sum(len(thread["entries"]) for thread in THREADS)
     print(f"PASS: {len(manifest)} context-specific cross-site chapter comparisons "
-          f"across {len(SLUGS)} complete commentable POIs; no source research altered")
+          f"across {len(READERS_WITH_COMPARISONS)} readers")
 
 
 if __name__ == "__main__":

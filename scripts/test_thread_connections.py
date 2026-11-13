@@ -7,22 +7,29 @@ from html import escape
 from pathlib import Path
 from urllib.parse import urljoin, urlsplit
 
-from build_centro_walk import THREADS, STOPS, chapters, refs_from
+from build_centro_walk import STOPS, chapters, refs_from
+from build_thread_connections import READERS_WITH_COMPARISONS, THREADS
 
 root=Path("site")
 manifest=json.loads((root/"data/historic-center-connections.json").read_text(encoding="utf-8"))
 assert manifest["research_status"]=="archived_source_ids_pending_page_specific_review"
 rows=manifest["comparisons"]
-assert len(rows)==manifest["count"]==sum(len(t["entries"]) for t in THREADS)==12
+expected = [(t["id"], slug, heading) for t in THREADS for slug, heading in t["entries"]
+            if slug in READERS_WITH_COMPARISONS]
+assert len(rows)==manifest["count"]==len(expected)==9
+assert [(r["thread_id"], r["slug"], r["chapter"]) for r in rows] == expected
 assert {r["thread_id"] for r in rows}=={t["id"] for t in THREADS}
-assert {r["slug"] for r in rows}=={s["slug"] for s in STOPS}
+assert {r["slug"] for r in rows}==set(READERS_WITH_COMPARISONS)
 page_map={s["slug"]:(root/"poi"/s["slug"]/"review/index.html").read_text(encoding="utf-8")
           for s in STOPS}
 per_page=Counter(r["slug"] for r in rows)
 for slug,page in page_map.items():
     assert page.count('class="historical-connection"')==per_page[slug],slug
-    assert page.count('id="historical-connections-styles"')==1,slug
     assert 'src="../../../feedback/annotate.js"' in page,slug
+    if slug == "templo-mayor":
+        assert 'data-historical-thread' not in page
+        continue
+    assert page.count('id="historical-connections-styles"')==1,slug
     assert "Discover" in page and "Explore" in page and "Plan" in page,slug
     assert "page-level independent verification" in page
     assert "location.hash" in page, "Review reader must support incoming chapter deep links"
@@ -50,4 +57,4 @@ for row in rows:
         assert len(matches)==1,(related["slug"],related["chapter"])
         assert related["original_source_ids"]==refs_from(matches[0])
 assert (root/"index.html").stat().st_size>500_000, "Original rich homepage was replaced"
-print("PASS: 12 evidence-ID-backed comparisons; 24 deep links resolve to existing preserved chapters in all four mobile readers; full homepage retained")
+print("PASS: nine active chapter comparisons and 18 working links, including incoming Templo Mayor links")

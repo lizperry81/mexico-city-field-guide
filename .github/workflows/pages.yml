@@ -27,8 +27,6 @@ jobs:
           cp -a extracted/cdmx-fieldguide-build/. site/
           # Use recovered rich homepage as baseline.
           cp recovered/mexico-city-field-guide.html site/index.html
-          mkdir -p site/poi/templo-mayor
-          cp poi/templo-mayor/index.html site/poi/templo-mayor/index.html
           # Restore source-accurate V81 JSON (8 chapters, 21 claims, 12 sources).
           python scripts/recover_templo.py site
           python scripts/build_poi.py
@@ -40,7 +38,7 @@ jobs:
           from pathlib import Path
           p=Path('site/index.html')
           s=p.read_text(encoding='utf-8')
-          link='<a href="poi/templo-mayor/" style="display:block;background:#0d746e;color:white;padding:16px;border-radius:12px;text-align:center;font-weight:700;margin:16px auto;max-width:700px;text-decoration:none">Explore the full Templo Mayor point of interest →</a>'
+          link='<a href="poi/templo-mayor/" style="display:block;background:#0d746e;color:white;padding:16px;border-radius:12px;text-align:center;font-weight:700;margin:16px auto;max-width:700px;text-decoration:none">Templo Mayor history and guided walk →</a>'
           s=s.replace('</body>',link+'</body>')
           p.write_text(s,encoding='utf-8')
           PY
@@ -56,8 +54,7 @@ jobs:
           # Stage only editor-approved Discover narratives; drafts stay unpublished.
           python scripts/build_discover_editorial.py
           python scripts/test_discover_editorial.py
-          # Regenerate the commentable reader from the currently built, richer POI.
-          # Do not publish the older static preview snapshot as the review site.
+          # Publish the revised reader at both POI URLs and retain the research dossier.
           python scripts/build_templo_review.py
           python scripts/test_templo_review.py
           # Generate the other three reader layouts from complete preserved dossiers.
@@ -103,7 +100,7 @@ jobs:
               'built_at_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
               'research_sha256':{name:hashlib.sha256((source/name).read_bytes()).hexdigest() for name in originals},
               'historical_poi_slugs':['templo-mayor','zocalo','metropolitan-cathedral','national-palace'],
-              'review_layout':'discover-explore-plan',
+              'review_layout':'history-guided-walk-plan',
           }
           output=pathlib.Path('site/data/build-info.json')
           output.write_text(json.dumps(identity,indent=2),encoding='utf-8')
@@ -130,7 +127,8 @@ jobs:
           python - <<'PY'
           import os,urllib.request,urllib.parse,time,json
           url=os.environ['PAGE_URL'].rstrip('/')+'/poi/templo-mayor/'
-          required=('Templo Mayor','What to look for during the visit','History behind the excavated site','Tlaltecuhtli','Coyolxauhqui','id="museum"','id="claimlist"','../../feedback/annotate.js')
+          required=('Templo Mayor','Read before visiting','Follow on site','Plaza Manuel Gamio',
+                    'Tlaltecuhtli','Coyolxauhqui','archive/#evidence','../../feedback/annotate.js')
           error=None
           for attempt in range(10):
               try:
@@ -172,12 +170,15 @@ jobs:
               'poi/zocalo/': ('What to look for on site','The day the poor burned the palace','../../feedback/annotate.js'),
               'poi/metropolitan-cathedral/': ('What to look for on site','The floor isn','../../feedback/annotate.js'),
               'poi/national-palace/': ('What to look for on site','Rivera','../../feedback/annotate.js'),
+              'poi/templo-mayor/archive/': ('History behind the excavated site','id="claimlist"','../../../feedback/annotate.js'),
+              'poi/templo-mayor/assets/reader.js': ("window.addEventListener('hashchange', navigateHash)",'stop-progress'),
+              'poi/templo-mayor/assets/reader.css': ('.photo-marker','.reader-nav'),
               'poi/zocalo/review/': ('id="centro-review-script"','id="centro-review-styles"','src="../../../feedback/annotate.js"','What to look for on site','The day the poor burned the palace','data-historical-thread'),
               'poi/metropolitan-cathedral/review/': ('id="centro-review-script"','id="centro-review-styles"','src="../../../feedback/annotate.js"','What to look for on site','The floor isn','data-historical-thread'),
               'poi/national-palace/review/': ('id="centro-review-script"','id="centro-review-styles"','src="../../../feedback/annotate.js"','What to look for on site','Rivera','data-historical-thread'),
               'walks/historic-center/': ('From Tenochtitlan to Mexico City','data-mode="outdoor"','data-choose-thread="conquest"','stop-national-palace','../../feedback/annotate.js'),
               'data/historic-center-walk.json': ('"historic-center-walk-1"','"original_source_ids"'),
-              'data/historic-center-connections.json': ('"historic-center-chapter-comparisons-1"','"related_readings"','"count": 12'),
+              'data/historic-center-connections.json': ('"historic-center-chapter-comparisons-1"','"related_readings"'),
               'feedback/annotate.js': ('function allNotes()', 'Comment on this passage', 'feedback-open'),
               'data/research/templo_walk_v63.json': ('"chapters"','field_instruction'),
               'data/research/templo_mayor_pilot.json': ('"claims"','source_ids'),
@@ -189,7 +190,7 @@ jobs:
                   assert response.status==200, f'HTTP {response.status}: {target}'
               assert all(t in body for t in markers), f'Incomplete content at {target}'
               print('LIVE ROUTE VERIFIED:',target,'chars:',len(body),flush=True)
-          # Verify the current-source, commentable Discover/Explore/Plan phone page.
+          # Verify the revised commentable Templo Mayor phone page.
           # This is a network smoke check, not a real touchscreen Safari test.
           review_target=root+'poi/templo-mayor/review/'
           review_error=None
@@ -200,13 +201,12 @@ jobs:
                   with urllib.request.urlopen(req,timeout=25) as response:
                       html=response.read().decode('utf-8')
                       assert response.status==200
-                  required=['id="review-layout-script"','id="review-layout-styles"',
-                            'src="../../../feedback/annotate.js"',
-                            'History behind the excavated site','What to look for during the visit',
-                            'Tlaltecuhtli','Coyolxauhqui','id="claimlist"',
-                            'review-switch','data-open-research','data-historical-thread']
-                  assert all(x in html for x in required), 'Review missing preserved content or navigation'
-                  assert len(html)>35000, 'Truncated review page'
+                  required=['src="../assets/reader.js"','src="../../../feedback/annotate.js"',
+                            'Read before visiting','Follow on site','Plaza Manuel Gamio',
+                            'How can archaeologists date a wall?','Offering 125',
+                            'Coyolxauhqui replica','The original Coyolxauhqui stone','id="next-stop"']
+                  assert all(x in html for x in required), 'Review missing the revised history or walk'
+                  assert 'data-historical-thread' not in html, 'Paused cross-links reappeared'
                   print('LIVE COMMENTABLE REVIEW VERIFIED:',review_target,len(html),flush=True)
                   break
               except Exception as ex:
@@ -229,12 +229,12 @@ jobs:
                   assert marker in phone_body, f'{slug}: mobile route missing {marker}'
               assert len(phone_body)>14000, f'{slug}: truncated mobile guide'
               print('IPHONE UA COMMENTABLE POI VERIFIED:',phone_url,len(phone_body),flush=True)
-          # Validate all 24 contextual chapter links against the PUBLISHED mobile HTML,
+          # Validate the active contextual chapter links against the published mobile HTML,
           # not just generated source files. This detects stale Pages builds and broken paths.
           with urllib.request.urlopen(root+'data/historic-center-connections.json',timeout=25) as response:
               connections=json.load(response)
               assert response.status==200
-          assert connections['count']==len(connections['comparisons'])==12
+          assert connections['count']==len(connections['comparisons'])==9
           phone_pages={}
           for slug in ('templo-mayor','zocalo','metropolitan-cathedral','national-palace'):
               url=root+'poi/'+slug+'/review/'
@@ -242,8 +242,9 @@ jobs:
               with urllib.request.urlopen(req,timeout=25) as response:
                   phone_pages[slug]=response.read().decode('utf-8')
                   assert response.status==200
-              assert 'window.addEventListener(\'hashchange\',navigateHash)' in phone_pages[slug], slug
-          assert 'review-jump' in phone_pages['templo-mayor']
+              if slug != 'templo-mayor':
+                  assert 'window.addEventListener(\'hashchange\',navigateHash)' in phone_pages[slug], slug
+          assert 'id="choose-stop"' in phone_pages['templo-mayor']
           checked=0
           for comparison in connections['comparisons']:
               origin=comparison['slug']
@@ -258,7 +259,7 @@ jobs:
                   assert resolved.startswith(expected+'#'), resolved
                   assert 'id="'+target.fragment+'"' in phone_pages[related['slug']], resolved
                   checked+=1
-          assert checked==24, checked
+          assert checked==2*connections['count'], checked
           print('LIVE CROSS-CHAPTER LINKS VERIFIED:',checked,'links across 4 published iPhone HTML pages',flush=True)
           # Mobile-User-Agent HTTP check (not a substitute for Safari interaction testing).
           mobile_target=root+'walks/historic-center/'

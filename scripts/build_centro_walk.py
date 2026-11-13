@@ -14,8 +14,8 @@ CENTRO=json.loads((SITE/"data"/"centro.json").read_text(encoding="utf-8"))["stop
 
 STOPS=[
     dict(slug="templo-mayor",key="templo",name="Templo Mayor",
-         exterior="From the public perimeter, locate the excavated remains beside the cathedral. The twin shrine foundations are best examined inside the zone.",
-         inside="Look for the paired Huitzilopochtli and Tlaloc shrines, the roofed Stage II and the House of the Eagles. Do not assume any particular section is open.",
+         exterior="From the Zócalo’s northeast corner, walk north on Calle de Seminario with the cathedral on your left. At Plaza Manuel Gamio, look ahead and to your right for the excavated stone walls.",
+         inside="Enter at Seminario 8 beside the plaza. On the west side of the pyramid, face the steps and look for the Coyolxauhqui replica low on the south side, to your right.",
          heading="One temple inside another",
          status="Archaeological zone and museum: admission, displayed objects and accessibility require a current official check."),
     dict(slug="metropolitan-cathedral",key="catedral",name="Metropolitan Cathedral",
@@ -106,6 +106,11 @@ def build():
     for n,s in enumerate(STOPS,1):
         link,p=topic_link(s["slug"],s["heading"])
         ids=", ".join(refs_from(p)) or "not recorded"
+        guide_link = '../../poi/' + h(s["slug"]) + '/'
+        guide_label = 'Open the complete ' + h(s["name"]) + ' historical dossier'
+        if s["slug"] == "templo-mayor":
+            guide_link += '#explore'
+            guide_label = 'Open the Templo Mayor guided walk'
         stop_html.append('<article class="stop" id="stop-'+h(s["slug"])+'" data-stop="'+h(s["slug"])+'">'
           '<p class="eyebrow">STOP '+str(n)+' / 4</p><h2>'+h(s["name"])+'</h2>'
           '<p class="field"><strong>Look outside</strong>'+h(s["exterior"])+'</p>'
@@ -113,7 +118,7 @@ def build():
           '<p class="access">'+h(s["status"])+'</p>'
           '<a class="read" href="'+h(link)+'">Read the original chapter: '+h(s["heading"])+'</a>'
           '<p class="trace">Archived evidence IDs: '+h(ids)+'. Page-specific review is pending.</p>'
-          '<a href="../../poi/'+h(s["slug"])+'/">Open the complete '+h(s["name"])+' historical dossier</a></article>')
+          '<a href="'+guide_link+'">'+guide_label+'</a></article>')
     thread_html=[]
     for t in threads:
         links=[]
@@ -262,7 +267,7 @@ h1{font:700 clamp(37px,6vw,69px)/1.07 Georgia,serif;margin:12px 0 17px;max-width
     for stop in STOPS:
         target=SITE/"poi"/stop["slug"]/"index.html"
         content=target.read_text(encoding="utf-8")
-        if 'historic-walk-crosslink' not in content:
+        if stop["slug"] != "templo-mayor" and 'historic-walk-crosslink' not in content:
             assert content.count("</main>")==1,stop["slug"]
             content=content.replace("</main>",box+"</main>")
         if stop["slug"]=="templo-mayor":
