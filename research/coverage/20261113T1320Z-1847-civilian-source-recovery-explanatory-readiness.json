@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-13T13:20:00Z",
+  "generated_at": "2026-11-13T13:12:00Z",
   "research_batch": "research/batches/20261113T1302Z-1847-civilian-resistance-and-bibliographic-recovery.json",
   "kind": "chronological_thematic_geographic_explanatory_readiness_delta",
   "mode": "append_only_coverage_delta_not_replacement_for_full_matrix",
@@ -149,5 +149,6 @@
   ],
   "publication_approved": false,
   "ready_for_editorial_review": false,
-  "notes": "Ratings measure explanatory readiness and verified original passages, not bibliography count. No cell is promoted to substantial. Empty finding_ids indicate grounding in the separately pinned reader audit instead of inventing IDs."
+  "notes": "Ratings measure explanatory readiness and verified original passages, not bibliography count. No cell is promoted to substantial. Empty finding_ids indicate grounding in the separately pinned reader audit instead of inventing IDs.",
+  "timestamp_note": "Corrected generated_at from prematurely labeled artifact filename time; prior revision remains in Git history and artifact paths are stable. No historical findings changed."
 }
