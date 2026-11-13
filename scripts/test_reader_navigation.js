@@ -47,7 +47,9 @@ const ids = {...panels, ...Object.fromEntries(stops.map(stop => [stop.id, stop])
   'stop-progress': progress};
 const doc = {
   querySelectorAll(selector) {
-    assert.equal(selector, '.reader-nav a'); return links;
+    if (selector === '.reader-nav a') return links;
+    if (selector === '[data-reader-panel]') return Object.values(panels);
+    throw new Error('Unexpected document query: ' + selector);
   },
   getElementById(id) {return ids[id] || null;}
 };
