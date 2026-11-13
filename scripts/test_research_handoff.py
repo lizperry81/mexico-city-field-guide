@@ -231,6 +231,47 @@ batch_snapshot = {
     "coverage_artifact_paths": copy.deepcopy(batch_manifest["coverage_artifact_paths"]),
 }
 validate_versioned_handoff(batch_manifest, batch_snapshot, "a" * 40)
+# A 74-batch producer may freeze an exact copy of the manifest under a
+# distinct kind. It must then publish BOTH exact immutable Git identities.
+# Missing Git blob/history pins cannot turn mutable research into a review queue.
+centenary = copy.deepcopy(batch_manifest)
+centenary["kind"] = "research_to_app_handoff"
+centenary["handoff_history_commit_sha"] = "b" * 40
+centenary["immutable_handoff_blob_sha"] = "a" * 40
+centenary["evidence_status"]["ready_for_editorial_review"] = False
+centenary["replay_evidence"] = {
+    "sqlite_integrity": "ok", "foreign_key_violations": 0,
+    "canonical_rows_unchanged": True, "github_snapshot_readback": True,
+}
+centenary_snapshot = copy.deepcopy(centenary)
+centenary_snapshot["kind"] = "research_to_app_handoff_immutable_snapshot"
+centenary_snapshot["immutable_handoff_blob_sha"] = None
+centenary_snapshot["handoff_history_commit_sha"] = None
+validate_versioned_handoff(centenary, centenary_snapshot, "a" * 40)
+assert verified_index_only_total(
+    23, 23, 5, "research_to_app_handoff_immutable_snapshot")
+for label, patch, frozen_patch in (
+    ("missing blob pin", {"immutable_handoff_blob_sha": None}, {}),
+    ("wrong blob pin", {"immutable_handoff_blob_sha": "9" * 40}, {}),
+    ("missing history commit", {"handoff_history_commit_sha": None}, {}),
+    ("staged findings drift", {"staged_counts": dict(
+        centenary["staged_counts"], github_batches_replayed=999)}, {}),
+    ("unreviewed evidence published", {"ready_for_publication": True}, {}),
+    ("replay readback denied", {"replay_evidence": dict(
+        centenary["replay_evidence"], github_snapshot_readback=False)}, {}),
+    ("frozen source drift", {}, {"canonical_hash": "9" * 64}),
+):
+    candidate = copy.deepcopy(centenary)
+    immutable = copy.deepcopy(centenary_snapshot)
+    candidate.update(patch)
+    immutable.update(frozen_patch)
+    try:
+        validate_versioned_handoff(candidate, immutable, "a" * 40)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("Unpinned or altered 74-batch snapshot accepted: " + label)
+
 mutations = (
     ("immutable blob", {"immutable_handoff_blob_sha": "9" * 40}, None),
     ("staged batch", {"staged_counts": dict(batch_manifest["staged_counts"],
