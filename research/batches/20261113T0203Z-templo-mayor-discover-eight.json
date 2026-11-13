@@ -1,0 +1,255 @@
+{
+  "schema_version": 1,
+  "batch_id": "20261113T0203Z-templo-mayor-discover",
+  "canonical_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "research_status": "staged_only_not_canonical",
+  "chapter_text_access": "Actual app Discover opening unavailable in accessible repository tree; thematic not line-by-line audit",
+  "findings": [
+    {
+      "id": "stg-20261113-tm-audit-01",
+      "subject": "Templo Mayor Discover opening evidence",
+      "assertion": "1428 is the standard shorthand for a Triple Alliance of Tenochtitlan, Texcoco and Tlacopan, but its political formation around the Tepanec war should be presented as a process, not an uncontested single-day event.",
+      "source_ids": [
+        "stg-arqueomex-centro-2019"
+      ],
+      "evidence_locators": [
+        "Centro de México; Los últimos en llegar"
+      ],
+      "period": "Mexica political institutions",
+      "date_or_range": "1428",
+      "geography": "Centro Histórico, Mexico City",
+      "poi_ids": [
+        "poi-templo-mayor",
+        "poi-zocalo"
+      ],
+      "remaining_uncertainty": "Check Chimalpahin, Barlow, Santamarina and Tlacopan entry chronology before exact founding language",
+      "independent_corroboration": false,
+      "evidence_status": "online_institutional_or_scholarly_passage_examined_not_original_excavation_report",
+      "editorial_status": "candidate_not_publication_ready"
+    },
+    {
+      "id": "stg-20261113-tm-audit-02",
+      "subject": "Templo Mayor Discover opening evidence",
+      "assertion": "The Templo Mayor was enlarged repeatedly; its two principal shrines were Tláloc on the north and Huitzilopochtli on the south.",
+      "source_ids": [
+        "stg-inah-templo-site-2026"
+      ],
+      "evidence_locators": [
+        "Templo Mayor; seven enlargements and two stairways"
+      ],
+      "period": "Mexica archaeology",
+      "date_or_range": "14th–early 16th centuries",
+      "geography": "Centro Histórico, Mexico City",
+      "poi_ids": [
+        "poi-templo-mayor",
+        "poi-zocalo"
+      ],
+      "remaining_uncertainty": "Observe separate north/south stairways and nested building phases",
+      "independent_corroboration": false,
+      "evidence_status": "online_institutional_or_scholarly_passage_examined_not_original_excavation_report",
+      "editorial_status": "candidate_not_publication_ready"
+    },
+    {
+      "id": "stg-20261113-tm-audit-03",
+      "subject": "Templo Mayor Discover opening evidence",
+      "assertion": "López Luján describes a dismembered Coyolxauhqui relief from stage IVa-1, earlier than the better-known monolithic disk associated with stage IVb, occupying a corresponding position beneath the southern shrine.",
+      "source_ids": [
+        "stg-lopez-lujan-coyolxauhqui-2010-web"
+      ],
+      "evidence_locators": [
+        "Las otras imágenes de Coyolxauhqui; IVa-1 and IVb discussion; printed publication pp.48–54 not directly inspected"
+      ],
+      "period": "Mexica archaeology",
+      "date_or_range": "1440–1481",
+      "geography": "Centro Histórico, Mexico City",
+      "poi_ids": [
+        "poi-templo-mayor",
+        "poi-zocalo"
+      ],
+      "remaining_uncertainty": "Original 1978 and 1987 field reports remain to be examined",
+      "independent_corroboration": false,
+      "evidence_status": "online_institutional_or_scholarly_passage_examined_not_original_excavation_report",
+      "editorial_status": "candidate_not_publication_ready"
+    },
+    {
+      "id": "stg-20261113-tm-audit-04",
+      "subject": "Templo Mayor Discover opening evidence",
+      "assertion": "The Coyolxauhqui stone uncovered in February 1978 prompted the archaeological project, while the interpretive connection to the Coatepec story depends on iconography and ritual contextual arguments.",
+      "source_ids": [
+        "stg-inah-proyecto-templo-2026"
+      ],
+      "evidence_locators": [
+        "Proyecto Templo Mayor; discovery and founding paragraphs"
+      ],
+      "period": "Mexica archaeology and 1978",
+      "date_or_range": "1978-02-21",
+      "geography": "Centro Histórico, Mexico City",
+      "poi_ids": [
+        "poi-templo-mayor",
+        "poi-zocalo"
+      ],
+      "remaining_uncertainty": "Do not present a specific sacrifice enactment as direct archaeological observation",
+      "independent_corroboration": false,
+      "evidence_status": "online_institutional_or_scholarly_passage_examined_not_original_excavation_report",
+      "editorial_status": "candidate_not_publication_ready"
+    },
+    {
+      "id": "stg-20261113-tm-audit-05",
+      "subject": "Templo Mayor Discover opening evidence",
+      "assertion": "INAH reports destruction of the Templo Mayor following the defeat of 13 August 1521, with colonial houses erected over its former site. Surviving lower stages are not the intact exterior seen in 1519.",
+      "source_ids": [
+        "stg-inah-museo-conquista"
+      ],
+      "evidence_locators": [
+        "La Conquista; ¿Qué ocurrió con el Templo Mayor?"
+      ],
+      "period": "Conquest and colonial rebuilding",
+      "date_or_range": "1521",
+      "geography": "Centro Histórico, Mexico City",
+      "poi_ids": [
+        "poi-templo-mayor",
+        "poi-zocalo"
+      ],
+      "remaining_uncertainty": "Precise demolitions and property chronology need archival documentation",
+      "independent_corroboration": false,
+      "evidence_status": "online_institutional_or_scholarly_passage_examined_not_original_excavation_report",
+      "editorial_status": "candidate_not_publication_ready"
+    },
+    {
+      "id": "stg-20261113-tm-audit-06",
+      "subject": "Templo Mayor Discover opening evidence",
+      "assertion": "INAH identifies an approximately 1900 brick water collector under the modern walkway, with a trench cutting through the ancient temple construction stages across a strip about two metres wide.",
+      "source_ids": [
+        "stg-inah-templo-site-2026"
+      ],
+      "evidence_locators": [
+        "Etapa IV y V; Colector de agua"
+      ],
+      "period": "Porfiriato infrastructure and archaeology",
+      "date_or_range": "circa 1900",
+      "geography": "Centro Histórico, Mexico City",
+      "poi_ids": [
+        "poi-templo-mayor",
+        "poi-zocalo"
+      ],
+      "remaining_uncertainty": "On-site: look at the collector and changed archaeological fabric",
+      "independent_corroboration": false,
+      "evidence_status": "online_institutional_or_scholarly_passage_examined_not_original_excavation_report",
+      "editorial_status": "candidate_not_publication_ready"
+    },
+    {
+      "id": "stg-20261113-tm-audit-07",
+      "subject": "Templo Mayor Discover opening evidence",
+      "assertion": "INAH dates discovery by electric-company workers of Coyolxauhqui to 21 February 1978 and names Eduardo Matos Moctezuma as founder of Proyecto Templo Mayor.",
+      "source_ids": [
+        "stg-inah-proyecto-templo-2026"
+      ],
+      "evidence_locators": [
+        "Proyecto Templo Mayor, opening and team-history paragraphs"
+      ],
+      "period": "Modern archaeology",
+      "date_or_range": "1978-02-21",
+      "geography": "Centro Histórico, Mexico City",
+      "poi_ids": [
+        "poi-templo-mayor",
+        "poi-zocalo"
+      ],
+      "remaining_uncertainty": "Project inception is not the first investigation of this location",
+      "independent_corroboration": false,
+      "evidence_status": "online_institutional_or_scholarly_passage_examined_not_original_excavation_report",
+      "editorial_status": "candidate_not_publication_ready"
+    },
+    {
+      "id": "stg-20261113-tm-audit-08",
+      "subject": "Templo Mayor Discover opening evidence",
+      "assertion": "INAH credits Manuel Gamio with uncovering the southwest temple corner in 1914; its English guide dates the site museum opening to 12 October 1987. The 1978 find was not the first archaeological indication of the Templo Mayor.",
+      "source_ids": [
+        "stg-inah-templo-en-site"
+      ],
+      "evidence_locators": [
+        "Templo Mayor English history; Gamio and museum opening passages"
+      ],
+      "period": "Archaeology history",
+      "date_or_range": "1914;1987-10-12",
+      "geography": "Centro Histórico, Mexico City",
+      "poi_ids": [
+        "poi-templo-mayor",
+        "poi-zocalo"
+      ],
+      "remaining_uncertainty": "Teach 1914, 1978 and 1987 as distinct events",
+      "independent_corroboration": false,
+      "evidence_status": "online_institutional_or_scholarly_passage_examined_not_original_excavation_report",
+      "editorial_status": "candidate_not_publication_ready"
+    }
+  ],
+  "sources": [
+    {
+      "id": "stg-arqueomex-centro-2019",
+      "url": "https://arqueologiamexicana.mx/mexico-antiguo/centro-de-mexico",
+      "scope": "Online Arqueología Mexicana historical overview examined; cited primary annals not examined"
+    },
+    {
+      "id": "stg-inah-templo-site-2026",
+      "url": "https://lugares.inah.gob.mx/es/node/4463",
+      "scope": "INAH monument description, stages and collector sections examined; underlying excavation report not examined"
+    },
+    {
+      "id": "stg-lopez-lujan-coyolxauhqui-2010-web",
+      "url": "https://www.arqueologiamexicana.mx/mexico-antiguo/las-otras-imagenes-de-coyolxauhqui",
+      "scope": "Leonardo López Luján online article examined; printed issue 102 pp.48-54 cited but printed copy not inspected"
+    },
+    {
+      "id": "stg-inah-proyecto-templo-2026",
+      "url": "https://templomayor.inah.gob.mx/historia/proyecto-templo-mayor",
+      "scope": "INAH institutional history webpage examined"
+    },
+    {
+      "id": "stg-inah-museo-conquista",
+      "url": "https://lugares.inah.gob.mx/es/node/5284",
+      "scope": "INAH museum interpretation, La Conquista section examined"
+    },
+    {
+      "id": "stg-inah-templo-en-site",
+      "url": "https://lugares.inah.gob.mx/en/node/4463",
+      "scope": "INAH English interpretive site text examined"
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "inspection-stg-arqueomex-centro-2019",
+      "source_id": "stg-arqueomex-centro-2019",
+      "access_scope": "Online Arqueología Mexicana historical overview examined; cited primary annals not examined",
+      "original_field_report_inspected": false
+    },
+    {
+      "id": "inspection-stg-inah-templo-site-2026",
+      "source_id": "stg-inah-templo-site-2026",
+      "access_scope": "INAH monument description, stages and collector sections examined; underlying excavation report not examined",
+      "original_field_report_inspected": false
+    },
+    {
+      "id": "inspection-stg-lopez-lujan-coyolxauhqui-2010-web",
+      "source_id": "stg-lopez-lujan-coyolxauhqui-2010-web",
+      "access_scope": "Leonardo López Luján online article examined; printed issue 102 pp.48-54 cited but printed copy not inspected",
+      "original_field_report_inspected": false
+    },
+    {
+      "id": "inspection-stg-inah-proyecto-templo-2026",
+      "source_id": "stg-inah-proyecto-templo-2026",
+      "access_scope": "INAH institutional history webpage examined",
+      "original_field_report_inspected": false
+    },
+    {
+      "id": "inspection-stg-inah-museo-conquista",
+      "source_id": "stg-inah-museo-conquista",
+      "access_scope": "INAH museum interpretation, La Conquista section examined",
+      "original_field_report_inspected": false
+    },
+    {
+      "id": "inspection-stg-inah-templo-en-site",
+      "source_id": "stg-inah-templo-en-site",
+      "access_scope": "INAH English interpretive site text examined",
+      "original_field_report_inspected": false
+    }
+  ]
+}
