@@ -27,6 +27,127 @@ for unsafe_workflow in (".github/workflows/pages.yml",
     else:
         raise AssertionError("Non-research path accepted: " + unsafe_workflow)
 
+# The 69-batch handoff is a different v4 schema. Its pinned immutable
+# history can be accepted for PRIVATE review only when every source delta,
+# replay identity and unpublished evidence restriction matches.
+batch_manifest = {
+    "schema_version": 4, "handoff_history_append_only": True,
+    "immutable_handoff_blob_sha": "a" * 40,
+    "research_commit_sha": "b" * 40, "canonical_version": "V97",
+    "canonical_hash": "c" * 64, "previous_manifest_blob_sha": "d" * 40,
+    "previous_manifest_generated_at": "2026-11-13T16:13:18Z",
+    "canonical_status": "unchanged_provisional_V97_not_promoted",
+    "canonical_promoted": False, "ready_for_editorial_review": False,
+    "ready_for_publication": False, "compressed_sha256": "e" * 64,
+    "versioned_research_sha256": "f" * 64,
+    "replay_report_path": "research/reconciled/v4_69/replay_report.json",
+    "versioned_research_sqlite_gz_path": "research/reconciled/v4_69/research_only.sqlite.gz",
+    "canonical": {"sources": 616, "claims": 422, "claim_source_links": 403,
+                  "findings": 68, "source_inspections": 9},
+    "staged_counts": {
+        "github_batches_replayed": 69,
+        "github_distinct_substantive_finding_ids": 375,
+        "github_source_candidates": 124, "github_inspection_entries": 162,
+        "unknown_source_refs": 1, "source_metadata_collisions": 2,
+        "new_historical_finding_candidates_this_run": 9,
+        "new_source_inspection_metadata_this_run": 4,
+        "source_id_provisional_recoveries_this_run": 3,
+        "new_scholarly_source_candidate_records_this_run": 1,
+    },
+    "replay_evidence": {
+        "integrity": "ok", "foreign_key_violations": 0,
+        "original_tables_preserved": 88, "canonical_rows_unchanged": True,
+        "github_readback_verified": True,
+        "github_replay_report_blob_sha": "1" * 40,
+        "github_replay_binary_blob_sha": "2" * 40,
+    },
+    "evidence_status": {
+        "ready_for_editorial_review": False, "publication_approved": False,
+        "independently_corroborated_new_findings": 0,
+    },
+    "blockers": ["Original photographs and rights not independently checked"],
+    "reconciliation_artifact_paths": ["research/ledgers/69.json"],
+    "research_batch_artifact_paths": ["research/batches/69.json"],
+    "chapter_audit_artifact_paths": ["research/audits/templo-69.json"],
+    "coverage_artifact_paths": ["research/coverage/69.json"],
+}
+batch_snapshot = {
+    "schema_version": 4, "kind": "immutable_research_batch_handoff",
+    "branch": "research-persistence",
+    "research_commit_sha": batch_manifest["research_commit_sha"],
+    "canonical_version": "V97", "canonical_hash": batch_manifest["canonical_hash"],
+    "previous_manifest_blob_sha": batch_manifest["previous_manifest_blob_sha"],
+    "canonical_status": batch_manifest["canonical_status"],
+    "canonical_promoted": False, "ready_for_publication": False,
+    "ready_for_editorial_review": False, "main_modified": False,
+    "compressed_sha256": batch_manifest["compressed_sha256"],
+    "versioned_research_sha256": batch_manifest["versioned_research_sha256"],
+    "versioned_research_sqlite_gz_path": batch_manifest["versioned_research_sqlite_gz_path"],
+    "replay_report_path": batch_manifest["replay_report_path"],
+    "replay_report_git_blob_sha": "1" * 40,
+    "replay_binary_git_blob_sha": "2" * 40,
+    "canonical_counts": copy.deepcopy(batch_manifest["canonical"]),
+    "baseline_counts": {"batches": 68, "assertion_bearing_findings": 366,
+                        "source_candidates": 120, "source_inspection_metadata": 158,
+                        "unregistered_source_ids": 4, "metadata_collisions": 2},
+    "staged_counts": {"batches": 69, "assertion_bearing_findings": 375,
+                      "source_candidates": 124, "source_inspection_metadata": 162,
+                      "unregistered_source_ids": 1, "metadata_collisions": 2},
+    "new_candidate_findings": 9, "new_inspection_metadata": 4,
+    "new_source_candidate_records": 1, "new_provisional_source_id_resolutions": 3,
+    "verification": {
+        "sqlite_integrity": "ok", "foreign_key_violations": 0,
+        "all_88_original_tables_preserved": True,
+        "canonical_rows_unchanged": True, "versioned_db_git_readback": True,
+        "report_git_readback": True,
+        "github_replay_workflow_internal_persisted_sha256_check": True,
+    },
+    "evidence_status": {
+        "ready_for_editorial_review": False, "publication_approved": False,
+        "new_findings_are": "source_linked_provisional_uncorroborated",
+        "original_historical_photographs_examined": False,
+        "source_photo_rights_cleared": False,
+    },
+    "blockers": copy.deepcopy(batch_manifest["blockers"]),
+    "reconciliation_artifact_paths": copy.deepcopy(batch_manifest["reconciliation_artifact_paths"]),
+    "research_batch_artifact_paths": copy.deepcopy(batch_manifest["research_batch_artifact_paths"]),
+    "chapter_audit_artifact_paths": copy.deepcopy(batch_manifest["chapter_audit_artifact_paths"]),
+    "coverage_artifact_paths": copy.deepcopy(batch_manifest["coverage_artifact_paths"]),
+}
+validate_versioned_handoff(batch_manifest, batch_snapshot, "a" * 40)
+mutations = (
+    ("immutable blob", {"immutable_handoff_blob_sha": "9" * 40}, None),
+    ("staged batch", {"staged_counts": dict(batch_manifest["staged_counts"],
+                                          github_batches_replayed=70)}, None),
+    ("staged source count", {"staged_counts": dict(batch_manifest["staged_counts"],
+                                                github_source_candidates=126)}, None),
+    ("false approval", {"ready_for_publication": True}, None),
+    ("reader audit path", {"chapter_audit_artifact_paths": []}, None),
+    ("historical blockers", {"blockers": []}, None),
+    ("new findings delta", None, {"new_candidate_findings": 8}),
+    ("recovered source identity", None, {"new_provisional_source_id_resolutions": 4}),
+    ("photo permissions", None, {"evidence_status": dict(
+        batch_snapshot["evidence_status"], source_photo_rights_cleared=True)}),
+    ("Git readback", None, {"replay_report_git_blob_sha": "9" * 40}),
+    ("metadata collisions", None, {"baseline_counts": dict(
+        batch_snapshot["baseline_counts"], metadata_collisions=0)}),
+    ("database integrity", None, {"verification": dict(
+        batch_snapshot["verification"], canonical_rows_unchanged=False)}),
+    ("new audit missing", None, {"chapter_audit_artifact_paths": ["research/audits/fake.json"]}),
+)
+for label, manifest_patch, snapshot_patch in mutations:
+    modified_manifest, modified_snapshot = copy.deepcopy(batch_manifest), copy.deepcopy(batch_snapshot)
+    if manifest_patch:
+        modified_manifest.update(manifest_patch)
+    if snapshot_patch:
+        modified_snapshot.update(snapshot_patch)
+    try:
+        validate_versioned_handoff(modified_manifest, modified_snapshot, "a" * 40)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("Immutable v4 batch mutation accepted: " + label)
+
 # Schema v2 requires exact equality; v3 has two historically valid provenance
 # formats; v4 requires the complete immutable record, including audit flags.
 snap = {"schema_version": 3, "kind": "research_to_app_handoff",
