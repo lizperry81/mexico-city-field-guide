@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Check the reader's layout, anchors, and preservation of the research dossier."""
 import json
+import re
 from html import escape
 from html.parser import HTMLParser
 from pathlib import Path
@@ -59,6 +60,26 @@ for folder, feedback_path in (
         "How does the map distinguish", "historic-walk-crosslink", "data-historical-thread",
     ):
         assert marker not in text, marker
+    # Every physical stop must remain actionable on location, with a
+    # standing position, a visible feature, and its existing photo reference.
+    # Keep these field instructions separate from pre-visit Discover history.
+    field_stops = re.findall(
+        r'<section id="([^"]+)" class="walk-stop" data-stop>(.*?)</section>',
+        text, flags=re.DOTALL,
+    )
+    assert len(field_stops) == 5, "A preserved Explore field stop disappeared"
+    for stop_id, stop_html in field_stops:
+        assert '<strong>Stand at</strong>' in stop_html, stop_id
+        assert '<strong>Look for</strong>' in stop_html, stop_id
+        assert 'class="field-photo"' in stop_html, stop_id
+        assert 'alt="' in stop_html, stop_id
+    # The two source plans were already in Explore. Plan now surfaces their
+    # existing INAH URLs as explicit, accessible PDFs for mobile preparation.
+    assert 'class="orientation-links"' in text
+    assert 'Archaeological zone plan (INAH PDF, opens in a new tab)' in text
+    assert 'Site museum floor plan (INAH PDF, opens in a new tab)' in text
+    assert text.count('templo_mayor_cdmx.pdf') == 2
+    assert text.count('75_museo_sitio_templo_mayor.pdf') == 2
     for url in page.urls:
         parts = urlsplit(url)
         if parts.scheme or parts.netloc:
