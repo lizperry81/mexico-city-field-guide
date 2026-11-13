@@ -78,8 +78,18 @@ for folder, feedback_path in (
     assert 'class="orientation-links"' in text
     assert 'Archaeological zone plan (INAH PDF, opens in a new tab)' in text
     assert 'Site museum floor plan (INAH PDF, opens in a new tab)' in text
-    assert text.count('templo_mayor_cdmx.pdf') == 2
-    assert text.count('75_museo_sitio_templo_mayor.pdf') == 2
+    # Maps must be accessible from the physical walk at the moment of use,
+    # while remaining separately available in Plan. Do not guess stop pins.
+    assert text.count('templo_mayor_cdmx.pdf') == 3
+    assert text.count('75_museo_sitio_templo_mayor.pdf') == 3
+    assert text.index('id="explore"') < text.index('class="walk-map-note') < text.index('id="plaza"')
+    museum_stop = next(html for stop_id, html in field_stops if stop_id == "museum-stone")
+    assert 'INAH museum floor plan (PDF, opens in a new tab)' in museum_stop
+    assert text.count('class="walk-map-note cdmx-no-comment"') == 2
+    for label in ('INAH archaeological-zone plan (PDF, opens in a new tab)',
+                  'INAH museum floor plan (PDF, opens in a new tab)'):
+        assert label in text
+        assert 'target="_blank" rel="noopener">' + label in text
     for url in page.urls:
         parts = urlsplit(url)
         if parts.scheme or parts.netloc:

@@ -95,6 +95,8 @@ figcaption a { white-space: normal; }
 }
 .sidebar p { margin: 8px 0 0; }
 summary { width: fit-content; color: var(--jade); font-weight: 700; cursor: pointer; min-height: 44px; padding: 9px 0; }
+.walk-map-note { margin: 10px 0 16px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--wash); font-size: .9rem; line-height: 1.5; }
+.walk-map-note a { display: inline-flex; align-items: center; min-height: 44px; color: var(--jade); font-weight: 700; }
 .orientation-links { padding-left: 1.35rem; margin: .2rem 0 1rem; }
 .orientation-links li { padding: 2px 0; }
 .orientation-links a { display: inline-flex; align-items: center; min-height: 44px; line-height: 1.35; }
