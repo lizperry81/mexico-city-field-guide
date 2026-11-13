@@ -1,0 +1,78 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-11-13T16:04:09Z",
+  "kind": "chronological_x_thematic_x_geographic_readiness_delta",
+  "mode": "append_only_not_replacement",
+  "batch_path": "research/batches/20261113T1604Z-1985-housing-architectural-outcomes-source-repair.json",
+  "base_matrix": "research/coverage/coverage-matrix-20261113-compact.json",
+  "method": "Developing = a mechanism and at least one page-/section-located source but incomplete corroboration/site checking; sparse = single summary, catalog or unverified POI; missing = no site-ready evidence; substantial requires independent source comparison, chronology and visitor-observable detail. Counts of citations alone do not promote readiness.",
+  "cells": [
+    {
+      "period": "1986",
+      "theme": "collective resident negotiation for housing",
+      "geography": "Central-city affected barrios",
+      "rating": "sparse",
+      "finding_ids": [
+        "STG-20261113-1604-1985-HOUSING-01"
+      ],
+      "explanatory_readiness": "1988 institutional catalog dates agreement but complete convenant and participant signatory list unavailable",
+      "next_evidence": "Read full Convenio de Concertación Democrática and compare independent neighborhood accounts."
+    },
+    {
+      "period": "1985–1987",
+      "theme": "architectural reconstruction prototype",
+      "geography": "Centro Histórico",
+      "rating": "developing",
+      "finding_ids": [
+        "STG-20261113-1604-1985-HOUSING-02"
+      ],
+      "explanatory_readiness": "Official 2000 Centro program describes program buildings (three stories, patio/corridor, 42 sqm homes) but not site-specific preservation",
+      "next_evidence": "Retrieve sample project plans and inspect surviving units at named locations."
+    },
+    {
+      "period": "1985–1987",
+      "theme": "program totals and housing delivery categories",
+      "geography": "Centro Histórico vs wider Distrito Federal",
+      "rating": "developing",
+      "finding_ids": [
+        "STG-20261113-1604-1985-HOUSING-03"
+      ],
+      "explanatory_readiness": "Retrospective 2000 municipal policy provides denominators but no primary RHP completion ledger checked",
+      "next_evidence": "Compare contemporaneous 1987 RHP final audited figures; separate dwellings, properties and ancillary premises."
+    },
+    {
+      "period": "1985–1987",
+      "theme": "heritage conservation versus demolition",
+      "geography": "Centro Histórico",
+      "rating": "developing",
+      "finding_ids": [
+        "STG-20261113-1604-1985-HOUSING-04",
+        "STG-20261113-1604-1985-HOUSING-05"
+      ],
+      "explanatory_readiness": "Official plan categorizes physical interventions and INAH restrictions, not mapped addresses",
+      "next_evidence": "Read INAH case approvals and georeference 796 property records; verify totals against original administrative report."
+    },
+    {
+      "period": "1985–1986",
+      "theme": "memorial landscape after disaster",
+      "geography": "Plaza de la Solidaridad, Alameda / Juárez",
+      "rating": "sparse",
+      "finding_ids": [
+        "STG-20261113-1604-1985-HOUSING-06"
+      ],
+      "explanatory_readiness": "INAH-published abstract identifies Regis site and 1986 tree planting; full scholarship and present site observations absent",
+      "next_evidence": "Read Markowski article pp.65–69 and establish changes to public art and commemoration since 2004."
+    },
+    {
+      "period": "1985–1990",
+      "theme": "address-level social-housing outcomes",
+      "geography": "Tepito / Colonia Morelos / Guerrero",
+      "rating": "missing",
+      "finding_ids": [],
+      "explanatory_readiness": "Program-wide retrospective cannot identify which particular building still exists or is occupied",
+      "next_evidence": "Obtain address schedules, construction drawings, residents' histories, permissions and current building assessment."
+    }
+  ],
+  "ready_for_editorial_review": false,
+  "publication_approved": false
+}
