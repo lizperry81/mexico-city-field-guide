@@ -1,0 +1,50 @@
+{
+  "schema_version": 4,
+  "generated_at": "2026-11-13T07:16:52Z",
+  "kind": "verified_replay_after_schema_unit_tests",
+  "research_commit_sha": "d3708974dbb100fca2daeae792a12dd2339db739",
+  "persisted_binary_commit_sha": "bab9651321f564eb83abf2dc31a5bb75c0986b8e",
+  "canonical_version": "V97",
+  "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_status": "unchanged_not_promoted",
+  "versioned_research_sqlite_gz_path": "research/reconciled/v4_d3708974dbb1/research_only.sqlite.gz",
+  "versioned_research_sha256": "d25c8e3d4e48f79bf70fe7489b619ebe1e4faabc09f7081df7c79e3fd7fbb0f7",
+  "compressed_sha256": "e6b5880f192298be5e431e8d9c51cf9e3482b74518b95174dbcb41ebd27d13d6",
+  "replay_report_path": "research/reconciled/v4_d3708974dbb1/replay_report.json",
+  "unit_tests_path": "research/pipeline/test_reconcile_batch_schemas.py",
+  "workflow_path": ".github/workflows/research-replay-staging.yml",
+  "staged_counts": {
+    "github_batches_replayed": 58,
+    "github_distinct_substantive_finding_ids": 300,
+    "github_inspection_metadata_entries": 84,
+    "candidate_source_identities": 66,
+    "unresolved_source_refs": 14,
+    "source_metadata_collisions": 2,
+    "unresolved_index_only_refs": 16,
+    "detached_inspections_not_in_github_replay": 37
+  },
+  "chapter_audit_artifact_paths": [
+    "research/audits/templo-mayor-discover-20261113.json",
+    "research/audits/templo-mayor-discover-20261113T0716Z-inah-physical-evidence-addendum.json"
+  ],
+  "coverage_artifact_paths": [
+    "research/coverage/coverage-matrix-20261113-compact.json",
+    "research/coverage/20261113T0716Z-four-poi-explanatory-readiness.json"
+  ],
+  "evidence_status": "institutional HTML examined; no direct primary excavation documents; no claim corroboration or approval",
+  "integrity": "ok",
+  "foreign_key_violations": 0,
+  "canonical_rows_unchanged": true,
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "canonical_promoted": false,
+  "blockers": [
+    "37 detached inspection full records remain outside GitHub batch replay; lossless local recovery package saved but GitHub/Library direct transfer unavailable this run",
+    "14 unresolved source references",
+    "2 source metadata collisions",
+    "16 index-only finding IDs",
+    "Exact Templo Mayor Discover published prose not reviewed"
+  ],
+  "previous_manifest_blob_sha": "877d8e7481ea6fd78f2962c93999c87fa60ea194",
+  "previous_manifest_generated_at": "2026-11-13T07:14:10Z"
+}
