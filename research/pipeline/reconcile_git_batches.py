@@ -26,13 +26,18 @@ def listify(x):
     if isinstance(x,dict):return [x]
     return []
 def key(obj,keys):
+    # Preserve every array and singleton; earlier version read only first matching key.
+    result=[]
     for k in keys:
-        if isinstance(obj.get(k),list):return obj[k]
-    return []
+        value=obj.get(k)
+        if isinstance(value,list):result.extend(value)
+        elif isinstance(value,dict):result.append(value)
+    return result
 def main():
     p=argparse.ArgumentParser()
     for a in ("canonical","staging","batch-dir","output","report"):
         p.add_argument("--"+a,required=True)
+    p.add_argument('--min-files',type=int,default=1,help='Fail closed if fewer than verified historical GitHub files')
     a=p.parse_args()
     canonical=Path(a.canonical);staging=Path(a.staging);dest=Path(a.output)
     if dest.exists():raise SystemExit("BLOCKED: output exists; choose a new versioned name")
@@ -75,20 +80,20 @@ def main():
         r[0] for r in db.execute("SELECT id FROM staged_source_register")}
     conflicts=[];pending=set();missing_source_ids=set();file_count=0;inspection_count=0
     paths=sorted(Path(a.batch_dir).rglob("*.json"))
-    if not paths:raise SystemExit("BLOCKED: no GitHub research batch JSON files")
+    if len(paths)<a.min_files:raise SystemExit(f'BLOCKED: only {len(paths)} batch files; expected at least {a.min_files}')
     for f in paths:
         try:v=json.loads(f.read_text())
-        except (ValueError,UnicodeDecodeError):continue
+        except (ValueError,UnicodeDecodeError) as e:raise SystemExit(f'BLOCKED: unparseable batch file {f}: {e}')
         rel=f.relative_to(Path(a.batch_dir)).as_posix()
         db.execute("INSERT OR IGNORE INTO research_batch_files VALUES(?,?,?)",
                    (rel,hashfile(f),"raw_source_preserved_in_checkout"))
         file_count+=1
         if isinstance(v,list):findings=v;sources=[];inspections=[]
         elif isinstance(v,dict):
-            findings=key(v,("findings","records","new_findings","candidate_findings"))
-            sources=key(v,("sources","new_sources","source_register"))
+            findings=key(v,("findings","records","new_findings","candidate_findings","findings_candidate","documentary_findings"))
+            sources=key(v,("sources","new_sources","source_register","source_proposals","proposed_bibliography"))
             if not sources:sources=listify(v.get("source"))
-            inspections=key(v,("source_inspections",))
+            inspections=key(v,("source_inspections","source_inspection"))
             if not inspections:inspections=listify(v.get("source_inspection"))
         else:continue
         for item in sources:
@@ -108,12 +113,12 @@ def main():
             inspection_count+=1
         for item in findings:
             if not isinstance(item,dict):continue
-            claim=str(item.get("assertion") or item.get("statement") or item.get("claim") or "")
+            claim=str(item.get("assertion") or item.get("statement") or item.get("claim") or item.get("text") or "")
             if not claim:continue
-            fid=str(item.get("id") or item.get("finding_id") or "anon-"+hashbytes(enc(item).encode())[:20])
+            fid=str(item.get("id") or item.get("finding_id") or item.get("staged_id") or item.get("record_id") or "anon-"+hashbytes(enc(item).encode())[:20])
             if fid in baseline_ids or fid in staged and claim!=staged[fid]:
                 conflicts.append({"finding_id":fid,"source_path":rel,"reason":"identity_collision_needs_manual_review"})
-            sid=item.get("source_ids") or ([item["source_id"]] if item.get("source_id") else [])
+            sid=item.get("source_ids") or ([item["source_id"]] if item.get("source_id") else [item["source_id_raw"]] if item.get("source_id_raw") else [item["source_candidate_id"]] if item.get("source_candidate_id") else [])
             if isinstance(sid,str):sid=[sid]
             for x in sid:
                 if isinstance(x,str) and x not in known_sources and x not in pending:missing_source_ids.add(x)
