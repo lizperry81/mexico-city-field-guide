@@ -11,6 +11,26 @@ import reconcile_git_batches as importer
 
 
 class ReplaySchemaTests(unittest.TestCase):
+    def test_legacy_subject_evidence_is_a_full_assertion(self):
+        # Five TE28 2007 records were incorrectly counted as index-only, despite
+        # retaining detailed sample dates and precise source locations.
+        item={"id":"20261112T0700Z-auto09-F01","subject":"Area B posthole",
+              "evidence":"Two dated samples occur in vertical order.",
+              "loc":"pp.21-24 Tables 1-2"}
+        self.assertEqual(importer.extract_claim(item),
+                         "Area B posthole: Two dated samples occur in vertical order.")
+
+    def test_provenance_repair_not_misclassified_as_historical_claim(self):
+        item={"id":"STG20261111T1302Z-RECON-V87-PRIMARY-001",
+              "category":"provenance_repair",
+              "issue":"Secondary citation currently replaces primary record",
+              "resolution":"Flag primary record for inspection"}
+        self.assertEqual(importer.extract_claim(item), "")
+
+    def test_existing_claim_text_takes_precedence_over_extracted_fallback(self):
+        item={"id":"X","claim":"Original assertion","subject":"Subject","evidence":"E"}
+        self.assertEqual(importer.extract_claim(item),"Original assertion")
+
     def test_compressed_batch_reader_preserves_inspections(self):
         with tempfile.TemporaryDirectory() as d:
             p=Path(d)/"detached.json.gz"
