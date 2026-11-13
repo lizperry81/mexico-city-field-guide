@@ -1,0 +1,322 @@
+{
+  "batch_id": "20261112T2359Z_REFORMA_LIBERTAD_CULTOS_CROSSWALK",
+  "branch": "research-persistence",
+  "role": "append_only_research_staging",
+  "status": "STAGED ONLY — NOT IN CANONICAL",
+  "canonical_baseline_version": "V97",
+  "canonical_baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_counts_unchanged": {
+    "sources": 616,
+    "claims": 422,
+    "claim_sources": 403,
+    "canonical_findings": 68,
+    "source_inspections": 9
+  },
+  "staging_counts": {
+    "previous_findings": 96,
+    "current_findings": 105,
+    "previous_inspections": 31,
+    "current_inspections": 33,
+    "source_register_after": 33
+  },
+  "sources": {
+    "stg-src-1860-libertad-cultos-edited": {
+      "title": "Ley sobre libertad de cultos",
+      "date": "1860-12-04",
+      "url": "https://memoriapoliticademexico.org/Textos/3Reforma/1860LLC.html",
+      "access": "Edited HTML transcription, full 24 articles directly inspected, nineteenth-century printed facsimile not inspected"
+    },
+    "stg-src-1861-secularizacion-hospitales-edited": {
+      "title": "Decreto que seculariza hospitales y establecimientos de beneficencia",
+      "date": "1861-02-02",
+      "url": "https://www.memoriapoliticademexico.org/Textos/3Reforma/1861SHB.html",
+      "access": "Edited HTML transcription, full 7 articles directly inspected, original printed facsimile not inspected"
+    }
+  },
+  "findings": [
+    {
+      "finding_id": "stg-20261112T2359Z_REFORMA_LIBERTAD_CULTOS_CROSSWALK-F01",
+      "title": "Religious freedom and public-order limits",
+      "date": "1860-12-04",
+      "assertion": "Juárez's 4 December 1860 law protected Catholic worship and other religions, conditioned practice on the rights of others and public order, treated religious membership as voluntary, and removed civil sanctions for purely religious offenses such as apostasy or heresy.",
+      "source_id": "stg-src-1860-libertad-cultos-edited",
+      "source_locator": "Articles 1–5",
+      "poi_ids": [
+        "cathedral",
+        "zocalo"
+      ],
+      "evidence_type": "legislative text through edited modern transcription",
+      "access_status": "relevant articles examined; original printing not examined",
+      "evidence_status": "Evidence-examined (transcription only)",
+      "independently_corroborated": false,
+      "editorial_review": "not_publication_ready",
+      "limitations": [
+        "law establishes prescription, not implementation",
+        "editorial transcription needs comparison with 1860/1861 printed edition"
+      ]
+    },
+    {
+      "finding_id": "stg-20261112T2359Z_REFORMA_LIBERTAD_CULTOS_CROSSWALK-F02",
+      "title": "Church sanctuary and secular criminal justice",
+      "date": "1860-12-04",
+      "assertion": "The 1860 law abolished church sanctuary and permitted secular authorities to apprehend accused persons in temples under ordinary law without ecclesiastical control over their access; a rule, not evidence of a specific arrest.",
+      "source_id": "stg-src-1860-libertad-cultos-edited",
+      "source_locator": "Article 8",
+      "poi_ids": [
+        "cathedral"
+      ],
+      "evidence_type": "legislative text through edited modern transcription",
+      "access_status": "relevant articles examined; original printing not examined",
+      "evidence_status": "Evidence-examined (transcription only)",
+      "independently_corroborated": false,
+      "editorial_review": "not_publication_ready",
+      "limitations": [
+        "law establishes prescription, not implementation",
+        "editorial transcription needs comparison with 1860/1861 printed edition"
+      ]
+    },
+    {
+      "finding_id": "stg-20261112T2359Z_REFORMA_LIBERTAD_CULTOS_CROSSWALK-F03",
+      "title": "Civil oaths replaced by promises",
+      "date": "1860-12-04",
+      "assertion": "The 1860 law replaced obligatory religious oaths for officials, professions, testimony and certain declarations with explicit promises carrying legal consequences.",
+      "source_id": "stg-src-1860-libertad-cultos-edited",
+      "source_locator": "Article 9",
+      "poi_ids": [
+        "palacio-nacional",
+        "zocalo"
+      ],
+      "evidence_type": "legislative text through edited modern transcription",
+      "access_status": "relevant articles examined; original printing not examined",
+      "evidence_status": "Evidence-examined (transcription only)",
+      "independently_corroborated": false,
+      "editorial_review": "not_publication_ready",
+      "limitations": [
+        "law establishes prescription, not implementation",
+        "editorial transcription needs comparison with 1860/1861 printed edition"
+      ]
+    },
+    {
+      "finding_id": "stg-20261112T2359Z_REFORMA_LIBERTAD_CULTOS_CROSSWALK-F04",
+      "title": "Written permits for public religious processions",
+      "date": "1860-12-04",
+      "assertion": "The 1860 law required local political authorities' written permission for each solemn religious act outside temples and allowed permits to be withheld or activities stopped when disorder threatened; it does not establish any particular procession was banned.",
+      "source_id": "stg-src-1860-libertad-cultos-edited",
+      "source_locator": "Article 11",
+      "poi_ids": [
+        "zocalo",
+        "cathedral"
+      ],
+      "evidence_type": "legislative text through edited modern transcription",
+      "access_status": "relevant articles examined; original printing not examined",
+      "evidence_status": "Evidence-examined (transcription only)",
+      "independently_corroborated": false,
+      "editorial_review": "not_publication_ready",
+      "limitations": [
+        "law establishes prescription, not implementation",
+        "editorial transcription needs comparison with 1860/1861 printed edition"
+      ]
+    },
+    {
+      "finding_id": "stg-20261112T2359Z_REFORMA_LIBERTAD_CULTOS_CROSSWALK-F05",
+      "title": "State control of the legal effects of marriage",
+      "date": "1860-12-04",
+      "assertion": "The 1860 law recognized freedom of religious marriage practice but assigned the marriage contract and its civil legal effects exclusively to secular law; lack of civil formalities prevented recognized civil effects.",
+      "source_id": "stg-src-1860-libertad-cultos-edited",
+      "source_locator": "Article 20",
+      "poi_ids": [
+        "palacio-nacional",
+        "cathedral"
+      ],
+      "evidence_type": "legislative text through edited modern transcription",
+      "access_status": "relevant articles examined; original printing not examined",
+      "evidence_status": "Evidence-examined (transcription only)",
+      "independently_corroborated": false,
+      "editorial_review": "not_publication_ready",
+      "limitations": [
+        "law establishes prescription, not implementation",
+        "editorial transcription needs comparison with 1860/1861 printed edition"
+      ]
+    },
+    {
+      "finding_id": "stg-20261112T2359Z_REFORMA_LIBERTAD_CULTOS_CROSSWALK-F06",
+      "title": "Cemetery access despite religious refusal",
+      "date": "1860-12-04",
+      "assertion": "Governors were instructed to enforce cemetery laws and guarantee dignified burial even if religious authorities refused religious services; no local enforcement outcomes were inspected.",
+      "source_id": "stg-src-1860-libertad-cultos-edited",
+      "source_locator": "Article 21",
+      "poi_ids": [
+        "zocalo"
+      ],
+      "evidence_type": "legislative text through edited modern transcription",
+      "access_status": "relevant articles examined; original printing not examined",
+      "evidence_status": "Evidence-examined (transcription only)",
+      "independently_corroborated": false,
+      "editorial_review": "not_publication_ready",
+      "limitations": [
+        "law establishes prescription, not implementation",
+        "editorial transcription needs comparison with 1860/1861 printed edition"
+      ]
+    },
+    {
+      "finding_id": "stg-20261112T2359Z_REFORMA_LIBERTAD_CULTOS_CROSSWALK-F07",
+      "title": "Officials' personal faith versus official attendance",
+      "date": "1860-12-04",
+      "assertion": "The 1860 law preserved individual religious freedom for public officials but barred their attendance in an official capacity at worship events, including formed troops.",
+      "source_id": "stg-src-1860-libertad-cultos-edited",
+      "source_locator": "Article 24",
+      "poi_ids": [
+        "cathedral",
+        "palacio-nacional"
+      ],
+      "evidence_type": "legislative text through edited modern transcription",
+      "access_status": "relevant articles examined; original printing not examined",
+      "evidence_status": "Evidence-examined (transcription only)",
+      "independently_corroborated": false,
+      "editorial_review": "not_publication_ready",
+      "limitations": [
+        "law establishes prescription, not implementation",
+        "editorial transcription needs comparison with 1860/1861 printed edition"
+      ]
+    },
+    {
+      "finding_id": "stg-20261112T2359Z_REFORMA_LIBERTAD_CULTOS_CROSSWALK-F08",
+      "title": "Civil takeover of ecclesiastical hospitals",
+      "date": "1861-02-02",
+      "assertion": "Juárez's 1861 decree secularized church-administered hospitals and charities, transferring direction and maintenance in the Federal District to the Union government and state establishments to oversight by the states. It does not prove any named hospital's implementation.",
+      "source_id": "stg-src-1861-secularizacion-hospitales-edited",
+      "source_locator": "Articles 1–2, 7",
+      "poi_ids": [
+        "palacio-nacional",
+        "zocalo"
+      ],
+      "evidence_type": "legislative text through edited modern transcription",
+      "access_status": "relevant articles examined; original printing not examined",
+      "evidence_status": "Evidence-examined (transcription only)",
+      "independently_corroborated": false,
+      "editorial_review": "not_publication_ready",
+      "limitations": [
+        "law establishes prescription, not implementation",
+        "editorial transcription needs comparison with 1860/1861 printed edition"
+      ]
+    },
+    {
+      "finding_id": "stg-20261112T2359Z_REFORMA_LIBERTAD_CULTOS_CROSSWALK-F09",
+      "title": "Financial protections for secularized hospital assets",
+      "date": "1861-02-02",
+      "assertion": "The 1861 hospital decree kept estates, revenues and capital dedicated to the welfare establishments, preserved prior lawful property measures and regulated voluntary redemption/reinvestment of capital rather than simply ordering immediate liquidation.",
+      "source_id": "stg-src-1861-secularizacion-hospitales-edited",
+      "source_locator": "Articles 3–6",
+      "poi_ids": [
+        "palacio-nacional"
+      ],
+      "evidence_type": "legislative text through edited modern transcription",
+      "access_status": "relevant articles examined; original printing not examined",
+      "evidence_status": "Evidence-examined (transcription only)",
+      "independently_corroborated": false,
+      "editorial_review": "not_publication_ready",
+      "limitations": [
+        "law establishes prescription, not implementation",
+        "editorial transcription needs comparison with 1860/1861 printed edition"
+      ]
+    }
+  ],
+  "source_recovery": {
+    "previously_missing_ids": 20,
+    "affected_links": 60,
+    "metadata_identified": 20,
+    "remaining_unknown_ids": 0,
+    "existing_canonical_source_aliases": 1,
+    "other_staged_identities_pending_full_canonical_reconciliation": 19,
+    "source_ids_and_reference_counts": [
+      [
+        "STG-SRC-CARBALLO-2011-MOON-PYRAMID",
+        3
+      ],
+      [
+        "Rebecca Sload (2020), The Cave Beneath the Sun Pyramid, Teotihuacan",
+        2
+      ],
+      [
+        "stg-breadth2-inah-cathedral-window1",
+        2
+      ],
+      [
+        "stg-breadth2-inah-palace-window1",
+        2
+      ],
+      [
+        "stg-breadth2-inah-palace-window2",
+        1
+      ],
+      [
+        "stg-breadth2-inah-palace-window3",
+        1
+      ],
+      [
+        "stg-breadth2-inah-sagrario",
+        2
+      ],
+      [
+        "stg-src-1692-actas",
+        5
+      ],
+      [
+        "stg-src-1692-exbalin",
+        5
+      ],
+      [
+        "stg-src-1692-siguenza",
+        2
+      ],
+      [
+        "stg-src-cud-petition-1985",
+        5
+      ],
+      [
+        "stg-src-gaceta-unam-frias-2019",
+        3
+      ],
+      [
+        "stg-src-gonzalez-1985",
+        3
+      ],
+      [
+        "stg-src-massolo-1986",
+        6
+      ],
+      [
+        "stg-src-unam18-cnh",
+        3
+      ],
+      [
+        "stg-src-unam18-memorial",
+        1
+      ],
+      [
+        "stg-src-unam18-sept",
+        3
+      ],
+      [
+        "stg-src-unam18-zocalo",
+        5
+      ],
+      [
+        "stg-src-unam19-autonomy",
+        4
+      ],
+      [
+        "stg-src-unam19-radio",
+        2
+      ]
+    ]
+  },
+  "coverage_proposals": [
+    "Religion, law and public institutions: sparse -> developing",
+    "Health/charity administration: missing or sparse -> developing",
+    "Gender/family law and burial: sparse -> developing"
+  ],
+  "recovery_zip_name": "CDMX_STAGE_20261112T2359Z_REFORMA_LIBERTAD_CULTOS_CROSSWALK_COMPLETE.zip",
+  "warning": "Full cumulative SQLite and source-inspection metadata are preserved in recovery ZIP, not as canonical GitHub SQLite; main branch and live app must not be altered.",
+  "next_action": "Compare original 1860-61 printed laws; map staged source identities to canonical sources and perform conflict-checked transactional merge only after latest canonical manifest is readable"
+}
