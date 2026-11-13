@@ -1,8 +1,8 @@
 {
   "schema_version": 4,
   "kind": "research_to_app_handoff",
-  "generated_at": "2026-11-13T18:06:59.829Z",
-  "research_commit_sha": "fbdbd48c02a92ee08d1db7c8e67e8fbd87401288",
+  "generated_at": "2026-11-13T19:04:05.074Z",
+  "research_commit_sha": "2453a0545a41857a9392c5cab763d0b6baa9cb1c",
   "canonical_version": "V97",
   "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
   "canonical_status": "unchanged_provisional_V97_not_promoted",
@@ -14,15 +14,15 @@
     "source_inspections": 9
   },
   "staged_counts": {
-    "scope": "70 GitHub batches; 384 distinct assertion-bearing findings in noncanonical research staging",
-    "github_batches_replayed": 70,
-    "github_distinct_substantive_finding_ids": 384,
+    "scope": "71 GitHub batches; 392 distinct assertion-bearing findings in noncanonical research staging",
+    "github_batches_replayed": 71,
+    "github_distinct_substantive_finding_ids": 392,
     "github_index_only_refs_total": 23,
     "github_index_only_refs_unresolved": 1,
-    "raw_batch_documents_in_new_sqlite": 70,
-    "github_inspection_entries": 164,
-    "github_inspection_payload_rows": 164,
-    "github_source_candidates": 126,
+    "raw_batch_documents_in_new_sqlite": 71,
+    "github_inspection_entries": 166,
+    "github_inspection_payload_rows": 166,
+    "github_source_candidates": 128,
     "unknown_source_refs": 1,
     "unknown_source_refs_with_inspection_metadata": 0,
     "unknown_source_refs_without_inspection_metadata": 1,
@@ -35,15 +35,15 @@
     "source_id_provisional_recoveries_this_run": 0,
     "new_scholarly_source_candidate_records_this_run": 2,
     "new_source_inspection_metadata_this_run": 2,
-    "new_historical_finding_candidates_this_run": 9,
+    "new_historical_finding_candidates_this_run": 8,
     "full_original_scholarly_books_examined_this_run": 0,
     "original_government_document_machine_text_sections_examined_this_run": 0,
-    "curated_historic_photo_exhibit_partially_visually_examined_this_run": 1
+    "curated_historic_photo_exhibit_partially_visually_examined_this_run": 0
   },
-  "versioned_research_sqlite_gz_path": "research/reconciled/v4_fbdbd48c02a9/research_only.sqlite.gz",
-  "versioned_research_sha256": "71acb84a428f76233a546483609ba5da025b147a76ba64ba0d6b1c5c9cc53db2",
-  "compressed_sha256": "a6d2ae0b8cba74c85e96ee67e60793a0f63a5766874fd323e5b4ec0e50e20fcf",
-  "replay_report_path": "research/reconciled/v4_fbdbd48c02a9/replay_report.json",
+  "versioned_research_sqlite_gz_path": "research/reconciled/v4_2453a0545a41/research_only.sqlite.gz",
+  "versioned_research_sha256": "a0f2247fbbffa87eceebb8075bf63ee6060e19acbde44b26273edfcbde15a0fd",
+  "compressed_sha256": "9b171c2bfc555dbf97b5bc5b98bfd4629e5cc078246cd80596e06733e7f63ec1",
+  "replay_report_path": "research/reconciled/v4_2453a0545a41/replay_report.json",
   "reconciliation_artifact_paths": [
     "research/ledgers/20261113T051238Z-github-full-replay-verified.json",
     "research/reconciled/v4_fd07cfbc7f22/replay_report.json",
@@ -93,7 +93,10 @@
     "research/ledgers/20261113T1715Z-69-batch-replay-and-three-source-recovery.json",
     "research/ledgers/20261113T1803Z-reconciliation-69-batch-baseline-and-evidence.json",
     "research/reconciled/v4_fbdbd48c02a9/replay_report.json",
-    "research/reconciled/v4_fbdbd48c02a9/compressed_sha256.txt"
+    "research/reconciled/v4_fbdbd48c02a9/compressed_sha256.txt",
+    "research/ledgers/20261113T1858Z-1692-archival-voices-and-urban-aftermath-input-and-baseline-ledger.json",
+    "research/reconciled/v4_2453a0545a41/replay_report.json",
+    "research/reconciled/v4_2453a0545a41/compressed_sha256.txt"
   ],
   "chapter_audit_artifact_paths": [
     "research/audits/templo-mayor-discover-20261113.json",
@@ -108,7 +111,8 @@
     "research/audits/20261113T1510Z-1985-reconstruction-primary-legal-locators.json",
     "research/audits/20261113T1604Z-templo-mayor-historical-vs-site-reading-gates.json",
     "research/audits/templo-mayor-discover-20261113T1710Z-main-current-blob-claim-source-gates.json",
-    "research/audits/20261113T1803Z-templo-mayor-gamio-1913-1914-primary-gates.json"
+    "research/audits/20261113T1803Z-templo-mayor-gamio-1913-1914-primary-gates.json",
+    "research/audits/20261113T1858Z-1692-archival-voices-and-urban-aftermath-templo-mayor-chronology-boundary.json"
   ],
   "coverage_artifact_paths": [
     "research/coverage/coverage-matrix-20261113-compact.json",
@@ -125,17 +129,18 @@
     "research/coverage/20261113T1510Z-1985-legal-and-site-readiness.json",
     "research/coverage/20261113T1604Z-1985-design-heritage-urban-readiness.json",
     "research/coverage/20261113T1708Z-cross-period-place-explanatory-readiness.json",
-    "research/coverage/20261113T1803Z-early-excavations-site-readiness.json"
+    "research/coverage/20261113T1803Z-early-excavations-site-readiness.json",
+    "research/coverage/20261113T1858Z-1692-archival-voices-and-urban-aftermath-readiness.json"
   ],
   "evidence_status": {
-    "new_historical_finding_candidates_researched_this_run": 9,
+    "new_historical_finding_candidates_researched_this_run": 8,
     "recovered_legacy_source_identities_this_run": 0,
     "new_source_candidate_records_this_run": 2,
     "new_source_inspection_metadata_this_run": 2,
-    "historical_evidence": "Two directly screenshot-inspected 2023 Arqueología Mexicana articles with printed-page locators. Focus Batres 1900, 1913 demolition, Gamio May 1914–1916, Cuevas 1933, reuse of IVa serpent, public archaeology and modern buried-city mapping.",
-    "source_access": "AM178 printed pp.24–29,32–33; AM181 pp.16–20. Original Batres 1902, Gamio 1914 manuscript, Cuevas 1934 and sixth-season excavation catalogue NOT inspected. Historic image rights uncleared.",
+    "historical_evidence": "One complete machine-text extraction of Muriel (1998, printed pp.107–115) containing transcription of de la Fuente Salazar's 1693 manuscript plus online Sigüenza 1692 modern transcription. 8 differentiated colonial findings on food risk, eclipses, women's market labor, place chronology, fire, post-fire courts and Indigenous building labor. Not archival-manuscript inspection.",
+    "source_access": "Muriel 1998 complete PDF extracted text read; screenshots of PDF pp.5–6 attempted but failed HTTP 502. Sigüenza web transcription paragraphs/lines 13–60 read. AGN Templos y Conventos t.74 exp.4 fol.132ff and original Sigüenza manuscript NOT examined.",
     "independently_corroborated_new_findings": 0,
-    "high_priority_conflict": "Main reader says Gamio uncovered southwest corner in 1913; scholarly 2023 synthesis gives demolition planned in 1913 and exposure 6–16 May 1914. Original dated report still needed.",
+    "critical_source_constraint": "Eyewitness material appears within published scholarly transcription or edited web text. Do not call Muriel and the 1693 manuscript independent examinations; colonial categories and hostile witness bias require scrutiny.",
     "coverage_assessment": {
       "cells": 7,
       "developing": 4,
@@ -143,6 +148,7 @@
       "missing": 1,
       "substantial": 0
     },
+    "reader_linkage": "Main Templo Mayor reader re-read at blob fa46cf6054566adb6bf881e665eb102f2ee0e7c3. New 1692 material belongs to separate Zócalo/palace colonial chapter, NOT temple construction.",
     "ready_for_editorial_review": false,
     "publication_approved": false
   },
@@ -150,22 +156,22 @@
   "ready_for_publication": false,
   "canonical_promoted": false,
   "blockers": [
-    "One outstanding unregistered source reference is a proposed Sload botanical DATASET placeholder, not a verified scholarly publication",
-    "Two preexisting bibliographic metadata collisions still pending semantic review: STG-SRC-MANZANILLA-LOPEZ-FRETER-1996; v95-sload-cave-2020",
-    "9 possible detached inspection URL overlaps and 28 unmatched original inspection identities require scope review; source inspection metadata entries are not complete source examinations",
-    "1913 INEHRM exhibition reproduces archival photographs but originals, detailed geolocation and reproduction rights are not verified",
-    "Templo Mayor current prose still contains 1427/1428/1430 Alliance disagreement, Gamio 1913/1914 date conflict and requires original Book 12 and excavation plate locators",
-    "Colonial and 19th-century primary records remain under-examined including complete Granados 1847 thesis and 1985 RHP completion ledgers",
-    "Actual reader 1913 excavation wording conflicts with May 1914 archaeological discovery; original Gamio report, 1913 demolition papers and 1916 plan require inspection",
-    "Serpent-head reused across phases IVa–IVb: original sixth-season stratigraphic report and current site labels require independent check",
-    "Two inspected articles share López Luján as author, not independent corroboration; historical photographs and figures not rights-cleared"
+    "One outstanding source reference is the proposed Sload botanical DATASET placeholder (NOT a verified publication)",
+    "Two preexisting cross-batch source metadata collisions: STG-SRC-MANZANILLA-LOPEZ-FRETER-1996 and v95-sload-cave-2020",
+    "9 potential detached inspection URL overlaps and 28 no-match detached inspection identities still need semantic review",
+    "Neither the original 1693 AGN Templos y Conventos t.74 exp.4 fol.132ff manuscript nor the 1692 Sigüenza autograph or Robles diary has been examined for new colonial claims",
+    "Muriel 1998 pages were read through machine-extracted PDF; page screenshots failed (HTTP 502); verify against a scanned edition before editorial approval",
+    "Historical Plaza Mayor 1692 parcel footprints, current surviving architecture and first-person Indigenous testimonies remain unverified",
+    "Templo Mayor Alliance 1427/1428/1430, Gamio 1913/1914 original records, Book 12 conquest witnesses, and original 1978 documentation remain open",
+    "Historical photographs/art reproduction rights not cleared; no new source independent corroboration",
+    "Colonial/19th-century primary materials including Granados 1847 thesis and post-1985 housing completions remain to be examined"
   ],
-  "consumer_instruction": "RESEARCH ONLY: 70 GitHub batches, 384 staged assertions, 126 provisional source identities, 164 mixed-scope inspections. Canonical V97 616/422/403/68 unchanged. Nine source-located Gamio/Templo Mayor candidate findings NOT corroborated or approved. Do not modify main, auto-merge, republish or reuse photos. Reader 1913/1914 distinction needs editorial and original-document check.",
-  "immutable_handoff_path": "research/handoff/history/20261113T1803Z-gamio-dated-excavations-70-replay-verified.json",
-  "previous_manifest_generated_at": "2026-11-13T17:18:26.052Z",
-  "previous_manifest_blob_sha": "e1f138c3695f064ce3da50d3f3c612998506f781",
+  "consumer_instruction": "RESEARCH ONLY: 71 full GitHub batches, 392 staged historical assertions, 128 provisional source identities, 166 mixed-scope source inspections. Canonical V97 remains 616 sources / 422 claims / 403 links / 68 findings. Eight new 1692 page-located candidates are NOT independently corroborated or approved. Preserve staged source identities and scope. Do not modify main, merge, republish, or embed photos.",
+  "immutable_handoff_path": "research/handoff/history/20261113T1902Z-1692-eyewitness-71-batch-verified.json",
+  "previous_manifest_generated_at": "2026-11-13T18:06:59.829Z",
+  "previous_manifest_blob_sha": "ed1249cb5659bb8915e73110ec11eaae07af4ce8",
   "handoff_history_append_only": true,
-  "verified_replay_commit_sha": "d4d77f0dbb00376d2ee6b84d9e1f488c0ce689da",
+  "verified_replay_commit_sha": "7177f42da60d4e1e68c7c005c8761edba6566c24",
   "handoff_history_paths": [
     "research/handoff/history/20261113T0717Z-schema-tests-verified.json",
     "research/handoff/history/20261113T0812Z-detached37-replay-verified.json",
@@ -180,7 +186,8 @@
     "research/handoff/history/20261113T150603Z-1985-primary-legal-and-guerrero-readback.json",
     "research/handoff/history/20261113T1604Z-1985-rhp-heritage-five-identities-68-replay.json",
     "research/handoff/history/20261113T1718Z-1913-visual-history-69-batch-verified.json",
-    "research/handoff/history/20261113T1803Z-gamio-dated-excavations-70-replay-verified.json"
+    "research/handoff/history/20261113T1803Z-gamio-dated-excavations-70-replay-verified.json",
+    "research/handoff/history/20261113T1902Z-1692-eyewitness-71-batch-verified.json"
   ],
   "research_batch_artifact_paths": [
     "research/batches/20261113T0904Z-hospital-jesus-recovery-and-building-phases.json",
@@ -193,23 +200,24 @@
     "research/batches/20261113T1510Z-1985-legal-and-neighborhood-reconstruction.json",
     "research/batches/20261113T1604Z-1985-housing-architectural-outcomes-source-repair.json",
     "research/batches/20261113T1708Z-decena-photo-civilians-three-source-recovery.json",
-    "research/batches/20261113T1803Z-gamio-1914-urban-archaeology-source-audit.json"
+    "research/batches/20261113T1803Z-gamio-1914-urban-archaeology-source-audit.json",
+    "research/batches/20261113T1858Z-1692-archival-voices-and-urban-aftermath.json"
   ],
   "source_identity_crosswalk_path": "research/ledgers/20261113T1803Z-reconciliation-69-batch-baseline-and-evidence.json",
   "handoff_contract_status": "research_staged_not_canonical_not_editorial_approved",
   "replay_evidence": {
-    "github_replay_report_blob_sha": "7445fbfcba1b98930c4815e210fda65a3fff26d4",
-    "github_replay_binary_blob_sha": "6b26d52182da8fb3282b22675035972d86e0bb0c",
+    "github_replay_report_blob_sha": "3202401f33aa452a28cf1bc74c036d5a06a8a3bc",
+    "github_replay_binary_blob_sha": "7f94267e2db5ec1bed80a6eb5a941f0e45035610",
     "integrity": "ok",
     "foreign_key_violations": 0,
     "canonical_rows_unchanged": true,
     "original_tables_preserved": 88,
     "github_readback_verified": true,
-    "compressed_sha256": "a6d2ae0b8cba74c85e96ee67e60793a0f63a5766874fd323e5b4ec0e50e20fcf",
+    "compressed_sha256": "9b171c2bfc555dbf97b5bc5b98bfd4629e5cc078246cd80596e06733e7f63ec1",
     "source_inspection_url_matches_awaiting_review": 9,
-    "workflow_run_url": "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/43478955309",
+    "workflow_run_url": "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/43488330026",
     "workflow_status": "success",
-    "persistence_validation_url": "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/43478955434"
+    "persistence_validation_url": "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/43488329986"
   },
   "handoff_history_commit_sha": null,
   "immutable_handoff_blob_sha": "1c0e4b5f371fbc53de90b3d084e7367df4fa5002",
@@ -227,10 +235,12 @@
     "f24cc3d6f8e123f8cf3604dd97f18805a18263a0",
     "5aff89a193e3d847c20192ae5aa66e8f7cf686b0",
     "fbdbd48c02a92ee08d1db7c8e67e8fbd87401288",
-    "d4d77f0dbb00376d2ee6b84d9e1f488c0ce689da"
+    "d4d77f0dbb00376d2ee6b84d9e1f488c0ce689da",
+    "2453a0545a41857a9392c5cab763d0b6baa9cb1c",
+    "7177f42da60d4e1e68c7c005c8761edba6566c24"
   ],
-  "prior_handoff_history_commit_sha": null,
-  "research_pipeline_status": "69-batch full GitHub replay, validated immutable research staging, original canonical V97 preserved; editorial review and publication blocked",
-  "input_timestamp_note": "Input batch path label T1510Z was an intended batch identifier; GitHub immutable research commit is timestamped 2026-11-13T15:02:57Z. Do not interpret the label as proof of processing time.",
-  "verified_replay_commit_status": "snapshot path and on-branch object SHAs independently read back; exact GitHub Actions snapshot commit SHA not available in connector result"
+  "prior_handoff_history_commit_sha": "af6d33066ed1bef27136f12a3eb2deffb800bad5",
+  "research_pipeline_status": "71-batch full GitHub replay, new SQLite read back at verified snapshot commit; V97 unchanged; new 1692 colonial evidence staged only; publication blocked.",
+  "input_timestamp_note": "Batch filename T1858Z is a stable identifier, not a processing-time assertion. Input commit 2453a054 was created at or near 19:02 UTC; generated_at inside batch gives the actual capture timestamp.",
+  "verified_replay_commit_status": "GitHub Actions full replay and research persistence validation concluded success; new SQLite.gz GitHub blob SHA and report blob SHA read back; immutable snapshot was committed to research-persistence."
 }

@@ -1,0 +1,101 @@
+{
+  "schema_version": 4,
+  "kind": "immutable_research_to_app_handoff_snapshot",
+  "generated_at": "2026-11-13T19:04:05.074Z",
+  "branch": "research-persistence",
+  "research_commit_sha": "2453a0545a41857a9392c5cab763d0b6baa9cb1c",
+  "verified_replay_commit_sha": "7177f42da60d4e1e68c7c005c8761edba6566c24",
+  "canonical": {
+    "version": "V97",
+    "hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "status": "unchanged",
+    "counts": {
+      "sources": 616,
+      "claims": 422,
+      "links": 403,
+      "findings": 68
+    }
+  },
+  "previous_staging_counts": {
+    "batches": 70,
+    "findings": 384,
+    "sources": 126,
+    "inspections": 164
+  },
+  "verified_staging_counts": {
+    "batches": 71,
+    "findings": 392,
+    "sources": 128,
+    "inspections": 166,
+    "unknown_source_refs": 1,
+    "metadata_conflicts": 2
+  },
+  "delta": {
+    "batches": 1,
+    "findings": 8,
+    "source_candidates": 2,
+    "inspection_metadata": 2
+  },
+  "research_artifact_paths": [
+    "research/batches/20261113T1858Z-1692-archival-voices-and-urban-aftermath.json",
+    "research/ledgers/20261113T1858Z-1692-archival-voices-and-urban-aftermath-input-and-baseline-ledger.json"
+  ],
+  "coverage_artifact_paths": [
+    "research/coverage/20261113T1858Z-1692-archival-voices-and-urban-aftermath-readiness.json"
+  ],
+  "chapter_audit_artifact_paths": [
+    "research/audits/20261113T1858Z-1692-archival-voices-and-urban-aftermath-templo-mayor-chronology-boundary.json"
+  ],
+  "versioned_sqlite_gz_path": "research/reconciled/v4_2453a0545a41/research_only.sqlite.gz",
+  "sqlite_sha256": "a0f2247fbbffa87eceebb8075bf63ee6060e19acbde44b26273edfcbde15a0fd",
+  "compressed_sha256": "9b171c2bfc555dbf97b5bc5b98bfd4629e5cc078246cd80596e06733e7f63ec1",
+  "sqlite_blob_sha": "7f94267e2db5ec1bed80a6eb5a941f0e45035610",
+  "replay_report_path": "research/reconciled/v4_2453a0545a41/replay_report.json",
+  "verification": {
+    "sqlite_integrity": "ok",
+    "foreign_key_violations": 0,
+    "original_tables_preserved": 88,
+    "canonical_rows_unchanged": true,
+    "github_readback": true,
+    "full_replay_run_url": "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/43488330026",
+    "full_replay_status": "success",
+    "persistence_validation_run_url": "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/43488329986",
+    "persistence_validation_status": "success"
+  },
+  "evidence_status": {
+    "new_historical_finding_candidates_researched_this_run": 8,
+    "recovered_legacy_source_identities_this_run": 0,
+    "new_source_candidate_records_this_run": 2,
+    "new_source_inspection_metadata_this_run": 2,
+    "historical_evidence": "One complete machine-text extraction of Muriel (1998, printed pp.107–115) containing transcription of de la Fuente Salazar's 1693 manuscript plus online Sigüenza 1692 modern transcription. 8 differentiated colonial findings on food risk, eclipses, women's market labor, place chronology, fire, post-fire courts and Indigenous building labor. Not archival-manuscript inspection.",
+    "source_access": "Muriel 1998 complete PDF extracted text read; screenshots of PDF pp.5–6 attempted but failed HTTP 502. Sigüenza web transcription paragraphs/lines 13–60 read. AGN Templos y Conventos t.74 exp.4 fol.132ff and original Sigüenza manuscript NOT examined.",
+    "independently_corroborated_new_findings": 0,
+    "critical_source_constraint": "Eyewitness material appears within published scholarly transcription or edited web text. Do not call Muriel and the 1693 manuscript independent examinations; colonial categories and hostile witness bias require scrutiny.",
+    "coverage_assessment": {
+      "cells": 7,
+      "developing": 4,
+      "sparse": 2,
+      "missing": 1,
+      "substantial": 0
+    },
+    "reader_linkage": "Main Templo Mayor reader re-read at blob fa46cf6054566adb6bf881e665eb102f2ee0e7c3. New 1692 material belongs to separate Zócalo/palace colonial chapter, NOT temple construction.",
+    "ready_for_editorial_review": false,
+    "publication_approved": false
+  },
+  "ready_for_editorial_review": false,
+  "ready_for_publication": false,
+  "canonical_promoted": false,
+  "blockers": [
+    "One outstanding source reference is the proposed Sload botanical DATASET placeholder (NOT a verified publication)",
+    "Two preexisting cross-batch source metadata collisions: STG-SRC-MANZANILLA-LOPEZ-FRETER-1996 and v95-sload-cave-2020",
+    "9 potential detached inspection URL overlaps and 28 no-match detached inspection identities still need semantic review",
+    "Neither the original 1693 AGN Templos y Conventos t.74 exp.4 fol.132ff manuscript nor the 1692 Sigüenza autograph or Robles diary has been examined for new colonial claims",
+    "Muriel 1998 pages were read through machine-extracted PDF; page screenshots failed (HTTP 502); verify against a scanned edition before editorial approval",
+    "Historical Plaza Mayor 1692 parcel footprints, current surviving architecture and first-person Indigenous testimonies remain unverified",
+    "Templo Mayor Alliance 1427/1428/1430, Gamio 1913/1914 original records, Book 12 conquest witnesses, and original 1978 documentation remain open",
+    "Historical photographs/art reproduction rights not cleared; no new source independent corroboration",
+    "Colonial/19th-century primary materials including Granados 1847 thesis and post-1985 housing completions remain to be examined"
+  ],
+  "preceding_handoff_commit_sha": "af6d33066ed1bef27136f12a3eb2deffb800bad5",
+  "note": "Append-only history: research staging database integration is not editorial corroboration."
+}
