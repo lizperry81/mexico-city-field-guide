@@ -6,6 +6,29 @@ from pathlib import Path
 
 from check_research_handoff import OUT, safe_path, validate_versioned_handoff
 from editorial_passage_inventory import HistoryPassages
+from check_research_handoff import audit_matrix_explicitly_unapproved
+
+# Historical date disputes are review assignments. The producer's new
+# claim-to-source addendum must never authorize manuscript publication.
+date_contrast = {
+    "kind": "templo_mayor_discover_exact_prose_claim_to_source_locator_addendum",
+    "claim_to_source_locator_matrix": [{"locator": "INAH Huexotla history"}],
+    "publication_approved": False, "ready_for_editorial_review": False,
+    "main_modified": False,
+    "proposed_unpublished_historical_addition":
+        "Date of Triple Alliance formation requires original-source comparison.",
+}
+assert audit_matrix_explicitly_unapproved(date_contrast)
+for changed in (
+    {"publication_approved": True},
+    {"ready_for_editorial_review": True},
+    {"main_modified": True},
+    {"proposed_unpublished_historical_addition": ""},
+    {"claim_to_source_locator_matrix": []},
+    {"kind": "untrusted_approval_claim"},
+):
+    candidate = dict(date_contrast, **changed)
+    assert not audit_matrix_explicitly_unapproved(candidate), changed
 
 for unsafe in ("../site/index.html", "research/../../site/index.html",
                "/research/handoff/manifest.json", r"research\..\site"):
