@@ -1,0 +1,95 @@
+{
+  "schema_version": 4,
+  "kind": "immutable_research_batch_handoff",
+  "generated_at": "2026-11-13T17:17:32.918Z",
+  "research_commit_sha": "f4c7a5ae2eb8dd28a6358f2b64e4e993657695c9",
+  "branch": "research-persistence",
+  "previous_manifest_blob_sha": "c0e904a065095df4df4cc304b61c6f6a27f0ee00",
+  "canonical_version": "V97",
+  "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_status": "unchanged_provisional_V97_not_promoted",
+  "canonical_counts": {
+    "sources": 616,
+    "claims": 422,
+    "claim_source_links": 403,
+    "findings": 68,
+    "source_inspections": 9
+  },
+  "baseline_counts": {
+    "batches": 68,
+    "assertion_bearing_findings": 366,
+    "source_candidates": 120,
+    "source_inspection_metadata": 158,
+    "unregistered_source_ids": 4
+  },
+  "staged_counts": {
+    "batches": 69,
+    "assertion_bearing_findings": 375,
+    "source_candidates": 124,
+    "source_inspection_metadata": 162,
+    "unregistered_source_ids": 1,
+    "metadata_collisions": 2
+  },
+  "new_candidate_findings": 9,
+  "new_provisional_source_id_resolutions": 3,
+  "new_inspection_metadata": 4,
+  "new_source_candidate_records": 1,
+  "versioned_research_sqlite_gz_path": "research/reconciled/v4_f4c7a5ae2eb8/research_only.sqlite.gz",
+  "versioned_research_sha256": "6412fb3b8e65161ac7ed8c1295cf7f3b96ac299e468ab1fd027bd5a4c2501cf9",
+  "compressed_sha256": "06e26132fd31f3afd9f10c6cfa7ec0aebafd3802f718603825589c35d34e4847",
+  "replay_report_path": "research/reconciled/v4_f4c7a5ae2eb8/replay_report.json",
+  "replay_report_git_blob_sha": "61983ae7aa41a0129a721eb068ff9c5d508f6d0c",
+  "replay_binary_git_blob_sha": "1ea883ae1b30b04f08b5f44c62edfe581a903f7b",
+  "reconciliation_artifact_paths": [
+    "research/ledgers/20261113T1715Z-69-batch-replay-and-three-source-recovery.json"
+  ],
+  "research_batch_artifact_paths": [
+    "research/batches/20261113T1708Z-decena-photo-civilians-three-source-recovery.json"
+  ],
+  "chapter_audit_artifact_paths": [
+    "research/audits/templo-mayor-discover-20261113T1710Z-main-current-blob-claim-source-gates.json"
+  ],
+  "coverage_artifact_paths": [
+    "research/coverage/20261113T1708Z-cross-period-place-explanatory-readiness.json"
+  ],
+  "evidence_status": {
+    "historic_period": "1913 Mexican Revolution",
+    "new_findings_are": "source_linked_provisional_uncorroborated",
+    "original_historical_photographs_examined": false,
+    "curated_photo_reproductions_examined": true,
+    "source_photo_rights_cleared": false,
+    "ready_for_editorial_review": false,
+    "publication_approved": false,
+    "templo_mayor_current_main_blob_sha": "554967627ef9685aed68b64e511f15def00ab2d6",
+    "coverage_cells": {
+      "substantial": 0,
+      "developing": 9,
+      "sparse": 5,
+      "missing": 1
+    }
+  },
+  "verification": {
+    "sqlite_integrity": "ok",
+    "foreign_key_violations": 0,
+    "all_88_original_tables_preserved": true,
+    "canonical_rows_unchanged": true,
+    "versioned_db_git_readback": true,
+    "report_git_readback": true,
+    "gzip_sha_file_git_readback": true,
+    "github_replay_workflow_internal_persisted_sha256_check": true
+  },
+  "ready_for_editorial_review": false,
+  "ready_for_publication": false,
+  "canonical_promoted": false,
+  "main_modified": false,
+  "blockers": [
+    "One outstanding proposed Sload botanical DATASET placeholder is not an established citation; do not manufacture a registered scholarly publication",
+    "Two metadata collisions remain unmerged pending semantic comparison, including Manzanilla-López-Freter (1996) and Sload cave 2020",
+    "Nine possible detached-inspection URL overlaps and 28 unmatched original inspections require source-scope comparison, no source-count inflation",
+    "Current Templo Mayor reader's 1427/1428/1430 Alliance and Gamio 1913/1914 dates unresolved; direct primary locators pending",
+    "1913 photo originals and image permissions not checked; modern survival/geolocation of Avenida Berlín house and burned press office not established",
+    "1847 Granados thesis original and 1985 RHP actual completion/parcel records unexamined"
+  ],
+  "consumer_instruction": "Research-persistence only; 69 research batches, 375 assertion-bearing staged finding IDs, 162 mixed-scope inspection metadata records. No publication approval, no main merge; treat photos as unreleased research leads.",
+  "append_only": true
+}
