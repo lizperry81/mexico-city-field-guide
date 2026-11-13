@@ -44,33 +44,41 @@ def safe_path(path):
 
 
 def validate_versioned_handoff(manifest, immutable_manifest, snapshot_sha):
-    """Check complete immutable handoff; v3 appends provenance to the moving manifest.
+    """Verify complete immutable handoffs without accepting snapshot drift.
 
-    v2 used an exact copy. v3 adds metadata to the current manifest, but not the
-    immutable snapshot. Unknown or altered snapshot fields fail validation.
+    v2 required identical files. v3 permits either an inline immutable copy or
+    a base snapshot with explicit hash-bound provenance. v4 uses the inline,
+    byte-identical form: the complete record (including detached research
+    reconciliation flags) must be present in immutable Git history.
     """
     version = manifest.get("schema_version")
     if version == 2:
         if immutable_manifest != manifest:
             raise ValueError("Versioned v2 handoff differs from current manifest")
         return
-    if version != 3:
+    if version not in (3, 4):
         raise ValueError("Unsupported handoff schema")
     if not isinstance(snapshot_sha, str) or not HEX40.fullmatch(snapshot_sha):
         raise ValueError("Missing immutable snapshot blob SHA")
     if manifest.get("handoff_history_append_only") is not True:
-        raise ValueError("v3 handoff must record append-only history")
+        raise ValueError("Research handoff must record append-only history")
     previous = manifest.get("previous_manifest_blob_sha")
     if not isinstance(previous, str) or not HEX40.fullmatch(previous):
-        raise ValueError("v3 handoff missing previous manifest provenance")
+        raise ValueError("Research handoff missing previous manifest provenance")
     if not isinstance(manifest.get("previous_manifest_generated_at"), str):
-        raise ValueError("v3 handoff missing previous handoff date")
+        raise ValueError("Research handoff missing previous handoff date")
 
     # The research producer has two valid v3 encodings. Some snapshots have
     # manifest-only provenance plus an explicit immutable-blob hash. Other
     # snapshots include provenance IN the immutable copy itself and therefore
     # have identical Git blobs (with no extra hash field). Only accept that
     # second form on exact full-object equality; no unbound fields allowed.
+    if version == 4:
+        if "immutable_handoff_snapshot_sha" in manifest:
+            raise ValueError("v4 requires a complete inline-provenance snapshot")
+        if immutable_manifest != manifest:
+            raise ValueError("Versioned v4 handoff differs from immutable snapshot")
+        return
     if "immutable_handoff_snapshot_sha" not in manifest:
         if immutable_manifest != manifest:
             raise ValueError("Versioned inline-provenance v3 handoff differs")
@@ -88,7 +96,7 @@ def validate_versioned_handoff(manifest, immutable_manifest, snapshot_sha):
 
 def validate():
     manifest = git_json(RESEARCH_REF, MANIFEST_PATH)
-    if (manifest.get("schema_version") not in (2, 3)
+    if (manifest.get("schema_version") not in (2, 3, 4)
             or manifest.get("kind") != "research_to_app_handoff"):
         raise ValueError("Unrecognized research handoff schema")
     sha = manifest.get("research_commit_sha", "")
@@ -146,7 +154,7 @@ def validate():
     if immutable_manifest.get("research_commit_sha") != sha:
         raise ValueError("Versioned handoff snapshot points to a different research commit")
     validate_versioned_handoff(manifest, immutable_manifest, snapshot_blob_sha)
-    if manifest["schema_version"] == 3:
+    if manifest["schema_version"] in (3, 4):
         # Validate provenance against the actual previous committed manifest,
         # not merely a 40-character value copied into the new handoff.
         previous_blob = git("cat-file", "-p", manifest["previous_manifest_blob_sha"])
@@ -177,6 +185,72 @@ def validate():
                 or replay.get("status") != "research_database_staging_only_NOT_CANONICAL"
                 or replay.get("ready_for_publication") is not False):
             raise ValueError("Replayed research status or checksum is inconsistent")
+    # v4 preserves a larger cross-corpus research replay. It is NOT a
+    # publication-ready database: independently check the replay's identity,
+    # counts, staged-only status, conflicts and canonical preservation.
+    # This prevents a syntactically valid manifest from laundering altered
+    # counts or an accidentally promoted research snapshot.
+    staged_reconciliation = None
+    if manifest["schema_version"] == 4:
+        staged = manifest.get("staged_counts")
+        canonical = manifest.get("canonical")
+        evidence = manifest.get("evidence_status")
+        if not all(isinstance(x, dict) for x in (staged, canonical, evidence)):
+            raise ValueError("v4 requires staged, canonical and evidence provenance")
+        if (manifest.get("canonical_status") != "unchanged_provisional_V97_not_promoted"
+                or manifest.get("canonical_version") != "V97"
+                or manifest.get("canonical_hash") != replay.get("canonical_sha256")
+                or replay.get("staging_sha256") != manifest["canonical_hash"]
+                or replay.get("canonical_rows_unchanged") is not True
+                or replay.get("sqlite_integrity") != "ok"
+                or replay.get("foreign_key_violations") != 0
+                or replay.get("ready_for_editorial_review") is not False):
+            raise ValueError("v4 canonical preservation or staging integrity failed")
+        expected_canonical = {
+            "sources": "sources", "claims": "claims",
+            "claim_source_links": "claim_sources",
+            "findings": "canonical_findings",
+            "source_inspections": "canonical_source_inspections",
+        }
+        for handoff_key, replay_key in expected_canonical.items():
+            if (not isinstance(canonical.get(handoff_key), int)
+                    or canonical[handoff_key] !=
+                    replay.get("canonical_counts", {}).get(replay_key)):
+                raise ValueError("v4 canonical record counts differ from replay")
+        metric_map = {
+            "github_batches_replayed": "github_batch_json_files_examined",
+            "github_distinct_substantive_finding_ids": "github_candidate_finding_ids",
+            "github_index_only_refs_total": "index_only_finding_refs",
+            "github_index_only_refs_unresolved": "unresolved_index_only_count",
+            "raw_batch_documents_in_new_sqlite": "raw_batch_documents_in_sqlite",
+            "github_inspection_entries": "github_inspection_entries",
+            "github_source_candidates": "candidate_source_identities",
+            "source_metadata_collisions": "cross_batch_conflict_count",
+        }
+        for handoff_key, replay_key in metric_map.items():
+            if (not isinstance(staged.get(handoff_key), int)
+                    or staged[handoff_key] != replay.get(replay_key)):
+                raise ValueError("v4 staged count mismatch: " + handoff_key)
+        if (staged.get("unknown_source_refs") !=
+                len(replay.get("unknown_source_ids", []))
+                or staged.get("github_index_only_refs_unresolved") !=
+                len(replay.get("unresolved_index_only_ids", []))
+                or staged.get("external_staging_semantic_join_verified") is not False
+                or manifest.get("ready_for_editorial_review") is not False
+                or evidence.get("ready_for_editorial_review") is not False
+                or evidence.get("publication_approved") is not False):
+            raise ValueError("v4 unresolved evidence or approval status changed")
+        staged_reconciliation = {
+            "status": "verified_staged_not_canonical_or_editorially_approved",
+            "github_batches_replayed": staged["github_batches_replayed"],
+            "candidate_finding_ids": staged["github_distinct_substantive_finding_ids"],
+            "unresolved_index_only_refs": staged["github_index_only_refs_unresolved"],
+            "unresolved_source_refs": staged["unknown_source_refs"],
+            "source_metadata_collisions": staged["source_metadata_collisions"],
+            "detached_source_inspections_pending":
+                staged.get("detached_local_inspections_not_reconciled"),
+            "semantic_join_verified": False,
+        }
     audit = json.loads(bound_blob(manifest["chapter_audit_artifact_paths"][0]).decode("utf-8"))
     coverage = json.loads(bound_blob(manifest["coverage_artifact_paths"][0]).decode("utf-8"))
     if not isinstance(audit.get("claims"), list) or not isinstance(coverage.get("counts"), dict):
@@ -223,6 +297,9 @@ def validate():
         "audit_scope_limit": audit.get("scope_limit"),
         "coverage_status": coverage.get("status"),
         "coverage_counts": coverage["counts"],
+        "chapter_audit_artifact_paths": manifest["chapter_audit_artifact_paths"],
+        "coverage_artifact_paths": manifest["coverage_artifact_paths"],
+        "staged_reconciliation": staged_reconciliation,
         "artifact_checks": inspected,
         "unresolved": manifest.get("blockers", []),
         "review_queue_count": len(queue),
