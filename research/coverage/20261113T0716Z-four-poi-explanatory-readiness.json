@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-13T07:16:00Z",
+  "scope": "focused review, not replacement for 2,112-cell computational matrix",
+  "method": "Judge visitor-ready explanation, observable material evidence, chronology, Indigenous perspective and uncertainty; not the number of citations alone",
+  "cells": [
+    {
+      "period": "Mexica to 1521",
+      "theme": "archaeology and architecture",
+      "geography": "Templo Mayor",
+      "rating": "developing",
+      "why": "Construction stages and original/restored objects have evidence-backed physical prompts, but several claims lack excavation-level locators and exact chapter prose not audited",
+      "next": "Review field reports for IVa/IVb and the surviving features actually visible"
+    },
+    {
+      "period": "1519–1521",
+      "theme": "conflict and Indigenous alliances",
+      "geography": "Zócalo",
+      "rating": "sparse",
+      "why": "Conquest-related sources exist, but no complete place-grounded siege route or precise archaeological feature-to-claim mapping has been verified",
+      "next": "Reconcile Nahua narratives with excavation maps and siege chronology"
+    },
+    {
+      "period": "1521–1600",
+      "theme": "religion and urban rebuilding",
+      "geography": "Metropolitan Cathedral",
+      "rating": "developing",
+      "why": "INAH source staging records early construction and subsurface archaeology; full building phases and surviving features are insufficiently cross-checked",
+      "next": "Distinguish first post-conquest church, cathedral stages, atrium excavations and surviving older foundations"
+    },
+    {
+      "period": "1521–1821",
+      "theme": "government, public space and social conflict",
+      "geography": "National Palace and Zócalo",
+      "rating": "developing",
+      "why": "Colonial 1692 riot findings connect actors and the plaza, but original actas and competing eyewitness accounts lack exhaustive locator audit",
+      "next": "Verify archival chronology, participants, and physically visible colonial architectural layers"
+    }
+  ],
+  "substantial_promotions": 0,
+  "canonical_modified": false,
+  "ready_for_editorial_review": false
+}
