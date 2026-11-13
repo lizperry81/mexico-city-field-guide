@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "batch_id": "20261113T0647Z-detached-source-register-4",
+  "status": "recovered_metadata_from_previous_staging_not_new_inspection",
+  "detached_staging_sqlite_sha256": "fff6d249afb4f8c7773cde56c662227c885e2f274a7e088a18d5ba8687b68efe",
+  "canonical_modified": false,
+  "sources": [
+    {
+      "id": "stg-src-gaceta-unam-frias-2019",
+      "creator": "Leonardo Frías",
+      "title": "Resguarda la UNAM única serie radial del 68",
+      "publication": "Gaceta UNAM, 3 October 2019",
+      "year": 2019,
+      "url": "https://www.gaceta.unam.mx/resguarda-la-unam-unica-serie-radial-del-68/",
+      "access_scope": "Gaceta UNAM article examined in predecessor batch; original audio not heard"
+    },
+    {
+      "id": "stg-src-cnh-manifiesto-1968-dec5",
+      "creator": "Consejo Nacional de Huelga",
+      "title": "Manifiesto a la Nación: 2 de Octubre",
+      "publication": "El Día, 5 December 1968; Memoria Política de México edited transcript",
+      "year": 1968,
+      "url": "https://memoriapoliticademexico.org/Textos/6Revolucion/1968-M-CNH.html",
+      "access_scope": "full HTML transcription examined previously; original newspaper facsimile not inspected",
+      "locators": "Edited transcription paragraphs beginning El carácter antidemocrático; El Consejo Nacional de Huelga; Pese a las dificultades; Estos triunfos parciales"
+    },
+    {
+      "id": "stg-src-agn-vallejo-2021",
+      "creator": "Archivo General de la Nación, Mexico",
+      "title": "AGN Recuerda a Demetrio Vallejo, el ferrocarrilero que combatió el charrismo sindical y el corporativismo",
+      "publication": "AGN institutional historical article",
+      "year": 2021,
+      "url": "https://www.gob.mx/agn/articulos/agn-recuerda-a-demetrio-vallejo-el-ferrocarrilero-que-combatio-el-charrrismo-sindical-y-el-corporativismo?idiom=es",
+      "access_scope": "Institutional HTML article examined in predecessor batch; referenced prison records not examined",
+      "locators": "Closing paragraphs describing 29 July 1970 release"
+    },
+    {
+      "id": "stg-src-ficunam-cnh-comunicados",
+      "creator": "FICUNAM / UNAM",
+      "title": "Comunicados del Consejo Nacional de Huelga",
+      "publication": "Film festival catalogue of 1968 works",
+      "year": 1968,
+      "url": "https://ficunam.unam.mx/pelicula/comunicados-del-consejo-nacional-de-huelga/",
+      "access_scope": "Film catalogue metadata and synopsis examined in predecessor batch; footage/audio not viewed",
+      "locators": "Film metadata and Sinopsis Español"
+    }
+  ],
+  "source_inspections": [],
+  "findings": [],
+  "reason": "Restore four bibliographic identities referenced by 1968 findings recovered from detached local SQLite so GitHub importer does not leave introduced evidence links unresolved"
+}
