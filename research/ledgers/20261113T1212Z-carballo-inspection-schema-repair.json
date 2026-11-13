@@ -1,0 +1,30 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-11-13T12:12:00Z",
+  "kind": "source_resolution_identity_schema_followup",
+  "research_commit_reviewed": "df69ae48dd2ded2f31284aa8b951751a4f9832ce",
+  "replay_report_path": "research/reconciled/v4_df69ae48dd2d/replay_report.json",
+  "verified_replay_commit_sha": "41d69eae50108c2a76977233522f31a4094de873",
+  "canonical_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "current_counts": {
+    "github_batches": 63,
+    "staged_assertions": 342,
+    "inspection_rows": 136,
+    "candidate_sources": 89,
+    "missing_formal_source_registry_links": 14,
+    "metadata_only_source_matches": 12,
+    "unlocated_source_ids": 2
+  },
+  "unlocated_before": [
+    "PROPOSE_SOURCE_SLOAD_2020_BOTANICAL_DATASET_NOT_IN_CANONICAL",
+    "STG-SRC-CARBALLO-2011-MOON-PYRAMID"
+  ],
+  "repair_explanation": "The original Carballo 2011 batch uses a singular inspection object carrying source_id, original monograph title and selected pages. Previous importer ignored singular inspection. New change registers it only as inspection-derived metadata; it does not create a bibliographic record nor prove independent corroboration.",
+  "carballo_original_batch": "research/batches/20261112T130305Z-auto11-carballo-moon.json",
+  "other_unlocated_ref": "PROPOSE_SOURCE_SLOAD_2020_BOTANICAL_DATASET_NOT_IN_CANONICAL",
+  "other_unlocated_explanation": "A proposed placeholder bibliography/source identity, not an actual confirmed publication or primary dataset; must not fabricate metadata. Retain as blocked source repair.",
+  "expected_outcome": "After tested replay, 13 inspection-derived metadata matches and 1 unresolved placeholder, with 14 still formally unregistered source references until manual identity resolution",
+  "status": "pending_new_replay_verification",
+  "canonical_modified": false,
+  "ready_for_editorial_review": false
+}

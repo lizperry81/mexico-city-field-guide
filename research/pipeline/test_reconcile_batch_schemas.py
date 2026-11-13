@@ -126,6 +126,22 @@ class ReplaySchemaTests(unittest.TestCase):
         m=importer.embedded_source_candidates(x)
         self.assertEqual(m[0]["identity_basis"],"source_like_inspection_id_unconfirmed")
 
+    def test_carballo_legacy_inspection_is_not_lost(self):
+        obj={"inspection":{"id":"i1","source_id":"STG-SRC-CARBALLO-2011-MOON-PYRAMID",
+                           "title":"Obsidian and the Teotihuacan State",
+                           "url":"https://sites.pitt.edu/monograph.pdf"}}
+        self.assertEqual(len(importer.inspection_records(obj)),1)
+        matches=importer.embedded_source_candidates(obj)
+        self.assertEqual(matches[0]["source_id"],
+                         "STG-SRC-CARBALLO-2011-MOON-PYRAMID")
+        self.assertEqual(matches[0]["origin_field"],"inspection")
+
+    def test_generic_inspection_status_is_not_falsely_registered(self):
+        self.assertEqual(importer.inspection_records(
+            {"inspection":{"status":"PDF failed","error":"unavailable"}}),[])
+        self.assertEqual(importer.embedded_source_candidates(
+            {"inspection":{"status":"PDF failed","error":"unavailable"}}),[])
+
     def test_unknown_bare_inspection_id_not_mistaken_for_bibliographic_id(self):
         x={"source_inspections":[{"id":"inspection-001",
             "title":"An article","url":"https://example.edu"}]}

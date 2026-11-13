@@ -48,10 +48,20 @@ def source_records(obj):
                         result.append({"id":str(sid),**record})
     return result
 def inspection_records(obj):
-    """Capture multiple schema versions; do not confuse scalar counts with evidence."""
-    return key(obj,("source_inspections","source_inspection",
-                    "new_source_inspections","combined_source_inspections",
-                    "source_material_accessed"))
+    """Capture all actual inspection payloads, never scalar summary counts."""
+    result = key(obj, ("source_inspections", "source_inspection",
+                       "new_source_inspections", "combined_source_inspections",
+                       "source_material_accessed"))
+    # Some batches (e.g. Carballo 2011) use singular "inspection".
+    # Only accept it when it carries a source identity; do not consume generic
+    # review/status notes using the same label.
+    for record in listify(obj.get("inspection")):
+        if isinstance(record, dict) and (
+            isinstance(record.get("source_id"), str)
+            or isinstance(record.get("source"), dict)
+        ):
+            result.append(record)
+    return result
 def key(obj,keys):
     # Preserve every array and singleton; earlier version read only first matching key.
     result=[]
@@ -96,7 +106,7 @@ def embedded_source_candidates(obj):
     if not isinstance(obj, dict):
         return []
     result = []
-    for field in ("source_inspections", "source_inspection", "source_material_accessed"):
+    for field in ("source_inspections", "source_inspection", "source_material_accessed", "inspection"):
         for item in listify(obj.get(field)):
             if not isinstance(item, dict):
                 continue
