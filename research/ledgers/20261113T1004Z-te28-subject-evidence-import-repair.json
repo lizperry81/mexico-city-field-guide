@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "kind": "legacy_research_assertion_schema_repair",
+  "generated_at": "2026-11-13T10:04:00Z",
+  "baseline": "research/reconciled/v4_1fa98b60e49a/replay_report.json",
+  "baseline_canonical_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "pipeline_path": "research/pipeline/reconcile_git_batches.py",
+  "regression_tests": "research/pipeline/test_reconcile_batch_schemas.py",
+  "baseline_before": {
+    "batch_count": 60,
+    "substantive_unique_ids": 316,
+    "index_only_unresolved": 6,
+    "inspections": 122,
+    "unresolved_source_references": 14,
+    "source_metadata_collisions": 2
+  },
+  "affected_batch": "research/batches/20261112T0700Z-auto09-te28-2007.json",
+  "recoverable_assertion_ids": [
+    "20261112T0700Z-auto09-F01",
+    "20261112T0700Z-auto09-F02",
+    "20261112T0700Z-auto09-F03",
+    "20261112T0700Z-auto09-F04",
+    "20261112T0700Z-auto09-F05"
+  ],
+  "source_context": {
+    "inspection_id": "STG-SRC-SLOAD-2007-FAMSI-TE28",
+    "url": "https://www.famsi.org/reports/06017/06017Sload01.pdf",
+    "access_as_recorded_in_original_batch": "PDF printed pages 13–26, Tables 1–2, Figures 6, 10, 11 inspected visually by prior batch",
+    "current_run": "Parsed previously ingested source metadata; original PDF not re-inspected",
+    "limitation": "Shared source context via source batch path; exact row-level source foreign keys not established"
+  },
+  "normalization": "If a finding has no assertion/statement/claim/finding/text, but contains nonblank subject+evidence, index 'subject: evidence' as a research-only assertion; preserve original raw JSON and exact loc.",
+  "remaining_id": "STG20261111T1302Z-RECON-V87-PRIMARY-001",
+  "remaining_id_explanation": "This is documentary provenance repair, not itself a historical assertion. Remain index-only in historical table; treat as actionable source-link repair, not fabricated finding.",
+  "verification_status": "repository source readback verified; cumulative SQLite replay and output SHA readback pending",
+  "canonical_promoted": false,
+  "ready_for_editorial_review": false,
+  "warning": "Count changes after workflow must be read from the new replay report; this ledger documents expected source reclassification only"
+}
