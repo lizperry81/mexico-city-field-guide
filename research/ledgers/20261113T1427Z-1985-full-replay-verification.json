@@ -1,0 +1,70 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-11-13T14:15:56.305Z",
+  "kind": "post_github_replay_verified_reconciliation_ledger",
+  "branch": "research-persistence",
+  "research_commits": [
+    "f4d9c526bf59dadacad39d79c7b35d3dc8aafe7f",
+    "cf51ff15192e292eb8d11c504488e72dab59ddb1"
+  ],
+  "verified_replay_commit_sha": "b80900069ed4648ff81a2cd4c3ad89ce8b7bd2a0",
+  "github_action_url": "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/43440673973",
+  "github_validation_url": "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/43440673988",
+  "replay_report_path": "research/reconciled/v4_cf51ff15192e/replay_report.json",
+  "report_blob_sha": "6c66fd2fec5cca63b49aad508247b64cb9acf7cd",
+  "versioned_sqlite_path": "research/reconciled/v4_cf51ff15192e/research_only.sqlite.gz",
+  "versioned_sqlite_github_blob_sha": "54bb4ec68e84a01aad08fef94cebd793be42fabe",
+  "research_sqlite_sha256": "e0214e7717a954aaa8db88c819afd3c1302b9044c571bc5147b705e471592698",
+  "compressed_sha256": "92dd6c7dad1d4a611ca3c9ae14706a9d8469423ed361e0a5309726f905d59811",
+  "canonical_version": "V97",
+  "canonical_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "counts_before": {
+    "canonical_sources": 616,
+    "canonical_claims": 422,
+    "canonical_links": 403,
+    "canonical_findings": 68,
+    "batches": 64,
+    "distinct_assertions": 346,
+    "staged_source_candidates": 99,
+    "staged_inspection_metadata": 142,
+    "unknown_source_refs": 9,
+    "metadata_collisions": 2
+  },
+  "counts_after": {
+    "canonical_sources": 616,
+    "canonical_claims": 422,
+    "canonical_links": 403,
+    "canonical_findings": 68,
+    "batches": 66,
+    "distinct_assertions": 353,
+    "staged_source_candidates": 106,
+    "staged_inspection_metadata": 149,
+    "unknown_source_refs": 9,
+    "metadata_collisions": 2
+  },
+  "evidence_checks": {
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "original_canonical_tables_preserved": 88,
+    "original_canonical_rows_unchanged": true,
+    "gzip_validation_passed_by_workflow": true,
+    "git_readback_of_immutable_gzip_and_report": true
+  },
+  "changed_input_paths": [],
+  "new_history_findings": 7,
+  "new_staged_sources": 7,
+  "new_inspection_metadata": 7,
+  "primary_originals_examined": 0,
+  "independently_corroborated": 0,
+  "source_scope": "Published institution/journal article abstracts, not full articles or primary decrees",
+  "blockers": [
+    "9 unresolved source references, including proposed dataset placeholder",
+    "2 bibliographic collisions still unresolved",
+    "7 potential inspection URL overlaps require scope-based review",
+    "1985 original decrees, reconstruction agreement and full research articles not inspected",
+    "Templo Mayor 1427/1428/1430 institutional dating conflict and Gamio 1913–1914 primary-document gap"
+  ],
+  "canonical_promoted": false,
+  "ready_for_editorial_review": false,
+  "publication_approved": false
+}

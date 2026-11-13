@@ -1,0 +1,53 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-11-13T14:15:56.305Z",
+  "kind": "templo_mayor_discover_exact_prose_claim_to_source_locator_addendum",
+  "target_main_file": "poi/templo-mayor/reader.html",
+  "main_reader_blob_sha_verified_this_session": "3051c5b14f20a47048e3e8e512843ff5d3952211",
+  "prior_audit_path": "research/audits/templo-mayor-discover-20261113T1320Z-chapter-evidence-gates.json",
+  "claim_id": "TM-ALLIANCE-DATE-1427-1430",
+  "reader_anchor": "In the late 1420s, Tenochtitlan joined Texcoco and Tlacopan in the Triple Alliance.",
+  "topic": "1428 Triple Alliance opening narrative",
+  "claim_to_source_locator_matrix": [
+    {
+      "source": "INAH Huexotla archaeological site profile",
+      "url": "https://lugares.inah.gob.mx/es/node/4416",
+      "locator": "History section paragraphs starting 'Con la muerte de Tezozómoc en 1426' through 'conformada en 1427'",
+      "reported_date": 1427,
+      "source_kind": "institutional site historical interpretation HTML",
+      "access_scope": "Full public HTML history section inspected",
+      "does_not_establish": "A critically reconciled founding instrument or single undisputed year"
+    },
+    {
+      "source": "Frances Berdan, El tributo a la Triple Alianza, Arqueología Mexicana 124, pp.49–55",
+      "url": "https://arqueologiamexicana.mx/node/2250",
+      "locator": "Public article extract under 'La imposición del tributo', paragraphs 1–3",
+      "reported_date": 1430,
+      "source_kind": "scholar-authored public article extract; full printed article not accessed",
+      "access_scope": "Public HTML excerpt inspected",
+      "does_not_establish": "That 1430 disproves all other event conventions or fixes a single treaty date"
+    },
+    {
+      "source": "Current deployed-style reader prose",
+      "repository_path": "poi/templo-mayor/reader.html",
+      "blob_sha": "3051c5b14f20a47048e3e8e512843ff5d3952211",
+      "locator": "section #dossier-topic-3, first paragraph",
+      "reported_date": "late 1420s",
+      "source_kind": "target draft text, not a historical source",
+      "does_not_establish": "Independent evidence"
+    }
+  ],
+  "conflict": "INAH's Huexotla narrative dates formation to 1427 while a specialist's Arqueología Mexicana excerpt uses 1430; neither source here has yet been reconciled against the cited Nahua chronicles, Carrasco's full monograph, or the institutional meaning of formation vs postwar consolidation.",
+  "existing_reader_status": "The approximate 'late 1420s' phrasing is more defensible than changing to an unqualified 1428; no edit to main/app.",
+  "proposed_unpublished_historical_addition": "Explain the alliance as an outcome of the end of Tepanec hegemony and cooperation among Tenochtitlan, Tetzcoco and Tlacopan, with a dated sequence for war, installation of Tlacopan's role and consolidation only after chronicle comparison. Tie political coalition to tribute mobilization without implying that the temple stages were each funded by a single specific campaign.",
+  "next_verification": [
+    "Inspect full Frances Berdan article pp.49–55 and Pedro Carrasco chapter on tripartite structure",
+    "Compare Chimalpahin 1428/1430/1431 statements in critical editions with page and manuscript locators",
+    "Determine whether 1427/1428/1430 refer to different stages of conflict, alliance entry or retrospective dating",
+    "Keep the Triple Alliance source interpretation separate from Templo Mayor construction-layer assignment"
+  ],
+  "evidence_status": "corroborated_member_cities_but_date_discrepancy_unresolved",
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "main_modified": false
+}

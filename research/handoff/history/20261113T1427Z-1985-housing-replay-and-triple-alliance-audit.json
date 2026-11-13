@@ -1,0 +1,95 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-11-13T14:15:56.305Z",
+  "kind": "immutable_cross_automation_handoff_snapshot",
+  "branch": "research-persistence",
+  "previous_manifest_blob_sha": "f3b2a9a3f087bc61c2feef8673d05e3c5a0062cf",
+  "prior_manifest_generated_at": "2026-11-13T13:13:08Z",
+  "updated_manifest_path": "research/handoff/manifest.json",
+  "research_commit_sha": "cf51ff15192e292eb8d11c504488e72dab59ddb1",
+  "research_lineage_commits": [
+    "f4d9c526bf59dadacad39d79c7b35d3dc8aafe7f",
+    "cf51ff15192e292eb8d11c504488e72dab59ddb1"
+  ],
+  "verified_replay_commit_sha": "b80900069ed4648ff81a2cd4c3ad89ce8b7bd2a0",
+  "canonical": {
+    "version": "V97",
+    "hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "status": "unchanged_provisional_V97_not_promoted",
+    "counts": {
+      "sources": 616,
+      "claims": 422,
+      "claim_source_links": 403,
+      "findings": 68,
+      "source_inspections": 9
+    }
+  },
+  "staged_counts": {
+    "scope": "66 immutable GitHub research batches; 353 distinct research-only assertion-bearing IDs",
+    "github_batches_replayed": 66,
+    "github_distinct_substantive_finding_ids": 353,
+    "github_index_only_refs_total": 28,
+    "github_index_only_refs_unresolved": 1,
+    "raw_batch_documents_in_new_sqlite": 66,
+    "github_inspection_entries": 149,
+    "github_source_candidates": 106,
+    "unknown_source_refs": 9,
+    "source_metadata_collisions": 2,
+    "detached_local_staging_findings_table_rows": 118,
+    "detached_local_findings_ids_represented_by_full_github_assertions": 118,
+    "detached_local_inspections_not_reconciled": 0,
+    "external_staging_semantic_join_verified": false,
+    "github_inspection_payload_rows": 149,
+    "detached_original_inspection_rows_replayed": 37,
+    "detached_semantic_duplicate_assessment": "37/37 original rows durably ingested; 0 exact payload matches and 0 same-namespace source-ID matches found; no assertion of distinct fully examined sources",
+    "detached_source_url_candidates": 7,
+    "detached_source_identity_no_match": 30,
+    "detached_source_identity_review_pending": 37,
+    "unknown_source_refs_with_inspection_metadata": 13,
+    "unknown_source_refs_without_inspection_metadata": 1,
+    "embedded_inspection_source_metadata_rows": 57,
+    "unresolved_index_only_refs": 1,
+    "source_identity_provisional_from_prior_inspections_new_this_run": 0,
+    "new_1847_source_candidate_records_this_run": 0,
+    "source_inspection_metadata_added_this_run": 7,
+    "full_sources_newly_examined_this_run": 0,
+    "new_1985_housing_source_candidates_this_run": 7,
+    "new_housing_source_inspection_metadata_this_run": 7
+  },
+  "versioned_sqlite_path": "research/reconciled/v4_cf51ff15192e/research_only.sqlite.gz",
+  "versioned_sqlite_sha256": "e0214e7717a954aaa8db88c819afd3c1302b9044c571bc5147b705e471592698",
+  "compressed_sha256": "92dd6c7dad1d4a611ca3c9ae14706a9d8469423ed361e0a5309726f905d59811",
+  "chapter_audit_artifact_paths": [
+    "research/audits/templo-mayor-discover-20261113T1427Z-triple-alliance-dating-contrast.json"
+  ],
+  "coverage_artifact_paths": [
+    "research/coverage/20261113T1408Z-1985-housing-explanatory-readiness.json"
+  ],
+  "reconciliation_artifact_paths": [
+    "research/ledgers/20261113T1427Z-1985-full-replay-verification.json",
+    "research/reconciled/v4_cf51ff15192e/replay_report.json"
+  ],
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "blockers": [
+    "9 unresolved source references, including proposed dataset placeholder",
+    "2 bibliographic collisions still unresolved",
+    "7 potential inspection URL overlaps require scope-based review",
+    "1985 original decrees, reconstruction agreement and full research articles not inspected",
+    "Templo Mayor 1427/1428/1430 institutional dating conflict and Gamio 1913–1914 primary-document gap"
+  ],
+  "evidence_status": {
+    "new_historical_finding_candidates_researched_this_run": 7,
+    "new_source_candidate_records_this_run": 7,
+    "new_source_inspection_metadata_this_run": 7,
+    "new_primary_source_originals_examined": 0,
+    "independently_corroborated_new_findings": 0,
+    "source_access": "Six academic journal/book catalog or abstract records plus INAH indexed catalog abstract; no full original articles, decrees or complete books directly inspected this session",
+    "exact_published_style_main_reader_audited": true,
+    "reader_source_blob_sha": "3051c5b14f20a47048e3e8e512843ff5d3952211",
+    "high_priority_conflict": "Triple Alliance formation dated 1427 by INAH Huexotla and 1430 in Berdan public excerpt; 1428 not independently established. Gamio 1913/1914 still unresolved.",
+    "ready_for_editorial_review": false,
+    "publication_approved": false
+  },
+  "commit_history_append_only": true
+}
