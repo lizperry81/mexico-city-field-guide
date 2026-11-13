@@ -1,0 +1,424 @@
+{
+  "schema_version": 1,
+  "origin_tree_sha": "f830f14d98f3e00051c4f8c8d923ab7a02651f5a",
+  "total_batch_files": 56,
+  "chunk": 3,
+  "range": [
+    28,
+    41
+  ],
+  "files": [
+    {
+      "path": "research/batches/20261112T0700Z-auto09-te28-2007.json",
+      "blob_sha": "22225732c18323c2c2f7e188f43b7e54e9a2a6bd",
+      "entries": [
+        {
+          "id": "20261112T0700Z-auto09-F01",
+          "has_assertion": false
+        },
+        {
+          "id": "20261112T0700Z-auto09-F02",
+          "has_assertion": false
+        },
+        {
+          "id": "20261112T0700Z-auto09-F03",
+          "has_assertion": false
+        },
+        {
+          "id": "20261112T0700Z-auto09-F04",
+          "has_assertion": false
+        },
+        {
+          "id": "20261112T0700Z-auto09-F05",
+          "has_assertion": false
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261112T080125Z-auto09-te28-2009.json",
+      "blob_sha": "18182074aa73cb8b3e9d0a083fd143cc8a2788e9",
+      "entries": [
+        {
+          "id": "20261112T080125Z-auto09-F01",
+          "has_assertion": true
+        },
+        {
+          "id": "20261112T080125Z-auto09-F02",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261112T0902Z-auto09-moon-source-recovery.json",
+      "blob_sha": "d94c9902ae11621a0b9237bf43f70993148c2807",
+      "entries": [
+        {
+          "id": "STG-20261112-0902-MOON-01",
+          "has_assertion": true
+        },
+        {
+          "id": "STG-20261112-0902-MOON-02",
+          "has_assertion": true
+        },
+        {
+          "id": "STG-20261112-0902-MOON-03",
+          "has_assertion": true
+        },
+        {
+          "id": "STG-20261112-0902-MOON-04",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261112T100346Z-auto09-torras-source-reconciliation.json",
+      "blob_sha": "5a3213d97c2d6dcb4cf83d756377dce0ec2881b7",
+      "entries": [
+        {
+          "id": "STG-20261112T100346Z-MON-01",
+          "has_assertion": true
+        },
+        {
+          "id": "STG-20261112T100346Z-MON-02",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261112T1105Z-auto10-sload-ch8.json",
+      "blob_sha": "9cbe79f98a3ff8aee7111f0311eaf13024cb6a2f",
+      "entries": [
+        {
+          "id": "STG-20261112T1105Z-TEO-01",
+          "has_assertion": true
+        },
+        {
+          "id": "STG-20261112T1105Z-TEO-02",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261112T1203Z-auto11-mirror-photo.json",
+      "blob_sha": "7747894438d05e21e2a2dffc8857133f99b508c4",
+      "entries": [
+        {
+          "id": "STG-20261112T1203Z-F01",
+          "has_assertion": true
+        },
+        {
+          "id": "STG-20261112T1203Z-F02",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261112T130305Z-auto11-carballo-moon.json",
+      "blob_sha": "5529259e00f6f6b8f3bd17322dc59de1a29e4b66",
+      "entries": [
+        {
+          "id": "20261112T130305Z-auto11-carballo-moon-F01",
+          "has_assertion": true
+        },
+        {
+          "id": "20261112T130305Z-auto11-carballo-moon-F02",
+          "has_assertion": true
+        },
+        {
+          "id": "20261112T130305Z-auto11-carballo-moon-F03",
+          "has_assertion": true
+        },
+        {
+          "id": "20261112T130305Z-auto11-carballo-moon-F04",
+          "has_assertion": true
+        },
+        {
+          "id": "20261112T130305Z-auto11-carballo-moon-F05",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261112T140057Z-auto11-tlajinga-comp17.json",
+      "blob_sha": "de642a4273e897dcb03b498d80a92f7b9f45be63",
+      "entries": [
+        {
+          "id": "20261112T140057Z-auto11-tlajinga-comp17-F01",
+          "has_assertion": true
+        },
+        {
+          "id": "20261112T140057Z-auto11-tlajinga-comp17-F02",
+          "has_assertion": true
+        },
+        {
+          "id": "20261112T140057Z-auto11-tlajinga-comp17-F03",
+          "has_assertion": true
+        },
+        {
+          "id": "20261112T140057Z-auto11-tlajinga-comp17-F04",
+          "has_assertion": true
+        },
+        {
+          "id": "20261112T140057Z-auto11-tlajinga-comp17-F05",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261112T1501Z-auto11-cave-blockage-materials.json",
+      "blob_sha": "296b23d0b22adf88aa661ee27d08d243a88eb882",
+      "entries": [
+        {
+          "id": "20261112T1501Z-auto11-cave-blockage-materials-F01",
+          "has_assertion": true
+        },
+        {
+          "id": "20261112T1501Z-auto11-cave-blockage-materials-F02",
+          "has_assertion": true
+        },
+        {
+          "id": "20261112T1501Z-auto11-cave-blockage-materials-F03",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261112T1557Z-auto10-carballo-crosscheck.json",
+      "blob_sha": "8c04caf5c18aa6903d7da5192f54b8570e8a11c9",
+      "entries": [
+        {
+          "id": "20261112T1557Z-auto10-carballo-crosscheck-F01",
+          "has_assertion": true
+        },
+        {
+          "id": "20261112T1557Z-auto10-carballo-crosscheck-F02",
+          "has_assertion": true
+        },
+        {
+          "id": "20261112T1557Z-auto10-carballo-crosscheck-F03",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261112T165754Z-scheduled9-breadth-9e6d.json",
+      "blob_sha": "62e72d171d8a3dc995f009601f66350058a548e6",
+      "entries": [
+        {
+          "id": "stg-breadth2-01",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-breadth2-02",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-breadth2-03",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-breadth2-04",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-breadth2-05",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-breadth2-06",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-breadth2-07",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-breadth2-08",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-breadth2-09",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-breadth2-10",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-breadth2-11",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-breadth2-12",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-breadth2-13",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-breadth2-14",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261112T175903Z-auto9-71cf2.json",
+      "blob_sha": "2a18743ef074ff3e6f5c5dccee45aa1d599a2106",
+      "entries": [
+        {
+          "id": "stg-20261112T175903Z-auto9-71cf2-f01",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T175903Z-auto9-71cf2-f02",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T175903Z-auto9-71cf2-f03",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T175903Z-auto9-71cf2-f04",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T175903Z-auto9-71cf2-f05",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T175903Z-auto9-71cf2-f06",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T175903Z-auto9-71cf2-f07",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T175903Z-auto9-71cf2-f08",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T175903Z-auto9-71cf2-f09",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T175903Z-auto9-71cf2-f10",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T175903Z-auto9-71cf2-f11",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261112T1859Z-auto9-broadth-c61f.json",
+      "blob_sha": "9a7674fce14de78cc4c51eecf92cd09b73ba0fb0",
+      "entries": [
+        {
+          "id": "stg-20261112T1859Z-auto9-broadth-c61f-f01",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T1859Z-auto9-broadth-c61f-f02",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T1859Z-auto9-broadth-c61f-f03",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T1859Z-auto9-broadth-c61f-f04",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T1859Z-auto9-broadth-c61f-f05",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T1859Z-auto9-broadth-c61f-f06",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T1859Z-auto9-broadth-c61f-f07",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T1859Z-auto9-broadth-c61f-f08",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T1859Z-auto9-broadth-c61f-f09",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T1859Z-auto9-broadth-c61f-f10",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T1859Z-auto9-broadth-c61f-f11",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T1859Z-auto9-broadth-c61f-f12",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261112T195738Z-auto9-breadth-8ce5.json",
+      "blob_sha": "abb67110d22e9830a36f746d2cddab95df24c88b",
+      "entries": [
+        {
+          "id": "stg-20261112T195738Z-auto9-breadth-8ce5-f01",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T195738Z-auto9-breadth-8ce5-f02",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T195738Z-auto9-breadth-8ce5-f03",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T195738Z-auto9-breadth-8ce5-f04",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T195738Z-auto9-breadth-8ce5-f05",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T195738Z-auto9-breadth-8ce5-f06",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T195738Z-auto9-breadth-8ce5-f07",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T195738Z-auto9-breadth-8ce5-f08",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T195738Z-auto9-breadth-8ce5-f09",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T195738Z-auto9-breadth-8ce5-f10",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T195738Z-auto9-breadth-8ce5-f11",
+          "has_assertion": true
+        },
+        {
+          "id": "stg-20261112T195738Z-auto9-breadth-8ce5-f12",
+          "has_assertion": true
+        }
+      ]
+    }
+  ]
+}
