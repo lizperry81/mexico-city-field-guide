@@ -1,8 +1,8 @@
 {
   "schema_version": 4,
   "kind": "research_to_app_handoff",
-  "generated_at": "2026-11-13T14:17:00.074Z",
-  "research_commit_sha": "cf51ff15192e292eb8d11c504488e72dab59ddb1",
+  "generated_at": "2026-11-13T15:06:03.926Z",
+  "research_commit_sha": "73578e087cdb124533e23b1cfb30a19c7501f31a",
   "canonical_version": "V97",
   "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
   "canonical_status": "unchanged_provisional_V97_not_promoted",
@@ -14,21 +14,21 @@
     "source_inspections": 9
   },
   "staged_counts": {
-    "scope": "66 immutable GitHub research batches; 353 distinct research-only assertion-bearing IDs",
-    "github_batches_replayed": 66,
-    "github_distinct_substantive_finding_ids": 353,
+    "scope": "67 immutable GitHub research batches; 360 distinct research-only assertion-bearing IDs",
+    "github_batches_replayed": 67,
+    "github_distinct_substantive_finding_ids": 360,
     "github_index_only_refs_total": 23,
     "github_index_only_refs_unresolved": 1,
-    "raw_batch_documents_in_new_sqlite": 66,
-    "github_inspection_entries": 149,
-    "github_source_candidates": 106,
+    "raw_batch_documents_in_new_sqlite": 67,
+    "github_inspection_entries": 154,
+    "github_source_candidates": 111,
     "unknown_source_refs": 9,
     "source_metadata_collisions": 2,
     "detached_local_staging_findings_table_rows": 118,
     "detached_local_findings_ids_represented_by_full_github_assertions": 118,
     "detached_local_inspections_not_reconciled": 0,
     "external_staging_semantic_join_verified": false,
-    "github_inspection_payload_rows": 149,
+    "github_inspection_payload_rows": 154,
     "detached_original_inspection_rows_replayed": 37,
     "detached_semantic_duplicate_assessment": "37/37 original inspections durably ingested; 9 URL-only possible matches and 28 no automated candidate match. This is not proof of independent examination or unique bibliographic identities.",
     "detached_source_url_candidates": 9,
@@ -36,19 +36,22 @@
     "detached_source_identity_review_pending": 37,
     "unknown_source_refs_with_inspection_metadata": 8,
     "unknown_source_refs_without_inspection_metadata": 1,
-    "embedded_inspection_source_metadata_rows": 69,
+    "embedded_inspection_source_metadata_rows": 74,
     "unresolved_index_only_refs": 1,
     "source_identity_provisional_from_prior_inspections_new_this_run": 0,
     "new_1847_source_candidate_records_this_run": 0,
-    "source_inspection_metadata_added_this_run": 7,
+    "source_inspection_metadata_added_this_run": 5,
     "full_sources_newly_examined_this_run": 0,
     "new_1985_housing_source_candidates_this_run": 7,
-    "new_housing_source_inspection_metadata_this_run": 7
+    "new_housing_source_inspection_metadata_this_run": 7,
+    "new_1985_primary_document_source_candidates_this_run": 5,
+    "new_historical_finding_candidates_this_run": 7,
+    "official_legal_transcriptions_examined_this_run": 3
   },
-  "versioned_research_sqlite_gz_path": "research/reconciled/v4_cf51ff15192e/research_only.sqlite.gz",
-  "versioned_research_sha256": "e0214e7717a954aaa8db88c819afd3c1302b9044c571bc5147b705e471592698",
-  "compressed_sha256": "92dd6c7dad1d4a611ca3c9ae14706a9d8469423ed361e0a5309726f905d59811",
-  "replay_report_path": "research/reconciled/v4_cf51ff15192e/replay_report.json",
+  "versioned_research_sqlite_gz_path": "research/reconciled/v4_73578e087cdb/research_only.sqlite.gz",
+  "versioned_research_sha256": "a151ca2b4a895cfcdc591377e999246615112fa287a74481b096c592fb3315db",
+  "compressed_sha256": "ee5624e3e23a68b348f57de92319fc1d28a6c90092c8c2cd1fa3fc1c478bf163",
+  "replay_report_path": "research/reconciled/v4_73578e087cdb/replay_report.json",
   "reconciliation_artifact_paths": [
     "research/ledgers/20261113T051238Z-github-full-replay-verified.json",
     "research/reconciled/v4_fd07cfbc7f22/replay_report.json",
@@ -88,7 +91,9 @@
     "research/ledgers/20261113T1330Z-1847-civilian-five-source-identity-reconciliation.json",
     "research/ledgers/20261113T1427Z-1985-full-replay-verification.json",
     "research/reconciled/v4_cf51ff15192e/replay_report.json",
-    "research/ledgers/20261113T1436Z-replay-count-semantic-correction.json"
+    "research/ledgers/20261113T1436Z-replay-count-semantic-correction.json",
+    "research/reconciled/v4_73578e087cdb/replay_report.json",
+    "research/ledgers/20261113T1510Z-primary-legal-input-inventory.json"
   ],
   "chapter_audit_artifact_paths": [
     "research/audits/templo-mayor-discover-20261113.json",
@@ -99,7 +104,8 @@
     "research/audits/templo-mayor-discover-20261113T0910Z-read-before-vs-on-site-recheck.json",
     "research/audits/templo-mayor-reader-20261113T1058Z-exact-prose-audit.json",
     "research/audits/templo-mayor-discover-20261113T1320Z-chapter-evidence-gates.json",
-    "research/audits/templo-mayor-discover-20261113T1427Z-triple-alliance-dating-contrast.json"
+    "research/audits/templo-mayor-discover-20261113T1427Z-triple-alliance-dating-contrast.json",
+    "research/audits/20261113T1510Z-1985-reconstruction-primary-legal-locators.json"
   ],
   "coverage_artifact_paths": [
     "research/coverage/coverage-matrix-20261113-compact.json",
@@ -112,18 +118,19 @@
     "research/coverage/20261113T1058Z-centro-layered-city-readiness.json",
     "research/coverage/20261113T1200Z-1847-matrix-readiness.json",
     "research/coverage/20261113T1320Z-1847-civilian-source-recovery-explanatory-readiness.json",
-    "research/coverage/20261113T1408Z-1985-housing-explanatory-readiness.json"
+    "research/coverage/20261113T1408Z-1985-housing-explanatory-readiness.json",
+    "research/coverage/20261113T1510Z-1985-legal-and-site-readiness.json"
   ],
   "evidence_status": {
     "new_historical_finding_candidates_researched_this_run": 7,
-    "new_source_candidate_records_this_run": 7,
-    "new_source_inspection_metadata_this_run": 7,
-    "new_primary_source_originals_examined": 0,
+    "new_source_candidate_records_this_run": 5,
+    "new_source_inspection_metadata_this_run": 5,
+    "original_government_legal_texts_inspected": 3,
+    "new_primary_source_scanned_annexes_examined": 0,
+    "new_full_scholarly_monographs_examined": 0,
     "independently_corroborated_new_findings": 0,
-    "source_access": "Six academic journal/book catalog or abstract records plus INAH indexed catalog abstract; no full original articles, decrees or complete books directly inspected this session",
-    "exact_published_style_main_reader_audited": true,
-    "reader_source_blob_sha": "3051c5b14f20a47048e3e8e512843ff5d3952211",
-    "high_priority_conflict": "Triple Alliance formation dated 1427 by INAH Huexotla and 1430 in Berdan public excerpt; 1428 not independently established. Gamio 1913/1914 still unresolved.",
+    "source_access": "Three transcribed original Diario Oficial legal instruments inspected at clause level; the expropriation property-list image attachments and print facsimiles unexamined; BUAP thesis and Lincoln paper only public catalog/summary inspected.",
+    "high_priority_conflict": "1985 amended expropriation decree official legal recitals point to 21 October publication, but its own HTML footer reads Día 22; original issue scan not inspected. Site-specific Degollado 38 is a thesis title lead, not verified present-day building.",
     "ready_for_editorial_review": false,
     "publication_approved": false
   },
@@ -131,18 +138,21 @@
   "ready_for_publication": false,
   "canonical_promoted": false,
   "blockers": [
-    "9 unresolved source references, including proposed dataset placeholder",
-    "2 bibliographic collisions still unresolved",
-    "9 possible inspection URL overlaps require scope-based review",
-    "1985 original decrees, reconstruction agreement and full research articles not inspected",
-    "Templo Mayor 1427/1428/1430 institutional dating conflict and Gamio 1913–1914 primary-document gap"
+    "9 unregistered source references (8 with inspection metadata, one proposed dataset placeholder)",
+    "2 existing cross-batch bibliographic metadata collisions require manual reconciliation",
+    "9 possible detached-inspection URL overlaps require scope comparison (28 other detached records remain without automated match)",
+    "1 index-only provenance repair note unresolved as finding assertion; do not fabricate claim",
+    "October 1985 scanned expropriation property schedules not examined; source page footer vs later official issue date unresolved",
+    "1985 reconstruction named building at Degollado 38 only documented by BUAP thesis title, not independently verified on site",
+    "Original 14 October 1985 housing decree, Azuela full study and local housing delivery outcomes still unexamined",
+    "Templo Mayor Triple Alliance 1427/1428/1430 historiographical dating and Gamio 1913–1914 remain unresolved"
   ],
-  "consumer_instruction": "RESEARCH ONLY: 66 batches, 353 staged assertion-bearing IDs; canonical 616/422/403/68 unchanged. 7 new 1985 housing/organizing research candidates and one append-only INAH identity repair. No automatic merge, app publication, or canonical promotion. Templo Mayor exact-year 1427/1430 source conflict is unresolved; reader presently uses qualified late 1420s.",
-  "immutable_handoff_path": "research/handoff/history/20261113T1436Z-replay-semantic-correction.json",
-  "previous_manifest_generated_at": "2026-11-13T14:15:56.305Z",
-  "previous_manifest_blob_sha": "e632d6f0a6316758360a039c923dd91211c43ec4",
+  "consumer_instruction": "RESEARCH ONLY: 67 GitHub batches and 360 staged assertion-bearing finding IDs; V97 616/422/403/68 unchanged. 7 new 1985 legal/architecture findings, 5 provisional source IDs and 5 inspection records. Official legal transcriptions partially examined; scanned property rosters and print facsimiles not examined. No app/main merge, automatic canonical promotion or publication approval.",
+  "immutable_handoff_path": "research/handoff/history/20261113T150603Z-1985-primary-legal-and-guerrero-readback.json",
+  "previous_manifest_generated_at": "2026-11-13T14:17:00.074Z",
+  "previous_manifest_blob_sha": "8c6d4f87bb9f4b65a32c1a27b2e13dc2f3c74f32",
   "handoff_history_append_only": true,
-  "verified_replay_commit_sha": "b80900069ed4648ff81a2cd4c3ad89ce8b7bd2a0",
+  "verified_replay_commit_sha": "a5d9b61afe65b228dd0b5cfd12b55953345eccb5",
   "handoff_history_paths": [
     "research/handoff/history/20261113T0717Z-schema-tests-verified.json",
     "research/handoff/history/20261113T0812Z-detached37-replay-verified.json",
@@ -153,7 +163,8 @@
     "research/handoff/history/20261113T1215Z-1847-and-source-metadata-replay-verified.json",
     "research/handoff/history/20261113T1313Z-1847-popular-resistance-five-sources-64-replay.json",
     "research/handoff/history/20261113T1427Z-1985-housing-replay-and-triple-alliance-audit.json",
-    "research/handoff/history/20261113T1436Z-replay-semantic-correction.json"
+    "research/handoff/history/20261113T1436Z-replay-semantic-correction.json",
+    "research/handoff/history/20261113T150603Z-1985-primary-legal-and-guerrero-readback.json"
   ],
   "research_batch_artifact_paths": [
     "research/batches/20261113T0904Z-hospital-jesus-recovery-and-building-phases.json",
@@ -162,26 +173,33 @@
     "research/batches/20261113T1200Z-1847-urban-war-and-memorials.json",
     "research/batches/20261113T1302Z-1847-civilian-resistance-and-bibliographic-recovery.json",
     "research/batches/20261113T1408Z-1985-housing-policy-and-organizing.json",
-    "research/batches/20261113T1418Z-1985-inah-source-identity-link-repair.json"
+    "research/batches/20261113T1418Z-1985-inah-source-identity-link-repair.json",
+    "research/batches/20261113T1510Z-1985-legal-and-neighborhood-reconstruction.json"
   ],
   "source_identity_crosswalk_path": "research/ledgers/20261113T1427Z-1985-full-replay-verification.json",
   "handoff_contract_status": "research_staged_not_canonical_not_editorial_approved",
   "replay_evidence": {
-    "github_replay_report_blob_sha": "6c66fd2fec5cca63b49aad508247b64cb9acf7cd",
-    "github_replay_binary_blob_sha": "54bb4ec68e84a01aad08fef94cebd793be42fabe",
+    "github_replay_report_blob_sha": "687ec6ac5cb89f68aaf461b60c59bd8a6de02254",
+    "github_replay_binary_blob_sha": "58bf780929e1f5ee6101c0bc6918f7d0ae3ac55a",
     "integrity": "ok",
     "foreign_key_violations": 0,
     "canonical_rows_unchanged": true,
     "original_tables_preserved": 88,
     "github_readback_verified": true,
-    "verified_workflow_run_url": "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/43440673973",
+    "verified_workflow_run_url": "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/43448636450",
+    "validation_workflow_url": "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/43448636483",
+    "compressed_sha256": "ee5624e3e23a68b348f57de92319fc1d28a6c90092c8c2cd1fa3fc1c478bf163",
     "source_inspection_url_matches_awaiting_review": 9
   },
   "handoff_history_commit_sha": null,
   "immutable_handoff_blob_sha": "a18824d9615cf46d5e03b2030c6d2335d7a3db06",
   "research_lineage_commits": [
     "f4d9c526bf59dadacad39d79c7b35d3dc8aafe7f",
-    "cf51ff15192e292eb8d11c504488e72dab59ddb1"
+    "cf51ff15192e292eb8d11c504488e72dab59ddb1",
+    "73578e087cdb124533e23b1cfb30a19c7501f31a",
+    "a5d9b61afe65b228dd0b5cfd12b55953345eccb5"
   ],
-  "prior_handoff_history_commit_sha": "f6d7f4f971e44a16212da2b10ed387a49ed9ee60"
+  "prior_handoff_history_commit_sha": "f6d7f4f971e44a16212da2b10ed387a49ed9ee60",
+  "research_pipeline_status": "GitHub workflow complete replay with checksum and database integrity/readback; no promotion",
+  "input_timestamp_note": "Input batch path label T1510Z was an intended batch identifier; GitHub immutable research commit is timestamped 2026-11-13T15:02:57Z. Do not interpret the label as proof of processing time."
 }
