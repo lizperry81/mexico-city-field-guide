@@ -476,9 +476,25 @@ def validate():
                 # index-only references. Require the exact documented delta.
                 changes = immutable_manifest.get("changes", {})
                 restored = changes.get(
-                    "legacy_TE28_findings_reclassified_from_index_only_to_substantive", 0)
-                if (not isinstance(declared, int) or not isinstance(actual, int)
-                        or not isinstance(restored, int)
+                    "legacy_TE28_findings_reclassified_from_index_only_to_substantive")
+                if immutable_manifest.get("kind") == "verified_research_to_app_handoff_history":
+                    # The compact later handoff has no 'changes' section.
+                    # Recover the earlier TE28 reclassification ONLY from its
+                    # pinned, append-only historical record, not a guessed delta.
+                    te28_path = ("research/handoff/history/"
+                        "20261113T1004Z-te28-schema-repair-and-reform-urban-breadth.json")
+                    if te28_path not in manifest.get("handoff_history_paths", []):
+                        raise ValueError("v4 missing historical TE28 index-only repair")
+                    te28 = json.loads(bound_blob(te28_path).decode("utf-8"))
+                    if (te28.get("kind") != "append_only_research_handoff_snapshot"
+                            or te28.get("canonical_hash") != manifest.get("canonical_hash")
+                            or te28.get("publication_approved") is not False
+                            or te28.get("canonical_promoted") is not False):
+                        raise ValueError("v4 TE28 recovery history is not validated")
+                    restored = te28.get("changes", {}).get(
+                        "legacy_TE28_findings_reclassified_from_index_only_to_substantive")
+                if (type(declared) is not int or type(actual) is not int
+                        or type(restored) is not int or restored < 0
                         or declared != actual + restored):
                     raise ValueError("v4 index-only recovery totals unverified")
                 continue
