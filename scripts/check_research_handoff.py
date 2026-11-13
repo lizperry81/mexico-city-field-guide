@@ -381,18 +381,32 @@ def validate():
     coverage_gaps = []
     for coverage_path in manifest["coverage_artifact_paths"]:
         coverage_doc = json.loads(bound_blob(coverage_path).decode("utf-8"))
-        for cell in coverage_doc.get("cells", []):
-            if not all(isinstance(cell.get(key), str) and cell[key]
-                       for key in ("period", "theme", "geography", "rating", "why", "next")):
+        cells = coverage_doc.get("cells", [])
+        if not isinstance(cells, list):
+            raise ValueError("Malformed coverage cells: " + coverage_path)
+        for cell in cells:
+            if not isinstance(cell, dict):
+                raise ValueError("Malformed coverage cell: " + coverage_path)
+            # A focused POI assessment carries each period and site within
+            # its cell; a dated research-delta stores them on the parent
+            # document. Respect both without inventing missing research tasks.
+            period = cell.get("period") or coverage_doc.get("period")
+            geography = cell.get("geography") or coverage_doc.get("geography")
+            theme = cell.get("theme")
+            rating = cell.get("rating") or cell.get("new_rating")
+            explanation = cell.get("why") or cell.get("assessment")
+            next_task = cell.get("next") or cell.get("remaining_gap")
+            if not all(isinstance(value, str) and value
+                       for value in (period, theme, geography, rating, explanation)):
                 raise ValueError("Malformed private coverage gap: " + coverage_path)
             coverage_gaps.append({
                 "coverage_path": coverage_path,
-                "period": cell["period"],
-                "theme": cell["theme"],
-                "geography": cell["geography"],
-                "readiness": cell["rating"],
-                "explanation": cell["why"],
-                "research_needed": cell["next"],
+                "period": period,
+                "theme": theme,
+                "geography": geography,
+                "readiness": rating,
+                "explanation": explanation,
+                "research_needed": next_task,
                 "assigned_to_published_chapter": None,
                 "review_state": "awaiting_human_evidence_and_editorial_review",
                 "publication_authorization": False,
