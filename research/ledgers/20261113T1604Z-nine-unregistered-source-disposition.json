@@ -1,0 +1,72 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-11-13T16:04:09Z",
+  "kind": "non_destructive_source_identity_disposition",
+  "baseline_report_path": "research/reconciled/v4_73578e087cdb/replay_report.json",
+  "baseline_report_blob_sha": "687ec6ac5cb89f68aaf461b60c59bd8a6de02254",
+  "baseline_unregistered_source_references": 9,
+  "scope": "Eight have inspection metadata and one is an explicitly unconfirmed proposed data set; no silent aliasing, deduplication, inspection promotion, or canonical overwrite.",
+  "proposed_action": "Append five existing IDs as provisional sources, retaining the older inspection payloads. Four other author/work identities need full exact edition crosswalk; the Sload placeholder should not be manufactured into a publication.",
+  "dispositions": [
+    {
+      "id": "STG-SRC-BARNES-2024-MIRRORS",
+      "action": "provisional_source_record_from_original_inspection",
+      "evidence_path": "research/batches/20261112T1203Z-auto11-mirror-photo.json",
+      "reason": "Existing metadata provides author, title, publication, DOI, URL and inspected portions."
+    },
+    {
+      "id": "stg-src-leon-garduno-2021-beneficencia",
+      "action": "provisional_source_record_from_existing_material",
+      "evidence_path": "research/batches/20261113T0055Z_hospital_beneficencia_1b6a.json",
+      "reason": "Existing material access has PDF URL and printed-page scope; thesis metadata separately checked."
+    },
+    {
+      "id": "stg-src-unam-1861-compiled-laws",
+      "action": "provisional_source_record_bibliography_incomplete",
+      "evidence_path": "research/batches/20261113T0055Z_hospital_beneficencia_1b6a.json",
+      "reason": "Existing PDF link and referenced legal pages; edition/editor not confirmed, must not represent as original 1861 issue."
+    },
+    {
+      "id": "stg-src-lozada-munal-sanandres",
+      "action": "provisional_source_record_from_existing_material",
+      "evidence_path": "research/batches/20261113T0055Z_hospital_beneficencia_1b6a.json",
+      "reason": "Existing source URL and article by Guadalupe Lozada León."
+    },
+    {
+      "id": "stg-src-cdmx-hospital-jesus-guide",
+      "action": "provisional_source_record_from_existing_material",
+      "evidence_path": "research/batches/20261113T0055Z_hospital_beneficencia_1b6a.json",
+      "reason": "Existing city tourism guide URL is an institution-authored overview, not original hospital records."
+    },
+    {
+      "id": "STAGE-SRC-MCCLUNG-2025-LAQ",
+      "action": "hold_edition_crosswalk",
+      "reason": "Inspection-derived metadata exists, but exact bibliographic ID still needs matching with already registered source and original table access."
+    },
+    {
+      "id": "STG-SRC-MANZANILLA-2009-CHRONOLOGY",
+      "action": "hold_edition_crosswalk",
+      "reason": "Inspection metadata exists; check title, issue, full PDF and canonical counterpart before registering same item twice."
+    },
+    {
+      "id": "STG-SRC-SUGIYAMA-SUGIYAMA-SARABIA-2014-AM125",
+      "action": "hold_edition_crosswalk",
+      "reason": "Inspection metadata exists; verify edition and volume/page locator and alias ambiguity."
+    },
+    {
+      "id": "PROPOSE_SOURCE_SLOAD_2020_BOTANICAL_DATASET_NOT_IN_CANONICAL",
+      "action": "not_a_source_placeholder",
+      "reason": "Explicitly proposed dataset; no bibliographic object established. Keep referential gap visible; do not fabricate a citation."
+    }
+  ],
+  "expected_after_if_replayed": {
+    "original_unregistered_refs": 9,
+    "recovered_registered_source_candidates": 5,
+    "unresolved_refs_target": 4,
+    "editorially_confirmed_aliases": 0
+  },
+  "canonical_modified": false,
+  "source_merges_performed": 0,
+  "ready_for_editorial_review": false,
+  "publication_approved": false
+}
