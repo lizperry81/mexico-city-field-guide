@@ -1,0 +1,134 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-11-13T13:20:00Z",
+  "kind": "Templo_Mayor_Discover_editorial_evidence_gate_addendum",
+  "branch": "research-persistence",
+  "target_main_file": "poi/templo-mayor/reader.html",
+  "main_reader_blob_sha_rechecked": "3051c5b14f20a47048e3e8e512843ff5d3952211",
+  "previous_audit": "research/audits/templo-mayor-reader-20261113T1058Z-exact-prose-audit.json",
+  "verified_reader_blob_unchanged_since_previous_audit": true,
+  "audit_scope": "Seven opening-reader claim clusters, previous source locators plus two INAH institutional HTML source checks of 1978; archaeological original and original conquest texts not inspected",
+  "claim_to_source_locator_matrix": [
+    {
+      "topic": "Triple Alliance 1428",
+      "reader_anchor": "In the late 1420s",
+      "reader_paragraph": 16,
+      "claim": "The reader's late-1420s formation phrasing is defensible as provisional, but an exact 1428 statement must be tied to critical historiography and Nahua sources.",
+      "locators": [
+        "research/audits/templo-mayor-reader-20261113T1058Z-exact-prose-audit.json#claim_to_source[0]"
+      ],
+      "evidence": "Prior exact-prose audit; no full critical periodization source newly inspected",
+      "status": "needs_primary_and_secondary_source_comparison",
+      "draft_addition": "Explain which polities and tribute relations shifted once the Triple Alliance consolidated; do not state exact date as independently verified",
+      "gap": "Critical chapter/pages for Texcoco, Tenochtitlan and Tlacopan agreements and dating"
+    },
+    {
+      "topic": "Construction stages and ruler attributions",
+      "reader_anchor": "oldest excavated phase",
+      "reader_paragraph": 11,
+      "claim": "Excavated temple layers and late modifications are not one single construction episode; label stage II and IVb precisely only with archaeological plans and excavator attributions.",
+      "locators": [
+        "research/audits/templo-mayor-reader-20261113T1058Z-exact-prose-audit.json#claim_to_source[1]",
+        "https://lugares.inah.gob.mx/es/node/4463 (Etapa IVb and collector sections)"
+      ],
+      "evidence": "Earlier INAH institutional feature inventory; no new stratigraphic drawing inspected",
+      "status": "developing_no_publish",
+      "draft_addition": "Use a vertical stage cutaway next to physical site photo, with qualified ruler-stage attributions",
+      "gap": "Published plans, dates, floor-level access, images and source rights"
+    },
+    {
+      "topic": "Coatepec and Coyolxauhqui",
+      "reader_anchor": "At the foot of the south stair",
+      "reader_paragraph": 18,
+      "claim": "Coyolxauhqui's discovery and depicted dismemberment relate iconographically to Coatepec; the myth is not evidence that a specific ceremony happened at every staircase phase.",
+      "locators": [
+        "https://www.inah.gob.mx//boletines/con-teatro-y-talleres-festejaran-el-aniversario-del-hallazgo-del-monolito-de-la-diosa-coyolxauhqui (16 Feb 2024, myth and discovery passages)",
+        "research/audits/templo-mayor-reader-20261113T1058Z-exact-prose-audit.json#claim_to_source[2]"
+      ],
+      "evidence": "INAH institutional summary reviewed 2026-11-13; previous reader audit",
+      "status": "myth_archaeology_distinction_required",
+      "draft_addition": "Locate the image at the foot of the south/Huitzilopochtli stair, distinguishing outdoor copy and museum-held original",
+      "gap": "Original physical find context and iconographic interpretations with published pages"
+    },
+    {
+      "topic": "Conquest, 1520-1521 and later reuse",
+      "reader_anchor": "Spaniards dismantled",
+      "reader_paragraph": 28,
+      "claim": "Avoid collapsing Tóxcatl 1520, fall of Tenochtitlan 1521 and later dismantling/reuse into a single event.",
+      "locators": [
+        "research/audits/templo-mayor-reader-20261113T1058Z-exact-prose-audit.json#claim_to_source[3-4]"
+      ],
+      "evidence": "Previous provenance audit only; no new primary conquest source examined",
+      "status": "needs_critical_sources",
+      "draft_addition": "One chronology line for May 1520, siege and August 1521, then colonial building/reuse rather than instant disappearance",
+      "gap": "Nahua and Spanish accounts of Tóxcatl, survey of colonial archaeological reuse"
+    },
+    {
+      "topic": "1913 versus 1914 Manuel Gamio",
+      "reader_anchor": "In 1913, archaeologist Manuel Gamio uncovered",
+      "reader_paragraph": 31,
+      "claim": "Unqualified 1913 reader date conflicts with an INAH-published 1914 identification chronology; maintain as unresolved.",
+      "locators": [
+        "https://revistas.inah.gob.mx/index.php/boletinmonumentos/article/download/12890/14004/25723 (Sánchez Reyes 2017; prior text-examined PDF, originally cited pp.5–6,10,13,16–17)",
+        "research/audits/templo-mayor-reader-20261113T1058Z-exact-prose-audit.json#claim_to_source[5]"
+      ],
+      "evidence": "Previous INAH secondary study from PDF text only, no original Gamio field report; PDF screenshot not obtained in prior run",
+      "status": "historical_chronology_conflict_blocker",
+      "draft_addition": "Say 'excavations during 1913–1914' provisionally pending the original report, not an invented exact discovery day",
+      "gap": "Gamio original excavation report and demolition permits"
+    },
+    {
+      "topic": "1978 Coyolxauhqui find and archaeology program",
+      "reader_anchor": "In February 1978",
+      "reader_paragraph": 31,
+      "claim": "INAH places the discovery on 21 February 1978 during Luz y Fuerza work at the Argentina/Guatemala streets area; the first rescue operation and later Proyecto Templo Mayor are distinct stages.",
+      "locators": [
+        "https://www.inah.gob.mx/boletines/el-museo-del-templo-mayor-celebra-los-45-anos-del-descubrimiento-de-coyolxauhqui (20 Feb 2023, first history paragraphs)",
+        "https://templomayor.inah.gob.mx/historia/proyecto-templo-mayor (project opening paragraph)"
+      ],
+      "evidence": "Two separate INAH institutional HTML/excerpts read this session; not two independent excavation witnesses",
+      "status": "institutional_sources_consistent_unapproved",
+      "draft_addition": "Name the day, utility workers and approximate street area, then distinguish initial INAH salvage excavation from later multiseason project",
+      "gap": "Original rescue report, exact street coordinates, excavator logs, rights-cleared photos"
+    },
+    {
+      "topic": "Visible modern archaeological intrusion",
+      "reader_anchor": "not present in reader",
+      "reader_paragraph": null,
+      "claim": "The circa-1900 brick collector crosses excavation layers; it belongs to modern infrastructure history, not Mexica engineering.",
+      "locators": [
+        "https://lugares.inah.gob.mx/es/node/4463 (Colector de agua, stage IV/V)",
+        "research/audits/templo-mayor-reader-20261113T1058Z-exact-prose-audit.json#claim_to_source[8]"
+      ],
+      "evidence": "Prior INAH site record only, on-site current visibility not inspected",
+      "status": "field_visibility_unverified",
+      "draft_addition": "Potential 'look beneath the walkway' prompt ONLY after site sightline and accessibility verified",
+      "gap": "Current on-site visibility, constraints and phase plan"
+    }
+  ],
+  "source_inspections_this_run": [
+    {
+      "url": "https://www.inah.gob.mx/boletines/el-museo-del-templo-mayor-celebra-los-45-anos-del-descubrimiento-de-coyolxauhqui",
+      "document_published": "2023-02-20",
+      "portion": "Discovery chronology and named city streets",
+      "scope": "Published INAH institutional article HTML indexed content; not underlying excavation field report"
+    },
+    {
+      "url": "https://templomayor.inah.gob.mx/historia/proyecto-templo-mayor",
+      "portion": "Intro on discovery, rescue and project",
+      "scope": "INAH institutional project history HTML; not original rescue paperwork"
+    }
+  ],
+  "proposed_text_is_not_approved": true,
+  "ready_for_editorial_review": false,
+  "ready_for_publication": false,
+  "main_or_app_modified": false,
+  "blockers": [
+    "Original Gamio 1913/14 report still unexamined",
+    "No fully reviewed 1428 political chronology",
+    "No independent stratigraphic period-to-ruler verification",
+    "Coyolxauhqui on-site replica and collector line of sight not checked",
+    "Conquest Nahua and Spanish accounts require full locators",
+    "Imagery rights not cleared"
+  ]
+}
