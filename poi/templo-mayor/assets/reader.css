@@ -94,7 +94,10 @@ figcaption a { white-space: normal; }
   border-radius: 0 7px 7px 0;
 }
 .sidebar p { margin: 8px 0 0; }
-summary { width: fit-content; color: var(--jade); font-weight: 700; cursor: pointer; }
+summary { width: fit-content; color: var(--jade); font-weight: 700; cursor: pointer; min-height: 44px; padding: 9px 0; }
+.orientation-links { padding-left: 1.35rem; margin: .2rem 0 1rem; }
+.orientation-links li { padding: 2px 0; }
+.orientation-links a { display: inline-flex; align-items: center; min-height: 44px; line-height: 1.35; }
 
 .walk-stop { margin-top: 12px; }
 .walk-stop h3 { font: 700 1.62rem/1.2 Georgia, serif; }
