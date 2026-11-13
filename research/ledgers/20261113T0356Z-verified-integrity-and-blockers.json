@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "run": "20261113T0356Z",
+  "completed_at": "2026-11-13T04:12:00Z",
+  "canonical": {
+    "version": "V97",
+    "sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "status": "unchanged_not_promoted",
+    "sources": 616,
+    "claims": 422,
+    "claim_source_relationships": 403,
+    "findings": 68,
+    "source_inspections": 9
+  },
+  "local_versioned_research": {
+    "previous_sha256": "82d837596ed6c52f8268882e9718539f89dd68425295af101d3df65f4ced7a08",
+    "new_sha256": "fff6d249afb4f8c7773cde56c662227c885e2f274a7e088a18d5ba8687b68efe",
+    "old_tables_preserved": 104,
+    "old_tables_mutated": 0,
+    "integrity_check": "ok",
+    "foreign_key_errors": 0,
+    "previous_distinct_staged_candidate_ids": 147,
+    "new_finding_ids_added": 10,
+    "result_distinct_staged_candidate_ids": 157,
+    "source_register_records_added": 4,
+    "source_inspection_records_added": 4,
+    "canonical_promoted": false,
+    "published": false,
+    "committed_binary_to_github": false,
+    "persistent_library_upload": "FAILED Invalid FileDrive root"
+  },
+  "github_provenance_audit": {
+    "prior_github_batch_json_files": 54,
+    "prior_finding_like_entries": 286,
+    "substantive_text_entries": 266,
+    "index_only_or_missing_statement_entries": 20,
+    "prior_distinct_finding_ids": 286,
+    "new_batch_committed_path": "research/batches/20261113T0356Z-1692-grain-riot-colonial-politics.json",
+    "current_github_batch_file_count_expected": 55,
+    "full_github_replay_into_sqlite": false,
+    "manifest_slices": 8,
+    "full_audit": "research/ledgers/20261113T0356Z-all-github-batches-audit.json"
+  },
+  "coverage": {
+    "cells": 2112,
+    "manual_cells_reviewed": 5,
+    "ratings_changed_to_developing": 4,
+    "substantial_promotions": 0,
+    "github_delta": "research/coverage/20261113T0356Z-colonial-1692-coverage-delta.json"
+  },
+  "evidence": {
+    "new_findings": 10,
+    "full_secondary_html_examined": 1,
+    "abstract_only_sources_examined": 3,
+    "primary_manuscripts_examined": 0,
+    "new_independent_corroborations_confirmed": 0,
+    "editorial_review_complete": false,
+    "poi_ids": [
+      "zocalo",
+      "national_palace",
+      "metropolitan_cathedral"
+    ]
+  },
+  "blockers": [
+    "Complete 55-file raw GitHub JSON replay into cumulative SQLite not executed: only all 54 preceding batches audited and index entries recorded",
+    "Binary SQLite durable upload failed with Invalid FileDrive root; local ZIP remains recovery only",
+    "20 index-only entries contain no original statement in GitHub JSON; original linked archive must be reconciled before substantive promotion",
+    "19 prior source identity candidates require canonical crosswalk; no automatic duplicate merges",
+    "Sentence-by-sentence Templo Mayor Discover prose remains unavailable; no editorial promotion"
+  ]
+}
