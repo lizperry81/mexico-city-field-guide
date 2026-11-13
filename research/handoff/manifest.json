@@ -1,8 +1,8 @@
 {
   "schema_version": 4,
   "kind": "research_to_app_handoff",
-  "generated_at": "2026-11-13T11:07:00Z",
-  "research_commit_sha": "e8c361ad6f38559c8786e01468a5c6fb4ec74dcb",
+  "generated_at": "2026-11-13T12:15:00Z",
+  "research_commit_sha": "0486c099fac2c5dbdc326016c214ddfb46d9b20d",
   "canonical_version": "V97",
   "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
   "canonical_status": "unchanged_provisional_V97_not_promoted",
@@ -14,31 +14,34 @@
     "source_inspections": 9
   },
   "staged_counts": {
-    "scope": "62 immutable GitHub research batches; 336 substantive research-only staged finding identifiers",
-    "github_batches_replayed": 62,
-    "github_distinct_substantive_finding_ids": 336,
+    "scope": "63 immutable GitHub research batches; 342 assertion-bearing staged finding IDs, all research-only",
+    "github_batches_replayed": 63,
+    "github_distinct_substantive_finding_ids": 342,
     "github_index_only_refs_total": 28,
     "github_index_only_refs_unresolved": 1,
-    "raw_batch_documents_in_new_sqlite": 62,
-    "github_inspection_entries": 131,
-    "github_source_candidates": 84,
+    "raw_batch_documents_in_new_sqlite": 63,
+    "github_inspection_entries": 137,
+    "github_source_candidates": 89,
     "unknown_source_refs": 14,
     "source_metadata_collisions": 2,
     "detached_local_staging_findings_table_rows": 118,
     "detached_local_findings_ids_represented_by_full_github_assertions": 118,
     "detached_local_inspections_not_reconciled": 0,
     "external_staging_semantic_join_verified": false,
-    "github_inspection_payload_rows": 131,
+    "github_inspection_payload_rows": 137,
     "detached_original_inspection_rows_replayed": 37,
     "detached_semantic_duplicate_assessment": "37/37 original rows durably ingested; 0 exact payload matches and 0 same-namespace source-ID matches found; no assertion of distinct fully examined sources",
     "detached_source_url_candidates": 7,
     "detached_source_identity_no_match": 30,
-    "detached_source_identity_review_pending": 37
+    "detached_source_identity_review_pending": 37,
+    "unknown_source_refs_with_inspection_metadata": 13,
+    "unknown_source_refs_without_inspection_metadata": 1,
+    "embedded_inspection_source_metadata_rows": 57
   },
-  "versioned_research_sqlite_gz_path": "research/reconciled/v4_e8c361ad6f38/research_only.sqlite.gz",
-  "versioned_research_sha256": "d74fc3e58bda857e77cf43dcd24b52e5fdda910dde5a452bde63b64553e26aad",
-  "compressed_sha256": "d532843a71449b1db104b2dc97f46e63e2c6a08c29550cf45535127800b3ac11",
-  "replay_report_path": "research/reconciled/v4_e8c361ad6f38/replay_report.json",
+  "versioned_research_sqlite_gz_path": "research/reconciled/v4_0486c099fac2/research_only.sqlite.gz",
+  "versioned_research_sha256": "0f769e2cda927b2a73518628f4d54580d5c13329a40f9530b66380596f373d9c",
+  "compressed_sha256": "1c5b8f8e6ba33e1f213746d39aead9e66070ffbb5ff351ac0a8f3d9e7bbae325",
+  "replay_report_path": "research/reconciled/v4_0486c099fac2/replay_report.json",
   "reconciliation_artifact_paths": [
     "research/ledgers/20261113T051238Z-github-full-replay-verified.json",
     "research/reconciled/v4_fd07cfbc7f22/replay_report.json",
@@ -71,7 +74,9 @@
     "research/ledgers/20261113T1004Z-te28-subject-evidence-import-repair.json",
     "research/reconciled/v4_e8c361ad6f38/replay_report.json",
     "research/reconciled/v4_e8c361ad6f38/compressed_sha256.txt",
-    "research/ledgers/20261113T1058Z-pre-replay-evidence-inventory.json"
+    "research/ledgers/20261113T1058Z-pre-replay-evidence-inventory.json",
+    "research/reconciled/v4_0486c099fac2/replay_report.json",
+    "research/ledgers/20261113T1215Z-verified-source-identity-crosswalk.json"
   ],
   "chapter_audit_artifact_paths": [
     "research/audits/templo-mayor-discover-20261113.json",
@@ -90,15 +95,16 @@
     "research/coverage/20261113T0716Z-four-poi-explanatory-readiness.json",
     "research/coverage/20261113T0904Z-hospital-jesus-chronology-thematic-geographic-readiness.json",
     "research/coverage/20261113T1004Z-reform-munal-reforma-readiness.json",
-    "research/coverage/20261113T1058Z-centro-layered-city-readiness.json"
+    "research/coverage/20261113T1058Z-centro-layered-city-readiness.json",
+    "research/coverage/20261113T1200Z-1847-matrix-readiness.json"
   ],
   "evidence_status": {
-    "new_historical_finding_candidates_researched_this_run": 7,
+    "new_historical_finding_candidates_researched_this_run": 6,
     "new_source_candidate_records_this_run": 5,
-    "new_source_inspection_metadata_this_run": 5,
+    "new_source_inspection_metadata_this_run": 6,
     "new_primary_source_originals_examined": 0,
     "independently_corroborated_new_findings": 0,
-    "source_access": "INAH public institutional HTML, indexed PDF full text of 2017 article; visual PDF screenshot request failed, original archives not read",
+    "source_access": "INAH indexed institutional excerpts, catalogue description, publisher abstract, UNAM thesis metadata only; original archival documents not read",
     "exact_published_style_main_reader_audited": true,
     "reader_source_blob_sha": "3051c5b14f20a47048e3e8e512843ff5d3952211",
     "high_priority_conflict": "Gamio uncovered in 1913 vs documented 1914 report",
@@ -109,30 +115,34 @@
   "ready_for_publication": false,
   "canonical_promoted": false,
   "blockers": [
-    "14 unresolved source references and 2 cross-batch source metadata conflicts",
-    "7 possible same-URL inspection overlaps not semantically reconciled",
-    "Main Templo Mayor reader Gamio 1913 vs 1914 chronology conflict requires original Gamio report",
-    "Original colonial archives and excavation reports unexamined",
-    "No editorial approval or automatic canonical promotion"
+    "14 formally unregistered source references remain: 13 documented by inspection-derived metadata, 1 proposed dataset placeholder unlocated",
+    "2 cross-batch source metadata conflicts require manual review",
+    "7 potential detached source inspection overlaps require scope-level comparison",
+    "Granados 1999 thesis on 14–16 September 1847 civilian resistance not read; research lead only",
+    "Templo Mayor reader's Gamio 1913/1914 chronology still needs original Gamio report",
+    "No human editorial approval, no auto publication or canonical promotion"
   ],
-  "consumer_instruction": "Read 62-batch research-only SQLite and exact main reader audit for editorial triage; 336 staged assertions are not vetted for publication. Reader chronology conflict 1913/1914 flagged; no automatic app or canonical promotion.",
-  "immutable_handoff_path": "research/handoff/history/20261113T1107Z-centro-palimpsest-reader-audit-verified.json",
-  "previous_manifest_generated_at": "2026-11-13T10:13:37.468Z",
-  "previous_manifest_blob_sha": "e03c29da9c8d31208813b293ba1050564ab6d9c4",
+  "consumer_instruction": "Latest 63-batch versioned research-only database passed replay + GitHub checksum readback. 342 staged assertions incl 6 new 1847 historical candidates; do NOT publish. Use coverage delta and unchanged Templo Mayor audit for future editorial review only.",
+  "immutable_handoff_path": "research/handoff/history/20261113T1215Z-1847-and-source-metadata-replay-verified.json",
+  "previous_manifest_generated_at": "2026-11-13T11:07:00Z",
+  "previous_manifest_blob_sha": "068f5b1e1d1f020ec667ea34f9e4352a66eaad86",
   "handoff_history_append_only": true,
-  "verified_replay_commit_sha": "d1b939e9b36cc12b05f7fd604579b04311e112a6",
+  "verified_replay_commit_sha": "410b64f6879664c1466183bf81972a088424e910",
   "handoff_history_paths": [
     "research/handoff/history/20261113T0717Z-schema-tests-verified.json",
     "research/handoff/history/20261113T0812Z-detached37-replay-verified.json",
     "research/handoff/history/20261113T0814Z-crosswalk7-verified.json",
     "research/handoff/history/20261113T0913Z-hospital-jesus-recovery-six-new-reviewed.json",
     "research/handoff/history/20261113T1004Z-te28-schema-repair-and-reform-urban-breadth.json",
-    "research/handoff/history/20261113T1107Z-centro-palimpsest-reader-audit-verified.json"
+    "research/handoff/history/20261113T1107Z-centro-palimpsest-reader-audit-verified.json",
+    "research/handoff/history/20261113T1215Z-1847-and-source-metadata-replay-verified.json"
   ],
   "handoff_history_commit_sha": "bba4273df97e3cef16972bf74a13ee8c0a55f726",
   "research_batch_artifact_paths": [
     "research/batches/20261113T0904Z-hospital-jesus-recovery-and-building-phases.json",
     "research/batches/20261113T1004Z-reform-munal-reforma-urban-continuities.json",
-    "research/batches/20261113T1058Z-centro-urban-layers-dating-audit.json"
-  ]
+    "research/batches/20261113T1058Z-centro-urban-layers-dating-audit.json",
+    "research/batches/20261113T1200Z-1847-urban-war-and-memorials.json"
+  ],
+  "source_identity_crosswalk_path": "research/ledgers/20261113T1215Z-verified-source-identity-crosswalk.json"
 }

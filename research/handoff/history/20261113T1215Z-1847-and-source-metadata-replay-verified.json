@@ -1,0 +1,57 @@
+{
+  "schema_version": 4,
+  "generated_at": "2026-11-13T12:15:00Z",
+  "kind": "immutable_cross_automation_research_handoff",
+  "research_commit_sha": "0486c099fac2c5dbdc326016c214ddfb46d9b20d",
+  "original_research_batch_commit_sha": "df69ae48dd2ded2f31284aa8b951751a4f9832ce",
+  "verified_replay_commit_sha": "410b64f6879664c1466183bf81972a088424e910",
+  "canonical_version": "V97",
+  "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_status": "unchanged",
+  "before": {
+    "batch_files": 62,
+    "staged_substantive_findings": 336,
+    "inspection_metadata_rows": 131,
+    "source_candidates": 84,
+    "missing_registered_sources": 14
+  },
+  "after": {
+    "batch_files": 63,
+    "staged_substantive_findings": 342,
+    "inspection_metadata_rows": 137,
+    "source_candidates": 89,
+    "missing_registered_sources": 14,
+    "missing_refs_with_inspection_metadata": 13,
+    "unlocated_ref_placeholders": 1
+  },
+  "versioned_sqlite_gz_path": "research/reconciled/v4_0486c099fac2/research_only.sqlite.gz",
+  "versioned_sqlite_sha256": "0f769e2cda927b2a73518628f4d54580d5c13329a40f9530b66380596f373d9c",
+  "compressed_sha256": "1c5b8f8e6ba33e1f213746d39aead9e66070ffbb5ff351ac0a8f3d9e7bbae325",
+  "verified_replay_report_path": "research/reconciled/v4_0486c099fac2/replay_report.json",
+  "replay_workflow_url": "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/43422677395",
+  "reconciliation_ledger_path": "research/ledgers/20261113T1215Z-verified-source-identity-crosswalk.json",
+  "research_batch_artifact_paths": [
+    "research/batches/20261113T1200Z-1847-urban-war-and-memorials.json"
+  ],
+  "coverage_artifact_paths": [
+    "research/coverage/20261113T1200Z-1847-matrix-readiness.json"
+  ],
+  "chapter_audit_artifact_paths": [
+    "research/audits/templo-mayor-reader-20261113T1058Z-exact-prose-audit.json"
+  ],
+  "new_findings_staged": 6,
+  "new_inspection_metadata": 6,
+  "independent_corroborations": 0,
+  "evidence_status": "institutional excerpts, monument catalogue excerpt and peer-reviewed abstract; no original archival document examined",
+  "ready_for_editorial_review": false,
+  "ready_for_publication": false,
+  "blockers": [
+    "14 source refs still outside formal source register (13 documented in inspection metadata; one intentional proposed dataset placeholder)",
+    "2 conflicting bibliographic identities require manual inspection",
+    "7 potential detached inspection overlaps lack scope-level adjudication",
+    "Granados 1999 thesis on 1847 civilian resistance not examined",
+    "Templo Mayor Gamio 1913/1914 primary report not inspected",
+    "No canonical promotion or publication approval"
+  ],
+  "previous_manifest_blob_sha": "068f5b1e1d1f020ec667ea34f9e4352a66eaad86"
+}
