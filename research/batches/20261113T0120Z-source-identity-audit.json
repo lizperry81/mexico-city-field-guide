@@ -1,0 +1,12 @@
+{
+  "batch_id": "20261113T0120Z-source-reconciliation",
+  "baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "input_staging_sha256": "d6990fed66528a542f84689f99773ab3f43c039dfa16ae0f402b1b9f6feec611",
+  "staged_findings_preserved": 118,
+  "new_findings": 0,
+  "source_identities_audited": 19,
+  "confirmed_new_aliases": 0,
+  "status": "STAGED ONLY — NOT IN CANONICAL",
+  "archive_library_path": "/MexicoResearch/staging/CDMX_STAGE_20261113T0120Z_SOURCE_IDENTITY_AUDIT.zip",
+  "next_action": "Manual author DOI edition comparison for 19 unresolved source identities"
+}
