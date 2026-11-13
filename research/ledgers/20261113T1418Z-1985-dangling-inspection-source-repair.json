@@ -1,0 +1,28 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-11-13T14:18:00Z",
+  "kind": "append_only_source_identity_resolution_not_canonical",
+  "previous_snapshot": "research/reconciled/v4_f4d9c526bf59/replay_report.json",
+  "previous_verified_sha256": "88f16a226c972369f9c3c135303a49439a482fed765e369c0fe0df4293c7f0a9",
+  "new_batch_path": "research/batches/20261113T1418Z-1985-inah-source-identity-link-repair.json",
+  "old_batch_path": "research/batches/20261113T1408Z-1985-housing-policy-and-organizing.json",
+  "staged_finding_id_preserved": "STG-20261113-1985-RECON-04",
+  "prior_inspection_id": "STG-20261113-1408-INS-INAH-2024",
+  "new_source_candidate_identity": "STG-20261113-1985-INAH-UNREGISTERED-2024",
+  "original_source_access": "indexed abstract only, direct page timed out",
+  "expected_before": {
+    "batches": 65,
+    "assertions": 353,
+    "source_candidates": 105,
+    "inspection_rows": 149,
+    "unknown_finding_source_ids": 9
+  },
+  "after_status": "await_automated_full_replay",
+  "change_scope": "Add one source candidate and evidence linkage note, zero new historical assertions, zero newly examined originals; original batch unchanged",
+  "blocked": [
+    "Full 1985 damage-commission report unread",
+    "Some INS collection source links remain metadata-only",
+    "Two unrelated existing source metadata conflicts and nine unknown referenced IDs remain"
+  ],
+  "publication_approved": false
+}

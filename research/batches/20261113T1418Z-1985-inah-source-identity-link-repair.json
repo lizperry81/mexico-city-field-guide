@@ -1,0 +1,40 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261113T1418Z-1985-inah-source-identity-link-repair",
+  "generated_at": "2026-11-13T14:18:00Z",
+  "storage_role": "append_only_staged_source_identity_correction",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "supersedes_no_batch": true,
+  "original_batch_retained": "research/batches/20261113T1408Z-1985-housing-policy-and-organizing.json",
+  "repair_reason": "An INAH 2024 journal abstract was locatable in the prior batch's finding 04 but had been recorded as an inspection without a provisional source candidate; append identity record and explicit claim-source linkage without rewriting prior immutable batch.",
+  "sources": [
+    {
+      "id": "STG-20261113-1985-INAH-UNREGISTERED-2024",
+      "title": "Evaluación de daños en monumentos históricos: Propuestas de la Dirección de Monumentos Históricos para la conservación integral de los inmuebles como unidad urbana",
+      "year": 2024,
+      "publication": "Antropología. Revista Interdisciplinaria del INAH",
+      "issue": "5",
+      "pages": "3–4",
+      "url": "https://revistas.inah.gob.mx/index.php/antropologia/article/view/21642",
+      "access_scope": "INAH institutional indexed abstract, direct article page timed out; underlying 1985 assessment and 2024 PDF not examined",
+      "identity_status": "provisional_source_identity_only_not_canonical",
+      "publication_approved": false
+    }
+  ],
+  "source_link_corrections": [
+    {
+      "finding_id": "STG-20261113-1985-RECON-04",
+      "add_provisional_source_id": "STG-20261113-1985-INAH-UNREGISTERED-2024",
+      "evidence_locator": "INAH article abstract indexed online; describes 20 September 1985 formation of a monument damage assessment commission",
+      "source_type": "institutional_journal_abstract_not_primary_report",
+      "status": "evidence_crosswalk_for_editorial_review_only",
+      "original_finding_payload_preserved": true,
+      "editorial_approval": false
+    }
+  ],
+  "findings": [],
+  "source_inspections": [],
+  "evidence_status": "metadata_only_not_corroborated",
+  "ready_for_editorial_review": false,
+  "publication_approved": false
+}
