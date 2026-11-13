@@ -651,11 +651,14 @@ def validate():
         # human-review assignments, never publication-ready claim records.
         if (not isinstance(audit_doc, dict) or
                 not any(isinstance(audit_doc.get(key), list)
-                        for key in ("claims", "evidence_entries", "claim_to_source"))):
+                        for key in ("claims", "evidence_entries", "claim_to_source",
+                                    "claim_to_source_locator_matrix"))):
             raise ValueError("Invalid chapter audit format: " + path)
         if (audit_doc.get("ready_for_publication") is True or
                 audit_doc.get("editorial_approved") is True or
-                audit_doc.get("publication_approved") is True):
+                audit_doc.get("publication_approved") is True or
+                (audit_doc.get("claim_to_source_locator_matrix") is not None
+                 and audit_doc.get("proposed_text_is_not_approved") is not True)):
             raise ValueError("Unreviewed audit incorrectly marked as approved: " + path)
     audit = audits[0][1]
     coverage = json.loads(bound_blob(manifest["coverage_artifact_paths"][0]).decode("utf-8"))
@@ -676,7 +679,18 @@ def validate():
     for audit_path, audit_doc in audits:
         is_exact_reader_audit = (
             audit_doc.get("kind") == "exact_main_branch_reader_prose_audit")
+        is_gate_audit = (
+            audit_doc.get("kind") ==
+            "Templo_Mayor_Discover_editorial_evidence_gate_addendum")
         matches_reader = None
+        if is_gate_audit:
+            source_blob = audit_doc.get("main_reader_blob_sha_rechecked")
+            if (audit_doc.get("target_main_file") != "poi/templo-mayor/reader.html"
+                    or not isinstance(source_blob, str)
+                    or not HEX40.fullmatch(source_blob)):
+                raise ValueError("Evidence-gate audit lacks an exact reader Git blob")
+            matches_reader = (git("rev-parse", "HEAD:poi/templo-mayor/reader.html")
+                              .decode().strip() == source_blob)
         if is_exact_reader_audit:
             inspected_reader = audit_doc.get("inspected_repository_file") or {}
             if (inspected_reader.get("path") != "poi/templo-mayor/reader.html"
@@ -708,22 +722,33 @@ def validate():
                 })
         candidates = (audit_doc.get("claims", []) +
                       audit_doc.get("evidence_entries", []) +
-                      audit_doc.get("claim_to_source", []))
+                      audit_doc.get("claim_to_source", []) +
+                      audit_doc.get("claim_to_source_locator_matrix", []))
         for candidate_index, candidate in enumerate(candidates, 1):
             if not isinstance(candidate, dict):
                 raise ValueError("Malformed audit candidate in " + audit_path)
-            is_evidence = "claim_key" in candidate or "source_url" in candidate
+            is_gate = is_gate_audit and "reader_paragraph" in candidate
+            if is_gate and (not isinstance(candidate.get("locators"), list)
+                            or not candidate["locators"]
+                            or not all(isinstance(x, str) and x for x in candidate["locators"])):
+                raise ValueError("Evidence-gate audit has missing source locators")
+            is_evidence = ("claim_key" in candidate or "source_url" in candidate
+                           or is_gate)
             is_reader_prose = is_exact_reader_audit and "reader_paragraph" in candidate
             claim_id = (candidate.get("claim_id") or candidate.get("claim_key") or
                         (f"reader-prose-review-{candidate_index:02d}"
-                         if is_reader_prose else None))
+                         if is_reader_prose else
+                         f"evidence-gate-review-{candidate_index:02d}" if is_gate else None))
             topic = (candidate.get("topic") or candidate.get("risk") or
                      candidate.get("event"))
             if not claim_id or not topic:
                 raise ValueError("Research audit contains unidentified review topics")
-            if is_reader_prose and candidate.get("status") == "historical_date_conflict":
+            if ((is_reader_prose and candidate.get("status") == "historical_date_conflict")
+                    or (is_gate and candidate.get("status") ==
+                        "historical_chronology_conflict_blocker")):
                 discrepancies.append({
-                    "audit_path": audit_path, "issue": candidate.get("finding"),
+                    "audit_path": audit_path,
+                    "issue": candidate.get("finding") or candidate.get("claim"),
                     "current_status": candidate.get("status"),
                     "reader_paragraph_index_proposed": candidate.get("reader_paragraph"),
                     "source_comparison_completed": False,
@@ -735,12 +760,19 @@ def validate():
                 "audit_claim_id": claim_id,
                 "topic_for_review": topic,
                 "reader_paragraph_index_proposed":
-                    candidate.get("reader_paragraph") if is_reader_prose else None,
+                    candidate.get("reader_paragraph") if (is_reader_prose or is_gate) else None,
                 "reader_anchor_proposed":
-                    candidate.get("anchor") if is_reader_prose else None,
-                "reader_audit_matches_main_blob": matches_reader if is_reader_prose else None,
+                    (candidate.get("reader_anchor") if is_gate else
+                     candidate.get("anchor") if is_reader_prose else None),
+                "reader_audit_matches_main_blob":
+                    matches_reader if (is_reader_prose or is_gate) else None,
                 "candidate_evidence_summary_unverified":
-                    candidate.get("finding") if is_reader_prose else None,
+                    (candidate.get("claim") if is_gate else
+                     candidate.get("finding") if is_reader_prose else None),
+                "source_locator_candidates_unverified":
+                    candidate.get("locators", []) if is_gate else [],
+                "proposed_editorial_addition_unapproved":
+                    candidate.get("draft_addition") if is_gate else None,
                 "candidate_finding_id": candidate.get("finding_id"),
                 "candidate_evidence_status":
                     candidate.get("evidence_status", candidate.get("status",
@@ -754,7 +786,8 @@ def validate():
                     if is_evidence else None,
                 "remaining_source_check":
                     (candidate.get("remaining_gap") or candidate.get("uncertainty")
-                     or candidate.get("editorial_action") or candidate.get("action"))
+                     or candidate.get("editorial_action") or candidate.get("action")
+                     or candidate.get("gap"))
                     if (is_evidence or is_reader_prose) else None,
                 "read_before_context_proposed":
                     candidate.get("read_before") if is_evidence else None,
@@ -766,7 +799,7 @@ def validate():
                 "publication_authorization": False,
                 "review_state": (
                     "awaiting_human_stale_reader_blob_reaudit"
-                    if is_reader_prose and not matches_reader
+                    if (is_reader_prose or is_gate) and not matches_reader
                     else "awaiting_human_source_and_passage_check"),
             })
         for discrepancy in audit_doc.get("existing_record_discrepancies", []):
