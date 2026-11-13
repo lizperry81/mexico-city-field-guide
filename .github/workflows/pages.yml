@@ -22,6 +22,15 @@ jobs:
         with:
           fetch-depth: 0 # Validate pinned research handoff commit against branch history.
       - uses: actions/configure-pages@v5
+      - name: Verify protected Discover baseline before publication
+        env:
+          BASE_SHA: ${{ github.event.before }}
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          python scripts/check_discover_editorial_baseline.py
+          if [ "$EVENT_NAME" = "push" ]; then
+            python scripts/check_discover_editorial_baseline.py --base-ref "$BASE_SHA"
+          fi
       - name: Extract app
         run: |
           mkdir site extracted
