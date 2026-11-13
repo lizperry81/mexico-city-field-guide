@@ -162,7 +162,7 @@ def validate():
         if compressed_sha != manifest.get("compressed_sha256"):
             raise ValueError("Staged research SQLite compressed checksum mismatch")
         extracted = gzip.decompress(compressed)
-        if (not extracted.startswith(b"SQLite format 3\\x00") or
+        if (not extracted.startswith(b"SQLite format 3\x00") or
                 hashlib.sha256(extracted).hexdigest() !=
                 manifest.get("versioned_research_sha256")):
             raise ValueError("Staged research SQLite content checksum mismatch")
