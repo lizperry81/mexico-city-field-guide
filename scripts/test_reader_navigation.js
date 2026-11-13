@@ -111,7 +111,18 @@ assert.equal(prev.disabled, false);
 location.hash = '#history'; // Back/forward or history tab.
 assert.equal(panels.history.hidden, false);
 assert.equal(panels.explore.hidden, true);
-location.hash = '#plaza'; // Restore an Explore deep link.
+// Reading historical context or planning a visit should preserve the active
+// on-site stop, so visitors can return to the same physical observation.
+location.hash = '#explore';
+assert.equal(jump.value, 'twin-stairs', 'Explore must resume the last visited stop');
+assert.equal(progress.textContent, 'Stop 2 of 3');
+assert.equal(stops[1].hidden, false, 'The last selected stop should be visible');
+assert.equal(prev.disabled, false);
+location.hash = '#plan';
+assert.equal(panels.plan.hidden, false);
+location.hash = '#explore';
+assert.equal(jump.value, 'twin-stairs', 'Plan must not reset the Explore walk');
+location.hash = '#plaza'; // An explicit stop deep link overrides resumed progress.
 assert.equal(panels.explore.hidden, false);
 assert.equal(jump.value, 'plaza');
 assert.equal(progress.textContent, 'Stop 1 of 3');
