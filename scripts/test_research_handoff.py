@@ -1044,9 +1044,25 @@ else:
         if any("templo-mayor-discover-20261113T1710Z-main-current-blob" in p
                for p in report["chapter_audit_artifact_paths"]):
             assert len(new_reader) == 7
-            assert all(x["reader_audit_matches_main_blob"] is True
+            # Reader HTML changed after the audit was captured. Compare
+            # the pinned Git blob to HEAD instead of assuming a permanently
+            # current audit or silently reapproving old source locators.
+            import subprocess
+            audited_path = ("research/audits/"
+                "templo-mayor-discover-20261113T1710Z-main-current-blob-claim-source-gates.json")
+            audited = json.loads(subprocess.check_output(
+                ["git", "show", "origin/research-persistence:" + audited_path],
+                text=True))
+            actual_blob = subprocess.check_output(
+                ["git", "rev-parse", "HEAD:poi/templo-mayor/reader.html"],
+                text=True).strip()
+            current = audited["target_main_blob_sha"] == actual_blob
+            assert all(x["reader_audit_matches_main_blob"] is current
                        and x["reader_anchor_proposed"]
                        and x["source_locator_candidates_unverified"]
+                       and x["review_state"] ==
+                           ("awaiting_human_source_and_passage_check" if current
+                            else "awaiting_human_stale_reader_blob_reaudit")
                        and x["editorial_passage_id"] is None
                        and x["publication_authorization"] is False
                        for x in new_reader)
