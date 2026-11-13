@@ -1,0 +1,71 @@
+{
+  "schema_version": 4,
+  "generated_at": "2026-11-13T09:13:00Z",
+  "kind": "append_only_research_handoff_snapshot",
+  "research_branch": "research-persistence",
+  "research_commit_sha": "7e73c5523d14bd1226468739cf2b6532b61f0426",
+  "batch_commit_sha": "1fa98b60e49a9b80246daca974ae68532447f94a",
+  "verified_replay_commit_sha": "9f06a5b70c7275ecc1106e1bdd457597d3d1ca40",
+  "replay_workflow_run_url": "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/43398570807",
+  "canonical_version": "V97",
+  "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_status": "unchanged_not_promoted",
+  "canonical_counts": {
+    "sources": 616,
+    "claims": 422,
+    "claim_source_links": 403,
+    "findings": 68,
+    "source_inspections": 9
+  },
+  "before": {
+    "batches": 59,
+    "staged_finding_ids_with_assertions": 300,
+    "inspection_metadata_entries": 121,
+    "source_candidate_ids": 66,
+    "unknown_source_refs": 14,
+    "source_metadata_collisions": 2,
+    "unresolved_index_only_ids": 16
+  },
+  "after": {
+    "batches": 60,
+    "staged_finding_ids_with_assertions": 316,
+    "inspection_metadata_entries": 122,
+    "source_candidate_ids": 75,
+    "unknown_source_refs": 14,
+    "source_metadata_collisions": 2,
+    "unresolved_index_only_ids": 6
+  },
+  "evidence_status": {
+    "previously_staged_full_assertions_restored": 10,
+    "new_source_linked_candidate_findings": 6,
+    "new_public_html_catalogue_inspections": 1,
+    "independently_corroborated_new_claims": 0,
+    "new_original_archival_manuscripts_examined": 0,
+    "ready_for_editorial_review": false,
+    "publication_approved": false
+  },
+  "versioned_research_sqlite_gz_path": "research/reconciled/v4_1fa98b60e49a/research_only.sqlite.gz",
+  "versioned_research_sha256": "5e89840a42335a0f51d8db4c19d1407404d7ed8a2f8b835d0902f292285e7627",
+  "compressed_sha256": "ef8fd401f2693b00487f6bc1e15acee6ac370e03f97486012ab78df0c253a08b",
+  "replay_report_path": "research/reconciled/v4_1fa98b60e49a/replay_report.json",
+  "research_batch_artifact_paths": [
+    "research/batches/20261113T0904Z-hospital-jesus-recovery-and-building-phases.json"
+  ],
+  "coverage_artifact_paths": [
+    "research/coverage/20261113T0904Z-hospital-jesus-chronology-thematic-geographic-readiness.json"
+  ],
+  "chapter_audit_artifact_paths": [
+    "research/audits/templo-mayor-discover-20261113T0910Z-read-before-vs-on-site-recheck.json"
+  ],
+  "blockers": [
+    "6 index-only GitHub finding IDs still unresolved",
+    "14 unknown source references and two bibliographic metadata conflicts",
+    "7 of 37 detached inspections share URL with earlier metadata, require source-scope review",
+    "30 of 37 detached inspections unmatched to earlier metadata; independence not established",
+    "Hospital 1524 municipal original, 1529 papal privileges and 1934/1963 architectural files unexamined",
+    "INAH monument catalogue record itself says validation in progress",
+    "Exact deployed Templo Mayor Discover prose not inspected",
+    "No editorial authorization for app publication"
+  ],
+  "consumer_instruction": "Research-only evidence. No silent alias merges, no automatic publication or promotion of canonical V97; app automation can use stable paths for editorial planning only."
+}
