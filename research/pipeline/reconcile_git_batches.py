@@ -86,12 +86,19 @@ def main():
     if "staged_source_register" in tables(db):
         known_sources.update(r[0] for r in db.execute("SELECT id FROM staged_source_register"))
     conflicts=[];pending=set();missing_source_ids=set();file_count=0;inspection_count=0
+    # Track cross-batch identity conflicts; never collapse distinct assertions.
+    github_assertions={};source_metadata={};changed_input_paths=[]
     paths=sorted(Path(a.batch_dir).rglob("*.json"))
     if len(paths)<a.min_files:raise SystemExit(f'BLOCKED: only {len(paths)} batch files; expected at least {a.min_files}')
     for f in paths:
         try:v=json.loads(f.read_text())
         except (ValueError,UnicodeDecodeError) as e:raise SystemExit(f'BLOCKED: unparseable batch file {f}: {e}')
         rel=f.relative_to(Path(a.batch_dir)).as_posix()
+        # A previously ingested path changing bytes is a provenance conflict.
+        old=db.execute("SELECT content_sha256 FROM research_batch_files WHERE path=?",(rel,)).fetchone()
+        if old and old[0]!=hashfile(f):
+            changed_input_paths.append({"path":rel,"old_sha256":old[0],"incoming_sha256":hashfile(f)})
+            raise SystemExit("BLOCKED: previously ingested research batch modified: "+rel)
         db.execute("INSERT OR IGNORE INTO research_batch_files VALUES(?,?,?)",
                    (rel,hashfile(f),"raw_source_preserved_in_checkout"))
         file_count+=1
@@ -115,6 +122,9 @@ def main():
             sid=str(item.get("id") or item.get("source_id") or "").strip()
             if not sid:continue
             h=hashbytes(enc(item).encode())
+            if sid in source_metadata and source_metadata[sid]!=h:
+                conflicts.append({"source_id":sid,"source_path":rel,"reason":"cross_batch_source_metadata_collision"})
+            source_metadata.setdefault(sid,h)
             db.execute("INSERT OR IGNORE INTO research_batch_sources VALUES(?,?,?,?,?)",
                        (sid,h,rel,enc(item),"identity_pending"))
             pending.add(sid)
@@ -134,7 +144,10 @@ def main():
                            (rel,"item:"+str(len(pending))+":"+hashbytes(enc(item).encode())[:16],fid,enc(item)))
                 continue
             fid=str(item.get("id") or item.get("finding_id") or item.get("staged_id") or item.get("record_id") or "anon-"+hashbytes(enc(item).encode())[:20])
-            if fid in baseline_ids or fid in staged and claim!=staged[fid]:
+            if fid in github_assertions and github_assertions[fid]!=claim:
+                conflicts.append({"finding_id":fid,"source_path":rel,"reason":"cross_batch_assertion_collision"})
+            github_assertions.setdefault(fid,claim)
+            if fid in baseline_ids or (fid in staged and claim!=staged[fid]):
                 conflicts.append({"finding_id":fid,"source_path":rel,"reason":"identity_collision_needs_manual_review"})
             sid=item.get("source_ids") or ([item["source_id"]] if item.get("source_id") else [item["source_id_raw"]] if item.get("source_id_raw") else [item["source_candidate_id"]] if item.get("source_candidate_id") else [])
             if isinstance(sid,str):sid=[sid]
@@ -143,6 +156,8 @@ def main():
             h=hashbytes(enc(item).encode())
             db.execute("INSERT OR IGNORE INTO research_batch_findings VALUES(?,?,?,?,?,?)",
                        (fid,h,rel,claim,enc(item),"not_publication_ready"))
+    # Source records may appear in LATER batch files. Resolve only after full replay.
+    missing_source_ids.difference_update(known_sources | pending)
     for item in conflicts:
         h=hashbytes(enc(item).encode())
         db.execute("INSERT OR IGNORE INTO research_batch_conflicts VALUES(?,?,?)",
@@ -165,6 +180,7 @@ def main():
        "github_inspection_entries":inspection_count,
        "candidate_source_identities":len(pending),
        "unknown_source_ids":sorted(missing_source_ids),"conflicts":conflicts,
+       "cross_batch_conflict_count":len(conflicts),"changed_input_paths":changed_input_paths,
        "sqlite_integrity":integrity,"foreign_key_violations":len(fk),
        "status":"research_database_staging_only_NOT_CANONICAL",
        "ready_for_editorial_review":False,"ready_for_publication":False}
