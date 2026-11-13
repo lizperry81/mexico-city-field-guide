@@ -15,6 +15,7 @@ import subprocess
 from pathlib import Path, PurePosixPath
 from editorial_passage_inventory import inventory
 from handoff_verified_history import validate_verified_history_v4
+from handoff_immutable_batch import validate_immutable_batch_v4
 
 RESEARCH_REF = "refs/remotes/origin/research-persistence"
 MANIFEST_PATH = "research/handoff/manifest.json"
@@ -282,6 +283,13 @@ def validate_versioned_handoff(manifest, immutable_manifest, snapshot_sha):
                     raise ValueError("Append-only v4 lost evidence artifacts: " + group)
             return
 
+        # Versioned 69-batch source and historic-photo research uses a
+        # distinct immutable metadata record. Verify evidence deltas, exact Git
+        # identity, and explicit nonpublication flags before private review.
+        if immutable_manifest.get("kind") == "immutable_research_batch_handoff":
+            validate_immutable_batch_v4(manifest, immutable_manifest, snapshot_sha)
+            return
+
         # New 1847/source-identity handoffs are immutable delta records, not
         # copies of the rolling manifest. Validate explicit provenance/counts
         # without granting staged research editorial publication authority.
@@ -537,7 +545,8 @@ def validate():
         raise ValueError("Versioned handoff snapshot points to a different research commit")
     validate_versioned_handoff(manifest, immutable_manifest, snapshot_blob_sha)
     if (manifest["schema_version"] == 4
-            and immutable_manifest.get("kind") == "research_to_app_handoff"
+            and immutable_manifest.get("kind") in ("research_to_app_handoff",
+                                                   "immutable_research_batch_handoff")
             and immutable_manifest != manifest):
         # Verify the claimed history commit actually contains this immutable
         # Git blob, and is an ancestor of the manifest-publishing commit.
@@ -546,6 +555,16 @@ def validate():
                        check=True, capture_output=True)
         if git("rev-parse", f"{origin}:{immutable}").decode().strip() != snapshot_blob_sha:
             raise ValueError("Frozen v4 snapshot not present at pinned history commit")
+    if immutable_manifest.get("kind") == "immutable_research_batch_handoff":
+        for key, expected, path in (
+            ("replay_report", immutable_manifest["replay_report_git_blob_sha"],
+             manifest["replay_report_path"]),
+            ("replay_binary", immutable_manifest["replay_binary_git_blob_sha"],
+             manifest["versioned_research_sqlite_gz_path"]),
+        ):
+            actual = git("rev-parse", f"{handoff_commit}:{path}").decode().strip()
+            if actual != expected:
+                raise ValueError("Immutable batch Git readback mismatch: " + key)
     if immutable_manifest.get("kind") == "verified_research_to_app_handoff_history":
         # The producer pins the Git blob identities after a successful readback.
         # Compare to the committed artifact, not merely a self-asserted hash.
