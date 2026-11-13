@@ -1,0 +1,14 @@
+{
+  "event_id": "20261112T2359Z_REFORMA_LIBERTAD_CULTOS_CROSSWALK",
+  "event_type": "append_only_staging_batch",
+  "batch_path": "research/batches/20261112T2359Z_reforma_libertad_cultos_crosswalk.json",
+  "research_finding_delta": 9,
+  "previous_staged_total": 96,
+  "staged_total_after": 105,
+  "source_ids_recovered": 20,
+  "unresolved_source_id_refs_after": 0,
+  "source_id_references_repaired_in_staging": 60,
+  "canonical_changed": false,
+  "source_archive": "CDMX_STAGE_20261112T2359Z_REFORMA_LIBERTAD_CULTOS_CROSSWALK_COMPLETE.zip",
+  "no_main_branch_write": true
+}
