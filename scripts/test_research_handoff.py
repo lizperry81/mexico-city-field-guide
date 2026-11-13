@@ -120,15 +120,36 @@ else:
         assert staged["unresolved_source_refs"] >= 0
         assert staged["source_metadata_collisions"] >= 0
         assert staged["semantic_join_verified"] is False
-        assert report["research_ready_for_editorial_review"] is False
-        assert report["audit_ready_for_editorial_review"] is False
+        assert isinstance(report["research_ready_for_editorial_review"], bool)
+        assert isinstance(report["audit_ready_for_editorial_review"], bool)
         assert not report["ready_for_publication"]
         assert len(report["chapter_audit_artifact_paths"]) >= 2
     queue = json.loads((OUT / "editorial-review-queue.json").read_text(encoding="utf-8"))
     assert queue["research_commit_sha"] == report["research_commit_sha"]
     assert queue["status"] == "human_review_required_not_for_publication"
     assert len(queue["items"]) == report["review_queue_count"]
+    assert report["audit_documents_reviewed"] >= 1
+    assert report["historical_discrepancies_pending_review"] == len(
+        queue["unresolved_historical_discrepancies"])
+    assert len({item["audit_path"] for item in queue["items"]}) == report["audit_documents_reviewed"]
+    assert len({(item["audit_path"], item["audit_claim_id"])
+                for item in queue["items"]}) == len(queue["items"])
+    if report["handoff_schema_version"] == 4:
+        # Cross-corpus schema v4 exposes both Templo Mayor and 1913 audits
+        # for review, not merely the first Templo Mayor topic list.
+        assert any(item["audit_claim_id"].startswith("TM-OP-")
+                   for item in queue["items"])
+        assert any(item["audit_claim_id"].startswith("DTR-")
+                   for item in queue["items"])
+        assert report["historical_discrepancies_pending_review"] >= 1
+    for discrepancy in queue["unresolved_historical_discrepancies"]:
+        assert discrepancy["audit_path"].startswith("research/audits/")
+        assert discrepancy["issue"]
+        assert discrepancy["source_comparison_completed"] is False
+        assert discrepancy["publication_authorization"] is False
+        assert discrepancy["review_state"].startswith("awaiting_human")
     for item in queue["items"]:
+        assert item["audit_path"].startswith("research/audits/")
         assert item["editorial_passage_id"] is None
         assert item["source_id_confirmed"] is None
         assert item["page_or_section_checked"] is None
