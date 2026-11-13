@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-13T06:10:00Z",
+  "basis": "Evidence-linked 1913 research candidates, not keyword-based bibliography counts",
+  "full_matrix_reference": "research/coverage/coverage-matrix-20261113-compact.json",
+  "period": "Mexican Revolution",
+  "reviewed": [
+    {
+      "geography": "centro",
+      "theme": "politics",
+      "rating": "developing",
+      "finding_ids": [
+        "cdmx-stg-20261113-decena-01",
+        "cdmx-stg-20261113-decena-06",
+        "cdmx-stg-20261113-decena-07"
+      ],
+      "reason": "9,18,19 Feb political events supported by institutional summaries; original minutes/treaty unavailable"
+    },
+    {
+      "geography": "centro",
+      "theme": "resistance",
+      "rating": "developing",
+      "finding_ids": [
+        "cdmx-stg-20261113-decena-01",
+        "cdmx-stg-20261113-decena-03",
+        "cdmx-stg-20261113-decena-04"
+      ],
+      "reason": "Tactical narrative of palace versus Ciudadela with place links; field maps not independently confirmed"
+    },
+    {
+      "geography": "centro",
+      "theme": "society",
+      "rating": "sparse",
+      "finding_ids": [
+        "cdmx-stg-20261113-decena-02"
+      ],
+      "reason": "One arrest count; civilian daily-life records absent"
+    },
+    {
+      "geography": "centro",
+      "theme": "gender",
+      "rating": "missing",
+      "finding_ids": [],
+      "reason": "None of the current candidates documents women's roles during the Decena Trágica"
+    },
+    {
+      "geography": "centro",
+      "theme": "culture",
+      "rating": "developing",
+      "finding_ids": [
+        "cdmx-stg-20261113-decena-09"
+      ],
+      "reason": "Existing Filmoteca archival assets identified but film frames and rights need clearance"
+    },
+    {
+      "geography": "centro",
+      "theme": "poi",
+      "rating": "developing",
+      "finding_ids": [
+        "cdmx-stg-20261113-decena-01",
+        "cdmx-stg-20261113-decena-02",
+        "cdmx-stg-20261113-decena-07"
+      ],
+      "reason": "National Palace, Cathedral and Zócalo connected to source events; visitor-ready text still unreviewed"
+    },
+    {
+      "geography": "chapul",
+      "theme": "poi",
+      "rating": "sparse",
+      "finding_ids": [
+        "cdmx-stg-20261113-decena-05"
+      ],
+      "reason": "Route starts at Chapultepec but primary itinerary reconstruction absent"
+    },
+    {
+      "geography": "tlatelolco",
+      "theme": "politics",
+      "rating": "sparse",
+      "finding_ids": [
+        "cdmx-stg-20261113-decena-03"
+      ],
+      "reason": "Reyes freed from Santiago Tlatelolco prison, but no prison dossier or precise site interpretation yet"
+    },
+    {
+      "geography": "centro",
+      "theme": "debate",
+      "rating": "developing",
+      "finding_ids": [
+        "cdmx-stg-20261113-decena-08"
+      ],
+      "reason": "Existing 9–23 legacy chronology conflict and arrest/death date differences explicitly flagged"
+    }
+  ],
+  "substantial_promotions": 0,
+  "editorial_status": "candidate_evidence_only"
+}
