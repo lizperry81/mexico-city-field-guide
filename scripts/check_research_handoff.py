@@ -484,6 +484,23 @@ def validate_versioned_handoff(manifest, immutable_manifest, snapshot_sha):
         raise ValueError("Versioned v3 handoff differs from immutable snapshot")
 
 
+def audit_matrix_explicitly_unapproved(doc):
+    """Recognize the two evidence-only locator matrix formats, fail closed."""
+    if doc.get("proposed_text_is_not_approved") is True:
+        return True
+    return (
+        doc.get("kind") ==
+        "templo_mayor_discover_exact_prose_claim_to_source_locator_addendum"
+        and doc.get("publication_approved") is False
+        and doc.get("ready_for_editorial_review") is False
+        and doc.get("main_modified") is False
+        and isinstance(doc.get("proposed_unpublished_historical_addition"), str)
+        and bool(doc["proposed_unpublished_historical_addition"].strip())
+        and isinstance(doc.get("claim_to_source_locator_matrix"), list)
+        and bool(doc["claim_to_source_locator_matrix"])
+    )
+
+
 def validate():
     manifest = git_json(RESEARCH_REF, MANIFEST_PATH)
     if (manifest.get("schema_version") not in (2, 3, 4)
@@ -740,7 +757,7 @@ def validate():
                 audit_doc.get("editorial_approved") is True or
                 audit_doc.get("publication_approved") is True or
                 (audit_doc.get("claim_to_source_locator_matrix") is not None
-                 and audit_doc.get("proposed_text_is_not_approved") is not True)):
+                 and not audit_matrix_explicitly_unapproved(audit_doc))):
             raise ValueError("Unreviewed audit incorrectly marked as approved: " + path)
     audit = audits[0][1]
     coverage = json.loads(bound_blob(manifest["coverage_artifact_paths"][0]).decode("utf-8"))
