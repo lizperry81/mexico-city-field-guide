@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "origin_tree_sha": "a2c0199a4dd0d7d8f308d49e57b95de534d79c23",
+  "total_batch_files": 56,
+  "chunk": 2,
+  "range": [
+    14,
+    27
+  ],
+  "files": [
+    {
+      "path": "research/batches/20261111T1804Z-auto11-ch9.json",
+      "blob_sha": "88f1ba0f7a30a7ad6625bba94ed792d7d449ae66",
+      "entries": [
+        {
+          "id": "STG-20261111T1804Z-CH9-01",
+          "has_assertion": true
+        },
+        {
+          "id": "STG-20261111T1804Z-CH9-02",
+          "has_assertion": true
+        },
+        {
+          "id": "STG-20261111T1804Z-CH9-03",
+          "has_assertion": true
+        },
+        {
+          "id": "STG-20261111T1804Z-CH9-04",
+          "has_assertion": true
+        },
+        {
+          "id": "STG-20261111T1804Z-CH9-05",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261111T1902Z-turn11-fauna-heyden.json",
+      "blob_sha": "5dc8d8e95f14a78374ffc30a3973478a45edebb8",
+      "entries": [
+        {
+          "id": "STG-20261111T1902Z-F001",
+          "has_assertion": true
+        },
+        {
+          "id": "STG-20261111T1902Z-F002",
+          "has_assertion": true
+        },
+        {
+          "id": "STG-20261111T1902Z-F003",
+          "has_assertion": true
+        },
+        {
+          "id": "STG-20261111T1902Z-F004",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261111T2000Z-auto11-area-b-radiocarbon.json",
+      "blob_sha": "832aef0d2a89a5a70ef9d4b65832cbd363a23382",
+      "entries": [
+        {
+          "id": "STG-20261111T2000Z-F001",
+          "has_assertion": true
+        },
+        {
+          "id": "STG-20261111T2000Z-F002",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261111T2103Z-auto11-areaA-entrance.json",
+      "blob_sha": "1500642b512e1a6845b2368490cde8349b01a89d",
+      "entries": [
+        {
+          "id": "STG-20261111T2103Z-F001",
+          "has_assertion": true
+        },
+        {
+          "id": "STG-20261111T2103Z-F002",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261111T2200Z-auto11-terminus.json",
+      "blob_sha": "ab1b24ddbb46ba6d21b539977dd0b059f7cd5bf6",
+      "entries": [
+        {
+          "id": "STG-20261111T2200Z-F001",
+          "has_assertion": true
+        },
+        {
+          "id": "STG-20261111T2200Z-F002",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261111T2255Z-auto11-blockages.json",
+      "blob_sha": "787f06823a0458d826f72b5e20d710c253aeefe8",
+      "entries": [
+        {
+          "id": "STG-20261111T2255Z-F001",
+          "has_assertion": true
+        },
+        {
+          "id": "STG-20261111T2255Z-F002",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261112T0002Z-auto11-water-and-provenance.json",
+      "blob_sha": "274e7b2108981ebb905a80ab021822e494d19f2c",
+      "entries": [
+        {
+          "id": "STG-20261112T0002Z-F001",
+          "has_assertion": true
+        },
+        {
+          "id": "STG-20261112T0002Z-F002",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261112T011308Z-auto11-quarry-reuse.json",
+      "blob_sha": "94209e1b5a5595408669f4bccc7a1bfd84c3f578",
+      "entries": [
+        {
+          "id": "STG-20261112T011308Z-F001",
+          "has_assertion": true
+        },
+        {
+          "id": "STG-20261112T011308Z-F002",
+          "has_assertion": true
+        },
+        {
+          "id": "STG-20261112T011308Z-F003",
+          "has_assertion": true
+        },
+        {
+          "id": "STG-20261112T011308Z-F004",
+          "has_assertion": true
+        },
+        {
+          "id": "STG-20261112T011308Z-F005",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261112T0201Z-auto09.json",
+      "blob_sha": "1c541be3ed6b3f208ce7585385344c4226865228",
+      "entries": [
+        {
+          "id": "STG-20261112T0201Z-01",
+          "has_assertion": true
+        },
+        {
+          "id": "STG-20261112T0201Z-02",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261112T0202Z-2025-botanical-table3.json",
+      "blob_sha": "9945056336f4608a8b8741cb40ecd5b198747015",
+      "entries": [
+        {
+          "id": "stage-20261112-bot-2025-01",
+          "has_assertion": true
+        },
+        {
+          "id": "stage-20261112-bot-2025-02",
+          "has_assertion": true
+        },
+        {
+          "id": "stage-20261112-bot-2025-03",
+          "has_assertion": true
+        },
+        {
+          "id": "stage-20261112-bot-2025-04",
+          "has_assertion": true
+        },
+        {
+          "id": "stage-20261112-bot-2025-05",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261112T0302Z-auto09.json",
+      "blob_sha": "d12efea331ecfa7a5e32f6cb0b2720a6580ae193",
+      "entries": [
+        {
+          "id": "20261112T0302Z-auto09-F01",
+          "has_assertion": true
+        },
+        {
+          "id": "20261112T0302Z-auto09-F02",
+          "has_assertion": true
+        },
+        {
+          "id": "20261112T0302Z-auto09-F03",
+          "has_assertion": true
+        },
+        {
+          "id": "20261112T0302Z-auto09-F04",
+          "has_assertion": true
+        },
+        {
+          "id": "20261112T0302Z-auto09-F05",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261112T0356Z-auto09.json",
+      "blob_sha": "6815f9277f8308359ade81f5e4ce2cf7f3b3b5a0",
+      "entries": [
+        {
+          "id": "STG-20261112T0356Z-MAYA-01",
+          "has_assertion": true
+        },
+        {
+          "id": "STG-20261112T0356Z-MAYA-02",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261112T0503Z-auto09-chronology.json",
+      "blob_sha": "50f87e21b10256e8cc01e0bbaa5a133d0d4dafd7",
+      "entries": [
+        {
+          "id": "STG-20261112T0503Z-DATE-01",
+          "has_assertion": true
+        },
+        {
+          "id": "STG-20261112T0503Z-DATE-02",
+          "has_assertion": true
+        }
+      ]
+    },
+    {
+      "path": "research/batches/20261112T060230Z-auto09.json",
+      "blob_sha": "88395606402e8637f26426e440437b229e00c64e",
+      "entries": [
+        {
+          "id": "STG-20261112T060230Z-F01",
+          "has_assertion": true
+        },
+        {
+          "id": "STG-20261112T060230Z-F02",
+          "has_assertion": true
+        },
+        {
+          "id": "STG-20261112T060230Z-F03",
+          "has_assertion": true
+        }
+      ]
+    }
+  ]
+}
