@@ -458,6 +458,75 @@ for mutation in (
         raise AssertionError("Unbound v4 history handoff accepted: " + str(mutation))
 
 
+# The 12:15 UTC producer handoff pins the delta for 1847 research; only
+# privately staged review material may be consumed by the application build.
+cross_manifest = copy.deepcopy(history_manifest)
+cross_manifest["staged_counts"].update({
+    "github_batches_replayed": 63, "github_distinct_substantive_finding_ids": 342,
+    "github_inspection_entries": 137, "github_source_candidates": 89,
+    "unknown_source_refs": 14,
+})
+cross_manifest["evidence_status"].update({
+    "new_historical_finding_candidates_researched_this_run": 6,
+    "new_source_candidate_records_this_run": 5,
+    "new_source_inspection_metadata_this_run": 6,
+    "independently_corroborated_new_findings": 0,
+})
+cross_manifest["source_identity_crosswalk_path"] = "research/ledgers/crosswalk.json"
+cross_manifest["research_batch_artifact_paths"].append("research/batches/1847.json")
+cross_manifest["coverage_artifact_paths"].append("research/coverage/1847.json")
+cross_snapshot = {
+    "schema_version": 4, "kind": "immutable_cross_automation_research_handoff",
+    "research_commit_sha": cross_manifest["research_commit_sha"],
+    "original_research_batch_commit_sha": "f" * 40,
+    "verified_replay_commit_sha": cross_manifest["verified_replay_commit_sha"],
+    "canonical_version": cross_manifest["canonical_version"],
+    "canonical_hash": cross_manifest["canonical_hash"],
+    "canonical_status": "unchanged",
+    "before": {"batch_files": 62, "staged_substantive_findings": 336,
+               "inspection_metadata_rows": 131, "source_candidates": 84,
+               "missing_registered_sources": 14},
+    "after": {"batch_files": 63, "staged_substantive_findings": 342,
+              "inspection_metadata_rows": 137, "source_candidates": 89,
+              "missing_registered_sources": 14},
+    "versioned_sqlite_gz_path": cross_manifest["versioned_research_sqlite_gz_path"],
+    "versioned_sqlite_sha256": cross_manifest["versioned_research_sha256"],
+    "compressed_sha256": cross_manifest["compressed_sha256"],
+    "verified_replay_report_path": cross_manifest["replay_report_path"],
+    "reconciliation_ledger_path": cross_manifest["source_identity_crosswalk_path"],
+    "new_findings_staged": 6, "new_inspection_metadata": 6,
+    "independent_corroborations": 0,
+    "previous_manifest_blob_sha": cross_manifest["previous_manifest_blob_sha"],
+    "replay_workflow_url":
+        "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/123",
+    "research_batch_artifact_paths": ["research/batches/1847.json"],
+    "coverage_artifact_paths": ["research/coverage/1847.json"],
+    "chapter_audit_artifact_paths": ["research/audits/new.json"],
+    "ready_for_publication": False, "ready_for_editorial_review": False,
+}
+validate_versioned_handoff(cross_manifest, cross_snapshot, "d" * 40)
+for mutation in (
+    {"canonical_hash": "0" * 64},
+    {"ready_for_publication": True},
+    {"ready_for_editorial_review": True},
+    {"after": dict(cross_snapshot["after"], staged_substantive_findings=343)},
+    {"before": dict(cross_snapshot["before"], source_candidates=83)},
+    {"new_findings_staged": 7},
+    {"independent_corroborations": 1},
+    {"reconciliation_ledger_path": "research/ledgers/unbound.json"},
+    {"research_batch_artifact_paths": ["research/batches/unverified.json"]},
+    {"original_research_batch_commit_sha": "invalid"},
+    {"replay_workflow_url": "https://example.invalid/claim"},
+):
+    try:
+        validate_versioned_handoff(
+            cross_manifest, dict(cross_snapshot, **mutation), "d" * 40)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("Unsafe cross-automation v4 replay was trusted: " + str(mutation))
+
+
 report = json.loads((OUT / "handoff-report.json").read_text(encoding="utf-8"))
 assert report["ready_for_publication"] is False
 if report["status"] == "no_verified_handoff":
@@ -572,6 +641,19 @@ else:
             assert all(gap["readiness"] in ("sparse", "developing")
                        and gap["research_needed"]
                        and gap["publication_authorization"] is False for gap in centro)
+        # The 1847 matrix's finding_ids must remain in the PRIVATE queue.
+        war1847 = [gap for gap in queue["coverage_gaps"]
+                   if "1847-matrix-readiness" in gap["coverage_path"]]
+        if "1847-matrix-readiness" in " ".join(report["coverage_artifact_paths"]):
+            assert len(war1847) == 6, "1847 coverage cells disappeared"
+            assert any("STG-20261113-1847-01" in gap[
+                "candidate_finding_ids_unverified"] for gap in war1847)
+            assert any(gap["readiness"] == "missing" and
+                       gap["candidate_finding_ids_unverified"] == []
+                       for gap in war1847)
+            assert all(gap["publication_authorization"] is False and
+                       gap["assigned_to_published_chapter"] is None
+                       for gap in war1847)
         new_templo_audit = [item for item in queue["items"]
                            if item["audit_claim_id"].startswith("TM-DISC-")]
         if new_templo_audit:

@@ -259,6 +259,87 @@ def validate_versioned_handoff(manifest, immutable_manifest, snapshot_sha):
                     raise ValueError("Append-only v4 lost evidence artifacts: " + group)
             return
 
+        # New 1847/source-identity handoffs are immutable delta records, not
+        # copies of the rolling manifest. Validate explicit provenance/counts
+        # without granting staged research editorial publication authority.
+        if immutable_manifest.get("kind") == "immutable_cross_automation_research_handoff":
+            if (immutable_manifest.get("schema_version") != 4
+                    or immutable_manifest.get("canonical_status") != "unchanged"
+                    or immutable_manifest.get("ready_for_publication") is not False
+                    or immutable_manifest.get("ready_for_editorial_review") is not False
+                    or immutable_manifest.get("publication_approved") is True
+                    or manifest.get("canonical_promoted") is not False
+                    or manifest.get("ready_for_publication") is not False
+                    or manifest.get("ready_for_editorial_review") is not False
+                    or manifest.get("evidence_status", {}).get("publication_approved") is not False):
+                raise ValueError("Cross-automation v4 snapshot cannot publish research")
+            for field in ("research_commit_sha", "verified_replay_commit_sha",
+                          "canonical_version", "canonical_hash",
+                          "previous_manifest_blob_sha", "compressed_sha256"):
+                if immutable_manifest.get(field) != manifest.get(field):
+                    raise ValueError("Cross-automation v4 identity drift: " + field)
+            for snapshot_field, manifest_field in (
+                ("versioned_sqlite_gz_path", "versioned_research_sqlite_gz_path"),
+                ("versioned_sqlite_sha256", "versioned_research_sha256"),
+                ("verified_replay_report_path", "replay_report_path"),
+                ("reconciliation_ledger_path", "source_identity_crosswalk_path"),
+            ):
+                if (not isinstance(immutable_manifest.get(snapshot_field), str)
+                        or immutable_manifest[snapshot_field] != manifest.get(manifest_field)):
+                    raise ValueError("Cross-automation v4 artifact drift: " + snapshot_field)
+            original = immutable_manifest.get("original_research_batch_commit_sha")
+            if not isinstance(original, str) or not HEX40.fullmatch(original):
+                raise ValueError("Cross-automation v4 missing original batch provenance")
+            before, after = immutable_manifest.get("before"), immutable_manifest.get("after")
+            if not isinstance(before, dict) or not isinstance(after, dict):
+                raise ValueError("Cross-automation v4 missing before/after counts")
+            metric_pairs = {
+                "batch_files": "github_batches_replayed",
+                "staged_substantive_findings": "github_distinct_substantive_finding_ids",
+                "inspection_metadata_rows": "github_inspection_entries",
+                "source_candidates": "github_source_candidates",
+                "missing_registered_sources": "unknown_source_refs",
+            }
+            for snapshot_key, handoff_key in metric_pairs.items():
+                count = after.get(snapshot_key)
+                if (type(count) is not int or count < 0
+                        or count != manifest.get("staged_counts", {}).get(handoff_key)):
+                    raise ValueError("Cross-automation v4 staged count drift: " + handoff_key)
+            for key in ("batch_files", "staged_substantive_findings",
+                        "inspection_metadata_rows", "source_candidates"):
+                if (type(before.get(key)) is not int
+                        or before[key] < 0 or before[key] > after[key]):
+                    raise ValueError("Cross-automation v4 replay history regressed: " + key)
+            evidence = manifest.get("evidence_status", {})
+            changes = (
+                ("staged_substantive_findings", "new_findings_staged",
+                 "new_historical_finding_candidates_researched_this_run"),
+                ("inspection_metadata_rows", "new_inspection_metadata",
+                 "new_source_inspection_metadata_this_run"),
+            )
+            for count_key, snapshot_key, handoff_key in changes:
+                if (after[count_key] - before[count_key] != immutable_manifest.get(snapshot_key)
+                        or immutable_manifest.get(snapshot_key) != evidence.get(handoff_key)):
+                    raise ValueError("Cross-automation v4 evidence delta drift: " + snapshot_key)
+            if (after["source_candidates"] - before["source_candidates"] !=
+                    evidence.get("new_source_candidate_records_this_run")):
+                raise ValueError("Cross-automation v4 source-candidate delta drift")
+            if (immutable_manifest.get("independent_corroborations") !=
+                    evidence.get("independently_corroborated_new_findings")
+                    or evidence.get("ready_for_editorial_review") is not False):
+                raise ValueError("Cross-automation v4 cannot claim independent evidence approval")
+            if (not isinstance(immutable_manifest.get("replay_workflow_url"), str)
+                    or not immutable_manifest["replay_workflow_url"].startswith(
+                        "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/")):
+                raise ValueError("Cross-automation v4 replay proof URL missing")
+            for group in ("research_batch_artifact_paths",
+                          "coverage_artifact_paths", "chapter_audit_artifact_paths"):
+                snapshot_paths = immutable_manifest.get(group)
+                if (not isinstance(snapshot_paths, list) or not snapshot_paths
+                        or not set(snapshot_paths).issubset(set(manifest.get(group, [])))):
+                    raise ValueError("Cross-automation v4 research artifacts drift: " + group)
+            return
+
         # Research previously emitted an independently committed, verified replay
         # record as the immutable anchor. It intentionally is NOT a copy of the
         # rolling manifest. Bind all essential immutable facts, rather than
@@ -477,7 +558,8 @@ def validate():
                 changes = immutable_manifest.get("changes", {})
                 restored = changes.get(
                     "legacy_TE28_findings_reclassified_from_index_only_to_substantive")
-                if immutable_manifest.get("kind") == "verified_research_to_app_handoff_history":
+                if immutable_manifest.get("kind") in ("verified_research_to_app_handoff_history",
+                                                      "immutable_cross_automation_research_handoff"):
                     # The compact later handoff has no 'changes' section.
                     # Recover the earlier TE28 reclassification ONLY from its
                     # pinned, append-only historical record, not a guessed delta.
@@ -714,8 +796,10 @@ def validate():
                 "explanation": explanation,
                 "research_needed": next_task,
                 "candidate_finding_ids_unverified":
-                    cell.get("evidence_findings", [])
-                    if isinstance(cell.get("evidence_findings", []), list) else [],
+                    (cell.get("evidence_findings") if isinstance(
+                        cell.get("evidence_findings"), list) else
+                     cell.get("finding_ids") if isinstance(
+                        cell.get("finding_ids"), list) else []),
                 "assigned_to_published_chapter": None,
                 "review_state": "awaiting_human_evidence_and_editorial_review",
                 "publication_authorization": False,
