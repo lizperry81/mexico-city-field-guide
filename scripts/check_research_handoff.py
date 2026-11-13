@@ -12,13 +12,15 @@ import json
 import re
 import subprocess
 from pathlib import Path, PurePosixPath
+from editorial_passage_inventory import inventory
 
 RESEARCH_REF = "refs/remotes/origin/research-persistence"
 MANIFEST_PATH = "research/handoff/manifest.json"
 OUT = Path("artifacts/editorial-handoff")
 HEX40 = re.compile(r"^[0-9a-f]{40}$")
 GROUPS = ("chapter_audit_artifact_paths", "coverage_artifact_paths",
-          "research_pipeline_paths", "reconciliation_artifact_paths")
+          "research_pipeline_paths", "reconciliation_artifact_paths",
+          "new_research_artifact_paths")
 
 
 def git(*args):
@@ -73,6 +75,8 @@ def validate():
     immutable_manifest = git_json(RESEARCH_REF, immutable)
     if immutable_manifest.get("research_commit_sha") != sha:
         raise ValueError("Versioned handoff snapshot points to a different research commit")
+    if immutable_manifest != manifest:
+        raise ValueError("Versioned handoff differs from the current manifest")
     audit = git_json(sha, manifest["chapter_audit_artifact_paths"][0])
     coverage = git_json(sha, manifest["coverage_artifact_paths"][0])
     if not isinstance(audit.get("claims"), list) or not isinstance(coverage.get("counts"), dict):
@@ -80,7 +84,8 @@ def validate():
     if manifest.get("ready_for_publication") is not False or manifest.get("canonical_promoted") is not False:
         raise ValueError("Cannot safely classify research handoff as unapproved")
     manuscript = Path("poi/templo-mayor/reader.html")
-    manuscript_sha = hashlib.sha256(manuscript.read_bytes()).hexdigest() if manuscript.is_file() else None
+    passage_inventory = inventory(manuscript) if manuscript.is_file() else None
+    manuscript_sha = passage_inventory["source_sha256"] if passage_inventory else None
 
     # This is a queue of REVIEW QUESTIONS. Sources and topics are not copied
     # into public content or attached to a passage without a human line audit.
@@ -110,6 +115,7 @@ def validate():
         "ready_for_publication": False,
         "app_reader_text_available_for_line_audit": manuscript_sha is not None,
         "app_reader_sha256": manuscript_sha,
+        "reader_passages_pending_evidence_review": passage_inventory["passage_count"] if passage_inventory else 0,
         "audit_scope_limit": audit.get("scope_limit"),
         "coverage_status": coverage.get("status"),
         "coverage_counts": coverage["counts"],
@@ -123,13 +129,13 @@ def validate():
         "status": "human_review_required_not_for_publication",
         "reader_sha256": manuscript_sha,
         "items": queue,
-    }
+    }, passage_inventory
 
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     try:
-        report, queue = validate()
+        report, queue, passages = validate()
     except (subprocess.CalledProcessError, ValueError, KeyError,
             TypeError, json.JSONDecodeError) as exc:
         blocked = {"schema_version": 1, "status": "no_verified_handoff",
@@ -142,11 +148,16 @@ def main():
         json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     (OUT / "editorial-review-queue.json").write_text(
         json.dumps(queue, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    if passages is not None:
+        (OUT / "editorial-passage-inventory.json").write_text(
+            json.dumps(passages, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     assert report["status"] == "verified_handoff_not_approved"
     assert not report["ready_for_publication"]
     assert all(item["editorial_passage_id"] is None for item in queue["items"])
     print("Verified pinned research handoff:", report["research_commit_sha"], flush=True)
     print("Provisional audit topics queued for HUMAN review:", len(queue["items"]), flush=True)
+    print("Existing history passages inventoried for human line audit:",
+          report["reader_passages_pending_evidence_review"], flush=True)
     print("No staged research merged or published.", flush=True)
 
 
