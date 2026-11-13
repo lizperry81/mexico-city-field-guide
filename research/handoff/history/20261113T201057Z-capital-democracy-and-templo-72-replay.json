@@ -1,0 +1,72 @@
+{
+  "schema_version": 4,
+  "generated_at": "2026-11-13T20:10:57.910Z",
+  "kind": "immutable_research_to_app_handoff_snapshot",
+  "research_commit_sha": "24bcc70ea26399e6dc88cc43e105b3193c0b1705",
+  "verified_replay_commit_sha": "348c6ab51d1980f2c446e1fcc7ef36d9932ea0da",
+  "prior_branch_head_sha": "348c6ab51d1980f2c446e1fcc7ef36d9932ea0da",
+  "canonical": {
+    "version": "V97",
+    "sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "status": "unchanged",
+    "counts": {
+      "sources": 616,
+      "claims": 422,
+      "claim_sources": 403,
+      "canonical_findings": 68,
+      "canonical_source_inspections": 9
+    },
+    "original_tables_preserved": 88
+  },
+  "staged": {
+    "github_batches": 72,
+    "assertion_bearing_findings": 403,
+    "source_candidates": 135,
+    "inspection_entries": 173,
+    "unresolved_source_refs": 1,
+    "cross_batch_bibliographic_collisions": 2,
+    "detached_inspections": 37
+  },
+  "database": {
+    "path": "research/reconciled/v4_24bcc70ea263/research_only.sqlite.gz",
+    "uncompressed_sha256": "9f2c693c9d4ccb4ae0ae811d96dbeb21c32ab6d7f6a910709fa95d5dd47f9ed9",
+    "compressed_sha256": "d023401679b9608f834d9e1e3018866dcde35fa5ac82a180c57af35a679d3172",
+    "replay_report_path": "research/reconciled/v4_24bcc70ea263/replay_report.json"
+  },
+  "artifact_paths": {
+    "batch": "research/batches/20261113T2004Z-capital-representation-1928-1999-and-templo-museum.json",
+    "coverage": "research/coverage/20261113T2004Z-local-government-democracy-site-readiness.json",
+    "templo_mayor_audit": "research/audits/20261113T2004Z-templo-mayor-exact-reader-source-gates.json",
+    "preflight": "research/ledgers/20261113T2004Z-72nd-batch-input-and-identity-preflight.json"
+  },
+  "historical_new_findings": 11,
+  "new_source_candidates": 7,
+  "new_inspection_records": 7,
+  "coverage_summary": {
+    "substantial": 0,
+    "developing": 6,
+    "sparse": 5,
+    "missing": 1
+  },
+  "verified_via": {
+    "replay_ci": "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/43498892868",
+    "persistence_ci": "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/43498892872",
+    "sqlite_integrity": "ok",
+    "foreign_key_violations": 0,
+    "canonical_rows_unchanged": true,
+    "remote_checksum_in_ci": true
+  },
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "blockers": [
+    "ONE unresolved source reference is an unverified proposed Sload botanical dataset identifier, not a valid confirmed publication",
+    "TWO cross-batch bibliographic collisions remain STG-SRC-MANZANILLA-LOPEZ-FRETER-1996 and v95-sload-cave-2020",
+    "Nine potential duplicate URL inspections and 28 detached inspection identities without matches remain non-auto-merge; 37 detached originals preserved",
+    "Original Diario Oficial editions 20 Aug/31 Dec 1928 and 1993–1996 constitutional amendments have not been personally inspected in this run",
+    "Full Miranda Pacheco monograph and legislative/municipal minutes remain unread; 1929 boundary map not validated",
+    "1997 IFE certified election totals and present-day city hall public access are not independently verified",
+    "Templo Mayor alliance dates 1427/1428/1430, Gamio 1913/1914 original record, Book 12 precise folio alignment and site visitor route remain unapproved",
+    "No independent editorial corroboration, no manuscript facsimile collation and no archival photo rights cleared"
+  ],
+  "nonpromotion": "Research-only cumulative SQLite is separate from V97. Canonical and main unmodified."
+}
