@@ -16,6 +16,7 @@ from pathlib import Path, PurePosixPath
 from editorial_passage_inventory import inventory
 from handoff_verified_history import validate_verified_history_v4
 from handoff_immutable_batch import validate_immutable_batch_v4
+from handoff_new_audits import parse_new_audit
 
 RESEARCH_REF = "refs/remotes/origin/research-persistence"
 MANIFEST_PATH = "research/handoff/manifest.json"
@@ -751,7 +752,8 @@ def validate():
         if (not isinstance(audit_doc, dict) or
                 not any(isinstance(audit_doc.get(key), list)
                         for key in ("claims", "evidence_entries", "claim_to_source",
-                                    "claim_to_source_locator_matrix"))):
+                                    "claim_to_source_locator_matrix", "clauses",
+                                     "claim_to_reading_gate", "passages"))):
             raise ValueError("Invalid chapter audit format: " + path)
         if (audit_doc.get("ready_for_publication") is True or
                 audit_doc.get("editorial_approved") is True or
@@ -776,6 +778,23 @@ def validate():
     source_locator_slots = []
     exact_reader_audits = []
     for audit_path, audit_doc in audits:
+        # Strict typed audits remain private and cannot authorize manuscript
+        # publication. The current-reader audit is bound to its Git blob ID.
+        current_reader_blob = git(
+            "rev-parse", "HEAD:poi/templo-mayor/reader.html").decode().strip()
+        typed_items = parse_new_audit(audit_path, audit_doc, current_reader_blob)
+        if typed_items is not None:
+            queue.extend(typed_items)
+            if (audit_doc.get("kind") ==
+                    "templo_mayor_discover_actual_reader_claim_to_source_locator_audit"):
+                exact_reader_audits.append({
+                    "audit_path": audit_path,
+                    "reader_blob_sha_in_research": audit_doc["target_main_blob_sha"],
+                    "matches_current_main_reader":
+                        audit_doc["target_main_blob_sha"] == current_reader_blob,
+                    "publication_authorization": False,
+                })
+            continue
         is_exact_reader_audit = (
             audit_doc.get("kind") == "exact_main_branch_reader_prose_audit")
         is_gate_audit = (
@@ -943,7 +962,8 @@ def validate():
                                "historically_grounded_explanatory_readiness_delta"
                                else None))
             next_task = (cell.get("next") or cell.get("remaining_gap")
-                         or cell.get("gap") or cell.get("missing"))
+                         or cell.get("gap") or cell.get("missing")
+                          or cell.get("next_evidence_needed"))
             # Focused 2026-11-13 coverage deltas record evidence limitations
             # as explicit blocker lists, not a single "next" string. Preserve
             # the actual research gaps rather than rejecting a valid handoff.
@@ -967,7 +987,9 @@ def validate():
                     (cell.get("evidence_findings") if isinstance(
                         cell.get("evidence_findings"), list) else
                      cell.get("finding_ids") if isinstance(
-                        cell.get("finding_ids"), list) else []),
+                        cell.get("finding_ids"), list) else
+                      cell.get("linked_assertion_ids") if isinstance(
+                          cell.get("linked_assertion_ids"), list) else []),
                 "assigned_to_published_chapter": None,
                 "review_state": "awaiting_human_evidence_and_editorial_review",
                 "publication_authorization": False,
