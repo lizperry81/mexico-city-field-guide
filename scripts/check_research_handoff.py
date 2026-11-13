@@ -89,6 +89,94 @@ def validate_versioned_handoff(manifest, immutable_manifest, snapshot_sha):
         if immutable_manifest.get("kind") == "append_only_research_handoff_snapshot":
             if immutable_manifest.get("schema_version") != 4:
                 raise ValueError("Append-only snapshot has wrong schema")
+            # November 13 TE28/urban-breadth handoffs use an explicitly
+            # versioned database object and more descriptive before/after
+            # counters. Compare those fields exactly, not by positional guess.
+            if isinstance(immutable_manifest.get("database"), dict):
+                db = immutable_manifest["database"]
+                if (immutable_manifest.get("research_branch") != "research-persistence"
+                        or immutable_manifest.get("canonical_status") != "unchanged_not_promoted"
+                        or immutable_manifest.get("canonical_promoted") is not False
+                        or immutable_manifest.get("ready_for_editorial_review") is not False
+                        or immutable_manifest.get("publication_approved") is not False
+                        or manifest.get("canonical_promoted") is not False
+                        or manifest.get("ready_for_publication") is not False
+                        or manifest.get("ready_for_editorial_review") is not False):
+                    raise ValueError("Nested v4 snapshot cannot approve publication")
+                for key in ("research_commit_sha", "verified_replay_commit_sha",
+                            "canonical_version", "canonical_hash"):
+                    if immutable_manifest.get(key) != manifest.get(key):
+                        raise ValueError("Nested v4 provenance drift: " + key)
+                if (not isinstance(immutable_manifest.get("pipeline_fix_commit_sha"), str)
+                        or not HEX40.fullmatch(immutable_manifest["pipeline_fix_commit_sha"])):
+                    raise ValueError("Nested v4 missing pipeline provenance")
+                for db_key, handoff_key in (
+                    ("sqlite_gz", "versioned_research_sqlite_gz_path"),
+                    ("replay_report", "replay_report_path"),
+                    ("compressed_sha256", "compressed_sha256"),
+                    ("sqlite_sha256", "versioned_research_sha256"),
+                ):
+                    if db.get(db_key) != manifest.get(handoff_key):
+                        raise ValueError("Nested v4 database drift: " + db_key)
+                if (db.get("integrity") != "ok"
+                        or db.get("foreign_key_violations") != 0
+                        or db.get("canonical_rows_unchanged") is not True
+                        or db.get("original_V97_tables_preserved") != 88):
+                    raise ValueError("Nested v4 replay integrity unverified")
+                for key, value in manifest.get("canonical", {}).items():
+                    if immutable_manifest.get("canonical_counts", {}).get(key) != value:
+                        raise ValueError("Nested v4 canonical count drift: " + key)
+                before = immutable_manifest.get("before")
+                after = immutable_manifest.get("after")
+                if not isinstance(before, dict) or not isinstance(after, dict):
+                    raise ValueError("Nested v4 snapshot lacks before/after checks")
+                metrics = {
+                    "github_batches_replayed": "github_batch_files",
+                    "github_distinct_substantive_finding_ids":
+                        "assertion_bearing_staged_finding_ids",
+                    "github_inspection_entries": "inspection_metadata",
+                    "github_source_candidates": "source_candidate_ids",
+                    "unknown_source_refs": "unresolved_source_ids",
+                    "source_metadata_collisions": "source_metadata_collisions",
+                    "github_index_only_refs_unresolved": "index_only_unresolved",
+                }
+                for current_key, snapshot_key in metrics.items():
+                    if (not isinstance(after.get(snapshot_key), int)
+                            or after[snapshot_key] !=
+                            manifest.get("staged_counts", {}).get(current_key)):
+                        raise ValueError("Nested v4 staged metrics drift: " + current_key)
+                for key in ("github_batch_files", "assertion_bearing_staged_finding_ids",
+                            "inspection_metadata", "source_candidate_ids"):
+                    if (not isinstance(before.get(key), int)
+                            or before[key] > after[key]):
+                        raise ValueError("Nested v4 research history regressed: " + key)
+                changes = immutable_manifest.get("changes", {})
+                if (changes.get("legacy_TE28_findings_reclassified_from_index_only_to_substantive")
+                        != before.get("index_only_unresolved") - after.get("index_only_unresolved")
+                        or changes.get("new_historical_finding_candidates") !=
+                        manifest.get("evidence_status", {}).get("new_historical_finding_candidates_researched_this_run")
+                        or changes.get("new_source_candidates") !=
+                        after["source_candidate_ids"] - before["source_candidate_ids"]
+                        or changes.get("new_inspection_metadata_entries") !=
+                        after["inspection_metadata"] - before["inspection_metadata"]):
+                    raise ValueError("Nested v4 restoration/evidence metrics drift")
+                evidence = immutable_manifest.get("evidence_status", {})
+                current_evidence = manifest.get("evidence_status", {})
+                for snapshot_key, current_key in (
+                    ("full_public_institutional_html_pages_examined_this_run",
+                     "new_public_institutional_html_source_inspections_this_run"),
+                    ("independently_corroborated_new_findings",
+                     "independently_corroborated_new_findings"),
+                ):
+                    if evidence.get(snapshot_key) != current_evidence.get(current_key):
+                        raise ValueError("Nested v4 source access/evidence drift: " + current_key)
+                for group in ("chapter_audit_artifact_paths", "coverage_artifact_paths",
+                              "research_batch_artifact_paths", "reconciliation_artifact_paths"):
+                    paths = immutable_manifest.get(group)
+                    if (not isinstance(paths, list) or not paths
+                            or not set(paths).issubset(set(manifest.get(group, [])))):
+                        raise ValueError("Nested v4 missing versioned artifacts: " + group)
+                return
             shared = (
                 "research_commit_sha", "canonical_version", "canonical_hash",
                 "versioned_research_sqlite_gz_path", "versioned_research_sha256",
@@ -469,7 +557,11 @@ def validate():
     coverage_gaps = []
     for coverage_path in manifest["coverage_artifact_paths"]:
         coverage_doc = json.loads(bound_blob(coverage_path).decode("utf-8"))
-        cells = coverage_doc.get("cells", [])
+        cells = coverage_doc.get("cells")
+        if cells is None:
+            # New research deltas use a 'readiness' array instead of 'cells'.
+            # Preserve those gaps privately rather than silently dropping them.
+            cells = coverage_doc.get("readiness", [])
         if not isinstance(cells, list):
             raise ValueError("Malformed coverage cells: " + coverage_path)
         for cell in cells:
@@ -483,8 +575,8 @@ def validate():
             theme = cell.get("theme")
             rating = cell.get("rating") or cell.get("new_rating")
             explanation = (cell.get("why") or cell.get("assessment")
-                           or cell.get("explanatory_readiness"))
-            next_task = cell.get("next") or cell.get("remaining_gap")
+                           or cell.get("explanatory_readiness") or cell.get("reason"))
+            next_task = cell.get("next") or cell.get("remaining_gap") or cell.get("gap")
             # Focused 2026-11-13 coverage deltas record evidence limitations
             # as explicit blocker lists, not a single "next" string. Preserve
             # the actual research gaps rather than rejecting a valid handoff.
