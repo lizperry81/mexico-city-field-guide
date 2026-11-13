@@ -1,0 +1,220 @@
+{
+  "schema_version": 3,
+  "generated_at": "2026-11-13T17:10:35.558Z",
+  "kind": "period_x_theme_x_geography_explanatory_readiness_delta",
+  "branch": "research-persistence",
+  "status": "research_only_staged",
+  "scope": "Cross-period sample explicitly linked to existing GitHub batch finding IDs. Ratings measure ability to write coherent, accurately grounded site explanations rather than bibliographic citation volume.",
+  "baseline_replay": "research/reconciled/v4_24db1c702d54/replay_report.json",
+  "incoming_batch": "research/batches/20261113T1708Z-decena-photo-civilians-three-source-recovery.json",
+  "rating_definitions": {
+    "substantial": "Can write a nuanced, sourced chronological place explanation with multiple independently checked locators and physically verified observations.",
+    "developing": "Substantive site-linked chronology and explanatory mechanism exist but primary checks or major interpretive gaps remain.",
+    "sparse": "Isolated named specifics or disputed partial evidence, insufficient for complete learning narrative.",
+    "missing": "No substantial finding for the proposed period/theme/place crossing, not equivalent to zero source citations."
+  },
+  "cells": [
+    {
+      "id": "MEXICA-STATE-CENTRO",
+      "period": "c.1420–1521",
+      "theme": "State formation and tribute",
+      "geography": "Templo Mayor / Centro Histórico",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "stg-20261113-tm-audit-01",
+        "stg-20261113-tm-audit-02"
+      ],
+      "explanatory_readiness": "Chronology and spatial temple/tribute relationship are teachable, but exact Alliance 1427/1428/1430 disagreement and tribute-vs-deposition distinction need direct source analysis.",
+      "next_evidence_needed": "Check diplomatic framing in preconquest / colonial Nahua chronicles and codex plate locators"
+    },
+    {
+      "id": "MEXICA-RITUAL-ARCH",
+      "period": "c.1450–1521",
+      "theme": "Ritual architecture and iconography",
+      "geography": "Templo Mayor",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "stg-20261113-tm-audit-03",
+        "stg-20261113-tm-audit-04"
+      ],
+      "explanatory_readiness": "Coatepec interpretation and earlier/later Coyolxauhqui monuments provide concrete context; archaeology vs myth must stay distinguished.",
+      "next_evidence_needed": "Source-specific stratigraphic diagrams and separate original/copy identification"
+    },
+    {
+      "id": "COLONIAL-FOOD-1692",
+      "period": "1692",
+      "theme": "Grain supply, public protest, authority",
+      "geography": "Zócalo / Palacio Nacional",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "cdmx-stg-20261113-colonial1692-01",
+        "cdmx-stg-20261113-colonial1692-04",
+        "cdmx-stg-20261113-colonial1692-05"
+      ],
+      "explanatory_readiness": "Specific street-by-street petitions and damaged buildings make a contextual reading possible; relies on historians' reconstruction without direct municipal archival comparison.",
+      "next_evidence_needed": "Exbalin source pages and independent Archivo de Cabildo primary evidence"
+    },
+    {
+      "id": "COLONIAL-GENDER-1692",
+      "period": "1692",
+      "theme": "Women, Indigenous urban residents, and authority",
+      "geography": "Plaza Mayor / grain exchange",
+      "rating": "sparse",
+      "linked_assertion_ids": [
+        "cdmx-stg-20261113-colonial1692-02",
+        "cdmx-stg-20261113-colonial1692-03"
+      ],
+      "explanatory_readiness": "Participation is attested but first violent incident differs across authors; no reliable woman-specific biography or primary voice ready.",
+      "next_evidence_needed": "Original testimonies with identification and voice attribution"
+    },
+    {
+      "id": "19C-WAR-CHURUBUSCO",
+      "period": "1847",
+      "theme": "War, defenses, and surviving convent",
+      "geography": "Churubusco / Coyoacán",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113-1847-01",
+        "STG-20261113-1847-02"
+      ],
+      "explanatory_readiness": "Battle date and palimpsest of convent architectural layers established at secondary/institutional level; material details available but siege diagram and defender primary records absent.",
+      "next_evidence_needed": "INAH archaeological floor plans, participant records, accessible building-location confirmation"
+    },
+    {
+      "id": "19C-WAR-CHAPULTEPEC",
+      "period": "1847",
+      "theme": "War memory and memorial construction",
+      "geography": "Chapultepec / Molino del Rey",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113-1847-04",
+        "STG-20261113-1847-05",
+        "STG-20261113-1847-06"
+      ],
+      "explanatory_readiness": "Distinguishes actual combatants and battle sites from subsequent memorial relocation; grounds a site walk without overstating patriotic legends.",
+      "next_evidence_needed": "Original army field reports and exact current location of 2014 relocated monument"
+    },
+    {
+      "id": "19C-WAR-CIVILIANS",
+      "period": "14–16 September 1847",
+      "theme": "Civilian occupation, class, and resistance",
+      "geography": "Centro Histórico / occupied streets",
+      "rating": "sparse",
+      "linked_assertion_ids": [
+        "STG-20261113-1847-01"
+      ],
+      "explanatory_readiness": "The available 1847 war findings concern military sites, not civilian experiences; Granados thesis is only a bibliographic lead and this particular anchor is not evidence for resistance.",
+      "next_evidence_needed": "Inspect complete Granados thesis, 1847 town council sessions, primary city property loss and arrest records"
+    },
+    {
+      "id": "REV-1913-PALACIO",
+      "period": "9–20 February 1913",
+      "theme": "Constitutional coup and defensive architecture",
+      "geography": "Palacio Nacional / Zócalo",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "cdmx-stg-20261113-decena-01",
+        "STG-20261113-1708-1913-DECENA-PHOTO-01",
+        "STG-20261113-1708-1913-DECENA-PHOTO-08"
+      ],
+      "explanatory_readiness": "Curated exhibit locates armed defenders on roof/portals and illustrates the Diario Oficial's succession; constitutional transition requires parliamentary original documents.",
+      "next_evidence_needed": "Direct 1913 Diario Oficial issue and palace roof / entrances then-vs-now analysis"
+    },
+    {
+      "id": "REV-1913-CIUDADELA",
+      "period": "9–16 February 1913",
+      "theme": "Siege tactics, armistice, civil life",
+      "geography": "Ciudadela / Balderas",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "cdmx-stg-20261113-decena-04",
+        "STG-20261113-1708-1913-DECENA-PHOTO-02",
+        "STG-20261113-1708-1913-DECENA-PHOTO-09"
+      ],
+      "explanatory_readiness": "Could support on-site comparison of battle geography and ceasefire narrative; no georeferenced exact positions or current-building structural continuity verified.",
+      "next_evidence_needed": "Digitize military fire map, compare historic plot with present Biblioteca de México footprint"
+    },
+    {
+      "id": "REV-1913-PRESS",
+      "period": "February 1913",
+      "theme": "Press, propaganda and image-making",
+      "geography": "Historic Centre",
+      "rating": "sparse",
+      "linked_assertion_ids": [
+        "STG-20261113-1708-1913-DECENA-PHOTO-07"
+      ],
+      "explanatory_readiness": "A photographed press fire exists but location, perpetrators, editorial positioning and surviving address unverified.",
+      "next_evidence_needed": "Historic newspaper mastheads, issue dates, press ownership archive, original photo provenance"
+    },
+    {
+      "id": "REV-1913-HOUSING",
+      "period": "February 1913",
+      "theme": "Domestic political violence",
+      "geography": "Colonia Juárez / Avenida Berlín",
+      "rating": "sparse",
+      "linked_assertion_ids": [
+        "STG-20261113-1708-1913-DECENA-PHOTO-04"
+      ],
+      "explanatory_readiness": "Named 14 February arson and photographed ruins provide a research anchor but no confirmed historic house number or survival.",
+      "next_evidence_needed": "Historic property cadastre, house no. and contemporary street maps"
+    },
+    {
+      "id": "REV-1913-CIVILIANS",
+      "period": "February 1913",
+      "theme": "Civilian flight and mortality",
+      "geography": "Central city / Balbuena",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113-1708-1913-DECENA-PHOTO-05",
+        "STG-20261113-1708-1913-DECENA-PHOTO-06"
+      ],
+      "explanatory_readiness": "Civilians' white-flag flight and body disposal visual evidence counters battle-only narratives; no trustworthy total fatalities or sample demographics.",
+      "next_evidence_needed": "Independent contemporary death registers; identify photographic locations and captions"
+    },
+    {
+      "id": "1985-POLICY-CENTRO",
+      "period": "1985–2000",
+      "theme": "Housing, legal expropriation and typologies",
+      "geography": "Centro Histórico",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113-1985-RECON-03",
+        "STG-20261113-1604-1985-HOUSING-02",
+        "STG-20261113-1604-1985-HOUSING-04"
+      ],
+      "explanatory_readiness": "Specific expropriation date, building typologies, preservation categories support explanation; contemporary completion schedules and item-by-item buildings absent.",
+      "next_evidence_needed": "1987 RHP ledger and original property schedules; cross-check 2000 retrospective estimates"
+    },
+    {
+      "id": "1985-MEMORIAL-ALAMEDA",
+      "period": "1985–present",
+      "theme": "Loss, memory, and later public-space design",
+      "geography": "Plaza de la Solidaridad / Alameda",
+      "rating": "sparse",
+      "linked_assertion_ids": [
+        "STG-20261113-1604-1985-HOUSING-06"
+      ],
+      "explanatory_readiness": "INAH abstract places memorial on former Regis site; only abstract inspected and present-day feature check absent.",
+      "next_evidence_needed": "Inspect article body, plan of Regis footprint, current inscription and historical images"
+    },
+    {
+      "id": "MODERN-METRO-NEIGHBORHOOD",
+      "period": "1968–present",
+      "theme": "Transit-driven displacement and spatial inequality",
+      "geography": "Guerrero / Centro Histórico",
+      "rating": "missing",
+      "linked_assertion_ids": [],
+      "explanatory_readiness": "No substantial place-linked measured finding in inspected corpus for this particular cell; adjacent transit citations cannot substitute for an explanation of displacement.",
+      "next_evidence_needed": "Source-based transit construction maps, displacement surveys, housing histories, named surviving locations"
+    }
+  ],
+  "rating_totals": {
+    "developing": 9,
+    "sparse": 5,
+    "missing": 1
+  },
+  "canonical_promoted": false,
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "methodological_warning": "Cells represent assessed sample, NOT complete city-wide history inventory; 'sparse' classification reflects explanatory gaps even with a source."
+}
