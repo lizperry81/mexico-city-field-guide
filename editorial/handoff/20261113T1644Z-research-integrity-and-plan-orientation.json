@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "kind": "main_branch_research_integrity_and_app_progress_handoff",
+  "generated_on": "2026-11-13",
+  "app_branch": "main",
+  "app_code_commits": [
+    "a95abf18d9fddac935e1ebfaeba4973b1fd0c29c",
+    "626ff62df06eab3efe1130f0fb4fa20d871565df",
+    "8b373c3fa8185808e0a6ce8a731c678fcfadc743"
+  ],
+  "application_change": "Expose existing INAH archaeological-zone and museum-floor PDF plans in Templo Mayor Plan; improve phone touch-target sizes; protect all five Explore stops with exact-field-navigation and image regression tests.",
+  "protected_unchanged": [
+    "editorial/DISCOVER_APPROVED_BASELINE_2026-11-13.md",
+    "editorial/discover/templo-mayor.json",
+    "poi/templo-mayor/reader.html historical Discover paragraphs",
+    "existing five Explore stop descriptions",
+    "original research archive and localStorage commenting"
+  ],
+  "approved_chapter_archive_status": {
+    "the_basin_before_the_mexica": "exact approved manuscript not recoverable in accessible sources",
+    "the_heart_of_tenochtitlan": "exact approved manuscript not recoverable in accessible sources",
+    "archive_markdown_written": false,
+    "checksum_written": false
+  },
+  "research_handoff": {
+    "branch": "research-persistence",
+    "manifest_path": "research/handoff/manifest.json",
+    "schema_version": 4,
+    "manifest_blob_sha": "c0e904a065095df4df4cc304b61c6f6a27f0ee00",
+    "research_commit_sha": "24db1c702d544d8cba623dd13e622edc0b65a069",
+    "research_commit_exists": true,
+    "immutable_handoff_path": "research/handoff/history/20261113T1604Z-1985-rhp-heritage-five-identities-68-replay.json",
+    "immutable_handoff_blob_expected": "a18824d9615cf46d5e03b2030c6d2335d7a3db06",
+    "immutable_handoff_blob_actual": "217af16479ab7785cba57641e05a6ef842256804",
+    "acceptance": "rejected_blob_sha_mismatch",
+    "last_previous_verified_consumed_research_sha": "81c9ef0cdda555e41853d8ebda6455d9ffd2e49e",
+    "canonical_version": "V97",
+    "canonical_unchanged": true,
+    "staged_replay_batches": 68,
+    "staged_candidate_finding_ids": 366,
+    "checked_artifacts": {
+      "replay_report": {
+        "path": "research/reconciled/v4_24db1c702d54/replay_report.json",
+        "git_blob_sha": "60cf154c0f2e2396ba3314dbe58c76d24b83e924"
+      },
+      "research_binary": {
+        "path": "research/reconciled/v4_24db1c702d54/research_only.sqlite.gz",
+        "git_blob_sha": "6f226ea0ea41af053345a9f0a1f2f32c663af06b",
+        "verified_encoding": "base64"
+      },
+      "new_batch": {
+        "path": "research/batches/20261113T1604Z-1985-housing-architectural-outcomes-source-repair.json",
+        "git_blob_sha": "6e669c0dab115393d685e38a1acc4113b64bb5f4"
+      },
+      "new_coverage": {
+        "path": "research/coverage/20261113T1604Z-1985-design-heritage-urban-readiness.json",
+        "git_blob_sha": "d0b0f9431b14af961233200332612da6b506e1ab"
+      },
+      "new_templo_gate": {
+        "path": "research/audits/20261113T1604Z-templo-mayor-historical-vs-site-reading-gates.json",
+        "git_blob_sha": "062559a1858941b4fa6ed30947c238905722129b"
+      },
+      "source_identity_disposition": {
+        "path": "research/ledgers/20261113T1604Z-nine-unregistered-source-disposition.json",
+        "git_blob_sha": "269b96534fd683802f1c58f8f4411d7de07ac210"
+      }
+    },
+    "evidence_ready_for_human_editorial_review": false,
+    "ready_for_publication": false,
+    "canonical_promoted": false,
+    "pending_research_decisions": [
+      "Restore immutable record SHA consistency through the research producer without weakening the consumer check",
+      "Resolve Gamio 1913/1914 date and Triple Alliance 1427/1428/1430 conflicts at cited original sources",
+      "Cross-check 1985 RHP figures with contemporaneous administrative evidence",
+      "Resolve four unknown source references and two source metadata collisions"
+    ]
+  },
+  "release_target": "2026-12-10 feature freeze for testing",
+  "publication_note": "This file reports research provenance and application navigation changes. It is not approved history and must not be imported as public Discover prose."
+}
