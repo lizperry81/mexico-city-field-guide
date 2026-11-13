@@ -342,6 +342,122 @@ else:
     raise AssertionError("v2 immutable snapshot drift went undetected")
 
 
+
+# The newest producer publishes a compact verified *history* record rather
+# than the older append-only database object. Pin its counts, evidence audit,
+# paths, readback metadata and explicitly unapproved status.
+history_manifest = copy.deepcopy(v4_nested)
+history_manifest["staged_counts"].update({
+    "github_batches_replayed": 62,
+    "github_distinct_substantive_finding_ids": 336,
+    "github_inspection_entries": 131,
+    "github_source_candidates": 84,
+    "unknown_source_refs": 14,
+    "source_metadata_collisions": 2,
+    "github_index_only_refs_unresolved": 1,
+})
+history_manifest["evidence_status"].update({
+    "new_historical_finding_candidates_researched_this_run": 7,
+    "new_source_candidate_records_this_run": 5,
+    "new_source_inspection_metadata_this_run": 5,
+    "ready_for_editorial_review": False, "publication_approved": False,
+})
+history_manifest["ready_for_publication"] = False
+history_manifest["ready_for_editorial_review"] = False
+history_manifest["blockers"] = ["Unresolved Gamio dating/source comparison"]
+history_manifest["research_batch_artifact_paths"].append("research/batches/last.json")
+history_manifest["reconciliation_artifact_paths"].extend([
+    "research/ledgers/history.json", "research/reconciled/compressed_sha256.txt"])
+history_snapshot = {
+    "schema_version": 4, "kind": "verified_research_to_app_handoff_history",
+    "generated_at": "2026-11-13T11:07:00Z",
+    "research_commit_sha": history_manifest["research_commit_sha"],
+    "replay_persistence_commit_sha": history_manifest["verified_replay_commit_sha"],
+    "previous_manifest_sha": history_manifest["previous_manifest_blob_sha"],
+    "canonical_version": "V97", "canonical_hash": history_manifest["canonical_hash"],
+    "canonical_status": "unchanged_not_promoted",
+    "canonical_counts": {
+        "sources": 616, "claims": 422, "claim_sources": 403,
+        "canonical_findings": 68, "canonical_source_inspections": 9,
+    },
+    "staged_counts": {
+        "research_batches": 62, "assertion_bearing_finding_ids": 336,
+        "inspection_metadata_entries": 131, "source_candidate_identities": 84,
+        "unresolved_source_refs": 14, "source_metadata_collisions": 2,
+        "index_only_unresolved": 1,
+    },
+    "previous_counts": {
+        "research_batches": 61, "assertion_bearing_finding_ids": 329,
+        "inspection_metadata_entries": 126, "source_candidate_identities": 79,
+    },
+    "artifact_paths": {
+        "batch": "research/batches/last.json",
+        "audit": "research/audits/new.json",
+        "coverage": "research/coverage/new.json",
+        "ledger": "research/ledgers/history.json",
+        "report": history_manifest["replay_report_path"],
+        "sqlite": history_manifest["versioned_research_sqlite_gz_path"],
+        "compressed_sha": "research/reconciled/compressed_sha256.txt",
+    },
+    "uncompressed_sqlite_sha256": history_manifest["versioned_research_sha256"],
+    "compressed_sha256": history_manifest["compressed_sha256"],
+    "verification": {
+        "sqlite_integrity": "ok", "foreign_key_violations": 0,
+        "canonical_rows_unchanged": True, "canonical_tables_preserved": 88,
+        "github_readback": {
+            "replay_report_blob_sha": "a" * 40,
+            "compressed_sha_file_blob_sha": "b" * 40,
+        },
+        "github_actions_run":
+            "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/123",
+        "github_actions_conclusion": "success",
+    },
+    "historical_evidence": {
+        "new_findings": 7, "new_source_candidates": 5,
+        "new_inspection_metadata": 5,
+        "source_access": "Publisher PDF text and institutional HTML, not originals",
+        "editorial_conflict": "Gamio chronology 1913 versus 1914",
+        "chapter_audit_artifact_paths": ["research/audits/new.json"],
+        "coverage_artifact_paths": ["research/coverage/new.json"],
+        "ready_for_editorial_review": False, "ready_for_publication": False,
+    },
+    "blockers": copy.deepcopy(history_manifest["blockers"]),
+    "publication_approved": False, "canonical_promoted": False,
+    "main_modified": False,
+}
+history_manifest["canonical"] = {
+    "sources": 616, "claims": 422, "claim_source_links": 403,
+    "findings": 68, "source_inspections": 9,
+}
+validate_versioned_handoff(history_manifest, history_snapshot, "d" * 40)
+for mutation in (
+    {"research_commit_sha": "e" * 40},
+    {"previous_manifest_sha": "f" * 40},
+    {"staged_counts": dict(history_snapshot["staged_counts"], source_candidate_identities=85)},
+    {"previous_counts": dict(history_snapshot["previous_counts"],
+                             assertion_bearing_finding_ids=340)},
+    {"historical_evidence": dict(history_snapshot["historical_evidence"],
+                                  new_findings=9)},
+    {"artifact_paths": dict(history_snapshot["artifact_paths"],
+                             audit="research/audits/not-checked.json")},
+    {"verification": dict(history_snapshot["verification"],
+                           github_actions_conclusion="failure")},
+    {"verification": dict(history_snapshot["verification"],
+                           canonical_rows_unchanged=False)},
+    {"canonical_counts": dict(history_snapshot["canonical_counts"], sources=617)},
+    {"publication_approved": True},
+    {"main_modified": True},
+    {"blockers": []},
+):
+    try:
+        validate_versioned_handoff(
+            history_manifest, dict(history_snapshot, **mutation), "d" * 40)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("Unbound v4 history handoff accepted: " + str(mutation))
+
+
 report = json.loads((OUT / "handoff-report.json").read_text(encoding="utf-8"))
 assert report["ready_for_publication"] is False
 if report["status"] == "no_verified_handoff":
