@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "segment": 3,
+  "tree_head": "d059fa448bc1cabcecf5f54c77b2e916bee1f283",
+  "scope": "full_content_checked_against_Git_blob_SHA",
+  "records": [
+    {
+      "path": "research/batches/20261112T0700Z-auto09-te28-2007.json",
+      "git_blob_sha1": "22225732c18323c2c2f7e188f43b7e54e9a2a6bd",
+      "verified": true,
+      "arrays": {
+        "findings": 5,
+        "source_inspection": 1
+      },
+      "finding_like_entries": 0,
+      "identified_ids": 5
+    },
+    {
+      "path": "research/batches/20261112T080125Z-auto09-te28-2009.json",
+      "git_blob_sha1": "18182074aa73cb8b3e9d0a083fd143cc8a2788e9",
+      "verified": true,
+      "arrays": {
+        "findings": 2
+      },
+      "finding_like_entries": 2,
+      "identified_ids": 2
+    },
+    {
+      "path": "research/batches/20261112T0902Z-auto09-moon-source-recovery.json",
+      "git_blob_sha1": "d94c9902ae11621a0b9237bf43f70993148c2807",
+      "verified": true,
+      "arrays": {
+        "findings": 4,
+        "source_inspections": 4
+      },
+      "finding_like_entries": 4,
+      "identified_ids": 4
+    },
+    {
+      "path": "research/batches/20261112T100346Z-auto09-torras-source-reconciliation.json",
+      "git_blob_sha1": "5a3213d97c2d6dcb4cf83d756377dce0ec2881b7",
+      "verified": true,
+      "arrays": {
+        "candidate_findings": 2,
+        "source_inspection": 1
+      },
+      "finding_like_entries": 2,
+      "identified_ids": 2
+    },
+    {
+      "path": "research/batches/20261112T1105Z-auto10-sload-ch8.json",
+      "git_blob_sha1": "9cbe79f98a3ff8aee7111f0311eaf13024cb6a2f",
+      "verified": true,
+      "arrays": {
+        "findings": 2,
+        "source_inspection": 1
+      },
+      "finding_like_entries": 2,
+      "identified_ids": 2
+    },
+    {
+      "path": "research/batches/20261112T1203Z-auto11-mirror-photo.json",
+      "git_blob_sha1": "7747894438d05e21e2a2dffc8857133f99b508c4",
+      "verified": true,
+      "arrays": {
+        "new_findings": 2,
+        "source_inspection": 1
+      },
+      "finding_like_entries": 2,
+      "identified_ids": 2
+    },
+    {
+      "path": "research/batches/20261112T130305Z-auto11-carballo-moon.json",
+      "git_blob_sha1": "5529259e00f6f6b8f3bd17322dc59de1a29e4b66",
+      "verified": true,
+      "arrays": {
+        "findings": 5
+      },
+      "finding_like_entries": 5,
+      "identified_ids": 5
+    },
+    {
+      "path": "research/batches/20261112T140057Z-auto11-tlajinga-comp17.json",
+      "git_blob_sha1": "de642a4273e897dcb03b498d80a92f7b9f45be63",
+      "verified": true,
+      "arrays": {
+        "findings": 5,
+        "source_inspection": 1
+      },
+      "finding_like_entries": 5,
+      "identified_ids": 5
+    },
+    {
+      "path": "research/batches/20261112T1501Z-auto11-cave-blockage-materials.json",
+      "git_blob_sha1": "296b23d0b22adf88aa661ee27d08d243a88eb882",
+      "verified": true,
+      "arrays": {
+        "findings": 3,
+        "source_inspection": 1
+      },
+      "finding_like_entries": 3,
+      "identified_ids": 3
+    },
+    {
+      "path": "research/batches/20261112T1557Z-auto10-carballo-crosscheck.json",
+      "git_blob_sha1": "8c04caf5c18aa6903d7da5192f54b8570e8a11c9",
+      "verified": true,
+      "arrays": {
+        "findings": 3,
+        "source_inspection": 1
+      },
+      "finding_like_entries": 3,
+      "identified_ids": 3
+    },
+    {
+      "path": "research/batches/20261112T165754Z-scheduled9-breadth-9e6d.json",
+      "git_blob_sha1": "62e72d171d8a3dc995f009601f66350058a548e6",
+      "verified": true,
+      "arrays": {
+        "findings": 14,
+        "sources": 6
+      },
+      "finding_like_entries": 14,
+      "identified_ids": 14
+    },
+    {
+      "path": "research/batches/20261112T175903Z-auto9-71cf2.json",
+      "git_blob_sha1": "2a18743ef074ff3e6f5c5dccee45aa1d599a2106",
+      "verified": true,
+      "arrays": {
+        "findings": 11,
+        "source_inspections": 2
+      },
+      "finding_like_entries": 11,
+      "identified_ids": 11
+    },
+    {
+      "path": "research/batches/20261112T1859Z-auto9-broadth-c61f.json",
+      "git_blob_sha1": "9a7674fce14de78cc4c51eecf92cd09b73ba0fb0",
+      "verified": true,
+      "arrays": {
+        "findings": 12,
+        "sources": 3
+      },
+      "finding_like_entries": 12,
+      "identified_ids": 12
+    },
+    {
+      "path": "research/batches/20261112T195738Z-auto9-breadth-8ce5.json",
+      "git_blob_sha1": "abb67110d22e9830a36f746d2cddab95df24c88b",
+      "verified": true,
+      "arrays": {
+        "new_findings": 12,
+        "source_inspections": 3
+      },
+      "finding_like_entries": 12,
+      "identified_ids": 12
+    }
+  ]
+}
