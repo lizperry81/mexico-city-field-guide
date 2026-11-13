@@ -1,0 +1,326 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261113T1302Z-1847-civilian-resistance-and-bibliographic-recovery",
+  "generated_at": "2026-11-13T13:02:00Z",
+  "branch": "research-persistence",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "storage_role": "immutable_research_staging",
+  "published_to_app": false,
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "source_registration_policy": "Five existing references receive NEW provisional staged source identity candidates from exact previously committed inspection records; no canonical source registration, source merges, new source-examination credit, or independent corroboration. Five separately documented 1847 source records reflect metadata-only inspection.",
+  "historical_scope": "Civilian responses to the 1847 occupation; distinction between military events, historical interpretation and archival source leads",
+  "sources": [
+    {
+      "id": "STG-SRC-CARBALLO-2011-MOON-PYRAMID",
+      "title": "Obsidian and the Teotihuacan State: Weaponry and Ritual Production at the Moon Pyramid",
+      "author": "David M. Carballo",
+      "year": 2011,
+      "url": "https://sites.pitt.edu/~ccapubs/pdfdownloads/PITTmem21-Carballo_2011.pdf",
+      "source_kind": "excavation monograph",
+      "provenance_batch": "20261112T130305Z-auto11-carballo-moon.json",
+      "provenance_blob_sha": "5529259e00f6f6b8f3bd17322dc59de1a29e4b66",
+      "scope": "Only pages 47,52–56,84–86,109–111 previously examined in PDF text; original figure images not verified",
+      "identity_status": "provisional_identity_from_original_inspection_not_canonical",
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "prior_inspection_is_not_new_inspection": true,
+      "existing_source_id_preserved": true
+    },
+    {
+      "id": "STG-SRC-HIRTH-2019-COMPOUND17",
+      "title": "Excavation of an Obsidian Craft Workshop at Teotihuacan, Mexico",
+      "authors": [
+        "Kenneth G. Hirth",
+        "David M. Carballo",
+        "Mark Dennison",
+        "Sean Carr",
+        "Sarah Imfeld",
+        "Eric Dyrdahl"
+      ],
+      "year": 2019,
+      "journal": "Ancient Mesoamerica",
+      "volume": 30,
+      "issue": 1,
+      "pages": "163–179",
+      "doi": "10.1017/S0956536118000561",
+      "url": "https://www.cambridge.org/core/journals/ancient-mesoamerica/article/abs/excavation-of-an-obsidian-craft-workshop-at-teotihuacan-mexico/7B5C11FC597CA0454561F3726E1E1D4B",
+      "provenance_batch": "20261112T140057Z-auto11-tlajinga-comp17.json",
+      "provenance_blob_sha": "de642a4273e897dcb03b498d80a92f7b9f45be63",
+      "scope": "Third-party HTML text pp.167–175 and publisher abstract only; figure images and certificates unexamined",
+      "identity_status": "provisional_identity_from_original_inspection_not_canonical",
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "prior_inspection_is_not_new_inspection": true,
+      "existing_source_id_preserved": true
+    },
+    {
+      "id": "stg-src-cud-petition-1985",
+      "title": "Pliego de demandas presentado por la Coordinadora Única de Damnificados al presidente de la República",
+      "year": 1985,
+      "url": "https://revistamexicanadesociologia.unam.mx/index.php/rms/article/download/61590/54387/174372",
+      "provenance_batch": "20261112T195738Z-auto9-breadth-8ce5.json",
+      "provenance_blob_sha": "abb67110d22e9830a36f746d2cddab95df24c88b",
+      "scope": "1985 petition reprinted in 1986, pp.293–297; earlier inspection recorded pp.293–296 screenshots. Reprint is not original signed petition.",
+      "identity_status": "provisional_identity_from_original_inspection_not_canonical",
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "prior_inspection_is_not_new_inspection": true,
+      "existing_source_id_preserved": true
+    },
+    {
+      "id": "stg-src-massolo-1986",
+      "title": "¡Que el gobierno entienda, lo primero es la vivienda!",
+      "author": "Alejandra Massolo",
+      "year": 1986,
+      "url": "https://revistamexicanadesociologia.unam.mx/index.php/rms/article/download/61585/54382/174362",
+      "provenance_batch": "20261112T195738Z-auto9-breadth-8ce5.json",
+      "provenance_blob_sha": "abb67110d22e9830a36f746d2cddab95df24c88b",
+      "scope": "Previous partial original-article inspection, printed pp.195–204,223–225 only; not whole article",
+      "identity_status": "provisional_identity_from_original_inspection_not_canonical",
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "prior_inspection_is_not_new_inspection": true,
+      "existing_source_id_preserved": true
+    },
+    {
+      "id": "stg-src-gonzalez-1985",
+      "title": "Sismos, vivienda y reordenación urbana en el Distrito Federal",
+      "author": "Gloria González Salazar",
+      "year": 1985,
+      "url": "https://ru.iiec.unam.mx/1508/1/num19-20-articulo3_Gonralez.pdf",
+      "provenance_batch": "20261112T195738Z-auto9-breadth-8ce5.json",
+      "provenance_blob_sha": "abb67110d22e9830a36f746d2cddab95df24c88b",
+      "scope": "Previous original-article images examined at printed pp.14–16 only",
+      "identity_status": "provisional_identity_from_original_inspection_not_canonical",
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "prior_inspection_is_not_new_inspection": true,
+      "existing_source_id_preserved": true
+    },
+    {
+      "id": "STG-20261113-1847-UNAM-GRANADOS-1999",
+      "title": "Sueñan las piedras: alzamiento ocurrido en la Ciudad de México, 14, 15 y 16 de septiembre, 1847",
+      "author": "Luis Fernando Granados Salinas",
+      "year": 1999,
+      "kind": "UNAM undergraduate history thesis",
+      "url": "https://repositorio.unam.mx/contenidos/264575",
+      "scope": "UNAM repository descriptive metadata only; full thesis not inspected",
+      "identity_status": "new_source_candidate_not_crosswalked_to_V97",
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113-1847-ELEM-GRANADOS-2003",
+      "title": "Sueñan las piedras (2003 edition)",
+      "author": "Luis Fernando Granados",
+      "year": 2003,
+      "kind": "book edition description and publisher-provided back-cover summary",
+      "url": "https://www.elem.mx/obra/datos/237221",
+      "scope": "Encyclopedia of Mexican Literature entry and quoted 2003 publisher back-cover description only; original book not inspected; not independent support for narrative",
+      "identity_status": "new_source_candidate_not_crosswalked_to_V97",
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113-1847-UAM-REYES-2009",
+      "title": "Historia de los grupos populares de la Ciudad de México durante la ocupación norteamericana, 1847-1848",
+      "author": "Carlos Alberto Reyes Tosqui",
+      "year": 2009,
+      "doi": "10.24275/uami.jm214p25t",
+      "kind": "UAM master's thesis",
+      "url": "https://bindani.izt.uam.mx/concern/tesiuams/jm214p25t?locale=en",
+      "scope": "UAM thesis catalog/abstract metadata only; PDF not inspected",
+      "identity_status": "new_source_candidate_not_crosswalked_to_V97",
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113-1847-LOC-CURRIER-2001706295",
+      "title": "Storming of the Fortress of Chapultepec: at the city of Mexico Sept. 12th 1847",
+      "creator": "John Cameron; N. Currier",
+      "year": 1847,
+      "kind": "printed lithograph object record",
+      "url": "https://www.loc.gov/item/2001706295/",
+      "scope": "Library of Congress catalog indexed text and image search listing only; original artifact and inscription not directly inspected; catalog title is not a primary chronology source",
+      "identity_status": "new_source_candidate_not_crosswalked_to_V97",
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113-1847-IBERO-CABILDO-1847",
+      "title": "1847 Ayuntamiento Ciudad de México",
+      "publisher": "Universidad Iberoamericana Actas de Cabildo digital collection",
+      "year": 1847,
+      "kind": "digitized municipal proceedings finding aid",
+      "url": "https://www.bib.ibero.mx/actasc/items/show/1262",
+      "scope": "Bibliographic description and linked PDF/RTF existence only; 1847 actas themselves not yet inspected",
+      "identity_status": "new_source_candidate_not_crosswalked_to_V97",
+      "independent_corroboration": false,
+      "publication_approved": false
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "STG-20261113-1847-INSP-GRANADOS",
+      "source_id": "STG-20261113-1847-UNAM-GRANADOS-1999",
+      "source_url": "https://repositorio.unam.mx/contenidos/264575",
+      "portion_examined": "Title, citation, thesis type, 1999 date, rights metadata",
+      "access_scope": "Institutional metadata HTML; thesis body not inspected",
+      "original_document_examined": false
+    },
+    {
+      "id": "STG-20261113-1847-INSP-ELEM",
+      "source_id": "STG-20261113-1847-ELEM-GRANADOS-2003",
+      "source_url": "https://www.elem.mx/obra/datos/237221",
+      "portion_examined": "Edition details and clearly identified publisher back-cover synopsis",
+      "access_scope": "Catalog HTML summary not 2003 book text",
+      "original_document_examined": false
+    },
+    {
+      "id": "STG-20261113-1847-INSP-REYES",
+      "source_id": "STG-20261113-1847-UAM-REYES-2009",
+      "source_url": "https://bindani.izt.uam.mx/concern/tesiuams/jm214p25t?locale=en",
+      "portion_examined": "Title, date 2009, author, DOI, resource type and access rights",
+      "access_scope": "Institutional thesis metadata only; thesis pages not read",
+      "original_document_examined": false
+    },
+    {
+      "id": "STG-20261113-1847-INSP-LOC",
+      "source_id": "STG-20261113-1847-LOC-CURRIER-2001706295",
+      "source_url": "https://www.loc.gov/item/2001706295/",
+      "portion_examined": "Indexed title, creator, publication date and material description",
+      "access_scope": "Indexed LOC catalog; direct page returned 403, print image not independently examined",
+      "original_document_examined": false
+    },
+    {
+      "id": "STG-20261113-1847-INSP-CABILDO",
+      "source_id": "STG-20261113-1847-IBERO-CABILDO-1847",
+      "source_url": "https://www.bib.ibero.mx/actasc/items/show/1262",
+      "portion_examined": "Digitized collection catalog, year and links to RTF and PDF records",
+      "access_scope": "Inventory metadata only; council act books not read",
+      "original_document_examined": false
+    }
+  ],
+  "findings": [
+    {
+      "id": "STG-20261113-1847-CIVIL-01",
+      "assertion": "The urban response to the September 1847 occupation is a distinct subject of historical investigation: Luis Fernando Granados devoted a 1999 UNAM history thesis to an uprising in Mexico City on 14–16 September, after the main 13 September assault at Chapultepec. The thesis title establishes the period and scope of the scholarly study, not exact street-by-street events or casualty figures.",
+      "source_ids": [
+        "STG-20261113-1847-UNAM-GRANADOS-1999",
+        "STG-20261113-1847-ELEM-GRANADOS-2003",
+        "STG-20261113-1847-INAH-CHAPUL-03"
+      ],
+      "source_locator": "UNAM 1999 thesis descriptive title and date; ELEM 2003 edition summary; existing INAH September 13 Chapultepec source",
+      "period": "Independence and republic",
+      "themes": [
+        "war",
+        "popular resistance",
+        "social history"
+      ],
+      "geographies": [
+        "centro",
+        "chapul"
+      ],
+      "poi_ids": [
+        "poi-zocalo",
+        "castillo-chapultepec"
+      ],
+      "limitations": "Full thesis and original occupation records not yet examined; differentiation between military capitulation and later civilian actions is a research framing; do not infer participants' identities, motives or exact routes",
+      "status": "source_linked_candidate_not_editorially_verified"
+    },
+    {
+      "id": "STG-20261113-1847-CIVIL-02",
+      "assertion": "The 2003 edition description of Granados's Sueñan las piedras presents the September 1847 resistance as numerous actions by common residents, set amid the social geography of Mexico City's neighborhoods and streets. This is a description of the author's published interpretation, not independent proof of each reported action.",
+      "source_ids": [
+        "STG-20261113-1847-ELEM-GRANADOS-2003"
+      ],
+      "source_locator": "ELEM entry, back-cover excerpt supplied by publisher, 2003 edition",
+      "period": "Independence and republic",
+      "themes": [
+        "popular resistance",
+        "historiography",
+        "urban geography"
+      ],
+      "geographies": [
+        "centro"
+      ],
+      "poi_ids": [
+        "poi-zocalo"
+      ],
+      "limitations": "Publisher back-cover copy only; do not cite particular Alameda or Santo Domingo incidents until book passages and their documentary footnotes are inspected",
+      "status": "research_interpretation_candidate_not_publication_ready"
+    },
+    {
+      "id": "STG-20261113-1847-CIVIL-03",
+      "assertion": "The Library of Congress catalogs a lithograph issued by N. Currier in 1847 under a title assigning the storming of Chapultepec to 12 September 1847. INAH's separate chronology distinguishes bombardment beginning 12 September from the 13 September assault. The lithograph's printed title is evidence of contemporary visual representation, not independently reliable proof of the assault's day.",
+      "source_ids": [
+        "STG-20261113-1847-LOC-CURRIER-2001706295",
+        "STG-20261113-1847-INAH-CHAPUL-03"
+      ],
+      "source_locator": "LOC item 2001706295 catalog title and c1847 attribution; prior INAH 2024 Chapultepec institutional account, first two battle paragraphs",
+      "period": "Independence and republic",
+      "themes": [
+        "visual culture",
+        "chronology",
+        "memory",
+        "military history"
+      ],
+      "geographies": [
+        "chapul"
+      ],
+      "poi_ids": [
+        "castillo-chapultepec"
+      ],
+      "limitations": "LOC item page inaccessible direct; image inscription and artist claim not visually checked. No rights clearance granted merely by identifying an image; crosscheck actual artifact and military documents before a visual caption",
+      "status": "source_linked_chronology_discrepancy_candidate"
+    },
+    {
+      "id": "STG-20261113-1847-CIVIL-04",
+      "assertion": "Universidad Iberoamericana's Actas de Cabildo collection lists a digitized 1847 Ayuntamiento de la Ciudad de México volume, providing a candidate primary documentary series for testing municipal decisions and responses around the September occupation. The catalog proves the collection exists; it does not establish what the actas say about the uprising.",
+      "source_ids": [
+        "STG-20261113-1847-IBERO-CABILDO-1847"
+      ],
+      "source_locator": "Actas de Cabildo, 1847 catalog record, downloadable RTF and PDF links",
+      "period": "Independence and republic",
+      "themes": [
+        "municipal government",
+        "archival research",
+        "war"
+      ],
+      "geographies": [
+        "centro"
+      ],
+      "poi_ids": [
+        "poi-zocalo",
+        "palacio-nacional"
+      ],
+      "limitations": "No 1847 council text read or paginated. This is a documentary source-discovery finding only; not a claim about a particular vote or policy",
+      "status": "primary_document_availability_candidate"
+    }
+  ],
+  "independent_corroboration_count": 0,
+  "original_1847_municipal_records_examined": 0,
+  "conflicts_unresolved": [
+    "STG-SRC-MANZANILLA-LOPEZ-FRETER-1996",
+    "v95-sload-cave-2020"
+  ],
+  "research_leads": [
+    {
+      "source_id": "STG-20261113-1847-UNAM-GRANADOS-1999",
+      "action": "Inspect full thesis and 2003 published book with page locators; separate Granados author interpretation from witness testimonies"
+    },
+    {
+      "source_id": "STG-20261113-1847-IBERO-CABILDO-1847",
+      "action": "Inspect primary municipal acta sections September 1847; reconcile date, folio and editorial transcription"
+    },
+    {
+      "source_id": "STG-20261113-1847-UAM-REYES-2009",
+      "action": "Read thesis chapters on 1847-48 popular groups and compare with Granados work"
+    },
+    {
+      "source_id": "STG-20261113-1847-LOC-CURRIER-2001706295",
+      "action": "Inspect image directly and assess artifact inscription vs battle chronology; rights check before media reuse"
+    }
+  ]
+}
