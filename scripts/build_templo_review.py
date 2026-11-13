@@ -248,7 +248,7 @@ def build():
     # Only link to a separately approved narrative if the publication gate emitted it.
     approved = ROOT / "poi/templo-mayor/discover/index.html"
     if approved.is_file():
-        page = page.replace('</main>', '<p class="notice"><a href="discover/">Read the approved long-form Discover chapters</a></p></main>', 1)
+        page = page.replace('</main>', '<p class="notice"><a href="../discover/">Read the approved long-form Discover chapters</a></p></main>', 1)
     page = page.replace("</head>", STYLE + "</head>", 1)
     page = page.replace("</body>", JS + "</body>", 1)
     assert page.count('<script src="../../../feedback/annotate.js" defer></script>') == 1
