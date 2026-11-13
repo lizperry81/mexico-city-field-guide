@@ -219,7 +219,9 @@ else:
     assert report["coverage_gap_review_count"] == len(queue["coverage_gaps"])
     for gap in queue["coverage_gaps"]:
         assert gap["coverage_path"].startswith("research/coverage/")
-        assert gap["research_needed"]
+        assert gap["explanation"]
+        assert gap["readiness"]
+        assert gap["research_needed"] is None or isinstance(gap["research_needed"], str)
         assert gap["assigned_to_published_chapter"] is None
         assert gap["publication_authorization"] is False
     assert report["historical_discrepancies_pending_review"] == len(
