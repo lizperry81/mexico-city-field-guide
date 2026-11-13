@@ -31,7 +31,11 @@ def main():
         failures.append(f"Missing protected policy: {POLICY}")
     if args.base_ref:
         changed = git("diff", "--name-only", args.base_ref, "--").splitlines()
-        protected = [p for p in changed if p == POLICY or p.startswith("editorial/approved/")]
+        # The JSON manuscript carries publication status and can publish prose.
+        # Treat it as protected editorial content, even before archives exist.
+        protected = [p for p in changed
+                     if p == POLICY or p.startswith("editorial/approved/")
+                     or (p.startswith("editorial/discover/") and p.endswith(".json"))]
         if protected:
             failures.append("Approved Discover files changed; explicit editorial approval and review required: " + ", ".join(protected))
     if ARCHIVES.exists():
@@ -44,6 +48,11 @@ def main():
             actual = hashlib.sha256(chapter.read_bytes()).hexdigest()
             if expected != actual:
                 failures.append(f"Checksum mismatch for {chapter.relative_to(ROOT)}")
+    if ARCHIVES.exists():
+        for checksum in sorted(ARCHIVES.glob("*.md.sha256")):
+            chapter = checksum.with_suffix("")
+            if not chapter.is_file():
+                failures.append(f"Orphaned approval checksum: {checksum.relative_to(ROOT)}")
     if failures:
         for item in failures:
             print("FAIL:", item, file=sys.stderr)
