@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-13T06:50:00Z",
+  "scope": "Editorial-readiness check of the 14 inherited findings recovered from detached staging, not a claim of newly examined primary materials",
+  "prior_full_matrix": "research/coverage/coverage-matrix-20261113-compact.json",
+  "findings_batch": "research/batches/20261113T0640Z-detached-staging-14-full-record-recovery.json",
+  "reassessments": [
+    {
+      "period": "Mexico City 1940–1980",
+      "theme": "politics",
+      "geography": "centro",
+      "rating": "developing",
+      "basis_ids": [
+        "stg-20261112T215917Z-auto8-c73af2-f01",
+        "stg-20261112T215917Z-auto8-c73af2-f02",
+        "stg-20261112T215917Z-auto8-c73af2-f03"
+      ],
+      "explanatory_limit": "CNH views are available as edited published manifesto; original newspaper, internal CNH decisions and independent state accounts unexamined"
+    },
+    {
+      "period": "Mexico City 1940–1980",
+      "theme": "resistance",
+      "geography": "all_city",
+      "rating": "developing",
+      "basis_ids": [
+        "stg-20261112T215917Z-auto8-c73af2-f04",
+        "stg-20261112T215917Z-auto8-c73af2-f05",
+        "stg-20261112T215917Z-auto8-c73af2-f07"
+      ],
+      "explanatory_limit": "Statements of demands and outreach are evidence of movement goals, not confirmed activity or social impact"
+    },
+    {
+      "period": "Mexico City 1940–1980",
+      "theme": "culture",
+      "geography": "all_city",
+      "rating": "developing",
+      "basis_ids": [
+        "stg-20261112-radio68-01",
+        "stg-20261112-radio68-02",
+        "stg-20261112-radio68-03",
+        "stg-20261112T215917Z-auto8-c73af2-f09"
+      ],
+      "explanatory_limit": "Radio and film archival catalogues identified, but recordings and licensing unexamined"
+    },
+    {
+      "period": "Mexico City 1940–1980",
+      "theme": "poi",
+      "geography": "centro",
+      "rating": "sparse",
+      "basis_ids": [
+        "stg-20261112-radio68-02"
+      ],
+      "explanatory_limit": "August 28 Zócalo police clearance recorded in an audio programme account; detailed place interpretation requires contemporary maps and archival audio"
+    },
+    {
+      "period": "Mexico City 1940–1980",
+      "theme": "gender",
+      "geography": "all_city",
+      "rating": "missing",
+      "basis_ids": [],
+      "explanatory_limit": "Recovered material does not yet document 1968 women's organizations or labor in sufficient detail"
+    },
+    {
+      "period": "Classic and Teotihuacan",
+      "theme": "religion",
+      "geography": "teo",
+      "rating": "developing",
+      "basis_ids": [
+        "stage-20261112-1515-cave-firepits",
+        "stage-20261112-1515-cave-placed-rocks"
+      ],
+      "explanatory_limit": "Specific deposits described, but ritual interpretation remains contested; Altschul excavation notes not directly inspected"
+    }
+  ],
+  "status": "staging_only_no_substantial_promotions",
+  "substantial_promotions": 0,
+  "source_access": "inheritance from archived source inspections; no direct primary-source review this session"
+}
