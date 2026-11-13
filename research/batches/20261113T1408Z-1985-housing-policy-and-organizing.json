@@ -1,0 +1,341 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261113T1408Z-1985-housing-policy-and-organizing",
+  "generated_at": "2026-11-13T14:08:31Z",
+  "branch": "research-persistence",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "storage_role": "immutable_research_staging",
+  "published_to_app": false,
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "scope": "1985 Mexico City housing displacement, multiple inconsistent damage denominators, 1985–1987 reconstruction policy, resident organization; scholarly publisher/repository abstract evidence only",
+  "sources": [
+    {
+      "id": "STG-20261113-1985-RABELL-MIER-1986",
+      "title": "Los damnificados por los sismos de 1985 en la ciudad de México: Un análisis de los grupos domésticos que acudieron a albergues y campamentos",
+      "authors": [
+        "Cecilia Rabell",
+        "Martha Mier y Terán"
+      ],
+      "year": 1986,
+      "journal": "Revista Mexicana de Sociología",
+      "volume": "48",
+      "issue": "2",
+      "pages": "3–28",
+      "doi": "10.22201/iis.01882503p.1986.2.61580",
+      "url": "https://revistamexicanadesociologia.unam.mx/index.php/rms/article/view/61580",
+      "access_scope": "Publisher HTML bibliographic metadata, abstract paragraphs only; full article PDF not inspected",
+      "identity_status": "provisional_staged_source_not_canonical"
+    },
+    {
+      "id": "STG-20261113-1985-AZUELA-1986",
+      "title": "Presentación a los decretos expropiatorios en la ciudad de México de predios urbanos en octubre de 1985",
+      "author": "Antonio Azuela de la Cueva",
+      "year": 1986,
+      "journal": "Revista Mexicana de Sociología",
+      "volume": "48",
+      "issue": "2",
+      "pages": "303–304",
+      "doi": "10.22201/iis.01882503p.1986.2.62558",
+      "url": "https://revistamexicanadesociologia.unam.mx/index.php/rms/article/view/62558",
+      "access_scope": "Publisher HTML abstract only; original 11 October 1985 decree and article PDF not inspected",
+      "identity_status": "provisional_staged_source_not_canonical"
+    },
+    {
+      "id": "STG-20261113-1985-SERNA-2017",
+      "title": "La Coordinadora Única de Damnificados: Reconstrucción democrática de la ciudad",
+      "author": "Leslie Serna",
+      "year": 2017,
+      "journal": "Trabajo Social UNAM",
+      "issue": "14–16",
+      "pages": "139–149",
+      "url": "https://repositorio.unam.mx/contenidos/4146831",
+      "access_scope": "UNAM descriptive/abstract HTML; issue citation 2017, repository date 2018-10-15; article body and interviews not examined",
+      "identity_status": "provisional_staged_source_not_canonical"
+    },
+    {
+      "id": "STG-20261113-1985-INAH-MORALES-RECON",
+      "title": "Proyecto de reconstrucción del Centro Histórico de la Ciudad de México",
+      "author": "María Elena Morales",
+      "year": 2019,
+      "journal": "Rutas de Campo",
+      "issue": "3",
+      "pages": "127–135",
+      "url": "https://www.revistas.inah.gob.mx/index.php/rutasdecampo/article/view/14659",
+      "access_scope": "INAH journal catalog summary; identified as diagnosis written 1985, presented 17 October 1985; article PDF not read",
+      "identity_status": "provisional_staged_source_not_canonical"
+    },
+    {
+      "id": "STG-20261113-1985-ZICCARDI-1986",
+      "title": "Política de vivienda para un espacio destruido",
+      "author": "Alicia Ziccardi",
+      "year": 1986,
+      "journal": "Revista Mexicana de Sociología",
+      "volume": "48",
+      "issue": "2",
+      "pages": "121–193",
+      "url": "https://ru.iis.sociales.unam.mx/handle/IIS/5202",
+      "access_scope": "UNAM institutional repository HTML abstract and citation; full 1986 article PDF not inspected",
+      "identity_status": "provisional_staged_source_not_canonical"
+    },
+    {
+      "id": "STG-20261113-1985-ZICCARDI-MECATL-MICHEL-1987",
+      "title": "Casa a los damnificados: dos años de política habitacional en la reconstrucción de la Ciudad de México (1985–1987)",
+      "authors": [
+        "Alicia Ziccardi",
+        "José Luis Mecatl",
+        "Marco Antonio Michel"
+      ],
+      "year": 1987,
+      "publisher": "UNAM Instituto de Investigaciones Sociales",
+      "isbn": "968837671-X",
+      "url": "https://ru.iis.sociales.unam.mx/handle/IIS/5649",
+      "access_scope": "UNAM full-book repository catalog summary only; full digitized book not examined",
+      "identity_status": "provisional_staged_source_not_canonical"
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "STG-20261113-1408-INS-01",
+      "source_id": "STG-20261113-1985-RABELL-MIER-1986",
+      "source_url": "https://revistamexicanadesociologia.unam.mx/index.php/rms/article/view/61580",
+      "access_scope": "Publisher HTML bibliographic metadata, abstract paragraphs only; full article PDF not inspected",
+      "portion_examined": "Institutional journal/repository webpage: title, author(s), bibliographic details and abstract",
+      "full_original_document_examined": false,
+      "independent_corroboration": false
+    },
+    {
+      "id": "STG-20261113-1408-INS-02",
+      "source_id": "STG-20261113-1985-AZUELA-1986",
+      "source_url": "https://revistamexicanadesociologia.unam.mx/index.php/rms/article/view/62558",
+      "access_scope": "Publisher HTML abstract only; original 11 October 1985 decree and article PDF not inspected",
+      "portion_examined": "Institutional journal/repository webpage: title, author(s), bibliographic details and abstract",
+      "full_original_document_examined": false,
+      "independent_corroboration": false
+    },
+    {
+      "id": "STG-20261113-1408-INS-03",
+      "source_id": "STG-20261113-1985-SERNA-2017",
+      "source_url": "https://repositorio.unam.mx/contenidos/4146831",
+      "access_scope": "UNAM descriptive/abstract HTML; issue citation 2017, repository date 2018-10-15; article body and interviews not examined",
+      "portion_examined": "Institutional journal/repository webpage: title, author(s), bibliographic details and abstract",
+      "full_original_document_examined": false,
+      "independent_corroboration": false
+    },
+    {
+      "id": "STG-20261113-1408-INS-04",
+      "source_id": "STG-20261113-1985-INAH-MORALES-RECON",
+      "source_url": "https://www.revistas.inah.gob.mx/index.php/rutasdecampo/article/view/14659",
+      "access_scope": "INAH journal catalog summary; identified as diagnosis written 1985, presented 17 October 1985; article PDF not read",
+      "portion_examined": "Institutional journal/repository webpage: title, author(s), bibliographic details and abstract",
+      "full_original_document_examined": false,
+      "independent_corroboration": false
+    },
+    {
+      "id": "STG-20261113-1408-INS-05",
+      "source_id": "STG-20261113-1985-ZICCARDI-1986",
+      "source_url": "https://ru.iis.sociales.unam.mx/handle/IIS/5202",
+      "access_scope": "UNAM institutional repository HTML abstract and citation; full 1986 article PDF not inspected",
+      "portion_examined": "Institutional journal/repository webpage: title, author(s), bibliographic details and abstract",
+      "full_original_document_examined": false,
+      "independent_corroboration": false
+    },
+    {
+      "id": "STG-20261113-1408-INS-06",
+      "source_id": "STG-20261113-1985-ZICCARDI-MECATL-MICHEL-1987",
+      "source_url": "https://ru.iis.sociales.unam.mx/handle/IIS/5649",
+      "access_scope": "UNAM full-book repository catalog summary only; full digitized book not examined",
+      "portion_examined": "Institutional journal/repository webpage: title, author(s), bibliographic details and abstract",
+      "full_original_document_examined": false,
+      "independent_corroboration": false
+    },
+    {
+      "id": "STG-20261113-1408-INS-INAH-2024",
+      "source_id": "STG-20261113-1985-INAH-UNREGISTERED-2024",
+      "source_url": "https://revistas.inah.gob.mx/index.php/antropologia/article/view/21642",
+      "access_scope": "INAH institutional indexed abstract (direct page timeout); inspection metadata only. Source not added to candidate register and therefore finding 04 requires source-registration review.",
+      "full_original_document_examined": false,
+      "independent_corroboration": false
+    }
+  ],
+  "findings": [
+    {
+      "id": "STG-20261113-1985-RECON-01",
+      "assertion": "Rabell and Mier y Terán report that their survey of earthquake-displaced people staying in shelters and camps was designed six days after the first earthquake of September 1985, highlighting the unusually early collection of household evidence during the emergency.",
+      "source_ids": [
+        "STG-20261113-1985-RABELL-MIER-1986"
+      ],
+      "source_locator": "1986 Revista Mexicana de Sociología article HTML abstract, first sentence; pp.3–28 full text not read",
+      "period": "Mexico City 1980–present",
+      "themes": [
+        "social history",
+        "earthquake",
+        "methods",
+        "housing"
+      ],
+      "geographies": [
+        "all_city",
+        "tlatelolco",
+        "centro"
+      ],
+      "poi_ids": [
+        "poi-tlatelolco"
+      ],
+      "limitations": "Survey design is reported in authors' abstract; sample sizes and full methodology not yet checked.",
+      "status": "research_only_source_linked_candidate"
+    },
+    {
+      "id": "STG-20261113-1985-RECON-02",
+      "assertion": "A contemporary scholarly summary juxtaposes 3,745 damaged residential buildings in an emergency commission report, about 90,000 affected dwellings and 30,000 needing demolition in a CEPAL assessment, and government estimates of 46,000 families needing support, 25,000 directly affected. These refer to different units and assessments, not interchangeable estimates of one quantity.",
+      "source_ids": [
+        "STG-20261113-1985-RABELL-MIER-1986",
+        "stg-src-gonzalez-1985"
+      ],
+      "source_locator": "Rabell and Mier y Terán 1986 HTML abstract, second-third sentences; González Salazar 1985 UNAM repository abstract (https://ru.iiec.unam.mx/1508/) provides contemporary preliminary comparison",
+      "period": "Mexico City 1980–present",
+      "themes": [
+        "statistics",
+        "housing",
+        "disaster response",
+        "uncertainty"
+      ],
+      "geographies": [
+        "all_city",
+        "centro"
+      ],
+      "poi_ids": [
+        "poi-centro-historico"
+      ],
+      "limitations": "Original government/CEPAL reports, definitions and survey dates unexamined; numbers must remain author-attributed and cannot be used as single definitive damage total.",
+      "status": "conflicting_denominators_flagged_candidate"
+    },
+    {
+      "id": "STG-20261113-1985-RECON-03",
+      "assertion": "Antonio Azuela de la Cueva states that the first of a series of reconstruction expropriation decrees appeared on 11 October 1985, involving several thousand central-city properties; his abstract describes an advantageous financing arrangement for beneficiaries emerging roughly six months later.",
+      "source_ids": [
+        "STG-20261113-1985-AZUELA-1986"
+      ],
+      "source_locator": "Azuela de la Cueva 1986 publisher HTML abstract paragraphs 1–2, pp.303–304 article not directly read",
+      "period": "Mexico City 1980–present",
+      "themes": [
+        "housing policy",
+        "land tenure",
+        "political economy"
+      ],
+      "geographies": [
+        "centro"
+      ],
+      "poi_ids": [
+        "poi-centro-historico"
+      ],
+      "limitations": "Overlaps prior 1985 expropriation finding stg-20261112T195738Z-auto9-breadth-8ce5-f05; enrichment not independent corroboration. Original decree, precise lot list, financing instrument and beneficiary outcomes unexamined.",
+      "status": "source_attributed_policy_enrichment_candidate"
+    },
+    {
+      "id": "STG-20261113-1985-RECON-04",
+      "assertion": "An INAH retrospective catalog describes a historical-monument damage assessment commission established on 20 September 1985, the day after the first earthquake, to evaluate damage in the Centro Histórico; the associated text calls for thinking about conservation at the urban-unit scale.",
+      "source_ids": [
+        "STG-20261113-1985-INAH-MORALES-RECON"
+      ],
+      "source_locator": "INAH Antropología journal 2024 catalog/abstract: https://revistas.inah.gob.mx/index.php/antropologia/article/view/21642 ; contextual counterpart Morales 2019 catalog of a diagnosis presented 17 October 1985",
+      "period": "Mexico City 1980–present",
+      "themes": [
+        "heritage conservation",
+        "infrastructure",
+        "disaster response"
+      ],
+      "geographies": [
+        "centro"
+      ],
+      "poi_ids": [
+        "poi-centro-historico"
+      ],
+      "limitations": "The INAH 2024 historical-monument damage assessment item is a separate metadata lead not yet registered as a standalone source here; original 1985 committee minutes and report not inspected. No specific building damage assigned.",
+      "status": "institutional_summary_candidate"
+    },
+    {
+      "id": "STG-20261113-1985-RECON-05",
+      "assertion": "Leslie Serna interprets the Coordinadora Única de Damnificados as a movement active over approximately three years after 1985 whose negotiated proposals led to a Convenio de Concertación Democrática para la Reconstrucción defining reconstruction arrangements; her repository abstract credits the organization with broader citizenship and political effects.",
+      "source_ids": [
+        "STG-20261113-1985-SERNA-2017"
+      ],
+      "source_locator": "UNAM institutional repository record 4146831, abstract and journal issue citation",
+      "period": "Mexico City 1980–present",
+      "themes": [
+        "social movements",
+        "housing rights",
+        "politics"
+      ],
+      "geographies": [
+        "tlatelolco",
+        "centro",
+        "roma"
+      ],
+      "poi_ids": [
+        "poi-tlatelolco",
+        "poi-colonia-roma"
+      ],
+      "limitations": "Author's retrospective interpretation from abstract only; agreement date, parties, legal form, and interview testimonies not inspected. Do not assert definitive causality or universal agreement.",
+      "status": "research_interpretation_unverified_candidate"
+    },
+    {
+      "id": "STG-20261113-1985-RECON-06",
+      "assertion": "The UNAM description of Ziccardi, Mecatl and Michel's 1987 study says the reconstruction housing programs included an unusual objective of rebuilding replacement homes in earthquake-affected residents' original neighborhoods rather than relocating them elsewhere; this is a summary of the authors' findings, not a verified household-by-household outcome.",
+      "source_ids": [
+        "STG-20261113-1985-ZICCARDI-MECATL-MICHEL-1987"
+      ],
+      "source_locator": "UNAM Instituto de Investigaciones Sociales digitized-book repository record IIS/5649 and catalog description via UNAM 1987 book record; full book unexamined",
+      "period": "Mexico City 1980–present",
+      "themes": [
+        "housing policy",
+        "neighborhood continuity",
+        "urban geography"
+      ],
+      "geographies": [
+        "centro",
+        "roma"
+      ],
+      "poi_ids": [
+        "poi-centro-historico",
+        "poi-colonia-roma"
+      ],
+      "limitations": "No reconstruction address-level evidence or household interviews directly examined; no exact neighborhood success rates claimed.",
+      "status": "research_interpretation_metadata_candidate"
+    },
+    {
+      "id": "STG-20261113-1985-RECON-07",
+      "assertion": "Ziccardi's 1986 study frames reconstruction as a problem of preexisting housing conditions in central delegations, the different circumstances of displaced residents, and the design of new housing policy, rather than purely post-earthquake engineering repair.",
+      "source_ids": [
+        "STG-20261113-1985-ZICCARDI-1986"
+      ],
+      "source_locator": "UNAM Instituto de Investigaciones Sociales IIS/5202 HTML catalog abstract, article pp.121–193 listed but full text not read",
+      "period": "Mexico City 1980–present",
+      "themes": [
+        "urban inequality",
+        "housing",
+        "social history"
+      ],
+      "geographies": [
+        "centro",
+        "tlatelolco"
+      ],
+      "poi_ids": [
+        "poi-centro-historico",
+        "poi-tlatelolco"
+      ],
+      "limitations": "Analytical scope of the published work, not direct proof of a particular government action; full article and local case studies need reading.",
+      "status": "historiographical_framing_candidate"
+    }
+  ],
+  "source_access_limitations": [
+    "Seven web catalog/abstract inspections; zero newly inspected full articles or original decrees",
+    "Source overlap with 1985 staged F05 is an explicit enrichment, not a second independently corroborated event",
+    "Photo/image rights not inspected and no photos included"
+  ],
+  "external_reference_urls": [
+    "https://revistas.inah.gob.mx/index.php/antropologia/article/view/21642",
+    "https://ru.iiec.unam.mx/1508/"
+  ],
+  "count_new_finding_assertions": 7,
+  "independent_corroboration_count": 0
+}

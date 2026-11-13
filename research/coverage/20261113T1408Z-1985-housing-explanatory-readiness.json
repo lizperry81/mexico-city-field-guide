@@ -1,0 +1,123 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-11-13T14:08:31Z",
+  "kind": "chronological_x_thematic_x_geographic_explanatory_readiness_delta",
+  "mode": "append_only_not_replacement",
+  "batch_path": "research/batches/20261113T1408Z-1985-housing-policy-and-organizing.json",
+  "base_matrix": "research/coverage/coverage-matrix-20261113-compact.json",
+  "rating_method": "Substantial requires directly inspected multiple independent substantial passages, locally specific explanation and bounded uncertainty. Developing requires some coherent source-backed mechanism but key texts or location checks remain. Sparse means mainly abstract, single excerpt, disputed magnitude or no located site. Missing requires no substantive inspected historical account, not merely zero hits.",
+  "cells": [
+    {
+      "period": "1985–1987 reconstruction",
+      "theme": "housing damage denominator and chronology",
+      "geography": "Mexico City overall",
+      "rating": "developing",
+      "finding_ids": [
+        "STG-20261113-1985-RECON-01",
+        "STG-20261113-1985-RECON-02"
+      ],
+      "readiness": "Explains why building, dwelling and family totals conflict; cites exact scholarly abstract categories",
+      "gaps": [
+        "Obtain original CEPAL and emergency commission reports",
+        "Verify estimates and definitions per source and date"
+      ],
+      "publication_approved": false
+    },
+    {
+      "period": "1985–1987 reconstruction",
+      "theme": "expropriation and housing finance",
+      "geography": "Centro Histórico",
+      "rating": "developing",
+      "finding_ids": [
+        "STG-20261113-1985-RECON-03"
+      ],
+      "readiness": "11 October decree and postdisaster finance relation attributed to Azuela; exact policies not transcribed",
+      "gaps": [
+        "Read Diário Oficial 11 Oct 1985 and succeeding decrees",
+        "Inspect property maps and beneficiary contract terms"
+      ],
+      "publication_approved": false
+    },
+    {
+      "period": "1985 earthquake",
+      "theme": "historical monument assessment",
+      "geography": "Centro Histórico",
+      "rating": "sparse",
+      "finding_ids": [
+        "STG-20261113-1985-RECON-04"
+      ],
+      "readiness": "INAH 20 Sept 1985 commission described in journal abstract; building-level evidence missing",
+      "gaps": [
+        "Read original commission minutes and damage inventory",
+        "Match historic structures to physical visitor evidence"
+      ],
+      "publication_approved": false
+    },
+    {
+      "period": "1985–1988 reconstruction",
+      "theme": "organized housing advocacy",
+      "geography": "Tlatelolco",
+      "rating": "developing",
+      "finding_ids": [
+        "STG-20261113-1985-RECON-05"
+      ],
+      "readiness": "Earlier 24 Oct Tlatelolco forum finding strengthened with distinct retrospective article summary, but original agreement unread",
+      "gaps": [
+        "Read Convenio de Concertación Democrática original",
+        "Map organizational chronology and distinct neighborhood constituencies"
+      ],
+      "publication_approved": false
+    },
+    {
+      "period": "1985–1988 reconstruction",
+      "theme": "organized housing advocacy",
+      "geography": "Colonia Roma",
+      "rating": "sparse",
+      "finding_ids": [
+        "STG-20261113-1985-RECON-05"
+      ],
+      "readiness": "Citywide movement interpretation, not street/site-specific verification",
+      "gaps": [
+        "Neighborhood organizer testimonies and sites",
+        "Chronology of local unión and citywide CUD"
+      ],
+      "publication_approved": false
+    },
+    {
+      "period": "1985–1987 reconstruction",
+      "theme": "right to remain in original neighborhoods",
+      "geography": "Tepito / Morelos / Guerrero",
+      "rating": "sparse",
+      "finding_ids": [
+        "STG-20261113-1985-RECON-06",
+        "STG-20261113-1985-RECON-07"
+      ],
+      "readiness": "1987 book abstract frames in-neighborhood replacement; outcomes not verified by named barrio",
+      "gaps": [
+        "Read full study and review household/address cases",
+        "Find site specific surviving reconstruction housing and current access"
+      ],
+      "publication_approved": false
+    },
+    {
+      "period": "1985–1987 reconstruction",
+      "theme": "specific housing replacement examples",
+      "geography": "Tlatelolco complex",
+      "rating": "missing",
+      "finding_ids": [],
+      "readiness": "No audited unit-level rebuilding narrative for this specific complex in this batch",
+      "gaps": [
+        "Inspect housing restoration engineering and relocation records",
+        "Do not assert block-by-block rebuilding"
+      ],
+      "publication_approved": false
+    }
+  ],
+  "counts": {
+    "substantial": 0,
+    "developing": 3,
+    "sparse": 3,
+    "missing": 1
+  },
+  "ready_for_editorial_review": false
+}
