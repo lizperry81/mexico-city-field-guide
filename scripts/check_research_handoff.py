@@ -38,7 +38,10 @@ def safe_path(path):
     if not isinstance(path, str) or not path or "\\" in path:
         raise ValueError("Invalid research artifact path")
     p = PurePosixPath(path)
-    if p.is_absolute() or ".." in p.parts or not path.startswith("research/"):
+    # Schema v4 references its CI proof workflow as a provenance artifact.
+    # Accept exactly that workflow, never arbitrary application or site paths.
+    allowed_workflow = path == ".github/workflows/research-replay-staging.yml"
+    if p.is_absolute() or ".." in p.parts or not (path.startswith("research/") or allowed_workflow):
         raise ValueError(f"Out-of-scope research artifact path: {path}")
     return path
 
