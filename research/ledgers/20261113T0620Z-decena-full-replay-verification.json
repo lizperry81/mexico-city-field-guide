@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-13T06:20:00Z",
+  "research_commit_sha": "0ef42b24b3d62b629a30fa0b51c1c95990c1428c",
+  "branch": "research-persistence",
+  "canonical": {
+    "version": "V97",
+    "sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "sources": 616,
+    "claims": 422,
+    "claim_source_links": 403,
+    "normalized_findings": 68,
+    "source_inspections": 9,
+    "modified": false
+  },
+  "previous_verified_replay": {
+    "path": "research/reconciled/v4_fd07cfbc7f22/replay_report.json",
+    "batch_count": 55,
+    "distinct_finding_ids": 276,
+    "inspection_entries": 76,
+    "unresolved_source_ids": 24
+  },
+  "current_verified_replay": {
+    "path": "research/reconciled/v4_241fa524c476/replay_report.json",
+    "binary_path": "research/reconciled/v4_241fa524c476/research_only.sqlite.gz",
+    "uncompressed_sha256": "c3c129dfd211fcf5cc052be99ad0b254be8e7b0b37ef1e0148c87f761b5ea215",
+    "compressed_sha256": "acc70dfa4faa16d2901f2f21bea5fbfc41b1a64bcd20b9272be53c160b711c7d",
+    "batch_count": 56,
+    "distinct_finding_ids": 286,
+    "index_only_references": 28,
+    "inspection_entries": 80,
+    "source_candidates": 54,
+    "unresolved_source_ids": 22,
+    "source_id_metadata_conflicts": 2,
+    "sqlite_integrity": "ok",
+    "foreign_key_violations": 0,
+    "original_tables_preserved": 88,
+    "canonical_rows_unchanged": true
+  },
+  "source_id_conflicts": [
+    "STG-SRC-MANZANILLA-LOPEZ-FRETER-1996",
+    "v95-sload-cave-2020"
+  ],
+  "conflicting_legacy_historical_candidate": "cdmx-stg-20261113-urban-04 labels February 9–23 as Decena Trágica; requires review",
+  "local_attached_archive_examined": {
+    "file": "CDMX_RESEARCH_20261113T0356Z_1692_COLONIAL_INTEGRATION.zip",
+    "sqlite_member": "output/CDMX_RESEARCH_CUMULATIVE_v20261113T0356Z_RESEARCH_ONLY.sqlite",
+    "sqlite_sha256": "fff6d249afb4f8c7773cde56c662227c885e2f274a7e088a18d5ba8687b68efe",
+    "actual_staged_findings_table_rows": 118,
+    "actual_staged_source_inspections_rows": 37,
+    "previous_157_candidate_metric_explained": "Reported 157 included 118 stage SQLite rows plus 39 candidate or ID-only entries in other archived/GitHub files; 157 was not the staged_findings SQLite row count",
+    "cross_corpus_overlap_verified": false
+  },
+  "new_historical_findings_this_run": 10,
+  "sources_inspected": {
+    "institutional_html": 3,
+    "abstract_only": 1,
+    "primary_originals": 0
+  },
+  "independently_corroborated": 0,
+  "published": 0,
+  "artifacts": [
+    "research/batches/20261113T0610Z-decena-tragica-national-palace-source-audit.json",
+    "research/audits/decena-tragica-national-palace-20261113.json",
+    "research/coverage/20261113T0610Z-revolution-national-palace-explanatory-delta.json"
+  ],
+  "status": "STAGED_VERSIONED_RESEARCH_ONLY_NOT_CANONICAL_NOT_APPROVED",
+  "blockers": [
+    "Cross-corpus import of detached local SQLite and GitHub replay pending; exact 118 vs 286 ID overlap unknown",
+    "22 unresolved referenced source IDs",
+    "2 same-ID source metadata collisions require editorial bibliographic comparison",
+    "28 index-only references without their complete statements",
+    "Legacy Decena Trágica chronology and location differences require archival documentary comparison",
+    "Templo Mayor exact Discover chapter prose still unavailable for line-by-line verification"
+  ]
+}
