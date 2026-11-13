@@ -1,0 +1,30 @@
+{
+  "schema_version": 2,
+  "kind": "append_only_replay_count_semantics_correction",
+  "generated_at": "2026-11-13T14:17:00.074Z",
+  "branch": "research-persistence",
+  "supersedes_ledger_for_metadata_counts_only": "research/ledgers/20261113T1427Z-1985-full-replay-verification.json",
+  "immutable_sqlite_unchanged": "research/reconciled/v4_cf51ff15192e/research_only.sqlite.gz",
+  "verified_replay_commit_sha": "b80900069ed4648ff81a2cd4c3ad89ce8b7bd2a0",
+  "replay_report_blob_sha": "6c66fd2fec5cca63b49aad508247b64cb9acf7cd",
+  "motivation": "Older manifest inherited 7 URL matches, 30 unmatched, 13 unresolved-source refs with inspection metadata from historical stages; latest replay actually reports 9 URL matches, 28 no-match, 8 unresolved with inspection evidence.",
+  "authoritative_counts": {
+    "index_only_refs_total": 23,
+    "index_only_resolved": 22,
+    "index_only_unresolved": 1,
+    "unknown_source_refs": 9,
+    "unknown_refs_with_inspection_metadata": 8,
+    "unknown_refs_without_inspection_metadata": 1,
+    "embedded_inspection_source_metadata_rows": 69,
+    "detached_inspection_status_counts": {
+      "same_structured_payload_candidate": 0,
+      "same_source_identity_scope_unverified": 0,
+      "same_doi_candidate": 0,
+      "same_source_url_candidate": 9,
+      "same_title_candidate": 0,
+      "no_existing_candidate_match": 28
+    }
+  },
+  "preservation": "No research batch or database rewritten, no canonical promotion; correction is metadata-only.",
+  "editorial_approval": false
+}

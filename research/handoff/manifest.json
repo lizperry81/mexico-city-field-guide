@@ -1,7 +1,7 @@
 {
   "schema_version": 4,
   "kind": "research_to_app_handoff",
-  "generated_at": "2026-11-13T14:15:56.305Z",
+  "generated_at": "2026-11-13T14:17:00.074Z",
   "research_commit_sha": "cf51ff15192e292eb8d11c504488e72dab59ddb1",
   "canonical_version": "V97",
   "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
@@ -17,7 +17,7 @@
     "scope": "66 immutable GitHub research batches; 353 distinct research-only assertion-bearing IDs",
     "github_batches_replayed": 66,
     "github_distinct_substantive_finding_ids": 353,
-    "github_index_only_refs_total": 28,
+    "github_index_only_refs_total": 23,
     "github_index_only_refs_unresolved": 1,
     "raw_batch_documents_in_new_sqlite": 66,
     "github_inspection_entries": 149,
@@ -30,13 +30,13 @@
     "external_staging_semantic_join_verified": false,
     "github_inspection_payload_rows": 149,
     "detached_original_inspection_rows_replayed": 37,
-    "detached_semantic_duplicate_assessment": "37/37 original rows durably ingested; 0 exact payload matches and 0 same-namespace source-ID matches found; no assertion of distinct fully examined sources",
-    "detached_source_url_candidates": 7,
-    "detached_source_identity_no_match": 30,
+    "detached_semantic_duplicate_assessment": "37/37 original inspections durably ingested; 9 URL-only possible matches and 28 no automated candidate match. This is not proof of independent examination or unique bibliographic identities.",
+    "detached_source_url_candidates": 9,
+    "detached_source_identity_no_match": 28,
     "detached_source_identity_review_pending": 37,
-    "unknown_source_refs_with_inspection_metadata": 13,
+    "unknown_source_refs_with_inspection_metadata": 8,
     "unknown_source_refs_without_inspection_metadata": 1,
-    "embedded_inspection_source_metadata_rows": 57,
+    "embedded_inspection_source_metadata_rows": 69,
     "unresolved_index_only_refs": 1,
     "source_identity_provisional_from_prior_inspections_new_this_run": 0,
     "new_1847_source_candidate_records_this_run": 0,
@@ -87,7 +87,8 @@
     "research/reconciled/v4_81c9ef0cdda5/replay_report.json",
     "research/ledgers/20261113T1330Z-1847-civilian-five-source-identity-reconciliation.json",
     "research/ledgers/20261113T1427Z-1985-full-replay-verification.json",
-    "research/reconciled/v4_cf51ff15192e/replay_report.json"
+    "research/reconciled/v4_cf51ff15192e/replay_report.json",
+    "research/ledgers/20261113T1436Z-replay-count-semantic-correction.json"
   ],
   "chapter_audit_artifact_paths": [
     "research/audits/templo-mayor-discover-20261113.json",
@@ -132,14 +133,14 @@
   "blockers": [
     "9 unresolved source references, including proposed dataset placeholder",
     "2 bibliographic collisions still unresolved",
-    "7 potential inspection URL overlaps require scope-based review",
+    "9 possible inspection URL overlaps require scope-based review",
     "1985 original decrees, reconstruction agreement and full research articles not inspected",
     "Templo Mayor 1427/1428/1430 institutional dating conflict and Gamio 1913–1914 primary-document gap"
   ],
   "consumer_instruction": "RESEARCH ONLY: 66 batches, 353 staged assertion-bearing IDs; canonical 616/422/403/68 unchanged. 7 new 1985 housing/organizing research candidates and one append-only INAH identity repair. No automatic merge, app publication, or canonical promotion. Templo Mayor exact-year 1427/1430 source conflict is unresolved; reader presently uses qualified late 1420s.",
-  "immutable_handoff_path": "research/handoff/history/20261113T1427Z-1985-housing-replay-and-triple-alliance-audit.json",
-  "previous_manifest_generated_at": "2026-11-13T13:13:08Z",
-  "previous_manifest_blob_sha": "f3b2a9a3f087bc61c2feef8673d05e3c5a0062cf",
+  "immutable_handoff_path": "research/handoff/history/20261113T1436Z-replay-semantic-correction.json",
+  "previous_manifest_generated_at": "2026-11-13T14:15:56.305Z",
+  "previous_manifest_blob_sha": "e632d6f0a6316758360a039c923dd91211c43ec4",
   "handoff_history_append_only": true,
   "verified_replay_commit_sha": "b80900069ed4648ff81a2cd4c3ad89ce8b7bd2a0",
   "handoff_history_paths": [
@@ -151,7 +152,8 @@
     "research/handoff/history/20261113T1107Z-centro-palimpsest-reader-audit-verified.json",
     "research/handoff/history/20261113T1215Z-1847-and-source-metadata-replay-verified.json",
     "research/handoff/history/20261113T1313Z-1847-popular-resistance-five-sources-64-replay.json",
-    "research/handoff/history/20261113T1427Z-1985-housing-replay-and-triple-alliance-audit.json"
+    "research/handoff/history/20261113T1427Z-1985-housing-replay-and-triple-alliance-audit.json",
+    "research/handoff/history/20261113T1436Z-replay-semantic-correction.json"
   ],
   "research_batch_artifact_paths": [
     "research/batches/20261113T0904Z-hospital-jesus-recovery-and-building-phases.json",
@@ -172,7 +174,8 @@
     "canonical_rows_unchanged": true,
     "original_tables_preserved": 88,
     "github_readback_verified": true,
-    "verified_workflow_run_url": "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/43440673973"
+    "verified_workflow_run_url": "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/43440673973",
+    "source_inspection_url_matches_awaiting_review": 9
   },
   "handoff_history_commit_sha": null,
   "immutable_handoff_blob_sha": "a18824d9615cf46d5e03b2030c6d2335d7a3db06",
