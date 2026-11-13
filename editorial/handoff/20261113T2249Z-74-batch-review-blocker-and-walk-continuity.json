@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "kind": "app_research_handoff_integrity_diagnostic",
+  "recorded_on": "2026-11-13",
+  "consumer_branch": "main",
+  "research_branch": "research-persistence",
+  "research_branch_sha": "d6be7086c310a39bbef90b51886ef6a3986cb9d8",
+  "research_input_commit_sha": "9e393787d50e90ea9a0f70551bc43c01a021279f",
+  "research_manifest_generated_at": "2026-11-13T22:06:56.588Z",
+  "manifest_schema_version": 4,
+  "manifest_declared_readiness": {
+    "ready_for_editorial_review": false,
+    "ready_for_publication": false,
+    "canonical_promoted": false
+  },
+  "immutable_snapshot_path": "research/handoff/history/20261113T220656Z-centenary-74-replay-verified.json",
+  "immutable_snapshot_git_blob_sha_actual": "9f1e001f5195c1903659a5444925cf4885ca809c",
+  "immutable_snapshot_git_blob_sha_claimed": null,
+  "immutable_history_commit_sha_claimed": null,
+  "manifest_frozen_payload_diff_keys": [
+    "kind"
+  ],
+  "referenced_artifacts": {
+    "unique_paths": 128,
+    "missing_paths": []
+  },
+  "staging": {
+    "batches": 74,
+    "candidate_findings": 421,
+    "new_candidates": 9
+  },
+  "newest_evidence_topic": "1910 Independence Column: construction dates and mausoleum chronology",
+  "editorial_status": "NOT READY. Nine candidate findings have zero independent corroborations; first-stone and mausoleum dates conflict across official institutional sources.",
+  "consumer_validation": "BLOCKED: unpinned immutable snapshot; do not produce a verified editorial queue or promote provisional findings",
+  "last_prior_confirmed_consumed_research_input_sha": "95d08cf4af2c52faa16741676edff3dd1c5a0e7c",
+  "preservation": [
+    "Approved Discover manuscript archives not recovered verbatim",
+    "Discover/Explore/Plan protected",
+    "Five Explore stops and eight research field chapters unchanged",
+    "All public historical prose unchanged",
+    "Research branch read-only"
+  ],
+  "required_producer_correction": "Pin immutable_handoff_blob_sha to the actual committed Git blob and handoff_history_commit_sha to a committed ancestor containing it; maintain exact frozen payload identity and nonapproval flags. The application does not write to research-persistence.",
+  "publication_authorized": false
+}
