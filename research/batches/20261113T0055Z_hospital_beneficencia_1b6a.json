@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "batch_id": "20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a",
+  "status": "STAGED ONLY - NOT IN CANONICAL",
+  "canonical_v97_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "previous_staged_count": 105,
+  "staged_count_after": 118,
+  "new_findings": [
+    {
+      "finding_id": "stg-20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-F01",
+      "subject": "Colegio de San Ignacio secular exemption",
+      "assertion": "6 January 1861 order exempted Colegio de Niñas de San Ignacio from nationalization; dissolved Cofradía de Aránzazu's patronage passed to civic board headed by Ignacio Jaynaga.",
+      "source_id": "stg-src-unam-1861-compiled-laws",
+      "locator": "printed pp.156–157",
+      "verification": "evidence_examined_secondary_or_compiled_legal_text",
+      "original_archival_document_examined": false,
+      "independent_corroboration": false,
+      "editorial_status": "not_publication_ready"
+    },
+    {
+      "finding_id": "stg-20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-F02",
+      "subject": "Pre-decree civilian inspection",
+      "assertion": "Before February law, Juárez commissioned Luis Garrone and Juan Navarro to inspect Divino Salvador and San Hipólito hospitals' condition and funds.",
+      "source_id": "stg-src-leon-garduno-2021-beneficencia",
+      "locator": "printed p.60 note 137, citing La Reforma 26 Jan 1861 t.I no.26 f.2",
+      "verification": "evidence_examined_secondary_or_compiled_legal_text",
+      "original_archival_document_examined": false,
+      "independent_corroboration": false,
+      "editorial_status": "not_publication_ready"
+    },
+    {
+      "finding_id": "stg-20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-F03",
+      "subject": "Directorate creation and institutional jurisdiction",
+      "assertion": "Dirección General de Beneficencia Pública founded 28 February 1861; disputes with Ayuntamiento over Tecpam de Santiago, Hospicio de Pobres, Casa de Corrección, Niños Expósitos.",
+      "source_id": "stg-src-leon-garduno-2021-beneficencia",
+      "locator": "printed pp.60–61",
+      "verification": "evidence_examined_secondary_or_compiled_legal_text",
+      "original_archival_document_examined": false,
+      "independent_corroboration": false,
+      "editorial_status": "not_publication_ready"
+    },
+    {
+      "finding_id": "stg-20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-F04",
+      "subject": "Administering welfare categories",
+      "assertion": "1861 Directorate regulations assigned child vaccination, foundling care, institutional assistance, and work for beggars; semiannual staff meetings and budget oversight were prescribed.",
+      "source_id": "stg-src-leon-garduno-2021-beneficencia",
+      "locator": "printed pp.61–62 notes 142–143",
+      "verification": "evidence_examined_secondary_or_compiled_legal_text",
+      "original_archival_document_examined": false,
+      "independent_corroboration": false,
+      "editorial_status": "not_publication_ready"
+    },
+    {
+      "finding_id": "stg-20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-F05",
+      "subject": "Municipal objection",
+      "assertion": "12 April 1861 Ayuntamiento protested federal takeover of charitable powers and retained spending obligations; urged abolition of federal Directorate arrangement.",
+      "source_id": "stg-src-leon-garduno-2021-beneficencia",
+      "locator": "printed pp.62–63 note 145",
+      "verification": "evidence_examined_secondary_or_compiled_legal_text",
+      "original_archival_document_examined": false,
+      "independent_corroboration": false,
+      "editorial_status": "not_publication_ready"
+    },
+    {
+      "finding_id": "stg-20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-F06",
+      "subject": "Contested cost sharing",
+      "assertion": "December 1861 compromise assigned care contributions to both Directorate and city council; April 1862 complaints said central salaries diverted money needed by Hospital San Pablo.",
+      "source_id": "stg-src-leon-garduno-2021-beneficencia",
+      "locator": "printed p.63 note 145",
+      "verification": "evidence_examined_secondary_or_compiled_legal_text",
+      "original_archival_document_examined": false,
+      "independent_corroboration": false,
+      "editorial_status": "not_publication_ready"
+    },
+    {
+      "finding_id": "stg-20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-F07",
+      "subject": "Abolition of central Directorate",
+      "assertion": "Government abolished Dirección General de Beneficencia Pública on 30 Aug 1862; notice returned welfare institutions to district municipalities amid fiscal and war pressures.",
+      "source_id": "stg-src-leon-garduno-2021-beneficencia",
+      "locator": "printed pp.63–64 note 149",
+      "verification": "evidence_examined_secondary_or_compiled_legal_text",
+      "original_archival_document_examined": false,
+      "independent_corroboration": false,
+      "editorial_status": "not_publication_ready"
+    },
+    {
+      "finding_id": "stg-20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-F08",
+      "subject": "Imperial municipality projected shortfall",
+      "assertion": "Jan 1865 capital budget projected 1,171,767.45 pesos in costs versus 683,086 income; planned 73,784 for San Andrés; 39,120 San Pablo; 71,992 Hospicio de Pobres; other named hospitals.",
+      "source_id": "stg-src-leon-garduno-2021-beneficencia",
+      "locator": "printed pp.128–129 note 344",
+      "verification": "evidence_examined_secondary_or_compiled_legal_text",
+      "original_archival_document_examined": false,
+      "independent_corroboration": false,
+      "editorial_status": "not_publication_ready"
+    },
+    {
+      "finding_id": "stg-20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-F09",
+      "subject": "Carlota and welfare credit",
+      "assertion": "Sept 1865 Consejo General de Beneficencia chaired by Carlota announced government approval of 20,000-peso credit for institutions, to allocate by needs.",
+      "source_id": "stg-src-leon-garduno-2021-beneficencia",
+      "locator": "printed p.129 note 345",
+      "verification": "evidence_examined_secondary_or_compiled_legal_text",
+      "original_archival_document_examined": false,
+      "independent_corroboration": false,
+      "editorial_status": "not_publication_ready"
+    },
+    {
+      "finding_id": "stg-20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-F10",
+      "subject": "San Andrés transformed into hospital",
+      "assertion": "After Jesuit expulsion, an epidemic prompted bishop’s request for 400-bed hospital at San Andrés site in 1769; in 1783 government turned it over for archiepiscopal management.",
+      "source_id": "stg-src-lozada-munal-sanandres",
+      "locator": "section Noviciado y hospital",
+      "verification": "evidence_examined_secondary_or_compiled_legal_text",
+      "original_archival_document_examined": false,
+      "independent_corroboration": false,
+      "editorial_status": "not_publication_ready"
+    },
+    {
+      "finding_id": "stg-20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-F11",
+      "subject": "1867 imperial memory reshaped street",
+      "assertion": "San Andrés held Maximilian's body for embalming in 1867; former chapel was destroyed in 1868 and Xicoténcatl street cut through, in historian's account.",
+      "source_id": "stg-src-lozada-munal-sanandres",
+      "locator": "section La demolición",
+      "verification": "evidence_examined_secondary_or_compiled_legal_text",
+      "original_archival_document_examined": false,
+      "independent_corroboration": false,
+      "editorial_status": "not_publication_ready"
+    },
+    {
+      "finding_id": "stg-20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-F12",
+      "subject": "From hospital to communications palace",
+      "assertion": "1904 San Andrés demolition on Tacuba; Contri Communications Palace started 1905 with named foreign contractors; occupied under Madero 1912; MUNAL opened 1982.",
+      "source_id": "stg-src-lozada-munal-sanandres",
+      "locator": "sections La demolición and El palacio",
+      "verification": "evidence_examined_secondary_or_compiled_legal_text",
+      "original_archival_document_examined": false,
+      "independent_corroboration": false,
+      "editorial_status": "not_publication_ready"
+    },
+    {
+      "finding_id": "stg-20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-F13",
+      "subject": "Hospital de Jesús institutional exception",
+      "assertion": "Official CDMX heritage guide attributes survival of Hospital de Jesús amid Reform to secular foundation; León Garduño lists Hospital de Jesús among privately administered 1861 establishments.",
+      "source_id": "stg-src-cdmx-hospital-jesus-guide",
+      "locator": "section ¿En operación desde 1524?; León Garduño p.60 n.138",
+      "verification": "evidence_examined_secondary_or_compiled_legal_text",
+      "original_archival_document_examined": false,
+      "independent_corroboration": false,
+      "editorial_status": "not_publication_ready"
+    }
+  ],
+  "new_source_inspections": 4,
+  "source_material_accessed": [
+    {
+      "id": "stg-src-leon-garduno-2021-beneficencia",
+      "url": "https://investigacion.inah.gob.mx/_flysystem/fedora/2024-07/pd-entre-tradicion-y-modernidad.-la-conformacion-del-sistema.pdf",
+      "scope": "extracted text pp.59-65 and 127-129; PDF image screenshots failed"
+    },
+    {
+      "id": "stg-src-unam-1861-compiled-laws",
+      "url": "https://archivos.juridicas.unam.mx/www/bjv/libros/1/367/9.pdf",
+      "scope": "extracted compiled decree text pp.156-158; no original issue inspected"
+    },
+    {
+      "id": "stg-src-lozada-munal-sanandres",
+      "url": "https://relatosehistorias.mx/nuestras-historias/el-antiguo-palacio-de-comunicaciones-hoy-museo-nacional-de-arte",
+      "scope": "relevant HTML sections examined"
+    },
+    {
+      "id": "stg-src-cdmx-hospital-jesus-guide",
+      "url": "https://mexicocity.cdmx.gob.mx/venues/church-hospital-de-jesus-nazareno/",
+      "scope": "relevant HTML sections examined"
+    }
+  ],
+  "provenance": {
+    "staging_sqlite_sha256": "d6990fed66528a542f84689f99773ab3f43c039dfa16ae0f402b1b9f6feec611",
+    "recovery_archive_sha256": "da9faf17b908d9838f3947213dd6ba6feb7112b33c1fbef02822f78f6d1f0a2d",
+    "archive_name": "CDMX_STAGE_20261113T0055Z_HOSPITAL_BENEFICENCIA.zip",
+    "complete_records": "See recovery ZIP for full limitations, period tags, POI links, coverage proposals",
+    "retained_baseline_tables": 88,
+    "baseline_rows_unchanged": true,
+    "sqlite_integrity": "ok",
+    "foreign_key_violations": 0
+  },
+  "pending_checks": [
+    "AHCM vol2299 exp57 fs3-20",
+    "La Reforma 26 Jan 1861 newspaper",
+    "El Siglo XIX Sep 1862 decree report",
+    "1865 original budget",
+    "19 source identities still need canonical mapping"
+  ],
+  "canonical_modified": false,
+  "main_modified": false
+}
