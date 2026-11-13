@@ -6,6 +6,7 @@ are not deployed. A separate page is generated only for an approved manuscript.
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 from html import escape
@@ -126,6 +127,41 @@ a:focus-visible,summary:focus-visible{{outline:3px solid #126c69;outline-offset:
 </main></body></html>"""
 
 
+
+def verify_verbatim_archives(record, root=REPO):
+    """Require a checksum-pinned verbatim archive for every published chapter.
+
+    This is an additional fail-closed publication gate. Human approval and
+    page-specific evidence review remain mandatory; an archive alone is not
+    an approval. The source Markdown stays private in editorial/approved/.
+    """
+    slug = record["poi_slug"]
+    for chapter in record["chapters"]:
+        # Derive the path from validated IDs; no path comes from JSON input.
+        archive = root / "editorial" / "approved" / f"{slug}--{chapter['id']}.md"
+        checksum = archive.with_suffix(".md.sha256")
+        require(archive.is_file() and checksum.is_file(),
+                f"Missing exact approved chapter archive or checksum: {archive.name}")
+        raw = archive.read_bytes()
+        require(not archive.is_symlink() and not checksum.is_symlink(),
+                "Archived Discover files must be ordinary committed files")
+        expected = checksum.read_text(encoding="utf-8").strip().split()
+        require(len(expected) >= 1 and re.fullmatch(r"[0-9a-fA-F]{64}", expected[0]),
+                f"Invalid SHA-256 record: {checksum.name}")
+        require(hashlib.sha256(raw).hexdigest() == expected[0].lower(),
+                f"Archived Discover chapter checksum mismatch: {archive.name}")
+        archived_text = raw.decode("utf-8")
+        offset = 0
+        # Preserve every published paragraph verbatim and in the same order
+        # as the immutable chapter. Any proposed edit needs a new approval.
+        for number, paragraph in enumerate(chapter["paragraphs"], 1):
+            found = archived_text.find(paragraph["text"], offset)
+            require(found >= 0,
+                    f"Discover chapter {chapter['id']} paragraph {number} "
+                    "is not verbatim in the approved archive")
+            offset = found + len(paragraph["text"])
+
+
 def build():
     statuses = []
     for manuscript in sorted(EDITORIAL.glob("*.json")):
@@ -136,6 +172,7 @@ def build():
                          "published": approved,
                          "chapter_count_published": len(data["chapters"]) if approved else 0})
         if approved:
+            verify_verbatim_archives(data)
             destination = SITE / "poi" / slug / "discover/index.html"
             destination.parent.mkdir(parents=True, exist_ok=True)
             destination.write_text(render(data), encoding="utf-8")
