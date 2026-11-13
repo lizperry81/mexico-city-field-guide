@@ -313,6 +313,24 @@ else:
         # They are not full-text archaeology checks or published sources.
         assert any("DETAIL" in item["audit_claim_id"] for item in queue["items"])
         assert report["coverage_gap_review_count"] >= 4
+        # Newer research coverage carries site-specific readiness and blockers.
+        hospital = [gap for gap in queue["coverage_gaps"]
+                    if "hospital-jesus-" in gap["coverage_path"]]
+        if hospital:
+            assert all(gap["explanation"] and gap["research_needed"]
+                       for gap in hospital)
+            assert all(isinstance(gap["candidate_finding_ids_unverified"], list)
+                       and gap["publication_authorization"] is False
+                       for gap in hospital)
+        new_templo_audit = [item for item in queue["items"]
+                           if item["audit_claim_id"].startswith("TM-DISC-")]
+        if new_templo_audit:
+            assert len(new_templo_audit) >= 6
+            assert all(item["source_url_proposed"] and
+                       item["source_locator_proposed"] and
+                       item["editorial_passage_id"] is None and
+                       item["publication_authorization"] is False
+                       for item in new_templo_audit)
     for discrepancy in queue["unresolved_historical_discrepancies"]:
         assert discrepancy["audit_path"].startswith("research/audits/")
         assert discrepancy["issue"]

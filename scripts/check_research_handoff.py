@@ -482,8 +482,17 @@ def validate():
             geography = cell.get("geography") or coverage_doc.get("geography")
             theme = cell.get("theme")
             rating = cell.get("rating") or cell.get("new_rating")
-            explanation = cell.get("why") or cell.get("assessment")
+            explanation = (cell.get("why") or cell.get("assessment")
+                           or cell.get("explanatory_readiness"))
             next_task = cell.get("next") or cell.get("remaining_gap")
+            # Focused 2026-11-13 coverage deltas record evidence limitations
+            # as explicit blocker lists, not a single "next" string. Preserve
+            # the actual research gaps rather than rejecting a valid handoff.
+            if next_task is None and isinstance(cell.get("blockers"), list):
+                blockers = cell["blockers"]
+                if blockers and all(isinstance(item, str) and item for item in blockers):
+                    next_task = "; ".join(blockers)
+            next_task = next_task or coverage_doc.get("next_coverage_action")
             if not all(isinstance(value, str) and value
                        for value in (period, theme, geography, rating, explanation)):
                 raise ValueError("Malformed private coverage gap: " + coverage_path)
@@ -495,6 +504,9 @@ def validate():
                 "readiness": rating,
                 "explanation": explanation,
                 "research_needed": next_task,
+                "candidate_finding_ids_unverified":
+                    cell.get("evidence_findings", [])
+                    if isinstance(cell.get("evidence_findings", []), list) else [],
                 "assigned_to_published_chapter": None,
                 "review_state": "awaiting_human_evidence_and_editorial_review",
                 "publication_authorization": False,
