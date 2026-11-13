@@ -1,0 +1,58 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-11-13T16:04:09Z",
+  "kind": "templo_mayor_discover_reading_mode_editorial_gate",
+  "mode": "append_only_without_app_change",
+  "previous_audits": [
+    "research/audits/templo-mayor-reader-20261113T1058Z-exact-prose-audit.json",
+    "research/audits/templo-mayor-discover-20261113T1427Z-triple-alliance-dating-contrast.json"
+  ],
+  "verified_reader_blob_sha_from_previous_audit": "3051c5b14f20a47048e3e8e512843ff5d3952211",
+  "not_reverified_against_new_main_in_this_run": true,
+  "claim_to_reading_gate": [
+    {
+      "topic": "Triple Alliance 1427/1428/1430",
+      "mode": "advance_history",
+      "evidence": "INAH Huexotla history 1427 vs Berdan Arqueología Mexicana 124 extract 1430",
+      "locator": "https://lugares.inah.gob.mx/es/node/4416 ; https://arqueologiamexicana.mx/node/2250",
+      "status": "conflicting_founding_date",
+      "editorial_action": "Keep late-1420s approximation until full chronicle comparator; explain end of Azcapotzalco hegemony."
+    },
+    {
+      "topic": "Templo Mayor stages",
+      "mode": "advance_history_and_on_site",
+      "evidence": "Prior INAH physical stage IVb dossier",
+      "locator": "research/audits/templo-mayor-discover-20261113T0716Z-inah-physical-evidence-addendum.json",
+      "status": "stage-to-source verification incomplete",
+      "editorial_action": "Separate phase chronology in pre-read from what exposed masonry visitors can identify."
+    },
+    {
+      "topic": "Coatepec and Coyolxauhqui",
+      "mode": "advance_history_and_on_site",
+      "evidence": "Prior INAH replica/original audit",
+      "locator": "research/audits/templo-mayor-discover-20261113T0910Z-read-before-vs-on-site-recheck.json",
+      "status": "myth_tied_to_artifact_interpretation",
+      "editorial_action": "Explain myth's historic interpretation before visit; on site clarify Coyolxauhqui display is replica and museum holds original."
+    },
+    {
+      "topic": "Tóxcatl and conquest",
+      "mode": "advance_history",
+      "evidence": "Previous exact-prose audit",
+      "locator": "research/audits/templo-mayor-reader-20261113T1058Z-exact-prose-audit.json",
+      "status": "requires source comparison",
+      "editorial_action": "Separate Spanish and Indigenous testimony and 1520 events from archaeological walk markers."
+    },
+    {
+      "topic": "1978 excavation",
+      "mode": "advance_history_and_on_site",
+      "evidence": "Prior date and excavation program audit",
+      "locator": "research/audits/templo-mayor-discover-20261113T1320Z-chapter-evidence-gates.json",
+      "status": "date_distinction_recorded",
+      "editorial_action": "Distinguish discovery 21 Feb 1978, excavation and later museum display; avoid implying entire temple first found in 1978."
+    }
+  ],
+  "new_historical_findings": 0,
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "main_modified": false
+}
