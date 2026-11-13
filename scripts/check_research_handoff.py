@@ -665,6 +665,7 @@ def validate():
                     "legacy_TE28_findings_reclassified_from_index_only_to_substantive")
                 if immutable_manifest.get("kind") in ("verified_research_to_app_handoff_history",
                                                       "immutable_cross_automation_research_handoff",
+                                                      "immutable_research_batch_handoff",
                                                       "research_to_app_handoff"):
                     # The compact later handoff has no 'changes' section.
                     # Recover the earlier TE28 reclassification ONLY from its
