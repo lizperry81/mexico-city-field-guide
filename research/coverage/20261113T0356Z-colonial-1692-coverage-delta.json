@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "run": "20261113T0356Z",
+  "basis": "Full text of Exbalin (2016) inspected; Gonzalbo/Silva Prada/Rivera Ayala abstracts only; manual explanatory-readiness judgment of 5 cells, NOT all cells.",
+  "period": "09 Colonial 1600–1810",
+  "geography": "centro",
+  "cells": [
+    {
+      "theme": "politics",
+      "old_rating": "sparse",
+      "new_rating": "developing",
+      "evidence_finding_ids": [
+        "cdmx-stg-20261113-colonial1692-01",
+        "cdmx-stg-20261113-colonial1692-04",
+        "cdmx-stg-20261113-colonial1692-08",
+        "cdmx-stg-20261113-colonial1692-09",
+        "cdmx-stg-20261113-colonial1692-10"
+      ],
+      "assessment": "Grain administration, official petition sequence, policing and enforcement directly connected to documented institutions; no original archival files examined."
+    },
+    {
+      "theme": "society",
+      "old_rating": "sparse",
+      "new_rating": "developing",
+      "evidence_finding_ids": [
+        "cdmx-stg-20261113-colonial1692-01",
+        "cdmx-stg-20261113-colonial1692-02",
+        "cdmx-stg-20261113-colonial1692-03",
+        "cdmx-stg-20261113-colonial1692-07"
+      ],
+      "assessment": "Group composition, scarcity, violent confrontation and unequal sentencing described; no complete demographic study."
+    },
+    {
+      "theme": "resistance",
+      "old_rating": "missing",
+      "new_rating": "developing",
+      "evidence_finding_ids": [
+        "cdmx-stg-20261113-colonial1692-01",
+        "cdmx-stg-20261113-colonial1692-03",
+        "cdmx-stg-20261113-colonial1692-04",
+        "cdmx-stg-20261113-colonial1692-05",
+        "cdmx-stg-20261113-colonial1692-09"
+      ],
+      "assessment": "Spatially specific political action; precise crowd motivations and testimony require further review."
+    },
+    {
+      "theme": "poi",
+      "old_rating": "sparse",
+      "new_rating": "developing",
+      "evidence_finding_ids": [
+        "cdmx-stg-20261113-colonial1692-01",
+        "cdmx-stg-20261113-colonial1692-04",
+        "cdmx-stg-20261113-colonial1692-05",
+        "cdmx-stg-20261113-colonial1692-06"
+      ],
+      "assessment": "Zócalo/National Palace/Cathedral meaningful connected narrative, but surviving fabric and chapter-level editorial review missing."
+    },
+    {
+      "theme": "indigenous",
+      "old_rating": "developing",
+      "new_rating": "developing",
+      "evidence_finding_ids": [
+        "cdmx-stg-20261113-colonial1692-03",
+        "cdmx-stg-20261113-colonial1692-06",
+        "cdmx-stg-20261113-colonial1692-09"
+      ],
+      "assessment": "Adds colonial classification, Nahuatl preaching and segregation restrictions; primary-language documents not inspected."
+    }
+  ],
+  "cells_manually_assessed": 5,
+  "cells_upgraded": 4,
+  "substantial_promotions": 0,
+  "complete_POI_dossiers": 0,
+  "other_matrix_cells_unchanged": true,
+  "canonical_promoted": false,
+  "ready_for_editorial_review": false
+}
