@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-13T10:04:00Z",
+  "scope": "append-only evidence-based period x theme x geography delta, NOT a replacement for 2112-cell provisional matrix",
+  "method": "Read explanatory candidates and test whether a coherent visitor explanation has independently located material and recognizable physical features. Single-page institutional summaries alone are developing or sparse, never substantial.",
+  "readiness": [
+    {
+      "period": "Reform and intervention 1855–1876",
+      "theme": "law and secularization",
+      "geography": "centro",
+      "rating": "developing",
+      "evidence_ids": [
+        "STG-20261113-REFORM-01",
+        "STG-20261113-REFORM-02"
+      ],
+      "reason": "INEHRM chronology distinguishes nationalization from registry and medical-institution secularization; no property-level implementation case mapped to surviving building",
+      "gap": "Original 1859 and 1861 decree texts, CDMX cabildo enforcement and property records",
+      "site_observation": "No legal text visible merely by walking past a church; pair timeline with verified property history"
+    },
+    {
+      "period": "Colonial 1600–1810",
+      "theme": "health and religious institutions",
+      "geography": "centro",
+      "rating": "developing",
+      "evidence_ids": [
+        "STG-20261113-MUNAL-01"
+      ],
+      "reason": "INAH supplies dated adaptive-use sequence Jesuit college to hospital, but lacks contemporary administrative records",
+      "gap": "Locate plans and hospital charity records",
+      "site_observation": "Present building is not a surviving 1770 hospital"
+    },
+    {
+      "period": "Porfiriato 1876–1911",
+      "theme": "architecture and state institutions",
+      "geography": "centro",
+      "rating": "developing",
+      "evidence_ids": [
+        "STG-20261113-MUNAL-02"
+      ],
+      "reason": "INAH gives demolition 1904, architect and 1911 inauguration; structural documentation unexamined",
+      "gap": "1904 demolition drawings and 1911 construction photographs",
+      "site_observation": "MUNAL masonry pertains to the twentieth-century palace rather than earlier San Andrés hospital"
+    },
+    {
+      "period": "Mexico City 1940–1980",
+      "theme": "archives and urban reuse",
+      "geography": "centro",
+      "rating": "sparse",
+      "evidence_ids": [
+        "STG-20261113-MUNAL-03"
+      ],
+      "reason": "INAH briefly records AGN tenure 1973–1977 with no explanation of archive function",
+      "gap": "Find AGN tenancy history and architectural adaptation evidence",
+      "site_observation": "Use for building chronology, not stand-alone claim about archives"
+    },
+    {
+      "period": "Reform and intervention 1855–1876",
+      "theme": "imperial urban planning",
+      "geography": "reforma",
+      "rating": "developing",
+      "evidence_ids": [
+        "STG-20261113-REFORMA-01"
+      ],
+      "reason": "UNAM peer-reviewed abstract and university educational overview identify initial imperial project; independent plan is missing",
+      "gap": "1864 route order and original survey plan; differentiate original width/route and later extensions",
+      "site_observation": "Explain why boulevard is not simply a Porfirian invention"
+    },
+    {
+      "period": "Porfiriato 1876–1911",
+      "theme": "infrastructure and inequality",
+      "geography": "centro",
+      "rating": "developing",
+      "evidence_ids": [
+        "STG-20261113-PORF-01",
+        "STG-20261113-PORF-02"
+      ],
+      "reason": "UNAM educational synthesis records modernization dates and uneven service access, but source limitations prevent substantial assessment",
+      "gap": "Railway concessions, distribution of electricity, neighborhood-level water and sanitary records",
+      "site_observation": "Contrast monumental streets with historically documented poor-services areas rather than applying vague modernization rhetoric"
+    }
+  ],
+  "not_publication_ready": true,
+  "canonical_unchanged": true
+}
