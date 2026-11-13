@@ -1,0 +1,296 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261113T1803Z-gamio-1914-urban-archaeology",
+  "generated_at": "2026-11-13T18:03:52.406Z",
+  "branch": "research-persistence",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "storage_role": "immutable_noncanonical_research_batch",
+  "previous_verified_replay": "research/reconciled/v4_f4c7a5ae2eb8/replay_report.json",
+  "prior_verified_counts": {
+    "github_batches": 69,
+    "assertion_bearing_findings": 375,
+    "source_candidates": 124,
+    "source_inspections": 162,
+    "unregistered_source_refs": 1,
+    "metadata_collisions": 2
+  },
+  "research_scope": "Tight original-reader chronology and spatial excavation audit using full 2023 authored scholarly PDFs and page images; 1913 building demolition versus May 1914 discovery, 1900 sewer intervention, 1933 salvage, stage reuse, public access, modern archaeological mapping; no publication approval.",
+  "sources": [
+    {
+      "id": "STG-SRC-LOPEZ-LUJAN-2023-AM178-TM1913-1933",
+      "title": "La zona arqueológica del Templo Mayor (1913–1933)",
+      "authors": "Leonardo López Luján",
+      "year": 2023,
+      "publication": "Arqueología Mexicana XXIX(178), January–February 2023, pp.24–33",
+      "url": "https://www.mesoweb.com/es/articulos/sub/AM178.pdf",
+      "access_scope": "Full journal article PDF pages 24–33; page images of printed pp.24,25,26,27,28,29,32,33 inspected",
+      "status": "provisional_scholarly_full_article_inspected_not_independent_archive_corroboration",
+      "reproduction_rights": "No photograph/figure embedding permitted without clearance"
+    },
+    {
+      "id": "STG-SRC-DEANDA-LOPEZ-SUGIYAMA-2023-AM181-TM",
+      "title": "El resurgimiento del Templo Mayor. Los proyectos arqueológicos en la pirámide principal de Tenochtitlan",
+      "authors": "Michelle De Anda Rogel; Leonardo López Luján; Saburo Sugiyama",
+      "year": 2023,
+      "publication": "Arqueología Mexicana XXX(181), July–August 2023, pp.16 onward",
+      "url": "https://www.mesoweb.com/es/articulos/sub/AM181.pdf",
+      "access_scope": "Selected printed pp.16–20 visually inspected with summarized project excavation tables; not whole published article",
+      "status": "provisional_scholarly_selected_pages_inspected_not_independent",
+      "reproduction_rights": "No photographs, charts or maps embedded in app"
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "20261113T1803Z-INS-AM178",
+      "source_id": "STG-SRC-LOPEZ-LUJAN-2023-AM178-TM1913-1933",
+      "locator": "Printed pp.24–29 and 32–33 / PDF indexed pages 4–9,12,13",
+      "access": "Publisher journal scan on mesoweb, text plus screenshots of cited pages; no Gamio original manuscript or original negatives",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261113T1803Z-INS-AM181",
+      "source_id": "STG-SRC-DEANDA-LOPEZ-SUGIYAMA-2023-AM181-TM",
+      "locator": "Printed pp.16–20 / PDF indexed pages 4,5,6,7,8",
+      "access": "Journal PDF screenshots; comparative table directly checked on p.18, original Batres/Gamio/Cuevas reports unexamined",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    }
+  ],
+  "findings": [
+    {
+      "id": "STG-20261113T1803Z-TM-EXC-01",
+      "assertion": "The demolition announced for September 1913 at Seminario no. 2 created access to the parcel at Santa Teresa (now República de Guatemala); the excavation and exposure of the principal Mexica pyramid should not be dated simply to 1913.",
+      "date_or_range": "1913–1914",
+      "period": "1900–present heritage/archaeology; original Mexica material context",
+      "geographies": [
+        "Seminario 2 / República de Guatemala"
+      ],
+      "themes": [
+        "urban demolition",
+        "heritage",
+        "discovery chronology"
+      ],
+      "poi_ids": [
+        "templo-mayor"
+      ],
+      "source_ids": [
+        "STG-SRC-LOPEZ-LUJAN-2023-AM178-TM1913-1933"
+      ],
+      "source_locator": "López Luján 2023, Arqueología Mexicana 178, printed pp.24–26; PDF pages indexed 4–6",
+      "limitations": "The demolition-planning chronology is a scholarly reconstruction; original 1913 municipal permit and 1914 dated Gamio field reports remain unexamined.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T1803Z-TM-EXC-02",
+      "assertion": "López Luján places Gamio's re-exposure of the southwest corner between 6 and 16 May 1914; work continued intermittently until May 1916. A separate retrospective excavation table dates his project January 1914–May 1916. These dates describe different stages of activity and should not be conflated.",
+      "date_or_range": "1914-01–1916-05",
+      "period": "1900–present heritage/archaeology; original Mexica material context",
+      "geographies": [
+        "Templo Mayor southwest corner"
+      ],
+      "themes": [
+        "excavation chronology",
+        "urban archaeology"
+      ],
+      "poi_ids": [
+        "templo-mayor"
+      ],
+      "source_ids": [
+        "STG-SRC-LOPEZ-LUJAN-2023-AM178-TM1913-1933",
+        "STG-SRC-DEANDA-LOPEZ-SUGIYAMA-2023-AM181-TM"
+      ],
+      "source_locator": "López Luján 2023 AM178 printed pp.26–27 (PDF 6–7); De Anda Rogel, López Luján & Sugiyama 2023 AM181 printed pp.18–19 (PDF 6–7)",
+      "limitations": "Secondary archaeological syntheses; first-hand dated Gamio 16 May 1914 two-page report not inspected.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T1803Z-TM-EXC-03",
+      "assertion": "The 1914–1916 Gamio operation exposed approximately 557.3 m² in the Seminario parcel plus 113.5 m² under Santa Teresa street, totaling about 670.8 m². The 2023 comparative excavation table rounds the reported area to 670.82 m².",
+      "date_or_range": "1914–1916",
+      "period": "1900–present heritage/archaeology; original Mexica material context",
+      "geographies": [
+        "Seminario / Guatemala / Argentina"
+      ],
+      "themes": [
+        "quantitative archaeological evidence",
+        "urban streets"
+      ],
+      "poi_ids": [
+        "templo-mayor"
+      ],
+      "source_ids": [
+        "STG-SRC-LOPEZ-LUJAN-2023-AM178-TM1913-1933",
+        "STG-SRC-DEANDA-LOPEZ-SUGIYAMA-2023-AM181-TM"
+      ],
+      "source_locator": "AM178 printed p.26 (PDF p6); AM181 printed p.18 (PDF p6)",
+      "limitations": "Retrospective published calculations, not independently checked against Gamio's original survey plans.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T1803Z-TM-EXC-04",
+      "assertion": "The southwest-corner excavations revealed portions of several rebuilding phases of the Templo Mayor (III, IV, IVa, IVb, V) rather than one intact pyramid; successive layers were encased inside later constructions.",
+      "date_or_range": "c.1430–1486 archaeological strata excavated in 1914–1916",
+      "period": "1900–present heritage/archaeology; original Mexica material context",
+      "geographies": [
+        "Templo Mayor south-west archaeological zone"
+      ],
+      "themes": [
+        "construction phases",
+        "stratigraphy"
+      ],
+      "poi_ids": [
+        "templo-mayor"
+      ],
+      "source_ids": [
+        "STG-SRC-LOPEZ-LUJAN-2023-AM178-TM1913-1933",
+        "STG-SRC-DEANDA-LOPEZ-SUGIYAMA-2023-AM181-TM"
+      ],
+      "source_locator": "AM178 printed p.26 (PDF p6); AM181 printed p.18 (PDF p6), phase list",
+      "limitations": "Period assignments follow the retrospective excavators' phase framework; individual wall/stair mapping requires phase plans and stratigraphy.",
+      "learning_mode": "split_history_and_site_walk",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T1803Z-TM-EXC-05",
+      "assertion": "Leopoldo Batres exposed a staircase during sewer-collector works on Santa Teresa/Escalerillas in September 1900, preceding Gamio's investigations. The comparative excavation map separates Batres's 1900 intervention from Gamio's 1914–1916 and Cuevas's 1933 areas.",
+      "date_or_range": "1900",
+      "period": "1900–present heritage/archaeology; original Mexica material context",
+      "geographies": [
+        "República de Guatemala / Argentina intersection"
+      ],
+      "themes": [
+        "urban infrastructure",
+        "salvage archaeology",
+        "historiography"
+      ],
+      "poi_ids": [
+        "templo-mayor"
+      ],
+      "source_ids": [
+        "STG-SRC-LOPEZ-LUJAN-2023-AM178-TM1913-1933",
+        "STG-SRC-DEANDA-LOPEZ-SUGIYAMA-2023-AM181-TM"
+      ],
+      "source_locator": "AM178 printed p.27 (PDF p7) and excavation plan p.28 (PDF p8); AM181 printed p.18 (PDF p6): 56.35 m²",
+      "limitations": "Original Batres 1902 publication not inspected; avoids claim Batres recognized the full temple in 1900.",
+      "learning_mode": "split_history_and_site_walk",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T1803Z-TM-EXC-06",
+      "assertion": "A serpent-head sculpture now seen in the Gamio sector was originally carved for stage IVa-1, then reused/elevated in IVa-2 and IVa-3, and reused again in IVb according to later stratigraphic excavation. Its location today should not be represented as an unchanged original position or the date of its carving as the date of its present placement.",
+      "date_or_range": "c.1440–1481, archaeologically reinterpreted 2004–2006",
+      "period": "1900–present heritage/archaeology; original Mexica material context",
+      "geographies": [
+        "Templo Mayor south staircase / Gamio sector"
+      ],
+      "themes": [
+        "sculpture reuse",
+        "stratigraphic phasing",
+        "visitor interpretation"
+      ],
+      "poi_ids": [
+        "templo-mayor"
+      ],
+      "source_ids": [
+        "STG-SRC-LOPEZ-LUJAN-2023-AM178-TM1913-1933"
+      ],
+      "source_locator": "López Luján 2023 AM178 printed p.28 (PDF p8), paragraph on removal during 2004–2006 sixth season and stratigraphic well, and adjacent color list",
+      "limitations": "Phase attribution supplied by López Luján synthesis, not independently checked against sixth-season stratigraphic catalogue; photo/color reproduction rights not established.",
+      "learning_mode": "on_site_physical_observation",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T1803Z-TM-EXC-07",
+      "assertion": "The excavated zone was open to visitors by around April 1916, when formal visitor counting appears to have begun; the article reports a later count of 162 Mexican visitors and seven foreigners in 1919. The site was a managed public archaeological space decades before 1978.",
+      "date_or_range": "1916–1919",
+      "period": "1900–present heritage/archaeology; original Mexica material context",
+      "geographies": [
+        "Templo Mayor / historic center"
+      ],
+      "themes": [
+        "public history",
+        "museum and visitor practice"
+      ],
+      "poi_ids": [
+        "templo-mayor"
+      ],
+      "source_ids": [
+        "STG-SRC-LOPEZ-LUJAN-2023-AM178-TM1913-1933"
+      ],
+      "source_locator": "López Luján 2023 AM178 printed pp.26–27 (PDF pp.6–7)",
+      "limitations": "Counts are reported secondhand via Carlos Javier González; original administrative visitation ledger not seen.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T1803Z-TM-EXC-08",
+      "assertion": "Emilio Cuevas undertook 18 salvage trenches and pits during demolition of the Seminario and Infantes colleges in March–September 1933. The 2023 comparative table assigns 193.50 m² to his operations in the southwest corner/south flank, in contrast with Gamio's 670.82 m².",
+      "date_or_range": "1933-03–1933-09",
+      "period": "1900–present heritage/archaeology; original Mexica material context",
+      "geographies": [
+        "Plaza Gamio / Seminario / Infantes"
+      ],
+      "themes": [
+        "twentieth-century urban transformation",
+        "salvage archaeology"
+      ],
+      "poi_ids": [
+        "templo-mayor"
+      ],
+      "source_ids": [
+        "STG-SRC-LOPEZ-LUJAN-2023-AM178-TM1913-1933",
+        "STG-SRC-DEANDA-LOPEZ-SUGIYAMA-2023-AM181-TM"
+      ],
+      "source_locator": "AM178 printed p.32 (PDF p12) and AM181 printed pp.19–20 (PDF pp.7–8)",
+      "limitations": "Comparative area from modern author synthesis; original Cuevas 1934 records, position accuracy, and archival permissions not verified.",
+      "learning_mode": "split_history_and_site_walk",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T1803Z-TM-EXC-09",
+      "assertion": "Since 2009 the Proyecto Templo Mayor has compiled a master digital map of Mexica remains across approximately two hectares, including remains beneath modern streets, buildings and the Pino Suárez Metro station; the excavation is part of a broader buried urban landscape.",
+      "date_or_range": "2009–2023",
+      "period": "1900–present heritage/archaeology; original Mexica material context",
+      "geographies": [
+        "Centro Histórico / Argentina / Guatemala / Pino Suárez"
+      ],
+      "themes": [
+        "urban archaeology",
+        "geography",
+        "digital documentation"
+      ],
+      "poi_ids": [
+        "templo-mayor"
+      ],
+      "source_ids": [
+        "STG-SRC-DEANDA-LOPEZ-SUGIYAMA-2023-AM181-TM"
+      ],
+      "source_locator": "De Anda Rogel, López Luján & Sugiyama 2023 AM181 printed p.16 (PDF p4), opening three-column account",
+      "limitations": "Project description, not a publicly verified georeferenced layer or license to put uncovered private parcels on visitor map.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    }
+  ],
+  "editorial_notes": [
+    "The two 2023 scholarly sources are NOT independent confirmation of claims shared by coauthor López Luján.",
+    "Distinguish September 1913 demolition from project starting in early 1914 and archaeological exposure 6–16 May 1914; retain uncertainty pending original Gamio report.",
+    "Retain INAH/Editorial Raíces photo rights restrictions; no image redistribution."
+  ],
+  "ready_for_editorial_review": false,
+  "publication_approved": false
+}

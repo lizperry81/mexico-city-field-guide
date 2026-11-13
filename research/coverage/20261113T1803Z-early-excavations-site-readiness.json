@@ -1,0 +1,103 @@
+{
+  "schema_version": 3,
+  "generated_at": "2026-11-13T18:03:52.406Z",
+  "kind": "period_x_theme_x_geography_explanatory_readiness_delta",
+  "source_batch_path": "research/batches/20261113T1803Z-gamio-1914-urban-archaeology-source-audit.json",
+  "branch": "research-persistence",
+  "evidence_status": "research_staged_not_approved",
+  "rating_definitions": {
+    "substantial": "Cohesive explanation, independently checked primary/secondary locators, site objects validated",
+    "developing": "Substantive chronology/explanatory mechanism but major primary-source or map limitations",
+    "sparse": "A few locatable observations, insufficient for a full chapter/POI",
+    "missing": "Evidence required for defined period/theme/site crossing absent or inadequate"
+  },
+  "cells": [
+    {
+      "id": "1900-INFRASTRUCTURE-TM",
+      "period": "1900",
+      "theme": "Municipal sanitation and heritage loss",
+      "geography": "Guatemala/Argentina",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113T1803Z-TM-EXC-05"
+      ],
+      "explanatory_readiness": "1900 sewer works are shown to precede Gamio; Batres's work and modern site map are source-located.",
+      "next_evidence_needed": "Batres 1902 pp.15 and original sewer engineering permit/section"
+    },
+    {
+      "id": "1913-1916-ARCHAEOLOGY-CENTRO",
+      "period": "1913–1916",
+      "theme": "Demolition, salvage, archaeologists' intervention",
+      "geography": "Seminario / Guatemala / Templo Mayor",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113T1803Z-TM-EXC-01",
+        "STG-20261113T1803Z-TM-EXC-02",
+        "STG-20261113T1803Z-TM-EXC-03",
+        "STG-20261113T1803Z-TM-EXC-04"
+      ],
+      "explanatory_readiness": "May 1914 exposure, parcel, street footprint, stages and continuing work described precisely.",
+      "next_evidence_needed": "Original 16 May 1914 Gamio report, permit and 1916 plan survey"
+    },
+    {
+      "id": "STAGE-IVA-IVB-SERPENT",
+      "period": "c.1440–1481; investigated 2004–2006",
+      "theme": "Reuse of carved sacred architecture",
+      "geography": "Templo Mayor south staircase",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113T1803Z-TM-EXC-04",
+        "STG-20261113T1803Z-TM-EXC-06"
+      ],
+      "explanatory_readiness": "Specific stage transitions are explained; no independently checked season-six stratigraphic profile.",
+      "next_evidence_needed": "Excavation sixth-season drawing and catalogue; present site-label check"
+    },
+    {
+      "id": "1916-PUBLIC-SITE-MANAGEMENT",
+      "period": "1916–1919",
+      "theme": "Public archaeology and visitor access",
+      "geography": "Plaza Gamio/Guatemala",
+      "rating": "sparse",
+      "linked_assertion_ids": [
+        "STG-20261113T1803Z-TM-EXC-07"
+      ],
+      "explanatory_readiness": "Visitor numbers mentioned but how visitors accessed features or who managed the site still absent.",
+      "next_evidence_needed": "Original 1916–19 visitor registry, floor plans, conservation rules"
+    },
+    {
+      "id": "1933-URBAN-DEMOLITION-SALVAGE",
+      "period": "1933",
+      "theme": "Urban school demolition and archaeological salvage",
+      "geography": "Seminario and Infantes Colleges / Plaza Gamio",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113T1803Z-TM-EXC-08"
+      ],
+      "explanatory_readiness": "18 trenches and 193.5m2 locatable, needs original plan and mapping.",
+      "next_evidence_needed": "Cuevas 1934 plan and street/building historical parcel diagram"
+    },
+    {
+      "id": "2009-2023-URBAN-UNDERCITY",
+      "period": "2009–2023",
+      "theme": "Survey/mapping across modern infrastructure",
+      "geography": "Centro Histórico incl. Pino Suárez",
+      "rating": "sparse",
+      "linked_assertion_ids": [
+        "STG-20261113T1803Z-TM-EXC-09"
+      ],
+      "explanatory_readiness": "Citywide buried architectural continuity documented; public-site use needs legal site accuracy.",
+      "next_evidence_needed": "Permissioned GIS layer, building accessibility and current conditions"
+    },
+    {
+      "id": "1520-1521-CONQUEST-NAHUA-VOICE",
+      "period": "1520–1521",
+      "theme": "Tóxcatl and conquest primary account",
+      "geography": "Templo Mayor precinct",
+      "rating": "missing",
+      "linked_assertion_ids": [],
+      "explanatory_readiness": "New source batch does not provide a first-hand assessed Florentine Codex witness; current audit still unresolved.",
+      "next_evidence_needed": "Book 12 folio, edition, Nahuatl translation and Spanish comparison"
+    }
+  ],
+  "publication_approved": false
+}

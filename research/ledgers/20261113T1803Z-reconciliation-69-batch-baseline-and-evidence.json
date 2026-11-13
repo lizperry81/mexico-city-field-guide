@@ -1,0 +1,79 @@
+{
+  "schema_version": 3,
+  "generated_at": "2026-11-13T18:03:52.406Z",
+  "kind": "pre_replay_append_only_research_input_inventory",
+  "branch": "research-persistence",
+  "canonical": {
+    "version": "V97",
+    "sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "counts": {
+      "sources": 616,
+      "claims": 422,
+      "claim_source_links": 403,
+      "findings": 68
+    },
+    "status": "unchanged_provisional_not_promoted"
+  },
+  "verified_prior": {
+    "commit": "548a99c756572eb4de32755baabd6181f68c494a",
+    "batch_count": 69,
+    "staged_findings": 375,
+    "provisional_source_identities": 124,
+    "inspection_metadata": 162,
+    "unregistered_source_references": 1,
+    "metadata_conflicts": 2,
+    "sqlite_sha256": "6412fb3b8e65161ac7ed8c1295cf7f3b96ac299e468ab1fd027bd5a4c2501cf9"
+  },
+  "new_input": {
+    "research_batch_path": "research/batches/20261113T1803Z-gamio-1914-urban-archaeology-source-audit.json",
+    "finding_ids": [
+      "STG-20261113T1803Z-TM-EXC-01",
+      "STG-20261113T1803Z-TM-EXC-02",
+      "STG-20261113T1803Z-TM-EXC-03",
+      "STG-20261113T1803Z-TM-EXC-04",
+      "STG-20261113T1803Z-TM-EXC-05",
+      "STG-20261113T1803Z-TM-EXC-06",
+      "STG-20261113T1803Z-TM-EXC-07",
+      "STG-20261113T1803Z-TM-EXC-08",
+      "STG-20261113T1803Z-TM-EXC-09"
+    ],
+    "source_ids": [
+      "STG-SRC-LOPEZ-LUJAN-2023-AM178-TM1913-1933",
+      "STG-SRC-DEANDA-LOPEZ-SUGIYAMA-2023-AM181-TM"
+    ],
+    "inspection_ids": [
+      "20261113T1803Z-INS-AM178",
+      "20261113T1803Z-INS-AM181"
+    ],
+    "coverage_path": "research/coverage/20261113T1803Z-early-excavations-site-readiness.json",
+    "audit_path": "research/audits/20261113T1803Z-templo-mayor-gamio-1913-1914-primary-gates.json",
+    "raw_counts": {
+      "finding_assertions": 9,
+      "sources": 2,
+      "inspections": 2
+    }
+  },
+  "conflict_dispositions": [
+    {
+      "id": "STG-SRC-MANZANILLA-LOPEZ-FRETER-1996",
+      "status": "unchanged_pending_identity_scope_check"
+    },
+    {
+      "id": "v95-sload-cave-2020",
+      "status": "unchanged_metadata_collision_pending"
+    },
+    {
+      "id": "PROPOSE_SOURCE_SLOAD_2020_BOTANICAL_DATASET_NOT_IN_CANONICAL",
+      "status": "unverified_dataset_placeholder_never_register_as_publication"
+    }
+  ],
+  "replay_status": "pending_github_actions_replay_do_not_infer_cumulative_counts",
+  "editorial_status": "source_located_candidates_only_not_independently_corroborated",
+  "evidence_access": "2023 journal PDFs and screenshot-verified printed pages; original 1900/1914/1933 reports not inspected",
+  "requirements_before_manifest_promotion": [
+    "Successful full GitHub Actions test and SQLite replay",
+    "Compare canonical V97 row hashes, counts, FK and integrity",
+    "Verify new gz artifact GitHub readback, SHA-256 and input index",
+    "Only then update manifest and immutable handoff on research-persistence"
+  ]
+}
