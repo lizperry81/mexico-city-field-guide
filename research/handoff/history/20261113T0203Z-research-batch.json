@@ -1,0 +1,54 @@
+{
+  "schema_version": 2,
+  "kind": "research_to_app_handoff",
+  "generated_at": "2026-11-13T02:03:34Z",
+  "research_commit_sha": "66a1d5159f1c705c073023fd8e14c5a002ee550a",
+  "canonical_version": "V97",
+  "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_status": "provisional_unchanged_68_normalized_findings",
+  "canonical_counts": {
+    "sources": 616,
+    "claims": 422,
+    "claim_source_links": 403,
+    "normalized_findings": 68,
+    "source_inspections": 9
+  },
+  "staged_counts": {
+    "scope": "verified local cumulative staging + this run's three batch files; NOT exhaustive across 53 GitHub batches",
+    "finding_candidates_before": 118,
+    "finding_candidates_added": 18,
+    "finding_candidates_after": 136,
+    "source_inspection_metadata_before": 37,
+    "source_inspection_metadata_added": 15,
+    "source_inspection_metadata_after": 52,
+    "independently_corroborated_new": 0
+  },
+  "chapter_audit_artifact_paths": [
+    "research/audits/templo-mayor-discover-20261113.json",
+    "research/batches/20261113T0203Z-templo-mayor-discover-eight.json"
+  ],
+  "coverage_artifact_paths": [
+    "research/coverage/coverage-matrix-20261113-compact.json"
+  ],
+  "pipeline_paths": [
+    "research/pipeline/reconcile_git_batches.py",
+    "research/pipeline/README.md"
+  ],
+  "reconciliation_ledger_paths": [
+    "research/ledgers/20261113T0203Z-reconciliation-verification.json",
+    "research/ledgers/20261113T0203Z-batch-tree-inventory.json"
+  ],
+  "evidence_status": "research_candidates_with_qualifications_not_independently_corroborated",
+  "ready_for_editorial_review": false,
+  "ready_for_publication": false,
+  "staging_only": true,
+  "canonical_promoted": false,
+  "blockers": [
+    "Full 53-batch JSON replay not yet executed against local staging",
+    "Versioned SQLite validated locally but not uploaded/committed as binary; Library returned Invalid FileDrive root",
+    "19 prior source identities and 15 additional candidate source IDs require reconciliation",
+    "Actual Discover prose inaccessible, so topic-level audit only",
+    "No independent corroboration/editorial signoff"
+  ],
+  "app_consumption_rule": "May read linked audit, draft candidates and coverage as research-only; MUST NOT publish or label verified. Check research_commit_sha and each path before use. Do not merge automatically."
+}
