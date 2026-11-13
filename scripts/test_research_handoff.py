@@ -17,8 +17,8 @@ for unsafe in ("../site/index.html", "research/../../site/index.html",
         raise AssertionError("Unsafe handoff path accepted: " + unsafe)
 assert safe_path("research/audits/valid.json") == "research/audits/valid.json"
 
-# Schema v2 and schema v3 snapshots have deliberately different equality rules.
-# v3 adds manifest-only provenance; the immutable snapshot must otherwise match.
+# Schema v2 requires exact equality; v3 has two historically valid provenance
+# formats; v4 requires the complete immutable record, including audit flags.
 snap = {"schema_version": 3, "kind": "research_to_app_handoff",
         "research_commit_sha": "a" * 40, "ready_for_publication": False,
         "chapter_audit_artifact_paths": ["research/audits/valid.json"]}
@@ -35,6 +35,25 @@ inline_v3 = dict(snap, previous_manifest_blob_sha="c" * 40,
                  previous_manifest_generated_at="2026-11-13T04:14:00Z",
                  handoff_history_append_only=True)
 validate_versioned_handoff(inline_v3, copy.deepcopy(inline_v3), "d" * 40)
+
+v4 = dict(inline_v3, schema_version=4, canonical_status="unchanged_provisional_V97_not_promoted",
+          staged_counts={"github_batches_replayed": 58, "unknown_source_refs": 22},
+          evidence_status={"publication_approved": False})
+validate_versioned_handoff(v4, copy.deepcopy(v4), "d" * 40)
+for altered, immutable in (
+    (dict(v4, ready_for_publication=True), v4),
+    (dict(v4, staged_counts={"github_batches_replayed": 59}), v4),
+    (dict(v4, previous_manifest_generated_at="2026-11-13T06:58:00Z"), v4),
+    (dict(v4, immutable_handoff_snapshot_sha="d" * 40), v4),
+    (v4, dict(v4, evidence_status={"publication_approved": True})),
+    (v4, dict(v4, changed_after_commit=True)),
+):
+    try:
+        validate_versioned_handoff(altered, immutable, "d" * 40)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("Unbound or changed v4 research handoff accepted")
 for invalid_manifest, invalid_history in (
     (dict(inline_v3, handoff_history_append_only=False), inline_v3),
     (dict(inline_v3, previous_manifest_blob_sha="not-a-sha"), inline_v3),
@@ -81,15 +100,30 @@ if report["status"] == "no_verified_handoff":
 else:
     assert report["status"] == "verified_handoff_not_approved"
     assert len(report["research_commit_sha"]) == 40
-    assert report["handoff_schema_version"] in (2, 3)
+    assert report["handoff_schema_version"] in (2, 3, 4)
     assert len(report["handoff_manifest_commit_sha"]) == 40
     if any(x["group"] == "versioned_research_sqlite_gz_path"
            for x in report["artifact_checks"]):
-        assert report["handoff_schema_version"] == 3
+        assert report["handoff_schema_version"] in (3, 4)
     assert report["immutable_handoff_path"].startswith("research/handoff/history/")
     assert len(report["immutable_handoff_blob_sha"]) == 40
     assert not report["canonical_promoted"]
     assert report["artifact_checks"]
+    assert report["chapter_audit_artifact_paths"]
+    assert report["coverage_artifact_paths"]
+    if report["handoff_schema_version"] == 4:
+        staged = report["staged_reconciliation"]
+        assert staged["status"] == "verified_staged_not_canonical_or_editorially_approved"
+        assert staged["github_batches_replayed"] > 0
+        assert staged["candidate_finding_ids"] >= 0
+        assert staged["unresolved_index_only_refs"] >= 0
+        assert staged["unresolved_source_refs"] >= 0
+        assert staged["source_metadata_collisions"] >= 0
+        assert staged["semantic_join_verified"] is False
+        assert report["research_ready_for_editorial_review"] is False
+        assert report["audit_ready_for_editorial_review"] is False
+        assert not report["ready_for_publication"]
+        assert len(report["chapter_audit_artifact_paths"]) >= 2
     queue = json.loads((OUT / "editorial-review-queue.json").read_text(encoding="utf-8"))
     assert queue["research_commit_sha"] == report["research_commit_sha"]
     assert queue["status"] == "human_review_required_not_for_publication"
