@@ -170,6 +170,7 @@ def parse_new_audit(path, doc, current_reader_blob):
                      "risk", "editorial_action", "learning_mode")) and
                 row["learning_mode"] in
                     ("pre_read_history", "pre_read_discovery_history",
+                     "pre_read_museum_history",
                      "pre_read_history_with_optional_on_site_locator",
                      "split_pre_read_myth_and_on_site_observation"),
                 "exact-reader historical paragraph missing review details")
