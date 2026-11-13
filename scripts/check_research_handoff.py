@@ -682,9 +682,18 @@ def validate():
                         raise ValueError("v4 TE28 recovery history is not validated")
                     restored = te28.get("changes", {}).get(
                         "legacy_TE28_findings_reclassified_from_index_only_to_substantive")
+                # In the 69-batch replay the producer now reports the full
+                # historical index-only total (23), including the five TE28
+                # identifiers already reclassified. Earlier replay formats
+                # reported the post-reclassification remainder instead.
+                # Require the pinned TE28 evidence either way.
+                total_matches = (declared == actual if
+                                 immutable_manifest.get("kind") ==
+                                 "immutable_research_batch_handoff"
+                                 else declared == actual + restored)
                 if (type(declared) is not int or type(actual) is not int
                         or type(restored) is not int or restored < 0
-                        or declared != actual + restored):
+                        or not total_matches):
                     raise ValueError("v4 index-only recovery totals unverified")
                 continue
             if not isinstance(declared, int) or declared != actual:
