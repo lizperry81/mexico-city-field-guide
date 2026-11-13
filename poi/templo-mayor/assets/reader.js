@@ -11,7 +11,17 @@
   const previous = document.getElementById('previous-stop');
   const next = document.getElementById('next-stop');
   const progress = document.getElementById('stop-progress');
+  const stopStorageKey = 'cdmx:templo-mayor:explore-stop';
   let activeStop = 0;
+  // Keep a walking position through a reload in this tab, without changing
+  // the existing comment/localStorage data. Explicit stop URLs always win.
+  try {
+    const savedStop = window.sessionStorage?.getItem(stopStorageKey);
+    const savedIndex = stops.findIndex(item => item.id === savedStop);
+    if (savedIndex !== -1) activeStop = savedIndex;
+  } catch {
+    // Safari privacy settings can disable storage; navigation still works.
+  }
   let focusStop = false;
   let focusMode = false;
   let focusSection = false;
@@ -71,7 +81,14 @@
     // Switching to Discover or Plan must not discard a visitor's position
     // in the guided walk. A direct link to a different stop still takes priority.
     // On an initial visit activeStop starts at the first stop.
-    if (stop) activeStop = stops.indexOf(stop);
+    if (stop) {
+      activeStop = stops.indexOf(stop);
+      try {
+        window.sessionStorage?.setItem(stopStorageKey, stop.id);
+      } catch {
+        // Storage failure must never interrupt an on-site navigation.
+      }
+    }
 
     for (const item of panels) item.hidden = item !== panel;
     for (const link of modeLinks) {

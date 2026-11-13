@@ -90,11 +90,19 @@ const location = {
     listeners.hashchange?.();
   }
 };
-vm.runInNewContext(code, {
-  document: doc, window: {addEventListener(type, fn) {listeners[type] = fn;}},
-  location, Option: function(label, value) {return {label, value};},
+const store = new Map();
+const storage = {
+  getItem(key) {return store.get(key) ?? null;},
+  setItem(key, value) {store.set(key, value);}
+};
+const windowContext = {sessionStorage: storage,
+  addEventListener(type, fn) {listeners[type] = fn;}};
+const sandbox = {
+  document: doc, window: windowContext, location,
+  Option: function(label, value) {return {label, value};},
   requestAnimationFrame(fn) {fn();}, HTMLDetailsElement: class {}
-});
+};
+vm.runInNewContext(code, {...sandbox});
 assert.equal(progress.textContent, 'Stop 1 of 3');
 assert.equal(jump.value, 'plaza');
 assert.equal(prev.disabled, true);
@@ -159,4 +167,26 @@ assert.equal(sections[0].scrolled, 2);
 location.hash = '#dossier-topic-2'; // Direct/history navigation must not steal focus.
 assert.equal(sections[1].heading.focused, 0);
 assert.equal(sections[1].scrolled, 1);
-console.log('PASS: Discover TOC, same-anchor Safari mode/stop navigation, accessible focus, pager and browser-history transitions');
+// A reload in the same tab should restore the selected on-site stop without
+// touching the annotation system's independent localStorage.
+const key = 'cdmx:templo-mayor:explore-stop';
+assert.equal(store.get(key), 'plaza');
+store.set(key, 'older-stairs');
+location._hash = '#explore';
+vm.runInNewContext(code, {...sandbox}); // A fresh JS context simulates reload.
+assert.equal(jump.value, 'older-stairs', 'Explore reload must resume a stored stop');
+assert.equal(progress.textContent, 'Stop 3 of 3');
+assert.equal(stops[2].hidden, false);
+location._hash = '#plaza';
+vm.runInNewContext(code, {...sandbox});
+assert.equal(jump.value, 'plaza', 'An explicit deep link overrides saved progress');
+assert.equal(store.get(key), 'plaza', 'An explicit stop updates the saved progress');
+// Storage can be disabled under Safari privacy restrictions.
+location._hash = '#twin-stairs';
+const blockedWindow = {...windowContext, sessionStorage: {
+  getItem() {throw new Error('Storage unavailable');},
+  setItem() {throw new Error('Storage unavailable');}
+}};
+vm.runInNewContext(code, {...sandbox, window: blockedWindow});
+assert.equal(jump.value, 'twin-stairs', 'Navigation still works without storage');
+console.log('PASS: Discover TOC, Safari focus, pager, stop resume on reload, explicit deep links, and storage-blocked navigation');
