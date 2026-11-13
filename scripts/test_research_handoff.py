@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Guard research handoff against accidental editorial publication or unsafe paths."""
+import copy
 import json
 from pathlib import Path
 
-from check_research_handoff import OUT, safe_path
+from check_research_handoff import OUT, safe_path, validate_versioned_handoff
 from editorial_passage_inventory import HistoryPassages
 
 for unsafe in ("../site/index.html", "research/../../site/index.html",
@@ -16,6 +17,40 @@ for unsafe in ("../site/index.html", "research/../../site/index.html",
         raise AssertionError("Unsafe handoff path accepted: " + unsafe)
 assert safe_path("research/audits/valid.json") == "research/audits/valid.json"
 
+# Schema v2 and schema v3 snapshots have deliberately different equality rules.
+# v3 adds manifest-only provenance; the immutable snapshot must otherwise match.
+snap = {"schema_version": 3, "kind": "research_to_app_handoff",
+        "research_commit_sha": "a" * 40, "ready_for_publication": False,
+        "chapter_audit_artifact_paths": ["research/audits/valid.json"]}
+v3 = dict(snap, immutable_handoff_snapshot_sha="b" * 40,
+          previous_manifest_blob_sha="c" * 40,
+          previous_manifest_generated_at="2026-11-13T03:14:04Z",
+          handoff_history_append_only=True)
+validate_versioned_handoff(v3, snap, "b" * 40)
+v2 = {"schema_version": 2, "kind": "research_to_app_handoff"}
+validate_versioned_handoff(v2, v2, "")
+for changed, old_snapshot, actual_blob in (
+    (dict(v3, immutable_handoff_snapshot_sha="d" * 40), snap, "b" * 40),
+    (dict(v3, handoff_history_append_only=False), snap, "b" * 40),
+    (dict(v3, previous_manifest_blob_sha="invalid"), snap, "b" * 40),
+    (v3, dict(snap, research_commit_sha="e" * 40), "b" * 40),
+    (v3, dict(snap, rogue_new_field=True), "b" * 40),
+    (dict(v3, new_unreviewed_field=True), snap, "b" * 40),
+):
+    try:
+        validate_versioned_handoff(changed, old_snapshot, actual_blob)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("Drift or invalid v3 handoff provenance went undetected")
+try:
+    validate_versioned_handoff(v2, dict(v2, extra="changed"), "")
+except ValueError:
+    pass
+else:
+    raise AssertionError("v2 immutable snapshot drift went undetected")
+
+
 report = json.loads((OUT / "handoff-report.json").read_text(encoding="utf-8"))
 assert report["ready_for_publication"] is False
 if report["status"] == "no_verified_handoff":
@@ -25,6 +60,9 @@ if report["status"] == "no_verified_handoff":
 else:
     assert report["status"] == "verified_handoff_not_approved"
     assert len(report["research_commit_sha"]) == 40
+    assert report["handoff_schema_version"] in (2, 3)
+    assert report["immutable_handoff_path"].startswith("research/handoff/history/")
+    assert len(report["immutable_handoff_blob_sha"]) == 40
     assert not report["canonical_promoted"]
     assert report["artifact_checks"]
     queue = json.loads((OUT / "editorial-review-queue.json").read_text(encoding="utf-8"))
