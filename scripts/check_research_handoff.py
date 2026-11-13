@@ -592,7 +592,8 @@ def validate():
                 restored = changes.get(
                     "legacy_TE28_findings_reclassified_from_index_only_to_substantive")
                 if immutable_manifest.get("kind") in ("verified_research_to_app_handoff_history",
-                                                      "immutable_cross_automation_research_handoff"):
+                                                      "immutable_cross_automation_research_handoff",
+                                                      "research_to_app_handoff"):
                     # The compact later handoff has no 'changes' section.
                     # Recover the earlier TE28 reclassification ONLY from its
                     # pinned, append-only historical record, not a guessed delta.
