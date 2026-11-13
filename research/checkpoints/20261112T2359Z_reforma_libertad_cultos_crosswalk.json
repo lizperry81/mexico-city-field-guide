@@ -1,0 +1,14 @@
+{
+  "checkpoint_id": "20261112T2359Z_REFORMA_LIBERTAD_CULTOS_CROSSWALK",
+  "status": "STAGED ONLY — NOT IN CANONICAL",
+  "canonical_version": "V97 provisional",
+  "canonical_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_manifest_access": "DENIED: library listing tool internal failure, direct manifest/checkpoint file read not visible",
+  "staged_candidate_findings": 105,
+  "source_inspections_in_staging": 33,
+  "missing_source_identifiers_in_staging": 0,
+  "source_identity_crosswalk_pending_canonical": 19,
+  "findings_new_in_run": 9,
+  "source_material_inspected": "1860 freedom of worship law articles 1-24 and 1861 hospitals secularization articles 1-7, both edited online transcriptions; original prints not seen",
+  "next_action": "Resolve 19 pending staged source identities against current canonical bibliography; inspect original print editions and implementation at named hospitals; obtain canonical manifest and perform transactionally checked merge. Do not publish staging as canonical."
+}
