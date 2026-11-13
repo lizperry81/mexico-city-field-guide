@@ -1,0 +1,471 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261113T0610Z-decena-tragica-national-palace-source-audit",
+  "created_at": "2026-11-13T06:10:00Z",
+  "canonical_v97_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "status": "research_candidate_not_canonical_not_publication_approved",
+  "research_effort": {
+    "historical_breadth_percent": 55,
+    "poi_ready_percent": 35,
+    "specialist_percent": 10,
+    "reason": "Revolution-era and National Palace institutional gap; no narrow archaeological additions"
+  },
+  "sources": [
+    {
+      "id": "STG-SRC-LOC-REVOLUTION-DECENA-MAP",
+      "creator": "Library of Congress",
+      "title": "Tragic Ten Days Interactive Map / Mapa interactivo de los Diez Días Trágicos",
+      "url": "https://www.loc.gov/exhibits/mexican-revolution-and-the-united-states/interactive-map-espanol.html",
+      "publication": "The Mexican Revolution and the United States",
+      "access_scope": "institutional_html_full_text_examined_no_original_documents_examined",
+      "locators": [
+        "Evento Uno",
+        "Evento Dos",
+        "Evento Tres",
+        "Evento Cuatro",
+        "Evento Nueve",
+        "Evento Veinte",
+        "Evento Veintidós",
+        "Evento Veinticuatro"
+      ]
+    },
+    {
+      "id": "STG-SRC-UNAM-FILMOTECA-DECENA-CRONOLOGIA",
+      "creator": "Filmoteca UNAM",
+      "title": "Decena trágica: Cronología",
+      "url": "https://www.filmoteca.unam.mx/archivo_vivo/decena-tragica-cronologia/",
+      "publication": "Archivo Vivo",
+      "access_scope": "institutional_html_full_text_examined_film_not_watched",
+      "locators": [
+        "9 February paragraph",
+        "Pacto de la Ciudadela paragraph",
+        "Fuentes consultadas / film credits"
+      ]
+    },
+    {
+      "id": "STG-SRC-LOC-MADERO-PRESIDENCY",
+      "creator": "Library of Congress",
+      "title": "The Presidency of Madero to His Assassination",
+      "url": "https://www.loc.gov/exhibits/mexican-revolution-and-the-united-states/madero-presidency-to-assassination.html",
+      "publication": "The Mexican Revolution and the United States",
+      "access_scope": "institutional_html_full_text_examined_primary_objects_not_examined",
+      "locators": [
+        "The Tragic Ten Days in Mexico City"
+      ]
+    },
+    {
+      "id": "STG-SRC-INAH-VILLELA-2013",
+      "creator": "Samuel Villela Flores, INAH",
+      "title": "La Decena Trágica: La usurpación en imágenes",
+      "url": "https://www.revistas.inah.gob.mx/index.php/dimension/article/view/773",
+      "publication": "Dimensión Antropológica 59 (2013), 196–215",
+      "access_scope": "abstract_only_not_evidence_for_specific_findings",
+      "locators": [
+        "abstract only",
+        "article listing pp.196–215 (not examined)"
+      ]
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "INS-20261113-DECENA-LOC-MAP",
+      "source_id": "STG-SRC-LOC-REVOLUTION-DECENA-MAP",
+      "access_scope": "full_institutional_HTML",
+      "original_document_examined": false,
+      "accessed_date": "2026-11-13",
+      "locators": "Eventos 1,2,3,4,9,20,22,24"
+    },
+    {
+      "id": "INS-20261113-DECENA-UNAM",
+      "source_id": "STG-SRC-UNAM-FILMOTECA-DECENA-CRONOLOGIA",
+      "access_scope": "full_institutional_HTML",
+      "original_document_examined": false,
+      "accessed_date": "2026-11-13",
+      "locators": "Cronología opening, 9 February, Pacto 18 February and Filmoteca collection statement"
+    },
+    {
+      "id": "INS-20261113-DECENA-LOC-ESSAY",
+      "source_id": "STG-SRC-LOC-MADERO-PRESIDENCY",
+      "access_scope": "institutional_exhibition_HTML",
+      "original_document_examined": false,
+      "accessed_date": "2026-11-13",
+      "locators": "The Tragic Ten Days in Mexico City"
+    },
+    {
+      "id": "INS-20261113-DECENA-INAH-ABSTRACT",
+      "source_id": "STG-SRC-INAH-VILLELA-2013",
+      "access_scope": "journal_abstract_only",
+      "original_document_examined": false,
+      "accessed_date": "2026-11-13",
+      "locators": "abstract / bibliography metadata only"
+    }
+  ],
+  "findings": [
+    {
+      "id": "cdmx-stg-20261113-decena-01",
+      "subject": "Decena Trágica and 1913 coup in Mexico City",
+      "assertion": "9 February 1913: The first assault of the Decena Trágica took place in the Zócalo, against the National Palace; General Lauro Villar's loyalist forces regained the palace after insurgents initially entered it.",
+      "date_or_range": "1913-02-09",
+      "period": "Mexican Revolution",
+      "geography": "Mexico City Historic Centre",
+      "source_ids": [
+        "STG-SRC-LOC-REVOLUTION-DECENA-MAP",
+        "STG-SRC-UNAM-FILMOTECA-DECENA-CRONOLOGIA"
+      ],
+      "evidence_locators": [
+        "LOC interactive map, Evento Uno",
+        "UNAM Filmoteca chronology, paragraphs on 9 February"
+      ],
+      "evidence_type": "institutional_curated_historical_exhibition",
+      "confidence": "provisional_source_supported",
+      "independent_corroboration": "not_established",
+      "uncertainty": "Supported in two institutional narratives; original military records unexamined",
+      "poi_ids": [
+        "poi-national-palace",
+        "poi-zocalo"
+      ],
+      "related_topics": [
+        "revolution",
+        "political violence",
+        "city spaces",
+        "1913 coup"
+      ],
+      "source_access": "institutional_web_pages_only",
+      "original_primary_material_examined": false,
+      "editorial_status": "research_candidate_not_approved",
+      "research_batch": "20261113T0610Z-decena-tragica-national-palace-source-audit",
+      "educational_use": "National Palace / Zócalo 1913 map-based walk with evidence-linked contextual deep dive"
+    },
+    {
+      "id": "cdmx-stg-20261113-decena-02",
+      "subject": "Decena Trágica and 1913 coup in Mexico City",
+      "assertion": "The Library of Congress exhibition states that 232 captured troops from the Military Aspirants School were held in the Metropolitan Cathedral for two days after the failed 9 February assault; the exact number and confinement require independent documentary corroboration.",
+      "date_or_range": "1913-02-09/1913-02-11",
+      "period": "Mexican Revolution",
+      "geography": "Mexico City Historic Centre",
+      "source_ids": [
+        "STG-SRC-LOC-REVOLUTION-DECENA-MAP"
+      ],
+      "evidence_locators": [
+        "LOC interactive map, Evento Uno"
+      ],
+      "evidence_type": "institutional_curated_historical_exhibition",
+      "confidence": "provisional_source_supported",
+      "independent_corroboration": "not_established",
+      "uncertainty": "Single curated exhibition assertion; original arrest rolls unexamined",
+      "poi_ids": [
+        "poi-metropolitan-cathedral",
+        "poi-zocalo"
+      ],
+      "related_topics": [
+        "revolution",
+        "political violence",
+        "city spaces",
+        "1913 coup"
+      ],
+      "source_access": "institutional_web_pages_only",
+      "original_primary_material_examined": false,
+      "editorial_status": "research_candidate_not_approved",
+      "research_batch": "20261113T0610Z-decena-tragica-national-palace-source-audit",
+      "educational_use": "National Palace / Zócalo 1913 map-based walk with evidence-linked contextual deep dive"
+    },
+    {
+      "id": "cdmx-stg-20261113-decena-03",
+      "subject": "Decena Trágica and 1913 coup in Mexico City",
+      "assertion": "Bernardo Reyes was killed during the 9 February attack on the National Palace; the insurgents subsequently consolidated at the Ciudadela arsenal rather than occupying the Palace.",
+      "date_or_range": "1913-02-09",
+      "period": "Mexican Revolution",
+      "geography": "Mexico City Historic Centre",
+      "source_ids": [
+        "STG-SRC-LOC-REVOLUTION-DECENA-MAP",
+        "STG-SRC-UNAM-FILMOTECA-DECENA-CRONOLOGIA",
+        "STG-SRC-LOC-MADERO-PRESIDENCY"
+      ],
+      "evidence_locators": [
+        "LOC interactive map, Eventos Dos–Tres",
+        "UNAM Filmoteca chronology, 9 February paragraphs",
+        "LOC Madero presidency, section Tragic Ten Days"
+      ],
+      "evidence_type": "institutional_curated_historical_exhibition",
+      "confidence": "provisional_source_supported",
+      "independent_corroboration": "not_established",
+      "uncertainty": "Convergent secondary historical syntheses; precise tactical details still provisional",
+      "poi_ids": [
+        "poi-national-palace",
+        "poi-ciudadela"
+      ],
+      "related_topics": [
+        "revolution",
+        "political violence",
+        "city spaces",
+        "1913 coup"
+      ],
+      "source_access": "institutional_web_pages_only",
+      "original_primary_material_examined": false,
+      "editorial_status": "research_candidate_not_approved",
+      "research_batch": "20261113T0610Z-decena-tragica-national-palace-source-audit",
+      "educational_use": "National Palace / Zócalo 1913 map-based walk with evidence-linked contextual deep dive"
+    },
+    {
+      "id": "cdmx-stg-20261113-decena-04",
+      "subject": "Decena Trágica and 1913 coup in Mexico City",
+      "assertion": "The 11 February fighting extended to Calle Balderas between the Ciudadela and the former YMCA building, where the Library of Congress map describes machine-gun fire against loyalist troops.",
+      "date_or_range": "1913-02-11",
+      "period": "Mexican Revolution",
+      "geography": "Mexico City Historic Centre",
+      "source_ids": [
+        "STG-SRC-LOC-REVOLUTION-DECENA-MAP"
+      ],
+      "evidence_locators": [
+        "LOC interactive map, Evento Nueve"
+      ],
+      "evidence_type": "institutional_curated_historical_exhibition",
+      "confidence": "provisional_source_supported",
+      "independent_corroboration": "not_established",
+      "uncertainty": "Single exhibition reconstruction; weapon positions require primary/photographic checks",
+      "poi_ids": [
+        "poi-ciudadela"
+      ],
+      "related_topics": [
+        "revolution",
+        "political violence",
+        "city spaces",
+        "1913 coup"
+      ],
+      "source_access": "institutional_web_pages_only",
+      "original_primary_material_examined": false,
+      "editorial_status": "research_candidate_not_approved",
+      "research_batch": "20261113T0610Z-decena-tragica-national-palace-source-audit",
+      "educational_use": "National Palace / Zócalo 1913 map-based walk with evidence-linked contextual deep dive"
+    },
+    {
+      "id": "cdmx-stg-20261113-decena-05",
+      "subject": "Decena Trágica and 1913 coup in Mexico City",
+      "assertion": "The Library of Congress situates Madero's 9 February return from Chapultepec via Avenida Juárez toward the National Palace; this allows a historically grounded route narrative but the route's precise stops should not be asserted without primary evidence.",
+      "date_or_range": "1913-02-09",
+      "period": "Mexican Revolution",
+      "geography": "Mexico City Historic Centre",
+      "source_ids": [
+        "STG-SRC-LOC-REVOLUTION-DECENA-MAP"
+      ],
+      "evidence_locators": [
+        "LOC interactive map, Evento Cuatro"
+      ],
+      "evidence_type": "institutional_curated_historical_exhibition",
+      "confidence": "provisional_source_supported",
+      "independent_corroboration": "not_established",
+      "uncertainty": "Curated exhibition; exact street itinerary not independently verified",
+      "poi_ids": [
+        "poi-chapultepec-castle",
+        "poi-national-palace",
+        "poi-zocalo"
+      ],
+      "related_topics": [
+        "revolution",
+        "political violence",
+        "city spaces",
+        "1913 coup"
+      ],
+      "source_access": "institutional_web_pages_only",
+      "original_primary_material_examined": false,
+      "editorial_status": "research_candidate_not_approved",
+      "research_batch": "20261113T0610Z-decena-tragica-national-palace-source-audit",
+      "educational_use": "National Palace / Zócalo 1913 map-based walk with evidence-linked contextual deep dive"
+    },
+    {
+      "id": "cdmx-stg-20261113-decena-06",
+      "subject": "Decena Trágica and 1913 coup in Mexico City",
+      "assertion": "On 18 February 1913 Victoriano Huerta and Félix Díaz reached an agreement brokered through US ambassador Henry Lane Wilson, known as the Pacto de la Ciudadela or Pacto de la Embajada, during the overthrow of Madero.",
+      "date_or_range": "1913-02-18",
+      "period": "Mexican Revolution",
+      "geography": "Mexico City Historic Centre",
+      "source_ids": [
+        "STG-SRC-LOC-REVOLUTION-DECENA-MAP",
+        "STG-SRC-UNAM-FILMOTECA-DECENA-CRONOLOGIA"
+      ],
+      "evidence_locators": [
+        "LOC interactive map, Evento Veinte",
+        "UNAM Filmoteca chronology, final coup paragraph"
+      ],
+      "evidence_type": "institutional_curated_historical_exhibition",
+      "confidence": "provisional_source_supported",
+      "independent_corroboration": "not_established",
+      "uncertainty": "Multiple institutional summaries; original treaty/signatures unexamined",
+      "poi_ids": [
+        "poi-national-palace",
+        "poi-ciudadela"
+      ],
+      "related_topics": [
+        "revolution",
+        "political violence",
+        "city spaces",
+        "1913 coup"
+      ],
+      "source_access": "institutional_web_pages_only",
+      "original_primary_material_examined": false,
+      "editorial_status": "research_candidate_not_approved",
+      "research_batch": "20261113T0610Z-decena-tragica-national-palace-source-audit",
+      "educational_use": "National Palace / Zócalo 1913 map-based walk with evidence-linked contextual deep dive"
+    },
+    {
+      "id": "cdmx-stg-20261113-decena-07",
+      "subject": "Decena Trágica and 1913 coup in Mexico City",
+      "assertion": "The Library of Congress interactive chronology places Madero's 19 February resignation negotiations in the National Palace's administrative rooms and reports four conditions, including protections for state governments and a safe departure to Veracruz.",
+      "date_or_range": "1913-02-19",
+      "period": "Mexican Revolution",
+      "geography": "Mexico City Historic Centre",
+      "source_ids": [
+        "STG-SRC-LOC-REVOLUTION-DECENA-MAP"
+      ],
+      "evidence_locators": [
+        "LOC interactive map, Evento Veintidós"
+      ],
+      "evidence_type": "institutional_curated_historical_exhibition",
+      "confidence": "provisional_source_supported",
+      "independent_corroboration": "not_established",
+      "uncertainty": "Exhibition account; original resignation document not inspected",
+      "poi_ids": [
+        "poi-national-palace"
+      ],
+      "related_topics": [
+        "revolution",
+        "political violence",
+        "city spaces",
+        "1913 coup"
+      ],
+      "source_access": "institutional_web_pages_only",
+      "original_primary_material_examined": false,
+      "editorial_status": "research_candidate_not_approved",
+      "research_batch": "20261113T0610Z-decena-tragica-national-palace-source-audit",
+      "educational_use": "National Palace / Zócalo 1913 map-based walk with evidence-linked contextual deep dive"
+    },
+    {
+      "id": "cdmx-stg-20261113-decena-08",
+      "subject": "Decena Trágica and 1913 coup in Mexico City",
+      "assertion": "The broader 1913 coup sequence should not be collapsed into the 'Decena Trágica' fighting period: the revolt started on 9 February, the overthrow proceeded on 18–19 February, and Madero and Pino Suárez were assassinated on 22 February.",
+      "date_or_range": "1913-02-09/1913-02-22",
+      "period": "Mexican Revolution",
+      "geography": "Mexico City Historic Centre",
+      "source_ids": [
+        "STG-SRC-LOC-REVOLUTION-DECENA-MAP",
+        "STG-SRC-UNAM-FILMOTECA-DECENA-CRONOLOGIA",
+        "STG-SRC-LOC-MADERO-PRESIDENCY"
+      ],
+      "evidence_locators": [
+        "LOC interactive map, introductory paragraph and Eventos Dieciocho–Veinticuatro",
+        "UNAM Filmoteca chronology, introductory and closing paragraphs",
+        "LOC Madero presidency, section Tragic Ten Days"
+      ],
+      "evidence_type": "institutional_curated_historical_exhibition",
+      "confidence": "provisional_source_supported",
+      "independent_corroboration": "not_established",
+      "uncertainty": "Chronology correction; historical event start/end terminology varies",
+      "poi_ids": [
+        "poi-national-palace",
+        "poi-zocalo",
+        "poi-lecumberri"
+      ],
+      "related_topics": [
+        "revolution",
+        "political violence",
+        "city spaces",
+        "1913 coup"
+      ],
+      "source_access": "institutional_web_pages_only",
+      "original_primary_material_examined": false,
+      "editorial_status": "research_candidate_not_approved",
+      "research_batch": "20261113T0610Z-decena-tragica-national-palace-source-audit",
+      "educational_use": "National Palace / Zócalo 1913 map-based walk with evidence-linked contextual deep dive"
+    },
+    {
+      "id": "cdmx-stg-20261113-decena-09",
+      "subject": "Decena Trágica and 1913 coup in Mexico City",
+      "assertion": "The Filmoteca UNAM identifies approximately thirty minutes of surviving film material related to the Decena Trágica in the Salvador Toscano collection, including contemporary footage credited to Guillermo Becerril, Enrique Echániz and Hermanos Alva.",
+      "date_or_range": "1913",
+      "period": "Mexican Revolution",
+      "geography": "Mexico City Historic Centre",
+      "source_ids": [
+        "STG-SRC-UNAM-FILMOTECA-DECENA-CRONOLOGIA"
+      ],
+      "evidence_locators": [
+        "UNAM Filmoteca chronology, archival note and list of films"
+      ],
+      "evidence_type": "institutional_curated_historical_exhibition",
+      "confidence": "provisional_source_supported",
+      "independent_corroboration": "not_established",
+      "uncertainty": "Institutional collection description; footage and reproduction rights not inspected",
+      "poi_ids": [
+        "poi-national-palace",
+        "poi-ciudadela",
+        "poi-zocalo"
+      ],
+      "related_topics": [
+        "revolution",
+        "political violence",
+        "city spaces",
+        "1913 coup"
+      ],
+      "source_access": "institutional_web_pages_only",
+      "original_primary_material_examined": false,
+      "editorial_status": "research_candidate_not_approved",
+      "research_batch": "20261113T0610Z-decena-tragica-national-palace-source-audit",
+      "educational_use": "National Palace / Zócalo 1913 map-based walk with evidence-linked contextual deep dive"
+    },
+    {
+      "id": "cdmx-stg-20261113-decena-10",
+      "subject": "Decena Trágica and 1913 coup in Mexico City",
+      "assertion": "The Library of Congress map places the murders of Francisco I. Madero and José María Pino Suárez on 22 February 1913 behind the Federal District penitentiary, distinct in time and location from the 9 February Zócalo fighting.",
+      "date_or_range": "1913-02-22",
+      "period": "Mexican Revolution",
+      "geography": "Mexico City Historic Centre",
+      "source_ids": [
+        "STG-SRC-LOC-REVOLUTION-DECENA-MAP",
+        "STG-SRC-LOC-MADERO-PRESIDENCY"
+      ],
+      "evidence_locators": [
+        "LOC interactive map, Evento Veinticuatro",
+        "LOC Madero presidency, section Tragic Ten Days"
+      ],
+      "evidence_type": "institutional_curated_historical_exhibition",
+      "confidence": "provisional_source_supported",
+      "independent_corroboration": "not_established",
+      "uncertainty": "Museum account; original case and autopsy records unexamined",
+      "poi_ids": [
+        "poi-lecumberri",
+        "poi-national-palace"
+      ],
+      "related_topics": [
+        "revolution",
+        "political violence",
+        "city spaces",
+        "1913 coup"
+      ],
+      "source_access": "institutional_web_pages_only",
+      "original_primary_material_examined": false,
+      "editorial_status": "research_candidate_not_approved",
+      "research_batch": "20261113T0610Z-decena-tragica-national-palace-source-audit",
+      "educational_use": "National Palace / Zócalo 1913 map-based walk with evidence-linked contextual deep dive"
+    }
+  ],
+  "conflicting_legacy_records": [
+    {
+      "existing_finding_id": "cdmx-stg-20261113-urban-04",
+      "existing_phrase": "February 9–23, 1913",
+      "issue": "Date range is not the standard ten-day fighting interval and may conflate the 22 February murders and later aftermath with the core Decena Trágica; do not overwrite original",
+      "recommended_action": "human editorial review, separate 9–18 fighting, 18–19 coup, 22 February murders",
+      "evidence": [
+        "STG-SRC-LOC-REVOLUTION-DECENA-MAP",
+        "STG-SRC-UNAM-FILMOTECA-DECENA-CRONOLOGIA"
+      ]
+    },
+    {
+      "issue": "LOC Evento Diecinueve places 18 February arrest at Restaurante Gambrinus, whereas UNAM general account and other histories place Madero's arrest at Palacio Nacional",
+      "recommended_action": "Do not assert the exact arrest room without manuscript or corroborated documentation"
+    },
+    {
+      "issue": "The LOC places Gustavo Madero's violent death in its 19 February event, whereas other institutional accounts date it to the night of 18 February",
+      "recommended_action": "Verify original dated records before precise date publication"
+    }
+  ],
+  "evidence_limit": "None of the primary military dispatches, presidential resignation originals, court/autopsy files, or archival film frames were inspected. No licensed image rights acquired."
+}
