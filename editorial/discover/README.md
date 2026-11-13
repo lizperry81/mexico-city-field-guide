@@ -24,6 +24,17 @@ To publish an approved manuscript, supply:
 - Optional `deep_dives` on each chapter, using `title` and `text`.
   Sidebars must also be editorially verified before approval.
 
+**Verbatim preservation gate:** Before an approved manuscript can be built,
+each chapter also needs a user-approved, exact Markdown archive at
+`editorial/approved/<poi_slug>--<chapter_id>.md` and a companion
+`<filename>.md.sha256`. Every paragraph in the manuscript must occur
+verbatim and in order in that archived text. Both files must contain the real
+approved chapter and checksum, with approval date and original conversation
+or document provenance; never reconstruct missing text from a summary.
+The build fails closed if archives are missing, have been changed, or disagree
+with the paragraphs. The separate Discover JSON manuscripts are protected
+by the editorial guard on both pull requests and direct pushes to `main`.
+
 The builder checks the editorial gate and HTML-escapes content; it cannot
 independently prove that a citation is accurate. A human research editor must
 check page locators, provenance, Indigenous scholarship, and contested facts.
