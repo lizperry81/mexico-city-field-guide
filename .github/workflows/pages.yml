@@ -109,7 +109,7 @@ jobs:
           PAGE_URL: ${{ steps.deployment.outputs.page_url }}
         run: |
           python - <<'PY'
-          import os,urllib.request,time
+          import os,urllib.request,urllib.parse,time,json
           url=os.environ['PAGE_URL'].rstrip('/')+'/poi/templo-mayor/'
           required=('Templo Mayor','What to look for during the visit','History behind the excavated site','Tlaltecuhtli','Coyolxauhqui','id="museum"','id="claimlist"','../../feedback/annotate.js')
           error=None
@@ -194,6 +194,37 @@ jobs:
                   assert marker in phone_body, f'{slug}: mobile route missing {marker}'
               assert len(phone_body)>14000, f'{slug}: truncated mobile guide'
               print('IPHONE UA COMMENTABLE POI VERIFIED:',phone_url,len(phone_body),flush=True)
+          # Validate all 24 contextual chapter links against the PUBLISHED mobile HTML,
+          # not just generated source files. This detects stale Pages builds and broken paths.
+          with urllib.request.urlopen(root+'data/historic-center-connections.json',timeout=25) as response:
+              connections=json.load(response)
+              assert response.status==200
+          assert connections['count']==len(connections['comparisons'])==12
+          phone_pages={}
+          for slug in ('templo-mayor','zocalo','metropolitan-cathedral','national-palace'):
+              url=root+'poi/'+slug+'/review/'
+              req=urllib.request.Request(url,headers={'User-Agent':iphone_agent})
+              with urllib.request.urlopen(req,timeout=25) as response:
+                  phone_pages[slug]=response.read().decode('utf-8')
+                  assert response.status==200
+              assert 'window.addEventListener(\'hashchange\',navigateHash)' in phone_pages[slug], slug
+          assert 'review-jump' in phone_pages['templo-mayor']
+          checked=0
+          for comparison in connections['comparisons']:
+              origin=comparison['slug']
+              source=phone_pages[origin]
+              assert 'id="'+comparison['anchor']+'"' in source, comparison
+              for related in comparison['related_readings']:
+                  href=related['url']
+                  assert 'href="'+href+'"' in source, (origin,href)
+                  resolved=urllib.parse.urljoin(root+'poi/'+origin+'/review/',href)
+                  target=urllib.parse.urlsplit(resolved)
+                  expected=root+'poi/'+related['slug']+'/review/'
+                  assert resolved.startswith(expected+'#'), resolved
+                  assert 'id="'+target.fragment+'"' in phone_pages[related['slug']], resolved
+                  checked+=1
+          assert checked==24, checked
+          print('LIVE CROSS-CHAPTER LINKS VERIFIED:',checked,'links across 4 published iPhone HTML pages',flush=True)
           # Mobile-User-Agent HTTP check (not a substitute for Safari interaction testing).
           mobile_target=root+'walks/historic-center/'
           mobile_req=urllib.request.Request(mobile_target,headers={
