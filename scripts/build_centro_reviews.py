@@ -58,7 +58,7 @@ const stops=Array.from(observations.querySelectorAll('ol > li'));
 if(chapters.length<5||stops.length<2)throw Error('Historical material unexpectedly incomplete');
 const intro=document.createElement('section');
 intro.className='review-intro';
-intro.innerHTML='<p class="eyebrow">PHONE READER · HISTORICAL FIELD GUIDE</p><h2>One place, three ways to experience it</h2><p><b>Discover</b> gives you the historical narrative. <b>Explore</b> offers specific on-site observations. <b>Plan</b> connects practical information and nearby historical places. Open any historical deep dive without leaving your chapter.</p>';
+intro.innerHTML='<p class="eyebrow">RESEARCH-STAGE · HISTORICAL FIELD GUIDE</p><h2>Preserved historical dossier and field observations</h2><p><b>Discover</b> currently contains the archived research chapters, not a newly approved long-form narrative. <b>Explore</b> presents separate on-site observations. <b>Plan</b> covers visit planning and nearby places. Source identifiers and optional deep dives remain available for editorial review.</p>';
 observations.before(intro);
 const bar=document.createElement('nav');
 bar.className='review-switch';bar.setAttribute('aria-label','Choose guide mode');

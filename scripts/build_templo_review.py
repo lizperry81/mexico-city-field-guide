@@ -61,7 +61,7 @@ for(const key of ['story','site','dossier','museum','evidence','sources','visit'
 }
 const intro=document.createElement('section');
 intro.className='review-intro';
-intro.innerHTML='<div class="eyebrow">READER REVIEW · HISTORICAL FIELD GUIDE</div><h2>One place. Three ways to experience it.</h2><p><b>Discover</b> tells the history; <b>Explore</b> guides your attention on site; <b>Plan</b> helps arrange the visit. Open claims and sources as optional evidence panels without losing your place.</p>';
+intro.innerHTML='<div class="eyebrow">RESEARCH-STAGE · TEMPLO MAYOR</div><h2>Historical dossier and field guide</h2><p><b>Discover</b> currently presents the preserved historical dossier. It is not yet the separately edited, evidence-audited narrative. <b>Explore</b> contains the eight on-site field stops; <b>Plan</b> covers the visit. Open the original claims and sources without losing your reading position.</p>';
 tabBar.replaceWith(intro);
 const bar=document.createElement('nav');
 bar.className='review-switch';
@@ -138,6 +138,10 @@ const hist=Array.from(originals.dossier.querySelectorAll(':scope > .section'));
 if(hist.length<7)throw Error('Recovered historical dossier unexpectedly incomplete');
 const historicalIntro=hist.shift();
 const discoveryIntro=card();discoveryIntro.append(historicalIntro);
+const editorialNote=document.createElement('p');
+editorialNote.className='notice';
+editorialNote.textContent='Editorial status: archived research material, retained for review. A new long-form Discover chapter sequence will appear only after human editorial approval and page-level evidence checks.';
+discoveryIntro.prepend(editorialNote);
 screens.discover.append(discoveryIntro);
 const historyHolder=document.createElement('div');screens.discover.append(historyHolder);
 const chooseHistory=pager(historyHolder,hist,'Historical chapter');
@@ -241,6 +245,10 @@ def build():
     # Preserve the meaning of all original relative navigation and feedback links.
     page = re.sub(r'(?P<attr>(?:href|src))="(?P<parents>(?:\.\./)+)',
                   lambda m: m.group('attr') + '=\"../' + m.group('parents'), page)
+    # Only link to a separately approved narrative if the publication gate emitted it.
+    approved = ROOT / "poi/templo-mayor/discover/index.html"
+    if approved.is_file():
+        page = page.replace('</main>', '<p class="notice"><a href="discover/">Read the approved long-form Discover chapters</a></p></main>', 1)
     page = page.replace("</head>", STYLE + "</head>", 1)
     page = page.replace("</body>", JS + "</body>", 1)
     assert page.count('<script src="../../../feedback/annotate.js" defer></script>') == 1

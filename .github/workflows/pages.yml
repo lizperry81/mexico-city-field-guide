@@ -53,6 +53,9 @@ jobs:
           cp feedback/annotate.js site/feedback/annotate.js
           python scripts/enable_reader_feedback.py
           python scripts/test_reader_feedback.py
+          # Stage only editor-approved Discover narratives; drafts stay unpublished.
+          python scripts/build_discover_editorial.py
+          python scripts/test_discover_editorial.py
           # Regenerate the commentable reader from the currently built, richer POI.
           # Do not publish the older static preview snapshot as the review site.
           python scripts/build_templo_review.py
