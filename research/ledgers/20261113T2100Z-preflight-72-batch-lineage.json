@@ -1,0 +1,79 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-11-13T21:00:27Z",
+  "kind": "pre_replay_noncanonical_inventory_and_source_conflict_ledger",
+  "branch": "research-persistence",
+  "observed_ref_sha": "4b79950a080efce4e978ccd44c97f610f7e90296",
+  "last_verified_replay": "research/reconciled/v4_24bcc70ea263/replay_report.json",
+  "before_verified_counts": {
+    "github_batches": 72,
+    "github_finding_ids": 403,
+    "source_candidates": 135,
+    "inspection_entries": 173,
+    "unregistered_source_refs": 1,
+    "metadata_collisions": 2,
+    "canonical_sources": 616,
+    "canonical_claims": 422,
+    "canonical_links": 403,
+    "canonical_findings": 68
+  },
+  "incoming": {
+    "batch_path": "research/batches/20261113T2100Z-1928-municipal-democracy-legal-transitories-and-cabildo.json",
+    "new_distinct_finding_ids": 9,
+    "new_source_candidate_ids": 3,
+    "new_inspection_payloads": 3,
+    "source_ids": [
+      "STG-SRC-20261113-ZICCARDI-2022-1928-CRISIS",
+      "STG-SRC-20261113-RICO-RAMIREZ-1993-1929-THESIS",
+      "STG-SRC-20261113-IIJ-UNAM-CONSTIT-1928-TRANSITORIES"
+    ],
+    "finding_ids": [
+      "STG-20261113T2100Z-MUN-01",
+      "STG-20261113T2100Z-MUN-02",
+      "STG-20261113T2100Z-MUN-03",
+      "STG-20261113T2100Z-MUN-04",
+      "STG-20261113T2100Z-MUN-05",
+      "STG-20261113T2100Z-MUN-06",
+      "STG-20261113T2100Z-MUN-07",
+      "STG-20261113T2100Z-MUN-08",
+      "STG-20261113T2100Z-MUN-09"
+    ]
+  },
+  "expected_after_not_yet_verified": {
+    "github_batches": 73,
+    "github_finding_ids": 412,
+    "source_candidates": 138,
+    "inspection_entries": 176
+  },
+  "conflicts_to_review": [
+    {
+      "kind": "historical_vote_count_disagreement",
+      "status": "explicitly_flagged_unresolved",
+      "sources": [
+        "STG-SRC-20261113-ZICCARDI-2022-1928-CRISIS",
+        "STG-SRC-20261113-RICO-RAMIREZ-1993-1929-THESIS"
+      ]
+    },
+    {
+      "kind": "same_day_decree_effective_date_misidentification",
+      "status": "legal_edited_transcription_supports_distinction",
+      "source": "STG-SRC-20261113-IIJ-UNAM-CONSTIT-1928-TRANSITORIES"
+    }
+  ],
+  "unresolved_prior": [
+    {
+      "type": "unregistered_proposed_dataset",
+      "count": 1
+    },
+    {
+      "type": "cross_batch_source_metadata_collisions",
+      "count": 2
+    },
+    {
+      "type": "detached_inspection_identity_reviews",
+      "count": 37
+    }
+  ],
+  "lineage": "No original or prior staged records altered; prior manifest unchanged until successfully validated replay and remote GitHub readback; no main branch edits.",
+  "status": "awaiting_ci_replay_and_readback_not_canonical"
+}

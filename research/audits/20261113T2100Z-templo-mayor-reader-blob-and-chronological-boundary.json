@@ -1,0 +1,62 @@
+{
+  "schema_version": 4,
+  "generated_at": "2026-11-13T21:00:27Z",
+  "kind": "templo_mayor_exact_reader_blob_and_urban_chronology_boundary",
+  "branch": "research-persistence",
+  "target_branch_read_only": "main",
+  "target_path": "poi/templo-mayor/reader.html",
+  "target_main_blob_sha": "f24cdc57b814575c2204fe4d960b9760abb69396",
+  "original_text_was_re_read": true,
+  "source_batch_path": "research/batches/20261113T2100Z-1928-municipal-democracy-legal-transitories-and-cabildo.json",
+  "publication_approved": false,
+  "ready_for_editorial_review": false,
+  "reader_anchors": [
+    {
+      "topic": "Triple Alliance 1428",
+      "anchor": "In the late 1420s, Tenochtitlan joined Texcoco and Tlacopan in the Triple Alliance.",
+      "status": "qualified_date_retained",
+      "needs": "Critical comparison of 1427/1428/1430 chronicled dates; not addressed by municipal batch"
+    },
+    {
+      "topic": "Construction stages and ritual myth",
+      "anchor": "At the foot of the south stair of that platform lay a stone disk carved with the dismembered Coyolxauhqui.",
+      "status": "previous_gate_preserved",
+      "needs": "Stage diagrams and primary Nahua accounts"
+    },
+    {
+      "topic": "Conquest 1520",
+      "anchor": "In May 1520, while Cortés was away, Pedro de Alvarado’s men attacked people celebrating Tóxcatl in the sacred precinct.",
+      "status": "previous_gate_preserved",
+      "needs": "Nahuatl Book 12 passage and Spanish narrative alignment"
+    },
+    {
+      "topic": "Gamio 1913 and excavation in 1914",
+      "anchor": "In 1913, archaeologist Manuel Gamio uncovered the pyramid’s southwest corner.",
+      "status": "existing_reader_conflict_unpublished",
+      "needs": "1914 original Gamio report and 1913 demolition documentation"
+    },
+    {
+      "topic": "1978 discovery",
+      "anchor": "In February 1978, electrical workers digging near República de Argentina and República de Guatemala struck the carved Coyolxauhqui disk.",
+      "status": "prior_evidence_suggests_add_21_Feb_not_published",
+      "needs": "Contemporaneous salvage report"
+    }
+  ],
+  "boundary": "This run researches the 1928–29 modern Ayuntamiento and federal administrative changes. Those events should be developed in a separate Modern City history chapter and city-hall walk; do not insert them into pre-Hispanic Templo Mayor construction or 1520 conquest explanation.",
+  "source_locator_matrix": [
+    {
+      "finding_ids": [
+        "STG-20261113T2100Z-MUN-05",
+        "STG-20261113T2100Z-MUN-06",
+        "STG-20261113T2100Z-MUN-07"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-ZICCARDI-2022-1928-CRISIS",
+        "STG-SRC-20261113-RICO-RAMIREZ-1993-1929-THESIS"
+      ],
+      "locator": "Ziccardi 2022 pp.85–88; Rico Ramírez 1993 pp.81–82",
+      "use": "Modern City / City Hall pre-read and future on-site walk, not Templo Mayor construction chapter"
+    }
+  ],
+  "prior_temporal_gates": "research/audits/20261113T2004Z-templo-mayor-exact-reader-source-gates.json"
+}

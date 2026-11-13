@@ -1,0 +1,321 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261113T2100Z-1928-municipal-democracy-legal-transitories-and-cabildo",
+  "generated_at": "2026-11-13T21:00:27Z",
+  "branch": "research-persistence",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "storage_role": "immutable_noncanonical_research_batch",
+  "previous_verified_replay": "research/reconciled/v4_24bcc70ea263/replay_report.json",
+  "prior_verified_counts": {
+    "github_batches": 72,
+    "assertion_bearing_findings": 403,
+    "source_candidates": 135,
+    "source_inspections": 173,
+    "unregistered_refs": 1,
+    "metadata_conflicts": 2
+  },
+  "research_scope": "Postrevolutionary DF government 1921–1929: distinguish three same-day August 1928 constitutional decrees; read full selected scholarship, document conflicts, identify 1928 cabildo site and historical delegations.",
+  "sources": [
+    {
+      "id": "STG-SRC-20261113-ZICCARDI-2022-1928-CRISIS",
+      "title": "1928: crisis política y desaparición de los municipios del Distrito Federal",
+      "authors": "Alicia Ziccardi",
+      "year": 2022,
+      "publication": "El Instituto de Investigaciones Sociales: origen y contexto histórico, IIS-UNAM, pp. 67–94 (chapter)",
+      "url": "https://ru.iis.sociales.unam.mx/bitstream/IIS/6075/2/El_IIS_en_su_origen.pdf",
+      "access_scope": "Read PDF text in web viewer, printed pages 75–89, principally 75, 78–84, 86–89; screenshot requests failed due to PDF size (~19.5MB). This is a scholarly synthetic chapter citing newspapers, legislative debates, and historians, NOT independent inspection of those original archival records.",
+      "status": "scholarly_chapter_partial_page_text_examined_with_visual_limitation"
+    },
+    {
+      "id": "STG-SRC-20261113-RICO-RAMIREZ-1993-1929-THESIS",
+      "title": "1929 la ciudad cambia: historia de la supresión del municipio libre en la Ciudad de México",
+      "authors": "Julieta Rico Ramírez",
+      "year": 1993,
+      "publication": "UNAM Escuela Nacional de Estudios Profesionales Acatlán, licenciatura thesis",
+      "url": "https://tesiunamdocumentos.dgb.unam.mx/pmig2016/0197017/0197017.pdf",
+      "access_scope": "PDF transcription inspected printed pages 77–82, with page-image screenshots of printed 81–82 (PDF indexes 85–86). Original DOF issues and archived parliamentary proceedings NOT examined.",
+      "status": "scholarly_thesis_selected_pages_and_image_81_82_examined"
+    },
+    {
+      "id": "STG-SRC-20261113-IIJ-UNAM-CONSTIT-1928-TRANSITORIES",
+      "title": "Constitución Política de los Estados Unidos Mexicanos: historical 20 August 1928 reform transitories",
+      "authors": "UNAM Instituto de Investigaciones Jurídicas, annotated compilation",
+      "publication": "UNAM IIJ legal text and historical reform transitories (online edition)",
+      "url": "https://www.juridicas.unam.mx/en/legislacion/ordenamiento/constitucion-politica-de-los-estados-unidos-mexicanos",
+      "access_scope": "Directly inspected historical transitories and headings online HTML around lines 3162–3201. This reproduces text of 20 August 1928 reforms but is NOT a scanned contemporary Diario Oficial issue.",
+      "status": "historical_legal_transcription_checked_original_dof_unexamined"
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "20261113T2100Z-INS-01",
+      "source_id": "STG-SRC-20261113-ZICCARDI-2022-1928-CRISIS",
+      "locator": "Printed pp. 75,78–84,86–89, web PDF text lines 995–1012, 1031–1055,1063–1106,1130–1185",
+      "access": "Scholarly historical chapter text, not original parliament/minutes; page images unavailable because source PDF exceeds viewer screenshot limit",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261113T2100Z-INS-02",
+      "source_id": "STG-SRC-20261113-RICO-RAMIREZ-1993-1929-THESIS",
+      "locator": "Printed pp.77–82, PDF text lines 905–960 and 966–969; original image screenshots viewer PDF p85/86 = print pp.81/82",
+      "access": "Thesis selected pages of municipal law and reform, page images at 81–82 examined; not original 1928 DOF facsimile",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261113T2100Z-INS-03",
+      "source_id": "STG-SRC-20261113-IIJ-UNAM-CONSTIT-1928-TRANSITORIES",
+      "locator": "Online historical transitories at HTML lines 3162–3201, explicitly first decree Art. 1 (20 Dec 1928), third decree unico (1 Jan 1929)",
+      "access": "Legal institute's later annotated transcription; original DOF publication not inspected",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    }
+  ],
+  "findings": [
+    {
+      "id": "STG-20261113T2100Z-MUN-01",
+      "assertion": "Three different measures appeared in the 20 August 1928 official publication. UNAM's historical transitory compilation labels the first decree (a multi-article judicial/congressional reform) effective 20 December 1928, while the THIRD decree, modifying Article 73(VI) to place Distrito Federal government under presidential authority, explicitly entered into force 1 January 1929. Applying the first decree's 20 December transitory to the municipal abolition would be a document-identity error.",
+      "date_or_range": "1928-08-20–1929-01-01",
+      "period": "1920s postrevolutionary urban government",
+      "themes": [
+        "Constitutional effective dates"
+      ],
+      "geographies": [
+        "Distrito Federal"
+      ],
+      "poi_ids": [
+        "antiguo-palacio-ayuntamiento"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-IIJ-UNAM-CONSTIT-1928-TRANSITORIES"
+      ],
+      "source_locator": "IIJ-UNAM transitories, headings First Decree lines 3162–3167 vs Third Decree lines 3192–3201",
+      "limitations": "Historical transcription rather than original DOF; maintain distinction between enactment, promulgation and effective date; correct previous potential conflation.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2100Z-MUN-02",
+      "assertion": "Obregón proposed ending Mexico City's elected municipal councils as early as 1921, but that attempt failed. Ziccardi traces renewed initiatives submitted on 18 April 1928, followed by a 12 May addition explicitly providing Congress's legislative authority and presidential government through statutory organs.",
+      "date_or_range": "1921–1928-05-12",
+      "period": "1920s postrevolutionary urban government",
+      "themes": [
+        "Repeated centralization proposals"
+      ],
+      "geographies": [
+        "Mexico City",
+        "Distrito Federal"
+      ],
+      "poi_ids": [
+        "antiguo-palacio-ayuntamiento"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-ZICCARDI-2022-1928-CRISIS"
+      ],
+      "source_locator": "Ziccardi 2022 printed pp.75, 78, PDF text lines 997–1012 and 1031–1034",
+      "limitations": "Source is synthetic secondary analysis; original 1921 Senate file and April–May 1928 submissions not inspected.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2100Z-MUN-03",
+      "assertion": "The 1928 confrontation was not simply modernizers versus defenders of inefficient government. Laborist deputy Vicente Lombardo Toledano argued that regional metropolitan services required coordination but opposed extinguishing political representation, discussing proportional or indirectly chosen representation tied to social organizations; other laborist deputies diverged over remedies.",
+      "date_or_range": "1928-05-14–1928-05-17",
+      "period": "1920s postrevolutionary urban government",
+      "themes": [
+        "Representation versus metropolitan planning"
+      ],
+      "geographies": [
+        "Distrito Federal",
+        "Valle de México"
+      ],
+      "poi_ids": [
+        "antiguo-palacio-ayuntamiento"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-ZICCARDI-2022-1928-CRISIS",
+        "STG-SRC-20261113-RICO-RAMIREZ-1993-1929-THESIS"
+      ],
+      "source_locator": "Ziccardi 2022 printed pp.80–83, PDF text lines 1063–1101; Rico Ramírez thesis printed pp.77–79, lines 905–938",
+      "limitations": "Legislative speeches supplied through later scholars' transcriptions; not verified against original Diario de los Debates. Class/party motives remain interpretations.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2100Z-MUN-04",
+      "assertion": "Two examined retrospective histories give INCOMPATIBLE tallies for the May 1928 vote over the proposed reform. Ziccardi reports first-round 170–22 and second-round 174–21 on 17 May; Rico Ramírez gives 185–21 for approval. Do not display a single unqualified vote count until the original May 17 legislative record resolves whether the texts summarize different motions or repeat an error.",
+      "date_or_range": "1928-05-17",
+      "period": "1920s postrevolutionary urban government",
+      "themes": [
+        "Conflicting parliamentary vote tallies"
+      ],
+      "geographies": [
+        "Cámara de Diputados",
+        "Mexico City"
+      ],
+      "poi_ids": [
+        "antiguo-palacio-ayuntamiento"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-ZICCARDI-2022-1928-CRISIS",
+        "STG-SRC-20261113-RICO-RAMIREZ-1993-1929-THESIS"
+      ],
+      "source_locator": "Ziccardi 2022 printed p.84 text lines 1103–1106; Rico Ramírez thesis printed p.79 PDF text lines 929–935",
+      "limitations": "Explicit unresolved conflict: vote rounds, procedural stage, or transcription differ. This finding documents disagreement, not verified numeric result.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2100Z-MUN-05",
+      "assertion": "Before the January 1929 statutory change took effect, the city's municipal government was already in crisis. Ziccardi reports obregonist resignations in the council in August 1928 and an interim municipal council with Carlos M. Esquerro and seven councillors, designated to serve until 31 December, replacing the old city cabildo's ordinary work.",
+      "date_or_range": "1928-07-17–1928-12-31",
+      "period": "1920s postrevolutionary urban government",
+      "themes": [
+        "Interim replacement municipal council"
+      ],
+      "geographies": [
+        "Centro Histórico",
+        "Ayuntamiento Ciudad de México"
+      ],
+      "poi_ids": [
+        "antiguo-palacio-ayuntamiento"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-ZICCARDI-2022-1928-CRISIS"
+      ],
+      "source_locator": "Ziccardi 2022 printed pp.85–86, PDF text lines 1123–1144",
+      "limitations": "The source relies on 18 August 1928 Excélsior reporting, not yet inspected; distinguish proposal, legal appointment and actual working dates.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2100Z-MUN-06",
+      "assertion": "The interim council's commissions included commerce, justice, finance, slaughterhouses/markets, public works, pulque/vehicles and entertainments; it studied sanitation works and reorganized policing. Ziccardi additionally reports suspension of work on the Palacio Municipal amid budget criticism. This offers a specific site-linked investigation at the Antiguo Palacio del Ayuntamiento, but not proof of which surviving architectural fabric was affected.",
+      "date_or_range": "1928-08–1928-12",
+      "period": "1920s postrevolutionary urban government",
+      "themes": [
+        "Municipal services and unfinished Palacio Municipal works"
+      ],
+      "geographies": [
+        "Zócalo",
+        "Antiguo Palacio del Ayuntamiento"
+      ],
+      "poi_ids": [
+        "antiguo-palacio-ayuntamiento"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-ZICCARDI-2022-1928-CRISIS"
+      ],
+      "source_locator": "Ziccardi 2022 printed pp.86–87, PDF text lines 1153–1163",
+      "limitations": "Contemporary municipal work orders/building plans and original newspaper issue unreviewed; no current room/architectural identification approved.",
+      "learning_mode": "poi_field_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2100Z-MUN-07",
+      "assertion": "A scholarly transcription of the 1928 Organic Law describes one Departamento Central built from former México, Tacuba, Tacubaya and Mixcoac municipality territories plus thirteen delegations including Ixtacalco, Ixtapalapa, General Anaya and others. Article 19 envisaged adjustments if continuous urban development blurred boundaries and public services became shared. This 1928 geography cannot be mapped using present-day alcaldía boundaries without a period map.",
+      "date_or_range": "1928-12-31–1929",
+      "period": "1920s postrevolutionary urban government",
+      "themes": [
+        "Administrative geography and urban consolidation"
+      ],
+      "geographies": [
+        "Centro",
+        "Tacuba",
+        "Tacubaya",
+        "Mixcoac",
+        "Ixtacalco",
+        "Ixtapalapa"
+      ],
+      "poi_ids": [
+        "antiguo-palacio-ayuntamiento"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-RICO-RAMIREZ-1993-1929-THESIS",
+        "STG-SRC-20261113-ZICCARDI-2022-1928-CRISIS"
+      ],
+      "source_locator": "Rico Ramírez thesis print p.81, PDF text lines 952–966, checked scanned page image p85; Ziccardi 2022 printed p.88, lines 1173–1177",
+      "limitations": "Exact Article 19 original wording and inclusion of Ixtapalapa sections in central department vary by paraphrase; original law and contemporary cadastral map required.",
+      "learning_mode": "poi_field_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2100Z-MUN-08",
+      "assertion": "The proposed consultative-council structure offered participation chiefly through representatives of commercial, industrial, property and taxpayer organizations rather than elected municipal councillors. Rico Ramírez describes consultative oversight of works, services and taxes, while effective administrative authority remained with presidentially appointed officials.",
+      "date_or_range": "1928–1929",
+      "period": "1920s postrevolutionary urban government",
+      "themes": [
+        "Corporate representation and local participation"
+      ],
+      "geographies": [
+        "Distrito Federal",
+        "Centro Histórico"
+      ],
+      "poi_ids": [
+        "antiguo-palacio-ayuntamiento"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-RICO-RAMIREZ-1993-1929-THESIS"
+      ],
+      "source_locator": "Rico Ramírez thesis printed pp.79–82, text lines 940–969; selected p.81–82 page images checked",
+      "limitations": "Differentiate stated proposal, statutory institution, and actual composition in office; labor, tenant and Indigenous perspectives require separate evidence.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T2100Z-MUN-09",
+      "assertion": "Ziccardi records press praise for the temporary council in August–September 1928 but also later allegations of an unofficial treasury and municipal workers' concern over job loss. These illustrate contested administrative legitimacy rather than demonstrated reform success or proven misconduct.",
+      "date_or_range": "1928-08–1928-12",
+      "period": "1920s postrevolutionary urban government",
+      "themes": [
+        "Urban administration, labor and press framing"
+      ],
+      "geographies": [
+        "Centro Histórico",
+        "Mexico City"
+      ],
+      "poi_ids": [
+        "antiguo-palacio-ayuntamiento"
+      ],
+      "source_ids": [
+        "STG-SRC-20261113-ZICCARDI-2022-1928-CRISIS"
+      ],
+      "source_locator": "Ziccardi 2022 printed pp.86–88, text lines 1162–1176",
+      "limitations": "Journalistic charges and evaluations quoted by a secondary historian; original press, personnel and finance ledgers not examined; no allegation stated as proven.",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    }
+  ],
+  "source_conflicts": [
+    {
+      "type": "historical_disagreement_not_source_id_collision",
+      "topic": "May 17 1928 congressional vote",
+      "ziccardi": "170–22 then 174–21",
+      "rico_ramirez": "185–21",
+      "status": "unresolved_original_diario_de_los_debates_needed"
+    },
+    {
+      "type": "reader_context_correction",
+      "topic": "Same-day 20 August 1928 decrees",
+      "first_decree_effective": "1928-12-20",
+      "third_article_73_VI_decree_effective": "1929-01-01",
+      "status": "document_identity_distinction_supported_by_legal_transcription_original_issue_unseen"
+    }
+  ],
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "ready_for_publication": false
+}

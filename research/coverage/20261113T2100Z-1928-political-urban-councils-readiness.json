@@ -1,0 +1,123 @@
+{
+  "schema_version": 3,
+  "generated_at": "2026-11-13T21:00:27Z",
+  "kind": "period_x_theme_x_geography_explanatory_readiness_delta",
+  "branch": "research-persistence",
+  "source_batch_path": "research/batches/20261113T2100Z-1928-municipal-democracy-legal-transitories-and-cabildo.json",
+  "evidence_status": "noncanonical_candidates_not_editorially_approved",
+  "rating_definitions": {
+    "substantial": "Integrated source-critical historical mechanism and independently validated site interpretation",
+    "developing": "Concrete evidence and coherent explanatory mechanism but primary or site gap",
+    "sparse": "Partial facts, single perspective or unresolved source conflict",
+    "missing": "Necessary physical/archival evidence absent"
+  },
+  "cells": [
+    {
+      "id": "1928-LEGAL-TRANSITORIES",
+      "period": "1928–1929",
+      "theme": "Separate effective dates of overlapping constitutional reforms",
+      "geography": "Mexico City federal district",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113T2100Z-MUN-01"
+      ],
+      "explanatory_readiness": "UNAM annotated transitories identify 1 Jan municipal effective date separately from unrelated 20 Dec decree",
+      "next_evidence_needed": "Scanned DOF August 20 first and third decrees"
+    },
+    {
+      "id": "1921-1928-CENTRALIZATION-PROPOSALS",
+      "period": "1921–1928",
+      "theme": "Centralization as cumulative political project",
+      "geography": "Mexico City",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113T2100Z-MUN-02",
+        "STG-20261113T2100Z-MUN-03"
+      ],
+      "explanatory_readiness": "Chronology of failed 1921 proposal and 1928 initiatives supports explanation of competing party and urban service goals",
+      "next_evidence_needed": "Original parliamentary file and urban services statistics"
+    },
+    {
+      "id": "1928-LABOR-REPRESENTATION",
+      "period": "1928",
+      "theme": "Laborist urban coordination with political representation",
+      "geography": "Valle de México",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113T2100Z-MUN-03",
+        "STG-20261113T2100Z-MUN-08"
+      ],
+      "explanatory_readiness": "Concrete positions of Lombardo and other laborists; no manuscript speech collation",
+      "next_evidence_needed": "Diario de los Debates, union and tenant records"
+    },
+    {
+      "id": "1928-VOTE-CONFLICT",
+      "period": "May 1928",
+      "theme": "Parliamentary voting reliability",
+      "geography": "Mexico City / national legislature",
+      "rating": "sparse",
+      "linked_assertion_ids": [
+        "STG-20261113T2100Z-MUN-04"
+      ],
+      "explanatory_readiness": "Two incompatible tallies in scholarship prevent precise vote narrative",
+      "next_evidence_needed": "Original 17 May 1928 roll-call"
+    },
+    {
+      "id": "1928-INTERIM-COUNCIL-CENTRO",
+      "period": "August–December 1928",
+      "theme": "Municipal transition operations",
+      "geography": "Zócalo, Antiguo Palacio del Ayuntamiento",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113T2100Z-MUN-05",
+        "STG-20261113T2100Z-MUN-06",
+        "STG-20261113T2100Z-MUN-09"
+      ],
+      "explanatory_readiness": "Specific committees, budget and built-environment work give a strong on-site theme; newspaper primary access and room changes missing",
+      "next_evidence_needed": "1928 council actas and public-works contract/physical fabric study"
+    },
+    {
+      "id": "1929-REGIONAL-ADMIN-GEOGRAPHY",
+      "period": "1928–1929",
+      "theme": "Department Central / thirteen delegations",
+      "geography": "Tacuba, Tacubaya, Mixcoac, Ixtacalco, Ixtapalapa",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261113T2100Z-MUN-07"
+      ],
+      "explanatory_readiness": "Named territorial units and article-level mechanism but no reliable boundary overlays",
+      "next_evidence_needed": "Original law art.2–20 and contemporary georeferenced administrative maps"
+    },
+    {
+      "id": "1929-CONSULTATIVE-VOICE",
+      "period": "1929–1934",
+      "theme": "Who actually sat on new councils?",
+      "geography": "Distrito Federal",
+      "rating": "sparse",
+      "linked_assertion_ids": [
+        "STG-20261113T2100Z-MUN-08"
+      ],
+      "explanatory_readiness": "Design intent identified; membership/voice/outcomes of councils unverified",
+      "next_evidence_needed": "Consultative council membership, proceedings, resident complaints"
+    },
+    {
+      "id": "1928-AYUNTAMIENTO-ON-SITE",
+      "period": "1928–today",
+      "theme": "Physical evidence of suspended municipal palace alterations",
+      "geography": "Antiguo Palacio del Ayuntamiento, Zócalo",
+      "rating": "missing",
+      "linked_assertion_ids": [
+        "STG-20261113T2100Z-MUN-06"
+      ],
+      "explanatory_readiness": "No evidence linking a visible architectural feature to 1928 canceled works",
+      "next_evidence_needed": "1928 municipal palace construction drawing, expenditure file, conservation survey and visitor access"
+    }
+  ],
+  "publication_approved": false,
+  "summary": {
+    "substantial": 0,
+    "developing": 5,
+    "sparse": 2,
+    "missing": 1
+  }
+}
