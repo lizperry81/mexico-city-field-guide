@@ -866,7 +866,8 @@ else:
             assert len({x["audit_claim_id"] for x in prose}) == 10
             assert all(x["audit_claim_id"].startswith("reader-prose-review-")
                        and x["editorial_passage_id"] is None
-                       and x["reader_audit_matches_main_blob"] is True
+                       and x["reader_audit_matches_main_blob"] is False
+                       and x["review_state"] == "awaiting_human_stale_reader_blob_reaudit"
                        and x["publication_authorization"] is False for x in prose)
             assert any(x["reader_paragraph_index_proposed"] == 31
                        and x["candidate_evidence_status"] == "historical_date_conflict"
@@ -881,7 +882,7 @@ else:
                        slot["source_locator_proposed"]
                        for slot in queue["source_locator_slots"])
             assert any(exact_name in status["audit_path"] and
-                       status["matches_current_main_reader"] is True
+                       status["matches_current_main_reader"] is False
                        for status in report["exact_reader_audit_status"])
         centro = [gap for gap in queue["coverage_gaps"]
                   if "centro-layered-city-readiness" in gap["coverage_path"]]
@@ -914,7 +915,8 @@ else:
             assert len({item["audit_claim_id"] for item in gates}) == 7
             assert all(item["source_locator_candidates_unverified"]
                        and item["proposed_editorial_addition_unapproved"]
-                       and item["reader_audit_matches_main_blob"] is True
+                       and item["reader_audit_matches_main_blob"] is False
+                       and item["review_state"] == "awaiting_human_stale_reader_blob_reaudit"
                        and item["editorial_passage_id"] is None
                        and item["publication_authorization"] is False
                        for item in gates)
@@ -932,6 +934,47 @@ else:
                        and gap["assigned_to_published_chapter"] is None
                        and gap["publication_authorization"] is False
                        for gap in civilian_1847)
+        # The 10:58 reader audit and 13:20 matrix are pinned to an older
+        # Git blob and must remain marked stale. The 17:10 audit targets
+        # the actual main reader and identifies seven private evidence gates.
+        legal = [x for x in queue["items"]
+                 if "1985-reconstruction-primary-legal-locators" in x["audit_path"]]
+        if any("1985-reconstruction-primary-legal-locators" in p
+               for p in report["chapter_audit_artifact_paths"]):
+            assert len(legal) == 7
+            assert all(x["source_locator_candidates_unverified"]
+                       and x["remaining_source_check"]
+                       and x["publication_authorization"] is False for x in legal)
+        modes = [x for x in queue["items"]
+                 if "templo-mayor-historical-vs-site-reading-gates" in x["audit_path"]]
+        if any("templo-mayor-historical-vs-site-reading-gates" in p
+               for p in report["chapter_audit_artifact_paths"]):
+            assert len(modes) == 5
+            assert all(x["reader_audit_matches_main_blob"] is False
+                       and x["review_state"] == "awaiting_human_stale_reader_blob_reaudit"
+                       for x in modes)
+        new_reader = [x for x in queue["items"]
+                      if "templo-mayor-discover-20261113T1710Z-main-current-blob" in x["audit_path"]]
+        if any("templo-mayor-discover-20261113T1710Z-main-current-blob" in p
+               for p in report["chapter_audit_artifact_paths"]):
+            assert len(new_reader) == 7
+            assert all(x["reader_audit_matches_main_blob"] is True
+                       and x["reader_anchor_proposed"]
+                       and x["source_locator_candidates_unverified"]
+                       and x["editorial_passage_id"] is None
+                       and x["publication_authorization"] is False
+                       for x in new_reader)
+        period = [x for x in queue["coverage_gaps"]
+                  if "cross-period-place-explanatory-readiness" in x["coverage_path"]]
+        if any("cross-period-place-explanatory-readiness" in p
+               for p in report["coverage_artifact_paths"]):
+            assert len(period) == 15
+            assert len([x for x in period if x["readiness"] == "developing"]) == 9
+            assert len([x for x in period if x["readiness"] == "sparse"]) == 5
+            assert len([x for x in period if x["readiness"] == "missing"]) == 1
+            assert all(x["research_needed"] and
+                       isinstance(x["candidate_finding_ids_unverified"], list)
+                       and x["publication_authorization"] is False for x in period)
         new_templo_audit = [item for item in queue["items"]
                            if item["audit_claim_id"].startswith("TM-DISC-")]
         if new_templo_audit:
