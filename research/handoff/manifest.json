@@ -1,8 +1,8 @@
 {
   "schema_version": 4,
   "kind": "research_to_app_handoff",
-  "generated_at": "2026-11-13T08:12:21.542Z",
-  "research_commit_sha": "ae01b40a7cc12d213c0b01ad898e363b2973bb53",
+  "generated_at": "2026-11-13T08:14:44.242Z",
+  "research_commit_sha": "48f38b0eaba3b1c32d08e89916402897a0548ca5",
   "canonical_version": "V97",
   "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
   "canonical_status": "unchanged_provisional_V97_not_promoted",
@@ -14,7 +14,7 @@
     "source_inspections": 9
   },
   "staged_counts": {
-    "scope": "59 GitHub batch documents, including detached 37-source-inspection recovery; replay verified in research-only SQLite; no editorial promotion",
+    "scope": "59 research batch documents; 37 detached inspection metadata rows durably replayed; 7 URL-match candidates only; no automatic merges or new source inspections asserted",
     "github_batches_replayed": 59,
     "github_distinct_substantive_finding_ids": 300,
     "github_index_only_refs_total": 28,
@@ -30,12 +30,15 @@
     "external_staging_semantic_join_verified": false,
     "github_inspection_payload_rows": 121,
     "detached_original_inspection_rows_replayed": 37,
-    "detached_semantic_duplicate_assessment": "37/37 original rows durably ingested; 0 exact payload matches and 0 same-namespace source-ID matches found; no assertion of distinct fully examined sources"
+    "detached_semantic_duplicate_assessment": "37/37 original rows durably ingested; 0 exact payload matches and 0 same-namespace source-ID matches found; no assertion of distinct fully examined sources",
+    "detached_source_url_candidates": 7,
+    "detached_source_identity_no_match": 30,
+    "detached_source_identity_review_pending": 37
   },
-  "versioned_research_sqlite_gz_path": "research/reconciled/v4_ae01b40a7cc1/research_only.sqlite.gz",
+  "versioned_research_sqlite_gz_path": "research/reconciled/v4_48f38b0eaba3/research_only.sqlite.gz",
   "versioned_research_sha256": "d6f0d271fe31d63bb5035361efa95dba119adbba37a1ae30329a7a40c3b85270",
   "compressed_sha256": "20477c058077fc3942cd30e092f1c7ad47bb429812fdf88758d685c58411813f",
-  "replay_report_path": "research/reconciled/v4_ae01b40a7cc1/replay_report.json",
+  "replay_report_path": "research/reconciled/v4_48f38b0eaba3/replay_report.json",
   "reconciliation_artifact_paths": [
     "research/ledgers/20261113T051238Z-github-full-replay-verified.json",
     "research/reconciled/v4_fd07cfbc7f22/replay_report.json",
@@ -57,7 +60,9 @@
     "research/ledgers/20261113T0803Z-detached-37-ingestion-intent.json",
     "research/ledgers/20261113T0812Z-detached37-verified-report.json",
     "research/reconciled/v4_ae01b40a7cc1/replay_report.json",
-    "research/pipeline/test_reconcile_batch_schemas.py"
+    "research/pipeline/test_reconcile_batch_schemas.py",
+    "research/reconciled/v4_48f38b0eaba3/replay_report.json",
+    "research/ledgers/20261113T0814Z-detached37-url-identity-candidates.json"
   ],
   "chapter_audit_artifact_paths": [
     "research/audits/templo-mayor-discover-20261113.json",
@@ -88,21 +93,23 @@
   "ready_for_publication": false,
   "canonical_promoted": false,
   "blockers": [
-    "37 recovered source-inspection records still require semantic crosswalk across source-ID namespaces; no exact or same-ID matches found in first-pass automated comparison",
+    "7 detached inspection records share normalized source URL with earlier GitHub metadata; inspect scope and equivalence manually before deduplication",
+    "30 detached inspection records have no exact source ID, normalized URL, DOI, or title match in GitHub metadata; do not infer independent sources",
     "14 unresolved source references",
     "2 source metadata collisions",
     "16 index-only finding IDs",
-    "Exact Templo Mayor Discover published prose not reviewed",
-    "Detached finding assertions already represented; all external staged sources outside archived corpus not yet fully reconciled"
+    "Full semantic reconciliation across independent staged archives incomplete",
+    "Exact Templo Mayor Discover published prose not reviewed"
   ],
-  "consumer_instruction": "App automation: research-persistence only. The 59-batch research-only SQLite is verified and includes the 37 detached source-inspection rows. This is not canonical or publication-ready; do not merge automatically. Preserve source-access flags and report conflicts.",
-  "immutable_handoff_path": "research/handoff/history/20261113T0812Z-detached37-replay-verified.json",
-  "previous_manifest_generated_at": "2026-11-13T07:16:52Z",
-  "previous_manifest_blob_sha": "abdb66ebd8cb2cfbdb42d377b43ecfdf349c0410",
+  "consumer_instruction": "The app automation must not treat the 59-batch research-only SQLite as canonical or publication-ready. All 37 detached inspection records are preserved; 7 potential URL overlaps require manual source-scope audit, remaining 30 have no automated match. Do not automatically merge, publish, or infer original source examination.",
+  "immutable_handoff_path": "research/handoff/history/20261113T0814Z-crosswalk7-verified.json",
+  "previous_manifest_generated_at": "2026-11-13T08:12:21.542Z",
+  "previous_manifest_blob_sha": "17e45f88ba75b2c9e441a852a11ee36f7240c1ad",
   "handoff_history_append_only": true,
-  "verified_replay_commit_sha": "2c35b54c7b17649a316c4b92af5f089c06f6644c",
+  "verified_replay_commit_sha": "be12780a2da0427f8a6af576a46abb4231f8c165",
   "handoff_history_paths": [
     "research/handoff/history/20261113T0717Z-schema-tests-verified.json",
-    "research/handoff/history/20261113T0812Z-detached37-replay-verified.json"
+    "research/handoff/history/20261113T0812Z-detached37-replay-verified.json",
+    "research/handoff/history/20261113T0814Z-crosswalk7-verified.json"
   ]
 }

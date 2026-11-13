@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-13T08:14:44.242Z",
+  "kind": "detached_source_inspection_semantic_crosswalk",
+  "research_commit_sha": "48f38b0eaba3b1c32d08e89916402897a0548ca5",
+  "verified_replay_commit_sha": "be12780a2da0427f8a6af576a46abb4231f8c165",
+  "canonical_version": "V97",
+  "canonical_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "original_canonical_counts": {
+    "sources": 616,
+    "claims": 422,
+    "claim_sources": 403,
+    "canonical_findings": 68,
+    "canonical_source_inspections": 9
+  },
+  "count_before": {
+    "github_batch_documents": 58,
+    "inspection_metadata_rows": 84,
+    "substantive_findings": 300
+  },
+  "count_after": {
+    "github_batch_documents": 59,
+    "inspection_metadata_rows": 121,
+    "substantive_findings": 300
+  },
+  "replay_report_path": "research/reconciled/v4_48f38b0eaba3/replay_report.json",
+  "db_sha256": "d6f0d271fe31d63bb5035361efa95dba119adbba37a1ae30329a7a40c3b85270",
+  "gzip_sha256": "20477c058077fc3942cd30e092f1c7ad47bb429812fdf88758d685c58411813f",
+  "crosswalk_counts": {
+    "same_structured_payload_candidate": 0,
+    "same_source_identity_scope_unverified": 0,
+    "same_doi_candidate": 0,
+    "same_source_url_candidate": 7,
+    "same_title_candidate": 0,
+    "no_existing_candidate_match": 30
+  },
+  "matches": [
+    {
+      "detached_inspection_id": "20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-INS-gov",
+      "source_id": "stg-src-cdmx-hospital-jesus-guide",
+      "status": "same_source_url_candidate",
+      "exact_candidates": [],
+      "same_source_candidates": [],
+      "same_url_candidates": [
+        "stg-src-cdmx-hospital-jesus-guide"
+      ],
+      "same_doi_candidates": [],
+      "same_title_candidates": []
+    },
+    {
+      "detached_inspection_id": "20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-INS-hist",
+      "source_id": "stg-src-lozada-munal-sanandres",
+      "status": "same_source_url_candidate",
+      "exact_candidates": [],
+      "same_source_candidates": [],
+      "same_url_candidates": [
+        "stg-src-lozada-munal-sanandres"
+      ],
+      "same_doi_candidates": [],
+      "same_title_candidates": []
+    },
+    {
+      "detached_inspection_id": "20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-INS-law",
+      "source_id": "stg-src-unam-1861-compiled-laws",
+      "status": "same_source_url_candidate",
+      "exact_candidates": [],
+      "same_source_candidates": [],
+      "same_url_candidates": [
+        "stg-src-unam-1861-compiled-laws"
+      ],
+      "same_doi_candidates": [],
+      "same_title_candidates": []
+    },
+    {
+      "detached_inspection_id": "20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-INS-thesis",
+      "source_id": "stg-src-leon-garduno-2021-beneficencia",
+      "status": "same_source_url_candidate",
+      "exact_candidates": [],
+      "same_source_candidates": [],
+      "same_url_candidates": [
+        "stg-src-leon-garduno-2021-beneficencia"
+      ],
+      "same_doi_candidates": [],
+      "same_title_candidates": []
+    },
+    {
+      "detached_inspection_id": "stg-src-cud-petition-1985-e5692250c9",
+      "source_id": "stg-src-cud-petition-1985",
+      "status": "same_source_url_candidate",
+      "exact_candidates": [],
+      "same_source_candidates": [],
+      "same_url_candidates": [
+        "stg-src-cud-petition-1985"
+      ],
+      "same_doi_candidates": [],
+      "same_title_candidates": [
+        "stg-src-cud-petition-1985"
+      ]
+    },
+    {
+      "detached_inspection_id": "stg-src-gonzalez-1985-4a0cb9cfab",
+      "source_id": "stg-src-gonzalez-1985",
+      "status": "same_source_url_candidate",
+      "exact_candidates": [],
+      "same_source_candidates": [],
+      "same_url_candidates": [
+        "stg-src-gonzalez-1985"
+      ],
+      "same_doi_candidates": [],
+      "same_title_candidates": []
+    },
+    {
+      "detached_inspection_id": "stg-src-massolo-1986-4090273f9f",
+      "source_id": "stg-src-massolo-1986",
+      "status": "same_source_url_candidate",
+      "exact_candidates": [],
+      "same_source_candidates": [],
+      "same_url_candidates": [
+        "stg-src-massolo-1986"
+      ],
+      "same_doi_candidates": [],
+      "same_title_candidates": []
+    }
+  ],
+  "unmatched_inspection_ids": [
+    "20261112T2300Z-reforma-historic-centre-bf631-source-01",
+    "20261112T2300Z-reforma-historic-centre-bf631-source-02",
+    "20261112T2300Z-reforma-historic-centre-bf631-source-03",
+    "20261112T2300Z-reforma-historic-centre-bf631-source-04",
+    "20261112T2300Z-reforma-historic-centre-bf631-source-05",
+    "20261112T2300Z-reforma-historic-centre-bf631-source-06",
+    "20261112T2300Z-reforma-historic-centre-bf631-source-07",
+    "20261112T2359Z_REFORMA_LIBERTAD_CULTOS_CROSSWALK-inspection-1860",
+    "20261112T2359Z_REFORMA_LIBERTAD_CULTOS_CROSSWALK-inspection-1861",
+    "newinspection-stg-src-agn-vallejo-2021",
+    "newinspection-stg-src-cnh-manifiesto-1968-dec5",
+    "newinspection-stg-src-colmex-manifiesto-d562",
+    "newinspection-stg-src-ficunam-cnh-comunicados",
+    "stg-20261112T2100Z-auto9-1968-breadth-7e4d-inspection1-f4aa4637e4",
+    "stg-20261112T2100Z-auto9-1968-breadth-7e4d-inspection2-e5694ef4c7",
+    "stg-20261112T2100Z-auto9-1968-breadth-7e4d-inspection3-77665d025a",
+    "stg-20261112T2100Z-auto9-1968-breadth-7e4d-inspection4-8fa88a089c",
+    "stg-20261112T2100Z-auto9-1968-breadth-7e4d-inspection5-af9a4465de",
+    "stg-20261112T2100Z-auto9-1968-breadth-7e4d-inspection6-1f58bd4aa4",
+    "stg-breadth2-inah-cathedral-window1-a3e86de046",
+    "stg-breadth2-inah-palace-window1-3751fd4895",
+    "stg-breadth2-inah-palace-window2-cbdf0647fa",
+    "stg-breadth2-inah-palace-window3-5377470a8c",
+    "stg-breadth2-inah-sagrario-401f10f4f8",
+    "stg-src-1692-actas-912ac7d6ad",
+    "stg-src-1692-exbalin-8a8f4991d8",
+    "stg-src-1692-siguenza-522099ca57",
+    "stg-src-gaceta-unam-frias-2019-927bb8826b",
+    "v69-inah-project-514fdd1fe8",
+    "v69-inah-templo-ae2691bce9"
+  ],
+  "statement": "7 matching source URLs are review candidates, NOT confirmed duplicate inspections; 30 without matches are not proof of unique sources",
+  "sqlite_integrity": "ok",
+  "foreign_key_violations": 0,
+  "original_canonical_tables_preserved": 88,
+  "original_canonical_rows_unchanged": true,
+  "evidence_status": "source_inspection_metadata_only",
+  "ready_for_editorial_review": false,
+  "ready_for_publication": false
+}
