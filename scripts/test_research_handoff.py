@@ -7,6 +7,7 @@ from pathlib import Path
 from check_research_handoff import OUT, safe_path, validate_versioned_handoff, verified_index_only_total
 from editorial_passage_inventory import HistoryPassages
 from check_research_handoff import audit_matrix_explicitly_unapproved
+from handoff_new_audits import parse_new_audit
 
 # The 73-batch producer reports its full historical index-only total (23)
 # directly in the replay, while old v4 snapshots recorded the remaining 18
@@ -22,6 +23,59 @@ for bad in (
     (True, 23, 5, "research_to_app_handoff"),
 ):
     assert not verified_index_only_total(*bad), f"Accepted unverified index-only totals: {bad}"
+
+# New research records with paragraph-specific gates must remain private,
+# pinned to the inspected historical reader blob and source-locator evidence.
+_blob = "a" * 40
+_audit = {
+    "kind": "templo_mayor_actual_reader_targeted_claim_evidence_addendum",
+    "branch": "research-persistence", "target_branch_read_only": "main",
+    "target_path": "poi/templo-mayor/reader.html",
+    "target_main_blob_sha": "b" * 40,
+    "ready_for_editorial_review": False, "publication_approved": False,
+    "gates": [{"id": "G-1", "reader_anchor": "Gamio opened this section",
+               "historical_correction": "1913 and 1914 conflict",
+               "source_locator_matrix": [{"source_id": "S-1", "pages": "p. 18"}],
+               "hold": "Original primary text not inspected",
+               "draft_candidate": "Unapproved proposed wording"}],
+}
+_out = parse_new_audit("research/audits/gamio.json", _audit, _blob)
+assert len(_out) == 1 and _out[0]["publication_authorization"] is False
+assert _out[0]["review_state"] == "awaiting_human_stale_reader_blob_reaudit"
+assert _out[0]["source_locator_candidates_unverified"][0]["source"] == "S-1"
+for mutation in (
+    {"publication_approved": True},
+    {"ready_for_editorial_review": True},
+    {"target_main_blob_sha": "incorrect"},
+    {"gates": [dict(_audit["gates"][0], source_locator_matrix=[])]},
+    {"gates": [dict(_audit["gates"][0], hold="")]},
+):
+    try:
+        parse_new_audit("research/audits/gamio.json",
+                        dict(_audit, **mutation), _blob)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("Unsafe dated reader audit admitted: " + str(mutation))
+_cross = dict(_audit,
+    kind="templo_mayor_discover_cross_period_and_current_reader_evidence_gate",
+    gates=[{"topic": "Chronology", "reader_anchor": "Late 1420s",
+            "status": "retain qualified date", "uncertainty": "Original not read",
+            "source_locator_matrix": [{"source": "prior audit", "locator": "gate 2"}]}])
+assert len(parse_new_audit("research/audits/cross.json", _cross, _blob)) == 1
+_seven = dict(_cross,
+    kind="templo_mayor_discover_exact_reader_seven_topic_source_locator_audit")
+assert len(parse_new_audit("research/audits/seven.json", _seven, _blob)) == 1
+_boundary = dict(_audit,
+    kind="templo_mayor_exact_reader_blob_and_urban_chronology_boundary",
+    boundary="Modern City chapter, not Templo Mayor excavation",
+    reader_anchors=[{"topic": "Alliance", "anchor": "Late 1420s",
+                     "status": "qualified", "needs": "Primary account"}],
+    source_locator_matrix=[{"source_ids": ["S-1"], "locator": "p. 81",
+                            "use": "Modern City chapter"}])
+assert len(parse_new_audit("research/audits/boundary.json", _boundary, _blob)) == 1
+assert (parse_new_audit("research/audits/boundary.json", _boundary, _blob)[0]
+        ["proposed_editorial_addition_unapproved"] is None)
 
 # Historical date disputes are review assignments. The producer's new
 # claim-to-source addendum must never authorize manuscript publication.

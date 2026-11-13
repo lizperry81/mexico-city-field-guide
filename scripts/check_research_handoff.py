@@ -764,7 +764,8 @@ def validate():
                 not any(isinstance(audit_doc.get(key), list)
                         for key in ("claims", "evidence_entries", "claim_to_source",
                                     "claim_to_source_locator_matrix", "clauses",
-                                     "claim_to_reading_gate", "passages"))):
+                                     "claim_to_reading_gate", "passages",
+                                    "gates", "reader_anchors"))):
             raise ValueError("Invalid chapter audit format: " + path)
         if (audit_doc.get("ready_for_publication") is True or
                 audit_doc.get("editorial_approved") is True or

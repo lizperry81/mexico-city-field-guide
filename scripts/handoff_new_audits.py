@@ -11,6 +11,10 @@ KINDS = {
     "1985_reconstruction_legal_text_to_site_locator_audit",
     "templo_mayor_discover_reading_mode_editorial_gate",
     "templo_mayor_discover_actual_reader_claim_to_source_locator_audit",
+    "templo_mayor_actual_reader_targeted_claim_evidence_addendum",
+    "templo_mayor_discover_cross_period_and_current_reader_evidence_gate",
+    "templo_mayor_discover_exact_reader_seven_topic_source_locator_audit",
+    "templo_mayor_exact_reader_blob_and_urban_chronology_boundary",
 }
 
 
@@ -153,6 +157,89 @@ def parse_new_audit(path, doc, current_reader_blob):
                 locators=[{"document": row["evidence"],
                            "locator": row["locator"]}],
                 status=row["status"], gap=row["editorial_action"]))
+        return result
+    # Later dated research batches use two forms of source-located gates
+    # plus an explicit boundary record. All remain PRIVATE proposals. Pin
+    # the historical reader blob and mark its stale/current status on every
+    # item; nothing in these documents establishes editorial approval.
+    gate_kinds = {
+        "templo_mayor_actual_reader_targeted_claim_evidence_addendum",
+        "templo_mayor_discover_cross_period_and_current_reader_evidence_gate",
+        "templo_mayor_discover_exact_reader_seven_topic_source_locator_audit",
+    }
+    boundary_kind = "templo_mayor_exact_reader_blob_and_urban_chronology_boundary"
+    if kind in gate_kinds | {boundary_kind}:
+        blob = doc.get("target_main_blob_sha")
+        require(doc.get("branch") == "research-persistence" and
+                doc.get("target_branch_read_only") == "main" and
+                doc.get("target_path") == "poi/templo-mayor/reader.html" and
+                isinstance(blob, str) and HEX40.fullmatch(blob) and
+                isinstance(current_reader_blob, str) and
+                HEX40.fullmatch(current_reader_blob) and
+                doc.get("publication_approved") is False and
+                doc.get("ready_for_editorial_review") is False,
+                "dated reader audit lacks pinned main blob/nonpublication status")
+        matches = blob == current_reader_blob
+        if kind == boundary_kind:
+            anchors = doc.get("reader_anchors")
+            locators = doc.get("source_locator_matrix")
+            require(text(doc.get("boundary")) and isinstance(anchors, list)
+                    and bool(anchors) and isinstance(locators, list)
+                    and bool(locators), "urban-period boundary is missing its sources")
+            for item in anchors:
+                require(isinstance(item, dict) and
+                        all(text(item.get(k)) for k in ("topic", "anchor", "status", "needs")),
+                        "incomplete preserved earlier historical gate")
+            checked_locators = []
+            for row in locators:
+                require(isinstance(row, dict) and
+                        isinstance(row.get("source_ids"), list) and
+                        row["source_ids"] and
+                        all(text(v) for v in row["source_ids"]) and
+                        text(row.get("locator")) and text(row.get("use")),
+                        "modern-city boundary lacks source locators")
+                checked_locators.append({
+                    "source": "; ".join(row["source_ids"]),
+                    "locator": row["locator"], "restricted_use": row["use"]})
+            return [review_item(
+                path, "modern-city-hall-1928-boundary",
+                "1928–29 municipal reforms: separate Modern City chapter",
+                reader_match=matches, locators=checked_locators,
+                status="separate_chapter_pending_evidence_audit",
+                gap=doc["boundary"])]
+        rows = doc.get("gates")
+        require(isinstance(rows, list) and bool(rows),
+                "dated reader audit lacks paragraph-specific gates")
+        result = []
+        for index, row in enumerate(rows, 1):
+            require(isinstance(row, dict) and text(row.get("reader_anchor")),
+                    "dated reader gate lacks an exact prose anchor")
+            ident = row.get("id") or f"dated-reader-gate-{index:02d}"
+            topic = row.get("topic") or row.get("historical_correction")
+            require(text(topic) and text(ident),
+                    "dated reader gate has no identifiable historical question")
+            source_rows = row.get("source_locator_matrix")
+            require(isinstance(source_rows, list) and bool(source_rows),
+                    "dated reader gate has no traceable source comparison")
+            locators = []
+            for source_row in source_rows:
+                require(isinstance(source_row, dict),
+                        "dated reader source locator is malformed")
+                source = source_row.get("source_id") or source_row.get("source")
+                locator = source_row.get("pages") or source_row.get("locator")
+                require(text(source) and text(locator),
+                        "dated reader gate has no source identity and page locator")
+                locators.append({"source": source, "locator": locator})
+            require(text(row.get("hold") or row.get("uncertainty")),
+                    "dated reader gate must preserve its evidence limitation")
+            result.append(review_item(
+                path, ident, topic, anchor=row["reader_anchor"],
+                reader_match=matches, locators=locators,
+                source_ids=[x["source"] for x in locators],
+                status=row.get("status") or row.get("disposition") or "unapproved",
+                gap=row.get("hold") or row.get("uncertainty"),
+                proposed_addition=row.get("draft_candidate") or
+                                  row.get("historical_addition")))
         return result
     # A new seven-passage audit includes the ACTUAL reader Git blob identity.
     require(kind == "templo_mayor_discover_actual_reader_claim_to_source_locator_audit",
