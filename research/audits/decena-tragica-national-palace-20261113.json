@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "audit_id": "20261113T0610Z-decena-national-palace",
+  "generated_at": "2026-11-13T06:10:00Z",
+  "chapter_target": "National Palace / Zócalo / Metropolitan Cathedral: Mexican Revolution, Decena Trágica",
+  "evidence_batch_path": "research/batches/20261113T0610Z-decena-tragica-national-palace-source-audit.json",
+  "type": "claim_to_source_locator_and_conflict_review",
+  "publication_status": "not_approved",
+  "claims": [
+    {
+      "claim_id": "DTR-01",
+      "finding_id": "cdmx-stg-20261113-decena-01",
+      "source_locators": [
+        "LOC map, Evento Uno",
+        "UNAM Filmoteca chronology, 9 February"
+      ],
+      "confidence": "provisional_high",
+      "risk": "Dont imply February battle began national Revolution"
+    },
+    {
+      "claim_id": "DTR-02",
+      "finding_id": "cdmx-stg-20261113-decena-02",
+      "source_locators": [
+        "LOC map, Evento Uno"
+      ],
+      "confidence": "unconfirmed_specific_number",
+      "risk": "232 prisoners Cathedral detail needs independent record"
+    },
+    {
+      "claim_id": "DTR-03",
+      "finding_id": "cdmx-stg-20261113-decena-03",
+      "source_locators": [
+        "LOC map, Eventos Dos–Tres",
+        "UNAM Filmoteca, 9 February"
+      ],
+      "confidence": "provisional_high",
+      "risk": "precise rebel movement and gunfire locations need archival check"
+    },
+    {
+      "claim_id": "DTR-04",
+      "finding_id": "cdmx-stg-20261113-decena-04",
+      "source_locators": [
+        "LOC map, Evento Nueve"
+      ],
+      "confidence": "plausible_single_source",
+      "risk": "verify date/exact machine gun emplacement from original contemporary maps"
+    },
+    {
+      "claim_id": "DTR-05",
+      "finding_id": "cdmx-stg-20261113-decena-05",
+      "source_locators": [
+        "LOC map, Evento Cuatro"
+      ],
+      "confidence": "plausible_single_source",
+      "risk": "exclude invented specific stops on Madero's route"
+    },
+    {
+      "claim_id": "DTR-06",
+      "finding_id": "cdmx-stg-20261113-decena-06",
+      "source_locators": [
+        "LOC map, Evento Veinte",
+        "UNAM Filmoteca, Pacto 18 February"
+      ],
+      "confidence": "provisional_high",
+      "risk": "original Pacto de la Embajada text not examined"
+    },
+    {
+      "claim_id": "DTR-07",
+      "finding_id": "cdmx-stg-20261113-decena-07",
+      "source_locators": [
+        "LOC map, Evento Veintidós"
+      ],
+      "confidence": "plausible_single_source",
+      "risk": "original resignation conditions not independently examined"
+    },
+    {
+      "claim_id": "DTR-08",
+      "finding_id": "cdmx-stg-20261113-decena-08",
+      "source_locators": [
+        "LOC map, 9 February start, 18/19 Feb events, 22 Feb event",
+        "UNAM Filmoteca 9/18 Feb paragraphs"
+      ],
+      "confidence": "strong_on_sequence",
+      "risk": "avoid confusing duration of street fighting with dates of assassination"
+    },
+    {
+      "claim_id": "DTR-09",
+      "finding_id": "cdmx-stg-20261113-decena-09",
+      "source_locators": [
+        "UNAM Filmoteca, Salvador Toscano collection note and film credits"
+      ],
+      "confidence": "institutional_collection_description",
+      "risk": "film footage unviewed; rights unverified"
+    },
+    {
+      "claim_id": "DTR-10",
+      "finding_id": "cdmx-stg-20261113-decena-10",
+      "source_locators": [
+        "LOC map, Evento Veinticuatro"
+      ],
+      "confidence": "provisional_high",
+      "risk": "do not conflate with battles 9–18 Feb"
+    }
+  ],
+  "existing_record_discrepancies": [
+    {
+      "id": "cdmx-stg-20261113-urban-04",
+      "issue": "Earlier staged claim labels the Decena Trágica February 9–23, 1913",
+      "recommended": "Retain original, flag for editorial correction to 9 February start, 18/19 February coup, 22 February assassination; distinguish broader aftermath",
+      "status": "unresolved_not_silently_edited"
+    },
+    {
+      "issue": "Location of Madero's 18 February arrest",
+      "LOC": "LOC map Evento Diecinueve names Gambrinus restaurant",
+      "UNAM": "UNAM describes an assault on the National Palace; precise arrest location not specified",
+      "status": "needs_original_record_reconciliation"
+    },
+    {
+      "issue": "Date of Gustavo A. Madero's murder",
+      "LOC": "LOC map Evento Veintiuno labeled 19 February",
+      "AGN": "AGN institutional summary indexed as 18 February (full page unavailable)",
+      "status": "conflicting_institutional_chronologies"
+    }
+  ],
+  "sources_original_documents_examined": 0,
+  "evidence_use": "Visitor-facing National Palace and Zócalo educational draft only after editorial clearance, not automatic publishing",
+  "suggested_field_observations": [
+    {
+      "poi": "National Palace",
+      "observation": "Compare current palace facade and Zócalo footprint with the LOC 9 February 1913 event map; historic crowd movement is reconstructed, not directly visible"
+    },
+    {
+      "poi": "Metropolitan Cathedral",
+      "observation": "Explain the reported use of the church building as temporary detention in 1913; no claims about surviving confinement traces"
+    },
+    {
+      "poi": "Ciudadela",
+      "observation": "Use building's location to explain urban battle line along Calle Balderas; building fabric chronology needs independent POI dossier"
+    }
+  ]
+}
