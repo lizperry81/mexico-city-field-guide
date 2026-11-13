@@ -50,6 +50,22 @@ def safe_path(path):
     return path
 
 
+def verified_index_only_total(declared, replay_total, te28_reclassified, snapshot_kind):
+    """Require exact replay semantics plus the pinned historical TE28 repair.
+
+    New frozen manifests and immutable batch records carry the full historical
+    total directly in both their pointer and replay (23). Older v4 history
+    records carried the post-reclassification count (18) in the replay and
+    needed the TE28 delta (5). Never accept an arbitrary five-count drift.
+    """
+    if (type(declared) is not int or type(replay_total) is not int
+            or type(te28_reclassified) is not int or te28_reclassified < 0):
+        return False
+    if snapshot_kind in ("research_to_app_handoff", "immutable_research_batch_handoff"):
+        return declared == replay_total
+    return declared == replay_total + te28_reclassified
+
+
 def validate_versioned_handoff(manifest, immutable_manifest, snapshot_sha):
     """Verify complete immutable handoffs without accepting snapshot drift.
 
@@ -705,13 +721,8 @@ def validate():
                 # identifiers already reclassified. Earlier replay formats
                 # reported the post-reclassification remainder instead.
                 # Require the pinned TE28 evidence either way.
-                total_matches = (declared == actual if
-                                 immutable_manifest.get("kind") ==
-                                 "immutable_research_batch_handoff"
-                                 else declared == actual + restored)
-                if (type(declared) is not int or type(actual) is not int
-                        or type(restored) is not int or restored < 0
-                        or not total_matches):
+                if not verified_index_only_total(
+                        declared, actual, restored, immutable_manifest.get("kind")):
                     raise ValueError("v4 index-only recovery totals unverified")
                 continue
             if not isinstance(declared, int) or declared != actual:

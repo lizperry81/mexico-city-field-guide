@@ -4,9 +4,24 @@ import copy
 import json
 from pathlib import Path
 
-from check_research_handoff import OUT, safe_path, validate_versioned_handoff
+from check_research_handoff import OUT, safe_path, validate_versioned_handoff, verified_index_only_total
 from editorial_passage_inventory import HistoryPassages
 from check_research_handoff import audit_matrix_explicitly_unapproved
+
+# The 73-batch producer reports its full historical index-only total (23)
+# directly in the replay, while old v4 snapshots recorded the remaining 18
+# plus five TE28 reclassifications. Test both strict provenance encodings.
+assert verified_index_only_total(23, 23, 5, "research_to_app_handoff")
+assert verified_index_only_total(23, 23, 5, "immutable_research_batch_handoff")
+assert verified_index_only_total(23, 18, 5, "verified_research_to_app_handoff_history")
+for bad in (
+    (28, 23, 5, "research_to_app_handoff"),
+    (23, 18, 5, "research_to_app_handoff"),
+    (23, 23, 5, "verified_research_to_app_handoff_history"),
+    (23, 23, -5, "research_to_app_handoff"),
+    (True, 23, 5, "research_to_app_handoff"),
+):
+    assert not verified_index_only_total(*bad), f"Accepted unverified index-only totals: {bad}"
 
 # Historical date disputes are review assignments. The producer's new
 # claim-to-source addendum must never authorize manuscript publication.
