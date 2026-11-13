@@ -1,0 +1,153 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-11-13T13:20:00Z",
+  "research_batch": "research/batches/20261113T1302Z-1847-civilian-resistance-and-bibliographic-recovery.json",
+  "kind": "chronological_thematic_geographic_explanatory_readiness_delta",
+  "mode": "append_only_coverage_delta_not_replacement_for_full_matrix",
+  "base_matrix": "research/coverage/coverage-matrix-20261113-compact.json",
+  "rating_policy": {
+    "substantial": "Multiple inspected and independently considered source passages; coherent sequence, physical anchor and uncertainty bounded sufficiently for detailed draft, editorial review still separate",
+    "developing": "Substantive but incomplete explanation with source-located evidence and critical remaining gaps",
+    "sparse": "Metadata, single abbreviated excerpt or insufficient physical explanation; not visitor-ready",
+    "missing": "No examined substantive event explanation; bibliographic lead alone does not populate cell"
+  },
+  "counts": {
+    "substantial": 0,
+    "developing": 6,
+    "sparse": 3,
+    "missing": 1
+  },
+  "cells": [
+    {
+      "period": "1847 US-Mexican War",
+      "theme": "military event sequence",
+      "geography": "Chapultepec",
+      "rating": "developing",
+      "finding_ids": [
+        "STG-20261113-1847-06",
+        "STG-20261113-1847-CIVIL-03"
+      ],
+      "readiness": "Bombardment versus 13 September assault differentiated; image title discrepancy flagged, not resolved by art",
+      "missing": "Primary military dispatches, fortification map, image interpretation/rights",
+      "safe_poi_output": "Source-labeled chronology candidate only"
+    },
+    {
+      "period": "1847 US-Mexican War",
+      "theme": "popular urban resistance",
+      "geography": "Centro Histórico and Zócalo",
+      "rating": "sparse",
+      "finding_ids": [
+        "STG-20261113-1847-CIVIL-01",
+        "STG-20261113-1847-CIVIL-02"
+      ],
+      "readiness": "Existence and 14–16 September date range of a major researched uprising are evidenced by catalog metadata and publisher synopsis; events and social mechanics not page-located",
+      "missing": "Full Granados text, contemporary accounts, distinct neighborhoods and command decisions",
+      "safe_poi_output": "Editorial research lead; not visitor narrative"
+    },
+    {
+      "period": "1847 US-Mexican War",
+      "theme": "municipal administration during occupation",
+      "geography": "Zócalo / Ayuntamiento",
+      "rating": "missing",
+      "finding_ids": [
+        "STG-20261113-1847-CIVIL-04"
+      ],
+      "readiness": "Digitized Actas de Cabildo for 1847 identified, but no act or folio examined",
+      "missing": "September 1847 acta dates, municipal votes, archive folio references, corroboration",
+      "safe_poi_output": "None; finding is archival discovery only"
+    },
+    {
+      "period": "1847 US-Mexican War",
+      "theme": "visual images and later memory",
+      "geography": "Chapultepec",
+      "rating": "developing",
+      "finding_ids": [
+        "STG-20261113-1847-CIVIL-03",
+        "STG-20261113-1847-06"
+      ],
+      "readiness": "Catalog title's 12 September date conflicts with INAH battle sequence; artwork proves visual production, not eyewitness fact",
+      "missing": "Inspect original lithograph and object inscription; check creator, circulation and reuse rights",
+      "safe_poi_output": "Potential critical historical-photo sidebar after review"
+    },
+    {
+      "period": "1847 US-Mexican War",
+      "theme": "military and sacred architecture",
+      "geography": "Churubusco",
+      "rating": "developing",
+      "finding_ids": [
+        "STG-20261113-1847-01",
+        "STG-20261113-1847-02",
+        "STG-20261113-1847-03"
+      ],
+      "readiness": "INAH descriptions connect 1847 site, convent phases and museum history; precise surviving features not visited",
+      "missing": "Floor-plan reconciliation; original architecture and battle-context archival detail",
+      "safe_poi_output": "Draft what-to-look-for prompts only"
+    },
+    {
+      "period": "1847 US-Mexican War",
+      "theme": "commemoration and monument movements",
+      "geography": "Molino del Rey / Los Pinos",
+      "rating": "sparse",
+      "finding_ids": [
+        "STG-20261113-1847-04",
+        "STG-20261113-1847-05"
+      ],
+      "readiness": "Published abstract locates distinct 1985 and 2014 memorial moves; exact present position not checked",
+      "missing": "Full monument paper, site plan, current visitor access",
+      "safe_poi_output": "Do not map exact memorial"
+    },
+    {
+      "period": "1859–1862 Reform",
+      "theme": "public welfare administration",
+      "geography": "Centro Histórico",
+      "rating": "developing",
+      "finding_ids": [
+        "stg-20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-F02",
+        "stg-20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-F03",
+        "stg-20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-F07"
+      ],
+      "readiness": "Staged page-located findings describe agencies, jurisdictional dispute and closure; original laws remain unread",
+      "missing": "Primary government gazette; municipal council records; building-level placement",
+      "safe_poi_output": "Research-only chronology"
+    },
+    {
+      "period": "1985 earthquake",
+      "theme": "resident organization and housing rights",
+      "geography": "Tlatelolco and Centro",
+      "rating": "developing",
+      "finding_ids": [
+        "stg-20261112T195738Z-auto9-breadth-8ce5-f01",
+        "stg-20261112T195738Z-auto9-breadth-8ce5-f02",
+        "stg-20261112T195738Z-auto9-breadth-8ce5-f07"
+      ],
+      "readiness": "Earlier staged excerpts identify protest organization and petition demands; recovered source candidates improve lookup, not corroboration",
+      "missing": "Signed petition original, independent organizer interviews and impact assessment",
+      "safe_poi_output": "Explicitly attributed material only after editor review"
+    },
+    {
+      "period": "1428 Triple Alliance",
+      "theme": "political chronology and tribute",
+      "geography": "Templo Mayor / Centro",
+      "rating": "sparse",
+      "finding_ids": [],
+      "reader_audit_ref": "research/audits/templo-mayor-reader-20261113T1058Z-exact-prose-audit.json",
+      "readiness": "Reader uses 'late 1420s'; precise 1428 date lacks critically checked locator",
+      "missing": "Primary Nahua chronology and two independent scholarly treatments of Tlacopan's share",
+      "safe_poi_output": "Preserve approximate date pending verification"
+    },
+    {
+      "period": "1978–1991 modern archaeology",
+      "theme": "discovery versus research program",
+      "geography": "Templo Mayor",
+      "rating": "developing",
+      "finding_ids": [],
+      "reader_audit_ref": "research/audits/templo-mayor-reader-20261113T1058Z-exact-prose-audit.json",
+      "readiness": "INAH institutional chronology distinguishes 21 February 1978 find, rescue, longer excavation and 1991 PAU",
+      "missing": "Excavation program reports, source-level publication of phased discoveries; 1913–1914 Gamio conflict still unresolved",
+      "safe_poi_output": "Date labels require source-language and review"
+    }
+  ],
+  "publication_approved": false,
+  "ready_for_editorial_review": false,
+  "notes": "Ratings measure explanatory readiness and verified original passages, not bibliography count. No cell is promoted to substantial. Empty finding_ids indicate grounding in the separately pinned reader audit instead of inventing IDs."
+}
