@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-13T06:55:00Z",
+  "branch": "research-persistence",
+  "source_research_commit_sha": "1b1f0ece86e5571d9fc140b8bc2cd06722712a88",
+  "original_canonical": {
+    "version": "V97",
+    "sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "sources": 616,
+    "claims": 422,
+    "claim_source_links": 403,
+    "findings": 68,
+    "source_inspections": 9,
+    "altered": false
+  },
+  "before": {
+    "github_batch_files": 56,
+    "github_full_finding_ids": 286,
+    "github_index_only_total": 28,
+    "source_inspection_entries": 80,
+    "unknown_source_refs": 22,
+    "local_staged_findings_table": 118,
+    "local_missing_id_in_github": 2,
+    "local_id_only_in_github": 12
+  },
+  "after": {
+    "github_batch_files": 58,
+    "github_full_finding_ids": 300,
+    "github_index_only_total": 28,
+    "github_index_only_unresolved": 16,
+    "source_inspection_entries": 80,
+    "unknown_source_refs": 22,
+    "source_metadata_collisions": 2,
+    "local_staged_findings_table": 118,
+    "local_id_matches_with_github_full_statement": 118,
+    "local_source_inspections_remaining_detached": 37
+  },
+  "recovered": {
+    "new_historical_finding_candidates_from_direct_source_examination": 10,
+    "previously_known_findings_restored_from_detached_sqlite": 14,
+    "of_which_missing_from_github": 2,
+    "of_which_index_only_before": 12,
+    "source_metadata_ids_restored": 4,
+    "original_research_ids_preserved": true,
+    "publication_approval": false
+  },
+  "github_replay": {
+    "snapshot_path": "research/reconciled/v4_4607611b4843/research_only.sqlite.gz",
+    "report_path": "research/reconciled/v4_4607611b4843/replay_report.json",
+    "sha256_uncompressed": "9f55303dbe335ba146cb6db45042a5d35fa95d778bb8c1b82fbc5f89636de377",
+    "sha256_compressed": "4c8c70ad7bb66a12ed188fabdf59682e4f9154d6a1ca243bf195866789aac43c",
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "original_88_tables_preserved": true,
+    "canonical_rows_changed": 0
+  },
+  "caveats": [
+    "Local 118 ID coverage through Github full assertions established; per-claim semantic equality and source locator audit still required",
+    "Local 37 source inspections have not been reconciled at row/attachment level, 80 Github inspection entries not necessarily the same records",
+    "16 remaining index-only ID references require historical statement recovery",
+    "22 unresolved source references and two source metadata ID conflicts",
+    "Historical claims and 1913 source disputes remain unpublished"
+  ],
+  "artifacts": [
+    "research/ledgers/20261113T0635Z-exact-detached-staging-id-crosswalk.json",
+    "research/batches/20261113T0640Z-detached-staging-14-full-record-recovery.json",
+    "research/batches/20261113T0647Z-detached-source-register-4.json",
+    "research/coverage/20261113T0650Z-detached-1968-and-cave-recovery-delta.json",
+    "research/audits/decena-tragica-national-palace-20261113.json"
+  ],
+  "status": "VERSIONED_RESEARCH_ONLY_VERIFIED_NOT_CANONICAL_NOT_EDITORIAL_APPROVED"
+}
