@@ -1,0 +1,306 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261113T1604Z-rhp-typology-heritage-five-id-recovery",
+  "generated_at": "2026-11-13T16:04:09Z",
+  "branch": "research-persistence",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "storage_role": "immutable_research_batch_not_canonical",
+  "scope": "Recover five preexisting unregistered source IDs using retained inspection material, then add post-1985 housing and public space evidence focused on actual architectural interpretation and numerical scope.",
+  "prior_replay_report": "research/reconciled/v4_73578e087cdb/replay_report.json",
+  "prior_counts_from_verified_report": {
+    "github_batches_replayed": 67,
+    "distinct_findings": 360,
+    "inspection_metadata": 154,
+    "source_candidate_identities": 111,
+    "unknown_source_ids": 9,
+    "source_metadata_collisions": 2,
+    "canonical_sources": 616,
+    "canonical_claims": 422,
+    "canonical_links": 403,
+    "canonical_findings": 68
+  },
+  "sources": [
+    {
+      "id": "STG-SRC-BARNES-2024-MIRRORS",
+      "title": "Blood, obsidian, and the Teotihuacan cult of the mirror",
+      "authors": "Trenton D. Barnes",
+      "year": 2024,
+      "publication": "Ancient Mesoamerica 35:451–471",
+      "doi": "10.1017/S0956536123000238",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/4278B64ABA09FDAE789A9AD4AF03FF69/S0956536123000238a.pdf/blood-obsidian-and-the-teotihuacan-cult-of-the-mirror.pdf",
+      "provenance": "research/batches/20261112T1203Z-auto11-mirror-photo.json #source_inspection",
+      "status": "provisional_source_identity_recovered_from_existing_inspection",
+      "note": "Reused original identifier; no fresh inspection, new citation independent-corroboration claim or automatic canonical alias."
+    },
+    {
+      "id": "stg-src-leon-garduno-2021-beneficencia",
+      "title": "Entre tradición y modernidad: la conformación del sistema de beneficencia durante el Segundo Imperio mexicano",
+      "authors": "Ángela León Garduño",
+      "year": 2021,
+      "publication": "Tesis doctoral, Instituto de Investigaciones Dr. José María Luis Mora",
+      "url": "https://investigacion.inah.gob.mx/_flysystem/fedora/2024-07/pd-entre-tradicion-y-modernidad.-la-conformacion-del-sistema.pdf",
+      "provenance": "research/batches/20261113T0055Z_hospital_beneficencia_1b6a.json #source_material_accessed",
+      "status": "provisional_source_identity_recovered_from_existing_material",
+      "note": "Earlier extracted page scopes only; page images failed in earlier examination; not freshly inspected."
+    },
+    {
+      "id": "stg-src-unam-1861-compiled-laws",
+      "title": "1861 legal decree compilation (exact volume/editor unresolved)",
+      "url": "https://archivos.juridicas.unam.mx/www/bjv/libros/1/367/9.pdf",
+      "provenance": "research/batches/20261113T0055Z_hospital_beneficencia_1b6a.json #source_material_accessed",
+      "status": "provisional_incomplete_bibliography_source_identity",
+      "note": "Secondary legal compilation excerpt pp.156–158 as inspected earlier, NOT original 1861 Diario Oficial; do not infer editor or exact edition."
+    },
+    {
+      "id": "stg-src-lozada-munal-sanandres",
+      "title": "El antiguo Palacio de Comunicaciones hoy Museo Nacional de Arte",
+      "authors": "Guadalupe Lozada León",
+      "year": 2016,
+      "publication": "Relatos e Historias en México",
+      "url": "https://relatosehistorias.mx/nuestras-historias/el-antiguo-palacio-de-comunicaciones-hoy-museo-nacional-de-arte",
+      "provenance": "research/batches/20261113T0055Z_hospital_beneficencia_1b6a.json #source_material_accessed",
+      "status": "provisional_source_identity_recovered_from_existing_material",
+      "note": "Existing historical-article URL and scope; alternate current page https://relatosehistorias.mx/node/247, do not auto-merge without inspection."
+    },
+    {
+      "id": "stg-src-cdmx-hospital-jesus-guide",
+      "title": "Church / Hospital de Jesús Nazareno (city guide)",
+      "publisher": "Gobierno de la Ciudad de México tourism guide",
+      "url": "https://mexicocity.cdmx.gob.mx/venues/church-hospital-de-jesus-nazareno/",
+      "provenance": "research/batches/20261113T0055Z_hospital_beneficencia_1b6a.json #source_material_accessed",
+      "status": "provisional_source_identity_recovered_from_existing_material",
+      "note": "Travel site overview, not original construction or hospital archive."
+    },
+    {
+      "id": "STG-SRC-20261113-UAM-SEDUE-1988-INDEPENDENT-HOUSING",
+      "title": "Documentación y evaluación de los proyectos realizados por las organizaciones independientes a raíz del sismo de septiembre de 1985 en la Ciudad de México: Alternativas de vivienda en barrios populares",
+      "authors": "SEDUE / UAM Xochimilco",
+      "year": 1988,
+      "publication": "UAM-X, 227 pages, ISBN 968-840-516-7",
+      "url": "https://cid-albertobeltran.cultura.gob.mx/catalogo-biblioteca/documentacion-y-evaluacion-de-los-proyectos-realizados-por-las-organizaciones-independientes-a-raiz-del-sismo-de-septiembre-de-1985-en-la-ciudad-de-mexico-alternativas-de-vivienda-en-barrios-populares/",
+      "status": "research_only_bibliographic_candidate_catalog_examined",
+      "source_access": "Public institutional library catalog title, description, publication and notes only; no chapters, full text or original agreement inspected."
+    },
+    {
+      "id": "STG-SRC-20261113-CAM-SAM-1987-TESTIMONIO-RHP",
+      "title": "Testimonio, Renovación Habitacional Popular",
+      "authors": "Colegio de Arquitectos de México / Sociedad de Arquitectos Mexicanos",
+      "year": 1987,
+      "publication": "164-page printed book",
+      "url": "https://cid-albertobeltran.cultura.gob.mx/catalogo-biblioteca/testimonio-renovacion-habitacional-popular-colegio-de-arquitectos-de-mexico-y-sociedad-de-arquitectos-mexicanos/",
+      "status": "research_only_bibliographic_candidate_catalog_examined",
+      "source_access": "Public institutional library catalog only, including chapter headings Crónica de una experiencia / Arquitectura en renovación / Muestrario; images and plates not inspected."
+    },
+    {
+      "id": "STG-SRC-20261113-2000-GACETA-CENTRO-PLAN",
+      "title": "Programa Parcial de Desarrollo Urbano Centro Histórico",
+      "authors": "Asamblea Legislativa del Distrito Federal / Gobierno del Distrito Federal",
+      "year": 2000,
+      "publication": "Gaceta Oficial del Distrito Federal, 7 September 2000, no.153, pp.62–63",
+      "url": "https://sistema.autoridadcentrohistorico.cdmx.gob.mx/planmanejoch/Docum_Extern/28.pdf",
+      "status": "research_only_original_government_2000_policy_text_partial_inspection",
+      "source_access": "PDF machine-extracted text of housing program section at lines 3829–3873 checked; PDF screenshot tool invoked twice, both timed out; scanned/visual pages and cited source Ficapro (1998) not examined."
+    },
+    {
+      "id": "STG-SRC-20261113-MARKOWSKI-2004-SOLIDARIDAD",
+      "title": "La alameda y la plaza de la solidaridad. Exploraciones desde el margen",
+      "authors": "Sara Markowski",
+      "year": 2004,
+      "publication": "Antropología, INAH, nos.75–76, pp.65–69",
+      "url": "https://revistas.inah.gob.mx/index.php/antropologia/article/view/2970",
+      "status": "research_only_bibliographic_candidate_abstract_examined",
+      "source_access": "INAH article metadata and public abstract only; opening full article timed out; no article body or photographs examined."
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "STG-20261113T1604-INS-01",
+      "source_id": "STG-SRC-20261113-UAM-SEDUE-1988-INDEPENDENT-HOUSING",
+      "url": "https://cid-albertobeltran.cultura.gob.mx/catalogo-biblioteca/documentacion-y-evaluacion-de-los-proyectos-realizados-por-las-organizaciones-independientes-a-raiz-del-sismo-de-septiembre-de-1985-en-la-ciudad-de-mexico-alternativas-de-vivienda-en-barrios-populares/",
+      "access": "Library catalog bibliographic data, note of contents and description, including date of Convenio; 227-page book not opened",
+      "full_text_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T1604-INS-02",
+      "source_id": "STG-SRC-20261113-CAM-SAM-1987-TESTIMONIO-RHP",
+      "url": "https://cid-albertobeltran.cultura.gob.mx/catalogo-biblioteca/testimonio-renovacion-habitacional-popular-colegio-de-arquitectos-de-mexico-y-sociedad-de-arquitectos-mexicanos/",
+      "access": "Library catalog and chapter-title descriptions only; 164-page printed book / photographic muestrario not examined",
+      "full_text_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T1604-INS-03",
+      "source_id": "STG-SRC-20261113-2000-GACETA-CENTRO-PLAN",
+      "url": "https://sistema.autoridadcentrohistorico.cdmx.gob.mx/planmanejoch/Docum_Extern/28.pdf",
+      "access": "Official 7 Sept 2000 program PDF machine-extracted text housing section printed pp.62–63, text locators 3829–3867; screenshots attempted twice but failed (timeout)",
+      "full_text_examined": false,
+      "original_government_document_text_examined": true,
+      "visual_page_verification": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113T1604-INS-04",
+      "source_id": "STG-SRC-20261113-MARKOWSKI-2004-SOLIDARIDAD",
+      "url": "https://revistas.inah.gob.mx/index.php/antropologia/article/view/2970",
+      "access": "INAH journal article metadata and abstract only, full article open timed out",
+      "full_text_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    }
+  ],
+  "findings": [
+    {
+      "id": "STG-20261113-1604-1985-HOUSING-01",
+      "assertion": "A 1988 SEDUE/UAM-X bibliographic record states that the Convenio de Concertación Democrática for reconstruction housing was signed on 17 May 1986; its contents notes describe independent housing organizations, alternative designs and reviewed projects.",
+      "source_ids": [
+        "STG-SRC-20261113-UAM-SEDUE-1988-INDEPENDENT-HOUSING"
+      ],
+      "source_locator": "CID library catalog, 'Notas de contenido', p. title and description; original 1988 book and convenio not opened",
+      "period": "1985–2000",
+      "themes": [
+        "resident organizing / housing negotiation",
+        "postearthquake urban change"
+      ],
+      "geographies": [
+        "central Mexico City"
+      ],
+      "poi_ids": [
+        "poi-centro-historico"
+      ],
+      "limitations": "Date and project-characterization come from a library description, not a primary 1986 signed agreement. Do not infer actual individual signatories or compliance.",
+      "status": "research_only_source_linked_candidate",
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113-1604-1985-HOUSING-02",
+      "assertion": "The September 2000 Centro Histórico urban development program describes RHP replacement buildings as typically three levels, with sloped roofs, dwelling groups around patios or passageways, and 42 m² units with two bedrooms and a small kitchen/bath; facade design attempted to fit surrounding street proportions.",
+      "source_ids": [
+        "STG-SRC-20261113-2000-GACETA-CENTRO-PLAN"
+      ],
+      "source_locator": "Gaceta Oficial DF 7 Sep 2000 no.153, printed p.62, housing section 'Conjuntos habitacionales de la reconstrucción', extracted lines 3829–3837",
+      "period": "1985–2000",
+      "themes": [
+        "architectural typology",
+        "postearthquake urban change"
+      ],
+      "geographies": [
+        "Centro Histórico"
+      ],
+      "poi_ids": [
+        "poi-centro-historico"
+      ],
+      "limitations": "Retrospective government typological description, not an individual measured building or guarantee all RHP blocks match. PDF page screenshots failed; machine text only.",
+      "status": "research_only_source_linked_candidate",
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113-1604-1985-HOUSING-03",
+      "assertion": "A 2000 official Centro Histórico program reports 48,800 RHP reconstructed dwellings in the broader program, while within the Centro Histórico perimeter it separately reports 796 expropriated properties, 13,562 dwellings and 1,271 accessory premises serving 67,410 residents; these categories have different denominators.",
+      "source_ids": [
+        "STG-SRC-20261113-2000-GACETA-CENTRO-PLAN"
+      ],
+      "source_locator": "Gaceta Oficial DF 7 Sep 2000 no.153 printed p.63, extracted lines 3841–3850",
+      "period": "1985–2000",
+      "themes": [
+        "program delivery and statistical interpretation",
+        "postearthquake urban change"
+      ],
+      "geographies": [
+        "Centro Histórico versus Distrito Federal"
+      ],
+      "poi_ids": [
+        "poi-centro-historico"
+      ],
+      "limitations": "Retrospective totals reported by 2000 plan, not verified against original RHP final ledger; do not present property counts as housing-unit counts. Original PDF visual page inaccessible.",
+      "status": "research_only_source_linked_candidate",
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113-1604-1985-HOUSING-04",
+      "assertion": "The 2000 Centro Histórico program categorizes 370 RHP-treated properties as involving conservation interventions (172 wholly conserved, 35 retaining first bay, 64 facade preservation, 99 new-build projects with specific facade designs) and another 426 as demolished and wholly rebuilt.",
+      "source_ids": [
+        "STG-SRC-20261113-2000-GACETA-CENTRO-PLAN"
+      ],
+      "source_locator": "Gaceta Oficial DF 7 Sep 2000 no.153 printed p.63, extracted lines 3846–3850",
+      "period": "1985–2000",
+      "themes": [
+        "architecture and heritage conservation",
+        "postearthquake urban change"
+      ],
+      "geographies": [
+        "Centro Histórico"
+      ],
+      "poi_ids": [
+        "poi-centro-historico"
+      ],
+      "limitations": "Administrative classification according to a 2000 retrospective; verify categories, project definitions and original underlying 1998 source. Not a location-by-location survey.",
+      "status": "research_only_source_linked_candidate",
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113-1604-1985-HOUSING-05",
+      "assertion": "The 2000 Centro Histórico plan says INAH did not authorize proposed interventions in 95 out of 211 properties under consideration, citing high conservation costs or incompatible housing densities in several buildings; these were restrictions on a proposed subset, not a claim that 95 of all city properties were protected.",
+      "source_ids": [
+        "STG-SRC-20261113-2000-GACETA-CENTRO-PLAN"
+      ],
+      "source_locator": "Gaceta Oficial DF 7 Sep 2000 no.153 printed p.63, extracted lines 3852–3867",
+      "period": "1985–2000",
+      "themes": [
+        "conservation policy tradeoffs",
+        "postearthquake urban change"
+      ],
+      "geographies": [
+        "Centro Histórico"
+      ],
+      "poi_ids": [
+        "poi-centro-historico"
+      ],
+      "limitations": "Retrospective official characterization, original INAH decisions and parcel lists unexamined. This is not proof that every excluded building survives today.",
+      "status": "research_only_source_linked_candidate",
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261113-1604-1985-HOUSING-06",
+      "assertion": "An INAH journal abstract identifies Plaza de la Solidaridad near Alameda Central as occupying the former footprint of Hotel Regis and nearby destroyed commercial parcels; it dates the first commemorative tree at the then Jardín de la Solidaridad to 1986.",
+      "source_ids": [
+        "STG-SRC-20261113-MARKOWSKI-2004-SOLIDARIDAD"
+      ],
+      "source_locator": "Sara Markowski (2004), INAH Antropología 75–76 pp.65–69, article abstract only",
+      "period": "1985–2000",
+      "themes": [
+        "memorial landscape",
+        "postearthquake urban change"
+      ],
+      "geographies": [
+        "Plaza de la Solidaridad / Alameda Central"
+      ],
+      "poi_ids": [
+        "poi-plaza-de-la-solidaridad"
+      ],
+      "limitations": "Abstract only; article full text and historical maps not viewed. Current plaza layout, precise parcel boundaries, signage, and photo permissions not checked.",
+      "status": "research_only_source_linked_candidate",
+      "independent_corroboration": false,
+      "publication_approved": false
+    }
+  ],
+  "new_finding_candidates": 6,
+  "new_source_identity_candidates": 4,
+  "source_id_recoveries": 5,
+  "new_inspection_metadata_rows": 4,
+  "source_id_registration_note": "No merging or alias resolution across existing IDs; recovered rows have provisional status and point back to old inspection payloads. Non-source placeholder remains explicitly unresolved.",
+  "source_access_limitation": "2000 official PDF text extracted but screenshot render timed out twice; catalogs/abstract only for other new sources. Do not treat bibliographic descriptions as examined books.",
+  "independently_corroborated_findings": 0,
+  "canonical_modified": false,
+  "main_modified": false,
+  "ready_for_editorial_review": false,
+  "publication_approved": false
+}
