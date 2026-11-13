@@ -1,0 +1,75 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-11-13T12:00:00Z",
+  "scope": "Evidence-located incremental chronological × thematic × geography coverage for 1847 and its physical afterlives; overrides no prior cells automatically",
+  "periods": [
+    "Early colonial 1521–1600",
+    "Independence and republic",
+    "Mexico City 1980–present"
+  ],
+  "classification_policy": "Readiness requires chronology, causal explanation, spatial observations, source-level locators and treatment of disputed interpretation; multiple citations alone cannot yield substantial",
+  "cells": [
+    {
+      "period": "Independence and republic",
+      "theme": "resistance",
+      "geography": "coyo",
+      "rating": "developing",
+      "finding_ids": [
+        "STG-20261113-1847-01"
+      ],
+      "reason": "Historic combat location and date situated; defenders' accounts, military maps and place-specific remnants not verified"
+    },
+    {
+      "period": "Early colonial 1521–1600",
+      "theme": "religion",
+      "geography": "coyo",
+      "rating": "developing",
+      "finding_ids": [
+        "STG-20261113-1847-02"
+      ],
+      "reason": "Multiple physical epochs and seventeenth-century refectory exposures anchored; colonial building sequence still needs primary plans"
+    },
+    {
+      "period": "Independence and republic",
+      "theme": "poi",
+      "geography": "chapul",
+      "rating": "developing",
+      "finding_ids": [
+        "STG-20261113-1847-04",
+        "STG-20261113-1847-06"
+      ],
+      "reason": "Molino del Rey and Chapultepec stages distinguished, but on-site route/structure and direct sources not audited"
+    },
+    {
+      "period": "Independence and republic",
+      "theme": "society",
+      "geography": "centro",
+      "rating": "missing",
+      "finding_ids": [],
+      "reason": "Civilian resistance during the 14–16 September occupation flagged by Granados thesis metadata; thesis not read, no explanatory claim yet"
+    },
+    {
+      "period": "Mexico City 1980–present",
+      "theme": "culture",
+      "geography": "chapul",
+      "rating": "sparse",
+      "finding_ids": [
+        "STG-20261113-1847-05"
+      ],
+      "reason": "Memorial movement sourced to journal abstract, but implications and current monument placement not established"
+    },
+    {
+      "period": "Mexico City 1980–present",
+      "theme": "poi",
+      "geography": "coyo",
+      "rating": "developing",
+      "finding_ids": [
+        "STG-20261113-1847-03"
+      ],
+      "reason": "Museum and monument milestone dates grounded; interpretation of present-day exhibitions and access not assessed"
+    }
+  ],
+  "substantial_cells": 0,
+  "original_coverage_matrix_unchanged": true,
+  "ready_for_editorial_review": false
+}

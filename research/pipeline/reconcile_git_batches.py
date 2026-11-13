@@ -84,6 +84,48 @@ def load_batch_json(path):
         raw = stream.read()
     return json.loads(raw), raw
 
+
+def embedded_source_candidates(obj):
+    """Index bibliographic identity *candidates* buried in inspection envelopes.
+
+    Historical batch formats put real titles/URLs in source_inspection or
+    source_material_accessed rather than a dedicated source_register. Preserve
+    the entire original inspection separately; this function does NOT register
+    a scholarly source, establish source equivalence, or confer corroboration.
+    """
+    if not isinstance(obj, dict):
+        return []
+    result = []
+    for field in ("source_inspections", "source_inspection", "source_material_accessed"):
+        for item in listify(obj.get(field)):
+            if not isinstance(item, dict):
+                continue
+            nested = item.get("source")
+            source = nested if isinstance(nested, dict) else item
+            if not isinstance(source, dict):
+                continue
+            sid = source.get("source_id")
+            basis = "explicit_inspection_source_id"
+            if not sid and isinstance(nested, dict):
+                sid = source.get("id")
+                basis = "embedded_source_object_id"
+            if not sid and field == "source_material_accessed":
+                sid = source.get("id")
+                basis = "material_access_record_id_unconfirmed"
+            if not sid and str(source.get("id") or "").lower().startswith(("stg-src-", "stage-src-")):
+                sid = source.get("id")
+                basis = "source_like_inspection_id_unconfirmed"
+            if not isinstance(sid, str) or not sid.strip():
+                continue
+            has_locator = any(isinstance(source.get(k), str) and source[k].strip()
+                              for k in ("title", "source_title", "url", "source_url",
+                                        "publisher_url", "doi", "author", "authors"))
+            if not has_locator:
+                continue
+            result.append({"source_id": sid.strip(), "origin_field": field,
+                           "identity_basis": basis, "original_inspection": item})
+    return result
+
 def inspection_source_id(item):
     if item.get("source_id"):
         return str(item["source_id"])
@@ -198,6 +240,11 @@ def main():
         CREATE TABLE IF NOT EXISTS research_batch_inspections(
            inspection_id TEXT NOT NULL,payload_sha256 TEXT NOT NULL,source_path TEXT NOT NULL,
            payload_json TEXT NOT NULL,PRIMARY KEY(inspection_id,payload_sha256,source_path));
+        CREATE TABLE IF NOT EXISTS research_batch_embedded_source_metadata(
+           source_id TEXT NOT NULL,metadata_sha256 TEXT NOT NULL,source_path TEXT NOT NULL,
+           origin_field TEXT NOT NULL,identity_basis TEXT NOT NULL,payload_json TEXT NOT NULL,
+           review_status TEXT NOT NULL DEFAULT 'candidate_metadata_not_registered',
+           PRIMARY KEY(source_id,metadata_sha256,source_path,origin_field));
         CREATE TABLE IF NOT EXISTS research_batch_conflicts(
            conflict_sha256 TEXT PRIMARY KEY,reason TEXT NOT NULL,details_json TEXT NOT NULL);
     """)
@@ -235,12 +282,19 @@ def main():
                 if isinstance(fid,str) and fid.strip():
                     db.execute("INSERT OR IGNORE INTO research_batch_index_only VALUES(?,?,?,?)",
                                (rel,"finding_ids:"+str(ix),fid,enc({"id":fid})))
-        if isinstance(v,list):findings=v;sources=[];inspections=[]
+        if isinstance(v,list):findings=v;sources=[];inspections=[];embedded=[]
         elif isinstance(v,dict):
             findings=key(v,("findings","records","new_findings","candidate_findings","findings_candidate","documentary_findings"))
             sources=source_records(v)
             inspections=inspection_records(v)
+            embedded=embedded_source_candidates(v)
         else:continue
+        for candidate in embedded:
+            payload=enc(candidate["original_inspection"])
+            db.execute("INSERT OR IGNORE INTO research_batch_embedded_source_metadata VALUES(?,?,?,?,?,?,?)",
+                       (candidate["source_id"],hashbytes(payload.encode()),rel,
+                        candidate["origin_field"],candidate["identity_basis"],payload,
+                        "candidate_metadata_not_registered"))
         for item in sources:
             if not isinstance(item,dict):continue
             sid=str(item.get("id") or item.get("source_id") or "").strip()
@@ -325,7 +379,18 @@ def main():
        "unique_inspection_payload_rows":db.execute("SELECT COUNT(*) FROM research_batch_inspections").fetchone()[0],
        "inspection_count_semantics":"Metadata/partial scopes as recorded; not verified direct full-source inspections",
        "candidate_source_identities":len(pending),
-       "unknown_source_ids":sorted(missing_source_ids),"conflicts":conflicts,
+       "unknown_source_ids":sorted(missing_source_ids),
+       "unknown_source_id_count":len(missing_source_ids),
+       "embedded_inspection_source_metadata_rows":db.execute(
+           "SELECT COUNT(*) FROM research_batch_embedded_source_metadata").fetchone()[0],
+       "unknown_source_refs_with_inspection_metadata":sorted(
+           missing_source_ids & {x[0] for x in db.execute(
+               "SELECT DISTINCT source_id FROM research_batch_embedded_source_metadata")}),
+       "unknown_source_refs_without_inspection_metadata":sorted(
+           missing_source_ids - {x[0] for x in db.execute(
+               "SELECT DISTINCT source_id FROM research_batch_embedded_source_metadata")}),
+       "metadata_only_resolution_policy":"Inspection citation candidates do not equal registered sources or independent corroboration",
+       "conflicts":conflicts,
        "cross_batch_conflict_count":len(conflicts),"changed_input_paths":changed_input_paths,
        "sqlite_integrity":integrity,"foreign_key_violations":len(fk),
        "status":"research_database_staging_only_NOT_CANONICAL",

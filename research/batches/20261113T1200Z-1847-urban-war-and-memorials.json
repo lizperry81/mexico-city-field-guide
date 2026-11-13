@@ -1,0 +1,254 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261113T1200Z-1847-urban-war-and-memorials",
+  "generated_at": "2026-11-13T12:00:00Z",
+  "branch": "research-persistence",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "storage_role": "immutable_research_staging",
+  "published_to_app": false,
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "source_inspection_scope": "Five web-indexed article/catalog abstracts or institutional excerpts read; no original archival documents or full scholarly monographs examined",
+  "sources": [
+    {
+      "id": "STG-20261113-1847-INAH-MNI-01",
+      "title": "Museo Nacional de las Intervenciones",
+      "publisher": "INAH Lugares",
+      "url": "https://lugares.inah.gob.mx/es/node/4235",
+      "access": "Indexed institutional HTML text excerpt read 2026-11-13; original site archive not examined",
+      "locator": "Overview paragraphs: former convent, 20 August 1847, 1869 decree, 1981 opening, 17th-century refectory remains"
+    },
+    {
+      "id": "STG-20261113-1847-INAH-MNI-02",
+      "title": "Museo Nacional de las Intervenciones",
+      "publisher": "INAH Museos",
+      "url": "https://www.inah.gob.mx/museos/museo-nacional-de-las-intervenciones",
+      "access": "Indexed institutional HTML excerpt read 2026-11-13; no floor plans or original architectural records",
+      "locator": "Relevancia cultural / museum history, refectory archaeological windows, 1806 releveling"
+    },
+    {
+      "id": "STG-20261113-1847-INAH-CHAPUL-03",
+      "title": "Defensa en tiempos de invasión: Batalla de Chapultepec y los Niños Héroes",
+      "publisher": "INAH",
+      "publication_date": "2024-09-13",
+      "url": "https://www.inah.gob.mx/index.php/foto-del-dia/defensa-en-tiempos-de-invasion-batalla-de-chapultepec-y-los-ninos-heroes",
+      "access": "Indexed institutional HTML article read 2026-11-13; no military operations archives inspected",
+      "locator": "Opening and second battle paragraphs: bombarding 12 September, assault 13 September, army and cadets"
+    },
+    {
+      "id": "STG-20261113-1847-INAH-MOLINO-04",
+      "title": "El Último Traslado del monumento funerario de la batalla de Molino del Rey, 1847",
+      "authors": "María de Lourdes López Camacho; Marisela Velásquez Monroy",
+      "publisher": "INAH Arqueología 56 (2019), pp. 133–147",
+      "publication_date": "2019-09-02",
+      "url": "https://revistas.inah.gob.mx/index.php/arqueologia/article/view/14925",
+      "access": "Publisher HTML abstract only; full PDF, monument-file originals and urn inventories not inspected",
+      "locator": "Resumen, history of 1847 monument and 1985 / 2014 relocations"
+    },
+    {
+      "id": "STG-20261113-1847-INAH-MOLINO-05",
+      "title": "Molino del Rey — Monumento histórico",
+      "publisher": "INAH Catálogo Nacional de Monumentos Históricos Inmuebles",
+      "url": "https://catalogonacionalmhi.inah.gob.mx/consulta_publica/detalle/13226",
+      "access": "Indexed monument catalogue information histórica excerpt; full catalogue page inaccessible and historic documents not inspected",
+      "locator": "Información histórica: flour mills, hydraulic context and 1847 fighting"
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "STG-20261113-1847-INS-01",
+      "source_id": "STG-20261113-1847-INAH-MNI-01",
+      "source_url": "https://lugares.inah.gob.mx/es/node/4235",
+      "portion_examined": "Overview paragraphs: former convent, 20 August 1847, 1869 decree, 1981 opening, 17th-century refectory remains",
+      "access_scope": "Indexed institutional HTML text excerpt read 2026-11-13; original site archive not examined",
+      "original_archival_material_examined": false
+    },
+    {
+      "id": "STG-20261113-1847-INS-02",
+      "source_id": "STG-20261113-1847-INAH-MNI-02",
+      "source_url": "https://www.inah.gob.mx/museos/museo-nacional-de-las-intervenciones",
+      "portion_examined": "Relevancia cultural / museum history, refectory archaeological windows, 1806 releveling",
+      "access_scope": "Indexed institutional HTML excerpt read 2026-11-13; no floor plans or original architectural records",
+      "original_archival_material_examined": false
+    },
+    {
+      "id": "STG-20261113-1847-INS-03",
+      "source_id": "STG-20261113-1847-INAH-CHAPUL-03",
+      "source_url": "https://www.inah.gob.mx/index.php/foto-del-dia/defensa-en-tiempos-de-invasion-batalla-de-chapultepec-y-los-ninos-heroes",
+      "portion_examined": "Opening and second battle paragraphs: bombarding 12 September, assault 13 September, army and cadets",
+      "access_scope": "Indexed institutional HTML article read 2026-11-13; no military operations archives inspected",
+      "original_archival_material_examined": false
+    },
+    {
+      "id": "STG-20261113-1847-INS-04",
+      "source_id": "STG-20261113-1847-INAH-MOLINO-04",
+      "source_url": "https://revistas.inah.gob.mx/index.php/arqueologia/article/view/14925",
+      "portion_examined": "Resumen, history of 1847 monument and 1985 / 2014 relocations",
+      "access_scope": "Publisher HTML abstract only; full PDF, monument-file originals and urn inventories not inspected",
+      "original_archival_material_examined": false
+    },
+    {
+      "id": "STG-20261113-1847-INS-05",
+      "source_id": "STG-20261113-1847-INAH-MOLINO-05",
+      "source_url": "https://catalogonacionalmhi.inah.gob.mx/consulta_publica/detalle/13226",
+      "portion_examined": "Información histórica: flour mills, hydraulic context and 1847 fighting",
+      "access_scope": "Indexed monument catalogue information histórica excerpt; full catalogue page inaccessible and historic documents not inspected",
+      "original_archival_material_examined": false
+    }
+  ],
+  "findings": [
+    {
+      "id": "STG-20261113-1847-01",
+      "assertion": "The 20 August 1847 battle at Churubusco took place at the former convent now housing the Museo Nacional de las Intervenciones. INAH identifies Mexican military defenders and the Irish San Patricio Battalion in this confrontation.",
+      "source_ids": [
+        "STG-20261113-1847-INAH-MNI-01",
+        "STG-20261113-1847-INAH-MNI-02"
+      ],
+      "source_locator": "INAH Lugares museum description; INAH museum Relevancia cultural",
+      "period": "Independence and republic",
+      "themes": [
+        "war",
+        "resistance",
+        "politics",
+        "poi"
+      ],
+      "geographies": [
+        "coyo"
+      ],
+      "poi_ids": [
+        "museo-nacional-intervenciones",
+        "ex-convento-churubusco"
+      ],
+      "limitations": "Institutional summaries rather than contemporaneous orders or battle accounts; no inference about exact battlefield positions or surviving damage",
+      "status": "source_linked_research_candidate_not_reviewed"
+    },
+    {
+      "id": "STG-20261113-1847-02",
+      "assertion": "The Churubusco site combines preconquest Huitzilopochco, a Franciscan presence beginning in the sixteenth century and convent fabric containing seventeenth-century floors and wash features visible in museum archaeological exposures; the institution also describes an 1806 floor releveling.",
+      "source_ids": [
+        "STG-20261113-1847-INAH-MNI-01",
+        "STG-20261113-1847-INAH-MNI-02"
+      ],
+      "source_locator": "INAH Lugares overview 'intersección de tres tiempos'; INAH Museo passage 'refectorio ... calas arqueológicas ... renivelación 1806'",
+      "period": "Early colonial 1521–1600",
+      "themes": [
+        "religion",
+        "archaeology",
+        "urban change",
+        "poi"
+      ],
+      "geographies": [
+        "coyo"
+      ],
+      "poi_ids": [
+        "museo-nacional-intervenciones"
+      ],
+      "limitations": "Historic building phases based on INAH institutional interpretation; individual architectural features and access route need on-site verification",
+      "status": "source_linked_research_candidate_not_reviewed"
+    },
+    {
+      "id": "STG-20261113-1847-03",
+      "assertion": "INAH records Benito Juárez's 1869 designation of the former Churubusco convent as a national monument and its later opening as the Museo Nacional de las Intervenciones on 13 September 1981. These are heritage and museum milestones, not dates of the original battle.",
+      "source_ids": [
+        "STG-20261113-1847-INAH-MNI-01",
+        "STG-20261113-1847-INAH-MNI-02"
+      ],
+      "source_locator": "INAH Lugares, opening history paragraphs; INAH Museos, Relevancia cultural",
+      "period": "Mexico City 1980–present",
+      "themes": [
+        "heritage",
+        "memory",
+        "poi"
+      ],
+      "geographies": [
+        "coyo"
+      ],
+      "poi_ids": [
+        "museo-nacional-intervenciones"
+      ],
+      "limitations": "Juárez decree facsimile and 1981 museum founding records not examined; building access current conditions not checked",
+      "status": "source_linked_research_candidate_not_reviewed"
+    },
+    {
+      "id": "STG-20261113-1847-04",
+      "assertion": "The site named Molino del Rey had earlier milling functions associated, according to the INAH monument catalogue, with water from the Santa Fe and Tacubaya systems; the Molino del Rey battle took place on 8 September 1847. The surviving building should not be read as unchanged sixteenth-century fabric.",
+      "source_ids": [
+        "STG-20261113-1847-INAH-MOLINO-05",
+        "STG-20261113-1847-INAH-MOLINO-04"
+      ],
+      "source_locator": "INAH catalog Información histórica, first two paragraphs; INAH Arqueología 56 published abstract",
+      "period": "Independence and republic",
+      "themes": [
+        "war",
+        "infrastructure",
+        "urban change",
+        "poi"
+      ],
+      "geographies": [
+        "chapul"
+      ],
+      "poi_ids": [
+        "molino-del-rey"
+      ],
+      "limitations": "Historic mill chronology and integrity are catalogue claims; original architectural surveys, cadastral maps and building access not verified",
+      "status": "source_linked_research_candidate_not_reviewed"
+    },
+    {
+      "id": "STG-20261113-1847-05",
+      "assertion": "A 2019 INAH archaeological-history study describes relocation of a Molino del Rey funerary battle monument in 1985 amid construction of Metro Line 7, an intermediate site in Chapultepec's second section, and a further relocation to the Los Pinos gardens in 2014.",
+      "source_ids": [
+        "STG-20261113-1847-INAH-MOLINO-04"
+      ],
+      "source_locator": "López Camacho and Velásquez Monroy 2019, publisher abstract (Resumen)",
+      "period": "Mexico City 1980–present",
+      "themes": [
+        "memory",
+        "infrastructure",
+        "poi"
+      ],
+      "geographies": [
+        "chapul"
+      ],
+      "poi_ids": [
+        "molino-del-rey",
+        "los-pinos"
+      ],
+      "limitations": "Abstract only; full movement chronology, exact current location and visitor sightline not verified; not license to map a current position",
+      "status": "source_linked_research_candidate_not_reviewed"
+    },
+    {
+      "id": "STG-20261113-1847-06",
+      "assertion": "INAH distinguishes artillery attacks on Chapultepec beginning 12 September 1847 from the assault on 13 September, and identifies the Mexican army, San Blas Battalion and approximately fifty Military College cadets among the defenders. The six commemorated cadets were not the only combatants.",
+      "source_ids": [
+        "STG-20261113-1847-INAH-CHAPUL-03"
+      ],
+      "source_locator": "INAH 'Defensa en tiempos de invasión', first and second battle paragraphs",
+      "period": "Independence and republic",
+      "themes": [
+        "war",
+        "memory",
+        "poi"
+      ],
+      "geographies": [
+        "chapul"
+      ],
+      "poi_ids": [
+        "castillo-chapultepec"
+      ],
+      "limitations": "Institutional commemoration rather than original casualty rolls; figures and timing require independent research; legend of flag leap not established",
+      "status": "source_linked_research_candidate_not_reviewed"
+    }
+  ],
+  "research_leads": [
+    {
+      "author": "Luis Fernando Granados Salinas",
+      "title": "Sueñan las piedras: alzamiento ocurrido en la Ciudad de México, 14, 15 y 16 de septiembre, 1847",
+      "year": 1999,
+      "source_metadata_url": "https://repositorio.unam.mx/contenidos/ficha/suenan-las-piedras-alzamiento-ocurrido-en-la-ciudad-de-mexico-1415-y-16-de-septiembre-1847-264575",
+      "access": "UNAM repository metadata only; thesis unread",
+      "next_action": "Read original full thesis and compare public resistance to military battle accounts; do not publish details of uprising from title alone"
+    }
+  ],
+  "independent_corroboration_count": 0,
+  "source_rights": "No imagery or passages licensed for reuse"
+}

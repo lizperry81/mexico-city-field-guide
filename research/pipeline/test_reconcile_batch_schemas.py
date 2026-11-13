@@ -103,6 +103,38 @@ class ReplaySchemaTests(unittest.TestCase):
              "combined_source_inspections": [{"id": "three"}]}
         self.assertEqual(len(importer.inspection_records(d)), 3)
 
+    def test_nested_source_metadata_retains_identity_without_promoting_source(self):
+        x={"source_inspection":{"source":{"id":"STG-SRC-HIRTH-2019-COMPOUND17",
+             "title":"Obsidian workshop","doi":"10.1017/example"},
+             "access":"selected passage"}}
+        matches=importer.embedded_source_candidates(x)
+        self.assertEqual(len(matches),1)
+        self.assertEqual(matches[0]["source_id"],"STG-SRC-HIRTH-2019-COMPOUND17")
+        self.assertEqual(matches[0]["identity_basis"],"embedded_source_object_id")
+        self.assertEqual(matches[0]["original_inspection"]["access"],"selected passage")
+
+    def test_unregistered_source_id_from_inspection_is_a_candidate(self):
+        x={"source_inspections":[{"inspection_id":"insp-1","source_id":"SRC-1",
+            "title":"Research article","url":"https://example.edu/article"}]}
+        m=importer.embedded_source_candidates(x)
+        self.assertEqual(len(m),1)
+        self.assertEqual(m[0]["source_id"],"SRC-1")
+
+    def test_historical_1985_source_ids_in_inspection_id_field_are_candidates(self):
+        x={"source_inspections":[{"id":"stg-src-massolo-1986",
+            "title":"Housing and earthquakes","url":"https://unam.mx/journal"}]}
+        m=importer.embedded_source_candidates(x)
+        self.assertEqual(m[0]["identity_basis"],"source_like_inspection_id_unconfirmed")
+
+    def test_unknown_bare_inspection_id_not_mistaken_for_bibliographic_id(self):
+        x={"source_inspections":[{"id":"inspection-001",
+            "title":"An article","url":"https://example.edu"}]}
+        self.assertEqual(importer.embedded_source_candidates(x),[])
+
+    def test_scalar_inspection_count_creates_no_metadata(self):
+        self.assertEqual(importer.embedded_source_candidates(
+            {"new_source_inspections":27}),[])
+
     def test_no_source_examination_inferred_from_scalar_summary(self):
         self.assertEqual(importer.inspection_records({"new_source_inspections": 4}), [])
 
