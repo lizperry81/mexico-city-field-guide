@@ -1,8 +1,8 @@
 {
-  "schema_version": 3,
+  "schema_version": 4,
   "kind": "research_to_app_handoff",
-  "generated_at": "2026-11-13T05:12:38.011Z",
-  "research_commit_sha": "5a78de3bbd3506bb1aab46402edb9ce15ca49f4e",
+  "generated_at": "2026-11-13T06:22:00Z",
+  "research_commit_sha": "b87d88746044606eb5286af8b65757361bab943c",
   "canonical_version": "V97",
   "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
   "canonical_status": "unchanged_provisional_V97_not_promoted",
@@ -14,55 +14,69 @@
     "source_inspections": 9
   },
   "staged_counts": {
-    "scope": "ALL GitHub research/batches JSON files at triggering commit; local/Library staging remains a separate unmerged corpus",
-    "github_batches_replayed": 55,
-    "github_distinct_finding_ids": 276,
+    "scope": "All 56 GitHub research/batches JSON files in verified replay; detached local SQLite not merged",
+    "github_batches_replayed": 56,
+    "github_distinct_finding_ids": 286,
     "github_index_only_refs": 28,
-    "raw_batch_documents_in_new_sqlite": 55,
-    "github_inspection_entries": 76,
-    "github_source_candidates": 50,
-    "unknown_source_refs": 24,
-    "external_local_staging_distinct_ids_last_reported": 157,
+    "raw_batch_documents_in_new_sqlite": 56,
+    "github_inspection_entries": 80,
+    "github_source_candidates": 54,
+    "unknown_source_refs": 22,
+    "source_metadata_collisions": 2,
+    "local_archive_staged_findings_table_rows_verified": 118,
+    "local_archive_staged_inspections_table_rows_verified": 37,
+    "previous_external_local_aggregate_candidate_ids_reported": 157,
     "external_staging_join_verified": false
   },
-  "versioned_research_sqlite_gz_path": "research/reconciled/v4_fd07cfbc7f22/research_only.sqlite.gz",
-  "versioned_research_sha256": "8d48de224218a608898d6bc8b5b5e0eb31b86af530aa2f620f666addd469c421",
-  "compressed_sha256": "bbaec1d05100c503779d63041a499cc02e63d37d5bddf317424f9c21460a0096",
-  "replay_report_path": "research/reconciled/v4_fd07cfbc7f22/replay_report.json",
+  "versioned_research_sqlite_gz_path": "research/reconciled/v4_241fa524c476/research_only.sqlite.gz",
+  "versioned_research_sha256": "c3c129dfd211fcf5cc052be99ad0b254be8e7b0b37ef1e0148c87f761b5ea215",
+  "compressed_sha256": "acc70dfa4faa16d2901f2f21bea5fbfc41b1a64bcd20b9272be53c160b711c7d",
+  "replay_report_path": "research/reconciled/v4_241fa524c476/replay_report.json",
   "reconciliation_artifact_paths": [
     "research/ledgers/20261113T051238Z-github-full-replay-verified.json",
     "research/reconciled/v4_fd07cfbc7f22/replay_report.json",
-    "research/reconciled/v4_fd07cfbc7f22/compressed_sha256.txt"
+    "research/reconciled/v4_fd07cfbc7f22/compressed_sha256.txt",
+    "research/reconciled/v4_241fa524c476/replay_report.json",
+    "research/reconciled/v4_241fa524c476/compressed_sha256.txt",
+    "research/ledgers/20261113T0620Z-decena-full-replay-verification.json"
   ],
   "chapter_audit_artifact_paths": [
     "research/audits/templo-mayor-discover-20261113.json",
-    "research/batches/20261113T0203Z-templo-mayor-discover-eight.json"
+    "research/batches/20261113T0203Z-templo-mayor-discover-eight.json",
+    "research/audits/decena-tragica-national-palace-20261113.json",
+    "research/batches/20261113T0610Z-decena-tragica-national-palace-source-audit.json"
   ],
   "coverage_artifact_paths": [
     "research/coverage/coverage-matrix-20261113-compact.json",
-    "research/coverage/20261113T0356Z-colonial-1692-coverage-delta.json"
+    "research/coverage/20261113T0356Z-colonial-1692-coverage-delta.json",
+    "research/coverage/20261113T0610Z-revolution-national-palace-explanatory-delta.json"
   ],
   "evidence_status": {
-    "new_findings_this_run": 0,
-    "scope": "Data persistence/replay infrastructure, not historical source inspection",
+    "new_findings_this_run": 10,
+    "scope": "Revolution-era National Palace source-linked candidates and reconciliation safety patch",
+    "institutional_html_sources_examined": 3,
+    "abstract_only_source_entries": 1,
+    "primary_source_originals_examined": 0,
     "replay_copies_unreviewed_findings_only": true,
     "corroboration_added": 0,
-    "original_primary_sources_inspected_this_run": 0,
-    "publication_approved": false
+    "publication_approved": false,
+    "legacy_claim_conflicts_flagged": 3,
+    "source_identity_conflicts_flagged": 2
   },
   "ready_for_editorial_review": false,
   "ready_for_publication": false,
   "canonical_promoted": false,
   "blockers": [
-    "This replay used repo's V97 baseline, not previously detached local staging SQLite (157 reported IDs); must reconcile overlap and non-GitHub archives before claim of complete cross-environment integration",
-    "28 index-only research references have no substantive statement in the index",
-    "24 referenced source identifiers not resolved to canonical or GitHub batch source register",
-    "Candidate source identity / semantic duplicate review and full editorial evidence checks remain outstanding",
-    "Exact Templo Mayor Discover prose still needs sentence-level review"
+    "Detached local staged SQLite contains 118 findings rows and 37 staged source-inspection rows, not all reported 157 aggregated candidates; must compare 118 IDs plus 39 archive/batch candidate identifiers against 286 GitHub IDs before cross-corpus claim",
+    "22 unresolved source references remain after forward reference correction",
+    "Two source IDs have competing metadata across batches; no automatic identities merged",
+    "28 index-only research references lack complete assertions in GitHub index",
+    "1913 Decena Trágica historical date and arrest/death chronology conflicts require original archival evidence",
+    "Templo Mayor Discover exact current prose still not inspected sentence-by-sentence"
   ],
-  "consumer_instruction": "Versioned binary is a verified RESEARCH-ONLY staged SQLite, not the authoritative/canonical or app publication database. Never auto-publish, promote, or merge with main.",
-  "immutable_handoff_path": "research/handoff/history/20261113T051238Z-github-full-replay.json",
-  "previous_manifest_generated_at": "2026-11-13T04:14:00Z",
-  "previous_manifest_blob_sha": "1f11aaba7b24c10465b8d3510eb475a46e958d6d",
+  "consumer_instruction": "Research-only SQLite and historical candidates only. Do not automatically publish, promote canonical or merge into main. The 1913 evidence audit flags contested legacy historical claims; publication requires original-source checks and editorial approval.",
+  "immutable_handoff_path": "research/handoff/history/20261113T0622Z-decena-replay-56.json",
+  "previous_manifest_generated_at": "2026-11-13T05:12:38.011Z",
+  "previous_manifest_blob_sha": "fd24ca62c4ce0a9fe14b6208bc51200e60ce566d",
   "handoff_history_append_only": true
 }
