@@ -167,6 +167,8 @@ def main():
     fk=db.execute("PRAGMA foreign_key_check").fetchall()
     preserved=all(rowhash(c,t)==rowhash(db,t) for t in baseline)
     ids={r[0] for r in db.execute("SELECT finding_id FROM research_batch_findings")}
+    index_ids={r[0] for r in db.execute("SELECT DISTINCT finding_id FROM research_batch_index_only")}
+    unresolved_index_only=sorted(index_ids-ids-set(staged)-baseline_ids)
     total=ids|set(staged)
     report={"schema_version":1,"canonical_sha256":PIN,
        "staging_sha256":hashfile(staging),"output_sha256":hashfile(dest),
@@ -175,6 +177,10 @@ def main():
        "github_batch_json_files_examined":file_count,
        "github_candidate_finding_ids":len(ids),
        "index_only_finding_refs":db.execute("SELECT COUNT(*) FROM research_batch_index_only").fetchone()[0],
+       "index_only_distinct_ids":len(index_ids),
+       "index_only_resolved_by_substantive_findings":len(index_ids)-len(unresolved_index_only),
+       "unresolved_index_only_ids":unresolved_index_only,
+       "unresolved_index_only_count":len(unresolved_index_only),
        "raw_batch_documents_in_sqlite":db.execute("SELECT COUNT(*) FROM research_batch_raw_documents").fetchone()[0],
        "combined_distinct_candidate_ids":len(total),
        "github_inspection_entries":inspection_count,
