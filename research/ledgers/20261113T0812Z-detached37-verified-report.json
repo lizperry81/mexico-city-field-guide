@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-13T08:12:21.542Z",
+  "research_commit_sha": "ae01b40a7cc12d213c0b01ad898e363b2973bb53",
+  "verified_output_commit_sha": "2c35b54c7b17649a316c4b92af5f089c06f6644c",
+  "baseline": {
+    "sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "original_tables_preserved": 88,
+    "counts": {
+      "sources": 616,
+      "claims": 422,
+      "claim_sources": 403,
+      "canonical_findings": 68,
+      "canonical_source_inspections": 9
+    }
+  },
+  "before": {
+    "github_batches": 58,
+    "github_inspection_entries": 84,
+    "substantive_finding_ids": 300,
+    "unresolved_index_only": 16,
+    "unresolved_source_refs": 14
+  },
+  "after": {
+    "github_batches": 59,
+    "github_inspection_entries": 121,
+    "substantive_finding_ids": 300,
+    "unresolved_index_only": 16,
+    "unresolved_source_refs": 14,
+    "detached_inspection_entries": 37
+  },
+  "crosswalk": {
+    "same_structured_payload_candidate": 0,
+    "same_source_identity_scope_unverified": 0,
+    "no_existing_source_identity_match": 37
+  },
+  "interpretation": "No exact or same-source-ID candidates under automated matching; does not establish semantic uniqueness or full-text inspection.",
+  "output_sqlite_sha256": "d6f0d271fe31d63bb5035361efa95dba119adbba37a1ae30329a7a40c3b85270",
+  "output_gzip_sha256": "20477c058077fc3942cd30e092f1c7ad47bb429812fdf88758d685c58411813f",
+  "output_sqlite_gz_path": "research/reconciled/v4_ae01b40a7cc1/research_only.sqlite.gz",
+  "output_replay_report": "research/reconciled/v4_ae01b40a7cc1/replay_report.json",
+  "integrity": "ok",
+  "foreign_key_violations": 0,
+  "canonical_rows_unchanged": true,
+  "test_status": "GitHub Actions replay completed successfully with importer regression test gate and committed binary hash readback",
+  "ready_for_editorial_review": false,
+  "publication_ready": false
+}
