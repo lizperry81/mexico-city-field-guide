@@ -1,15 +1,12 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "kind": "research_to_app_handoff",
-  "generated_at": "2026-11-13T03:14:04Z",
-  "research_commit_sha": "95f48b6a92bbed8a6e6e9441a7f080b313fd0c11",
+  "generated_at": "2026-11-13T04:14:00Z",
+  "research_commit_sha": "b8864898df125bfffe95770c06f718bd29eceff3",
   "canonical_version": "V97",
   "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
   "canonical_status": "unchanged_provisional_V97_not_promoted",
   "canonical": {
-    "version": "V97",
-    "sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
-    "status": "unchanged",
     "sources": 616,
     "claims": 422,
     "claim_source_links": 403,
@@ -17,52 +14,70 @@
     "source_inspections": 9
   },
   "staged_counts": {
-    "verified_scope": "local versioned staging snapshot; NOT full GitHub replay",
-    "findings_before": 136,
-    "findings_added": 11,
-    "findings_after": 147,
-    "source_inspection_metadata_before": 52,
-    "inspection_metadata_added": 9,
-    "source_inspection_metadata_after": 61,
-    "github_batch_files_read_and_sha_verified": 54,
-    "github_finding_like_entries": 266,
-    "github_distinct_findings": "not_verified",
-    "github_batch_complete_replay": false
+    "scope": "locally verified research-only SQLite, NOT complete GitHub replay",
+    "previous_distinct_candidate_ids": 147,
+    "new_distinct_candidate_ids": 10,
+    "current_distinct_candidate_ids": 157,
+    "additional_source_records": 4,
+    "additional_source_inspection_records": 4,
+    "github_batched_files_current": 55,
+    "github_preceding_54_files_audited": true,
+    "github_prior_finding_like_entries": 286,
+    "github_prior_substantive_statement_entries": 266,
+    "github_prior_index_only_entries": 20,
+    "github_full_batch_replay_completed": false
   },
+  "local_versioned_research_sha256": "fff6d249afb4f8c7773cde56c662227c885e2f274a7e088a18d5ba8687b68efe",
+  "local_versioned_research_status": "Integrity OK, FK 0, all 104 parent tables unchanged; no durable binary upload",
   "chapter_audit_artifact_paths": [
     "research/audits/templo-mayor-discover-20261113.json",
     "research/batches/20261113T0203Z-templo-mayor-discover-eight.json"
   ],
   "coverage_artifact_paths": [
     "research/coverage/coverage-matrix-20261113-compact.json",
-    "research/coverage/20261113T0310Z-human-reviewed-urban-gap-cells.json"
+    "research/coverage/20261113T0356Z-colonial-1692-coverage-delta.json"
+  ],
+  "reconciliation_artifact_paths": [
+    "research/ledgers/20261113T0356Z-all-github-batches-audit.json",
+    "research/ledgers/20261113T0356Z-verified-integrity-and-blockers.json",
+    "research/ledgers/20261113T0356Z-git-slice-01.json",
+    "research/ledgers/20261113T0356Z-git-slice-02.json",
+    "research/ledgers/20261113T0356Z-git-slice-03.json",
+    "research/ledgers/20261113T0356Z-git-slice-04.json",
+    "research/ledgers/20261113T0356Z-git-slice-05.json",
+    "research/ledgers/20261113T0356Z-git-slice-06.json",
+    "research/ledgers/20261113T0356Z-git-slice-07.json",
+    "research/ledgers/20261113T0356Z-git-slice-08.json"
   ],
   "research_pipeline_paths": [
     "research/pipeline/reconcile_git_batches.py",
-    "research/pipeline/20261113_replay_upgrade.md"
-  ],
-  "reconciliation_artifact_paths": [
-    "research/ledgers/20261113T0310Z-batch-schema-01.json",
-    "research/ledgers/20261113T0310Z-batch-schema-02.json",
-    "research/ledgers/20261113T0310Z-batch-schema-03.json",
-    "research/ledgers/20261113T0310Z-batch-schema-04.json",
-    "research/ledgers/20261113T0310Z-verification-and-blockers.json"
+    "research/pipeline/audit_batch_inventory_v3.py"
   ],
   "new_research_artifact_paths": [
-    "research/batches/20261113T0310Z-transit-revolution-1985-breadth.json"
+    "research/batches/20261113T0356Z-1692-grain-riot-colonial-politics.json"
   ],
-  "local_versioned_research_sha256": "82d837596ed6c52f8268882e9718539f89dd68425295af101d3df65f4ced7a08",
-  "local_versioned_research_status": "locally integrity_verified but not durable Library/GitHub binary, NOT CANONICAL",
-  "evidence_status": "11 new research candidate IDs and 9 abstract/web-scope source inspections; 0 new independent corroborations; 1 possible duplicate; not publication approved",
+  "evidence_status": {
+    "new_findings": "10 unreviewed research candidates on 1692 grain riot and colonial politics",
+    "sources_directly_examined_full_text_secondary": 1,
+    "additional_abstracts_inspected": 3,
+    "primary_archival_material_directly_examined": 0,
+    "new_independently_corroborated": 0,
+    "publication_approved": false
+  },
   "ready_for_editorial_review": false,
   "ready_for_publication": false,
   "canonical_promoted": false,
   "blockers": [
-    "54 GitHub research batch JSON files content-inventoried but not fully replayed to a cumulative SQLite; 266 finding-like entries may include duplicates",
-    "Durable binary write failed (ChatGPT Library Invalid FileDrive root); GitHub repo holds JSON and importer only",
-    "Full-length source and original primary evidence audits pending; 19 staged source identities await reconciliation",
-    "Actual Templo Mayor Discover opening prose not inspected line by line"
+    "Complete checkout replay of 55 original batch JSON files into new SQLite remains pending",
+    "Durable binary upload failed: Invalid FileDrive root; GitHub stores text candidates and audit ledgers only",
+    "20 GitHub id-only candidate references need their full external archival statements",
+    "19 staged source identities need bibliographic crosswalk, no automatic merge",
+    "Exact Templo Mayor Discover prose still not inspected line-by-line"
   ],
-  "immutable_handoff_path": "research/handoff/history/20261113T0314Z-urban-breadth-replay-audit.json",
-  "consumer_instruction": "Machine handoff is informational only. Do not publish or merge. Load only unapproved staged research under explicit editorial safeguards."
+  "consumer_instruction": "Read research-persistence paths as staging and unapproved evidence only. Do not auto-publish or merge with main.",
+  "immutable_handoff_path": "research/handoff/history/20261113T0356Z-colonial-1692-and-batch-replay.json",
+  "previous_manifest_blob_sha": "ad119ae5cca4601fd6f4200be64c1e2b8d885f32",
+  "previous_manifest_generated_at": "2026-11-13T03:14:04Z",
+  "handoff_history_append_only": true,
+  "immutable_handoff_snapshot_sha": "a71b2e6c2ee37466e3e2897cd209da3d6f30c794"
 }
