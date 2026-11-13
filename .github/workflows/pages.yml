@@ -90,6 +90,22 @@ jobs:
           cp research-library/index.html site/research-library/index.html
           mkdir -p site/templo-mayor
           cp templo-mayor/index.html site/templo-mayor/index.html
+          # Publication identity: confirm Pages serves THIS commit, not a cached older release.
+          python - <<'PY'
+          import datetime,hashlib,json,os,pathlib
+          source=pathlib.Path('site/data/research')
+          originals=('templo_walk_v63.json','templo_mayor_pilot.json','templo_verified_discoveries_v68.json')
+          identity={
+              'git_sha':os.environ['GITHUB_SHA'],
+              'built_at_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
+              'research_sha256':{name:hashlib.sha256((source/name).read_bytes()).hexdigest() for name in originals},
+              'historical_poi_slugs':['templo-mayor','zocalo','metropolitan-cathedral','national-palace'],
+              'review_layout':'discover-explore-plan',
+          }
+          output=pathlib.Path('site/data/build-info.json')
+          output.write_text(json.dumps(identity,indent=2),encoding='utf-8')
+          print('Build identity:',identity['git_sha'],flush=True)
+          PY
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
@@ -130,6 +146,22 @@ jobs:
                   time.sleep(8)
           else:
               raise SystemExit(f'Live site NOT verified: {url}, final error: {error}')
+          # Prevent false-positive live checks against a previous cached deployment.
+          release_target=os.environ['PAGE_URL'].rstrip('/')+'/data/build-info.json'
+          for attempt in range(10):
+              try:
+                  with urllib.request.urlopen(release_target,timeout=25) as response:
+                      live_release=json.load(response)
+                      assert response.status==200
+                  assert live_release['git_sha']==os.environ['GITHUB_SHA'], (
+                      'Stale published commit',live_release['git_sha'],os.environ['GITHUB_SHA'])
+                  assert len(live_release['research_sha256'])==3
+                  print('EXACT COMMIT SERVED LIVE:',live_release['git_sha'],flush=True)
+                  break
+              except Exception as ex:
+                  if attempt==9:raise
+                  print('Waiting for release identity to update:',str(ex),flush=True)
+                  time.sleep(8)
           # Cross-check the other historic-center POIs, recovered source JSON and homepage.
           root=os.environ['PAGE_URL'].rstrip('/')+'/'
           for path, markers in {
