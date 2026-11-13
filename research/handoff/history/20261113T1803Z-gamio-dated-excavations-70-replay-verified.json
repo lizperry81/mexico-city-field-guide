@@ -1,0 +1,84 @@
+{
+  "schema_version": 4,
+  "kind": "immutable_research_to_app_handoff_snapshot",
+  "generated_at": "2026-11-13T18:06:59.829Z",
+  "branch": "research-persistence",
+  "previous_handoff_path": "research/handoff/history/20261113T1718Z-1913-visual-history-69-batch-verified.json",
+  "previous_manifest_blob_sha": "e1f138c3695f064ce3da50d3f3c612998506f781",
+  "research_commit_sha": "fbdbd48c02a92ee08d1db7c8e67e8fbd87401288",
+  "replay_commit_sha": "d4d77f0dbb00376d2ee6b84d9e1f488c0ce689da",
+  "canonical": {
+    "version": "V97",
+    "sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "counts": {
+      "sources": 616,
+      "claims": 422,
+      "claim_sources": 403,
+      "canonical_findings": 68,
+      "canonical_source_inspections": 9
+    },
+    "status": "unchanged_not_promoted"
+  },
+  "staged_before": {
+    "github_batches": 69,
+    "findings": 375,
+    "sources": 124,
+    "inspections": 162,
+    "unregistered_source_refs": 1,
+    "metadata_conflicts": 2
+  },
+  "staged_after": {
+    "github_batches": 70,
+    "findings": 384,
+    "sources": 126,
+    "inspections": 164,
+    "unregistered_source_refs": 1,
+    "metadata_conflicts": 2
+  },
+  "delta": {
+    "new_findings": 9,
+    "new_sources": 2,
+    "new_inspections": 2
+  },
+  "sqlite": {
+    "path": "research/reconciled/v4_fbdbd48c02a9/research_only.sqlite.gz",
+    "uncompressed_sha256": "71acb84a428f76233a546483609ba5da025b147a76ba64ba0d6b1c5c9cc53db2",
+    "compressed_sha256": "a6d2ae0b8cba74c85e96ee67e60793a0f63a5766874fd323e5b4ec0e50e20fcf",
+    "report_path": "research/reconciled/v4_fbdbd48c02a9/replay_report.json",
+    "report_blob_sha": "7445fbfcba1b98930c4815e210fda65a3fff26d4",
+    "binary_blob_sha": "6b26d52182da8fb3282b22675035972d86e0bb0c",
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "canonical_rows_unchanged": true,
+    "canonical_tables_preserved": 88,
+    "github_readback_verified": true,
+    "workflow_success": "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/43478955309"
+  },
+  "batch_artifact_paths": [
+    "research/batches/20261113T1803Z-gamio-1914-urban-archaeology-source-audit.json"
+  ],
+  "coverage_artifact_paths": [
+    "research/coverage/20261113T1803Z-early-excavations-site-readiness.json"
+  ],
+  "chapter_audit_artifact_paths": [
+    "research/audits/20261113T1803Z-templo-mayor-gamio-1913-1914-primary-gates.json"
+  ],
+  "reconciliation_artifact_paths": [
+    "research/ledgers/20261113T1803Z-reconciliation-69-batch-baseline-and-evidence.json",
+    "research/reconciled/v4_fbdbd48c02a9/replay_report.json"
+  ],
+  "evidence_status": "source_located_scholarly_not_independently_corroborated",
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "blockers": [
+    "One outstanding unregistered source reference is a proposed Sload botanical DATASET placeholder, not a verified scholarly publication",
+    "Two preexisting bibliographic metadata collisions still pending semantic review: STG-SRC-MANZANILLA-LOPEZ-FRETER-1996; v95-sload-cave-2020",
+    "9 possible detached inspection URL overlaps and 28 unmatched original inspection identities require scope review; source inspection metadata entries are not complete source examinations",
+    "1913 INEHRM exhibition reproduces archival photographs but originals, detailed geolocation and reproduction rights are not verified",
+    "Templo Mayor current prose still contains 1427/1428/1430 Alliance disagreement, Gamio 1913/1914 date conflict and requires original Book 12 and excavation plate locators",
+    "Colonial and 19th-century primary records remain under-examined including complete Granados 1847 thesis and 1985 RHP completion ledgers",
+    "Actual reader 1913 excavation wording conflicts with May 1914 archaeological discovery; original Gamio report, 1913 demolition papers and 1916 plan require inspection",
+    "Serpent-head reused across phases IVa–IVb: original sixth-season stratigraphic report and current site labels require independent check",
+    "Two inspected articles share López Luján as author, not independent corroboration; historical photographs and figures not rights-cleared"
+  ]
+}
