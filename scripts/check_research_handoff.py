@@ -24,6 +24,7 @@ from handoff_86_history import validate_frozen as validate_86_frozen, validate_l
 from handoff_87_history import validate_frozen as validate_87_frozen, validate_ledger as validate_87_ledger
 from handoff_88_history import validate_frozen as validate_88_frozen, validate_ledger as validate_88_ledger
 from handoff_89_history import validate_frozen as validate_89_frozen, validate_ledger as validate_89_ledger
+from handoff_90_history import CONTRACT as CONTRACT_90, validate_frozen as validate_90_frozen, validate_ledger as validate_90_ledger
 
 RESEARCH_REF = "refs/remotes/origin/research-persistence"
 MANIFEST_PATH = "research/handoff/manifest.json"
@@ -91,7 +92,10 @@ def validate_versioned_handoff(manifest, immutable_manifest, snapshot_sha):
     """
     if (manifest.get("schema_version") == 4 and
             immutable_manifest.get("kind") == "immutable_research_handoff_history_entry"):
-        validate_89_frozen(manifest, immutable_manifest)
+        if manifest.get("handoff_contract_status") == CONTRACT_90:
+            validate_90_frozen(manifest, immutable_manifest)
+        else:
+            validate_89_frozen(manifest, immutable_manifest)
         return
 
     if (manifest.get("schema_version") == 4 and
@@ -862,9 +866,19 @@ def validate():
             pinned = git("rev-parse", f"{snapshot}:{path}").decode().strip()
             current = git("rev-parse", f"{handoff_commit}:{path}").decode().strip()
             if pinned != current:
-                raise ValueError("89-batch verified Git object changed: " + path)
+                raise ValueError("Research replay Git object changed: " + path)
             actual89[name] = current
-        validate_89_ledger(manifest, immutable_manifest, ledger, actual89)
+        if manifest.get("handoff_contract_status") == CONTRACT_90:
+            validate_90_ledger(manifest, immutable_manifest, ledger, {
+                "compressed_db": actual89["sqlite"],
+                "report": actual89["report"],
+                "checksum": actual89["checksum"],
+                "batch": actual89["batch"],
+                "coverage": actual89["coverage"],
+                "audit": actual89["audit"],
+            })
+        else:
+            validate_89_ledger(manifest, immutable_manifest, ledger, actual89)
         canonical89 = manifest["canonical"]
         manifest["canonical"] = {
             "sources": canonical89["sources"], "claims": canonical89["claims"],
