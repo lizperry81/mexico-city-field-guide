@@ -33,7 +33,10 @@ example["chapters"] = [{
         "evidence": [{"source_id": "TEST", "page_or_section": "page 1",
                       "audit_status": "page_checked"}]
     }],
-    "deep_dives": [{"title": "Example sidebar", "text": "Example only"}]
+    "deep_dives": [{"title": "Example sidebar", "text": "Example only",
+                    "evidence": [{"source_id": "TEST-DIVE",
+                                  "page_or_section": "page 2",
+                                  "audit_status": "page_checked"}]}]
 }]
 assert validate(example, "templo-mayor")
 page = render(example)
@@ -55,6 +58,23 @@ except ValueError:
     pass
 else:
     raise AssertionError("Missing page locator allowed to publish")
+# Optional deep dives are independently evidence-gated; unlike display
+# toggles they may contain substantive archaeological claims.
+for alter in (
+    lambda d: d["chapters"][0]["deep_dives"][0].pop("evidence"),
+    lambda d: d["chapters"][0]["deep_dives"][0]["evidence"][0].update(
+        audit_status="candidate"),
+    lambda d: d["chapters"][0]["deep_dives"][0]["evidence"][0].update(
+        page_or_section=""),
+):
+    invalid = copy.deepcopy(example)
+    alter(invalid)
+    try:
+        validate(invalid, "templo-mayor")
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("Unverified optional history deep dive allowed to publish")
 # A manuscript with self-asserted approval still cannot be published without
 # the exact independently archived prose and a matching adjacent checksum.
 with tempfile.TemporaryDirectory() as temp:
@@ -67,12 +87,21 @@ with tempfile.TemporaryDirectory() as temp:
         raise AssertionError("Unarchived approved prose passed publication gate")
     archive = root / "editorial/approved/templo-mayor--example-test-only.md"
     archive.parent.mkdir(parents=True)
-    original = "# Test-only chapter\\n\\n" + example["chapters"][0]["paragraphs"][0]["text"] + "\\n"
+    original = ("# Test-only chapter\\n\\n" + example["chapters"][0]["paragraphs"][0]["text"] +
+                "\\n\\n" + example["chapters"][0]["deep_dives"][0]["text"] + "\\n")
     archive.write_text(original, encoding="utf-8")
     checksum = archive.with_suffix(".md.sha256")
     checksum.write_text(hashlib.sha256(archive.read_bytes()).hexdigest() + "  " + archive.name + "\\n",
                         encoding="utf-8")
     verify_verbatim_archives(example, root)
+    altered_dive = copy.deepcopy(example)
+    altered_dive["chapters"][0]["deep_dives"][0]["text"] += " Unapproved edit."
+    try:
+        verify_verbatim_archives(altered_dive, root)
+    except ValueError as exc:
+        assert "not verbatim" in str(exc)
+    else:
+        raise AssertionError("Unapproved deep-dive prose passed verbatim archive check")
     modified = copy.deepcopy(example)
     modified["chapters"][0]["paragraphs"][0]["text"] += " An unauthorized alteration."
     try:
