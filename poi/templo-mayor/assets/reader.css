@@ -209,6 +209,17 @@ summary { width: fit-content; color: var(--jade); font-weight: 700; cursor: poin
 .stop-reference strong { font-size: .9rem; }
 .stop-reference p { margin: 4px 0; font-size: .87rem; line-height: 1.38; }
 .stop-reference small { display: block; color: var(--muted); font-size: .75rem; line-height: 1.35; }
+/* Give mobile walkers a same-page route to the credited caption and any
+   numbered markers without losing their current Explore stop. */
+.stop-reference #stop-reference-caption {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 5px 0;
+  font-size: .84rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
 .stop-select select {
   width: 100%;
   margin-top: 4px;

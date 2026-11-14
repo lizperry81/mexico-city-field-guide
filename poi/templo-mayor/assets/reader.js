@@ -19,6 +19,7 @@
   const stopReferenceLink = document.getElementById('stop-reference-link');
   const stopReferenceThumb = document.getElementById('stop-reference-thumb');
   const stopReferenceDescription = document.getElementById('stop-reference-description');
+  const stopReferenceCaption = document.getElementById('stop-reference-caption');
   const stopStorageKey = 'cdmx:templo-mayor:explore-stop';
   let activeStop = 0;
   // Keep a walking position through a reload in this tab, without changing
@@ -34,6 +35,7 @@
   let focusMode = false;
   let focusSection = false;
   let focusContents = false;
+  let focusPhoto = false;
 
   for (const stop of stops) {
     const title = stop.querySelector('h3');
@@ -93,6 +95,13 @@
     });
   }
 
+  // The original caption and any numbered photographic markers remain in the
+  // stop; a same-fragment Safari tap still scrolls and focuses that figure.
+  stopReferenceCaption.addEventListener('click', () => {
+    focusPhoto = true;
+    if (location.hash === stopReferenceCaption.hash) navigateHash();
+  });
+
   function navigateHash() {
     let fragment = location.hash.slice(1);
     try {
@@ -132,6 +141,7 @@
     // Quick identification uses only the active stop's original credited photo.
     // Never substitute a guessed image, orientation, or location marker.
     const current = stops[activeStop];
+    const photoFigure = current.querySelector('.field-photo');
     const photo = current.querySelector('.field-photo img');
     const enlargement = current.querySelector('.photo-zoom');
     const source = photo?.getAttribute('src');
@@ -139,10 +149,11 @@
     // An enlarged reference must be the same credited asset as its thumbnail.
     // If future content accidentally points to a different photo, suppress the
     // preview instead of presenting misleading on-site visual identification.
-    if (source && destination && source === destination) {
+    if (source && destination && source === destination && photoFigure?.id) {
       stopReferenceThumb.src = source;
       stopReferenceDescription.textContent = photo.getAttribute('alt') || '';
       stopReferenceLink.href = destination;
+      stopReferenceCaption.href = '#' + photoFigure.id;
       stopReferenceLink.setAttribute(
         'aria-label',
         'Open reference photograph for ' + current.querySelector('h3').textContent + ' in a new tab'
@@ -173,11 +184,16 @@
       historyContents.focus({ preventScroll: true });
     }
     focusContents = false;
+    if (focusPhoto && panel === explore && target?.classList?.contains('field-photo')) {
+      target.focus({ preventScroll: true });
+    }
+    focusPhoto = false;
     if (focusStop) stops[activeStop].querySelector('h3').focus({ preventScroll: true });
     focusStop = false;
     if (target) {
       // Alias spans from older URLs are empty. Scroll to the visible section.
-      const destination = stop || target.closest('details') || (target.tagName === 'SPAN' ? panel : target);
+      const destination = target.classList?.contains('field-photo') ? target :
+        (stop || target.closest('details') || (target.tagName === 'SPAN' ? panel : target));
       if (destination instanceof HTMLDetailsElement) destination.open = true;
       requestAnimationFrame(() => destination.scrollIntoView({ block: 'start' }));
     }

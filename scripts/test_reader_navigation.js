@@ -22,6 +22,7 @@ const stops = ['plaza', 'twin-stairs', 'older-stairs'].map(id => {
     id, hidden: false, heading, tagName: 'SECTION', scrolled: 0,
     querySelector(selector) {
       if (selector === 'h3') return heading;
+      if (selector === '.field-photo') return photoFigures[id + '-reference-photo'];
       if (selector === '.field-photo img') return {
         getAttribute(key) {
           if (key === 'src') return 'assets/' + id + '.webp';
@@ -42,6 +43,20 @@ const stops = ['plaza', 'twin-stairs', 'older-stairs'].map(id => {
     scrollIntoView() {this.scrolled += 1;}
   };
 });
+const photoFigures = Object.fromEntries(stops.map(stop => {
+  const id = stop.id + '-reference-photo';
+  return [id, {
+    id, tagName: 'FIGURE', focused: 0, scrolled: 0,
+    classList: {contains(name) {return name === 'field-photo';}},
+    focus() {this.focused += 1;},
+    scrollIntoView() {this.scrolled += 1;},
+    closest(selector) {
+      if (selector === '[data-reader-panel]') return panels.explore;
+      if (selector === '[data-stop]') return stop;
+      return null;
+    }
+  }];
+}));
 const sections = ['dossier-topic-1', 'dossier-topic-2'].map(id => {
   const heading = {focused: 0, focus() {this.focused += 1;}};
   return {
@@ -97,18 +112,24 @@ const stopPosition = {textContent: ''};
 const reference = {hidden: true};
 const referenceThumb = {src: ''};
 const referenceDescription = {textContent: ''};
+const referenceCaption = {
+  href: '', click: null,
+  get hash() {return this.href;},
+  addEventListener(type, fn) {assert.equal(type, 'click'); this.click = fn;}
+};
 const referenceLink = {
   href: '', ariaLabel: '',
   setAttribute(name, value) {assert.equal(name, 'aria-label'); this.ariaLabel = value;}
 };
-const ids = {...panels, ...Object.fromEntries(stops.map(stop => [stop.id, stop])),
+const ids = {...panels, ...photoFigures, ...Object.fromEntries(stops.map(stop => [stop.id, stop])),
   ...Object.fromEntries(sections.map(section => [section.id, section])),
   'choose-stop': jump, 'previous-stop': prev, 'next-stop': next,
   'skip-to-history': skip, 'history-contents': historyContents,
   'stop-progress': progress, 'stop-position': stopPosition,
   'stop-reference': reference, 'stop-reference-link': referenceLink,
   'stop-reference-thumb': referenceThumb,
-  'stop-reference-description': referenceDescription};
+  'stop-reference-description': referenceDescription,
+  'stop-reference-caption': referenceCaption};
 const doc = {
   querySelectorAll(selector) {
     if (selector === '.reader-nav a') return links;
@@ -153,6 +174,7 @@ assert.equal(reference.hidden, false);
 assert.equal(referenceThumb.src, 'assets/plaza.webp');
 assert.equal(referenceLink.href, 'assets/plaza.webp');
 assert.equal(referenceDescription.textContent, 'Identifiable features at plaza');
+assert.equal(referenceCaption.href, '#plaza-reference-photo');
 assert.equal(prev.disabled, true);
 assert.equal(next.disabled, false);
 jump.listener(); // Safari no hashchange when reselecting current stop.
@@ -272,4 +294,20 @@ location.hash = '#twin-stairs';
 location.hash = '#plaza';
 assert.equal(reference.hidden, false, 'A corrected, matching photo restores the preview');
 assert.equal(referenceThumb.src, referenceLink.href, 'Preview and enlargement must match');
-console.log('PASS: keyboard skip, Discover contents/return focus, Safari focus, pager, stop resume, deep links, and blocked storage');
+// The on-site preview must link back to its credited figure, not strand the
+// reader on a bare image URL. Figure anchors preserve markers and captions.
+location.hash = '#twin-stairs';
+assert.equal(referenceCaption.href, '#twin-stairs-reference-photo');
+const figure = photoFigures['twin-stairs-reference-photo'];
+referenceCaption.click();
+location.hash = referenceCaption.href;
+assert.equal(figure.focused, 1, 'Photo shortcut should focus the original figure');
+assert.equal(figure.scrolled, 1, 'Photo shortcut should scroll to the captioned figure');
+assert.equal(jump.value, 'twin-stairs', 'Photo shortcut must preserve the active stop');
+referenceCaption.click(); // Safari does not fire hashchange for same hash.
+assert.equal(figure.focused, 2, 'Repeat Safari taps must refocus the figure');
+assert.equal(figure.scrolled, 2, 'Repeat Safari taps must scroll back to the figure');
+location.hash = '#history';
+location.hash = referenceCaption.href;
+assert.equal(jump.value, 'twin-stairs', 'Deep links to figures should reopen the right Explore stop');
+console.log('PASS: Discover/Explore navigation, credited photo-caption anchors, Safari focus, pager, stop resume, deep links, and blocked storage');

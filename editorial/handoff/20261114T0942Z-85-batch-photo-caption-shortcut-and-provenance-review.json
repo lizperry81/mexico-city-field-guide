@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "kind": "app_development_handoff",
+  "date_utc": "2026-11-14",
+  "base_main_sha": "ef2da6f5676c21010d93a2a9077ae3e9cd91e0e8",
+  "branch": "main",
+  "change": "Provide a keyboard- and Safari-accessible link from each Explore stop's compact reference image to its full existing captioned photograph, preserving any annotated markers.",
+  "touched_files": [
+    "poi/templo-mayor/reader.html",
+    "poi/templo-mayor/assets/reader.js",
+    "poi/templo-mayor/assets/reader.css",
+    "scripts/test_reader_navigation.js",
+    "scripts/test_templo_review.py"
+  ],
+  "historical_prose_changed": false,
+  "approved_chapters_changed": false,
+  "homepage_changed": false,
+  "original_images_replaced": false,
+  "comments_local_storage_changed": false,
+  "research_handoff": {
+    "branch_head_inspected": "7b7db786fc3b11dab68c399c1af7234d39cca604",
+    "latest_input_research_sha": "a956d3b2ded3dc62d017ca1da63d9e47f89cf69c",
+    "referenced_paths_checked": 210,
+    "referenced_paths_present": 210,
+    "batches": 85,
+    "provisional_findings": 541,
+    "latest_snapshot": "research/handoff/history/20261114T0906Z-85-batch-1629-flood-verified.json",
+    "disposition": "pending_strict_consumer_verification_not_published",
+    "blockers": [
+      "Current manifest still points verified_replay_commit_sha to the earlier 84-batch snapshot",
+      "Latest immutable snapshot declares verified_snapshot_commit_sha=null; workflow-generated snapshot commit not independently pinned",
+      "Latest immutable history path missing from handoff_history_paths array",
+      "Producer states ready_for_editorial_review=false; new flood-related archaeology notes require primary-evidence comparison and image rights"
+    ]
+  },
+  "editorial_archive": "Approved manuscript bytes remain unverified. Differing Nov 13 DOCX editorial review versions were found; no version is falsely designated the exact approved original."
+}

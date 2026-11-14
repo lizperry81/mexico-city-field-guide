@@ -56,6 +56,7 @@ for folder, feedback_path in (
     assert 'id="stop-reference" class="stop-reference cdmx-no-comment" hidden' in text
     assert '<a id="stop-reference-link" target="_blank" rel="noopener">' in text
     assert '<img id="stop-reference-thumb" width="112" height="84" alt="">' in text
+    assert 'id="stop-reference-caption" href="#plaza-reference-photo"' in text
     assert all(f"dossier-topic-{n}" in page.ids for n in range(1, 7))
     assert all(f"walk-{n}" in page.ids for n in range(1, 9))
     for marker in (
@@ -117,6 +118,9 @@ for folder, feedback_path in (
     )
     assert len(field_stops) == 5, "A preserved Explore field stop disappeared"
     for stop_id, stop_html in field_stops:
+        # All reference shortcuts must lead to the exact original credited
+        # figure, not another stop or an uncredited bare image.
+        assert f'class="field-photo" id="{stop_id}-reference-photo" tabindex="-1"' in stop_html, stop_id
         assert '<strong>Stand at</strong>' in stop_html, stop_id
         assert '<strong>Look for</strong>' in stop_html, stop_id
         assert 'class="field-photo"' in stop_html, stop_id
