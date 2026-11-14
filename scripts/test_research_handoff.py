@@ -9,6 +9,7 @@ from handoff_83_history import validate_frozen as validate_83_frozen, validate_l
 import test_handoff_84_history  # fail-closed 84-batch reader identity regressions
 import test_handoff_86_history  # pinned append-only Git identities and approval regressions
 import test_handoff_87_history  # 87-batch immutable readback and evidence safeguards
+import test_handoff_88_history  # independent 88-batch full-binary and approval tests
 from editorial_passage_inventory import HistoryPassages
 from check_research_handoff import audit_matrix_explicitly_unapproved
 from handoff_new_audits import parse_new_audit

@@ -22,6 +22,7 @@ from handoff_83_history import validate_frozen as validate_83_frozen, validate_l
 from handoff_84_history import validate_frozen as validate_84_frozen, validate_ledger as validate_84_ledger
 from handoff_86_history import validate_frozen as validate_86_frozen, validate_ledger as validate_86_ledger
 from handoff_87_history import validate_frozen as validate_87_frozen, validate_ledger as validate_87_ledger
+from handoff_88_history import validate_frozen as validate_88_frozen, validate_ledger as validate_88_ledger
 
 RESEARCH_REF = "refs/remotes/origin/research-persistence"
 MANIFEST_PATH = "research/handoff/manifest.json"
@@ -88,7 +89,10 @@ def validate_versioned_handoff(manifest, immutable_manifest, snapshot_sha):
     """
     if (manifest.get("schema_version") == 4 and
             immutable_manifest.get("kind") == "append_only_research_to_app_verified_history"):
-        validate_87_frozen(manifest, immutable_manifest)
+        if manifest.get('handoff_contract_status') == '88_batch_sqlite_integrity_github_full_binary_sha256_verified_noncanonical_unapproved':
+            validate_88_frozen(manifest, immutable_manifest)
+        else:
+            validate_87_frozen(manifest, immutable_manifest)
         return
 
     if (manifest.get("schema_version") == 4 and
@@ -847,10 +851,19 @@ def validate():
             label: git("rev-parse", f"{handoff_commit}:{safe_path(path)}").decode().strip()
             for label, path in source_paths.items()
         }
+        if ledger.get('kind') == 'github_research_reconciliation_full_binary_readback':
+            source_paths.update({'input': immutable_manifest['source_batch_artifact_paths'][0],
+                                 'chapter': immutable_manifest['chapter_audit_artifact_paths'][0],
+                                 'compressed': manifest['replay_evidence']['compressed_checksum_path']})
+            actual.update({name: git('rev-parse', f'{handoff_commit}:{safe_path(path)}').decode().strip()
+                           for name, path in source_paths.items()})
         for label, path in source_paths.items():
             if git("rev-parse", f"{replay_commit}:{path}").decode().strip() != actual[label]:
-                raise ValueError("87-batch verified Git object changed: " + path)
-        validate_87_ledger(manifest, immutable_manifest, ledger, actual)
+                raise ValueError("Verified Git object changed after replay: " + path)
+        if ledger.get('kind') == 'github_research_reconciliation_full_binary_readback':
+            validate_88_ledger(manifest, immutable_manifest, ledger, actual)
+        else:
+            validate_87_ledger(manifest, immutable_manifest, ledger, actual)
         # Adapt the authenticated producer schema only in memory, preserving
         # the earlier v4 nonpublication and canonical-integrity checks.
         original = manifest["canonical"]

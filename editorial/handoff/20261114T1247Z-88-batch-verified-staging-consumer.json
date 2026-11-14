@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "kind": "app_development_research_handoff_record",
+  "recorded_date": "2026-11-14",
+  "app_main_parent_sha": "eb88c5c65d4f6f9e32588f72740aa7a3e2bcc3d0",
+  "branch_written": "main",
+  "research_branch_read_only": "research-persistence",
+  "research_commit_sha": "764dbe6a6f82e80386e3dac6534e08cb09072fe5",
+  "verified_replay_commit_sha": "8cf560014163277feb832ed3293a3ba344d68496",
+  "research_branch_head_read": "0e80ecab08b1a8a5a22740f2b1688457bdc34df5",
+  "verified_distinct_manifest_paths_present": 231,
+  "staged_batches": 88,
+  "provisional_findings": 574,
+  "ready_for_editorial_review": false,
+  "ready_for_publication": false,
+  "public_historical_content_changes": 0,
+  "approved_prose_replaced": false,
+  "verbatim_approved_manuscripts_archived": false,
+  "editorial_blocker": "Differing review copies; exact approved November 13 prose provenance not established.",
+  "scope": "Strict read-only research handoff validator, CI negative tests and private editorial queue, no historical publication."
+}
