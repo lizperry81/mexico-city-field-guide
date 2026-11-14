@@ -1,0 +1,153 @@
+{
+  "schema_version": 3,
+  "kind": "period_x_theme_x_geography_explanatory_readiness_delta",
+  "generated_at": "2026-11-14T09:03:28.884Z",
+  "branch": "research-persistence",
+  "source_batch_path": "research/batches/20261114T0900Z-1629-flood-hydraulic-government.json",
+  "evidence_status": "noncanonical_source_located_not_publication_approved",
+  "rating_definitions": {
+    "substantial": "Independent specialist and primary-source collation plus precise physical interpretation, location, rights and current access sufficient for a chapter.",
+    "developing": "Specific locatable explanation from authoritative institutional/scholarly source, but independent or primary comparison incomplete.",
+    "sparse": "Abstract or short excerpt with unclear place chronology/material or no document-level detail.",
+    "missing": "Critical verified mapping, photo rights, public access or document absent."
+  },
+  "cells": [
+    {
+      "period": "1604–1607",
+      "theme": "Flood policy shift and colonial priorities",
+      "geography": "Mexico City/upper basin",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0900Z-FLD-01"
+      ],
+      "evidence_gap": "Full Candiani text and municipal/Indigenous evidence unexamined"
+    },
+    {
+      "period": "1607–1614",
+      "theme": "Indigenous labor in Desagüe",
+      "geography": "Huehuetoca",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0900Z-FLD-02"
+      ],
+      "evidence_gap": "Repartimiento lists, payroll, worker count not directly sourced"
+    },
+    {
+      "period": "1614–1629",
+      "theme": "Competing drainage versus containment designs",
+      "geography": "Mexico basin",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T0900Z-FLD-10"
+      ],
+      "evidence_gap": "Only indexed INAH abstract; original engineering plans missing"
+    },
+    {
+      "period": "1629–1634",
+      "theme": "Duration and urban flood mechanics",
+      "geography": "Historic core",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0900Z-FLD-03"
+      ],
+      "evidence_gap": "Original annual water-level records absent; date uncertainty"
+    },
+    {
+      "period": "1629–1635",
+      "theme": "Mortality, displacement and poor housing",
+      "geography": "Santa Catarina/Santa Ana",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T0900Z-FLD-04",
+        "20261114T0900Z-FLD-07"
+      ],
+      "evidence_gap": "Population estimates contested; bairro bounds not verified"
+    },
+    {
+      "period": "1629–1638",
+      "theme": "Religion and disaster politics",
+      "geography": "Church and civic networks",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0900Z-FLD-05"
+      ],
+      "evidence_gap": "Full Cuéllar and Hoberman texts/primary records absent"
+    },
+    {
+      "period": "1597–1714",
+      "theme": "La Profesa reconstruction after flood",
+      "geography": "Calle Madero",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0900Z-FLD-06"
+      ],
+      "evidence_gap": "Historic building list official, individual masonry phase unverified"
+    },
+    {
+      "period": "1521–1700",
+      "theme": "Hydrographic morphology of city",
+      "geography": "Zócalo/Historic Centre",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0900Z-FLD-08"
+      ],
+      "evidence_gap": "Dissertation maps inaccessible/rights uncleared; cannot project accurate current shoreline"
+    },
+    {
+      "period": "1607–1636",
+      "theme": "Huehuetoca infrastructure in colonial flood history",
+      "geography": "Northern Basin",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T0900Z-FLD-09"
+      ],
+      "evidence_gap": "1636 report catalog not complete original; no visit route"
+    },
+    {
+      "period": "1630",
+      "theme": "Regional Acolman dam versus Huehuetoca outlet",
+      "geography": "Acolman basin",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T0900Z-FLD-11"
+      ],
+      "evidence_gap": "Full field archaeology article and historic maps missing"
+    },
+    {
+      "period": "1629–1634",
+      "theme": "Reconstruct street-by-street flood-depth map",
+      "geography": "Historic Centre",
+      "rating": "missing",
+      "finding_ids": [
+        "20261114T0900Z-FLD-03",
+        "20261114T0900Z-FLD-08"
+      ],
+      "evidence_gap": "No georeferenced contemporaneous depth series or archival map rights"
+    },
+    {
+      "period": "2026",
+      "theme": "Current visitor access, images, and walking route",
+      "geography": "La Profesa, Santa Catarina, Huehuetoca",
+      "rating": "missing",
+      "finding_ids": [
+        "20261114T0900Z-FLD-06",
+        "20261114T0900Z-FLD-07",
+        "20261114T0900Z-FLD-09"
+      ],
+      "evidence_gap": "Access current, reproduction permissions and on-site mapping unverified"
+    }
+  ],
+  "summary": {
+    "total": 12,
+    "substantial": 0,
+    "developing": 6,
+    "sparse": 4,
+    "missing": 2,
+    "classification_finding_counts": {
+      "broad_history": 5,
+      "poi_ready_candidate": 4,
+      "specialist_technical": 2
+    }
+  },
+  "publication_approved": false
+}
