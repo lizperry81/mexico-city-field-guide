@@ -76,6 +76,82 @@ def validate_versioned_handoff(manifest, immutable_manifest, snapshot_sha):
     append-only research snapshot with individually cross-checked identities,
     evidence counts, source manifests, and immutable artifacts.
     """
+    # Batch 81 uses a compact append-only history record. The producer did
+    # not receive a replay commit SHA from its connector, so bind the exact
+    # independently read-back Git blobs AND the committed integrity ledger.
+    # This authorization is strictly for a private human review queue.
+    if (manifest.get("schema_version") == 4 and
+            immutable_manifest.get("kind") == "append_only_research_handoff_history"):
+        frozen = immutable_manifest
+        staged = manifest.get("staged_counts", {})
+        evidence = manifest.get("evidence_status", {})
+        readback = manifest.get("verified_binary_readback", {})
+        replay = manifest.get("replay_evidence", {})
+        if (frozen.get("schema_version") != 4
+                or frozen.get("branch") != "research-persistence"
+                or frozen.get("canonical_status") != "unchanged_provisional_V97_not_promoted"
+                or manifest.get("canonical_status") != frozen["canonical_status"]
+                or frozen.get("ready_for_editorial_review") is not False
+                or frozen.get("ready_for_publication") is not False
+                or frozen.get("canonical_promoted") is not False
+                or frozen.get("automatically_merged") is not False
+                or frozen.get("main_modified") is not False
+                or manifest.get("ready_for_editorial_review") is not False
+                or manifest.get("ready_for_publication") is not False
+                or manifest.get("canonical_promoted") is not False
+                or evidence.get("publication_approved") is not False
+                or evidence.get("independently_corroborated_new_findings") != 0
+                or manifest.get("verified_replay_commit_sha") is not None
+                or readback.get("commit_sha") is not None):
+            raise ValueError("Compact 81-batch history cannot authorize publication")
+        for key in ("research_commit_sha", "canonical_version", "canonical_hash",
+                    "versioned_research_sqlite_gz_path", "versioned_research_sha256",
+                    "compressed_sha256"):
+            if frozen.get(key) != manifest.get(key):
+                raise ValueError("Compact immutable history changed: " + key)
+        for key in ("github_batches_replayed",
+                    "github_distinct_substantive_finding_ids",
+                    "github_source_candidates", "github_inspection_entries",
+                    "unknown_source_refs", "source_metadata_collisions",
+                    "detached_source_identity_review_pending",
+                    "new_source_candidates_all_types_this_run",
+                    "new_source_inspection_metadata_this_run"):
+            if frozen.get("staged_counts", {}).get(key) != staged.get(key):
+                raise ValueError("Compact immutable staged count changed: " + key)
+        if (frozen.get("staged_counts", {}).get("unresolved_index_only_ids") !=
+                staged.get("github_index_only_refs_unresolved") or
+                frozen.get("staged_counts", {}).get("new_historical_finding_candidates_this_run") !=
+                evidence.get("new_historical_finding_candidates_researched_this_run")):
+            raise ValueError("Compact immutable historical finding counts changed")
+        for group in ("coverage_artifact_paths", "chapter_audit_artifact_paths",
+                      "reconciliation_artifact_paths"):
+            subset = frozen.get(group)
+            if (not isinstance(subset, list) or not subset or
+                    not set(subset).issubset(set(manifest.get(group, [])))):
+                raise ValueError("Compact immutable research artifact paths changed: " + group)
+        if (frozen.get("batch_path") not in manifest.get("research_batch_artifact_paths", [])
+                or frozen.get("github_binary_blob_sha") != readback.get("git_blob_sha")
+                or frozen.get("github_binary_blob_sha") != replay.get("readback_binary_git_blob_sha")
+                or readback.get("report_blob_sha") != replay.get("readback_report_git_blob_sha")
+                or readback.get("verified_report_path") != manifest.get("replay_report_path")
+                or replay.get("verification_ledger") not in frozen["reconciliation_artifact_paths"]
+                or readback.get("compressed_sha256") != manifest.get("compressed_sha256")
+                or readback.get("uncompressed_sqlite_sha256") !=
+                manifest.get("versioned_research_sha256")
+                or readback.get("sqlite_integrity") != "ok"
+                or readback.get("foreign_key_violations") != 0
+                or readback.get("canonical_rows_unchanged") is not True
+                or readback.get("compress_digest_recomputed_independently_from_github_fetched_base64") is not True):
+            raise ValueError("Compact immutable history lacks independently pinned readback")
+        proof = frozen.get("verification", {})
+        if (proof.get("sqlite_integrity") != "ok"
+                or proof.get("foreign_key_violations") != 0
+                or proof.get("canonical_tables_preserved") != 88
+                or proof.get("canonical_rows_unchanged") is not True
+                or proof.get("github_readback_compressed_digest_match") is not True):
+            raise ValueError("Compact immutable research replay verification changed")
+        return
+
     version = manifest.get("schema_version")
     if version == 4 and immutable_manifest.get("kind") == "append_only_research_to_app_verified_handoff":
         # The producer separates the input research SHA from a later verified
