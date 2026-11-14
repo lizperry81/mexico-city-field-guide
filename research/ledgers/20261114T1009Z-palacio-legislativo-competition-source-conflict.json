@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "kind": "additional_nonbatch_bibliographic_conflict_note",
+  "generated_at": "2026-11-14T10:09:25.578Z",
+  "branch": "research-persistence",
+  "subject": "1897 Palacio Legislativo competition: contradictory prize terminology and possible retrospective dating errors",
+  "associated_batch_path": "research/batches/20261114T1004Z-monumento-revolucion-1897-2010.json",
+  "corroborated_publication_ready": false,
+  "records": [
+    {
+      "url": "https://oa.upm.es/21350/1/ANA_FERNANDA_CANALES_GONZALEZ.pdf",
+      "title": "Ana Fernanda Canales González, La modernidad arquitectónica en México; una mirada a través del arte y los medios impresos",
+      "scope": "Doctoral thesis (UPM 2013), extracted PDF around lines 3257–3273 and bibliography lines 8109–8124; full relevant plan image not inspected",
+      "observation": "Thesis distinguishes contest jury's empty first prize, Boari second, Quaglia commission, eventual Bénard appointment. Captions on architectural plates identify a Bénard Pantheon project and family archive.",
+      "quality_flags": [
+        "Parsed excerpt contains obvious dating inconsistencies ('1987' for late-nineteenth century contest, '1998' for Quaglia death); verify in actual page image before using as literal dates.",
+        "Caption labels Bénard competition winner while analysis describes complex post-contest selection; 'winner' not a simple factual resolution.",
+        "Family Bénard archive attribution for 1926 pantheon drawing is a concrete next primary-source lead."
+      ]
+    },
+    {
+      "url": "https://www.repositorioinstitucionaluacm.mx/jspui/bitstream/123456789/682/3/JENNIPHER%20STEPHANY%20%C3%81LVAREZ%20MART%C3%8DNEZ_APC.pdf",
+      "title": "Álvarez Martínez university thesis, Palacio Legislativo section",
+      "scope": "Search-indexed thesis extract; original page images not inspected",
+      "observation": "Thesis claims 56 designs submitted and an unawarded first prize, then Bénard selected; cites Pérez Siller and Bénard Calva 2009, p.112. Not independent primary corroboration."
+    },
+    {
+      "url": "https://catalogonacionalmhi.inah.gob.mx/consulta_publica/detalle/12773",
+      "title": "INAH Monumento a la Revolución catalog fiche",
+      "scope": "Search-index only: direct browser 502; ficha still flagged in validation",
+      "observation": "Competition prize account names Boari, Burnam and Weber, Rivas Mercado; Bénard eventually substituted after protest."
+    },
+    {
+      "url": "https://www.mrm.mx/historia-del-monumento",
+      "title": "Monument operator direct history",
+      "scope": "Direct webpage lines 18–24",
+      "observation": "Operator abbreviates the complex selection as Bénard winning the palace project."
+    }
+  ],
+  "editorial_disposition": "retain conflict, avoid 'Bénard won the 1897 competition'; locate contemporary jury award, Quaglia contract, original project chronology, Pérez Siller/Bénard Calva p.112 and family Bénard drawing. Do not normalize source IDs automatically."
+}
