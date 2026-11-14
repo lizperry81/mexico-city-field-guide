@@ -1,0 +1,57 @@
+{
+  "schema_version": 2,
+  "kind": "reconciliation_preflight_and_source_inspection_ledger",
+  "generated_at": "2026-11-14T02:02:00Z",
+  "branch": "research-persistence",
+  "base_verified_manifest_blob_sha": "e2529e798125a42ed3377c20549bdb14ad85ec4a",
+  "base_verified_handoff_commit": "aca86792c22da0fe65bec901fc427219a4435726",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "previous_replay_report": "research/reconciled/v4_28d9d393f98f/replay_report.json",
+  "previous_verified_counts": {
+    "batches": 77,
+    "findings": 455,
+    "source_candidates": 161,
+    "inspections": 199,
+    "canonical_sources": 616,
+    "canonical_claims": 422,
+    "canonical_links": 403,
+    "canonical_findings": 68,
+    "unresolved_source_references": 1,
+    "source_metadata_conflicts": 2,
+    "detached_inspections": 37
+  },
+  "added_artifact_paths": [
+    "research/batches/20261114T0202Z-water-management-1608-1900-and-viga.json",
+    "research/coverage/20261114T0202Z-water-management-1608-1900-and-viga-readiness.json",
+    "research/audits/20261114T0202Z-water-management-1608-1900-and-viga-templo-discover-cross-period-gates.json"
+  ],
+  "batch_id": "20261114T0202Z-water-management-1608-1900-and-viga",
+  "proposed_delta": {
+    "batches": 1,
+    "findings": 9,
+    "source_candidates": 6,
+    "inspections": 6
+  },
+  "expected_if_no_collisions": {
+    "batches": 78,
+    "findings": 464,
+    "source_candidates": 167,
+    "inspections": 205
+  },
+  "verification_state": "pending_full_GitHub_78_batch_replay; no manifested promotion until proven",
+  "source_registration": {
+    "all_new_source_ids_unique_within_batch": true,
+    "all_nine_findings_reference_registered_source_ids": true,
+    "unresolved_existing_source_id_not_resolved": "PROPOSE_SOURCE_SLOAD_2020_BOTANICAL_DATASET_NOT_IN_CANONICAL",
+    "existing_conflict_count": 2,
+    "detached_37_not_auto_merged": true
+  },
+  "known_limitations": [
+    "Only one UNAM map catalog page read directly; other sources indexed abstracts and catalog excerpts, with explicit 403/502/timeout failures",
+    "No source image or original 19th century archival page inspected",
+    "Official historical press claims distinguished from proven hydraulic performance",
+    "No live route or photo rights checks"
+  ],
+  "canonical_promoted": false,
+  "publication_approved": false
+}
