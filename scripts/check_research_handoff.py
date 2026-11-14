@@ -30,6 +30,11 @@ from handoff_91_history import (
     validate_frozen as validate_91_frozen,
     validate_ledger as validate_91_ledger,
 )
+from handoff_92_history import (
+    CONTRACT as CONTRACT_92, KIND as KIND_92,
+    validate_frozen as validate_92_frozen,
+    validate_ledger as validate_92_ledger,
+)
 
 RESEARCH_REF = "refs/remotes/origin/research-persistence"
 MANIFEST_PATH = "research/handoff/manifest.json"
@@ -96,6 +101,11 @@ def validate_versioned_handoff(manifest, immutable_manifest, snapshot_sha):
     append-only research snapshot with individually cross-checked identities,
     evidence counts, source manifests, and immutable artifacts.
     """
+    if (manifest.get("schema_version") == 4 and
+            immutable_manifest.get("kind") == KIND_92):
+        validate_92_frozen(manifest, immutable_manifest)
+        return
+
     if (manifest.get("schema_version") == 4 and
             immutable_manifest.get("kind") == KIND_91):
         validate_91_frozen(manifest, immutable_manifest)
@@ -855,6 +865,46 @@ def validate():
     if source_sha != sha:
         raise ValueError("Versioned handoff snapshot points to a different research commit")
     validate_versioned_handoff(manifest, immutable_manifest, snapshot_blob_sha)
+    if immutable_manifest.get("kind") == KIND_92:
+        # Verify 92-batch readback Git IDs against the immutable replay commit.
+        # The rolling manifest is a pointer, never evidence of publication.
+        ledger_path = safe_path(immutable_manifest["verification_ledger_path"])
+        ledger = json.loads(bound_blob(ledger_path).decode("utf-8"))
+        snapshot = manifest["verified_replay_commit_sha"]
+        subprocess.run(["git", "merge-base", "--is-ancestor", snapshot, handoff_commit],
+                       check=True, capture_output=True)
+        paths92 = {
+            "binary": manifest["versioned_research_sqlite_gz_path"],
+            "report": manifest["replay_report_path"],
+            "checksum": manifest["replay_evidence"]["compressed_checksum_path"],
+            "batch": immutable_manifest["source_batch_artifact_paths"][0],
+            "coverage": immutable_manifest["coverage_artifact_paths"][0],
+            "audit": immutable_manifest["chapter_audit_artifact_paths"][0],
+            "preflight": immutable_manifest["source_identity_preflight_path"],
+        }
+        actual92 = {}
+        for name, path in paths92.items():
+            safe_path(path)
+            pinned = git("rev-parse", f"{snapshot}:{path}").decode().strip()
+            current = git("rev-parse", f"{handoff_commit}:{path}").decode().strip()
+            if pinned != current:
+                raise ValueError("92-batch research Git artifact changed: " + path)
+            actual92[name] = current
+        validate_92_ledger(manifest, immutable_manifest, ledger, actual92)
+        canonical92 = manifest["canonical"]
+        manifest["canonical"] = {
+            "sources": canonical92["sources"], "claims": canonical92["claims"],
+            "claim_source_links": canonical92["claim_sources"],
+            "findings": canonical92["canonical_findings"],
+            "source_inspections": canonical92["canonical_source_inspections"],
+        }
+        manifest["evidence_status"] = {
+            "ready_for_editorial_review": False, "publication_approved": False,
+            "independently_corroborated_new_findings": 0,
+            "new_historical_finding_candidates_researched_this_run":
+                manifest["staged_counts"]["new_historical_finding_candidates_this_run"],
+        }
+
     if immutable_manifest.get("kind") == KIND_91:
         # Bind six artifacts to the verified replay commit and the immutable
         # handoff manifest. The ledger alone cannot authorize consumption.
