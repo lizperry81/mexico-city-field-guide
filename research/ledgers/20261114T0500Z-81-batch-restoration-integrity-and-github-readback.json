@@ -1,0 +1,84 @@
+{
+  "schema_version": 2,
+  "kind": "reconciliation_integrity_and_persisted_github_readback",
+  "generated_at": "2026-11-14T05:02:36.500Z",
+  "branch": "research-persistence",
+  "original_canonical": "research/canonical/CDMX_CANONICAL.sqlite",
+  "canonical_status": "V97_UNCHANGED_PROVISIONAL",
+  "canonical_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "batch_research_commit_sha": "d8a0d2dcb8ffbbbdd295cd5cbbe384068780ddfa",
+  "batch_path": "research/batches/20261114T0500Z-1867-republic-return-zocalo-archaeology.json",
+  "coverage_path": "research/coverage/20261114T0500Z-1867-republic-return-zocalo-archaeology-readiness.json",
+  "audit_path": "research/audits/20261114T0500Z-1867-republic-return-zocalo-archaeology-templo-discover-evidence-gates.json",
+  "replay_report_path": "research/reconciled/v4_d8a0d2dcb8ff/replay_report.json",
+  "snapshot_path": "research/reconciled/v4_d8a0d2dcb8ff/research_only.sqlite.gz",
+  "compressed_checksum_path": "research/reconciled/v4_d8a0d2dcb8ff/compressed_sha256.txt",
+  "before": {
+    "github_batches": 80,
+    "substantive_finding_ids": 486,
+    "provisional_source_identities": 188,
+    "source_inspection_metadata_rows": 226,
+    "canonical_sources": 616,
+    "canonical_claims": 422,
+    "canonical_claim_source_links": 403,
+    "canonical_findings": 68
+  },
+  "after": {
+    "github_batches": 81,
+    "substantive_finding_ids": 497,
+    "provisional_source_identities": 194,
+    "source_inspection_metadata_rows": 232,
+    "canonical_sources": 616,
+    "canonical_claims": 422,
+    "canonical_claim_source_links": 403,
+    "canonical_findings": 68
+  },
+  "delta": {
+    "new_batched_findings": 11,
+    "new_source_id_candidates": 6,
+    "new_source_inspection_metadata": 6
+  },
+  "verification": {
+    "replay_report_git_blob_sha": "a8891e76242cf0ad2494aa15943f422f84c94d56",
+    "gzip_git_blob_sha": "188dca6d9c5a8642f669815caa736677ca244f0d",
+    "gzip_size_bytes": 948642,
+    "compressed_sha256_expected": "34c8491eff2020887526d778d1760514ff2cd2ed7c92004aa9b1799cebeb6be9",
+    "compressed_sha256_computed_from_github_fetched_bytes": "34c8491eff2020887526d778d1760514ff2cd2ed7c92004aa9b1799cebeb6be9",
+    "compressed_digest_match": true,
+    "uncompressed_sqlite_sha256_from_replay_report": "d4fa7b8d2cc722dd5164caba1053f8a119cc8ce87b092293f55a3c45d13d1d25",
+    "uncompressed_digest_retested_by_github_workflow": true,
+    "integrity_check": "ok",
+    "foreign_key_violations": 0,
+    "canonical_tables_preserved": 88,
+    "canonical_rows_unchanged": true,
+    "branch_readback": true,
+    "hash_algorithm": "SHA-256, decoded GitHub contents API binary compared with committed checksum",
+    "source_identity_auto_merge": false
+  },
+  "unresolved": {
+    "unknown_source_ids": [
+      "PROPOSE_SOURCE_SLOAD_2020_BOTANICAL_DATASET_NOT_IN_CANONICAL"
+    ],
+    "cross_batch_source_metadata_collisions": [
+      "STG-SRC-MANZANILLA-LOPEZ-FRETER-1996",
+      "v95-sload-cave-2020"
+    ],
+    "unresolved_index_only_count": 1,
+    "detached_original_inspection_rows": 37,
+    "detached_same_url_candidate": 9,
+    "detached_no_candidate_match": 28
+  },
+  "status": "VERIFIED_VERSIONED_NONCANONICAL_RESEARCH_STAGING",
+  "evidence_status": "source-located research candidates, not independent editorial corroboration",
+  "ready_for_editorial_review": false,
+  "ready_for_publication": false,
+  "main_modified": false,
+  "automated_merge": false,
+  "blockers": [
+    "Original newspaper images and archival urban maps missing for 1867 route and Victory statue",
+    "Original UNAM 1867 pamphlet full text and original 1843 construction reports not examined",
+    "Photo copyright, present-day plaza surface markers and field visitor access unverified",
+    "Original 1983 and 2017 archaeological reports missing",
+    "Existing 37 detached inspection identity reviews, two metadata conflicts and one proposed botanical source reference remain unresolved"
+  ]
+}
