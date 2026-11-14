@@ -1,0 +1,62 @@
+{
+  "schema_version": 4,
+  "kind": "append_only_research_handoff_history",
+  "generated_at": "2026-11-14T05:03:11.006Z",
+  "branch": "research-persistence",
+  "research_commit_sha": "d8a0d2dcb8ffbbbdd295cd5cbbe384068780ddfa",
+  "canonical_version": "V97",
+  "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_status": "unchanged_provisional_V97_not_promoted",
+  "staged_counts": {
+    "github_batches_replayed": 81,
+    "github_distinct_substantive_finding_ids": 497,
+    "github_source_candidates": 194,
+    "github_inspection_entries": 232,
+    "unknown_source_refs": 1,
+    "source_metadata_collisions": 2,
+    "detached_source_identity_review_pending": 37,
+    "unresolved_index_only_ids": 1,
+    "new_historical_finding_candidates_this_run": 11,
+    "new_source_candidates_all_types_this_run": 6,
+    "new_source_inspection_metadata_this_run": 6
+  },
+  "batch_path": "research/batches/20261114T0500Z-1867-republic-return-zocalo-archaeology.json",
+  "coverage_artifact_paths": [
+    "research/coverage/20261114T0500Z-1867-republic-return-zocalo-archaeology-readiness.json"
+  ],
+  "chapter_audit_artifact_paths": [
+    "research/audits/20261114T0500Z-1867-republic-return-zocalo-archaeology-templo-discover-evidence-gates.json"
+  ],
+  "reconciliation_artifact_paths": [
+    "research/ledgers/20261114T0500Z-81-batch-restoration-integrity-and-github-readback.json",
+    "research/reconciled/v4_d8a0d2dcb8ff/replay_report.json",
+    "research/reconciled/v4_d8a0d2dcb8ff/compressed_sha256.txt"
+  ],
+  "versioned_research_sqlite_gz_path": "research/reconciled/v4_d8a0d2dcb8ff/research_only.sqlite.gz",
+  "versioned_research_sha256": "d4fa7b8d2cc722dd5164caba1053f8a119cc8ce87b092293f55a3c45d13d1d25",
+  "compressed_sha256": "34c8491eff2020887526d778d1760514ff2cd2ed7c92004aa9b1799cebeb6be9",
+  "github_binary_blob_sha": "188dca6d9c5a8642f669815caa736677ca244f0d",
+  "verification": {
+    "sqlite_integrity": "ok",
+    "foreign_key_violations": 0,
+    "canonical_tables_preserved": 88,
+    "canonical_rows_unchanged": true,
+    "github_readback_compressed_digest_match": true
+  },
+  "evidence_status": "staged source-located candidates, not independent corroboration, reviewed or approved publication",
+  "ready_for_editorial_review": false,
+  "ready_for_publication": false,
+  "canonical_promoted": false,
+  "automatically_merged": false,
+  "main_modified": false,
+  "blockers": [
+    "37 original detached inspections have no approved identity join",
+    "Two source-id metadata collisions and one proposed botanical source reference remain unresolved",
+    "An index-only finding reference lacks substantive record",
+    "Original 1867 newspaper pages and 1843 construction accounts unexamined",
+    "2017 final excavation file, 1983 investigation and 2026 on-site Zócalo marker/access not verified",
+    "Historical image rights not cleared",
+    "Templo Mayor seven original source-evidence gates remain open"
+  ],
+  "consumer_instruction": "Research-only. Do not merge to main, display unapproved findings as established chapter narrative, assert rights clearance or treat candidate source IDs as editorially corroborated."
+}
