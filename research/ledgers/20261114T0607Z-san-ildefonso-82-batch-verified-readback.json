@@ -1,0 +1,69 @@
+{
+  "schema_version": 2,
+  "kind": "independent_source_and_github_readback_verification",
+  "generated_at": "2026-11-14T06:07:47.201Z",
+  "branch": "research-persistence",
+  "source_research_commit_sha": "9883d491ab082256dfb9cfcbb7816e603c14ab07",
+  "snapshot_commit_sha": "2f59ee44016eba1a8450947b7469c3863127f435",
+  "canonical_version": "V97",
+  "canonical_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_counts": {
+    "sources": 616,
+    "claims": 422,
+    "claim_sources": 403,
+    "canonical_findings": 68,
+    "canonical_source_inspections": 9
+  },
+  "canonical_tables_preserved": 88,
+  "canonical_rows_unchanged": true,
+  "staged_findings": 508,
+  "staged_batches": 82,
+  "source_candidates": 202,
+  "source_inspection_payloads": 240,
+  "unknown_source_ids": [
+    "PROPOSE_SOURCE_SLOAD_2020_BOTANICAL_DATASET_NOT_IN_CANONICAL"
+  ],
+  "metadata_conflicts": [
+    {
+      "source_id": "STG-SRC-MANZANILLA-LOPEZ-FRETER-1996",
+      "source_path": "20261112T060230Z-auto09.json",
+      "reason": "cross_batch_source_metadata_collision"
+    },
+    {
+      "source_id": "v95-sload-cave-2020",
+      "source_path": "20261112T080125Z-auto09-te28-2009.json",
+      "reason": "cross_batch_source_metadata_collision"
+    }
+  ],
+  "detached_pending": 37,
+  "replay_report_path": "research/reconciled/v4_9883d491ab08/replay_report.json",
+  "replay_report_blob_sha": "5c5268475629bfa9c5d247e5cc419250c8ada6c6",
+  "gzip_path": "research/reconciled/v4_9883d491ab08/research_only.sqlite.gz",
+  "gzip_git_blob_sha": "281bed97ca00533df6c576be6dfc302f8f850653",
+  "checksum_path": "research/reconciled/v4_9883d491ab08/compressed_sha256.txt",
+  "checksum_blob_sha": "c1f7ee5899d579b4fe74a4c0c655d99142887be5",
+  "compressed_sha256_recomputed_on_binary_from_github": "caf827873a83e9d74782f589a72c9e10be10d5d16f6bd5900a75e23c04154cf2",
+  "compressed_sha256_matches_committed_text": true,
+  "uncompressed_sha256_from_workflow_report": "120f911828f65ff10ed08e3deb708d986bafd140ea394f2de3a1108d49b285a6",
+  "sqlite_integrity": "ok",
+  "foreign_key_violations": 0,
+  "github_readback_examination": true,
+  "findings_added": 11,
+  "sources_added": 8,
+  "inspections_added": 8,
+  "prior_manifest_blob_sha": "cd96f6761bf345a7e89a2403045dc4ecc23c3b2e",
+  "publication_approved": false,
+  "ready_for_editorial_review": false,
+  "blockers": [
+    "One proposed botanical dataset identity is not confirmed as a real source; do not invent citation",
+    "Two cross-batch source metadata collisions remain unresolved",
+    "37 detached historical inspection records retained, not identity-joined",
+    "2022 San Ildefonso exhibit interpretive material is NOT eyewitness evidence for 1520 Tóxcatl; source folio collation needed",
+    "Original 1922–26 SEP/ENP contracts, reports, correspondence and material conservation reports not inspected",
+    "San Ildefonso institutional page labels Leal work 'fresco' in heading and 'encausto' in body; medium unresolved",
+    "Artist study image rights, current building access, and route sightlines not verified",
+    "Templo Mayor independent 1428 chronology, phase plans, Coatepec evidence, Gamio 1914 field report and 1978 rescue logs remain outstanding",
+    "Unresolved index-only finding STG20261111T1302Z-RECON-V87-PRIMARY-001 is preserved, not fabricated",
+    "No independent editorial corroboration or publication approval"
+  ]
+}
