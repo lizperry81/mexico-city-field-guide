@@ -16,6 +16,7 @@ KINDS = {
     "templo_mayor_discover_exact_reader_seven_topic_source_locator_audit",
     "templo_mayor_exact_reader_blob_and_urban_chronology_boundary",
     "chapter_level_claim_to_source_locator_audit",
+    "templo_mayor_chapter_evidence_maintenance_and_1910_chronology_boundary",
 }
 
 
@@ -86,6 +87,34 @@ def parse_new_audit(path, doc, current_reader_blob):
     for flag in ("publication_approved", "editorial_approved",
                  "ready_for_publication", "canonical_promoted"):
         require(doc.get(flag) is not True, "audit claims editorial authority")
+    if kind == "templo_mayor_chapter_evidence_maintenance_and_1910_chronology_boundary":
+        require(doc.get("branch") == "research-persistence" and
+                doc.get("target_branch_read_only") == "main" and
+                doc.get("target_path") == "poi/templo-mayor/reader.html" and
+                doc.get("publication_approved") is False and
+                doc.get("ready_for_editorial_review") is False and
+                doc.get("original_text_was_re_read") is True and
+                HEX40.fullmatch(doc.get("target_main_blob_sha", "")),
+                "1910 chronological boundary lacks verified immutable reader scope")
+        rows = doc.get("claim_source_locator_matrix")
+        require(isinstance(rows, list) and bool(rows) and text(doc.get("boundary")),
+                "1910 chronological boundary lacks archived source checks")
+        result = []
+        for index, row in enumerate(rows, 1):
+            require(isinstance(row, dict) and
+                    all(text(row.get(k)) for k in
+                        ("topic", "reader_anchor", "source_locator", "status", "next")) and
+                    row["source_locator"].startswith("research/audits/") and
+                    row["source_locator"].endswith(".json"),
+                    "1910 boundary has an untraceable prior audit")
+            result.append(review_item(
+                path, f"centenario-boundary-{index:02d}", row["topic"],
+                anchor=row["reader_anchor"],
+                reader_match=doc["target_main_blob_sha"] == current_reader_blob,
+                locators=[{"document": row["source_locator"],
+                           "locator": "Prior audit pointer; original historical source pending"}],
+                status=row["status"], gap=row["next"]))
+        return result
     if kind == "templo_mayor_discover_exact_prose_claim_to_source_locator_addendum":
         require(doc.get("publication_approved") is False and
                 doc.get("ready_for_editorial_review") is False and
@@ -228,7 +257,9 @@ def parse_new_audit(path, doc, current_reader_blob):
                      or row["reader_anchor"])
             require(text(topic) and text(ident),
                     "dated reader gate has no identifiable historical question")
-            source_rows = row.get("source_locator_matrix") or row.get("source_locators")
+            source_rows = (row["source_locator_matrix"]
+                           if "source_locator_matrix" in row
+                           else row.get("source_locators"))
             require(isinstance(source_rows, list) and
                     (bool(source_rows) or
                      kind == "templo_mayor_discover_cross_period_and_current_reader_evidence_gate"),

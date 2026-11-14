@@ -205,6 +205,32 @@ cu_audit = {
 cu_items = parse_new_audit("research/audits/cu.json", cu_audit, "a"*40)
 assert len(cu_items) == 1 and cu_items[0]["publication_authorization"] is False
 assert cu_items[0]["reader_audit_matches_main_blob"] is True
+# Earlier 1910 modern-city boundary audits provide only previous-audit
+# pointers, never original-source corroboration or publication authority.
+boundary_audit = {
+    "kind": "templo_mayor_chapter_evidence_maintenance_and_1910_chronology_boundary",
+    "branch": "research-persistence", "target_branch_read_only": "main",
+    "target_path": "poi/templo-mayor/reader.html", "target_main_blob_sha": "a"*40,
+    "original_text_was_re_read": True, "publication_approved": False,
+    "ready_for_editorial_review": False, "boundary": "Modern City chapter",
+    "claim_source_locator_matrix": [
+        {"topic": "Triple Alliance dates", "reader_anchor": "In the late 1420s",
+         "source_locator": "research/audits/older.json",
+         "status": "unverified", "next": "Inspect original chronology"}
+    ]
+}
+items = parse_new_audit("research/audits/boundary.json", boundary_audit, "a"*40)
+assert len(items) == 1 and items[0]["publication_authorization"] is False
+assert items[0]["source_locator_candidates_unverified"][0]["document"] == "research/audits/older.json"
+bad_boundary = copy.deepcopy(boundary_audit)
+bad_boundary["publication_approved"] = True
+try:
+    parse_new_audit("research/audits/boundary.json", bad_boundary, "a"*40)
+except ValueError:
+    pass
+else:
+    raise AssertionError("Published historical boundary report accepted")
+
 # The 69-batch handoff is a different v4 schema. Its pinned immutable
 # history can be accepted for PRIVATE review only when every source delta,
 # replay identity and unpublished evidence restriction matches.
