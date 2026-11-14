@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "kind": "app_implementation_and_private_research_handoff",
+  "date_utc": "2026-11-14",
+  "branch": "main",
+  "implementation_head_before_record": "b77f7bcfe7910ae1fe3defc8e4a60ea73da86c69",
+  "protected_baseline": {
+    "path": "editorial/DISCOVER_APPROVED_BASELINE_2026-11-13.md",
+    "git_blob_sha": "e6e1dec110d6cfcc3adbee8e942c9bc8cee62963",
+    "unchanged": true,
+    "archive_of_approved_discover_chapters_created": false,
+    "reason": "Exact approved conversation manuscripts unavailable with conclusive provenance; differing DOCX review copies are candidates only"
+  },
+  "research": {
+    "manifest_path": "research/handoff/manifest.json",
+    "branch": "research-persistence",
+    "research_input_commit_sha": "24c4d17029284966912c15b2d422f7b308a5c36f",
+    "verified_replay_commit_sha": "7443ccd48f53eb6b9820958bed22155400a98149",
+    "contract": "90_batch_sqlite_integrity_workflow_git_readback_verified_noncanonical_unapproved",
+    "batches": 90,
+    "provisional_findings": 596,
+    "canonical_v97": {
+      "sources": 616,
+      "claims": 422,
+      "claim_sources": 403,
+      "findings": 68
+    },
+    "new_topic": "Centro Urbano Presidente Alemán (CUPA) 1947-1949 and Centro Urbano Presidente Juárez 1952",
+    "provisional_audit_topics_private": 211,
+    "verified_in_build_action": 43607275897,
+    "research_editorial_review_ready": false,
+    "research_publication_ready": false,
+    "staged_findings_published": 0,
+    "limitations": [
+      "CUPA management agency label anachronism for 1949 vs ISSSTE origin in 1959",
+      "Conflicting six vs seven high-rise blocks",
+      "Original site access, archival design documents and photo rights unresolved",
+      "37 detached inspection source identities and two metadata collisions unresolved",
+      "Research audit source locator descriptions without source IDs kept private as hints"
+    ]
+  },
+  "changed_files": [
+    "scripts/handoff_90_history.py",
+    "scripts/test_handoff_90_history.py",
+    "scripts/check_research_handoff.py",
+    "scripts/test_research_handoff.py",
+    "scripts/handoff_new_audits.py",
+    "scripts/test_handoff_unattributed.py",
+    "scripts/build_discover_editorial.py",
+    "scripts/test_discover_editorial.py",
+    "editorial/discover/README.md"
+  ],
+  "controls": [
+    "90-batch immutable research Git-object and workflow attestations, with no automatic publication",
+    "Unattributed audit locator hints retained only as private questions; no fabricated source identity or page locator",
+    "Approved future Discover deep dives require explicit page-checked evidence, source IDs, source locations, and verbatim chapter-archive matching",
+    "No historical prose changed and no new image asset published",
+    "Recovered homepage, eight Templo Mayor field chapters, 21 claims, 12 sources, localStorage/comments and other POIs preserved by deployed automated tests"
+  ],
+  "validation": [
+    "scripts/check_discover_editorial_baseline.py",
+    "scripts/test_research_handoff.py",
+    "scripts/test_discover_editorial.py",
+    "scripts/test_reader_navigation.js",
+    "scripts/test_templo_review.py"
+  ],
+  "live_release_status": "Awaiting final GitHub Pages workflow for handoff-record commit; prior application implementation build passed",
+  "editorial_content_approval_required": true,
+  "dec_10_feature_freeze_target_unchanged": true
+}
