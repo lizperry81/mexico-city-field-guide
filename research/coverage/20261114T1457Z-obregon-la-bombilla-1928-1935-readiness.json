@@ -1,0 +1,141 @@
+{
+  "schema_version": 3,
+  "kind": "period_x_theme_x_geography_explanatory_readiness_delta",
+  "generated_at": "2026-11-14T14:57:32Z",
+  "branch": "research-persistence",
+  "source_batch_path": "research/batches/20261114T1457Z-obregon-la-bombilla-1928-1935.json",
+  "evidence_status": "noncanonical_located_1928_1935_history_awaiting_independent_corroboration",
+  "rating_definitions": {
+    "substantial": "Direct primary records independently checked, historical interpretive narrative prepared, site/current access and image rights cleared.",
+    "developing": "Source-specific explanatory trajectory with locators, some originals or corroboration still missing.",
+    "sparse": "Important source, location, contested interpretation, or field feature not verified.",
+    "missing": "Essential record or rights/access not yet available; no source-located explanatory claim."
+  },
+  "cells": [
+    {
+      "period": "1920s political succession",
+      "theme": "Presidential election",
+      "geography": "San Ángel / La Bombilla",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1457Z-obregon-la-bombilla-1928-1935-01"
+      ],
+      "evidence_gap": "Original 18 July eyewitness newspaper and trial records not inspected; single source identifies possible other participants, do not treat conspiracy claim as settled."
+    },
+    {
+      "period": "Postrevolutionary power struggles",
+      "theme": "Caudillismo",
+      "geography": "Mexico City / national institutions",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1457Z-obregon-la-bombilla-1928-1935-02"
+      ],
+      "evidence_gap": "Narrative from government historical interpretation; distinguish participants' accusations against Calles from evidence of his complicity."
+    },
+    {
+      "period": "Mexican party-state formation",
+      "theme": "Succession",
+      "geography": "Mexico City / Congress and political institutions",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1457Z-obregon-la-bombilla-1928-1935-03"
+      ],
+      "evidence_gap": "Speech transcript and congressional decrees not inspected; interpret rhetoric as stated program, not evidence institutions were immediately democratic."
+    },
+    {
+      "period": "Institutionalization and public communication",
+      "theme": "Propaganda",
+      "geography": "Mexico City press and federal politics",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1457Z-obregon-la-bombilla-1928-1935-04"
+      ],
+      "evidence_gap": "Original 27 May 1929 first issue not directly viewed. Article draws from official documentary collection and should be compared with opposition reporting."
+    },
+    {
+      "period": "Religious conflict and criminal justice",
+      "theme": "Cristero conflict",
+      "geography": "San Ángel / Lecumberri",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T1457Z-obregon-la-bombilla-1928-1935-05"
+      ],
+      "evidence_gap": "Court transcript, evidence for charges, contemporaneous defense and prosecution records not examined. Explicitly avoid making institutional or collective religious attribution."
+    },
+    {
+      "period": "Urban site transformation",
+      "theme": "Lost sites",
+      "geography": "Parque de la Bombilla / Insurgentes and Arenal",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1457Z-obregon-la-bombilla-1928-1935-06"
+      ],
+      "evidence_gap": "Precise footprint, park paths and accessible public vantage cannot be assumed without site/survey overlay or current access check."
+    },
+    {
+      "period": "State memorialization",
+      "theme": "Commemoration",
+      "geography": "Monumento a Álvaro Obregón",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1457Z-obregon-la-bombilla-1928-1935-07"
+      ],
+      "evidence_gap": "INAH page is marked under validation; inscription and dated signed plan not inspected physically/visually. Do not claim current text is legible."
+    },
+    {
+      "period": "Architectural interpretation",
+      "theme": "Monumental sculpture",
+      "geography": "Monumento a Álvaro Obregón / park entrance",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T1457Z-obregon-la-bombilla-1928-1935-08"
+      ],
+      "evidence_gap": "CID catalog borrows Art Deco description from an external tourism website; photograph negatives and up-to-date exterior views not inspected; avoid rigid sculpture labels before comparison with 1934 plan."
+    },
+    {
+      "period": "Historical photography and memory",
+      "theme": "Photographic provenance",
+      "geography": "San Ángel / Parque de la Bombilla",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T1457Z-obregon-la-bombilla-1928-1935-09"
+      ],
+      "evidence_gap": "Captions are not independently validated originals; archival usage rights not obtained. Banquet image cannot establish an exact second-by-second sequence."
+    },
+    {
+      "period": "Modern material culture and built heritage",
+      "theme": "Architectural drawing",
+      "geography": "Monumento a Álvaro Obregón",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1457Z-obregon-la-bombilla-1928-1935-10"
+      ],
+      "evidence_gap": "Original manuscript image not viewed; compare as-designed/as-built; source label 'premio' might be original annotation or catalog metadata."
+    },
+    {
+      "period": "Material politics of monuments",
+      "theme": "Human remains ethics",
+      "geography": "Monumento a Álvaro Obregón / former interior display",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T1457Z-obregon-la-bombilla-1928-1935-11"
+      ],
+      "evidence_gap": "Original specimen records, accession and removal date are unverified; do not assert existence in display today or advertise interior access."
+    },
+    {
+      "period": "1928-1935",
+      "theme": "Rights-cleared historical photographs and site access",
+      "geography": "Parque de la Bombilla",
+      "rating": "missing",
+      "finding_ids": [],
+      "evidence_gap": "SINAFO/CID photo rights, original negatives, current site entry and safe public-sidewalk view not verified."
+    }
+  ],
+  "summary": {
+    "substantial": 0,
+    "developing": 7,
+    "sparse": 4,
+    "missing": 1
+  },
+  "next_gap": "Obtain the UNAM 11 June 1934 signed plan and direct July 18 1928 El Universal Gráfico, then compare original trial proceedings and obtain SINAFO image permission."
+}
