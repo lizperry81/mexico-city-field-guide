@@ -1,0 +1,77 @@
+{
+  "schema_version": 2,
+  "kind": "full_batch_github_reconciliation_verified_readback",
+  "generated_at": "2026-11-14T02:08:42.040Z",
+  "branch": "research-persistence",
+  "base_commit_sha": "aca86792c22da0fe65bec901fc427219a4435726",
+  "research_batch_commit_sha": "48b6c89f79792b5b87fa238eb219d72febaf6325",
+  "github_actions_immutable_replay_commit_sha": "47bf1b4c3bacb815a3e9e4003181ea790329324a",
+  "batch_path": "research/batches/20261114T0202Z-water-management-1608-1900-and-viga.json",
+  "coverage_path": "research/coverage/20261114T0202Z-water-management-1608-1900-and-viga-readiness.json",
+  "templo_audit_path": "research/audits/20261114T0202Z-water-management-1608-1900-and-viga-templo-discover-cross-period-gates.json",
+  "preflight_path": "research/ledgers/20261114T0202Z-water-management-1608-1900-and-viga-source-inventory-and-count-preflight.json",
+  "versioned_research_sqlite_gz_path": "research/reconciled/v4_48b6c89f7979/research_only.sqlite.gz",
+  "sqlite_compressed_sha256": "b0f2a02b3762ddc71127c17bfe20f0045724db3fcda8324daa23016e6f69a977",
+  "sqlite_uncompressed_sha256": "4300bf6a9617a360f250bddf9340528c052ee1cfcbe296fa3e9845533d14761b",
+  "sqlite_blob_git_sha": "e6803e6d705715e36cf4d9419f4885c9657b28af",
+  "sqlite_gzip_bytes": 906703,
+  "replay_report_path": "research/reconciled/v4_48b6c89f7979/replay_report.json",
+  "replay_report_blob_git_sha": "f1cd6413a605887bd289595b37a773bc5d12cafd",
+  "sha256_manifest_path": "research/reconciled/v4_48b6c89f7979/compressed_sha256.txt",
+  "counts": {
+    "historical_findings_before": 455,
+    "historical_findings_after": 464,
+    "github_batches_before": 77,
+    "github_batches_after": 78,
+    "provisional_sources_before": 161,
+    "provisional_sources_after": 167,
+    "inspections_before": 199,
+    "inspections_after": 205,
+    "original_canonical": {
+      "sources": 616,
+      "claims": 422,
+      "claim_source_links": 403,
+      "findings": 68,
+      "source_inspections": 9
+    },
+    "unresolved_references_before": 1,
+    "unresolved_references_after": 1,
+    "source_metadata_conflicts_before": 2,
+    "source_metadata_conflicts_after": 2,
+    "detached_original_inspections_pending": 37
+  },
+  "validation": {
+    "replay_script": "research/pipeline/reconcile_git_batches.py",
+    "github_batch_json_files_examined": 78,
+    "raw_batch_documents_in_sqlite": 78,
+    "sqlite_integrity": "ok",
+    "foreign_key_violations": 0,
+    "canonical_tables_preserved": 88,
+    "canonical_rows_unchanged": true,
+    "research_staging_only_not_canonical": true,
+    "unresolved_source_id": "PROPOSE_SOURCE_SLOAD_2020_BOTANICAL_DATASET_NOT_IN_CANONICAL",
+    "cross_batch_metadata_collisions": [
+      "STG-SRC-MANZANILLA-LOPEZ-FRETER-1996",
+      "v95-sload-cave-2020"
+    ],
+    "hash_checks": {
+      "persisted_binary_fetched_from_github": true,
+      "persisted_binary_git_blob_sha_readback": true,
+      "compressed_sha256_recomputed_over_fetched_binary_in_JS": true,
+      "compressed_hash_matches_committed_checksum": true,
+      "uncompressed_hash_matches_replay_report": true,
+      "workflow_git_push_git_readback_reported": true
+    },
+    "changes_confined_to_research": true
+  },
+  "new_findings_evidence_status": "9 source-located candidates (4 broad historical, 3 place-oriented, 2 specialist); none independently corroborated or approved",
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "canonical_promoted": false,
+  "blockers": [
+    "Original 1608 diary, 1859 technical map, 1872 municipal council file, 1900 newspaper and 19th-century technical accounts not directly inspected",
+    "Original source photograph rights and current Canal de la Viga walking route not confirmed",
+    "37 detached original source inspections, two metadata collisions, one proposed botanical dataset reference remain unjoined",
+    "Templo Mayor contested Triple Alliance dating, 1914 Gamio report, conquest folios and 1978 salvage notebooks remain open"
+  ]
+}
