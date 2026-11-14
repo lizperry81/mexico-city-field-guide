@@ -1,0 +1,436 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261114T0100Z-government-buildings-1970-1987-and-1978-findspot",
+  "generated_at": "2026-11-14T01:01:39.588Z",
+  "branch": "research-persistence",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "storage_role": "immutable_noncanonical_research_batch",
+  "previous_verified_replay": "research/reconciled/v4_7eb0311ce172/replay_report.json",
+  "prior_verified_counts": {
+    "github_batches_replayed": 76,
+    "staged_findings": 444,
+    "source_candidates": 156,
+    "inspection_entries": 194,
+    "canonical_sources": 616,
+    "canonical_claims": 422,
+    "canonical_links": 403,
+    "canonical_findings": 68
+  },
+  "research_scope": "1941–1987 capital territorial government and real architecture of local services, with 1928 cartographic context and a two-source 1978 Templo Mayor rescue-discrepancy audit. 5 broad history / 4 place-oriented / 2 specialist archaeology candidates. Original UNAM thesis page images inspected; official legal texts and field logs not directly read.",
+  "sources": [
+    {
+      "id": "STG-SRC-HURTADO-ARELLANO-2009-POLITICO-CONSTITUCIONAL",
+      "title": "La Ciudad de México y el Distrito Federal: un análisis político-constitucional",
+      "authors": "Javier Hurtado González; Alberto Arellano Ríos",
+      "publication": "Estudios Constitucionales 7(2) (2009), pp. 207-239",
+      "url": "https://www.redalyc.org/pdf/820/82011841008.pdf",
+      "access_scope": "published article machine-readable text pp.216-220 examined; PDF screenshot returned 403",
+      "status": "scholarly_original_article_text_extracted_visual_page_check_failed"
+    },
+    {
+      "id": "STG-SRC-PAVON-GONZALEZ-1987-DELEGACION-ALVARO-OBREGON",
+      "title": "Delegación Álvaro Obregón: propuesta arquitectónica de nuevo edificio de gobierno",
+      "authors": "Leticia del Carmen Pavón González",
+      "publication": "UNAM Facultad de Arquitectura thesis, semestre 87-2, 1987",
+      "url": "https://tesiunamdocumentos.dgb.unam.mx/pmig2018/0052311/0052311.pdf",
+      "access_scope": "original scanned thesis pages (printed 12,13,27) visually inspected; machine text pp.10-13,27-29 read; underlying 1973 DDF study not inspected",
+      "status": "original_thesis_partial_visual_inspection_not_original_government_study"
+    },
+    {
+      "id": "STG-SRC-CARMONA-DF-1928-ARTICLE73",
+      "title": "Se reforma la Constitución para eliminar los municipios en el Distrito Federal (20 agosto 1928)",
+      "authors": "Doralicia Carmona Dávila",
+      "publication": "Memoria Política de México, historical retrospective with documentary excerpts",
+      "url": "https://www.memoriapoliticademexico.org/Efemerides/8/20081928.html",
+      "access_scope": "complete historical retrospective HTML text inspected; original Diario Oficial not examined",
+      "status": "secondary_retrospective_with_reproduced_provisions"
+    },
+    {
+      "id": "STG-SRC-MATOS-PTM-30ANOS-2016",
+      "title": "El Proyecto Templo Mayor. A más de 30 años",
+      "authors": "Eduardo Matos Moctezuma",
+      "publication": "Arqueología Mexicana / Relatos e Historias en México, online republication",
+      "url": "https://www.relatosehistorias.mx/mexico-antiguo/el-proyecto-templo-mayor-mas-de-30-anos",
+      "access_scope": "published indexed article excerpt inspected; full-page open returned 502; original 1978 notebook not examined",
+      "status": "first_person_researcher_account_indexed_excerpt_only"
+    },
+    {
+      "id": "STG-SRC-BARRERA-TM-VESTIGIOS-ES79",
+      "title": "Templo Mayor. Vestigios prehispánicos",
+      "authors": "Raúl Barrera Rodríguez",
+      "publication": "Arqueología Mexicana, edición especial 79, pp. 32-35",
+      "url": "https://www.arqueologiamexicana.mx/mexico-antiguo/templo-mayor-vestigios-prehispanicos",
+      "access_scope": "published indexed article excerpt inspected; full-page open returned 502; 1978 fieldwork drawings not examined",
+      "status": "specialist_archaeology_article_indexed_excerpt_only"
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "20261114T0100Z-INS-01",
+      "source_id": "STG-SRC-HURTADO-ARELLANO-2009-POLITICO-CONSTITUCIONAL",
+      "locator": "Estudios Constitucionales 2009 printed pp.216-219, PDF extracted lines 421-541; screenshot request failed 403",
+      "access": "published article machine-readable text pp.216-220 examined; PDF screenshot returned 403",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0100Z-INS-02",
+      "source_id": "STG-SRC-PAVON-GONZALEZ-1987-DELEGACION-ALVARO-OBREGON",
+      "locator": "UNAM thesis original page images printed pp.12,13,27; extracted text printed pp.10-13,27-29",
+      "access": "original scanned thesis pages (printed 12,13,27) visually inspected; machine text pp.10-13,27-29 read; underlying 1973 DDF study not inspected",
+      "primary_original_examined": true,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0100Z-INS-03",
+      "source_id": "STG-SRC-CARMONA-DF-1928-ARTICLE73",
+      "locator": "Memoria Política de México HTML paragraphs on Article 73 before/after reform and 1929 effective date",
+      "access": "complete historical retrospective HTML text inspected; original Diario Oficial not examined",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0100Z-INS-04",
+      "source_id": "STG-SRC-MATOS-PTM-30ANOS-2016",
+      "locator": "Matos account published indexed opening excerpt on first five offerings and rescue personnel; full page 502",
+      "access": "published indexed article excerpt inspected; full-page open returned 502; original 1978 notebook not examined",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0100Z-INS-05",
+      "source_id": "STG-SRC-BARRERA-TM-VESTIGIOS-ES79",
+      "locator": "Barrera 2018 specialist article indexed paragraphs on 20 March 1978 start and six exposed stages; full page 502",
+      "access": "published indexed article excerpt inspected; full-page open returned 502; 1978 fieldwork drawings not examined",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    }
+  ],
+  "findings": [
+    {
+      "id": "STG-20261114T0100Z-GOV-TM-01",
+      "assertion": "The December 1928 law did more than eliminate elected councils: according to the 2009 constitutional analysis, its first twenty articles specified the Department Central and thirteen delegations through streets, railways, bridges, hills and canals. The 1928 demarcation therefore requires historical cartography, not a projection of current alcaldía boundaries.",
+      "date_or_range": "1928–1929",
+      "period": "1928 political geography",
+      "themes": [
+        "jurisdictional boundary",
+        "urban landscape",
+        "municipal abolition"
+      ],
+      "geographies": [
+        "Departamento Central",
+        "Tacuba",
+        "Tacubaya",
+        "Mixcoac"
+      ],
+      "poi_ids": [
+        "antiguo-palacio-del-ayuntamiento"
+      ],
+      "source_ids": [
+        "STG-SRC-HURTADO-ARELLANO-2009-POLITICO-CONSTITUCIONAL",
+        "STG-SRC-CARMONA-DF-1928-ARTICLE73"
+      ],
+      "source_locator": "Hurtado and Arellano 2009 p.217, numbered points 2-4; Carmona HTML paragraph on 1928 Ley Orgánica",
+      "limitations": "The original Dec 31 1928 DOF articles 1-20 and signed maps not examined; retrospective may compress legal sequence",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261114T0100Z-GOV-TM-02",
+      "assertion": "The 31 December 1941 law replaced the earlier Department Central division with a City of Mexico and twelve political delegations, maintaining federal legislative control; this intermediate 1941 period must not disappear between accounts of 1928 and 1970.",
+      "date_or_range": "1941",
+      "period": "Mid-20th-century capital government",
+      "themes": [
+        "urban governance",
+        "territorial change"
+      ],
+      "geographies": [
+        "Ciudad de México",
+        "Distrito Federal"
+      ],
+      "poi_ids": [
+        "antiguo-palacio-del-ayuntamiento"
+      ],
+      "source_ids": [
+        "STG-SRC-HURTADO-ARELLANO-2009-POLITICO-CONSTITUCIONAL",
+        "STG-SRC-PAVON-GONZALEZ-1987-DELEGACION-ALVARO-OBREGON"
+      ],
+      "source_locator": "Hurtado and Arellano 2009 pp.217-218 section 2.5; Pavón González thesis printed p.28",
+      "limitations": "Original 1941 DOF law and boundary plan not inspected; no current-site physical attribution",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261114T0100Z-GOV-TM-03",
+      "assertion": "The 31 December 1970 legal reorganization expanded the Federal District from twelve to sixteen delegations, adding central jurisdictions Cuauhtémoc, Miguel Hidalgo, Benito Juárez and Venustiano Carranza; the published 2009 study ties the new borders to Article 11 of that law.",
+      "date_or_range": "1970–1971",
+      "period": "Modern district reorganization",
+      "themes": [
+        "administrative decentralization",
+        "district boundaries"
+      ],
+      "geographies": [
+        "Cuauhtémoc",
+        "Miguel Hidalgo",
+        "Benito Juárez",
+        "Venustiano Carranza"
+      ],
+      "poi_ids": [
+        "antiguo-palacio-del-ayuntamiento"
+      ],
+      "source_ids": [
+        "STG-SRC-HURTADO-ARELLANO-2009-POLITICO-CONSTITUCIONAL",
+        "STG-SRC-PAVON-GONZALEZ-1987-DELEGACION-ALVARO-OBREGON"
+      ],
+      "source_locator": "Hurtado and Arellano 2009 pp.218-219 section 2.6; Pavón González thesis printed p.28",
+      "limitations": "Law issued 31 Dec 1970 versus 1971 administrative implementation needs original decrees; no mapping from 1970 to present borders verified",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261114T0100Z-GOV-TM-04",
+      "assertion": "The constitutional analysis identifies a 31 December 1972 organic-law revision that modified boundaries of the sixteen delegations created under the 1970 arrangement. A walk or map keyed only to the 1970 version would conflate two distinct legal geographies.",
+      "date_or_range": "1972",
+      "period": "Modern territorial administrative reform",
+      "themes": [
+        "legal geography",
+        "cartographic revision"
+      ],
+      "geographies": [
+        "Distrito Federal",
+        "Álvaro Obregón"
+      ],
+      "poi_ids": [
+        "antiguo-palacio-del-ayuntamiento"
+      ],
+      "source_ids": [
+        "STG-SRC-HURTADO-ARELLANO-2009-POLITICO-CONSTITUCIONAL"
+      ],
+      "source_locator": "Hurtado and Arellano 2009 p.219 section 2.7",
+      "limitations": "Original 1972 law and historical boundary map not checked; geographic impact not quantified",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261114T0100Z-GOV-TM-05",
+      "assertion": "The 10 August 1987 reform established an elected Federal District Assembly with 40 majority-seat and 26 proportional-representation members, but Congress retained general legislative authority for the District; an elected assembly did not yet amount to a locally elected head of government.",
+      "date_or_range": "1987",
+      "period": "Restoration of representation",
+      "themes": [
+        "democratic representation",
+        "legislative limits"
+      ],
+      "geographies": [
+        "Distrito Federal",
+        "Centro Histórico"
+      ],
+      "poi_ids": [
+        "antiguo-palacio-del-ayuntamiento"
+      ],
+      "source_ids": [
+        "STG-SRC-HURTADO-ARELLANO-2009-POLITICO-CONSTITUCIONAL"
+      ],
+      "source_locator": "Hurtado and Arellano 2009 p.219 section 2.8, 40+26 seats and restricted powers",
+      "limitations": "Original 1987 decree and inaugural legislative debates not checked; assembly site at time not verified",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261114T0100Z-GOV-TM-06",
+      "assertion": "A 1987 UNAM architectural thesis reporting on DDF planning calculations lists approximately 123,000 square metres of central-administration space, 10,900 office workers, and an estimated 36,300-square-metre deficit. These are contemporary planning estimates, not verified measurements for 2026.",
+      "date_or_range": "circa 1973–1987",
+      "period": "Late-20th-century government infrastructure",
+      "themes": [
+        "public buildings",
+        "bureaucracy",
+        "space standards"
+      ],
+      "geographies": [
+        "Plaza de la Constitución",
+        "Centro Histórico"
+      ],
+      "poi_ids": [
+        "antiguo-palacio-del-ayuntamiento"
+      ],
+      "source_ids": [
+        "STG-SRC-PAVON-GONZALEZ-1987-DELEGACION-ALVARO-OBREGON"
+      ],
+      "source_locator": "Pavón González 1987 thesis printed pp.10-11, central office dimensioning and 1973 study attribution",
+      "limitations": "Underlying 1973 DDF equipment survey not examined; estimates may reflect different dates and typologies; cannot infer actual building footprint",
+      "learning_mode": "guided_walk_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261114T0100Z-GOV-TM-07",
+      "assertion": "The same architectural thesis records 48,250 square metres of decentralized delegación office floor space, 4,700 employees and a projected 14,200-square-metre deficit for 1978, illustrating that the 1970 governance reform created a second, physically distributed demand for offices.",
+      "date_or_range": "circa 1978–1987",
+      "period": "Decentralized city services",
+      "themes": [
+        "administrative space",
+        "public service delivery"
+      ],
+      "geographies": [
+        "Álvaro Obregón",
+        "Distrito Federal"
+      ],
+      "poi_ids": [
+        "delegacion-alvaro-obregon"
+      ],
+      "source_ids": [
+        "STG-SRC-PAVON-GONZALEZ-1987-DELEGACION-ALVARO-OBREGON"
+      ],
+      "source_locator": "Pavón González thesis printed p.11, decentralized office statistics",
+      "limitations": "Historical estimates as presented by thesis; no original official space register; proposed architecture not proof of eventual construction",
+      "learning_mode": "guided_walk_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261114T0100Z-GOV-TM-08",
+      "assertion": "The 1987 thesis judged some delegación offices poorly placed relative to population and transport, naming Coyoacán, Miguel Hidalgo and Álvaro Obregón among examples; it also says other delegations could not simply widen roads or relocate offices without damage to historic-character neighborhoods.",
+      "date_or_range": "circa 1978–1987",
+      "period": "Public access and historic preservation",
+      "themes": [
+        "transport access",
+        "heritage constraints",
+        "spatial inequality"
+      ],
+      "geographies": [
+        "Coyoacán",
+        "Tlalpan",
+        "Xochimilco",
+        "Álvaro Obregón"
+      ],
+      "poi_ids": [
+        "coyoacan",
+        "tlalpan-centro"
+      ],
+      "source_ids": [
+        "STG-SRC-PAVON-GONZALEZ-1987-DELEGACION-ALVARO-OBREGON"
+      ],
+      "source_locator": "Pavón González thesis printed p.11, subsections Ubicación and Calidad de la edificación",
+      "limitations": "Author's planning judgment not proof that any specific historic building survived; underlying 1973 DDF survey and photographs missing",
+      "learning_mode": "guided_walk_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261114T0100Z-GOV-TM-09",
+      "assertion": "The thesis distinguishes ordinary delegación technical offices from Civil Registry and neighborhood-board functions that needed ceremonial and representative space; it also describes semiurban Álvaro Obregón subdelegations as social-assistance and agricultural-information points. Administrative geography was reflected in the type of rooms residents encountered.",
+      "date_or_range": "circa 1980s",
+      "period": "Civic architecture and semiurban services",
+      "themes": [
+        "civil registry",
+        "neighborhood organization",
+        "rural-urban administration"
+      ],
+      "geographies": [
+        "Álvaro Obregón",
+        "Distrito Federal"
+      ],
+      "poi_ids": [
+        "delegacion-alvaro-obregon"
+      ],
+      "source_ids": [
+        "STG-SRC-PAVON-GONZALEZ-1987-DELEGACION-ALVARO-OBREGON"
+      ],
+      "source_locator": "Pavón González thesis original scanned printed p.13, items 2 and 3; screenshot reviewed",
+      "limitations": "Author's design diagnosis, not a verified visitor route or surviving room inventory; no 1980s municipal budget or registry floor plans checked",
+      "learning_mode": "guided_walk_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261114T0100Z-GOV-TM-10",
+      "assertion": "In Matos Moctezuma's published first-person retrospective, the initial 1978 Coyolxauhqui rescue included five offerings near the disk, and Raúl Arana and Rafael Domínguez inspected the discovery for Salvamento Arqueológico. Barrera Rodríguez's later overview instead names Ángel García Cook and Raúl Arana as responders; these may refer to different steps and must not be silently harmonized.",
+      "date_or_range": "21 February 1978 onward",
+      "period": "Rescue-archaeology chronology",
+      "themes": [
+        "archaeological method",
+        "source discrepancy"
+      ],
+      "geographies": [
+        "Templo Mayor",
+        "República de Guatemala"
+      ],
+      "poi_ids": [
+        "templo-mayor"
+      ],
+      "source_ids": [
+        "STG-SRC-MATOS-PTM-30ANOS-2016",
+        "STG-SRC-BARRERA-TM-VESTIGIOS-ES79"
+      ],
+      "source_locator": "Matos article indexed paragraph on first five offerings and named field visitors; Barrera article indexed paragraph on initial responders",
+      "limitations": "Neither the original 1978 field log nor full text of both later accounts inspected; the personnel discrepancy requires chronology before definitive attribution",
+      "learning_mode": "museum_deep_dive_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261114T0100Z-GOV-TM-11",
+      "assertion": "Barrera Rodríguez dates the beginning of the Proyecto Templo Mayor excavation campaign to 20 March 1978 and describes six of seven construction stages observable from the archaeological visitor entrance at the time of his publication. The statement describes the older visitor route, not a verified 2026 itinerary.",
+      "date_or_range": "20 March 1978–1982",
+      "period": "Templo Mayor project history",
+      "themes": [
+        "stratigraphy",
+        "archaeological access"
+      ],
+      "geographies": [
+        "Templo Mayor",
+        "Plaza Manuel Gamio"
+      ],
+      "poi_ids": [
+        "templo-mayor"
+      ],
+      "source_ids": [
+        "STG-SRC-BARRERA-TM-VESTIGIOS-ES79",
+        "STG-SRC-MATOS-PTM-30ANOS-2016"
+      ],
+      "source_locator": "Barrera Rodríguez, Arqueología Mexicana especial 79 pp.32-35, indexed opening two paragraphs; Matos indexed history of excavation",
+      "limitations": "Full article page images and original site phase drawings not inspected; route and number of visible stages require 2026 physical checks",
+      "learning_mode": "museum_deep_dive_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    }
+  ],
+  "quality_gates": {
+    "all_ids_unique": true,
+    "all_finding_source_ids_registered": true,
+    "canonical_original_untouched": true,
+    "independent_editorial_corroboration": false,
+    "primary_1928_1941_1970_1987_laws_checked": false,
+    "original_1978_field_log_checked": false,
+    "underlying_1973_government_survey_checked": false,
+    "publication_approved": false
+  },
+  "unresolved_conflicts": [
+    {
+      "subject": "1928 constitutional-law versus 1941 and 1970 changing boundaries",
+      "status": "open",
+      "explanation": "Original decrees, district surveys, period maps not directly inspected; do not georeference modern alcaldías back to historical delegations"
+    },
+    {
+      "subject": "1978 Coyolxauhqui first responding archaeologists",
+      "status": "open",
+      "explanation": "Matos retrospective Raúl Arana/Rafael Domínguez versus Barrera overview Ángel García Cook/Raúl Arana; may describe different stages, primary rescue logs missing"
+    },
+    {
+      "subject": "UNAM architectural thesis 1973/1978 planning figures",
+      "status": "open",
+      "explanation": "Thesis tabulates earlier DDF studies; primary data, unit conventions and exact study year not checked"
+    }
+  ],
+  "no_live_app_change": true,
+  "publication_approved": false
+}
