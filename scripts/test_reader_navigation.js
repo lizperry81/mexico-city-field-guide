@@ -56,6 +56,18 @@ const sectionLinks = sections.map(section => ({
   hash: '#' + section.id, click: null,
   addEventListener(type, fn) {assert.equal(type, 'click'); this.click = fn;}
 }));
+const returnLinks = [{
+  hash: '#history-contents', click: null,
+  addEventListener(type, fn) {assert.equal(type, 'click'); this.click = fn;}
+}];
+const historyContents = {
+  id: 'history-contents', tagName: 'NAV', focused: 0, scrolled: 0,
+  focus() {this.focused += 1;},
+  closest(selector) {
+    return selector === '[data-reader-panel]' ? panels.history : null;
+  },
+  scrollIntoView() {this.scrolled += 1;}
+};
 const skip = {
   click: null,
   addEventListener(type, fn) {assert.equal(type, 'click'); this.click = fn;}
@@ -91,7 +103,7 @@ const referenceLink = {
 const ids = {...panels, ...Object.fromEntries(stops.map(stop => [stop.id, stop])),
   ...Object.fromEntries(sections.map(section => [section.id, section])),
   'choose-stop': jump, 'previous-stop': prev, 'next-stop': next,
-  'skip-to-history': skip,
+  'skip-to-history': skip, 'history-contents': historyContents,
   'stop-progress': progress, 'stop-position': stopPosition,
   'stop-reference': reference, 'stop-reference-link': referenceLink,
   'stop-reference-thumb': referenceThumb,
@@ -100,6 +112,7 @@ const doc = {
   querySelectorAll(selector) {
     if (selector === '.reader-nav a') return links;
     if (selector === '.history-chapters a[href^="#"]') return sectionLinks;
+    if (selector === '.return-to-contents a[href="#history-contents"]') return returnLinks;
     if (selector === '[data-reader-panel]') return Object.values(panels);
     throw new Error('Unexpected document query: ' + selector);
   },
@@ -213,6 +226,18 @@ assert.equal(sections[0].scrolled, 2);
 location.hash = '#dossier-topic-2'; // Direct/history navigation must not steal focus.
 assert.equal(sections[1].heading.focused, 0);
 assert.equal(sections[1].scrolled, 1);
+// Return links restore focus to the contents, including same-hash Safari taps.
+// They must leave the on-site walk's selected stop and URL behavior intact.
+returnLinks[0].click();
+location.hash = '#history-contents';
+assert.equal(panels.history.hidden, false, 'Return link must show the history panel');
+assert.equal(historyContents.focused, 1, 'Return must focus the historical contents');
+assert.equal(historyContents.scrolled, 1, 'Return must scroll to the contents');
+returnLinks[0].click();
+assert.equal(historyContents.focused, 2, 'Repeated Safari return must restore focus');
+assert.equal(historyContents.scrolled, 2, 'Repeated return must scroll to the contents');
+location.hash = '#explore';
+assert.equal(jump.value, 'plaza', 'Discover return must not reset the physical walk');
 // A reload in the same tab should restore the selected on-site stop without
 // touching the annotation system's independent localStorage.
 const key = 'cdmx:templo-mayor:explore-stop';
@@ -237,4 +262,4 @@ const blockedWindow = {...windowContext, sessionStorage: {
 vm.runInNewContext(code, {...sandbox, window: blockedWindow});
 assert.equal(jump.value, 'twin-stairs', 'Navigation still works without storage');
 assert.equal(stopPosition.textContent, 'Stop 2 of 3', 'Position must work with storage disabled');
-console.log('PASS: keyboard skip, Discover TOC, Safari focus, pager, stop resume, deep links, and blocked storage');
+console.log('PASS: keyboard skip, Discover contents/return focus, Safari focus, pager, stop resume, deep links, and blocked storage');
