@@ -91,7 +91,7 @@ def validate_frozen(pointer, frozen):
               and set(subset).issubset(set(pointer.get(field, []))),
               "unbound research paths in " + field)
     check(isinstance(pointer.get("consumer_instruction"), str)
-          and "Do not publish" in pointer["consumer_instruction"]
+          and "must not publish" in pointer["consumer_instruction"]
           and "auto-merge" in pointer["consumer_instruction"],
           "publication boundary missing")
     return snap
