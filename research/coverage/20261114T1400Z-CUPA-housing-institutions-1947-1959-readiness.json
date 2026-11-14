@@ -1,0 +1,141 @@
+{
+  "schema_version": 3,
+  "kind": "period_x_theme_x_geography_explanatory_readiness_delta",
+  "generated_at": "2026-11-14T14:00:00Z",
+  "branch": "research-persistence",
+  "source_batch_path": "research/batches/20261114T1400Z-CUPA-housing-institutions-1947-1959.json",
+  "evidence_status": "noncanonical_source_located_housing_history_awaiting_corroboration",
+  "rating_definitions": {
+    "substantial": "Primary plans and independent contextual sources inspected; viable interpretation and site access/rights verified",
+    "developing": "Named article locator and concrete explanatory thread but primary/field verification incomplete",
+    "sparse": "Important source or geography unverified, preventing sound on-site narrative",
+    "missing": "Access, plans or image rights unavailable"
+  },
+  "cells": [
+    {
+      "period": "Postrevolutionary / postwar capital",
+      "theme": "State-led housing",
+      "geography": "Colonia del Valle",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1400Z-CUPA-housing-institutions-1947-1959-01"
+      ],
+      "evidence_gap": "Exact inaugural day from one secondary source; original government decree and opening program unseen."
+    },
+    {
+      "period": "Postwar state institutions",
+      "theme": "Welfare state",
+      "geography": "Colonia del Valle / Federal District",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1400Z-CUPA-housing-institutions-1947-1959-02"
+      ],
+      "evidence_gap": "Exact 1947 legal title, tenancy agreement and transfer dates need primary Pensiones documents; this is a demonstrable anachronism warning."
+    },
+    {
+      "period": "Postwar urban planning",
+      "theme": "Supermanzana",
+      "geography": "Colonia del Valle / Mexico City",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1400Z-CUPA-housing-institutions-1947-1959-03"
+      ],
+      "evidence_gap": "Modernist design intentions should not be mistaken for evidence of actual resident outcomes."
+    },
+    {
+      "period": "Urban oral histories",
+      "theme": "Resident voices",
+      "geography": "Centro Urbano Presidente Alemán",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1400Z-CUPA-housing-institutions-1947-1959-04"
+      ],
+      "evidence_gap": "Original audio recordings, interview selection and contemporary newspapers not independently reviewed; no claim that rumors were actually enforced."
+    },
+    {
+      "period": "Late twentieth-century housing",
+      "theme": "Public to private tenure",
+      "geography": "Colonia del Valle",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1400Z-CUPA-housing-institutions-1947-1959-05"
+      ],
+      "evidence_gap": "The 1985 trigger, transfer timing, and responsible institution are secondary-source assertions, not verified deeds or legislation."
+    },
+    {
+      "period": "Postwar housing design",
+      "theme": "Urban form",
+      "geography": "Félix Cuevas / Parroquia, Colonia del Valle",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1400Z-CUPA-housing-institutions-1947-1959-06"
+      ],
+      "evidence_gap": "Number of separate tall buildings disputed by sources (seven in de Garay; six in SOSBrutalism); original floor plan and safe public vantage not verified."
+    },
+    {
+      "period": "Postwar everyday life",
+      "theme": "Collective amenities",
+      "geography": "CUPA ground-floor perimeter",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1400Z-CUPA-housing-institutions-1947-1959-07"
+      ],
+      "evidence_gap": "Description of original program only; which facilities remain today, access and privacy require verification."
+    },
+    {
+      "period": "Residential design",
+      "theme": "Maisonette",
+      "geography": "Centro Urbano Presidente Alemán",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1400Z-CUPA-housing-institutions-1947-1959-08"
+      ],
+      "evidence_gap": "No private apartment interiors may be presented as open visitor attractions; verify plan types against original drawings."
+    },
+    {
+      "period": "Postwar art and housing",
+      "theme": "Integración plástica",
+      "geography": "Centro Urbano Presidente Juárez / Colonia Roma",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T1400Z-CUPA-housing-institutions-1947-1959-09"
+      ],
+      "evidence_gap": "The original Goeritz article is behind login; surviving portions of the housing site and any murals have not been field-verified. Do not plan entry into residences."
+    },
+    {
+      "period": "Architectural documentation",
+      "theme": "Plan interpretation",
+      "geography": "CUPA / Colonia del Valle",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T1400Z-CUPA-housing-institutions-1947-1959-10"
+      ],
+      "evidence_gap": "Possible counting conventions differ for connected wings; require a signed original plan/numbered elevations before adjudication."
+    },
+    {
+      "period": "Art integrated with architecture",
+      "theme": "José Clemente Orozco",
+      "geography": "CUPA",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T1400Z-CUPA-housing-institutions-1947-1959-11"
+      ],
+      "evidence_gap": "Original mural designs, completion status, preservation, imagery and rights not established; do not create a photo toggle."
+    },
+    {
+      "period": "1949-present",
+      "theme": "Historic photographs, plans and resident privacy",
+      "geography": "CUPA / Centro Urbano Presidente Juárez",
+      "rating": "missing",
+      "finding_ids": [],
+      "evidence_gap": "Image rights/individual building access and current conditions absent, so no photo toggle or interior visit is authorized."
+    }
+  ],
+  "summary": {
+    "substantial": 0,
+    "developing": 8,
+    "sparse": 3,
+    "missing": 1
+  },
+  "next_gap": "Obtain 1947 Pensiones commission, September 1949 opening program, original CUPA plans and 1952 Goeritz magazine article, plus present-day public-sidewalk access verification."
+}
