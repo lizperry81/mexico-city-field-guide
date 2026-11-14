@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "kind": "read_only_83_batch_research_validation",
+  "generated_at_utc": "2026-11-14T07:54:00Z",
+  "branch_written": "main",
+  "last_research_input_sha": "44b53036df17492b23d215358717924ab6563d48",
+  "research_manifest_commit_sha": "532d7c2f2c6c238e81765688f0bf7423ade84595",
+  "immutable_verified_replay_sha": "3f0e5e80e651c177c5b9c1f71aee7516bae547ac",
+  "verified_reference_paths": 194,
+  "provisional_findings": 519,
+  "batches": 83,
+  "publication_approved": false,
+  "objective": "Handle distinct 83-batch immutable ledger schema; fail closed on shifted source, counts, Git blobs or editorial approvals; preserve original history and Explore.",
+  "files": [
+    "scripts/check_research_handoff.py",
+    "scripts/handoff_83_history.py",
+    "scripts/test_research_handoff.py"
+  ],
+  "research_branch_written": false,
+  "editorial_approved_prose_changed": false
+}
