@@ -17,6 +17,7 @@ from editorial_passage_inventory import inventory
 from handoff_verified_history import validate_verified_history_v4
 from handoff_immutable_batch import validate_immutable_batch_v4
 from handoff_new_audits import parse_new_audit
+from handoff_82_history import validate_frozen as validate_82_frozen, validate_ledger as validate_82_ledger
 
 RESEARCH_REF = "refs/remotes/origin/research-persistence"
 MANIFEST_PATH = "research/handoff/manifest.json"
@@ -64,7 +65,8 @@ def verified_index_only_total(declared, replay_total, te28_reclassified, snapsho
     if snapshot_kind in ("research_to_app_handoff", "immutable_research_batch_handoff",
                          "research_to_app_handoff_immutable_snapshot",
                          "append_only_research_to_app_verified_handoff",
-                         "append_only_research_handoff_history"):
+                         "append_only_research_handoff_history",
+                         "append_only_research_to_app_handoff_history"):
         return declared == replay_total
     return declared == replay_total + te28_reclassified
 
@@ -77,6 +79,11 @@ def validate_versioned_handoff(manifest, immutable_manifest, snapshot_sha):
     append-only research snapshot with individually cross-checked identities,
     evidence counts, source manifests, and immutable artifacts.
     """
+    if (manifest.get("schema_version") == 4 and
+            immutable_manifest.get("kind") == "append_only_research_to_app_handoff_history"):
+        validate_82_frozen(manifest, immutable_manifest)
+        return
+
     # Batch 81 uses a compact append-only history record. The producer did
     # not receive a replay commit SHA from its connector, so bind the exact
     # independently read-back Git blobs AND the committed integrity ledger.
@@ -860,6 +867,39 @@ def validate():
                 or checks.get("branch_readback") is not True
                 or checks.get("source_identity_auto_merge") is not False):
             raise ValueError("81-batch independent Git readback ledger failed closed")
+    if immutable_manifest.get("kind") == "append_only_research_to_app_handoff_history":
+        # Authenticate actual Git blobs at BOTH the pinned replay commit
+        # and the manifest-publishing commit. New staged records remain
+        # privately reviewable, never public or canonical.
+        proof_path = safe_path(manifest["replay_evidence"]["verification_ledger"])
+        ledger = json.loads(bound_blob(proof_path).decode("utf-8"))
+        actual = {
+            "sqlite": git("rev-parse", f"{handoff_commit}:{manifest['versioned_research_sqlite_gz_path']}").decode().strip(),
+            "report": git("rev-parse", f"{handoff_commit}:{manifest['replay_report_path']}").decode().strip(),
+            "checksum": git("rev-parse", f"{handoff_commit}:{manifest['replay_evidence']['compressed_checksum_path']}").decode().strip(),
+        }
+        pinned_commit = manifest["verified_replay_commit_sha"]
+        subprocess.run(["git", "merge-base", "--is-ancestor", pinned_commit, handoff_commit],
+                       check=True, capture_output=True)
+        for artifact, key in (
+            (manifest["versioned_research_sqlite_gz_path"], "sqlite"),
+            (manifest["replay_report_path"], "report"),
+        ):
+            if git("rev-parse", f"{pinned_commit}:{artifact}").decode().strip() != actual[key]:
+                raise ValueError("82-style Git artifact not pinned to verified replay commit: " + artifact)
+        validate_82_ledger(manifest, ledger, actual)
+        # Only after provenance, artifact identities and explicit nonapproval
+        # have passed, adapt the new producer's status string for the legacy
+        # staging and private-queue checks below. Never mutate repository data.
+        staged_82 = manifest["staged_counts"]
+        manifest["evidence_status"] = {
+            "ready_for_editorial_review": False,
+            "publication_approved": False,
+            "independently_corroborated_new_findings": 0,
+            "new_historical_finding_candidates_researched_this_run":
+                staged_82["new_historical_finding_candidates_this_run"],
+        }
+
     if (manifest["schema_version"] == 4
             and immutable_manifest.get("kind") in ("research_to_app_handoff",
                                                    "immutable_research_batch_handoff",
@@ -1082,7 +1122,8 @@ def validate():
                                                       "immutable_research_batch_handoff",
                                                       "research_to_app_handoff",
                                                       "append_only_research_to_app_verified_handoff",
-                                                      "append_only_research_handoff_history"):
+                                                      "append_only_research_handoff_history",
+                                                      "append_only_research_to_app_handoff_history"):
                     # The compact later handoff has no 'changes' section.
                     # Recover the earlier TE28 reclassification ONLY from its
                     # pinned, append-only historical record, not a guessed delta.
