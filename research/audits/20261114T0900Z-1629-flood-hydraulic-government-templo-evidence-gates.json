@@ -1,0 +1,140 @@
+{
+  "schema_version": 3,
+  "kind": "chapter_level_claim_to_source_locator_audit",
+  "generated_at": "2026-11-14T09:03:28.884Z",
+  "branch": "research-persistence",
+  "target_branch_read_only": "main",
+  "target_path": "poi/templo-mayor/reader.html",
+  "reader_re_read_this_run": true,
+  "reader_blob_sha_verified": "bbec5d6088f5107137ce59c15eba7a910c0ce2d0",
+  "source_batch_path": "research/batches/20261114T0900Z-1629-flood-hydraulic-government.json",
+  "gates": [
+    {
+      "topic": "Triple Alliance 1428",
+      "reader_anchor": "In the late 1420s",
+      "status": "source_gate_open",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T0758Z-market-1934-public-education-and-templo-object-templo-evidence-locators.json",
+          "locator": "previous detailed chapter-level evidence gate"
+        }
+      ],
+      "uncertainty": "Late-1420s political chronology requires independent Nahua/Spanish text comparison, not flood sources",
+      "historical_addition": "Distinguish coalition/defeat of Azcapotzalco from subsequent tribute consolidation; disputed exact year withheld",
+      "placement": "advance_history_then_field"
+    },
+    {
+      "topic": "Construction chronology and IVb",
+      "reader_anchor": "Archaeologists group the work into seven major stages",
+      "status": "site_locator_existing_not_revalidated_this_run",
+      "source_locators": [
+        {
+          "url": "https://lugares.inah.gob.mx/es/pagina-de-elemento/1259",
+          "locator": "source scope noted; not all re-opened this run"
+        }
+      ],
+      "uncertainty": "Construction-stage stratigraphy and dated masonry drawings need original excavation records",
+      "historical_addition": "Provide exact IVb stair/serpent-head observations only with INAH source and dated field confirmation",
+      "placement": "advance_history_then_field"
+    },
+    {
+      "topic": "Coatepec and Coyolxauhqui",
+      "reader_anchor": "At the foot of the south stair",
+      "status": "site_original_vs_replica_existing",
+      "source_locators": [
+        {
+          "url": "https://lugares.inah.gob.mx/es/pagina-de-elemento/1259",
+          "locator": "source scope noted; not all re-opened this run"
+        }
+      ],
+      "uncertainty": "Coatepec myth narrative, archaeological findspot, outdoor replica, and museum original must remain distinct",
+      "historical_addition": "Explain what is excavated versus reconstructed; refrain from claiming sculpture proves every detail of myth",
+      "placement": "advance_history_then_field"
+    },
+    {
+      "topic": "1520 and 1521",
+      "reader_anchor": "In May 1520",
+      "status": "source_gate_open",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T0758Z-market-1934-public-education-and-templo-object-templo-evidence-locators.json",
+          "locator": "previous detailed chapter-level evidence gate"
+        }
+      ],
+      "uncertainty": "Nahuatl Book 12 folio-level passages and Spanish narratives have not been independently collated",
+      "historical_addition": "Separate 1520 Tóxcatl violence from 1521 siege/destruction; do not use later art as eyewitness evidence",
+      "placement": "advance_history_then_field"
+    },
+    {
+      "topic": "Gamio 1913 versus 1914",
+      "reader_anchor": "In 1913",
+      "status": "original_report_needed",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T0758Z-market-1934-public-education-and-templo-object-templo-evidence-locators.json",
+          "locator": "previous detailed chapter-level evidence gate"
+        }
+      ],
+      "uncertainty": "Main reader says 1913; other institutional accounts give 1914; no original excavation report inspected",
+      "historical_addition": "Flag and compare archival field report before changing app",
+      "placement": "advance_history_then_field"
+    },
+    {
+      "topic": "1978 discovery",
+      "reader_anchor": "In February 1978",
+      "status": "original_salvage_log_needed",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T0758Z-market-1934-public-education-and-templo-object-templo-evidence-locators.json",
+          "locator": "previous detailed chapter-level evidence gate"
+        }
+      ],
+      "uncertainty": "Original February 21 rescue logs and responder names not examined",
+      "historical_addition": "Distinguish utility workers discovery from salvage excavation, 1978–1982 program, 1987 museum",
+      "placement": "advance_history_then_field"
+    },
+    {
+      "topic": "Colonial hydrology and Mexica precinct",
+      "reader_anchor": "In the late 1420s",
+      "status": "cross_period_context_only",
+      "source_locators": [
+        {
+          "url": "https://dspace.mit.edu/entities/publication/31903168-a541-4124-b321-802f5009249c",
+          "locator": "source scope noted; not all re-opened this run"
+        },
+        {
+          "url": "https://academic.oup.com/stanford-scholarship-online/book/14915/chapter-abstract/169247536",
+          "locator": "source scope noted; not all re-opened this run"
+        }
+      ],
+      "uncertainty": "1629 desagüe research establishes history of watershed intervention, not the position/dimensions of temple phases",
+      "historical_addition": "Add optional urban-water chapter crosslink; never cite seventeenth-century drainage as proof for fifteenth-century temple ritual",
+      "placement": "separate_chapter_crosslink"
+    },
+    {
+      "topic": "Photo permissions and field directions",
+      "reader_anchor": "See a photograph of the 1978 excavation",
+      "status": "rights_gate_open",
+      "source_locators": [
+        {
+          "url": "https://lugares.inah.gob.mx/es/pagina-de-elemento/3335",
+          "locator": "source scope noted; not all re-opened this run"
+        }
+      ],
+      "uncertainty": "No original 1978 photograph licensing, on-site image access, or exact route verified",
+      "historical_addition": "Offer catalog links, not unlicensed images or assumed current opening hours",
+      "placement": "advance_history_then_field"
+    }
+  ],
+  "no_publication_of_unverified_claims": true,
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "blockers": [
+    "Uncollated original Indigenous/Spanish 1428 and conquest sources",
+    "Original Templo Mayor construction-phase archaeological diagrams",
+    "Gamio 1913/1914 original expedition records",
+    "Original 1978 salvage log and precise responder attribution",
+    "Current field route and photo licensing",
+    "Flood 1629 source findings cannot substitute for Mexica-period primary evidence"
+  ]
+}
