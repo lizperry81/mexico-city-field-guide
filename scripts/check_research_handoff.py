@@ -23,6 +23,7 @@ from handoff_84_history import validate_frozen as validate_84_frozen, validate_l
 from handoff_86_history import validate_frozen as validate_86_frozen, validate_ledger as validate_86_ledger
 from handoff_87_history import validate_frozen as validate_87_frozen, validate_ledger as validate_87_ledger
 from handoff_88_history import validate_frozen as validate_88_frozen, validate_ledger as validate_88_ledger
+from handoff_89_history import validate_frozen as validate_89_frozen, validate_ledger as validate_89_ledger
 
 RESEARCH_REF = "refs/remotes/origin/research-persistence"
 MANIFEST_PATH = "research/handoff/manifest.json"
@@ -74,7 +75,8 @@ def verified_index_only_total(declared, replay_total, te28_reclassified, snapsho
                          "append_only_research_to_app_handoff_history",
                          "verified_noncanonical_research_to_app_handoff_history",
                          "research_to_app_handoff_append_only_history",
-                         "append_only_research_to_app_verified_history"):
+                         "append_only_research_to_app_verified_history",
+                         "immutable_research_handoff_history_entry"):
         return declared == replay_total
     return declared == replay_total + te28_reclassified
 
@@ -87,6 +89,11 @@ def validate_versioned_handoff(manifest, immutable_manifest, snapshot_sha):
     append-only research snapshot with individually cross-checked identities,
     evidence counts, source manifests, and immutable artifacts.
     """
+    if (manifest.get("schema_version") == 4 and
+            immutable_manifest.get("kind") == "immutable_research_handoff_history_entry"):
+        validate_89_frozen(manifest, immutable_manifest)
+        return
+
     if (manifest.get("schema_version") == 4 and
             immutable_manifest.get("kind") == "append_only_research_to_app_verified_history"):
         if manifest.get('handoff_contract_status') == '88_batch_sqlite_integrity_github_full_binary_sha256_verified_noncanonical_unapproved':
@@ -833,6 +840,45 @@ def validate():
     if source_sha != sha:
         raise ValueError("Versioned handoff snapshot points to a different research commit")
     validate_versioned_handoff(manifest, immutable_manifest, snapshot_blob_sha)
+    if immutable_manifest.get("kind") == "immutable_research_handoff_history_entry":
+        # Producer workflow readback is corroborated against immutable Git
+        # objects, then against raw gzip/SHA-256 bytes later in this function.
+        ledger_path = safe_path(immutable_manifest["reconciliation_ledger_path"])
+        ledger = json.loads(bound_blob(ledger_path).decode("utf-8"))
+        paths89 = {
+            "sqlite": manifest["versioned_research_sqlite_gz_path"],
+            "report": manifest["replay_report_path"],
+            "checksum": manifest["replay_evidence"]["compressed_checksum_path"],
+            "batch": immutable_manifest["source_batch_path"],
+            "coverage": immutable_manifest["coverage_artifact_paths"][0],
+            "audit": immutable_manifest["chapter_audit_artifact_paths"][0],
+        }
+        snapshot = manifest["verified_replay_commit_sha"]
+        subprocess.run(["git", "merge-base", "--is-ancestor", snapshot, handoff_commit],
+                       check=True, capture_output=True)
+        actual89 = {}
+        for name, path in paths89.items():
+            safe_path(path)
+            pinned = git("rev-parse", f"{snapshot}:{path}").decode().strip()
+            current = git("rev-parse", f"{handoff_commit}:{path}").decode().strip()
+            if pinned != current:
+                raise ValueError("89-batch verified Git object changed: " + path)
+            actual89[name] = current
+        validate_89_ledger(manifest, immutable_manifest, ledger, actual89)
+        canonical89 = manifest["canonical"]
+        manifest["canonical"] = {
+            "sources": canonical89["sources"], "claims": canonical89["claims"],
+            "claim_source_links": canonical89["claim_sources"],
+            "findings": canonical89["canonical_findings"],
+            "source_inspections": canonical89["canonical_source_inspections"],
+        }
+        manifest["evidence_status"] = {
+            "ready_for_editorial_review": False, "publication_approved": False,
+            "independently_corroborated_new_findings": 0,
+            "new_historical_finding_candidates_researched_this_run":
+                manifest["staged_counts"]["new_historical_finding_candidates_this_run"],
+        }
+
     if immutable_manifest.get("kind") == "append_only_research_to_app_verified_history":
         # Independently authenticate the immutable snapshot's Git objects.
         ledger_path = safe_path(immutable_manifest["verification_ledger_path"])
@@ -1272,7 +1318,8 @@ def validate():
                                                       "append_only_research_to_app_handoff_history",
                                                       "verified_noncanonical_research_to_app_handoff_history",
                                                       "research_to_app_handoff_append_only_history",
-                                                      "append_only_research_to_app_verified_history"):
+                                                      "append_only_research_to_app_verified_history",
+                                                      "immutable_research_handoff_history_entry"):
                     # The compact later handoff has no 'changes' section.
                     # Recover the earlier TE28 reclassification ONLY from its
                     # pinned, append-only historical record, not a guessed delta.
