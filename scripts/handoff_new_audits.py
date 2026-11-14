@@ -340,7 +340,9 @@ def parse_new_audit(path, doc, current_reader_blob):
                 allow_missing_sources=not bool(locators))
             if unattributed_hints:
                 item["unattributed_locator_hints_unverified"] = unattributed_hints
-                item["review_state"] = "awaiting_human_original_source_identification"
+                item["review_state"] = ("awaiting_human_stale_reader_blob_reaudit_and_source_identification"
+                                        if not matches else
+                                        "awaiting_human_original_source_identification")
             result.append(item)
         return result
     # A new seven-passage audit includes the ACTUAL reader Git blob identity.
