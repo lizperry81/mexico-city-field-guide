@@ -1,0 +1,550 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261114T0400Z-metro-1967-1970-pino-suarez-archaeology",
+  "generated_at": "2026-11-14T04:00:54Z",
+  "branch": "research-persistence",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "storage_role": "immutable_noncanonical_research_batch",
+  "previous_verified_replay": "research/reconciled/v4_808223390a5e/replay_report.json",
+  "prior_verified_counts": {
+    "github_batches_replayed": 79,
+    "staged_findings": 475,
+    "source_candidates": 176,
+    "inspection_entries": 214,
+    "canonical_sources": 616,
+    "canonical_claims": 422,
+    "canonical_links": 403,
+    "canonical_findings": 68
+  },
+  "research_scope": "11 source-located candidates: 5 broad modern-city transit history, 4 POI interpretation, 2 specialist rescue archaeology. Central theme 1967–1970 Metro with 2017 Pino Suárez rescue, stronger distinction between in situ shrines and recovered artifacts. Inaccessible primary sources quarantined.",
+  "sources": [
+    {
+      "id": "STG-SRC-20261114-METRO-UNAM-METRO",
+      "title": "El Metro de la Ciudad de México cumple 50 años",
+      "authors": "Gaceta UNAM / Redacción",
+      "publication": "2019-09-03",
+      "url": "https://www.gaceta.unam.mx/el-metro-de-la-ciudad-de-mexico-cumple-50-anos/",
+      "access_scope": "full article HTML directly examined, lines 6-27",
+      "status": "institutional_history_direct_html_original_records_pending"
+    },
+    {
+      "id": "STG-SRC-20261114-METRO-DOF-1984",
+      "title": "Decreto que reforma el decreto creador del Sistema de Transporte Colectivo de 1967",
+      "authors": "Diario Oficial de la Federación",
+      "publication": "1984-06-21",
+      "url": "https://sidof.segob.gob.mx/notas/4674229",
+      "access_scope": "DOF catalog/landing lines 23-48; decree body and 1967 original NOT read",
+      "status": "official_document_catalog_only_original_text_not_read"
+    },
+    {
+      "id": "STG-SRC-20261114-METRO-STC-CRONO",
+      "title": "Cronología del Metro (inauguraciones y ampliaciones)",
+      "authors": "Sistema de Transporte Colectivo Metro",
+      "publication": "undated official station chronology",
+      "url": "https://www.metro.cdmx.gob.mx/cronologia-del-metro",
+      "access_scope": "indexed excerpt only, first Line 1 and Line 2 rows; direct HTML fetch 502",
+      "status": "official_chronology_search_excerpt_only"
+    },
+    {
+      "id": "STG-SRC-20261114-METRO-STC-LINEA2",
+      "title": "Línea 2: inauguraciones por tramo",
+      "authors": "Sistema de Transporte Colectivo Metro",
+      "publication": "official route page, undated",
+      "url": "https://www.metro.cdmx.gob.mx/la-red/linea-2",
+      "access_scope": "indexed opening dates and line-2 copyright notice; direct HTML fetch 502",
+      "status": "official_chronology_search_excerpt_only"
+    },
+    {
+      "id": "STG-SRC-20261114-METRO-STC-WOMEN",
+      "title": "Separación de hombres y mujeres",
+      "authors": "Sistema de Transporte Colectivo Metro",
+      "publication": "2011-04-12",
+      "url": "https://www.metro.cdmx.gob.mx/comunicacion/nota/separacionn-de-hombres-y-mujeres",
+      "access_scope": "official press notice indexed excerpt only; direct HTML fetch timed out",
+      "status": "institutional_retrospective_search_excerpt_only"
+    },
+    {
+      "id": "STG-SRC-20261114-METRO-UNAM-INSURG",
+      "title": "La estación del Metro Insurgentes: el discurso urbano de la modernidad en la Ciudad de México (1967–1976)",
+      "authors": "Erika Angélica Alcantar García / UNAM",
+      "publication": "2014 licenciatura thesis",
+      "url": "https://repositorio.unam.mx/contenidos/ficha/la-estacion-del-metro-insurgentes-el-discurso-urbano-de-la-modernidad-en-la-ciudad-de-mexico-1967-1976-350819",
+      "access_scope": "UNAM repository thesis metadata lines 7-20,38-73; full thesis NOT read",
+      "status": "scholarly_thesis_metadata_only"
+    },
+    {
+      "id": "STG-SRC-20261114-METRO-INAH-EHECATL",
+      "title": "Pirámide de Ehécatl: archaeological place entry",
+      "authors": "INAH Lugares",
+      "publication": "current online inventory",
+      "url": "https://lugares.inah.gob.mx/es/fut-cultura/6626",
+      "access_scope": "direct page lines 9-49; opening schedule present but NOT live-checked",
+      "status": "official_site_inventory_direct_html"
+    },
+    {
+      "id": "STG-SRC-20261114-METRO-CULTURA-EHECATL",
+      "title": "El México antiguo en las ciudades: Templo de Ehécatl, Metro Pino Suárez",
+      "authors": "Secretaría de Cultura / INAH",
+      "publication": "undated cultural capsule",
+      "url": "https://contigoenladistancia.cultura.gob.mx/detalle/el-mexico-antiguo-en-las-ciudades-templo-de-ehecatl-metro-pino-suarez",
+      "access_scope": "direct page lines 55-61; video NOT viewed",
+      "status": "institutional_cultural_description_direct_html"
+    },
+    {
+      "id": "STG-SRC-20261114-METRO-UNIVERSAL-ARANA",
+      "title": "Pirámide de Pino Suárez recuperará su esplendor",
+      "authors": "Abida Ventura / El Universal, interview with Raúl Arana",
+      "publication": "2017-06-09",
+      "url": "https://www.eluniversal.com.mx/articulo/cultura/patrimonio/2017/06/10/piramide-de-pino-suarez-recuperara-su-esplendor/",
+      "access_scope": "direct article lines 16-44; 2017 interview with excavation participant, original field notebook missing",
+      "status": "journalistic_interview_with_participant"
+    },
+    {
+      "id": "STG-SRC-20261114-METRO-UNIVERSAL-1968",
+      "title": "Cuando se encontró una pirámide en medio del Metro (reprints 28 September 1968 report)",
+      "authors": "El Universal / editorial reconstruction",
+      "publication": "2021-11-06 reproducing 1968-09-28 report",
+      "url": "https://www.eluniversal.com.mx/cultura/cuando-se-encontro-una-piramide-en-medio-del-metro-de-la-cdmx/",
+      "access_scope": "direct article lines 15-49 including excerpt dated 28 September 1968; original 1968 issue NOT seen",
+      "status": "historic_press_excerpt_republished"
+    },
+    {
+      "id": "STG-SRC-20261114-METRO-ANIMAL-CALPULLI",
+      "title": "¿Para qué usaban los mexicas el calpulli que descubrieron cerca del metro Pino Suárez?",
+      "authors": "Alba Calderón / Animal Político, citing Donají Montero Guzmán",
+      "publication": "2017-07-11",
+      "url": "https://animalpolitico.com/2017/07/mexicas-calpulli-metro-pino-suarez",
+      "access_scope": "direct article lines 80-95; original INAH excavation notes NOT read",
+      "status": "journalistic_reporting_specialist_interview"
+    },
+    {
+      "id": "STG-SRC-20261114-METRO-INAH-HEYDEN",
+      "title": "Comentarios sobre la Coatlicue recuperada durante las excavaciones realizadas para la construcción del Metro",
+      "authors": "Doris Heyden / Anales INAH 7(2):153–170",
+      "publication": "1971-02-02",
+      "url": "https://www.revistas.inah.gob.mx/index.php/anales/article/view/7282",
+      "access_scope": "INAH journal indexed ABSTRACT only (sculpture found Sept 1967); PDF full text NOT read",
+      "status": "scholarly_abstract_only"
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "20261114T0400Z-METRO-INS-01",
+      "source_id": "STG-SRC-20261114-METRO-UNAM-METRO",
+      "locator": "full article HTML directly examined, lines 6-27",
+      "access": "full article HTML directly examined, lines 6-27",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false
+    },
+    {
+      "id": "20261114T0400Z-METRO-INS-02",
+      "source_id": "STG-SRC-20261114-METRO-DOF-1984",
+      "locator": "DOF catalog/landing lines 23-48; decree body and 1967 original NOT read",
+      "access": "DOF catalog/landing lines 23-48; decree body and 1967 original NOT read",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false
+    },
+    {
+      "id": "20261114T0400Z-METRO-INS-03",
+      "source_id": "STG-SRC-20261114-METRO-STC-CRONO",
+      "locator": "indexed excerpt only, first Line 1 and Line 2 rows; direct HTML fetch 502",
+      "access": "indexed excerpt only, first Line 1 and Line 2 rows; direct HTML fetch 502",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false
+    },
+    {
+      "id": "20261114T0400Z-METRO-INS-04",
+      "source_id": "STG-SRC-20261114-METRO-STC-LINEA2",
+      "locator": "indexed opening dates and line-2 copyright notice; direct HTML fetch 502",
+      "access": "indexed opening dates and line-2 copyright notice; direct HTML fetch 502",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false
+    },
+    {
+      "id": "20261114T0400Z-METRO-INS-05",
+      "source_id": "STG-SRC-20261114-METRO-STC-WOMEN",
+      "locator": "official press notice indexed excerpt only; direct HTML fetch timed out",
+      "access": "official press notice indexed excerpt only; direct HTML fetch timed out",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false
+    },
+    {
+      "id": "20261114T0400Z-METRO-INS-06",
+      "source_id": "STG-SRC-20261114-METRO-UNAM-INSURG",
+      "locator": "UNAM repository thesis metadata lines 7-20,38-73; full thesis NOT read",
+      "access": "UNAM repository thesis metadata lines 7-20,38-73; full thesis NOT read",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false
+    },
+    {
+      "id": "20261114T0400Z-METRO-INS-07",
+      "source_id": "STG-SRC-20261114-METRO-INAH-EHECATL",
+      "locator": "direct page lines 9-49; opening schedule present but NOT live-checked",
+      "access": "direct page lines 9-49; opening schedule present but NOT live-checked",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false
+    },
+    {
+      "id": "20261114T0400Z-METRO-INS-08",
+      "source_id": "STG-SRC-20261114-METRO-CULTURA-EHECATL",
+      "locator": "direct page lines 55-61; video NOT viewed",
+      "access": "direct page lines 55-61; video NOT viewed",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false
+    },
+    {
+      "id": "20261114T0400Z-METRO-INS-09",
+      "source_id": "STG-SRC-20261114-METRO-UNIVERSAL-ARANA",
+      "locator": "direct article lines 16-44; 2017 interview with excavation participant, original field notebook missing",
+      "access": "direct article lines 16-44; 2017 interview with excavation participant, original field notebook missing",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false
+    },
+    {
+      "id": "20261114T0400Z-METRO-INS-10",
+      "source_id": "STG-SRC-20261114-METRO-UNIVERSAL-1968",
+      "locator": "direct article lines 15-49 including excerpt dated 28 September 1968; original 1968 issue NOT seen",
+      "access": "direct article lines 15-49 including excerpt dated 28 September 1968; original 1968 issue NOT seen",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false
+    },
+    {
+      "id": "20261114T0400Z-METRO-INS-11",
+      "source_id": "STG-SRC-20261114-METRO-ANIMAL-CALPULLI",
+      "locator": "direct article lines 80-95; original INAH excavation notes NOT read",
+      "access": "direct article lines 80-95; original INAH excavation notes NOT read",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false
+    },
+    {
+      "id": "20261114T0400Z-METRO-INS-12",
+      "source_id": "STG-SRC-20261114-METRO-INAH-HEYDEN",
+      "locator": "INAH journal indexed ABSTRACT only (sculpture found Sept 1967); PDF full text NOT read",
+      "access": "INAH journal indexed ABSTRACT only (sculpture found Sept 1967); PDF full text NOT read",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false
+    }
+  ],
+  "findings": [
+    {
+      "id": "20261114T0400Z-METRO-01",
+      "classification": "broad_history",
+      "assertion": "The decree creating the Sistema de Transporte Colectivo was signed 19 April and published 29 April 1967; construction ceremony followed on 19 June 1967. The later 1984 DOF decree explicitly refers back to the dated 1967 decree, but its full original legal text remains unexamined.",
+      "date_or_range": "1967-04-19–1967-06-19",
+      "period": "Postwar urban infrastructure and metropolitan state",
+      "themes": [
+        "transport policy",
+        "state institutions",
+        "urbanization"
+      ],
+      "geographies": [
+        "Mexico City"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-METRO-UNAM-METRO",
+        "STG-SRC-20261114-METRO-DOF-1984"
+      ],
+      "source_locator": "Gaceta UNAM 2019 HTML lines 11-13; DOF 1984 title lines 27-32",
+      "limitations": "The 1984 amendment is NOT the original 1967 decree. Exact 1967 powers and institutional structure cannot be published without original.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0400Z-METRO-02",
+      "classification": "broad_history",
+      "assertion": "Official STC chronology reports Line 1's Zaragoza–Chapultepec opening on 4 September 1969 with 12.660 km and 16 stations. This was a defined first section, not the present full Line 1 alignment.",
+      "date_or_range": "1969-09-04",
+      "period": "Late twentieth-century mass transit",
+      "themes": [
+        "public transport",
+        "urban expansion",
+        "staged infrastructure"
+      ],
+      "geographies": [
+        "Chapultepec",
+        "Centro Histórico",
+        "Zaragoza"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-METRO-STC-CRONO",
+        "STG-SRC-20261114-METRO-UNAM-METRO"
+      ],
+      "source_locator": "STC indexed official chronology row '1 Zaragoza - Chapultepec'; Gaceta UNAM lines 6-13",
+      "limitations": "STC direct page unavailable (502); verify printed 1969 opening timetable and route maps before exact travel instructions.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0400Z-METRO-03",
+      "classification": "broad_history",
+      "assertion": "STC dates the first Line 2 Pino Suárez–Tasqueña section to 1 August 1970 and Tacuba–Pino Suárez expansion to 14 September 1970. Modern transfer connections must not be retrojected into 1969.",
+      "date_or_range": "1970-08-01–1970-09-14",
+      "period": "Metro expansion",
+      "themes": [
+        "public transport",
+        "growth of transit network"
+      ],
+      "geographies": [
+        "Pino Suárez",
+        "Tasqueña",
+        "Tacuba"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-METRO-STC-LINEA2",
+        "STG-SRC-20261114-METRO-STC-CRONO"
+      ],
+      "source_locator": "STC Línea 2 indexed official history row; STC chronology matching dates",
+      "limitations": "The full STC page could not be directly accessed; neither 1970 route map nor initial transfer architecture reviewed.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0400Z-METRO-04",
+      "classification": "broad_history",
+      "assertion": "Station pictograms were designed by a team including Lance Wyman, Arturo Quiñónez and Francisco Gallardo. The design sought immediate reference to nearby sites, historical figures or neighborhood identities and promoted legibility without relying on station name text.",
+      "date_or_range": "1968–1970",
+      "period": "Modern public graphic design",
+      "themes": [
+        "wayfinding",
+        "design",
+        "literacy",
+        "Olympic visual culture"
+      ],
+      "geographies": [
+        "Metro network",
+        "Mexico City"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-METRO-UNAM-METRO",
+        "STG-SRC-20261114-METRO-STC-LINEA2"
+      ],
+      "source_locator": "Gaceta UNAM 2019 lines 22-26 quoting CDMX Metro; STC Línea 2 page indexed intellectual-property notice",
+      "limitations": "Original design briefs and attribution agreements unexamined; STC states iconography is protected by copyright; no image usage approved.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0400Z-METRO-05",
+      "classification": "broad_history",
+      "assertion": "A 2011 STC retrospective dates reserved women-and-children train-car arrangements to late 1970 following complaints about crowding; it also distinguishes later formalization in 2000 and an anti-harassment programme in 2007. These periods should not be compressed into one original policy.",
+      "date_or_range": "1970–2007",
+      "period": "Gender and public transit",
+      "themes": [
+        "women's mobility",
+        "crowding",
+        "transport governance"
+      ],
+      "geographies": [
+        "Metro Line 1",
+        "Metro Line 3"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-METRO-STC-WOMEN"
+      ],
+      "source_locator": "STC press notice 12 Apr 2011 indexed lines beginning 'Durante el último bimestre de 1970' and 'A partir de julio del año 2000'",
+      "limitations": "Institutional retrospective only; original 1970 operational circulars, women's testimony and independent history not examined.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0400Z-METRO-06",
+      "classification": "poi_ready_candidate",
+      "assertion": "Metro Insurgentes and the sunken Glorieta de los Insurgentes provide a physically legible late-1960s urban-design site. A 2014 UNAM history thesis specifically studies their modernizing urban discourse from 1967 to 1976, but its full findings have not yet been read.",
+      "date_or_range": "1967–1976",
+      "period": "Urban public space and modernization",
+      "themes": [
+        "modernist urban design",
+        "public space",
+        "mobility"
+      ],
+      "geographies": [
+        "Glorieta de Insurgentes",
+        "Colonia Roma / Zona Rosa"
+      ],
+      "poi_ids": [
+        "insurgentes-metro"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-METRO-UNAM-INSURG"
+      ],
+      "source_locator": "UNAM thesis repository lines 7-20,38-73, title and provenance only",
+      "limitations": "Thesis metadata does NOT substantiate site-design details; original plans and current pedestrian access not checked.",
+      "learning_mode": "advance_history_and_field",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0400Z-METRO-07",
+      "classification": "poi_ready_candidate",
+      "assertion": "INAH identifies an in-situ pre-Hispanic structure dedicated to the wind god inside Pino Suárez station at José María Pino Suárez and José María Izazaga. Its presence in a working transfer station provides a concrete contrast between colonial/modern street grids and surviving Mexica fabric.",
+      "date_or_range": "Postclassic–present",
+      "period": "Archaeological heritage in modern infrastructure",
+      "themes": [
+        "archaeological preservation",
+        "urban palimpsest",
+        "public transit"
+      ],
+      "geographies": [
+        "Pino Suárez Metro",
+        "Centro Histórico"
+      ],
+      "poi_ids": [
+        "metro-pino-suarez-ehecatl"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-METRO-INAH-EHECATL",
+        "STG-SRC-20261114-METRO-CULTURA-EHECATL"
+      ],
+      "source_locator": "INAH Lugares lines 24-49; Secretaría de Cultura capsule lines 55-61",
+      "limitations": "INAH page hours are published listing, NOT verified live access; visitor signage/conditions and precise sightlines not inspected.",
+      "learning_mode": "field_observation",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0400Z-METRO-08",
+      "classification": "poi_ready_candidate",
+      "assertion": "An INAH account describes a larger ceremonial complex around José María Izazaga, with patios, stairways, other shrines, rooms, canals and a corridor associated with the Iztapalapa causeway. The retained Ehécatl shrine is one surviving element, not proof that the entire former complex remains visible.",
+      "date_or_range": "Late Postclassic",
+      "period": "Sacred precinct south of Tenochtitlan",
+      "themes": [
+        "causeways",
+        "temple architecture",
+        "urban topography"
+      ],
+      "geographies": [
+        "Izazaga",
+        "Pino Suárez"
+      ],
+      "poi_ids": [
+        "metro-pino-suarez-ehecatl"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-METRO-CULTURA-EHECATL",
+        "STG-SRC-20261114-METRO-UNIVERSAL-ARANA"
+      ],
+      "source_locator": "Secretaría de Cultura capsule lines 55-58; Raúl Arana interview in El Universal 2017 lines 34-41",
+      "limitations": "Original excavation plans, chronology and topographic reconstruction missing; avoid precise ancient boundary or customs-post claims without primary verification.",
+      "learning_mode": "advance_history_and_field",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0400Z-METRO-09",
+      "classification": "poi_ready_candidate",
+      "assertion": "A 2017 rescue excavation reported fragments of Azteca III–IV pottery and remains approximately 35 m northeast of the Ehécatl shrine near Plaza Pino Suárez, provisionally related to Cuezcontitlan. This is a different 2017 excavation and must not be presented as another intact visible shrine today.",
+      "date_or_range": "2017 with 1430–1521 inferred context",
+      "period": "Contemporary rescue archaeology and Mexica neighborhood",
+      "themes": [
+        "calpulli",
+        "ceramic chronology",
+        "urban conservation"
+      ],
+      "geographies": [
+        "Plaza Pino Suárez",
+        "San Lucas"
+      ],
+      "poi_ids": [
+        "plaza-pino-suarez"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-METRO-ANIMAL-CALPULLI"
+      ],
+      "source_locator": "Animal Político 11 July 2017 lines 84-95 attributing statements to INAH archaeologist Donají Montero Guzmán",
+      "limitations": "Calpulli identification is an inference, not confirmed; 2017 excavation plan, context catalog and present visibility unknown.",
+      "learning_mode": "advance_history_and_field",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0400Z-METRO-10",
+      "classification": "specialist_technical",
+      "assertion": "An article reproduces a report dated 28 September 1968 describing exposed superposed structures at Izazaga/Pino Suárez and archaeologists working amid active construction equipment, with potential threats to documentation and preservation. A 2017 interview with participant Raúl Arana independently recalls mechanical damage, but original logs and original 1968 issue are still needed.",
+      "date_or_range": "1967–1968",
+      "period": "Rescue archaeology and infrastructure conflicts",
+      "themes": [
+        "heritage salvage",
+        "field methods",
+        "construction ethics"
+      ],
+      "geographies": [
+        "Pino Suárez",
+        "Izazaga"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-METRO-UNIVERSAL-1968",
+        "STG-SRC-20261114-METRO-UNIVERSAL-ARANA"
+      ],
+      "source_locator": "El Universal 2021 article lines 31-49 reproducing 28 Sept 1968 coverage; Ventura 2017 lines 23-35",
+      "limitations": "1968 press is excerpt mediated through 2021 reprint; original issue page scan, 1969 INAH Gussinyer report and construction logs must be checked. Discovery year 1967 vs excavations 1968 not reconciled.",
+      "learning_mode": "specialist_sidebar",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0400Z-METRO-11",
+      "classification": "specialist_technical",
+      "assertion": "Doris Heyden's INAH paper abstract records a 93 cm sculpture found in September 1967 during Metro excavations, subsequently displayed in the Mexica hall of the National Museum of Anthropology and called 'Coatlicue'. It must not be identified as an object from the Pino Suárez Ehécatl shrine without a shared findspot inventory.",
+      "date_or_range": "1967-09–1971",
+      "period": "Archaeological sculpture during transit works",
+      "themes": [
+        "sculpture provenance",
+        "iconographic attribution",
+        "museum collection"
+      ],
+      "geographies": [
+        "Mexico City Metro works",
+        "Museo Nacional de Antropología"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-METRO-INAH-HEYDEN"
+      ],
+      "source_locator": "INAH Anales 7(2), 153–170, 1971 indexed journal abstract (PDF not examined)",
+      "limitations": "Only scholarly abstract inspected; findspot/location, original object catalog and iconographic debate unverified; do not confuse with the famous monumental Coatlicue.",
+      "learning_mode": "specialist_sidebar",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    }
+  ],
+  "source_identity_policy": "All 12 source IDs and inspection IDs provisional. Existing canonical and staged identity checks left to importer; do not auto-merge title or URL overlaps. Respect original status and provenance.",
+  "external_source_usage": "UNAM, INAH, Secretaría de Cultura and legal web pages plus historical press republication examined. Several STC/INAH indexed sources unavailable on direct fetch. No original 1967 decree, 1968 printed edition, excavation field log, full INAH Heyden study, full thesis, photograph rights document or new field visit examined.",
+  "publication_approved": false,
+  "independently_corroborated_findings": 0,
+  "ready_for_editorial_review": false
+}
