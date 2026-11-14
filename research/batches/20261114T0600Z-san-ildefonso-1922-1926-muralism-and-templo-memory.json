@@ -1,0 +1,477 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261114T0600Z-san-ildefonso-1922-1926-muralism-and-templo-memory",
+  "generated_at": "2026-11-14T06:04:59.613Z",
+  "branch": "research-persistence",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "storage_role": "immutable_noncanonical_research_batch",
+  "previous_verified_replay": "research/reconciled/v4_d8a0d2dcb8ff/replay_report.json",
+  "prior_verified_counts": {
+    "github_batches_replayed": 81,
+    "staged_findings": 497,
+    "source_candidates": 194,
+    "inspection_entries": 232,
+    "canonical_sources": 616,
+    "canonical_claims": 422,
+    "canonical_links": 403,
+    "canonical_findings": 68
+  },
+  "research_scope": "11 candidate findings: 5 broad postrevolutionary muralism, 4 POI observations, 2 specialist material/source-criticism leads on 1922–1926 Colegio de San Ildefonso, including visual history of the 1520 conquest. No publication approval or independent editorial corroboration.",
+  "sources": [
+    {
+      "id": "STG-SRC-20261114-MURAL-SITE",
+      "title": "El nacimiento del Muralismo Mexicano en San Ildefonso — Acervo",
+      "authors": "Antiguo Colegio de San Ildefonso",
+      "publication": "institutional catalogue/exhibition page; access 2026-11-14",
+      "url": "https://sanildefonso.org.mx/acervo.php",
+      "access_scope": "ACERVO, lines 39–80 and 83–155; direct institutional HTML",
+      "status": "provisional_direct_html_source_not_editorially_corroborated"
+    },
+    {
+      "id": "STG-SRC-20261114-MURAL-EXPO",
+      "title": "El espíritu del 22: Un siglo de muralismo en San Ildefonso",
+      "authors": "Antiguo Colegio de San Ildefonso",
+      "publication": "institutional catalogue/exhibition page; access 2026-11-14",
+      "url": "https://www.sanildefonso.org.mx/espiritudel22/",
+      "access_scope": "Espíritu del 22, sections 'Mujeres artistas y activistas' and 'Muralistas en San Ildefonso'; direct institutional HTML",
+      "status": "provisional_direct_html_source_not_editorially_corroborated"
+    },
+    {
+      "id": "STG-SRC-20261114-MURAL-CHARLOT",
+      "title": "Jean Charlot — Masacre en el Templo Mayor o La Conquista de Tenochtitlan",
+      "authors": "Antiguo Colegio de San Ildefonso",
+      "publication": "institutional catalogue/exhibition page; access 2026-11-14",
+      "url": "https://www.sanildefonso.org.mx/mural_masacre.php",
+      "access_scope": "Mural page lines 3–10, including iconography and Diego Durán attribution; direct institutional HTML",
+      "status": "provisional_direct_html_source_not_editorially_corroborated"
+    },
+    {
+      "id": "STG-SRC-20261114-MURAL-VAULT",
+      "title": "The Massacre in the Main Temple — Jean Charlot Collection catalogue",
+      "authors": "Jean Charlot Collection",
+      "publication": "institutional catalogue/exhibition page; access 2026-11-14",
+      "url": "https://vault.jeancharlot.org/mural-sculpture/mx_df_mexico_enp_1922-1923_massacre.html",
+      "access_scope": "Mural work catalogue lines 0–14, 21–38; direct collection catalogue HTML, images not inspected",
+      "status": "provisional_direct_html_source_not_editorially_corroborated"
+    },
+    {
+      "id": "STG-SRC-20261114-MURAL-OROZCO",
+      "title": "Artista del Estado posrevolucionario inconforme con ser un simple ideólogo",
+      "authors": "Rafael Paz and Fabiola Méndez (UNAM), interview with Renato González Mello",
+      "publication": "Gaceta UNAM, 2022-10-17",
+      "url": "https://www.gaceta.unam.mx/artista-del-estado-posrevolucionario-inconforme-con-ser-un-simple-ideologo/",
+      "access_scope": "Gaceta UNAM, 17 Oct 2022, lines 11–22; scholar interview and quotation of 1923 ENP report, original report not examined",
+      "status": "provisional_direct_html_source_not_editorially_corroborated"
+    },
+    {
+      "id": "STG-SRC-20261114-MURAL-LEAL",
+      "title": "Los danzantes de Chalma — Colegio de San Ildefonso",
+      "authors": "Antiguo Colegio de San Ildefonso",
+      "publication": "institutional catalogue/exhibition page; access 2026-11-14",
+      "url": "https://sanildefonso.org.mx/espiritudel22/leal_danzantes.html",
+      "access_scope": "Los danzantes de Chalma, lines 33–40, 74–82; direct institutional HTML, original cited Charlot publication not examined",
+      "status": "provisional_direct_html_source_not_editorially_corroborated"
+    },
+    {
+      "id": "STG-SRC-20261114-MURAL-REVUELTAS",
+      "title": "Fermín Revueltas — Alegoría de la Virgen de Guadalupe",
+      "authors": "Antiguo Colegio de San Ildefonso",
+      "publication": "institutional catalogue/exhibition page; access 2026-11-14",
+      "url": "https://sanildefonso.org.mx/espiritudel22/revueltas.html",
+      "access_scope": "Revueltas page lines 81–93, 108–111; direct institutional HTML, quoted historical recollections not verified against original text",
+      "status": "provisional_direct_html_source_not_editorially_corroborated"
+    },
+    {
+      "id": "STG-SRC-20261114-MURAL-INBAL",
+      "title": "El Espíritu del 22: Un siglo de muralismo en San Ildefonso (Boletín 980)",
+      "authors": "Instituto Nacional de Bellas Artes y Literatura",
+      "publication": "INBAL bulletin 980, 2022-12-08",
+      "url": "https://inba.gob.mx/prensa/17120/el-espiritu-del-22-un-siglo-de-muralismo-en-san-ildefonso-exposicion-que-propone-un-dialogo-dinamico-y-actual-con-el-legado-mural-del-recinto-universitario",
+      "access_scope": "Boletín 980, 8 Dec 2022, paragraphs 'El muralismo a cien años'; direct institutional news release",
+      "status": "provisional_direct_html_source_not_editorially_corroborated"
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "20261114T0600Z-MURAL-INS-01",
+      "source_id": "STG-SRC-20261114-MURAL-SITE",
+      "locator": "ACERVO, lines 39–80 and 83–155; direct institutional HTML",
+      "access": "Direct HTML opened and inspected through web retrieval; no original historic correspondence, contract, technical lab report, or image-rights license inspected",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": null
+    },
+    {
+      "id": "20261114T0600Z-MURAL-INS-02",
+      "source_id": "STG-SRC-20261114-MURAL-EXPO",
+      "locator": "Espíritu del 22, sections 'Mujeres artistas y activistas' and 'Muralistas en San Ildefonso'; direct institutional HTML",
+      "access": "Direct HTML opened and inspected through web retrieval; no original historic correspondence, contract, technical lab report, or image-rights license inspected",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": null
+    },
+    {
+      "id": "20261114T0600Z-MURAL-INS-03",
+      "source_id": "STG-SRC-20261114-MURAL-CHARLOT",
+      "locator": "Mural page lines 3–10, including iconography and Diego Durán attribution; direct institutional HTML",
+      "access": "Direct HTML opened and inspected through web retrieval; no original historic correspondence, contract, technical lab report, or image-rights license inspected",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": null
+    },
+    {
+      "id": "20261114T0600Z-MURAL-INS-04",
+      "source_id": "STG-SRC-20261114-MURAL-VAULT",
+      "locator": "Mural work catalogue lines 0–14, 21–38; direct collection catalogue HTML, images not inspected",
+      "access": "Direct HTML opened and inspected through web retrieval; no original historic correspondence, contract, technical lab report, or image-rights license inspected",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Collection has dated design studies and images; reproductions were not downloaded or rights-cleared."
+    },
+    {
+      "id": "20261114T0600Z-MURAL-INS-05",
+      "source_id": "STG-SRC-20261114-MURAL-OROZCO",
+      "locator": "Gaceta UNAM, 17 Oct 2022, lines 11–22; scholar interview and quotation of 1923 ENP report, original report not examined",
+      "access": "Direct HTML opened and inspected through web retrieval; no original historic correspondence, contract, technical lab report, or image-rights license inspected",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": null
+    },
+    {
+      "id": "20261114T0600Z-MURAL-INS-06",
+      "source_id": "STG-SRC-20261114-MURAL-LEAL",
+      "locator": "Los danzantes de Chalma, lines 33–40, 74–82; direct institutional HTML, original cited Charlot publication not examined",
+      "access": "Direct HTML opened and inspected through web retrieval; no original historic correspondence, contract, technical lab report, or image-rights license inspected",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Institutional headline 'Fresco' differs from body statement 'encausto'; do not choose one without material technical report."
+    },
+    {
+      "id": "20261114T0600Z-MURAL-INS-07",
+      "source_id": "STG-SRC-20261114-MURAL-REVUELTAS",
+      "locator": "Revueltas page lines 81–93, 108–111; direct institutional HTML, quoted historical recollections not verified against original text",
+      "access": "Direct HTML opened and inspected through web retrieval; no original historic correspondence, contract, technical lab report, or image-rights license inspected",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": null
+    },
+    {
+      "id": "20261114T0600Z-MURAL-INS-08",
+      "source_id": "STG-SRC-20261114-MURAL-INBAL",
+      "locator": "Boletín 980, 8 Dec 2022, paragraphs 'El muralismo a cien años'; direct institutional news release",
+      "access": "Direct HTML opened and inspected through web retrieval; no original historic correspondence, contract, technical lab report, or image-rights license inspected",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": null
+    }
+  ],
+  "findings": [
+    {
+      "id": "20261114T0600Z-MURAL-01",
+      "classification": "broad_history",
+      "assertion": "The 1922 San Ildefonso mural commissions formed part of the Obregón administration's postrevolutionary education project under José Vasconcelos, who headed the SEP from 10 October 1921 to 28 January 1924. These murals occupied walls of the Escuela Nacional Preparatoria rather than a museum originally built to display them.",
+      "date_or_range": "1921-10-10–1924-01-28",
+      "period": "Postrevolutionary reconstruction",
+      "themes": [
+        "state education",
+        "public art",
+        "political legitimacy"
+      ],
+      "geographies": [
+        "Centro Histórico",
+        "San Ildefonso"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-MURAL-SITE",
+        "STG-SRC-20261114-MURAL-INBAL"
+      ],
+      "source_locator": "San Ildefonso acervo lines 40–45; INBAL bulletin 980 'El muralismo a cien años'",
+      "limitations": "Institutional chronology checked, but original SEP commissioning contracts and student reception not inspected.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0600Z-MURAL-02",
+      "classification": "broad_history",
+      "assertion": "The initial 1922 team at the preparatory school included Rivera, Charlot, Leal, Ramón Alva de la Canal and Revueltas; Siqueiros and Orozco joined later. The collective project also depended on assistants including Xavier Guerrero, Amado de la Cueva, Carlos Mérida and Máximo Pacheco, so a narrative restricted to three famous painters would distort attribution.",
+      "date_or_range": "1922–1926",
+      "period": "Early Mexican muralism",
+      "themes": [
+        "collaborative labor",
+        "postrevolutionary art"
+      ],
+      "geographies": [
+        "Colegio de San Ildefonso"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-MURAL-EXPO",
+        "STG-SRC-20261114-MURAL-INBAL"
+      ],
+      "source_locator": "San Ildefonso exhibition 'Muralistas en San Ildefonso'; INBAL bulletin 980 collaborator paragraph",
+      "limitations": "Specific contracts, payroll and attribution of each hand on each fresco not independently inspected.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0600Z-MURAL-03",
+      "classification": "broad_history",
+      "assertion": "The revolutionary muralism milieu included women artists and activists—among them Nahui Olin, Graciela Amador, Tina Modotti, and others—and Indigenous artists and models, including Máximo Pacheco and Luz Jiménez. Their roles should not be equated automatically: the exhibition catalog distinguishes models, image-makers, activists and assistants.",
+      "date_or_range": "1917–1926",
+      "period": "Postrevolutionary cultural movements",
+      "themes": [
+        "women artists",
+        "Indigenous participation",
+        "labor"
+      ],
+      "geographies": [
+        "Mexico City",
+        "San Ildefonso"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-MURAL-EXPO",
+        "STG-SRC-20261114-MURAL-LEAL"
+      ],
+      "source_locator": "San Ildefonso 'Mujeres artistas y activistas' and 'Muralistas'; Leal page lines 38–40",
+      "limitations": "Official exhibition is interpretive synthesis; individual original biographies and contracts not checked. Do not assert all listed women painted the school's walls.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0600Z-MURAL-04",
+      "classification": "broad_history",
+      "assertion": "UNAM quotes a 1923 Escuela Nacional Preparatoria report assigning Orozco work on the main courtyard and Siqueiros on the smaller courtyard staircase, after initial resistance from Vasconcelos. The account describes a contested commission, not a universally harmonious government-sponsored art program.",
+      "date_or_range": "1923",
+      "period": "Postrevolutionary mural commissions",
+      "themes": [
+        "institutional conflict",
+        "school politics",
+        "labor"
+      ],
+      "geographies": [
+        "Patio Principal",
+        "Patio Chico"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-MURAL-OROZCO"
+      ],
+      "source_locator": "Gaceta UNAM 2022-10-17 lines 12–17, attributed quotation from ENP 1923 report",
+      "limitations": "Original 1923 report not inspected; conflict described by specialist interviewed in 2022, not directly verified.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0600Z-MURAL-05",
+      "classification": "broad_history",
+      "assertion": "Orozco's San Ildefonso murals underwent interruption and substantial repainting: a UNAM interview reports that he returned in 1926 and destroyed earlier compositions except specified surviving work. Therefore the paintings now visible cannot be assumed to depict all imagery first commissioned in 1923.",
+      "date_or_range": "1923–1926",
+      "period": "Muralism and revision",
+      "themes": [
+        "patronage dispute",
+        "repainting",
+        "evidence loss"
+      ],
+      "geographies": [
+        "Patio Principal",
+        "Antiguo Colegio de San Ildefonso"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-MURAL-OROZCO",
+        "STG-SRC-20261114-MURAL-SITE"
+      ],
+      "source_locator": "Gaceta UNAM lines 15–19; San Ildefonso acervo lines 43–45, 83–155",
+      "limitations": "Chronology and survival depend on interview secondary account; original painted-layer conservation analysis missing.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0600Z-MURAL-06",
+      "classification": "poi_ready_candidate",
+      "assertion": "The San Ildefonso collection locates Rivera's La Creación (1922) in the Anfiteatro, contrasting with Orozco's 1923–1926 works across the three levels of the main courtyard and stair landing. A guide should assign separate observation stops rather than imply these murals occupy one wall.",
+      "date_or_range": "1922–1926",
+      "period": "Early muralism",
+      "themes": [
+        "spatial sequence",
+        "art pedagogy"
+      ],
+      "geographies": [
+        "Anfiteatro",
+        "Patio Principal"
+      ],
+      "poi_ids": [
+        "san-ildefonso"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-MURAL-SITE",
+        "STG-SRC-20261114-MURAL-EXPO"
+      ],
+      "source_locator": "San Ildefonso acervo lines 43–53, 83–155; exhibition section 'Muralistas'",
+      "limitations": "Current 2026 room access and conservation closures not confirmed; no visitor route should be published yet.",
+      "learning_mode": "field_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0600Z-MURAL-07",
+      "classification": "poi_ready_candidate",
+      "assertion": "Charlot's Masacre en el Templo Mayor and Leal's Los danzantes de Chalma were arranged on opposing walls near the stair. The exhibition interprets them as deliberately dialoguing historical conquest violence and twentieth-century religious practice; the murals are evidence of 1920s historical imagination, NOT eyewitness depiction of 1520.",
+      "date_or_range": "1922–1923",
+      "period": "Early muralism and conquest memory",
+      "themes": [
+        "conquest memory",
+        "site interpretation",
+        "representation"
+      ],
+      "geographies": [
+        "San Ildefonso west stair"
+      ],
+      "poi_ids": [
+        "san-ildefonso",
+        "templo-mayor"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-MURAL-CHARLOT",
+        "STG-SRC-20261114-MURAL-LEAL",
+        "STG-SRC-20261114-MURAL-EXPO"
+      ],
+      "source_locator": "Charlot page lines 3–10; Leal page lines 33–40; exhibition 'Muralistas'",
+      "limitations": "Interpretation from institution; on-site line-of-sight not checked; do not use mural as archaeological evidence for Mexica rituals.",
+      "learning_mode": "field_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0600Z-MURAL-08",
+      "classification": "poi_ready_candidate",
+      "assertion": "On Charlot's massacre mural the college's description identifies a central three-color standard, diagonally advancing Spaniards, and small portraits of Rivera, Leal and Charlot at lower right. These identifiable details provide a concrete looking prompt, but the scene's iconography uses a twentieth-century interpretation of conquest.",
+      "date_or_range": "1922–1923",
+      "period": "Mural representation of conquest",
+      "themes": [
+        "composition",
+        "artist self-portrait",
+        "source criticism"
+      ],
+      "geographies": [
+        "San Ildefonso stair"
+      ],
+      "poi_ids": [
+        "san-ildefonso"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-MURAL-CHARLOT"
+      ],
+      "source_locator": "San Ildefonso Charlot mural page lines 7–10",
+      "limitations": "Visitor physical access and precise direction of the painting not checked; interpretive attributions are institutional, not primary testimony for colonial events.",
+      "learning_mode": "field_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0600Z-MURAL-09",
+      "classification": "poi_ready_candidate",
+      "assertion": "Revueltas's Allegoría de la Virgen de Guadalupe (1922–1923) integrates an image of campesino, Indigenous and Afrodescendant collectivity, and the institution identifies his signature with hammer-and-sickle symbolism and union membership. The material offers an observed entry point into contested religious and class politics after the Revolution.",
+      "date_or_range": "1922–1923",
+      "period": "Cultural politics after Revolution",
+      "themes": [
+        "Guadalupe imagery",
+        "class politics",
+        "mural details"
+      ],
+      "geographies": [
+        "San Ildefonso entrance"
+      ],
+      "poi_ids": [
+        "san-ildefonso"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-MURAL-REVUELTAS",
+        "STG-SRC-20261114-MURAL-EXPO"
+      ],
+      "source_locator": "Revueltas catalogue lines 81–93; exhibition paired entrance walls",
+      "limitations": "Interpretation institutional and not universally accepted; visitors' access and material state not verified.",
+      "learning_mode": "field_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0600Z-MURAL-10",
+      "classification": "specialist_technical",
+      "assertion": "The Jean Charlot Collection catalog provides a more precise work chronology—2 October 1922 to 31 January 1923, with a 1 February 1923 inauguration—than the general 1922–1923 label, and separately catalogs scaled composition, geometric plan, cartoons, and a numbered giornate drawing. These are primary-material research leads for mural-making technique, not yet original objects examined.",
+      "date_or_range": "1922-10-02–1923-02-01",
+      "period": "Mural production and documentation",
+      "themes": [
+        "artists' drawings",
+        "fresco technique",
+        "dating"
+      ],
+      "geographies": [
+        "San Ildefonso west court"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-MURAL-VAULT",
+        "STG-SRC-20261114-MURAL-SITE"
+      ],
+      "source_locator": "Charlot Collection catalogue lines 2–14 and 21–38; site acervo lines 69–74",
+      "limitations": "Catalogue metadata direct, but graphic objects and dated supporting documents not inspected. Copyright clearance required before displaying photographs or plans.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0600Z-MURAL-11",
+      "classification": "specialist_technical",
+      "assertion": "Technique labels across San Ildefonso's own public pages require critical separation: the acervo lists Leal's Chalma work as encaustic, whereas the exhibition page labels it 'Fresco' in a heading while describing encaustic in its body. A future guide should not resolve the medium by simple majority or substitute a simplified 'all fresco' label.",
+      "date_or_range": "1922–1923",
+      "period": "Mural materials and conservation",
+      "themes": [
+        "material technology",
+        "source conflict",
+        "conservation"
+      ],
+      "geographies": [
+        "San Ildefonso stair"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-MURAL-SITE",
+        "STG-SRC-20261114-MURAL-LEAL"
+      ],
+      "source_locator": "Acervo lines 75–80 vs Leal exhibition page lines 33–39; conflicting labels within institutional materials",
+      "limitations": "No technical materials analysis, conservation report, or historic recipe inspected; retain formal unresolved material attribution.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    }
+  ],
+  "source_identity_policy": "Eight new IDs are provisional source proposals only; semantic overlap with existing canonical/staged titles does not authorize aliasing, deduplication, merges, or editorial approval.",
+  "external_source_usage": "Eight directly consulted institutional HTML/coll. catalogue pages, with section and line locators. No historical newspaper facsimile, contract, physical artwork, original illustration, technical conservation laboratory report, image-rights grant, or field visit was inspected.",
+  "publication_approved": false,
+  "independently_corroborated_findings": 0,
+  "ready_for_editorial_review": false
+}
