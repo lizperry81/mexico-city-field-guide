@@ -1,0 +1,69 @@
+{
+  "schema_version": 4,
+  "kind": "append_only_research_to_app_verified_history",
+  "generated_at": "2026-11-14T11:07:24.997Z",
+  "branch": "research-persistence",
+  "research_commit_sha": "fcc9a9bc76e9a3699d3aac98e2f4549773bc20bb",
+  "verified_replay_commit_sha": "8035cec9040a31b0d265e6924707ba86a7ca52a6",
+  "canonical_version": "V97",
+  "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_status": "unchanged_provisional_V97_not_promoted",
+  "canonical": {
+    "sources": 616,
+    "claims": 422,
+    "claim_sources": 403,
+    "canonical_findings": 68,
+    "canonical_source_inspections": 9
+  },
+  "staged_counts": {
+    "github_batches": 87,
+    "staged_findings": 563,
+    "source_candidates": 241,
+    "source_inspections": 279
+  },
+  "versioned_research_sqlite_gz_path": "research/reconciled/v4_fcc9a9bc76e9/research_only.sqlite.gz",
+  "versioned_research_sha256": "be0d1da1f9e14dc347cbea2f68088d37fc335f7b048f1287892b089602ae2722",
+  "compressed_sha256": "1dc08c604ad2591ad38c6da1a2cc978466014970cdf6ca8f655a478331545861",
+  "replay_report_path": "research/reconciled/v4_fcc9a9bc76e9/replay_report.json",
+  "verification_ledger_path": "research/ledgers/20261114T1106Z-87-batch-1915-hunger-reconciliation-readback.json",
+  "source_batch_artifact_paths": [
+    "research/batches/20261114T1058Z-1915-hunger-urban-survival.json"
+  ],
+  "coverage_artifact_paths": [
+    "research/coverage/20261114T1058Z-1915-hunger-urban-survival-readiness.json"
+  ],
+  "chapter_audit_artifact_paths": [
+    "research/audits/20261114T1058Z-1915-hunger-urban-survival-templo-discover-evidence-gates.json"
+  ],
+  "source_identity_conflicts": [
+    {
+      "source_id": "STG-SRC-MANZANILLA-LOPEZ-FRETER-1996",
+      "source_path": "20261112T060230Z-auto09.json",
+      "reason": "cross_batch_source_metadata_collision"
+    },
+    {
+      "source_id": "v95-sload-cave-2020",
+      "source_path": "20261112T080125Z-auto09-te28-2009.json",
+      "reason": "cross_batch_source_metadata_collision"
+    }
+  ],
+  "unknown_source_ids": [
+    "PROPOSE_SOURCE_SLOAD_2020_BOTANICAL_DATASET_NOT_IN_CANONICAL"
+  ],
+  "detached_inspections_pending": 37,
+  "evidence_status": "research_database_integrated_noncanonical_not_editorially_corroborated",
+  "ready_for_editorial_review": false,
+  "ready_for_publication": false,
+  "canonical_promoted": false,
+  "publication_approved": false,
+  "no_auto_merge": true,
+  "blockers": [
+    "37 detached inspection records remain identity-review pending",
+    "2 cross-batch bibliographic metadata collisions",
+    "1 unregistered botanical dataset source reference",
+    "1 unresolved index-only finding reference",
+    "1915 source evidence mostly edited modern synthesis or abstracts; original 1914-15 documents not opened",
+    "1915 price-increase percentage in 2016 INEHRM chapter internally inconsistent with quoted endpoints",
+    "Casasola photograph original object ID and reuse rights unverified"
+  ]
+}
