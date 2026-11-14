@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "kind": "read_only_research_and_app_implementation_handoff",
+  "generated_at_utc": "2026-11-14T05:52:00Z",
+  "branch_written": "main",
+  "app_changes": {
+    "files": [
+      "poi/templo-mayor/reader.html",
+      "poi/templo-mayor/assets/reader.css",
+      "poi/templo-mayor/assets/reader.js",
+      "scripts/test_reader_navigation.js",
+      "scripts/test_templo_review.py"
+    ],
+    "summary": "Added keyboard-accessible return-to-contents links after each of six pre-existing Discover history sections, a matching visible focus target and Safari repeated-anchor handling; did not change history paragraphs, eight archived Explore field chapters, source records, homepage or localStorage comments.",
+    "content_or_publication_changes": false,
+    "editorial_status": "No new manuscript approved, altered, or published"
+  },
+  "research_handoff": {
+    "branch_read": "research-persistence",
+    "research_commit_sha": "d8a0d2dcb8ffbbbdd295cd5cbbe384068780ddfa",
+    "research_branch_ref_at_inspection": "a869825b07e14ac72a0f0d9322bd3aeb4a1aa810",
+    "commit_ancestry": "research input is ancestor of branch head by six commits, verified using GitHub compare",
+    "manifest_path": "research/handoff/manifest.json",
+    "manifest_blob_sha": "cd96f6761bf345a7e89a2403045dc4ecc23c3b2e",
+    "artifact_paths_distinct_present": 180,
+    "artifact_paths_distinct_checked": 180,
+    "immutable_history_path": "research/handoff/history/20261114T0500Z-81-batch-republic-restoration-verified.json",
+    "immutable_history_blob_sha": "69cde9bea9859eaf640efd9c54a1b48ee51bee34",
+    "snapshot_blob_sha": "188dca6d9c5a8642f669815caa736677ca244f0d",
+    "replay_report_blob_sha": "a8891e76242cf0ad2494aa15943f422f84c94d56",
+    "blob_identity_matches_declared": true,
+    "verified_replay_commit_sha": null,
+    "provisional_batches": 81,
+    "provisional_findings": 497,
+    "canonical_v97_unchanged": {
+      "sources": 616,
+      "claims": 422,
+      "source_links": 403,
+      "findings": 68
+    },
+    "editorial_review_ready": false,
+    "publication_approved": false,
+    "note": "The producer marks the new 1867 Republic/Zócalo archaeological coverage audit unready for editorial approval. Git blob readback matches but verified_replay_commit_sha is null. The app's CI handoff validator must determine whether producer proof is sufficient; Git path presence alone does not authorize promotion.",
+    "last_confirmed_consumed_research_sha_before_run": "69fe9b67d1ad51ea07615b3cb129d1530d42449c"
+  },
+  "manuscript_recovery": {
+    "status": "document_candidate_identified_not_verbatim_approved_archive",
+    "candidates": [
+      {
+        "name": "Discover_Chapter_2_Complete_Commentable_Review.docx",
+        "library_file_id": "file_00000000b0f881f58a58a541fa2161ba",
+        "source_sha256": "04f083c5ac8a3785ac06eff8bed8d367cb98096edf844858d5ccc5462760f413",
+        "source_created_utc": "2026-11-13T13:49:46Z",
+        "note": "Complete editable review copy; claimed to reproduce earlier conversation manuscript; source document is not a certified transcript of the original approved answer"
+      },
+      {
+        "name": "Discover_Chapter_2_Complete_Commentable_Review(1).docx",
+        "library_file_id": "file_00000000072081f5a35473126953b1f6",
+        "source_sha256": "2f7da1d84b632db25d59aa357c02a3e116a03c95e40b21948866290317e31aae",
+        "source_created_utc": "2026-11-13T15:07:02Z",
+        "note": "A distinct review-copy version; most paragraphs match other copy, but some changes exist"
+      },
+      {
+        "name": "Discover_Chapter_2_Advanced_Rewrite_With_Investigations(1).docx",
+        "library_file_id": "file_00000000c28081f5b19b87749111b5b3",
+        "source_sha256": "735e30c4629cafcf797b419ed897747869a0005ed109f0237987944023d06f10",
+        "source_created_utc": "2026-11-13T17:51:34Z",
+        "note": "Substantially rewritten editorial draft and optional investigations; should not be substituted for the approved original"
+      }
+    ],
+    "comparison": "The two complete-review DOCX files differ in at least four paragraph edit blocks; the advanced rewrite is substantially different. The original manuscript's exact chat bytes and The Heart of Tenochtitlan still lack provenance-verifiable full copies.",
+    "user_approved_archives_created": 0,
+    "action": "Do not place any candidate in editorial/approved or generate .md.sha256 until original version and exact text are verifiably matched; preserve originals and their source identifiers."
+  },
+  "blockers": [
+    "Unambiguous approved version and verbatim original manuscript text not recovered",
+    "81-batch producer did not provide verified replay commit SHA",
+    "No original government/archaeological document corroboration and photographic rights approval",
+    "Physical iPhone Safari testing still outstanding"
+  ],
+  "non_destructive": true
+}
