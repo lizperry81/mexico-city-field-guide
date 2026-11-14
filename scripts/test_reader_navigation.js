@@ -67,11 +67,12 @@ function button() {
   };
 }
 const prev = button(), next = button(), progress = {textContent: ''};
+const stopPosition = {textContent: ''};
 const ids = {...panels, ...Object.fromEntries(stops.map(stop => [stop.id, stop])),
   ...Object.fromEntries(sections.map(section => [section.id, section])),
   'choose-stop': jump, 'previous-stop': prev, 'next-stop': next,
   'skip-to-history': skip,
-  'stop-progress': progress};
+  'stop-progress': progress, 'stop-position': stopPosition};
 const doc = {
   querySelectorAll(selector) {
     if (selector === '.reader-nav a') return links;
@@ -109,6 +110,7 @@ const sandbox = {
 };
 vm.runInNewContext(code, {...sandbox});
 assert.equal(progress.textContent, 'Stop 1 of 3');
+assert.equal(stopPosition.textContent, progress.textContent, 'Current stop must be visible near the picker');
 assert.equal(jump.value, 'plaza');
 assert.equal(prev.disabled, true);
 assert.equal(next.disabled, false);
@@ -119,6 +121,7 @@ jump.value = 'twin-stairs';
 jump.listener();
 assert.equal(location.hash, '#twin-stairs');
 assert.equal(progress.textContent, 'Stop 2 of 3');
+assert.equal(stopPosition.textContent, progress.textContent, 'Stop picker must follow walk navigation');
 assert.equal(stops[1].heading.focused, 1);
 assert.equal(prev.disabled, false);
 location.hash = '#history'; // Back/forward or history tab.
@@ -188,6 +191,7 @@ store.set(key, 'older-stairs');
 location._hash = '#explore';
 vm.runInNewContext(code, {...sandbox}); // A fresh JS context simulates reload.
 assert.equal(jump.value, 'older-stairs', 'Explore reload must resume a stored stop');
+assert.equal(stopPosition.textContent, 'Stop 3 of 3', 'Reloaded walk must show saved position');
 assert.equal(progress.textContent, 'Stop 3 of 3');
 assert.equal(stops[2].hidden, false);
 location._hash = '#plaza';
@@ -202,4 +206,5 @@ const blockedWindow = {...windowContext, sessionStorage: {
 }};
 vm.runInNewContext(code, {...sandbox, window: blockedWindow});
 assert.equal(jump.value, 'twin-stairs', 'Navigation still works without storage');
+assert.equal(stopPosition.textContent, 'Stop 2 of 3', 'Position must work with storage disabled');
 console.log('PASS: keyboard skip, Discover TOC, Safari focus, pager, stop resume, deep links, and blocked storage');
