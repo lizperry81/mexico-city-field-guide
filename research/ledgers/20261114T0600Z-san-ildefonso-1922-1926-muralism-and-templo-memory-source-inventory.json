@@ -1,0 +1,103 @@
+{
+  "schema_version": 2,
+  "kind": "new_research_batch_non_destructive_source_preflight",
+  "generated_at": "2026-11-14T06:04:59.613Z",
+  "branch": "research-persistence",
+  "baseline_manifest_blob_sha": "cd96f6761bf345a7e89a2403045dc4ecc23c3b2e",
+  "baseline_replay_report_blob_sha": "a8891e76242cf0ad2494aa15943f422f84c94d56",
+  "canonical_v97_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "before": {
+    "github_batch_documents": 81,
+    "staged_findings": 497,
+    "source_candidates": 194,
+    "source_inspections": 232,
+    "canonical_sources": 616,
+    "canonical_claims": 422,
+    "canonical_links": 403,
+    "canonical_findings": 68,
+    "unregistered_source_references": 1,
+    "metadata_conflicts": 2,
+    "detached_inspections_pending": 37
+  },
+  "planned_after_replay": {
+    "github_batch_documents": 82,
+    "staged_findings": 508,
+    "source_candidates": 202,
+    "source_inspections": 240
+  },
+  "candidate_findings": 11,
+  "candidate_source_ids": [
+    "STG-SRC-20261114-MURAL-SITE",
+    "STG-SRC-20261114-MURAL-EXPO",
+    "STG-SRC-20261114-MURAL-CHARLOT",
+    "STG-SRC-20261114-MURAL-VAULT",
+    "STG-SRC-20261114-MURAL-OROZCO",
+    "STG-SRC-20261114-MURAL-LEAL",
+    "STG-SRC-20261114-MURAL-REVUELTAS",
+    "STG-SRC-20261114-MURAL-INBAL"
+  ],
+  "candidate_source_urls": [
+    {
+      "id": "STG-SRC-20261114-MURAL-SITE",
+      "url": "https://sanildefonso.org.mx/acervo.php",
+      "status": "requires_review_for_cross_corpus_identity_equivalence"
+    },
+    {
+      "id": "STG-SRC-20261114-MURAL-EXPO",
+      "url": "https://www.sanildefonso.org.mx/espiritudel22/",
+      "status": "requires_review_for_cross_corpus_identity_equivalence"
+    },
+    {
+      "id": "STG-SRC-20261114-MURAL-CHARLOT",
+      "url": "https://www.sanildefonso.org.mx/mural_masacre.php",
+      "status": "requires_review_for_cross_corpus_identity_equivalence"
+    },
+    {
+      "id": "STG-SRC-20261114-MURAL-VAULT",
+      "url": "https://vault.jeancharlot.org/mural-sculpture/mx_df_mexico_enp_1922-1923_massacre.html",
+      "status": "requires_review_for_cross_corpus_identity_equivalence"
+    },
+    {
+      "id": "STG-SRC-20261114-MURAL-OROZCO",
+      "url": "https://www.gaceta.unam.mx/artista-del-estado-posrevolucionario-inconforme-con-ser-un-simple-ideologo/",
+      "status": "requires_review_for_cross_corpus_identity_equivalence"
+    },
+    {
+      "id": "STG-SRC-20261114-MURAL-LEAL",
+      "url": "https://sanildefonso.org.mx/espiritudel22/leal_danzantes.html",
+      "status": "requires_review_for_cross_corpus_identity_equivalence"
+    },
+    {
+      "id": "STG-SRC-20261114-MURAL-REVUELTAS",
+      "url": "https://sanildefonso.org.mx/espiritudel22/revueltas.html",
+      "status": "requires_review_for_cross_corpus_identity_equivalence"
+    },
+    {
+      "id": "STG-SRC-20261114-MURAL-INBAL",
+      "url": "https://inba.gob.mx/prensa/17120/el-espiritu-del-22-un-siglo-de-muralismo-en-san-ildefonso-exposicion-que-propone-un-dialogo-dinamico-y-actual-con-el-legado-mural-del-recinto-universitario",
+      "status": "requires_review_for_cross_corpus_identity_equivalence"
+    }
+  ],
+  "source_inspection_ids": [
+    "20261114T0600Z-MURAL-INS-01",
+    "20261114T0600Z-MURAL-INS-02",
+    "20261114T0600Z-MURAL-INS-03",
+    "20261114T0600Z-MURAL-INS-04",
+    "20261114T0600Z-MURAL-INS-05",
+    "20261114T0600Z-MURAL-INS-06",
+    "20261114T0600Z-MURAL-INS-07",
+    "20261114T0600Z-MURAL-INS-08"
+  ],
+  "source_locators_examined": true,
+  "source_merges_performed": 0,
+  "canonical_mutations": 0,
+  "publication_approved": false,
+  "ready_for_editorial_review": false,
+  "source_status": "provisional_even_after_ingestion",
+  "blockers": [
+    "Require workflow full replay, integrity, foreign-key, count, SHA and GitHub readback before manifest promotion",
+    "Possible previously staged institutional URLs require later source identity comparison, not blind merges",
+    "Unresolved legacy botanical placeholder, two metadata conflicts, 37 detached inspections",
+    "Copyright and current museum access unverified"
+  ]
+}
