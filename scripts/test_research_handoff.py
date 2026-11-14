@@ -10,6 +10,7 @@ import test_handoff_84_history  # fail-closed 84-batch reader identity regressio
 import test_handoff_86_history  # pinned append-only Git identities and approval regressions
 import test_handoff_87_history  # 87-batch immutable readback and evidence safeguards
 import test_handoff_88_history  # independent 88-batch full-binary and approval tests
+import test_handoff_89_history  # 89-batch workflow readback and no-publication tests
 from editorial_passage_inventory import HistoryPassages
 from check_research_handoff import audit_matrix_explicitly_unapproved
 from handoff_new_audits import parse_new_audit
@@ -22,6 +23,7 @@ assert verified_index_only_total(23, 23, 5, "immutable_research_batch_handoff")
 assert verified_index_only_total(23, 23, 5, "append_only_research_handoff_history")
 assert verified_index_only_total(23, 23, 5, "verified_noncanonical_research_to_app_handoff_history")
 assert verified_index_only_total(23, 23, 5, "append_only_research_to_app_verified_history")
+assert verified_index_only_total(23, 23, 5, "immutable_research_handoff_history_entry")
 assert not verified_index_only_total(23, 18, 5, "verified_noncanonical_research_to_app_handoff_history")
 assert not verified_index_only_total(23, 18, 5, "append_only_research_handoff_history")
 assert verified_index_only_total(23, 18, 5, "verified_research_to_app_handoff_history")
