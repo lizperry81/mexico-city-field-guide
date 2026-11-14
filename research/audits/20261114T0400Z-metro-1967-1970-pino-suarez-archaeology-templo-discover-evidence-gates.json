@@ -1,0 +1,127 @@
+{
+  "schema_version": 3,
+  "kind": "chapter_level_claim_to_source_locator_audit",
+  "generated_at": "2026-11-14T04:00:54Z",
+  "branch": "research-persistence",
+  "target_branch_read_only": "main",
+  "target_path": "poi/templo-mayor/reader.html",
+  "reader_re_read_this_run": false,
+  "reader_blob_sha_last_verified": "0e0d2b741d05b059eadb267ec982d3d76e8150bb",
+  "source_batch_path": "research/batches/20261114T0400Z-metro-1967-1970-pino-suarez-archaeology.json",
+  "gates": [
+    {
+      "topic": "Triple Alliance ~1428",
+      "reader_anchor": "In the late 1420s, Tenochtitlan joined Texcoco and Tlacopan in the Triple Alliance",
+      "status": "source_locator_gate_open",
+      "source_locators": [
+        {
+          "path": "research/audits/templo-mayor-discover-20261113T1427Z-triple-alliance-dating-contrast.json",
+          "locator": "earlier contrast 1427 / 1428 / 1430"
+        }
+      ],
+      "uncertainty": "Original Nahuatl and early-colonial chronicles not reconciled",
+      "historical_addition": "Do not assert 1428 as exact; separate defeat of Azcapotzalco, alliance structure and tax extraction",
+      "placement": "advance_history"
+    },
+    {
+      "topic": "Temple seven construction phases",
+      "reader_anchor": "Archaeologists group the work into seven major stages",
+      "status": "source_locator_gate_open",
+      "source_locators": [
+        {
+          "path": "research/audits/20261113T1803Z-templo-mayor-gamio-1913-1914-primary-gates.json",
+          "locator": "construction-stage question and excavation history"
+        }
+      ],
+      "uncertainty": "No calibrated phase drawings, phase IVb detail or accessible field route matching",
+      "historical_addition": "Use physical sealed-stair example only after dated excavation plate verifies which walls can be seen",
+      "placement": "advance_history_and_field"
+    },
+    {
+      "topic": "Coatepec and Coyolxauhqui",
+      "reader_anchor": "At the foot of the south stair of that platform lay a stone disk carved with the dismembered Coyolxauhqui",
+      "status": "source_locator_gate_open",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T0100Z-templo-mayor-discover-1978-responders-and-seven-gates.json",
+          "locator": "Coyolxauhqui discovery context"
+        }
+      ],
+      "uncertainty": "Depiction/findspot does not prove a specific ritual performance; museum original vs outdoor object unclear",
+      "historical_addition": "Explain what is physically attested and which Coatepec ritual reenactment is interpretation",
+      "placement": "advance_history_and_field"
+    },
+    {
+      "topic": "Conquest: Tóxcatl and 1521 siege",
+      "reader_anchor": "In May 1520, while Cortés was away",
+      "status": "source_locator_gate_open",
+      "source_locators": [
+        {
+          "path": "research/audits/20261113T2004Z-templo-mayor-exact-reader-source-gates.json",
+          "locator": "Florentine Codex Book 12 folios still outstanding"
+        }
+      ],
+      "uncertainty": "Indigenous and Spanish narratives not directly collated",
+      "historical_addition": "Separate May 1520 massacre, 1521 siege and later building reuse, with original folio locators",
+      "placement": "advance_history"
+    },
+    {
+      "topic": "Gamio excavations 1913 versus May 1914",
+      "reader_anchor": "In 1913, archaeologist Manuel Gamio uncovered the pyramid’s southwest corner",
+      "status": "source_locator_gate_open",
+      "source_locators": [
+        {
+          "path": "research/audits/20261113T1803Z-templo-mayor-gamio-1913-1914-primary-gates.json",
+          "locator": "1913 planning and 6–16 May 1914 excavation"
+        }
+      ],
+      "uncertainty": "Original Gamio signed 1914 report absent",
+      "historical_addition": "Editorial correction candidate: distinguish 1913 demolition preparations from May 1914 excavation; do not deploy until verified",
+      "placement": "advance_history"
+    },
+    {
+      "topic": "Coyolxauhqui discovery and 1978–1982 seasons",
+      "reader_anchor": "In February 1978, electrical workers digging near República de Argentina and República de Guatemala struck the carved Coyolxauhqui disk",
+      "status": "source_locator_gate_open",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T0100Z-templo-mayor-discover-1978-responders-and-seven-gates.json",
+          "locator": "first responder dispute and early salvage"
+        }
+      ],
+      "uncertainty": "Original 1978 fieldbook and personnel records missing",
+      "historical_addition": "Show clear chain Feb 1978 utility works → rescue → 1978–1982 archaeological seasons → 1987 museum",
+      "placement": "advance_history_and_field"
+    },
+    {
+      "topic": "Distinct modern archaeology at Pino Suárez and Templo Mayor",
+      "reader_anchor": "In February 1978, electrical workers digging near República de Argentina and República de Guatemala struck the carved Coyolxauhqui disk",
+      "status": "separate_1967_1968_1978_salvage_sites",
+      "source_locators": [
+        {
+          "path": "research/batches/20261114T0400Z-metro-1967-1970-pino-suarez-archaeology.json",
+          "locator": "20261114T0400Z-METRO-07, 20261114T0400Z-METRO-08, 20261114T0400Z-METRO-10"
+        },
+        {
+          "path": "https://www.eluniversal.com.mx/cultura/cuando-se-encontro-una-piramide-en-medio-del-metro-de-la-cdmx/",
+          "locator": "2021 republication of 28 September 1968 press account, lines 31–49"
+        }
+      ],
+      "uncertainty": "Pino Suárez rescue archaeology during Metro construction is at a separate location and decade; reconstructed 1968 printed text needs archival authentication, not independent corroboration of 1978 Coyolxauhqui find.",
+      "historical_addition": "Write optional separate cross-period sidebar: compare the 1967–68 Pino Suárez Ehécatl salvage, 1978 Coyolxauhqui find, changing urban development, and distinct archaeological methods. Keep timeline and findspots separate.",
+      "placement": "separate_modern_heritage_sidebar"
+    }
+  ],
+  "no_publication_of_unverified_claims": true,
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "blockers": [
+    "Original indigenous and Spanish alliance chronologies missing",
+    "Construction stage field plate and Coatepec debate unresolved",
+    "Original Tóxcatl and 1521 source folios missing",
+    "Original Gamio 1914 report absent",
+    "1978 first rescue logs absent",
+    "Distinct 1967–1968 Pino Suárez field notebooks and original 1968 printed news absent",
+    "Metro iconography copyright and on-site access not verified"
+  ]
+}
