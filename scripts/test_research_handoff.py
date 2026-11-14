@@ -179,6 +179,37 @@ readback_history = {
     "verification_ledger_path": "research/ledgers/readback.json"
 }
 validate_versioned_handoff(readback_manifest, readback_history, "a"*40)
+# 80-batch history uses a compact summary, while the rolling manifest keeps
+# additional source-access details. Authenticate every count and publication
+# restriction; never accept an arbitrary mismatch between these documents.
+compact_manifest = copy.deepcopy(readback_manifest)
+compact_manifest["staged_counts"]["new_source_candidates_all_types_this_run"] = 12
+compact_manifest["evidence_status"] = {
+    "new_historical_finding_candidates_researched_this_run": 11,
+    "new_source_inspection_metadata_this_run": 12,
+    "independently_corroborated_new_findings": 0,
+    "ready_for_editorial_review": False,
+    "publication_approved": False}
+compact_history = copy.deepcopy(readback_history)
+compact_history["evidence_status"] = {
+    "new_findings": 11, "new_sources": 12, "new_inspections": 12,
+    "independent_corroboration": False, "publication_approved": False,
+    "source_types": "unverified source metadata, originals pending"}
+validate_versioned_handoff(compact_manifest, compact_history, "a"*40)
+for mutation in (
+    {"new_findings": 10}, {"new_sources": 13},
+    {"new_inspections": 11}, {"independent_corroboration": True},
+    {"publication_approved": True}, {"source_types": ""},
+    {"unexpected_field": "claimed source review"},
+):
+    altered = copy.deepcopy(compact_history)
+    altered["evidence_status"].update(mutation)
+    try:
+        validate_versioned_handoff(compact_manifest, altered, "a"*40)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("Unverified compact research evidence accepted: " + str(mutation))
 for key, value in [("source_research_commit_sha", "z"*40),
                    ("no_automatic_merge", False),
                    ("ready_for_publication", True)]:
