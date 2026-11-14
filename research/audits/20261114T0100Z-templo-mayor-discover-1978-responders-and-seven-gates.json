@@ -1,0 +1,136 @@
+{
+  "schema_version": 4,
+  "kind": "templo_mayor_discover_opening_narrative_claim_to_source_locator_matrix",
+  "generated_at": "2026-11-14T01:01:39.588Z",
+  "branch": "research-persistence",
+  "target_branch_read_only": "main",
+  "target_path": "poi/templo-mayor/reader.html",
+  "reader_re_read_this_run": true,
+  "reader_blob_sha": "32f11b2d40fd8b1a675ed6bbede572b02ac0767a",
+  "source_batch_path": "research/batches/20261114T0100Z-government-buildings-1970-1987-and-1978-findspot.json",
+  "gates": [
+    {
+      "topic": "Triple Alliance after Azcapotzalco",
+      "status": "year_unresolved_1427_1428_1430",
+      "reader_anchor": "In the late 1420s, Tenochtitlan joined Texcoco and Tlacopan in the Triple Alliance.",
+      "source_locators": [
+        {
+          "path": "research/audits/templo-mayor-discover-20261113T1427Z-triple-alliance-dating-contrast.json",
+          "locator": "INAH 1427 versus alternative 1428 and 1430 readings"
+        }
+      ],
+      "uncertainty": "No primary chronicle comparison; no new proof this run",
+      "historical_addition": "Preserve late-1420s wording and explain political consequences of defeating Azcapotzalco rather than claim an exact founding day",
+      "placement": "advance_read"
+    },
+    {
+      "topic": "Construction stages and IVb",
+      "status": "archaeological_phase_plan_pending",
+      "reader_anchor": "Archaeologists group the work into seven major stages and give substantial additions lettered labels.",
+      "source_locators": [
+        {
+          "url": "https://www.arqueologiamexicana.mx/mexico-antiguo/templo-mayor-vestigios-prehispanicos",
+          "locator": "Barrera indexed text: six of seven stages could be seen on the visitor route of his publication"
+        },
+        {
+          "path": "research/audits/20261113T1803Z-templo-mayor-gamio-1913-1914-primary-gates.json",
+          "locator": "Earlier excavations and phase interpretation"
+        }
+      ],
+      "uncertainty": "No phase drawing or ruler-by-ruler stage verification; 2018 visitor access cannot be projected onto 2026",
+      "historical_addition": "Create annotated plan differentiating nested early phases from vanished final pyramid; avoid claiming every historic stage is visible today",
+      "placement": "advance_read_and_field"
+    },
+    {
+      "topic": "Coatepec and Coyolxauhqui south stair",
+      "status": "interpretation_qualified",
+      "reader_anchor": "The disk’s position gave the story a place in the building.",
+      "source_locators": [
+        {
+          "url": "https://www.relatosehistorias.mx/mexico-antiguo/el-proyecto-templo-mayor-mas-de-30-anos",
+          "locator": "Matos indexed firsthand account: Coyolxauhqui rescue and first five offerings"
+        },
+        {
+          "path": "research/audits/20261113T1710Z-main-current-blob-claim-source-gates.json",
+          "locator": "Existing Stage IVb and disk-copy audit"
+        }
+      ],
+      "uncertainty": "Mythic analogy is interpretation, not direct evidence of ritual reenactment; sculpture context and old excavation plan require checking",
+      "historical_addition": "Show precisely the south-stair locus and distinguish myth text, physical placement, original museum stone and outdoor copy",
+      "placement": "on_site_deep_dive"
+    },
+    {
+      "topic": "Tóxcatl 1520 and conquest",
+      "status": "indigenous_spanish_source_comparison_missing",
+      "reader_anchor": "In May 1520, while Cortés was away, Pedro de Alvarado’s men attacked people celebrating Tóxcatl in the sacred precinct.",
+      "source_locators": [
+        {
+          "path": "research/audits/20261113T2004Z-templo-mayor-exact-reader-source-gates.json",
+          "locator": "Florentine Codex Book 12 original folio comparison pending"
+        }
+      ],
+      "uncertainty": "Need Indigenous and Spanish source comparison and post-conquest physical demolition chain",
+      "historical_addition": "Distinguish violence in 1520 from 1521 defeat and subsequent colonial reuse of masonry",
+      "placement": "advance_read"
+    },
+    {
+      "topic": "Gamio 1913 versus 1914",
+      "status": "correction_pending_original_1914_report",
+      "reader_anchor": "In 1913, archaeologist Manuel Gamio uncovered the pyramid’s southwest corner.",
+      "source_locators": [
+        {
+          "path": "research/audits/20261113T1803Z-templo-mayor-gamio-1913-1914-primary-gates.json",
+          "locator": "1913 demolition arrangements versus excavations beginning May 1914"
+        }
+      ],
+      "uncertainty": "16 May 1914 Gamio field report not directly read",
+      "historical_addition": "Propose editorial correction separating 1913 preparation from May 1914 archaeological work, but do not publish until original collation",
+      "placement": "advance_read"
+    },
+    {
+      "topic": "21 February 1978 initial rescue",
+      "status": "responders_conflicting_initial_offerings_candidate",
+      "reader_anchor": "In February 1978, electrical workers digging near República de Argentina and República de Guatemala struck the carved Coyolxauhqui disk.",
+      "source_locators": [
+        {
+          "url": "https://www.relatosehistorias.mx/mexico-antiguo/el-proyecto-templo-mayor-mas-de-30-anos",
+          "locator": "Matos account indexed opening: five offerings and Raúl Arana/Rafael Domínguez"
+        },
+        {
+          "url": "https://www.arqueologiamexicana.mx/mexico-antiguo/templo-mayor-vestigios-prehispanicos",
+          "locator": "Barrera indexed opening: Ángel García Cook/Raúl Arana"
+        }
+      ],
+      "uncertainty": "Original rescue logs absent; account may refer to distinct phases; initial five offerings not independently corroborated",
+      "historical_addition": "Separate electrical workers' discovery, INAH Salvamento rescue, early offerings and later larger excavation; leave individuals' assignment unresolved",
+      "placement": "advance_read_and_on_site"
+    },
+    {
+      "topic": "20 March 1978 project and 1987 museum",
+      "status": "start_date_from_single_specialist_source_current_route_unchecked",
+      "reader_anchor": "What Mexico City dug up",
+      "source_locators": [
+        {
+          "url": "https://www.arqueologiamexicana.mx/mexico-antiguo/templo-mayor-vestigios-prehispanicos",
+          "locator": "Barrera indexed project began 20 March 1978 and six visible stages"
+        },
+        {
+          "url": "https://templomayor.inah.gob.mx/historia/proyecto-templo-mayor",
+          "locator": "INAH institutional history: initial discovery and expanded Proyecto Templo Mayor"
+        }
+      ],
+      "uncertainty": "Start date from secondary specialist overview only; original authorization and 2026 room layout not inspected",
+      "historical_addition": "Add dated sequence: February workers; rescue offerings; March expansion; excavation 1978–1982; 1987 museum. Only label route as historical unless current check passed",
+      "placement": "advance_read_and_field"
+    }
+  ],
+  "no_publication_of_unverified_claims": true,
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "blockers": [
+    "Original Gamio report and early Triple Alliance chronicles uninspected",
+    "Original 1978 salvage notebooks and initial-responders chronology uncollated",
+    "2026 access and original-versus-copy display plan not checked",
+    "New PDF scholarly text visually blocked with HTTP 403; no editorial approval"
+  ]
+}
