@@ -1399,3 +1399,137 @@ parser.feed('<article id="history"><p>Existing <em>narrative</em> passage</p>'
 assert len(parser.passages) == 1
 assert parser.passages[0]["section_id"] == "history-introduction"
 assert parser.passages[0]["publication_authorization"] is False
+
+
+# The 82-style producer publishes a short frozen history and a separate
+# independent Git readback ledger. Both must agree, remain research-only, and
+# fail closed when original source identities or proof blobs are altered.
+from handoff_82_history import validate_frozen as check_82_history
+from handoff_82_history import validate_ledger as check_82_ledger
+
+p82 = {
+    "schema_version": 4, "kind": "research_to_app_handoff",
+    "research_commit_sha": "a" * 40, "canonical_version": "V97",
+    "canonical_hash": "b" * 64,
+    "canonical_status": "unchanged_provisional_V97_not_promoted",
+    "versioned_research_sqlite_gz_path": "research/reconciled/fixture/research_only.sqlite.gz",
+    "versioned_research_sha256": "c" * 64, "compressed_sha256": "d" * 64,
+    "replay_report_path": "research/reconciled/fixture/replay_report.json",
+    "previous_manifest_blob_sha": "e" * 40,
+    "verified_replay_commit_sha": "f" * 40,
+    "handoff_history_append_only": True,
+    "canonical": {"sources": 616, "claims": 422, "claim_source_links": 403,
+                  "findings": 68, "source_inspections": 9},
+    "staged_counts": {
+        "github_batches_replayed": 82,
+        "github_distinct_substantive_finding_ids": 508,
+        "github_source_candidates": 202, "github_inspection_entries": 240,
+        "unknown_source_refs": 1, "source_metadata_collisions": 2,
+        "detached_source_identity_review_pending": 37,
+        "new_historical_finding_candidates_this_run": 11,
+        "new_source_candidates_all_types_this_run": 8,
+        "new_source_inspection_metadata_this_run": 8},
+    "evidence_status": "staged_source_located_not_independently_corroborated_or_publication_approved",
+    "ready_for_editorial_review": False, "ready_for_publication": False,
+    "canonical_promoted": False,
+    "chapter_audit_artifact_paths": ["research/audits/fixture.json"],
+    "coverage_artifact_paths": ["research/coverage/fixture.json"],
+    "research_batch_artifact_paths": ["research/batches/fixture.json"],
+    "replay_evidence": {
+        "verification_ledger": "research/ledgers/fixture.json",
+        "snapshot_commit_sha": "f" * 40,
+        "readback_binary_git_blob_sha": "1" * 40,
+        "readback_report_git_blob_sha": "2" * 40,
+    },
+    "verified_binary_readback": {
+        "commit_sha": "f" * 40, "git_blob_sha": "1" * 40,
+        "report_blob_sha": "2" * 40, "compressed_sha256": "d" * 64,
+        "uncompressed_sqlite_sha256": "c" * 64,
+        "sqlite_integrity": "ok", "foreign_key_violations": 0,
+        "canonical_rows_unchanged": True,
+        "compress_digest_recomputed_independently_from_github_fetched_base64": True},
+    "consumer_instruction": "No automatic merge; never modify main or publish staged findings.",
+}
+h82 = {
+    "schema_version": 4, "kind": "append_only_research_to_app_handoff_history",
+    "branch": "research-persistence", "snapshot_commit_sha": "f" * 40,
+    "canonical_counts": {
+        "sources": 616, "claims": 422, "claim_sources": 403,
+        "canonical_findings": 68, "canonical_source_inspections": 9},
+    "staged_counts": copy.deepcopy(p82["staged_counts"]),
+    "evidence_status": "staged_source_located_not_independently_editorially_corroborated_or_approved",
+    "ready_for_editorial_review": False, "ready_for_publication": False,
+    "canonical_promoted": False, "main_modified": False, "auto_merge": False,
+    "chapter_audit_artifact_paths": ["research/audits/fixture.json"],
+    "coverage_artifact_paths": ["research/coverage/fixture.json"],
+    "research_batch_artifact_paths": ["research/batches/fixture.json"],
+    "verification_ledger_path": "research/ledgers/fixture.json",
+}
+for key in ("research_commit_sha", "canonical_hash", "canonical_version",
+            "canonical_status", "versioned_research_sqlite_gz_path",
+            "versioned_research_sha256", "compressed_sha256", "replay_report_path",
+            "previous_manifest_blob_sha"):
+    h82[key] = p82[key]
+assert check_82_history(p82, h82) == "f" * 40
+for key, value in (
+    ("staged_counts", dict(h82["staged_counts"], github_batches_replayed=83)),
+    ("auto_merge", True), ("main_modified", True),
+    ("ready_for_publication", True), ("snapshot_commit_sha", "0" * 40),
+    ("chapter_audit_artifact_paths", ["research/audits/unbound.json"]),
+):
+    unsafe = copy.deepcopy(h82)
+    unsafe[key] = value
+    try:
+        check_82_history(p82, unsafe)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("Unsafe frozen 82-style research admitted: " + key)
+actual82 = {"sqlite": "1" * 40, "report": "2" * 40, "checksum": "3" * 40}
+ledger82 = {
+    "schema_version": 2,
+    "kind": "independent_source_and_github_readback_verification",
+    "branch": "research-persistence",
+    "source_research_commit_sha": p82["research_commit_sha"],
+    "snapshot_commit_sha": p82["verified_replay_commit_sha"],
+    "canonical_sha256": p82["canonical_hash"],
+    "canonical_counts": h82["canonical_counts"],
+    "canonical_tables_preserved": 88, "canonical_rows_unchanged": True,
+    "staged_findings": 508, "staged_batches": 82,
+    "source_candidates": 202, "source_inspection_payloads": 240,
+    "detached_pending": 37,
+    "replay_report_path": p82["replay_report_path"],
+    "replay_report_blob_sha": actual82["report"],
+    "gzip_path": p82["versioned_research_sqlite_gz_path"],
+    "gzip_git_blob_sha": actual82["sqlite"],
+    "checksum_blob_sha": actual82["checksum"],
+    "compressed_sha256_recomputed_on_binary_from_github": "d" * 64,
+    "compressed_sha256_matches_committed_text": True,
+    "uncompressed_sha256_from_workflow_report": "c" * 64,
+    "sqlite_integrity": "ok", "foreign_key_violations": 0,
+    "github_readback_examination": True,
+    "findings_added": 11, "sources_added": 8, "inspections_added": 8,
+    "prior_manifest_blob_sha": "e" * 40,
+    "publication_approved": False, "ready_for_editorial_review": False,
+    "unknown_source_ids": ["UNVERIFIED-SOURCE"],
+    "metadata_conflicts": [{"source": "A"}, {"source": "B"}],
+}
+check_82_ledger(p82, ledger82, actual82)
+for key, bad_value in (
+    ("gzip_git_blob_sha", "a" * 40),
+    ("snapshot_commit_sha", "a" * 40),
+    ("findings_added", 12),
+    ("canonical_rows_unchanged", False),
+    ("publication_approved", True),
+    ("ready_for_editorial_review", True),
+    ("metadata_conflicts", []),
+    ("source_inspection_payloads", 239),
+):
+    unsafe = copy.deepcopy(ledger82)
+    unsafe[key] = bad_value
+    try:
+        check_82_ledger(p82, unsafe, actual82)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("Unsafe 82-style Git proof admitted: " + key)
