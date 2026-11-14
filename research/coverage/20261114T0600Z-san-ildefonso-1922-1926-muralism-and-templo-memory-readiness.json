@@ -1,0 +1,138 @@
+{
+  "schema_version": 3,
+  "kind": "period_x_theme_x_geography_explanatory_readiness_delta",
+  "generated_at": "2026-11-14T06:04:59.613Z",
+  "branch": "research-persistence",
+  "source_batch_path": "research/batches/20261114T0600Z-san-ildefonso-1922-1926-muralism-and-templo-memory.json",
+  "evidence_status": "noncanonical_source_located_not_publication_approved",
+  "rating_definitions": {
+    "substantial": "Source-critical original/specialist comparison plus a verified physical interpretive path and rights",
+    "developing": "Concrete explanatory sequence anchored to located evidence but critical originals or field validation missing",
+    "sparse": "Narrow, derivative, conflicting, or insufficiently anchored to a physical feature",
+    "missing": "Essential on-site or rights/access information not yet established"
+  },
+  "cells": [
+    {
+      "period": "1921–1924",
+      "theme": "State education and mural commissioning",
+      "geography": "San Ildefonso / Centro Histórico",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0600Z-MURAL-01",
+        "20261114T0600Z-MURAL-02",
+        "20261114T0600Z-MURAL-04"
+      ],
+      "evidence_gap": "Institutional histories cited; SEP and ENP original commissions unexamined"
+    },
+    {
+      "period": "1922–1926",
+      "theme": "Collaborative mural labor and women's cultural networks",
+      "geography": "San Ildefonso / Mexico City",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0600Z-MURAL-02",
+        "20261114T0600Z-MURAL-03"
+      ],
+      "evidence_gap": "Assistants/model roles distinct, individual contracts and labor histories absent"
+    },
+    {
+      "period": "1923–1926",
+      "theme": "Patronage disputes, interruption and destroyed frescoes",
+      "geography": "Patio Principal",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T0600Z-MURAL-04",
+        "20261114T0600Z-MURAL-05"
+      ],
+      "evidence_gap": "Orozco episode described by researcher, unexamined contemporary reports/stratigraphic conservation"
+    },
+    {
+      "period": "1922",
+      "theme": "Mural placements and thematic advance-history sequence",
+      "geography": "Anfiteatro / main patio",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0600Z-MURAL-06"
+      ],
+      "evidence_gap": "Exact current room access/closures and direction of sight not verified"
+    },
+    {
+      "period": "1922–1923",
+      "theme": "Conquest violence reinterpreted as 1920s historical image",
+      "geography": "San Ildefonso west stair / Templo Mayor",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0600Z-MURAL-07",
+        "20261114T0600Z-MURAL-08"
+      ],
+      "evidence_gap": "Art historical representation not conquest eyewitness document; 1520 Nahua and Spanish textual witnesses require direct comparison"
+    },
+    {
+      "period": "1922–1923",
+      "theme": "Guadalupe, campesino collectivity and artists' political symbol",
+      "geography": "San Ildefonso entry",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T0600Z-MURAL-09"
+      ],
+      "evidence_gap": "No close inspection of inscription or original artist statement"
+    },
+    {
+      "period": "1922–1923",
+      "theme": "Preparatory drawings and mural production sequence",
+      "geography": "San Ildefonso west court / Jean Charlot Collection",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T0600Z-MURAL-10"
+      ],
+      "evidence_gap": "Catalogued graphic sheets not directly inspected or rights-cleared"
+    },
+    {
+      "period": "1922–1923",
+      "theme": "Encaustic/fresco technical characterization",
+      "geography": "San Ildefonso stair",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T0600Z-MURAL-11"
+      ],
+      "evidence_gap": "Institution's own captions disagree; no direct laboratory methods"
+    },
+    {
+      "period": "2026",
+      "theme": "Public access, verified location and photo permissions",
+      "geography": "San Ildefonso / Centro Histórico",
+      "rating": "missing",
+      "finding_ids": [
+        "20261114T0600Z-MURAL-06",
+        "20261114T0600Z-MURAL-07",
+        "20261114T0600Z-MURAL-08",
+        "20261114T0600Z-MURAL-09"
+      ],
+      "evidence_gap": "No present-day field check or object-specific visual reproduction license"
+    },
+    {
+      "period": "1520 and 1922",
+      "theme": "Conquest historical evidence versus later imagery",
+      "geography": "Templo Mayor and San Ildefonso",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T0600Z-MURAL-07",
+        "20261114T0600Z-MURAL-08"
+      ],
+      "evidence_gap": "Contemporary art useful as history of memory, not proof of 1520 massacre layout"
+    }
+  ],
+  "summary": {
+    "total": 10,
+    "substantial": 0,
+    "developing": 4,
+    "sparse": 5,
+    "missing": 1,
+    "classification_finding_counts": {
+      "broad_history": 5,
+      "poi_ready_candidate": 4,
+      "specialist_technical": 2
+    }
+  },
+  "publication_approved": false
+}
