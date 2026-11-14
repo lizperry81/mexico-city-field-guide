@@ -1,8 +1,8 @@
 {
   "schema_version": 4,
   "kind": "research_to_app_handoff",
-  "generated_at": "2026-11-14T01:03:41.416Z",
-  "research_commit_sha": "28d9d393f98fc89c0ad170d1f5a299a1ab46bfc1",
+  "generated_at": "2026-11-14T02:08:42.040Z",
+  "research_commit_sha": "48b6c89f79792b5b87fa238eb219d72febaf6325",
   "canonical_version": "V97",
   "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
   "canonical_status": "unchanged_provisional_V97_not_promoted",
@@ -14,15 +14,15 @@
     "source_inspections": 9
   },
   "staged_counts": {
-    "scope": "77 GitHub research batches; 455 distinct staged candidate findings, none approved for publication",
-    "github_batches_replayed": 77,
-    "github_distinct_substantive_finding_ids": 455,
+    "scope": "78 GitHub research batches; 464 source-located provisional candidate findings; none publication approved",
+    "github_batches_replayed": 78,
+    "github_distinct_substantive_finding_ids": 464,
     "github_index_only_refs_total": 23,
     "github_index_only_refs_unresolved": 1,
-    "raw_batch_documents_in_new_sqlite": 77,
-    "github_inspection_entries": 199,
-    "github_inspection_payload_rows": 199,
-    "github_source_candidates": 161,
+    "raw_batch_documents_in_new_sqlite": 78,
+    "github_inspection_entries": 205,
+    "github_inspection_payload_rows": 205,
+    "github_source_candidates": 167,
     "unknown_source_refs": 1,
     "unknown_source_refs_with_inspection_metadata": [],
     "unknown_source_refs_without_inspection_metadata": [
@@ -35,24 +35,24 @@
     "detached_source_identity_review_pending": 37,
     "external_staging_semantic_join_verified": false,
     "source_id_provisional_recoveries_this_run": 0,
-    "new_scholarly_source_candidate_records_this_run": 5,
-    "new_source_inspection_metadata_this_run": 5,
-    "new_historical_finding_candidates_this_run": 11,
+    "new_scholarly_source_candidate_records_this_run": 6,
+    "new_source_inspection_metadata_this_run": 6,
+    "new_historical_finding_candidates_this_run": 9,
     "full_original_scholarly_books_examined_this_run": 0,
     "original_government_document_machine_text_sections_examined_this_run": 0,
     "curated_historic_photo_exhibit_partially_visually_examined_this_run": 0,
     "partial_scholarly_chapter_sections_examined_this_run": 0,
-    "scholarly_thesis_page_images_checked_this_run": 3,
-    "government_html_pages_examined_this_run": 0,
-    "institutional_search_index_excerpt_sources_examined_this_run": 2,
+    "scholarly_thesis_page_images_checked_this_run": 0,
+    "government_html_pages_examined_this_run": 1,
+    "institutional_search_index_excerpt_sources_examined_this_run": 5,
     "original_primary_speech_or_decree_examined_this_run": 0,
     "original_newspaper_excerpts_through_modern_republication_examined_this_run": 0,
     "original_1847_maps_catalog_metadata_examined_this_run": 2
   },
-  "versioned_research_sqlite_gz_path": "research/reconciled/v4_28d9d393f98f/research_only.sqlite.gz",
-  "versioned_research_sha256": "38e96a3a63f5ef8cd4c1d5363f5a562294671f94252f137fbfd50e6f50840794",
-  "compressed_sha256": "d1e8c99f5c206cfa149d78779c78558a4f932a2e8028f7776f712bf996d84116",
-  "replay_report_path": "research/reconciled/v4_28d9d393f98f/replay_report.json",
+  "versioned_research_sqlite_gz_path": "research/reconciled/v4_48b6c89f7979/research_only.sqlite.gz",
+  "versioned_research_sha256": "4300bf6a9617a360f250bddf9340528c052ee1cfcbe296fa3e9845533d14761b",
+  "compressed_sha256": "b0f2a02b3762ddc71127c17bfe20f0045724db3fcda8324daa23016e6f69a977",
+  "replay_report_path": "research/reconciled/v4_48b6c89f7979/replay_report.json",
   "reconciliation_artifact_paths": [
     "research/ledgers/20261113T051238Z-github-full-replay-verified.json",
     "research/reconciled/v4_fd07cfbc7f22/replay_report.json",
@@ -122,7 +122,11 @@
     "research/reconciled/v4_7eb0311ce172/replay_report.json",
     "research/ledgers/20261114T0103Z-77-batch-verified-replay-and-readback.json",
     "research/reconciled/v4_28d9d393f98f/replay_report.json",
-    "research/reconciled/v4_28d9d393f98f/compressed_sha256.txt"
+    "research/reconciled/v4_28d9d393f98f/compressed_sha256.txt",
+    "research/ledgers/20261114T0202Z-water-management-1608-1900-and-viga-source-inventory-and-count-preflight.json",
+    "research/ledgers/20261114T0208Z-78-batch-water-viga-verified-readback.json",
+    "research/reconciled/v4_48b6c89f7979/replay_report.json",
+    "research/reconciled/v4_48b6c89f7979/compressed_sha256.txt"
   ],
   "chapter_audit_artifact_paths": [
     "research/audits/templo-mayor-discover-20261113.json",
@@ -144,7 +148,8 @@
     "research/audits/20261113T2204Z-templo-mayor-chronology-and-centenario-boundary.json",
     "research/audits/20261113T2304Z-templo-mayor-seven-evidence-gates-urban-memory-boundary.json",
     "research/audits/20261114T0000Z-1847-molino-memorial-and-templo-field-evidence-templo-discover-evidence-gates.json",
-    "research/audits/20261114T0100Z-templo-mayor-discover-1978-responders-and-seven-gates.json"
+    "research/audits/20261114T0100Z-templo-mayor-discover-1978-responders-and-seven-gates.json",
+    "research/audits/20261114T0202Z-water-management-1608-1900-and-viga-templo-discover-cross-period-gates.json"
   ],
   "coverage_artifact_paths": [
     "research/coverage/coverage-matrix-20261113-compact.json",
@@ -168,24 +173,26 @@
     "research/coverage/20261113T2204Z-1910-columna-explanatory-readiness.json",
     "research/coverage/20261113T2304Z-1925-2010-national-remains-place-readiness.json",
     "research/coverage/20261114T0000Z-1847-molino-memorial-and-templo-field-evidence-readiness.json",
-    "research/coverage/20261114T0100Z-city-government-fabric-and-1978-evidence-readiness.json"
+    "research/coverage/20261114T0100Z-city-government-fabric-and-1978-evidence-readiness.json",
+    "research/coverage/20261114T0202Z-water-management-1608-1900-and-viga-readiness.json"
   ],
   "evidence_status": {
-    "new_historical_finding_candidates_researched_this_run": 11,
+    "new_historical_finding_candidates_researched_this_run": 9,
     "recovered_legacy_source_identities_this_run": 0,
-    "new_source_candidate_records_this_run": 5,
-    "new_source_inspection_metadata_this_run": 5,
+    "new_source_candidate_records_this_run": 6,
+    "new_source_inspection_metadata_this_run": 6,
     "independently_corroborated_new_findings": 0,
     "ready_for_editorial_review": false,
     "publication_approved": false,
     "source_inspection_modes": {
-      "original_scanned_thesis_pages_visually_inspected": 3,
-      "peer_reviewed_legal_article_machine_text_sections": 1,
-      "source_index_excerpt_only": 2,
-      "original_official_law_publications": 0,
-      "original_1978_rescue_log": 0
+      "unam_map_catalog_html_read_directly": 1,
+      "search_index_or_institutional_abstract_only": 5,
+      "original_1608_diary": 0,
+      "original_1859_plan_image": 0,
+      "original_1900_newspaper": 0,
+      "original_1872_council_record": 0
     },
-    "historical_evidence": "1941/1970/1972/1987 governance and 1970s municipal office planning from published legal analysis and scanned 1987 UNAM thesis; 1978 rescue personnel and archaeology from two indexed specialist accounts. Primary laws and rescue log absent."
+    "historical_evidence": "Nine provisional drainage and Canal de la Viga findings spanning 1608–1950, source-located but not original-publication page verified; source shortcomings recorded individually."
   },
   "ready_for_editorial_review": false,
   "ready_for_publication": false,
@@ -223,14 +230,18 @@
     "Original 1941, 1970, 1972, and 1987 organic laws, historical delegación boundary maps and office inventories remain unexamined",
     "1978 rescue personnel discrepancy between Matos and Barrera retrospective accounts; original field notebook needed",
     "2009 legal history PDF page screenshot blocked with HTTP 403; machine-readable published text was inspected but not visually collated",
-    "Current public access to historical delegación buildings and 2026 Templo Mayor display itinerary not verified"
+    "Current public access to historical delegación buildings and 2026 Templo Mayor display itinerary not verified",
+    "Original 1608 diary, 1859 technical map, 1872 municipal council file, 1900 newspaper and 19th-century technical accounts not directly inspected",
+    "Original source photograph rights and current Canal de la Viga walking route not confirmed",
+    "37 detached original source inspections, two metadata collisions, one proposed botanical dataset reference remain unjoined",
+    "Templo Mayor contested Triple Alliance dating, 1914 Gamio report, conquest folios and 1978 salvage notebooks remain open"
   ],
-  "consumer_instruction": "Do not publish or merge staged findings. Require independent editorial corroboration and present-day physical/site checks. Preserve historical administrative geography rather than mapping contemporary boundaries backward.",
-  "immutable_handoff_path": "research/handoff/history/20261114T0103Z-77-batch-government-buildings-and-templo-verified.json",
-  "previous_manifest_generated_at": "2026-11-14T00:06:13.303Z",
-  "previous_manifest_blob_sha": "308c26820c7ca2084a6e275076fa35f8ea617910",
+  "consumer_instruction": "Do not merge or publish staged findings. Preserve original V97, require independent corroboration, legal/cartographic mapping and historic photo rights checks. See immutable 78-batch reconciliation ledger.",
+  "immutable_handoff_path": "research/handoff/history/20261114T0208Z-78-batch-water-viga-verified.json",
+  "previous_manifest_generated_at": "2026-11-14T01:03:41.416Z",
+  "previous_manifest_blob_sha": "e2529e798125a42ed3377c20549bdb14ad85ec4a",
   "handoff_history_append_only": true,
-  "verified_replay_commit_sha": "1d372a0005c9e84942f9b284ea243c2056fc6026",
+  "verified_replay_commit_sha": "47bf1b4c3bacb815a3e9e4003181ea790329324a",
   "handoff_history_paths": [
     "research/handoff/history/20261113T0717Z-schema-tests-verified.json",
     "research/handoff/history/20261113T0812Z-detached37-replay-verified.json",
@@ -252,7 +263,8 @@
     "research/handoff/history/20261113T220656Z-centenary-74-replay-verified.json",
     "research/handoff/history/20261113T2309Z-1925-mausoleum-75-replay-verified.json",
     "research/handoff/history/20261114T0009Z-1847-molino-templo-76-batch-verified.json",
-    "research/handoff/history/20261114T0103Z-77-batch-government-buildings-and-templo-verified.json"
+    "research/handoff/history/20261114T0103Z-77-batch-government-buildings-and-templo-verified.json",
+    "research/handoff/history/20261114T0208Z-78-batch-water-viga-verified.json"
   ],
   "research_batch_artifact_paths": [
     "research/batches/20261113T0904Z-hospital-jesus-recovery-and-building-phases.json",
@@ -272,7 +284,8 @@
     "research/batches/20261113T2204Z-columna-centenario-building-and-public-memory.json",
     "research/batches/20261113T2304Z-1925-independence-mausoleum-and-2010-identification.json",
     "research/batches/20261114T0000Z-1847-molino-memorial-and-templo-field-evidence.json",
-    "research/batches/20261114T0100Z-government-buildings-1970-1987-and-1978-findspot.json"
+    "research/batches/20261114T0100Z-government-buildings-1970-1987-and-1978-findspot.json",
+    "research/batches/20261114T0202Z-water-management-1608-1900-and-viga.json"
   ],
   "source_identity_crosswalk_path": "research/ledgers/20261113T1803Z-reconciliation-69-batch-baseline-and-evidence.json",
   "handoff_contract_status": "verified_replay_and_GitHub_binary_readback_passed; research_only_noncanonical",
@@ -314,5 +327,14 @@
   "prior_handoff_history_commit_sha": null,
   "research_pipeline_status": "75_batches_replayed;_noncanonical_staging;_V97_unchanged;_main_untouched;_editorial_unapproved",
   "input_timestamp_note": "Batch filename T1858Z is a stable identifier, not a processing-time assertion. Input commit 2453a054 was created at or near 19:02 UTC; generated_at inside batch gives the actual capture timestamp.",
-  "verified_replay_commit_status": "completed_successful_with_git_readback"
+  "verified_replay_commit_status": "completed_successful_with_git_readback",
+  "verified_binary_readback": {
+    "commit_sha": "47bf1b4c3bacb815a3e9e4003181ea790329324a",
+    "git_blob_sha": "e6803e6d705715e36cf4d9419f4885c9657b28af",
+    "recomputed_compressed_sha256": "b0f2a02b3762ddc71127c17bfe20f0045724db3fcda8324daa23016e6f69a977",
+    "hash_match": true,
+    "sqlite_integrity": "ok",
+    "foreign_key_violations": 0,
+    "canonical_rows_unchanged": true
+  }
 }
