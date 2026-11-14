@@ -5,9 +5,8 @@
   "branch": "research-persistence",
   "target_branch_read_only": "main",
   "target_path": "poi/templo-mayor/reader.html",
-  "reader_re_read_this_run": false,
+  "reader_re_read_this_run": true,
   "reader_blob_sha_prior_verified": "f570da92e17087c3430f0e0b7339a0cf72071a3f",
-  "reader_blob_reverification_blocker": "Current main reader was not fetched in this run; anchors inherited from prior audit and must be reread before editorial implementation",
   "source_batch_path": "research/batches/20261114T0758Z-market-1934-public-education-and-templo-object.json",
   "gates": [
     {
@@ -143,5 +142,23 @@
     "Gamio signed 1914 reports unexamined",
     "1978 rescue field log and personnel discrepancy unresolved",
     "Historical photo rights and live site access unverified"
-  ]
+  ],
+  "reader_blob_sha_verified": "bbec5d6088f5107137ce59c15eba7a910c0ce2d0",
+  "reader_main_direct_readback": {
+    "path": "poi/templo-mayor/reader.html",
+    "ref": "main",
+    "blob_sha": "bbec5d6088f5107137ce59c15eba7a910c0ce2d0",
+    "read_only": true,
+    "anchor_verified": [
+      "In the late 1420s",
+      "Archaeologists group the work into seven major stages",
+      "At the foot of the south stair",
+      "In May 1520",
+      "In 1913",
+      "In February 1978"
+    ],
+    "onsite_existing_wording": "Look for the round Coyolxauhqui replica low on your right",
+    "assessment": "Existing on-site guide already correctly calls field object a replica; new INAH IVb source corroborates, does not justify claiming an app wording correction.",
+    "pending": "Existing 1913 date has unresolved original Gamio 1914 documentation; no app modification approved"
+  }
 }
