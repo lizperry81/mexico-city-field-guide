@@ -1,0 +1,129 @@
+{
+  "schema_version": 3,
+  "kind": "chapter_level_claim_to_source_locator_audit",
+  "generated_at": "2026-11-14T14:00:00Z",
+  "branch": "research-persistence",
+  "target_branch_read_only": "main",
+  "target_path": "poi/templo-mayor/reader.html",
+  "reader_re_read_this_run": true,
+  "reader_blob_sha_verified": "e18b0b6af33e61c1831990d84a7e5effbf13805b",
+  "source_batch_path": "research/batches/20261114T1400Z-CUPA-housing-institutions-1947-1959.json",
+  "gates": [
+    {
+      "topic": "Triple Alliance / 1428",
+      "reader_anchor": "In the late 1420s",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "locator": "Metropolitan Museum Tenochtitlan overview; previous gate, not reexamined"
+        }
+      ],
+      "uncertainty": "1427/1428/1430 political chronology and indigenous witness sources unresolved",
+      "historical_addition": "Disaggregate Tepanec war, alliance formation and tributary empire development.",
+      "placement": "advance_history_and_field_as_applicable"
+    },
+    {
+      "topic": "Stage II vs IVb construction",
+      "reader_anchor": "The oldest excavated phase that visitors can identify is called Stage II",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "locator": "INAH Stage II roof-renovation record, previous gate"
+        }
+      ],
+      "uncertainty": "Excavation stratigraphic plan not inspected",
+      "historical_addition": "Show successive construction stages with an authenticated section; keep visible remains separate from idealized reconstruction.",
+      "placement": "advance_history_and_field_as_applicable"
+    },
+    {
+      "topic": "Coatepec / Coyolxauhqui",
+      "reader_anchor": "At the foot of the south stair of that platform lay a stone disk",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "locator": "INAH lugares / elemento 1259, previously linked to replica"
+        }
+      ],
+      "uncertainty": "Myth, excavated monolith and display replica are distinct evidence levels",
+      "historical_addition": "Add separate labels for original, 1978 findspot and outdoor replica; do not reproduce images without rights.",
+      "placement": "advance_history_and_field_as_applicable"
+    },
+    {
+      "topic": "Tóxcatl and conquest",
+      "reader_anchor": "In May 1520, while Cortés was away",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "locator": "Florentine Codex Book XII, Library of Congress exhibit, previous gate"
+        }
+      ],
+      "uncertainty": "Nahuatl and Spanish narratives not collated by passage",
+      "historical_addition": "Separate May 1520 massacre accounts from the 1521 siege and compare authors and provenance.",
+      "placement": "advance_history_and_field_as_applicable"
+    },
+    {
+      "topic": "Gamio 1913 / 1914",
+      "reader_anchor": "In 1913, archaeologist Manuel Gamio uncovered",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "locator": "Prior audit research/audits/20261113T1803Z-templo-mayor-gamio-1913-1914-primary-gates.json"
+        }
+      ],
+      "uncertainty": "Excavation field notebook/publication date unverified",
+      "historical_addition": "Distinguish fieldwork, announcements and printed reports; withhold exact date until original verified.",
+      "placement": "advance_history_and_field_as_applicable"
+    },
+    {
+      "topic": "Feb 21 1978 discovery",
+      "reader_anchor": "In February 1978, electrical workers digging near República de Argentina",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "locator": "INAH Proyecto Templo Mayor project history, earlier locator"
+        }
+      ],
+      "uncertainty": "Original electrical works salvage log not inspected",
+      "historical_addition": "Separate accidental exposure, salvage protection and later long-running Proyecto Templo Mayor.",
+      "placement": "advance_history_and_field_as_applicable"
+    },
+    {
+      "topic": "CUPA institutional anachronism as cross-period source criticism",
+      "reader_anchor": "The Mexica built their city on an island",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "locator": "Current 1947-1959 CUPA batch and ISSSTE 2020 history"
+        }
+      ],
+      "uncertainty": "Modern 1949 welfare housing tells nothing about Mexica temple construction",
+      "historical_addition": "Put CUPA and CUPJ in separate 20th-century chapter; optional methodological cross-link for source criticism, never archaeological support.",
+      "placement": "separate_chapter_crosslink"
+    },
+    {
+      "topic": "Historical images and rights",
+      "reader_anchor": "See a photograph of the 1978 excavation",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "locator": "Docomomo 2021 picture credit and INAH article metadata this batch"
+        }
+      ],
+      "uncertainty": "Copyright and specific 1978 photograph license not cleared",
+      "historical_addition": "Keep historical photograph toggle rights-gated and identify source/collection per image.",
+      "placement": "advance_history_and_field_as_applicable"
+    }
+  ],
+  "no_publication_of_unverified_claims": true,
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "blockers": [
+    "1428 source comparison open",
+    "Stage II/IVb original sections open",
+    "Coatepec interpretive context and Coyolxauhqui original/replica locators open",
+    "1520–1521 paired witness source passages open",
+    "Gamio excavation field notes and 1978 original salvage record open",
+    "Photo permissions and access not cleared"
+  ],
+  "conclusion": "Modern housing research does not support Templo Mayor archaeological claims. New CUPA source criticism exposes a documented agency anachronism in secondary scholarship."
+}
