@@ -1,0 +1,160 @@
+{
+  "schema_version": 3,
+  "kind": "chapter_level_claim_to_source_locator_audit",
+  "generated_at": "2026-11-14T10:06:23.270Z",
+  "branch": "research-persistence",
+  "target_branch_read_only": "main",
+  "target_path": "poi/templo-mayor/reader.html",
+  "reader_re_read_this_run": true,
+  "reader_blob_sha_verified": "e18b0b6af33e61c1831990d84a7e5effbf13805b",
+  "source_batch_path": "research/batches/20261114T1004Z-monumento-revolucion-1897-2010.json",
+  "gates": [
+    {
+      "topic": "Triple Alliance around 1428",
+      "reader_anchor": "In the late 1420s",
+      "status": "reader_prose_chronology_cautious_primary_comparison_open",
+      "source_locators": [
+        {
+          "url": "https://www.metmuseum.org/essays/tenochtitlan",
+          "locator": "reader cited overview, not reopened this session"
+        },
+        {
+          "path": "research/audits/20261114T0900Z-1629-flood-hydraulic-government-templo-evidence-gates.json",
+          "locator": "prior audit unresolved source chronology"
+        }
+      ],
+      "uncertainty": "1427/1428/1430 traditions unresolved. Museum operator sources about 20th-century monuments are not evidence for the political alliance.",
+      "historical_addition": "Explain Azcapotzalco defeat separately from tribute-confederation expansion and date range, after source collation.",
+      "placement": "advance_history"
+    },
+    {
+      "topic": "Stage II and Stage IVb construction",
+      "reader_anchor": "The oldest excavated phase that visitors can identify is called Stage II",
+      "status": "existing_reader_specific_but_original_stage_plans_needed",
+      "source_locators": [
+        {
+          "url": "https://lugares.inah.gob.mx/en/pagina-de-elemento/1261",
+          "locator": "existing reader citation; not reopened this session"
+        },
+        {
+          "path": "research/audits/20261114T0900Z-1629-flood-hydraulic-government-templo-evidence-gates.json",
+          "locator": "earlier source gate"
+        }
+      ],
+      "uncertainty": "Actual IVb sequence depends on archaeological construction-phase sections; no new primary stratigraphic drawing examined.",
+      "historical_addition": "Distinguish nested construction phases, what is visible in situ, and modern replica labels; do not date stages solely by ruler names.",
+      "placement": "advance_history_and_on_site"
+    },
+    {
+      "topic": "Coatepec/Coyolxauhqui",
+      "reader_anchor": "At the foot of the south stair of that platform lay a stone disk",
+      "status": "interpretive_sep_myth_from_object",
+      "source_locators": [
+        {
+          "url": "https://lugares.inah.gob.mx/es/pagina-de-elemento/1259",
+          "locator": "INAH object/source link cited by earlier audit, not inspected this session"
+        }
+      ],
+      "uncertainty": "Mythic narrative, physical sculpture findspot and modern outdoor reproduction remain separately evidentiary.",
+      "historical_addition": "Mark that the disk's location supports one reading of ritual space without proving every myth element, and distinguish original from replica.",
+      "placement": "advance_history_and_on_site"
+    },
+    {
+      "topic": "Conquest 1520/1521 and Book 12",
+      "reader_anchor": "In May 1520, while Cortés was away",
+      "status": "primary_nahuatl_spanish_compare_open",
+      "source_locators": [
+        {
+          "url": "https://www.loc.gov/exhibits/exploring-the-early-americas/interactives/florentine-codex/",
+          "locator": "potential Nahuatl text facsimile path, not examined this run"
+        },
+        {
+          "path": "research/audits/20261114T0900Z-1629-flood-hydraulic-government-templo-evidence-gates.json",
+          "locator": "prior conquest evidence gate"
+        }
+      ],
+      "uncertainty": "Reader distinguishes 1520 Tóxcatl from 1521 fall, but original Nahuatl Book 12 folios versus Spanish accounts not collated.",
+      "historical_addition": "Keep 1520 massacre and 1521 siege separate; note author/time gap for colonial sources; public muralism/monument iconography is later memory, not eyewitness testimony.",
+      "placement": "advance_history"
+    },
+    {
+      "topic": "Gamio 1913/1914 chronology",
+      "reader_anchor": "In 1913, archaeologist Manuel Gamio uncovered",
+      "status": "original_field_report_open",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T0900Z-1629-flood-hydraulic-government-templo-evidence-gates.json",
+          "locator": "prior Gamio evidence gate"
+        }
+      ],
+      "uncertainty": "Original reports needed to resolve 1913 first exposure versus 1914 report publication chronology.",
+      "historical_addition": "Do not silently change date; label uncertainty until original excavation report is checked.",
+      "placement": "advance_history"
+    },
+    {
+      "topic": "1978 Coyolxauhqui discovery and 1978–1982 excavation",
+      "reader_anchor": "In February 1978, electrical workers digging near República de Argentina",
+      "status": "institutional_narrative_unverified_original_rescue_log",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T0100Z-templo-mayor-discover-1978-responders-and-seven-gates.json",
+          "locator": "earlier conflicting responder attribution review"
+        },
+        {
+          "path": "research/audits/20261114T0900Z-1629-flood-hydraulic-government-templo-evidence-gates.json",
+          "locator": "prior 1978 source gate"
+        }
+      ],
+      "uncertainty": "Original 21 February 1978 utility/rescue logs not examined; no original excavators attribution resolved.",
+      "historical_addition": "Keep electricians discovery, rescue archaeology, later systematic excavation and 1987 museum separate events.",
+      "placement": "advance_history"
+    },
+    {
+      "topic": "Political architectural reuse comparison",
+      "reader_anchor": "When the Mexica enlarged their main temple, they built around the one that already stood there",
+      "status": "comparative_analogy_only_not_evidence",
+      "source_locators": [
+        {
+          "url": "https://www.mrm.mx/historia-del-monumento",
+          "locator": "direct source for reusing abandoned 1906 iron building in 1933–38"
+        },
+        {
+          "url": "https://revistas.inah.gob.mx/index.php/gacetamuseos/article/download/1145/1097/1995",
+          "locator": "secondary 1933–1986 monument and museum-history PDF"
+        }
+      ],
+      "uncertainty": "The monument's reuse of a Porfirian frame is physically distinct from Mexica superimposed temple stages; attractive analogy cannot substitute for stratigraphy.",
+      "historical_addition": "Use monument as separate twentieth-century city-memory chapter; cross-link in a 'how cities reuse buildings' sidebar only after verifying differences.",
+      "placement": "separate_chapter_crosslink"
+    },
+    {
+      "topic": "Photographs and guided-site access",
+      "reader_anchor": "See a photograph of the 1978 excavation",
+      "status": "photo_rights_and_current_access_open",
+      "source_locators": [
+        {
+          "url": "https://datosabiertos.unam.mx/IIE%3AAFMT%3ATE3566",
+          "locator": "UNAM AFMT source is Monumento a la Revolución rather than 1978 Templo Mayor; consultation-only image rights"
+        },
+        {
+          "path": "research/audits/20261114T0900Z-1629-flood-hydraulic-government-templo-evidence-gates.json",
+          "locator": "earlier photographic rights gate"
+        }
+      ],
+      "uncertainty": "UNAM monument photo has its own restrictions and cannot substitute for cleared 1978 archaeological photograph. Field walk not independently tested.",
+      "historical_addition": "Keep historical image toggle gated to licensed object IDs and current accessibility; do not assume current opening hours.",
+      "placement": "advance_history_and_field"
+    }
+  ],
+  "no_publication_of_unverified_claims": true,
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "blockers": [
+    "Uncollated original 1428 Nahuatl/Spanish texts",
+    "Templo Mayor IVb stage excavation diagrams and original 1978 rescue logs",
+    "Original Gamio 1913/1914 report",
+    "Book 12 Tóxcatl versus 1521 siege folio comparisons",
+    "No reproduction license for additional monument or Templo Mayor historical photos",
+    "All site field movements and current exhibits unverified"
+  ]
+}
