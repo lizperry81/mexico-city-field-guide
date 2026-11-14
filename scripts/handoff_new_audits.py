@@ -297,6 +297,7 @@ def parse_new_audit(path, doc, current_reader_blob):
                      kind == "templo_mayor_discover_cross_period_and_current_reader_evidence_gate"),
                     "dated reader gate has no traceable source comparison")
             locators = []
+            unattributed_hints = []
             for source_row in source_rows:
                 require(isinstance(source_row, dict),
                         "dated reader source locator is malformed")
@@ -314,12 +315,21 @@ def parse_new_audit(path, doc, current_reader_blob):
                           or source_row.get("path") or source_row.get("url"))
                 locator = (source_row.get("pages") or source_row.get("locator")
                            or source_row.get("detail"))
+                if (kind == "chapter_level_claim_to_source_locator_audit" and
+                        not text(source) and text(locator) and
+                        doc.get("no_publication_of_unverified_claims") is True and
+                        text(row.get("uncertainty"))):
+                    # The 90-batch producer supplies unattributed research
+                    # hints, not actual source/page pairs. Keep the wording
+                    # for human discovery but never launder it into a locator.
+                    unattributed_hints.append(locator)
+                    continue
                 require(text(source) and text(locator),
                         "dated reader gate has no source identity and page locator")
                 locators.append({"source": source, "locator": locator})
             require(text(row.get("hold") or row.get("uncertainty")),
                     "dated reader gate must preserve its evidence limitation")
-            result.append(review_item(
+            item = review_item(
                 path, ident, topic, anchor=row["reader_anchor"],
                 reader_match=matches, locators=locators,
                 source_ids=[x["source"] for x in locators if x.get("source")],
@@ -327,7 +337,11 @@ def parse_new_audit(path, doc, current_reader_blob):
                 gap=row.get("hold") or row.get("uncertainty"),
                 proposed_addition=row.get("draft_candidate") or
                                   row.get("historical_addition"),
-                allow_missing_sources=not bool(locators)))
+                allow_missing_sources=not bool(locators))
+            if unattributed_hints:
+                item["unattributed_locator_hints_unverified"] = unattributed_hints
+                item["review_state"] = "awaiting_human_original_source_identification"
+            result.append(item)
         return result
     # A new seven-passage audit includes the ACTUAL reader Git blob identity.
     require(kind == "templo_mayor_discover_actual_reader_claim_to_source_locator_audit",
