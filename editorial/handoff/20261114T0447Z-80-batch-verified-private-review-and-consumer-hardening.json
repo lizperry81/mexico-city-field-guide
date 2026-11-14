@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "kind": "app_development_handoff",
+  "generated_at_utc": "2026-11-14T04:47:40Z",
+  "app_branch": "main",
+  "validated_app_commit_before_report": "5ae0fbc850499de392d16c64ebbe1c5f5e505d1d",
+  "validated_deployment_run": 43558332509,
+  "validated_editorial_guard_run": 43558332538,
+  "research_branch_read_only": "research-persistence",
+  "verified_research_input_sha": "69fe9b67d1ad51ea07615b3cb129d1530d42449c",
+  "verified_replay_commit_sha": "a0fd8ca3394971c522bed8cb65238d86073aa0e2",
+  "handoff_manifest": "research/handoff/manifest.json",
+  "research_artifact_paths_checked": 173,
+  "research_artifact_paths_missing": 0,
+  "research_binary_git_blob_sha": "c60df55ce2f047d6f1e4981b4154e9b1246d1315",
+  "research_replay_report_blob_sha": "bde934d03eb69bb6cd14180082b0a5713789be64",
+  "staged_research": {
+    "batches": 80,
+    "provisional_findings": 486,
+    "source_candidates": 188,
+    "inspection_entries": 226,
+    "independently_corroborated_new_findings": 0,
+    "ready_for_editorial_review": false,
+    "ready_for_publication": false
+  },
+  "canonical_preserved": {
+    "version": "V97",
+    "sources": 616,
+    "claims": 422,
+    "claim_source_links": 403,
+    "findings": 68,
+    "source_inspections": 9
+  },
+  "latest_new_audit": "research/audits/20261114T0400Z-metro-1967-1970-pino-suarez-archaeology-templo-discover-evidence-gates.json",
+  "latest_new_coverage": "research/coverage/20261114T0400Z-metro-1967-1970-pino-suarez-archaeology-readiness.json",
+  "new_audit_status": "Staged for private human source verification only. The audit was not re-read against the main reader in this research batch and is flagged stale for editorial passage comparison, even though its previously verified reader blob is a known SHA.",
+  "consumer_changes": [
+    {
+      "path": "scripts/handoff_new_audits.py",
+      "intent": "Preserve separately labelled stale reader gates in private review queue with strict historical reader blob identity and no publication authority."
+    },
+    {
+      "path": "scripts/check_research_handoff.py",
+      "intent": "Validate compact 80-batch immutable history evidence/count deltas, non-merge instructions, all pinned source paths and independent flat Git replay-readback ledger."
+    },
+    {
+      "path": "scripts/test_research_handoff.py",
+      "intent": "Reject missing provenance, fabricated fresh-reader claims, changed evidence counts, false editorial approval and unpinned ledger/artifacts."
+    }
+  ],
+  "published_prose_changed": false,
+  "explore_stops_changed": false,
+  "homepage_changed": false,
+  "comments_or_local_storage_changed": false,
+  "approved_discover_manuscript_archive": "Blocked: original complete verbatim text and provenance not accessible. No Markdown archive or checksum fabricated.",
+  "manual_evidence_blockers": [
+    "Original 1967 STC decree, 1968 newsprint and 1969 Metro archaeology records remain uninspected.",
+    "Original Templo Mayor Gamio report, conquest folios, Alliance chronology and 1978 field logs are still unverified.",
+    "Original historical photograph/image rights and 2026 physical route access not cleared.",
+    "The researcher explicitly marks all 486 staged findings provisional; no automated publication."
+  ],
+  "verification": "Actions run 43558332509 passed both build and live exact-commit check; run 43558332538 passed baseline guard. A later commit containing this report must pass its own deployment before being described as live."
+}
