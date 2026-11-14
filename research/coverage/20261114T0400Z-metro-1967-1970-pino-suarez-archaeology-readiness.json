@@ -1,0 +1,151 @@
+{
+  "schema_version": 3,
+  "kind": "period_x_theme_x_geography_explanatory_readiness_delta",
+  "generated_at": "2026-11-14T04:00:54Z",
+  "branch": "research-persistence",
+  "source_batch_path": "research/batches/20261114T0400Z-metro-1967-1970-pino-suarez-archaeology.json",
+  "evidence_status": "noncanonical_source_located_not_publication_approved",
+  "rating_definitions": {
+    "substantial": "Original or specialist page-level evidence sufficiently triangulated with site-specific observation and interpretation for a robust chapter.",
+    "developing": "A concrete site or period explanation is supported, but significant documentary or field verification remains.",
+    "sparse": "Limited metadata, retrospective or unexamined primary sources; not explanatory-ready.",
+    "missing": "Absent essential independent evidence, visitor-access confirmation, or rights clearance."
+  },
+  "cells": [
+    {
+      "period": "1967",
+      "theme": "STC founding and original legal authority",
+      "geography": "Mexico City",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0400Z-METRO-01"
+      ],
+      "evidence_gap": "Original April 1967 decree body not examined"
+    },
+    {
+      "period": "1969",
+      "theme": "First metro line openings and initial urban geography",
+      "geography": "Zaragoza–Chapultepec",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0400Z-METRO-02"
+      ],
+      "evidence_gap": "Official STC page returned 502, original route map not located"
+    },
+    {
+      "period": "1970",
+      "theme": "Line 2 staged extensions and transfer access",
+      "geography": "Pino Suárez–Tasqueña–Tacuba",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T0400Z-METRO-03"
+      ],
+      "evidence_gap": "No original operating map or station design drawings"
+    },
+    {
+      "period": "1968–1970",
+      "theme": "Place-based pictograms and modern design language",
+      "geography": "Metro network",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0400Z-METRO-04"
+      ],
+      "evidence_gap": "Original design briefs absent; rights restricted"
+    },
+    {
+      "period": "1970–2007",
+      "theme": "Women passengers and separated cars",
+      "geography": "Lines 1 and 3",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T0400Z-METRO-05"
+      ],
+      "evidence_gap": "No original 1970 directives or independent gender history"
+    },
+    {
+      "period": "1967–1976",
+      "theme": "Modernist urban space and governance",
+      "geography": "Glorieta Insurgentes",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T0400Z-METRO-06"
+      ],
+      "evidence_gap": "Full UNAM thesis absent, public-space current access unknown"
+    },
+    {
+      "period": "Postclassic–present",
+      "theme": "Visible shrine amid mass transit",
+      "geography": "Metro Pino Suárez",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0400Z-METRO-07"
+      ],
+      "evidence_gap": "In-situ current viewing condition and interpretive signage not verified"
+    },
+    {
+      "period": "Late Postclassic",
+      "theme": "Iztapalapa causeway and southern ceremonial passage",
+      "geography": "Izazaga / Pino Suárez",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0400Z-METRO-08"
+      ],
+      "evidence_gap": "No measured archaeological site plan"
+    },
+    {
+      "period": "1430–1521 / 2017",
+      "theme": "Calpulli Cuezcontitlan site hypothesis",
+      "geography": "Plaza Pino Suárez",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T0400Z-METRO-09"
+      ],
+      "evidence_gap": "2017 archaeologist inference, original stratigraphic report missing"
+    },
+    {
+      "period": "1967–1968",
+      "theme": "Conflict between construction and rescue archaeology",
+      "geography": "Pino Suárez",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T0400Z-METRO-10"
+      ],
+      "evidence_gap": "Original press print and excavation field notebooks absent"
+    },
+    {
+      "period": "1967–1971",
+      "theme": "Museum object's exact findspot and interpretive attribution",
+      "geography": "Metro excavation(s) / MNA",
+      "rating": "missing",
+      "finding_ids": [
+        "20261114T0400Z-METRO-11"
+      ],
+      "evidence_gap": "Original Heyden paper and INAH museum catalog not read"
+    },
+    {
+      "period": "2026",
+      "theme": "Validated route, permission and photo/image use",
+      "geography": "Insurgentes–Pino Suárez",
+      "rating": "missing",
+      "finding_ids": [
+        "20261114T0400Z-METRO-06",
+        "20261114T0400Z-METRO-07",
+        "20261114T0400Z-METRO-09"
+      ],
+      "evidence_gap": "No current field verification or written STC intellectual-property permissions"
+    }
+  ],
+  "summary": {
+    "total": 12,
+    "substantial": 0,
+    "developing": 5,
+    "sparse": 5,
+    "missing": 2,
+    "classification_finding_counts": {
+      "broad_history": 5,
+      "poi_ready_candidate": 4,
+      "specialist_technical": 2
+    }
+  },
+  "publication_approved": false
+}
