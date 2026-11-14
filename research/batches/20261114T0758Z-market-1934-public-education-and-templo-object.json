@@ -1,0 +1,485 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261114T0758Z-market-1934-public-education-and-templo-object",
+  "generated_at": "2026-11-14T07:58:51Z",
+  "branch": "research-persistence",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "storage_role": "immutable_noncanonical_research_batch",
+  "previous_verified_replay": "research/reconciled/v4_44b53036df17/replay_report.json",
+  "prior_verified_counts": {
+    "github_batches_replayed": 83,
+    "staged_findings": 519,
+    "source_candidates": 208,
+    "inspection_entries": 246,
+    "canonical_sources": 616,
+    "canonical_claims": 422,
+    "canonical_links": 403,
+    "canonical_findings": 68
+  },
+  "research_scope": "11 source-located finding candidates: five broad 1930s histories, four market POI interpretation candidates, two specialist technical/museum interpretation findings. Nine source candidates, nine inspection records. Direct Whitney, INBAL, INAH IVb, UNAM abstract, MFAH archival catalog HTML; search/index-only INAH photo, El Universal, Templo museum. No primary 1934 contracts or periodical facsimiles examined; no field testing or publication approval.",
+  "sources": [
+    {
+      "id": "STG-SRC-20261114-MKT-ACEVEDO",
+      "title": "Jóvenes muralistas apuestan a un proyecto popular: El Mercado Abelardo R. Rodríguez",
+      "authors": "Esther Acevedo",
+      "publication": "1997; ICAA/MFAH Documents Project record 833191",
+      "url": "https://icaa.mfah.org/s/es/item/833191",
+      "access_scope": "ICAA catalogue lines 44–67; synopsis on 1933 market plan, hygiene and taxes, daycare, political dispute; full 1997 original essay login-gated",
+      "status": "archival_research_catalog_synopsis_not_full_essay"
+    },
+    {
+      "id": "STG-SRC-20261114-MKT-WHITNEY",
+      "title": "The Abelardo L. Rodriguez Market — Vida Americana",
+      "authors": "Whitney Museum of American Art exhibition curatorial team",
+      "publication": "2020-03-02 institutional exhibition interpretation",
+      "url": "https://whitney.org/media/46658",
+      "access_scope": "Direct HTML lines 30–36: 1934 public works mural commission; list of ten artists; food/hygiene brief and critiques of inequality",
+      "status": "museum_curatorial_html_direct"
+    },
+    {
+      "id": "STG-SRC-20261114-MKT-INBAL",
+      "title": "INBAL realiza trabajos de conservación en el mural de Isamu Noguchi en el mercado Abelardo L. Rodríguez",
+      "authors": "INBAL/CENCROPAM",
+      "publication": "Press bulletin 1207, 2025-10-02",
+      "url": "https://inba.gob.mx/prensa/22825/inbal-realiza-trabajos-de-conservacion-en-el-mural-de-isamu-noguchi-en-el-mercado-abelardo-l-rodriguez",
+      "access_scope": "Direct HTML lines 24–40: 1936 relief technique, 49.28 m2, first-floor community-centre vestibule, 40% treatment progress as of Oct 2 2025",
+      "status": "government_conservation_report_direct_dated_snapshot"
+    },
+    {
+      "id": "STG-SRC-20261114-MKT-INAH-PHOTO",
+      "title": "Murales del mercado Abelardo Rodríguez",
+      "authors": "INAH Foto del Día / Daniel Santaella",
+      "publication": "INAH dated 2023-01-26",
+      "url": "https://www.inah.gob.mx/foto-del-dia/murales-del-mercado-abelardo-rodriguez",
+      "access_scope": "Indexed institutional page 2023-01-26, inauguration 1934 and former civic centre, daycare, civil registry, Teatro del Pueblo; direct open returned HTTP 403",
+      "status": "institutional_search_excerpt_direct_403"
+    },
+    {
+      "id": "STG-SRC-20261114-MKT-FUENTES",
+      "title": "El Centro Escolar Revolución y el Mercado Abelardo L. Rodríguez en la tradición muralista mexicana",
+      "authors": "Elizabeth Fuentes Rojas",
+      "publication": "Cuadernos Americanos 3(185) (2023), 25–49; UNAM CIALC repository",
+      "url": "https://rilzea.cialc.unam.mx/jspui/handle/CIALC-UNAM/A_CA2142",
+      "access_scope": "Direct UNAM repository HTML lines 37–59: authorship, publication, abstract on LEAR public-building murals; full PDF 403, not inspected",
+      "status": "peer_reviewed_repository_abstract_only"
+    },
+    {
+      "id": "STG-SRC-20261114-MKT-UNIVERSAL",
+      "title": "El arte de Diego Rivera en las paredes de un mercado",
+      "authors": "Aída Castro Sánchez / El Universal archives",
+      "publication": "2018-05-24 retrospective referencing 1934 newspaper issue",
+      "url": "https://www.eluniversal.com.mx/colaboracion/mochilazo-en-el-tiempo/nacion/sociedad/el-arte-de-diego-rivera-en-las-paredes-de-un/",
+      "access_scope": "Indexed newspaper retrospective; original 1934 issue not opened; cites 1934-11-24 inauguration, Antonio Muñoz, salaries and archive accounts; detail needs verification",
+      "status": "modern_newspaper_republishing_historical_reporting_indexed"
+    },
+    {
+      "id": "STG-SRC-20261114-MKT-RIVAS1936",
+      "title": "Mexican murals by Marion Greenwood",
+      "authors": "Guillermo Rivas",
+      "publication": "Mexican Life vol. XII no. 1 (Jan. 1936), pp.24–25,61; ICAA/MFAH record 771787",
+      "url": "https://icaa.mfah.org/s/en/item/771787",
+      "access_scope": "Direct museum archival catalogue HTML lines 45–70: original 1936 essay bibliographic citation and modern synopsis; periodical scans require login",
+      "status": "contemporary_1936_document_archival_description_only"
+    },
+    {
+      "id": "STG-SRC-20261114-MKT-TEMPLO-IVB",
+      "title": "Punto 1: Etapa IVb, gobierno de Axayácatl",
+      "authors": "INAH Lugares, Zona Arqueológica Templo Mayor",
+      "publication": "INAH institutional on-site guide current indexed page",
+      "url": "https://lugares.inah.gob.mx/es/pagina-de-elemento/1259",
+      "access_scope": "Direct official HTML lines 24–35: IVb double stair, serpent heads, altar of frogs, copy of Coyolxauhqui at south stair foot; image licenses lines 38–44",
+      "status": "institutional_archaeological_site_guide_direct"
+    },
+    {
+      "id": "STG-SRC-20261114-MKT-TEMPLO-MUSEUM",
+      "title": "Acerca del Museo del Templo Mayor",
+      "authors": "Carlos Javier González González / INAH Museo del Templo Mayor",
+      "publication": "Institutional essay dated July 2014",
+      "url": "https://www.templomayor.inah.gob.mx/historia/acerca-del-museo",
+      "access_scope": "Indexed official HTML extract: original Coyolxauhqui monolith in central museum second level, discovery Feb 21 1978; direct open returned HTTP 502",
+      "status": "institutional_catalog_index_only_direct_502"
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "20261114T0758Z-MKT-INS-01",
+      "source_id": "STG-SRC-20261114-MKT-ACEVEDO",
+      "locator": "ICAA catalogue lines 44–67; synopsis on 1933 market plan, hygiene and taxes, daycare, political dispute; full 1997 original essay login-gated",
+      "access": "ICAA catalogue lines 44–67; synopsis on 1933 market plan, hygiene and taxes, daycare, political dispute; full 1997 original essay login-gated",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": null
+    },
+    {
+      "id": "20261114T0758Z-MKT-INS-02",
+      "source_id": "STG-SRC-20261114-MKT-WHITNEY",
+      "locator": "Direct HTML lines 30–36: 1934 public works mural commission; list of ten artists; food/hygiene brief and critiques of inequality",
+      "access": "Direct HTML lines 30–36: 1934 public works mural commission; list of ten artists; food/hygiene brief and critiques of inequality",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": null
+    },
+    {
+      "id": "20261114T0758Z-MKT-INS-03",
+      "source_id": "STG-SRC-20261114-MKT-INBAL",
+      "locator": "Direct HTML lines 24–40: 1936 relief technique, 49.28 m2, first-floor community-centre vestibule, 40% treatment progress as of Oct 2 2025",
+      "access": "Direct HTML lines 24–40: 1936 relief technique, 49.28 m2, first-floor community-centre vestibule, 40% treatment progress as of Oct 2 2025",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": null
+    },
+    {
+      "id": "20261114T0758Z-MKT-INS-04",
+      "source_id": "STG-SRC-20261114-MKT-INAH-PHOTO",
+      "locator": "Indexed institutional page 2023-01-26, inauguration 1934 and former civic centre, daycare, civil registry, Teatro del Pueblo; direct open returned HTTP 403",
+      "access": "Indexed institutional page 2023-01-26, inauguration 1934 and former civic centre, daycare, civil registry, Teatro del Pueblo; direct open returned HTTP 403",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Indexed source only; direct content not examined; retain access limitation."
+    },
+    {
+      "id": "20261114T0758Z-MKT-INS-05",
+      "source_id": "STG-SRC-20261114-MKT-FUENTES",
+      "locator": "Direct UNAM repository HTML lines 37–59: authorship, publication, abstract on LEAR public-building murals; full PDF 403, not inspected",
+      "access": "Direct UNAM repository HTML lines 37–59: authorship, publication, abstract on LEAR public-building murals; full PDF 403, not inspected",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Original article PDF not retrieved (403); only repository abstract read."
+    },
+    {
+      "id": "20261114T0758Z-MKT-INS-06",
+      "source_id": "STG-SRC-20261114-MKT-UNIVERSAL",
+      "locator": "Indexed newspaper retrospective; original 1934 issue not opened; cites 1934-11-24 inauguration, Antonio Muñoz, salaries and archive accounts; detail needs verification",
+      "access": "Indexed newspaper retrospective; original 1934 issue not opened; cites 1934-11-24 inauguration, Antonio Muñoz, salaries and archive accounts; detail needs verification",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Indexed source only; direct content not examined; retain access limitation."
+    },
+    {
+      "id": "20261114T0758Z-MKT-INS-07",
+      "source_id": "STG-SRC-20261114-MKT-RIVAS1936",
+      "locator": "Direct museum archival catalogue HTML lines 45–70: original 1936 essay bibliographic citation and modern synopsis; periodical scans require login",
+      "access": "Direct museum archival catalogue HTML lines 45–70: original 1936 essay bibliographic citation and modern synopsis; periodical scans require login",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Original 1936 printed essay not opened; this is its museum catalogue synopsis."
+    },
+    {
+      "id": "20261114T0758Z-MKT-INS-08",
+      "source_id": "STG-SRC-20261114-MKT-TEMPLO-IVB",
+      "locator": "Direct official HTML lines 24–35: IVb double stair, serpent heads, altar of frogs, copy of Coyolxauhqui at south stair foot; image licenses lines 38–44",
+      "access": "Direct official HTML lines 24–35: IVb double stair, serpent heads, altar of frogs, copy of Coyolxauhqui at south stair foot; image licenses lines 38–44",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": null
+    },
+    {
+      "id": "20261114T0758Z-MKT-INS-09",
+      "source_id": "STG-SRC-20261114-MKT-TEMPLO-MUSEUM",
+      "locator": "Indexed official HTML extract: original Coyolxauhqui monolith in central museum second level, discovery Feb 21 1978; direct open returned HTTP 502",
+      "access": "Indexed official HTML extract: original Coyolxauhqui monolith in central museum second level, discovery Feb 21 1978; direct open returned HTTP 502",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Indexed source only; direct content not examined; retain access limitation."
+    }
+  ],
+  "findings": [
+    {
+      "id": "20261114T0758Z-MKT-01",
+      "classification": "broad_history",
+      "assertion": "Construction began in 1933 as part of a plan to regulate street commerce and modernize food distribution, sanitation and municipal fiscal collection; this interpretation comes from Esther Acevedo's catalogued archival research, not an inspected 1933 construction file.",
+      "date_or_range": "1933",
+      "period": "Postrevolutionary urbanism",
+      "themes": [
+        "municipal markets",
+        "hygiene",
+        "street vendors",
+        "taxation"
+      ],
+      "geographies": [
+        "Centro Histórico / Mercado Abelardo L. Rodríguez"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-MKT-ACEVEDO"
+      ],
+      "source_locator": "ICAA record 833191, lines 60–67",
+      "limitations": "The Acevedo primary essay and 1933 planning orders were not opened.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0758Z-MKT-02",
+      "classification": "broad_history",
+      "assertion": "The market opened in 1934 and its program extended beyond stalls: accounts describe a daycare, civic facilities, theater, and other services, making a complex of commerce, education and social reform rather than a stand-alone retail hall.",
+      "date_or_range": "1934",
+      "period": "Postrevolutionary Mexico",
+      "themes": [
+        "public works",
+        "women and care work",
+        "public services"
+      ],
+      "geographies": [
+        "Mercado Abelardo L. Rodríguez"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-MKT-WHITNEY",
+        "STG-SRC-20261114-MKT-INAH-PHOTO"
+      ],
+      "source_locator": "Whitney lines 30–35; INAH Foto del Día indexed 2023-01-26",
+      "limitations": "Sources differ in enumerating auxiliary services; no dated original architectural plan verified.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0758Z-MKT-03",
+      "classification": "broad_history",
+      "assertion": "The capital's Public Works Department commissioned mural decoration in 1934 from a group of ten artists. Diego Rivera's role in supervising or guaranteeing the project must not be mistaken for personal authorship of every mural.",
+      "date_or_range": "1934–1936",
+      "period": "Postrevolutionary muralism",
+      "themes": [
+        "public art commissions",
+        "artists' labor",
+        "education"
+      ],
+      "geographies": [
+        "Market interiors"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-MKT-WHITNEY",
+        "STG-SRC-20261114-MKT-ACEVEDO"
+      ],
+      "source_locator": "Whitney lines 33–36; Acevedo ICAA record 833191 lines 64–67",
+      "limitations": "Full artist contracts and 1934 painting specifications not examined; institutional labels for nationality differ.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0758Z-MKT-04",
+      "classification": "broad_history",
+      "assertion": "A stated mural brief emphasized production, distribution and hygiene of food, yet artists also portrayed labor exploitation, class power and opposition to fascism. The commission's political meaning therefore exceeded a decorative or nutritional-education program.",
+      "date_or_range": "1934–1936",
+      "period": "Postrevolutionary muralism",
+      "themes": [
+        "labor history",
+        "public health",
+        "political art"
+      ],
+      "geographies": [
+        "Mercado Abelardo L. Rodríguez"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-MKT-WHITNEY",
+        "STG-SRC-20261114-MKT-RIVAS1936"
+      ],
+      "source_locator": "Whitney lines 35–36; ICAA 1936 article record 771787 lines 63–70 (summary, original not read)",
+      "limitations": "Artists' contemporaneous statements and original 1934 government directives must be compared.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0758Z-MKT-05",
+      "classification": "broad_history",
+      "assertion": "The ten-artist project included the Greenwood sisters and Isamu Noguchi as well as Pablo O'Higgins and six Mexico-born artists, making the market a site of international artistic labor. Labels such as 'American' or 'Mexican' are complicated by O'Higgins's later Mexican affiliation and Noguchi's Japanese-American identity.",
+      "date_or_range": "1934–1936",
+      "period": "Postrevolutionary muralism",
+      "themes": [
+        "transnational labor",
+        "women artists",
+        "identity"
+      ],
+      "geographies": [
+        "Mercado Abelardo L. Rodríguez"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-MKT-WHITNEY",
+        "STG-SRC-20261114-MKT-ACEVEDO",
+        "STG-SRC-20261114-MKT-RIVAS1936"
+      ],
+      "source_locator": "Whitney lines 34–36; ICAA Acevedo 1997 synopsis line 66; ICAA Rivas 1936 catalogue lines 65–70",
+      "limitations": "Different institutional descriptions count nationalities differently; no forced normalization of citizenship or assistants.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0758Z-MKT-06",
+      "classification": "poi_ready_candidate",
+      "assertion": "At the market, a visitor can compare functional circulation for buying food with large-scale mural paintings in entrances, lobbies, patios and corridors. This is a proposed interpretive question, not a verified walking route or guarantee that each mural is accessible.",
+      "date_or_range": "1934–present",
+      "period": "Historic-centre field guide",
+      "themes": [
+        "architecture",
+        "everyday commerce",
+        "art for the public"
+      ],
+      "geographies": [
+        "Mercado Abelardo L. Rodríguez, Centro Histórico"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-MKT-INBAL",
+        "STG-SRC-20261114-MKT-WHITNEY"
+      ],
+      "source_locator": "INBAL bulletin 1207 lines 33–40; Whitney lines 33–36",
+      "limitations": "Current entrances and accessibility have not been field-verified; no live market hours inferred.",
+      "learning_mode": "onsite_field",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0758Z-MKT-07",
+      "classification": "poi_ready_candidate",
+      "assertion": "The mural Influencia de las vitaminas is attributed by INBAL to Ángel Bracho and provides a place-specific starting point for examining the state's use of nutrition as a subject for public art. The exact wall and viewing conditions need a current field map.",
+      "date_or_range": "1934–1936",
+      "period": "Historic-centre field guide",
+      "themes": [
+        "food education",
+        "public art",
+        "iconography"
+      ],
+      "geographies": [
+        "Mercado Abelardo L. Rodríguez"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-MKT-INBAL",
+        "STG-SRC-20261114-MKT-WHITNEY"
+      ],
+      "source_locator": "INBAL bulletin 1207 line 40; Whitney lines 35–36",
+      "limitations": "Physical panel coordinates and current mural condition not confirmed.",
+      "learning_mode": "onsite_field",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0758Z-MKT-08",
+      "classification": "poi_ready_candidate",
+      "assertion": "INBAL identifies Isamu Noguchi's Historia de México in the first-floor Community Centre vestibule, providing a specific candidate stop contrasting sculptural relief with painted murals; this first-floor address is a 2025 institutional description, not checked access in 2026.",
+      "date_or_range": "1936–2025",
+      "period": "Historic-centre field guide",
+      "themes": [
+        "art techniques",
+        "spatial orientation"
+      ],
+      "geographies": [
+        "Centro Comunitario, primer piso, Mercado Abelardo L. Rodríguez"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-MKT-INBAL"
+      ],
+      "source_locator": "INBAL bulletin 1207 lines 31–37",
+      "limitations": "Do not give current directions or assert the relief is viewable without checking preservation-related access.",
+      "learning_mode": "onsite_field",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0758Z-MKT-09",
+      "classification": "poi_ready_candidate",
+      "assertion": "The complex included the Teatro del Pueblo and civic services; this allows a distinct stop about 1930s working-class education and public culture next to food distribution, without treating the present theater schedule as verified.",
+      "date_or_range": "1934–present",
+      "period": "Historic-centre field guide",
+      "themes": [
+        "community theater",
+        "civic culture",
+        "public service"
+      ],
+      "geographies": [
+        "Teatro del Pueblo / Mercado Abelardo L. Rodríguez"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-MKT-INAH-PHOTO",
+        "STG-SRC-20261114-MKT-WHITNEY"
+      ],
+      "source_locator": "INAH photo-of-day 2023-01-26 indexed excerpt; Whitney lines 33–35",
+      "limitations": "Present theater operation and access are not independently checked.",
+      "learning_mode": "onsite_field",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0758Z-MKT-10",
+      "classification": "specialist_technical",
+      "assertion": "INBAL described Noguchi's Historia de México (1936) as polychromed cement sculpto-painting on carved brick, 49.28 square metres; as of 2 October 2025, CENCROPAM reported treatment begun August 2025, with 40% of cleaning/chromatic reintegration complete following rainwater infiltration. This is dated condition evidence, not an assertion of present 2026 progress.",
+      "date_or_range": "1936; 2025-08–2025-10",
+      "period": "Art conservation",
+      "themes": [
+        "materials",
+        "water damage",
+        "restoration documentation"
+      ],
+      "geographies": [
+        "Community Centre vestibule, market"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-MKT-INBAL"
+      ],
+      "source_locator": "INBAL bulletin 1207 2025-10-02 lines 27–38",
+      "limitations": "No final conservation completion report or technical condition map inspected; rights to photos uncleared.",
+      "learning_mode": "specialist_research",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0758Z-MKT-11",
+      "classification": "specialist_technical",
+      "assertion": "INAH's detailed Stage IVb field-point description identifies a COPY of the Coyolxauhqui monolith at the southern staircase foot, whereas its museum account locates the original sculpture within the museum on the second level. This distinction is necessary before directing a visitor to compare archaeological position and original material.",
+      "date_or_range": "Late fifteenth century; museum after 1987",
+      "period": "Mexica archaeology and museum interpretation",
+      "themes": [
+        "original versus replica",
+        "stratigraphy",
+        "display"
+      ],
+      "geographies": [
+        "Templo Mayor Stage IVb",
+        "Museo del Templo Mayor"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-MKT-TEMPLO-IVB",
+        "STG-SRC-20261114-MKT-TEMPLO-MUSEUM"
+      ],
+      "source_locator": "INAH Stage IVb direct lines 24–34; Museo Templo Mayor institutional indexed 2014 text (direct 502)",
+      "limitations": "Museum room text was search-index inspected only; original object inventory, display updates and physical access need verification.",
+      "learning_mode": "specialist_research",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    }
+  ],
+  "source_identity_policy": "All 9 IDs provisional. Compare against prior source URLs/titles; avoid merging citizenship labels, variants or any detached inspections automatically. Preserve original V97 and 83 prior batches. Conflict unresolved until manual review.",
+  "external_source_usage": "9 scholarly/institutional/current historical source records; 6 directly read HTML pages, 3 indexed-only due fetch restrictions or scope, zero PDF original page images or artwork reproductions verified. INBAL conservation progress refers only to October 2, 2025.",
+  "publication_approved": false,
+  "independently_corroborated_findings": 0,
+  "ready_for_editorial_review": false
+}
