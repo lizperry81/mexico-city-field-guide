@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "kind": "app_development_research_handoff_record",
+  "recorded_at_utc": "2026-11-14T11:56:00Z",
+  "target_branch": "main",
+  "research_branch_read_only": "research-persistence",
+  "research_input_sha": "fcc9a9bc76e9a3699d3aac98e2f4549773bc20bb",
+  "verified_replay_sha": "8035cec9040a31b0d265e6924707ba86a7ca52a6",
+  "research_manifest_commit_sha": "c12136fecf7dfaa4c9372a4fdc860856ee665908",
+  "research_manifest_path": "research/handoff/manifest.json",
+  "manifest_declared_distinct_artifact_paths_verified": 225,
+  "research_validation": {
+    "status": "verified_for_private_human_review_queue_only",
+    "research_batches": 87,
+    "provisional_findings": 563,
+    "source_candidates": 241,
+    "source_inspections": 279,
+    "queued_preliminary_audit_topics": 187,
+    "published_new_findings": 0,
+    "editorially_approved_new_findings": 0,
+    "ready_for_editorial_review": false,
+    "ready_for_publication": false,
+    "canonical_promoted": false
+  },
+  "canonical_V97_preserved": {
+    "sources": 616,
+    "claims": 422,
+    "claim_sources": 403,
+    "canonical_findings": 68,
+    "canonical_source_inspections": 9
+  },
+  "research_artifacts": {
+    "immutable_history": "research/handoff/history/20261114T1106Z-87-batch-1915-hunger-verified.json",
+    "verification_ledger": "research/ledgers/20261114T1106Z-87-batch-1915-hunger-reconciliation-readback.json",
+    "chapter_audit": "research/audits/20261114T1058Z-1915-hunger-urban-survival-templo-discover-evidence-gates.json",
+    "coverage": "research/coverage/20261114T1058Z-1915-hunger-urban-survival-readiness.json"
+  },
+  "new_research_context": "1915 revolutionary-era food scarcity and urban survival. Archival verification, maize-price arithmetic disagreement and Casasola photograph rights are unresolved. No new evidence supports changes to Templo Mayor's ancient construction or on-site wayfinding.",
+  "app_change_files": [
+    "scripts/handoff_87_history.py",
+    "scripts/check_research_handoff.py",
+    "scripts/test_handoff_87_history.py",
+    "scripts/test_research_handoff.py"
+  ],
+  "app_code_commit_sha": "67d84b3b4270f1f61d5d7ff38c5845d845800e08",
+  "validation": "GitHub Actions deployment and separate Discover editorial guard passed at code commit; public data/build-info.json verified this exact code commit, 18 active published cross-chapter links checked; no historical prose or other approved content altered.",
+  "manuscript_archive_status": "blocked_verbatim_original_approval_provenance_not_established",
+  "approved_chapters": [
+    "The Basin Before the Mexica",
+    "The Heart of Tenochtitlan"
+  ],
+  "editorial_policy": "editorial/DISCOVER_APPROVED_BASELINE_2026-11-13.md",
+  "content_publication_approved": false,
+  "automatic_research_merge_permitted": false,
+  "next_actions": [
+    "Recover exact approved manuscript bytes and approval provenance before creating editorial/approved markdown and SHA256",
+    "Independent paragraph-level source and rights checks for evidence proposals",
+    "Physical Safari/iPhone testing and repository branch protections"
+  ]
+}
