@@ -1,0 +1,104 @@
+{
+  "schema_version": 4,
+  "kind": "noncanonical_research_replay_readback_ledger",
+  "generated_at": "2026-11-14T14:07:15Z",
+  "branch": "research-persistence",
+  "baseline_handoff_commit_sha": "047a159d88c4d7db8b6461df9ce49796fe10d65b",
+  "research_batch_commit_sha": "24c4d17029284966912c15b2d422f7b308a5c36f",
+  "coverage_commit_sha": "5241306e5ef744e1099d181b7c04bb29f92e8813",
+  "audit_commit_sha": "0f980cb0f072dae64dd7e6722d4ee8e75993c25e",
+  "workflow_fix_commit_sha": "1fb728ae0a72585b6fcbb6f1c4d3c9ef86561773",
+  "versioned_sqlite_snapshot_commit_sha": "7443ccd48f53eb6b9820958bed22155400a98149",
+  "workflow_run_id": 43603143775,
+  "workflow_url": "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/43603143775",
+  "workflow_status": "success",
+  "previous_workflow_run_id": 43603072230,
+  "previous_failure": "Non-fast-forward during sequential source/coverage/audit commits; rebuilt safely after workflow rebase/fail-closed fix; prior failed artifact was not promoted",
+  "paths": {
+    "batch": "research/batches/20261114T1400Z-CUPA-housing-institutions-1947-1959.json",
+    "coverage": "research/coverage/20261114T1400Z-CUPA-housing-institutions-1947-1959-readiness.json",
+    "audit": "research/audits/20261114T1400Z-CUPA-housing-institutions-1947-1959-templo-discover-gates.json",
+    "compressed_db": "research/reconciled/v4_1fb728ae0a72/research_only.sqlite.gz",
+    "report": "research/reconciled/v4_1fb728ae0a72/replay_report.json",
+    "checksum": "research/reconciled/v4_1fb728ae0a72/compressed_sha256.txt"
+  },
+  "verified_hashes": {
+    "canonical_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "reconciled_sqlite_uncompressed_sha256": "c5939bc79f7174aaf9bd92949167c5015238217a60bef6cdd9dd12a4869c6f7a",
+    "compressed_sqlite_sha256": "3ba2cbb3bf15baee7558b40d74f77deeaef1690bb256d15ff7f79366a6eb8cd3",
+    "replay_report_git_blob_sha": "4b9b8b1ccd24fd56e57e9cee88485b83b7c53c40"
+  },
+  "counts_before": {
+    "github_batches": 89,
+    "staged_findings": 585,
+    "source_candidates": 253,
+    "source_inspections": 291,
+    "canonical_sources": 616,
+    "canonical_claims": 422,
+    "canonical_links": 403,
+    "canonical_findings": 68
+  },
+  "counts_after": {
+    "github_batches": 90,
+    "staged_findings": 596,
+    "source_candidates": 260,
+    "source_inspections": 298,
+    "canonical_sources": 616,
+    "canonical_claims": 422,
+    "canonical_links": 403,
+    "canonical_findings": 68
+  },
+  "validation": {
+    "canonical_rows_unchanged": true,
+    "canonical_tables_preserved": 88,
+    "sqlite_integrity": "ok",
+    "foreign_key_violations": 0,
+    "raw_batch_documents_in_sqlite": 90,
+    "workflows_tests": "passed",
+    "gzip_test": "passed",
+    "github_persisted_binary_hash_compared_inside_workflow": true,
+    "independent_external_binary_retrieval": false
+  },
+  "source_identity_review": {
+    "detached_inspections": 37,
+    "detached_same_url_candidates": 9,
+    "detached_no_match": 28,
+    "source_metadata_collisions": 2,
+    "unknown_source_ids": [
+      "PROPOSE_SOURCE_SLOAD_2020_BOTANICAL_DATASET_NOT_IN_CANONICAL"
+    ],
+    "unresolved_index_only_count": 1
+  },
+  "new_research": {
+    "topic": "CUPA 1947-1949 postwar social housing and 1952 CUPJ plastic integration",
+    "findings": 11,
+    "broad_history": 5,
+    "poi_candidates": 4,
+    "specialist": 2,
+    "new_provisional_source_ids": 7,
+    "new_source_inspection_metadata_records": 7,
+    "primary_government_archives_examined": 0,
+    "scholarly_full_text_machine_extracted": 1,
+    "pdf_page_screenshots_success": 0,
+    "pdf_page_screenshots_failed": 3,
+    "source_disagreements": [
+      "1999 de Garay footnote anachronistically attributes 1949 building management to ISSSTE (institution created 1959)",
+      "De Garay seven high blocks vs heritage catalog six; no forced selection"
+    ],
+    "editorial_status": "provisional_not_corroborated_or_publication_approved"
+  },
+  "no_main_changes": true,
+  "canonical_promoted": false,
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "blockers": [
+    "37 detached source inspections remain identity-review pending (9 same-URL candidates, 28 no matches)",
+    "Two preexisting cross-batch source metadata collisions",
+    "Unregistered SLOAD 2020 proposed botanical dataset source",
+    "One unresolved index-only finding",
+    "CUPA original 1947 Pensiones commission, 1949 opening program, floor plans, tenant deeds and direct oral-history tapes not inspected",
+    "Conflict on tall-building count (six vs seven) and anachronistic reference to ISSSTE in 1949",
+    "Present-day public access and image rights unverified",
+    "Templo Mayor source gates remain open and not editorially approved"
+  ]
+}
