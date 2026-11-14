@@ -1,0 +1,142 @@
+{
+  "schema_version": 3,
+  "kind": "chapter_level_claim_to_source_locator_audit",
+  "generated_at": "2026-11-14T06:04:59.613Z",
+  "branch": "research-persistence",
+  "target_branch_read_only": "main",
+  "target_path": "poi/templo-mayor/reader.html",
+  "reader_re_read_this_run": true,
+  "reader_blob_sha_verified": "f570da92e17087c3430f0e0b7339a0cf72071a3f",
+  "source_batch_path": "research/batches/20261114T0600Z-san-ildefonso-1922-1926-muralism-and-templo-memory.json",
+  "gates": [
+    {
+      "topic": "Triple Alliance ~1428",
+      "reader_anchor": "In the late 1420s, Tenochtitlan joined Texcoco and Tlacopan",
+      "status": "source_gate_open",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T0500Z-1867-republic-return-zocalo-archaeology-templo-discover-evidence-gates.json",
+          "locator": "prior 81-batch chapter-specific source locator and uncertainty"
+        }
+      ],
+      "uncertainty": "Existing 1427/1428/1430 chronology gate; no original early colonial Nahuatl/Spanish source comparison in this batch",
+      "historical_addition": "Treat the end of Tepanec hegemony, formal alliances and subsequent tribute extraction as distinguishable processes.",
+      "placement": "advance_history"
+    },
+    {
+      "topic": "Temple phases",
+      "reader_anchor": "Archaeologists group the work into seven major stages",
+      "status": "source_gate_open",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T0500Z-1867-republic-return-zocalo-archaeology-templo-discover-evidence-gates.json",
+          "locator": "prior 81-batch chapter-specific source locator and uncertainty"
+        }
+      ],
+      "uncertainty": "Modern archaeological phase classification not identified with seven documented dedications; original section plates and modern on-site mapping remain incomplete",
+      "historical_addition": "Label Stage IVb visible façade and evidence separately from hypothetical ruler association.",
+      "placement": "advance_history_then_field"
+    },
+    {
+      "topic": "Coatepec and Coyolxauhqui",
+      "reader_anchor": "At the foot of the south stair of that platform lay a stone disk",
+      "status": "source_gate_open",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T0500Z-1867-republic-return-zocalo-archaeology-templo-discover-evidence-gates.json",
+          "locator": "prior 81-batch chapter-specific source locator and uncertainty"
+        }
+      ],
+      "uncertainty": "Mythic identification and artifact's archaeological findspot need separate sources; no new context record read in this batch",
+      "historical_addition": "Compare sculptural dismemberment with Coatepec narrative; do not infer specific ritual acts from image alone.",
+      "placement": "advance_history_then_field"
+    },
+    {
+      "topic": "Tóxcatl and 1521 conquest",
+      "reader_anchor": "In May 1520, while Cortés was away",
+      "status": "source_gate_open",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T0500Z-1867-republic-return-zocalo-archaeology-templo-discover-evidence-gates.json",
+          "locator": "prior 81-batch chapter-specific source locator and uncertainty"
+        }
+      ],
+      "uncertainty": "Charlot 1922 mural is a powerful modern interpretation, not witness to 1520; Book 12 bilingual folios and Spanish participant accounts need line-by-line citation",
+      "historical_addition": "Add San Ildefonso cross-link as optional 'How Mexico remembered the conquest in 1922' inset, with 1520 events clearly separated.",
+      "placement": "advance_history"
+    },
+    {
+      "topic": "1913 / 1914 Gamio",
+      "reader_anchor": "In 1913, archaeologist Manuel Gamio uncovered the pyramid’s southwest corner",
+      "status": "correction_candidate_unapproved",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T0500Z-1867-republic-return-zocalo-archaeology-templo-discover-evidence-gates.json",
+          "locator": "prior 81-batch chapter-specific source locator and uncertainty"
+        }
+      ],
+      "uncertainty": "Prior gate suggests 1913 preparations and May 1914 digging, original signed 1914 report still absent",
+      "historical_addition": "Correct only when original excavation report and dated site notes verify the wording.",
+      "placement": "advance_history"
+    },
+    {
+      "topic": "1978 Coyolxauhqui discovery",
+      "reader_anchor": "In February 1978, electrical workers digging near República de Argentina",
+      "status": "source_gate_open",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T0500Z-1867-republic-return-zocalo-archaeology-templo-discover-evidence-gates.json",
+          "locator": "prior 81-batch chapter-specific source locator and uncertainty"
+        }
+      ],
+      "uncertainty": "22 Feb and first-responder source differences remain; contemporaneous rescue log not inspected",
+      "historical_addition": "Sequence 21 Feb find, rescue and subsequent 1978–82 excavations, and 1987 museum without merging events.",
+      "placement": "advance_history"
+    },
+    {
+      "topic": "1920s Charlot wall vs 1520 site",
+      "reader_anchor": "The massacre at Tóxcatl and the fall of the city",
+      "status": "new_interpretive_boundary",
+      "source_locators": [
+        {
+          "url": "https://www.sanildefonso.org.mx/mural_masacre.php",
+          "locator": "Mural page lines 3–10, including iconography and Diego Durán attribution; direct institutional HTML"
+        },
+        {
+          "url": "https://vault.jeancharlot.org/mural-sculpture/mx_df_mexico_enp_1922-1923_massacre.html",
+          "locator": "Mural work catalogue lines 0–14, 21–38; direct collection catalogue HTML, images not inspected"
+        }
+      ],
+      "uncertainty": "College Charlot catalogue lines 3–10 and Jean Charlot Collection record lines 2–14 date work to 1922–23; not evidentiary archaeology",
+      "historical_addition": "Cross-reference the image only as twentieth-century visual memory; offer looking prompt about reversed scale and artist signatures.",
+      "placement": "optional_history_of_representation_sidebar"
+    },
+    {
+      "topic": "Photo, pigment and materials rights",
+      "reader_anchor": "See a photograph of the 1978 excavation",
+      "status": "field_and_rights_gate_open",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T0500Z-1867-republic-return-zocalo-archaeology-templo-discover-evidence-gates.json",
+          "locator": "photographic and access restriction gate"
+        }
+      ],
+      "uncertainty": "1978 INEHRM photo rights unverified; Charlot 1922 preparatory studies likewise not licensed",
+      "historical_addition": "Use external archive links, keep image toggle disabled until per-object rights and location/credit record verified.",
+      "placement": "photo_rights_review"
+    }
+  ],
+  "no_publication_of_unverified_claims": true,
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "blockers": [
+    "1428 manuscript date traditions uncollated",
+    "Temple stages require source plan and current site mapping",
+    "Coatepec is an interpretive comparison, not direct ritual proof",
+    "1520 source folios not fully collated",
+    "Original Gamio 1914 report absent",
+    "1978 rescue log and first responder discrepancy unverified",
+    "Charlot mural history must not be used as a 1520 eyewitness source",
+    "Photograph and artwork reproduction rights unverified"
+  ]
+}
