@@ -19,6 +19,7 @@ from handoff_immutable_batch import validate_immutable_batch_v4
 from handoff_new_audits import parse_new_audit
 from handoff_82_history import validate_frozen as validate_82_frozen, validate_ledger as validate_82_ledger
 from handoff_83_history import validate_frozen as validate_83_frozen, validate_ledger as validate_83_ledger
+from handoff_84_history import validate_frozen as validate_84_frozen, validate_ledger as validate_84_ledger
 
 RESEARCH_REF = "refs/remotes/origin/research-persistence"
 MANIFEST_PATH = "research/handoff/manifest.json"
@@ -83,7 +84,11 @@ def validate_versioned_handoff(manifest, immutable_manifest, snapshot_sha):
     """
     if (manifest.get("schema_version") == 4 and
             immutable_manifest.get("kind") == "verified_noncanonical_research_to_app_handoff_history"):
-        validate_83_frozen(manifest, immutable_manifest)
+        if "main_reader_blob_verified" in immutable_manifest.get("integrity", {}):
+            main_reader = git("rev-parse", "HEAD:poi/templo-mayor/reader.html").decode().strip()
+            validate_84_frozen(manifest, immutable_manifest, main_reader)
+        else:
+            validate_83_frozen(manifest, immutable_manifest)
         return
 
     if (manifest.get("schema_version") == 4 and
@@ -830,7 +835,11 @@ def validate():
             at_snapshot = git("rev-parse", f"{snapshot_commit}:{path}").decode().strip()
             if at_snapshot != actual[name]:
                 raise ValueError("83-batch verified snapshot artifact changed: " + path)
-        validate_83_ledger(manifest, ledger, actual)
+        if ledger.get("kind") == "verified_full_reconciliation_github_binary_readback":
+            main_reader = git("rev-parse", "HEAD:poi/templo-mayor/reader.html").decode().strip()
+            validate_84_ledger(manifest, ledger, actual, main_reader)
+        else:
+            validate_83_ledger(manifest, ledger, actual)
         # Translate the producer's unapproved status string ONLY after validation.
         # This is an ephemeral in-memory adapter, never a content publication.
         manifest["evidence_status"] = {

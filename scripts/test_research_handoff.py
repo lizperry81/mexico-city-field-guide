@@ -6,6 +6,7 @@ from pathlib import Path
 
 from check_research_handoff import OUT, safe_path, validate_versioned_handoff, verified_index_only_total
 from handoff_83_history import validate_frozen as validate_83_frozen, validate_ledger as validate_83_ledger
+import test_handoff_84_history  # fail-closed 84-batch reader identity regressions
 from editorial_passage_inventory import HistoryPassages
 from check_research_handoff import audit_matrix_explicitly_unapproved
 from handoff_new_audits import parse_new_audit
