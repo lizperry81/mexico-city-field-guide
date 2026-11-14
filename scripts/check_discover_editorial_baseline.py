@@ -16,6 +16,9 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 POLICY = "editorial/DISCOVER_APPROVED_BASELINE_2026-11-13.md"
 ARCHIVES = ROOT / "editorial" / "approved"
+# Pin the Nov 13 approval policy's exact Git bytes, even for CI runs without
+# --base-ref. Editing policy requires an explicit, reviewed hash update.
+LOCKED_POLICY_BLOB_SHA = "e6e1dec110d6cfcc3adbee8e942c9bc8cee62963"
 
 def git(*args):
     return subprocess.run(["git", *args], cwd=ROOT, text=True,
@@ -29,6 +32,13 @@ def main():
     policy = ROOT / POLICY
     if not policy.is_file():
         failures.append(f"Missing protected policy: {POLICY}")
+    else:
+        actual_blob = git("hash-object", POLICY).strip()
+        if actual_blob != LOCKED_POLICY_BLOB_SHA:
+            failures.append(
+                "Locked Nov 13 Discover policy bytes changed without an "
+                "explicitly reviewed baseline update: " + actual_blob
+            )
     if args.base_ref:
         changed = git("diff", "--name-only", args.base_ref, "--").splitlines()
         # The JSON manuscript carries publication status and can publish prose.

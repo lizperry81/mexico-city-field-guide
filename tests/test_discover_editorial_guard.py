@@ -8,6 +8,7 @@ import tempfile
 import unittest
 
 SOURCE = pathlib.Path(__file__).resolve().parents[1] / "scripts" / "check_discover_editorial_baseline.py"
+BASELINE = SOURCE.parents[1] / "editorial" / "DISCOVER_APPROVED_BASELINE_2026-11-13.md"
 
 class EditorialGuardTests(unittest.TestCase):
     def setUp(self):
@@ -18,7 +19,9 @@ class EditorialGuardTests(unittest.TestCase):
         shutil.copyfile(SOURCE, self.root / "scripts" / SOURCE.name)
         (self.root / "editorial").mkdir()
         self.policy = self.root / "editorial" / "DISCOVER_APPROVED_BASELINE_2026-11-13.md"
-        self.policy.write_text("Approved Discover baseline\n", encoding="utf-8")
+        # Use the actual approved document: CI must reject even an off-by-one
+        # change, while the positive fixture keeps the genuine approval bytes.
+        shutil.copyfile(BASELINE, self.policy)
         self.git("init", "-q")
         self.git("config", "user.name", "Editorial Guard Test")
         self.git("config", "user.email", "editorial-guard@example.invalid")
@@ -34,6 +37,12 @@ class EditorialGuardTests(unittest.TestCase):
     def test_policy_edit_is_rejected(self):
         self.policy.write_text("Unauthorized replacement\n", encoding="utf-8")
         self.assertNotEqual(self.check("--base-ref", "HEAD").returncode, 0)
+    def test_policy_change_is_rejected_without_base_ref(self):
+        # A push/workflow_dispatch may run the guard without a diff base.
+        self.policy.write_bytes(self.policy.read_bytes() + b"\\nUnauthorized addition\\n")
+        result = self.check()
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("Locked Nov 13 Discover policy", result.stderr)
     def test_approved_archive_checksum_passes(self):
         d = self.root / "editorial" / "approved"
         d.mkdir()
