@@ -4,6 +4,8 @@
   const skipHistory = document.getElementById('skip-to-history');
   const modeLinks = Array.from(document.querySelectorAll('.reader-nav a'));
   const sectionLinks = Array.from(document.querySelectorAll('.history-chapters a[href^="#"]'));
+  const returnLinks = Array.from(document.querySelectorAll('.return-to-contents a[href="#history-contents"]'));
+  const historyContents = document.getElementById('history-contents');
   const panels = Array.from(document.querySelectorAll('[data-reader-panel]'));
   const history = document.getElementById('history');
   const explore = document.getElementById('explore');
@@ -31,6 +33,7 @@
   let focusStop = false;
   let focusMode = false;
   let focusSection = false;
+  let focusContents = false;
 
   for (const stop of stops) {
     const title = stop.querySelector('h3');
@@ -77,6 +80,15 @@
     link.addEventListener('click', () => {
       focusSection = true;
       // iOS Safari does not fire hashchange when the same link is tapped again.
+      if (location.hash === link.hash) navigateHash();
+    });
+  }
+
+  // Return to the current article contents without disrupting a walk stop.
+  // Repeated activation must also work on Safari's unchanged URL fragment.
+  for (const link of returnLinks) {
+    link.addEventListener('click', () => {
+      focusContents = true;
       if (location.hash === link.hash) navigateHash();
     });
   }
@@ -154,6 +166,10 @@
       }
     }
     focusSection = false;
+    if (focusContents && panel === history && target === historyContents) {
+      historyContents.focus({ preventScroll: true });
+    }
+    focusContents = false;
     if (focusStop) stops[activeStop].querySelector('h3').focus({ preventScroll: true });
     focusStop = false;
     if (target) {
