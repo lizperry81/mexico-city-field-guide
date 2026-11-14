@@ -1,0 +1,137 @@
+{
+  "schema_version": 3,
+  "kind": "chapter_level_claim_to_source_locator_audit",
+  "generated_at": "2026-11-14T10:58:11Z",
+  "branch": "research-persistence",
+  "target_branch_read_only": "main",
+  "target_path": "poi/templo-mayor/reader.html",
+  "reader_re_read_this_run": true,
+  "reader_blob_sha_verified": "e18b0b6af33e61c1831990d84a7e5effbf13805b",
+  "source_batch_path": "research/batches/20261114T1058Z-1915-hunger-urban-survival.json",
+  "gates": [
+    {
+      "topic": "Triple Alliance ~1428",
+      "reader_anchor": "In the late 1420s",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "url": "https://www.metmuseum.org/essays/tenochtitlan",
+          "locator": "existing or newly examined source; see uncertainty and source scope"
+        }
+      ],
+      "uncertainty": "No new Mexica-period source inspected; previously documented disagreement on 1427/1428/1430",
+      "historical_addition": "Keep political events of Azcapotzalco war distinct from decades of tribute consolidation; do not use 1915 revolutionary-coalition comparison as dating evidence.",
+      "placement": "advance_history_and_field_as_applicable"
+    },
+    {
+      "topic": "Stage II / IVb temple enlargement",
+      "reader_anchor": "The oldest excavated phase that visitors can identify is called Stage II",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "url": "https://lugares.inah.gob.mx/en/pagina-de-elemento/1261",
+          "locator": "existing or newly examined source; see uncertainty and source scope"
+        }
+      ],
+      "uncertainty": "Original architectural phase plans/stratigraphic drawings missing",
+      "historical_addition": "Explain nested masonry stages and observable differences only after direct field-plan and object-label checks.",
+      "placement": "advance_history_and_field_as_applicable"
+    },
+    {
+      "topic": "Coatepec / Coyolxauhqui",
+      "reader_anchor": "At the foot of the south stair of that platform lay a stone disk",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "url": "https://lugares.inah.gob.mx/es/pagina-de-elemento/1259",
+          "locator": "existing or newly examined source; see uncertainty and source scope"
+        }
+      ],
+      "uncertainty": "Myth, object findspot and display replica are distinct; original sculpture report needed",
+      "historical_addition": "Separate original sculpture discovery, its mythic reading and an outdoor replica at IVb.",
+      "placement": "advance_history_and_field_as_applicable"
+    },
+    {
+      "topic": "Conquest Tóxcatl 1520 and siege 1521",
+      "reader_anchor": "In May 1520, while Cortés was away",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "url": "https://www.loc.gov/exhibits/exploring-the-early-americas/interactives/florentine-codex/",
+          "locator": "existing or newly examined source; see uncertainty and source scope"
+        }
+      ],
+      "uncertainty": "No fresh Nahuatl Book XII folios or competing conquest testimony collated",
+      "historical_addition": "Chronologically separate the May 1520 festival violence from 1521 conquest of the city and label centuries-later historiography.",
+      "placement": "advance_history_and_field_as_applicable"
+    },
+    {
+      "topic": "Gamio 1913 / 1914 excavation chronology",
+      "reader_anchor": "In 1913, archaeologist Manuel Gamio uncovered",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T1004Z-monumento-revolucion-1897-2010-templo-source-gates.json",
+          "locator": "prior outstanding audit not newly examined"
+        }
+      ],
+      "uncertainty": "Date of excavation versus report publication not adjudicated against primary Gamio",
+      "historical_addition": "Maintain explicit unresolved chronology rather than silently choosing a year.",
+      "placement": "advance_history_and_field_as_applicable"
+    },
+    {
+      "topic": "February 1978 Coyolxauhqui rescue",
+      "reader_anchor": "In February 1978, electrical workers digging near República de Argentina",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T0100Z-templo-mayor-discover-1978-responders-and-seven-gates.json",
+          "locator": "prior outstanding audit not newly examined"
+        }
+      ],
+      "uncertainty": "Rescue logs and early responder named personnel remain unresolved",
+      "historical_addition": "Differentiate electrical workers, initial rescue archaeology, 1978–82 sustained excavation and 1987 museum.",
+      "placement": "advance_history_and_field_as_applicable"
+    },
+    {
+      "topic": "Urban memory / revolutionary distress 1915",
+      "reader_anchor": "When the Mexica enlarged their main temple",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "url": "https://inehrm.gob.mx/work/recursos/ExpedientesDigitales/DOCS_080/1915_tiempo_de_hambre_e_incertidumbre_enla_ciudad_de_mexico.pdf",
+          "locator": "existing or newly examined source; see uncertainty and source scope"
+        }
+      ],
+      "uncertainty": "1915 rationing and institutional crisis are historical city context but do not establish 15th-century temple stages",
+      "historical_addition": "Put 1915 hunger and crowd protests in a separate Revolution chapter; optionally cross-link city center as a layered landscape, not source evidence for Mexica life.",
+      "placement": "separate_chapter_crosslink"
+    },
+    {
+      "topic": "Images / contemporary walk readiness",
+      "reader_anchor": "See a photograph of the 1978 excavation",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "url": "https://inehrm.gob.mx/work/recursos/ExpedientesDigitales/DOCS_080/1915_tiempo_de_hambre_e_incertidumbre_enla_ciudad_de_mexico.pdf",
+          "locator": "existing or newly examined source; see uncertainty and source scope"
+        }
+      ],
+      "uncertainty": "Casasola ca.1915 INAH object rights cannot validate 1978 Templo photographs; field route not visited",
+      "historical_addition": "For Templo images require an identified 1978 archival photograph and reuse clearance; no invented permission or open hours.",
+      "placement": "advance_history_and_field_as_applicable"
+    }
+  ],
+  "no_publication_of_unverified_claims": true,
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "blockers": [
+    "Missing direct comparison of 1428 traditions",
+    "Missing Stage IVb original stratigraphic drawings",
+    "Original 1520 Nahuatl and Spanish source collation absent",
+    "Original Gamio excavation records unavailable",
+    "1978 first-responder rescue documentation unresolved",
+    "1978 photo rights and 1915 Casasola image rights unverified"
+  ],
+  "conclusion": "1915 urban hunger evidence adds a separate interpretive layer, not evidence for the Mexica temple's construction or conquest."
+}
