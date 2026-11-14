@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "kind": "read_only_research_and_app_implementation_handoff",
+  "generated_at_utc": "2026-11-14T06:52:00Z",
+  "branch_written": "main",
+  "implementation": {
+    "files": [
+      "scripts/handoff_82_history.py",
+      "scripts/check_research_handoff.py",
+      "scripts/test_research_handoff.py",
+      "editorial/handoff/20261114T0652Z-82-batch-git-readback-private-queue.json"
+    ],
+    "description": "Validate 82-batch append-only research handoff and its independent committed Git replay proof; normalize the new producer's explicitly unapproved evidence-status string ONLY after provenance checks so existing private editorial-review queue works. Reject altered canonical counts, fabricated publication approval, mismatched source/provenance blobs and unsafe paths.",
+    "public_historical_prose_changed": false,
+    "approved_manuscript_changed": false,
+    "explore_stops_changed": false,
+    "homepage_changed": false,
+    "comment_storage_changed": false,
+    "research_branch_written": false
+  },
+  "research_handoff": {
+    "manifest_path": "research/handoff/manifest.json",
+    "manifest_blob_sha": "fe31a577aeeaf3d6ca61179abcebb8ae4734fea4",
+    "research_branch_ref_at_inspection": "3fde8add8d253b8334f38eaf6ffcc0e462ce3c4b",
+    "source_research_input_sha": "9883d491ab082256dfb9cfcbb7816e603c14ab07",
+    "verified_replay_commit_sha": "2f59ee44016eba1a8450947b7469c3863127f435",
+    "immutable_history_path": "research/handoff/history/20261114T0607Z-san-ildefonso-82-batch-verified.json",
+    "immutable_history_git_blob_sha": "3f6b2736b00152e511e3bd0ccc9f97aae9eb8700",
+    "readback_ledger_path": "research/ledgers/20261114T0607Z-san-ildefonso-82-batch-verified-readback.json",
+    "readback_ledger_git_blob_sha": "e1328f55f3ce1fd75cc091e15a860528992033c1",
+    "compressed_replay_git_blob_sha": "281bed97ca00533df6c576be6dfc302f8f850653",
+    "replay_report_git_blob_sha": "5c5268475629bfa9c5d247e5cc419250c8ada6c6",
+    "distinct_manifest_and_replay_paths_checked_from_git_tree": 187,
+    "distinct_manifest_and_replay_paths_present": 187,
+    "research_batches": 82,
+    "provisional_finding_ids": 508,
+    "canonical_v97_unchanged": {
+      "sources": 616,
+      "claims": 422,
+      "claim_source_links": 403,
+      "findings": 68
+    },
+    "source_candidates": 202,
+    "source_inspection_entries": 240,
+    "unresolved_unknown_source_refs": 1,
+    "source_metadata_collisions": 2,
+    "detached_original_inspections_unreconciled": 37,
+    "ready_for_editorial_approval": false,
+    "ready_for_publication": false,
+    "findings_published": 0,
+    "latest_audit": "research/audits/20261114T0600Z-san-ildefonso-1922-1926-muralism-and-templo-memory-templo-reader-gates.json",
+    "latest_coverage": "research/coverage/20261114T0600Z-san-ildefonso-1922-1926-muralism-and-templo-memory-readiness.json",
+    "latest_audit_status": "Available as a preliminary private human research review assignment; the producer marks it unready for editorial approval. 1922–23 Charlot mural is not eyewitness evidence for the 1520 massacre."
+  },
+  "deployment": {
+    "initial_successful_consumer_build_sha": "7cd3daa6290bac859f5dbd4f1805ede911a78ea7",
+    "workflow_url": "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/43568266602",
+    "editorial_research_handoff_artifact_name": "editorial-research-handoff",
+    "final_live_sha": "pending_following_commit_and_actions_verification"
+  },
+  "manuscript_recovery": {
+    "status": "verbatim_approved_text_not_cryptographically_established",
+    "the_basin_before_the_mexica": "Multiple editorial review DOCX candidates exist but differ; none has a verified byte-for-byte identity to the approved conversation original.",
+    "the_heart_of_tenochtitlan": "Complete original approval manuscript remains inaccessible.",
+    "approved_archives_created": 0,
+    "do_not_fabricate_original_or_sha256": true
+  },
+  "blockers": [
+    "Human provenance adjudication of differing review copies and exact approved conversation original",
+    "Independent historical corroboration including 1520 Sahagún folios, Gamio's excavation report, and San Ildefonso artist/commission evidence",
+    "Object-specific photographic and artwork rights and present-day site access verification",
+    "Physical iPhone Safari and VoiceOver touchscreen testing",
+    "GitHub main branch protection absent; automated baseline guard is detective, not preventive"
+  ]
+}
