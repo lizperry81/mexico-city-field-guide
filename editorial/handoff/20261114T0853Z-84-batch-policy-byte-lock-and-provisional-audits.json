@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "kind": "app_development_research_editorial_handoff",
+  "recorded_at_utc": "2026-11-14T08:53:00Z",
+  "development": {
+    "protected_release_branch": "main",
+    "baseline_lock_commit": "1865425caae9966f8dccaf554a0c9d39d5be6446",
+    "changed_files": [
+      "scripts/check_discover_editorial_baseline.py",
+      "tests/test_discover_editorial_guard.py"
+    ],
+    "impact": "Enforce exact original Nov 13 approval policy Git blob even when --base-ref is omitted; add a negative no-base regression test.",
+    "approved_historical_prose_changed": false,
+    "discover_explore_separation_changed": false,
+    "homepage_modified": false,
+    "local_storage_modified": false,
+    "new_chapters_published": 0
+  },
+  "researched": {
+    "branch": "research-persistence",
+    "manifest_input_sha": "984c93b45dbe2067c1d83186282470ae956f79ec",
+    "verified_replay_sha": "fa5c22d5b979009038dab927a45a73ab0d1bf8b8",
+    "manifest_promoting_branch_head_at_check": "913fee3d14a98d71b92cfe7b9d9deb506bb74dc3",
+    "manifest_path": "research/handoff/manifest.json",
+    "immutable_snapshot_path": "research/handoff/history/20261114T0810Z-84-batch-market-templo-verified.json",
+    "immutable_snapshot_git_blob": "ab4631931baaeaaa9a03ee13e7723e91d91e988a",
+    "verification_ledger_path": "research/ledgers/20261114T0810Z-84-batch-market-github-binary-readback.json",
+    "verification_ledger_git_blob": "b9b521af5ee1f807873e26a1be32ada6a4df6929",
+    "replay_report_git_blob": "3f8559a88c9726cb76430852c16a8038f4c5eb59",
+    "unique_manifest_artifact_paths_checked_in_promoted_branch_tree": 202,
+    "missing_paths": [],
+    "input_commit_ancestor_of_promoted_head": true,
+    "verified_replay_commit_ancestor_of_promoted_head": true,
+    "github_batches_replayed": 84,
+    "provisional_finding_candidates": 530,
+    "canonical_version": "V97",
+    "canonical_counts": {
+      "sources": 616,
+      "claims": 422,
+      "claim_source_links": 403,
+      "findings": 68
+    },
+    "ready_for_editorial_review": false,
+    "ready_for_publication": false,
+    "editorial_changes_authorized": false,
+    "newer_audit": "research/audits/20261114T0758Z-market-1934-public-education-and-templo-object-templo-evidence-locators.json",
+    "newer_audit_status": "Preliminary locators only. Institutional Templo Mayor references and object-display uncertainty remain unapproved.",
+    "newer_coverage": "research/coverage/20261114T0758Z-market-1934-public-education-and-templo-object-readiness.json",
+    "coverage_status": "Market/mural historical research provisional; 2026 access, route, and image rights unverified.",
+    "verified_research_consumer_status": "Requires GitHub Actions deployment research validation on final main revision; never auto-publish.",
+    "staged_publication_count": 0
+  },
+  "manuscripts": {
+    "approved_baseline_policy": "editorial/DISCOVER_APPROVED_BASELINE_2026-11-13.md",
+    "approved_archive_present": false,
+    "heart_of_tenochtitlan_full_original_recovered": false,
+    "basin_before_mexica_full_original_recovered": false,
+    "document_review_variants_found": true,
+    "archival_policy": "No archive or checksum may be represented as verbatim approval without full text and provenance."
+  },
+  "release_target": "2026-12-10",
+  "open_blockers": [
+    "Full provenance-verified original Discover manuscripts",
+    "Editorial source corroboration and rights clearance",
+    "Physical Safari and site sightline checks",
+    "Repository-level main branch protection"
+  ]
+}
