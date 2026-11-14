@@ -122,13 +122,25 @@ def validate_versioned_handoff(manifest, immutable_manifest, snapshot_sha):
                     or not isinstance(frozen_evidence["source_types"], str)
                     or not frozen_evidence["source_types"].strip()):
                 raise ValueError("Immutable readback evidence counts or approval changed")
+        no_merge = immutable_manifest.get("no_automatic_merge") is True
+        if immutable_manifest.get("no_automatic_merge") is None:
+            # The new compact handoff encodes the same prohibition in an
+            # immutable instruction; require BOTH producer and rolling
+            # manifest to forbid automatic merge and publication explicitly.
+            frozen_instruction = immutable_manifest.get("consumer_instruction")
+            rolling_instruction = manifest.get("consumer_instruction")
+            no_merge = (isinstance(frozen_instruction, str) and
+                        "Never auto-merge" in frozen_instruction and
+                        "publish" in frozen_instruction and
+                        isinstance(rolling_instruction, str) and
+                        "Do not publish, auto-merge" in rolling_instruction)
         if (immutable_manifest.get("schema_version") != 4
                 or immutable_manifest.get("branch") != "research-persistence"
                 or immutable_manifest.get("canonical_status") != "unchanged_provisional"
                 or manifest.get("canonical_status") != "unchanged_provisional_V97_not_promoted"
                 or immutable_manifest.get("ready_for_editorial_review") is not False
                 or immutable_manifest.get("ready_for_publication") is not False
-                or immutable_manifest.get("no_automatic_merge") is not True
+                or not no_merge
                 or manifest.get("canonical_promoted") is not False
                 or manifest.get("ready_for_editorial_review") is not False
                 or manifest.get("ready_for_publication") is not False
@@ -145,10 +157,24 @@ def validate_versioned_handoff(manifest, immutable_manifest, snapshot_sha):
                 raise ValueError("Immutable readback staged count drift: " + old_key)
         for group in ("chapter_audit_artifact_paths", "coverage_artifact_paths",
                       "research_batch_artifact_paths"):
-            subset = immutable_manifest.get(group)
-            if not isinstance(subset, list) or not subset or not set(subset).issubset(set(manifest.get(group, []))):
+            # 80-batch shorthand uses 'batch_artifact_paths'. Every path
+            # still needs to exist in the committed rolling manifest.
+            frozen_group = ("batch_artifact_paths"
+                            if group == "research_batch_artifact_paths" and
+                            "batch_artifact_paths" in immutable_manifest
+                            else group)
+            subset = immutable_manifest.get(frozen_group)
+            if (not isinstance(subset, list) or not subset or
+                    not set(subset).issubset(set(manifest.get(group, [])))):
                 raise ValueError("Immutable readback artifact path drift: " + group)
-        if immutable_manifest.get("verification_ledger_path") not in manifest.get("reconciliation_artifact_paths", []):
+        ledger_paths = immutable_manifest.get("verification_ledger_artifact_paths")
+        if ledger_paths is None:
+            ledger_paths = [immutable_manifest.get("verification_ledger_path")]
+        if (not isinstance(ledger_paths, list) or not ledger_paths or
+                any(not isinstance(p, str) or
+                    p not in manifest.get("reconciliation_artifact_paths", [])
+                    for p in ledger_paths)
+                or manifest.get("replay_evidence", {}).get("verification_ledger") not in ledger_paths):
             raise ValueError("Immutable readback ledger not pinned in the manifest")
         return
     if version == 2:
@@ -705,7 +731,12 @@ def validate():
             raise ValueError("Frozen v4 snapshot not present at pinned history commit")
     if immutable_manifest.get("kind") == "append_only_research_to_app_verified_handoff":
         # Bind readback claims to immutable Git objects at the handoff commit.
-        ledger = json.loads(bound_blob(immutable_manifest["verification_ledger_path"]).decode("utf-8"))
+        ledger_path = immutable_manifest.get("verification_ledger_path")
+        if ledger_path is None:
+            ledger_path = manifest["replay_evidence"]["verification_ledger"]
+            if ledger_path not in immutable_manifest.get("verification_ledger_artifact_paths", []):
+                raise ValueError("Immutable readback ledger is not in history")
+        ledger = json.loads(bound_blob(ledger_path).decode("utf-8"))
         checks = ledger.get("checks", {})
         if (not re.fullmatch(r"reconciled_[0-9]+_batch_github_readback_verification",
                              str(ledger.get("kind", "")))
