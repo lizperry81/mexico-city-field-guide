@@ -1,0 +1,52 @@
+{
+  "schema_version": 4,
+  "kind": "research_to_app_handoff_append_only_history",
+  "generated_at": "2026-11-14T10:09:25.578Z",
+  "research_commit_sha": "8d55ab906a320a9668f4bcc6c959e200915522aa",
+  "workflow_snapshot_commit_sha": "f0e59fdd671a572e332eafdd05622a384a30aebd",
+  "canonical_version": "V97",
+  "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_status": "unchanged_provisional_V97_not_promoted",
+  "canonical": {
+    "sources": 616,
+    "claims": 422,
+    "claim_sources": 403,
+    "canonical_findings": 68,
+    "canonical_source_inspections": 9
+  },
+  "staged_counts": {
+    "batches": 86,
+    "findings": 552,
+    "source_candidates": 234,
+    "inspections": 272,
+    "detached_original_inspections": 37,
+    "unknown_source_ids": 1,
+    "metadata_conflicts": 2,
+    "unresolved_index_only": 1
+  },
+  "reconciliation_report_path": "research/reconciled/v4_8d55ab906a32/replay_report.json",
+  "versioned_research_sqlite_gz_path": "research/reconciled/v4_8d55ab906a32/research_only.sqlite.gz",
+  "versioned_research_sha256": "36f8095dfab5d4443b2225d962530eed8e50d9cde0b9ca638eed4f92ad216074",
+  "compressed_sha256": "96cc60e495f2e6bea5a7a447dd75db66533066b3ce851e9a22d9e396acd4cccf",
+  "chapter_audit_artifact_paths": [
+    "research/audits/20261114T1004Z-monumento-revolucion-1897-2010-templo-source-gates.json"
+  ],
+  "coverage_artifact_paths": [
+    "research/coverage/20261114T1004Z-monumento-revolucion-1897-2010-readiness.json"
+  ],
+  "batch_artifact_path": "research/batches/20261114T1004Z-monumento-revolucion-1897-2010.json",
+  "verification_ledger_path": "research/ledgers/20261114T1009Z-86-batch-monumento-full-replay-github-readback.json",
+  "supplemental_source_audit_path": "research/ledgers/20261114T1009Z-palacio-legislativo-competition-source-conflict.json",
+  "evidence_status": "noncanonical_source_located_not_independently_corroborated_or_publication_approved",
+  "ready_for_editorial_review": false,
+  "ready_for_publication": false,
+  "canonical_promoted": false,
+  "blockers": [
+    "37 detached original source inspections: nine URL overlaps unresolved and 28 no identity match",
+    "Two cross-batch source metadata collisions, one unknown botanical dataset source reference, one unresolved index-only finding",
+    "Original 1897 competition decision and Bénard/Quaglia award history conflicting; later thesis excerpt has apparent year errors",
+    "Original 1910–1938 engineering records and 1985 museum foundation survey inaccessible",
+    "Templo Mayor original 1428 traditions, excavation stage diagrams, Gamio report, 1520 Book 12 comparison, 1978 rescue documentation incomplete",
+    "No image reuse clearance or current visitor route/access audit; no independent editorial approval"
+  ]
+}
