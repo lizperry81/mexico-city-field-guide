@@ -1,0 +1,441 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261114T0500Z-1867-republic-return-zocalo-archaeology",
+  "generated_at": "2026-11-14T04:59:47.982Z",
+  "branch": "research-persistence",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "storage_role": "immutable_noncanonical_research_batch",
+  "previous_verified_replay": "research/reconciled/v4_69fe9b67d1ad/replay_report.json",
+  "prior_verified_counts": {
+    "github_batches_replayed": 80,
+    "staged_findings": 486,
+    "source_candidates": 188,
+    "inspection_entries": 226,
+    "canonical_sources": 616,
+    "canonical_claims": 422,
+    "canonical_links": 403,
+    "canonical_findings": 68
+  },
+  "research_scope": "11 candidate findings: 5 broad history, 4 place-facing, 2 specialist archaeology on 1843-1867 Zócalo republican restoration and original 2017 archaeology. Juárez manifesto checked on two PDF page images and specialist 2019 INAH p.123 image checked; no independent corroboration or publication approval.",
+  "sources": [
+    {
+      "id": "STG-SRC-20261114-REST-INAH-ZOCALO",
+      "title": "El Zócalo de la Ciudad de México. Historia y evidencias arqueológicas",
+      "authors": "Alejandro Meraz Moreno; Gonzalo Emilio Díaz Pérez; Rubén Arroyo Ángeles; Ricardo Castellanos Dounce",
+      "publication": "Boletín de Monumentos Históricos 3a época no. 46 (2019), pp. 107 onward",
+      "url": "https://revistas.inah.gob.mx/index.php/boletinmonumentos/article/download/17405/18660/37200",
+      "access_scope": "Article PDF parsed: pp. 107–129, including 113–118, 123, 129; p. 123 image directly examined; full excavation report not examined",
+      "status": "peer_reviewed_specialist_direct_full_text_pdf_selected_page_image"
+    },
+    {
+      "id": "STG-SRC-20261114-REST-UNAM-JUAREZ",
+      "title": "Manifiesto del Presidente de la República al ocupar la capital, 15 de julio de 1867",
+      "authors": "Benito Juárez; Instituto de Investigaciones Jurídicas UNAM editor",
+      "publication": "Compiled text from Dublán y Lozano (1878), UNAM modernized orthography, pp. 456–457",
+      "url": "https://archivos.juridicas.unam.mx/www/bjv/libros/12/5625/40.pdf",
+      "access_scope": "UNAM edited primary-source PDF pp. 456–457 parsed and both page images examined; not original 1867 imprint",
+      "status": "edited_primary_document_two_pages_image_verified"
+    },
+    {
+      "id": "STG-SRC-20261114-REST-DIAZ-TELEGRAM",
+      "title": "1867 Toma de la Ciudad de México: telegram of Porfirio Díaz, 21 June 1867",
+      "authors": "Porfirio Díaz; Jorge L. Tamayo compilation; Doralicia Carmona Dávila web transcription",
+      "publication": "Benito Juárez Documentos Discursos y Correspondencia (UAM digital 2006), reproduced by Memoria Política",
+      "url": "https://www.memoriapoliticademexico.org/Textos/4IntFrancesa/1867TCM.html",
+      "access_scope": "Complete short edited transcript directly examined, HTML lines 11–15; original telegram leaf not inspected",
+      "status": "edited_primary_telegram_transcript_not_original"
+    },
+    {
+      "id": "STG-SRC-20261114-REST-RHM-ZOCALO",
+      "title": "Recuerdos del Zócalo (IV): El triunfo de la República en 1867",
+      "authors": "Isabel Tovar de Teresa; Magdalena Mas",
+      "publication": "Relatos e Historias en México no.108, full article web republication",
+      "url": "https://relatosehistorias.mx/numero-vigente/recuerdos-del-zocalo-iv-el-triunfo-de-la-republica-en-1867-un-acontecimiento-que",
+      "access_scope": "Complete narrative HTML lines 30–88 directly examined; cites period newspapers but original issues not read",
+      "status": "historical_secondary_article_full_html"
+    },
+    {
+      "id": "STG-SRC-20261114-REST-MEMORIA-ENTRY",
+      "title": "Juárez llega a la capital, 15 de julio de 1867",
+      "authors": "Doralicia Carmona Dávila",
+      "publication": "Memoria Política de México / efemérides",
+      "url": "https://memoriapoliticademexico.org/Efemerides/7/15071867.html",
+      "access_scope": "Direct HTML lines 11–31; author transcribes historic press and manifesto but original newspaper not checked",
+      "status": "edited_documentary_narrative_full_html"
+    },
+    {
+      "id": "STG-SRC-20261114-REST-UNAM-1867-PAMPHLET",
+      "title": "Entrada del supremo gobierno nacional a la capital de la República el día 15 de julio de 1867: solemnizada en Durango",
+      "authors": "Anonymous; Imprenta del Gobierno a cargo de M. Gómez",
+      "publication": "1867 historic printed pamphlet; Biblioteca Nacional de México UNAM",
+      "url": "https://repositorio.unam.mx/contenidos/ficha/entrada-del-supremo-gobierno-nacional-a-la-capital-de-la-republica-el-dia-15-de-julio-de-1867-solemnizada-en-durango-el-di-1064",
+      "access_scope": "UNAM catalog metadata and rights notice examined; pamphlet pages NOT examined",
+      "status": "historic_print_catalog_only_no_page_access"
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "20261114T0500Z-REST-INS-01",
+      "source_id": "STG-SRC-20261114-REST-INAH-ZOCALO",
+      "locator": "Article PDF parsed: pp. 107–129, including 113–118, 123, 129; p. 123 image directly examined; full excavation report not examined",
+      "access": "Article PDF parsed: pp. 107–129, including 113–118, 123, 129; p. 123 image directly examined; full excavation report not examined",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": true,
+      "notes": null
+    },
+    {
+      "id": "20261114T0500Z-REST-INS-02",
+      "source_id": "STG-SRC-20261114-REST-UNAM-JUAREZ",
+      "locator": "UNAM edited primary-source PDF pp. 456–457 parsed and both page images examined; not original 1867 imprint",
+      "access": "UNAM edited primary-source PDF pp. 456–457 parsed and both page images examined; not original 1867 imprint",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": true,
+      "notes": null
+    },
+    {
+      "id": "20261114T0500Z-REST-INS-03",
+      "source_id": "STG-SRC-20261114-REST-DIAZ-TELEGRAM",
+      "locator": "Complete short edited transcript directly examined, HTML lines 11–15; original telegram leaf not inspected",
+      "access": "Complete short edited transcript directly examined, HTML lines 11–15; original telegram leaf not inspected",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": null
+    },
+    {
+      "id": "20261114T0500Z-REST-INS-04",
+      "source_id": "STG-SRC-20261114-REST-RHM-ZOCALO",
+      "locator": "Complete narrative HTML lines 30–88 directly examined; cites period newspapers but original issues not read",
+      "access": "Complete narrative HTML lines 30–88 directly examined; cites period newspapers but original issues not read",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": null
+    },
+    {
+      "id": "20261114T0500Z-REST-INS-05",
+      "source_id": "STG-SRC-20261114-REST-MEMORIA-ENTRY",
+      "locator": "Direct HTML lines 11–31; author transcribes historic press and manifesto but original newspaper not checked",
+      "access": "Direct HTML lines 11–31; author transcribes historic press and manifesto but original newspaper not checked",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": null
+    },
+    {
+      "id": "20261114T0500Z-REST-INS-06",
+      "source_id": "STG-SRC-20261114-REST-UNAM-1867-PAMPHLET",
+      "locator": "UNAM catalog metadata and rights notice examined; pamphlet pages NOT examined",
+      "access": "UNAM catalog metadata and rights notice examined; pamphlet pages NOT examined",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Catalog records a historic item; no pamphlet text or images examined"
+    }
+  ],
+  "findings": [
+    {
+      "id": "20261114T0500Z-REST-01",
+      "classification": "broad_history",
+      "assertion": "The military capitulation of Mexico City on 21 June 1867 and Juárez's ceremonial return on 15 July were distinct events. A telegram sent by Porfirio Díaz from Tacubaya to the minister of war reports surrender of the capital's defenders and asks that the republican government return; later ceremony narratives date the public entry to 15 July.",
+      "date_or_range": "1867-06-21–1867-07-15",
+      "period": "Restoration of the republic",
+      "themes": [
+        "siege",
+        "republican legitimacy"
+      ],
+      "geographies": [
+        "Tacubaya",
+        "Centro Histórico"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-REST-DIAZ-TELEGRAM",
+        "STG-SRC-20261114-REST-RHM-ZOCALO"
+      ],
+      "source_locator": "Díaz edited telegram HTML lines 11–15; Tovar/Mas historical account lines 54–61",
+      "limitations": "No original telegram or military capitulation instrument inspected; 21 June seizure must not be collapsed into 15 July civilian reception.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0500Z-REST-02",
+      "classification": "broad_history",
+      "assertion": "Juárez's 15 July 1867 manifesto claims legal continuity of constitutional government during four years away from the capital; it explicitly links the government's return to the 1857 constitutional order and distinguishes national sovereignty from the geography of where ministers resided.",
+      "date_or_range": "1867-07-15",
+      "period": "Restoration of the republic",
+      "themes": [
+        "constitutionalism",
+        "war and sovereignty"
+      ],
+      "geographies": [
+        "Palacio Nacional",
+        "Mexico City"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-REST-UNAM-JUAREZ"
+      ],
+      "source_locator": "UNAM edited primary manifesto pp.456–457 (PDF pages 1–2), page images verified",
+      "limitations": "This is the government's self-description in a partisan state document, not an independent adjudication of full legal continuity. UNAM adapted spelling from Dublán and Lozano (1878).",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0500Z-REST-03",
+      "classification": "broad_history",
+      "assertion": "The manifesto asks inhabitants to respect laws, balance leniency with necessary justice for former opponents, and resume elections after extraordinary wartime powers; a claim that the ceremony instantly restored ordinary democratic practice would overstate the document.",
+      "date_or_range": "1867-07-15",
+      "period": "Postwar constitutional politics",
+      "themes": [
+        "elections",
+        "political inclusion",
+        "reconciliation"
+      ],
+      "geographies": [
+        "Mexico City"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-REST-UNAM-JUAREZ",
+        "STG-SRC-20261114-REST-MEMORIA-ENTRY"
+      ],
+      "source_locator": "UNAM manifesto p.457; Carmona edited transcript HTML lines 24–29",
+      "limitations": "Original election call, voting rules, implementation and opponents' responses remain unexamined; aspirational language cannot stand in for actual electoral outcomes.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0500Z-REST-04",
+      "classification": "broad_history",
+      "assertion": "During the Maximilian government, the Zócalo was planted and equipped as a public promenade in 1866: the INAH archaeological history describes crossing walks, corner fountains, 62 iron benches, trees and gas illumination. Juárez's 1867 entry therefore took place on a square already altered under the empire.",
+      "date_or_range": "1866–1867",
+      "period": "Second Empire to Republic",
+      "themes": [
+        "political change",
+        "urban landscape",
+        "reuse of public space"
+      ],
+      "geographies": [
+        "Plaza de la Constitución"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-REST-INAH-ZOCALO"
+      ],
+      "source_locator": "INAH Boletín no.46, p.123 text and screenshot, note 69",
+      "limitations": "Published study cites Jesús Galindo y Villa for 1866 equipment; municipal invoices/period visual confirmation absent. Gas lighting is an 1866 historic claim, not current feature.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0500Z-REST-05",
+      "classification": "broad_history",
+      "assertion": "The public celebrations combined arches, laurel honors, public decoration, military displays and speeches; published historical reconstructions differ about the Alameda banquet, noting a storm and an indoor reception at the Colegio de Minas. The route and banquets must not be flattened into a single uninterrupted street event.",
+      "date_or_range": "1867-07-15",
+      "period": "Civic ritual of restored republic",
+      "themes": [
+        "public spectacle",
+        "press accounts",
+        "political theater"
+      ],
+      "geographies": [
+        "Alameda Central",
+        "Palacio de Minería",
+        "Plaza de la Constitución"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-REST-RHM-ZOCALO",
+        "STG-SRC-20261114-REST-MEMORIA-ENTRY"
+      ],
+      "source_locator": "Tovar/Mas HTML lines 57–83; Carmona HTML lines 15–19",
+      "limitations": "Original 15–16 July El Siglo Diez y Nueve and El Globo issues not read; ceremonial timing and banquet location require document-by-document comparison.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0500Z-REST-06",
+      "classification": "poi_ready_candidate",
+      "assertion": "A historically described entry sequence crosses the Chapultepec approach and Puerta de Belén, proceeds via Bucareli, passes the old Carlos IV statue near Reforma/Bucareli and continues along the former street network to today's Avenida Juárez/Madero before reaching the Plaza. A guide can teach street-name change without claiming a verified turn-by-turn 1867 GPS alignment.",
+      "date_or_range": "1867-07-15",
+      "period": "Restoration as route",
+      "themes": [
+        "historical geography",
+        "street names",
+        "urban memory"
+      ],
+      "geographies": [
+        "Chapultepec",
+        "Bucareli",
+        "Avenida Juárez",
+        "Calle Madero",
+        "Zócalo"
+      ],
+      "poi_ids": [
+        "Plaza de la Constitución"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-REST-RHM-ZOCALO",
+        "STG-SRC-20261114-REST-MEMORIA-ENTRY"
+      ],
+      "source_locator": "Tovar/Mas HTML lines 59–64; Carmona lines 13–17",
+      "limitations": "Historic maps and gate locations not georeferenced. The monument 'El Caballito' subsequently relocated; do not direct visitor to assume original 1867 statue location remains.",
+      "learning_mode": "advance_history_then_field",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0500Z-REST-07",
+      "classification": "poi_ready_candidate",
+      "assertion": "At the 1867 festivities a temporary allegorical Victory sculpture occupied the unfinished 1843 Independence Monument pedestal in the Zócalo. The INAH study identifies the sculpture as starting to be removed on 5 September 1867 after cracking and shedding pieces, citing 6 and 8 September contemporary press accounts.",
+      "date_or_range": "1867-07–1867-09",
+      "period": "Temporary monuments",
+      "themes": [
+        "commemoration",
+        "fragile civic fabric",
+        "appropriation"
+      ],
+      "geographies": [
+        "Plaza de la Constitución"
+      ],
+      "poi_ids": [
+        "Plaza de la Constitución"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-REST-INAH-ZOCALO",
+        "STG-SRC-20261114-REST-RHM-ZOCALO"
+      ],
+      "source_locator": "INAH Boletín no.46 p.123, notes 70–72 (Boletín Republicano 1867-06-17 p2; El Siglo Diez y Nueve 1867-09-06 p3; Boletín Republicano 1867-09-08 p3); Tovar/Mas lines 30–32",
+      "limitations": "Original newspapers not directly examined and 1867 photo reproduction rights not cleared; no extant Victory statue is visible today.",
+      "learning_mode": "advance_history_then_field",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0500Z-REST-08",
+      "classification": "poi_ready_candidate",
+      "assertion": "The Zócalo's popular name derives from the unfinished 1843 monument foundation, not from the 1910 Angel on Paseo de la Reforma. INAH reports that the original foundation persists beneath plaza paving; in 2017 workers encountered circular platform and banqueta elements north of the central flagpole and protected them again after documentation.",
+      "date_or_range": "1843–2017",
+      "period": "Visible and buried civic history",
+      "themes": [
+        "site archaeology",
+        "naming",
+        "archaeology under modern paving"
+      ],
+      "geographies": [
+        "Plaza de la Constitución"
+      ],
+      "poi_ids": [
+        "Plaza de la Constitución"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-REST-INAH-ZOCALO"
+      ],
+      "source_locator": "INAH Boletín no.46 pp.112–114, 118, 129; p.129 inscribed plaque wording and coverings",
+      "limitations": "Modern plaques and visibility have NOT been physically verified in 2026; a hidden foundation must not be described as an open excavated ruin.",
+      "learning_mode": "field_interpretation",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0500Z-REST-09",
+      "classification": "poi_ready_candidate",
+      "assertion": "François Aubert's 1867 image of Juárez's entry at Palacio Nacional has a cited INAH-Sinafo inventory number (the historical essay uses 181419; an INAH paper figure labels a separate reproduced Aubert image inv. 628364). These catalog numbers must not be equated or images reused without license clearance.",
+      "date_or_range": "1867",
+      "period": "Photography of 1867 political transition",
+      "themes": [
+        "historical photography",
+        "object provenance",
+        "museum rights"
+      ],
+      "geographies": [
+        "Palacio Nacional",
+        "Plaza de la Constitución"
+      ],
+      "poi_ids": [
+        "Palacio Nacional"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-REST-RHM-ZOCALO",
+        "STG-SRC-20261114-REST-INAH-ZOCALO"
+      ],
+      "source_locator": "Tovar/Mas HTML line 32; INAH Boletín no.46 fig.16 p.123 photo caption inv.628364",
+      "limitations": "Photo title, negative, positive, inventory equivalence and image-use permission not independently verified; feature candidate only.",
+      "learning_mode": "historical_photo_toggle_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0500Z-REST-10",
+      "classification": "specialist_technical",
+      "assertion": "The uncompleted 1843 foundation engineering used timber piles and crossed cedar beam-grillages beneath masonry. The INAH archaeological paper compares its 2017 section to nineteenth-century engineering reports, including a reported 1,927 cedar stakes (historic record) and measurements of a smaller archaeological sample; do not misrepresent all reported dimensions as measured in situ.",
+      "date_or_range": "1843–1844 / 2017",
+      "period": "Nineteenth-century construction archaeology",
+      "themes": [
+        "engineering",
+        "lakebed ground",
+        "cross-check historical measurements"
+      ],
+      "geographies": [
+        "Zócalo"
+      ],
+      "poi_ids": [
+        "Plaza de la Constitución"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-REST-INAH-ZOCALO"
+      ],
+      "source_locator": "INAH Boletín no.46 pp.115–117, fig.11 and notes 33–42",
+      "limitations": "Published dimensions mix 1840s reported quantities with 2017 sample observations; original engineering reports and full excavation archive not independently read.",
+      "learning_mode": "specialist_sidebar",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0500Z-REST-11",
+      "classification": "specialist_technical",
+      "assertion": "The buried monument remains were encountered in separate campaigns: a 1983 test for a cancelled Line 8 Metro proposal and 2017 Zócalo rehabilitation. The archaeologists distinguish a 35 m base ring, an 8 m later platform, and a 14 m circular banqueta, partly affected by 1999 flagpole foundations; these phases are later than the Mexica sacred precinct.",
+      "date_or_range": "1983 / 1999 / 2017",
+      "period": "Archaeological stratigraphy of civic square",
+      "themes": [
+        "salvage archaeology",
+        "construction phases",
+        "spatial distinction"
+      ],
+      "geographies": [
+        "Plaza de la Constitución",
+        "Templo Mayor precinct vicinity"
+      ],
+      "poi_ids": [
+        "Plaza de la Constitución"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-REST-INAH-ZOCALO"
+      ],
+      "source_locator": "INAH Boletín no.46 pp.112–115,118,129, fig.8; preliminary historic precinct bounds p.108",
+      "limitations": "Original 1983 Miranda report and 2017 final DSA dossier not examined; printed figures do not establish 2026 exposure or exact field access. Do not equate this monument base with Templo Mayor structure.",
+      "learning_mode": "specialist_sidebar",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    }
+  ],
+  "source_identity_policy": "All six new source IDs are provisional; do not auto-merge overlap with any canonical or staged source by URL/title. Preserve full source inspection scopes, source disagreements, and chronological origin.",
+  "external_source_usage": "Two-page edited primary manifesto UNAM PDF visually checked; 2019 INAH paper parsed with page 123 image checked; edited Díaz telegram; two directly examined history articles; 1867 pamphlet catalog metadata only. Original 1867 newspaper issues, foundation plans, 2017 excavation archive, photograph permissions and on-site signage NOT examined.",
+  "publication_approved": false,
+  "independently_corroborated_findings": 0,
+  "ready_for_editorial_review": false
+}
