@@ -20,6 +20,21 @@ button, select { font: inherit; }
 .site-header { background: #112b3c; padding: 11px 0; }
 .site-header a { color: #c6ebe7; font-size: .9rem; }
 main { padding: 26px 0 108px; }
+/* A keyboard escape from repeated navigation, visible only while focused. */
+.skip-link {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 20;
+  transform: translateY(-150%);
+  padding: 10px 14px;
+  border: 2px solid white;
+  border-radius: 8px;
+  background: var(--ink);
+  color: white;
+  font-weight: 700;
+}
+.skip-link:focus, .skip-link:focus-visible { transform: translateY(0); }
 
 .overview {
   display: grid;

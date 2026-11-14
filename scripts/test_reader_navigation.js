@@ -43,6 +43,10 @@ const sectionLinks = sections.map(section => ({
   hash: '#' + section.id, click: null,
   addEventListener(type, fn) {assert.equal(type, 'click'); this.click = fn;}
 }));
+const skip = {
+  click: null,
+  addEventListener(type, fn) {assert.equal(type, 'click'); this.click = fn;}
+};
 const links = Object.keys(panels).map(id => ({
   hash: '#' + id, current: false, click: null,
   addEventListener(type, fn) {assert.equal(type, 'click'); this.click = fn;},
@@ -66,6 +70,7 @@ const prev = button(), next = button(), progress = {textContent: ''};
 const ids = {...panels, ...Object.fromEntries(stops.map(stop => [stop.id, stop])),
   ...Object.fromEntries(sections.map(section => [section.id, section])),
   'choose-stop': jump, 'previous-stop': prev, 'next-stop': next,
+  'skip-to-history': skip,
   'stop-progress': progress};
 const doc = {
   querySelectorAll(selector) {
@@ -142,11 +147,19 @@ assert.equal(panels.history.heading.focused, 1, 'Choosing Discover should focus 
 assert.equal(panels.history.heading.tabIndex, -1);
 historyLink.click(); // No hashchange on repeated Discover tap in Safari.
 assert.equal(panels.history.heading.focused, 2, 'Repeated mode tap should refocus the visible heading');
+// A keyboard skip focuses the article even with an unchanged Safari hash.
+const skipBefore = panels.history.heading.focused;
+skip.click();
+assert.equal(panels.history.heading.focused, skipBefore + 1);
 const planLink = links.find(link => link.hash === '#plan');
 planLink.click();
 location.hash = '#plan';
 assert.equal(panels.plan.heading.focused, 1, 'Choosing Plan should focus its heading');
 assert.equal(panels.explore.hidden, true);
+const focusBeforeSkip = panels.history.heading.focused;
+skip.click();
+location.hash = '#history';
+assert.equal(panels.history.heading.focused, focusBeforeSkip + 1);
 location.hash = '#explore'; // History navigation does not trigger tab-click focus.
 assert.equal(panels.explore.heading.focused, 0);
 const exploreLink = links.find(link => link.hash === '#explore');
@@ -189,4 +202,4 @@ const blockedWindow = {...windowContext, sessionStorage: {
 }};
 vm.runInNewContext(code, {...sandbox, window: blockedWindow});
 assert.equal(jump.value, 'twin-stairs', 'Navigation still works without storage');
-console.log('PASS: Discover TOC, Safari focus, pager, stop resume on reload, explicit deep links, and storage-blocked navigation');
+console.log('PASS: keyboard skip, Discover TOC, Safari focus, pager, stop resume, deep links, and blocked storage');

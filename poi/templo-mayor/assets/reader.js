@@ -1,6 +1,7 @@
 (() => {
   'use strict';
 
+  const skipHistory = document.getElementById('skip-to-history');
   const modeLinks = Array.from(document.querySelectorAll('.reader-nav a'));
   const sectionLinks = Array.from(document.querySelectorAll('.history-chapters a[href^="#"]'));
   const panels = Array.from(document.querySelectorAll('[data-reader-panel]'));
@@ -56,6 +57,13 @@
       if (location.hash === link.hash) navigateHash();
     });
   }
+
+  // Keyboard skip navigation opens Discover and focuses its real heading.
+  // Safari does not fire a second hashchange for the same fragment.
+  skipHistory?.addEventListener('click', () => {
+    focusMode = true;
+    if (location.hash === '#history') navigateHash();
+  });
 
   // A table-of-contents activation should identify the newly visible section
   // to keyboard and screen-reader users. Browser history/deep links must not
