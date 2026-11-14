@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "kind": "app_development_research_handoff_consumer_record",
+  "date_utc": "2026-11-14T10:55:54Z",
+  "implementation_commit_sha": "3e677801f88a5afd931a05d4ce86ff3e3baf051f",
+  "branch": "main",
+  "read_only_research_branch": "research-persistence",
+  "verified_research_branch_at_validation": "0ac5bd9c2acf57707927225ddfb83be39f81f241",
+  "accepted_input_research_commit_sha": "8d55ab906a320a9668f4bcc6c959e200915522aa",
+  "verified_replay_commit_sha": "f0e59fdd671a572e332eafdd05622a384a30aebd",
+  "immutable_history_path": "research/handoff/history/20261114T1009Z-86-batch-monumento-research-verified.json",
+  "verification_ledger_path": "research/ledgers/20261114T1009Z-86-batch-monumento-full-replay-github-readback.json",
+  "verified_referenced_artifact_paths": 217,
+  "staged_batches": 86,
+  "provisional_candidate_findings": 552,
+  "private_audit_review_topics": 179,
+  "historical_focus": "Monumento a la Revolucion: original competition and construction attribution remain disputed; do not treat modern interpretation or unlicensed historical images as verified evidence",
+  "editorial_status": {
+    "research_handoff_technically_verified": true,
+    "ready_for_editorial_review": false,
+    "ready_for_publication": false,
+    "publication_approved": false,
+    "new_staged_findings_published": 0
+  },
+  "source_concerns": [
+    "Original 1897 competition jury record not inspected",
+    "Pani versus Obregon attribution unresolved",
+    "Historic photograph reproduction permissions not confirmed",
+    "Original Templo Mayor stratigraphy and conquest evidence gates remain unresolved"
+  ],
+  "approved_manuscript_archive": {
+    "basin_before_mexica_verbatim_archived": false,
+    "heart_of_tenochtitlan_verbatim_archived": false,
+    "reason": "Prior editorial conversation and review DOCX candidates do not prove exact approved original bytes; no claimed archive or checksum created"
+  },
+  "preserved_features": [
+    "recovered homepage",
+    "eight Templo Mayor field chapters",
+    "21 research claims",
+    "12 sources",
+    "existing comments and localStorage",
+    "Discover, Explore and Plan separation"
+  ],
+  "tests": {
+    "baseline_checker": "passed in Actions",
+    "research_handoff": "verified",
+    "regressions": "86-batch tamper tests passed",
+    "published_routes": "18 cross-chapter links checked",
+    "live_sha_checked": "3e677801f88a5afd931a05d4ce86ff3e3baf051f",
+    "physical_iphone_safari": "not tested"
+  },
+  "source_implementation_files": [
+    "scripts/handoff_86_history.py",
+    "scripts/check_research_handoff.py",
+    "scripts/test_handoff_86_history.py",
+    "scripts/test_research_handoff.py"
+  ],
+  "constraints": "No changes to research-persistence, approved prose, Discover drafts, Explore content, user comments, or original homepage."
+}
