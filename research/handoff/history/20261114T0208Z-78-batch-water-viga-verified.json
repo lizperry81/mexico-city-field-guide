@@ -1,0 +1,50 @@
+{
+  "schema_version": 4,
+  "kind": "append_only_research_handoff_event",
+  "generated_at": "2026-11-14T02:08:42.040Z",
+  "research_commit_sha": "48b6c89f79792b5b87fa238eb219d72febaf6325",
+  "replay_commit_sha": "47bf1b4c3bacb815a3e9e4003181ea790329324a",
+  "canonical_version": "V97",
+  "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_status": "unchanged_provisional_not_promoted",
+  "cumulative_research_sqlite_gz_path": "research/reconciled/v4_48b6c89f7979/research_only.sqlite.gz",
+  "replay_report_path": "research/reconciled/v4_48b6c89f7979/replay_report.json",
+  "compressed_sha256": "b0f2a02b3762ddc71127c17bfe20f0045724db3fcda8324daa23016e6f69a977",
+  "uncompressed_sha256": "4300bf6a9617a360f250bddf9340528c052ee1cfcbe296fa3e9845533d14761b",
+  "staged_counts": {
+    "github_batches_replayed": 78,
+    "github_distinct_substantive_finding_ids": 464,
+    "github_inspection_entries": 205,
+    "github_source_candidates": 167,
+    "unknown_source_refs": 1,
+    "source_metadata_collisions": 2,
+    "detached_original_inspection_rows_replayed": 37
+  },
+  "batch_artifact_path": "research/batches/20261114T0202Z-water-management-1608-1900-and-viga.json",
+  "chapter_audit_artifact_paths": [
+    "research/audits/20261114T0202Z-water-management-1608-1900-and-viga-templo-discover-cross-period-gates.json"
+  ],
+  "coverage_artifact_paths": [
+    "research/coverage/20261114T0202Z-water-management-1608-1900-and-viga-readiness.json"
+  ],
+  "reconciliation_artifact_paths": [
+    "research/ledgers/20261114T0208Z-78-batch-water-viga-verified-readback.json",
+    "research/reconciled/v4_48b6c89f7979/replay_report.json"
+  ],
+  "evidence_status": {
+    "new_findings": 9,
+    "new_provisional_sources": 6,
+    "new_inspections": 6,
+    "independently_corroborated_new_findings": 0,
+    "summary": "Six source identities: one directly read UNAM catalog page, five indexed summaries/excerpts. Nine specific historical interpretations; original archival records and images not checked."
+  },
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "blockers": [
+    "Original 1608 diary, 1859 technical map, 1872 municipal council file, 1900 newspaper and 19th-century technical accounts not directly inspected",
+    "Original source photograph rights and current Canal de la Viga walking route not confirmed",
+    "37 detached original source inspections, two metadata collisions, one proposed botanical dataset reference remain unjoined",
+    "Templo Mayor contested Triple Alliance dating, 1914 Gamio report, conquest folios and 1978 salvage notebooks remain open"
+  ],
+  "verified_input_and_output_hashes": true
+}
