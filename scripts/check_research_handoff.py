@@ -794,6 +794,71 @@ def validate():
     if source_sha != sha:
         raise ValueError("Versioned handoff snapshot points to a different research commit")
     validate_versioned_handoff(manifest, immutable_manifest, snapshot_blob_sha)
+    if immutable_manifest.get("kind") == "append_only_research_handoff_history":
+        # Cross-check each compact immutable identity with the actual Git
+        # object on the manifest-publishing commit. A string that resembles a
+        # SHA or a ledger claim alone is never enough to ingest research.
+        readback = manifest["verified_binary_readback"]
+        ledger_path = manifest["replay_evidence"]["verification_ledger"]
+        ledger = json.loads(bound_blob(ledger_path).decode("utf-8"))
+        actual = {
+            "sqlite": git("rev-parse", f"{handoff_commit}:{manifest['versioned_research_sqlite_gz_path']}").decode().strip(),
+            "report": git("rev-parse", f"{handoff_commit}:{manifest['replay_report_path']}").decode().strip(),
+        }
+        checks = ledger.get("verification", {})
+        before, after = ledger.get("before"), ledger.get("after")
+        staged, canonical = manifest["staged_counts"], manifest["canonical"]
+        expected_after = {
+            "github_batches": staged["github_batches_replayed"],
+            "substantive_finding_ids": staged["github_distinct_substantive_finding_ids"],
+            "provisional_source_identities": staged["github_source_candidates"],
+            "source_inspection_metadata_rows": staged["github_inspection_entries"],
+            "canonical_sources": canonical["sources"],
+            "canonical_claims": canonical["claims"],
+            "canonical_claim_source_links": canonical["claim_source_links"],
+            "canonical_findings": canonical["findings"],
+        }
+        if (ledger.get("kind") != "reconciliation_integrity_and_persisted_github_readback"
+                or ledger.get("schema_version") != 2
+                or ledger.get("branch") != "research-persistence"
+                or ledger.get("batch_research_commit_sha") != sha
+                or ledger.get("canonical_sha256") != manifest["canonical_hash"]
+                or ledger.get("snapshot_path") != manifest["versioned_research_sqlite_gz_path"]
+                or ledger.get("replay_report_path") != manifest["replay_report_path"]
+                or ledger.get("status") != "VERIFIED_VERSIONED_NONCANONICAL_RESEARCH_STAGING"
+                or ledger.get("ready_for_editorial_review") is not False
+                or ledger.get("ready_for_publication") is not False
+                or ledger.get("main_modified") is not False
+                or ledger.get("automated_merge") is not False
+                or after != expected_after
+                or not isinstance(before, dict)
+                or any(type(before.get(k)) is not int or before[k] > after[k]
+                       for k in ("github_batches", "substantive_finding_ids",
+                                 "provisional_source_identities",
+                                 "source_inspection_metadata_rows"))
+                or after["substantive_finding_ids"] - before["substantive_finding_ids"] !=
+                manifest["evidence_status"]["new_historical_finding_candidates_researched_this_run"]
+                or after["provisional_source_identities"] - before["provisional_source_identities"] !=
+                staged["new_source_candidates_all_types_this_run"]
+                or after["source_inspection_metadata_rows"] - before["source_inspection_metadata_rows"] !=
+                staged["new_source_inspection_metadata_this_run"]
+                or checks.get("gzip_git_blob_sha") != actual["sqlite"]
+                or checks.get("replay_report_git_blob_sha") != actual["report"]
+                or actual["sqlite"] != readback["git_blob_sha"]
+                or actual["report"] != readback["report_blob_sha"]
+                or checks.get("compressed_digest_match") is not True
+                or checks.get("compressed_sha256_expected") != manifest["compressed_sha256"]
+                or checks.get("compressed_sha256_computed_from_github_fetched_bytes") !=
+                manifest["compressed_sha256"]
+                or checks.get("uncompressed_sqlite_sha256_from_replay_report") !=
+                manifest["versioned_research_sha256"]
+                or checks.get("integrity_check") != "ok"
+                or checks.get("foreign_key_violations") != 0
+                or checks.get("canonical_tables_preserved") != 88
+                or checks.get("canonical_rows_unchanged") is not True
+                or checks.get("branch_readback") is not True
+                or checks.get("source_identity_auto_merge") is not False):
+            raise ValueError("81-batch independent Git readback ledger failed closed")
     if (manifest["schema_version"] == 4
             and immutable_manifest.get("kind") in ("research_to_app_handoff",
                                                    "immutable_research_batch_handoff",
