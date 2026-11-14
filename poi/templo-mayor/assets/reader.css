@@ -176,6 +176,8 @@ summary { width: fit-content; color: var(--jade); font-weight: 700; cursor: poin
 
 .stop-select { margin: 18px 0; }
 .stop-select label { display: block; font-size: .84rem; font-weight: 700; }
+/* Position stays visible above the photo-rich stop, not only below it. */
+.stop-position { margin: 7px 0 0 !important; color: var(--muted); font-size: .87rem; font-weight: 650; }
 .stop-select select {
   width: 100%;
   margin-top: 4px;
