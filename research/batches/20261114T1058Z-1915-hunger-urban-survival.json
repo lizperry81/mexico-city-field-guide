@@ -415,5 +415,8 @@
   "external_source_usage": "INEHRM 1915 PDF text and printed p.6 screenshot inspected; other journal abstracts and institutional repository metadata read directly; INEHRM 2016 volume PDF machine text read but screenshot failed. Original cited 1914–1915 newspapers, maps and archival registers not opened. Casasola image reproduction not cleared.",
   "publication_approved": false,
   "independently_corroborated_findings": 0,
-  "ready_for_editorial_review": false
+  "ready_for_editorial_review": false,
+  "coverage_artifact_path": "research/coverage/20261114T1058Z-1915-hunger-urban-survival-readiness.json",
+  "chapter_audit_artifact_path": "research/audits/20261114T1058Z-1915-hunger-urban-survival-templo-discover-evidence-gates.json",
+  "quality_gate_note": "Coverage histogram validated against actual 11 cells (5 developing, 4 sparse, 2 missing). All candidates remain noncanonical. One INEHRM price-increase percentage arithmetic discrepancy explicitly unresolved."
 }
