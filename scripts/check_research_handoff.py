@@ -107,6 +107,7 @@ def validate_versioned_handoff(manifest, immutable_manifest, snapshot_sha):
         return
 
     if (manifest.get("schema_version") == 4 and
+            manifest.get("handoff_contract_status") == CONTRACT_91 and
             immutable_manifest.get("kind") == KIND_91):
         validate_91_frozen(manifest, immutable_manifest)
         return
@@ -905,7 +906,8 @@ def validate():
                 manifest["staged_counts"]["new_historical_finding_candidates_this_run"],
         }
 
-    if immutable_manifest.get("kind") == KIND_91:
+    if (immutable_manifest.get("kind") == KIND_91 and
+            manifest.get("handoff_contract_status") == CONTRACT_91):
         # Bind six artifacts to the verified replay commit and the immutable
         # handoff manifest. The ledger alone cannot authorize consumption.
         ledger_path = safe_path(immutable_manifest["latest_reconciliation_ledger_path"])
