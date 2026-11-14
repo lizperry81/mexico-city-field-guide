@@ -1,0 +1,88 @@
+{
+  "schema_version": 3,
+  "kind": "independent_full_replay_persistence_readback_verification",
+  "verified_at": "2026-11-14T04:06:31.301Z",
+  "branch": "research-persistence",
+  "source_research_commit_sha": "69fe9b67d1ad51ea07615b3cb129d1530d42449c",
+  "verified_replay_commit_sha": "a0fd8ca3394971c522bed8cb65238d86073aa0e2",
+  "canonical_version": "V97",
+  "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_rows_unchanged": true,
+  "canonical_tables_preserved": 88,
+  "canonical_counts": {
+    "sources": 616,
+    "claims": 422,
+    "claim_sources": 403,
+    "canonical_findings": 68,
+    "canonical_source_inspections": 9
+  },
+  "report_path": "research/reconciled/v4_69fe9b67d1ad/replay_report.json",
+  "report_git_blob_sha": "bde934d03eb69bb6cd14180082b0a5713789be64",
+  "versioned_research_sqlite_gz_path": "research/reconciled/v4_69fe9b67d1ad/research_only.sqlite.gz",
+  "versioned_research_sqlite_gz_git_blob_sha": "c60df55ce2f047d6f1e4981b4154e9b1246d1315",
+  "versioned_research_sha256": "f13e636a3c99ce5821ba623049f345592c9e1b8af3d3d2ca4d3a27e46011e8eb",
+  "compressed_sha256": "abc6d543ef093cf6a8cbd185b046dc98f2c17e13ed240ea776849e6c3084e349",
+  "compressed_checksum_artifact_path": "research/reconciled/v4_69fe9b67d1ad/compressed_sha256.txt",
+  "github_binary_fetch_encoding": "base64",
+  "sqlite_integrity": "ok",
+  "foreign_key_violations": 0,
+  "batch_inventory_matches_new_batch": true,
+  "before_verified_staged_counts": {
+    "batches": 79,
+    "findings": 475,
+    "source_candidates": 176,
+    "source_inspections": 214,
+    "canonical_sources": 616,
+    "canonical_claims": 422,
+    "canonical_links": 403,
+    "canonical_findings": 68
+  },
+  "after_verified_staged_counts": {
+    "batches": 80,
+    "findings": 486,
+    "source_candidates": 188,
+    "source_inspections": 226,
+    "canonical_sources": 616,
+    "canonical_claims": 422,
+    "canonical_links": 403,
+    "canonical_findings": 68
+  },
+  "unknown_source_ids": [
+    "PROPOSE_SOURCE_SLOAD_2020_BOTANICAL_DATASET_NOT_IN_CANONICAL"
+  ],
+  "source_metadata_collisions": [
+    {
+      "source_id": "STG-SRC-MANZANILLA-LOPEZ-FRETER-1996",
+      "source_path": "20261112T060230Z-auto09.json",
+      "reason": "cross_batch_source_metadata_collision"
+    },
+    {
+      "source_id": "v95-sload-cave-2020",
+      "source_path": "20261112T080125Z-auto09-te28-2009.json",
+      "reason": "cross_batch_source_metadata_collision"
+    }
+  ],
+  "detached_inspections": 37,
+  "detached_same_url_candidates": 9,
+  "detached_without_candidate": 28,
+  "unresolved_index_only_ids": [
+    "STG20261111T1302Z-RECON-V87-PRIMARY-001"
+  ],
+  "source_identity_merge_performed": false,
+  "canonical_promoted": false,
+  "ready_for_editorial_review": false,
+  "ready_for_publication": false,
+  "blockers": [
+    "Original 1967 STC founding decree not directly examined; 1984 DOF amendment confirms its bibliographic reference only",
+    "Original 28 September 1968 El Universal page not examined; only modern republication and later archaeologist interview read",
+    "Original Jordi Gussinyer 1969 archaeological report, excavation plan, and Doris Heyden full paper unavailable",
+    "Metro STC original route maps and some institutional pages could not be fetched directly; indexed snippets are not full-source inspection",
+    "Templo Mayor primary 1428 chronicle evidence, 1914 Gamio report, 1520–1521 Indigenous/Spanish folios and original 1978 salvage logs remain unverified",
+    "Site access and STC station pictogram image reproduction rights not independently verified",
+    "Proposed botanical dataset source reference not registered",
+    "Two pre-existing cross-batch source metadata collisions unresolved",
+    "Thirty-seven detached source inspection records retain identities and need human reconciliation; same-URL scopes are not duplicate inspections",
+    "One pre-existing index-only finding reference still unresolved"
+  ],
+  "verification_scope": "GitHub Actions generated and committed immutable snapshot; connector fetched full base64 binary and report from branch, obtained blob IDs, checked persisted checksum file; workflow itself checks gzip decompress SHA against report and Git show SHA against compressed checksum."
+}
