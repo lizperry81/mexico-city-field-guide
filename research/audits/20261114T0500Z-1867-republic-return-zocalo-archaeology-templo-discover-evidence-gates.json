@@ -1,0 +1,142 @@
+{
+  "schema_version": 3,
+  "kind": "chapter_level_claim_to_source_locator_audit",
+  "generated_at": "2026-11-14T05:00:48.126Z",
+  "branch": "research-persistence",
+  "target_branch_read_only": "main",
+  "target_path": "poi/templo-mayor/reader.html",
+  "reader_re_read_this_run": true,
+  "reader_blob_sha_verified": "0e0d2b741d05b059eadb267ec982d3d76e8150bb",
+  "source_batch_path": "research/batches/20261114T0500Z-1867-republic-return-zocalo-archaeology.json",
+  "source_type_distinction": "Modern Zocalo colonial/Republican construction not treated as archaeological proof of Mexica ritual or temple stages.",
+  "gates": [
+    {
+      "topic": "Triple Alliance (late 1420s, 1428 conventional)",
+      "reader_anchor": "In the late 1420s, Tenochtitlan joined Texcoco and Tlacopan in the Triple Alliance",
+      "status": "source_gate_open",
+      "source_locators": [
+        {
+          "path": "research/audits/templo-mayor-discover-20261113T1427Z-triple-alliance-dating-contrast.json",
+          "locator": "Compare 1427/1428/1430 manuscript traditions"
+        }
+      ],
+      "uncertainty": "Original early colonial Nahuatl and Spanish accounts still require direct comparison; single exact date 1428 uncorroborated.",
+      "historical_addition": "Distinguish defeat of Azcapotzalco, subsequent confederate ruling structure, and redistribution of tribute, rather than calling 1428 a single documented founding ceremony.",
+      "placement": "advance_history"
+    },
+    {
+      "topic": "Temple construction phases and Stage IVb",
+      "reader_anchor": "Archaeologists group the work into seven major stages",
+      "status": "source_gate_open",
+      "source_locators": [
+        {
+          "path": "research/audits/20261113T1803Z-templo-mayor-gamio-1913-1914-primary-gates.json",
+          "locator": "Prior seven-stage evidence gate and phase IVb unresolved field plates"
+        }
+      ],
+      "uncertainty": "Site-stage diagrams and modern visitor exposure not matched; seven major stages are modern archaeological classification, not seven recorded Aztec dedications.",
+      "historical_addition": "Use a dated section drawing to explain superimposed stairways and cuts; label architectural observation separately from ruler attribution.",
+      "placement": "advance_history_then_field"
+    },
+    {
+      "topic": "Coatepec/Coyolxauhqui iconography and disk findspot",
+      "reader_anchor": "At the foot of the south stair of that platform lay a stone disk carved with the dismembered Coyolxauhqui",
+      "status": "source_gate_open",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T0100Z-templo-mayor-discover-1978-responders-and-seven-gates.json",
+          "locator": "Coyolxauhqui findspot and first responder conflict"
+        }
+      ],
+      "uncertainty": "Ritual reenactment cannot be asserted solely from sculptural position; original archaeological context and contemporary text citations needed.",
+      "historical_addition": "Two-column comparison: physically excavated disk and staircase versus Coatepec myth and specific ritual reconstructions; distinguish original in museum from outdoor archaeology.",
+      "placement": "advance_history_then_field"
+    },
+    {
+      "topic": "Conquest 1520 Tóxcatl and August 1521 city fall",
+      "reader_anchor": "In May 1520, while Cortés was away, Pedro de Alvarado’s men attacked people celebrating Tóxcatl",
+      "status": "source_gate_open",
+      "source_locators": [
+        {
+          "path": "research/audits/20261113T2004Z-templo-mayor-exact-reader-source-gates.json",
+          "locator": "Florentine Codex Book 12 folios and Spanish campaign accounts needed"
+        }
+      ],
+      "uncertainty": "Original bilingual Book 12 folios and Spanish participant narratives not collated with page references; distinguish claims of participant motives from sources.",
+      "historical_addition": "Explain the 1520 massacre, June departure, allied siege of 1521, and later systematic material reuse with the evidence of each event individually.",
+      "placement": "advance_history"
+    },
+    {
+      "topic": "Gamio 1913 preparatory work versus May 1914 excavation",
+      "reader_anchor": "In 1913, archaeologist Manuel Gamio uncovered the pyramid’s southwest corner",
+      "status": "correction_candidate_unapproved",
+      "source_locators": [
+        {
+          "path": "research/audits/20261113T1803Z-templo-mayor-gamio-1913-1914-primary-gates.json",
+          "locator": "Earlier candidate: 1913 demolition preparations / 6–16 May 1914 dig"
+        }
+      ],
+      "uncertainty": "Signed 1914 Gamio excavation report remains unavailable; current reader may compress preparatory and dig chronologies.",
+      "historical_addition": "If supported by dated report and field records, correct wording to distinguish planning/demolition in 1913 from excavation in May 1914; do not deploy before verifying.",
+      "placement": "advance_history"
+    },
+    {
+      "topic": "Coyolxauhqui utility discovery February 1978 and 1978–1982 program",
+      "reader_anchor": "In February 1978, electrical workers digging near República de Argentina and República de Guatemala struck the carved Coyolxauhqui disk",
+      "status": "source_gate_open",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T0100Z-templo-mayor-discover-1978-responders-and-seven-gates.json",
+          "locator": "1978 personnel disagreement and INAH first seasons"
+        }
+      ],
+      "uncertainty": "Original 1978 rescue field logs not seen; museum 1987 opening distinct from initial archaeological project.",
+      "historical_addition": "Use dated 1978 archival photograph with object rights and exact camera position, and explicitly sequence find → salvage → excavations → 1987 museum.",
+      "placement": "advance_history_then_field"
+    },
+    {
+      "topic": "Modern 1843 Independence pedestal beneath Zócalo is NOT Templo Mayor",
+      "reader_anchor": "The excavation and the neighboring cathedral now occupy adjoining ground in the old city",
+      "status": "new_geographic_correction_gate",
+      "source_locators": [
+        {
+          "path": "research/batches/20261114T0500Z-1867-republic-return-zocalo-archaeology.json",
+          "locator": "20261114T0500Z-REST-08 / 10 / 11"
+        },
+        {
+          "url": "https://revistas.inah.gob.mx/index.php/boletinmonumentos/article/download/17405/18660/37200",
+          "locator": "INAH Meraz et al. (2019) pp. 108, 112–118, 123, 129, fig. 1 and fig. 8"
+        }
+      ],
+      "uncertainty": "Precinct boundary is a modern model and not the same footprint as 1843 Zócalo foundations. Original 1983 and 2017 field dossiers absent.",
+      "historical_addition": "Add optional separately dated urban-stratigraphy inset: 1843 Independence Monument base under central plaza and 1978 Mexica temple excavation to the northeast; do not misidentify 1843 masonry as Mexica or suggest visitors can see buried stone.",
+      "placement": "separate_zocalo_field_sidebar"
+    },
+    {
+      "topic": "Present-day Zócalo plaque and historical photo comparison",
+      "reader_anchor": "Start outside at Plaza Manuel Gamio",
+      "status": "field_verification_missing",
+      "source_locators": [
+        {
+          "url": "https://revistas.inah.gob.mx/index.php/boletinmonumentos/article/download/17405/18660/37200",
+          "locator": "INAH Meraz et al. (2019) p.129, modern engraved plaque and protection method; p.123 fig.16 Aubert photo"
+        }
+      ],
+      "uncertainty": "Markers documented at 2017 rehabilitation, not checked in person in 2026. Photograph inv. 628364 has INAH permission in journal context only; app use not cleared.",
+      "historical_addition": "Keep photo toggle external-link only and identify each archival object separately; field instructions not publishable until signage/position/access checked.",
+      "placement": "field_optional"
+    }
+  ],
+  "no_publication_of_unverified_claims": true,
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "blockers": [
+    "Foundational 1428 original narratives and source comparison missing",
+    "Temple phase drawing and ritual interpretive qualification unresolved",
+    "Conquest source folio comparison not completed",
+    "Gamio original 1914 field report missing",
+    "1978 first rescue field notebook absent",
+    "Original 1983 and 2017 Zócalo archaeological field dossiers not directly examined",
+    "Museum/photo rights and actual 2026 Zócalo plaque placement not verified"
+  ]
+}
