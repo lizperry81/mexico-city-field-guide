@@ -196,6 +196,31 @@ compact_history["evidence_status"] = {
     "independent_corroboration": False, "publication_approved": False,
     "source_types": "unverified source metadata, originals pending"}
 validate_versioned_handoff(compact_manifest, compact_history, "a"*40)
+compact_manifest["consumer_instruction"] = (
+    "Do not publish, auto-merge, or change live main; independent review required")
+compact_manifest["replay_evidence"] = {
+    "verification_ledger": "research/ledgers/readback.json"}
+compact_history.pop("no_automatic_merge")
+compact_history["consumer_instruction"] = (
+    "Never auto-merge or publish unapproved claims")
+compact_history["batch_artifact_paths"] = compact_history.pop("research_batch_artifact_paths")
+compact_history["verification_ledger_artifact_paths"] = [
+    "research/ledgers/readback.json"]
+compact_history.pop("verification_ledger_path")
+validate_versioned_handoff(compact_manifest, compact_history, "a"*40)
+for mutation in (
+    {"consumer_instruction": "Automatic merge permitted"},
+    {"verification_ledger_artifact_paths": ["research/ledgers/unknown.json"]},
+    {"batch_artifact_paths": ["research/batches/unbound.json"]},
+):
+    unsafe = copy.deepcopy(compact_history)
+    unsafe.update(mutation)
+    try:
+        validate_versioned_handoff(compact_manifest, unsafe, "a"*40)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("Unbound compact handoff admitted: " + str(mutation))
 for mutation in (
     {"new_findings": 10}, {"new_sources": 13},
     {"new_inspections": 11}, {"independent_corroboration": True},
