@@ -1,0 +1,139 @@
+{
+  "schema_version": 3,
+  "kind": "period_x_theme_x_geography_explanatory_readiness_delta",
+  "generated_at": "2026-11-14T10:58:11Z",
+  "branch": "research-persistence",
+  "source_batch_path": "research/batches/20261114T1058Z-1915-hunger-urban-survival.json",
+  "evidence_status": "noncanonical_source_located_not_publication_approved",
+  "rating_definitions": {
+    "substantial": "Independent corroboration and primary or specialist page-level evidence with precise place-based interpretation and visitor/rights confirmation",
+    "developing": "Specific evidence and source locator supporting explanatory treatment but primary, triangulation or field validation remains open",
+    "sparse": "Abstract/secondary-only or approximate geographical evidence; cannot support complete explanation",
+    "missing": "Missing core object, georeferenced field evidence, or reproduction permissions"
+  },
+  "cells": [
+    {
+      "period": "December 1914",
+      "theme": "capital occupation and politics",
+      "geography": "Centro Histórico",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1058Z-HUNGER-01"
+      ],
+      "evidence_gap": "Treat Xochimilco pact and capital entry as distinct events; original military dispatches not inspected."
+    },
+    {
+      "period": "December 1914",
+      "theme": "grain relief and municipal regulation",
+      "geography": "Azcapotzalco",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1058Z-HUNGER-02"
+      ],
+      "evidence_gap": "The 1914 newspaper itself was not opened; exact plaza, queue dimensions and food quantities unverified."
+    },
+    {
+      "period": "January 1915",
+      "theme": "monetary conflict and food prices",
+      "geography": "Centro Histórico",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1058Z-HUNGER-03"
+      ],
+      "evidence_gap": "The dates and enforceability of individual monetary orders require original decrees; causation not reduced to currency alone."
+    },
+    {
+      "period": "1914–1915",
+      "theme": "urban food supply systems",
+      "geography": "Mexico City and regional rail corridors",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1058Z-HUNGER-04"
+      ],
+      "evidence_gap": "Doctoral thesis full chapters and freight ledgers not inspected; do not quantify relative contributions."
+    },
+    {
+      "period": "1915–1916",
+      "theme": "disease sanitation and poverty",
+      "geography": "Mexico City urban districts",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T1058Z-HUNGER-05"
+      ],
+      "evidence_gap": "Epidemic case counts, mortality and neighborhood comparisons not yet validated against original tables."
+    },
+    {
+      "period": "1915",
+      "theme": "grassroots protest and street geography",
+      "geography": "La Merced / Capuchinas / República de Uruguay",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1058Z-HUNGER-06"
+      ],
+      "evidence_gap": "No exact procession route, headquarters address or surviving building verified; on-site walk must not invent a route."
+    },
+    {
+      "period": "1915",
+      "theme": "rail hub and emergency public relief",
+      "geography": "Former Interoceanic railway station, exact footprint unresolved",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T1058Z-HUNGER-07"
+      ],
+      "evidence_gap": "Original payment ledger and station map unavailable, and nominal pesos cannot be equated with purchasing power."
+    },
+    {
+      "period": "1840–1915",
+      "theme": "historical market infrastructure and access",
+      "geography": "La Merced / Centro Histórico",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T1058Z-HUNGER-08"
+      ],
+      "evidence_gap": "No georeferenced 1915 market plans or specific shop inventory; modern market buildings require separate dating."
+    },
+    {
+      "period": "circa 1915",
+      "theme": "historical photographic evidence of food relief",
+      "geography": "Mexico City, photo location unverified",
+      "rating": "missing",
+      "finding_ids": [
+        "20261114T1058Z-HUNGER-09"
+      ],
+      "evidence_gap": "Do not claim exact site, date, photographer or reproduction rights from a secondary caption."
+    },
+    {
+      "period": "1911–1915",
+      "theme": "historical price statistics and measurement integrity",
+      "geography": "Mexico City food markets",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T1058Z-HUNGER-10"
+      ],
+      "evidence_gap": "The book's claimed 370% is inconsistent with stated endpoints; original market price series, units, and any rounding not checked. Do not publish either percentage as settled."
+    },
+    {
+      "period": "1915–1918",
+      "theme": "child welfare institutional medicine and humanitarian relief",
+      "geography": "Mexico City, specific asylum locations unresolved",
+      "rating": "missing",
+      "finding_ids": [
+        "20261114T1058Z-HUNGER-11"
+      ],
+      "evidence_gap": "Archival asylum registers, institution addresses, population counts and causal details not yet inspected."
+    }
+  ],
+  "summary": {
+    "total": 11,
+    "substantial": 0,
+    "developing": 6,
+    "sparse": 4,
+    "missing": 2,
+    "classification_finding_counts": {
+      "broad_history": 5,
+      "poi_ready_candidate": 4,
+      "specialist_technical": 2
+    }
+  },
+  "publication_approved": false
+}
