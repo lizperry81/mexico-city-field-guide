@@ -1,0 +1,157 @@
+{
+  "schema_version": 3,
+  "kind": "period_x_theme_x_geography_explanatory_readiness_delta",
+  "generated_at": "2026-11-14T01:01:39.588Z",
+  "branch": "research-persistence",
+  "source_batch_path": "research/batches/20261114T0100Z-government-buildings-1970-1987-and-1978-findspot.json",
+  "evidence_status": "noncanonical_not_editorially_approved",
+  "rating_definitions": {
+    "substantial": "Independent evidence plus coherent place-specific interpretation",
+    "developing": "Specific located source but original or site evidence missing",
+    "sparse": "Single retrospective or thesis and no physical verification",
+    "missing": "No trustworthy identification of an observable present-day site"
+  },
+  "cells": [
+    {
+      "id": "1928-CART",
+      "period": "1928–1929",
+      "theme": "Boundary creation and documentation",
+      "geography": "Departamento Central / Tacuba / Tacubaya / Mixcoac",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261114T0100Z-GOV-TM-01"
+      ],
+      "explanatory_readiness": "Specific source-located explanation but incomplete primary or physical verification",
+      "next_evidence_needed": "Original first 20 legal articles and historic GIS not examined"
+    },
+    {
+      "id": "1941-URBAN",
+      "period": "1941",
+      "theme": "Federal city and twelve delegations",
+      "geography": "Mexico City",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261114T0100Z-GOV-TM-02"
+      ],
+      "explanatory_readiness": "Specific source-located explanation but incomplete primary or physical verification",
+      "next_evidence_needed": "Original 1941 organic law and plan missing"
+    },
+    {
+      "id": "1970-16",
+      "period": "1970–1972",
+      "theme": "Sixteen delegations and legal boundaries",
+      "geography": "Central city / outer delegations",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261114T0100Z-GOV-TM-03",
+        "STG-20261114T0100Z-GOV-TM-04"
+      ],
+      "explanatory_readiness": "Specific source-located explanation but incomplete primary or physical verification",
+      "next_evidence_needed": "Original 1970 and 1972 official law maps missing"
+    },
+    {
+      "id": "1987-REP",
+      "period": "1987",
+      "theme": "Elected Assembly and authority limitations",
+      "geography": "Federal District",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261114T0100Z-GOV-TM-05"
+      ],
+      "explanatory_readiness": "Specific source-located explanation but incomplete primary or physical verification",
+      "next_evidence_needed": "Original August 1987 DOF and legislative debate missing"
+    },
+    {
+      "id": "1970S-CENTRAL",
+      "period": "1973–1987",
+      "theme": "Central administration offices and space",
+      "geography": "Zócalo / Centro Histórico",
+      "rating": "sparse",
+      "linked_assertion_ids": [
+        "STG-20261114T0100Z-GOV-TM-06"
+      ],
+      "explanatory_readiness": "Single secondary or intermediate archival report insufficient for on-site explanation",
+      "next_evidence_needed": "Underlying original DDF survey and room map missing"
+    },
+    {
+      "id": "1970S-DELEG",
+      "period": "1978–1987",
+      "theme": "Decentralized municipal offices",
+      "geography": "Álvaro Obregón",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261114T0100Z-GOV-TM-07"
+      ],
+      "explanatory_readiness": "Specific source-located explanation but incomplete primary or physical verification",
+      "next_evidence_needed": "1987 thesis partially inspected; exact 1978 figures and built facilities need original inventory"
+    },
+    {
+      "id": "HERITAGE-ACCESS",
+      "period": "1970s–1980s",
+      "theme": "Administrative access versus historic fabric",
+      "geography": "Coyoacán / Tlalpan / Xochimilco",
+      "rating": "sparse",
+      "linked_assertion_ids": [
+        "STG-20261114T0100Z-GOV-TM-08"
+      ],
+      "explanatory_readiness": "Single secondary or intermediate archival report insufficient for on-site explanation",
+      "next_evidence_needed": "Site-specific preserved offices and era maps missing"
+    },
+    {
+      "id": "1980S-CIVIC",
+      "period": "1980s",
+      "theme": "Civic registry spaces and peri-urban services",
+      "geography": "Álvaro Obregón",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261114T0100Z-GOV-TM-09"
+      ],
+      "explanatory_readiness": "Specific source-located explanation but incomplete primary or physical verification",
+      "next_evidence_needed": "Original room inventories and current heritage building status absent"
+    },
+    {
+      "id": "2026-SITE-ROUTE",
+      "period": "2026",
+      "theme": "Accessible surviving 1970s civic buildings",
+      "geography": "Delegación Álvaro Obregón",
+      "rating": "missing",
+      "linked_assertion_ids": [
+        "STG-20261114T0100Z-GOV-TM-07",
+        "STG-20261114T0100Z-GOV-TM-09"
+      ],
+      "explanatory_readiness": "No defensible observation-ready present-day interpretation",
+      "next_evidence_needed": "No building attribution or current visiting logistics verified"
+    },
+    {
+      "id": "1978-RESCUE",
+      "period": "1978",
+      "theme": "Initial offering excavation and response personnel",
+      "geography": "Templo Mayor south stair",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261114T0100Z-GOV-TM-10"
+      ],
+      "explanatory_readiness": "Specific source-located explanation but incomplete primary or physical verification",
+      "next_evidence_needed": "Original 1978 rescue reports missing; personnel account unresolved"
+    },
+    {
+      "id": "1978-STAGES",
+      "period": "1978–1982",
+      "theme": "Excavation campaigns and visible construction stages",
+      "geography": "Templo Mayor / Plaza Manuel Gamio",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261114T0100Z-GOV-TM-11"
+      ],
+      "explanatory_readiness": "Specific source-located explanation but incomplete primary or physical verification",
+      "next_evidence_needed": "Original stage plans and 2026 gallery route missing"
+    }
+  ],
+  "summary": {
+    "substantial": 0,
+    "developing": 8,
+    "sparse": 2,
+    "missing": 1
+  },
+  "publication_approved": false
+}
