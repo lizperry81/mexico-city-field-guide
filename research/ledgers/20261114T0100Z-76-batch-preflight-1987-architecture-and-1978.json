@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "kind": "precommit_reconciliation_input_inventory_not_integration_proof",
+  "generated_at": "2026-11-14T01:01:39.588Z",
+  "branch": "research-persistence",
+  "previous_handoff_generated_at": "2026-11-14T00:06:13.303Z",
+  "previous_handoff_blob_sha": "308c26820c7ca2084a6e275076fa35f8ea617910",
+  "previous_verified_replay_commit": "0f2f1da23c171b7a5e66af03b077a5e19b80f0e0",
+  "previous_verified_sqlite_sha256": "e8755955ec9d86271941db610464709a9547ee5bdce793d49dfd4ac02d7a4e91",
+  "canonical_v97_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "baseline_actual_from_preexisting_verified_manifest": {
+    "sources": 616,
+    "claims": 422,
+    "links": 403,
+    "findings": 68,
+    "replayed_batches": 76,
+    "candidates": 444,
+    "source_candidates": 156,
+    "source_inspection_entries": 194
+  },
+  "new_artifact_paths": {
+    "batch": "research/batches/20261114T0100Z-government-buildings-1970-1987-and-1978-findspot.json",
+    "coverage": "research/coverage/20261114T0100Z-city-government-fabric-and-1978-evidence-readiness.json",
+    "chapter_audit": "research/audits/20261114T0100Z-templo-mayor-discover-1978-responders-and-seven-gates.json"
+  },
+  "new_record_counts": {
+    "finding_candidates": 11,
+    "source_candidates": 5,
+    "inspection_metadata_entries": 5
+  },
+  "target_counts_if_full_replay_passes": {
+    "replayed_batches": 77,
+    "candidates": 455,
+    "source_candidates": 161,
+    "source_inspection_entries": 199
+  },
+  "integrity_replay_status": "NOT_YET_REPLAYED; projected counts are not actual counts",
+  "open_identity_conflicts": [
+    "PROPOSE_SOURCE_SLOAD_2020_BOTANICAL_DATASET_NOT_IN_CANONICAL",
+    "STG-SRC-MANZANILLA-LOPEZ-FRETER-1996 metadata collision",
+    "v95-sload-cave-2020 metadata collision",
+    "37 detached source inspections no verified semantic merge",
+    "1978 responders named differently in secondary retrospective accounts"
+  ],
+  "evidence_limits": [
+    "1973 DDF office survey reproduced by 1987 thesis, original not reviewed",
+    "Original 1928/1941/1970/1972/1987 laws not directly examined",
+    "Original archaeological rescue notebook missing",
+    "Scholarly 2009 PDF extract read; screenshot denied 403",
+    "Two archaeology article index excerpts read, full page attempts returned 502"
+  ],
+  "no_canonical_promote": true,
+  "no_main_changes": true,
+  "ready_for_editorial_review": false
+}
