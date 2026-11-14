@@ -1,0 +1,132 @@
+{
+  "schema_version": 4,
+  "kind": "templo_mayor_discover_opening_narrative_claim_to_source_locator_matrix",
+  "generated_at": "2026-11-14T00:04:22.510Z",
+  "branch": "research-persistence",
+  "target_branch_read_only": "main",
+  "target_path": "poi/templo-mayor/reader.html",
+  "previous_reader_blob_sha": "f24cdc57b814575c2204fe4d960b9760abb69396",
+  "reader_re_read_this_run": false,
+  "source_batch_path": "research/batches/20261114T0000Z-1847-molino-memorial-and-templo-field-evidence.json",
+  "gates": [
+    {
+      "topic": "Triple Alliance founding circa 1428",
+      "status": "unresolved_1427_1428_1430",
+      "reader_anchor": "In the late 1420s, Tenochtitlan joined Texcoco and Tlacopan in the Triple Alliance.",
+      "source_locators": [
+        {
+          "path": "research/audits/templo-mayor-discover-20261113T1427Z-triple-alliance-dating-contrast.json",
+          "locator": "INAH 1427 and Berdan 1430 interpretations contrasted"
+        }
+      ],
+      "uncertainty": "No firsthand chronicle collation; retain qualified wording",
+      "historical_addition": "Describe defeat of Azcapotzalco and tributary reorganization; no asserted exact founding year",
+      "placement": "advance_reading"
+    },
+    {
+      "topic": "Construction stages",
+      "status": "needs_drawing_and_reign_attribution",
+      "reader_anchor": "Archaeologists group the work into seven major stages and give substantial additions lettered labels.",
+      "source_locators": [
+        {
+          "path": "research/audits/20261113T1803Z-templo-mayor-gamio-1913-1914-primary-gates.json",
+          "locator": "Stages and 1914 southwestern excavation chronology"
+        }
+      ],
+      "uncertainty": "Phase labels and temple model not matched to drawings",
+      "historical_addition": "A numbered, on-site diagram should distinguish surviving older walls from the demolished final temple",
+      "placement": "pre_read_and_site_walk"
+    },
+    {
+      "topic": "Coatepec/Coyolxauhqui",
+      "status": "1978_date_institutional_support_original_context_pending",
+      "reader_anchor": "The disk’s position gave the story a place in the building.",
+      "source_locators": [
+        {
+          "url": "https://templomayor.inah.gob.mx/historia/proyecto-templo-mayor",
+          "locator": "Opening paragraph: workers, discovery 21 February 1978 and rescue archaeologists"
+        },
+        {
+          "path": "research/audits/templo-mayor-discover-20261113T1710Z-main-current-blob-claim-source-gates.json",
+          "locator": "Stage IVb and original versus outdoor replica source gate"
+        }
+      ],
+      "uncertainty": "1978 excavation plan unexamined; mythic Coatepec association is interpretation not literal excavation observation",
+      "historical_addition": "Explain where sculpture was found, its relationship to stair base and separate ritual analogy from archaeology",
+      "placement": "on_site_then_deep_dive"
+    },
+    {
+      "topic": "Tóxcatl 1520 and conquest",
+      "status": "nahuatl_spanish_source_collation_missing",
+      "reader_anchor": "In May 1520, while Cortés was away, Pedro de Alvarado’s men attacked people celebrating Tóxcatl in the sacred precinct.",
+      "source_locators": [
+        {
+          "path": "research/audits/20261113T2004Z-templo-mayor-exact-reader-source-gates.json",
+          "locator": "Florentine Codex Book 12 original folios missing"
+        },
+        {
+          "url": "https://lugares.inah.gob.mx/es/node/5284",
+          "locator": "INAH museum La Conquista section: destruction and colonial houses"
+        }
+      ],
+      "uncertainty": "Museum language is interpretive, not a substitute for Indigenous and Spanish original eyewitness comparison; destroyed surface buildings vs buried older temple phases",
+      "historical_addition": "Explain post-1521 ground-level reuse and survival of older foundations as separate claims, avoid single-perspective account",
+      "placement": "advance_reading"
+    },
+    {
+      "topic": "Gamio 1913–1914",
+      "status": "correction_candidate_pending_primary",
+      "reader_anchor": "In 1913, archaeologist Manuel Gamio uncovered the pyramid’s southwest corner.",
+      "source_locators": [
+        {
+          "path": "research/audits/20261113T1803Z-templo-mayor-gamio-1913-1914-primary-gates.json",
+          "locator": "1913 preparatory demolition, May 1914 excavation sourced to later scholars"
+        }
+      ],
+      "uncertainty": "Original 16 May 1914 report still not examined",
+      "historical_addition": "Separate preparatory demolition in 1913 from Gamio's excavations in 1914",
+      "placement": "advance_reading"
+    },
+    {
+      "topic": "21 February 1978 and 1978–1982 excavation program",
+      "status": "project_institutional_account_located",
+      "reader_anchor": "In February 1978, electrical workers digging near República de Argentina and República de Guatemala struck the carved Coyolxauhqui disk.",
+      "source_locators": [
+        {
+          "url": "https://templomayor.inah.gob.mx/historia/proyecto-templo-mayor",
+          "locator": "Official INAH project history, first paragraph: find and institutional transition"
+        },
+        {
+          "url": "https://www.templomayor.inah.gob.mx/historia",
+          "locator": "Museum history paragraph 1: first excavation season 1978–1982"
+        }
+      ],
+      "uncertainty": "Original 1978 photographs and excavation notebook still absent",
+      "historical_addition": "Explain workers' find, rescue team, expanded project and what area was excavated 1978–1982 instead of a single discovery sentence",
+      "placement": "pre_read_and_site_walk"
+    },
+    {
+      "topic": "12 October 1987 museum and physical site orientation",
+      "status": "museum_institutional_date_supported_current_exhibit_unverified",
+      "reader_anchor": "What Mexico City dug up",
+      "source_locators": [
+        {
+          "url": "https://www.templomayor.inah.gob.mx/historia",
+          "locator": "Museum opening 12 October 1987 and original eight-room Huitzilopochtli/Tlaloc arrangement"
+        }
+      ],
+      "uncertainty": "Gallery itinerary is a historical design, not verified 2026 floor plan",
+      "historical_addition": "Explain why museum galleries are distributed four to south and four to north as an interpretation of twin shrines",
+      "placement": "on_site_if_floorplan_verified"
+    }
+  ],
+  "no_publication_of_unverified_claims": true,
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "blockers": [
+    "Original Gamio 1914 field report not inspected",
+    "No early Triple Alliance chronicle collation",
+    "Source page opening sometimes 403; institutional index excerpts are not original field records",
+    "No onsite 2026 gallery orientation or photo rights verification"
+  ]
+}

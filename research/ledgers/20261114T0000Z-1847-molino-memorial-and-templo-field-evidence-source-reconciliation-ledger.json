@@ -1,0 +1,67 @@
+{
+  "schema_version": 2,
+  "kind": "pre_replay_append_only_reconciliation_and_research_ledger",
+  "generated_at": "2026-11-14T00:04:22.510Z",
+  "branch": "research-persistence",
+  "source_batch_path": "research/batches/20261114T0000Z-1847-molino-memorial-and-templo-field-evidence.json",
+  "source_batch_git_blob_sha": "c0878c030f184b9d9263030b09759fd53dbf7785",
+  "prior_report": "research/reconciled/v4_864dc6b25f9b/replay_report.json",
+  "prior_verified": {
+    "batch_documents": 75,
+    "distinct_staged_findings": 432,
+    "source_candidates": 147,
+    "source_inspections": 185,
+    "unregistered_source_references": 1,
+    "metadata_collisions": 2,
+    "detached_source_inspections": 37
+  },
+  "this_batch": {
+    "batch_files": 1,
+    "findings": 12,
+    "sources": 9,
+    "source_inspections": 9,
+    "publication_approved": false
+  },
+  "arithmetic_expected_if_no_overlapping_ids": {
+    "batch_documents": 76,
+    "distinct_staged_findings": 444,
+    "source_candidates": 156,
+    "source_inspections": 194
+  },
+  "validation_status": "pending_GitHub_Actions_full_replay_not_a_verified_count",
+  "input_provenance": {
+    "research/batches/20261114T0000Z-1847-molino-memorial-and-templo-field-evidence.json": "c0878c030f184b9d9263030b09759fd53dbf7785",
+    "research/coverage/20261114T0000Z-1847-molino-memorial-and-templo-field-evidence-readiness.json": "c87fb6e63ecfd5b81a7ff8f8fe44d3eb33d439e8",
+    "research/audits/20261114T0000Z-1847-molino-memorial-and-templo-field-evidence-templo-discover-evidence-gates.json": "72f766e86a57245c467d1438953cf6aeec3124c4"
+  },
+  "unresolved_identities": [
+    "PROPOSE_SOURCE_SLOAD_2020_BOTANICAL_DATASET_NOT_IN_CANONICAL"
+  ],
+  "existing_conflicts": [
+    "STG-SRC-MANZANILLA-LOPEZ-FRETER-1996",
+    "v95-sload-cave-2020"
+  ],
+  "detached_source_inspections_pending": 37,
+  "detached_url_overlap_candidates_not_merged": 9,
+  "additional_historical_conflicts": [
+    {
+      "subject": "Molino del Rey use",
+      "status": "open",
+      "explanation": "INAH catalog says flour milling with watercourses; SEDENA summary calls building powder mill; historical evolution not proven"
+    },
+    {
+      "subject": "Molino del Rey casualties",
+      "status": "open",
+      "explanation": "SEDENA and US Army summary give substantially different categories/totals; no fabricated harmonization"
+    },
+    {
+      "subject": "Monument modern location",
+      "status": "open",
+      "explanation": "INAH catalog suggests original site restored 2014 whereas article abstract says Los Pinos gardens; 2026 site unverified"
+    }
+  ],
+  "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_status": "V97 unchanged; no promotion permitted",
+  "next_integrity_gate": "Run full parser regressions, V97 row comparison, SQLite integrity, FK checks, binary SHA and GitHub readback before handoff promotion",
+  "publication_approved": false
+}

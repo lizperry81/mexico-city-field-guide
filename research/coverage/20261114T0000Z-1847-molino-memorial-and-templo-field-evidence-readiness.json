@@ -1,0 +1,147 @@
+{
+  "schema_version": 3,
+  "kind": "period_x_theme_x_geography_explanatory_readiness_delta",
+  "generated_at": "2026-11-14T00:04:22.510Z",
+  "branch": "research-persistence",
+  "source_batch_path": "research/batches/20261114T0000Z-1847-molino-memorial-and-templo-field-evidence.json",
+  "evidence_status": "noncanonical_candidates_not_editorially_approved",
+  "rating_definitions": {
+    "substantial": "Independent primary corroboration, coherent explanation, matched spatial/site evidence",
+    "developing": "Specific source-located explanation, missing original or physical evidence",
+    "sparse": "Catalog-level mention, single secondary excerpt, or ambiguous site attribution",
+    "missing": "No credible interpretation of observable present-day site"
+  },
+  "cells": [
+    {
+      "id": "16TH-MILL",
+      "period": "late 16th century–1847",
+      "theme": "Milling, military conversion and water systems",
+      "geography": "Molino del Rey",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261114T0000Z-M47-01"
+      ],
+      "explanatory_readiness": "Specific source-located history with outstanding original/physical evidence gap",
+      "next_evidence_needed": "Water-system and property-use documentary chain missing"
+    },
+    {
+      "id": "1847-FORTS",
+      "period": "8 September 1847",
+      "theme": "Fortifications and command decisions",
+      "geography": "Molino del Rey / Casa Mata",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261114T0000Z-M47-02",
+        "STG-20261114T0000Z-M47-03"
+      ],
+      "explanatory_readiness": "Specific source-located history with outstanding original/physical evidence gap",
+      "next_evidence_needed": "Battle plans, cross-national military documents and surviving fabric missing"
+    },
+    {
+      "id": "1847-CASUAL",
+      "period": "8 September 1847",
+      "theme": "Casualty reporting and historiography",
+      "geography": "Molino del Rey",
+      "rating": "sparse",
+      "linked_assertion_ids": [
+        "STG-20261114T0000Z-M47-04"
+      ],
+      "explanatory_readiness": "Insufficient independently checked sources or uncertain physical correlation",
+      "next_evidence_needed": "Original hospital, prisoner and casualty returns needed"
+    },
+    {
+      "id": "1847-CITY",
+      "period": "13–14 September 1847",
+      "theme": "Street approaches and occupation sequence",
+      "geography": "Chapultepec / Centro Histórico",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261114T0000Z-M47-05",
+        "STG-20261114T0000Z-M47-06",
+        "STG-20261114T0000Z-M47-07"
+      ],
+      "explanatory_readiness": "Specific source-located history with outstanding original/physical evidence gap",
+      "next_evidence_needed": "Bruff original map images and modern georeferencing missing"
+    },
+    {
+      "id": "1985-2014-MEM",
+      "period": "1985–2014",
+      "theme": "Memorial relocation in response to public infrastructure",
+      "geography": "Chapultepec / Los Pinos",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261114T0000Z-M47-08"
+      ],
+      "explanatory_readiness": "Specific source-located history with outstanding original/physical evidence gap",
+      "next_evidence_needed": "Original article full text and municipal relocation records missing"
+    },
+    {
+      "id": "1847-URNS",
+      "period": "19th–20th century",
+      "theme": "Archaeological funerary recovery",
+      "geography": "Molino del Rey",
+      "rating": "sparse",
+      "linked_assertion_ids": [
+        "STG-20261114T0000Z-M47-09"
+      ],
+      "explanatory_readiness": "Insufficient independently checked sources or uncertain physical correlation",
+      "next_evidence_needed": "Primary archaeological inventory and individual skeletal provenance missing"
+    },
+    {
+      "id": "NOW-MEM",
+      "period": "2026",
+      "theme": "Present-day original versus moved memorial identification",
+      "geography": "Los Pinos / Molino del Rey",
+      "rating": "missing",
+      "linked_assertion_ids": [
+        "STG-20261114T0000Z-M47-08",
+        "STG-20261114T0000Z-M47-09"
+      ],
+      "explanatory_readiness": "No defensible current physical visitor interpretation",
+      "next_evidence_needed": "Current site access/address and object-level documentation not verified"
+    },
+    {
+      "id": "1978-RESCUE",
+      "period": "1978",
+      "theme": "Coyolxauhqui rescue and project formation",
+      "geography": "Templo Mayor",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261114T0000Z-TM78-10"
+      ],
+      "explanatory_readiness": "Specific source-located history with outstanding original/physical evidence gap",
+      "next_evidence_needed": "Original rescue map/report needed"
+    },
+    {
+      "id": "1987-MUSEUM",
+      "period": "1978–1987",
+      "theme": "Museum design and excavated temple remains",
+      "geography": "Museo del Templo Mayor",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "STG-20261114T0000Z-TM87-11"
+      ],
+      "explanatory_readiness": "Specific source-located history with outstanding original/physical evidence gap",
+      "next_evidence_needed": "Current galleries and original display plan not compared"
+    },
+    {
+      "id": "1521-PARCELS",
+      "period": "1521–colonial",
+      "theme": "Colonial building atop destroyed temple",
+      "geography": "Templo Mayor / Centro Histórico",
+      "rating": "sparse",
+      "linked_assertion_ids": [
+        "STG-20261114T0000Z-TM21-12"
+      ],
+      "explanatory_readiness": "Insufficient independently checked sources or uncertain physical correlation",
+      "next_evidence_needed": "Post-conquest property mapping and excavation phases needed"
+    }
+  ],
+  "summary": {
+    "substantial": 0,
+    "developing": 6,
+    "sparse": 3,
+    "missing": 1
+  },
+  "publication_approved": false
+}

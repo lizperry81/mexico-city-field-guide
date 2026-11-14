@@ -1,0 +1,519 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261114T0000Z-1847-molino-memorial-and-templo-field-evidence",
+  "generated_at": "2026-11-14T00:04:22.510Z",
+  "branch": "research-persistence",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "storage_role": "immutable_noncanonical_research_batch",
+  "previous_verified_replay": "research/reconciled/v4_864dc6b25f9b/replay_report.json",
+  "prior_verified_counts": {
+    "github_batches": 75,
+    "assertion_bearing_findings": 432,
+    "source_candidates": 147,
+    "source_inspections": 185,
+    "unregistered_refs": 1,
+    "metadata_conflicts": 2
+  },
+  "research_scope": "1847 western urban approach, Molino del Rey as industrial/military site, 1985 and 2014 memorial interventions, two historic map holdings, and focused 1978–1987 Templo Mayor archaeology/museum documentation. Source-access limitations explicit.",
+  "sources": [
+    {
+      "id": "STG-SRC-INAH-MOLINO-CATALOG",
+      "title": "Catálogo Nacional de Monumentos Históricos Inmuebles: Molino del Rey",
+      "authors": "INAH Catálogo Nacional",
+      "url": "https://catalogonacionalmhi.inah.gob.mx/consulta_publica/detalle/13226",
+      "access_scope": "indexed_institutional_catalog_record; full browse open not confirmed",
+      "status": "indexed_institutional_catalog_record"
+    },
+    {
+      "id": "STG-SRC-INAH-LOPEZ-VELASQUEZ-2019",
+      "title": "El Último Traslado del monumento funerario de la batalla de Molino del Rey, 1847",
+      "authors": "María de Lourdes López Camacho and Marisela Velásquez Monroy; Arqueología 56 (2019), pp.133-147",
+      "url": "https://revistas.inah.gob.mx/index.php/arqueologia/article/view/14925",
+      "access_scope": "journal_article_abstract_and_bibliography_indexed; full_pdf_not_read",
+      "status": "journal_article_abstract_and_bibliography_indexed"
+    },
+    {
+      "id": "STG-SRC-SEDENA-MOLINO-2016",
+      "title": "8 de septiembre de 1847, Batalla del Molino del Rey",
+      "authors": "Secretaría de la Defensa Nacional (25 May 2016)",
+      "url": "https://www.gob.mx/defensa/documentos/8-de-septiembre-de-1847-batalla-del-molino-del-rey",
+      "access_scope": "institutional_search_index_full_summary; full_HTML_open_403",
+      "status": "institutional_search_index_full_summary"
+    },
+    {
+      "id": "STG-SRC-ARMY-CAMPAIGNS",
+      "title": "Mexican War Campaigns",
+      "authors": "United States Army Center of Military History",
+      "url": "https://history.army.mil/Research/Reference-Topics/Army-Campaigns/Brief-Summaries/Mexican-War-Campaigns/",
+      "access_scope": "military_summary_search_index; not_primary_1847",
+      "status": "military_summary_search_index"
+    },
+    {
+      "id": "STG-SRC-LOC-BRUFF-598",
+      "title": "United States attack of Mexico City, September 13th and 14th, 1847",
+      "authors": "Joseph Goldsborough Bruff; Library of Congress LCCN 2001620538",
+      "url": "https://www.loc.gov/item/2001620538/",
+      "access_scope": "original_1847_map_catalog_metadata_examined; high_resolution_map_not_inspected",
+      "status": "original_1847_map_catalog_metadata_examined"
+    },
+    {
+      "id": "STG-SRC-LOC-BRUFF-548",
+      "title": "Sketch of the route of Genl. Worth's column from Chapultepec to the Alemeda in the attack upon the city of Mexico, 13th & 14th Sept. 1847",
+      "authors": "Joseph Goldsborough Bruff; Library of Congress LCCN 2001622415",
+      "url": "https://www.loc.gov/item/2001622415/",
+      "access_scope": "original_1847_map_catalog_metadata_examined; high_resolution_map_not_inspected",
+      "status": "original_1847_map_catalog_metadata_examined"
+    },
+    {
+      "id": "STG-SRC-INAH-TEMPLO-PROJECT",
+      "title": "Proyecto Templo Mayor",
+      "authors": "INAH Proyecto Templo Mayor",
+      "url": "https://templomayor.inah.gob.mx/historia/proyecto-templo-mayor",
+      "access_scope": "official_project_page_search_index_text; original_field_notebooks_not_examined",
+      "status": "official_project_page_search_index_text"
+    },
+    {
+      "id": "STG-SRC-INAH-TEMPLO-MUSEUM",
+      "title": "Historia: Museo del Templo Mayor",
+      "authors": "INAH Museo del Templo Mayor",
+      "url": "https://www.templomayor.inah.gob.mx/historia",
+      "access_scope": "official_museum_page_search_index_text; archival_museum_construction_records_not_examined",
+      "status": "official_museum_page_search_index_text"
+    },
+    {
+      "id": "STG-SRC-INAH-TEMPLO-CONQUEST",
+      "title": "El Museo del Templo Mayor: La Conquista",
+      "authors": "INAH Lugares",
+      "url": "https://lugares.inah.gob.mx/es/node/5284",
+      "access_scope": "institutional_interpretation_search_index; conquest_accounts_and_urban_archaeology_not_collated",
+      "status": "institutional_interpretation_search_index"
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "20261114T0000Z-INS-01",
+      "source_id": "STG-SRC-INAH-MOLINO-CATALOG",
+      "locator": "INAH 13226 Información histórica (indexed entry)",
+      "access": "indexed_institutional_catalog_record; full browse open not confirmed",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0000Z-INS-02",
+      "source_id": "STG-SRC-INAH-LOPEZ-VELASQUEZ-2019",
+      "locator": "Arqueología (2019) 56:133–147 publication abstract and bibliography only",
+      "access": "journal_article_abstract_and_bibliography_indexed; full_pdf_not_read",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0000Z-INS-03",
+      "source_id": "STG-SRC-SEDENA-MOLINO-2016",
+      "locator": "SEDENA 25 May 2016 8 Sept battle indexed summary",
+      "access": "institutional_search_index_full_summary; full_HTML_open_403",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0000Z-INS-04",
+      "source_id": "STG-SRC-ARMY-CAMPAIGNS",
+      "locator": "US Army CMH Mexican War Campaigns: Molino, Chapultepec sections indexed",
+      "access": "military_summary_search_index; not_primary_1847",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0000Z-INS-05",
+      "source_id": "STG-SRC-LOC-BRUFF-598",
+      "locator": "LOC LCCN 2001620538 catalog metadata; image not personally read",
+      "access": "original_1847_map_catalog_metadata_examined; high_resolution_map_not_inspected",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0000Z-INS-06",
+      "source_id": "STG-SRC-LOC-BRUFF-548",
+      "locator": "LOC LCCN 2001622415 catalog metadata; image not personally read",
+      "access": "original_1847_map_catalog_metadata_examined; high_resolution_map_not_inspected",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0000Z-INS-07",
+      "source_id": "STG-SRC-INAH-TEMPLO-PROJECT",
+      "locator": "INAH Proyecto Templo Mayor first historical paragraph search-index extract",
+      "access": "official_project_page_search_index_text; original_field_notebooks_not_examined",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0000Z-INS-08",
+      "source_id": "STG-SRC-INAH-TEMPLO-MUSEUM",
+      "locator": "INAH Historia del Museo 12 October 1987 and first season paragraphs search-index",
+      "access": "official_museum_page_search_index_text; archival_museum_construction_records_not_examined",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0000Z-INS-09",
+      "source_id": "STG-SRC-INAH-TEMPLO-CONQUEST",
+      "locator": "INAH Lugares La Conquista indexed section",
+      "access": "institutional_interpretation_search_index; conquest_accounts_and_urban_archaeology_not_collated",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    }
+  ],
+  "findings": [
+    {
+      "id": "STG-20261114T0000Z-M47-01",
+      "assertion": "INAH's heritage catalog describes a late-sixteenth-century Molino del Rey originating as Molinos de El Salvador for flour milling, exploiting the Santa Fe and Tacubaya water systems; SEDENA's battle narrative calls the nineteenth-century complex a powder mill. These are not safely equivalent descriptions of one unchanged industrial use.",
+      "date_or_range": "late 1500s–1847",
+      "period": "Colonial infrastructure and 19th-century urban war",
+      "themes": [
+        "water infrastructure",
+        "industrial reuse",
+        "source conflict"
+      ],
+      "geographies": [
+        "Molino del Rey",
+        "Chapultepec"
+      ],
+      "poi_ids": [
+        "molino-del-rey"
+      ],
+      "source_ids": [
+        "STG-SRC-INAH-MOLINO-CATALOG",
+        "STG-SRC-SEDENA-MOLINO-2016"
+      ],
+      "source_locator": "INAH monument catalog, Información histórica para.1; SEDENA 2016 first narrative paras",
+      "limitations": "Original mill leases, use chronology and structural survey absent; conflicting flour/powder descriptions preserved rather than reconciled",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261114T0000Z-M47-02",
+      "assertion": "SEDENA's 2016 account places Mexican defensive works at Molino del Rey and Casa Mata west of Mexico City: stone buildings, ditches and temporary fortifications were used in response to the advancing US army. This identifies an engineered position, not merely open-field combat.",
+      "date_or_range": "1847-09-08",
+      "period": "US-Mexican war",
+      "themes": [
+        "military urban infrastructure",
+        "defensive works"
+      ],
+      "geographies": [
+        "Molino del Rey",
+        "Casa Mata",
+        "Chapultepec"
+      ],
+      "poi_ids": [
+        "molino-del-rey",
+        "bosque-chapultepec"
+      ],
+      "source_ids": [
+        "STG-SRC-SEDENA-MOLINO-2016"
+      ],
+      "source_locator": "SEDENA 2016, paragraphs on Santa Anna's defensive position and stone construction",
+      "limitations": "Current surviving fabric and exact ground plan have not been checked against 1847 survey",
+      "learning_mode": "guided_walk_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261114T0000Z-M47-03",
+      "assertion": "According to SEDENA's account, General Juan Álvarez's cavalry was ordered to strike the US flank during the 8 September fighting but did not enter action. This is a military source's explanation, not a verified causal judgment about the entire battle.",
+      "date_or_range": "1847-09-08",
+      "period": "US-Mexican war",
+      "themes": [
+        "cavalry deployment",
+        "command decisions"
+      ],
+      "geographies": [
+        "Molino del Rey"
+      ],
+      "poi_ids": [
+        "molino-del-rey"
+      ],
+      "source_ids": [
+        "STG-SRC-SEDENA-MOLINO-2016"
+      ],
+      "source_locator": "SEDENA 2016, paragraph beginning 'A las primeras horas' and Álvarez paragraph",
+      "limitations": "Original Mexican after-action reports and opposing operational records uncollated",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261114T0000Z-M47-04",
+      "assertion": "Casualty totals for Molino del Rey are not interchangeable: SEDENA's retrospective states roughly 800 Mexican casualties and more than 700 US casualties; the US Army campaign summary describes perhaps 2,000 Mexican casualties, 700 prisoners, and 124 killed plus 582 wounded among US attackers. Record contested categories and source traditions before choosing numbers.",
+      "date_or_range": "1847-09-08",
+      "period": "US-Mexican war",
+      "themes": [
+        "casualty accounting",
+        "conflicting source traditions"
+      ],
+      "geographies": [
+        "Molino del Rey"
+      ],
+      "poi_ids": [
+        "molino-del-rey"
+      ],
+      "source_ids": [
+        "STG-SRC-SEDENA-MOLINO-2016",
+        "STG-SRC-ARMY-CAMPAIGNS"
+      ],
+      "source_locator": "SEDENA 2016 final fighting paragraph; US Army campaign brief, Molino del Rey 8 Sept section",
+      "limitations": "Different estimates/capture/dispersion definitions may underlie disagreement; original roll books absent; no preferred casualty total",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261114T0000Z-M47-05",
+      "assertion": "The 8 September Molino del Rey fighting, fall of Chapultepec on 13 September, and US entry into central Mexico City on 14 September are distinct episodes; compressing them into one 'fall of Chapultepec' event hides the route through the city.",
+      "date_or_range": "1847-09-08/1847-09-14",
+      "period": "US-Mexican war",
+      "themes": [
+        "campaign chronology",
+        "urban occupation"
+      ],
+      "geographies": [
+        "Molino del Rey",
+        "Chapultepec",
+        "Centro Histórico"
+      ],
+      "poi_ids": [
+        "castillo-de-chapultepec",
+        "zocalo"
+      ],
+      "source_ids": [
+        "STG-SRC-ARMY-CAMPAIGNS",
+        "STG-SRC-LOC-BRUFF-598"
+      ],
+      "source_locator": "US Army campaign brief Molino/Chapultepec sections; LOC Bruff map 2001620538 title dates 13 and 14 September",
+      "limitations": "Dates plausible independently but occupation and civilian resistance require Mexican municipal/eyewitness primary comparison",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261114T0000Z-M47-06",
+      "assertion": "The Library of Congress catalogs Joseph Goldsborough Bruff's 1847 manuscript map of the 13–14 September attack as an indexed color-ink and pencil tracing-paper map, sheet 37×53 cm (LCCN 2001620538). This supplies a precise original map locator, not verified identification of individual street positions.",
+      "date_or_range": "1847",
+      "period": "Occupation cartography",
+      "themes": [
+        "historic maps",
+        "source provenance"
+      ],
+      "geographies": [
+        "Mexico City western approach",
+        "Centro Histórico"
+      ],
+      "poi_ids": [
+        "chapultepec",
+        "zocalo"
+      ],
+      "source_ids": [
+        "STG-SRC-LOC-BRUFF-598"
+      ],
+      "source_locator": "LOC item 2001620538, About this Item: title, notes, medium and call number G4414.M6S44 1847 .B7",
+      "limitations": "High-resolution map labels and drawing provenance not visually transcribed or georeferenced",
+      "learning_mode": "guided_walk_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261114T0000Z-M47-07",
+      "assertion": "A distinct Bruff manuscript map cataloged by the Library of Congress is specifically a sketch of General Worth's column from Chapultepec to the Alameda on 13–14 September 1847 (LCCN 2001622415). Do not conflate it with Bruff's larger attack map or assume the historical street path still exists intact.",
+      "date_or_range": "1847-09-13/1847-09-14",
+      "period": "Occupation cartography",
+      "themes": [
+        "march routes",
+        "city morphology"
+      ],
+      "geographies": [
+        "Chapultepec",
+        "Alameda Central"
+      ],
+      "poi_ids": [
+        "alameda-central",
+        "castillo-de-chapultepec"
+      ],
+      "source_ids": [
+        "STG-SRC-LOC-BRUFF-548",
+        "STG-SRC-LOC-BRUFF-598"
+      ],
+      "source_locator": "LOC item 2001622415 About this Item, title, medium 35×32 cm, and call number G4414.M6S44 1847 .B69; compare 2001620538",
+      "limitations": "Exact route and modern alignment require high-resolution examination and GIS registration; no walking instructions approved",
+      "learning_mode": "guided_walk_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261114T0000Z-M47-08",
+      "assertion": "The INAH 2019 paper's abstract says the funerary monument to the 1847 Molino del Rey battle was relocated during 1985 Metro Line 7 construction, later stood by boulevard Adolfo López Mateos, and moved again in 2014 to gardens of Los Pinos. The monument's modern spatial history must be separated from its 1847 battlefield location.",
+      "date_or_range": "1985–2014",
+      "period": "Modern heritage intervention",
+      "themes": [
+        "metro construction",
+        "monument relocation",
+        "memory"
+      ],
+      "geographies": [
+        "Molino del Rey",
+        "Los Pinos",
+        "Chapultepec"
+      ],
+      "poi_ids": [
+        "molino-del-rey",
+        "los-pinos"
+      ],
+      "source_ids": [
+        "STG-SRC-INAH-LOPEZ-VELASQUEZ-2019"
+      ],
+      "source_locator": "INAH Arqueología 56 (2019), pp.133–147, published article abstract; archival photos and exact pages not examined",
+      "limitations": "Current 2026 position and whether the 2014 site is precisely original battlefield not verified",
+      "learning_mode": "guided_walk_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261114T0000Z-M47-09",
+      "assertion": "The INAH monuments catalog reports discovery of 12 wooden urns and at least 15 sets of human remains associated with Molino del Rey, citing the 2019 archaeological study at page 136. This is a secondary catalog's citation to an unread page, not direct examination or definitive individual identification.",
+      "date_or_range": "19th century deposits, later recovery",
+      "period": "Battlefield archaeology",
+      "themes": [
+        "funerary remains",
+        "excavation provenance"
+      ],
+      "geographies": [
+        "Molino del Rey",
+        "Los Pinos"
+      ],
+      "poi_ids": [
+        "molino-del-rey"
+      ],
+      "source_ids": [
+        "STG-SRC-INAH-MOLINO-CATALOG",
+        "STG-SRC-INAH-LOPEZ-VELASQUEZ-2019"
+      ],
+      "source_locator": "INAH catalog historical information paragraph citing Velásquez and Camacho 2019:136; 2019 article metadata",
+      "limitations": "Excavation stratigraphy, archive inventory and article page 136 remain unexamined; do not assert identified individuals",
+      "learning_mode": "specialist_archaeology",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261114T0000Z-TM78-10",
+      "assertion": "INAH identifies workers from Compañía de Luz y Fuerza finding the Coyolxauhqui monolith on 21 February 1978, followed by excavation by an INAH archaeological rescue team. Its official project history explicitly says this discovery changed a previously envisaged Museo de Tenochtitlan scheme into Proyecto Templo Mayor.",
+      "date_or_range": "1978-02-21",
+      "period": "Late 20th-century urban rescue archaeology",
+      "themes": [
+        "electric works",
+        "salvage archaeology",
+        "institutional change"
+      ],
+      "geographies": [
+        "Templo Mayor",
+        "República de Argentina/Guatemala"
+      ],
+      "poi_ids": [
+        "templo-mayor"
+      ],
+      "source_ids": [
+        "STG-SRC-INAH-TEMPLO-PROJECT"
+      ],
+      "source_locator": "INAH Proyecto Templo Mayor, paragraph beginning 'El 21 de febrero de 1978'",
+      "limitations": "Original rescue report, measured discovery plan and first project approval not reviewed; official institutional account",
+      "learning_mode": "specialist_archaeology",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261114T0000Z-TM87-11",
+      "assertion": "INAH's museum history gives the first Proyecto Templo Mayor excavation season as 1978–1982 directed by Eduardo Matos Moctezuma and the museum opening as 12 October 1987. The original eight-room layout mirrored the twin southern Huitzilopochtli and northern Tláloc cult division; this is a museum's interpretive organization, not a reconstructed complete standing pyramid.",
+      "date_or_range": "1978–1987",
+      "period": "Museum and archaeological interpretation",
+      "themes": [
+        "museum design",
+        "excavation chronology",
+        "dual cult"
+      ],
+      "geographies": [
+        "Museo del Templo Mayor"
+      ],
+      "poi_ids": [
+        "templo-mayor"
+      ],
+      "source_ids": [
+        "STG-SRC-INAH-TEMPLO-MUSEUM"
+      ],
+      "source_locator": "INAH museum Historia paragraphs 1–2, 12 Oct 1987; 1978–82; four southern and four northern rooms",
+      "limitations": "Museum gallery arrangement and current display locations need current floor plan; historical model must not be mistaken for proven uniform cult experience",
+      "learning_mode": "guided_walk_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "STG-20261114T0000Z-TM21-12",
+      "assertion": "INAH's museum conquest room states the final temple was destroyed after 1521 and later houses occupied the area, while excavated earlier construction phases survived better underground. This is an institutionally authored interpretation useful for explaining what survives; building-by-building demolition and parcel assignments remain unverified.",
+      "date_or_range": "1521–colonial period",
+      "period": "Conquest and colonial rebuilding",
+      "themes": [
+        "post-conquest urban land use",
+        "stratigraphic survival"
+      ],
+      "geographies": [
+        "Templo Mayor",
+        "Historic Centre"
+      ],
+      "poi_ids": [
+        "templo-mayor"
+      ],
+      "source_ids": [
+        "STG-SRC-INAH-TEMPLO-CONQUEST"
+      ],
+      "source_locator": "INAH Lugares 'El Museo del Templo Mayor', section 'La Conquista', final two paragraphs",
+      "limitations": "Claim about total absence of trace should be qualified: written sources and underground remains survive; 16th-century parcel archive not checked",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    }
+  ],
+  "quality_gates": {
+    "original_books_read": 0,
+    "original_1847_maps_catalogued_but_visual_inspection": 0,
+    "institutional_web_text_access": "search-index excerpts; some direct page opens 403",
+    "peer_reviewed_paper_full_text_read": 0,
+    "independent_corroboration_count": 0,
+    "publication_approved": false,
+    "photo_reproduction_cleared": false
+  },
+  "unresolved_conflicts": [
+    {
+      "subject": "Molino del Rey use",
+      "status": "open",
+      "explanation": "INAH catalog says flour milling with watercourses; SEDENA summary calls building powder mill; historical evolution not proven"
+    },
+    {
+      "subject": "Molino del Rey casualties",
+      "status": "open",
+      "explanation": "SEDENA and US Army summary give substantially different categories/totals; no fabricated harmonization"
+    },
+    {
+      "subject": "Monument modern location",
+      "status": "open",
+      "explanation": "INAH catalog suggests original site restored 2014 whereas article abstract says Los Pinos gardens; 2026 site unverified"
+    }
+  ],
+  "no_live_app_change": true,
+  "publication_approved": false
+}
