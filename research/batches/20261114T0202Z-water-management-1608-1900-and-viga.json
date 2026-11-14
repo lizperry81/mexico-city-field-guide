@@ -1,0 +1,389 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261114T0202Z-water-management-1608-1900-and-viga",
+  "generated_at": "2026-11-14T02:02:00Z",
+  "branch": "research-persistence",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "storage_role": "immutable_noncanonical_research_batch",
+  "previous_verified_replay": "research/reconciled/v4_28d9d393f98f/replay_report.json",
+  "prior_verified_counts": {
+    "github_batches_replayed": 77,
+    "staged_findings": 455,
+    "source_candidates": 161,
+    "inspection_entries": 199,
+    "canonical_sources": 616,
+    "canonical_claims": 422,
+    "canonical_links": 403,
+    "canonical_findings": 68
+  },
+  "research_scope": "Cross-century water systems: 1608 Indigenous labor and drainage, 1859 technical mapping, 1860s Second Empire drainage works, 1900 inauguration, 19th-c urban land markets, Canal de la Viga, 1872 municipal place-name change, and 1880-1950 photographic landscape. Four broad-history, three place-oriented, two specialist-source findings; strict original-versus-index disclosure.",
+  "sources": [
+    {
+      "id": "STG-SRC-20261114-WATER-UNAM-CHIMALPAHIN",
+      "title": "Los gigantes quinametzin en el gran desagüe",
+      "authors": "Instituto de Investigaciones Históricas, UNAM",
+      "publication": "UNAM historical interpretation and transcription of Chimalpahin, Diary February 1608",
+      "url": "https://historicas.unam.mx/index.php/comunicacion-publica/proyectos-especiales/los_gigantes_quiametzin",
+      "access_scope": "web search indexed page, transcript excerpt seen; live HTML timed out",
+      "status": "unam_curatorial_transcription_excerpt_index_only"
+    },
+    {
+      "id": "STG-SRC-20261114-WATER-UNAM-POUMAREDE-1859",
+      "title": "Plano del primer modo de aplicar el Sifón al desagüe del Valle de México",
+      "authors": "D. J. Poumarede",
+      "publication": "Boletín de la Sociedad Mexicana de Geografía y Estadística, época 1, VII(11), 1859 p.480; UNAM catalog",
+      "url": "https://hmpi.historicas.unam.mx/fuentes/mapas/plano-desague-del-valle-de-mexico-01",
+      "access_scope": "UNAM catalog HTML lines 14-35; graphic not separately inspected",
+      "status": "original_map_metadata_catalog_checked_graphic_uninspected"
+    },
+    {
+      "id": "STG-SRC-20261114-WATER-INAH-91296",
+      "title": "INAH Catálogo Nacional de Monumentos Históricos Inmuebles ficha 91296: caja de agua del desagüe",
+      "authors": "Coordinación Nacional de Monumentos Históricos, INAH",
+      "publication": "Monument catalog record; original catalog date not stated",
+      "url": "https://catalogonacionalmhi.inah.gob.mx/consulta_publica/detalle/91296",
+      "access_scope": "search indexed excerpt on INAH record; direct page returned 502",
+      "status": "institutional_catalog_excerpts_only"
+    },
+    {
+      "id": "STG-SRC-20261114-WATER-MIRANDA-2019",
+      "title": "Desagüe, ambiente y urbanización de la ciudad de México en el siglo XIX",
+      "authors": "Sergio Miranda Pacheco",
+      "publication": "Relaciones. Estudios de Historia y Sociedad 40(159), 2019, pp.31–72",
+      "url": "https://ru.historicas.unam.mx/handle/20.500.12525/1190",
+      "access_scope": "UNAM bibliographic abstract read via index; full 2019 article uninspected; direct 403",
+      "status": "scholarly_abstract_only"
+    },
+    {
+      "id": "STG-SRC-20261114-WATER-PERALTA-VIGA-1999",
+      "title": "El Canal de la Viga",
+      "authors": "Araceli Peralta Flores",
+      "publication": "Antropología. Revista Interdisciplinaria del INAH, issue 54 (1999), pp.2–6; web posted 2022",
+      "url": "https://revistas.inah.gob.mx/index.php/antropologia/article/view/17827",
+      "access_scope": "journal page indexed abstract and bibliography, original PDF not inspected; direct 403",
+      "status": "peer_reviewed_or_editorial_article_abstract_and_references_only"
+    },
+    {
+      "id": "STG-SRC-20261114-WATER-INAH-IZTACALCO-2024",
+      "title": "Fotografías históricas del INAH revelan un Iztacalco inédito",
+      "authors": "INAH press office",
+      "publication": "INAH exhibition announcement, 2024",
+      "url": "https://www.inah.gob.mx/boletines/fotografias-historicas-del-inah-revelan-un-iztacalco-inedito-en-tres-sedes-culturales-de-esta-alcaldia-capitalina",
+      "access_scope": "search indexed press release excerpt; direct 403; images and captions unexamined",
+      "status": "institutional_press_release_excerpt_only"
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "20261114T0202Z-INS-01",
+      "source_id": "STG-SRC-20261114-WATER-UNAM-CHIMALPAHIN",
+      "locator": "UNAM page snippet: February 1608 Chimalpahin transcription on Huehuetoca/Zitlaltepec labor and 1607-08 project; original codex not examined",
+      "access": "web search indexed page, transcript excerpt seen; live HTML timed out",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0202Z-INS-02",
+      "source_id": "STG-SRC-20261114-WATER-UNAM-POUMAREDE-1859",
+      "locator": "UNAM HTML catalog lines 14-35: Poumarede, published 1859, Boletín SMGE VII no.11 p.480; image linked but not viewed",
+      "access": "UNAM catalog HTML lines 14-35; graphic not separately inspected",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0202Z-INS-03",
+      "source_id": "STG-SRC-20261114-WATER-INAH-91296",
+      "locator": "INAH record 91296 indexed descriptive sections: Maximilian machinery; 17 March 1900 inauguration; 10 km tunnel; 1900–1910 inscription; actual page unavailable (502)",
+      "access": "search indexed excerpt on INAH record; direct page returned 502",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0202Z-INS-04",
+      "source_id": "STG-SRC-20261114-WATER-MIRANDA-2019",
+      "locator": "UNAM repository 2019 abstract, Miranda Pacheco, Relaciones 40(159), pp.31–72; full article not accessed",
+      "access": "UNAM bibliographic abstract read via index; full 2019 article uninspected; direct 403",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0202Z-INS-05",
+      "source_id": "STG-SRC-20261114-WATER-PERALTA-VIGA-1999",
+      "locator": "INAH article summary and bibliography: bridges, garita, paseo, canal and 1872 AHCM Paseos y Jardines vol.3587 exp.83; original archive not opened",
+      "access": "journal page indexed abstract and bibliography, original PDF not inspected; direct 403",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0202Z-INS-06",
+      "source_id": "STG-SRC-20261114-WATER-INAH-IZTACALCO-2024",
+      "locator": "INAH press release indexed excerpt describing photos 1880–1950 and channel changes circa 1950; no primary photographs checked",
+      "access": "search indexed press release excerpt; direct 403; images and captions unexamined",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false
+    }
+  ],
+  "findings": [
+    {
+      "id": "20261114T0202Z-WATER-01",
+      "assertion": "An IIH-UNAM curatorial essay quotes a February 1608 Chimalpahin diary passage describing Indigenous macehuales summoned from surrounding communities to excavate the Huehuetoca–Citlaltepec drainage works. This is evidence for coerced labor in an early drainage project, not proof that every worker was conscripted.",
+      "date_or_range": "1607–1608",
+      "period": "Early colonial environmental history",
+      "themes": [
+        "labor mobilization",
+        "waterworks",
+        "Indigenous history"
+      ],
+      "geographies": [
+        "Huehuetoca",
+        "Zitlaltepec",
+        "Basin of Mexico"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-WATER-UNAM-CHIMALPAHIN"
+      ],
+      "source_locator": "UNAM 'Los gigantes quinametzin', paragraph headed 'Diario de Chimalpahin, febrero de 1608'",
+      "limitations": "Original Nahuatl manuscript, manuscript transcription apparatus and exact coercion terminology not examined; web page only indexed excerpt",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0202Z-WATER-02",
+      "assertion": "An 1859 illustrated proposal by D. J. Poumarede to apply a siphon to the Basin of Mexico drainage survives in the UNAM catalog. A proposal is evidence of competing nineteenth-century technical schemes, NOT evidence that the siphon was implemented.",
+      "date_or_range": "1859",
+      "period": "Nineteenth-century engineering proposals",
+      "themes": [
+        "engineering drawings",
+        "proposed infrastructure"
+      ],
+      "geographies": [
+        "Basin of Mexico"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-WATER-UNAM-POUMAREDE-1859"
+      ],
+      "source_locator": "UNAM H-MPI map catalog lines 14-35; Boletín de la Sociedad Mexicana de Geografía y Estadística VII (11), 1859, p.480",
+      "limitations": "Drawing not visually inspected, calculations and engineering feasibility unknown; no claim of constructed siphon",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0202Z-WATER-03",
+      "assertion": "The INAH monument catalog reports that during Maximilian's rule drainage works were restarted, machinery was sought from Europe, and work organized around Zumpango was disrupted by the Republican war. The record cites Levi (1988), so this is a secondary-source pathway, not inspection of imperial procurement papers.",
+      "date_or_range": "1860s",
+      "period": "Second Empire and infrastructure",
+      "themes": [
+        "engineering labor",
+        "political disruption",
+        "state construction"
+      ],
+      "geographies": [
+        "Zumpango",
+        "San Lázaro",
+        "Tequixquiac"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-WATER-INAH-91296"
+      ],
+      "source_locator": "INAH monuments catalog 91296, historical narrative citing Enzo Levi (1988), p.68",
+      "limitations": "Original Levi technical paper and 1860s contracts, dates and work progress unverified; 502 on full catalog page",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0202Z-WATER-04",
+      "assertion": "Sergio Miranda Pacheco's 2019 scholarly abstract frames nineteenth-century desagüe schemes as entangled with changing claims to natural resources, land commercialization and urban expansion. This offers an explicit historical research question rather than an established measurement of lake loss.",
+      "date_or_range": "1800s",
+      "period": "Nineteenth-century urban political economy",
+      "themes": [
+        "drainage",
+        "land commercialization",
+        "urban inequality"
+      ],
+      "geographies": [
+        "City of Mexico",
+        "Valley of Mexico"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-WATER-MIRANDA-2019"
+      ],
+      "source_locator": "Miranda Pacheco 2019, Relaciones 40(159):31–72, abstract in UNAM repository",
+      "limitations": "Only abstract consulted; specific case studies, causal analysis and chapter-page references still require full article",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0202Z-WATER-05",
+      "assertion": "The INAH heritage catalog dates Porfirio Díaz's official inauguration of the desagüe works to 17 March 1900 and describes a regulating 'caja de agua' before the tunnel to Tequixquiac. The contemporary press praise reproduced there is a political claim about hygiene and progress, not independently established effectiveness.",
+      "date_or_range": "1900-03-17",
+      "period": "Porfirian public works",
+      "themes": [
+        "inauguration",
+        "hydraulic infrastructure",
+        "public-health rhetoric"
+      ],
+      "geographies": [
+        "Zumpango",
+        "Tequixquiac"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-WATER-INAH-91296"
+      ],
+      "source_locator": "INAH heritage record 91296 'Finalmente, el 17 de marzo de 1900' and El Popular 19 March 1900 quoted via catalog",
+      "limitations": "Original newspaper and construction completion acceptance missing; catalog length ~10 km approximate; historical rhetoric must not be endorsed",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0202Z-WATER-06",
+      "assertion": "A heritage-register description of the stone hydraulic regulator reports stonework including marble, tezontle and volcanic stone, manual gates and a carved inscription reading 'S.C.O.P. / LA COMISIÓN HIDROGRÁFICA / CONTRUYO / 1900-1910'. This inscription spans years after the 1900 inauguration and therefore cannot be used alone to date every part of the structure to March 1900.",
+      "date_or_range": "1900–1910",
+      "period": "Porfirian waterworks material fabric",
+      "themes": [
+        "physical construction",
+        "inscription",
+        "dating uncertainty"
+      ],
+      "geographies": [
+        "Tequixquiac",
+        "Zumpango"
+      ],
+      "poi_ids": [
+        "caja-de-agua-tequixquiac"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-WATER-INAH-91296"
+      ],
+      "source_locator": "INAH catalog 91296: structural description and 'Inscripciones' field, 1900-1910 lettering",
+      "limitations": "Only indexed catalog text; original inscription not photographed or read in situ; location beyond central CDMX, access and route not verified",
+      "learning_mode": "off_site_deep_dive",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0202Z-WATER-07",
+      "assertion": "An INAH journal abstract describes the Canal de la Viga as both a principal provisioning water route to Mexico City and a promenade. It identifies four historically linked physical elements—the bridge, canal, customs gate (garita), and paseo—which should be mapped separately rather than conflated with a single modern road.",
+      "date_or_range": "1800s–early 1900s",
+      "period": "Commercial waterways and leisure",
+      "themes": [
+        "food provisioning",
+        "landscape",
+        "mobility"
+      ],
+      "geographies": [
+        "Canal de la Viga",
+        "Iztacalco",
+        "City of Mexico"
+      ],
+      "poi_ids": [
+        "canal-de-la-viga"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-WATER-PERALTA-VIGA-1999"
+      ],
+      "source_locator": "Peralta Flores, 'El Canal de la Viga', Antropología no.54 (1999), indexed summary",
+      "limitations": "Original article pages, historic alignments, watercourse removal and 2026 walkability unexamined; no current map points asserted",
+      "learning_mode": "pre_read_and_field_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0202Z-WATER-08",
+      "assertion": "Peralta Flores's bibliographic apparatus cites an 1872 City Council file authorizing the name 'Paseo Juárez' for the Paseo de la Viga in honor of Benito Juárez. This is a document lead for a place-name change, not proof that residents universally adopted the new name.",
+      "date_or_range": "1872",
+      "period": "Post-Reform capital public space",
+      "themes": [
+        "political commemoration",
+        "toponymy",
+        "municipal action"
+      ],
+      "geographies": [
+        "Paseo de la Viga",
+        "Iztacalco"
+      ],
+      "poi_ids": [
+        "paseo-de-la-viga"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-WATER-PERALTA-VIGA-1999"
+      ],
+      "source_locator": "Peralta Flores bibliography note 15: AHCM Ramo Paseos y Jardines vol.3587 exp.83 (1872)",
+      "limitations": "AHCM original council resolution not inspected; exact wording, issue date and duration of usage unknown",
+      "learning_mode": "pre_read_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0202Z-WATER-09",
+      "assertion": "An INAH 2024 photographic-exhibition announcement dates its views of Iztacalco and the Canal de la Viga to roughly 1880–1950, saying the canal environment was progressively transformed in the mid-twentieth century. The image set is a promising physical-landscape comparison but original photographs and rights were not examined.",
+      "date_or_range": "1880–1950",
+      "period": "Twentieth-century urban change and memory",
+      "themes": [
+        "historic photographs",
+        "waterway alteration",
+        "neighborhood transformation"
+      ],
+      "geographies": [
+        "Iztacalco",
+        "Canal de la Viga"
+      ],
+      "poi_ids": [
+        "canal-de-la-viga"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-WATER-INAH-IZTACALCO-2024"
+      ],
+      "source_locator": "INAH 'Iztacalco inédito' exhibition announcement, indexed description of dates and altered channel",
+      "limitations": "Original images, individual dating, rights and precise geolocation unverified; current exhibition availability unverified",
+      "learning_mode": "historic_photo_toggle_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    }
+  ],
+  "quality_gates": {
+    "all_ids_unique": true,
+    "all_finding_source_ids_registered": true,
+    "canonical_original_untouched": true,
+    "independent_editorial_corroboration": false,
+    "original_1608_diary_checked": false,
+    "original_1859_plan_image_checked": false,
+    "original_1900_newspaper_checked": false,
+    "original_1872_AHCM_record_checked": false,
+    "publication_approved": false
+  },
+  "unresolved_conflicts": [
+    {
+      "subject": "1900 inauguration versus inscription 1900–1910",
+      "status": "open",
+      "explanation": "Catalog records official inauguration in 1900 but inscription records 1900-1910; structural phases and inscription meaning unresolved"
+    },
+    {
+      "subject": "Canal de la Viga historical alignment versus modern road",
+      "status": "open",
+      "explanation": "Modern on-site landmark or walk route cannot be assigned without dated GIS and physical inspection"
+    },
+    {
+      "subject": "1860s procurement and suspension chronology",
+      "status": "open",
+      "explanation": "Catalog relies on Levi 1988; original imperial invoices and later engineering progress unexamined"
+    }
+  ],
+  "no_live_app_change": true,
+  "publication_approved": false
+}
