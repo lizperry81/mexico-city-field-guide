@@ -1,0 +1,54 @@
+{
+  "schema_version": 4,
+  "kind": "immutable_research_handoff_history_entry",
+  "generated_at": "2026-11-14T13:02:11.526Z",
+  "branch": "research-persistence",
+  "research_commit_sha": "9c2b3b6db5689b4e0662afe175e0592781b24c0a",
+  "snapshot_commit_sha": "d324f6a114396db794233458bca190a283d87213",
+  "canonical_version": "V97",
+  "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_status": "unchanged_provisional_V97_not_promoted",
+  "staged_counts": {
+    "batches": 89,
+    "findings": 585,
+    "source_candidates": 253,
+    "inspections": 291
+  },
+  "source_batch_path": "research/batches/20261114T1256Z-1971-halconazo-san-cosme-primary-reports.json",
+  "chapter_audit_artifact_paths": [
+    "research/audits/20261114T1256Z-1971-halconazo-san-cosme-primary-reports-templo-discover-evidence-gates.json"
+  ],
+  "coverage_artifact_paths": [
+    "research/coverage/20261114T1256Z-1971-halconazo-san-cosme-primary-reports-readiness.json"
+  ],
+  "replay_report_path": "research/reconciled/v4_9c2b3b6db568/replay_report.json",
+  "reconciliation_ledger_path": "research/ledgers/20261114T1301Z-89-batch-halconazo-replay-verification.json",
+  "versioned_research_sqlite_gz_path": "research/reconciled/v4_9c2b3b6db568/research_only.sqlite.gz",
+  "versioned_research_sha256": "377a98060187a226f0b85ce725255800084fc2c334ed5717bad2a0b92a9e077d",
+  "compressed_sha256": "e6f8a2c7ec76a727da0cd4eb5e28736b3dd14bf934f30470efd4aa6eb8185810",
+  "evidence_status": "edited_primary_text_transcription_plus_institutional_web_summaries_provisional",
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "blockers": [
+    "37 detached original inspection rows still require manual source-identity review (9 same-URL candidate matches, 28 no matches)",
+    "Two cross-batch metadata conflicts: STG-SRC-MANZANILLA-LOPEZ-FRETER-1996 and v95-sload-cave-2020",
+    "Unregistered PROPOSE_SOURCE_SLOAD_2020_BOTANICAL_DATASET_NOT_IN_CANONICAL",
+    "Unresolved index-only finding STG20261111T1302Z-RECON-V87-PRIMARY-001",
+    "INEHRM 2021 edited 1971 DFS/IPS transcriptions read but original AGN paper/facsimile folios not examined; PDF screenshot service 502/timeout",
+    "Photographic rights, modern site access and marching-route reconstruction not verified",
+    "Templo Mayor 1428, stages, Coatepec, conquest/Gamio and 1978 salvage primary-source gates remain open"
+  ],
+  "previous_immutable_handoff_path": "research/handoff/history/20261114T1207Z-88-batch-1985-earthquake-verified.json",
+  "previous_manifest_blob_sha": "78bdf7a111f9fd582a03a21878e38d15441ec2f2",
+  "github_readback": {
+    "workflow_replay_run": 43597455139,
+    "workflow_validation_run": 43597455147,
+    "workflow_conclusion": "success_both",
+    "source_file_blob_sha": "",
+    "workflow_git_push_readback_verified": true,
+    "github_file_metadata_and_checksum_refetched": true,
+    "github_external_binary_download_unavailable": true,
+    "independent_binary_sha256_recalculation_not_claimed": true,
+    "paths_changed_under_research_only": true
+  }
+}

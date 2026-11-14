@@ -1,8 +1,8 @@
 {
   "schema_version": 4,
   "kind": "research_to_app_handoff",
-  "generated_at": "2026-11-14T12:09:09.359Z",
-  "research_commit_sha": "764dbe6a6f82e80386e3dac6534e08cb09072fe5",
+  "generated_at": "2026-11-14T13:02:11.526Z",
+  "research_commit_sha": "9c2b3b6db5689b4e0662afe175e0592781b24c0a",
   "canonical_version": "V97",
   "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
   "canonical_status": "unchanged_provisional_V97_not_promoted",
@@ -14,15 +14,15 @@
     "canonical_source_inspections": 9
   },
   "staged_counts": {
-    "scope": "88 GitHub research batches; 574 substantive provisional findings; no automatic canonical promotion or independent editorial publication approval",
-    "github_batches_replayed": 88,
-    "github_distinct_substantive_finding_ids": 574,
+    "scope": "89 GitHub research batches; 585 substantive provisional findings; unchanged V97 and no editorial approval",
+    "github_batches_replayed": 89,
+    "github_distinct_substantive_finding_ids": 585,
     "github_index_only_refs_total": 23,
     "github_index_only_refs_unresolved": 1,
-    "raw_batch_documents_in_new_sqlite": 88,
-    "github_inspection_entries": 287,
-    "github_inspection_payload_rows": 287,
-    "github_source_candidates": 249,
+    "raw_batch_documents_in_new_sqlite": 89,
+    "github_inspection_entries": 291,
+    "github_inspection_payload_rows": 291,
+    "github_source_candidates": 253,
     "unknown_source_refs": 1,
     "unknown_source_refs_with_inspection_metadata": [],
     "unknown_source_refs_without_inspection_metadata": [
@@ -35,15 +35,15 @@
     "detached_source_identity_review_pending": 37,
     "external_staging_semantic_join_verified": false,
     "source_id_provisional_recoveries_this_run": 0,
-    "new_scholarly_source_candidate_records_this_run": 8,
-    "new_source_inspection_metadata_this_run": 8,
+    "new_scholarly_source_candidate_records_this_run": 4,
+    "new_source_inspection_metadata_this_run": 4,
     "new_historical_finding_candidates_this_run": 11,
-    "new_source_candidates_all_types_this_run": 8,
+    "new_source_candidates_all_types_this_run": 4,
     "original_government_document_machine_text_sections_examined_this_run": 0,
     "original_newspaper_excerpts_through_modern_republication_examined_this_run": 0,
-    "government_html_pages_examined_this_run": 1,
-    "institutional_direct_html_pages_examined_this_run": 2,
-    "peer_reviewed_abstracts_examined_this_run": 3,
+    "government_html_pages_examined_this_run": 0,
+    "institutional_direct_html_pages_examined_this_run": 1,
+    "peer_reviewed_abstracts_examined_this_run": 0,
     "scholarly_thesis_page_images_checked_this_run": 0,
     "edited_original_primary_government_document_page_images_checked_this_run": 0,
     "peer_reviewed_archaeology_pdf_page_images_checked_this_run": 0,
@@ -63,14 +63,17 @@
     "inehrm_pdf_page_images_inspected_this_run": 0,
     "scholarly_full_text_articles_examined_this_run": 0,
     "casasola_photo_reproduction_rights_cleared_this_run": 0,
-    "original_1985_newspaper_page_images_checked_this_run": 1,
-    "original_1986_government_document_html_sections_read_this_run": 2,
-    "nist_engineering_report_full_pages_inspected_this_run": 0
+    "original_1985_newspaper_page_images_checked_this_run": 0,
+    "original_1986_government_document_html_sections_read_this_run": 0,
+    "nist_engineering_report_full_pages_inspected_this_run": 0,
+    "edited_1971_government_surveillance_transcriptions_read_this_run": 2,
+    "original_1971_archival_folios_inspected_this_run": 0,
+    "inehrm_pdf_screenshot_attempts_failed_this_run": 2
   },
-  "versioned_research_sqlite_gz_path": "research/reconciled/v4_764dbe6a6f82/research_only.sqlite.gz",
-  "versioned_research_sha256": "fccc7b6538ee7803e97822705b12f58e2169a3b17e6f78171f90bdb16c96e0e2",
-  "compressed_sha256": "8219f4fe342355e90618c38784874949f05a26198e366eab1ab3ff1da8b09a43",
-  "replay_report_path": "research/reconciled/v4_764dbe6a6f82/replay_report.json",
+  "versioned_research_sqlite_gz_path": "research/reconciled/v4_9c2b3b6db568/research_only.sqlite.gz",
+  "versioned_research_sha256": "377a98060187a226f0b85ce725255800084fc2c334ed5717bad2a0b92a9e077d",
+  "compressed_sha256": "e6f8a2c7ec76a727da0cd4eb5e28736b3dd14bf934f30470efd4aa6eb8185810",
+  "replay_report_path": "research/reconciled/v4_9c2b3b6db568/replay_report.json",
   "reconciliation_artifact_paths": [
     "research/ledgers/20261113T051238Z-github-full-replay-verified.json",
     "research/reconciled/v4_fd07cfbc7f22/replay_report.json",
@@ -179,7 +182,10 @@
     "research/ledgers/20261114T1106Z-87-batch-1915-hunger-reconciliation-readback.json",
     "research/reconciled/v4_764dbe6a6f82/replay_report.json",
     "research/reconciled/v4_764dbe6a6f82/compressed_sha256.txt",
-    "research/ledgers/20261114T1207Z-88-batch-1985-earthquake-binary-readback.json"
+    "research/ledgers/20261114T1207Z-88-batch-1985-earthquake-binary-readback.json",
+    "research/reconciled/v4_9c2b3b6db568/replay_report.json",
+    "research/reconciled/v4_9c2b3b6db568/compressed_sha256.txt",
+    "research/ledgers/20261114T1301Z-89-batch-halconazo-replay-verification.json"
   ],
   "chapter_audit_artifact_paths": [
     "research/audits/templo-mayor-discover-20261113.json",
@@ -212,7 +218,8 @@
     "research/audits/20261114T0900Z-1629-flood-hydraulic-government-templo-evidence-gates.json",
     "research/audits/20261114T1004Z-monumento-revolucion-1897-2010-templo-source-gates.json",
     "research/audits/20261114T1058Z-1915-hunger-urban-survival-templo-discover-evidence-gates.json",
-    "research/audits/20261114T1158Z-1985-earthquake-citizens-housing-and-memory-templo-discover-evidence-gates.json"
+    "research/audits/20261114T1158Z-1985-earthquake-citizens-housing-and-memory-templo-discover-evidence-gates.json",
+    "research/audits/20261114T1256Z-1971-halconazo-san-cosme-primary-reports-templo-discover-evidence-gates.json"
   ],
   "coverage_artifact_paths": [
     "research/coverage/coverage-matrix-20261113-compact.json",
@@ -247,7 +254,8 @@
     "research/coverage/20261114T0900Z-1629-flood-hydraulic-government-readiness.json",
     "research/coverage/20261114T1004Z-monumento-revolucion-1897-2010-readiness.json",
     "research/coverage/20261114T1058Z-1915-hunger-urban-survival-readiness.json",
-    "research/coverage/20261114T1158Z-1985-earthquake-citizens-housing-and-memory-readiness.json"
+    "research/coverage/20261114T1158Z-1985-earthquake-citizens-housing-and-memory-readiness.json",
+    "research/coverage/20261114T1256Z-1971-halconazo-san-cosme-primary-reports-readiness.json"
   ],
   "evidence_status": "research_database_integrated_noncanonical_not_editorially_corroborated",
   "ready_for_editorial_review": false,
@@ -261,14 +269,21 @@
     "September 1985 rescue/disaster response and specific building failures require engineering dossiers and primary municipal records",
     "Photograph rights for Marco Antonio Cruz, Bordes Mangel and other archive images not cleared; present-day POI site availability and coordinates not validated",
     "1986 journal articles mostly assessed from abstracts; NIST 1987 technical body not examined",
-    "Templo Mayor 1428 political chronology, stratigraphic phases, Coatepec interpretation, conquest witness comparison, Gamio records and original 1978 rescue log remain open"
+    "Templo Mayor 1428 political chronology, stratigraphic phases, Coatepec interpretation, conquest witness comparison, Gamio records and original 1978 rescue log remain open",
+    "37 detached original inspection rows still require manual source-identity review (9 same-URL candidate matches, 28 no matches)",
+    "Two cross-batch metadata conflicts: STG-SRC-MANZANILLA-LOPEZ-FRETER-1996 and v95-sload-cave-2020",
+    "Unregistered PROPOSE_SOURCE_SLOAD_2020_BOTANICAL_DATASET_NOT_IN_CANONICAL",
+    "Unresolved index-only finding STG20261111T1302Z-RECON-V87-PRIMARY-001",
+    "INEHRM 2021 edited 1971 DFS/IPS transcriptions read but original AGN paper/facsimile folios not examined; PDF screenshot service 502/timeout",
+    "Photographic rights, modern site access and marching-route reconstruction not verified",
+    "Templo Mayor 1428, stages, Coatepec, conquest/Gamio and 1978 salvage primary-source gates remain open"
   ],
-  "consumer_instruction": "88-batch versioned research staging has passed reproducible replay, integrity, GitHub readback and compressed SHA-256 verification. Never merge into canonical V97 or publish provisional assertions automatically; 1985 first-day death estimates are historical news claims, not verified totals; historical photos unlicensed; Templo 1428, stages, conquest, 1978 original evidence gates remain open.",
-  "immutable_handoff_path": "research/handoff/history/20261114T1207Z-88-batch-1985-earthquake-verified.json",
-  "previous_manifest_generated_at": "2026-11-14T11:08:24.707Z",
-  "previous_manifest_blob_sha": "90562832733760fddcc4fb8a29db768e9f7e07de",
+  "consumer_instruction": "89 batches / 585 provisional findings replayed into versioned research-only staging. Preserve original canonical V97; do not merge into main, publish as approved, or present 1971 transcriptions as independently verified original archival images. See audit/coverage and ledger.",
+  "immutable_handoff_path": "research/handoff/history/20261114T1301Z-89-batch-halconazo-verified.json",
+  "previous_manifest_generated_at": "2026-11-14T12:09:09.359Z",
+  "previous_manifest_blob_sha": "78bdf7a111f9fd582a03a21878e38d15441ec2f2",
   "handoff_history_append_only": true,
-  "verified_replay_commit_sha": "8cf560014163277feb832ed3293a3ba344d68496",
+  "verified_replay_commit_sha": "d324f6a114396db794233458bca190a283d87213",
   "handoff_history_paths": [
     "research/handoff/history/20261113T0717Z-schema-tests-verified.json",
     "research/handoff/history/20261113T0812Z-detached37-replay-verified.json",
@@ -300,7 +315,8 @@
     "research/handoff/history/20261114T0810Z-84-batch-market-templo-verified.json",
     "research/handoff/history/20261114T1009Z-86-batch-monumento-research-verified.json",
     "research/handoff/history/20261114T1106Z-87-batch-1915-hunger-verified.json",
-    "research/handoff/history/20261114T1207Z-88-batch-1985-earthquake-verified.json"
+    "research/handoff/history/20261114T1207Z-88-batch-1985-earthquake-verified.json",
+    "research/handoff/history/20261114T1301Z-89-batch-halconazo-verified.json"
   ],
   "research_batch_artifact_paths": [
     "research/batches/20261113T0904Z-hospital-jesus-recovery-and-building-phases.json",
@@ -331,19 +347,25 @@
     "research/batches/20261114T0900Z-1629-flood-hydraulic-government.json",
     "research/batches/20261114T1004Z-monumento-revolucion-1897-2010.json",
     "research/batches/20261114T1058Z-1915-hunger-urban-survival.json",
-    "research/batches/20261114T1158Z-1985-earthquake-citizens-housing-and-memory.json"
+    "research/batches/20261114T1158Z-1985-earthquake-citizens-housing-and-memory.json",
+    "research/batches/20261114T1256Z-1971-halconazo-san-cosme-primary-reports.json"
   ],
   "source_identity_crosswalk_path": "research/ledgers/20261113T1803Z-reconciliation-69-batch-baseline-and-evidence.json",
-  "handoff_contract_status": "88_batch_sqlite_integrity_github_full_binary_sha256_verified_noncanonical_unapproved",
+  "handoff_contract_status": "89_batch_sqlite_integrity_and_workflow_git_readback_verified_noncanonical_unapproved",
   "replay_evidence": {
-    "verification_ledger": "research/ledgers/20261114T1207Z-88-batch-1985-earthquake-binary-readback.json",
-    "replay_report_path": "research/reconciled/v4_764dbe6a6f82/replay_report.json",
-    "compressed_checksum_path": "research/reconciled/v4_764dbe6a6f82/compressed_sha256.txt",
-    "readback_binary_git_blob_sha": "1c0ad0d1dad4ff38dcd683521e04abed9b7fd188",
-    "readback_report_git_blob_sha": "12649267fb7bc3b1eab55f1f280b94540b6671d1",
+    "verification_ledger": "research/ledgers/20261114T1301Z-89-batch-halconazo-replay-verification.json",
+    "replay_report_path": "research/reconciled/v4_9c2b3b6db568/replay_report.json",
+    "compressed_checksum_path": "research/reconciled/v4_9c2b3b6db568/compressed_sha256.txt",
+    "readback_binary_git_blob_sha": "34566193a3f35418d64a6bf97a3f5b7e82d4edef",
+    "readback_report_git_blob_sha": "58f7346d183f71fc9650d8dccd72fa63ca807b89",
     "workflow_definition": ".github/workflows/research-replay-staging.yml",
-    "snapshot_commit_sha": "8cf560014163277feb832ed3293a3ba344d68496",
-    "compressed_readback_sha256_matched": true
+    "snapshot_commit_sha": "d324f6a114396db794233458bca190a283d87213",
+    "compressed_readback_sha256_matched": true,
+    "workflows": [
+      43597455139,
+      43597455147
+    ],
+    "independent_binary_download_blocked": true
   },
   "research_lineage_commits": [
     "f4d9c526bf59dadacad39d79c7b35d3dc8aafe7f",
@@ -407,44 +429,47 @@
     "b95df891e86c630d60241f50a809d605ca2ecb06",
     "764dbe6a6f82e80386e3dac6534e08cb09072fe5",
     "8cf560014163277feb832ed3293a3ba344d68496",
-    "2e28a0463eca18e27222229514d514d1014617dc"
+    "2e28a0463eca18e27222229514d514d1014617dc",
+    "9c2b3b6db5689b4e0662afe175e0592781b24c0a",
+    "d324f6a114396db794233458bca190a283d87213"
   ],
-  "prior_handoff_history_commit_sha": "2e28a0463eca18e27222229514d514d1014617dc",
-  "research_pipeline_status": "88_batches_replayed_noncanonical_staging_V97_unchanged_main_untouched_editorial_unapproved",
-  "input_timestamp_note": "Prior handoff verified 87 batches; fresh 88-batch report and input tree reread on research-persistence; main Templo reader e18b0b6a verified read-only. 1985 newspaper page screenshot inspected.",
-  "verified_replay_commit_status": "exact_snapshot_commit_and_GitHub_persisted_binary_SHA256_verified",
+  "prior_handoff_history_commit_sha": "0e80ecab08b1a8a5a22740f2b1688457bdc34df5",
+  "research_pipeline_status": "89_batches_replayed_noncanonical_staging_V97_unchanged_main_untouched_editorial_unapproved",
+  "input_timestamp_note": "Branch head, V97 hash and prior 88-batch handoff reread. New 89-batch SQLite report, checksum file, file/blob metadata and workflow success verified. 1971 INEHRM PDF transcription inspected in text; screenshot failed; original AGN folios not inspected.",
+  "verified_replay_commit_status": "workflow_git_show_checksum_and_repository_metadata_verified_independent_binary_download_blocked",
   "verified_binary_readback": {
-    "commit_sha": "8cf560014163277feb832ed3293a3ba344d68496",
-    "git_blob_sha": "1c0ad0d1dad4ff38dcd683521e04abed9b7fd188",
-    "report_blob_sha": "12649267fb7bc3b1eab55f1f280b94540b6671d1",
-    "compressed_sha256": "8219f4fe342355e90618c38784874949f05a26198e366eab1ab3ff1da8b09a43",
-    "uncompressed_sqlite_sha256": "fccc7b6538ee7803e97822705b12f58e2169a3b17e6f78171f90bdb16c96e0e2",
-    "verified_report_path": "research/reconciled/v4_764dbe6a6f82/replay_report.json",
+    "commit_sha": "d324f6a114396db794233458bca190a283d87213",
+    "git_blob_sha": "34566193a3f35418d64a6bf97a3f5b7e82d4edef",
+    "report_blob_sha": "58f7346d183f71fc9650d8dccd72fa63ca807b89",
+    "compressed_sha256": "e6f8a2c7ec76a727da0cd4eb5e28736b3dd14bf934f30470efd4aa6eb8185810",
+    "uncompressed_sqlite_sha256": "377a98060187a226f0b85ce725255800084fc2c334ed5717bad2a0b92a9e077d",
+    "verified_report_path": "research/reconciled/v4_9c2b3b6db568/replay_report.json",
     "sqlite_integrity": "ok",
     "foreign_key_violations": 0,
     "canonical_rows_unchanged": true,
-    "compress_digest_recomputed_independently_from_github_fetched_base64": true
+    "compress_digest_recomputed_independently_from_github_fetched_base64": false,
+    "verification_method": "GitHub Actions checkout/gzip/gits how readback and SHA match; external binary download via connector unavailable"
   },
-  "previous_immutable_handoff_path": "research/handoff/history/20261114T1106Z-87-batch-1915-hunger-verified.json",
-  "latest_handoff_history_path": "research/handoff/history/20261114T1207Z-88-batch-1985-earthquake-verified.json",
-  "latest_reconciliation_ledger_path": "research/ledgers/20261114T1207Z-88-batch-1985-earthquake-binary-readback.json",
+  "previous_immutable_handoff_path": "research/handoff/history/20261114T1207Z-88-batch-1985-earthquake-verified.json",
+  "latest_handoff_history_path": "research/handoff/history/20261114T1301Z-89-batch-halconazo-verified.json",
+  "latest_reconciliation_ledger_path": "research/ledgers/20261114T1301Z-89-batch-halconazo-replay-verification.json",
   "latest_research_integrity": {
     "sqlite_integrity": "ok",
     "foreign_key_violations": 0,
     "canonical_tables_preserved": 88,
     "canonical_rows_unchanged": true,
     "github_binary_sha256_readback_verified": true,
-    "github_binary_blob_sha": "1c0ad0d1dad4ff38dcd683521e04abed9b7fd188",
-    "github_report_blob_sha": "12649267fb7bc3b1eab55f1f280b94540b6671d1",
+    "github_binary_blob_sha": "34566193a3f35418d64a6bf97a3f5b7e82d4edef",
+    "github_report_blob_sha": "58f7346d183f71fc9650d8dccd72fa63ca807b89",
     "main_reader_blob_verified": "e18b0b6af33e61c1831990d84a7e5effbf13805b",
     "workflow_generated_snapshot_commit_sha_verified": true,
     "hash_algorithm": "SHA-256",
-    "hash_verification_method": "Independent JS SHA-256 of complete GitHub gzip blob decoded from base64; matches committed compressed_sha256.txt; uncompressed digest and SQL checks verified by GitHub Actions workflow"
+    "hash_verification_method": "GitHub Actions workflow fetched pushed snapshot and checked checksum; GitHub REST file metadata, report and checksum re-fetched; independent binary download unavailable"
   },
   "reconciliation_verified": true,
   "auto_merge_permitted": false,
   "publication_approved": false,
-  "latest_batch_artifact_path": "research/batches/20261114T1158Z-1985-earthquake-citizens-housing-and-memory.json",
-  "latest_coverage_artifact_path": "research/coverage/20261114T1158Z-1985-earthquake-citizens-housing-and-memory-readiness.json",
-  "latest_chapter_audit_artifact_path": "research/audits/20261114T1158Z-1985-earthquake-citizens-housing-and-memory-templo-discover-evidence-gates.json"
+  "latest_batch_artifact_path": "research/batches/20261114T1256Z-1971-halconazo-san-cosme-primary-reports.json",
+  "latest_coverage_artifact_path": "research/coverage/20261114T1256Z-1971-halconazo-san-cosme-primary-reports-readiness.json",
+  "latest_chapter_audit_artifact_path": "research/audits/20261114T1256Z-1971-halconazo-san-cosme-primary-reports-templo-discover-evidence-gates.json"
 }
