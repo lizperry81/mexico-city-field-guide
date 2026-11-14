@@ -1,8 +1,8 @@
 {
   "schema_version": 4,
   "kind": "research_to_app_handoff",
-  "generated_at": "2026-11-14T14:08:00Z",
-  "research_commit_sha": "24c4d17029284966912c15b2d422f7b308a5c36f",
+  "generated_at": "2026-11-14T15:02:00Z",
+  "research_commit_sha": "74470d2dbe713c70a4efe39f710313112b40a4c4",
   "canonical_version": "V97",
   "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
   "canonical_status": "unchanged_provisional_V97_not_promoted",
@@ -14,15 +14,15 @@
     "canonical_source_inspections": 9
   },
   "staged_counts": {
-    "scope": "90 GitHub research batches; 596 substantive provisional findings; unchanged canonical V97 and no editorial approval",
-    "github_batches_replayed": 90,
-    "github_distinct_substantive_finding_ids": 596,
+    "scope": "91 GitHub research batches; 607 provisional findings; unchanged V97 and no editorial approval",
+    "github_batches_replayed": 91,
+    "github_distinct_substantive_finding_ids": 607,
     "github_index_only_refs_total": 23,
     "github_index_only_refs_unresolved": 1,
-    "raw_batch_documents_in_new_sqlite": 90,
-    "github_inspection_entries": 298,
-    "github_inspection_payload_rows": 298,
-    "github_source_candidates": 260,
+    "raw_batch_documents_in_new_sqlite": 91,
+    "github_inspection_entries": 306,
+    "github_inspection_payload_rows": 306,
+    "github_source_candidates": 268,
     "unknown_source_refs": 1,
     "unknown_source_refs_with_inspection_metadata": [],
     "unknown_source_refs_without_inspection_metadata": [
@@ -35,10 +35,10 @@
     "detached_source_identity_review_pending": 37,
     "external_staging_semantic_join_verified": false,
     "source_id_provisional_recoveries_this_run": 0,
-    "new_scholarly_source_candidate_records_this_run": 7,
-    "new_source_inspection_metadata_this_run": 7,
+    "new_scholarly_source_candidate_records_this_run": 8,
+    "new_source_inspection_metadata_this_run": 8,
     "new_historical_finding_candidates_this_run": 11,
-    "new_source_candidates_all_types_this_run": 7,
+    "new_source_candidates_all_types_this_run": 8,
     "original_government_document_machine_text_sections_examined_this_run": 0,
     "original_newspaper_excerpts_through_modern_republication_examined_this_run": 0,
     "government_html_pages_examined_this_run": 1,
@@ -69,12 +69,14 @@
     "edited_1971_government_surveillance_transcriptions_read_this_run": 0,
     "original_1971_archival_folios_inspected_this_run": 0,
     "inehrm_pdf_screenshot_attempts_failed_this_run": 0,
-    "pdf_page_screenshot_attempts_failed_this_run": 3
+    "pdf_page_screenshot_attempts_failed_this_run": 3,
+    "original_1928_newspaper_page_images_checked_this_run": 0,
+    "original_1934_architectural_plan_images_checked_this_run": 0
   },
-  "versioned_research_sqlite_gz_path": "research/reconciled/v4_1fb728ae0a72/research_only.sqlite.gz",
-  "versioned_research_sha256": "c5939bc79f7174aaf9bd92949167c5015238217a60bef6cdd9dd12a4869c6f7a",
-  "compressed_sha256": "3ba2cbb3bf15baee7558b40d74f77deeaef1690bb256d15ff7f79366a6eb8cd3",
-  "replay_report_path": "research/reconciled/v4_1fb728ae0a72/replay_report.json",
+  "versioned_research_sqlite_gz_path": "research/reconciled/v4_74470d2dbe71/research_only.sqlite.gz",
+  "versioned_research_sha256": "3830ca5a537f0fea80d559d2010e4d056d490024b833553c5ecc6d1615938af9",
+  "compressed_sha256": "1a716ba855d778c58f846699d690216070a12f394f16ac24807b9b2f6f604d52",
+  "replay_report_path": "research/reconciled/v4_74470d2dbe71/replay_report.json",
   "reconciliation_artifact_paths": [
     "research/ledgers/20261113T051238Z-github-full-replay-verified.json",
     "research/reconciled/v4_fd07cfbc7f22/replay_report.json",
@@ -189,7 +191,11 @@
     "research/ledgers/20261114T1301Z-89-batch-halconazo-replay-verification.json",
     "research/ledgers/20261114T1407Z-90-batch-CUPA-replay-readback.json",
     "research/reconciled/v4_1fb728ae0a72/replay_report.json",
-    "research/reconciled/v4_1fb728ae0a72/compressed_sha256.txt"
+    "research/reconciled/v4_1fb728ae0a72/compressed_sha256.txt",
+    "research/batches/20261114T1457Z-obregon-la-bombilla-1928-1935.json",
+    "research/ledgers/20261114T1502Z-91-batch-obregon-replay-and-readback.json",
+    "research/reconciled/v4_74470d2dbe71/replay_report.json",
+    "research/reconciled/v4_74470d2dbe71/compressed_sha256.txt"
   ],
   "chapter_audit_artifact_paths": [
     "research/audits/templo-mayor-discover-20261113.json",
@@ -224,7 +230,8 @@
     "research/audits/20261114T1058Z-1915-hunger-urban-survival-templo-discover-evidence-gates.json",
     "research/audits/20261114T1158Z-1985-earthquake-citizens-housing-and-memory-templo-discover-evidence-gates.json",
     "research/audits/20261114T1256Z-1971-halconazo-san-cosme-primary-reports-templo-discover-evidence-gates.json",
-    "research/audits/20261114T1400Z-CUPA-housing-institutions-1947-1959-templo-discover-gates.json"
+    "research/audits/20261114T1400Z-CUPA-housing-institutions-1947-1959-templo-discover-gates.json",
+    "research/audits/20261114T1457Z-obregon-la-bombilla-1928-1935-templo-discover-source-gates.json"
   ],
   "coverage_artifact_paths": [
     "research/coverage/coverage-matrix-20261113-compact.json",
@@ -261,27 +268,27 @@
     "research/coverage/20261114T1058Z-1915-hunger-urban-survival-readiness.json",
     "research/coverage/20261114T1158Z-1985-earthquake-citizens-housing-and-memory-readiness.json",
     "research/coverage/20261114T1256Z-1971-halconazo-san-cosme-primary-reports-readiness.json",
-    "research/coverage/20261114T1400Z-CUPA-housing-institutions-1947-1959-readiness.json"
+    "research/coverage/20261114T1400Z-CUPA-housing-institutions-1947-1959-readiness.json",
+    "research/coverage/20261114T1457Z-obregon-la-bombilla-1928-1935-readiness.json"
   ],
-  "evidence_status": "versioned_research_database_integrated_noncanonical_uncorroborated_CUPA_and_CUPJ_secondary_sources",
+  "evidence_status": "versioned_research_database_integrated_noncanonical_uncorroborated_1928_1935_La_Bombilla",
   "ready_for_editorial_review": false,
   "ready_for_publication": false,
   "canonical_promoted": false,
   "blockers": [
-    "37 detached inspections await source identity review: 9 same-URL candidates and 28 no match; all preserved, none forcibly merged",
-    "Two inherited cross-batch bibliographic metadata collisions, unregistered SLOAD 2020 botanical dataset, and one unresolved index-only finding",
-    "1949 de Garay footnote anachronistically attributes original CUPA management to ISSSTE, founded by law 30 December 1959; original Pensiones agency documents needed",
-    "CUPA high-rise block count contradictory (seven per de Garay; six per SOSBrutalism); original numbered plans not inspected",
-    "Present-day site access, resident privacy, archival mural/photograph rights and 1949 institutional records remain unverified",
-    "Templo Mayor Triple Alliance 1428, stages, Coatepec/Coyolxauhqui, conquest testimony, Gamio and original February 1978 rescue source gates remain open",
-    "PDF page screenshot service timed out in 3 attempts; scholarly PDF extracted text read but original oral interview recordings not checked"
+    "37 detached inspections still require audited source-identity crosswalk",
+    "2 cross-batch source-metadata collisions remain unresolved",
+    "1 proposed botanical source unresolved",
+    "1 index-only finding unresolved",
+    "Original 1928 El Universal Gráfico and 1934 UNAM plan not directly inspected",
+    "INAH ficha under validation; historic photographs rights not cleared"
   ],
-  "consumer_instruction": "90 batches / 596 provisional findings replayed into versioned noncanonical research-only SQLite. Preserve canonical V97; never merge or publish without independent editorial corroboration. CUPA institutional anachronism and building-count conflict require correction before public copy. See latest ledger, audit, coverage and immutable handoff history.",
-  "immutable_handoff_path": "research/handoff/history/20261114T1407Z-90-batch-CUPA-verified.json",
-  "previous_manifest_generated_at": "2026-11-14T13:02:11.526Z",
-  "previous_manifest_blob_sha": "a37937cb0002d9ddbdf89b24e63797d839678527",
+  "consumer_instruction": "91 batches / 607 provisional findings replayed into versioned NONCANONICAL SQLite. Do not merge/publish or claim editorial corroboration. Source-located 1928 La Bombilla and 1934-35 memorial research awaiting original newspaper, signed architectural drawing and rights. See audit, coverage, readback ledger and immutable history.",
+  "immutable_handoff_path": "research/handoff/history/20261114T1502Z-91-batch-obregon-verified.json",
+  "previous_manifest_generated_at": "2026-11-14T14:08:00Z",
+  "previous_manifest_blob_sha": "de1c68f37674803972136fbe6739cade93d0aa0d",
   "handoff_history_append_only": true,
-  "verified_replay_commit_sha": "7443ccd48f53eb6b9820958bed22155400a98149",
+  "verified_replay_commit_sha": "93fe2ea3c2cb6352027784f986ffb68101ef059f",
   "handoff_history_paths": [
     "research/handoff/history/20261113T0717Z-schema-tests-verified.json",
     "research/handoff/history/20261113T0812Z-detached37-replay-verified.json",
@@ -315,7 +322,8 @@
     "research/handoff/history/20261114T1106Z-87-batch-1915-hunger-verified.json",
     "research/handoff/history/20261114T1207Z-88-batch-1985-earthquake-verified.json",
     "research/handoff/history/20261114T1301Z-89-batch-halconazo-verified.json",
-    "research/handoff/history/20261114T1407Z-90-batch-CUPA-verified.json"
+    "research/handoff/history/20261114T1407Z-90-batch-CUPA-verified.json",
+    "research/handoff/history/20261114T1502Z-91-batch-obregon-verified.json"
   ],
   "research_batch_artifact_paths": [
     "research/batches/20261113T0904Z-hospital-jesus-recovery-and-building-phases.json",
@@ -348,24 +356,26 @@
     "research/batches/20261114T1058Z-1915-hunger-urban-survival.json",
     "research/batches/20261114T1158Z-1985-earthquake-citizens-housing-and-memory.json",
     "research/batches/20261114T1256Z-1971-halconazo-san-cosme-primary-reports.json",
-    "research/batches/20261114T1400Z-CUPA-housing-institutions-1947-1959.json"
+    "research/batches/20261114T1400Z-CUPA-housing-institutions-1947-1959.json",
+    "research/batches/20261114T1457Z-obregon-la-bombilla-1928-1935.json"
   ],
   "source_identity_crosswalk_path": "research/ledgers/20261113T1803Z-reconciliation-69-batch-baseline-and-evidence.json",
-  "handoff_contract_status": "90_batch_sqlite_integrity_workflow_git_readback_verified_noncanonical_unapproved",
+  "handoff_contract_status": "91_batch_sqlite_integrity_workflow_git_readback_verified_noncanonical_unapproved",
   "replay_evidence": {
-    "verification_ledger": "research/ledgers/20261114T1407Z-90-batch-CUPA-replay-readback.json",
-    "replay_report_path": "research/reconciled/v4_1fb728ae0a72/replay_report.json",
-    "compressed_checksum_path": "research/reconciled/v4_1fb728ae0a72/compressed_sha256.txt",
-    "readback_binary_git_blob_sha": "661d340b1969f0f3c7b2dcc450b0bcb2092d06be",
-    "readback_report_git_blob_sha": "4b9b8b1ccd24fd56e57e9cee88485b83b7c53c40",
+    "verification_ledger": "research/ledgers/20261114T1502Z-91-batch-obregon-replay-and-readback.json",
+    "replay_report_path": "research/reconciled/v4_74470d2dbe71/replay_report.json",
+    "compressed_checksum_path": "research/reconciled/v4_74470d2dbe71/compressed_sha256.txt",
+    "readback_binary_git_blob_sha": "fa413c7444a1741938a32fa9031b6ea48a6ced41",
+    "readback_report_git_blob_sha": "292cbfca69333a898284b2988526fc8f78c1bac5",
     "workflow_definition": ".github/workflows/research-replay-staging.yml",
-    "snapshot_commit_sha": "7443ccd48f53eb6b9820958bed22155400a98149",
+    "snapshot_commit_sha": "93fe2ea3c2cb6352027784f986ffb68101ef059f",
     "compressed_readback_sha256_matched": true,
     "workflows": [
-      43603072237,
-      43603143775
+      43607694656,
+      43607694569
     ],
-    "independent_binary_download_blocked": true
+    "independent_binary_download_blocked": true,
+    "verification_method": "GitHub Actions git show compressed SHA256 and SQLite integrity + report and blob metadata readback"
   },
   "research_lineage_commits": [
     "f4d9c526bf59dadacad39d79c7b35d3dc8aafe7f",
@@ -438,45 +448,45 @@
     "1fb728ae0a72585b6fcbb6f1c4d3c9ef86561773",
     "7443ccd48f53eb6b9820958bed22155400a98149",
     "e8a31a2e11d64b74a486ce52563ef35ee06d2bdc",
-    "608339b36f3a58a746538eb4873cc8816f4501c7"
+    "608339b36f3a58a746538eb4873cc8816f4501c7",
+    "74470d2dbe713c70a4efe39f710313112b40a4c4",
+    "7819c88b73197f98757c2b9e22ea411697ae96a6",
+    "44f3e257cb9b03d5b3abf11fcf7cabbb80d2c4d7",
+    "93fe2ea3c2cb6352027784f986ffb68101ef059f",
+    "7d5baef8d7518e38c70ec884153d2ee20168d225",
+    "6adecc5813ca982cbacc69935dfc178196d3d465"
   ],
-  "prior_handoff_history_commit_sha": "0e80ecab08b1a8a5a22740f2b1688457bdc34df5",
-  "research_pipeline_status": "90_batches_replayed_noncanonical_staging_V97_unchanged_main_untouched_editorial_unapproved",
+  "prior_handoff_history_commit_sha": "6adecc5813ca982cbacc69935dfc178196d3d465",
+  "research_pipeline_status": "91_batches_replayed_noncanonical_staging_V97_unchanged_main_untouched_editorial_unapproved",
   "input_timestamp_note": "Authoring after 2026-11-14 14:00Z; sequential audit and coverage writes caused first replay push race; workflow repaired and complete 90-batch snapshot verified at immutable path.",
-  "verified_replay_commit_status": "successful_workflow_git_show_compressed_hash_and_SQLite_report_readback_external_binary_not_independently_downloaded",
+  "verified_replay_commit_status": "completed workflow Git show compressed checksum verified + independent JSON/metadata readback; separate external binary not downloaded",
   "verified_binary_readback": {
-    "commit_sha": "7443ccd48f53eb6b9820958bed22155400a98149",
-    "git_blob_sha": "661d340b1969f0f3c7b2dcc450b0bcb2092d06be",
-    "report_blob_sha": "4b9b8b1ccd24fd56e57e9cee88485b83b7c53c40",
-    "compressed_sha256": "3ba2cbb3bf15baee7558b40d74f77deeaef1690bb256d15ff7f79366a6eb8cd3",
-    "uncompressed_sqlite_sha256": "c5939bc79f7174aaf9bd92949167c5015238217a60bef6cdd9dd12a4869c6f7a",
-    "verified_report_path": "research/reconciled/v4_1fb728ae0a72/replay_report.json",
+    "commit_sha": "93fe2ea3c2cb6352027784f986ffb68101ef059f",
+    "git_blob_sha": "fa413c7444a1741938a32fa9031b6ea48a6ced41",
+    "report_blob_sha": "292cbfca69333a898284b2988526fc8f78c1bac5",
+    "compressed_sha256": "1a716ba855d778c58f846699d690216070a12f394f16ac24807b9b2f6f604d52",
+    "uncompressed_sqlite_sha256": "3830ca5a537f0fea80d559d2010e4d056d490024b833553c5ecc6d1615938af9",
+    "verified_report_path": "research/reconciled/v4_74470d2dbe71/replay_report.json",
     "sqlite_integrity": "ok",
     "foreign_key_violations": 0,
     "canonical_rows_unchanged": true,
     "compress_digest_recomputed_independently_from_github_fetched_base64": false,
-    "verification_method": "GitHub Actions gzip -t, SQLite integrity/foreign key checks, persisted Git show compressed SHA-256 comparison and GitHub contents file metadata/report readback."
+    "verification_method": "Workflow Git show compressed SHA256 comparison; independent GitHub report and file metadata readback."
   },
-  "previous_immutable_handoff_path": "research/handoff/history/20261114T1301Z-89-batch-halconazo-verified.json",
-  "latest_handoff_history_path": "research/handoff/history/20261114T1407Z-90-batch-CUPA-verified.json",
-  "latest_reconciliation_ledger_path": "research/ledgers/20261114T1407Z-90-batch-CUPA-replay-readback.json",
+  "previous_immutable_handoff_path": "research/handoff/history/20261114T1407Z-90-batch-CUPA-verified.json",
+  "latest_handoff_history_path": "research/handoff/history/20261114T1502Z-91-batch-obregon-verified.json",
+  "latest_reconciliation_ledger_path": "research/ledgers/20261114T1502Z-91-batch-obregon-replay-and-readback.json",
   "latest_research_integrity": {
     "sqlite_integrity": "ok",
     "foreign_key_violations": 0,
     "canonical_tables_preserved": 88,
     "canonical_rows_unchanged": true,
-    "github_binary_sha256_readback_verified": true,
-    "github_binary_blob_sha": "661d340b1969f0f3c7b2dcc450b0bcb2092d06be",
-    "github_report_blob_sha": "4b9b8b1ccd24fd56e57e9cee88485b83b7c53c40",
-    "main_reader_blob_verified": "e18b0b6af33e61c1831990d84a7e5effbf13805b",
-    "workflow_generated_snapshot_commit_sha_verified": true,
-    "hash_algorithm": "SHA-256",
-    "hash_verification_method": "GitHub Actions gzip -t, SQLite integrity/foreign key checks, persisted Git show compressed SHA-256 comparison and GitHub contents file metadata/report readback."
+    "compressed_sha256": "1a716ba855d778c58f846699d690216070a12f394f16ac24807b9b2f6f604d52"
   },
   "reconciliation_verified": true,
   "auto_merge_permitted": false,
   "publication_approved": false,
-  "latest_batch_artifact_path": "research/batches/20261114T1400Z-CUPA-housing-institutions-1947-1959.json",
-  "latest_coverage_artifact_path": "research/coverage/20261114T1400Z-CUPA-housing-institutions-1947-1959-readiness.json",
-  "latest_chapter_audit_artifact_path": "research/audits/20261114T1400Z-CUPA-housing-institutions-1947-1959-templo-discover-gates.json"
+  "latest_batch_artifact_path": "research/batches/20261114T1457Z-obregon-la-bombilla-1928-1935.json",
+  "latest_coverage_artifact_path": "research/coverage/20261114T1457Z-obregon-la-bombilla-1928-1935-readiness.json",
+  "latest_chapter_audit_artifact_path": "research/audits/20261114T1457Z-obregon-la-bombilla-1928-1935-templo-discover-source-gates.json"
 }
