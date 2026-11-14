@@ -1,0 +1,468 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261114T1457Z-obregon-la-bombilla-1928-1935",
+  "generated_at": "2026-11-14T14:57:32Z",
+  "branch": "research-persistence",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "storage_role": "immutable_noncanonical_research_batch",
+  "previous_verified_replay": "research/reconciled/v4_1fb728ae0a72/replay_report.json",
+  "prior_verified_counts": {
+    "github_batches_replayed": 90,
+    "staged_findings": 596,
+    "source_candidates": 260,
+    "inspection_entries": 298,
+    "canonical_sources": 616,
+    "canonical_claims": 422,
+    "canonical_links": 403,
+    "canonical_findings": 68
+  },
+  "research_scope": "11 provisional findings (5 general history, 4 site-oriented, 2 material-culture/architectural), 8 source candidates and 8 inspections from named INAH, INEHRM, UNAM, AGN and historical magazine locations. Direct web article and collection catalog text reviewed; original 1928 newspaper, 1934 signed plan and photo negatives not viewed. Distinguish murder, succession politics, and later official memorialization.",
+  "sources": [
+    {
+      "id": "STG-SRC-20261114-OBREGON-INAH-CATALOG",
+      "title": "Monumento Alvaro Obregón, Catálogo Nacional de Monumentos Históricos Inmuebles, ficha I-0013300028",
+      "authors": "INAH",
+      "publication": "Catálogo nacional, ficha con aviso de proceso de validación",
+      "url": "https://catalogonacionalmhi.inah.gob.mx/consulta_publica/detalle/10328",
+      "access_scope": "Indexed catalog page: ubicación Insurgentes y Arenal; transcription of dedication stating work begun June 1934, inaugurated July 17 1935; architect Aragón Echegaray and sculptures Asúnsolo. Direct open yielded 502.",
+      "status": "institutional_catalog_indexed_text_not_primary_inscription_seen"
+    },
+    {
+      "id": "STG-SRC-20261114-OBREGON-UNAM-PLAN",
+      "title": "Monumento al Gral. A. Obregón en La Bombilla: basamento y esculturas chiluca, vista lateral",
+      "authors": "Enrique Aragón Echegaray; Ignacio Asúnsolo",
+      "publication": "Manuscript architectural drawing, 11 June 1934, plano no. 15; UNAM areas verdes collection, Koha bibliographic ID 2169",
+      "url": "https://areasverdescdmx.iib.unam.mx/cgi-bin/koha/opac-ISBDdetail.pl?biblionumber=2169",
+      "access_scope": "Search-index bibliographic metadata: 1:20 scale, 82 × 105 cm, restored; identifies drawn stone plinth and sculptural group labels; original drawing image NOT viewed; direct page timed out.",
+      "status": "unam_archival_plan_catalog_record_only"
+    },
+    {
+      "id": "STG-SRC-20261114-OBREGON-INEHRM-PNR",
+      "title": "85º Aniversario de la Fundación del Partido Nacional Revolucionario",
+      "authors": "INEHRM",
+      "publication": "Institutional historical dossier, 2014",
+      "url": "https://inehrm.gob.mx/es/inehrm/Articulo_85_aniversario_de_la_Fundacion_del_Partido_Nacional_Revolucionario_PNR",
+      "access_scope": "Indexed historical narrative and 1928-29 chronology: 17 July murder, 1 September Calles report, PNR founded 4 March 1929; direct open timed out.",
+      "status": "government_secondary_historical_dossier_index_only"
+    },
+    {
+      "id": "STG-SRC-20261114-OBREGON-INEHRM-NACIONAL",
+      "title": "85º Aniversario de la fundación de El Nacional",
+      "authors": "INEHRM",
+      "publication": "Institutional dossier, updated January 19 2015",
+      "url": "https://www.inehrm.gob.mx/es/inehrm/85_Aniversario_de_la_fundacion_de_el_Nacional",
+      "access_scope": "Direct HTML lines 41-55, 60-65, 100-128, 143-156: death and transition chronology, electoral propaganda newspaper May 27 1929, archive exact original document links; not original newspaper pages.",
+      "status": "institutional_full_html_historical_synthesis_with_original_document_locators"
+    },
+    {
+      "id": "STG-SRC-20261114-OBREGON-RHM-BOMBILLA",
+      "title": "Luces sobre La Bombilla",
+      "authors": "José L. Juárez López; Víctor M. Martínez Ocampo",
+      "publication": "Relatos e Historias en México, no. 94, web excerpt",
+      "url": "https://relatosehistorias.mx/nuestras-historias/luces-sobre-la-bombilla",
+      "access_scope": "Direct HTML lines 30-55: period restaurant facilities, banquet and shooting narrative, cites original El Universal Gráfico July 18 1928 eyewitness report; original issue not inspected. Casasola SINAFO inventory 642031 and 45235 captions.",
+      "status": "secondary_historical_excerpt_explicit_primary_newspaper_locator"
+    },
+    {
+      "id": "STG-SRC-20261114-OBREGON-AGN-TORAL",
+      "title": "AGNRecuerda: el último fusilado de Lecumberri",
+      "authors": "Archivo General de la Nación",
+      "publication": "Institutional archival-history article, 9 February 2020",
+      "url": "https://www.gob.mx/agn/articulos/agnrecuerda-el-ultimo-fusilado-de-lecumberri",
+      "access_scope": "Search-index text on execution at Lecumberri February 9 1929 and contemporaneous 1929 El Universal newspaper image; direct page responded 403. Case-file archival folios not inspected.",
+      "status": "institutional_archival_summary_index_only"
+    },
+    {
+      "id": "STG-SRC-20261114-OBREGON-CID-PHOTO",
+      "title": "Monumento a Obregón",
+      "authors": "Museo Nacional de Culturas Populares; Centro de Información y Documentación Alberto Beltrán",
+      "publication": "Historic photographic catalog, field survey c.1980s; class C.153 H.33 Y H.34; barcode 77538; roll M-1253",
+      "url": "https://cid-albertobeltran.cultura.gob.mx/catalogo-en-linea-fototeca/monumento-a-obregon/",
+      "access_scope": "Direct catalog lines 43-72: photographic roll, architectural and sculptural survey, relief Sacrificio, female fertility allegory, Art Deco attribution to a separate linked tourism source; actual negatives and reproduction license not inspected.",
+      "status": "government_collection_catalog_direct_html_images_unseen"
+    },
+    {
+      "id": "STG-SRC-20261114-OBREGON-INEHRM-CALLES",
+      "title": "El Exilio de Plutarco Elías Calles",
+      "authors": "INEHRM",
+      "publication": "Institutional study of Calles/Cárdenas political conflict",
+      "url": "https://inehrm.gob.mx/en/inehrm/Conflicto_entre_Calles_y_Cardenas",
+      "access_scope": "Indexed article: death 1928, temporary constitutional solution did not remove Calles's informal power; struggle culminating in 1936 expulsion. Full article not opened.",
+      "status": "institutional_historical_overview_index_only"
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "20261114T1457Z-obregon-la-bombilla-1928-1935-INS-01",
+      "source_id": "STG-SRC-20261114-OBREGON-INAH-CATALOG",
+      "locator": "Indexed catalog page: ubicación Insurgentes y Arenal; transcription of dedication stating work begun June 1934, inaugurated July 17 1935; architect Aragón Echegaray and sculptures Asúnsolo. Direct open yielded 502.",
+      "access": "institutional_catalog_indexed_text_not_primary_inscription_seen",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "INAH page warns that ficha is still in validation; ascribed responsibility for conspiracy must not be treated as adjudicated historical fact."
+    },
+    {
+      "id": "20261114T1457Z-obregon-la-bombilla-1928-1935-INS-02",
+      "source_id": "STG-SRC-20261114-OBREGON-UNAM-PLAN",
+      "locator": "Search-index bibliographic metadata: 1:20 scale, 82 × 105 cm, restored; identifies drawn stone plinth and sculptural group labels; original drawing image NOT viewed; direct page timed out.",
+      "access": "unam_archival_plan_catalog_record_only",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Plan catalog only: bibliographic record is not direct examination of June 11 1934 drawing."
+    },
+    {
+      "id": "20261114T1457Z-obregon-la-bombilla-1928-1935-INS-03",
+      "source_id": "STG-SRC-20261114-OBREGON-INEHRM-PNR",
+      "locator": "Indexed historical narrative and 1928-29 chronology: 17 July murder, 1 September Calles report, PNR founded 4 March 1929; direct open timed out.",
+      "access": "government_secondary_historical_dossier_index_only",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Access limits kept in cited source record."
+    },
+    {
+      "id": "20261114T1457Z-obregon-la-bombilla-1928-1935-INS-04",
+      "source_id": "STG-SRC-20261114-OBREGON-INEHRM-NACIONAL",
+      "locator": "Direct HTML lines 41-55, 60-65, 100-128, 143-156: death and transition chronology, electoral propaganda newspaper May 27 1929, archive exact original document links; not original newspaper pages.",
+      "access": "institutional_full_html_historical_synthesis_with_original_document_locators",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Access limits kept in cited source record."
+    },
+    {
+      "id": "20261114T1457Z-obregon-la-bombilla-1928-1935-INS-05",
+      "source_id": "STG-SRC-20261114-OBREGON-RHM-BOMBILLA",
+      "locator": "Direct HTML lines 30-55: period restaurant facilities, banquet and shooting narrative, cites original El Universal Gráfico July 18 1928 eyewitness report; original issue not inspected. Casasola SINAFO inventory 642031 and 45235 captions.",
+      "access": "secondary_historical_excerpt_explicit_primary_newspaper_locator",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Secondary synthesis quotes or cites 18 July 1928 original newspaper; original not inspected. Photograph inventory numbers are not reproduction licenses."
+    },
+    {
+      "id": "20261114T1457Z-obregon-la-bombilla-1928-1935-INS-06",
+      "source_id": "STG-SRC-20261114-OBREGON-AGN-TORAL",
+      "locator": "Search-index text on execution at Lecumberri February 9 1929 and contemporaneous 1929 El Universal newspaper image; direct page responded 403. Case-file archival folios not inspected.",
+      "access": "institutional_archival_summary_index_only",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Access limits kept in cited source record."
+    },
+    {
+      "id": "20261114T1457Z-obregon-la-bombilla-1928-1935-INS-07",
+      "source_id": "STG-SRC-20261114-OBREGON-CID-PHOTO",
+      "locator": "Direct catalog lines 43-72: photographic roll, architectural and sculptural survey, relief Sacrificio, female fertility allegory, Art Deco attribution to a separate linked tourism source; actual negatives and reproduction license not inspected.",
+      "access": "government_collection_catalog_direct_html_images_unseen",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Access limits kept in cited source record."
+    },
+    {
+      "id": "20261114T1457Z-obregon-la-bombilla-1928-1935-INS-08",
+      "source_id": "STG-SRC-20261114-OBREGON-INEHRM-CALLES",
+      "locator": "Indexed article: death 1928, temporary constitutional solution did not remove Calles's informal power; struggle culminating in 1936 expulsion. Full article not opened.",
+      "access": "institutional_historical_overview_index_only",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Access limits kept in cited source record."
+    }
+  ],
+  "findings": [
+    {
+      "id": "20261114T1457Z-obregon-la-bombilla-1928-1935-01",
+      "classification": "broad_history",
+      "assertion": "Álvaro Obregón was president-elect—not sitting president—when José de León Toral assassinated him during a banquet at La Bombilla restaurant in San Ángel on 17 July 1928. The present-day memorial replaces the restaurant site.",
+      "date_or_range": "1928-07-17",
+      "period": "1920s political succession",
+      "themes": [
+        "Presidential election",
+        "Political violence"
+      ],
+      "geographies": [
+        "San Ángel / La Bombilla"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-OBREGON-INEHRM-PNR",
+        "STG-SRC-20261114-OBREGON-RHM-BOMBILLA",
+        "STG-SRC-20261114-OBREGON-INAH-CATALOG"
+      ],
+      "source_locator": "INEHRM PNR 1928 timeline; RHM lines 40-47 and n.1 identifying El Universal Gráfico 18 July 1928; INAH record I-0013300028",
+      "limitations": "Original 18 July eyewitness newspaper and trial records not inspected; single source identifies possible other participants, do not treat conspiracy claim as settled.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_research_candidate_requires_independent_editorial_review",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1457Z-obregon-la-bombilla-1928-1935-02",
+      "classification": "broad_history",
+      "assertion": "The murder created a real succession crisis inside the revolutionary leadership; INEHRM describes hostile obregonista factions and fears of armed conflict, making the later claim of a smooth transition to institutional government misleading.",
+      "date_or_range": "1928-1929",
+      "period": "Postrevolutionary power struggles",
+      "themes": [
+        "Caudillismo",
+        "Factionalism"
+      ],
+      "geographies": [
+        "Mexico City / national institutions"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-OBREGON-INEHRM-PNR",
+        "STG-SRC-20261114-OBREGON-INEHRM-CALLES"
+      ],
+      "source_locator": "INEHRM PNR, 1928 murder and tensions immediately following; INEHRM Calles exile overview",
+      "limitations": "Narrative from government historical interpretation; distinguish participants' accusations against Calles from evidence of his complicity.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_research_candidate_requires_independent_editorial_review",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1457Z-obregon-la-bombilla-1928-1935-03",
+      "classification": "broad_history",
+      "assertion": "Calles used his 1 September 1928 final presidential report to advocate a change from rule by individuals to rule by institutions; Emilio Portes Gil later assumed provisional power and the PNR was established in March 1929, although Calles retained informal power.",
+      "date_or_range": "1928-09 to 1929-03",
+      "period": "Mexican party-state formation",
+      "themes": [
+        "Succession",
+        "Maximato"
+      ],
+      "geographies": [
+        "Mexico City / Congress and political institutions"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-OBREGON-INEHRM-NACIONAL",
+        "STG-SRC-20261114-OBREGON-INEHRM-PNR",
+        "STG-SRC-20261114-OBREGON-INEHRM-CALLES"
+      ],
+      "source_locator": "INEHRM El Nacional direct HTML lines 49-65, 80-85 and 110-115; INEHRM Calles exile synopsis",
+      "limitations": "Speech transcript and congressional decrees not inspected; interpret rhetoric as stated program, not evidence institutions were immediately democratic.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_research_candidate_requires_independent_editorial_review",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1457Z-obregon-la-bombilla-1928-1935-04",
+      "classification": "broad_history",
+      "assertion": "INEHRM's documentary chronology connects the PNR's 1929 formation with a new party newspaper, El Nacional Revolucionario, launched 27 May 1929 as an election publicity vehicle, rather than an independent newspaper.",
+      "date_or_range": "1929-05-27",
+      "period": "Institutionalization and public communication",
+      "themes": [
+        "Propaganda",
+        "Press"
+      ],
+      "geographies": [
+        "Mexico City press and federal politics"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-OBREGON-INEHRM-NACIONAL"
+      ],
+      "source_locator": "INEHRM El Nacional direct HTML lines 41-44, 110-128, original first issue listed at lines 143-156",
+      "limitations": "Original 27 May 1929 first issue not directly viewed. Article draws from official documentary collection and should be compared with opposition reporting.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_research_candidate_requires_independent_editorial_review",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1457Z-obregon-la-bombilla-1928-1935-05",
+      "classification": "broad_history",
+      "assertion": "The criminal aftermath extended into 1929: AGN dates León Toral's execution at Lecumberri to 9 February 1929. The accusation of Concepción Acevedo de la Llata's intellectual responsibility must be presented as a contested historical and legal question, not an unquestioned conclusion.",
+      "date_or_range": "1928-1929",
+      "period": "Religious conflict and criminal justice",
+      "themes": [
+        "Cristero conflict",
+        "Legal process"
+      ],
+      "geographies": [
+        "San Ángel / Lecumberri"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-OBREGON-AGN-TORAL",
+        "STG-SRC-20261114-OBREGON-INAH-CATALOG"
+      ],
+      "source_locator": "AGN 9 February 2020 index, indexed El Universal 9 February 1929; INAH ficha I-0013300028 describes mother Conchita as presunta autora intelectual",
+      "limitations": "Court transcript, evidence for charges, contemporaneous defense and prosecution records not examined. Explicitly avoid making institutional or collective religious attribution.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_research_candidate_requires_independent_editorial_review",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1457Z-obregon-la-bombilla-1928-1935-06",
+      "classification": "poi_ready_candidate",
+      "assertion": "The monument now occupies the site of the former La Bombilla restaurant in the San Ángel/Chimalistac area; a guide should orient visitors to a demolished restaurant site rather than imply that its banquet room survives.",
+      "date_or_range": "1928-1935",
+      "period": "Urban site transformation",
+      "themes": [
+        "Lost sites",
+        "Place memory"
+      ],
+      "geographies": [
+        "Parque de la Bombilla / Insurgentes and Arenal"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-OBREGON-INAH-CATALOG",
+        "STG-SRC-20261114-OBREGON-RHM-BOMBILLA"
+      ],
+      "source_locator": "INAH catalog I-0013300028 location and restaurant predecessor; RHM lines 40-42",
+      "limitations": "Precise footprint, park paths and accessible public vantage cannot be assumed without site/survey overlay or current access check.",
+      "learning_mode": "field_candidate",
+      "evidence_status": "source_located_research_candidate_requires_independent_editorial_review",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1457Z-obregon-la-bombilla-1928-1935-07",
+      "classification": "poi_ready_candidate",
+      "assertion": "An inscription transcribed by the INAH monument catalog gives a June 1934 construction start and an inauguration on 17 July 1935, making the memorial a later state-sponsored interpretation of the 1928 assassination rather than a contemporaneous marker.",
+      "date_or_range": "1934-1935",
+      "period": "State memorialization",
+      "themes": [
+        "Commemoration",
+        "Political legitimacy"
+      ],
+      "geographies": [
+        "Monumento a Álvaro Obregón"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-OBREGON-INAH-CATALOG",
+        "STG-SRC-20261114-OBREGON-UNAM-PLAN"
+      ],
+      "source_locator": "INAH catalog I-0013300028 full dedicatory inscription transcription; UNAM catalog 11 June 1934 manuscript plan (record 2169)",
+      "limitations": "INAH page is marked under validation; inscription and dated signed plan not inspected physically/visually. Do not claim current text is legible.",
+      "learning_mode": "field_candidate",
+      "evidence_status": "source_located_research_candidate_requires_independent_editorial_review",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1457Z-obregon-la-bombilla-1928-1935-08",
+      "classification": "poi_ready_candidate",
+      "assertion": "INAH credits architect Enrique Aragón Echegaray and sculptor Ignacio Asúnsolo; a photographic-fieldwork catalog identifies a female fertility figure near the entrance and a Sacrificio relief, suggesting concrete sculptures for future public-view interpretation.",
+      "date_or_range": "1934-1935",
+      "period": "Architectural interpretation",
+      "themes": [
+        "Monumental sculpture",
+        "Art Deco"
+      ],
+      "geographies": [
+        "Monumento a Álvaro Obregón / park entrance"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-OBREGON-INAH-CATALOG",
+        "STG-SRC-20261114-OBREGON-CID-PHOTO"
+      ],
+      "source_locator": "INAH catalog I-0013300028 author attributions; CID record class C.153 H.33/34 lines 63-72",
+      "limitations": "CID catalog borrows Art Deco description from an external tourism website; photograph negatives and up-to-date exterior views not inspected; avoid rigid sculpture labels before comparison with 1934 plan.",
+      "learning_mode": "field_candidate",
+      "evidence_status": "source_located_research_candidate_requires_independent_editorial_review",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1457Z-obregon-la-bombilla-1928-1935-09",
+      "classification": "poi_ready_candidate",
+      "assertion": "The photographic record of a 1928 La Bombilla banquet (INAH-SINAFO Agencia Casasola inventory 642031) can illustrate the original restaurant, while a distinct INAH-SINAFO inventory 45235 concerns León Toral; each needs an individual rights, subject and capture-date audit before a historical-photo toggle.",
+      "date_or_range": "1928 and 1930s",
+      "period": "Historical photography and memory",
+      "themes": [
+        "Photographic provenance",
+        "Copyright"
+      ],
+      "geographies": [
+        "San Ángel / Parque de la Bombilla"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-OBREGON-RHM-BOMBILLA",
+        "STG-SRC-20261114-OBREGON-CID-PHOTO"
+      ],
+      "source_locator": "RHM direct HTML lines 30-32 for two Casasola captions and inventory IDs; CID class C.153 H.33/34 roll M-1253",
+      "limitations": "Captions are not independently validated originals; archival usage rights not obtained. Banquet image cannot establish an exact second-by-second sequence.",
+      "learning_mode": "field_candidate",
+      "evidence_status": "source_located_research_candidate_requires_independent_editorial_review",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1457Z-obregon-la-bombilla-1928-1935-10",
+      "classification": "specialist_archaeology",
+      "assertion": "UNAM catalogs a restored signed manuscript lateral-elevation plan of the 1934 memorial, dated 11 June 1934 at 1:20, with material specification chiluca and named sculptural groups. It provides a testable primary design locator, but not evidence of what was actually built without comparison to the structure.",
+      "date_or_range": "1934-06-11",
+      "period": "Modern material culture and built heritage",
+      "themes": [
+        "Architectural drawing",
+        "Stonework"
+      ],
+      "geographies": [
+        "Monumento a Álvaro Obregón"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-OBREGON-UNAM-PLAN",
+        "STG-SRC-20261114-OBREGON-INAH-CATALOG"
+      ],
+      "source_locator": "UNAM IIB areas verdes Koha bibliographic ID 2169 and plan no.15 (indexed catalog); INAH modern monument catalog",
+      "limitations": "Original manuscript image not viewed; compare as-designed/as-built; source label 'premio' might be original annotation or catalog metadata.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_research_candidate_requires_independent_editorial_review",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1457Z-obregon-la-bombilla-1928-1935-11",
+      "classification": "specialist_archaeology",
+      "assertion": "The INAH monument catalog records that Obregón's preserved arm was once displayed at the memorial, a physical relic that shaped official memory of his 1915 Celaya injury. Its present location and disposal history should not be asserted without accession and conservation records.",
+      "date_or_range": "1915-1935 and later",
+      "period": "Material politics of monuments",
+      "themes": [
+        "Human remains ethics",
+        "Relics",
+        "Exhibition history"
+      ],
+      "geographies": [
+        "Monumento a Álvaro Obregón / former interior display"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-OBREGON-INAH-CATALOG",
+        "STG-SRC-20261114-OBREGON-CID-PHOTO"
+      ],
+      "source_locator": "INAH monument historical field mentioning formalin-preserved arm; CID historic photographic field survey catalog",
+      "limitations": "Original specimen records, accession and removal date are unverified; do not assert existence in display today or advertise interior access.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_research_candidate_requires_independent_editorial_review",
+      "publication_approved": false
+    }
+  ],
+  "reported_counts": {
+    "new_findings": 11,
+    "new_source_candidates": 8,
+    "new_source_inspections": 8,
+    "approval": false
+  },
+  "independently_corrobated": false,
+  "ready_for_editorial_review": false,
+  "blockers": [
+    "UNAM 11 June 1934 manuscript plan metadata only; original plan not inspected",
+    "INAH monument listing currently marked in validation",
+    "Original 18 July 1928 newspaper and 1928-29 trial records not inspected",
+    "Political motive and responsibility beyond actual shooter require adversarial source comparison",
+    "Historic photos SINAFO inventory 642031 and 45235 not licensed",
+    "Physical on-site access and monuments condition not verified"
+  ]
+}
