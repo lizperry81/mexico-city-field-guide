@@ -38,5 +38,16 @@
   "approved_manuscript_archives_verified": false,
   "approved_manuscript_archival_blocker": "Complete exact approved text of The Basin Before the Mexica and The Heart of Tenochtitlan not recovered from available prior conversation or repository files; no fabricated archives or SHA256 receipts.",
   "editorial_policy_path": "editorial/DISCOVER_APPROVED_BASELINE_2026-11-13.md",
-  "awaiting_deployment_verification": true
+  "awaiting_deployment_verification": true,
+  "additional_integrity_findings": {
+    "stale_replay_ledger_in_77_manifest": "research/ledgers/20261114T0009Z-76-batch-verified-replay-and-readback.json",
+    "current_77_ledger_exists": "research/ledgers/20261114T0103Z-77-batch-verified-replay-and-readback.json",
+    "compressed_replay_git_blob_actual": "5600a2d5688e9ddabe1d66db40f4cc47dc93ecb9",
+    "compressed_replay_git_blob_claimed_in_manifest": "885d1243da13ec5a82343e911ce1a71924cb0e89",
+    "compressed_blob_claim_matches": false,
+    "replay_report_git_blob_actual": "11d388693fafdc16cc2b012aca9beadaeaa3e544",
+    "replay_report_git_blob_claimed_in_manifest": "e5bb195bc325d0f80e9f6c799bce1e141248b589",
+    "replay_blob_claim_matches": false,
+    "conclusion": "The manifest's replay_evidence provenance still points to the earlier 76-batch ledger and blob identities. The 77-batch snapshot has matching core identity fields and all referenced files are present, but cannot be promoted to a verified editorial handoff until the producer publishes correctly pinned 77-batch readback provenance. No consumer validator has been relaxed."
+  }
 }
