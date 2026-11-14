@@ -1,0 +1,61 @@
+{
+  "schema_version": 2,
+  "kind": "git_batch_research_preflight",
+  "generated_at": "2026-11-14T04:00:54Z",
+  "branch": "research-persistence",
+  "observed_branch_head": "509c20631fc21a68f0971733011905186921bd55",
+  "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_counts": {
+    "sources": 616,
+    "claims": 422,
+    "claim_source_links": 403,
+    "findings": 68
+  },
+  "previous_replay_report_path": "research/reconciled/v4_808223390a5e/replay_report.json",
+  "previous_replay_sha256": "bb6cd5a44f623c081dc00ef51fb920ca591a4d5a2e833e9cf2224f291408b6f5",
+  "before_verified_staged_counts": {
+    "batches": 79,
+    "findings": 475,
+    "source_candidates": 176,
+    "source_inspections": 214,
+    "unregistered_source_references": 1,
+    "metadata_conflicts": 2,
+    "detached_inspections": 37
+  },
+  "expected_after_if_replay_passes": {
+    "batches": 80,
+    "findings": 486,
+    "source_candidates": 188,
+    "source_inspections": 226
+  },
+  "new_batch_path": "research/batches/20261114T0400Z-metro-1967-1970-pino-suarez-archaeology.json",
+  "coverage_path": "research/coverage/20261114T0400Z-metro-1967-1970-pino-suarez-archaeology-readiness.json",
+  "audit_path": "research/audits/20261114T0400Z-metro-1967-1970-pino-suarez-archaeology-templo-discover-evidence-gates.json",
+  "proposed_new_counts": {
+    "new_findings": 11,
+    "new_source_candidates": 12,
+    "new_inspections": 12
+  },
+  "inspection_evidence_quality": {
+    "institutional_web_direct_pages": 3,
+    "journalistic_web_direct_pages": 3,
+    "unam_thesis_metadata_direct": 1,
+    "official_dof_index_direct": 1,
+    "press_republished_historical_excerpt_direct": 1,
+    "official_index_excerpts_not_opened": 4,
+    "scholarly_abstract_index_only": 1,
+    "original_1967_legal_decree_checked": 0,
+    "original_1968_newspaper_edition_checked": 0,
+    "original_excavation_record_checked": 0
+  },
+  "source_identity_review": [
+    "No source IDs from other batches replaced",
+    "Original 1968 report reprinted in 2021 is not itself a newly examined original newspaper edition",
+    "STC station image copyrights remain restricted",
+    "1967 vs 1968–1970 Pino Suárez discovery dating differences retained, not auto-resolved"
+  ],
+  "pending_replay": true,
+  "not_canonical": true,
+  "not_publication_approved": true,
+  "preflight_status": "research_artifacts_stage_only_until_full_replay_and_github_readback"
+}
