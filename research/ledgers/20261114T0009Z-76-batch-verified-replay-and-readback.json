@@ -1,0 +1,74 @@
+{
+  "schema_version": 2,
+  "kind": "verified_full_research_reconciliation",
+  "generated_at": "2026-11-14T00:06:13.303Z",
+  "branch": "research-persistence",
+  "source_research_commit_sha": "7eb0311ce172b03da2e6402b4970f903e1d2a6e3",
+  "verified_replay_commit_sha": "0f2f1da23c171b7a5e66af03b077a5e19b80f0e0",
+  "canonical_version": "V97",
+  "canonical_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_counts": {
+    "sources": 616,
+    "claims": 422,
+    "links": 403,
+    "findings": 68,
+    "inspections": 9
+  },
+  "canonical_unchanged": true,
+  "canonical_tables_preserved": 88,
+  "previous_verified_counts": {
+    "github_batches": 75,
+    "distinct_staged_finding_ids": 432,
+    "source_candidates": 147,
+    "source_inspections": 185
+  },
+  "after_replay_counts": {
+    "github_batches": 76,
+    "distinct_staged_finding_ids": 444,
+    "source_candidates": 156,
+    "source_inspections": 194,
+    "index_only_unresolved": 1,
+    "unknown_source_references": 1,
+    "bibliographic_conflicts": 2,
+    "detached_inspections_pending_review": 37
+  },
+  "new_batch_increment": {
+    "findings": 12,
+    "source_candidates": 9,
+    "inspections": 9
+  },
+  "sqlite_integrity": "ok",
+  "sqlite_foreign_key_violations": 0,
+  "output_uncompressed_sha256": "e8755955ec9d86271941db610464709a9547ee5bdce793d49dfd4ac02d7a4e91",
+  "output_compressed_sha256": "f1b11a6dffbdcafb3675d70c628cdec39e6e93b6de04fa127304f7c22c7713bb",
+  "git_blob_sha_binary": "885d1243da13ec5a82343e911ce1a71924cb0e89",
+  "git_blob_sha_report": "e5bb195bc325d0f80e9f6c799bce1e141248b589",
+  "git_blob_sha_compressed_checksum": "528660f49095d2727ee45a7b41df2ed0877d9d50",
+  "versioned_sqlite_path": "research/reconciled/v4_7eb0311ce172/research_only.sqlite.gz",
+  "report_path": "research/reconciled/v4_7eb0311ce172/replay_report.json",
+  "github_validation_workflow_url": "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/43531676530",
+  "github_replay_workflow_url": "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/43531676542",
+  "github_readback_basis": "GitHub Actions replay workflow compared compressed SHA256 of git show origin/research-persistence:research/reconciled/v4_7eb0311ce172/research_only.sqlite.gz against committed checksum; separately this ledger read the exact SHA file, reported Git tree blob SHA, and full JSON replay report from committed branch",
+  "content_changed_paths": [
+    "research/batches/20261114T0000Z-1847-molino-memorial-and-templo-field-evidence.json",
+    "research/coverage/20261114T0000Z-1847-molino-memorial-and-templo-field-evidence-readiness.json",
+    "research/audits/20261114T0000Z-1847-molino-memorial-and-templo-field-evidence-templo-discover-evidence-gates.json",
+    "research/ledgers/20261114T0000Z-1847-molino-memorial-and-templo-field-evidence-source-reconciliation-ledger.json",
+    "research/reconciled/v4_7eb0311ce172/research_only.sqlite.gz",
+    "research/reconciled/v4_7eb0311ce172/replay_report.json",
+    "research/reconciled/v4_7eb0311ce172/compressed_sha256.txt"
+  ],
+  "previous_manifest_git_blob_sha": "1df5a39695b55bc9c2b91bf2579064683076f113",
+  "source_scope": "Nine new metadata/partial inspection records; not nine full original books",
+  "evidence_status": "research_database_staging_only_not_corrob_or_publication_approval",
+  "ready_for_editorial_review": false,
+  "ready_for_publication": false,
+  "blocked_items": [
+    "Unregistered proposed botanical dataset",
+    "Two cross-batch bibliographic identity collisions",
+    "37 detached inspections; nine URL overlap candidates cannot be auto-merged",
+    "Original 1847 maps and INAH article full page images not inspected",
+    "Templo Mayor original Gamio report, Triple Alliance dating and Nahuatl Codex comparison remain outstanding"
+  ],
+  "no_main_changes": true
+}
