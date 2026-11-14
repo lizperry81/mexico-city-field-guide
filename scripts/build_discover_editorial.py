@@ -108,6 +108,18 @@ def validate(record, slug):
                     isinstance(deep_dive.get("text"), str) and
                     deep_dive["title"].strip() and deep_dive["text"].strip(),
                     "Incomplete optional deep dive")
+            # Optional archaeology investigations make substantive historical
+            # assertions too. They need independently reviewed source locators
+            # and exact archival prose, just like the main narrative.
+            dive_sources = deep_dive.get("evidence")
+            require(isinstance(dive_sources, list) and dive_sources,
+                    "Approved Discover deep dive requires source-page evidence")
+            for ref in dive_sources:
+                require(isinstance(ref, dict) and
+                        all(isinstance(ref.get(field), str) and ref[field].strip()
+                            for field in ("source_id", "page_or_section")) and
+                        ref.get("audit_status") == "page_checked",
+                        "Deep-dive citation has not been page-checked")
     return True
 
 
@@ -155,8 +167,13 @@ def render(record):
             for visual in visuals_by_position.get(paragraph_number, []):
                 parts.append(render_visual(visual))
         for dive in chapter.get("deep_dives", []):
+            refs = "; ".join(escape(ref["source_id"]) + " · " +
+                             escape(ref["page_or_section"])
+                             for ref in dive["evidence"])
             parts.append("<details><summary>" + escape(dive["title"]) +
-                         "</summary><p>" + escape(dive["text"]) + "</p></details>")
+                         "</summary><p>" + escape(dive["text"]) +
+                         '</p><p class="references">Verified source locators: ' +
+                         refs + "</p></details>")
         # Adjacent chapter links use only the approved manuscript sequence.
         # A Discover page never points to or rewrites the Explore field chapters.
         pager = []
@@ -238,6 +255,10 @@ def verify_verbatim_archives(record, root=REPO):
                     f"Discover chapter {chapter['id']} paragraph {number} "
                     "is not verbatim in the approved archive")
             offset = found + len(paragraph["text"])
+        for number, dive in enumerate(chapter.get("deep_dives", []), 1):
+            require(dive["text"] in archived_text,
+                    f"Discover chapter {chapter['id']} deep dive {number} "
+                    "is not verbatim in the approved archive")
 
 
 def build():
