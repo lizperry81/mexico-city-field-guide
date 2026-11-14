@@ -35,7 +35,7 @@
     "detached_source_identity_review_pending": 37,
     "external_staging_semantic_join_verified": false,
     "source_id_provisional_recoveries_this_run": 0,
-    "new_scholarly_source_candidate_records_this_run": 6,
+    "new_scholarly_source_candidate_records_this_run": 2,
     "new_source_inspection_metadata_this_run": 6,
     "new_historical_finding_candidates_this_run": 9,
     "full_original_scholarly_books_examined_this_run": 0,
@@ -43,11 +43,13 @@
     "curated_historic_photo_exhibit_partially_visually_examined_this_run": 0,
     "partial_scholarly_chapter_sections_examined_this_run": 0,
     "scholarly_thesis_page_images_checked_this_run": 0,
-    "government_html_pages_examined_this_run": 1,
+    "government_html_pages_examined_this_run": 0,
     "institutional_search_index_excerpt_sources_examined_this_run": 5,
     "original_primary_speech_or_decree_examined_this_run": 0,
     "original_newspaper_excerpts_through_modern_republication_examined_this_run": 0,
-    "original_1847_maps_catalog_metadata_examined_this_run": 2
+    "original_1847_maps_catalog_metadata_examined_this_run": 0,
+    "new_source_candidates_all_types_this_run": 6,
+    "unam_map_catalog_html_pages_examined_this_run": 1
   },
   "versioned_research_sqlite_gz_path": "research/reconciled/v4_48b6c89f7979/research_only.sqlite.gz",
   "versioned_research_sha256": "4300bf6a9617a360f250bddf9340528c052ee1cfcbe296fa3e9845533d14761b",
@@ -185,14 +187,13 @@
     "ready_for_editorial_review": false,
     "publication_approved": false,
     "source_inspection_modes": {
-      "unam_map_catalog_html_read_directly": 1,
-      "search_index_or_institutional_abstract_only": 5,
-      "original_1608_diary": 0,
-      "original_1859_plan_image": 0,
-      "original_1900_newspaper": 0,
-      "original_1872_council_record": 0
+      "unam_historical_map_catalog_html_read_directly": 1,
+      "institutional_or_scholarly_search_index_abstract_excerpt_only": 5,
+      "original_archival_manuscripts_or_images_visually_inspected": 0,
+      "original_1900_newspaper_pages_read": 0,
+      "original_1872_council_file_read": 0
     },
-    "historical_evidence": "Nine provisional drainage and Canal de la Viga findings spanning 1608–1950, source-located but not original-publication page verified; source shortcomings recorded individually."
+    "historical_evidence": "Nine provisional findings: four broad historical (Second Empire work, nineteenth-century land/urbanization, 1900 inauguration, 1872 municipal commemoration); three place-oriented (caja de agua, Canal de la Viga, Iztacalco photo changes); two specialist evidence (1608 Chimalpahin labor account excerpt, 1859 siphon map catalog). One original catalog HTML inspected; five indexed abstracts/excerpts. Zero archival-original inspections, page-image checks or independent corroborations."
   },
   "ready_for_editorial_review": false,
   "ready_for_publication": false,
