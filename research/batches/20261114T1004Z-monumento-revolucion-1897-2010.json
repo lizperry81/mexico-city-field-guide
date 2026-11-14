@@ -1,0 +1,478 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261114T1004Z-monumento-revolucion-1897-2010",
+  "generated_at": "2026-11-14T10:06:23.270Z",
+  "branch": "research-persistence",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "storage_role": "immutable_noncanonical_research_batch",
+  "previous_verified_replay": "research/reconciled/v4_a956d3b2ded3/replay_report.json",
+  "prior_verified_counts": {
+    "github_batches_replayed": 85,
+    "staged_findings": 541,
+    "source_candidates": 226,
+    "inspection_entries": 264,
+    "canonical_sources": 616,
+    "canonical_claims": 422,
+    "canonical_links": 403,
+    "canonical_findings": 68
+  },
+  "research_scope": "11 source-located candidates: five broad 1897–1986 political/urban-history findings, four POI interpretive findings and two architecture/engineering specialists, built on direct official interpretive sources and a museum-history journal PDF extraction; historic 1897 competition outcome is explicitly disputed. No original blueprint or period archival records verified.",
+  "sources": [
+    {
+      "id": "STG-SRC-20261114-MR-OP",
+      "title": "Monumento a la Revolución: Historia del Monumento",
+      "authors": "Administración del Monumento a la Revolución",
+      "publication": "Operator's historical interpretation, undated/currently accessible 2026",
+      "url": "https://www.mrm.mx/historia-del-monumento",
+      "access_scope": "Direct operator HTML, lines 18–104. Site interpretation and orientation; no original contract facsimiles.",
+      "status": "direct_operator_site_not_primary"
+    },
+    {
+      "id": "STG-SRC-20261114-MR-INAH",
+      "title": "Monumento a la Revolución, Catálogo Nacional de Monumentos Históricos Inmuebles ficha I-0013801611",
+      "authors": "INAH",
+      "publication": "Catálogo Nacional de Monumentos Históricos Inmuebles, capture I-0013801611 (validation pending)",
+      "url": "https://catalogonacionalmhi.inah.gob.mx/consulta_publica/detalle/12773",
+      "access_scope": "Search-indexed institutional catalog historical information and monument registration; direct page gave 502; catalog explicitly under validation.",
+      "status": "indexed_catalog_only_direct_502"
+    },
+    {
+      "id": "STG-SRC-20261114-MR-MNR",
+      "title": "25 años del Museo Nacional de la Revolución",
+      "authors": "Angélica Vázquez del Mercado",
+      "publication": "Gaceta de Museos (INAH), printed pp.19–23, approximately 2012",
+      "url": "https://revistas.inah.gob.mx/index.php/gacetamuseos/article/download/1145/1097/1995",
+      "access_scope": "Full text extraction from journal PDF, pp.19–23: 1933 steel, 1938 completion, 1985 foundation check, 1986 museum, 2010 museography and source footnotes. Page-image screenshot request returned 403.",
+      "status": "full_pdf_text_extracted_visual_screenshot_failed"
+    },
+    {
+      "id": "STG-SRC-20261114-MR-UNAM-ED",
+      "title": "Urbanismo, arquitectura y escultura de 1900 a 1920",
+      "authors": "Humberto Domínguez Chávez",
+      "publication": "UNAM CCH teaching resource, May 2013, pp.1–3 and architectural illustrations",
+      "url": "https://portalacademico.cch.unam.mx/repositorio-de-sitios/historico-social/historia-de-mexico-2/HMII1900-1920/Arquitectura1900.pdf",
+      "access_scope": "Original PDF text pp.1–3 reviewed and p.1 screenshot inspected, including 1875 map. Palace Legislative historical figures/illustrations elsewhere in document text-index, not independently inspected as original plans.",
+      "status": "educational_secondary_pdf_one_page_image_inspected"
+    },
+    {
+      "id": "STG-SRC-20261114-MR-UNAM-GUZ",
+      "title": "Ciudad, memoria y renovación. La Plaza de la República y su monumento",
+      "authors": "José Manuel Guzmán Díaz",
+      "publication": "Bitácora Arquitectura 25 (2012), DOI 10.22201/fa.14058901p.2012.25.36132",
+      "url": "https://repositorio.fa.unam.mx/handle/123456789/19309",
+      "access_scope": "UNAM repository metadata/abstract lines 2–73, article body not read; framing of 2010 renovation as contested symbolic/urban intervention.",
+      "status": "repository_abstract_only"
+    },
+    {
+      "id": "STG-SRC-20261114-MR-UNAM-FERN",
+      "title": "Nostalgia por la Ciudad de los Palacios",
+      "authors": "Martha Fernández",
+      "publication": "Imágenes (Instituto de Investigaciones Estéticas, UNAM), book review, circa 2011",
+      "url": "https://www.esteticas.unam.mx/revista_imagenes/anotaciones/ano_fernandez03.html",
+      "access_scope": "Direct UNAM online editorial essay lines 18–31, plus indexed summary about Obregón Santacilia's iron-framed former legislative building and a debate over the new elevator. Opinion/editorial, not construction record.",
+      "status": "direct_editorial_analysis_not_primary"
+    },
+    {
+      "id": "STG-SRC-20261114-MR-UNAM-AFMT",
+      "title": "Monumento a la Revolución, AFMT catalog object IIE:AFMT:TE3566",
+      "authors": "Instituto de Investigaciones Estéticas, UNAM; photograph Maribel Morales Rosales",
+      "publication": "Archivo Fotográfico Manuel Toussaint, image made 2001; catalog updated 2019",
+      "url": "https://datosabiertos.unam.mx/IIE%3AAFMT%3ATE3566",
+      "access_scope": "Search-indexed image object: image 'VISTA GENERAL / FRONTAL'; catalog attributes work to Oliverio Martínez and Carlos Obregón Santacilia; image listed as consultation-only, reuse requires contact. Direct open disabled.",
+      "status": "indexed_photo_catalog_reuse_not_cleared"
+    },
+    {
+      "id": "STG-SRC-20261114-MR-NOTIMEX",
+      "title": "Reinaugurarán Ebrard y Cárdenas Monumento a la Revolución",
+      "authors": "Notimex",
+      "publication": "La Razón, 20 November 2010, report on renovation and public space",
+      "url": "https://www.razon.com.mx/ciudad/2010/11/20/reinauguraran-ebrard-y-cardenas-monumento-a-la-revolucion/",
+      "access_scope": "Search-indexed full press report dated 2010-11-20: reported plaza interventions, ramp, re-paving, elevator, 2010 costs; not independently audited contracts.",
+      "status": "news_report_indexed_text_no_contracts"
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "20261114T1004Z-MR-INS-01",
+      "source_id": "STG-SRC-20261114-MR-OP",
+      "locator": "Direct operator HTML, lines 18–104. Site interpretation and orientation; no original contract facsimiles.",
+      "access": "direct_operator_site_not_primary",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "No original primary contract, drawing, original period newspaper or archival photograph rights examined."
+    },
+    {
+      "id": "20261114T1004Z-MR-INS-02",
+      "source_id": "STG-SRC-20261114-MR-INAH",
+      "locator": "Search-indexed institutional catalog historical information and monument registration; direct page gave 502; catalog explicitly under validation.",
+      "access": "indexed_catalog_only_direct_502",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "No original primary contract, drawing, original period newspaper or archival photograph rights examined."
+    },
+    {
+      "id": "20261114T1004Z-MR-INS-03",
+      "source_id": "STG-SRC-20261114-MR-MNR",
+      "locator": "Full text extraction from journal PDF, pp.19–23: 1933 steel, 1938 completion, 1985 foundation check, 1986 museum, 2010 museography and source footnotes. Page-image screenshot request returned 403.",
+      "access": "full_pdf_text_extracted_visual_screenshot_failed",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "PDF extracted text usable; screenshot of original journal PDF inaccessible due to 403."
+    },
+    {
+      "id": "20261114T1004Z-MR-INS-04",
+      "source_id": "STG-SRC-20261114-MR-UNAM-ED",
+      "locator": "Original PDF text pp.1–3 reviewed and p.1 screenshot inspected, including 1875 map. Palace Legislative historical figures/illustrations elsewhere in document text-index, not independently inspected as original plans.",
+      "access": "educational_secondary_pdf_one_page_image_inspected",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": true,
+      "notes": "Viewed first page of modern UNAM teaching PDF only; not primary 1910 architecture plan."
+    },
+    {
+      "id": "20261114T1004Z-MR-INS-05",
+      "source_id": "STG-SRC-20261114-MR-UNAM-GUZ",
+      "locator": "UNAM repository metadata/abstract lines 2–73, article body not read; framing of 2010 renovation as contested symbolic/urban intervention.",
+      "access": "repository_abstract_only",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "No original primary contract, drawing, original period newspaper or archival photograph rights examined."
+    },
+    {
+      "id": "20261114T1004Z-MR-INS-06",
+      "source_id": "STG-SRC-20261114-MR-UNAM-FERN",
+      "locator": "Direct UNAM online editorial essay lines 18–31, plus indexed summary about Obregón Santacilia's iron-framed former legislative building and a debate over the new elevator. Opinion/editorial, not construction record.",
+      "access": "direct_editorial_analysis_not_primary",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "No original primary contract, drawing, original period newspaper or archival photograph rights examined."
+    },
+    {
+      "id": "20261114T1004Z-MR-INS-07",
+      "source_id": "STG-SRC-20261114-MR-UNAM-AFMT",
+      "locator": "Search-indexed image object: image 'VISTA GENERAL / FRONTAL'; catalog attributes work to Oliverio Martínez and Carlos Obregón Santacilia; image listed as consultation-only, reuse requires contact. Direct open disabled.",
+      "access": "indexed_photo_catalog_reuse_not_cleared",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "No original primary contract, drawing, original period newspaper or archival photograph rights examined."
+    },
+    {
+      "id": "20261114T1004Z-MR-INS-08",
+      "source_id": "STG-SRC-20261114-MR-NOTIMEX",
+      "locator": "Search-indexed full press report dated 2010-11-20: reported plaza interventions, ramp, re-paving, elevator, 2010 costs; not independently audited contracts.",
+      "access": "news_report_indexed_text_no_contracts",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "No original primary contract, drawing, original period newspaper or archival photograph rights examined."
+    }
+  ],
+  "findings": [
+    {
+      "id": "20261114T1004Z-MR-01",
+      "classification": "broad_history",
+      "assertion": "INAH's indexed monument catalog describes an 1897 legislative-palace competition and names Boari, Burnam/Weber and Rivas Mercado as prize recipients before the French architect Émile Bénard's project was adopted; the visitor-operator narrative calls Bénard the winner. Record this as conflicting competition-result narratives, not a resolved winner.",
+      "date_or_range": "1897–1906",
+      "period": "Porfiriato and architecture",
+      "themes": [
+        "public competition",
+        "elite state representation"
+      ],
+      "geographies": [
+        "Plaza de la República"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-MR-INAH",
+        "STG-SRC-20261114-MR-OP"
+      ],
+      "source_locator": "INAH ficha I-0013801611 indexed historical paragraph versus MRM direct history lines 18–24",
+      "limitations": "Exact original 1897 jury decision, protest and Quaglia/Bénard commission contracts missing; catalog marked validation pending.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1004Z-MR-02",
+      "classification": "broad_history",
+      "assertion": "The steel-framed federal legislative palace began construction circa 1906 under Bénard and the project was suspended circa 1912, leaving a central structural shell that survived revolutionary upheaval rather than a completed parliament.",
+      "date_or_range": "1906–1912",
+      "period": "Porfirian modernization",
+      "themes": [
+        "legislature",
+        "architecture",
+        "unfinished state projects"
+      ],
+      "geographies": [
+        "Plaza de la República"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-MR-OP",
+        "STG-SRC-20261114-MR-UNAM-ED"
+      ],
+      "source_locator": "MRM history lines 18–30; UNAM CCH teaching PDF later discussion of palace versus revolution architecture",
+      "limitations": "The exact 1912 stoppage date derives from operator chronology; original treasury work accounts and 1910 construction reports unexamined.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1004Z-MR-03",
+      "classification": "broad_history",
+      "assertion": "Émile Bénard proposed reusing the unfinished structure as a revolutionary pantheon during the 1920s, before the Obregón Santacilia transformation of the 1930s. The memorial idea therefore was not a sudden invention unique to 1933.",
+      "date_or_range": "1922–1929",
+      "period": "Revolutionary memorial planning",
+      "themes": [
+        "national memory",
+        "mausoleums",
+        "architecture"
+      ],
+      "geographies": [
+        "Plaza de la República"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-MR-OP"
+      ],
+      "source_locator": "MRM history lines 28–30: proposal to Álvaro Obregón; 1928 and 1929 deaths",
+      "limitations": "Date and documentary form of Bénard's proposal require original architectural correspondence and sketches.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1004Z-MR-04",
+      "classification": "broad_history",
+      "assertion": "The 1930s rescue of the abandoned iron structure combined architectural intervention and political patronage; Angélica Vázquez del Mercado summarizes conflicting retrospective attributions of the proposal to Carlos Obregón Santacilia and finance minister Alberto J. Pani. The monument was completed in 1938.",
+      "date_or_range": "1932–1938",
+      "period": "Postrevolutionary public memory",
+      "themes": [
+        "reuse",
+        "government sponsorship",
+        "political image"
+      ],
+      "geographies": [
+        "Plaza de la República"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-MR-MNR",
+        "STG-SRC-20261114-MR-OP",
+        "STG-SRC-20261114-MR-INAH"
+      ],
+      "source_locator": "Gaceta de Museos p.19 and notes 2–3, citing Pani memoir and Obregón account; MRM history lines 43–56; INAH indexed historical note",
+      "limitations": "Memoirs/1933 steel disposal documents and commission approvals not directly examined; no singular inventor attribution approved.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1004Z-MR-05",
+      "classification": "broad_history",
+      "assertion": "A review of the monument's foundations after the 1985 earthquake revived the previously unrealized plan to convert underground areas into a museum; the Museo Nacional de la Revolución opened on 20 November 1986, and its history team under Eugenia Meyer emphasized social processes and ordinary participants rather than a hero-only narrative.",
+      "date_or_range": "1985–1986",
+      "period": "Late twentieth-century public history",
+      "themes": [
+        "earthquake",
+        "museography",
+        "social history"
+      ],
+      "geographies": [
+        "Museo Nacional de la Revolución",
+        "Plaza de la República"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-MR-MNR"
+      ],
+      "source_locator": "Gaceta de Museos pp.19–20, lines 19–35: foundation review, team and museum opening",
+      "limitations": "Original 1985 engineering assessment, 1986 inaugural exhibition inventory and complete institutional records not examined.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1004Z-MR-06",
+      "classification": "poi_ready_candidate",
+      "assertion": "The current monument preserves the central iron-framed former Salón de Pasos Perdidos of the never-completed Palacio Legislativo; after the 2010 redesign the site museum presented portions of this steel structure through windows. A guided walk could point visitors toward architectural reuse rather than describe all exposed iron as 1938 construction.",
+      "date_or_range": "1906–2010",
+      "period": "Layered architecture",
+      "themes": [
+        "built fabric",
+        "reused steel",
+        "museum interpretation"
+      ],
+      "geographies": [
+        "Monumento a la Revolución",
+        "Museo Nacional de la Revolución"
+      ],
+      "poi_ids": [
+        "monumento-a-la-revolucion"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-MR-MNR",
+        "STG-SRC-20261114-MR-OP"
+      ],
+      "source_locator": "Gaceta de Museos p.22, lines 61–65: museum-site glazing and Bénard/Obregón/Oliverio; MRM lines 97–104",
+      "limitations": "2026 displays/access and precisely which girders are visible not field-verified; 2010 description not assumed current.",
+      "learning_mode": "on_site_after_verification",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1004Z-MR-07",
+      "classification": "poi_ready_candidate",
+      "assertion": "The four exterior sculptural groups attributed to Oliverio Martínez are arranged as Labor Laws (northwest pillar), Agrarian Laws (southwest), Independence (southeast), and Reform Laws (northeast). Operator descriptions identify a gear/hammer for workers and a sickle/property title for agrarian law; this can support concrete looking prompts once physical visibility is confirmed.",
+      "date_or_range": "1933–1938",
+      "period": "Political sculpture and iconography",
+      "themes": [
+        "labor",
+        "agrarian reform",
+        "independence",
+        "citizenship"
+      ],
+      "geographies": [
+        "Monumento a la Revolución"
+      ],
+      "poi_ids": [
+        "monumento-a-la-revolucion"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-MR-OP",
+        "STG-SRC-20261114-MR-UNAM-AFMT"
+      ],
+      "source_locator": "MRM direct history lines 62–85 detailed oriented groups; UNAM image-catalog indexed authorship",
+      "limitations": "Sculptural meaning reflects operator interpretation, not artist notes; original sculptor drawings and 2026 view angles unverified.",
+      "learning_mode": "on_site_after_verification",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1004Z-MR-08",
+      "classification": "poi_ready_candidate",
+      "assertion": "Decorative objects commissioned for the aborted legislative palace were reused elsewhere: the operator lists the Juventud/Madurez marbles at Bellas Artes, an eagle at Monumento a la Raza, and lions at an entrance to Bosque de Chapultepec. This is a promising cross-city material-history route rather than a confirmed matched artifact itinerary.",
+      "date_or_range": "1906–1938 and later",
+      "period": "Reused Porfirian objects",
+      "themes": [
+        "sculpture migration",
+        "heritage",
+        "historical visibility"
+      ],
+      "geographies": [
+        "Palacio de Bellas Artes",
+        "Monumento a la Raza",
+        "Bosque de Chapultepec"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-MR-OP"
+      ],
+      "source_locator": "MRM direct history lines 36–41 (three object groups and suggested destinations)",
+      "limitations": "Object accession records, individual attribution, exact entrance, current state and reproduction permissions unverified.",
+      "learning_mode": "on_site_after_verification",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1004Z-MR-09",
+      "classification": "poi_ready_candidate",
+      "assertion": "The monument acquired its mausoleum role in 1936, before all currently commemorated revolutionaries were interred: the operator dates Carranza's transfer to 1942, Madero's to 1960, Calles's to 1969, Cárdenas's burial to 1970 and Villa's transfer to 1976. The timeline shows the revolutionary pantheon itself was assembled over decades.",
+      "date_or_range": "1936–1976",
+      "period": "State commemoration and funerary geography",
+      "themes": [
+        "political memory",
+        "funerary practices"
+      ],
+      "geographies": [
+        "Monumento a la Revolución"
+      ],
+      "poi_ids": [
+        "monumento-a-la-revolucion"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-MR-OP"
+      ],
+      "source_locator": "MRM direct history lines 87–88, independently consistent broad outline in 2010 Notimex report",
+      "limitations": "Individual funeral decree originals, burial registries and contested identification of Villa's remains not checked; do not infer political unanimity.",
+      "learning_mode": "advance_history_then_on_site",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1004Z-MR-10",
+      "classification": "specialist_technical",
+      "assertion": "The monument operator identifies black Chimalhuacán volcanic stone as edge/base material and Chiluca quarry stone as surfaces, while UNAM's photographic catalog lists Chiluca technique for a sculpture; these are material descriptions at different object scales, not a single laboratory-petrographic identification of every stone.",
+      "date_or_range": "1933–1938",
+      "period": "Construction fabric and stone",
+      "themes": [
+        "architecture",
+        "material provenance",
+        "sculpture"
+      ],
+      "geographies": [
+        "Monumento a la Revolución"
+      ],
+      "poi_ids": [
+        "monumento-a-la-revolucion"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-MR-OP",
+        "STG-SRC-20261114-MR-UNAM-AFMT"
+      ],
+      "source_locator": "MRM lines 49–53; UNAM AFMT IIE:AFMT:TE3566 indexed stone technique",
+      "limitations": "Original quarry invoices, petrography and component-by-component conservation surveys absent.",
+      "learning_mode": "specialist_sidebar",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1004Z-MR-11",
+      "classification": "specialist_technical",
+      "assertion": "The INAH Gaceta author cites an estimate of 17,000 foundation piles under the structure and describes a planned double dome; the operator contrasts the former internal lift and inter-dome ascending route with the central panoramic elevator installed during the 2009–2010 renovation. These are sources for a physical engineering narrative, not a verified structural survey.",
+      "date_or_range": "1906–2010",
+      "period": "Foundations and engineering reuse",
+      "themes": [
+        "piles",
+        "steel dome",
+        "circulation",
+        "conservation"
+      ],
+      "geographies": [
+        "Monumento a la Revolución"
+      ],
+      "poi_ids": [
+        "monumento-a-la-revolucion"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-MR-MNR",
+        "STG-SRC-20261114-MR-OP",
+        "STG-SRC-20261114-MR-UNAM-GUZ"
+      ],
+      "source_locator": "Gaceta de Museos p.19 lines 7–12 and note 1 for 17,000-pile estimate; MRM lines 55–56 and 97–104 for lift routes; 2012 UNAM abstract for contested renovation",
+      "limitations": "17,000 figure secondhand from 2009 publication; no pile drawings, engineering tests, elevator as-built or recent safety/access verification.",
+      "learning_mode": "specialist_sidebar",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    }
+  ],
+  "source_identity_policy": "New IDs provisional and isolated; do not auto-merge with legacy source records or claim independent corroboration based on repeated institution-origin content.",
+  "external_source_usage": "The indexed INAH catalog and UNAM object records were not directly opened; INAH Gaceta PDF text extracted but screenshot returned 403; UNAM teaching PDF p.1 screenshot examined. Distinguish site-operator narrative, scholarly abstract and archival primary document.",
+  "publication_approved": false,
+  "independently_corroborated_findings": 0,
+  "ready_for_editorial_review": false
+}
