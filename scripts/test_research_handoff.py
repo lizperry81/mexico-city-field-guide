@@ -239,7 +239,7 @@ assert metro_items[0]["source_locator_candidates_unverified"][0]["locator"] == "
 # claims of a fresh re-read based only on a historical SHA.
 for mutation in (
     {"reader_blob_sha_last_verified": None},
-    {"reader_blob_sha_last_verified": "b" * 40},
+    {"reader_blob_sha_last_verified": "not-a-committed-blob"},
     {"reader_blob_sha": "b" * 40},
     {"reader_re_read_this_run": True},
     {"no_publication_of_unverified_claims": False},
