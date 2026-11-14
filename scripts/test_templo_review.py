@@ -176,4 +176,9 @@ for filename, key, field in (
 
 for js in (POI / "assets/reader.js", ROOT / "feedback/annotate.js"):
     run(["node", "--check", str(js)], check=True)
+# The quick-identification preview must show entire portrait and landscape
+# photos; letterbox rather than cropping archaeological reference details.
+reader_css = (POI / "assets/reader.css").read_text(encoding="utf-8")
+assert re.search(r"\.stop-reference img\s*\{[^}]*object-fit:\s*contain;", reader_css, re.DOTALL)
+assert "Complete photograph, without cropping." in (POI / "reader.html").read_text(encoding="utf-8")
 print("PASS: both Templo Mayor routes, local assets and anchors, and original research in the archive")

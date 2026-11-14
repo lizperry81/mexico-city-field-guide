@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "kind": "read_only_research_and_app_implementation_handoff",
+  "generated_at_utc": "2026-11-14T07:44:00Z",
+  "branch_written": "main",
+  "changed_files": [
+    "poi/templo-mayor/assets/reader.js",
+    "poi/templo-mayor/assets/reader.css",
+    "poi/templo-mayor/reader.html",
+    "scripts/test_reader_navigation.js",
+    "scripts/test_templo_review.py"
+  ],
+  "change_summary": "Mobile Explore previews now show uncropped source photographs; reference previews fail closed on a mismatched enlargement link; navigation and static regression checks added.",
+  "research_manifest_at_start": "research-persistence/research/handoff/manifest.json",
+  "research_manifest_blob_sha": "7b2e4eaeed32fabaaee4f5bf3bd6dac8eb673910",
+  "latest_research_input_sha": "44b53036df17492b23d215358717924ab6563d48",
+  "research_branch_sha_at_review": "532d7c2f2c6c238e81765688f0bf7423ade84595",
+  "latest_replay_commit_sha": "3f0e5e80e651c177c5b9c1f71aee7516bae547ac",
+  "referenced_paths_verified": 194,
+  "referenced_paths_missing": 0,
+  "immutable_binary_blob_sha": "e8b9e84af754eaadb0ae2632038b7e46d179b90a",
+  "immutable_report_blob_sha": "54a00d5e446e6096c787ec138721163b3d206a28",
+  "research_batches": 83,
+  "provisional_findings": 519,
+  "ready_for_human_editorial_approval": false,
+  "ready_for_publication": false,
+  "authorized_changes_to_approved_discover": 0,
+  "blocked_editorial_archive": "The exact approved original text of The Basin Before the Mexica and The Heart of Tenochtitlan has not been unambiguously recovered; differing DOCX review copies are not automatically authoritative.",
+  "preserve": [
+    "approved Discover baseline",
+    "eight original Templo Mayor Explore chapters",
+    "21 claims",
+    "12 sources",
+    "comments/localStorage",
+    "rich recovered homepage"
+  ],
+  "deployment_status": "pending CI deployment and public build-info verification"
+}

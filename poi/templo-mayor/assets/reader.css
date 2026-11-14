@@ -202,7 +202,9 @@ summary { width: fit-content; color: var(--jade); font-weight: 700; cursor: poin
 }
 .stop-reference[hidden] { display: none; }
 .stop-reference a { display: block; border-radius: 7px; }
-.stop-reference img { width: 112px; height: 84px; object-fit: cover; border-radius: 7px; }
+/* Keep portrait and wide reference images fully visible: cropping can hide
+   the very archaeological feature a visitor is trying to identify. */
+.stop-reference img { width: 112px; height: 84px; object-fit: contain; background: white; border-radius: 7px; }
 .stop-reference a:focus-visible { outline: 3px solid var(--jade); outline-offset: 3px; }
 .stop-reference strong { font-size: .9rem; }
 .stop-reference p { margin: 4px 0; font-size: .87rem; line-height: 1.38; }

@@ -136,7 +136,10 @@
     const enlargement = current.querySelector('.photo-zoom');
     const source = photo?.getAttribute('src');
     const destination = enlargement?.getAttribute('href');
-    if (source && destination) {
+    // An enlarged reference must be the same credited asset as its thumbnail.
+    // If future content accidentally points to a different photo, suppress the
+    // preview instead of presenting misleading on-site visual identification.
+    if (source && destination && source === destination) {
       stopReferenceThumb.src = source;
       stopReferenceDescription.textContent = photo.getAttribute('alt') || '';
       stopReferenceLink.href = destination;

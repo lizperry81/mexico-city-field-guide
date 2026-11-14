@@ -15,6 +15,7 @@ for (const panel of Object.values(panels)) {
   panel.heading = heading;
   panel.querySelector = selector => {assert.equal(selector, 'h2'); return heading;};
 }
+const photoHrefOverrides = new Map();
 const stops = ['plaza', 'twin-stairs', 'older-stairs'].map(id => {
   const heading = {textContent: id, focused: 0, focus() {this.focused += 1;}};
   return {
@@ -29,7 +30,7 @@ const stops = ['plaza', 'twin-stairs', 'older-stairs'].map(id => {
         }
       };
       if (selector === '.photo-zoom') return {
-        getAttribute(key) {return key === 'href' ? 'assets/' + id + '.webp' : null;}
+        getAttribute(key) {return key === 'href' ? (photoHrefOverrides.get(id) || 'assets/' + id + '.webp') : null;}
       };
       throw Error('Unexpected stop selector: ' + selector);
     },
@@ -262,4 +263,13 @@ const blockedWindow = {...windowContext, sessionStorage: {
 vm.runInNewContext(code, {...sandbox, window: blockedWindow});
 assert.equal(jump.value, 'twin-stairs', 'Navigation still works without storage');
 assert.equal(stopPosition.textContent, 'Stop 2 of 3', 'Position must work with storage disabled');
+// An editorial image mismatch must not show the wrong picture as a field guide.
+photoHrefOverrides.set('plaza', 'assets/unrelated-photo.webp');
+location.hash = '#plaza';
+assert.equal(reference.hidden, true, 'Mismatched enlarged image must suppress the preview');
+photoHrefOverrides.delete('plaza');
+location.hash = '#twin-stairs';
+location.hash = '#plaza';
+assert.equal(reference.hidden, false, 'A corrected, matching photo restores the preview');
+assert.equal(referenceThumb.src, referenceLink.href, 'Preview and enlargement must match');
 console.log('PASS: keyboard skip, Discover contents/return focus, Safari focus, pager, stop resume, deep links, and blocked storage');
