@@ -1,0 +1,70 @@
+{
+  "schema_version": 2,
+  "kind": "independent_research_batch_github_readback_verification",
+  "generated_at": "2026-11-14T07:11:34.090Z",
+  "branch": "research-persistence",
+  "source_research_commit_sha": "44b53036df17492b23d215358717924ab6563d48",
+  "snapshot_commit_sha": "3f0e5e80e651c177c5b9c1f71aee7516bae547ac",
+  "canonical_version": "V97",
+  "canonical_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_counts": {
+    "sources": 616,
+    "claims": 422,
+    "claim_sources": 403,
+    "canonical_findings": 68,
+    "canonical_source_inspections": 9
+  },
+  "canonical_tables_preserved": 88,
+  "canonical_rows_unchanged": true,
+  "staged_findings": 519,
+  "staged_batches": 83,
+  "source_candidates": 208,
+  "source_inspection_payloads": 246,
+  "unknown_source_ids": [
+    "PROPOSE_SOURCE_SLOAD_2020_BOTANICAL_DATASET_NOT_IN_CANONICAL"
+  ],
+  "metadata_conflicts": [
+    {
+      "source_id": "STG-SRC-MANZANILLA-LOPEZ-FRETER-1996",
+      "source_path": "20261112T060230Z-auto09.json",
+      "reason": "cross_batch_source_metadata_collision"
+    },
+    {
+      "source_id": "v95-sload-cave-2020",
+      "source_path": "20261112T080125Z-auto09-te28-2009.json",
+      "reason": "cross_batch_source_metadata_collision"
+    }
+  ],
+  "detached_pending": 37,
+  "unresolved_index_only_count": 1,
+  "replay_report_path": "research/reconciled/v4_44b53036df17/replay_report.json",
+  "replay_report_blob_sha": "54a00d5e446e6096c787ec138721163b3d206a28",
+  "gzip_path": "research/reconciled/v4_44b53036df17/research_only.sqlite.gz",
+  "gzip_git_blob_sha": "e8b9e84af754eaadb0ae2632038b7e46d179b90a",
+  "gzip_bytes_from_base64_readback": 972408,
+  "checksum_path": "research/reconciled/v4_44b53036df17/compressed_sha256.txt",
+  "checksum_blob_sha": "4289dcbea933ee3ebd0f177675f0eb799a7bce46",
+  "compressed_sha256_recomputed_on_binary_from_github": "9366b3341ddf74bceb12eb5c19485aabb5f9ed50d990e0d174496cd206e5410a",
+  "compressed_sha256_matches_committed_text": true,
+  "uncompressed_sha256_from_workflow_report": "469037b89c1d9612a3984e5a131c2b21f6fe62ccf9425729f15932f13f42a232",
+  "sqlite_integrity": "ok",
+  "foreign_key_violations": 0,
+  "github_readback_examination": true,
+  "replay_workflow_url": "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/43569589430",
+  "research_persistence_validation_url": "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/43569589466",
+  "findings_added": 11,
+  "sources_added": 6,
+  "inspections_added": 6,
+  "prior_manifest_blob_sha": "fe31a577aeeaf3d6ca61179abcebb8ae4734fea4",
+  "archival_source_visual_check": "Ibero modern act index pages 0 and 1 inspected; McGowan scholarly PDF screenshot returned 502 (text only)",
+  "publication_approved": false,
+  "ready_for_editorial_review": false,
+  "blockers": [
+    "One unresolved Sload botanical proposed source reference; not silently merged",
+    "Two source metadata collisions still present",
+    "37 detached original inspection records preserved pending identity comparison",
+    "One original index-only finding reference still unresolved",
+    "1824 boundary exact GIS survey and period city hall materials unverified",
+    "Templo Mayor seven ongoing evidence gates and image rights remain open"
+  ]
+}
