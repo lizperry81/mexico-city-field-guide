@@ -19,7 +19,20 @@ const stops = ['plaza', 'twin-stairs', 'older-stairs'].map(id => {
   const heading = {textContent: id, focused: 0, focus() {this.focused += 1;}};
   return {
     id, hidden: false, heading, tagName: 'SECTION', scrolled: 0,
-    querySelector(selector) {assert.equal(selector, 'h3'); return heading;},
+    querySelector(selector) {
+      if (selector === 'h3') return heading;
+      if (selector === '.field-photo img') return {
+        getAttribute(key) {
+          if (key === 'src') return 'assets/' + id + '.webp';
+          if (key === 'alt') return 'Identifiable features at ' + id;
+          return null;
+        }
+      };
+      if (selector === '.photo-zoom') return {
+        getAttribute(key) {return key === 'href' ? 'assets/' + id + '.webp' : null;}
+      };
+      throw Error('Unexpected stop selector: ' + selector);
+    },
     closest(selector) {
       if (selector === '[data-reader-panel]') return panels.explore;
       if (selector === '[data-stop]') return this;
@@ -68,11 +81,21 @@ function button() {
 }
 const prev = button(), next = button(), progress = {textContent: ''};
 const stopPosition = {textContent: ''};
+const reference = {hidden: true};
+const referenceThumb = {src: ''};
+const referenceDescription = {textContent: ''};
+const referenceLink = {
+  href: '', ariaLabel: '',
+  setAttribute(name, value) {assert.equal(name, 'aria-label'); this.ariaLabel = value;}
+};
 const ids = {...panels, ...Object.fromEntries(stops.map(stop => [stop.id, stop])),
   ...Object.fromEntries(sections.map(section => [section.id, section])),
   'choose-stop': jump, 'previous-stop': prev, 'next-stop': next,
   'skip-to-history': skip,
-  'stop-progress': progress, 'stop-position': stopPosition};
+  'stop-progress': progress, 'stop-position': stopPosition,
+  'stop-reference': reference, 'stop-reference-link': referenceLink,
+  'stop-reference-thumb': referenceThumb,
+  'stop-reference-description': referenceDescription};
 const doc = {
   querySelectorAll(selector) {
     if (selector === '.reader-nav a') return links;
@@ -112,6 +135,10 @@ vm.runInNewContext(code, {...sandbox});
 assert.equal(progress.textContent, 'Stop 1 of 3');
 assert.equal(stopPosition.textContent, progress.textContent, 'Current stop must be visible near the picker');
 assert.equal(jump.value, 'plaza');
+assert.equal(reference.hidden, false);
+assert.equal(referenceThumb.src, 'assets/plaza.webp');
+assert.equal(referenceLink.href, 'assets/plaza.webp');
+assert.equal(referenceDescription.textContent, 'Identifiable features at plaza');
 assert.equal(prev.disabled, true);
 assert.equal(next.disabled, false);
 jump.listener(); // Safari no hashchange when reselecting current stop.
@@ -122,6 +149,9 @@ jump.listener();
 assert.equal(location.hash, '#twin-stairs');
 assert.equal(progress.textContent, 'Stop 2 of 3');
 assert.equal(stopPosition.textContent, progress.textContent, 'Stop picker must follow walk navigation');
+assert.equal(referenceThumb.src, 'assets/twin-stairs.webp', 'Preview must follow the active walk stop');
+assert.equal(referenceLink.href, 'assets/twin-stairs.webp', 'Enlargement must match the active stop');
+assert.match(referenceLink.ariaLabel, /twin-stairs/);
 assert.equal(stops[1].heading.focused, 1);
 assert.equal(prev.disabled, false);
 location.hash = '#history'; // Back/forward or history tab.

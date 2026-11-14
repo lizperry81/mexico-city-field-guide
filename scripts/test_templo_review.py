@@ -52,6 +52,10 @@ for folder, feedback_path in (
     # Expose progress before long, photo-rich stops on small screens.
     assert '<select id="choose-stop" aria-describedby="stop-position"></select>' in text
     assert '<p class="stop-position" id="stop-position"></p>' in text
+    # The identification preview loads only the already credited stop photo.
+    assert 'id="stop-reference" class="stop-reference cdmx-no-comment" hidden' in text
+    assert '<a id="stop-reference-link" target="_blank" rel="noopener">' in text
+    assert '<img id="stop-reference-thumb" width="112" height="84" alt="">' in text
     assert all(f"dossier-topic-{n}" in page.ids for n in range(1, 7))
     assert all(f"walk-{n}" in page.ids for n in range(1, 9))
     for marker in (
@@ -130,11 +134,13 @@ for folder, feedback_path in (
     assert '<a href="#history">Discover <small>History · Read before visiting</small></a>' in text
     assert '<a href="#explore">Explore <small>Guided walk · Follow on site</small></a>' in text
     assert '<a href="#plan">Plan <small>Access and directions</small></a>' in text
-    assert len(page.images) == 7, "One overview plus six preserved field photos"
+    assert len([image for image in page.images if image]) == 7, (
+        "One overview plus six preserved field photos; preview references those assets"
+    )
     assert len(page.photo_zoom_links) == 6, "Every field photo must be enlargeable"
     assert sorted(page.photo_zoom_links) == sorted(
         image for image in page.images
-        if not image.endswith("ruins-and-cathedral.webp")
+        if image and not image.endswith("ruins-and-cathedral.webp")
     ), "Never link field stops to unrelated, invented, or nonlocal imagery"
 
 archive = (POI / "archive/index.html").read_text(encoding="utf-8")

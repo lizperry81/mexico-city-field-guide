@@ -13,6 +13,10 @@
   const next = document.getElementById('next-stop');
   const progress = document.getElementById('stop-progress');
   const stopPosition = document.getElementById('stop-position');
+  const stopReference = document.getElementById('stop-reference');
+  const stopReferenceLink = document.getElementById('stop-reference-link');
+  const stopReferenceThumb = document.getElementById('stop-reference-thumb');
+  const stopReferenceDescription = document.getElementById('stop-reference-description');
   const stopStorageKey = 'cdmx:templo-mayor:explore-stop';
   let activeStop = 0;
   // Keep a walking position through a reload in this tab, without changing
@@ -112,6 +116,26 @@
     progress.textContent = `Stop ${activeStop + 1} of ${stops.length}`;
     // Keep progress discoverable at the top, including after a resumed walk.
     stopPosition.textContent = progress.textContent;
+
+    // Quick identification uses only the active stop's original credited photo.
+    // Never substitute a guessed image, orientation, or location marker.
+    const current = stops[activeStop];
+    const photo = current.querySelector('.field-photo img');
+    const enlargement = current.querySelector('.photo-zoom');
+    const source = photo?.getAttribute('src');
+    const destination = enlargement?.getAttribute('href');
+    if (source && destination) {
+      stopReferenceThumb.src = source;
+      stopReferenceDescription.textContent = photo.getAttribute('alt') || '';
+      stopReferenceLink.href = destination;
+      stopReferenceLink.setAttribute(
+        'aria-label',
+        'Open reference photograph for ' + current.querySelector('h3').textContent + ' in a new tab'
+      );
+      stopReference.hidden = false;
+    } else {
+      stopReference.hidden = true;
+    }
 
     if (focusMode) {
       const heading = panel.querySelector('h2');

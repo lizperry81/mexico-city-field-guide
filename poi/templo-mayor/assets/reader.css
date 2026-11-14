@@ -178,6 +178,24 @@ summary { width: fit-content; color: var(--jade); font-weight: 700; cursor: poin
 .stop-select label { display: block; font-size: .84rem; font-weight: 700; }
 /* Position stays visible above the photo-rich stop, not only below it. */
 .stop-position { margin: 7px 0 0 !important; color: var(--muted); font-size: .87rem; font-weight: 650; }
+.stop-reference {
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 17px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--wash);
+}
+.stop-reference[hidden] { display: none; }
+.stop-reference a { display: block; border-radius: 7px; }
+.stop-reference img { width: 112px; height: 84px; object-fit: cover; border-radius: 7px; }
+.stop-reference a:focus-visible { outline: 3px solid var(--jade); outline-offset: 3px; }
+.stop-reference strong { font-size: .9rem; }
+.stop-reference p { margin: 4px 0; font-size: .87rem; line-height: 1.38; }
+.stop-reference small { display: block; color: var(--muted); font-size: .75rem; line-height: 1.35; }
 .stop-select select {
   width: 100%;
   margin-top: 4px;
