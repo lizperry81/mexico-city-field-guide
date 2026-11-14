@@ -1,0 +1,163 @@
+{
+  "schema_version": 3,
+  "kind": "period_x_theme_x_geography_explanatory_readiness_delta",
+  "generated_at": "2026-11-14T10:06:23.270Z",
+  "branch": "research-persistence",
+  "source_batch_path": "research/batches/20261114T1004Z-monumento-revolucion-1897-2010.json",
+  "evidence_status": "noncanonical_source_located_not_publication_approved",
+  "rating_definitions": {
+    "substantial": "Corroborated specialist and primary-source localities plus physically precise interpretation, rights and current access ready for a chapter.",
+    "developing": "Identifiable detailed evidence tied to a place, but lacks original source/independent or visitor validation.",
+    "sparse": "Limited institutional/site interpretation or an abstract without detailed primary comparison.",
+    "missing": "Critical source, location, rights or visitor verification absent."
+  },
+  "cells": [
+    {
+      "period": "1897–1906",
+      "theme": "Legislative palace competition and power",
+      "geography": "Plaza de la República",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1004Z-MR-01"
+      ],
+      "evidence_gap": "Competition outcome directly disputed across operator and indexed INAH catalog; original jury minutes missing"
+    },
+    {
+      "period": "1906–1912",
+      "theme": "Modernization, steel frame, abandoned legislature",
+      "geography": "Tabacalera",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1004Z-MR-02"
+      ],
+      "evidence_gap": "Construction stoppage payroll/photographs not directly inspected"
+    },
+    {
+      "period": "1922–1929",
+      "theme": "Bénard's proposed memorial and deaths",
+      "geography": "Tabacalera",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T1004Z-MR-03"
+      ],
+      "evidence_gap": "Original Bénard sketches and government correspondence absent"
+    },
+    {
+      "period": "1932–1938",
+      "theme": "Design authorship and rescued steel",
+      "geography": "Plaza de la República",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1004Z-MR-04"
+      ],
+      "evidence_gap": "Pani versus Obregón authorship conflict not resolved by original memoirs"
+    },
+    {
+      "period": "1933–1938",
+      "theme": "Four sculpture groups and workers/agrarian law",
+      "geography": "Monumento a la Revolución",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1004Z-MR-07"
+      ],
+      "evidence_gap": "Exact sculptor design brief and current in-situ photo comparison not verified"
+    },
+    {
+      "period": "1933–1938",
+      "theme": "Chiluca and volcanic stone surfaces",
+      "geography": "Monumento a la Revolución",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T1004Z-MR-10"
+      ],
+      "evidence_gap": "Lack stone surveys and quarry record verification"
+    },
+    {
+      "period": "1906–2010",
+      "theme": "Foundation, double dome and elevator systems",
+      "geography": "Monumento a la Revolución",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T1004Z-MR-11"
+      ],
+      "evidence_gap": "17,000 piles cited secondhand; plans and current elevator access not reviewed"
+    },
+    {
+      "period": "1936–1976",
+      "theme": "Revolutionary mausoleum through time",
+      "geography": "Monumento a la Revolución",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1004Z-MR-09"
+      ],
+      "evidence_gap": "Original burial decrees and grave records needed"
+    },
+    {
+      "period": "1985–1986",
+      "theme": "Earthquake and creation of public-history museum",
+      "geography": "Museo Nacional de la Revolución",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1004Z-MR-05"
+      ],
+      "evidence_gap": "1985 engineering record and 1986 exhibits not independently viewed"
+    },
+    {
+      "period": "2009–2010",
+      "theme": "Recovered historic iron and site museum",
+      "geography": "Museo Nacional de la Revolución",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1004Z-MR-06"
+      ],
+      "evidence_gap": "2010 visitor layout not 2026 field verified"
+    },
+    {
+      "period": "1906–1938",
+      "theme": "Relocated 1906 sculpture program",
+      "geography": "Bellas Artes/La Raza/Chapultepec",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T1004Z-MR-08"
+      ],
+      "evidence_gap": "No archival object numbers or confirmed objects at each site"
+    },
+    {
+      "period": "2026",
+      "theme": "Photograph rights and present-day field sequence",
+      "geography": "Tabacalera/Bellas Artes/Chapultepec",
+      "rating": "missing",
+      "finding_ids": [
+        "20261114T1004Z-MR-06",
+        "20261114T1004Z-MR-07",
+        "20261114T1004Z-MR-08"
+      ],
+      "evidence_gap": "Photo permissions, correct opening/access points, access directions and current exhibitions not independently confirmed"
+    },
+    {
+      "period": "1897–1938",
+      "theme": "Exact original steel plans and design competition dossier",
+      "geography": "Tabacalera",
+      "rating": "missing",
+      "finding_ids": [
+        "20261114T1004Z-MR-01",
+        "20261114T1004Z-MR-02",
+        "20261114T1004Z-MR-11"
+      ],
+      "evidence_gap": "No original contract sheets/jury minutes or contemporary plan reproduced"
+    }
+  ],
+  "summary": {
+    "total": 13,
+    "substantial": 0,
+    "developing": 7,
+    "sparse": 4,
+    "missing": 2,
+    "classification_finding_counts": {
+      "broad_history": 5,
+      "poi_ready_candidate": 4,
+      "specialist_technical": 2
+    }
+  },
+  "publication_approved": false
+}
