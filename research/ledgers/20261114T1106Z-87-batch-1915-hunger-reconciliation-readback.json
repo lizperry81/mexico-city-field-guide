@@ -1,0 +1,82 @@
+{
+  "schema_version": 2,
+  "kind": "independent_github_replay_readback_and_integrity",
+  "generated_at": "2026-11-14T11:07:24.997Z",
+  "branch": "research-persistence",
+  "research_commit_sha": "fcc9a9bc76e9a3699d3aac98e2f4549773bc20bb",
+  "verified_replay_commit_sha": "8035cec9040a31b0d265e6924707ba86a7ca52a6",
+  "prior_verified_manifest_commit_sha": "0ac5bd9c2acf57707927225ddfb83be39f81f241",
+  "report_path": "research/reconciled/v4_fcc9a9bc76e9/replay_report.json",
+  "sqlite_gzip_path": "research/reconciled/v4_fcc9a9bc76e9/research_only.sqlite.gz",
+  "checksum_path": "research/reconciled/v4_fcc9a9bc76e9/compressed_sha256.txt",
+  "github_blob_sha": {
+    "sqlite_gzip": "d220e47f8676405b92af27b5b88eb08f344f684d",
+    "report": "587ae69d52cd5cc5015344922a793a4fcb026939",
+    "batch": "1d249a668a4be5e436d514a00f207510211237d2",
+    "coverage": "283b50f3b95cddf6ec6f24d2f7d249b37d979491",
+    "audit": "3100dd2c3994a2789612f7a78f588ac78c7c2971"
+  },
+  "compressed_bytes_fetched": 1025830,
+  "independent_sha256_algorithm": "JavaScript SHA-256 validated against NIST abc test vector, computed on complete base64-decoded GitHub readback",
+  "independent_compressed_sha256": "1dc08c604ad2591ad38c6da1a2cc978466014970cdf6ca8f655a478331545861",
+  "committed_compressed_sha256": "1dc08c604ad2591ad38c6da1a2cc978466014970cdf6ca8f655a478331545861",
+  "compressed_readback_sha256_match": true,
+  "uncompressed_sha256_reported_after_workflow_gzip_decode": "be0d1da1f9e14dc347cbea2f68088d37fc335f7b048f1287892b089602ae2722",
+  "canonical_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_version": "V97",
+  "canonical_counts": {
+    "sources": 616,
+    "claims": 422,
+    "claim_sources": 403,
+    "canonical_findings": 68,
+    "canonical_source_inspections": 9
+  },
+  "canonical_tables_preserved": 88,
+  "canonical_rows_unchanged": true,
+  "sqlite_integrity": "ok",
+  "foreign_key_violations": 0,
+  "counts_before": {
+    "github_batches": 86,
+    "staged_findings": 552,
+    "source_candidates": 234,
+    "source_inspections": 272
+  },
+  "counts_after": {
+    "github_batches": 87,
+    "staged_findings": 563,
+    "source_candidates": 241,
+    "source_inspections": 279
+  },
+  "raw_batch_documents_in_sqlite": 87,
+  "new_input_batch_sha256": "e736b840da7caa0bbd763a4e05f87c92a70ea3d7653935ec724303d7e3301bd5",
+  "source_id_conflicts": [
+    {
+      "source_id": "STG-SRC-MANZANILLA-LOPEZ-FRETER-1996",
+      "source_path": "20261112T060230Z-auto09.json",
+      "reason": "cross_batch_source_metadata_collision"
+    },
+    {
+      "source_id": "v95-sload-cave-2020",
+      "source_path": "20261112T080125Z-auto09-te28-2009.json",
+      "reason": "cross_batch_source_metadata_collision"
+    }
+  ],
+  "unknown_source_ids": [
+    "PROPOSE_SOURCE_SLOAD_2020_BOTANICAL_DATASET_NOT_IN_CANONICAL"
+  ],
+  "detached_original_inspections_review_pending": 37,
+  "unresolved_index_only_count": 1,
+  "evidence_status": "noncanonical_research_staging_not_editorially_corroborated",
+  "ready_for_editorial_review": false,
+  "ready_for_publication": false,
+  "publication_approved": false,
+  "blockers": [
+    "37 detached inspection records remain identity-review pending",
+    "2 cross-batch bibliographic metadata collisions",
+    "1 unregistered botanical dataset source reference",
+    "1 unresolved index-only finding reference",
+    "1915 source evidence mostly edited modern synthesis or abstracts; original 1914-15 documents not opened",
+    "1915 price-increase percentage in 2016 INEHRM chapter internally inconsistent with quoted endpoints",
+    "Casasola photograph original object ID and reuse rights unverified"
+  ]
+}
