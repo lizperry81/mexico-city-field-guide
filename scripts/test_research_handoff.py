@@ -11,6 +11,7 @@ import test_handoff_86_history  # pinned append-only Git identities and approval
 import test_handoff_87_history  # 87-batch immutable readback and evidence safeguards
 import test_handoff_88_history  # independent 88-batch full-binary and approval tests
 import test_handoff_89_history  # 89-batch workflow readback and no-publication tests
+import test_handoff_90_history  # 90-batch CUPA source-conflict and review-only tests
 from editorial_passage_inventory import HistoryPassages
 from check_research_handoff import audit_matrix_explicitly_unapproved
 from handoff_new_audits import parse_new_audit
