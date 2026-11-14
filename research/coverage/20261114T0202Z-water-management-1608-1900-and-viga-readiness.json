@@ -1,0 +1,133 @@
+{
+  "schema_version": 3,
+  "kind": "period_x_theme_x_geography_explanatory_readiness_delta",
+  "generated_at": "2026-11-14T02:02:00Z",
+  "branch": "research-persistence",
+  "source_batch_path": "research/batches/20261114T0202Z-water-management-1608-1900-and-viga.json",
+  "evidence_status": "noncanonical_source_located_cannot_publish",
+  "rating_definitions": {
+    "substantial": "At least two genuinely independent checked accounts plus a coherent physical-site historical explanation",
+    "developing": "Source-specific candidate with substantial historical explanation, but primary-source or on-site verification missing",
+    "sparse": "Indexed abstract/retrospective provides an outline but insufficient corroborated detail",
+    "missing": "No dependable evidence yet for exact physical identification or visitor route"
+  },
+  "cells": [
+    {
+      "id": "WAT-1608-LABOR",
+      "period": "1607–1608",
+      "theme": "Indigenous labor and hydraulic construction",
+      "geography": "Huehuetoca / Zitlaltepec",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "20261114T0202Z-WATER-01"
+      ],
+      "explanatory_readiness": "Historical account framed; independent and material-place checks outstanding",
+      "next_evidence_needed": "Chimalpahin original manuscript, edited Nahuatl comparison and social-labor registers"
+    },
+    {
+      "id": "WAT-1859-TECH",
+      "period": "1859",
+      "theme": "Siphon proposal versus built works",
+      "geography": "Valley of Mexico",
+      "rating": "sparse",
+      "linked_assertion_ids": [
+        "20261114T0202Z-WATER-02"
+      ],
+      "explanatory_readiness": "Indexed or indirect material only; not explanatory-ready",
+      "next_evidence_needed": "Inspect original 1859 map image and explanatory text"
+    },
+    {
+      "id": "WAT-1860-EMPIRE",
+      "period": "1860s",
+      "theme": "Second Empire public works and interruption",
+      "geography": "Zumpango–Tequixquiac",
+      "rating": "sparse",
+      "linked_assertion_ids": [
+        "20261114T0202Z-WATER-03"
+      ],
+      "explanatory_readiness": "Indexed or indirect material only; not explanatory-ready",
+      "next_evidence_needed": "Levi 1988 article, imperial machinery accounts"
+    },
+    {
+      "id": "WAT-1900-CANAL",
+      "period": "1900",
+      "theme": "Drainage inauguration and institutional rhetoric",
+      "geography": "San Lázaro–Tequixquiac",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "20261114T0202Z-WATER-05"
+      ],
+      "explanatory_readiness": "Historical account framed; independent and material-place checks outstanding",
+      "next_evidence_needed": "El Popular 19 March 1900, acceptance records and hydrograph"
+    },
+    {
+      "id": "WAT-1800S-LAND",
+      "period": "1800s",
+      "theme": "Land commercialization and environmental effects",
+      "geography": "City of Mexico / Basin",
+      "rating": "sparse",
+      "linked_assertion_ids": [
+        "20261114T0202Z-WATER-04"
+      ],
+      "explanatory_readiness": "Indexed or indirect material only; not explanatory-ready",
+      "next_evidence_needed": "Full Miranda Pacheco 2019 pages and original land records"
+    },
+    {
+      "id": "WAT-CJA-FABRIC",
+      "period": "1900–1910",
+      "theme": "Hydraulic structure / inscription phases",
+      "geography": "Tequixquiac / Zumpango",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "20261114T0202Z-WATER-06"
+      ],
+      "explanatory_readiness": "Historical account framed; independent and material-place checks outstanding",
+      "next_evidence_needed": "Physical inscription photo, construction drawings, site access"
+    },
+    {
+      "id": "WAT-VIGA-COMMERCE",
+      "period": "1800s–1900s",
+      "theme": "Commerce, garita, bridge and promenade",
+      "geography": "Canal de la Viga, Iztacalco",
+      "rating": "developing",
+      "linked_assertion_ids": [
+        "20261114T0202Z-WATER-07",
+        "20261114T0202Z-WATER-08"
+      ],
+      "explanatory_readiness": "Historical account framed; independent and material-place checks outstanding",
+      "next_evidence_needed": "Original AHCM vol.3587 exp.83 and historical cadastral map"
+    },
+    {
+      "id": "WAT-VIGA-PHOTOS",
+      "period": "1880–1950",
+      "theme": "Waterfront photography / urban transformation",
+      "geography": "Iztacalco",
+      "rating": "sparse",
+      "linked_assertion_ids": [
+        "20261114T0202Z-WATER-09"
+      ],
+      "explanatory_readiness": "Indexed or indirect material only; not explanatory-ready",
+      "next_evidence_needed": "Original image captions, dates and copyright"
+    },
+    {
+      "id": "WAT-VIGA-WALK",
+      "period": "2026 vs historic",
+      "theme": "Place-observation route feasibility",
+      "geography": "Canal de la Viga historic alignment",
+      "rating": "missing",
+      "linked_assertion_ids": [
+        "20261114T0202Z-WATER-07",
+        "20261114T0202Z-WATER-09"
+      ],
+      "explanatory_readiness": "No verified map or visitor-visible identification",
+      "next_evidence_needed": "Georeferenced historical maps plus current access and identification"
+    }
+  ],
+  "summary": {
+    "substantial": 0,
+    "developing": 4,
+    "sparse": 4,
+    "missing": 1
+  },
+  "publication_approved": false
+}
