@@ -1,0 +1,488 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261114T0900Z-1629-flood-hydraulic-government",
+  "generated_at": "2026-11-14T09:03:28.884Z",
+  "branch": "research-persistence",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "storage_role": "immutable_noncanonical_research_batch",
+  "previous_verified_replay": "research/reconciled/v4_984c93b45dbe/replay_report.json",
+  "prior_verified_counts": {
+    "github_batches_replayed": 84,
+    "staged_findings": 530,
+    "source_candidates": 217,
+    "inspection_entries": 255,
+    "canonical_sources": 616,
+    "canonical_claims": 422,
+    "canonical_links": 403,
+    "canonical_findings": 68
+  },
+  "research_scope": "11 source-located candidates: 5 broad colonial flood/governance/labor findings, 4 place-based interpretation candidates, 2 specialist hydraulic archaeology/design findings. Nine bibliographic source candidates and nine inspection scopes; full historical primary documents not accessed and exact demographic figures unapproved.",
+  "sources": [
+    {
+      "id": "STG-SRC-20261114-FLD-CANDIANI",
+      "title": "Dreaming of Dry Land, chapter 2",
+      "authors": "Vera S. Candiani",
+      "publication": "Dreaming of Dry Land (Stanford University Press, 2014), chapter 2, pp.47–80",
+      "url": "https://academic.oup.com/stanford-scholarship-online/book/14915/chapter-abstract/169247536",
+      "access_scope": "Publisher chapter abstract: post-1604/1607 shift toward drainage, Enrico Martínez channel+tunnel, Indigenous repartimiento labor and maintenance critique",
+      "status": "publisher_abstract_only_full_chapter_not_read"
+    },
+    {
+      "id": "STG-SRC-20261114-FLD-GARCIA",
+      "title": "La gran inundación de 1629",
+      "authors": "Bernardo García Martínez",
+      "publication": "Arqueología Mexicana 68, pp.50–57 (print article); web excerpt",
+      "url": "https://www.arqueologiamexicana.mx/mexico-antiguo/la-gran-inundacion-de-1629",
+      "access_scope": "Search-index article excerpt: years 1629–1634, dry 1634, Santa Catarina/Santa Ana, tentative demographic losses; direct page timeout",
+      "status": "specialist_historian_excerpt_print_full_text_not_read"
+    },
+    {
+      "id": "STG-SRC-20261114-FLD-CUELLAR",
+      "title": "La lucha de los Santos. Corporaciones e imágenes religiosas vinculadas a la inundación de 1629",
+      "authors": "Mario Hugo Cuéllar Meléndez",
+      "publication": "Revista de Historia Moderna 35 (2017), pp.149–177, DOI 10.14198/RHM2017.35.05",
+      "url": "https://revistahistoriamoderna.ua.es/article/view/2017-n35-lucha-de-santos-corporaciones-imagenes-religiosas-en-in",
+      "access_scope": "Direct HTML abstract lines 36–53 and bibliography lines 54–90; full article not inspected",
+      "status": "peer_reviewed_abstract_direct"
+    },
+    {
+      "id": "STG-SRC-20261114-FLD-LOPEZBOOT",
+      "title": "En el arte de mi profesión: Adrian Boot y el manejo holandés del agua en el México virreinal",
+      "authors": "John F. López",
+      "publication": "Boletín de Monumentos Históricos 32 (2017), pp.26–46",
+      "url": "https://www.revistas.inah.gob.mx/index.php/boletinmonumentos/article/view/11048",
+      "access_scope": "INAH scholarly indexed abstract: Boot arrival 1614, opposition to Martínez, lake containment alternative; direct open timeout",
+      "status": "peer_reviewed_abstract_index_only"
+    },
+    {
+      "id": "STG-SRC-20261114-FLD-LOPEZMIT",
+      "title": "The hydrographic city: mapping Mexico City's urban form in relation to its aquatic condition, 1521–1700",
+      "authors": "John F. López",
+      "publication": "MIT architecture PhD dissertation (2013), catalog and abstract",
+      "url": "https://dspace.mit.edu/entities/publication/31903168-a541-4124-b321-802f5009249c",
+      "access_scope": "Direct MIT catalog HTML lines 11–80, abstract lines 56–59; PDF NOT read; terms prohibit reproduction without permission",
+      "status": "doctoral_thesis_catalog_abstract_direct"
+    },
+    {
+      "id": "STG-SRC-20261114-FLD-INAH-PROFESA",
+      "title": "Templo de la Profesa",
+      "authors": "INAH Catálogo Nacional de Monumentos Históricos Inmuebles",
+      "publication": "INAH Lugares monument record (undated continuously updated)",
+      "url": "https://lugares.inah.gob.mx/es/pagina-de-elemento/3335",
+      "access_scope": "Direct official HTML lines 19–23: 1597 original start, flood damage, rebuild 1714 by Pedro de Arrieta; license lines 27–33",
+      "status": "official_monument_record_direct"
+    },
+    {
+      "id": "STG-SRC-20261114-FLD-HOBERMAN",
+      "title": "Bureaucracy and Disaster: Mexico City and the Flood of 1629",
+      "authors": "Louisa S. Hoberman",
+      "publication": "Journal of Latin American Studies 6(2) (1974), pp.211–230; Cambridge online posting 2009",
+      "url": "https://www.cambridge.org/core/journals/journal-of-latin-american-studies/article/abs/bureaucracy-and-disaster-mexico-city-and-the-flood-of-1629/B909731AB5080B335C53E69ABDA02AF1",
+      "access_scope": "Direct Cambridge HTML journal metadata and extract, which poses analytical questions about cabildo/Crown/informal networks; article body not read",
+      "status": "peer_reviewed_extract_direct_full_article_not_read"
+    },
+    {
+      "id": "STG-SRC-20261114-FLD-1636REPORT",
+      "title": "Informe inédito dado en 1636 al virrey Marqués de Cadereita acerca del desagüe de Huehuetoca",
+      "authors": "José María de Agreda y Sánchez (editor of historical report attributed to fray Andrés de San Miguel)",
+      "publication": "Anales del Instituto Nacional de Antropología e Historia 1(4) (1887), pp.167–193",
+      "url": "https://revistas.inah.gob.mx/index.php/anales/article/view/6439",
+      "access_scope": "INAH journal index metadata identifies 1636 report published in 1887; PDF/original transcription unexamined",
+      "status": "historical_document_publication_bibliography_index_only"
+    },
+    {
+      "id": "STG-SRC-20261114-FLD-ACOLMAN",
+      "title": "La presa de Acolman: integridad física, vida social e inestabilidad ambiental en el valle de Teotihuacán",
+      "authors": "Badley Skopyk and Diana Martínez Yrízar",
+      "publication": "Boletín de Monumentos Históricos 32 (2017), pp.47–66",
+      "url": "https://www.revistas.inah.gob.mx/index.php/boletinmonumentos/article/view/11049/0",
+      "access_scope": "INAH scholarly indexed abstract: 1630 dam on San Juan river, regional desagüe context; original archive/field evidence not inspected",
+      "status": "peer_reviewed_abstract_index_only"
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "20261114T0900Z-FLD-INS-01",
+      "source_id": "STG-SRC-20261114-FLD-CANDIANI",
+      "locator": "Publisher chapter abstract: post-1604/1607 shift toward drainage, Enrico Martínez channel+tunnel, Indigenous repartimiento labor and maintenance critique",
+      "access": "Publisher chapter abstract: post-1604/1607 shift toward drainage, Enrico Martínez channel+tunnel, Indigenous repartimiento labor and maintenance critique",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Full source not obtained."
+    },
+    {
+      "id": "20261114T0900Z-FLD-INS-02",
+      "source_id": "STG-SRC-20261114-FLD-GARCIA",
+      "locator": "Search-index article excerpt: years 1629–1634, dry 1634, Santa Catarina/Santa Ana, tentative demographic losses; direct page timeout",
+      "access": "Search-index article excerpt: years 1629–1634, dry 1634, Santa Catarina/Santa Ana, tentative demographic losses; direct page timeout",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Full source not obtained."
+    },
+    {
+      "id": "20261114T0900Z-FLD-INS-03",
+      "source_id": "STG-SRC-20261114-FLD-CUELLAR",
+      "locator": "Direct HTML abstract lines 36–53 and bibliography lines 54–90; full article not inspected",
+      "access": "Direct HTML abstract lines 36–53 and bibliography lines 54–90; full article not inspected",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Direct HTML catalog or abstract examined, not the underlying historical document."
+    },
+    {
+      "id": "20261114T0900Z-FLD-INS-04",
+      "source_id": "STG-SRC-20261114-FLD-LOPEZBOOT",
+      "locator": "INAH scholarly indexed abstract: Boot arrival 1614, opposition to Martínez, lake containment alternative; direct open timeout",
+      "access": "INAH scholarly indexed abstract: Boot arrival 1614, opposition to Martínez, lake containment alternative; direct open timeout",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Indexed abstract/metadata only; direct text not obtained."
+    },
+    {
+      "id": "20261114T0900Z-FLD-INS-05",
+      "source_id": "STG-SRC-20261114-FLD-LOPEZMIT",
+      "locator": "Direct MIT catalog HTML lines 11–80, abstract lines 56–59; PDF NOT read; terms prohibit reproduction without permission",
+      "access": "Direct MIT catalog HTML lines 11–80, abstract lines 56–59; PDF NOT read; terms prohibit reproduction without permission",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Direct HTML catalog or abstract examined, not the underlying historical document."
+    },
+    {
+      "id": "20261114T0900Z-FLD-INS-06",
+      "source_id": "STG-SRC-20261114-FLD-INAH-PROFESA",
+      "locator": "Direct official HTML lines 19–23: 1597 original start, flood damage, rebuild 1714 by Pedro de Arrieta; license lines 27–33",
+      "access": "Direct official HTML lines 19–23: 1597 original start, flood damage, rebuild 1714 by Pedro de Arrieta; license lines 27–33",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Direct HTML catalog or abstract examined, not the underlying historical document."
+    },
+    {
+      "id": "20261114T0900Z-FLD-INS-07",
+      "source_id": "STG-SRC-20261114-FLD-HOBERMAN",
+      "locator": "Direct Cambridge HTML journal metadata and extract, which poses analytical questions about cabildo/Crown/informal networks; article body not read",
+      "access": "Direct Cambridge HTML journal metadata and extract, which poses analytical questions about cabildo/Crown/informal networks; article body not read",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Direct HTML catalog or abstract examined, not the underlying historical document."
+    },
+    {
+      "id": "20261114T0900Z-FLD-INS-08",
+      "source_id": "STG-SRC-20261114-FLD-1636REPORT",
+      "locator": "INAH journal index metadata identifies 1636 report published in 1887; PDF/original transcription unexamined",
+      "access": "INAH journal index metadata identifies 1636 report published in 1887; PDF/original transcription unexamined",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Indexed abstract/metadata only; direct text not obtained."
+    },
+    {
+      "id": "20261114T0900Z-FLD-INS-09",
+      "source_id": "STG-SRC-20261114-FLD-ACOLMAN",
+      "locator": "INAH scholarly indexed abstract: 1630 dam on San Juan river, regional desagüe context; original archive/field evidence not inspected",
+      "access": "INAH scholarly indexed abstract: 1630 dam on San Juan river, regional desagüe context; original archive/field evidence not inspected",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Indexed abstract/metadata only; direct text not obtained."
+    }
+  ],
+  "findings": [
+    {
+      "id": "20261114T0900Z-FLD-01",
+      "classification": "broad_history",
+      "assertion": "After floods in 1604 and 1607, elite flood-control policy shifted toward moving water out of the closed basin rather than relying only on retention/containment; Candiani frames this as a decision about whose property and labor the project protected.",
+      "date_or_range": "1604–1607",
+      "period": "Early colonial water politics",
+      "themes": [
+        "environment",
+        "water governance",
+        "inequality"
+      ],
+      "geographies": [
+        "Cuenca de México",
+        "northwestern drainage sector"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-FLD-CANDIANI"
+      ],
+      "source_locator": "Publisher chapter 2 abstract, pp.47–80",
+      "limitations": "Full chapter, expenditure records and Indigenous testimony not examined; avoid treating abstract as proof of every implementation detail.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0900Z-FLD-02",
+      "classification": "broad_history",
+      "assertion": "The Huehuetoca drainage scheme involved a channel and tunnel associated with Enrico Martínez and intensive Indigenous corvée/repartimiento labor; Candiani's abstract gives an approximate 60,000 mobilized workers, a figure needing examination of its source and counting method.",
+      "date_or_range": "1607–1614",
+      "period": "Colonial labor and engineering",
+      "themes": [
+        "Indigenous labor",
+        "water engineering",
+        "colonial extraction"
+      ],
+      "geographies": [
+        "Huehuetoca",
+        "Cuenca de México"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-FLD-CANDIANI"
+      ],
+      "source_locator": "Candiani 2014 chapter 2 publisher abstract",
+      "limitations": "60,000 is the author's estimate in an abstract, not an independently checked person-count; do not frame as unique annual laborers.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0900Z-FLD-03",
+      "classification": "broad_history",
+      "assertion": "The flood beginning in 1629 left much of Mexico City inundated in varying degrees until the 1634 dry season; the flood was a prolonged urban emergency, not one single 40-hour rainfall event whose water immediately receded.",
+      "date_or_range": "1629–1634",
+      "period": "Seventeenth-century colonial crisis",
+      "themes": [
+        "flood",
+        "urban disaster",
+        "housing"
+      ],
+      "geographies": [
+        "Centro Histórico",
+        "Cuenca de México"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-FLD-GARCIA"
+      ],
+      "source_locator": "García Martínez, Arqueología Mexicana 68, online excerpt of pp.50–57",
+      "limitations": "Exact flood onset, rainfall duration and water heights need primary meteorological/municipal record crosscheck; printed full article unavailable.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0900Z-FLD-04",
+      "classification": "broad_history",
+      "assertion": "The flood produced differentiated suffering: García Martínez specifically reports collapse of poorer adobe housing, severe deprivation, and potentially tens of thousands of deaths and departures; his figures are explicitly uncertain rather than census totals.",
+      "date_or_range": "1629–1635",
+      "period": "Colonial urban inequality",
+      "themes": [
+        "class",
+        "health",
+        "housing",
+        "displacement"
+      ],
+      "geographies": [
+        "Santa Catarina",
+        "Santa Ana",
+        "historic Mexico City"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-FLD-GARCIA"
+      ],
+      "source_locator": "García Martínez web excerpt, paragraphs on adobe houses, deaths, approximate city population and migration",
+      "limitations": "Estimated 30,000 deaths, 50,000 emigrants and 150,000 residents must not be published as exact measured totals.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0900Z-FLD-05",
+      "classification": "broad_history",
+      "assertion": "Responses to the 1629 flood were also contests over authority and religious patronage: religious corporations proposed competing saints and Marian images as intercessors, alongside practical environmental explanations and hydraulic proposals.",
+      "date_or_range": "1629–1638",
+      "period": "Colonial religion and politics",
+      "themes": [
+        "religious corporations",
+        "popular response",
+        "power"
+      ],
+      "geographies": [
+        "Mexico City churches and corporations"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-FLD-CUELLAR",
+        "STG-SRC-20261114-FLD-HOBERMAN"
+      ],
+      "source_locator": "Cuéllar Meléndez 2017 abstract lines 49–53; Hoberman 1974 article extract",
+      "limitations": "Which image was promoted by each group, their dates/processions and municipal decisions require full text and primary records.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0900Z-FLD-06",
+      "classification": "poi_ready_candidate",
+      "assertion": "The present Templo de la Profesa should not be read as an untouched sixteenth-century Jesuit building: INAH records a 1597 construction start and a major rebuilding in 1714 in response to damage from the 1629 inundation, directed by Pedro de Arrieta.",
+      "date_or_range": "1597–1714",
+      "period": "Colonial architecture after flood",
+      "themes": [
+        "construction phases",
+        "Jesuits",
+        "flood damage"
+      ],
+      "geographies": [
+        "Calle Madero / Templo de la Profesa"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-FLD-INAH-PROFESA"
+      ],
+      "source_locator": "INAH Lugares direct monument entry lines 19–23",
+      "limitations": "Exact surviving original fabric, restoration chronology and 2026 building access are unverified; do not label specific visible stones 1597.",
+      "learning_mode": "field_then_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0900Z-FLD-07",
+      "classification": "poi_ready_candidate",
+      "assertion": "García Martínez singles out the Santa Catarina and Santa Ana neighborhoods as still largely deserted after the 1634 drying period; this provides a geographically situated counterpoint to narratives focused only on viceregal central squares.",
+      "date_or_range": "1629–1635",
+      "period": "Colonial neighborhood history",
+      "themes": [
+        "displacement",
+        "working-class city",
+        "flood aftermath"
+      ],
+      "geographies": [
+        "Santa Catarina",
+        "Santa Ana"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-FLD-GARCIA"
+      ],
+      "source_locator": "Arqueología Mexicana 68 web excerpt: Santa Catarina and Santa Ana paragraph",
+      "limitations": "Historical barrio boundaries, modern place equivalents and individual surviving structures have not been verified.",
+      "learning_mode": "advance_history_then_field",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0900Z-FLD-08",
+      "classification": "poi_ready_candidate",
+      "assertion": "A visitor at the historic core should understand that the early seventeenth-century city occupied a rapidly changing lake-edge environment: López's MIT dissertation abstract contrasts the island city of 1521, a lake-margin city around 1629, and reclaimed land by 1700.",
+      "date_or_range": "1521–1700",
+      "period": "Urban geography",
+      "themes": [
+        "shoreline change",
+        "built environment",
+        "maps"
+      ],
+      "geographies": [
+        "Zócalo / Historic Centre"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-FLD-LOPEZMIT"
+      ],
+      "source_locator": "MIT DSpace catalog lines 56–59",
+      "limitations": "These are interpretive period descriptions, not survey-grade georeferenced shorelines; no field map overlay is currently licensed or verified.",
+      "learning_mode": "advance_history_then_field",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0900Z-FLD-09",
+      "classification": "poi_ready_candidate",
+      "assertion": "Huehuetoca and the drainage corridor northwest of the capital are integral to understanding the 1629 flood even though they are not an immediate downtown walk stop; claims about the visible present-day trench require a separate site and engineering-history audit.",
+      "date_or_range": "1607–1636",
+      "period": "Landscape infrastructure",
+      "themes": [
+        "geographic causation",
+        "canal",
+        "engineering"
+      ],
+      "geographies": [
+        "Huehuetoca (State of Mexico)",
+        "Cuenca de México"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-FLD-CANDIANI",
+        "STG-SRC-20261114-FLD-1636REPORT"
+      ],
+      "source_locator": "Candiani chapter abstract; INAH Anales 1887 historical report catalog pp.167–193",
+      "limitations": "The 1636 report is identified bibliographically, not read; no present-day accessible trace or walking route authenticated.",
+      "learning_mode": "advance_history_then_field",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0900Z-FLD-10",
+      "classification": "specialist_technical",
+      "assertion": "The flood-control question was contested rather than technologically inevitable: an INAH scholarly abstract reports that Dutch engineer Adrian Boot, arriving in 1614, opposed Martínez's drainage proposal and favored renewed regulation of lake waters.",
+      "date_or_range": "1614–1629",
+      "period": "Hydraulic design debate",
+      "themes": [
+        "European hydraulic technology",
+        "indigenous lacustrine knowledge",
+        "design alternatives"
+      ],
+      "geographies": [
+        "Cuenca de México"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-FLD-LOPEZBOOT",
+        "STG-SRC-20261114-FLD-CANDIANI"
+      ],
+      "source_locator": "López 2017 INAH article abstract; Candiani 2014 chapter 2 abstract",
+      "limitations": "Original Boot/Martínez reports and full specialist articles unexamined; the comparison cannot yet specify dimensions or outcomes of rival designs.",
+      "learning_mode": "advance_history_specialist_sidebar",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0900Z-FLD-11",
+      "classification": "specialist_technical",
+      "assertion": "The reported 1630 Acolman dam belongs to a different, northeast-basin water-management locality from the capital's northwestern Huehuetoca outlet. Treat the regional network and chronology as separate interventions rather than drawing one unverified continuous downtown-to-Acolman construction project.",
+      "date_or_range": "1630",
+      "period": "Regional hydraulic archaeology",
+      "themes": [
+        "waterworks",
+        "landscape",
+        "source method"
+      ],
+      "geographies": [
+        "Acolman / Teotihuacan basin",
+        "Huehuetoca"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-FLD-ACOLMAN",
+        "STG-SRC-20261114-FLD-CANDIANI"
+      ],
+      "source_locator": "Skopyk & Martínez Yrízar 2017 indexed abstract; Candiani chapter abstract",
+      "limitations": "Acolman paper, archival maps and field observations not read; no verified combined alignment available.",
+      "learning_mode": "specialist_sidebar",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    }
+  ],
+  "source_identity_policy": "Nine IDs are provisional. Prior-batch and canonical URL/identity overlap must be recorded by the full replay; do not assert bibliographic uniqueness, merge detached inspection identities, or rewrite V97. Distinguish historic report catalogues from inspection of originals.",
+  "external_source_usage": "Direct HTML: Cuéllar 2017 abstract, MIT dissertation catalogue, INAH La Profesa, Cambridge Hoberman extract (4); indexed abstracts/excerpts: Candiani publisher, García Martínez, López Boot, INAH 1887 historical report, Acolman study (5); zero original 1629 municipal acts or 1636 report facsimile pages examined; no image licenses cleared.",
+  "publication_approved": false,
+  "independently_corroborated_findings": 0,
+  "ready_for_editorial_review": false
+}
