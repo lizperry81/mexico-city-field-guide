@@ -63,7 +63,8 @@ def verified_index_only_total(declared, replay_total, te28_reclassified, snapsho
         return False
     if snapshot_kind in ("research_to_app_handoff", "immutable_research_batch_handoff",
                          "research_to_app_handoff_immutable_snapshot",
-                         "append_only_research_to_app_verified_handoff"):
+                         "append_only_research_to_app_verified_handoff",
+                         "append_only_research_handoff_history"):
         return declared == replay_total
     return declared == replay_total + te28_reclassified
 
@@ -1080,7 +1081,8 @@ def validate():
                                                       "immutable_cross_automation_research_handoff",
                                                       "immutable_research_batch_handoff",
                                                       "research_to_app_handoff",
-                                                      "append_only_research_to_app_verified_handoff"):
+                                                      "append_only_research_to_app_verified_handoff",
+                                                      "append_only_research_handoff_history"):
                     # The compact later handoff has no 'changes' section.
                     # Recover the earlier TE28 reclassification ONLY from its
                     # pinned, append-only historical record, not a guessed delta.
