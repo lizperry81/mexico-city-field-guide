@@ -1,0 +1,1612 @@
+{
+  "schema_version": 1,
+  "batch_id": "20261114T1532Z-formative-basin-c4f1",
+  "status": "STAGED ONLY - NOT IN CANONICAL",
+  "produced_by": "Claude (independent research engine, scheduled session 2026-11-14, claude.ai cloud workspace)",
+  "canonical_v97_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_sha256_observed": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_modified": false,
+  "main_modified": false,
+  "base_remote_commit": "b0793f187b1ab85d69514056124121a399ee5132 (origin/research-persistence at session start)",
+  "handoff_manifest_read": {
+    "generated_at": "2026-11-14T15:02:00Z",
+    "research_commit_sha": "74470d2dbe713c70a4efe39f710313112b40a4c4",
+    "staged": "91 batches / 607 provisional findings"
+  },
+  "focus": {
+    "domain": "B/C. Formative (Preclassic) Basin of Mexico: Tlatilco, Tlapacoya-Ayotla-Zohapilco, Coapexco, Zacatenco, Ticomán, El Arbolillo, Copilco, Cuicuilco",
+    "geography": "northern Basin (Naucalpan, Gustavo A. Madero), southeast (Ixtapaluca, Chalco, Amecameca), south (Tlalpan/Coyoacán Pedregal)",
+    "gap_basis": "V97 canonical: no source titles or findings for Tlatilco, Tlapacoya, Zohapilco, Zacatenco, Ticomán, Coapexco; Cuicuilco has 42 source rows and 14 claims but only abstract/official-page level, and the key 2021 Ramírez & Pastrana reinterpretation was abstract-only. Previous Claude batch 20261113T0215Z-pleistocene-archaic-basin-7a3e (draft PR #1, not yet in research-persistence) recommended this target."
+  },
+  "sources": [
+    {
+      "id": "stg-src-meraz-2016-arq51-tlalpan-aldea",
+      "title": "Una aldea del periodo Formativo en el centro de Tlalpan",
+      "author": "Alejandro Meraz Moreno",
+      "publisher": "INAH, revista Arqueología núm. 51",
+      "year": 2016,
+      "doi": "",
+      "url": "https://revistas.inah.gob.mx/index.php/arqueologia/article/download/10860/11628/20751",
+      "kind": "peer_reviewed_article",
+      "language": "es",
+      "access_level": "full_text_examined_via_text_extraction",
+      "locator_note": "pp. 53-72; page numbers from extracted running heads",
+      "known_issues": "Internal citation inconsistencies: Heizer & Bennyhoff cited as 1958 in text, 1972 in bibliography; Ramírez et al. cited as 2002 and 2000.",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "stg-src-manzanilla-1988-preclasico-superior",
+      "title": "La arqueología sobre los periodos preclásico superior y clásico en la Cuenca de México",
+      "author": "Linda Manzanilla",
+      "publisher": "INAH, in C. García Mora (coord.), La antropología en México: panorama histórico, vol. 14",
+      "year": 1988,
+      "doi": "",
+      "url": "https://www.iia.unam.mx/sites/default/files/archivos/MANL510125/1988_Manzanilla-ArqueologiaPreclasicoSuperior-Clasico-CuencaMexico.pdf",
+      "kind": "scholarly_historiographic_chapter",
+      "language": "es",
+      "access_level": "full_text_examined_via_OCR_text_extraction",
+      "locator_note": "pp. 81-104 printed folios; OCR garbled in places, some passages paraphrased",
+      "known_issues": "OCR damage; secondary synthesis of 1970s-80s survey literature (Sanders, Parsons, Blanton).",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "stg-src-tolstoy-paradis-ucarf11-early-middle-preclassic",
+      "title": "Early and Middle Preclassic Culture in the Basin of Mexico (with addendum by P. Tolstoy, 'Recent research into the Early Preclassic of the Central Highlands')",
+      "author": "Paul Tolstoy; Louise I. Paradis",
+      "publisher": "University of California Archaeological Research Facility (series inferred from repository path arf011; volume title not verified)",
+      "year": null,
+      "doi": "",
+      "url": "https://digitalassets.lib.berkeley.edu/anthpubs/ucb/proof/pdfs/arf011-003.pdf",
+      "kind": "scholarly_article_repository_copy",
+      "language": "en",
+      "access_level": "full_text_examined_via_text_extraction",
+      "locator_note": "pp. 7-28 from printed page markers; main text dated October 1969, addendum cites 1970 work",
+      "known_issues": "Publication year and series volume not printed in examined text. Text places Cuicuilco on the 'northern edge' of the Basin (pp. 7-8), contradicting its southern location; possibly an authorial slip. Shorter version published in Science 167 (1970): 344-351 (bibliographic lead, not examined).",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "stg-src-ramirez-pastrana-reinterpretando-cuicuilco",
+      "title": "Reinterpretando Cuicuilco",
+      "author": "Felipe Ramírez; Alejandro Pastrana",
+      "publisher": "INAH, revista Arqueología núm. 65",
+      "year": 2021,
+      "doi": "",
+      "url": "https://revistas.inah.gob.mx/index.php/arqueologia/article/download/21580/22999/45207",
+      "kind": "peer_reviewed_article",
+      "language": "es",
+      "access_level": "full_text_examined_via_text_extraction",
+      "locator_note": "approx. pp. 5-33 (±1 page; from extracted running heads)",
+      "known_issues": "Same work as canonical v70-ramirez24, which records year 2024 and access 'abstract_examined_full_text_not_read'; extracted text gives núm. 65, December 2021. Year conflict needs landing-page check (landing page fetch failed this session).",
+      "canonical_match": "v70-ramirez24",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "stg-src-ramirez-pina-chan-cuicuilco",
+      "title": "Cuicuilco en la concepción de Román Piña Chan",
+      "author": "Felipe Ramírez",
+      "publisher": "INAH, revista Arqueología núm. 64",
+      "year": 2021,
+      "doi": "",
+      "url": "https://revistas.inah.gob.mx/index.php/arqueologia/article/download/20866/22269/43821",
+      "kind": "peer_reviewed_article",
+      "language": "es",
+      "access_level": "full_text_examined_via_text_extraction",
+      "locator_note": "page markers approx. 4-28; first page number not visible",
+      "known_issues": "Same work as canonical v72-fee724be100c7 (recorded year 2024, abstract/catalog only); extracted text gives núm. 64, August 2021.",
+      "canonical_match": "v72-fee724be100c7",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "stg-src-inah-guia-cuicuilco-ramirez",
+      "title": "Cuicuilco ('Descubre tú mismo' site guide)",
+      "author": "Felipe Ramírez Sánchez (texts)",
+      "publisher": "INAH, Coordinación Nacional de Difusión, Dirección de Divulgación",
+      "year": null,
+      "doi": "",
+      "url": "https://difusion.inah.gob.mx/images/guias/cuicuilco.pdf",
+      "kind": "institutional_site_guide",
+      "language": "es",
+      "access_level": "full_text_examined_via_text_extraction",
+      "locator_note": "unpaginated; cited by section heading",
+      "known_issues": "Undated; popular format; text repeated three times in PDF; encoding errors. Section on construction speaks of five 'cuerpos' and eight 'etapas constructivas' (different concepts).",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "stg-src-salas-hernandez-1994-tlatilco-perfil",
+      "title": "Tlatilco, México: una aldea del Preclásico, un ejemplo de adaptación al medio ambiente. Perfil biocultural",
+      "author": "María Elena Salas Cuesta; Patricia Olga Hernández Espinoza",
+      "publisher": "UNAM IIA, Anales de Antropología vol. 31",
+      "year": 1994,
+      "doi": "",
+      "url": "https://revistas.unam.mx/index.php/antropologia/article/download/23643/pdf_792/40798",
+      "kind": "peer_reviewed_article",
+      "language": "es",
+      "access_level": "full_text_examined_via_OCR_text_extraction",
+      "locator_note": "page range illegible in OCR ('61-8?'); cited by section",
+      "known_issues": "Internal inconsistency: sample given as 459 and as 474 individuals; dates given as 1300-900 and 1300-1000 a.C.",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "stg-src-mna-acrobata-infografia",
+      "title": "El Acróbata (infografía)",
+      "author": "Museo Nacional de Antropología (inferred; not stated)",
+      "publisher": "INAH / MNA (inferred from domain mna.inah.gob.mx)",
+      "year": null,
+      "doi": "",
+      "url": "https://mna.inah.gob.mx/media/infografias/acrobata.pdf",
+      "kind": "museum_infographic",
+      "language": "es",
+      "access_level": "full_text_examined",
+      "locator_note": "single sheet",
+      "known_issues": "Undated; author not stated.",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "stg-src-garcia-moll-2014-am125-perros-tlatilco",
+      "title": "Los perros en Tlatilco",
+      "author": "Roberto García Moll",
+      "publisher": "Arqueología Mexicana núm. 125 (enero-febrero 2014), pp. 42-47",
+      "year": 2014,
+      "doi": "",
+      "url": "https://arqueologiamexicana.mx/mexico-antiguo/los-perros-en-tlatilco",
+      "kind": "specialist_popular_article_by_excavator",
+      "language": "es",
+      "access_level": "web_excerpt_and_captions_only",
+      "locator_note": "web excerpt; printed pages 42-47 not seen",
+      "known_issues": "Full article paywalled.",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "stg-src-macneish-tlapacoya-encyclopedia",
+      "title": "Tlapacoya",
+      "author": "Richard S. MacNeish",
+      "publisher": "Encyclopedia of Latin American History and Culture (Gale), via Encyclopedia.com",
+      "year": null,
+      "doi": "",
+      "url": "https://encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/tlapacoya",
+      "kind": "tertiary_encyclopedia_entry",
+      "language": "en",
+      "access_level": "full_text_examined",
+      "locator_note": "online entry, unpaginated",
+      "known_issues": "Tertiary; print year not shown; repeats contested >20,000-year claims.",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "stg-src-serra-lazcano-2009-cuicuilco47",
+      "title": "Arqueología en el sur de la cuenca de México. Diagnóstico y futuro",
+      "author": "Mari Carmen Serra Puche; J. Carlos Lazcano Arce",
+      "publisher": "ENAH, revista Cuicuilco núm. 47 (sept.-dic. 2009)",
+      "year": 2009,
+      "doi": "",
+      "url": "https://www.scielo.org.mx/pdf/cuicui/v16n47/v16n47a2.pdf",
+      "kind": "peer_reviewed_article",
+      "language": "es",
+      "access_level": "full_text_examined_via_text_extraction",
+      "locator_note": "pp. 20-38 inferred from running heads",
+      "known_issues": "Early Formative start given as 1550 BC (p.21) and 1500 BC (p.25). Canonical v90-source-018 (catalog only) gives full title '... In memoriam W. T. Sanders', Cuicuilco 16(47):19-38, URL revistas.inah.gob.mx/index.php/cuicuilco/article/view/4017; this session read the SciELO copy.",
+      "canonical_match": "v90-source-018",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "stg-src-moedano-koer-tlatilco-informe",
+      "title": "Informe preliminar sobre las exploraciones arqueológicas de San Luis Tlatilco",
+      "author": "Hugo Moedano Koer (posthumous notes; introduction by Román Piña Chan)",
+      "publisher": "Anales del INAH (volume/year not shown in examined text)",
+      "year": null,
+      "doi": "",
+      "url": "https://revistas.inah.gob.mx/index.php/anales/article/view/7183/8026",
+      "kind": "excavation_report_posthumous",
+      "language": "es",
+      "access_level": "full_text_examined_via_text_extraction",
+      "locator_note": "pp. 73-84 (79-84 mainly drawings)",
+      "known_issues": "Volume and year not stated; Piña Chan's introduction gives Covarrubias fieldwork as 9 Nov-12 Dec of 'el año próximo pasado' without year.",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "stg-src-noguera-1965-horizonte-preclasico",
+      "title": "El Horizonte Preclásico (cap. I.1 de La cerámica arqueológica de Mesoamérica)",
+      "author": "Eduardo Noguera Auza",
+      "publisher": "UNAM, Instituto de Investigaciones Históricas (1965; digital ed. 2024)",
+      "year": 1965,
+      "doi": "",
+      "url": "https://historicas.unam.mx/publicaciones/publicadigital/libros/095/095-05-01-preclasico.pdf",
+      "kind": "scholarly_monograph_chapter",
+      "language": "es",
+      "access_level": "full_text_examined_via_OCR_text_extraction_first_100000_chars",
+      "locator_note": "pp. 43-82; text after approx. p. 75 not examined",
+      "known_issues": "OCR errors; 1965 interpretive framework.",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "stg-src-marmolejo-2019-arq59-copilco",
+      "title": "Análisis espacial de la aldea de Copilco a través de sus elementos arquitectónicos",
+      "author": "Emma G. Marmolejo Morales; María del Carmen Solanes Carraro; Alicia Margarita Treviño y Acuña",
+      "publisher": "INAH, revista Arqueología núm. 59 (diciembre 2019)",
+      "year": 2019,
+      "doi": "",
+      "url": "https://revistas.inah.gob.mx/index.php/arqueologia/article/download/16805/17857/35314",
+      "kind": "peer_reviewed_article",
+      "language": "es",
+      "access_level": "full_text_examined_via_text_extraction",
+      "locator_note": "pp. 73-80",
+      "known_issues": "",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "stg-src-johnson-hirth-2019-altica-coapexco",
+      "title": "Altica, Coapexco, and the Role of Middlemen in Formative Obsidian Exchange",
+      "author": "Nadia E. Johnson; Kenneth G. Hirth",
+      "publisher": "Ancient Mesoamerica 30(2): 295-310",
+      "year": 2019,
+      "doi": "10.1017/S095653611800041X",
+      "url": "https://www.cambridge.org/core/product/56A1CD392F488A94CCEB760E5648A78D/core-reader",
+      "kind": "peer_reviewed_article",
+      "language": "en",
+      "access_level": "full_text_examined_first_100000_of_179517_chars",
+      "locator_note": "cited by section heading (HTML reader, no page numbers)",
+      "known_issues": "Second half of article not examined.",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "stg-src-inah-lugares-tlapacoya",
+      "title": "Tlapacoya ('The washing place') — Red de Zonas Arqueológicas",
+      "author": "INAH (no author named)",
+      "publisher": "INAH",
+      "year": null,
+      "doi": "",
+      "url": "https://lugares.inah.gob.mx/en/zonas-arqueologicas/1719-tlapacoya.html",
+      "kind": "institutional_site_page",
+      "language": "en",
+      "access_level": "full_text_examined",
+      "locator_note": "web page",
+      "known_issues": "Undated; visitor status 'Temporarily closed' as retrieved 2026-11-14.",
+      "accessed": "2026-11-14"
+    },
+    {
+      "id": "stg-src-mcclung-acosta-2015-xochimilco",
+      "title": "Una ocupación del periodo de agricultura temprana en Xochimilco (ca. 4200-4000 a.n.e.)",
+      "author": "Emily McClung de Tapia; Guillermo Acosta Ochoa",
+      "publisher": "Anales de Antropología 49-II",
+      "year": 2015,
+      "doi": "",
+      "url": "https://revistas.unam.mx/index.php/antropologia/article/download/46753/pdf/142366",
+      "kind": "peer_reviewed_article",
+      "language": "es",
+      "access_level": "full_text_examined_via_text_extraction",
+      "locator_note": "pp. 299-315",
+      "known_issues": "Zohapilco phase dated 3500-2200 (pp.299,311) and 3000-2200 a.n.e. (p.304).",
+      "canonical_match": "v78-citywide-041",
+      "accessed": "2026-11-14"
+    }
+  ],
+  "bibliography_leads": [
+    {
+      "id": "stg-lead-vaillant-1930-zacatenco",
+      "citation": "Vaillant, G. C. 1930. Excavations at Zacatenco. Anthropological Papers of the AMNH 32(1). New York. 197 pp. hdl:2246/132",
+      "status": "catalog record examined (AMNH Digital Library); 58 MB PDF not examined",
+      "why": "primary report for Zacatenco stratigraphy and figurine typology still in use"
+    },
+    {
+      "id": "stg-lead-vaillant-1931-ticoman",
+      "citation": "Vaillant, G. C. 1931. Excavations at Ticomán. Anthropological Papers of the AMNH 32(2).",
+      "status": "citation verified from secondary reference lists only",
+      "why": "primary report for Ticomán houses, floors and burials"
+    },
+    {
+      "id": "stg-lead-niederberger-1976-zohapilco",
+      "citation": "Niederberger, C. 1976. Zohapilco. Cinco milenios de ocupación humana en un sitio lacustre de la cuenca de México. INAH, Colección Científica 30.",
+      "status": "cited in Meraz 2016 and McClung & Acosta 2015; not examined",
+      "why": "defines Nevada/Ayotla/Manantial Formative phases at Tlapacoya-Zohapilco"
+    },
+    {
+      "id": "stg-lead-pina-chan-1958-tlatilco",
+      "citation": "Piña Chan, R. 1958. Tlatilco. 2 vols. INAH, Serie Investigaciones 1-2.",
+      "status": "cited in Meraz 2016 bibliography; not examined",
+      "why": "main report on 1947-1950s Tlatilco seasons; resolves season dates"
+    },
+    {
+      "id": "stg-lead-garcia-moll-tlatilco-catalogo",
+      "citation": "García Moll, R. et al. Catálogo de entierros de San Luis Tlatilco, México, Temporada IV (INAH).",
+      "status": "title known only from general knowledge; NOT verified this session",
+      "why": "needed to settle 213 vs 214 burial counts for 1962-1969"
+    },
+    {
+      "id": "stg-lead-heizer-bennyhoff-cuicuilco",
+      "citation": "Heizer, R. F. and J. A. Bennyhoff 1958 'Archaeological investigation of Cuicuilco, Valley of Mexico, 1957', Science 127; and 1972 National Geographic Society Research Reports.",
+      "status": "cited (with inconsistent years) in Meraz 2016; not examined",
+      "why": "source of contested 2100 BC 'Tlalpan phase'"
+    },
+    {
+      "id": "stg-lead-muller-1990-cuicuilco",
+      "citation": "Müller, F. 1990. La cerámica de Cuicuilco B: un rescate arqueológico. INAH.",
+      "status": "cited in Meraz 2016 and Ramírez 2021; not examined",
+      "why": "ceramics from 1967-68 Villa Olímpica rescue"
+    },
+    {
+      "id": "stg-lead-tolstoy-paradis-1970-science",
+      "citation": "Tolstoy, P. and L. I. Paradis 1970. Early and Middle Preclassic Culture in the Basin of Mexico. Science 167: 344-351.",
+      "status": "citation from Meraz 2016 bibliography; not examined",
+      "why": "peer-reviewed version of examined Berkeley text; confirm dates"
+    }
+  ],
+  "findings": [
+    {
+      "subject": "Tlatilco: a farming village on an alluvial fan in today's Naucalpan",
+      "assertion": "Tlatilco lies in the municipality of Naucalpan, State of Mexico, on an alluvial fan built by the Cuartos, Hondo and Totolica rivers; a 1994 bioarchaeological study places the village's florescence at about 1300-900 BCE, while the Museo Nacional de Antropología presents it as the most important Middle Preclassic site, 1200-900 BCE.",
+      "period": "Early-Middle Formative",
+      "date_start": -1300,
+      "date_end": -900,
+      "geographic_locations": [
+        "Tlatilco (San Luis Tlatilco), Naucalpan, Estado de México"
+      ],
+      "evidence_type": "archaeological_synthesis",
+      "interpretation_status": "widely_accepted_synthesis",
+      "confidence": "medium",
+      "source_ids": [
+        "stg-src-salas-hernandez-1994-tlatilco-perfil",
+        "stg-src-mna-acrobata-infografia"
+      ],
+      "locators": [
+        "Salas Cuesta & Hernández 1994, sections 'Localización' and introduction (page numbers illegible in OCR)",
+        "MNA infografía 'El Acróbata', single sheet"
+      ],
+      "source_access_level": "full_text_examined",
+      "evidence_summary": "Salas Cuesta & Hernández: 'el florecimiento de esta aldea lo tenemos hacia 1300 a 900 a.C.' and ~400 years of occupation; MNA: 'el sitio más importante del Preclásico Medio, del año 1200 al 900 a.C.'",
+      "scholarly_disagreements": [
+        "Start date differs (1300 vs 1200 BCE); Salas Cuesta & Hernández themselves also give 1300-1000 BCE; Tolstoy & Paradis classify the earliest graves as Early Preclassic (Ixtapaluca phase, 1200-950 BCE)."
+      ],
+      "visitor_relevance": "Explains where the famous Tlatilco figurines in the MNA's Preclásico del Altiplano hall came from; the site itself is under modern Naucalpan and has no verified visitor access.",
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F01",
+      "original_archival_document_examined": false,
+      "editorial_status": "not_publication_ready",
+      "verification_status": "pending_independent_review",
+      "area_id": "citywide_or_outside_ten",
+      "related_existing_records": []
+    },
+    {
+      "subject": "Tlatilco was excavated inside a brickyard from 1942",
+      "assertion": "Tlatilco was explored inside a working brickyard: Hugo Moedano Koer's notes on the 1942 season record nine test pits dug in different parts of the 'ladrillera', the best results coming from the brickmakers' 'eras', work done in collaboration with Miguel Covarrubias and financed by a donation of 1,500 (currency sign OCR-garbled) from Willard H. Carr; Covarrubias and Román Piña Chan later carried out the most intensive fieldwork.",
+      "period": "Historiography 1942-1950s",
+      "date_start": 1942,
+      "date_end": 1955,
+      "geographic_locations": [
+        "Tlatilco (San Luis Tlatilco), Naucalpan, Estado de México"
+      ],
+      "evidence_type": "excavation_report_and_historiography",
+      "interpretation_status": "documented_history_of_research",
+      "confidence": "medium",
+      "source_ids": [
+        "stg-src-moedano-koer-tlatilco-informe",
+        "stg-src-noguera-1965-horizonte-preclasico"
+      ],
+      "locators": [
+        "Moedano Koer, Anales INAH, pp. 73-75",
+        "Noguera 1965, pp. 68-69"
+      ],
+      "source_access_level": "full_text_examined",
+      "evidence_summary": "Moedano (verified quotes): 'la temporada de exploraciones en Tlatilco, efectuadas en 1942' (p.73); 'trabajé en colaboración con el Sr. Miguel Covarrubias' (p.74); Carr 'donó la cantidad de S l ,500.00' (p.74, OCR); 'en diferentes lugares de la ladrillera un total de 9 calas' (p.75); calas in the 'eras' of the ladrilleros (p.75). Noguera: 'Miguel Covarrubias inició algunos reconocimientos' in 1942 with Moedano; first season of the Proyecto Tlatilco 1947-1950 (p.68).",
+      "scholarly_disagreements": [
+        "Start of systematic work: Noguera gives a first season 1947-1950; Piña Chan's introduction to Moedano says excavations took place 'fundamentalmente a partir de 1949' (p.73). Currency of the $1,500 (pesos vs dollars) is not stated; the source uses 'S 1,500.00'."
+      ],
+      "visitor_relevance": "Shows how much of what we know of the Formative came from industrial clay digging on the city's edge rather than planned excavation.",
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F02",
+      "original_archival_document_examined": false,
+      "editorial_status": "not_publication_ready",
+      "verification_status": "pending_independent_review",
+      "area_id": "citywide_or_outside_ten",
+      "related_existing_records": []
+    },
+    {
+      "subject": "How many people were buried at Tlatilco? The counts do not agree",
+      "assertion": "Published totals for Tlatilco burials differ: a 1994 study reports 459 individuals (later 474) from four field seasons between 1942 and 1969; the MNA states that 213 human burials were excavated in 1962-1969; the director of the fourth season reports 214 human burials and 24 dog burials.",
+      "period": "Historiography 1942-1969",
+      "date_start": 1942,
+      "date_end": 1969,
+      "geographic_locations": [
+        "Tlatilco (San Luis Tlatilco), Naucalpan, Estado de México"
+      ],
+      "evidence_type": "quantitative_reporting_comparison",
+      "interpretation_status": "unresolved_count_discrepancy",
+      "confidence": "low",
+      "source_ids": [
+        "stg-src-salas-hernandez-1994-tlatilco-perfil",
+        "stg-src-mna-acrobata-infografia",
+        "stg-src-garcia-moll-2014-am125-perros-tlatilco"
+      ],
+      "locators": [
+        "Salas Cuesta & Hernández 1994, 'Material' section",
+        "MNA infografía",
+        "García Moll 2014, web excerpt (AM 125 pp. 42-47)"
+      ],
+      "source_access_level": "mixed_full_text_and_excerpt",
+      "evidence_summary": "459/474 individuals across 'las cuatro temporadas de campo' 1942-1969; 'Entre 1962 y 1969 se excavaron 213 entierros humanos'; '214 entierros humanos recuperados' and 24 dogs.",
+      "scholarly_disagreements": [
+        "213 vs 214 may reflect counting of a single burial feature; 459 vs 474 is internal to Salas Cuesta & Hernández. Individuals vs burials are different units. Resolve with García Moll's season IV catalogue (lead)."
+      ],
+      "visitor_relevance": "Use ranges, not a single number, in any app text.",
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F03",
+      "original_archival_document_examined": false,
+      "editorial_status": "not_publication_ready",
+      "verification_status": "pending_independent_review",
+      "area_id": "citywide_or_outside_ten",
+      "related_existing_records": []
+    },
+    {
+      "subject": "Dogs buried with and apart from people at Tlatilco",
+      "assertion": "In the fourth Tlatilco season (1962-1969) excavators recorded 24 dog burials; many dogs lay articulated alongside human burials while others were buried alone, with or without offerings, and García Moll reads the high proportion of dogs, together with turtle and white-tailed deer remains, as evidence that dogs were also eaten.",
+      "period": "Early-Middle Formative (excavated 1962-1969)",
+      "date_start": -1300,
+      "date_end": -800,
+      "geographic_locations": [
+        "Tlatilco (San Luis Tlatilco), Naucalpan, Estado de México"
+      ],
+      "evidence_type": "zooarchaeological_observation_as_reported",
+      "interpretation_status": "excavator_interpretation",
+      "confidence": "medium",
+      "source_ids": [
+        "stg-src-garcia-moll-2014-am125-perros-tlatilco"
+      ],
+      "locators": [
+        "García Moll 2014, web excerpt and photo captions ('Perro 21. IV temporada de campo', 1969; Entierro 121 figurine)"
+      ],
+      "source_access_level": "web_excerpt_and_captions_only",
+      "evidence_summary": "'Los enterramientos de los 24 perros localizados en Tlatilco'; author sees 'una diferencia cultural' between dogs buried with humans and isolated dogs.",
+      "visitor_relevance": "Everyday-life angle: animals in Formative households and funerary practice.",
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F04",
+      "original_archival_document_examined": false,
+      "editorial_status": "not_publication_ready",
+      "verification_status": "pending_independent_review",
+      "area_id": "citywide_or_outside_ten",
+      "related_existing_records": [],
+      "scholarly_disagreements": []
+    },
+    {
+      "subject": "Tlatilco's economy and size",
+      "assertion": "Tlatilco's economy rested on maize, squash and beans, supplemented by hunting, fishing and gathering, with serpentine axes suggesting slash-and-burn cultivation; following Piña Chan, the village exceeded 1,000 people and may have reached 2,000, and it included specialist craftworkers in hard stone and luxury goods.",
+      "period": "Early-Middle Formative",
+      "date_start": -1300,
+      "date_end": -900,
+      "geographic_locations": [
+        "Tlatilco (San Luis Tlatilco), Naucalpan, Estado de México"
+      ],
+      "evidence_type": "bioarchaeological_and_archaeological_synthesis",
+      "interpretation_status": "author_estimate",
+      "confidence": "low",
+      "source_ids": [
+        "stg-src-salas-hernandez-1994-tlatilco-perfil",
+        "stg-src-tolstoy-paradis-ucarf11-early-middle-preclassic"
+      ],
+      "locators": [
+        "Salas Cuesta & Hernández 1994, economy and population sections",
+        "Tolstoy & Paradis, p. 21"
+      ],
+      "source_access_level": "full_text_examined",
+      "evidence_summary": "'El fundamento económico de este sitio se basaba en la agricultura del maíz'; 'esta población debió pasar de los mil individuos'; 'posiblemente llegara a los dos mil habitantes'. Tolstoy & Paradis estimate settlement area ~50 ha vs 6 ha for El Arbolillo.",
+      "scholarly_disagreements": [
+        "Population figures are estimates without stated method."
+      ],
+      "visitor_relevance": "Gives scale: a large village, not a city.",
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F05",
+      "original_archival_document_examined": false,
+      "editorial_status": "not_publication_ready",
+      "verification_status": "pending_independent_review",
+      "area_id": "citywide_or_outside_ten",
+      "related_existing_records": []
+    },
+    {
+      "subject": "Tlatilco's graves are older than its trash: a dating puzzle",
+      "assertion": "Tolstoy and Paradis found that many Tlatilco graves belong to a phase earlier than any refuse yet found at the site (their dated refuse, zone A, gave 410 BCE ±120, sample Y-1626), and they warned that reading Basin politics from rich graves alone had left the record before 900 BCE with 'all chiefs and no Indians'.",
+      "period": "Early-Middle Formative; historiography 1963-1970",
+      "date_start": -1200,
+      "date_end": -400,
+      "geographic_locations": [
+        "Tlatilco (San Luis Tlatilco), Naucalpan, Estado de México",
+        "El Arbolillo",
+        "Zacatenco"
+      ],
+      "evidence_type": "stratigraphy_and_radiocarbon_as_reported",
+      "interpretation_status": "author_argument",
+      "confidence": "medium",
+      "source_ids": [
+        "stg-src-tolstoy-paradis-ucarf11-early-middle-preclassic"
+      ],
+      "locators": [
+        "Tolstoy & Paradis pp. 9, 12-13, 21"
+      ],
+      "source_access_level": "full_text_examined",
+      "evidence_summary": "'many Tlatilco graves belong to a phase earlier than any represented so far by refuse at Tlatilco itself' (pp.12-13); 'Y-1626; 410 B.C. + 120' (p.12); 'all chiefs and no Indians' (p.21); earlier proposal of Tlatilco as dominant elite centre over Zacatenco and El Arbolillo (p.9).",
+      "scholarly_disagreements": [
+        "Whether Tlatilco ruled neighbouring villages was an open hypothesis in 1969; the authors were sceptical."
+      ],
+      "visitor_relevance": "Useful caution: museum objects come mostly from graves, which over-represent elites.",
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F06",
+      "original_archival_document_examined": false,
+      "editorial_status": "not_publication_ready",
+      "verification_status": "pending_independent_review",
+      "area_id": "citywide_or_outside_ten",
+      "related_existing_records": []
+    },
+    {
+      "subject": "The Tlatilco 'Acrobat' vessel",
+      "assertion": "The MNA's 'Acrobat' is a ceramic vessel of fine white kaolin clay, 25 x 16 x 20 cm, showing a contortionist resting on his elbows; it formed part of a burial offering at Tlatilco and is dated to the Middle Preclassic (1200-900 BCE).",
+      "period": "Middle Formative",
+      "date_start": -1200,
+      "date_end": -900,
+      "geographic_locations": [
+        "Tlatilco (San Luis Tlatilco), Naucalpan, Estado de México",
+        "Museo Nacional de Antropología, sala Preclásico del Altiplano"
+      ],
+      "evidence_type": "museum_object_record",
+      "interpretation_status": "institutional_description",
+      "confidence": "medium",
+      "source_ids": [
+        "stg-src-mna-acrobata-infografia"
+      ],
+      "locators": [
+        "MNA infografía 'El Acróbata'"
+      ],
+      "source_access_level": "full_text_examined",
+      "evidence_summary": "'Fue elaborada con caolín, una arcilla blanca muy fina'; '25 x 16 x 20 cm'; 'Formaba parte de la ofrenda de uno de los entierros de Tlatilco'. Burial number not given.",
+      "visitor_relevance": "On-site anchor in the MNA (Chapultepec area). Object image rights not reviewed.",
+      "area_id": "chapul",
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F07",
+      "original_archival_document_examined": false,
+      "editorial_status": "not_publication_ready",
+      "verification_status": "pending_independent_review",
+      "related_existing_records": [],
+      "scholarly_disagreements": []
+    },
+    {
+      "subject": "Mid-century readings of Tlatilco: 'Olmec' founders and racial typology",
+      "assertion": "Moedano Koer's 1942 notes compared Tlatilco pottery with La Venta and Monte Albán I, and a 1954 symposium summarized by Noguera (1965) described Tlatilco's population as a farming base influenced by an 'archaic Olmec' group, plus a 'pseudo-negroid substratum' and western elements; these labels reflect the diffusionist and racial typologies of the period and are not current interpretations.",
+      "period": "Historiography 1942-1965",
+      "date_start": 1942,
+      "date_end": 1965,
+      "geographic_locations": [
+        "Tlatilco (San Luis Tlatilco), Naucalpan, Estado de México"
+      ],
+      "evidence_type": "historiography",
+      "interpretation_status": "superseded_interpretation_documented",
+      "confidence": "high",
+      "source_ids": [
+        "stg-src-moedano-koer-tlatilco-informe",
+        "stg-src-noguera-1965-horizonte-preclasico"
+      ],
+      "locators": [
+        "Moedano Koer pp. 74, 77-78",
+        "Noguera 1965 p. 69"
+      ],
+      "source_access_level": "full_text_examined",
+      "evidence_summary": "Moedano: R-IV B ware 'Idéntico a la cerámica correspondiente a La Venta' (p.77). Noguera: 'una olmeca arcaica que fue la que influenció y le dio su carácter propio a Tlatilco'; 'sustrato pseudo-negroide' (p.69).",
+      "scholarly_disagreements": [
+        "'Superseded' is this researcher's characterization; editorial review should cite a modern critique before publication (none examined this session)."
+      ],
+      "visitor_relevance": "Explains how the 'Olmec at Tlatilco' idea arose; handle racial language with care.",
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F08",
+      "original_archival_document_examined": false,
+      "editorial_status": "not_publication_ready",
+      "verification_status": "pending_independent_review",
+      "area_id": "citywide_or_outside_ten",
+      "related_existing_records": []
+    },
+    {
+      "subject": "Ayotla: the Basin's earliest pottery-using communities show Gulf-style links",
+      "assertion": "Tolstoy and Paradis renamed Vaillant's early 'Tlapacoya' material 'Ayotla' (after 1967 test shafts about 4 m deep) to avoid confusion with the later pyramid site, and argued that the earliest ceramic assemblages (Ayotla and Justo subphases of an Ixtapaluca phase, c. 1200-950 BCE) share 'Olmec'-linked traits with Chiapas, Oaxaca, Veracruz, Puebla and Morelos.",
+      "period": "Early Formative",
+      "date_start": -1200,
+      "date_end": -950,
+      "geographic_locations": [
+        "Tlapacoya, Ixtapaluca, Estado de México",
+        "former Lake Chalco",
+        "Ayotla"
+      ],
+      "evidence_type": "ceramic_seriation_as_reported",
+      "interpretation_status": "author_argument",
+      "confidence": "medium",
+      "source_ids": [
+        "stg-src-tolstoy-paradis-ucarf11-early-middle-preclassic"
+      ],
+      "locators": [
+        "Tolstoy & Paradis pp. 14-16, 27"
+      ],
+      "source_access_level": "full_text_examined",
+      "evidence_summary": "'The two earlier assemblages, which we call Ayotla and Justo, though separate, are closely related' (pp.14-15); flat-bottomed vasos, gray-paste white ware, D-C-9, D-2 and K figurines (p.15); 'the Ixtapaluca phase of 1200-950 B.C.' (p.27).",
+      "scholarly_disagreements": [
+        "Whether 'Olmec' traits mean Gulf Coast people, influence, or a shared pan-Mesoamerican style is debated; Johnson & Hirth 2019 note Gulf-style artifacts at Coapexco were locally produced."
+      ],
+      "visitor_relevance": "Links the southeast Basin to wider Mesoamerica 3,000 years ago.",
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F09",
+      "original_archival_document_examined": false,
+      "editorial_status": "not_publication_ready",
+      "verification_status": "pending_independent_review",
+      "area_id": "citywide_or_outside_ten",
+      "related_existing_records": []
+    },
+    {
+      "subject": "Formative phase names at Tlapacoya-Zohapilco and their shifting dates",
+      "assertion": "A widely used sequence for the Tlapacoya-Zohapilco locality runs Nevada (c.1300-1200 BCE), Ayotla (1200-1000), Manantial (1000-800), Zacatenco (800-400) and Ticomán (400-200 BCE), but dates for the same named phases differ by a century or more between sources (e.g., Zacatenco 700-400 BCE in recent INAH work).",
+      "period": "Formative",
+      "date_start": -1300,
+      "date_end": -200,
+      "geographic_locations": [
+        "Tlapacoya, Ixtapaluca, Estado de México",
+        "former Lake Chalco",
+        "Zohapilco"
+      ],
+      "evidence_type": "chronological_framework_comparison",
+      "interpretation_status": "contested_or_variable",
+      "confidence": "medium",
+      "source_ids": [
+        "stg-src-macneish-tlapacoya-encyclopedia",
+        "stg-src-meraz-2016-arq51-tlalpan-aldea",
+        "stg-src-ramirez-pastrana-reinterpretando-cuicuilco",
+        "stg-src-tolstoy-paradis-ucarf11-early-middle-preclassic"
+      ],
+      "locators": [
+        "MacNeish, encyclopedia entry 'Tlapacoya'",
+        "Meraz 2016 p. 54",
+        "Ramírez & Pastrana pp. 12, 18, 21",
+        "Tolstoy & Paradis p. 21 (Bomba-Iglesia-El Arbolillo c.975-800 BCE)"
+      ],
+      "source_access_level": "mixed_full_text_and_tertiary",
+      "evidence_summary": "MacNeish lists the five phases with dates; Meraz: Zacatenco 700-400, Ticomán 400-200 a.C.; Ramírez & Pastrana same, plus Cuicuilco phase 200 a.C.-150/250 d.C.",
+      "scholarly_disagreements": [
+        "Zacatenco start 800 vs 700 BCE; Tolstoy's Ixtapaluca (1200-950) overlaps Ayotla+Manantial. Niederberger 1976 (lead) is the original definition and was not examined."
+      ],
+      "visitor_relevance": "App should show phase names with date ranges and attribution, not as fixed facts.",
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F10",
+      "original_archival_document_examined": false,
+      "editorial_status": "not_publication_ready",
+      "verification_status": "pending_independent_review",
+      "area_id": "citywide_or_outside_ten",
+      "related_existing_records": []
+    },
+    {
+      "subject": "A single clay figurine before pottery at Zohapilco",
+      "assertion": "At Zohapilco, before pottery vessels appear, excavations yielded one fired-clay figurine associated with a date of about 2920 BCE—the only ceramic artifact of that phase.",
+      "period": "Late Archaic (Zohapilco phase)",
+      "date_start": -2920,
+      "date_end": -2920,
+      "geographic_locations": [
+        "Tlapacoya, Ixtapaluca, Estado de México",
+        "former Lake Chalco",
+        "Zohapilco"
+      ],
+      "evidence_type": "archaeological_observation_as_reported",
+      "interpretation_status": "reported_in_secondary_literature",
+      "confidence": "medium",
+      "source_ids": [
+        "stg-src-mcclung-acosta-2015-xochimilco",
+        "stg-src-macneish-tlapacoya-encyclopedia"
+      ],
+      "locators": [
+        "McClung & Acosta 2015, p. 304",
+        "MacNeish entry (Zohapilco phase)"
+      ],
+      "source_access_level": "full_text_examined",
+      "evidence_summary": "'se detecta una figurilla cerámica (el único artefacto de este material) asociada a la fecha 2920 a.n.e.' (p.304); MacNeish: 'a single crude clay figurine was found'.",
+      "scholarly_disagreements": [
+        "Zohapilco phase dates vary (3500-2200 vs 3000-2200 a.n.e. in the same article)."
+      ],
+      "related_existing_records": [
+        "v78-citywide-041 (McClung & Acosta 2015, canonical source; no canonical finding on the figurine)",
+        "Staged batch 20261113T0215Z-pleistocene-archaic-basin-7a3e F23 (Zohapilco phase dates) — complementary, not duplicate"
+      ],
+      "visitor_relevance": "Bridge between Archaic camps and Formative villages.",
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F11",
+      "original_archival_document_examined": false,
+      "editorial_status": "not_publication_ready",
+      "verification_status": "pending_independent_review",
+      "area_id": "citywide_or_outside_ten"
+    },
+    {
+      "subject": "Tlapacoya's Late Formative pyramid and tombs",
+      "assertion": "Tlapacoya's principal monument is a stepped platform-pyramid on the flank of Cerro del Elefante, built in three construction stages; excavations by Román Piña Chan and Beatriz Barba in the 1950s found three tombs with rich offerings of vessels, figurines and ornaments, and the platforms reach about 5 m in height.",
+      "period": "Late Formative",
+      "date_start": -400,
+      "date_end": -100,
+      "geographic_locations": [
+        "Tlapacoya, Ixtapaluca, Estado de México",
+        "former Lake Chalco",
+        "Cerro del Elefante / Cerro de Tlapacoya"
+      ],
+      "evidence_type": "archaeological_observation_and_institutional_description",
+      "interpretation_status": "widely_accepted_synthesis",
+      "confidence": "medium",
+      "source_ids": [
+        "stg-src-inah-lugares-tlapacoya",
+        "stg-src-manzanilla-1988-preclasico-superior",
+        "stg-src-noguera-1965-horizonte-preclasico",
+        "stg-src-serra-lazcano-2009-cuicuilco47"
+      ],
+      "locators": [
+        "INAH Tlapacoya page",
+        "Manzanilla 1988 pp. 83, 90",
+        "Noguera 1965 p. 71",
+        "Serra & Lazcano 2009 p. 22"
+      ],
+      "source_access_level": "full_text_examined",
+      "evidence_summary": "INAH: 'evidence of three building stages'; 'Three tombs with rich offerings'. Manzanilla: Piña Chan & Barba 'definieron tres etapas constructivas' (p.83). Noguera: Barba's 1955 tombs 'contenían magníficos ejemplares de cerámica' (p.71). Serra & Lazcano: 'elevaciones piramidales de aproximadamente 5 m' (p.22).",
+      "scholarly_disagreements": [
+        "MacNeish's encyclopedia entry places pyramid construction in the Ayotla phase (Early Formative), contradicting the Late Formative dating in all other examined sources; treat MacNeish as an error unless confirmed."
+      ],
+      "visitor_relevance": "INAH lists the zone as 'Temporarily closed' (retrieved 2026-11-14); normal hours Tue-Sun 10:00-16:00. Recheck before trip.",
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F12",
+      "original_archival_document_examined": false,
+      "editorial_status": "not_publication_ready",
+      "verification_status": "pending_independent_review",
+      "area_id": "citywide_or_outside_ten",
+      "related_existing_records": []
+    },
+    {
+      "subject": "Southeast Basin centres empty out as Teotihuacan grows",
+      "assertion": "Between 300 and 100 BCE only Cuicuilco, Tlapacoya and one site near Ixtapalapa had ceremonial buildings in the southern Basin; after about 100 BCE much of Tlapacoya's population may have moved to Teotihuacan, and survey data show the Chalco-Xochimilco area, which peaked demographically in the Late Formative, was largely deserted in the Tzacualli phase.",
+      "period": "Late-Terminal Formative",
+      "date_start": -300,
+      "date_end": 100,
+      "geographic_locations": [
+        "Tlapacoya, Ixtapaluca, Estado de México",
+        "former Lake Chalco",
+        "Chalco-Xochimilco region",
+        "Teotihuacan"
+      ],
+      "evidence_type": "regional_survey_synthesis",
+      "interpretation_status": "widely_accepted_synthesis_with_hedges",
+      "confidence": "medium",
+      "source_ids": [
+        "stg-src-manzanilla-1988-preclasico-superior",
+        "stg-src-inah-lugares-tlapacoya"
+      ],
+      "locators": [
+        "Manzanilla 1988 pp. 87, 91",
+        "INAH Tlapacoya page"
+      ],
+      "source_access_level": "full_text_examined",
+      "evidence_summary": "Manzanilla p.91 (partly paraphrased due to OCR); p.87 'durante el Preclásico Tardío se alcanzó un máximo demográfico' and Tzacualli 'hubo una deserción del área' (Parsons et al. 1982); INAH: 'After 100 BC it is possible that a large part of the population migrated to Teotihuacan.'",
+      "related_existing_records": [
+        "canonical v94-teo-09 (Cowgill: Patlachique growth required immigration, mostly from the Basin) — consistent; this finding adds the southern Basin side"
+      ],
+      "visitor_relevance": "Connects southern lakeshore sites to the rise of Teotihuacan.",
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F13",
+      "original_archival_document_examined": false,
+      "editorial_status": "not_publication_ready",
+      "verification_status": "pending_independent_review",
+      "area_id": "citywide_or_outside_ten",
+      "scholarly_disagreements": []
+    },
+    {
+      "subject": "Coapexco: a short-lived early village on the Iztaccíhuatl piedmont",
+      "assertion": "Coapexco, one of the earliest sedentary farming communities in the Basin, occupied about 10 ha on the piedmont of Iztaccíhuatl near the Amecameca pass, held roughly 450-500 people for a relatively brief time, and yielded Gulf Coast-style ceramics and artifacts that were locally made; in the Early Formative much of the Basin's population was concentrated at Coapexco, Tlapacoya and Tlatilco.",
+      "period": "Early Formative",
+      "date_start": -1500,
+      "date_end": -1150,
+      "geographic_locations": [
+        "Coapexco, Amecameca area, Estado de México"
+      ],
+      "evidence_type": "archaeological_synthesis",
+      "interpretation_status": "author_synthesis",
+      "confidence": "medium",
+      "source_ids": [
+        "stg-src-johnson-hirth-2019-altica-coapexco",
+        "stg-src-serra-lazcano-2009-cuicuilco47"
+      ],
+      "locators": [
+        "Johnson & Hirth 2019, section 'Coapexco'",
+        "Serra & Lazcano 2009 p. 21"
+      ],
+      "source_access_level": "full_text_examined",
+      "evidence_summary": "'Coapexco was situated in a 10-ha area of piedmont of the volcano Iztaccihuatl'; 'The population numbered between 450-500 residents at this time, but site occupation was relatively brief'; Gulf Coast style items 'locally produced'. Serra & Lazcano: population 'principalmente Coapexco, Tlapacoya y Tlatilco' (phase 1500-1300 BC).",
+      "scholarly_disagreements": [
+        "Exact dates of Coapexco subphase not given in the examined half of Johnson & Hirth; date range here follows Serra & Lazcano's Early Formative span (1500/1550-1150 BCE)."
+      ],
+      "visitor_relevance": "On the route to the volcanoes; no verified visitor site.",
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F14",
+      "original_archival_document_examined": false,
+      "editorial_status": "not_publication_ready",
+      "verification_status": "pending_independent_review",
+      "area_id": "citywide_or_outside_ten",
+      "related_existing_records": []
+    },
+    {
+      "subject": "Obsidian moved through middlemen in the Formative Basin",
+      "assertion": "Johnson and Hirth argue that Formative obsidian moved through intermediary communities: Altica, the oldest known farming site in the Teotihuacan Valley (c.1250-850 cal BCE), lay under 10 km from the Otumba source, Otumba obsidian makes up 74.7% of the region's Early-Middle Formative stone tools, and Tlatilco's sample (88 fragments, 42 sourced by pXRF) spans Coapexco through Bomba subphases.",
+      "period": "Early-Middle Formative",
+      "date_start": -1250,
+      "date_end": -850,
+      "geographic_locations": [
+        "Altica, Teotihuacan Valley",
+        "Otumba obsidian source",
+        "Tlatilco (San Luis Tlatilco), Naucalpan, Estado de México"
+      ],
+      "evidence_type": "geochemical_sourcing_and_lithic_analysis",
+      "interpretation_status": "author_argument",
+      "confidence": "medium",
+      "source_ids": [
+        "stg-src-johnson-hirth-2019-altica-coapexco"
+      ],
+      "locators": [
+        "Johnson & Hirth 2019, sections on Altica, Tlatilco, Tlapacoya"
+      ],
+      "source_access_level": "full_text_examined_partial",
+      "evidence_summary": "Values quoted from the HTML reader; second half of article (incl. conclusions) not examined.",
+      "visitor_relevance": "Trade and everyday tools; links to obsidian displays at MNA.",
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F15",
+      "original_archival_document_examined": false,
+      "editorial_status": "not_publication_ready",
+      "verification_status": "pending_independent_review",
+      "area_id": "citywide_or_outside_ten",
+      "related_existing_records": [],
+      "scholarly_disagreements": []
+    },
+    {
+      "subject": "Vaillant's excavations created the Basin's first Formative sequence",
+      "assertion": "George C. Vaillant's excavations at Zacatenco, Ticomán and El Arbolillo in the northern Basin (published by the American Museum of Natural History from 1930) produced the first stratigraphic sequence for the 'Middle Cultures', and his figurine typology (types A, B, C, F and others) is still described as the most widely accepted classification.",
+      "period": "Historiography 1928-1935; Middle-Late Formative",
+      "date_start": 1928,
+      "date_end": 1935,
+      "geographic_locations": [
+        "Zacatenco, Gustavo A. Madero, CDMX",
+        "Ticomán, Gustavo A. Madero, CDMX",
+        "El Arbolillo",
+        "Sierra de Guadalupe foothills"
+      ],
+      "evidence_type": "historiography",
+      "interpretation_status": "documented_history_of_research",
+      "confidence": "medium",
+      "source_ids": [
+        "stg-src-noguera-1965-horizonte-preclasico",
+        "stg-src-meraz-2016-arq51-tlalpan-aldea",
+        "stg-src-manzanilla-1988-preclasico-superior",
+        "stg-src-marmolejo-2019-arq59-copilco"
+      ],
+      "locators": [
+        "Noguera 1965 pp. 48-62",
+        "Meraz 2016 pp. 53, 62",
+        "Manzanilla 1988 p. 82",
+        "Marmolejo et al. 2019 p. 73"
+      ],
+      "source_access_level": "full_text_examined",
+      "evidence_summary": "Meraz: classification 'hasta el día de hoy continúa siendo la más aceptada' (p.62). Marmolejo: 'Tlatilco, Zacatenco, El Arbolillo y Cerro del Tepalcate al norte' (p.73).",
+      "scholarly_disagreements": [
+        "Fieldwork dates: Noguera gives 1928-1932; Meraz gives 1930-1935. Vaillant 1930 (Zacatenco) is AMNH Anthropological Papers 32(1), 197 pp. (catalog verified)."
+      ],
+      "visitor_relevance": "Zacatenco is now an IPN campus and residential district in Gustavo A. Madero; present-day archaeological visibility not verified.",
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F16",
+      "original_archival_document_examined": false,
+      "editorial_status": "not_publication_ready",
+      "verification_status": "pending_independent_review",
+      "area_id": "citywide_or_outside_ten",
+      "related_existing_records": []
+    },
+    {
+      "subject": "Breaks in the Zacatenco-Ticomán sequence were once explained by conquest and migration",
+      "assertion": "Vaillant saw a break at Zacatenco III (new figurine types and pottery) that later summaries read as possible conquest, and McBride argued that around 400 BCE 'the tranquility of Ticomán culture' was interrupted by newcomers who displaced earlier people; Noguera read the many ollas at Ticomán as greater dependence on cereals and its varied clay objects as a more elaborate ceremonial and social life.",
+      "period": "Middle-Late Formative; historiography 1930-1980s",
+      "date_start": -700,
+      "date_end": -200,
+      "geographic_locations": [
+        "Zacatenco, Gustavo A. Madero, CDMX",
+        "Ticomán, Gustavo A. Madero, CDMX",
+        "El Arbolillo",
+        "Sierra de Guadalupe foothills"
+      ],
+      "evidence_type": "historiography_of_interpretation",
+      "interpretation_status": "contested_or_superseded_interpretations",
+      "confidence": "low",
+      "source_ids": [
+        "stg-src-noguera-1965-horizonte-preclasico",
+        "stg-src-manzanilla-1988-preclasico-superior"
+      ],
+      "locators": [
+        "Noguera 1965 pp. 52, 54, 58",
+        "Manzanilla 1988 p. 90"
+      ],
+      "source_access_level": "full_text_examined",
+      "evidence_summary": "Noguera p.52: earlier groups possibly expelled by conquest; 'poderosa influencia olmeca' linked to type A figurines; p.54 ollas and cereals. Manzanilla p.90: 'la tranquilidad de la cultura Ticomán se vio interrumpida'.",
+      "scholarly_disagreements": [
+        "Migration/conquest explanations rest on ceramic change; no modern assessment examined this session."
+      ],
+      "visitor_relevance": "Shows how interpretations of 'change' were made from pottery alone.",
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F17",
+      "original_archival_document_examined": false,
+      "editorial_status": "not_publication_ready",
+      "verification_status": "pending_independent_review",
+      "area_id": "citywide_or_outside_ten",
+      "related_existing_records": []
+    },
+    {
+      "subject": "What a Ticomán village looked like",
+      "assertion": "At Ticomán, Vaillant recorded adobe wall remains, superimposed clay floors, hearths and burials; at Zohapilco the Ticomán-phase occupation is marked by obsidian making up about 72% of the stone industry; the Ticomán phase is commonly dated 400-200 BCE.",
+      "period": "Late Formative",
+      "date_start": -400,
+      "date_end": -200,
+      "geographic_locations": [
+        "Zacatenco, Gustavo A. Madero, CDMX",
+        "Ticomán, Gustavo A. Madero, CDMX",
+        "El Arbolillo",
+        "Sierra de Guadalupe foothills",
+        "Zohapilco"
+      ],
+      "evidence_type": "archaeological_observation_as_reported",
+      "interpretation_status": "secondary_report_of_primary_excavation",
+      "confidence": "medium",
+      "source_ids": [
+        "stg-src-manzanilla-1988-preclasico-superior",
+        "stg-src-meraz-2016-arq51-tlalpan-aldea"
+      ],
+      "locators": [
+        "Manzanilla 1988 pp. 82-83",
+        "Meraz 2016 p. 54"
+      ],
+      "source_access_level": "full_text_examined",
+      "evidence_summary": "'restos de muros de adobe y superposiciones de pisos de barro, hogares y entierros' (Manzanilla p.82, citing Vaillant 1930/31); 'un 72% de la industria lítica' (p.83).",
+      "visitor_relevance": "Everyday domestic architecture before Teotihuacan.",
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F18",
+      "original_archival_document_examined": false,
+      "editorial_status": "not_publication_ready",
+      "verification_status": "pending_independent_review",
+      "area_id": "citywide_or_outside_ten",
+      "related_existing_records": [],
+      "scholarly_disagreements": []
+    },
+    {
+      "subject": "Zacatenco phase: the busiest Middle Formative occupation in the south Basin villages",
+      "assertion": "At Copilco, under the Pedregal lava, ceramics of the Tetelpan, Zacatenco and Ticomán phases (c.800-200 BCE) were found, with the Zacatenco phase (700-400 BCE) the most intensive occupation; at Temamatla (Chalco) the Zacatenco phase village is described as a large nucleated agricultural settlement without elite civic-ceremonial architecture, though ceremonial areas began by the end of that phase (c.500 BCE).",
+      "period": "Middle Formative",
+      "date_start": -800,
+      "date_end": -200,
+      "geographic_locations": [
+        "Copilco, Coyoacán, CDMX",
+        "Temamatla, Estado de México"
+      ],
+      "evidence_type": "ceramic_and_settlement_analysis",
+      "interpretation_status": "author_synthesis",
+      "confidence": "medium",
+      "source_ids": [
+        "stg-src-marmolejo-2019-arq59-copilco",
+        "stg-src-serra-lazcano-2009-cuicuilco47"
+      ],
+      "locators": [
+        "Marmolejo et al. 2019 p. 78",
+        "Serra & Lazcano 2009 pp. 29, 32"
+      ],
+      "source_access_level": "full_text_examined",
+      "evidence_summary": "'10 tipos cerámicos correspondientes a las fases Tetelpan, Zacatenco y Ticomán'; 'la fase Zacatenco (700-400 a. C.) la de mayor ocupación durante el Preclásico medio' (p.78). Temamatla 'villa grande nucleada ... sin arquitectura de elite-cívico-ceremonial' (p.32) vs ceremonial areas 'desde finales de la fase Zacatenco (alrededor de 500 aC)' (p.29).",
+      "scholarly_disagreements": [
+        "Serra & Lazcano's two Temamatla statements are in tension (no elite architecture in Zacatenco phase vs ceremonial areas from its end)."
+      ],
+      "related_existing_records": [
+        "canonical v85-site-copilco and v72-claim-c20e9186ba1e3 (Copilco, Gamio excavations) — this finding adds ceramic phase data not in canonical"
+      ],
+      "visitor_relevance": "Copilco lies by Ciudad Universitaria; connects to south area.",
+      "area_id": "coyo",
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F19",
+      "original_archival_document_examined": false,
+      "editorial_status": "not_publication_ready",
+      "verification_status": "pending_independent_review"
+    },
+    {
+      "subject": "How old is Cuicuilco? Claims range from 2100 to 800 BCE",
+      "assertion": "Proposed starting dates for Cuicuilco have ranged from about 2100 BCE (Heizer and Bennyhoff's 'Tlalpan phase', 1950s) to about 1200 BCE (Pérez Campa's 2003 project) and 1000-800 BCE (Müller), but INAH archaeologists Ramírez and Pastrana conclude that no archaeological material at the site predates about 800 BCE (Tetelpan phase), a position Meraz also accepts.",
+      "period": "Middle Formative; historiography 1950s-2021",
+      "date_start": -800,
+      "date_end": -700,
+      "geographic_locations": [
+        "Cuicuilco, Tlalpan/Coyoacán, CDMX",
+        "Pedregal de San Ángel (Xitle lava)"
+      ],
+      "evidence_type": "chronological_debate",
+      "interpretation_status": "current_majority_view_contested_history",
+      "confidence": "medium",
+      "source_ids": [
+        "stg-src-ramirez-pastrana-reinterpretando-cuicuilco",
+        "stg-src-meraz-2016-arq51-tlalpan-aldea",
+        "stg-src-ramirez-pina-chan-cuicuilco"
+      ],
+      "locators": [
+        "Ramírez & Pastrana pp. 7, 29",
+        "Meraz 2016 p. 69 n.2",
+        "Ramírez 2021 p. 25"
+      ],
+      "source_access_level": "full_text_examined",
+      "evidence_summary": "'no existen materiales arqueológicos anteriores al 800 a.C. (fase Tetelpan)' (Ramírez & Pastrana p.29); Müller's earlier chronology 'no corresponde con la evidencia actual' (p.29); Meraz questions whether Pérez Campa's dated samples were cultural (p.69).",
+      "scholarly_disagreements": [
+        "Heizer & Bennyhoff 2100 BCE; Pérez Campa ~1200 BCE; Müller 1000-800 BCE; Ramírez/Pastrana/Meraz ≤800 BCE. The INAH site guide's '1500 a.C.' refers to the Preclassic period overall, not the site."
+      ],
+      "related_existing_records": [
+        "canonical v70-ramirez24 (same article; abstract only in canonical)",
+        "canonical evidence_reviews r07 ('New stratigraphy and eruption chronology challenge older Cuicuilco narratives')"
+      ],
+      "visitor_relevance": "Avoid the 'oldest pyramid in the Americas' framing.",
+      "area_id": "south",
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F20",
+      "original_archival_document_examined": false,
+      "editorial_status": "not_publication_ready",
+      "verification_status": "pending_independent_review"
+    },
+    {
+      "subject": "When did Cuicuilco peak? Two INAH accounts differ",
+      "assertion": "Ramírez and Pastrana place Cuicuilco's first monumental construction around 700 BCE and its greatest development between 400 and 200 BCE (when the Peña Pobre and Tenantongo mounds were built), whereas the INAH site guide and Meraz place the main apogee between 200 BCE and 250/275 CE; Manzanilla's 1988 synthesis dates the appearance of ceremonial architecture to 650-300 BCE.",
+      "period": "Middle-Terminal Formative",
+      "date_start": -700,
+      "date_end": 275,
+      "geographic_locations": [
+        "Cuicuilco, Tlalpan/Coyoacán, CDMX",
+        "Pedregal de San Ángel (Xitle lava)",
+        "Peña Pobre mound",
+        "Tenantongo mound (Bosque de Tlalpan)"
+      ],
+      "evidence_type": "chronological_debate",
+      "interpretation_status": "contested",
+      "confidence": "medium",
+      "source_ids": [
+        "stg-src-ramirez-pastrana-reinterpretando-cuicuilco",
+        "stg-src-inah-guia-cuicuilco-ramirez",
+        "stg-src-meraz-2016-arq51-tlalpan-aldea",
+        "stg-src-manzanilla-1988-preclasico-superior"
+      ],
+      "locators": [
+        "Ramírez & Pastrana pp. 12, 13, 15",
+        "INAH guía, 'Reseña histórica'",
+        "Meraz 2016 p. 70",
+        "Manzanilla 1988 p. 91"
+      ],
+      "source_access_level": "full_text_examined",
+      "evidence_summary": "'entre el 400 y el 200 a.C., se observa el mayor desarrollo del asentamiento cuicuilca' (R&P p.12); guide: 'Entre el 200 a. C. y el 250 d. C. tuvo su principal apogeo'.",
+      "scholarly_disagreements": [
+        "Both accounts involve Felipe Ramírez (guide author and article co-author); the guide may predate the 2021 reinterpretation (guide undated)."
+      ],
+      "visitor_relevance": "Site-guide dates differ from the newest article; app should cite both.",
+      "area_id": "south",
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F21",
+      "original_archival_document_examined": false,
+      "editorial_status": "not_publication_ready",
+      "verification_status": "pending_independent_review",
+      "related_existing_records": []
+    },
+    {
+      "subject": "Cuicuilco's size: about 400 hectares and 20,000 people (estimate)",
+      "assertion": "Following Sanders and colleagues, Cuicuilco at its height covered about 400 ha with roughly 20,000 inhabitants; Rattray and others proposed 4-5 km²; today evidence survives over only about 60 ha because Xitle lava covered the rest.",
+      "period": "Late-Terminal Formative",
+      "date_start": -400,
+      "date_end": 250,
+      "geographic_locations": [
+        "Cuicuilco, Tlalpan/Coyoacán, CDMX",
+        "Pedregal de San Ángel (Xitle lava)"
+      ],
+      "evidence_type": "survey_based_estimate",
+      "interpretation_status": "estimate_repeated_in_secondary_sources",
+      "confidence": "low",
+      "source_ids": [
+        "stg-src-ramirez-pastrana-reinterpretando-cuicuilco",
+        "stg-src-inah-guia-cuicuilco-ramirez",
+        "stg-src-serra-lazcano-2009-cuicuilco47"
+      ],
+      "locators": [
+        "Ramírez & Pastrana pp. 6-7, 12",
+        "INAH guía, 'Algunas cifras' and 'Reseña histórica'",
+        "Serra & Lazcano 2009 p. 22"
+      ],
+      "source_access_level": "full_text_examined",
+      "evidence_summary": "Guide: 'probablemente tuvo una población de 20,000 habitantes'; '400 hectáreas'; '60 hectáreas' preserved. Serra & Lazcano: 20,000 in the Terminal Formative.",
+      "scholarly_disagreements": [
+        "All 20,000 figures trace to one survey-based estimate under lava; method not independently examined."
+      ],
+      "visitor_relevance": "Explains why the visible site is a fraction of the ancient town.",
+      "area_id": "south",
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F22",
+      "original_archival_document_examined": false,
+      "editorial_status": "not_publication_ready",
+      "verification_status": "pending_independent_review",
+      "related_existing_records": []
+    },
+    {
+      "subject": "The Gran Basamento: a round, layered platform rebuilt eight times",
+      "assertion": "Cuicuilco's main platform is about 110 m in diameter and 22 m high, built of five superimposed truncated-cone bodies over a compacted-earth core, faced in its last of eight construction stages with unworked basalt, with ramps on the east and west; Byron Cummings excavated it in 1922-1925, and blasting used to remove Xitle lava destroyed much of the outer surface, so the present slopes do not show the original exterior.",
+      "period": "Middle-Terminal Formative; excavation 1922-1925",
+      "date_start": -700,
+      "date_end": 250,
+      "geographic_locations": [
+        "Cuicuilco, Tlalpan/Coyoacán, CDMX",
+        "Pedregal de San Ángel (Xitle lava)"
+      ],
+      "evidence_type": "architectural_description_and_historiography",
+      "interpretation_status": "institutional_and_scholarly_description",
+      "confidence": "medium",
+      "source_ids": [
+        "stg-src-inah-guia-cuicuilco-ramirez",
+        "stg-src-manzanilla-1988-preclasico-superior",
+        "stg-src-noguera-1965-horizonte-preclasico"
+      ],
+      "locators": [
+        "INAH guía, sections 'Gran Basamento' and '¿Dónde ver la pirámide?'",
+        "Manzanilla 1988 p. 81",
+        "Noguera 1965 pp. 46-47"
+      ],
+      "source_access_level": "full_text_examined",
+      "evidence_summary": "'Con 110 metros de diámetro y 22 de alto'; 'revestido en la última de sus ocho etapas constructivas, de basalto sin labrar'; Manzanilla: Cummings 1923 claimed 'el templo más antiguo de Norteamérica'; 'los explosivos para eliminar la lava del Xitle se usaron con cautela' (author argues damage).",
+      "scholarly_disagreements": [
+        "Manzanilla dates the Gamio/Cummings work to 1922; Noguera to 1922-1925. 'Five bodies' vs 'eight stages' are different counts (form vs building episodes)."
+      ],
+      "visitor_relevance": "Core on-site interpretation for the south area; equinox sunrise alignment with Volcán Papayo is stated in the guide (not independently verified).",
+      "area_id": "south",
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F23",
+      "original_archival_document_examined": false,
+      "editorial_status": "not_publication_ready",
+      "verification_status": "pending_independent_review",
+      "related_existing_records": []
+    },
+    {
+      "subject": "Xitle did not destroy Cuicuilco in one blow",
+      "assertion": "Ramírez and Pastrana argue that the Xitle eruption (most accepted date 250-275 CE; 245-315 CE in Siebe and González et al.) caused only a temporary abandonment—people lived there until the eruption, as shown by a mat impression in a burnt floor—and that Teotihuacan-style offerings were later placed in the canal and among the lava; earlier Popocatépetl activity (c.250-50 BCE) had already affected the area.",
+      "period": "Terminal Formative-Early Classic",
+      "date_start": -250,
+      "date_end": 315,
+      "geographic_locations": [
+        "Cuicuilco, Tlalpan/Coyoacán, CDMX",
+        "Pedregal de San Ángel (Xitle lava)",
+        "Xitle volcano",
+        "Popocatépetl"
+      ],
+      "evidence_type": "stratigraphy_and_chronometric_synthesis",
+      "interpretation_status": "author_argument_contested",
+      "confidence": "medium",
+      "source_ids": [
+        "stg-src-ramirez-pastrana-reinterpretando-cuicuilco",
+        "stg-src-inah-guia-cuicuilco-ramirez",
+        "stg-src-manzanilla-1988-preclasico-superior",
+        "stg-src-ramirez-pina-chan-cuicuilco"
+      ],
+      "locators": [
+        "Ramírez & Pastrana pp. 19-20, 23, 25-30",
+        "INAH guía 'Reseña histórica'",
+        "Manzanilla 1988 p. 87",
+        "Ramírez 2021 p. 26"
+      ],
+      "source_access_level": "full_text_examined",
+      "evidence_summary": "'no existió una erupción catastrófica del Xitle en Cuicuilco' (p.26); 'propiciaron un abandono temporal' (pp.26-27); Atoyac/Miccaotli vessel 'just below the lava' 150-280 CE (pp.25-26). Guide: 'Fue abandonado como consecuencia de la erupción del volcán Xitle alrededor del 250 d. C.'",
+      "scholarly_disagreements": [
+        "INAH guide: abandonment caused by Xitle c.250 CE. Manzanilla (after Sanders): an earlier flow in the Terminal Preclassic reduced farmland, a second in Teotihuacan times covered the site. Rattray: abandonment c.50 CE. Cowgill (canonical v94-teo-09) rejects Xitle-driven displacement before Teotihuacan's growth. Canonical v89 archaeomagnetic interval 79 BCE-595 CE is far broader."
+      ],
+      "related_existing_records": [
+        "canonical v69-south-02",
+        "canonical v89-arch-004 / v89-review-xitle",
+        "canonical v94-teo-09",
+        "canonical v85-source-004 (Tefra Negra, pre-Xitle eruption)"
+      ],
+      "visitor_relevance": "Central story for the site: volcanic landscape, gradual not instant collapse.",
+      "area_id": "south",
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F24",
+      "original_archival_document_examined": false,
+      "editorial_status": "not_publication_ready",
+      "verification_status": "pending_independent_review"
+    },
+    {
+      "subject": "Cuicuilco and Teotihuacan: rivals, models, or neither?",
+      "assertion": "Survey-era scholars proposed that Cuicuilco competed with Teotihuacan (Blanton) and that Cuicuilco anticipated Teotihuacan's planning (Sanders et al. 1979), and the INAH site guide speaks of competition for exchange routes; Ramírez and Pastrana reject the 'small Teotihuacan' model as an over-reading of the surface plan without adequate topographic basis.",
+      "period": "Terminal Formative; historiography 1970s-2021",
+      "date_start": -200,
+      "date_end": 250,
+      "geographic_locations": [
+        "Cuicuilco, Tlalpan/Coyoacán, CDMX",
+        "Pedregal de San Ángel (Xitle lava)",
+        "Teotihuacan"
+      ],
+      "evidence_type": "historiography_of_interpretation",
+      "interpretation_status": "contested",
+      "confidence": "medium",
+      "source_ids": [
+        "stg-src-manzanilla-1988-preclasico-superior",
+        "stg-src-ramirez-pastrana-reinterpretando-cuicuilco",
+        "stg-src-inah-guia-cuicuilco-ramirez"
+      ],
+      "locators": [
+        "Manzanilla 1988 pp. 86-87, 91",
+        "Ramírez & Pastrana p. 30",
+        "INAH guía '¿Sabías que…?'"
+      ],
+      "source_access_level": "full_text_examined",
+      "evidence_summary": "Manzanilla: 'competencia entre Cuicuilco y Teotihuacan' resolved in Teotihuacan's favour (p.86); 'Cuicuilco fue el predecesor de la planificación teotihuacana' (p.87); Basin 'ruralizarse' 100 BCE-100 CE, Teotihuacan 50-60% of Basin population in the Classic (p.91).",
+      "related_existing_records": [
+        "canonical v94-teo-09"
+      ],
+      "visitor_relevance": "Frames the south-north story of the Basin.",
+      "area_id": "south",
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F25",
+      "original_archival_document_examined": false,
+      "editorial_status": "not_publication_ready",
+      "verification_status": "pending_independent_review",
+      "scholarly_disagreements": []
+    },
+    {
+      "subject": "A century of digging at Cuicuilco",
+      "assertion": "Cuicuilco was excavated by Byron Cummings (1922-1925), by University of California and National Geographic Society teams under Heizer and Bennyhoff (1957), in a rescue led by Gallegos during construction of the 1968 Olympic Village (1967-1968), and by Pérez Campa (the stela, 1998; Plaza Inbursa, 2005); Román Piña Chan, who dated the site to only 450-100 BCE, created the first site museum in a cavity under the lava east of the main platform.",
+      "period": "Historiography 1922-2005",
+      "date_start": 1922,
+      "date_end": 2005,
+      "geographic_locations": [
+        "Cuicuilco, Tlalpan/Coyoacán, CDMX",
+        "Pedregal de San Ángel (Xitle lava)",
+        "Villa Olímpica",
+        "Plaza Inbursa (Plaza Cuicuilco)"
+      ],
+      "evidence_type": "historiography",
+      "interpretation_status": "documented_history_of_research",
+      "confidence": "medium",
+      "source_ids": [
+        "stg-src-noguera-1965-horizonte-preclasico",
+        "stg-src-ramirez-pina-chan-cuicuilco",
+        "stg-src-inah-guia-cuicuilco-ramirez"
+      ],
+      "locators": [
+        "Noguera 1965 pp. 46-47, 72",
+        "Ramírez 2021 pp. 10, 15-16, 25",
+        "INAH guía (Edificio E-1)"
+      ],
+      "source_access_level": "full_text_examined",
+      "evidence_summary": "Ramírez 2021: 'durante el rescate llevado a cabo por Gallegos cuando se construyó Villa Olímpica en 1967-1968' (p.15); 'Piña Chan consideraba el inicio de Cuicuilco en el 450 a.C. y su abandono en el 100 a.C.' (p.10). Guide: Edificio E-1 was mutilated in 'las excavaciones de 1968'.",
+      "scholarly_disagreements": [
+        "Who led the 1967-68 rescue: Ramírez names Gallegos; Müller published the Cuicuilco B ceramics (1990). Plaza Inbursa work date 2005 is from Ramírez; no primary report examined."
+      ],
+      "visitor_relevance": "Explains why part of the site sits beside a shopping centre and the former Olympic Village.",
+      "area_id": "south",
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F26",
+      "original_archival_document_examined": false,
+      "editorial_status": "not_publication_ready",
+      "verification_status": "pending_independent_review",
+      "related_existing_records": []
+    },
+    {
+      "subject": "The Late Formative Basin: rapid growth, then concentration",
+      "assertion": "Regional surveys summarized by Manzanilla show rapid population growth between about 900 and 100 BCE, with colonization of roughly two-thirds of the Basin; Piña Chan had listed 18 Late Preclassic sites in 1955, Sanders' team recorded 129 Formative sites in the Teotihuacan Valley alone, and with Teotihuacan's rise the Basin 'ruralized' as population concentrated there.",
+      "period": "Middle-Terminal Formative",
+      "date_start": -900,
+      "date_end": 100,
+      "geographic_locations": [
+        "Basin of Mexico (regional)"
+      ],
+      "evidence_type": "regional_survey_synthesis",
+      "interpretation_status": "widely_accepted_synthesis",
+      "confidence": "medium",
+      "source_ids": [
+        "stg-src-manzanilla-1988-preclasico-superior"
+      ],
+      "locators": [
+        "Manzanilla 1988 pp. 83-85, 91"
+      ],
+      "source_access_level": "full_text_examined",
+      "evidence_summary": "'En total, se registraron 129 sitios del Formativo o Preclásico' (p.84); Sanders 1981 900-100 BCE rapid growth (p.91, partly paraphrased due to OCR).",
+      "scholarly_disagreements": [
+        "Survey counts reflect 1960s-70s methods and site definitions."
+      ],
+      "visitor_relevance": "Big-picture context linking all Formative sites.",
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F27",
+      "original_archival_document_examined": false,
+      "editorial_status": "not_publication_ready",
+      "verification_status": "pending_independent_review",
+      "area_id": "citywide_or_outside_ten",
+      "related_existing_records": []
+    }
+  ],
+  "disputes": [
+    {
+      "dispute_id": "stg-20261114T1532Z-formative-basin-c4f1-D1",
+      "topic": "Cuicuilco start date",
+      "positions": [
+        "c.2100 BCE Heizer & Bennyhoff",
+        "c.1200 BCE Pérez Campa",
+        "1000-800 BCE Müller",
+        "≤800 BCE Ramírez & Pastrana; Meraz"
+      ],
+      "finding_ids": [
+        "F20"
+      ]
+    },
+    {
+      "dispute_id": "stg-20261114T1532Z-formative-basin-c4f1-D2",
+      "topic": "Cuicuilco apogee and Xitle's role",
+      "positions": [
+        "peak 400-200 BCE, temporary abandonment (Ramírez & Pastrana 2021)",
+        "peak 200 BCE-250 CE, abandoned due to Xitle (INAH guide)",
+        "two lava flows, earlier one reduced farmland (Manzanilla after Sanders)",
+        "abandonment c.50 CE (Rattray)"
+      ],
+      "finding_ids": [
+        "F21",
+        "F24"
+      ]
+    },
+    {
+      "dispute_id": "stg-20261114T1532Z-formative-basin-c4f1-D3",
+      "topic": "Tlatilco excavation chronology and burial counts",
+      "positions": [
+        "first season 1947-1950 (Noguera)",
+        "from 1949 (Piña Chan)",
+        "1942 season (Moedano)",
+        "213 vs 214 burials 1962-69; 459/474 individuals 1942-69"
+      ],
+      "finding_ids": [
+        "F02",
+        "F03"
+      ]
+    },
+    {
+      "dispute_id": "stg-20261114T1532Z-formative-basin-c4f1-D4",
+      "topic": "Date of Tlapacoya pyramid",
+      "positions": [
+        "Late Formative (INAH, Manzanilla, Serra & Lazcano)",
+        "Ayotla phase (MacNeish encyclopedia — likely error)"
+      ],
+      "finding_ids": [
+        "F12"
+      ]
+    }
+  ],
+  "duplicate_review": {
+    "method": "difflib title similarity vs canonical sources; revistas article-number URL match vs canonical; URL substring vs all staged research JSON; keyword probes vs canonical claims/findings tables and staged JSON",
+    "sources": [
+      {
+        "source_id": "stg-src-meraz-2016-arq51-tlalpan-aldea",
+        "best_canonical_title_ratio": 0.483,
+        "best_canonical_match": null,
+        "canonical_url_hit": [],
+        "staged_batch_url_hit": true,
+        "decision": "new"
+      },
+      {
+        "source_id": "stg-src-manzanilla-1988-preclasico-superior",
+        "best_canonical_title_ratio": 0.578,
+        "best_canonical_match": null,
+        "canonical_url_hit": [],
+        "staged_batch_url_hit": true,
+        "decision": "new"
+      },
+      {
+        "source_id": "stg-src-tolstoy-paradis-ucarf11-early-middle-preclassic",
+        "best_canonical_title_ratio": 0.397,
+        "best_canonical_match": null,
+        "canonical_url_hit": [],
+        "staged_batch_url_hit": true,
+        "decision": "new"
+      },
+      {
+        "source_id": "stg-src-ramirez-pastrana-reinterpretando-cuicuilco",
+        "best_canonical_title_ratio": 1.0,
+        "best_canonical_match": "v70-ramirez24",
+        "canonical_url_hit": [
+          "v70-ramirez24"
+        ],
+        "staged_batch_url_hit": true,
+        "decision": "existing_canonical_source_full_text_newly_examined"
+      },
+      {
+        "source_id": "stg-src-ramirez-pina-chan-cuicuilco",
+        "best_canonical_title_ratio": 1.0,
+        "best_canonical_match": "v72-fee724be100c7",
+        "canonical_url_hit": [
+          "v72-fee724be100c7"
+        ],
+        "staged_batch_url_hit": true,
+        "decision": "existing_canonical_source_full_text_newly_examined"
+      },
+      {
+        "source_id": "stg-src-inah-guia-cuicuilco-ramirez",
+        "best_canonical_title_ratio": 0.494,
+        "best_canonical_match": null,
+        "canonical_url_hit": [],
+        "staged_batch_url_hit": true,
+        "decision": "new"
+      },
+      {
+        "source_id": "stg-src-salas-hernandez-1994-tlatilco-perfil",
+        "best_canonical_title_ratio": 0.428,
+        "best_canonical_match": null,
+        "canonical_url_hit": [],
+        "staged_batch_url_hit": true,
+        "decision": "new"
+      },
+      {
+        "source_id": "stg-src-mna-acrobata-infografia",
+        "best_canonical_title_ratio": 0.409,
+        "best_canonical_match": null,
+        "canonical_url_hit": [],
+        "staged_batch_url_hit": true,
+        "decision": "new"
+      },
+      {
+        "source_id": "stg-src-garcia-moll-2014-am125-perros-tlatilco",
+        "best_canonical_title_ratio": 0.593,
+        "best_canonical_match": null,
+        "canonical_url_hit": [],
+        "staged_batch_url_hit": true,
+        "decision": "new"
+      },
+      {
+        "source_id": "stg-src-macneish-tlapacoya-encyclopedia",
+        "best_canonical_title_ratio": 0.333,
+        "best_canonical_match": null,
+        "canonical_url_hit": [],
+        "staged_batch_url_hit": true,
+        "decision": "new"
+      },
+      {
+        "source_id": "stg-src-serra-lazcano-2009-cuicuilco47",
+        "best_canonical_title_ratio": 0.83,
+        "best_canonical_match": "v90-source-018",
+        "canonical_url_hit": [],
+        "staged_batch_url_hit": true,
+        "decision": "existing_canonical_source_full_text_newly_examined"
+      },
+      {
+        "source_id": "stg-src-moedano-koer-tlatilco-informe",
+        "best_canonical_title_ratio": 0.547,
+        "best_canonical_match": null,
+        "canonical_url_hit": [],
+        "staged_batch_url_hit": true,
+        "decision": "new"
+      },
+      {
+        "source_id": "stg-src-noguera-1965-horizonte-preclasico",
+        "best_canonical_title_ratio": 0.519,
+        "best_canonical_match": null,
+        "canonical_url_hit": [],
+        "staged_batch_url_hit": true,
+        "decision": "new"
+      },
+      {
+        "source_id": "stg-src-marmolejo-2019-arq59-copilco",
+        "best_canonical_title_ratio": 0.517,
+        "best_canonical_match": null,
+        "canonical_url_hit": [],
+        "staged_batch_url_hit": true,
+        "decision": "new"
+      },
+      {
+        "source_id": "stg-src-johnson-hirth-2019-altica-coapexco",
+        "best_canonical_title_ratio": 0.424,
+        "best_canonical_match": null,
+        "canonical_url_hit": [],
+        "staged_batch_url_hit": true,
+        "decision": "new"
+      },
+      {
+        "source_id": "stg-src-inah-lugares-tlapacoya",
+        "best_canonical_title_ratio": 0.45,
+        "best_canonical_match": null,
+        "canonical_url_hit": [],
+        "staged_batch_url_hit": true,
+        "decision": "new"
+      },
+      {
+        "source_id": "stg-src-mcclung-acosta-2015-xochimilco",
+        "best_canonical_title_ratio": 1.0,
+        "best_canonical_match": "v78-citywide-041",
+        "canonical_url_hit": [
+          "v78-citywide-041"
+        ],
+        "staged_batch_url_hit": true,
+        "decision": "existing_canonical_source_full_text_newly_examined"
+      }
+    ],
+    "keyword_probe_hits_canonical_claims_vs_staged": {
+      "tlatilco": [
+        0,
+        139
+      ],
+      "tlapacoya": [
+        0,
+        63
+      ],
+      "zohapilco": [
+        0,
+        35
+      ],
+      "zacatenco": [
+        0,
+        58
+      ],
+      "ticom": [
+        0,
+        42
+      ],
+      "coapexco": [
+        0,
+        34
+      ],
+      "ayotla": [
+        0,
+        23
+      ],
+      "altica": [
+        0,
+        14
+      ],
+      "gran basamento": [
+        0,
+        5
+      ],
+      "tetelpan": [
+        0,
+        9
+      ],
+      "110 m": [
+        0,
+        5
+      ],
+      "20,000": [
+        2,
+        14
+      ],
+      "20 000": [
+        0,
+        1
+      ]
+    },
+    "previous_claude_batch_overlap": "20261113T0215Z-pleistocene-archaic-basin-7a3e F22/F23 cover Archaic Zohapilco phase dates and San Gregorio Atlapulco; this batch's F11 (2920 BCE figurine) is additional, not a restatement."
+  },
+  "metadata_corrections_proposed": [
+    {
+      "canonical_id": "v70-ramirez24",
+      "field": "year",
+      "canonical_value": "2024",
+      "observed": "Arqueología núm. 65, diciembre 2021 (extracted article text)",
+      "status": "needs landing-page confirmation"
+    },
+    {
+      "canonical_id": "v72-fee724be100c7",
+      "field": "year/issue",
+      "canonical_value": "2024 / 'Arqueología 64'",
+      "observed": "Arqueología núm. 64, agosto 2021 (extracted article text)",
+      "status": "needs landing-page confirmation"
+    }
+  ],
+  "coverage_proposals": [
+    "Use area 'south' for Cuicuilco findings; consider theme 'formative_basin' spanning sites outside the ten areas (Tlatilco, Tlapacoya, Coapexco, Zacatenco/Ticomán)."
+  ],
+  "pending_checks": [
+    "Examine Vaillant 1930/1931 AMNH PDFs (hdl:2246/132) to confirm Zacatenco/Ticomán field dates and architecture.",
+    "Examine Piña Chan 1958 'Tlatilco' and García Moll season IV catalogue to resolve season dates and burial counts.",
+    "Examine Niederberger 1976 'Zohapilco' for original Nevada/Ayotla/Manantial definitions and dates.",
+    "Confirm publication year of Ramírez & Pastrana 'Reinterpretando Cuicuilco' and Ramírez 'Cuicuilco en la concepción de Román Piña Chan' (2021 vs canonical 2024).",
+    "Read second half of Johnson & Hirth 2019 for Coapexco dating and conclusions.",
+    "Find a modern critique of 1950s 'Olmec'/racial readings of Tlatilco before using F08 editorially.",
+    "Verify Tolstoy & Paradis publication series/year (UC ARF Contributions no. 11?) and the 'northern edge' wording.",
+    "Recheck INAH Tlapacoya visitor status near trip date (Dec 31 2026-Jan 7 2027).",
+    "Image rights for MNA Acrobat and Cuicuilco photos not reviewed."
+  ],
+  "next_recommended_target": "Colonial Mexico City gap check: sixteenth-century traza, cabildo and Indigenous parcialidades (San Juan Tenochtitlan, Santiago Tlatelolco) 1521-1600, after confirming existing colonial coverage (1629 flood, 1692, Hospital de Jesús already staged). Secondary: finish Formative with Cerro del Tepalcate, El Arbolillo and Terremote-Tlaltenco.",
+  "validation": {
+    "batch_id": "20261114T1532Z-formative-basin-c4f1",
+    "generated_at": "2026-11-14",
+    "finding_count": 27,
+    "source_count": 17,
+    "lead_count": 8,
+    "dispute_count": 4,
+    "errors": [],
+    "unused_sources": [],
+    "canonical_sha256_observed": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+    "canonical_unchanged": true,
+    "all_findings_staged_pending_review": true,
+    "publication_ready_count": 0,
+    "confidence_distribution": {
+      "low": 4,
+      "medium": 22,
+      "high": 1
+    },
+    "access_levels": {
+      "full_text_examined": 3,
+      "full_text_examined_first_100000_of_179517_chars": 1,
+      "full_text_examined_via_OCR_text_extraction": 2,
+      "full_text_examined_via_OCR_text_extraction_first_100000_chars": 1,
+      "full_text_examined_via_text_extraction": 9,
+      "web_excerpt_and_captions_only": 1
+    },
+    "sources_newly_examined_already_in_canonical": [
+      "stg-src-ramirez-pastrana-reinterpretando-cuicuilco",
+      "stg-src-ramirez-pina-chan-cuicuilco",
+      "stg-src-serra-lazcano-2009-cuicuilco47",
+      "stg-src-mcclung-acosta-2015-xochimilco"
+    ],
+    "passed": true
+  }
+}

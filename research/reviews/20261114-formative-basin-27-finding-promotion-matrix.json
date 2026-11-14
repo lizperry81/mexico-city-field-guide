@@ -1,0 +1,337 @@
+{
+  "schema_version": 1,
+  "batch_id": "20261114T1532Z-formative-basin-c4f1",
+  "review_scope": "All 27 source records inventoried; independent evidence reviewed for selected findings only; no canonical duplicate scan completed",
+  "canonical_promotion_authorized": false,
+  "reviewed_date": "2026-11-14",
+  "finding_reviews": [
+    {
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F01",
+      "title": "Tlatilco: a farming village on an alluvial fan in today's Naucalpan",
+      "original_confidence": "medium",
+      "source_ids": [
+        "stg-src-salas-hernandez-1994-tlatilco-perfil",
+        "stg-src-mna-acrobata-infografia"
+      ],
+      "status": "SPLIT_REQUIRED_PARTIAL_SUPPORT",
+      "canonical_action": "DO_NOT_PROMOTE_AS_WRITTEN"
+    },
+    {
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F02",
+      "title": "Tlatilco was excavated inside a brickyard from 1942",
+      "original_confidence": "medium",
+      "source_ids": [
+        "stg-src-moedano-koer-tlatilco-informe",
+        "stg-src-noguera-1965-horizonte-preclasico"
+      ],
+      "status": "SOURCE_PASSAGE_AND_CANONICAL_DUPLICATE_CHECK_REQUIRED",
+      "canonical_action": "DO_NOT_PROMOTE_AS_WRITTEN"
+    },
+    {
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F03",
+      "title": "How many people were buried at Tlatilco? The counts do not agree",
+      "original_confidence": "low",
+      "source_ids": [
+        "stg-src-salas-hernandez-1994-tlatilco-perfil",
+        "stg-src-mna-acrobata-infografia",
+        "stg-src-garcia-moll-2014-am125-perros-tlatilco"
+      ],
+      "status": "SOURCE_PASSAGE_AND_CANONICAL_DUPLICATE_CHECK_REQUIRED",
+      "canonical_action": "DO_NOT_PROMOTE_AS_WRITTEN"
+    },
+    {
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F04",
+      "title": "Dogs buried with and apart from people at Tlatilco",
+      "original_confidence": "medium",
+      "source_ids": [
+        "stg-src-garcia-moll-2014-am125-perros-tlatilco"
+      ],
+      "status": "SOURCE_PASSAGE_AND_CANONICAL_DUPLICATE_CHECK_REQUIRED",
+      "canonical_action": "DO_NOT_PROMOTE_AS_WRITTEN"
+    },
+    {
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F05",
+      "title": "Tlatilco's economy and size",
+      "original_confidence": "low",
+      "source_ids": [
+        "stg-src-salas-hernandez-1994-tlatilco-perfil",
+        "stg-src-tolstoy-paradis-ucarf11-early-middle-preclassic"
+      ],
+      "status": "SOURCE_PASSAGE_AND_CANONICAL_DUPLICATE_CHECK_REQUIRED",
+      "canonical_action": "DO_NOT_PROMOTE_AS_WRITTEN"
+    },
+    {
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F06",
+      "title": "Tlatilco's graves are older than its trash: a dating puzzle",
+      "original_confidence": "medium",
+      "source_ids": [
+        "stg-src-tolstoy-paradis-ucarf11-early-middle-preclassic"
+      ],
+      "status": "SOURCE_PASSAGE_AND_CANONICAL_DUPLICATE_CHECK_REQUIRED",
+      "canonical_action": "DO_NOT_PROMOTE_AS_WRITTEN"
+    },
+    {
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F07",
+      "title": "The Tlatilco 'Acrobat' vessel",
+      "original_confidence": "medium",
+      "source_ids": [
+        "stg-src-mna-acrobata-infografia"
+      ],
+      "status": "INSTITUTIONAL_TEXT_SUPPORTED_OBJECT_ID_CHECK_PENDING",
+      "canonical_action": "DO_NOT_PROMOTE_AS_WRITTEN"
+    },
+    {
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F08",
+      "title": "Mid-century readings of Tlatilco: 'Olmec' founders and racial typology",
+      "original_confidence": "high",
+      "source_ids": [
+        "stg-src-moedano-koer-tlatilco-informe",
+        "stg-src-noguera-1965-horizonte-preclasico"
+      ],
+      "status": "SOURCE_PASSAGE_AND_CANONICAL_DUPLICATE_CHECK_REQUIRED",
+      "canonical_action": "DO_NOT_PROMOTE_AS_WRITTEN"
+    },
+    {
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F09",
+      "title": "Ayotla: the Basin's earliest pottery-using communities show Gulf-style links",
+      "original_confidence": "medium",
+      "source_ids": [
+        "stg-src-tolstoy-paradis-ucarf11-early-middle-preclassic"
+      ],
+      "status": "SOURCE_PASSAGE_AND_CANONICAL_DUPLICATE_CHECK_REQUIRED",
+      "canonical_action": "DO_NOT_PROMOTE_AS_WRITTEN"
+    },
+    {
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F10",
+      "title": "Formative phase names at Tlapacoya-Zohapilco and their shifting dates",
+      "original_confidence": "medium",
+      "source_ids": [
+        "stg-src-macneish-tlapacoya-encyclopedia",
+        "stg-src-meraz-2016-arq51-tlalpan-aldea",
+        "stg-src-ramirez-pastrana-reinterpretando-cuicuilco",
+        "stg-src-tolstoy-paradis-ucarf11-early-middle-preclassic"
+      ],
+      "status": "SOURCE_PASSAGE_AND_CANONICAL_DUPLICATE_CHECK_REQUIRED",
+      "canonical_action": "DO_NOT_PROMOTE_AS_WRITTEN"
+    },
+    {
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F11",
+      "title": "A single clay figurine before pottery at Zohapilco",
+      "original_confidence": "medium",
+      "source_ids": [
+        "stg-src-mcclung-acosta-2015-xochimilco",
+        "stg-src-macneish-tlapacoya-encyclopedia"
+      ],
+      "status": "BLOCKED_DATE_CONFLICT",
+      "canonical_action": "DO_NOT_PROMOTE_AS_WRITTEN"
+    },
+    {
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F12",
+      "title": "Tlapacoya's Late Formative pyramid and tombs",
+      "original_confidence": "medium",
+      "source_ids": [
+        "stg-src-inah-lugares-tlapacoya",
+        "stg-src-manzanilla-1988-preclasico-superior",
+        "stg-src-noguera-1965-horizonte-preclasico",
+        "stg-src-serra-lazcano-2009-cuicuilco47"
+      ],
+      "status": "SOURCE_PASSAGE_AND_CANONICAL_DUPLICATE_CHECK_REQUIRED",
+      "canonical_action": "DO_NOT_PROMOTE_AS_WRITTEN"
+    },
+    {
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F13",
+      "title": "Southeast Basin centres empty out as Teotihuacan grows",
+      "original_confidence": "medium",
+      "source_ids": [
+        "stg-src-manzanilla-1988-preclasico-superior",
+        "stg-src-inah-lugares-tlapacoya"
+      ],
+      "status": "SOURCE_PASSAGE_AND_CANONICAL_DUPLICATE_CHECK_REQUIRED",
+      "canonical_action": "DO_NOT_PROMOTE_AS_WRITTEN"
+    },
+    {
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F14",
+      "title": "Coapexco: a short-lived early village on the Iztaccíhuatl piedmont",
+      "original_confidence": "medium",
+      "source_ids": [
+        "stg-src-johnson-hirth-2019-altica-coapexco",
+        "stg-src-serra-lazcano-2009-cuicuilco47"
+      ],
+      "status": "SOURCE_PASSAGE_AND_CANONICAL_DUPLICATE_CHECK_REQUIRED",
+      "canonical_action": "DO_NOT_PROMOTE_AS_WRITTEN"
+    },
+    {
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F15",
+      "title": "Obsidian moved through middlemen in the Formative Basin",
+      "original_confidence": "medium",
+      "source_ids": [
+        "stg-src-johnson-hirth-2019-altica-coapexco"
+      ],
+      "status": "SOURCE_PASSAGE_AND_CANONICAL_DUPLICATE_CHECK_REQUIRED",
+      "canonical_action": "DO_NOT_PROMOTE_AS_WRITTEN"
+    },
+    {
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F16",
+      "title": "Vaillant's excavations created the Basin's first Formative sequence",
+      "original_confidence": "medium",
+      "source_ids": [
+        "stg-src-noguera-1965-horizonte-preclasico",
+        "stg-src-meraz-2016-arq51-tlalpan-aldea",
+        "stg-src-manzanilla-1988-preclasico-superior",
+        "stg-src-marmolejo-2019-arq59-copilco"
+      ],
+      "status": "SOURCE_PASSAGE_AND_CANONICAL_DUPLICATE_CHECK_REQUIRED",
+      "canonical_action": "DO_NOT_PROMOTE_AS_WRITTEN"
+    },
+    {
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F17",
+      "title": "Breaks in the Zacatenco-Ticomán sequence were once explained by conquest and migration",
+      "original_confidence": "low",
+      "source_ids": [
+        "stg-src-noguera-1965-horizonte-preclasico",
+        "stg-src-manzanilla-1988-preclasico-superior"
+      ],
+      "status": "SOURCE_PASSAGE_AND_CANONICAL_DUPLICATE_CHECK_REQUIRED",
+      "canonical_action": "DO_NOT_PROMOTE_AS_WRITTEN"
+    },
+    {
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F18",
+      "title": "What a Ticomán village looked like",
+      "original_confidence": "medium",
+      "source_ids": [
+        "stg-src-manzanilla-1988-preclasico-superior",
+        "stg-src-meraz-2016-arq51-tlalpan-aldea"
+      ],
+      "status": "SOURCE_PASSAGE_AND_CANONICAL_DUPLICATE_CHECK_REQUIRED",
+      "canonical_action": "DO_NOT_PROMOTE_AS_WRITTEN"
+    },
+    {
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F19",
+      "title": "Zacatenco phase: the busiest Middle Formative occupation in the south Basin villages",
+      "original_confidence": "medium",
+      "source_ids": [
+        "stg-src-marmolejo-2019-arq59-copilco",
+        "stg-src-serra-lazcano-2009-cuicuilco47"
+      ],
+      "status": "SOURCE_PASSAGE_AND_CANONICAL_DUPLICATE_CHECK_REQUIRED",
+      "canonical_action": "DO_NOT_PROMOTE_AS_WRITTEN"
+    },
+    {
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F20",
+      "title": "How old is Cuicuilco? Claims range from 2100 to 800 BCE",
+      "original_confidence": "medium",
+      "source_ids": [
+        "stg-src-ramirez-pastrana-reinterpretando-cuicuilco",
+        "stg-src-meraz-2016-arq51-tlalpan-aldea",
+        "stg-src-ramirez-pina-chan-cuicuilco"
+      ],
+      "status": "SOURCE_PASSAGE_AND_CANONICAL_DUPLICATE_CHECK_REQUIRED",
+      "canonical_action": "DO_NOT_PROMOTE_AS_WRITTEN"
+    },
+    {
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F21",
+      "title": "When did Cuicuilco peak? Two INAH accounts differ",
+      "original_confidence": "medium",
+      "source_ids": [
+        "stg-src-ramirez-pastrana-reinterpretando-cuicuilco",
+        "stg-src-inah-guia-cuicuilco-ramirez",
+        "stg-src-meraz-2016-arq51-tlalpan-aldea",
+        "stg-src-manzanilla-1988-preclasico-superior"
+      ],
+      "status": "SOURCE_PASSAGE_AND_CANONICAL_DUPLICATE_CHECK_REQUIRED",
+      "canonical_action": "DO_NOT_PROMOTE_AS_WRITTEN"
+    },
+    {
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F22",
+      "title": "Cuicuilco's size: about 400 hectares and 20,000 people (estimate)",
+      "original_confidence": "low",
+      "source_ids": [
+        "stg-src-ramirez-pastrana-reinterpretando-cuicuilco",
+        "stg-src-inah-guia-cuicuilco-ramirez",
+        "stg-src-serra-lazcano-2009-cuicuilco47"
+      ],
+      "status": "SOURCE_PASSAGE_AND_CANONICAL_DUPLICATE_CHECK_REQUIRED",
+      "canonical_action": "DO_NOT_PROMOTE_AS_WRITTEN"
+    },
+    {
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F23",
+      "title": "The Gran Basamento: a round, layered platform rebuilt eight times",
+      "original_confidence": "medium",
+      "source_ids": [
+        "stg-src-inah-guia-cuicuilco-ramirez",
+        "stg-src-manzanilla-1988-preclasico-superior",
+        "stg-src-noguera-1965-horizonte-preclasico"
+      ],
+      "status": "SPLIT_REQUIRED_PARTIAL_SUPPORT",
+      "canonical_action": "DO_NOT_PROMOTE_AS_WRITTEN"
+    },
+    {
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F24",
+      "title": "Xitle did not destroy Cuicuilco in one blow",
+      "original_confidence": "medium",
+      "source_ids": [
+        "stg-src-ramirez-pastrana-reinterpretando-cuicuilco",
+        "stg-src-inah-guia-cuicuilco-ramirez",
+        "stg-src-manzanilla-1988-preclasico-superior",
+        "stg-src-ramirez-pina-chan-cuicuilco"
+      ],
+      "status": "SOURCE_PASSAGE_AND_CANONICAL_DUPLICATE_CHECK_REQUIRED",
+      "canonical_action": "DO_NOT_PROMOTE_AS_WRITTEN"
+    },
+    {
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F25",
+      "title": "Cuicuilco and Teotihuacan: rivals, models, or neither?",
+      "original_confidence": "medium",
+      "source_ids": [
+        "stg-src-manzanilla-1988-preclasico-superior",
+        "stg-src-ramirez-pastrana-reinterpretando-cuicuilco",
+        "stg-src-inah-guia-cuicuilco-ramirez"
+      ],
+      "status": "SOURCE_PASSAGE_AND_CANONICAL_DUPLICATE_CHECK_REQUIRED",
+      "canonical_action": "DO_NOT_PROMOTE_AS_WRITTEN"
+    },
+    {
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F26",
+      "title": "A century of digging at Cuicuilco",
+      "original_confidence": "medium",
+      "source_ids": [
+        "stg-src-noguera-1965-horizonte-preclasico",
+        "stg-src-ramirez-pina-chan-cuicuilco",
+        "stg-src-inah-guia-cuicuilco-ramirez"
+      ],
+      "status": "SOURCE_PASSAGE_AND_CANONICAL_DUPLICATE_CHECK_REQUIRED",
+      "canonical_action": "DO_NOT_PROMOTE_AS_WRITTEN"
+    },
+    {
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F27",
+      "title": "The Late Formative Basin: rapid growth, then concentration",
+      "original_confidence": "medium",
+      "source_ids": [
+        "stg-src-manzanilla-1988-preclasico-superior"
+      ],
+      "status": "SOURCE_PASSAGE_AND_CANONICAL_DUPLICATE_CHECK_REQUIRED",
+      "canonical_action": "DO_NOT_PROMOTE_AS_WRITTEN"
+    }
+  ],
+  "narrow_evidence_candidates": [
+    {
+      "from_finding": "F01",
+      "statement": "The National Museum of Anthropology identifies Tlatilco in Naucalpan and describes its florescence around 1200–900 BCE.",
+      "source_url": "https://mna.inah.gob.mx/detalle_pieza_mes.php?id=260",
+      "status": "INSTITUTIONAL_SOURCE_CHECKED_DUPLICATE_REVIEW_PENDING"
+    },
+    {
+      "from_finding": "F11",
+      "statement": "The National Museum of Anthropology dates the Zohapilco clay figurine to about 2300 BCE and places the Zohapilco phase around 3000–2200 BCE.",
+      "source_url": "https://mna.inah.gob.mx/detalle_pieza_mes.php?id=105",
+      "status": "CONFLICTING_BATCH_DATE_REQUIRES_RECONCILIATION"
+    },
+    {
+      "from_finding": "F23",
+      "statement": "INAH describes Cuicuilco's Gran Basamento as approximately 110 m in diameter and 25 m high, with eastern and western ramps.",
+      "source_url": "https://lugares.inah.gob.mx/es/node/4395",
+      "status": "INSTITUTIONAL_SOURCE_CHECKED_CONFLICTING_HEIGHT_ESTIMATES_AND_DUPLICATE_REVIEW_PENDING"
+    }
+  ],
+  "source_review_policy": "Independent publication checks are distinct from source metadata presence. Do not promote compound findings without resolving their unsupported components. Preserve V97 and all original staging records."
+}
