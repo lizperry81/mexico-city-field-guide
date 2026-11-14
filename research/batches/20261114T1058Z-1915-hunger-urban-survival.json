@@ -1,0 +1,419 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261114T1058Z-1915-hunger-urban-survival",
+  "generated_at": "2026-11-14T10:58:11Z",
+  "branch": "research-persistence",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "storage_role": "immutable_noncanonical_research_batch",
+  "previous_verified_replay": "research/reconciled/v4_8d55ab906a32/replay_report.json",
+  "prior_verified_counts": {
+    "github_batches_replayed": 86,
+    "staged_findings": 552,
+    "source_candidates": 234,
+    "inspection_entries": 272,
+    "canonical_sources": 616,
+    "canonical_claims": 422,
+    "canonical_links": 403,
+    "canonical_findings": 68
+  },
+  "research_scope": "11 source-located but uncorroborated candidates: five broad urban/food/health history, four prospective street/market/station/photo interpretation, two specialist quantitative/public-health context. 7 bibliographic candidates and 7 inspections, with primary newspaper and archives not directly inspected.",
+  "sources": [
+    {
+      "id": "STG-SRC-20261114-HUNGER-MURO",
+      "title": "1915: tiempo de hambre e incertidumbre en la ciudad de México",
+      "authors": "María Guadalupe Muro Hidalgo",
+      "publication": "INEHRM, Expediente Digital, 2023 repository publication",
+      "url": "https://inehrm.gob.mx/work/recursos/ExpedientesDigitales/DOCS_080/1915_tiempo_de_hambre_e_incertidumbre_enla_ciudad_de_mexico.pdf",
+      "access_scope": "PDF extracted text printed pp.1–7, especially pp.2–6 and numbered documentary footnotes; screenshot printed p.6 directly inspected",
+      "status": "modern_INEHRM_research_synthesis_original_1914_15_sources_cited_not_seen"
+    },
+    {
+      "id": "STG-SRC-20261114-HUNGER-AVILA",
+      "title": "La ciudad de México ante la ocupación de las fuerzas villistas y zapatistas, diciembre de 1914–junio de 1915",
+      "authors": "Felipe Arturo Ávila Espinosa",
+      "publication": "Estudios de Historia Moderna y Contemporánea de México 14 (1991), DOI 10.22201/iih.24485004e.1991.014.68851",
+      "url": "https://moderna.historicas.unam.mx/index.php/ehm/article/view/68851",
+      "access_scope": "Direct journal abstract lines 20–35; HTML full text gave HTTP 502",
+      "status": "scholarly_article_abstract_only"
+    },
+    {
+      "id": "STG-SRC-20261114-HUNGER-MARTINEZ",
+      "title": "Una metrópoli hambrienta: abasto, escasez y estrategias de subsistencia en la Ciudad de México durante la revolución (1913–1917)",
+      "authors": "Víctor Maximino Martínez Ocampo",
+      "publication": "UNAM doctoral dissertation, 2023",
+      "url": "https://repositorio.unam.mx/contenidos/3714955",
+      "access_scope": "UNAM repository record and dissertation title; no dissertation chapters or page locators inspected",
+      "status": "doctoral_dissertation_metadata_only"
+    },
+    {
+      "id": "STG-SRC-20261114-HUNGER-MOLINA15",
+      "title": "El tifo en la ciudad de México en tiempos de la revolución mexicana, 1913–1916",
+      "authors": "América Molina del Villar",
+      "publication": "Historia Mexicana 64(3), 2015, printed pp.1163–1247, DOI 10.24201/hm.v64i3.3001",
+      "url": "https://saludyenfermedad.historicas.unam.mx/productos-de-investigacion/articulos/el-tifo-en-la-ciudad-de-mexico-en-tiempos-de-la-revolucion-mexicana-1913-1916",
+      "access_scope": "Direct institutional abstract lines 25–41, reference to archives, period press, health council bulletins; full article not read",
+      "status": "scholarly_abstract_only"
+    },
+    {
+      "id": "STG-SRC-20261114-HUNGER-MOLINA18",
+      "title": "Vivir en la orfandad, pobreza y hacinamiento. Los asilos constitucionalistas y las condiciones de vida y salud de los niños en la Ciudad de México, 1915–1918",
+      "authors": "América Molina del Villar",
+      "publication": "Estudios de Historia Moderna y Contemporánea de México 55 (2018), pp.195–242",
+      "url": "https://saludyenfermedad.historicas.unam.mx/productos-de-investigacion/articulos/vivir-en-la-orfandad-pobreza-y-hacinamiento-los-asilos-constitucionalistas-y-las-condiciones-de-vida-y-salud-de",
+      "access_scope": "Direct institutional research summary covering constitutionalist shelters, sanitary circumstances and 1918 closure, full article not read",
+      "status": "scholarly_abstract_only"
+    },
+    {
+      "id": "STG-SRC-20261114-HUNGER-ROSAS",
+      "title": "Los mercados de la Ciudad de México entre 1840 y 1910: administración y distribución de las infraestructuras para el abasto urbano",
+      "authors": "Blanca Azalia Rosas Barrera",
+      "publication": "Oficio Revista de Historia e Interdisciplina 19 (2024), DOI 10.15174/orhi.vi19.2",
+      "url": "https://www.revistaoficio.ugto.mx/index.php/ROI/article/view/372",
+      "access_scope": "Direct journal abstract lines 31–47, archival source list lines 58–84; article full body not read",
+      "status": "scholarly_abstract_and_source_bibliography_only"
+    },
+    {
+      "id": "STG-SRC-20261114-HUNGER-AVILA2016",
+      "title": "Carranza: la consolidación del gobierno nacional, in Contexto histórico",
+      "authors": "Felipe Arturo Ávila Espinosa",
+      "publication": "INEHRM/Senado/UNAM, Contexto histórico (2016), printed chapter begins p.91",
+      "url": "https://www.inehrm.gob.mx/recursos/Libros/contextohistorico.pdf",
+      "access_scope": "Indexed PDF text printed p.95 reports maize 7.5 centavos in Dec 1911, 31 in June 1915 while labeling increase 370%; PDF page-image screenshot timed out/502",
+      "status": "book_chapter_extracted_text_not_page_image_checked_numerical_internal_discrepancy"
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "20261114T1058Z-HUNGER-INS-01",
+      "source_id": "STG-SRC-20261114-HUNGER-MURO",
+      "locator": "PDF extracted text printed pp.1–7, especially pp.2–6 and numbered documentary footnotes; screenshot printed p.6 directly inspected",
+      "access": "modern_INEHRM_research_synthesis_original_1914_15_sources_cited_not_seen",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": true,
+      "notes": "Page 6 screenshot checked; original 1914–1915 newspaper issues, archival documents and Casasola reuse rights not checked"
+    },
+    {
+      "id": "20261114T1058Z-HUNGER-INS-02",
+      "source_id": "STG-SRC-20261114-HUNGER-AVILA",
+      "locator": "Direct journal abstract lines 20–35; HTML full text gave HTTP 502",
+      "access": "scholarly_article_abstract_only",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Direct scholarly abstract or metadata only; no original historical item directly inspected"
+    },
+    {
+      "id": "20261114T1058Z-HUNGER-INS-03",
+      "source_id": "STG-SRC-20261114-HUNGER-MARTINEZ",
+      "locator": "UNAM repository record and dissertation title; no dissertation chapters or page locators inspected",
+      "access": "doctoral_dissertation_metadata_only",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Direct scholarly abstract or metadata only; no original historical item directly inspected"
+    },
+    {
+      "id": "20261114T1058Z-HUNGER-INS-04",
+      "source_id": "STG-SRC-20261114-HUNGER-MOLINA15",
+      "locator": "Direct institutional abstract lines 25–41, reference to archives, period press, health council bulletins; full article not read",
+      "access": "scholarly_abstract_only",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Direct scholarly abstract or metadata only; no original historical item directly inspected"
+    },
+    {
+      "id": "20261114T1058Z-HUNGER-INS-05",
+      "source_id": "STG-SRC-20261114-HUNGER-MOLINA18",
+      "locator": "Direct institutional research summary covering constitutionalist shelters, sanitary circumstances and 1918 closure, full article not read",
+      "access": "scholarly_abstract_only",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Direct scholarly abstract or metadata only; no original historical item directly inspected"
+    },
+    {
+      "id": "20261114T1058Z-HUNGER-INS-06",
+      "source_id": "STG-SRC-20261114-HUNGER-ROSAS",
+      "locator": "Direct journal abstract lines 31–47, archival source list lines 58–84; article full body not read",
+      "access": "scholarly_abstract_and_source_bibliography_only",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Direct scholarly abstract or metadata only; no original historical item directly inspected"
+    },
+    {
+      "id": "20261114T1058Z-HUNGER-INS-07",
+      "source_id": "STG-SRC-20261114-HUNGER-AVILA2016",
+      "locator": "Indexed PDF text printed p.95 reports maize 7.5 centavos in Dec 1911, 31 in June 1915 while labeling increase 370%; PDF page-image screenshot timed out/502",
+      "access": "book_chapter_extracted_text_not_page_image_checked_numerical_internal_discrepancy",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Numerical 370% statement conflicts with arithmetic; do not publish increase percentage"
+    }
+  ],
+  "findings": [
+    {
+      "id": "20261114T1058Z-HUNGER-01",
+      "classification": "broad_history",
+      "assertion": "The December 1914 occupation by Villa and Zapata followed the December 4 Xochimilco agreement; the capital's food crisis must be explained alongside the competing armies' unstable political control, not presented as one uncontested Revolutionary government.",
+      "date_or_range": "December 1914",
+      "period": "Mexican Revolution / urban social history",
+      "themes": [
+        "capital occupation and politics"
+      ],
+      "geographies": [
+        "Centro Histórico"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-HUNGER-MURO",
+        "STG-SRC-20261114-HUNGER-AVILA"
+      ],
+      "source_locator": "Muro PDF printed pp.2–3, footnote 2; Ávila 1991 journal abstract",
+      "limitations": "Treat Xochimilco pact and capital entry as distinct events; original military dispatches not inspected.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1058Z-HUNGER-02",
+      "classification": "broad_history",
+      "assertion": "The conventionalist authorities attempted food price controls and free grain relief; Muro describes 21 December 1914 ration distribution in Azcapotzalco using tickets for maize, wheat and beans, citing an El Monitor report dated 21 December.",
+      "date_or_range": "December 1914",
+      "period": "Mexican Revolution / urban social history",
+      "themes": [
+        "grain relief and municipal regulation"
+      ],
+      "geographies": [
+        "Azcapotzalco"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-HUNGER-MURO"
+      ],
+      "source_locator": "Muro printed p.3 and fn.7 citing El Monitor 21 Dec 1914 p.3",
+      "limitations": "The 1914 newspaper itself was not opened; exact plaza, queue dimensions and food quantities unverified.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1058Z-HUNGER-03",
+      "classification": "broad_history",
+      "assertion": "Control over acceptable paper money shifted between conventionists and constitutionalists in 1914–15; Muro describes Obregón's January 1915 rejection of conventionist notes, associated shop closures and heightened barriers to food purchases.",
+      "date_or_range": "January 1915",
+      "period": "Mexican Revolution / urban social history",
+      "themes": [
+        "monetary conflict and food prices"
+      ],
+      "geographies": [
+        "Centro Histórico"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-HUNGER-MURO",
+        "STG-SRC-20261114-HUNGER-AVILA"
+      ],
+      "source_locator": "Muro printed p.4 and fn.13, discussion of 'coloraditos' and 'dos caritas'",
+      "limitations": "The dates and enforceability of individual monetary orders require original decrees; causation not reduced to currency alone.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1058Z-HUNGER-04",
+      "classification": "broad_history",
+      "assertion": "Food shortages during the 1915 crisis were attributed by Muro to damaged or militarily diverted rail transport, interruptions in regional supplies and speculation, with wartime migration increasing demand; this is a multifactor explanation, not a single-cause drought narrative.",
+      "date_or_range": "1914–1915",
+      "period": "Mexican Revolution / urban social history",
+      "themes": [
+        "urban food supply systems"
+      ],
+      "geographies": [
+        "Mexico City and regional rail corridors"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-HUNGER-MURO",
+        "STG-SRC-20261114-HUNGER-MARTINEZ"
+      ],
+      "source_locator": "Muro printed pp.3–5; Martínez Ocampo UNAM doctoral thesis repository metadata identifies 1913–17 abasto/subsistence scope",
+      "limitations": "Doctoral thesis full chapters and freight ledgers not inspected; do not quantify relative contributions.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1058Z-HUNGER-05",
+      "classification": "broad_history",
+      "assertion": "The 1915–1916 typhus epidemic overlapped the food crisis; Molina del Villar attributes the city's vulnerability in part to poverty, disrupted sanitation spending, war and changing administrations, based on archival, press and public-health documentation.",
+      "date_or_range": "1915–1916",
+      "period": "Mexican Revolution / urban social history",
+      "themes": [
+        "disease sanitation and poverty"
+      ],
+      "geographies": [
+        "Mexico City urban districts"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-HUNGER-MOLINA15",
+        "STG-SRC-20261114-HUNGER-MURO"
+      ],
+      "source_locator": "Molina del Villar 2015 institutional abstract, pp.1163–1247 full article uninspected; Muro PDF printed p.5",
+      "limitations": "Epidemic case counts, mortality and neighborhood comparisons not yet validated against original tables.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1058Z-HUNGER-06",
+      "classification": "poi_ready_candidate",
+      "assertion": "Muro reports demonstrations beginning in popular streets or areas around La Merced, Capuchinas and Uruguay, where residents challenged food shortages and invalid currency, before petitioning Obregón's headquarters.",
+      "date_or_range": "1915",
+      "period": "Mexican Revolution / urban social history",
+      "themes": [
+        "grassroots protest and street geography"
+      ],
+      "geographies": [
+        "La Merced / Capuchinas / República de Uruguay"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-HUNGER-MURO"
+      ],
+      "source_locator": "Muro printed p.6, footnote 17 citing Ramírez Plancarte p.367; page image visually checked",
+      "limitations": "No exact procession route, headquarters address or surviving building verified; on-site walk must not invent a route.",
+      "learning_mode": "future_on_site_with_validation",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1058Z-HUNGER-07",
+      "classification": "poi_ready_candidate",
+      "assertion": "Muro cites distribution of small-denomination constitutionalist notes by the Junta Revolucionaria de Auxilios al Pueblo at the Interoceanic railway station, in amounts of 5, 10, 15 and 20 pesos; station location needs historic-map corroboration before attaching modern coordinates.",
+      "date_or_range": "1915",
+      "period": "Mexican Revolution / urban social history",
+      "themes": [
+        "rail hub and emergency public relief"
+      ],
+      "geographies": [
+        "Former Interoceanic railway station, exact footprint unresolved"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-HUNGER-MURO"
+      ],
+      "source_locator": "Muro printed p.6, footnote 18 citing Ramírez Plancarte pp.371–373; screenshot of p.6 inspected",
+      "limitations": "Original payment ledger and station map unavailable, and nominal pesos cannot be equated with purchasing power.",
+      "learning_mode": "future_on_site_with_validation",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1058Z-HUNGER-08",
+      "classification": "poi_ready_candidate",
+      "assertion": "For a Merced market-history walk, 1915 relief, shop closures and street protest must be connected to older nineteenth-century city market infrastructure rather than conflating present-day Mercado de la Merced with every historical 1915 market location.",
+      "date_or_range": "1840–1915",
+      "period": "Mexican Revolution / urban social history",
+      "themes": [
+        "historical market infrastructure and access"
+      ],
+      "geographies": [
+        "La Merced / Centro Histórico"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-HUNGER-MURO",
+        "STG-SRC-20261114-HUNGER-ROSAS"
+      ],
+      "source_locator": "Rosas Barrera abstract and AHCM market collections list lines 31–83; Muro printed pp.4–6",
+      "limitations": "No georeferenced 1915 market plans or specific shop inventory; modern market buildings require separate dating.",
+      "learning_mode": "future_on_site_with_validation",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1058Z-HUNGER-09",
+      "classification": "poi_ready_candidate",
+      "assertion": "INEHRM's 1915 dossier includes an INAH/SINAFO Casasola photograph of people queued for relief rations, captioned approximately 1915; it could illustrate civilian experience if the object ID, original caption/date and reproduction license are confirmed.",
+      "date_or_range": "circa 1915",
+      "period": "Mexican Revolution / urban social history",
+      "themes": [
+        "historical photographic evidence of food relief"
+      ],
+      "geographies": [
+        "Mexico City, photo location unverified"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-HUNGER-MURO"
+      ],
+      "source_locator": "Muro printed p.1, Casasola SINAFO caption; photo object identity not verified independently",
+      "limitations": "Do not claim exact site, date, photographer or reproduction rights from a secondary caption.",
+      "learning_mode": "future_on_site_with_validation",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1058Z-HUNGER-10",
+      "classification": "specialist_technical",
+      "assertion": "The 2016 INEHRM volume reports maize at 7.5 centavos/kg in December 1911 and 31 centavos/kg in June 1915 but labels this a 370% increase; those endpoints mathematically imply about a 313.3% increase (4.13-fold). Preserve this internal discrepancy for source correction.",
+      "date_or_range": "1911–1915",
+      "period": "Mexican Revolution / urban social history",
+      "themes": [
+        "historical price statistics and measurement integrity"
+      ],
+      "geographies": [
+        "Mexico City food markets"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-HUNGER-AVILA2016"
+      ],
+      "source_locator": "Felipe Arturo Ávila Espinosa, 2016, Contexto histórico, printed p.95, PDF text index",
+      "limitations": "The book's claimed 370% is inconsistent with stated endpoints; original market price series, units, and any rounding not checked. Do not publish either percentage as settled.",
+      "learning_mode": "specialist_sidebar",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1058Z-HUNGER-11",
+      "classification": "specialist_technical",
+      "assertion": "Molina del Villar's separate 2018 analysis places constitutionalist children's asylum policy between 1915 and 1918 and describes shelter closures amid fiscal and sanitary difficulties, making it an evidence trail for assessing who bore the urban crisis's costs.",
+      "date_or_range": "1915–1918",
+      "period": "Mexican Revolution / urban social history",
+      "themes": [
+        "child welfare institutional medicine and humanitarian relief"
+      ],
+      "geographies": [
+        "Mexico City, specific asylum locations unresolved"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-HUNGER-MOLINA18",
+        "STG-SRC-20261114-HUNGER-MOLINA15"
+      ],
+      "source_locator": "2018 research summary identifies pp.195–242; 2015 epidemiology summary for adjacent sanitation context",
+      "limitations": "Archival asylum registers, institution addresses, population counts and causal details not yet inspected.",
+      "learning_mode": "specialist_sidebar",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    }
+  ],
+  "source_identity_policy": "Provisional source IDs only; preserve as raw independently hashed input. Do not infer equivalence or editorial corroboration from overlap of institution or modern summaries.",
+  "external_source_usage": "INEHRM 1915 PDF text and printed p.6 screenshot inspected; other journal abstracts and institutional repository metadata read directly; INEHRM 2016 volume PDF machine text read but screenshot failed. Original cited 1914–1915 newspapers, maps and archival registers not opened. Casasola image reproduction not cleared.",
+  "publication_approved": false,
+  "independently_corroborated_findings": 0,
+  "ready_for_editorial_review": false
+}
