@@ -12,6 +12,7 @@
   const previous = document.getElementById('previous-stop');
   const next = document.getElementById('next-stop');
   const progress = document.getElementById('stop-progress');
+  const stopPosition = document.getElementById('stop-position');
   const stopStorageKey = 'cdmx:templo-mayor:explore-stop';
   let activeStop = 0;
   // Keep a walking position through a reload in this tab, without changing
@@ -109,6 +110,8 @@
     previous.disabled = activeStop === 0;
     next.disabled = activeStop === stops.length - 1;
     progress.textContent = `Stop ${activeStop + 1} of ${stops.length}`;
+    // Keep progress discoverable at the top, including after a resumed walk.
+    stopPosition.textContent = progress.textContent;
 
     if (focusMode) {
       const heading = panel.querySelector('h2');
