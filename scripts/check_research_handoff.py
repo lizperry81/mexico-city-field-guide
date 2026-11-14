@@ -89,11 +89,39 @@ def validate_versioned_handoff(manifest, immutable_manifest, snapshot_sha):
             ("versioned_research_sha256", "versioned_research_sha256"),
             ("compressed_sha256", "compressed_sha256"),
             ("verified_replay_report_path", "replay_report_path"),
-            ("evidence_status", "evidence_status"),
         )
         for old_key, new_key in field_pairs:
             if immutable_manifest.get(old_key) != manifest.get(new_key):
                 raise ValueError("Immutable readback research identity changed: " + old_key)
+        # The producer's 80-batch history records the evidence delta in a
+        # shorter, independently versioned summary. Match EVERY quantitative
+        # claim against the rolling manifest and retain publication safeguards.
+        # Older full evidence-status snapshots still require exact equality.
+        frozen_evidence = immutable_manifest.get("evidence_status")
+        rolling_evidence = manifest.get("evidence_status")
+        if frozen_evidence != rolling_evidence:
+            if (not isinstance(frozen_evidence, dict)
+                    or not isinstance(rolling_evidence, dict)
+                    or set(frozen_evidence) != {
+                        "new_findings", "new_sources", "new_inspections",
+                        "independent_corroboration", "publication_approved",
+                        "source_types"}
+                    or any(type(frozen_evidence[k]) is not int or frozen_evidence[k] < 0
+                           for k in ("new_findings", "new_sources", "new_inspections"))
+                    or frozen_evidence["new_findings"] != rolling_evidence.get(
+                        "new_historical_finding_candidates_researched_this_run")
+                    or frozen_evidence["new_sources"] != manifest.get(
+                        "staged_counts", {}).get("new_source_candidates_all_types_this_run")
+                    or frozen_evidence["new_inspections"] != rolling_evidence.get(
+                        "new_source_inspection_metadata_this_run")
+                    or frozen_evidence["independent_corroboration"] is not False
+                    or rolling_evidence.get("independently_corroborated_new_findings") != 0
+                    or frozen_evidence["publication_approved"] is not False
+                    or rolling_evidence.get("publication_approved") is not False
+                    or rolling_evidence.get("ready_for_editorial_review") is not False
+                    or not isinstance(frozen_evidence["source_types"], str)
+                    or not frozen_evidence["source_types"].strip()):
+                raise ValueError("Immutable readback evidence counts or approval changed")
         if (immutable_manifest.get("schema_version") != 4
                 or immutable_manifest.get("branch") != "research-persistence"
                 or immutable_manifest.get("canonical_status") != "unchanged_provisional"
