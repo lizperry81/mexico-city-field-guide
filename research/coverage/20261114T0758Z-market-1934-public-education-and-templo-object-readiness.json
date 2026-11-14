@@ -1,0 +1,148 @@
+{
+  "schema_version": 3,
+  "kind": "period_x_theme_x_geography_explanatory_readiness_delta",
+  "generated_at": "2026-11-14T07:58:51Z",
+  "branch": "research-persistence",
+  "source_batch_path": "research/batches/20261114T0758Z-market-1934-public-education-and-templo-object.json",
+  "evidence_status": "noncanonical_source_located_not_publication_approved",
+  "rating_definitions": {
+    "substantial": "Independent primary documents, specialist analysis, precise object/route, access and media rights sufficiently verified for a full explanation",
+    "developing": "Good source-located specific interpretation, but primary texts, physical location or independent check not complete",
+    "sparse": "Narrow catalog/abstract, disputed labels or no independently verified location",
+    "missing": "Critical source, display right or practical access verification absent"
+  },
+  "cells": [
+    {
+      "period": "1933",
+      "theme": "Public-market modernization and vendor regulation",
+      "geography": "Centro Histórico",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0758Z-MKT-01"
+      ],
+      "evidence_gap": "Original construction programme and displaced-vendor lists missing"
+    },
+    {
+      "period": "1934",
+      "theme": "Mixed-use market, childcare and civic space",
+      "geography": "Mercado Abelardo L. Rodríguez",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0758Z-MKT-02"
+      ],
+      "evidence_gap": "Original plans and service implementation records uninspected"
+    },
+    {
+      "period": "1934–1936",
+      "theme": "Public mural commission and assignment",
+      "geography": "Market interior",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0758Z-MKT-03"
+      ],
+      "evidence_gap": "1934 Public Works contract and artist pay sheets uninspected"
+    },
+    {
+      "period": "1934–1936",
+      "theme": "Nutrition programme versus class critique",
+      "geography": "Market mural panels",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0758Z-MKT-04",
+        "20261114T0758Z-MKT-07"
+      ],
+      "evidence_gap": "Artist manifestos and mural-by-mural interpretation lack primary text comparison"
+    },
+    {
+      "period": "1934–1936",
+      "theme": "Women and transnational artistic labor",
+      "geography": "Market corridors",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T0758Z-MKT-05"
+      ],
+      "evidence_gap": "Original 1936 article/full contracts missing and nationality classification divergent"
+    },
+    {
+      "period": "1934–2026",
+      "theme": "Market-to-mural visitor route",
+      "geography": "Centro Histórico",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T0758Z-MKT-06",
+        "20261114T0758Z-MKT-07"
+      ],
+      "evidence_gap": "Present entrance access and object coordinates unverified"
+    },
+    {
+      "period": "1936–2025",
+      "theme": "Noguchi relief position and materials",
+      "geography": "First-floor Community Centre vestibule",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0758Z-MKT-08",
+        "20261114T0758Z-MKT-10"
+      ],
+      "evidence_gap": "Conservation record 2025 snapshot; current access unverified"
+    },
+    {
+      "period": "1934–2026",
+      "theme": "Teatro del Pueblo educational mission",
+      "geography": "Market / Teatro del Pueblo",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T0758Z-MKT-02",
+        "20261114T0758Z-MKT-09"
+      ],
+      "evidence_gap": "Programming and current entrance not verified"
+    },
+    {
+      "period": "Late 1400s",
+      "theme": "Templo Mayor Stage IVb original-vs-copy",
+      "geography": "Stage IVb / Museum",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0758Z-MKT-11"
+      ],
+      "evidence_gap": "Official site direct, museum room indexed only; object inventory needed"
+    },
+    {
+      "period": "2026",
+      "theme": "Historical photographs and mural reproduction permission",
+      "geography": "Market and Templo Mayor",
+      "rating": "missing",
+      "finding_ids": [
+        "20261114T0758Z-MKT-06",
+        "20261114T0758Z-MKT-08",
+        "20261114T0758Z-MKT-11"
+      ],
+      "evidence_gap": "No artwork/image rights cleared; INAH non-commercial attribution licensing requires asset-level check"
+    },
+    {
+      "period": "2026",
+      "theme": "Exact live POI access, route and conservation completion",
+      "geography": "Market interior and theater",
+      "rating": "missing",
+      "finding_ids": [
+        "20261114T0758Z-MKT-06",
+        "20261114T0758Z-MKT-08",
+        "20261114T0758Z-MKT-09",
+        "20261114T0758Z-MKT-10"
+      ],
+      "evidence_gap": "No verified current access, no 2026 completion report, no present-site photographs"
+    }
+  ],
+  "summary": {
+    "total": 11,
+    "substantial": 0,
+    "developing": 6,
+    "sparse": 3,
+    "missing": 2,
+    "classification_finding_counts": {
+      "broad_history": 5,
+      "poi_ready_candidate": 4,
+      "specialist_technical": 2
+    }
+  },
+  "publication_approved": false
+}
