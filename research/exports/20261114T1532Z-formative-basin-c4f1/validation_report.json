@@ -1,0 +1,34 @@
+{
+  "batch_id": "20261114T1532Z-formative-basin-c4f1",
+  "generated_at": "2026-11-14",
+  "finding_count": 27,
+  "source_count": 17,
+  "lead_count": 8,
+  "dispute_count": 4,
+  "errors": [],
+  "unused_sources": [],
+  "canonical_sha256_observed": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_unchanged": true,
+  "all_findings_staged_pending_review": true,
+  "publication_ready_count": 0,
+  "confidence_distribution": {
+    "low": 4,
+    "medium": 22,
+    "high": 1
+  },
+  "access_levels": {
+    "full_text_examined": 3,
+    "full_text_examined_first_100000_of_179517_chars": 1,
+    "full_text_examined_via_OCR_text_extraction": 2,
+    "full_text_examined_via_OCR_text_extraction_first_100000_chars": 1,
+    "full_text_examined_via_text_extraction": 9,
+    "web_excerpt_and_captions_only": 1
+  },
+  "sources_newly_examined_already_in_canonical": [
+    "stg-src-ramirez-pastrana-reinterpretando-cuicuilco",
+    "stg-src-ramirez-pina-chan-cuicuilco",
+    "stg-src-serra-lazcano-2009-cuicuilco47",
+    "stg-src-mcclung-acosta-2015-xochimilco"
+  ],
+  "passed": true
+}
