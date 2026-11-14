@@ -1,0 +1,147 @@
+{
+  "schema_version": 3,
+  "kind": "chapter_level_claim_to_source_locator_audit",
+  "generated_at": "2026-11-14T07:58:51Z",
+  "branch": "research-persistence",
+  "target_branch_read_only": "main",
+  "target_path": "poi/templo-mayor/reader.html",
+  "reader_re_read_this_run": false,
+  "reader_blob_sha_prior_verified": "f570da92e17087c3430f0e0b7339a0cf72071a3f",
+  "reader_blob_reverification_blocker": "Current main reader was not fetched in this run; anchors inherited from prior audit and must be reread before editorial implementation",
+  "source_batch_path": "research/batches/20261114T0758Z-market-1934-public-education-and-templo-object.json",
+  "gates": [
+    {
+      "topic": "Triple Alliance, late 1420s",
+      "reader_anchor": "In the late 1420s, Tenochtitlan joined Texcoco and Tlacopan",
+      "status": "source_gate_open",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T0702Z-1824-capital-and-ayuntamiento-templo-discover-evidence-gates.json",
+          "locator": "Triple Alliance chronology baseline"
+        }
+      ],
+      "uncertainty": "1427/1428/1430 original Indigenous and Spanish manuscript passage comparison outstanding",
+      "historical_addition": "Distinguish anti-Azcapotzalco coalition, war chronology, and later tributary expansion; keep disputed exact year unapproved",
+      "placement": "advance_history"
+    },
+    {
+      "topic": "Construction stages and Stage IVb",
+      "reader_anchor": "Archaeologists group the work into seven major stages",
+      "status": "new_institutional_locator_found",
+      "source_locators": [
+        {
+          "url": "https://lugares.inah.gob.mx/es/pagina-de-elemento/1259",
+          "locator": "direct HTML lines 24–32: IVb stairs, four serpent heads, Tláloc altar and south staircase"
+        }
+      ],
+      "uncertainty": "INAH site-point interpretation gives ruler attribution but original archaeological drawings and staged stratigraphy not inspected",
+      "historical_addition": "Describe the IVb stair with serpent-head sculptures, northern Altar of Frogs and southern Huitzilopochtli stair; do not confuse stage counts with dedications",
+      "placement": "advance_history_then_field"
+    },
+    {
+      "topic": "Coatepec and Coyolxauhqui object",
+      "reader_anchor": "At the foot of the south stair of that platform lay a stone disk",
+      "status": "new_original_copy_disambiguation",
+      "source_locators": [
+        {
+          "url": "https://lugares.inah.gob.mx/es/pagina-de-elemento/1259",
+          "locator": "direct lines 28–34: a COPY is displayed at south foot"
+        },
+        {
+          "url": "https://www.templomayor.inah.gob.mx/historia/acerca-del-museo",
+          "locator": "indexed institutional essay July 2014: original in museum, second level; direct 502"
+        }
+      ],
+      "uncertainty": "Sculpture provenance and myth reconstruction are different evidentiary categories; museum position may change",
+      "historical_addition": "Field cue: distinguish where the stone was found from the modern outdoor copy and museum original; do not treat myth as eyewitness testimony",
+      "placement": "advance_history_then_field"
+    },
+    {
+      "topic": "1520 festival, 1521 siege",
+      "reader_anchor": "In May 1520, while Cortés was away",
+      "status": "source_gate_open",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T0702Z-1824-capital-and-ayuntamiento-templo-discover-evidence-gates.json",
+          "locator": "book 12 vs Spanish account comparison outstanding"
+        }
+      ],
+      "uncertainty": "Nahuatl Book 12, Spanish eyewitness narratives, excavation evidence not collated at line level",
+      "historical_addition": "Distinguish festival massacre in 1520 from the later 1521 siege and demolition; murals painted in the 1930s are representations, not sixteenth-century documentation",
+      "placement": "advance_history"
+    },
+    {
+      "topic": "Gamio southwest corner 1913/14",
+      "reader_anchor": "In 1913, archaeologist Manuel Gamio uncovered the pyramid’s southwest corner",
+      "status": "correction_unapproved",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T0702Z-1824-capital-and-ayuntamiento-templo-discover-evidence-gates.json",
+          "locator": "1913–14 discrepancy preserved"
+        }
+      ],
+      "uncertainty": "Original 1914 period report, signed excavation diaries and May 1914 date not inspected",
+      "historical_addition": "Preserve explicit date dispute instead of replacing 1913 with 1914 without original source",
+      "placement": "advance_history"
+    },
+    {
+      "topic": "1978 discovery and institution history",
+      "reader_anchor": "In February 1978, electrical workers digging near República de Argentina",
+      "status": "institutional_date_locator_found",
+      "source_locators": [
+        {
+          "url": "https://templomayor.inah.gob.mx/historia/proyecto-templo-mayor",
+          "locator": "official indexed institutional text: 21 Feb 1978 electric workers, INAH rescue, later project; direct 502"
+        },
+        {
+          "url": "https://www.templomayor.inah.gob.mx/historia/acerca-del-museo",
+          "locator": "institutional indexed July 2014: Coyolxauhqui original museum display"
+        }
+      ],
+      "uncertainty": "Original 1978 rescue log not consulted; responder personnel and initial dates require original recording",
+      "historical_addition": "Distinguish discovery, archaeological rescue, 1978–1982 field campaigns, 1987 museum; mark precise responder attribution provisional",
+      "placement": "advance_history"
+    },
+    {
+      "topic": "1930s mural representations vs archaeology",
+      "reader_anchor": "At the foot of the south stair of that platform lay a stone disk",
+      "status": "new_cross_period_source_boundary",
+      "source_locators": [
+        {
+          "url": "https://whitney.org/media/46658",
+          "locator": "direct lines 33–36: market's 1934 public art commission and social messaging"
+        }
+      ],
+      "uncertainty": "State-sponsored modern artwork cannot independently establish fifteenth- or sixteenth-century Mexica events",
+      "historical_addition": "Place 1930s public representations in postrevolutionary memory chapter rather than use them as original archaeological sources",
+      "placement": "separate_modern_history_crosslink"
+    },
+    {
+      "topic": "Rights and site interpretation",
+      "reader_anchor": "See a photograph of the 1978 excavation",
+      "status": "field_rights_gate_open",
+      "source_locators": [
+        {
+          "url": "https://lugares.inah.gob.mx/es/pagina-de-elemento/1259",
+          "locator": "INAH legal lines 38–44 BY-NC-ND noncommercial conditions; asset permissions must be checked"
+        }
+      ],
+      "uncertainty": "Even source-linked images require license, creator, reproduction terms and contextual permissions",
+      "historical_addition": "Offer links to institutional photo catalogues until individual photos cleared",
+      "placement": "photo_rights_review"
+    }
+  ],
+  "new_explicit_locator": "INAH Stage IVb direct lines 28–34 says replica at stair; direct site verified, museum location indexed only",
+  "no_publication_of_unverified_claims": true,
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "blockers": [
+    "Original 1428/late-1420s manuscript comparison missing",
+    "Individual archaeological construction section drawings uncollated",
+    "Original Coyolxauhqui museum inventory and modern display check missing",
+    "Book 12 and Spanish conquest narratives uncollated",
+    "Gamio signed 1914 reports unexamined",
+    "1978 rescue field log and personnel discrepancy unresolved",
+    "Historical photo rights and live site access unverified"
+  ]
+}
