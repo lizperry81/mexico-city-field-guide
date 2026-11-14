@@ -1,0 +1,61 @@
+{
+  "schema_version": 2,
+  "kind": "reconciled_79_batch_github_readback_verification",
+  "generated_at": "2026-11-14T03:07:29.814Z",
+  "branch": "research-persistence",
+  "research_commit_sha": "808223390a5e4bdd67dd13a389524ecb51060bca",
+  "verified_replay_commit_sha": "dcb0f99a7e7d973f2234f1585ec8b6611583a34d",
+  "canonical_baseline_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "preflight_path": "research/ledgers/20261114T0304Z-cu-modernism-buildings-labor-and-images-inventory-preflight.json",
+  "replay_report_path": "research/reconciled/v4_808223390a5e/replay_report.json",
+  "verified_snapshot_path": "research/reconciled/v4_808223390a5e/research_only.sqlite.gz",
+  "checks": {
+    "canonical_counts": {
+      "sources": 616,
+      "claims": 422,
+      "claim_sources": 403,
+      "canonical_findings": 68,
+      "canonical_source_inspections": 9
+    },
+    "sqlite_integrity": "ok",
+    "foreign_key_violations": 0,
+    "canonical_tables_preserved": 88,
+    "canonical_rows_unchanged": true,
+    "raw_git_batch_documents": 79,
+    "github_batch_json_files_examined": 79,
+    "github_distinct_findings": 475,
+    "source_candidates": 176,
+    "source_inspections": 214,
+    "unregistered_source_ids": [
+      "PROPOSE_SOURCE_SLOAD_2020_BOTANICAL_DATASET_NOT_IN_CANONICAL"
+    ],
+    "metadata_conflicts": [
+      {
+        "source_id": "STG-SRC-MANZANILLA-LOPEZ-FRETER-1996",
+        "source_path": "20261112T060230Z-auto09.json",
+        "reason": "cross_batch_source_metadata_collision"
+      },
+      {
+        "source_id": "v95-sload-cave-2020",
+        "source_path": "20261112T080125Z-auto09-te28-2009.json",
+        "reason": "cross_batch_source_metadata_collision"
+      }
+    ],
+    "output_uncompressed_sha256": "bb6cd5a44f623c081dc00ef51fb920ca591a4d5a2e833e9cf2224f291408b6f5",
+    "compressed_sha256": "0c0e65a41dd9d9f6db05502f993385f735dc3f5d3081f075614e4b4a51e51d42",
+    "compressed_git_blob_sha": "bd5098686725f6c53feb8156bbf21c2ce9dfc3da",
+    "source_report_git_blob_sha": "d837720cbee898a0dad483dec7d9100688ef1bc3",
+    "workflow_results": {
+      "replay": "success",
+      "validation": "success",
+      "replay_run_id": 43549807648,
+      "validation_run_id": 43549807639
+    },
+    "github_readback": "actions workflow verified committed binary via git show and sha256; GitHub report and checksum text independently fetched",
+    "canonical_promoted": false
+  },
+  "verified_handoff_history_path": "research/handoff/history/20261114T0307Z-cu-79-batch-verified.json",
+  "readback_status": "verified_success_noncanonical",
+  "editorial_status": "none_of_new_candidates_approved",
+  "publication_approved": false
+}
