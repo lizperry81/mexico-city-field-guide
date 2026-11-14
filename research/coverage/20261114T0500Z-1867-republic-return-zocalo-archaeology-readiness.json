@@ -1,0 +1,151 @@
+{
+  "schema_version": 3,
+  "kind": "period_x_theme_x_geography_explanatory_readiness_delta",
+  "generated_at": "2026-11-14T05:00:11.359Z",
+  "branch": "research-persistence",
+  "source_batch_path": "research/batches/20261114T0500Z-1867-republic-return-zocalo-archaeology.json",
+  "evidence_status": "noncanonical_source_located_not_publication_approved",
+  "rating_definitions": {
+    "substantial": "Original/specialist page-level evidence independently compared and tied to verified physical site interpretation.",
+    "developing": "Explanatory historical arc demonstrable but important original or site verification remains.",
+    "sparse": "Source is single, derivative, uncertain, or lacks chronology/site anchor.",
+    "missing": "Required site access, rights, independent evidence, or original documentation absent."
+  },
+  "cells": [
+    {
+      "period": "June–July 1867",
+      "theme": "Military seizure versus return of civic government",
+      "geography": "Tacubaya–Mexico City",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0500Z-REST-01"
+      ],
+      "evidence_gap": "Contemporaneous surrender telegram is edited; no original campaign diary or city capitulation record"
+    },
+    {
+      "period": "July 1867",
+      "theme": "Constitutional legitimacy as presidential claim",
+      "geography": "Palacio Nacional / Ciudad de México",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0500Z-REST-02",
+        "20261114T0500Z-REST-03"
+      ],
+      "evidence_gap": "Edited primary manifesto inspected but political opposition, enforcement and 1867 election documents absent"
+    },
+    {
+      "period": "1866–1867",
+      "theme": "Reuse of imperial plazas after a regime change",
+      "geography": "Plaza de la Constitución",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0500Z-REST-04"
+      ],
+      "evidence_gap": "1866 urban improvements known through later historian; municipal works receipts not inspected"
+    },
+    {
+      "period": "July 1867",
+      "theme": "Popular and municipal celebrations; ritual versus state speech",
+      "geography": "Alameda / Plaza Mayor / Palacio de Minería",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T0500Z-REST-05"
+      ],
+      "evidence_gap": "Original 1867 newspaper issues missing; secondary narratives differ on banquet location and rain"
+    },
+    {
+      "period": "July 1867",
+      "theme": "Historically situated entrance walk",
+      "geography": "Chapultepec–Bucareli–Centro",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T0500Z-REST-06"
+      ],
+      "evidence_gap": "No georeferenced 1867 street map, historical gate placement, or walking-access survey"
+    },
+    {
+      "period": "July–September 1867",
+      "theme": "Short-lived Victory image, reuse and removal",
+      "geography": "Zócalo",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0500Z-REST-07"
+      ],
+      "evidence_gap": "Dates and failure in INAH paper with exact 1867 press locators; original press not examined"
+    },
+    {
+      "period": "1843–2017",
+      "theme": "A buried civic monument explains the Zócalo name",
+      "geography": "Plaza de la Constitución",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0500Z-REST-08"
+      ],
+      "evidence_gap": "2017 excavation article and plans available; visitor-facing marker location/access not checked"
+    },
+    {
+      "period": "1867–2026",
+      "theme": "Historical-image provenance and display permissions",
+      "geography": "Palacio Nacional / Museo Casa Juárez",
+      "rating": "missing",
+      "finding_ids": [
+        "20261114T0500Z-REST-09"
+      ],
+      "evidence_gap": "Historic photo inventory and reproduction terms must be confirmed individually"
+    },
+    {
+      "period": "1843–1844",
+      "theme": "Lakebed foundation: engineering sequence and inputs",
+      "geography": "Zócalo foundation",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0500Z-REST-10"
+      ],
+      "evidence_gap": "Scientific excavation paper read; 1840s construction reports in footnotes not checked"
+    },
+    {
+      "period": "1983–2017",
+      "theme": "Rescue archaeology records modern strata and loss",
+      "geography": "Zócalo",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0500Z-REST-11"
+      ],
+      "evidence_gap": "Original 1983 and 2017 field reports not examined; 1999 disturbance recorded by later excavators"
+    },
+    {
+      "period": "Mexica to colonial",
+      "theme": "Physical boundaries between Sacred Precinct and later plaza",
+      "geography": "Templo Mayor / Plaza de la Constitución",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T0500Z-REST-11"
+      ],
+      "evidence_gap": "INAH paper records vicinity, but no directly calibrated archaeological map matching visible modern street fabric"
+    },
+    {
+      "period": "2026",
+      "theme": "On-site distinction of buried 1843 base and visible Templo Mayor",
+      "geography": "Historic Centre",
+      "rating": "missing",
+      "finding_ids": [
+        "20261114T0500Z-REST-08",
+        "20261114T0500Z-REST-11"
+      ],
+      "evidence_gap": "No current field verification, permission to reproduce archaeological figures or access status"
+    }
+  ],
+  "summary": {
+    "total": 12,
+    "substantial": 0,
+    "developing": 7,
+    "sparse": 3,
+    "missing": 2,
+    "classification_finding_counts": {
+      "broad_history": 5,
+      "poi_ready_candidate": 4,
+      "specialist_technical": 2
+    }
+  },
+  "publication_approved": false
+}
