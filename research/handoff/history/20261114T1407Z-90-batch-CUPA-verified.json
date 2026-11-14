@@ -1,0 +1,55 @@
+{
+  "schema_version": 4,
+  "kind": "immutable_research_handoff_history_entry",
+  "generated_at": "2026-11-14T14:07:30Z",
+  "branch": "research-persistence",
+  "research_commit_sha": "24c4d17029284966912c15b2d422f7b308a5c36f",
+  "workflow_fix_commit_sha": "1fb728ae0a72585b6fcbb6f1c4d3c9ef86561773",
+  "snapshot_commit_sha": "7443ccd48f53eb6b9820958bed22155400a98149",
+  "integrity_ledger_commit_sha": "e8a31a2e11d64b74a486ce52563ef35ee06d2bdc",
+  "canonical_version": "V97",
+  "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_status": "unchanged_provisional_V97_not_promoted",
+  "staged_counts": {
+    "batches": 90,
+    "findings": 596,
+    "source_candidates": 260,
+    "inspections": 298
+  },
+  "source_batch_path": "research/batches/20261114T1400Z-CUPA-housing-institutions-1947-1959.json",
+  "chapter_audit_artifact_paths": [
+    "research/audits/20261114T1400Z-CUPA-housing-institutions-1947-1959-templo-discover-gates.json"
+  ],
+  "coverage_artifact_paths": [
+    "research/coverage/20261114T1400Z-CUPA-housing-institutions-1947-1959-readiness.json"
+  ],
+  "replay_report_path": "research/reconciled/v4_1fb728ae0a72/replay_report.json",
+  "reconciliation_ledger_path": "research/ledgers/20261114T1407Z-90-batch-CUPA-replay-readback.json",
+  "versioned_research_sqlite_gz_path": "research/reconciled/v4_1fb728ae0a72/research_only.sqlite.gz",
+  "versioned_research_sha256": "c5939bc79f7174aaf9bd92949167c5015238217a60bef6cdd9dd12a4869c6f7a",
+  "compressed_sha256": "3ba2cbb3bf15baee7558b40d74f77deeaef1690bb256d15ff7f79366a6eb8cd3",
+  "evidence_status": "one_scholarly_full_text_machine_read_other_source_abstracts_unverified_originals",
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "blockers": [
+    "37 detached source inspections remain identity-review pending (9 same-URL candidates, 28 no matches)",
+    "Two preexisting cross-batch source metadata collisions",
+    "Unregistered SLOAD 2020 proposed botanical dataset source",
+    "One unresolved index-only finding",
+    "CUPA original 1947 Pensiones commission, 1949 opening program, floor plans, tenant deeds and direct oral-history tapes not inspected",
+    "Conflict on tall-building count (six vs seven) and anachronistic reference to ISSSTE in 1949",
+    "Present-day public access and image rights unverified",
+    "Templo Mayor source gates remain open and not editorially approved"
+  ],
+  "previous_immutable_handoff_path": "research/handoff/history/20261114T1301Z-89-batch-halconazo-verified.json",
+  "previous_manifest_blob_sha": "a37937cb0002d9ddbdf89b24e63797d839678527",
+  "github_readback": {
+    "workflow_replay_run": 43603143775,
+    "workflow_conclusion": "success",
+    "repository_sqlite_checksum_workflow_verified": true,
+    "persisted_report_file_readback": true,
+    "independent_external_binary_download_not_done": true,
+    "canonical_rows_unchanged": true,
+    "paths_changed_under_research_only_except_workflow_fix": true
+  }
+}
