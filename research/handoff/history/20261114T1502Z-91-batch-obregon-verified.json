@@ -1,0 +1,73 @@
+{
+  "schema_version": 4,
+  "kind": "immutable_research_to_app_handoff_history",
+  "generated_at": "2026-11-14T15:02:00Z",
+  "branch": "research-persistence",
+  "research_commit_sha": "74470d2dbe713c70a4efe39f710313112b40a4c4",
+  "coverage_commit_sha": "7819c88b73197f98757c2b9e22ea411697ae96a6",
+  "chapter_audit_commit_sha": "44f3e257cb9b03d5b3abf11fcf7cabbb80d2c4d7",
+  "verified_replay_commit_sha": "93fe2ea3c2cb6352027784f986ffb68101ef059f",
+  "canonical_version": "V97",
+  "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_status": "unchanged_provisional_not_promoted",
+  "canonical": {
+    "sources": 616,
+    "claims": 422,
+    "claim_sources": 403,
+    "canonical_findings": 68,
+    "canonical_source_inspections": 9
+  },
+  "staged_counts": {
+    "github_batches_replayed": 91,
+    "github_distinct_substantive_finding_ids": 607,
+    "github_source_candidates": 268,
+    "github_inspection_entries": 306,
+    "github_index_only_refs_unresolved": 1,
+    "source_metadata_collisions": 2,
+    "detached_source_identity_review_pending": 37
+  },
+  "latest_batch_artifact_path": "research/batches/20261114T1457Z-obregon-la-bombilla-1928-1935.json",
+  "chapter_audit_artifact_paths": [
+    "research/audits/20261114T1457Z-obregon-la-bombilla-1928-1935-templo-discover-source-gates.json"
+  ],
+  "coverage_artifact_paths": [
+    "research/coverage/20261114T1457Z-obregon-la-bombilla-1928-1935-readiness.json"
+  ],
+  "versioned_research_sqlite_gz_path": "research/reconciled/v4_74470d2dbe71/research_only.sqlite.gz",
+  "versioned_research_sha256": "3830ca5a537f0fea80d559d2010e4d056d490024b833553c5ecc6d1615938af9",
+  "compressed_sha256": "1a716ba855d778c58f846699d690216070a12f394f16ac24807b9b2f6f604d52",
+  "replay_report_path": "research/reconciled/v4_74470d2dbe71/replay_report.json",
+  "latest_reconciliation_ledger_path": "research/ledgers/20261114T1502Z-91-batch-obregon-replay-and-readback.json",
+  "source_research_method": "Indexed INAH/UNAM and AGN records, directly read INEHRM and source-localized historic magazine/CID catalogs; primary original 1928 press, signed 1934 drawings, and SINAFO negatives unexamined.",
+  "evidence_status": "noncanonical_source_located_1928_assassination_1935_memorial_political_memory",
+  "ready_for_editorial_review": false,
+  "ready_for_publication": false,
+  "publication_approved": false,
+  "canonical_promoted": false,
+  "blockers": [
+    "37 detached inspections still require audited source-identity crosswalk",
+    "2 cross-batch source-metadata collisions remain unresolved",
+    "1 proposed botanical source unresolved",
+    "1 index-only finding unresolved",
+    "Original 1928 El Universal Gráfico and 1934 UNAM plan not directly inspected",
+    "INAH ficha under validation; historic photographs rights not cleared"
+  ],
+  "integrity": {
+    "sqlite_integrity": "ok",
+    "foreign_key_violations": 0,
+    "uncompressed_sha256": "3830ca5a537f0fea80d559d2010e4d056d490024b833553c5ecc6d1615938af9",
+    "compressed_sha256": "1a716ba855d778c58f846699d690216070a12f394f16ac24807b9b2f6f604d52",
+    "readback_report_blob_sha": "292cbfca69333a898284b2988526fc8f78c1bac5",
+    "readback_checksum_blob_sha": "48888d23fbadeb316d0f4820e97c71614691fe1b",
+    "readback_compressed_binary_blob_sha": "fa413c7444a1741938a32fa9031b6ea48a6ced41",
+    "readback_compressed_size_bytes": 1076100,
+    "workflow_replay_run_id": 43607694656,
+    "workflow_validation_run_id": 43607694569,
+    "workflow_outcome": "both_success",
+    "github_actions_check": "Workflow verified gzip integrity, SHA256 of persisted Git show content and SQLite checks; JSON report and GitHub blob metadata independently read back.",
+    "external_binary_download_or_hash_performed": false
+  },
+  "previous_history_path": "research/handoff/history/20261114T1407Z-90-batch-CUPA-verified.json",
+  "immutable": true,
+  "auto_merge_permitted": false
+}
