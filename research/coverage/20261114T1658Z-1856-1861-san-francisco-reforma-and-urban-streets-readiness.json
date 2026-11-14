@@ -1,0 +1,141 @@
+{
+  "schema_version": 3,
+  "kind": "period_x_theme_x_geography_explanatory_readiness_delta",
+  "generated_at": "2026-11-14T16:58:00Z",
+  "branch": "research-persistence",
+  "source_batch_path": "research/batches/20261114T1658Z-1856-1861-san-francisco-reforma-and-urban-streets.json",
+  "evidence_status": "noncanonical_legal_and_urban_reforma_claims_not_approved",
+  "rating_definitions": {
+    "substantial": "Direct primary records independently checked, interpretive narrative substantiated, site conditions and relevant rights verified.",
+    "developing": "Specific historical assertion with source locator, but primary original or independent corroboration remains incomplete.",
+    "sparse": "Named claim exists but precise boundaries, firsthand record, physical survival or contradiction needs verification.",
+    "missing": "Necessary evidence, rights or access unavailable for an explanatory visitor-ready account."
+  },
+  "cells": [
+    {
+      "period": "Liberal property reform",
+      "theme": "Desamortización",
+      "geography": "Mexico City / legislation and property markets",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1658Z-1856-1861-san-francisco-reforma-and-urban-streets-01"
+      ],
+      "evidence_gap": "This is statutory text, not evidence that tenants actually acquired a specific Mexico City property; date variant June 23 in web header vs June 25 in decree catalogs."
+    },
+    {
+      "period": "Legal distinctions in Reforma",
+      "theme": "Exceptions",
+      "geography": "Mexico City / application of national law",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1658Z-1856-1861-san-francisco-reforma-and-urban-streets-02"
+      ],
+      "evidence_gap": "Subsequent separate decrees and the 1859 nationalization law changed legal status; no individual conveyance researched."
+    },
+    {
+      "period": "Comonfort government and street politics",
+      "theme": "Urban cuts",
+      "geography": "Centro Histórico / San Francisco convent",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1658Z-1856-1861-san-francisco-reforma-and-urban-streets-03"
+      ],
+      "evidence_gap": "Original decree and arrest reports not viewed; cannot assert conspiracy as proven; chronology of actual street works needs municipal files."
+    },
+    {
+      "period": "Guerra de Reforma / legal revolution",
+      "theme": "Nationalization",
+      "geography": "Mexico City / national legislation amid civil war",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1658Z-1856-1861-san-francisco-reforma-and-urban-streets-04"
+      ],
+      "evidence_gap": "Both are later transcriptions; archival promulgation/implementation in Mexico City and legal disputes not independently examined."
+    },
+    {
+      "period": "Cultural property and gender in Reforma",
+      "theme": "Collection transfers",
+      "geography": "Mexico City / religious collections and convents",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1658Z-1856-1861-san-francisco-reforma-and-urban-streets-05"
+      ],
+      "evidence_gap": "Specific inventory, transfers, resistance and later legal changes are not verified; law alone cannot establish actual destination for an artwork."
+    },
+    {
+      "period": "Street-making at convent precinct",
+      "theme": "Urban history",
+      "geography": "Centro / Independencia–16 de Septiembre",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T1658Z-1856-1861-san-francisco-reforma-and-urban-streets-06"
+      ],
+      "evidence_gap": "No certified 1856 property map, safe field route or exact corridor overlay; present street shape not independently surveyed."
+    },
+    {
+      "period": "The Reforma remakes Centro",
+      "theme": "Demolition",
+      "geography": "Centro / Gante Street and San Francisco",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1658Z-1856-1861-san-francisco-reforma-and-urban-streets-07"
+      ],
+      "evidence_gap": "Original 1861 municipal street-opening order, nine lot deeds and historic map not inspected; do not attribute every demolition to 1859 law alone."
+    },
+    {
+      "period": "Reading surviving and lost architecture",
+      "theme": "Balvanera chapel",
+      "geography": "Centro / Francisco I. Madero 7",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1658Z-1856-1861-san-francisco-reforma-and-urban-streets-08"
+      ],
+      "evidence_gap": "No field survey conducted and CDMX facade dating conflicts with some INAH guide details; do not claim full unchanged 18th-century facade."
+    },
+    {
+      "period": "Adaptive reuse after nationalization",
+      "theme": "Reuse",
+      "geography": "Centro / Madero, Gante, Eje Central and 16 de Septiembre",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T1658Z-1856-1861-san-francisco-reforma-and-urban-streets-09"
+      ],
+      "evidence_gap": "Survival status and accessible interiors not physically verified; no permit to enter private buildings; monument designation does not establish rights to images."
+    },
+    {
+      "period": "Building archaeology and reuse",
+      "theme": "Stratigraphy of walls",
+      "geography": "Centro / San Francisco formerly enclosed atrium",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T1658Z-1856-1861-san-francisco-reforma-and-urban-streets-10"
+      ],
+      "evidence_gap": "Figure pages and physical finds not directly examined; source's excavation date lacks reliable independently confirmed journal year; do not say ruins are accessible today."
+    },
+    {
+      "period": "Architectural source criticism",
+      "theme": "Photographic evidence",
+      "geography": "Centro / San Francisco church",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T1658Z-1856-1861-san-francisco-reforma-and-urban-streets-11"
+      ],
+      "evidence_gap": "Original stereoscopic image not examined, source imagery rights unclear, existing facade modified; modern replica/retablo cannot be treated as original untouched fabric."
+    },
+    {
+      "period": "1856–present",
+      "theme": "Verified historical block reconstruction, public entry, image rights",
+      "geography": "Centro / San Francisco–Gante–16 de Septiembre",
+      "rating": "missing",
+      "finding_ids": [],
+      "evidence_gap": "Georeferenced 1856/1861 plan, historic drawing rights, current accessibility and conservation condition unverified"
+    }
+  ],
+  "summary": {
+    "substantial": 0,
+    "developing": 7,
+    "sparse": 4,
+    "missing": 1
+  },
+  "next_gap": "Recover original 1856 presidential order and 1861 municipal block plan; validate claimed demolition phases and original facade evidence."
+}

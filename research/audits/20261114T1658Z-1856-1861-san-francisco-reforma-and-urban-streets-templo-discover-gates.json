@@ -1,0 +1,146 @@
+{
+  "schema_version": 3,
+  "kind": "chapter_level_claim_to_source_locator_audit",
+  "generated_at": "2026-11-14T16:58:00Z",
+  "branch": "research-persistence",
+  "target_branch_read_only": "main",
+  "target_path": "poi/templo-mayor/reader.html",
+  "reader_re_read_this_run": true,
+  "reader_blob_sha_verified": "e18b0b6af33e61c1831990d84a7e5effbf13805b",
+  "source_batch_path": "research/batches/20261114T1658Z-1856-1861-san-francisco-reforma-and-urban-streets.json",
+  "novel_direct_research_contribution": "1856 Lerdo art.8 text inspected together with San Francisco 1856 suppression evidence; explicit avoidance of false equivalence between secularized colonial religious fabric and Templo Mayor original archaeological phases. Reader main SHA verified.",
+  "gates": [
+    {
+      "topic": "1428 Triple Alliance and political chronology",
+      "reader_anchor": "In the late 1420s",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "locator": "Reader cited Codex Mendoza; UNAM Noticonquista (prior chapter evidence); reader exact main blob e18b0b6af33e61c1831990d84a7e5effbf13805b"
+        }
+      ],
+      "uncertainty": "Alliance history requires distinguishing Azcapotzalco war from alliance formation and later empire tribute administration.",
+      "historical_addition": "Retain late 1420s in narrative; add 1428 timeline only with annals crosswalk.",
+      "placement": "advance_history_or_field_by_evidence"
+    },
+    {
+      "topic": "Stage II versus IVb temple construction",
+      "reader_anchor": "The oldest excavated phase",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "locator": "INAH Stage II https://lugares.inah.gob.mx/en/pagina-de-elemento/1261"
+        },
+        {
+          "locator": "INAH IVb https://lugares.inah.gob.mx/es/pagina-de-elemento/1259"
+        }
+      ],
+      "uncertainty": "No original phase section drawing independently examined here; avoid neat equivalence between rulers and construction date.",
+      "historical_addition": "Add annotated section plan separating excavated walls, later additions, and hypothetical original elevation.",
+      "placement": "advance_history_or_field_by_evidence"
+    },
+    {
+      "topic": "Coatepec, Coyolxauhqui and display copy",
+      "reader_anchor": "At the foot of the south stair",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "locator": "INAH IVb official page (prior linked)"
+        },
+        {
+          "locator": "INAH 2023 Coyolxauhqui finding bulletin (prior linked)"
+        }
+      ],
+      "uncertainty": "Mythological narrative does not establish identity of every sculpted figure; the exterior disk is a replica, not 1978 original.",
+      "historical_addition": "Distinguish physical findspot, museum original, external replica and mythic Coatepec.",
+      "placement": "advance_history_or_field_by_evidence"
+    },
+    {
+      "topic": "1520 Tóxcatl and 1521 siege",
+      "reader_anchor": "In May 1520",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "locator": "Florentine Codex Book XII folio 30r via reader link"
+        },
+        {
+          "locator": "UNAM Noticonquista link in main reader"
+        }
+      ],
+      "uncertainty": "Nahua and Spanish witnesses transmitted through colonial texts need separate treatment; no direct folio examination this run.",
+      "historical_addition": "Provide dated paired 1520 festival and 1521 siege sources without conflating events.",
+      "placement": "advance_history_or_field_by_evidence"
+    },
+    {
+      "topic": "Gamio excavation vs publication 1913–1914",
+      "reader_anchor": "In 1913",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "locator": "research/audits/20261113T1803Z-templo-mayor-gamio-1913-1914-primary-gates.json"
+        }
+      ],
+      "uncertainty": "Field excavation and eventual publication dates not independently reconciled with notebooks.",
+      "historical_addition": "Split the event into dig, reporting and published illustration, pending primary documents.",
+      "placement": "advance_history_or_field_by_evidence"
+    },
+    {
+      "topic": "21 February 1978 Coyolxauhqui find",
+      "reader_anchor": "In February 1978",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "locator": "https://www.templomayor.inah.gob.mx/historia/proyecto-templo-mayor"
+        },
+        {
+          "locator": "https://www.inah.gob.mx/boletines/el-museo-del-templo-mayor-celebra-los-45-anos-del-descubrimiento-de-coyolxauhqui"
+        }
+      ],
+      "uncertainty": "Original electricity crew report and rescue log not examined; 1978 is NOT construction date of pyramid.",
+      "historical_addition": "After editorial review date discovery 21 February 1978, distinguish workers' chance find from INAH salvage.",
+      "placement": "advance_history_or_field_by_evidence"
+    },
+    {
+      "topic": "Later reconstructed past versus preconquest building evidence",
+      "reader_anchor": "In the late 1420s",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "locator": "Mariano Monterrosa Prado UNAM article printed pp.197-200 (this batch)"
+        },
+        {
+          "locator": "INAH 1856 San Francisco building history catalog (indexed)"
+        }
+      ],
+      "uncertainty": "Distinct Mexica-to-colonial urban history is not evidence for Templo Mayor masonry or pre-Hispanic layouts.",
+      "historical_addition": "If discussing 1520s friars at San Francisco, separate it as a colonial city chapter; do not infer Mexica sacred precinct from altered convent blocks.",
+      "placement": "advance_history_or_field_by_evidence"
+    },
+    {
+      "topic": "Historic images and image rights",
+      "reader_anchor": "See a photograph of the 1978 excavation",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "locator": "reader linked INEHRM excavation photo archive"
+        },
+        {
+          "locator": "Monterrosa Prado printed p.199 cites Francisco de la Maza 1966 stereograph, not examined"
+        }
+      ],
+      "uncertainty": "Institutional visual availability is not permission; original photographer, license and object dating remain unverified.",
+      "historical_addition": "Separate original excavation photographs, later illustrations, contemporary ruins, and reconstructed imagery with explicit rights.",
+      "placement": "advance_history_or_field_by_evidence"
+    }
+  ],
+  "no_publication_of_unverified_claims": true,
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "blockers": [
+    "Need 1428 annals and dated political history crosswalk",
+    "Need Stage II/IVb annotated excavation drawings",
+    "Need Nahua/Spanish Tóxcatl folio examination",
+    "Need original Gamio notebooks and 1978 excavation log",
+    "Need historical-photo copyright and site claims reviewed"
+  ]
+}
