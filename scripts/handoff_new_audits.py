@@ -209,7 +209,8 @@ def parse_new_audit(path, doc, current_reader_blob):
     if kind in gate_kinds | {boundary_kind}:
         blob = (doc.get("target_main_blob_sha") or doc.get("reader_blob_sha")
                 or doc.get("previous_reader_blob_sha")
-                or doc.get("reader_blob_sha_last_verified"))
+                or doc.get("reader_blob_sha_last_verified")
+                or doc.get("reader_blob_sha_verified"))
         require(doc.get("branch") == "research-persistence" and
                 doc.get("target_branch_read_only") == "main" and
                 doc.get("target_path") == "poi/templo-mayor/reader.html" and
@@ -237,7 +238,8 @@ def parse_new_audit(path, doc, current_reader_blob):
                 # Merely renaming an old SHA to 'last verified' cannot turn a
                 # stale research audit into a freshly checked main reader.
                 require(doc.get("reader_blob_sha") == blob or
-                        doc.get("target_main_blob_sha") == blob,
+                        doc.get("target_main_blob_sha") == blob or
+                        doc.get("reader_blob_sha_verified") == blob,
                         "fresh reader audit lacks an independently pinned main blob")
         if kind in ("templo_mayor_discover_opening_chapter_source_locator_matrix_and_cross_period_boundary",
                     "templo_mayor_discover_opening_narrative_claim_to_source_locator_matrix"):
