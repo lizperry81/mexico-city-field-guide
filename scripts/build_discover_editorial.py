@@ -17,6 +17,9 @@ EDITORIAL = REPO / "editorial/discover"
 SITE = Path("site")
 SAFE_ID = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 STATUSES = {"draft", "in_review", "approved"}
+# Research/photo catalog discovery never grants image-use permission.
+VISUAL_KINDS = {"historical_photo", "artifact", "map", "timeline"}
+VISUAL_ASSET = re.compile(r"^assets/discover/[a-z0-9_-]+(?:/[a-z0-9_-]+)*\.(?:webp|png|jpe?g|svg)$")
 
 
 def require(condition, reason):
@@ -73,6 +76,32 @@ def validate(record, slug):
                             "Evidence missing " + field)
                 require(ref.get("audit_status") == "page_checked",
                         "Source-page verification pending")
+        visual_paths = set()
+        for visual in chapter.get("visuals", []):
+            require(isinstance(visual, dict), "Illustration must be an object")
+            require(visual.get("kind") in VISUAL_KINDS, "Unsupported illustration kind")
+            asset = visual.get("asset_path")
+            require(isinstance(asset, str) and VISUAL_ASSET.fullmatch(asset),
+                    "Illustration must use a safe local approved asset path")
+            require(asset not in visual_paths, "Duplicate chapter illustration")
+            visual_paths.add(asset)
+            position = visual.get("after_paragraph")
+            require(type(position) is int and 1 <= position <= len(paragraphs),
+                    "Illustration placement must follow an existing paragraph")
+            for field in ("alt", "caption", "credit", "rights_basis"):
+                require(isinstance(visual.get(field), str) and visual[field].strip(),
+                        "Illustration missing " + field)
+            require(visual.get("rights_status") in ("cleared", "public_domain_verified"),
+                    "Photographic and map rights are not cleared")
+            evidence = visual.get("evidence")
+            require(isinstance(evidence, list) and evidence,
+                    "Illustration needs a source locator")
+            for ref in evidence:
+                require(isinstance(ref, dict) and all(
+                    isinstance(ref.get(k), str) and ref[k].strip()
+                    for k in ("source_id", "page_or_section")
+                ) and ref.get("audit_status") == "page_checked",
+                        "Illustration source locator has not been page-checked")
         for deep_dive in chapter.get("deep_dives", []):
             require(isinstance(deep_dive, dict), "Invalid deep dive")
             require(isinstance(deep_dive.get("title"), str) and
@@ -80,6 +109,28 @@ def validate(record, slug):
                     deep_dive["title"].strip() and deep_dive["text"].strip(),
                     "Incomplete optional deep dive")
     return True
+
+
+def verify_visual_assets(record, site=SITE):
+    """Fail closed when a chapter image was not actually committed to the site."""
+    for chapter in record["chapters"]:
+        for visual in chapter.get("visuals", []):
+            path = site / "poi" / record["poi_slug"] / visual["asset_path"]
+            require(path.is_file() and not path.is_symlink(),
+                    "Approved Discover illustration asset missing: " + visual["asset_path"])
+
+
+def render_visual(visual):
+    """Render approved, page-checked local illustrations with visible credits."""
+    refs = "; ".join(escape(ref["source_id"]) + " · " +
+                     escape(ref["page_or_section"]) for ref in visual["evidence"])
+    return ('<figure class="discover-visual discover-visual--' + visual["kind"] + '">' +
+            '<img loading="lazy" src="../' + escape(visual["asset_path"], quote=True) +
+            '" alt="' + escape(visual["alt"], quote=True) + '">' +
+            '<figcaption>' + escape(visual["caption"]) +
+            ' <span class="visual-credit">Credit: ' + escape(visual["credit"]) +
+            '. Rights: ' + escape(visual["rights_basis"]) +
+            '. Evidence: ' + refs + '</span></figcaption></figure>')
 
 
 def render(record):
@@ -92,12 +143,17 @@ def render(record):
         toc.append(f'<a href="#{cid}">{i}. {escape(chapter["title"])}</a>')
         parts = [f'<article id="{cid}" class="chapter"><p class="count">CHAPTER {i}</p>',
                  f'<h2>{escape(chapter["title"])}</h2>']
-        for paragraph in chapter["paragraphs"]:
+        visuals_by_position = {}
+        for visual in chapter.get("visuals", []):
+            visuals_by_position.setdefault(visual["after_paragraph"], []).append(visual)
+        for paragraph_number, paragraph in enumerate(chapter["paragraphs"], 1):
             parts.append("<p>" + escape(paragraph["text"]) + "</p>")
             refs = "; ".join(escape(ref["source_id"]) + " · " +
                              escape(ref["page_or_section"])
                              for ref in paragraph["evidence"])
             parts.append('<p class="references">Verified source locators: ' + refs + "</p>")
+            for visual in visuals_by_position.get(paragraph_number, []):
+                parts.append(render_visual(visual))
         for dive in chapter.get("deep_dives", []):
             parts.append("<details><summary>" + escape(dive["title"]) +
                          "</summary><p>" + escape(dive["text"]) + "</p></details>")
@@ -133,6 +189,9 @@ nav{{display:grid;gap:10px;padding:18px;background:#e9f2f1;border-radius:12px;fo
 .skip-link:focus{{left:8px}}
 .chapter{{background:white;padding:22px;margin:26px 0;border:1px solid #d5e1e3;border-radius:14px;scroll-margin-top:20px}}
 .references{{font:13px/1.5 system-ui;color:#445d66}}
+.discover-visual{{margin:20px 0 26px}}.discover-visual img{{display:block;max-width:100%;height:auto;border-radius:9px}}
+.discover-visual figcaption{{font:14px/1.55 system-ui;color:#405965;margin-top:7px}}
+.visual-credit{{display:block;margin-top:4px;font-size:12px}}
 .count{{font:700 13px system-ui;letter-spacing:.08em;color:#126c69}}
 details{{border-top:1px solid #d5e1e3;padding:14px 0}}summary{{cursor:pointer;font:700 16px system-ui}}
 a:focus-visible,summary:focus-visible{{outline:3px solid #126c69;outline-offset:3px}}
@@ -192,6 +251,7 @@ def build():
                          "chapter_count_published": len(data["chapters"]) if approved else 0})
         if approved:
             verify_verbatim_archives(data)
+            verify_visual_assets(data)
             destination = SITE / "poi" / slug / "discover/index.html"
             destination.parent.mkdir(parents=True, exist_ok=True)
             destination.write_text(render(data), encoding="utf-8")

@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "kind": "app_research_editorial_handoff",
+  "generated_at": "2026-11-14T03:42:00Z",
+  "target_branch": "main",
+  "research_head_sha": "509c20631fc21a68f0971733011905186921bd55",
+  "research_input_sha": "808223390a5e4bdd67dd13a389524ecb51060bca",
+  "manifest_blob_sha": "df07403d1b83da4f10bd8bfa06703530c20dad5d",
+  "referenced_artifact_paths": 165,
+  "referenced_artifacts_found": 165,
+  "immutable_history_blob_sha": "9cd687adc66575210bdbd81f2957ba15bc54fc2c",
+  "reconciled_snapshot_blob_sha": "bd5098686725f6c53feb8156bbf21c2ce9dfc3da",
+  "replay_report_blob_sha": "d837720cbee898a0dad483dec7d9100688ef1bc3",
+  "staged_batches": 79,
+  "candidate_findings": 475,
+  "new_chapter_audit": "research/audits/20261114T0304Z-cu-modernism-buildings-labor-and-images-templo-reader-evidence-boundaries.json",
+  "new_coverage_audit": "research/coverage/20261114T0304Z-cu-modernism-buildings-labor-and-images-readiness.json",
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "previously_accepted_research_input_sha": "95d08cf4af2c52faa16741676edff3dd1c5a0e7c",
+  "notes": [
+    "Verified all 165 referenced paths in the current research branch's complete Git tree; ancestry of research input checked.",
+    "Verified compressed SQLite and replay-report Git blob hashes against the producer's independent readback ledger.",
+    "New CU modernism chapter audit and coverage report are available only as provisional findings; no material automatically merged or published.",
+    "No exact verbatim approved manuscripts recovered. Private staged illustration pipeline added; no historical prose or public visuals changed."
+  ]
+}

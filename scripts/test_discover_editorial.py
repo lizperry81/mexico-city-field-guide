@@ -6,7 +6,8 @@ import json
 import tempfile
 from pathlib import Path
 
-from build_discover_editorial import EDITORIAL, SITE, render, validate, verify_verbatim_archives
+from build_discover_editorial import (EDITORIAL, SITE, render, validate,
+                                      verify_verbatim_archives, verify_visual_assets)
 
 draft_file = EDITORIAL / "templo-mayor.json"
 draft = json.loads(draft_file.read_text(encoding="utf-8"))
@@ -87,6 +88,59 @@ with tempfile.TemporaryDirectory() as temp:
         assert "checksum mismatch" in str(exc)
     else:
         raise AssertionError("Altered approved archive passed checksum gate")
+# Optional historical photos, maps, artifacts and timelines remain unpublished
+# until both source-page and reproduction-rights checks are complete.
+visual_example = copy.deepcopy(example)
+visual_example["chapters"][0]["visuals"] = [{
+    "kind": "historical_photo",
+    "after_paragraph": 1,
+    "asset_path": "assets/discover/test-image.webp",
+    "alt": "Verified visual description",
+    "caption": "Test-only caption & <unsafe>",
+    "credit": "Test archive",
+    "rights_status": "cleared",
+    "rights_basis": "Test permission record, not a real license",
+    "evidence": [{"source_id": "TEST-IMAGE", "page_or_section": "catalog record 2",
+                  "audit_status": "page_checked"}]
+}]
+assert validate(visual_example, "templo-mayor")
+visual_page = render(visual_example)
+assert 'src="../assets/discover/test-image.webp"' in visual_page
+assert 'alt="Verified visual description"' in visual_page
+assert "Test-only caption &amp; &lt;unsafe&gt;" in visual_page
+assert "Credit: Test archive" in visual_page and "Evidence: TEST-IMAGE" in visual_page
+for change, value in [
+    ("rights_status", "unknown"), ("asset_path", "../secret.jpg"),
+    ("after_paragraph", 2), ("alt", ""),
+]:
+    bad = copy.deepcopy(visual_example)
+    bad["chapters"][0]["visuals"][0][change] = value
+    try:
+        validate(bad, "templo-mayor")
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("Unauthorized image field passed: " + change)
+bad = copy.deepcopy(visual_example)
+bad["chapters"][0]["visuals"][0]["evidence"][0]["audit_status"] = "candidate"
+try:
+    validate(bad, "templo-mayor")
+except ValueError:
+    pass
+else:
+    raise AssertionError("Unverified illustration provenance passed")
+with tempfile.TemporaryDirectory() as temp:
+    root = Path(temp)
+    try:
+        verify_visual_assets(visual_example, root)
+    except ValueError as exc:
+        assert "asset missing" in str(exc)
+    else:
+        raise AssertionError("Uncommitted image file passed publication gate")
+    asset = root / "poi/templo-mayor/assets/discover/test-image.webp"
+    asset.parent.mkdir(parents=True)
+    asset.write_bytes(b"test fixture, never published")
+    verify_visual_assets(visual_example, root)
 # Adjacent chapter links are navigational only; Explore stops are never
 # imported as chapters. Test escaping and first/last boundary behavior.
 chapter_two = copy.deepcopy(example["chapters"][0])
