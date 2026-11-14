@@ -1,0 +1,121 @@
+{
+  "schema_version": 4,
+  "kind": "templo_mayor_discover_opening_narrative_claim_to_source_locator_matrix",
+  "generated_at": "2026-11-14T02:02:00Z",
+  "branch": "research-persistence",
+  "target_branch_read_only": "main",
+  "target_path": "poi/templo-mayor/reader.html",
+  "reader_re_read_this_run": true,
+  "reader_blob_sha": "9d55b1bd07586039b341d71afe89b071bc84d389",
+  "source_batch_path": "research/batches/20261114T0202Z-water-management-1608-1900-and-viga.json",
+  "gates": [
+    {
+      "topic": "Triple Alliance in late 1420s",
+      "reader_anchor": "In the late 1420s, Tenochtitlan joined Texcoco and Tlacopan in the Triple Alliance",
+      "status": "precise_1427_1428_1430_year_not_reconciled",
+      "source_locators": [
+        {
+          "path": "research/audits/templo-mayor-discover-20261113T1427Z-triple-alliance-dating-contrast.json",
+          "locator": "Prior INAH and chronicle dating contrasts"
+        }
+      ],
+      "uncertainty": "No primary Azcapotzalco-conquest chronicle collation",
+      "historical_addition": "Explain the defeat of Azcapotzalco and resulting tribute system without false precision in year",
+      "placement": "advance_read"
+    },
+    {
+      "topic": "Concentric construction stages",
+      "reader_anchor": "Archaeologists group the work into seven major stages",
+      "status": "stage_IVb_identification_qualified",
+      "source_locators": [
+        {
+          "path": "research/audits/20261113T1803Z-templo-mayor-gamio-1913-1914-primary-gates.json",
+          "locator": "Earlier exposure and later archaeological phase labeling"
+        }
+      ],
+      "uncertainty": "Architectural-stage drawings not checked against 2026 route",
+      "historical_addition": "Stage-by-stage annotated excavated plan vs absent final pyramid; distinguish exposed fabric from hypothesized elevations",
+      "placement": "advance_read_and_field"
+    },
+    {
+      "topic": "Coatepec and Coyolxauhqui",
+      "reader_anchor": "At the foot of the south stair of that platform lay a stone disk carved with the dismembered Coyolxauhqui",
+      "status": "mythic_reading_interpretive",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T0100Z-templo-mayor-discover-1978-responders-and-seven-gates.json",
+          "locator": "Prior south stair and discovery evidence gate"
+        }
+      ],
+      "uncertainty": "Ritual reenactment interpretation is not direct material observation",
+      "historical_addition": "Explain Coatepec narrative and physical disk placement separately; specify original museum stone vs outdoor reproduction",
+      "placement": "on_site_deep_dive"
+    },
+    {
+      "topic": "Tóxcatl and 1520–1521 conquest",
+      "reader_anchor": "In May 1520, while Cortés was away",
+      "status": "indigenous_spanish_source_comparison_missing",
+      "source_locators": [
+        {
+          "path": "research/audits/20261113T2004Z-templo-mayor-exact-reader-source-gates.json",
+          "locator": "Florentine Codex Book 12 folio comparison pending"
+        }
+      ],
+      "uncertainty": "Primary Nahuatl and Spanish account comparison unperformed",
+      "historical_addition": "Separate 1520 festival violence, 1521 siege, and later colonial reuse of temple stone",
+      "placement": "advance_read"
+    },
+    {
+      "topic": "Gamio 1913/1914",
+      "reader_anchor": "In 1913, archaeologist Manuel Gamio uncovered the pyramid’s southwest corner",
+      "status": "candidate_correction_not_approved",
+      "source_locators": [
+        {
+          "path": "research/audits/20261113T1803Z-templo-mayor-gamio-1913-1914-primary-gates.json",
+          "locator": "1913 demolition planning versus May 1914 excavation"
+        }
+      ],
+      "uncertainty": "Gamio May 16, 1914 report uninspected",
+      "historical_addition": "Hold correction until original report; then date both demolition arrangements and archaeological digging",
+      "placement": "advance_read"
+    },
+    {
+      "topic": "1978 Coyolxauhqui discovery and salvage",
+      "reader_anchor": "In February 1978, electrical workers digging near República de Argentina and República de Guatemala struck the carved Coyolxauhqui disk",
+      "status": "workers_date_grounded_responder_names_disputed",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T0100Z-templo-mayor-discover-1978-responders-and-seven-gates.json",
+          "locator": "INAH vs retrospective 1978 salvage responders"
+        }
+      ],
+      "uncertainty": "Original archaeological rescue records missing",
+      "historical_addition": "Distinguish February utility workers and subsequent INAH archaeological salvage before March project enlargement",
+      "placement": "advance_read_and_field"
+    },
+    {
+      "topic": "Colonial canal and modern drainage separate from Mexica temple",
+      "reader_anchor": "In the late 1420s, Tenochtitlan joined Texcoco and Tlacopan",
+      "status": "cross_period_boundary_preserved",
+      "source_locators": [
+        {
+          "path": "research/batches/20261114T0202Z-water-management-1608-1900-and-viga.json",
+          "locator": "Findings 01–09 on early colonial to Porfirian basin drainage"
+        }
+      ],
+      "uncertainty": "No causal or physical continuity established between described excavated pyramid remains and 19th century waterworks",
+      "historical_addition": "Place drainage evolution in separate City/Water chapter, linking only where map-based and source-backed; do not repurpose as evidence for temple construction",
+      "placement": "separate_historical_chapter"
+    }
+  ],
+  "no_publication_of_unverified_claims": true,
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "blockers": [
+    "1427/1428/1430 Triple Alliance dating not resolved by original sources",
+    "Original construction-stage drawings and 2026 excavated-route verification pending",
+    "Original Gamio May 1914 report and original 1978 rescue logs not checked",
+    "No independent Nahuatl/Spanish conquest collation",
+    "New drainage evidence belongs to separate urban/environmental history chapter"
+  ]
+}
