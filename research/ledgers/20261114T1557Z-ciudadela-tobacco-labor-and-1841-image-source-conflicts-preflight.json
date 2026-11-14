@@ -1,0 +1,138 @@
+{
+  "schema_version": 2,
+  "kind": "noncanonical_source_identity_conflict_preflight",
+  "generated_at": "2026-11-14T15:57:00Z",
+  "branch": "research-persistence",
+  "baseline_replay_report": "research/reconciled/v4_74470d2dbe71/replay_report.json",
+  "baseline_counts": {
+    "github_batches_replayed": 91,
+    "staged_findings": 607,
+    "source_candidates": 268,
+    "inspection_entries": 306,
+    "canonical_sources": 616,
+    "canonical_claims": 422,
+    "canonical_links": 403,
+    "canonical_findings": 68
+  },
+  "new_batch_path": "research/batches/20261114T1557Z-ciudadela-tobacco-labor-and-1841-image.json",
+  "new_finding_ids": [
+    "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-01",
+    "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-02",
+    "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-03",
+    "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-04",
+    "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-05",
+    "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-06",
+    "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-07",
+    "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-08",
+    "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-09",
+    "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-10",
+    "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-11"
+  ],
+  "new_source_candidate_ids": [
+    "STG-SRC-20261114-CIU-INAH-CATALOG",
+    "STG-SRC-20261114-CIU-BIBLIOTECA",
+    "STG-SRC-20261114-CIU-LAJORNADA",
+    "STG-SRC-20261114-CIU-ARQUINE",
+    "STG-SRC-20261114-CIU-AGN-ARNOLD",
+    "STG-SRC-20261114-CIU-UNAM-ESPARZA",
+    "STG-SRC-20261114-CIU-CONICET-TABACALERAS",
+    "STG-SRC-20261114-CIU-INAH-ROS"
+  ],
+  "new_inspection_ids": [
+    "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-INS-01",
+    "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-INS-02",
+    "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-INS-03",
+    "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-INS-04",
+    "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-INS-05",
+    "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-INS-06",
+    "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-INS-07",
+    "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-INS-08"
+  ],
+  "source_access_scope_summary": [
+    {
+      "source_id": "STG-SRC-20261114-CIU-INAH-CATALOG",
+      "access": "institutional_indexed_page_full_direct_open_failed_not_original_record",
+      "original_primary_examined": false,
+      "visual_reproduction_seen": false
+    },
+    {
+      "source_id": "STG-SRC-20261114-CIU-BIBLIOTECA",
+      "access": "official_indexed_page_direct_open_timeout",
+      "original_primary_examined": false,
+      "visual_reproduction_seen": false
+    },
+    {
+      "source_id": "STG-SRC-20261114-CIU-LAJORNADA",
+      "access": "direct_full_html_secondary_historical_column_original_documents_not_seen",
+      "original_primary_examined": false,
+      "visual_reproduction_seen": false
+    },
+    {
+      "source_id": "STG-SRC-20261114-CIU-ARQUINE",
+      "access": "direct_html_architecture_article_as_planned_not_as_built_verified",
+      "original_primary_examined": false,
+      "visual_reproduction_seen": false
+    },
+    {
+      "source_id": "STG-SRC-20261114-CIU-AGN-ARNOLD",
+      "access": "direct_scholarly_abstract_archival_transcription_not_read",
+      "original_primary_examined": false,
+      "visual_reproduction_seen": false
+    },
+    {
+      "source_id": "STG-SRC-20261114-CIU-UNAM-ESPARZA",
+      "access": "scholarly_fulltext_plus_figure_page_image_examined_original_1843_calendar_not_seen",
+      "original_primary_examined": false,
+      "visual_reproduction_seen": true
+    },
+    {
+      "source_id": "STG-SRC-20261114-CIU-CONICET-TABACALERAS",
+      "access": "institutional_repository_indexed_abstract_only",
+      "original_primary_examined": false,
+      "visual_reproduction_seen": false
+    },
+    {
+      "source_id": "STG-SRC-20261114-CIU-INAH-ROS",
+      "access": "journal_metadata_and_abstract_only",
+      "original_primary_examined": false,
+      "visual_reproduction_seen": false
+    }
+  ],
+  "prospective_replay_counts_if_no_concurrency": {
+    "batches": 92,
+    "findings": 618,
+    "sources": 276,
+    "inspections": 314
+  },
+  "requires_replay_actual_verification": true,
+  "conflicts": [
+    {
+      "kind": "site_chronology_protection",
+      "status": "unresolved_do_not_merge",
+      "details": "1996 AGN-edited mid-1790s school must NOT be located in post-1807 Ciudadela without original factory location"
+    },
+    {
+      "kind": "architect_identity",
+      "status": "unresolved_do_not_merge",
+      "details": "UNAM 2004 printed p13 'Agustín Constanzó' vs INAH listed 'Miguel Constanzó'."
+    },
+    {
+      "kind": "courtyard_phase",
+      "status": "unresolved_do_not_merge",
+      "details": "1807 reported 17 tobacco drying patios vs 2012 description 4 principal courtyards; different construction phases and counts"
+    },
+    {
+      "kind": "source_access",
+      "status": "original_documents_uninspected",
+      "details": "Gazeta 1807, royal decrees, original 1843 calendar and 1790s childcare folios not viewed"
+    }
+  ],
+  "inherited_blockers": [
+    "37 detached inspection identities pending",
+    "2 inherited metadata collisions",
+    "unregistered SLOAD botanical source",
+    "1 unresolved index-only finding"
+  ],
+  "source_publication_approved": false,
+  "canonical_v97_changed": false
+}

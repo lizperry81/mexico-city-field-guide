@@ -1,0 +1,141 @@
+{
+  "schema_version": 3,
+  "kind": "period_x_theme_x_geography_explanatory_readiness_delta",
+  "generated_at": "2026-11-14T15:57:00Z",
+  "branch": "research-persistence",
+  "source_batch_path": "research/batches/20261114T1557Z-ciudadela-tobacco-labor-and-1841-image.json",
+  "evidence_status": "noncanonical_located_colonial_19c_city_historical_history_not_approved",
+  "rating_definitions": {
+    "substantial": "Direct primary records independently checked, historical interpretive narrative prepared, site/current access and image rights cleared.",
+    "developing": "Specific explanatory claim and source locators exist; original/independent corroboration or field condition remains unverified.",
+    "sparse": "Key document, named location, contested interpretation, or physical feature not yet verified.",
+    "missing": "Essential evidence, permissions, or on-site interpretation absent; no source-located visitor-ready claim."
+  },
+  "cells": [
+    {
+      "period": "Bourbon reforms and royal monopolies",
+      "theme": "Fiscal extraction",
+      "geography": "Mexico City / factory origins",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-01"
+      ],
+      "evidence_gap": "The 1776 decree and monopoly law text not inspected; numerical fiscal receipts not established."
+    },
+    {
+      "period": "Colonial women and labor",
+      "theme": "Cigarreras",
+      "geography": "Mexico City / tobacco work; original factory site unresolved",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-02"
+      ],
+      "evidence_gap": "Crucial chronology: women's workplace in the 1790s cannot automatically be placed inside the La Ciudadela building completed in 1807; archival transcription and workplace address unexamined."
+    },
+    {
+      "period": "Colonial manufacturing buildings",
+      "theme": "Neoclassical architecture",
+      "geography": "La Ciudadela / southwest historic center",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-03"
+      ],
+      "evidence_gap": "Do not present one architect as sole designer; original approved drawings and chronology of interruptions not viewed. Current visible materials not surveyed."
+    },
+    {
+      "period": "Industrial building fabric",
+      "theme": "Manufacturing layout",
+      "geography": "La Ciudadela / original factory courtyard system",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-04"
+      ],
+      "evidence_gap": "Original 1807 Gazeta issue not found or examined; seventeen historical drying patios must NOT be equated with present four roofed library patios; phase plan needed."
+    },
+    {
+      "period": "Independence and royalist repression",
+      "theme": "Detention",
+      "geography": "La Ciudadela / present Biblioteca de México",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-05"
+      ],
+      "evidence_gap": "Original confinement register, sentencing file, 1816 order and floor plan missing. Do not advertise a surviving Morelos prison cell without physical evidence."
+    },
+    {
+      "period": "Pronunciamientos and print politics",
+      "theme": "Military factionalism",
+      "geography": "La Ciudadela / exterior forecourt",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-06"
+      ],
+      "evidence_gap": "Original 1843 calendar impression not viewed; UNAM researcher describes Valencia but published prose erroneously says 'Agustín Constanzó' for architecture, requiring name correction before approval."
+    },
+    {
+      "period": "Revolutionary urban warfare",
+      "theme": "Decena Trágica",
+      "geography": "La Ciudadela / western Centro",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-07"
+      ],
+      "evidence_gap": "Need independent February 1913 primary map/eyewitness record for precise positions; do not conflate Palacio Nacional engagement with La Ciudadela."
+    },
+    {
+      "period": "Civic education and reuse",
+      "theme": "Libraries",
+      "geography": "Biblioteca de México / La Ciudadela",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-08"
+      ],
+      "evidence_gap": "No current access to interior courtyards guaranteed; building not interchangeable with adjacent crafts market or the separate Biblioteca Vasconcelos."
+    },
+    {
+      "period": "Architectural preservation and reuse",
+      "theme": "Patio transformations",
+      "geography": "La Ciudadela / library courtyards",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-09"
+      ],
+      "evidence_gap": "These dimensions are from an architect's article not a field survey; 2011 plan as proposed versus as-built and accessible paths remain uncertain."
+    },
+    {
+      "period": "Industrial labor and women",
+      "theme": "Cigarreras",
+      "geography": "Mexico City / tobacco workplaces not geocoded",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-10"
+      ],
+      "evidence_gap": "Full texts, factory-specific addresses and labor-action dates not read; labor continuity is thematic, not proof of geographic/site continuity."
+    },
+    {
+      "period": "Architectural source criticism",
+      "theme": "Attribution conflict",
+      "geography": "La Ciudadela / design history",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-11"
+      ],
+      "evidence_gap": "Likely authorial slip but unproven; requires Spanish academy commission, original plan signature or authenticated biography before editorial resolution."
+    },
+    {
+      "period": "1793–present",
+      "theme": "Rights-cleared 1843 lithograph and independently checked current courtyard/route",
+      "geography": "Biblioteca de México / La Ciudadela",
+      "rating": "missing",
+      "finding_ids": [],
+      "evidence_gap": "Original 1843 print licensing, definitive 1807 vs 1988 phase plan, current public entrance/accessibility all unverified."
+    }
+  ],
+  "summary": {
+    "substantial": 0,
+    "developing": 6,
+    "sparse": 5,
+    "missing": 1
+  },
+  "next_gap": "Obtain AGN Arnold 1790s school original factory address and 1807 Gazeta facsimile, compare with signed plans and 1843 original lithograph; resolve 'Agustín' vs 'Miguel' Constanzó."
+}

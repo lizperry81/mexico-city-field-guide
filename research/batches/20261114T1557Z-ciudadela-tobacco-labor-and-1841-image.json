@@ -1,0 +1,480 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image",
+  "generated_at": "2026-11-14T15:57:00Z",
+  "branch": "research-persistence",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "storage_role": "immutable_noncanonical_research_batch",
+  "previous_verified_replay": "research/reconciled/v4_74470d2dbe71/replay_report.json",
+  "prior_verified_counts": {
+    "github_batches_replayed": 91,
+    "staged_findings": 607,
+    "source_candidates": 268,
+    "inspection_entries": 306,
+    "canonical_sources": 616,
+    "canonical_claims": 422,
+    "canonical_links": 403,
+    "canonical_findings": 68
+  },
+  "research_scope": "11 source-located findings: 5 broader historical, 4 prospective field-site, 2 material/architectural. Direct UNAM PDF figure 3 (printed p.13), La Jornada and Arquine articles, AGN abstract; INAH and Biblioteca de México partially indexed. Critical protections: do not relocate mid-1790s cigarworkers into a building completed 1807; do not equate 1807 drying patios with 1988 roofed courtyards; do not normalize Miguel/Agustín Constanzó conflict.",
+  "sources": [
+    {
+      "id": "STG-SRC-20261114-CIU-INAH-CATALOG",
+      "title": "La Ciudadela (Maestranza Nacional): ficha de inmueble histórico",
+      "authors": "Instituto Nacional de Antropología e Historia",
+      "publication": "Catálogo Nacional de Monumentos Históricos Inmuebles; ficha detalle 12486",
+      "url": "https://catalogonacionalmhi.inah.gob.mx/consulta_publica/detalle/12486",
+      "access_scope": "Indexed catalogue text: 1793-1807 construction, architecture-industrial to library reuse, 1931 monument declaration, 1816 arsenal, 1845/1858 political episodes; full page open returned 502.",
+      "status": "institutional_indexed_page_full_direct_open_failed_not_original_record"
+    },
+    {
+      "id": "STG-SRC-20261114-CIU-BIBLIOTECA",
+      "title": "Biblioteca de México José Vasconcelos: presentación e historia de La Ciudadela",
+      "authors": "Secretaría de Cultura / Biblioteca de México",
+      "publication": "Official institution homepage, consulted 2026-11-14",
+      "url": "https://www.bibliotecademexico.gob.mx/",
+      "access_scope": "Indexed official homepage states original tobacco factory, 1944 conversion decision, 1946 inauguration, 1987 and 2011 interventions; direct site open timed out.",
+      "status": "official_indexed_page_direct_open_timeout"
+    },
+    {
+      "id": "STG-SRC-20261114-CIU-LAJORNADA",
+      "title": "Tabaco, balas y libros",
+      "authors": "Ángeles González Gamio",
+      "publication": "La Jornada, 20 July 2014, opinion/urban history",
+      "url": "https://web.jornada.com.mx/2014/07/20/opinion/030a1cap",
+      "access_scope": "Direct HTML lines 24-38 examined: 1776 royal order, 1793-1807, material and courtyards, 1815-1816 military transition, 1840-1913 political uses.",
+      "status": "direct_full_html_secondary_historical_column_original_documents_not_seen"
+    },
+    {
+      "id": "STG-SRC-20261114-CIU-ARQUINE",
+      "title": "La ciudad de los libros y la imagen",
+      "authors": "Arquine",
+      "publication": "Arquine, 31 July 2012",
+      "url": "https://arquine.com/la-ciudad-de-los-libros-y-la-imagen/",
+      "access_scope": "Direct HTML lines 18-25 examined: 168m sides, 4 principal patios 40m, two smaller patios, Zabludovsky interventions, 2011 master plan circulation and access details.",
+      "status": "direct_html_architecture_article_as_planned_not_as_built_verified"
+    },
+    {
+      "id": "STG-SRC-20261114-CIU-AGN-ARNOLD",
+      "title": "Cuando los intereses mutuos coinciden: Sobre recoger y educar en pieza separada las muchachas...",
+      "authors": "Linda Arnold",
+      "publication": "Boletín del Archivo General de la Nación 4(07), 1996, pp. 63-180",
+      "url": "https://bagn.archivos.gob.mx/index.php/legajos/article/view/1154",
+      "access_scope": "Direct article abstract and bibliographic information lines 23-46; edited archival expediente exists but PDF text and original AGN folios not inspected.",
+      "status": "direct_scholarly_abstract_archival_transcription_not_read"
+    },
+    {
+      "id": "STG-SRC-20261114-CIU-UNAM-ESPARZA",
+      "title": "Abraham López, un calendarista singular",
+      "authors": "María José Esparza Liberal",
+      "publication": "Anales del Instituto de Investigaciones Estéticas (UNAM) 84 (2004), pp. 5-52; fig. 3 printed p.13",
+      "url": "https://www.analesiie.unam.mx/pdf/84_05-52.pdf",
+      "access_scope": "PDF extracted text pp. 12-14 and figure 3, screenshot verified PDF page index 8 (printed p.13): Abraham López 1843 calendar print and discussion of 31 Aug 1841 pronunciamiento.",
+      "status": "scholarly_fulltext_plus_figure_page_image_examined_original_1843_calendar_not_seen"
+    },
+    {
+      "id": "STG-SRC-20261114-CIU-CONICET-TABACALERAS",
+      "title": "De la representación a la huelga. Las trabajadoras del tabaco (ciudad de México, segunda mitad del siglo XIX)",
+      "authors": "Vanesa Ester Teitelbaum and María Florencia Gutiérrez",
+      "publication": "Boletín Americanista 59 (2009), pp. 265-288",
+      "url": "https://ri.conicet.gov.ar/items/540f1395-2e35-435f-bd8b-98d31a65578c",
+      "access_scope": "Repository-indexed abstract: machine introduction, labor resistance, de-skilling among 19th c Mexico City cigar workers. Direct open restricted; PDF not inspected.",
+      "status": "institutional_repository_indexed_abstract_only"
+    },
+    {
+      "id": "STG-SRC-20261114-CIU-INAH-ROS",
+      "title": "La real fábrica de tabaco ¿un embrión del capitalismo?",
+      "authors": "María Amparo Ros",
+      "publication": "Historias (INAH) 10 (1985), pp. 51-64",
+      "url": "https://revistas.inah.gob.mx/index.php/historias/article/view/15258",
+      "access_scope": "Journal indexed summary and bibliographic locator; direct access timed out, full article not examined. Source points to 1984 Ros study.",
+      "status": "journal_metadata_and_abstract_only"
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-INS-01",
+      "source_id": "STG-SRC-20261114-CIU-INAH-CATALOG",
+      "locator": "Indexed catalogue text: 1793-1807 construction, architecture-industrial to library reuse, 1931 monument declaration, 1816 arsenal, 1845/1858 political episodes; full page open returned 502.",
+      "access": "institutional_indexed_page_full_direct_open_failed_not_original_record",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Direct INAH catalog open 502; indexed text only."
+    },
+    {
+      "id": "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-INS-02",
+      "source_id": "STG-SRC-20261114-CIU-BIBLIOTECA",
+      "locator": "Indexed official homepage states original tobacco factory, 1944 conversion decision, 1946 inauguration, 1987 and 2011 interventions; direct site open timed out.",
+      "access": "official_indexed_page_direct_open_timeout",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": ""
+    },
+    {
+      "id": "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-INS-03",
+      "source_id": "STG-SRC-20261114-CIU-LAJORNADA",
+      "locator": "Direct HTML lines 24-38 examined: 1776 royal order, 1793-1807, material and courtyards, 1815-1816 military transition, 1840-1913 political uses.",
+      "access": "direct_full_html_secondary_historical_column_original_documents_not_seen",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": ""
+    },
+    {
+      "id": "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-INS-04",
+      "source_id": "STG-SRC-20261114-CIU-ARQUINE",
+      "locator": "Direct HTML lines 18-25 examined: 168m sides, 4 principal patios 40m, two smaller patios, Zabludovsky interventions, 2011 master plan circulation and access details.",
+      "access": "direct_html_architecture_article_as_planned_not_as_built_verified",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": ""
+    },
+    {
+      "id": "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-INS-05",
+      "source_id": "STG-SRC-20261114-CIU-AGN-ARNOLD",
+      "locator": "Direct article abstract and bibliographic information lines 23-46; edited archival expediente exists but PDF text and original AGN folios not inspected.",
+      "access": "direct_scholarly_abstract_archival_transcription_not_read",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Mid-1790s childcare school may refer to a DIFFERENT earlier factory location; original archival folios and address unverified."
+    },
+    {
+      "id": "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-INS-06",
+      "source_id": "STG-SRC-20261114-CIU-UNAM-ESPARZA",
+      "locator": "PDF extracted text pp. 12-14 and figure 3, screenshot verified PDF page index 8 (printed p.13): Abraham López 1843 calendar print and discussion of 31 Aug 1841 pronunciamiento.",
+      "access": "scholarly_fulltext_plus_figure_page_image_examined_original_1843_calendar_not_seen",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": true,
+      "notes": "PDF printed p.13 fig.3 directly viewed; this is a modern reproduction of an 1843 lithograph, NOT direct inspection of the period original."
+    },
+    {
+      "id": "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-INS-07",
+      "source_id": "STG-SRC-20261114-CIU-CONICET-TABACALERAS",
+      "locator": "Repository-indexed abstract: machine introduction, labor resistance, de-skilling among 19th c Mexico City cigar workers. Direct open restricted; PDF not inspected.",
+      "access": "institutional_repository_indexed_abstract_only",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": ""
+    },
+    {
+      "id": "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-INS-08",
+      "source_id": "STG-SRC-20261114-CIU-INAH-ROS",
+      "locator": "Journal indexed summary and bibliographic locator; direct access timed out, full article not examined. Source points to 1984 Ros study.",
+      "access": "journal_metadata_and_abstract_only",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": ""
+    }
+  ],
+  "findings": [
+    {
+      "id": "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-01",
+      "classification": "broad_history",
+      "assertion": "The Crown's tobacco monopoly and the 20 April 1776 royal approval for a dedicated Mexico City tobacco-factory building preceded construction at today's La Ciudadela by more than a decade; distinguish royal fiscal policy from the later surviving building.",
+      "date_or_range": "1766-1776",
+      "period": "Bourbon reforms and royal monopolies",
+      "themes": [
+        "Fiscal extraction",
+        "Colonial production"
+      ],
+      "geographies": [
+        "Mexico City / factory origins"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-CIU-LAJORNADA",
+        "STG-SRC-20261114-CIU-INAH-CATALOG"
+      ],
+      "source_locator": "La Jornada 20 July 2014 lines 31-32; INAH Mediateca guide indexed '1766' and '20 April 1776', original royal order unexamined.",
+      "limitations": "The 1776 decree and monopoly law text not inspected; numerical fiscal receipts not established.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_research_candidate_requires_independent_editorial_review",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-02",
+      "classification": "broad_history",
+      "assertion": "Linda Arnold's edition of a mid-1790s AGN expediente concerns women tobacco workers seeking supervision or schooling for their daughters, while the Crown had an interest in maintaining productive labor; the record documents worker priorities as well as state administration.",
+      "date_or_range": "c.1790-1799",
+      "period": "Colonial women and labor",
+      "themes": [
+        "Cigarreras",
+        "Childcare",
+        "Labor regulation"
+      ],
+      "geographies": [
+        "Mexico City / tobacco work; original factory site unresolved"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-CIU-AGN-ARNOLD",
+        "STG-SRC-20261114-CIU-INAH-ROS"
+      ],
+      "source_locator": "AGN Boletín vol 4 no 07 (1996) pp.63-180 abstract, esp. mid-1790s school/guardería description.",
+      "limitations": "Crucial chronology: women's workplace in the 1790s cannot automatically be placed inside the La Ciudadela building completed in 1807; archival transcription and workplace address unexamined.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_research_candidate_requires_independent_editorial_review",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-03",
+      "classification": "poi_ready",
+      "assertion": "The surviving La Ciudadela complex was built 1793–1807 for the Real Fábrica de Tabacos; published institutional accounts name Antonio González Velázquez, military engineer Miguel Constanzó, and completion by Ignacio Castera, but individual design-stage responsibilities await drawings.",
+      "date_or_range": "1793-1807",
+      "period": "Colonial manufacturing buildings",
+      "themes": [
+        "Neoclassical architecture",
+        "Design bureaucracy"
+      ],
+      "geographies": [
+        "La Ciudadela / southwest historic center"
+      ],
+      "poi_ids": [
+        "la-ciudadela-biblioteca-mexico"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-CIU-INAH-CATALOG",
+        "STG-SRC-20261114-CIU-LAJORNADA",
+        "STG-SRC-20261114-CIU-ARQUINE"
+      ],
+      "source_locator": "INAH catalog ficha 12486 historical description (indexed); La Jornada 20 July 2014 lines 31-32; Arquine 31 July 2012 lines 20-22.",
+      "limitations": "Do not present one architect as sole designer; original approved drawings and chronology of interruptions not viewed. Current visible materials not surveyed.",
+      "learning_mode": "field",
+      "evidence_status": "source_located_research_candidate_requires_independent_editorial_review",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-04",
+      "classification": "specialist_archaeology_material",
+      "assertion": "Ángeles González Gamio reports that the Gazeta de México (1807) described twelve fountains and seventeen tobacco-drying patios within La Ciudadela, whose industrial rooms were organized for processing; this is a secondary account of an uninspected period primary description.",
+      "date_or_range": "1807",
+      "period": "Industrial building fabric",
+      "themes": [
+        "Manufacturing layout",
+        "Courtyard archaeology"
+      ],
+      "geographies": [
+        "La Ciudadela / original factory courtyard system"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-CIU-LAJORNADA",
+        "STG-SRC-20261114-CIU-ARQUINE"
+      ],
+      "source_locator": "La Jornada 20 July 2014 line 32 citing Gazeta de México 1807; Arquine 2012 lines 22-24 discusses 2011 plan and four main courtyards.",
+      "limitations": "Original 1807 Gazeta issue not found or examined; seventeen historical drying patios must NOT be equated with present four roofed library patios; phase plan needed.",
+      "learning_mode": "field",
+      "evidence_status": "source_located_research_candidate_requires_independent_editorial_review",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-05",
+      "classification": "broad_history",
+      "assertion": "During the independence struggle the former factory was appropriated for military use and imprisonment; José María Morelos was confined there before his December 1815 execution, and the government converted it into an arms facility around 1816.",
+      "date_or_range": "1815-1816",
+      "period": "Independence and royalist repression",
+      "themes": [
+        "Detention",
+        "Artillery",
+        "Site reuse"
+      ],
+      "geographies": [
+        "La Ciudadela / present Biblioteca de México"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-CIU-LAJORNADA",
+        "STG-SRC-20261114-CIU-INAH-CATALOG"
+      ],
+      "source_locator": "La Jornada 20 July 2014 lines 33-35; INAH ficha 12486 indexed text 'Hacia 1816'.",
+      "limitations": "Original confinement register, sentencing file, 1816 order and floor plan missing. Do not advertise a surviving Morelos prison cell without physical evidence.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_research_candidate_requires_independent_editorial_review",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-06",
+      "classification": "broad_history",
+      "assertion": "An 1843 calendar by Abraham López printed an image titled 'Pronunciamiento de la ciudadela de México' interpreting an August 31, 1841 political-military uprising at La Ciudadela. The calm lithographic scene is NOT a literal picture of the armed confrontation.",
+      "date_or_range": "1841-1843",
+      "period": "Pronunciamientos and print politics",
+      "themes": [
+        "Military factionalism",
+        "Image as interpretation"
+      ],
+      "geographies": [
+        "La Ciudadela / exterior forecourt"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-CIU-UNAM-ESPARZA",
+        "STG-SRC-20261114-CIU-LAJORNADA"
+      ],
+      "source_locator": "Esparza Liberal 2004 pp.12-14, fig.3 printed p.13, PDF page index 8 visually checked; La Jornada 2014 line 36 mentions an earlier 1840 revolt.",
+      "limitations": "Original 1843 calendar impression not viewed; UNAM researcher describes Valencia but published prose erroneously says 'Agustín Constanzó' for architecture, requiring name correction before approval.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_research_candidate_requires_independent_editorial_review",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-07",
+      "classification": "poi_ready",
+      "assertion": "In February 1913 rebel troops used La Ciudadela as a fortified arsenal during the Decena Trágica; the building's function as a weapons depot explains its strategic importance, but exact cannon positions or present-day battle damage are unverified.",
+      "date_or_range": "1913-02",
+      "period": "Revolutionary urban warfare",
+      "themes": [
+        "Decena Trágica",
+        "Arsenal"
+      ],
+      "geographies": [
+        "La Ciudadela / western Centro"
+      ],
+      "poi_ids": [
+        "la-ciudadela-biblioteca-mexico"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-CIU-LAJORNADA",
+        "STG-SRC-20261114-CIU-INAH-CATALOG"
+      ],
+      "source_locator": "La Jornada 20 July 2014 line 37; institution catalog building history; prior project Decena Trágica chapter audit exists.",
+      "limitations": "Need independent February 1913 primary map/eyewitness record for precise positions; do not conflate Palacio Nacional engagement with La Ciudadela.",
+      "learning_mode": "field",
+      "evidence_status": "source_located_research_candidate_requires_independent_editorial_review",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-08",
+      "classification": "poi_ready",
+      "assertion": "The Mexican state allocated the former military complex for the Biblioteca de México in 1944 and inaugurated it in 1946 with José Vasconcelos directing; the historic building today serves a library rather than the adjacent Mercado de la Ciudadela.",
+      "date_or_range": "1944-1946; present use",
+      "period": "Civic education and reuse",
+      "themes": [
+        "Libraries",
+        "Adaptive reuse"
+      ],
+      "geographies": [
+        "Biblioteca de México / La Ciudadela"
+      ],
+      "poi_ids": [
+        "la-ciudadela-biblioteca-mexico"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-CIU-BIBLIOTECA",
+        "STG-SRC-20261114-CIU-LAJORNADA",
+        "STG-SRC-20261114-CIU-ARQUINE"
+      ],
+      "source_locator": "Biblioteca de México official presentation, indexed; La Jornada 2014 lines 28-38; Arquine 2012 lines 20-23.",
+      "limitations": "No current access to interior courtyards guaranteed; building not interchangeable with adjacent crafts market or the separate Biblioteca Vasconcelos.",
+      "learning_mode": "field",
+      "evidence_status": "source_located_research_candidate_requires_independent_editorial_review",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-09",
+      "classification": "poi_ready",
+      "assertion": "Published architectural measurements describe the Ciudadela complex as a 168m-sided square with four 40m principal courtyards, and a later 1988 Abraham Zabludovsky intervention covering the courtyards; 2011 plans altered circulation and access.",
+      "date_or_range": "1988-2012",
+      "period": "Architectural preservation and reuse",
+      "themes": [
+        "Patio transformations",
+        "Spatial circulation"
+      ],
+      "geographies": [
+        "La Ciudadela / library courtyards"
+      ],
+      "poi_ids": [
+        "la-ciudadela-biblioteca-mexico"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-CIU-ARQUINE",
+        "STG-SRC-20261114-CIU-BIBLIOTECA"
+      ],
+      "source_locator": "Arquine 31 July 2012 lines 22-25; official Biblioteca de México page on interventions, indexed.",
+      "limitations": "These dimensions are from an architect's article not a field survey; 2011 plan as proposed versus as-built and accessible paths remain uncertain.",
+      "learning_mode": "field",
+      "evidence_status": "source_located_research_candidate_requires_independent_editorial_review",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-10",
+      "classification": "broad_history",
+      "assertion": "By the mid-nineteenth century women making cigars in Mexico City encountered pressures from machine production, occupational deskilling, and collective resistance; the historical factory at La Ciudadela had already shifted to military use, so do not locate later cigarworkers' strikes inside it.",
+      "date_or_range": "c.1845-1900",
+      "period": "Industrial labor and women",
+      "themes": [
+        "Cigarreras",
+        "Mechanization",
+        "Collective action"
+      ],
+      "geographies": [
+        "Mexico City / tobacco workplaces not geocoded"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-CIU-CONICET-TABACALERAS",
+        "STG-SRC-20261114-CIU-INAH-ROS"
+      ],
+      "source_locator": "Teitelbaum and Gutiérrez 2009 Boletín Americanista 59 pp.265-288 institutional abstract; Ros 1985 Historias 10 pp.51-64 indexed abstract.",
+      "limitations": "Full texts, factory-specific addresses and labor-action dates not read; labor continuity is thematic, not proof of geographic/site continuity.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_research_candidate_requires_independent_editorial_review",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-11",
+      "classification": "specialist_archaeology_material",
+      "assertion": "Architect attribution needs an explicit conflict record: INAH's indexed catalog and other architectural histories name engineer Miguel Constanzó, whereas Esparza Liberal's 2004 PDF, printed p.13, calls the builder 'Agustín Constanzó'; do not silently reconcile divergent names.",
+      "date_or_range": "1793; 2004 historiography",
+      "period": "Architectural source criticism",
+      "themes": [
+        "Attribution conflict",
+        "Document verification"
+      ],
+      "geographies": [
+        "La Ciudadela / design history"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-CIU-INAH-CATALOG",
+        "STG-SRC-20261114-CIU-UNAM-ESPARZA",
+        "STG-SRC-20261114-CIU-LAJORNADA"
+      ],
+      "source_locator": "INAH ficha 12486 indexed history vs UNAM Anales IIE 84 p.13 PDF visual screenshot; La Jornada 20 July 2014 line 31.",
+      "limitations": "Likely authorial slip but unproven; requires Spanish academy commission, original plan signature or authenticated biography before editorial resolution.",
+      "learning_mode": "research_sidebar",
+      "evidence_status": "source_located_research_candidate_requires_independent_editorial_review",
+      "publication_approved": false
+    }
+  ],
+  "reported_counts": {
+    "new_findings": 11,
+    "new_source_candidates": 8,
+    "new_source_inspections": 8,
+    "approval": false
+  },
+  "independently_corrobated": false,
+  "ready_for_editorial_review": false,
+  "blockers": [
+    "1790s women's school AGN folios and original factory address unexamined",
+    "Original 20 April 1776 decree and Gazeta de México July 1807 unexamined",
+    "INAH catalog full page direct fetch returned 502",
+    "UNAM 1843 calendar original not examined; fig.3 reproduction rights not cleared",
+    "Miguel versus Agustín Constanzó name discrepancy unresolved",
+    "Current library interior access and revised patio conditions unverified"
+  ]
+}

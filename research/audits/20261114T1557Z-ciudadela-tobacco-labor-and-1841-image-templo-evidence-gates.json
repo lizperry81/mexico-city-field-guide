@@ -1,0 +1,137 @@
+{
+  "schema_version": 3,
+  "kind": "chapter_level_claim_to_source_locator_audit",
+  "generated_at": "2026-11-14T15:57:00Z",
+  "branch": "research-persistence",
+  "target_branch_read_only": "main",
+  "target_path": "poi/templo-mayor/reader.html",
+  "reader_re_read_this_run": true,
+  "reader_blob_sha_verified": "e18b0b6af33e61c1831990d84a7e5effbf13805b",
+  "source_batch_path": "research/batches/20261114T1557Z-ciudadela-tobacco-labor-and-1841-image.json",
+  "novel_direct_research_contribution": "Rechecked original reader paragraph against UNAM Noticonquista 'Los otomíes como conquistadores...' documenting 1428 alliance and Ottoman [sic] frontier politics; explicitly separate history of Templo Mayor from eighteenth-century factory and mid-nineteenth-century lithographic Tenochtitlan representations. UNAM 1843 source demonstrates later nineteenth-century pictures are interpretive and not archaeological fabric.",
+  "gates": [
+    {
+      "topic": "1428 Triple Alliance and 1427-28 tributary political chronology",
+      "reader_anchor": "In the late 1420s",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "locator": "UNAM Noticonquista https://www.noticonquista.unam.mx/amoxtli/2370/2357 (direct indexed text rechecked 2026-11-14) explicitly: 1428 defeat of Azcapotzalco by Tenochtitlan, Texcoco and Tlacopan; records disagreement about adjacent conquest dates"
+        },
+        {
+          "locator": "Current reader main blob e18b0b6a starts 'In the late 1420s...'"
+        }
+      ],
+      "uncertainty": "UNAM secondary synthesis reports contradiction in sources for Otomí tributary subordination (1379, 1427-28, or 1486-1502); does not date the creation of Triple Alliance legal entity to one precise day.",
+      "historical_addition": "Retain 'late 1420s' in opening; place 1428 in sourced history timeline, distinguish war, alliance and later tribute network.",
+      "placement": "advance_history_or_field_by_evidence"
+    },
+    {
+      "topic": "Stage II vs Stage IVb architectural phase",
+      "reader_anchor": "The oldest excavated phase",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "locator": "Reader links INAH Stage II https://lugares.inah.gob.mx/en/pagina-de-elemento/1261 and IVb https://lugares.inah.gob.mx/es/pagina-de-elemento/1259 (prior research, not reexamined this run)"
+        }
+      ],
+      "uncertainty": "Architectural phases do not equal a single named ruler or a single day; archaeological section drawing still not inspected.",
+      "historical_addition": "Add phase cross-section where known masonry and reconstruction shaded separately; do not extrapolate industrial Courtyard histories of La Ciudadela here.",
+      "placement": "advance_history_or_field_by_evidence"
+    },
+    {
+      "topic": "Coatepec narrative, Coyolxauhqui findspot vs external display copy",
+      "reader_anchor": "At the foot of the south stair",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "locator": "INAH 2023 bulletin https://www.inah.gob.mx/boletines/el-museo-del-templo-mayor-celebra-los-45-anos-del-descubrimiento-de-coyolxauhqui rechecked; older INAH IVb replica claim https://lugares.inah.gob.mx/es/pagina-de-elemento/1259"
+        }
+      ],
+      "uncertainty": "Mythological Coatepec is not an archaeological excavated room; display replica is not the original discovered monolith.",
+      "historical_addition": "Provide two clear map callouts: excavation findspot and original monolith in museum; mark external copy and date when authenticated.",
+      "placement": "advance_history_or_field_by_evidence"
+    },
+    {
+      "topic": "Tóxcatl massacre (1520) vs siege conquest (1521)",
+      "reader_anchor": "In May 1520",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "locator": "Florentine Codex Book XII folio 30r and UNAM Noticonquista https://www.noticonquista.unam.mx/index.php/amoxtli/2051/2050 linked by reader; not rechecked this run"
+        }
+      ],
+      "uncertainty": "Need exact dual-language Nahua source and Spanish account, authorship and colonial transmission distinguished.",
+      "historical_addition": "Add side-by-side short passages with source language, collection folio and date, separated by events 1520 vs 1521.",
+      "placement": "advance_history_or_field_by_evidence"
+    },
+    {
+      "topic": "Gamio 1913–1914 excavation/publication chronology",
+      "reader_anchor": "In 1913",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "locator": "Prior ledger research/audits/20261113T1803Z-templo-mayor-gamio-1913-1914-primary-gates.json"
+        }
+      ],
+      "uncertainty": "1913 trench discovery vs 1914 published announcement disputed at derivative level; original field notebooks lacking.",
+      "historical_addition": "Split date table into excavation event, documented communication, printed publication; no causal conflation.",
+      "placement": "advance_history_or_field_by_evidence"
+    },
+    {
+      "topic": "21 February 1978 discovery and rescue to Proyecto Templo Mayor",
+      "reader_anchor": "In February 1978",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "locator": "INAH Proyecto https://www.templomayor.inah.gob.mx/historia/proyecto-templo-mayor consulted 2026-11-14"
+        },
+        {
+          "locator": "INAH 20 Feb 2023 https://www.inah.gob.mx/boletines/el-museo-del-templo-mayor-celebra-los-45-anos-del-descubrimiento-de-coyolxauhqui"
+        }
+      ],
+      "uncertainty": "Institutional page distinguishes electricity workers locating monolith from archaeological salvage by INAH; original rescue logs unexamined.",
+      "historical_addition": "Prepare attributed historical sentence: 'On 21 February 1978, electrical workers uncovered the monumental Coyolxauhqui disk near Guatemala and Argentina; an INAH salvage team excavated it before the later Proyecto Templo Mayor.' Editorial review required.",
+      "placement": "advance_history_or_field_by_evidence"
+    },
+    {
+      "topic": "Historical sources vs anachronistic later 1843 graphic reconstruction",
+      "reader_anchor": "In the late 1420s",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "locator": "UNAM Esparza Liberal 2004 https://www.analesiie.unam.mx/pdf/84_05-52.pdf printed pp.9,13; 1843 calendar ancient-Mexico iconography and Ciudadela illustration are nineteenth-century historical reception, not a reconstruction of Mexica masonry"
+        }
+      ],
+      "uncertainty": "Nineteenth-century pictures in calendars may rework Clavijero/European iconography; caption historical-date category and do not use as Templo original-view photograph.",
+      "historical_addition": "Separate Historical Images toggle into contemporaneous excavations, later imagined images, and original objects with caption dates/rights.",
+      "placement": "advance_history_or_field_by_evidence"
+    },
+    {
+      "topic": "1978 archival photography and reproduction rights",
+      "reader_anchor": "See a photograph of the 1978 excavation",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "locator": "Existing reader link INEHRM https://repositorio-inehrm.cultura.gob.mx/fototeca/excavacion-templo-mayor/"
+        },
+        {
+          "locator": "INAH 2024 bulletin https://www.inah.gob.mx/boletines/con-teatro-y-talleres-festejaran-el-aniversario-del-hallazgo-del-monolito-de-la-diosa-coyolxauhqui lists Raúl Arana 1978 originals"
+        }
+      ],
+      "uncertainty": "No license checked for reader link or INAH archival negatives; historic 1843 Ciudadela lithograph likewise separately licensed.",
+      "historical_addition": "Require photographer, image creation date, depicted object, source repository and reproducible rights clearance before image toggle.",
+      "placement": "advance_history_or_field_by_evidence"
+    }
+  ],
+  "no_publication_of_unverified_claims": true,
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "blockers": [
+    "Need 1428 annals/text collation and political chronology",
+    "Need Stage II/IVb archaeology plan",
+    "Need Nahua/Spanish Tóxcatl passages",
+    "Need 1913/1914 Gamio primary field documentation",
+    "Need Feb 1978 rescue diary and historic photo permissions"
+  ]
+}
