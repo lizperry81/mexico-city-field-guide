@@ -1,0 +1,128 @@
+{
+  "schema_version": 3,
+  "kind": "chapter_level_claim_to_source_locator_audit",
+  "generated_at": "2026-11-14T14:57:32Z",
+  "branch": "research-persistence",
+  "target_branch_read_only": "main",
+  "target_path": "poi/templo-mayor/reader.html",
+  "reader_re_read_this_run": true,
+  "reader_blob_sha_verified": "e18b0b6af33e61c1831990d84a7e5effbf13805b",
+  "source_batch_path": "research/batches/20261114T1457Z-obregon-la-bombilla-1928-1935.json",
+  "novel_direct_research_contribution": "INAH 21 February 1978 discovery and distinguish rescued sculpture from outdoor copy; identify precise 25 February and 1 March 1978 newspaper records as unexamined original leads; no app edits.",
+  "gates": [
+    {
+      "topic": "Triple Alliance / 1428",
+      "reader_anchor": "In the late 1420s",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "locator": "Met, Tenochtitlan essay linked directly in reader; reading target current blob e18b0b6a"
+        }
+      ],
+      "uncertainty": "Date of Azcapotzalco defeat vs formation 1427/1428/1430 requires comparison with Nahua annals and later reconstructions",
+      "historical_addition": "Add independent chronology of Azcapotzalco war, Tenochtitlan-Texcoco-Tlacopan political alliance, and tributary expansion; do not imply one precise event shares all dates.",
+      "placement": "advance_history_or_field_by_evidence"
+    },
+    {
+      "topic": "Templo II / IVb construction",
+      "reader_anchor": "The oldest excavated phase that visitors can identify is called Stage II",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "locator": "INAH https://lugares.inah.gob.mx/es/pagina-de-elemento/1259 for IVb; reader links INAH Stage II https://lugares.inah.gob.mx/en/pagina-de-elemento/1261"
+        }
+      ],
+      "uncertainty": "Neither excavation phase section drawing nor field notes directly inspected in this run; stage attribution distinct from contemporaneous ruler names.",
+      "historical_addition": "Use an approved labeled section drawing showing II, IVb and exterior surviving masonry; distinguish fabric vs inferred rebuild.",
+      "placement": "advance_history_or_field_by_evidence"
+    },
+    {
+      "topic": "Coatepec and Coyolxauhqui",
+      "reader_anchor": "At the foot of the south stair of that platform lay a stone disk",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "locator": "INAH https://lugares.inah.gob.mx/es/pagina-de-elemento/1259, directly indexed page identifies at IVb south stair a copy"
+        }
+      ],
+      "uncertainty": "Original monolith, excavated position and outdoor copy are distinct objects/sites; the mythographic source is not an excavation record.",
+      "historical_addition": "Identify original 1978 stone inside museum versus copy at platform explicitly, use annotated plan to indicate excavated findspot and separate mythical Coatepec setting.",
+      "placement": "advance_history_or_field_by_evidence"
+    },
+    {
+      "topic": "Tóxcatl 1520 / 1521 siege",
+      "reader_anchor": "In May 1520, while Cortés was away",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "locator": "Reader links UNAM Noticonquista https://www.noticonquista.unam.mx/index.php/amoxtli/2051/2050 and Getty Florentine Codex Book XII folio 30r; not reexamined this run"
+        }
+      ],
+      "uncertainty": "Florentine Nahuatl postconquest testimony and Spanish accounts are not independently collated at passage level.",
+      "historical_addition": "Pair short, translated Nahua and Spanish witness accounts, annotate authorship, production dates and distinct events May 1520 vs August 1521.",
+      "placement": "advance_history_or_field_by_evidence"
+    },
+    {
+      "topic": "Gamio chronology",
+      "reader_anchor": "In 1913, archaeologist Manuel Gamio uncovered",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "locator": "Research prior audit research/audits/20261113T1803Z-templo-mayor-gamio-1913-1914-primary-gates.json, not reexamined"
+        }
+      ],
+      "uncertainty": "1913 fieldwork and 1914 published notices conflated in derivative histories; original notebooks unexamined.",
+      "historical_addition": "Create a dated archival strip with fields excavation, first newspaper mention, first scholarly publication, and confidence.",
+      "placement": "advance_history_or_field_by_evidence"
+    },
+    {
+      "topic": "21 February 1978 discovery and rescue",
+      "reader_anchor": "In February 1978, electrical workers digging near República de Argentina",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "locator": "INAH Proyecto Templo Mayor https://templomayor.inah.gob.mx/historia/proyecto-templo-mayor; INAH 20 February 2023 bulletin https://www.inah.gob.mx/boletines/el-museo-del-templo-mayor-celebra-los-45-anos-del-descubrimiento-de-coyolxauhqui; both indexed directly this run"
+        }
+      ],
+      "uncertainty": "INAH distinguishes Feb 21 discovery by electricity workers from initial Salvamento Arqueológico excavation and later Proyecto; original field diary still unavailable.",
+      "historical_addition": "Use dated factual sentence: 'On 21 February 1978, Luz y Fuerza workers uncovered the Coyolxauhqui monolith near the intersection of Guatemala and Argentina; INAH archaeological salvage followed; a long-running project grew from the discovery.' Attribute INAH and hold for editorial review.",
+      "placement": "advance_history_or_field_by_evidence"
+    },
+    {
+      "topic": "1978 contemporary press and public interpretation",
+      "reader_anchor": "In February 1978, electrical workers digging near República de Argentina",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "locator": "Indexed INAH thesis Memoria, representación y percepción en el Templo Mayor https://bibliotecadigital.inah.gob.mx/janium/Documentos/TSER/000F12606.pdf p.38, footnotes 52–54 to El Universal 25 Feb 1978 p.13 and 1 Mar 1978 front page; not original issues"
+        }
+      ],
+      "uncertainty": "Secondary thesis says Feb 23-Apr 15 salvage lead, Mar 20 project begins; chronology differs by distinction between teams and work; original issues and archive records not examined.",
+      "historical_addition": "Append source-specific timeline with dated newspaper citations and precisely delineated rescue archaeologists / project institution; check 1978 issue image and preservation status before promotion.",
+      "placement": "advance_history_or_field_by_evidence"
+    },
+    {
+      "topic": "Photo rights and pedagogical placement",
+      "reader_anchor": "See a photograph of the 1978 excavation",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "locator": "INAH 2024 Coyolxauhqui bulletin identifies archive Raúl Arana 1978 original photograph; no license reviewed"
+        }
+      ],
+      "uncertainty": "Rights and reproduction license for distinct object images unresolved; 1928 La Bombilla archival photos irrelevant to Templo archaeological evidence.",
+      "historical_addition": "Gate each photo toggle by verified license, capture date, credit and physical object; treat 1928 monument photography in separate political-memory chapter.",
+      "placement": "advance_history_or_field_by_evidence"
+    }
+  ],
+  "no_publication_of_unverified_claims": true,
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "blockers": [
+    "Need primary Nahua/Spanish passages aligned",
+    "Need Stage II/IVb authenticated archaeological cross-section",
+    "Need 1913-14 Gamio primary records",
+    "Need original February/March 1978 newspaper/archaeological salvage log",
+    "Need photo rights"
+  ]
+}
