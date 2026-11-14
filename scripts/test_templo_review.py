@@ -73,7 +73,10 @@ for folder, feedback_path in (
     # in the current pre-visit article, in their existing narrative order.
     # It must never relabel Explore stops as Discover history chapters.
     history_html = text.split('<article id="history"', 1)[1].split('</article>', 1)[0]
-    contents = re.search(r'<nav class="history-chapters[^"]*"[^>]*>(.*?)</nav>', history_html, re.DOTALL)
+    contents = re.search(
+        r'<nav id="history-contents" class="history-chapters[^"]*"[^>]*'
+        r'tabindex="-1">(.*?)</nav>', history_html, re.DOTALL
+    )
     assert contents, "Missing accessible Discover article contents"
     contents_html = contents.group(1)
     toc = re.findall(r'<a href="#([^"]+)">([^<]+)</a>', contents_html)
@@ -87,6 +90,22 @@ for folder, feedback_path in (
             r'" class="history-section">\s*<h3>([^<]+)</h3>', history_html
         )
         assert section and title == section.group(1), (anchor, title)
+    # Exactly one accessible return link follows each of the six historical
+    # sections. It may not appear in Explore or masquerade as new chapters.
+    back_links = re.findall(
+        r'<p class="return-to-contents cdmx-no-comment">'
+        r'<a href="#history-contents">Back to article contents</a></p>',
+        history_html,
+    )
+    assert len(back_links) == len(toc) == 6
+    for anchor, _ in toc:
+        block = re.search(
+            r'<section id="' + re.escape(anchor) +
+            r'" class="history-section">(.*?)</section>',
+            history_html, re.DOTALL,
+        )
+        assert block and block.group(1).count('class="return-to-contents') == 1
+    assert 'return-to-contents' not in text.split('<section id="explore"', 1)[1]
     assert history_html.index('history-chapters') < history_html.index('id="dossier-topic-1"')
     assert 'history-chapters' not in text.split('<section id="explore"', 1)[1]
     # Every physical stop must remain actionable on location, with a
