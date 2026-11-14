@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "kind": "app_progress_research_consumer_development_handoff",
+  "generated_at": "2026-11-14T15:53:56Z",
+  "branch": "main",
+  "publication_status": "NO_STAGED_RESEARCH_PUBLISHED",
+  "research_manifest_path": "research-persistence:research/handoff/manifest.json",
+  "research_manifest_blob_sha": "343839aadd816f4cdb0584ba50c4346939977a83",
+  "research_branch_head_observed": "b0793f187b1ab85d69514056124121a399ee5132",
+  "consumed_research_input_commit_sha": "74470d2dbe713c70a4efe39f710313112b40a4c4",
+  "verified_replay_commit_sha": "93fe2ea3c2cb6352027784f986ffb68101ef059f",
+  "immutable_handoff_path": "research/handoff/history/20261114T1502Z-91-batch-obregon-verified.json",
+  "reconciliation_ledger_path": "research/ledgers/20261114T1502Z-91-batch-obregon-replay-and-readback.json",
+  "path_verification": {
+    "unique_referenced_paths": 252,
+    "all_present_in_research_branch_tree": true,
+    "verified_replay_commit_six_git_blob_identities": true,
+    "external_binary_download_not_performed": true
+  },
+  "canonical": {
+    "version": "V97",
+    "status": "unchanged_provisional_not_promoted",
+    "sources": 616,
+    "claims": 422,
+    "claim_source_links": 403,
+    "findings": 68
+  },
+  "staged_only": {
+    "research_batches": 91,
+    "provisional_findings": 607,
+    "source_candidates": 268,
+    "source_inspection_entries": 306,
+    "unknown_source_refs": 1,
+    "source_metadata_collisions": 2,
+    "unresolved_index_only_ref": 1,
+    "detached_identity_reviews_pending": 37
+  },
+  "newest_research": {
+    "scope": "1928 assassination of Álvaro Obregón at La Bombilla; 1934–1935 memorial, public political memory",
+    "historical_evidence_status": "provisional_unapproved",
+    "new_finding_candidates": 11,
+    "primary_newspaper_issues_directly_inspected": 0,
+    "signed_1934_architectural_plans_directly_inspected": 0,
+    "photo_reproduction_rights_cleared": 0,
+    "chapter_audit": "research/audits/20261114T1457Z-obregon-la-bombilla-1928-1935-templo-discover-source-gates.json",
+    "coverage": "research/coverage/20261114T1457Z-obregon-la-bombilla-1928-1935-readiness.json",
+    "ready_for_human_preliminary_investigation": true,
+    "ready_for_editorial_approval": false
+  },
+  "app_changes": [
+    "scripts/handoff_91_history.py",
+    "scripts/check_research_handoff.py",
+    "scripts/test_handoff_91_history.py",
+    "scripts/test_research_handoff.py"
+  ],
+  "protection": {
+    "baseline_document": "editorial/DISCOVER_APPROVED_BASELINE_2026-11-13.md",
+    "baseline_blob_sha": "e6e1dec110d6cfcc3adbee8e942c9bc8cee62963",
+    "nov13_baseline_script_passed": true,
+    "templo_reader_blob_sha": "e18b0b6af33e61c1831990d84a7e5effbf13805b",
+    "homepage_changed": false,
+    "explore_field_chapters_changed": false,
+    "comments_or_local_storage_changed": false,
+    "published_history_changed": false
+  },
+  "ci": {
+    "build_and_research_handoff_run": 43612576568,
+    "initial_code_commit": "f0eb083489c5b9963e1aac70998225e1724e6f5a",
+    "build_conclusion": "success",
+    "research_consumer_result": "Verified pinned research handoff: 74470d2dbe713c70a4efe39f710313112b40a4c4",
+    "tamper_suite": "PASS 91-batch immutable Git identities, conflict counts and no-publication guards"
+  },
+  "manuscript_archive": {
+    "the_basin_before_the_mexica": "Review copies located but verbatim approved conversation original not authenticated; no claimed approved .md or checksum.",
+    "the_heart_of_tenochtitlan": "Complete approved original unavailable; do not create claimed approved archive.",
+    "editorial_action": "Archive exact original approved text only after verified provenance; keep any proposals separately reviewable with before/after and paragraph-specific citations."
+  },
+  "blockers": [
+    "Neither Nov 13 approved Discover manuscript has fully authenticated original bytes",
+    "Primary historical documentation, photograph rights, and in-situ location details require human verification",
+    "Physical iPhone Safari testing outstanding",
+    "main branch protection not enabled"
+  ],
+  "declaration": "This handoff record is a private editorial workflow record. No research branch edits, content publication, or changes to the rich homepage and eight Templo Mayor field chapters."
+}
