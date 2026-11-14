@@ -1,0 +1,363 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261114T1256Z-1971-halconazo-san-cosme-primary-reports",
+  "generated_at": "2026-11-14T12:56:28Z",
+  "branch": "research-persistence",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "storage_role": "immutable_noncanonical_research_batch",
+  "previous_verified_replay": "research/reconciled/v4_764dbe6a6f82/replay_report.json",
+  "prior_verified_counts": {
+    "github_batches_replayed": 88,
+    "staged_findings": 574,
+    "source_candidates": 249,
+    "inspection_entries": 287,
+    "canonical_sources": 616,
+    "canonical_claims": 422,
+    "canonical_links": 403,
+    "canonical_findings": 68
+  },
+  "research_scope": "11 1971 Jueves de Corpus / Halconazo source-located provisional findings. Edited 1971 DFS and IPS reports examined in 2021 INEHRM anthology extracted text; UNAM direct exhibition HTML read. PDF screenshot service returned timeout/502: no original facsimile/archival folio reviewed. Five history / four place / two specialist. No publication approval.",
+  "sources": [
+    {
+      "id": "STG-SRC-20261114-1971-INEHRM",
+      "title": "A 50 años del Halconazo, 10 de junio de 1971, vol. 1: Antología documental",
+      "authors": "Camilo Vicente Ovalle, Daniel Librado Luna Cárdenas, Halina Gutiérrez Mariscal et al. (compilers)",
+      "publication": "INEHRM/SEGOB, Mexico, 2021",
+      "url": "https://inehrm.gob.mx/recursos/Libros/A_50_anios_del_Halconazo_Antologia_1.pdf",
+      "access_scope": "PDF extracted-text lines 307–315, 1913–1999, 2379–2425, 3563–3590; original archival reports reproduced in edited transcription pp. 98–120; PDF screenshots attempted but service failed, original AGN folios NOT inspected",
+      "status": "edited_primary_transcriptions_pdf_text_only_original_folios_unexamined"
+    },
+    {
+      "id": "STG-SRC-20261114-1971-UNAMEXHIB",
+      "title": "Halconazo: medio siglo en imágenes",
+      "authors": "CCU Tlatelolco / Gaceta UNAM",
+      "publication": "Gaceta UNAM, 10 June 2021",
+      "url": "https://www.gaceta.unam.mx/a-50-anos-del-10-de-junio-de-1971-halcones-en-corpus-la-construccion-de-un-imaginario/",
+      "access_scope": "Direct HTML lines 9–30; exhibition description and curatorial context, not photographs' rights licenses or actual archival negatives",
+      "status": "institutional_curatorial_secondary_page_read"
+    },
+    {
+      "id": "STG-SRC-20261114-1971-UNAMROUTE",
+      "title": "A 49 años de la matanza del 10 de junio",
+      "authors": "Gaceta UNAM",
+      "publication": "Gaceta UNAM, June 2020",
+      "url": "https://www.gaceta.unam.mx/a-49-anos-de-la-matanza-del-10-de-junio/",
+      "access_scope": "Search-result article excerpt on route Carpio–Av. de los Maestros–México-Tacuba; full contemporaneous street plan not inspected",
+      "status": "institutional_secondary_snippet_only"
+    },
+    {
+      "id": "STG-SRC-20261114-1971-AGN",
+      "title": "#AGNRecuerda a las víctimas del 10 de junio del 71",
+      "authors": "Archivo General de la Nación",
+      "publication": "AGN, 2021",
+      "url": "https://www.gob.mx/agn/articulos/agnrecuerda-a-las-victimas-del-10-de-junio-del-71-a-50-anos-de-la-matanza-del-jueves-de-corpus-o-el-halconazo",
+      "access_scope": "Search-index excerpt only; direct access 403. Mentions Hermanos Mayo phototeca records and conflicting casualty estimates; images and records not retrieved",
+      "status": "institutional_archive_snippet_only_direct_access_blocked"
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "20261114T1256Z-1971-halconazo-san-cosme-primary-reports-INS-01",
+      "source_id": "STG-SRC-20261114-1971-INEHRM",
+      "locator": "PDF extracted-text lines 307–315, 1913–1999, 2379–2425, 3563–3590; original archival reports reproduced in edited transcription pp. 98–120; PDF screenshots attempted but service failed, original AGN folios NOT inspected",
+      "access": "edited_primary_transcriptions_pdf_text_only_original_folios_unexamined",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Edited original-document texts read through PDF text extraction; two web screenshot attempts failed (502/timeout). No manuscript/facsimile verification."
+    },
+    {
+      "id": "20261114T1256Z-1971-halconazo-san-cosme-primary-reports-INS-02",
+      "source_id": "STG-SRC-20261114-1971-UNAMEXHIB",
+      "locator": "Direct HTML lines 9–30; exhibition description and curatorial context, not photographs' rights licenses or actual archival negatives",
+      "access": "institutional_curatorial_secondary_page_read",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Reviewed direct UNAM curatorial HTML; image rights not established."
+    },
+    {
+      "id": "20261114T1256Z-1971-halconazo-san-cosme-primary-reports-INS-03",
+      "source_id": "STG-SRC-20261114-1971-UNAMROUTE",
+      "locator": "Search-result article excerpt on route Carpio–Av. de los Maestros–México-Tacuba; full contemporaneous street plan not inspected",
+      "access": "institutional_secondary_snippet_only",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Only search excerpt available; status intentionally limited."
+    },
+    {
+      "id": "20261114T1256Z-1971-halconazo-san-cosme-primary-reports-INS-04",
+      "source_id": "STG-SRC-20261114-1971-AGN",
+      "locator": "Search-index excerpt only; direct access 403. Mentions Hermanos Mayo phototeca records and conflicting casualty estimates; images and records not retrieved",
+      "access": "institutional_archive_snippet_only_direct_access_blocked",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Only search excerpt available; status intentionally limited."
+    }
+  ],
+  "findings": [
+    {
+      "id": "20261114T1256Z-1971-halconazo-san-cosme-primary-reports-01",
+      "classification": "broad_history",
+      "assertion": "Support for democratic governance at UANL helped bring student groups back into public street protest after the October 1968 repression; this movement was not solely a local Mexico City dispute.",
+      "date_or_range": "June 1971",
+      "period": "Contemporary Mexico, 1971",
+      "themes": [
+        "University democracy and post-1968 mobilization"
+      ],
+      "geographies": [
+        "Nuevo León / Mexico City"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-1971-INEHRM",
+        "STG-SRC-20261114-1971-UNAMEXHIB"
+      ],
+      "source_locator": "INEHRM 2021 introductory pp.11–14; UNAM 2021 lines 15–17",
+      "limitations": "This is the perspective of the editors and institutional retrospectives; original student assembly materials were not inspected.",
+      "learning_mode": "advance_history",
+      "evidence_status": "edited_source_or_institutional_locator_provisional_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1256Z-1971-halconazo-san-cosme-primary-reports-02",
+      "classification": "broad_history",
+      "assertion": "A June 10 surveillance transcript records protest preparations at the Escuela Nacional de Ciencias Biológicas, including placards being sorted by school around 16:05; the recorded time is a state-agent report, not an independent stopwatch.",
+      "date_or_range": "June 10, 1971, 16:05",
+      "period": "Contemporary Mexico, 1971",
+      "themes": [
+        "Student organizing and state surveillance"
+      ],
+      "geographies": [
+        "Casco de Santo Tomás"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-1971-INEHRM"
+      ],
+      "source_locator": "INEHRM 2021 edited IPS report pp.99–100, web text lines 1903–1915",
+      "limitations": "Agent estimates and reported clock times require corroboration from independent witnesses.",
+      "learning_mode": "advance_history",
+      "evidence_status": "edited_source_or_institutional_locator_provisional_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1256Z-1971-halconazo-san-cosme-primary-reports-03",
+      "classification": "broad_history",
+      "assertion": "An edited security report places a dispersal attempt using tear gas shortly after 17:10 and the appearance of Halcones at approximately 17:15 along Alzate and Sor Juana Inés de la Cruz.",
+      "date_or_range": "June 10, 1971, 17:10–17:15",
+      "period": "Contemporary Mexico, 1971",
+      "themes": [
+        "Dispersal and armed repression chronology"
+      ],
+      "geographies": [
+        "Avenida de los Maestros / San Cosme"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-1971-INEHRM"
+      ],
+      "source_locator": "INEHRM 2021 edited IPS chronological report pp.101–103, extracted lines 1970–1999",
+      "limitations": "Security-document chronology is not independently validated; agents' characterizations may minimize responsibility.",
+      "learning_mode": "advance_history",
+      "evidence_status": "edited_source_or_institutional_locator_provisional_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1256Z-1971-halconazo-san-cosme-primary-reports-04",
+      "classification": "broad_history",
+      "assertion": "An edited Dirección Federal de Seguridad report states police and Halcones were already deployed on Nogal, Instituto Técnico Industrial/San Cosme, Nonoalco and Buenavista between noon and 15:00.",
+      "date_or_range": "June 10, 1971, noon–15:00",
+      "period": "Contemporary Mexico, 1971",
+      "themes": [
+        "Advance security deployment"
+      ],
+      "geographies": [
+        "Nogal / San Cosme / Nonoalco / Buenavista"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-1971-INEHRM"
+      ],
+      "source_locator": "INEHRM 2021 pp.118–119, DFS report, AGN DFS Caja AC 146/4223 Exp. 11-4 L.132 fs.363–367; web text lines 2380–2401",
+      "limitations": "Source is an official surveillance account; figures at posts are assertions from that report, not independently measured totals.",
+      "learning_mode": "advance_history",
+      "evidence_status": "edited_source_or_institutional_locator_provisional_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1256Z-1971-halconazo-san-cosme-primary-reports-05",
+      "classification": "broad_history",
+      "assertion": "Government versions initially denied the existence of Halcones, while contemporary reports and a later UNAM photographic exhibition document paramilitary attacks. These evidence types should be compared as competing public narratives.",
+      "date_or_range": "June 10–15, 1971",
+      "period": "Contemporary Mexico, 1971",
+      "themes": [
+        "Official denial and political accountability"
+      ],
+      "geographies": [
+        "Mexico City / national government"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-1971-INEHRM",
+        "STG-SRC-20261114-1971-UNAMEXHIB"
+      ],
+      "source_locator": "INEHRM 2021 introduction p.11 cites El Día 11 June and AGN Caja 971 Exp.1 ff.182–184; UNAM 2021 lines 15–29",
+      "limitations": "A contemporaneous public denial is evidence of an official statement, not evidence the group did not exist.",
+      "learning_mode": "advance_history",
+      "evidence_status": "edited_source_or_institutional_locator_provisional_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1256Z-1971-halconazo-san-cosme-primary-reports-06",
+      "classification": "poi_ready_candidate",
+      "assertion": "At the Casco de Santo Tomás, an official surveillance report locates early afternoon student concentrations near Ciencias Biológicas and Carpio, providing a historically documented starting district for a possible interpretive walk.",
+      "date_or_range": "June 10, 1971",
+      "period": "Contemporary Mexico, 1971",
+      "themes": [
+        "March assembly / campus space"
+      ],
+      "geographies": [
+        "IPN Casco de Santo Tomás"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-1971-INEHRM",
+        "STG-SRC-20261114-1971-UNAMROUTE"
+      ],
+      "source_locator": "INEHRM pp.99–101, IPS timestamps 16:05–17:05; Gaceta UNAM 2020 route summary",
+      "limitations": "Current campus access, building survival and exact starting point require field verification.",
+      "learning_mode": "field_candidate",
+      "evidence_status": "edited_source_or_institutional_locator_provisional_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1256Z-1971-halconazo-san-cosme-primary-reports-07",
+      "classification": "poi_ready_candidate",
+      "assertion": "The junctions along Avenida de los Maestros, Amado Nervo and San Cosme appear in contemporaneous security reports describing attempts to halt the march; a safe field stop should explain evidence bias instead of recreating an unverified exact route.",
+      "date_or_range": "June 10, 1971",
+      "period": "Contemporary Mexico, 1971",
+      "themes": [
+        "March confrontation at street junctions"
+      ],
+      "geographies": [
+        "Avenida de los Maestros / Amado Nervo"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-1971-INEHRM",
+        "STG-SRC-20261114-1971-UNAMROUTE"
+      ],
+      "source_locator": "INEHRM pp.101–103, 17:10–17:30 entries; Gaceta UNAM 2020 route overview",
+      "limitations": "Different route intentions are described in the sources; modern walking route not geospatially validated.",
+      "learning_mode": "field_candidate",
+      "evidence_status": "edited_source_or_institutional_locator_provisional_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1256Z-1971-halconazo-san-cosme-primary-reports-08",
+      "classification": "poi_ready_candidate",
+      "assertion": "The Cine Cosmos frontage is mentioned in security reporting as a location near police vehicles and armed confrontation; a later INEHRM account describes residents sheltering students when businesses closed.",
+      "date_or_range": "June 10, 1971",
+      "period": "Contemporary Mexico, 1971",
+      "themes": [
+        "Cinema, shops and neighborhood refuge"
+      ],
+      "geographies": [
+        "Cine Cosmos / Calzada México–Tacuba"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-1971-INEHRM"
+      ],
+      "source_locator": "INEHRM pp.102–103 and INEHRM contemporary online overview 2021 (https://www.inehrm.gob.mx/es/inehrm/Mexico_Contemporaneo)",
+      "limitations": "Cine Cosmos building access and the shelter narrative require independent oral histories and current site verification.",
+      "learning_mode": "field_candidate",
+      "evidence_status": "edited_source_or_institutional_locator_provisional_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1256Z-1971-halconazo-san-cosme-primary-reports-09",
+      "classification": "poi_ready_candidate",
+      "assertion": "The Hospital Rubén Leñero became a documented medical and refuge site in contemporary reports; an Excélsior account republished in the anthology describes injured students seeking shelter and armed men entering hospital spaces.",
+      "date_or_range": "June 10–12, 1971",
+      "period": "Contemporary Mexico, 1971",
+      "themes": [
+        "Medical care, witness testimony and repression"
+      ],
+      "geographies": [
+        "Hospital Rubén Leñero / Miguel Hidalgo"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-1971-INEHRM"
+      ],
+      "source_locator": "INEHRM 2021 pp.198–200, republished Excélsior 12 June 1971, web text lines 3563–3590",
+      "limitations": "Original newspaper page and hospital records not inspected; do not publish individual victim lists without checking.",
+      "learning_mode": "field_candidate",
+      "evidence_status": "edited_source_or_institutional_locator_provisional_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1256Z-1971-halconazo-san-cosme-primary-reports-10",
+      "classification": "specialist_technical",
+      "assertion": "The original DFS report has a precise AGN archival locator in the anthology (Fondo SEGOB, Sección DFS, Caja AC 146/4223, expediente 11-4, legajo 132, folios 363–367), enabling a future direct manuscript/facsimile source audit.",
+      "date_or_range": "June 10, 1971",
+      "period": "Contemporary Mexico, 1971",
+      "themes": [
+        "Archival provenance and document transmission"
+      ],
+      "geographies": [
+        "Archivo General de la Nación / Mexico City"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-1971-INEHRM"
+      ],
+      "source_locator": "INEHRM 2021 p.119 footnote 39, web extracted line 2401",
+      "limitations": "Edited transcription only. Original AGN folios not inspected and textual fidelity not independently verified.",
+      "learning_mode": "advance_history",
+      "evidence_status": "edited_source_or_institutional_locator_provisional_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1256Z-1971-halconazo-san-cosme-primary-reports-11",
+      "classification": "specialist_technical",
+      "assertion": "UNAM's 2021 exhibition describes over 160 historical photographs grouped by press, independent photographers and intelligence services; the photographs should be attributed and interpreted as different evidence-producing contexts.",
+      "date_or_range": "1971 and later memory",
+      "period": "Contemporary Mexico, 1971",
+      "themes": [
+        "Photography, visual evidence and archive rights"
+      ],
+      "geographies": [
+        "San Cosme / CCU Tlatelolco memory collections"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-1971-UNAMEXHIB",
+        "STG-SRC-20261114-1971-AGN"
+      ],
+      "source_locator": "Gaceta UNAM 10 June 2021 lines 23–30; AGN Hermanos Mayo collection listed in search excerpt",
+      "limitations": "No individual original negatives, publication rights or image-to-location crosswalk examined; no rehosting permission inferred.",
+      "learning_mode": "advance_history",
+      "evidence_status": "edited_source_or_institutional_locator_provisional_not_independently_corroborated",
+      "publication_approved": false
+    }
+  ],
+  "chapter_audit_paths": [
+    "research/audits/20261114T1256Z-1971-halconazo-san-cosme-primary-reports-templo-discover-evidence-gates.json"
+  ],
+  "coverage_artifact_paths": [
+    "research/coverage/20261114T1256Z-1971-halconazo-san-cosme-primary-reports-readiness.json"
+  ],
+  "all_records_preserved": true,
+  "canonical_promoted": false,
+  "ready_for_editorial_review": false,
+  "publication_approved": false
+}

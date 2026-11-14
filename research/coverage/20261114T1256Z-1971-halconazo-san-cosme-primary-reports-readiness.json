@@ -1,0 +1,139 @@
+{
+  "schema_version": 3,
+  "kind": "period_x_theme_x_geography_explanatory_readiness_delta",
+  "generated_at": "2026-11-14T12:56:28Z",
+  "branch": "research-persistence",
+  "source_batch_path": "research/batches/20261114T1256Z-1971-halconazo-san-cosme-primary-reports.json",
+  "evidence_status": "noncanonical_edited_primary_report_extraction_not_publication_approved",
+  "rating_definitions": {
+    "substantial": "Independent corroboration, inspected primary page and location + rights verification",
+    "developing": "Named primary/secondary locator supports a meaningful explanation; original or independent verification remains open",
+    "sparse": "Partially specified geography or source still lacks detailed independent contextual evidence",
+    "missing": "Required photo rights or original visual provenance/site verification not available"
+  },
+  "cells": [
+    {
+      "period": "June 1971",
+      "theme": "University democracy and post-1968 mobilization",
+      "geography": "Nuevo León / Mexico City",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1256Z-1971-halconazo-san-cosme-primary-reports-01"
+      ],
+      "evidence_gap": "This is the perspective of the editors and institutional retrospectives; original student assembly materials were not inspected."
+    },
+    {
+      "period": "June 10, 1971, 16:05",
+      "theme": "Student organizing and state surveillance",
+      "geography": "Casco de Santo Tomás",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1256Z-1971-halconazo-san-cosme-primary-reports-02"
+      ],
+      "evidence_gap": "Agent estimates and reported clock times require corroboration from independent witnesses."
+    },
+    {
+      "period": "June 10, 1971, 17:10–17:15",
+      "theme": "Dispersal and armed repression chronology",
+      "geography": "Avenida de los Maestros / San Cosme",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1256Z-1971-halconazo-san-cosme-primary-reports-03"
+      ],
+      "evidence_gap": "Security-document chronology is not independently validated; agents' characterizations may minimize responsibility."
+    },
+    {
+      "period": "June 10, 1971, noon–15:00",
+      "theme": "Advance security deployment",
+      "geography": "Nogal / San Cosme / Nonoalco / Buenavista",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1256Z-1971-halconazo-san-cosme-primary-reports-04"
+      ],
+      "evidence_gap": "Source is an official surveillance account; figures at posts are assertions from that report, not independently measured totals."
+    },
+    {
+      "period": "June 10–15, 1971",
+      "theme": "Official denial and political accountability",
+      "geography": "Mexico City / national government",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1256Z-1971-halconazo-san-cosme-primary-reports-05"
+      ],
+      "evidence_gap": "A contemporaneous public denial is evidence of an official statement, not evidence the group did not exist."
+    },
+    {
+      "period": "June 10, 1971",
+      "theme": "March assembly / campus space",
+      "geography": "IPN Casco de Santo Tomás",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T1256Z-1971-halconazo-san-cosme-primary-reports-06"
+      ],
+      "evidence_gap": "Current campus access, building survival and exact starting point require field verification."
+    },
+    {
+      "period": "June 10, 1971",
+      "theme": "March confrontation at street junctions",
+      "geography": "Avenida de los Maestros / Amado Nervo",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1256Z-1971-halconazo-san-cosme-primary-reports-07"
+      ],
+      "evidence_gap": "Different route intentions are described in the sources; modern walking route not geospatially validated."
+    },
+    {
+      "period": "June 10, 1971",
+      "theme": "Cinema, shops and neighborhood refuge",
+      "geography": "Cine Cosmos / Calzada México–Tacuba",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T1256Z-1971-halconazo-san-cosme-primary-reports-08"
+      ],
+      "evidence_gap": "Cine Cosmos building access and the shelter narrative require independent oral histories and current site verification."
+    },
+    {
+      "period": "June 10–12, 1971",
+      "theme": "Medical care, witness testimony and repression",
+      "geography": "Hospital Rubén Leñero / Miguel Hidalgo",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T1256Z-1971-halconazo-san-cosme-primary-reports-09"
+      ],
+      "evidence_gap": "Original newspaper page and hospital records not inspected; do not publish individual victim lists without checking."
+    },
+    {
+      "period": "June 10, 1971",
+      "theme": "Archival provenance and document transmission",
+      "geography": "Archivo General de la Nación / Mexico City",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1256Z-1971-halconazo-san-cosme-primary-reports-10"
+      ],
+      "evidence_gap": "Edited transcription only. Original AGN folios not inspected and textual fidelity not independently verified."
+    },
+    {
+      "period": "1971 and later memory",
+      "theme": "Photography, visual evidence and archive rights",
+      "geography": "San Cosme / CCU Tlatelolco memory collections",
+      "rating": "missing",
+      "finding_ids": [
+        "20261114T1256Z-1971-halconazo-san-cosme-primary-reports-11"
+      ],
+      "evidence_gap": "No individual original negatives, publication rights or image-to-location crosswalk examined; no rehosting permission inferred."
+    }
+  ],
+  "summary": {
+    "total": 11,
+    "substantial": 0,
+    "developing": 7,
+    "sparse": 3,
+    "missing": 1,
+    "classification_finding_counts": {
+      "broad_history": 5,
+      "poi_ready_candidate": 4,
+      "specialist_technical": 2
+    }
+  },
+  "publication_approved": false
+}

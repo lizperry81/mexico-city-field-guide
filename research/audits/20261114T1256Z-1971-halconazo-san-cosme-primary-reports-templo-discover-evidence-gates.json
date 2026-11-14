@@ -1,0 +1,137 @@
+{
+  "schema_version": 3,
+  "kind": "chapter_level_claim_to_source_locator_audit",
+  "generated_at": "2026-11-14T12:56:28Z",
+  "branch": "research-persistence",
+  "target_branch_read_only": "main",
+  "target_path": "poi/templo-mayor/reader.html",
+  "reader_re_read_this_run": true,
+  "reader_blob_sha_verified": "e18b0b6af33e61c1831990d84a7e5effbf13805b",
+  "source_batch_path": "research/batches/20261114T1256Z-1971-halconazo-san-cosme-primary-reports.json",
+  "gates": [
+    {
+      "topic": "Triple Alliance around 1428",
+      "reader_anchor": "In the late 1420s",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "url": "https://www.metmuseum.org/essays/tenochtitlan",
+          "locator": "Narrative overview carried forward, not reexamined in this batch"
+        }
+      ],
+      "uncertainty": "1427/1428/1430 chronology still to be reconciled",
+      "historical_addition": "Compare dated Azcapotzalco defeat, allied polities and subsequent tribute consolidation in separate claims.",
+      "placement": "advance_history_and_field_as_applicable"
+    },
+    {
+      "topic": "Stage II versus IVb construction",
+      "reader_anchor": "The oldest excavated phase that visitors can identify is called Stage II",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "url": "https://inah.gob.mx/boletines/el-inah-inicio-la-renovacion-de-la-techumbre-en-la-etapa-ii-de-la-zona-arqueologica-del-templo-mayor",
+          "locator": "Previously sourced preservation press release, not excavation drawings"
+        }
+      ],
+      "uncertainty": "Original stratigraphic plans and field accessibility unverified",
+      "historical_addition": "Show construction stages using approved archaeological section drawing only, and distinguish Stage II/IVb.",
+      "placement": "advance_history_and_field_as_applicable"
+    },
+    {
+      "topic": "Coatepec and Coyolxauhqui display",
+      "reader_anchor": "At the foot of the south stair of that platform lay a stone disk",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "url": "https://lugares.inah.gob.mx/es/pagina-de-elemento/1259",
+          "locator": "Earlier INAH visitor record identifies display copy beside Stage IVb"
+        }
+      ],
+      "uncertainty": "Myth, archaeological monolith and replica currently too easily conflated",
+      "historical_addition": "Separate original findspot, 1978 discovery, Coatepec interpretation and outdoor replica captions.",
+      "placement": "advance_history_and_field_as_applicable"
+    },
+    {
+      "topic": "Tóxcatl in 1520 and siege in 1521",
+      "reader_anchor": "In May 1520, while Cortés was away",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "url": "https://www.loc.gov/exhibits/exploring-the-early-americas/interactives/florentine-codex/",
+          "locator": "Book XII comparison not directly inspected here"
+        }
+      ],
+      "uncertainty": "Spanish and Nahuatl testimonies not collated at passage-level",
+      "historical_addition": "Compare accounts of Tóxcatl massacre independently from 1521 siege chronology.",
+      "placement": "advance_history_and_field_as_applicable"
+    },
+    {
+      "topic": "Gamio 1913 versus 1914",
+      "reader_anchor": "In 1913, archaeologist Manuel Gamio uncovered",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T1158Z-1985-earthquake-citizens-housing-and-memory-templo-discover-evidence-gates.json",
+          "locator": "Prior audit locator; no original Gamio field notebook"
+        }
+      ],
+      "uncertainty": "Discrepant excavation vs publication dating",
+      "historical_addition": "Require original excavation report before settling chronology.",
+      "placement": "advance_history_and_field_as_applicable"
+    },
+    {
+      "topic": "Discovery February 21, 1978",
+      "reader_anchor": "In February 1978, electrical workers digging near República de Argentina",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "url": "https://www.templomayor.inah.gob.mx/historia/proyecto-templo-mayor",
+          "locator": "Prior INAH project history dates discovery Feb 21, 1978"
+        }
+      ],
+      "uncertainty": "Original salvage log and personnel testimony not inspected",
+      "historical_addition": "Distinguish initial utility excavation, subsequent salvage and extended Proyecto Templo Mayor.",
+      "placement": "advance_history_and_field_as_applicable"
+    },
+    {
+      "topic": "1971 violence is separate historical layer",
+      "reader_anchor": "The Mexica built their city on an island",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "path": "research/batches/20261114T1256Z-1971-halconazo-san-cosme-primary-reports.json",
+          "locator": "This run's edited 1971 surveillance and 2021 exhibition reports"
+        }
+      ],
+      "uncertainty": "Contemporary urban repression is not evidence for Mexica religious institutions",
+      "historical_addition": "Publish as a separate 1971 historical story and optional contextual link, not a Templo archaeology claim.",
+      "placement": "separate_chapter_crosslink"
+    },
+    {
+      "topic": "Historical photos and rights",
+      "reader_anchor": "See a photograph of the 1978 excavation",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "url": "https://www.gaceta.unam.mx/a-50-anos-del-10-de-junio-de-1971-halcones-en-corpus-la-construccion-de-un-imaginario/",
+          "locator": "Different historical collection; not a right to reuse Coyolxauhqui photos"
+        }
+      ],
+      "uncertainty": "Templo 1978 and 1971 press imagery permissions remain uncleared",
+      "historical_addition": "Keep photo toggles as rights-gated references until individual image provenance is cleared.",
+      "placement": "advance_history_and_field_as_applicable"
+    }
+  ],
+  "no_publication_of_unverified_claims": true,
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "blockers": [
+    "Triple Alliance source chronology remains uncollated",
+    "Stage II/IVb stratigraphic plans missing",
+    "Nahuatl/Spanish Tóxcatl accounts not compared",
+    "Gamio field notebook and 1978 salvage worksheets missing",
+    "Photo rights uncleared",
+    "No original 1971 surveillance manuscript or verified site plan"
+  ],
+  "conclusion": "1971 evidence adds twentieth-century historical breadth but does not corroborate Templo Mayor archaeological claims. INEHRM edited transcriptions offer actionable archive locators; PDF screenshot service failed, so their original folios are not represented as inspected."
+}
