@@ -1,0 +1,826 @@
+{
+  "schema_version": 2,
+  "canonical_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "staging_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "output_sha256": "c5939bc79f7174aaf9bd92949167c5015238217a60bef6cdd9dd12a4869c6f7a",
+  "canonical_tables_preserved": 88,
+  "canonical_rows_unchanged": true,
+  "canonical_counts": {
+    "sources": 616,
+    "claims": 422,
+    "claim_sources": 403,
+    "canonical_findings": 68,
+    "canonical_source_inspections": 9
+  },
+  "existing_staged_findings": 0,
+  "github_batch_json_files_examined": 90,
+  "github_candidate_finding_ids": 596,
+  "index_only_finding_refs": 23,
+  "index_only_distinct_ids": 23,
+  "index_only_resolved_by_substantive_findings": 22,
+  "unresolved_index_only_ids": [
+    "STG20261111T1302Z-RECON-V87-PRIMARY-001"
+  ],
+  "unresolved_index_only_count": 1,
+  "raw_batch_documents_in_sqlite": 90,
+  "batch_file_inventory": [
+    {
+      "path": "20261111T100400Z-ledger1/findings_and_inspection.json",
+      "sha256": "f1c8b51e561c63b3c20bfe81b89dde898a73fd2e4798965baae1ae754621821b"
+    },
+    {
+      "path": "20261111T100400Z-ledger1/unmerged_archive_inventory.json",
+      "sha256": "b7ad37d1421c189a69d5e6465197086ad51353e642feb15f0b4ff31f2ed4c841"
+    },
+    {
+      "path": "20261111T110600Z-crosswalk/inspected_material_and_visuals.json",
+      "sha256": "f6a001a9e124f1a47e48f181fd0dbeddfc3a6f87df216d30c71486c775d89de8"
+    },
+    {
+      "path": "20261111T110600Z-crosswalk/pending_source_crosswalk.json",
+      "sha256": "c5118fdc5f65d43236340aa9c78af4d80a64fa5a3baa656a2b41ad7cc56c30b8"
+    },
+    {
+      "path": "20261111T111100Z-priority-candidates/14_priority_pending_assertions.json",
+      "sha256": "c643cac06b5acaf8ab1346280f4a7ad0d3ac7d9d376e880b2b5cd38a2c8a0c72"
+    },
+    {
+      "path": "20261111T115731Z-turn10-backlog-9/nine_remaining_candidate_assertions.json",
+      "sha256": "36ec1e510110f36e53c4acac1edc808a46ed49bea52bb627d55396db32903421"
+    },
+    {
+      "path": "20261111T115731Z-turn10-final-backlog-19/19_original_candidate_assertions.json",
+      "sha256": "50206f9c00ae84b472faf016a873cd1a568dd7198099d2abbe6dfc4955714ee1"
+    },
+    {
+      "path": "20261111T115731Z-turn10-sar-18/18_original_sarabia_and_2014_assertions.json",
+      "sha256": "23118b9646a1d889f762d68f710d824b3a8cbf9710c7e3fe9c4539d23e857419"
+    },
+    {
+      "path": "20261111T115731Z-turn10-sload-cave-technical/new_findings_and_inspections.json",
+      "sha256": "ac224ca13bd5c95c48a26c705df9201a7f30e3d19766e906713923f0d528f61e"
+    },
+    {
+      "path": "20261111T1302Z-turn11/evidence_and_source_reconciliation.json",
+      "sha256": "e89155152babef983cba360781e1e6ba47d1fab1cd04a5bbe0f19db48a9693f9"
+    },
+    {
+      "path": "20261111T1401Z-a11/botanical_and_source_reconciliation.json",
+      "sha256": "d8b492414bbf1586bbadcb7c8c6031acfab48b1aaff7d4eadaf6fb7f74e21456"
+    },
+    {
+      "path": "20261111T1503Z-auto11/sload_radiocarbon_model_review.json",
+      "sha256": "6e33da283bcef1d5a109006202c7d64a5a9d48a250d1b456e246c40c7a3ae03b"
+    },
+    {
+      "path": "20261111T1558Z-a11-rerun/source_context_and_materials.json",
+      "sha256": "6c5df6a6faedab35dbb20ec7f21e9d0c651260d4d193b0d46e4eed76053fb8ab"
+    },
+    {
+      "path": "20261111T1655Z-a11-ch8-artifacts.json",
+      "sha256": "78c0771729c40cb68f6b17ec11ed9ccc967602c74cda9cc65c84b87f12a1c570"
+    },
+    {
+      "path": "20261111T1804Z-auto11-ch9.json",
+      "sha256": "6eedd4eae479a14a6585ee64d3de0b9f14f624b3f2c5d4bcc32a113653e22414"
+    },
+    {
+      "path": "20261111T1902Z-turn11-fauna-heyden.json",
+      "sha256": "5bf55f0c80ccb6ce4cee6fac1b3f0d7f2a66cc2ba2cc0a09222da2785efe6f5e"
+    },
+    {
+      "path": "20261111T2000Z-auto11-area-b-radiocarbon.json",
+      "sha256": "65b82c7b3d67fe67dc3105817cb91b0fa4881aba14f7d66d989ee8ae4ee4cbf1"
+    },
+    {
+      "path": "20261111T2103Z-auto11-areaA-entrance.json",
+      "sha256": "c29357e6d69b71d0cc7446ae308898b66f825cde290d98d9e4d5f18e2ecc590f"
+    },
+    {
+      "path": "20261111T2200Z-auto11-terminus.json",
+      "sha256": "f59a428959b3d2d6c87ef0d6b38cc6470fa1c50e21195fae6068cb8f5700b4fe"
+    },
+    {
+      "path": "20261111T2255Z-auto11-blockages.json",
+      "sha256": "0051b1944e0427cbae14b9c52bfb4e37eba9703986f141736424ed5f76fae79c"
+    },
+    {
+      "path": "20261112T0002Z-auto11-water-and-provenance.json",
+      "sha256": "06aaf0fd1a4eb402122f6779806c7fa2000e72565e385f03b71212e9d59fad6d"
+    },
+    {
+      "path": "20261112T011308Z-auto11-quarry-reuse.json",
+      "sha256": "97fac023f70853cba8fa167885298e5c144fb22a441806b2ac5f77ca319531fe"
+    },
+    {
+      "path": "20261112T0201Z-auto09.json",
+      "sha256": "de1a4799d29e2b90e6184d5ff6b6270082a7216a155545ce591d0a18fdee393d"
+    },
+    {
+      "path": "20261112T0202Z-2025-botanical-table3.json",
+      "sha256": "9243b5eaa10daa6faf9e99c83580f74be8a81e8677f5b2b061048209d7b59aa8"
+    },
+    {
+      "path": "20261112T0302Z-auto09.json",
+      "sha256": "a0d2ba4ec2b9e662553a1910cd6f496af3cf931d5a22419a29e0f8f9a9f9f8c7"
+    },
+    {
+      "path": "20261112T0356Z-auto09.json",
+      "sha256": "e5a423082c69a677ee167ef41037af64e2cd6ded475e947e84bc65843036a5cb"
+    },
+    {
+      "path": "20261112T0503Z-auto09-chronology.json",
+      "sha256": "f23196f05d68e9b04e5c50bd51ceaafd12d1e68eede4ac09e46be583333e1b0a"
+    },
+    {
+      "path": "20261112T060230Z-auto09.json",
+      "sha256": "c99573f199ec0ca8771590f5247e191e4d7cefb1fc42b31473d6a8b1b4903e98"
+    },
+    {
+      "path": "20261112T0700Z-auto09-te28-2007.json",
+      "sha256": "1dd8b3d0c35a2d6372b99a1802c98bb50f318be591badb11ee0dbf8b3751e2eb"
+    },
+    {
+      "path": "20261112T080125Z-auto09-te28-2009.json",
+      "sha256": "ac7525b03c4bd59240d5568593fcf31e67fb17ed718af9b336675e53ebb427c5"
+    },
+    {
+      "path": "20261112T0902Z-auto09-moon-source-recovery.json",
+      "sha256": "5823b80a7aa58b2fd9f6a28632b8301220404d4904c882031c975640d0f7e483"
+    },
+    {
+      "path": "20261112T100346Z-auto09-torras-source-reconciliation.json",
+      "sha256": "82a1e7bc9cea0a560447b13369bbb6571060c49eb56e221b256a2fee19200994"
+    },
+    {
+      "path": "20261112T1105Z-auto10-sload-ch8.json",
+      "sha256": "ab7c17111dff63cf39351b7e5b1aafad43f59ff621f316c8b3f169db78a6dddf"
+    },
+    {
+      "path": "20261112T1203Z-auto11-mirror-photo.json",
+      "sha256": "69561339cea4f61fa590b56bd704f68270a3ab6789c303b1f29398f4cf1b93e6"
+    },
+    {
+      "path": "20261112T130305Z-auto11-carballo-moon.json",
+      "sha256": "3492d08b7587caf0f4db513f57ce6611538b02d1cf972055c0293c4ad74ea78b"
+    },
+    {
+      "path": "20261112T140057Z-auto11-tlajinga-comp17.json",
+      "sha256": "c4ff921b132cf422cdcc8645dfda00579e124f319a20d6efe166b2e375309995"
+    },
+    {
+      "path": "20261112T1501Z-auto11-cave-blockage-materials.json",
+      "sha256": "e5b836d1eca995df6c8f09a6e2ced58bd4ba8a930f9a44ac1cb53abc24016cae"
+    },
+    {
+      "path": "20261112T1557Z-auto10-carballo-crosscheck.json",
+      "sha256": "453952e16825466d5c87affc9799276e4a7341519e1cf57cff149bae30b1e0b4"
+    },
+    {
+      "path": "20261112T165754Z-scheduled9-breadth-9e6d.json",
+      "sha256": "cca8c46f57e819693bf7e7a3612fff7c95d457c78ac9fa6f2ae26a0300a35f09"
+    },
+    {
+      "path": "20261112T175903Z-auto9-71cf2.json",
+      "sha256": "dc6a1a1b83e6fdce82c8a1ffe6ef8ed0c8dc03299d64ca7abf3d50340609c4b4"
+    },
+    {
+      "path": "20261112T1859Z-auto9-broadth-c61f.json",
+      "sha256": "ac1697eb7652e59704ef22ffa5111e81fd8a265bacaeddd02e6ff1564565d1ab"
+    },
+    {
+      "path": "20261112T195738Z-auto9-breadth-8ce5.json",
+      "sha256": "3b7203c042fa48d97711ecd1a7f0dcf26790503a61c98d250bf0733fdbc45696"
+    },
+    {
+      "path": "20261112T2100Z-auto9-1968-breadth-7e4d.json",
+      "sha256": "64500824d84703f01581511b1b78188274290691eb3585c4224e5b812d0db4c7"
+    },
+    {
+      "path": "20261112T2117Z-radio68.json",
+      "sha256": "b504662c4a3143c5bff35acf9a6b18718a6510bc1dfd564453b3a48c20ca970d"
+    },
+    {
+      "path": "20261112T215917Z-auto8-c73af2.json",
+      "sha256": "37817a9d71e64c59a7f513d30585086396bc46de75bd2d0967fc2e1287f35a80"
+    },
+    {
+      "path": "20261112T2300Z-reforma-historic-centre-bf631.json",
+      "sha256": "6012a8bb25a94dfe71d4f6c4620ecee144a6f294fc3400bba58449e6a56ced77"
+    },
+    {
+      "path": "20261112T2359Z_reforma_libertad_cultos_crosswalk.json",
+      "sha256": "c82bf5cdf54124186046bc6edbd9a22efe69924e268964c03e29f2f5e7345729"
+    },
+    {
+      "path": "20261113-hospital-jesus-archival-chronology.json",
+      "sha256": "ea32803f27fb4d5caced77c5aaaf1bf35a41a23205c03dffd70921a712cf87f4"
+    },
+    {
+      "path": "20261113-hospital-jesus-foundation.json",
+      "sha256": "a4e3029df2a11446a102c21904c623e0e4acc00b966ae5ab3004c34e5d9e1dad"
+    },
+    {
+      "path": "20261113-source-crosswalk-review.json",
+      "sha256": "3668904480bc97be00cc919743696ee66816fd091c429bbcfca89feacb50c747"
+    },
+    {
+      "path": "20261113T0055Z_hospital_beneficencia_1b6a.json",
+      "sha256": "2fcfa2fd1a6a2c196393b3d0992ef5ceb5d852d355792d68da591942bff51848"
+    },
+    {
+      "path": "20261113T0120Z-source-identity-audit.json",
+      "sha256": "afa267a7b57cf59bc66d3cfc1a2f3e2e92f55573b618348c0d81cccf4d99eaf4"
+    },
+    {
+      "path": "20261113T0203Z-templo-mayor-discover-eight.json",
+      "sha256": "223926414e1138511a75e3623a867def6f16692fe6c65c062e0639f4b08a47bd"
+    },
+    {
+      "path": "20261113T0310Z-transit-revolution-1985-breadth.json",
+      "sha256": "91bbeab5835630a78c383718950142baf5bd6cccefdee6f461bc5bb55d457d21"
+    },
+    {
+      "path": "20261113T0356Z-1692-grain-riot-colonial-politics.json",
+      "sha256": "43a314129af9a62aa7af6b9dfecd6f0d26633e637c47b2fbd2e75dcdb77c4f43"
+    },
+    {
+      "path": "20261113T0610Z-decena-tragica-national-palace-source-audit.json",
+      "sha256": "d3bb6f6dcd941361c0aac98a9535241b9abb59367130748b76e01f486d9ed934"
+    },
+    {
+      "path": "20261113T0640Z-detached-staging-14-full-record-recovery.json",
+      "sha256": "5aad3643481f32107935763fd0d21c44fd530aa3bd99bceb305c4d2aa4adba55"
+    },
+    {
+      "path": "20261113T0647Z-detached-source-register-4.json",
+      "sha256": "dbf3b10b28835c8ef53274dc826ea96430d8484195ade0d34aa037d77198f326"
+    },
+    {
+      "path": "20261113T0803Z-detached-original-inspections-37.json.gz",
+      "sha256": "fa25a053a6e78761aff6e5df2c042bbd76fdbce24f96e4fc392135f15cfc78a6"
+    },
+    {
+      "path": "20261113T0904Z-hospital-jesus-recovery-and-building-phases.json",
+      "sha256": "2c89342ad99f2a65ab47724ce2b7ab9152b86b07b384a283c07ba6eddb3fba2d"
+    },
+    {
+      "path": "20261113T1004Z-reform-munal-reforma-urban-continuities.json",
+      "sha256": "d4a5a136aa77a053580be275fabbf015b9abba5fc81129bfe8e9f4059962791b"
+    },
+    {
+      "path": "20261113T1058Z-centro-urban-layers-dating-audit.json",
+      "sha256": "761c97123abd4600e09aa50c33b7a8445826e9fdb2ab810c484d45d30b9ce78e"
+    },
+    {
+      "path": "20261113T1200Z-1847-urban-war-and-memorials.json",
+      "sha256": "ca862407cd90160f3c656ee83a8641e3d0430e05d7e3f158b1dd550eeb0724cd"
+    },
+    {
+      "path": "20261113T1302Z-1847-civilian-resistance-and-bibliographic-recovery.json",
+      "sha256": "611da3423234d874cc17e43c53490f0068fec4203c43c3f809601cf669a3e257"
+    },
+    {
+      "path": "20261113T1408Z-1985-housing-policy-and-organizing.json",
+      "sha256": "f6a9337a4168f0bff4ff3d0cb220fc148451c03a7c884cbb4c705aaf241db30a"
+    },
+    {
+      "path": "20261113T1418Z-1985-inah-source-identity-link-repair.json",
+      "sha256": "acb896d7a86e04be69ec36fe4d9a59f925a5a8443b881ba5d3e1fcdf664aa97e"
+    },
+    {
+      "path": "20261113T1510Z-1985-legal-and-neighborhood-reconstruction.json",
+      "sha256": "b00a475bb0dc9da803f50ed7b64ce5b44a7ec4b0c48659cce9ccc975a749b7eb"
+    },
+    {
+      "path": "20261113T1604Z-1985-housing-architectural-outcomes-source-repair.json",
+      "sha256": "fcf7b4cf5cd47840c47a24b2e7cf8d4b059d4942ed2278d1480978116632da38"
+    },
+    {
+      "path": "20261113T1708Z-decena-photo-civilians-three-source-recovery.json",
+      "sha256": "3e29c5533223a7f2a02399512f6c0c0133717f2001de11c7e95253b13776690a"
+    },
+    {
+      "path": "20261113T1803Z-gamio-1914-urban-archaeology-source-audit.json",
+      "sha256": "6ccd366c3e2332c83c98374e0dc89435dcb590911ea1771676fc484fe3c3afa5"
+    },
+    {
+      "path": "20261113T1858Z-1692-archival-voices-and-urban-aftermath.json",
+      "sha256": "c8441f5f231b85a2779cc89045ff09b4bd8430f1d9f9353c1ebe2fd0b6dc0c0c"
+    },
+    {
+      "path": "20261113T2004Z-capital-representation-1928-1999-and-templo-museum.json",
+      "sha256": "78ba3d35cff501a9d99bbd00f7a81b0c714e501edd6f062540823c088aceff4d"
+    },
+    {
+      "path": "20261113T2100Z-1928-municipal-democracy-legal-transitories-and-cabildo.json",
+      "sha256": "5fb1cd4078ba22edb3b85be8a1eddc67bb7a01874fc35dcd2c4adac99f2af3e0"
+    },
+    {
+      "path": "20261113T2204Z-columna-centenario-building-and-public-memory.json",
+      "sha256": "3934fd786f191274168cceb0a8aba6b3d363cd49c2315473a5e238fe2d429d9a"
+    },
+    {
+      "path": "20261113T2304Z-1925-independence-mausoleum-and-2010-identification.json",
+      "sha256": "729c735b0d1d44d3378ca04b78f796b0f91a8165e769a187a92ca2421733c3cf"
+    },
+    {
+      "path": "20261114T0000Z-1847-molino-memorial-and-templo-field-evidence.json",
+      "sha256": "9450ea42fef391e2cb80e8b63577aa263ce81c77efaa46a990264acfc2631881"
+    },
+    {
+      "path": "20261114T0100Z-government-buildings-1970-1987-and-1978-findspot.json",
+      "sha256": "c2bea3b86bdf040cbc54ec3801758ec9c564af0a5c650aed19d01bb5264a7732"
+    },
+    {
+      "path": "20261114T0202Z-water-management-1608-1900-and-viga.json",
+      "sha256": "a3b1571e2f08ea2e622d86784ec792cacaa73f134f0b66d0289989397b94ff66"
+    },
+    {
+      "path": "20261114T0304Z-cu-modernism-buildings-labor-and-images.json",
+      "sha256": "904d1d9672bb55c4efec6575acc7bf1e6c6bde82a7aee14747dc6614f8cd0f0c"
+    },
+    {
+      "path": "20261114T0400Z-metro-1967-1970-pino-suarez-archaeology.json",
+      "sha256": "e7af399f50c9d52880330dd355a244181d5afb4c8830f1499c1436d8d260af53"
+    },
+    {
+      "path": "20261114T0500Z-1867-republic-return-zocalo-archaeology.json",
+      "sha256": "a71cd25ca4e4e69a2da36deb2c4a0ee7e39de9885420b8476d043aa63b1178c4"
+    },
+    {
+      "path": "20261114T0600Z-san-ildefonso-1922-1926-muralism-and-templo-memory.json",
+      "sha256": "c4cd2f82b9944f5379a82aa48290941bd1f8e71f7b498653c7265f7ddcfbcf9f"
+    },
+    {
+      "path": "20261114T0702Z-1824-capital-and-ayuntamiento.json",
+      "sha256": "c6ec07c4bfcdaf8ebaaccf411a60da6997ed49c8cf87e17b8a89c7b719420e47"
+    },
+    {
+      "path": "20261114T0758Z-market-1934-public-education-and-templo-object.json",
+      "sha256": "8b233fee07da92fce0f79b70f7192c68685a29105a935228e21a6890785ed084"
+    },
+    {
+      "path": "20261114T0900Z-1629-flood-hydraulic-government.json",
+      "sha256": "8b8bbcc1cc95be2cb6621d27b857661dd2d79ddf1fcf564bdb54652db09c371b"
+    },
+    {
+      "path": "20261114T1004Z-monumento-revolucion-1897-2010.json",
+      "sha256": "27c41fdf84c822b2cfcb1d786e7009001811bcc2a86ffbe1d2c162ffdfd663f0"
+    },
+    {
+      "path": "20261114T1058Z-1915-hunger-urban-survival.json",
+      "sha256": "e736b840da7caa0bbd763a4e05f87c92a70ea3d7653935ec724303d7e3301bd5"
+    },
+    {
+      "path": "20261114T1158Z-1985-earthquake-citizens-housing-and-memory.json",
+      "sha256": "ba47f7feb063dc8056a64a1fe755c64f44fe9b488da65cd4c32c030e4a80b1c1"
+    },
+    {
+      "path": "20261114T1256Z-1971-halconazo-san-cosme-primary-reports.json",
+      "sha256": "f826d4f0fcbd80779d80e7fdc65b468f88b69306b46c726f598cba13bae8d247"
+    },
+    {
+      "path": "20261114T1400Z-CUPA-housing-institutions-1947-1959.json",
+      "sha256": "09e25eb6816370db4949f8e281cf3e34ad2b8c80395ed5d0896de32cd15dc371"
+    }
+  ],
+  "combined_distinct_candidate_ids": 596,
+  "github_inspection_entries": 298,
+  "detached_inspection_crosswalk": {
+    "incoming_rows": 37,
+    "status_counts": {
+      "same_structured_payload_candidate": 0,
+      "same_source_identity_scope_unverified": 0,
+      "same_doi_candidate": 0,
+      "same_source_url_candidate": 9,
+      "same_title_candidate": 0,
+      "no_existing_candidate_match": 28
+    },
+    "entries": [
+      {
+        "detached_inspection_id": "20261112T2300Z-reforma-historic-centre-bf631-source-01",
+        "source_id": "stg-src-1856-lerdo-edited-transcript",
+        "status": "no_existing_candidate_match",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "20261112T2300Z-reforma-historic-centre-bf631-source-02",
+        "source_id": "stg-src-1856-munguia-opposition",
+        "status": "no_existing_candidate_match",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "20261112T2300Z-reforma-historic-centre-bf631-source-03",
+        "source_id": "stg-src-1859-nationalization-decree",
+        "status": "no_existing_candidate_match",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "20261112T2300Z-reforma-historic-centre-bf631-source-04",
+        "source_id": "stg-src-1865-maximilian-properties",
+        "status": "no_existing_candidate_match",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "20261112T2300Z-reforma-historic-centre-bf631-source-05",
+        "source_id": "stg-src-unam-muco-history",
+        "status": "no_existing_candidate_match",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "20261112T2300Z-reforma-historic-centre-bf631-source-06",
+        "source_id": "stg-src-inah-centro-reforma",
+        "status": "no_existing_candidate_match",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "20261112T2300Z-reforma-historic-centre-bf631-source-07",
+        "source_id": "stg-src-inah-sanfrancisco-catalog",
+        "status": "no_existing_candidate_match",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "20261112T2359Z_REFORMA_LIBERTAD_CULTOS_CROSSWALK-inspection-1860",
+        "source_id": "stg-src-1860-libertad-cultos-edited",
+        "status": "no_existing_candidate_match",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "20261112T2359Z_REFORMA_LIBERTAD_CULTOS_CROSSWALK-inspection-1861",
+        "source_id": "stg-src-1861-secularizacion-hospitales-edited",
+        "status": "no_existing_candidate_match",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-INS-gov",
+        "source_id": "stg-src-cdmx-hospital-jesus-guide",
+        "status": "same_source_url_candidate",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [
+          "stg-src-cdmx-hospital-jesus-guide"
+        ],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-INS-hist",
+        "source_id": "stg-src-lozada-munal-sanandres",
+        "status": "same_source_url_candidate",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [
+          "stg-src-lozada-munal-sanandres"
+        ],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-INS-law",
+        "source_id": "stg-src-unam-1861-compiled-laws",
+        "status": "same_source_url_candidate",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [
+          "stg-src-unam-1861-compiled-laws"
+        ],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "20261113T0055Z-HOSPITAL-BENEFICENCIA-1b6a-INS-thesis",
+        "source_id": "stg-src-leon-garduno-2021-beneficencia",
+        "status": "same_source_url_candidate",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [
+          "stg-src-leon-garduno-2021-beneficencia"
+        ],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "newinspection-stg-src-agn-vallejo-2021",
+        "source_id": "stg-src-agn-vallejo-2021",
+        "status": "no_existing_candidate_match",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "newinspection-stg-src-cnh-manifiesto-1968-dec5",
+        "source_id": "stg-src-cnh-manifiesto-1968-dec5",
+        "status": "no_existing_candidate_match",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "newinspection-stg-src-colmex-manifiesto-d562",
+        "source_id": "stg-src-colmex-manifiesto-d562",
+        "status": "no_existing_candidate_match",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "newinspection-stg-src-ficunam-cnh-comunicados",
+        "source_id": "stg-src-ficunam-cnh-comunicados",
+        "status": "no_existing_candidate_match",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-inspection1-f4aa4637e4",
+        "source_id": "stg-src-unam18-cnh",
+        "status": "no_existing_candidate_match",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-inspection2-e5694ef4c7",
+        "source_id": "stg-src-unam18-zocalo",
+        "status": "no_existing_candidate_match",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-inspection3-77665d025a",
+        "source_id": "stg-src-unam18-sept",
+        "status": "no_existing_candidate_match",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-inspection4-8fa88a089c",
+        "source_id": "stg-src-unam19-autonomy",
+        "status": "no_existing_candidate_match",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-inspection5-af9a4465de",
+        "source_id": "stg-src-unam19-radio",
+        "status": "no_existing_candidate_match",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "stg-20261112T2100Z-auto9-1968-breadth-7e4d-inspection6-1f58bd4aa4",
+        "source_id": "stg-src-unam18-memorial",
+        "status": "no_existing_candidate_match",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "stg-breadth2-inah-cathedral-window1-a3e86de046",
+        "source_id": "stg-breadth2-inah-cathedral-window1",
+        "status": "no_existing_candidate_match",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "stg-breadth2-inah-palace-window1-3751fd4895",
+        "source_id": "stg-breadth2-inah-palace-window1",
+        "status": "no_existing_candidate_match",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "stg-breadth2-inah-palace-window2-cbdf0647fa",
+        "source_id": "stg-breadth2-inah-palace-window2",
+        "status": "no_existing_candidate_match",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "stg-breadth2-inah-palace-window3-5377470a8c",
+        "source_id": "stg-breadth2-inah-palace-window3",
+        "status": "no_existing_candidate_match",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "stg-breadth2-inah-sagrario-401f10f4f8",
+        "source_id": "stg-breadth2-inah-sagrario",
+        "status": "no_existing_candidate_match",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "stg-src-1692-actas-912ac7d6ad",
+        "source_id": "stg-src-1692-actas",
+        "status": "no_existing_candidate_match",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "stg-src-1692-exbalin-8a8f4991d8",
+        "source_id": "stg-src-1692-exbalin",
+        "status": "no_existing_candidate_match",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "stg-src-1692-siguenza-522099ca57",
+        "source_id": "stg-src-1692-siguenza",
+        "status": "no_existing_candidate_match",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "stg-src-cud-petition-1985-e5692250c9",
+        "source_id": "stg-src-cud-petition-1985",
+        "status": "same_source_url_candidate",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [
+          "stg-src-cud-petition-1985"
+        ],
+        "same_doi_candidates": [],
+        "same_title_candidates": [
+          "stg-src-cud-petition-1985"
+        ]
+      },
+      {
+        "detached_inspection_id": "stg-src-gaceta-unam-frias-2019-927bb8826b",
+        "source_id": "stg-src-gaceta-unam-frias-2019",
+        "status": "no_existing_candidate_match",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "stg-src-gonzalez-1985-4a0cb9cfab",
+        "source_id": "stg-src-gonzalez-1985",
+        "status": "same_source_url_candidate",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [
+          "stg-src-gonzalez-1985"
+        ],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "stg-src-massolo-1986-4090273f9f",
+        "source_id": "stg-src-massolo-1986",
+        "status": "same_source_url_candidate",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [
+          "stg-src-massolo-1986"
+        ],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "v69-inah-project-514fdd1fe8",
+        "source_id": "v69-inah-project",
+        "status": "same_source_url_candidate",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [
+          "inspect-STG-INAH-TM-PROJECT-1978"
+        ],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      },
+      {
+        "detached_inspection_id": "v69-inah-templo-ae2691bce9",
+        "source_id": "v69-inah-templo",
+        "status": "same_source_url_candidate",
+        "exact_candidates": [],
+        "same_source_candidates": [],
+        "same_url_candidates": [
+          "inspect-STG-INAH-TM-ZONE-2026"
+        ],
+        "same_doi_candidates": [],
+        "same_title_candidates": []
+      }
+    ],
+    "semantics": "Same source is NOT a duplicate inspection; retain all records pending manual comparison"
+  },
+  "unique_inspection_payload_rows": 298,
+  "inspection_count_semantics": "Metadata/partial scopes as recorded; not verified direct full-source inspections",
+  "candidate_source_identities": 260,
+  "unknown_source_ids": [
+    "PROPOSE_SOURCE_SLOAD_2020_BOTANICAL_DATASET_NOT_IN_CANONICAL"
+  ],
+  "unknown_source_id_count": 1,
+  "embedded_inspection_source_metadata_rows": 78,
+  "unknown_source_refs_with_inspection_metadata": [],
+  "unknown_source_refs_without_inspection_metadata": [
+    "PROPOSE_SOURCE_SLOAD_2020_BOTANICAL_DATASET_NOT_IN_CANONICAL"
+  ],
+  "metadata_only_resolution_policy": "Inspection citation candidates do not equal registered sources or independent corroboration",
+  "conflicts": [
+    {
+      "source_id": "STG-SRC-MANZANILLA-LOPEZ-FRETER-1996",
+      "source_path": "20261112T060230Z-auto09.json",
+      "reason": "cross_batch_source_metadata_collision"
+    },
+    {
+      "source_id": "v95-sload-cave-2020",
+      "source_path": "20261112T080125Z-auto09-te28-2009.json",
+      "reason": "cross_batch_source_metadata_collision"
+    }
+  ],
+  "cross_batch_conflict_count": 2,
+  "changed_input_paths": [],
+  "sqlite_integrity": "ok",
+  "foreign_key_violations": 0,
+  "status": "research_database_staging_only_NOT_CANONICAL",
+  "ready_for_editorial_review": false,
+  "ready_for_publication": false
+}
