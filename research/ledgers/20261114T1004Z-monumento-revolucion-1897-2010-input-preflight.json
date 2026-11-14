@@ -1,0 +1,66 @@
+{
+  "schema_version": 2,
+  "kind": "research_batch_preflight_and_lineage",
+  "generated_at": "2026-11-14T10:06:23.270Z",
+  "branch": "research-persistence",
+  "prior_verified_commit_sha": "7b7db786fc3b11dab68c399c1af7234d39cca604",
+  "prior_manifest_path": "research/handoff/manifest.json",
+  "prior_reconciliation_report_path": "research/reconciled/v4_a956d3b2ded3/replay_report.json",
+  "canonical_version": "V97",
+  "canonical_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "prior_verified_counts": {
+    "batches": 85,
+    "staged_findings": 541,
+    "provisional_sources": 226,
+    "source_inspections": 264,
+    "canonical_sources": 616,
+    "canonical_claims": 422,
+    "canonical_links": 403,
+    "canonical_findings": 68
+  },
+  "new_substantive_findings": 11,
+  "new_source_candidates": 8,
+  "new_inspection_entries": 8,
+  "anticipated_staged_totals": {
+    "batches": 86,
+    "staged_findings": 552,
+    "provisional_sources": 234,
+    "source_inspections": 272
+  },
+  "audit_artifact_path": "research/audits/20261114T1004Z-monumento-revolucion-1897-2010-templo-source-gates.json",
+  "coverage_artifact_path": "research/coverage/20261114T1004Z-monumento-revolucion-1897-2010-readiness.json",
+  "source_batch_path": "research/batches/20261114T1004Z-monumento-revolucion-1897-2010.json",
+  "new_source_id_inventory": [
+    "STG-SRC-20261114-MR-OP",
+    "STG-SRC-20261114-MR-INAH",
+    "STG-SRC-20261114-MR-MNR",
+    "STG-SRC-20261114-MR-UNAM-ED",
+    "STG-SRC-20261114-MR-UNAM-GUZ",
+    "STG-SRC-20261114-MR-UNAM-FERN",
+    "STG-SRC-20261114-MR-UNAM-AFMT",
+    "STG-SRC-20261114-MR-NOTIMEX"
+  ],
+  "new_finding_id_inventory": [
+    "20261114T1004Z-MR-01",
+    "20261114T1004Z-MR-02",
+    "20261114T1004Z-MR-03",
+    "20261114T1004Z-MR-04",
+    "20261114T1004Z-MR-05",
+    "20261114T1004Z-MR-06",
+    "20261114T1004Z-MR-07",
+    "20261114T1004Z-MR-08",
+    "20261114T1004Z-MR-09",
+    "20261114T1004Z-MR-10",
+    "20261114T1004Z-MR-11"
+  ],
+  "unresolved_inherited_source_conflicts": [
+    "STG-SRC-MANZANILLA-LOPEZ-FRETER-1996",
+    "v95-sload-cave-2020",
+    "PROPOSE_SOURCE_SLOAD_2020_BOTANICAL_DATASET_NOT_IN_CANONICAL",
+    "37 original detached inspections; 9 URL overlaps unverified"
+  ],
+  "important_new_discrepancy": "1897 jury result differs between indexed INAH catalog and direct monument operator page; never declare winner or overwrite identity.",
+  "evidence_gate": "archive/source inspection ≠ independently corroborated ≠ publication approved",
+  "publication_approved": false,
+  "ready_for_editorial_review": false
+}
