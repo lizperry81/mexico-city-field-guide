@@ -1,0 +1,139 @@
+{
+  "schema_version": 3,
+  "kind": "period_x_theme_x_geography_explanatory_readiness_delta",
+  "generated_at": "2026-11-14T12:03:01.725Z",
+  "branch": "research-persistence",
+  "source_batch_path": "research/batches/20261114T1158Z-1985-earthquake-citizens-housing-and-memory.json",
+  "evidence_status": "noncanonical_source_located_not_publication_approved",
+  "rating_definitions": {
+    "substantial": "Independent corroboration and primary/specialist page-level evidence, precise geography and visitor/rights verification",
+    "developing": "Specific source locator supports a meaningful explanation, but primary triangulation or field verification remains open",
+    "sparse": "Only abstract, approximate place or uninspected core data; not yet a complete explanation",
+    "missing": "Core location, object provenance, photographic rights or evidence needed for interpretation remains missing"
+  },
+  "cells": [
+    {
+      "period": "September 19, 1985",
+      "theme": "earthquake chronology and differentiated locations",
+      "geography": "Mexico City, central lake-bed districts",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1158Z-1985-01"
+      ],
+      "evidence_gap": "Do not conflate local felt time, reported magnitude scales or later casualty estimates; original instrument record not inspected."
+    },
+    {
+      "period": "September 20, 1985",
+      "theme": "contemporary estimates versus reconstructed tolls",
+      "geography": "Centro Histórico / colonia Juárez / Tlatelolco",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1158Z-1985-02"
+      ],
+      "evidence_gap": "The photographed newspaper is primary evidence of what was reported, not validation of estimates or military orders included in subheads."
+    },
+    {
+      "period": "September–October 1985",
+      "theme": "grassroots rescue, aid and disaster governance",
+      "geography": "Central Mexico City / Nonoalco-Tlatelolco",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1158Z-1985-03"
+      ],
+      "evidence_gap": "Do not reduce response to absolute government absence; timing, degree and geographic distribution need original reports."
+    },
+    {
+      "period": "October 24, 1985",
+      "theme": "formation of Coordinadora Única de Damnificados",
+      "geography": "Unidad Habitacional Nonoalco-Tlatelolco",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1158Z-1985-04"
+      ],
+      "evidence_gap": "Exact attendees and program, organizational continuity, and exact auditorium footprint require full 1986 study and archival records."
+    },
+    {
+      "period": "October 1985–April 1986",
+      "theme": "popular housing decree and rebuilding norms",
+      "geography": "Cuauhtémoc / Venustiano Carranza / Gustavo A. Madero",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1158Z-1985-05"
+      ],
+      "evidence_gap": "The earlier decree itself was not directly read; 1986 rules are primary evidence of the later program, not proof of every implemented outcome."
+    },
+    {
+      "period": "September 19, 1985",
+      "theme": "collapsed Edificio Nuevo León and photographic witness",
+      "geography": "Nonoalco-Tlatelolco",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T1158Z-1985-06"
+      ],
+      "evidence_gap": "Original construction/collapse engineering dossier, precise rebuilding footprint and permission to display photographs remain unverified."
+    },
+    {
+      "period": "October 24, 1985",
+      "theme": "Auditorio 5 de Mayo as forum venue",
+      "geography": "Tlatelolco housing unit",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T1158Z-1985-07"
+      ],
+      "evidence_gap": "Do not plot a modern pin or promise access until address, survival, current use and visiting policy checked."
+    },
+    {
+      "period": "1985–1987",
+      "theme": "Hotel del Prado mural relocation context",
+      "geography": "Avenida Juárez / Alameda Central",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T1158Z-1985-08"
+      ],
+      "evidence_gap": "Chronology of temporary placement, new museum inauguration, conservation intervention and rights of artwork reproduction require dedicated corroboration."
+    },
+    {
+      "period": "September 1985",
+      "theme": "Hotel Regis original site and rescue photography",
+      "geography": "Avenida Juárez, precise historic footprint unverified",
+      "rating": "missing",
+      "finding_ids": [
+        "20261114T1158Z-1985-09"
+      ],
+      "evidence_gap": "Do not infer present-day property boundaries, installation access or photographic reuse rights without the original map and catalog record."
+    },
+    {
+      "period": "September–December 1985",
+      "theme": "women's precarious employment in disaster displacement",
+      "geography": "Mexico City shelters and camps; individual sites unresolved",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T1158Z-1985-10"
+      ],
+      "evidence_gap": "Abstract does not expose sample design or estimates: no quantified relative harm or inferred citywide gender rates approved."
+    },
+    {
+      "period": "1985–1987",
+      "theme": "ground motion, structural collapse and design-code testing",
+      "geography": "Mexico City, site-specific cases unverified",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T1158Z-1985-11"
+      ],
+      "evidence_gap": "Full 1987 structural report, engineering drawings and sediment amplification measurements not examined; no building-specific failure mechanism should be asserted."
+    }
+  ],
+  "summary": {
+    "total": 11,
+    "substantial": 0,
+    "developing": 6,
+    "sparse": 4,
+    "missing": 1,
+    "classification_finding_counts": {
+      "broad_history": 5,
+      "poi_ready_candidate": 4,
+      "specialist_technical": 2
+    }
+  },
+  "publication_approved": false
+}

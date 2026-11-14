@@ -1,0 +1,448 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261114T1158Z-1985-earthquake-citizens-housing-and-memory",
+  "generated_at": "2026-11-14T12:03:01.725Z",
+  "branch": "research-persistence",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "storage_role": "immutable_noncanonical_research_batch",
+  "previous_verified_replay": "research/reconciled/v4_fcc9a9bc76e9/replay_report.json",
+  "prior_verified_counts": {
+    "github_batches_replayed": 87,
+    "staged_findings": 563,
+    "source_candidates": 241,
+    "inspection_entries": 279,
+    "canonical_sources": 616,
+    "canonical_claims": 422,
+    "canonical_links": 403,
+    "canonical_findings": 68
+  },
+  "research_scope": "11 source-located provisional historical candidates on September 1985 earthquake: five broad history, four place-oriented, two specialist technical/social history. Eight inspected sources including contemporary front page screenshot and official 1986 decree text; publication approval withheld.",
+  "sources": [
+    {
+      "id": "STG-SRC-20261114-85-PAPER",
+      "title": "El Universal, 20 September 1985 front page (issue 24,876)",
+      "authors": "El Universal staff",
+      "publication": "Contemporary newspaper, 20 Sept 1985",
+      "url": "https://www.files.cenapred.unam.mx/es/BibliotecaVirtual/1985/1985-09-20-C6/MYSCAN_20071214_0001.pdf",
+      "access_scope": "Scanned page 1, masthead, main headline and photo caption inspected with image; OCR in page 1 unreliable",
+      "status": "primary_contemporary_newspaper_page_1_examined_provisional_reports_not_outcome_statistics"
+    },
+    {
+      "id": "STG-SRC-20261114-85-MASSOLO",
+      "title": "¡Que el gobierno entienda, lo primero es la vivienda!: La organización de los damnificados",
+      "authors": "Alejandra Massolo",
+      "publication": "Revista Mexicana de Sociología 48(2), 1986, pp.195–238",
+      "url": "https://revistamexicanadesociologia.unam.mx/index.php/rms/article/view/61585",
+      "access_scope": "Publisher abstract, lines 22–50; full article not read",
+      "status": "1986_scholarly_article_abstract_only"
+    },
+    {
+      "id": "STG-SRC-20261114-85-BARBIERI",
+      "title": "Las damnificadas y el empleo",
+      "authors": "M. Teresita de Barbieri and Carlota Guzmán",
+      "publication": "Revista Mexicana de Sociología 48(2), 1986, pp.59–101",
+      "url": "https://revistamexicanadesociologia.unam.mx/index.php/rms/article/view/61582",
+      "access_scope": "Publisher abstract, lines 22–51; no Encuesta de Damnificados microdata examined",
+      "status": "1986_scholarly_article_abstract_only"
+    },
+    {
+      "id": "STG-SRC-20261114-85-MARVAN",
+      "title": "El movimiento de damnificados de Tlatelolco (septiembre de 1985-marzo de 1986)",
+      "authors": "Ignacio Marván L. and J. Aurelio Cuevas",
+      "publication": "Revista Mexicana de Sociología 49(4), 1987, pp.111–140; web upload record labels 2024",
+      "url": "https://revistamexicanadesociologia.unam.mx/index.php/rms/article/view/61397",
+      "access_scope": "Publisher abstract/metadata lines 22–60; original issue 1987; online metadata shows 2024 deposit date; full article not read",
+      "status": "metadata_only_original_issue_1987_online_deposit_2024_conflict"
+    },
+    {
+      "id": "STG-SRC-20261114-85-DOF86",
+      "title": "Acuerdo que establece las normas de construcción y uso del suelo para Renovación Habitacional Popular del D.F.",
+      "authors": "Departamento del Distrito Federal / Ramón Aguirre Velázquez",
+      "publication": "Diario Oficial de la Federación, 22 April 1986",
+      "url": "https://sidof.segob.gob.mx/notas/4791760",
+      "access_scope": "Original official decree transcribed online, preamble and PRIMERO; cites 12 October 1985 presidential decree, DOF publication 14 October; facsimile not checked",
+      "status": "government_primary_document_html_1986_digital_transcription_not_facsimile"
+    },
+    {
+      "id": "STG-SRC-20261114-85-NIST",
+      "title": "Engineering Aspects of the September 19, 1985 Mexico Earthquake (NBS BSS 165)",
+      "authors": "W. Stone, F. Yokel, M. Celebi, T. Hanks and E. Leyendecker",
+      "publication": "US National Bureau of Standards/NIST, 1987, DOI 10.6028/NBS.BSS.165",
+      "url": "https://www.nist.gov/publications/engineering-aspects-september-19-1985-mexico-earthquake-nbs-bss-165",
+      "access_scope": "NIST publication catalog and abstract, 29 May 1987; engineering tables and failure-case descriptions not inspected",
+      "status": "government_technical_report_abstract_only"
+    },
+    {
+      "id": "STG-SRC-20261114-85-UNAMVIS",
+      "title": "Terremotos: recuerdos rotos",
+      "authors": "Instituto de Investigaciones Estéticas, UNAM",
+      "publication": "UNAM photographic online exhibition, undated public catalog",
+      "url": "https://www.esteticas.unam.mx/exposiciones/terremotos/introduccion.html",
+      "access_scope": "Direct online exhibition and caption numbers 01–04, 33–35; photographer attribution; no original photographic negatives or licenses checked",
+      "status": "institutional_image_catalogue_captions_not_image_license"
+    },
+    {
+      "id": "STG-SRC-20261114-85-M68",
+      "title": "Boletín M68-N°74 Magnitud 8.1",
+      "authors": "Centro Cultural Universitario Tlatelolco, UNAM",
+      "publication": "Boletín M68, 24 September 2022",
+      "url": "https://tlatelolco.unam.mx/boletin-m68-n74/",
+      "access_scope": "Direct article lines 9–25, Marco Antonio Cruz photographs and archive credits; editorial synthesis not primary earthquake documentation",
+      "status": "institutional_exhibition_summary_with_photo_credits"
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "20261114T1158Z-1985-INS-01",
+      "source_id": "STG-SRC-20261114-85-PAPER",
+      "locator": "Scanned page 1, masthead, main headline and photo caption inspected with image; OCR in page 1 unreliable",
+      "access": "primary_contemporary_newspaper_page_1_examined_provisional_reports_not_outcome_statistics",
+      "primary_original_examined": true,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": true,
+      "notes": "Contemporaneous preliminary figures are reporting as of Sept 20, not final statistics; physically saw the scanned first page"
+    },
+    {
+      "id": "20261114T1158Z-1985-INS-02",
+      "source_id": "STG-SRC-20261114-85-MASSOLO",
+      "locator": "Publisher abstract, lines 22–50; full article not read",
+      "access": "1986_scholarly_article_abstract_only",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "No independent claim-level corroboration or publisher rights clearance inferred from access"
+    },
+    {
+      "id": "20261114T1158Z-1985-INS-03",
+      "source_id": "STG-SRC-20261114-85-BARBIERI",
+      "locator": "Publisher abstract, lines 22–51; no Encuesta de Damnificados microdata examined",
+      "access": "1986_scholarly_article_abstract_only",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "No independent claim-level corroboration or publisher rights clearance inferred from access"
+    },
+    {
+      "id": "20261114T1158Z-1985-INS-04",
+      "source_id": "STG-SRC-20261114-85-MARVAN",
+      "locator": "Publisher abstract/metadata lines 22–60; original issue 1987; online metadata shows 2024 deposit date; full article not read",
+      "access": "metadata_only_original_issue_1987_online_deposit_2024_conflict",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Original journal issue is 1987 although website record says Dec 2024; do not misdate original article"
+    },
+    {
+      "id": "20261114T1158Z-1985-INS-05",
+      "source_id": "STG-SRC-20261114-85-DOF86",
+      "locator": "Original official decree transcribed online, preamble and PRIMERO; cites 12 October 1985 presidential decree, DOF publication 14 October; facsimile not checked",
+      "access": "government_primary_document_html_1986_digital_transcription_not_facsimile",
+      "primary_original_examined": true,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "No independent claim-level corroboration or publisher rights clearance inferred from access"
+    },
+    {
+      "id": "20261114T1158Z-1985-INS-06",
+      "source_id": "STG-SRC-20261114-85-NIST",
+      "locator": "NIST publication catalog and abstract, 29 May 1987; engineering tables and failure-case descriptions not inspected",
+      "access": "government_technical_report_abstract_only",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "No independent claim-level corroboration or publisher rights clearance inferred from access"
+    },
+    {
+      "id": "20261114T1158Z-1985-INS-07",
+      "source_id": "STG-SRC-20261114-85-UNAMVIS",
+      "locator": "Direct online exhibition and caption numbers 01–04, 33–35; photographer attribution; no original photographic negatives or licenses checked",
+      "access": "institutional_image_catalogue_captions_not_image_license",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "Captions and photographers recorded; historical photos cannot be reused in the app without rights clearance"
+    },
+    {
+      "id": "20261114T1158Z-1985-INS-08",
+      "source_id": "STG-SRC-20261114-85-M68",
+      "locator": "Direct article lines 9–25, Marco Antonio Cruz photographs and archive credits; editorial synthesis not primary earthquake documentation",
+      "access": "institutional_exhibition_summary_with_photo_credits",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "No independent claim-level corroboration or publisher rights clearance inferred from access"
+    }
+  ],
+  "findings": [
+    {
+      "id": "20261114T1158Z-1985-01",
+      "classification": "broad_history",
+      "assertion": "The September 19 earthquake devastated multiple central neighborhoods; the event must be distinguished from its September 20 aftershock and not dated by later commemorations.",
+      "date_or_range": "September 19, 1985",
+      "period": "Earthquake, city response and environmental history",
+      "themes": [
+        "earthquake chronology and differentiated locations"
+      ],
+      "geographies": [
+        "Mexico City, central lake-bed districts"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-85-PAPER",
+        "STG-SRC-20261114-85-NIST"
+      ],
+      "source_locator": "El Universal 20 Sep 1985 scanned p.1 masthead/headline; NIST 1987 abstract",
+      "limitations": "Do not conflate local felt time, reported magnitude scales or later casualty estimates; original instrument record not inspected.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1158Z-1985-02",
+      "classification": "broad_history",
+      "assertion": "The day-after front page printed provisional claims of more than 3,000 deaths and 50,000 displaced families; these numbers document contemporaneous uncertainty, not verified final totals.",
+      "date_or_range": "September 20, 1985",
+      "period": "Disaster reporting and evidence integrity",
+      "themes": [
+        "contemporary estimates versus reconstructed tolls"
+      ],
+      "geographies": [
+        "Centro Histórico / colonia Juárez / Tlatelolco"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-85-PAPER"
+      ],
+      "source_locator": "El Universal Friday 20 Sep 1985 scanned p.1 headline and subheads",
+      "limitations": "The photographed newspaper is primary evidence of what was reported, not validation of estimates or military orders included in subheads.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1158Z-1985-03",
+      "classification": "broad_history",
+      "assertion": "Accounts from UNAM and contemporaneous sociological research distinguish volunteer rescue during the immediate emergency from later organized housing claims.",
+      "date_or_range": "September–October 1985",
+      "period": "Neighborhood solidarity and civic action",
+      "themes": [
+        "grassroots rescue, aid and disaster governance"
+      ],
+      "geographies": [
+        "Central Mexico City / Nonoalco-Tlatelolco"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-85-M68",
+        "STG-SRC-20261114-85-MASSOLO"
+      ],
+      "source_locator": "UNAM CCUT M68 2022 lines 13–25; Massolo 1986 publisher abstract",
+      "limitations": "Do not reduce response to absolute government absence; timing, degree and geographic distribution need original reports.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1158Z-1985-04",
+      "classification": "broad_history",
+      "assertion": "Massolo identifies the First Forum of Disaster Victims at Tlatelolco's Auditorio 5 de Mayo on 24 October 1985 as the founding moment of the Coordinadora Única de Damnificados.",
+      "date_or_range": "October 24, 1985",
+      "period": "Post-disaster housing mobilization",
+      "themes": [
+        "formation of Coordinadora Única de Damnificados"
+      ],
+      "geographies": [
+        "Unidad Habitacional Nonoalco-Tlatelolco"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-85-MASSOLO",
+        "STG-SRC-20261114-85-MARVAN"
+      ],
+      "source_locator": "Massolo 1986 abstract explicitly dates First Foro de Damnificados to Oct 24 in auditorio 5 de Mayo; Marván/Cuevas journal metadata only",
+      "limitations": "Exact attendees and program, organizational continuity, and exact auditorium footprint require full 1986 study and archival records.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1158Z-1985-05",
+      "classification": "broad_history",
+      "assertion": "An April 1986 federal publication explicitly ties rebuilding standards in three D.F. delegations to the 12 October 1985 Renovación Habitacional Popular initiative (published 14 October) and discusses neighborhood continuity and housing rights.",
+      "date_or_range": "October 1985–April 1986",
+      "period": "Housing reconstruction legislation and land tenure",
+      "themes": [
+        "popular housing decree and rebuilding norms"
+      ],
+      "geographies": [
+        "Cuauhtémoc / Venustiano Carranza / Gustavo A. Madero"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-85-DOF86",
+        "STG-SRC-20261114-85-MASSOLO"
+      ],
+      "source_locator": "DOF 22 Apr 1986, preamble and Article PRIMERO; October 1985 predecessor decree referenced",
+      "limitations": "The earlier decree itself was not directly read; 1986 rules are primary evidence of the later program, not proof of every implemented outcome.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1158Z-1985-06",
+      "classification": "poi_ready_candidate",
+      "assertion": "A September 20 contemporary front page labels the Nuevo León collapse in Tlatelolco; UNAM catalogs independent photographs credited to Enrique Bordes Mangel and Marco Antonio Cruz.",
+      "date_or_range": "September 19, 1985",
+      "period": "Modernist housing and its failures",
+      "themes": [
+        "collapsed Edificio Nuevo León and photographic witness"
+      ],
+      "geographies": [
+        "Nonoalco-Tlatelolco"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-85-PAPER",
+        "STG-SRC-20261114-85-UNAMVIS",
+        "STG-SRC-20261114-85-M68"
+      ],
+      "source_locator": "20 Sep 1985 El Universal scanned p.1 photo caption Nuevo León; UNAM IIE exhibition catalog caption 33; UNAM M68 image credit",
+      "limitations": "Original construction/collapse engineering dossier, precise rebuilding footprint and permission to display photographs remain unverified.",
+      "learning_mode": "future_on_site_with_validation",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1158Z-1985-07",
+      "classification": "poi_ready_candidate",
+      "assertion": "The housing movement has an identifiable gathering place—the Auditorio 5 de Mayo—rather than being only a general story of anonymous volunteers.",
+      "date_or_range": "October 24, 1985",
+      "period": "Community organizing in the housing complex",
+      "themes": [
+        "Auditorio 5 de Mayo as forum venue"
+      ],
+      "geographies": [
+        "Tlatelolco housing unit"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-85-MASSOLO",
+        "STG-SRC-20261114-85-MARVAN"
+      ],
+      "source_locator": "Massolo 1986 publisher abstract, lines 38–42",
+      "limitations": "Do not plot a modern pin or promise access until address, survival, current use and visiting policy checked.",
+      "learning_mode": "future_on_site_with_validation",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1158Z-1985-08",
+      "classification": "poi_ready_candidate",
+      "assertion": "UNAM's photographic exhibit describes the post-earthquake removal of Diego Rivera's Sueño de una tarde dominical en la Alameda Central from the Hotel del Prado context, with subsequent Museo Mural Diego Rivera construction.",
+      "date_or_range": "1985–1987",
+      "period": "Public art threatened and relocated",
+      "themes": [
+        "Hotel del Prado mural relocation context"
+      ],
+      "geographies": [
+        "Avenida Juárez / Alameda Central"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-85-UNAMVIS"
+      ],
+      "source_locator": "UNAM IIE photo exhibition captions 01–03",
+      "limitations": "Chronology of temporary placement, new museum inauguration, conservation intervention and rights of artwork reproduction require dedicated corroboration.",
+      "learning_mode": "future_on_site_with_validation",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1158Z-1985-09",
+      "classification": "poi_ready_candidate",
+      "assertion": "Hotel Regis appears in contemporaneous earthquake reporting and in a UNAM archival photograph credited to Enrique Bordes Mangel, a promising then/now pairing.",
+      "date_or_range": "September 1985",
+      "period": "Hotel collapse and historical photographic witness",
+      "themes": [
+        "Hotel Regis original site and rescue photography"
+      ],
+      "geographies": [
+        "Avenida Juárez, precise historic footprint unverified"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-85-PAPER",
+        "STG-SRC-20261114-85-UNAMVIS"
+      ],
+      "source_locator": "El Universal 20 Sep 1985 scanned p.1 subhead Hotel Regis; UNAM IIE opening caption Los últimos momentos del Hotel Regis",
+      "limitations": "Do not infer present-day property boundaries, installation access or photographic reuse rights without the original map and catalog record.",
+      "learning_mode": "future_on_site_with_validation",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1158Z-1985-10",
+      "classification": "specialist_technical",
+      "assertion": "A 1986 sociological article studies women's employment among persons reached by IIS-UNAM's Encuesta de Damnificados and highlights women heads of household and garment workers.",
+      "date_or_range": "September–December 1985",
+      "period": "Survey-based social history and unequal impacts",
+      "themes": [
+        "women's precarious employment in disaster displacement"
+      ],
+      "geographies": [
+        "Mexico City shelters and camps; individual sites unresolved"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-85-BARBIERI",
+        "STG-SRC-20261114-85-MASSOLO"
+      ],
+      "source_locator": "de Barbieri/Guzmán 1986 journal abstract pp.59–101, publisher lines 40–51",
+      "limitations": "Abstract does not expose sample design or estimates: no quantified relative harm or inferred citywide gender rates approved.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T1158Z-1985-11",
+      "classification": "specialist_technical",
+      "assertion": "NBS/USGS dispatched engineers and a seismologist to document ground shaking, design provisions and observed building/foundation failures, offering technical evidence separate from social-memory accounts.",
+      "date_or_range": "1985–1987",
+      "period": "Seismic engineering and built-environment vulnerability",
+      "themes": [
+        "ground motion, structural collapse and design-code testing"
+      ],
+      "geographies": [
+        "Mexico City, site-specific cases unverified"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-85-NIST",
+        "STG-SRC-20261114-85-PAPER"
+      ],
+      "source_locator": "NIST NBS BSS165 1987 publication abstract; original El Universal photo page 1",
+      "limitations": "Full 1987 structural report, engineering drawings and sediment amplification measurements not examined; no building-specific failure mechanism should be asserted.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    }
+  ],
+  "chapter_audit_paths": [
+    "research/audits/20261114T1158Z-1985-earthquake-citizens-housing-and-memory-templo-discover-evidence-gates.json"
+  ],
+  "coverage_artifact_paths": [
+    "research/coverage/20261114T1158Z-1985-earthquake-citizens-housing-and-memory-readiness.json"
+  ],
+  "all_records_preserved": true,
+  "canonical_promoted": false,
+  "ready_for_editorial_review": false,
+  "publication_approved": false
+}

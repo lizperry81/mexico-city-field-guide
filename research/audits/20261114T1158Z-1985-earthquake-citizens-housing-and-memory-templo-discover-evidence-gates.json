@@ -1,0 +1,136 @@
+{
+  "schema_version": 3,
+  "kind": "chapter_level_claim_to_source_locator_audit",
+  "generated_at": "2026-11-14T12:03:01.725Z",
+  "branch": "research-persistence",
+  "target_branch_read_only": "main",
+  "target_path": "poi/templo-mayor/reader.html",
+  "reader_re_read_this_run": true,
+  "reader_blob_sha_verified": "e18b0b6af33e61c1831990d84a7e5effbf13805b",
+  "source_batch_path": "research/batches/20261114T1158Z-1985-earthquake-citizens-housing-and-memory.json",
+  "gates": [
+    {
+      "topic": "Triple Alliance circa 1428",
+      "reader_anchor": "In the late 1420s",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "url": "https://www.metmuseum.org/essays/tenochtitlan",
+          "locator": "Prior narrative overview, not reexamined this run"
+        }
+      ],
+      "uncertainty": "1427/1428/1430 chronological traditions not collated",
+      "historical_addition": "Add an event-by-event dated source comparison for defeat of Azcapotzalco versus later tribute consolidation.",
+      "placement": "advance_history_and_field_as_applicable"
+    },
+    {
+      "topic": "Stage II and IVb construction sequence",
+      "reader_anchor": "The oldest excavated phase that visitors can identify is called Stage II",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "url": "https://inah.gob.mx/boletines/el-inah-inicio-la-renovacion-de-la-techumbre-en-la-etapa-ii-de-la-zona-arqueologica-del-templo-mayor",
+          "locator": "INAH preservation article describes Stage II 1376–1427, capillas/estucos; not original dig plan"
+        }
+      ],
+      "uncertainty": "No stratigraphic drawings/reconstruction permit assigning all visible fabric to one moment",
+      "historical_addition": "Clarify Stage II versus later IVb platform and label which field remains are accessible after conservation.",
+      "placement": "advance_history_and_field_as_applicable"
+    },
+    {
+      "topic": "Coatepec, Coyolxauhqui, IVb display replica",
+      "reader_anchor": "At the foot of the south stair of that platform lay a stone disk",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "url": "https://lugares.inah.gob.mx/es/pagina-de-elemento/1259",
+          "locator": "INAH field description states IVb Huitzilopochtli-side display is copy"
+        }
+      ],
+      "uncertainty": "Mythic identification, original findspot, copy/current display must not be treated as one artifact",
+      "historical_addition": "Introduce separate image labels: original monolith found 1978, outdoor replica at IVb, mythic Coatepec interpretation.",
+      "placement": "advance_history_and_field_as_applicable"
+    },
+    {
+      "topic": "Conquest and Tóxcatl 1520, siege 1521",
+      "reader_anchor": "In May 1520, while Cortés was away",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "url": "https://www.loc.gov/exhibits/exploring-the-early-americas/interactives/florentine-codex/",
+          "locator": "Earlier evidence gate; not re-examined today"
+        }
+      ],
+      "uncertainty": "Nahuatl Book XII and Spanish-source testimony comparison missing",
+      "historical_addition": "Differentiate 1520 festival killings from 1521 siege and explicitly attribute contrasting accounts.",
+      "placement": "advance_history_and_field_as_applicable"
+    },
+    {
+      "topic": "Gamio excavation and publication chronology",
+      "reader_anchor": "In 1913, archaeologist Manuel Gamio uncovered",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T1058Z-1915-hunger-urban-survival-templo-discover-evidence-gates.json",
+          "locator": "Inherited unresolved 1913/1914 chronology"
+        }
+      ],
+      "uncertainty": "Original Gamio field and publication records not inspected",
+      "historical_addition": "Do not settle excavation date based on publication year without original dossier.",
+      "placement": "advance_history_and_field_as_applicable"
+    },
+    {
+      "topic": "February 21 1978 discovery and rescue",
+      "reader_anchor": "In February 1978, electrical workers digging near República de Argentina",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "url": "https://www.templomayor.inah.gob.mx/historia/proyecto-templo-mayor",
+          "locator": "INAH project history explicitly dates discovery 21 Feb 1978 and identifies Compañía de Luz y Fuerza workers and INAH Salvamento Arqueológico"
+        }
+      ],
+      "uncertainty": "Names, firsthand order of arrival and original rescue worksheets not inspected",
+      "historical_addition": "Improve precision: Feb 21 discovery, subsequent archaeological rescue, separate multi-season PTM excavation and museum chronology.",
+      "placement": "advance_history_and_field_as_applicable"
+    },
+    {
+      "topic": "Distinct modern urban disaster research",
+      "reader_anchor": "When the Mexica enlarged their main temple",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "path": "research/batches/20261114T1158Z-1985-earthquake-citizens-housing-and-memory.json",
+          "locator": "New 1985 newspaper/sociology/architectural evidence, unrelated to Mexica construction"
+        }
+      ],
+      "uncertainty": "Avoid historical analogy being misrepresented as archaeological corroboration",
+      "historical_addition": "Make earthquake and Tlatelolco resilience separate twentieth-century chapters; cross-link only as city-layer history.",
+      "placement": "separate_chapter_crosslink"
+    },
+    {
+      "topic": "Images and field route rights",
+      "reader_anchor": "See a photograph of the 1978 excavation",
+      "status": "source_gate_open_not_editorially_approved",
+      "source_locators": [
+        {
+          "url": "https://www.inah.gob.mx/boletines/con-teatro-y-talleres-festejaran-el-aniversario-del-hallazgo-del-monolito-de-la-diosa-coyolxauhqui",
+          "locator": "INAH 2024 press gallery identifies Raúl Arana's 1978 photograph; no reuse license examined"
+        }
+      ],
+      "uncertainty": "Public gallery display does not establish right to rehost; route/hours currently unverified",
+      "historical_addition": "Create rights-review record for original 1978 rescue photographs; keep photo toggle disabled until permission.",
+      "placement": "advance_history_and_field_as_applicable"
+    }
+  ],
+  "no_publication_of_unverified_claims": true,
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "blockers": [
+    "Primary 1428 and conquest testimony collation still missing",
+    "Stage II/IVb excavation drawings not inspected",
+    "First-person 1978 salvage documents and rescue logs not examined",
+    "Gamio 1913/14 direct field record missing",
+    "Historical photography reuse rights remain uncleared"
+  ],
+  "conclusion": "1985 is a distinct twentieth-century research chapter, not proof of a Mexica-era claim; newly inspected INAH sources add specific Feb 21 1978 and IVb replica locators without closing open evidence gates."
+}
