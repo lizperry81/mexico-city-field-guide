@@ -136,6 +136,75 @@ for unsafe_workflow in (".github/workflows/pages.yml",
     else:
         raise AssertionError("Non-research path accepted: " + unsafe_workflow)
 
+# New source/replay-separated producer format remains unapproved even when
+# its source and snapshot identifiers agree with the handoff manifest.
+readback_manifest = {
+    "schema_version": 4, "research_commit_sha": "b"*40,
+    "verified_replay_commit_sha": "c"*40,
+    "canonical_version": "V97", "canonical_hash": "d"*64,
+    "canonical_status": "unchanged_provisional_V97_not_promoted",
+    "canonical_promoted": False, "ready_for_editorial_review": False,
+    "ready_for_publication": False,
+    "versioned_research_sha256": "e"*64, "compressed_sha256": "f"*64,
+    "versioned_research_sqlite_gz_path": "research/reconciled/test/research_only.sqlite.gz",
+    "replay_report_path": "research/reconciled/test/replay_report.json",
+    "evidence_status": {"publication_approved": False,
+                        "independently_corroborated_new_findings": 0},
+    "staged_counts": {"github_batches_replayed": 79,
+                      "github_distinct_substantive_finding_ids": 475,
+                      "github_source_candidates": 176,
+                      "github_inspection_entries": 214},
+    "chapter_audit_artifact_paths": ["research/audits/cu.json"],
+    "coverage_artifact_paths": ["research/coverage/cu.json"],
+    "research_batch_artifact_paths": ["research/batches/cu.json"],
+    "reconciliation_artifact_paths": ["research/ledgers/readback.json"]
+}
+readback_history = {
+    "schema_version": 4, "kind": "append_only_research_to_app_verified_handoff",
+    "branch": "research-persistence",
+    "source_research_commit_sha": "b"*40, "verified_replay_commit_sha": "c"*40,
+    "canonical_version": "V97", "canonical_hash": "d"*64,
+    "canonical_status": "unchanged_provisional",
+    "versioned_research_sha256": "e"*64, "compressed_sha256": "f"*64,
+    "versioned_research_sqlite_gz_path": "research/reconciled/test/research_only.sqlite.gz",
+    "verified_replay_report_path": "research/reconciled/test/replay_report.json",
+    "evidence_status": readback_manifest["evidence_status"],
+    "ready_for_editorial_review": False, "ready_for_publication": False,
+    "no_automatic_merge": True,
+    "staged_counts": {"batches": 79, "findings": 475,
+                      "source_candidates": 176, "source_inspections": 214},
+    "chapter_audit_artifact_paths": ["research/audits/cu.json"],
+    "coverage_artifact_paths": ["research/coverage/cu.json"],
+    "research_batch_artifact_paths": ["research/batches/cu.json"],
+    "verification_ledger_path": "research/ledgers/readback.json"
+}
+validate_versioned_handoff(readback_manifest, readback_history, "a"*40)
+for key, value in [("source_research_commit_sha", "z"*40),
+                   ("no_automatic_merge", False),
+                   ("ready_for_publication", True)]:
+    altered = copy.deepcopy(readback_history)
+    altered[key] = value
+    try:
+        validate_versioned_handoff(readback_manifest, altered, "a"*40)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("Unsafe immutable readback allowed: " + key)
+cu_audit = {
+    "kind": "chapter_level_claim_to_source_locator_audit",
+    "branch": "research-persistence", "target_branch_read_only": "main",
+    "target_path": "poi/templo-mayor/reader.html",
+    "reader_blob_sha": "a"*40, "reader_re_read_this_run": True,
+    "no_publication_of_unverified_claims": True,
+    "publication_approved": False, "ready_for_editorial_review": False,
+    "gates": [{"topic": "CU murals as later interpretation",
+               "reader_anchor": "In the late 1420s", "status": "unapproved",
+               "uncertainty": "Not a primary Mexica source",
+               "source_locators": [{"path": "research/batches/cu.json", "locator": "CU-08"}]}]
+}
+cu_items = parse_new_audit("research/audits/cu.json", cu_audit, "a"*40)
+assert len(cu_items) == 1 and cu_items[0]["publication_authorization"] is False
+assert cu_items[0]["reader_audit_matches_main_blob"] is True
 # The 69-batch handoff is a different v4 schema. Its pinned immutable
 # history can be accepted for PRIVATE review only when every source delta,
 # replay identity and unpublished evidence restriction matches.

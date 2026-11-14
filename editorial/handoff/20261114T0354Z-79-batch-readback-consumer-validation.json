@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "kind": "consumer_readback_compatibility",
+  "recorded_at_utc": "2026-11-14T03:54:00Z",
+  "research_input_sha": "808223390a5e4bdd67dd13a389524ecb51060bca",
+  "research_branch_head_sha": "509c20631fc21a68f0971733011905186921bd55",
+  "referenced_paths_checked": 165,
+  "referenced_paths_found": 165,
+  "staged_batches": 79,
+  "provisional_findings": 475,
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "summary": "Enable private ingestion of appendix-style 79-batch readback only after immutable source SHA, ledger, exact compressed/replay Git blobs, and unapproved evidence flags agree. Preserve all historical reader text; no staged research promoted."
+}

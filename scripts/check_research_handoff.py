@@ -62,7 +62,8 @@ def verified_index_only_total(declared, replay_total, te28_reclassified, snapsho
             or type(te28_reclassified) is not int or te28_reclassified < 0):
         return False
     if snapshot_kind in ("research_to_app_handoff", "immutable_research_batch_handoff",
-                         "research_to_app_handoff_immutable_snapshot"):
+                         "research_to_app_handoff_immutable_snapshot",
+                         "append_only_research_to_app_verified_handoff"):
         return declared == replay_total
     return declared == replay_total + te28_reclassified
 
@@ -76,6 +77,52 @@ def validate_versioned_handoff(manifest, immutable_manifest, snapshot_sha):
     evidence counts, source manifests, and immutable artifacts.
     """
     version = manifest.get("schema_version")
+    if version == 4 and immutable_manifest.get("kind") == "append_only_research_to_app_verified_handoff":
+        # The producer separates the input research SHA from a later verified
+        # replay commit. Both must match the immutable history and the pointer.
+        field_pairs = (
+            ("source_research_commit_sha", "research_commit_sha"),
+            ("verified_replay_commit_sha", "verified_replay_commit_sha"),
+            ("canonical_version", "canonical_version"),
+            ("canonical_hash", "canonical_hash"),
+            ("versioned_research_sqlite_gz_path", "versioned_research_sqlite_gz_path"),
+            ("versioned_research_sha256", "versioned_research_sha256"),
+            ("compressed_sha256", "compressed_sha256"),
+            ("verified_replay_report_path", "replay_report_path"),
+            ("evidence_status", "evidence_status"),
+        )
+        for old_key, new_key in field_pairs:
+            if immutable_manifest.get(old_key) != manifest.get(new_key):
+                raise ValueError("Immutable readback research identity changed: " + old_key)
+        if (immutable_manifest.get("schema_version") != 4
+                or immutable_manifest.get("branch") != "research-persistence"
+                or immutable_manifest.get("canonical_status") != "unchanged_provisional"
+                or manifest.get("canonical_status") != "unchanged_provisional_V97_not_promoted"
+                or immutable_manifest.get("ready_for_editorial_review") is not False
+                or immutable_manifest.get("ready_for_publication") is not False
+                or immutable_manifest.get("no_automatic_merge") is not True
+                or manifest.get("canonical_promoted") is not False
+                or manifest.get("ready_for_editorial_review") is not False
+                or manifest.get("ready_for_publication") is not False
+                or manifest.get("evidence_status", {}).get("publication_approved") is not False
+                or manifest.get("evidence_status", {}).get("independently_corroborated_new_findings") != 0):
+            raise ValueError("Immutable readback handoff cannot approve publication")
+        for old_key, new_key in (
+                ("batches", "github_batches_replayed"),
+                ("findings", "github_distinct_substantive_finding_ids"),
+                ("source_candidates", "github_source_candidates"),
+                ("source_inspections", "github_inspection_entries")):
+            if (immutable_manifest.get("staged_counts", {}).get(old_key) !=
+                    manifest.get("staged_counts", {}).get(new_key)):
+                raise ValueError("Immutable readback staged count drift: " + old_key)
+        for group in ("chapter_audit_artifact_paths", "coverage_artifact_paths",
+                      "research_batch_artifact_paths"):
+            subset = immutable_manifest.get(group)
+            if not isinstance(subset, list) or not subset or not set(subset).issubset(set(manifest.get(group, []))):
+                raise ValueError("Immutable readback artifact path drift: " + group)
+        if immutable_manifest.get("verification_ledger_path") not in manifest.get("reconciliation_artifact_paths", []):
+            raise ValueError("Immutable readback ledger not pinned in the manifest")
+        return
     if version == 2:
         if immutable_manifest != manifest:
             raise ValueError("Versioned v2 handoff differs from current manifest")
@@ -610,7 +657,10 @@ def validate():
     immutable = safe_path(manifest.get("immutable_handoff_path"))
     snapshot_blob_sha = git("rev-parse", f"{handoff_commit}:{immutable}").decode().strip()
     immutable_manifest = json.loads(bound_blob(immutable).decode("utf-8"))
-    if immutable_manifest.get("research_commit_sha") != sha:
+    source_sha = (immutable_manifest.get("source_research_commit_sha")
+                  if immutable_manifest.get("kind") == "append_only_research_to_app_verified_handoff"
+                  else immutable_manifest.get("research_commit_sha"))
+    if source_sha != sha:
         raise ValueError("Versioned handoff snapshot points to a different research commit")
     validate_versioned_handoff(manifest, immutable_manifest, snapshot_blob_sha)
     if (manifest["schema_version"] == 4
@@ -625,6 +675,33 @@ def validate():
                        check=True, capture_output=True)
         if git("rev-parse", f"{origin}:{immutable}").decode().strip() != snapshot_blob_sha:
             raise ValueError("Frozen v4 snapshot not present at pinned history commit")
+    if immutable_manifest.get("kind") == "append_only_research_to_app_verified_handoff":
+        # Bind readback claims to immutable Git objects at the handoff commit.
+        ledger = json.loads(bound_blob(immutable_manifest["verification_ledger_path"]).decode("utf-8"))
+        checks = ledger.get("checks", {})
+        if (not re.fullmatch(r"reconciled_[0-9]+_batch_github_readback_verification",
+                             str(ledger.get("kind", "")))
+                or ledger.get("research_commit_sha") != sha
+                or ledger.get("verified_replay_commit_sha") != manifest["verified_replay_commit_sha"]
+                or ledger.get("replay_report_path") != manifest["replay_report_path"]
+                or ledger.get("verified_snapshot_path") != manifest["versioned_research_sqlite_gz_path"]
+                or ledger.get("verified_handoff_history_path") != immutable
+                or ledger.get("readback_status") != "verified_success_noncanonical"
+                or ledger.get("publication_approved") is not False
+                or checks.get("sqlite_integrity") != "ok"
+                or checks.get("foreign_key_violations") != 0
+                or checks.get("canonical_rows_unchanged") is not True
+                or checks.get("output_uncompressed_sha256") != manifest["versioned_research_sha256"]
+                or checks.get("compressed_sha256") != manifest["compressed_sha256"]
+                or checks.get("github_distinct_findings") != manifest["staged_counts"]["github_distinct_substantive_finding_ids"]
+                or checks.get("raw_git_batch_documents") != manifest["staged_counts"]["github_batches_replayed"]):
+            raise ValueError("Immutable readback ledger failed independent checks")
+        for key, file_path in (
+            ("compressed_git_blob_sha", manifest["versioned_research_sqlite_gz_path"]),
+            ("source_report_git_blob_sha", manifest["replay_report_path"]),
+        ):
+            if checks.get(key) != git("rev-parse", f"{handoff_commit}:{file_path}").decode().strip():
+                raise ValueError("Immutable readback Git blob identity mismatch: " + key)
     if immutable_manifest.get("kind") == "immutable_research_batch_handoff":
         for key, expected, path in (
             ("replay_report", immutable_manifest["replay_report_git_blob_sha"],
@@ -736,7 +813,8 @@ def validate():
                 if immutable_manifest.get("kind") in ("verified_research_to_app_handoff_history",
                                                       "immutable_cross_automation_research_handoff",
                                                       "immutable_research_batch_handoff",
-                                                      "research_to_app_handoff"):
+                                                      "research_to_app_handoff",
+                                                      "append_only_research_to_app_verified_handoff"):
                     # The compact later handoff has no 'changes' section.
                     # Recover the earlier TE28 reclassification ONLY from its
                     # pinned, append-only historical record, not a guessed delta.
@@ -1004,14 +1082,14 @@ def validate():
             rating = cell.get("rating") or cell.get("new_rating")
             explanation = (cell.get("why") or cell.get("assessment")
                            or cell.get("explanatory_readiness") or cell.get("reason")
-                           or cell.get("readiness")
+                           or cell.get("readiness") or cell.get("evidence_gap")
                            or (coverage_doc.get("rating_method")
                                if coverage_doc.get("kind") ==
                                "historically_grounded_explanatory_readiness_delta"
                                else None))
             next_task = (cell.get("next") or cell.get("remaining_gap")
                          or cell.get("gap") or cell.get("missing")
-                          or cell.get("next_evidence_needed"))
+                          or cell.get("next_evidence_needed") or cell.get("evidence_gap"))
             # Focused 2026-11-13 coverage deltas record evidence limitations
             # as explicit blocker lists, not a single "next" string. Preserve
             # the actual research gaps rather than rejecting a valid handoff.
