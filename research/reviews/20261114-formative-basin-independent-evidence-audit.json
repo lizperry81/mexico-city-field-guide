@@ -1,0 +1,76 @@
+{
+  "review_id": "20261114-formative-basin-independent-evidence-audit",
+  "batch_id": "20261114T1532Z-formative-basin-c4f1",
+  "basis": "Uploaded Claude archive verified byte-for-byte against branch Git blobs; targeted independent consultation of INAH and MNA publications; NOT a comprehensive review of all 27 assertions or full canonical duplicate scan.",
+  "source_file_validation": {
+    "original_batch_findings": 27,
+    "original_sources": 17,
+    "original_archive_git_commit": "731f91efd06bafec140cd8f31ad44b420f56e74c",
+    "original_file_git_blobs_verified": 5
+  },
+  "source_checks": [
+    {
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F01",
+      "assessment": "PARTIALLY_SUPPORTED",
+      "supported_subclaim": "MNA identifies Tlatilco at Naucalpan and gives a Middle Preclassic date range of 1200-900 BCE.",
+      "unverified_subclaims": [
+        "Named alluvial fan rivers",
+        "1300-900 BCE alternate date from 1994 bioarchaeological paper"
+      ],
+      "evidence_urls": [
+        "https://mna.inah.gob.mx/detalle_pieza_mes.php?id=260",
+        "https://mna.inah.gob.mx/media/infografias/acrobata.pdf"
+      ],
+      "action": "Split geographic/date facts from the longer compound claim and independently check the 1994 paper."
+    },
+    {
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F07",
+      "assessment": "SUPPORTED_BY_INSTITUTIONAL_PDF_TEXT_PENDING_VISUAL_REVIEW",
+      "supported_subclaim": "Museum infographic gives a Tlatilco ceramic Acrobat object dated 1200-900 BCE, 25 × 16 × 20 cm, made with kaolin and associated with a burial offering.",
+      "evidence_urls": [
+        "https://mna.inah.gob.mx/media/infografias/acrobata.pdf"
+      ],
+      "limitations": [
+        "Web screenshot retrieval returned an error, so visual inspection was incomplete."
+      ],
+      "action": "Verify source PDF image and object inventory; check canonical duplicate before import."
+    },
+    {
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F11",
+      "assessment": "DATE_CONFLICT_REQUIRES_RECONCILIATION",
+      "claimed_date_bce": 2920,
+      "independent_MNA_date_bce": 2300,
+      "evidence_urls": [
+        "https://mna.inah.gob.mx/detalle_pieza_mes.php?id=105"
+      ],
+      "action": "Do not promote as written. Reconcile Niederberger context and McClung & Acosta date interpretation."
+    },
+    {
+      "finding_id": "stg-20261114T1532Z-formative-basin-c4f1-F23",
+      "assessment": "PARTIALLY_SUPPORTED",
+      "supported_subclaim": "INAH identifies at least eight enlargements of the Gran Basamento at Cuicuilco between about 800 and 150 BCE.",
+      "evidence_urls": [
+        "https://lugares.inah.gob.mx/es/node/4395",
+        "https://lugares.inah.gob.mx/en/pagina-de-elemento/2092"
+      ],
+      "limitations": [
+        "One INAH guide gives height 22 m while newer web catalogue gives 25 m.",
+        "Other composite claim elements (five levels, Cummings blasting damage) require separate source-level inspection."
+      ],
+      "action": "Split into exact-source architectural observations and unresolved historical excavation details."
+    }
+  ],
+  "promotion_decision": {
+    "canonical_database_updated": false,
+    "approved_full_findings": 0,
+    "reason": "The original 27 compound findings are explicitly pending independent review. Spot-checks identify partial support and a material 2920-vs-2300 BCE conflict, and the existing canonical records were not exhaustively checked for duplicates. Preserve as staged pending targeted source audit.",
+    "publication_authorized": false
+  },
+  "next_checks": [
+    "Compare every one of the 27 findings to existing canonical claims and source records",
+    "Confirm original page/figure locators and extract narrower claims when needed",
+    "Reconcile F11 2920 BCE versus MNA 2300 BCE",
+    "Resolve F23 Cuicuilco elevation discrepancy",
+    "Only then apply approved additions via a tested canonical SQLite migration with before/after counts and integrity checks"
+  ]
+}
