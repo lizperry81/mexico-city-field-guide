@@ -1,0 +1,80 @@
+{
+  "schema_version": 3,
+  "kind": "research_only_sqlite_and_github_readback_verification",
+  "generated_at": "2026-11-14T16:03:00Z",
+  "branch": "research-persistence",
+  "source_research_commit_sha": "87103c4699c2c640d45dc18be8dba1736e27d992",
+  "verified_snapshot_commit_sha": "902bcb8b04a93ac743121cc1b2ce50fb5ee418f8",
+  "canonical_version": "V97",
+  "canonical_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_rows_unchanged": true,
+  "canonical_tables_preserved": 88,
+  "canonical_counts": {
+    "sources": 616,
+    "claims": 422,
+    "claim_sources": 403,
+    "canonical_findings": 68,
+    "canonical_source_inspections": 9
+  },
+  "versioned_database_path": "research/reconciled/v4_87103c4699c2/research_only.sqlite.gz",
+  "versioned_database_uncompressed_sha256": "fc03a7c6e42dfe2c5d756c466caa9b8fdc01a685e683b7524ffff35c9e199bc2",
+  "versioned_database_compressed_sha256": "09544a3454ba43a145c7e150d91bc04e46462faa5fdccae2a5df67d9887d4bc6",
+  "github_readback": {
+    "binary_git_blob_sha": "c4bb8673ab616ce6e7ccfbb7178709e8b40c249e",
+    "binary_blob_metadata_readback": true,
+    "binary_content_readback_empty_from_connector": true,
+    "independent_external_binary_digest_recomputed": false,
+    "report_git_blob_sha": "3ce9d3a3cbae66f4593b75205064c291531e5b67",
+    "checksum_git_blob_sha": "86609976b6c3443ce6f540cd77e69efe5a6b91bf",
+    "batch_git_blob_sha": "3381889385669e4d8c8c177eb0cdd9640c300647",
+    "coverage_git_blob_sha": "bc6d5ba7ced05ad7c5d9131bf531f91f3fa92cac",
+    "chapter_audit_git_blob_sha": "dc66fcebd79d8621f6afc482a22cbb63178179f7",
+    "preflight_git_blob_sha": "33ea5497be3a5ce4391a2c19547091c8c89a2ad1",
+    "workflow_compressed_git_readback_digest_matched": true,
+    "workflow_gzip_integrity_passed": true,
+    "workflow_full_sqlite_integrity_passed": true,
+    "workflow_run_url": "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/43613218605",
+    "validation_run_url": "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/43613218568"
+  },
+  "validated_replay_report_path": "research/reconciled/v4_87103c4699c2/replay_report.json",
+  "replay_counts": {
+    "github_batch_files": 92,
+    "staged_finding_ids": 618,
+    "provisional_sources": 276,
+    "inspections": 314,
+    "unknown_source_refs": 1,
+    "metadata_collisions": 2,
+    "detached_inspections": 37,
+    "unresolved_index_only": 1
+  },
+  "integrity": {
+    "sqlite_integrity": "ok",
+    "foreign_key_violations": 0,
+    "canonical_rows_unchanged": true,
+    "canonical_tables_preserved": 88
+  },
+  "new_artifact_paths": [
+    "research/batches/20261114T1557Z-ciudadela-tobacco-labor-and-1841-image.json",
+    "research/coverage/20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-readiness.json",
+    "research/audits/20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-templo-evidence-gates.json",
+    "research/ledgers/20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-source-conflicts-preflight.json",
+    "research/reconciled/v4_87103c4699c2/replay_report.json",
+    "research/reconciled/v4_87103c4699c2/research_only.sqlite.gz",
+    "research/reconciled/v4_87103c4699c2/compressed_sha256.txt"
+  ],
+  "head_scope_compare_from": "b0793f187b1ab85d69514056124121a399ee5132",
+  "head_scope_compare_to": "902bcb8b04a93ac743121cc1b2ce50fb5ee418f8",
+  "changed_paths_entirely_research": true,
+  "publication_approved": false,
+  "ready_for_editorial_review": false,
+  "blockers": [
+    "37 detached original source inspections await audited crosswalk; 9 possible URL overlaps not identity merges",
+    "2 inherited cross-batch bibliographic metadata collisions remain",
+    "1 proposed botanical-dataset source missing from canonical register",
+    "1 index-only finding reference unresolved",
+    "1790s AGN women's school full archival record and earlier factory's physical location not verified",
+    "1807 Gazeta and royal 1776 order originals not inspected",
+    "Miguel/Agustín Constanzó historical name discrepancy unresolved",
+    "1843 calendar lithograph original and reproduction rights unverified; 1988/2011 patio phases and present access not independently checked"
+  ]
+}
