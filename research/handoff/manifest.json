@@ -1,8 +1,8 @@
 {
   "schema_version": 4,
   "kind": "research_to_app_handoff",
-  "generated_at": "2026-11-14T16:03:00Z",
-  "research_commit_sha": "87103c4699c2c640d45dc18be8dba1736e27d992",
+  "generated_at": "2026-11-14T17:04:37.089Z",
+  "research_commit_sha": "1e303cb9b656ebb415405569d0318bf399389dba",
   "canonical_version": "V97",
   "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
   "canonical_status": "unchanged_provisional_V97_not_promoted",
@@ -14,15 +14,15 @@
     "canonical_source_inspections": 9
   },
   "staged_counts": {
-    "scope": "92 GitHub research batches; 618 provisional findings; unchanged V97 and no editorial approval",
-    "github_batches_replayed": 92,
-    "github_distinct_substantive_finding_ids": 618,
+    "scope": "93 GitHub batches; 629 provisional findings; V97 untouched and no editorial approval",
+    "github_batches_replayed": 93,
+    "github_distinct_substantive_finding_ids": 629,
     "github_index_only_refs_total": 23,
     "github_index_only_refs_unresolved": 1,
-    "raw_batch_documents_in_new_sqlite": 92,
-    "github_inspection_entries": 314,
-    "github_inspection_payload_rows": 314,
-    "github_source_candidates": 276,
+    "raw_batch_documents_in_new_sqlite": 93,
+    "github_inspection_entries": 321,
+    "github_inspection_payload_rows": 321,
+    "github_source_candidates": 283,
     "unknown_source_refs": 1,
     "unknown_source_refs_with_inspection_metadata": [],
     "unknown_source_refs_without_inspection_metadata": [
@@ -35,10 +35,10 @@
     "detached_source_identity_review_pending": 37,
     "external_staging_semantic_join_verified": false,
     "source_id_provisional_recoveries_this_run": 0,
-    "new_scholarly_source_candidate_records_this_run": 8,
-    "new_source_inspection_metadata_this_run": 8,
+    "new_scholarly_source_candidate_records_this_run": 7,
+    "new_source_inspection_metadata_this_run": 7,
     "new_historical_finding_candidates_this_run": 11,
-    "new_source_candidates_all_types_this_run": 8,
+    "new_source_candidates_all_types_this_run": 7,
     "original_government_document_machine_text_sections_examined_this_run": 0,
     "original_newspaper_excerpts_through_modern_republication_examined_this_run": 0,
     "government_html_pages_examined_this_run": 0,
@@ -78,12 +78,16 @@
     "unam_scholarly_pdf_text_excerpt_examined_this_run": 1,
     "original_1807_gazeta_de_mexico_read_this_run": 0,
     "original_inah_monument_catalog_direct_page_seen_this_run": 0,
-    "historical_image_reproduction_rights_cleared_this_run": 0
+    "historical_image_reproduction_rights_cleared_this_run": 0,
+    "pdf_page_images_visually_examined_this_run": 1,
+    "original_1856_1859_laws_modern_transcriptions_read_this_run": 2,
+    "original_1856_decree_examined_this_run": 0,
+    "original_1861_city_plan_inspected_this_run": 0
   },
-  "versioned_research_sqlite_gz_path": "research/reconciled/v4_87103c4699c2/research_only.sqlite.gz",
-  "versioned_research_sha256": "fc03a7c6e42dfe2c5d756c466caa9b8fdc01a685e683b7524ffff35c9e199bc2",
-  "compressed_sha256": "09544a3454ba43a145c7e150d91bc04e46462faa5fdccae2a5df67d9887d4bc6",
-  "replay_report_path": "research/reconciled/v4_87103c4699c2/replay_report.json",
+  "versioned_research_sqlite_gz_path": "research/reconciled/v4_1e303cb9b656/research_only.sqlite.gz",
+  "versioned_research_sha256": "42dad16648e7439dccae8a620f9ae8f91fb5614025bdab3f5fdc1cb6ab482378",
+  "compressed_sha256": "849c14010b5cf809b411577f403b26a3434f0cb8276f760f9fcc06d4a1e74569",
+  "replay_report_path": "research/reconciled/v4_1e303cb9b656/replay_report.json",
   "reconciliation_artifact_paths": [
     "research/ledgers/20261113T051238Z-github-full-replay-verified.json",
     "research/reconciled/v4_fd07cfbc7f22/replay_report.json",
@@ -206,7 +210,12 @@
     "research/ledgers/20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-source-conflicts-preflight.json",
     "research/reconciled/v4_87103c4699c2/replay_report.json",
     "research/reconciled/v4_87103c4699c2/compressed_sha256.txt",
-    "research/ledgers/20261114T1603Z-92-batch-ciudadela-replay-and-readback.json"
+    "research/ledgers/20261114T1603Z-92-batch-ciudadela-replay-and-readback.json",
+    "research/ledgers/20261114T1705Z-san-francisco-detached-identity-review-candidates.json",
+    "research/ledgers/20261114T1658Z-1856-1861-san-francisco-reforma-and-urban-streets-preflight.json",
+    "research/ledgers/20261114T1705Z-93-batch-san-francisco-replay-readback.json",
+    "research/reconciled/v4_1e303cb9b656/replay_report.json",
+    "research/reconciled/v4_1e303cb9b656/compressed_sha256.txt"
   ],
   "chapter_audit_artifact_paths": [
     "research/audits/templo-mayor-discover-20261113.json",
@@ -243,7 +252,8 @@
     "research/audits/20261114T1256Z-1971-halconazo-san-cosme-primary-reports-templo-discover-evidence-gates.json",
     "research/audits/20261114T1400Z-CUPA-housing-institutions-1947-1959-templo-discover-gates.json",
     "research/audits/20261114T1457Z-obregon-la-bombilla-1928-1935-templo-discover-source-gates.json",
-    "research/audits/20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-templo-evidence-gates.json"
+    "research/audits/20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-templo-evidence-gates.json",
+    "research/audits/20261114T1658Z-1856-1861-san-francisco-reforma-and-urban-streets-templo-discover-gates.json"
   ],
   "coverage_artifact_paths": [
     "research/coverage/coverage-matrix-20261113-compact.json",
@@ -282,28 +292,30 @@
     "research/coverage/20261114T1256Z-1971-halconazo-san-cosme-primary-reports-readiness.json",
     "research/coverage/20261114T1400Z-CUPA-housing-institutions-1947-1959-readiness.json",
     "research/coverage/20261114T1457Z-obregon-la-bombilla-1928-1935-readiness.json",
-    "research/coverage/20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-readiness.json"
+    "research/coverage/20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-readiness.json",
+    "research/coverage/20261114T1658Z-1856-1861-san-francisco-reforma-and-urban-streets-readiness.json"
   ],
-  "evidence_status": "source_located_noncanonical_research_candidates_colonial_industrial_and_1841_illustration_not_editorially_corrobated",
+  "evidence_status": "source_located_noncanonical_1856_1861_san_francisco_legal_urban_and_architectural_findings_no_editorial_approval",
   "ready_for_editorial_review": false,
   "ready_for_publication": false,
   "canonical_promoted": false,
   "blockers": [
-    "37 detached original source inspections await audited crosswalk; 9 possible URL overlaps not identity merges",
-    "2 inherited cross-batch bibliographic metadata collisions remain",
-    "1 proposed botanical-dataset source missing from canonical register",
-    "1 index-only finding reference unresolved",
-    "1790s AGN women's school full archival record and earlier factory's physical location not verified",
-    "1807 Gazeta and royal 1776 order originals not inspected",
-    "Miguel/Agustín Constanzó historical name discrepancy unresolved",
-    "1843 calendar lithograph original and reproduction rights unverified; 1988/2011 patio phases and present access not independently checked"
+    "37 detached inspections remain unmerged: 9 URL candidates and 28 no matches; review necessary",
+    "2 pre-existing source metadata collisions remain unresolved",
+    "1 unregistered SLOAD botanical-dataset reference remains unresolved",
+    "1 index-only research finding identifier unresolved",
+    "1856 San Francisco street decree and allegations of conspiracy need authenticated primary printing",
+    "Original 1861 Gante lot subdivision and map not inspected",
+    "UNAM article figure pages and original stereoscopic photo not independently inspected; image rights not cleared",
+    "INAH full catalog direct read failed (502), indexed excerpts used",
+    "Contemporary entrances, surfaces and public access not independently checked"
   ],
-  "consumer_instruction": "91 batches / 607 provisional findings replayed into versioned NONCANONICAL SQLite. Do not merge/publish or claim editorial corroboration. Source-located 1928 La Bombilla and 1934-35 memorial research awaiting original newspaper, signed architectural drawing and rights. See audit, coverage, readback ledger and immutable history.",
-  "immutable_handoff_path": "research/handoff/history/20261114T1603Z-92-batch-ciudadela-verified.json",
-  "previous_manifest_generated_at": "2026-11-14T15:02:00Z",
-  "previous_manifest_blob_sha": "343839aadd816f4cdb0584ba50c4346939977a83",
+  "consumer_instruction": "93 GitHub batches / 629 provisional findings replayed into cumulative versioned NONCANONICAL research-only SQLite. San Francisco 1856 vs 1859 legal distinction; on-site and original-document gaps remain. Do NOT merge into canonical, publish, or treat source-location as independent corroboration. Inspect linked coverage, audit, readback ledger, and immutable history.",
+  "immutable_handoff_path": "research/handoff/history/20261114T1705Z-93-batch-san-francisco-verified.json",
+  "previous_manifest_generated_at": "2026-11-14T16:03:00Z",
+  "previous_manifest_blob_sha": "add40b8f85176b712edfd785055b3170ced83d41",
   "handoff_history_append_only": true,
-  "verified_replay_commit_sha": "902bcb8b04a93ac743121cc1b2ce50fb5ee418f8",
+  "verified_replay_commit_sha": "0e4bd51bb5e6b8c54c6f8399b7cf194e925c8d4b",
   "handoff_history_paths": [
     "research/handoff/history/20261113T0717Z-schema-tests-verified.json",
     "research/handoff/history/20261113T0812Z-detached37-replay-verified.json",
@@ -339,7 +351,8 @@
     "research/handoff/history/20261114T1301Z-89-batch-halconazo-verified.json",
     "research/handoff/history/20261114T1407Z-90-batch-CUPA-verified.json",
     "research/handoff/history/20261114T1502Z-91-batch-obregon-verified.json",
-    "research/handoff/history/20261114T1603Z-92-batch-ciudadela-verified.json"
+    "research/handoff/history/20261114T1603Z-92-batch-ciudadela-verified.json",
+    "research/handoff/history/20261114T1705Z-93-batch-san-francisco-verified.json"
   ],
   "research_batch_artifact_paths": [
     "research/batches/20261113T0904Z-hospital-jesus-recovery-and-building-phases.json",
@@ -374,25 +387,26 @@
     "research/batches/20261114T1256Z-1971-halconazo-san-cosme-primary-reports.json",
     "research/batches/20261114T1400Z-CUPA-housing-institutions-1947-1959.json",
     "research/batches/20261114T1457Z-obregon-la-bombilla-1928-1935.json",
-    "research/batches/20261114T1557Z-ciudadela-tobacco-labor-and-1841-image.json"
+    "research/batches/20261114T1557Z-ciudadela-tobacco-labor-and-1841-image.json",
+    "research/batches/20261114T1658Z-1856-1861-san-francisco-reforma-and-urban-streets.json"
   ],
-  "source_identity_crosswalk_path": "research/ledgers/20261113T1803Z-reconciliation-69-batch-baseline-and-evidence.json",
-  "handoff_contract_status": "92_batch_integrity_workflow_github_readback_verified_noncanonical_not_approved",
+  "source_identity_crosswalk_path": "research/ledgers/20261114T1705Z-san-francisco-detached-identity-review-candidates.json",
+  "handoff_contract_status": "93_batch_integrity_full_replay_github_readback_verified_noncanonical_not_approved",
   "replay_evidence": {
-    "verification_ledger": "research/ledgers/20261114T1603Z-92-batch-ciudadela-replay-and-readback.json",
-    "replay_report_path": "research/reconciled/v4_87103c4699c2/replay_report.json",
-    "compressed_checksum_path": "research/reconciled/v4_87103c4699c2/compressed_sha256.txt",
-    "readback_binary_git_blob_sha": "c4bb8673ab616ce6e7ccfbb7178709e8b40c249e",
-    "readback_report_git_blob_sha": "3ce9d3a3cbae66f4593b75205064c291531e5b67",
+    "verification_ledger": "research/ledgers/20261114T1705Z-93-batch-san-francisco-replay-readback.json",
+    "replay_report_path": "research/reconciled/v4_1e303cb9b656/replay_report.json",
+    "compressed_checksum_path": "research/reconciled/v4_1e303cb9b656/compressed_sha256.txt",
+    "readback_binary_git_blob_sha": "7076894fc033c93f44cdee1eb9231f56b4b157ee",
+    "readback_report_git_blob_sha": "53d278d6ba8cc93e2844b1823195757e492873fb",
     "workflow_definition": ".github/workflows/research-replay-staging.yml",
-    "snapshot_commit_sha": "902bcb8b04a93ac743121cc1b2ce50fb5ee418f8",
+    "snapshot_commit_sha": "0e4bd51bb5e6b8c54c6f8399b7cf194e925c8d4b",
     "compressed_readback_sha256_matched": true,
     "workflows": [
-      43613218605,
-      43613218568
+      43618847093,
+      43618847066
     ],
     "independent_binary_download_blocked": true,
-    "verification_method": "GitHub Actions git show compressed SHA256 and SQLite integrity + independent GitHub report and compressed blob SHA metadata readback"
+    "verification_method": "Both GitHub Actions workflows reported success. Replay GitHub Actions step recomputed gzip SHA256 from persisted git show, confirmed SQLite integrity/foreign keys and retained V97 records. Readback of replay_report.json and checksum contents via GitHub connector plus binary Git blob SHA from GitHub commit metadata; external independent compressed bytes download unavailable."
   },
   "research_lineage_commits": [
     "f4d9c526bf59dadacad39d79c7b35d3dc8aafe7f",
@@ -473,39 +487,41 @@
     "7d5baef8d7518e38c70ec884153d2ee20168d225",
     "6adecc5813ca982cbacc69935dfc178196d3d465",
     "87103c4699c2c640d45dc18be8dba1736e27d992",
-    "902bcb8b04a93ac743121cc1b2ce50fb5ee418f8"
+    "902bcb8b04a93ac743121cc1b2ce50fb5ee418f8",
+    "1e303cb9b656ebb415405569d0318bf399389dba",
+    "0e4bd51bb5e6b8c54c6f8399b7cf194e925c8d4b"
   ],
-  "prior_handoff_history_commit_sha": "6adecc5813ca982cbacc69935dfc178196d3d465",
-  "research_pipeline_status": "92_batches_replayed_noncanonical_staging_V97_unchanged_main_untouched_editorial_unapproved",
-  "input_timestamp_note": "92nd research batch added eight sourced inspections and eleven claims; no canonical change, no image rights, no editorial approval. Applied branch-only immutable replay and non-destructive identity conflict handling.",
-  "verified_replay_commit_status": "completed workflow; GitHub generated snapshot verified with checksum and SQLite integrity; independent external binary not downloaded",
+  "prior_handoff_history_commit_sha": "902bcb8b04a93ac743121cc1b2ce50fb5ee418f8",
+  "research_pipeline_status": "93_batches_replayed_noncanonical_staging_V97_unchanged_main_untouched_editorial_unapproved",
+  "input_timestamp_note": "Input batch added 11 findings, 7 source candidates and 7 inspections; 1856 exemption and independent street-decree difference researched. Original 1856 decree, plans, access and rights remain unverified.",
+  "verified_replay_commit_status": "completed: both research workflows successful; workflow checked persisted GitHub compressed hash; independent external binary fetch unavailable",
   "verified_binary_readback": {
-    "commit_sha": "902bcb8b04a93ac743121cc1b2ce50fb5ee418f8",
-    "git_blob_sha": "c4bb8673ab616ce6e7ccfbb7178709e8b40c249e",
-    "report_blob_sha": "3ce9d3a3cbae66f4593b75205064c291531e5b67",
-    "compressed_sha256": "09544a3454ba43a145c7e150d91bc04e46462faa5fdccae2a5df67d9887d4bc6",
-    "uncompressed_sqlite_sha256": "fc03a7c6e42dfe2c5d756c466caa9b8fdc01a685e683b7524ffff35c9e199bc2",
-    "verified_report_path": "research/reconciled/v4_87103c4699c2/replay_report.json",
+    "commit_sha": "0e4bd51bb5e6b8c54c6f8399b7cf194e925c8d4b",
+    "git_blob_sha": "7076894fc033c93f44cdee1eb9231f56b4b157ee",
+    "report_blob_sha": "53d278d6ba8cc93e2844b1823195757e492873fb",
+    "compressed_sha256": "849c14010b5cf809b411577f403b26a3434f0cb8276f760f9fcc06d4a1e74569",
+    "uncompressed_sqlite_sha256": "42dad16648e7439dccae8a620f9ae8f91fb5614025bdab3f5fdc1cb6ab482378",
+    "verified_report_path": "research/reconciled/v4_1e303cb9b656/replay_report.json",
     "sqlite_integrity": "ok",
     "foreign_key_violations": 0,
     "canonical_rows_unchanged": true,
     "compress_digest_recomputed_independently_from_github_fetched_base64": false,
-    "verification_method": "Workflow Git show compressed SHA256 comparison; independent GitHub report and file metadata readback."
+    "verification_method": "Both GitHub Actions workflows reported success. Replay GitHub Actions step recomputed gzip SHA256 from persisted git show, confirmed SQLite integrity/foreign keys and retained V97 records. Readback of replay_report.json and checksum contents via GitHub connector plus binary Git blob SHA from GitHub commit metadata; external independent compressed bytes download unavailable."
   },
-  "previous_immutable_handoff_path": "research/handoff/history/20261114T1502Z-91-batch-obregon-verified.json",
-  "latest_handoff_history_path": "research/handoff/history/20261114T1603Z-92-batch-ciudadela-verified.json",
-  "latest_reconciliation_ledger_path": "research/ledgers/20261114T1603Z-92-batch-ciudadela-replay-and-readback.json",
+  "previous_immutable_handoff_path": "research/handoff/history/20261114T1603Z-92-batch-ciudadela-verified.json",
+  "latest_handoff_history_path": "research/handoff/history/20261114T1705Z-93-batch-san-francisco-verified.json",
+  "latest_reconciliation_ledger_path": "research/ledgers/20261114T1705Z-93-batch-san-francisco-replay-readback.json",
   "latest_research_integrity": {
     "sqlite_integrity": "ok",
     "foreign_key_violations": 0,
     "canonical_tables_preserved": 88,
     "canonical_rows_unchanged": true,
-    "compressed_sha256": "09544a3454ba43a145c7e150d91bc04e46462faa5fdccae2a5df67d9887d4bc6"
+    "compressed_sha256": "849c14010b5cf809b411577f403b26a3434f0cb8276f760f9fcc06d4a1e74569"
   },
   "reconciliation_verified": true,
   "auto_merge_permitted": false,
   "publication_approved": false,
-  "latest_batch_artifact_path": "research/batches/20261114T1557Z-ciudadela-tobacco-labor-and-1841-image.json",
-  "latest_coverage_artifact_path": "research/coverage/20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-readiness.json",
-  "latest_chapter_audit_artifact_path": "research/audits/20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-templo-evidence-gates.json"
+  "latest_batch_artifact_path": "research/batches/20261114T1658Z-1856-1861-san-francisco-reforma-and-urban-streets.json",
+  "latest_coverage_artifact_path": "research/coverage/20261114T1658Z-1856-1861-san-francisco-reforma-and-urban-streets-readiness.json",
+  "latest_chapter_audit_artifact_path": "research/audits/20261114T1658Z-1856-1861-san-francisco-reforma-and-urban-streets-templo-discover-gates.json"
 }

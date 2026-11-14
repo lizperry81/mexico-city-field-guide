@@ -1,0 +1,80 @@
+{
+  "schema_version": 4,
+  "kind": "append_only_verified_research_handoff_history",
+  "generated_at": "2026-11-14T17:04:37.089Z",
+  "branch": "research-persistence",
+  "research_commit_sha": "1e303cb9b656ebb415405569d0318bf399389dba",
+  "verified_replay_commit_sha": "0e4bd51bb5e6b8c54c6f8399b7cf194e925c8d4b",
+  "canonical_version": "V97",
+  "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_status": "unchanged_provisional_V97_not_promoted",
+  "canonical": {
+    "sources": 616,
+    "claims": 422,
+    "claim_sources": 403,
+    "canonical_findings": 68,
+    "canonical_source_inspections": 9
+  },
+  "staged_counts": {
+    "github_batches_replayed": 93,
+    "github_distinct_substantive_finding_ids": 629,
+    "github_source_candidates": 283,
+    "github_inspection_entries": 321,
+    "detached_original_inspections": 37,
+    "source_metadata_collisions": 2,
+    "unresolved_index_only_refs": 1,
+    "unknown_source_refs": 1
+  },
+  "new_findings": 11,
+  "new_sources": 7,
+  "new_inspections": 7,
+  "classification_counts": {
+    "broad_history": 5,
+    "poi_ready": 4,
+    "specialist_archaeology": 2
+  },
+  "versioned_research_sqlite_gz_path": "research/reconciled/v4_1e303cb9b656/research_only.sqlite.gz",
+  "versioned_research_sha256": "42dad16648e7439dccae8a620f9ae8f91fb5614025bdab3f5fdc1cb6ab482378",
+  "compressed_sha256": "849c14010b5cf809b411577f403b26a3434f0cb8276f760f9fcc06d4a1e74569",
+  "chapter_audit_artifact_paths": [
+    "research/audits/20261114T1658Z-1856-1861-san-francisco-reforma-and-urban-streets-templo-discover-gates.json"
+  ],
+  "coverage_artifact_paths": [
+    "research/coverage/20261114T1658Z-1856-1861-san-francisco-reforma-and-urban-streets-readiness.json"
+  ],
+  "research_batch_artifact_paths": [
+    "research/batches/20261114T1658Z-1856-1861-san-francisco-reforma-and-urban-streets.json"
+  ],
+  "reconciliation_artifact_paths": [
+    "research/ledgers/20261114T1705Z-93-batch-san-francisco-replay-readback.json",
+    "research/ledgers/20261114T1705Z-san-francisco-detached-identity-review-candidates.json",
+    "research/reconciled/v4_1e303cb9b656/replay_report.json",
+    "research/reconciled/v4_1e303cb9b656/compressed_sha256.txt"
+  ],
+  "evidence_status": "source_located_research_candidates_needing_primary_and_independent_corrobation",
+  "ready_for_editorial_review": false,
+  "ready_for_publication": false,
+  "publication_approved": false,
+  "canonical_promoted": false,
+  "blockers": [
+    "37 detached inspections remain unmerged: 9 URL candidates and 28 no matches; review necessary",
+    "2 pre-existing source metadata collisions remain unresolved",
+    "1 unregistered SLOAD botanical-dataset reference remains unresolved",
+    "1 index-only research finding identifier unresolved",
+    "1856 San Francisco street decree and allegations of conspiracy need authenticated primary printing",
+    "Original 1861 Gante lot subdivision and map not inspected",
+    "UNAM article figure pages and original stereoscopic photo not independently inspected; image rights not cleared",
+    "INAH full catalog direct read failed (502), indexed excerpts used",
+    "Contemporary entrances, surfaces and public access not independently checked"
+  ],
+  "verification": {
+    "sqlite_integrity": "ok",
+    "foreign_key_violations": 0,
+    "canonical_tables_preserved": 88,
+    "canonical_rows_unchanged": true,
+    "compressed_sha256": "849c14010b5cf809b411577f403b26a3434f0cb8276f760f9fcc06d4a1e74569",
+    "uncompressed_sha256": "42dad16648e7439dccae8a620f9ae8f91fb5614025bdab3f5fdc1cb6ab482378",
+    "github_workflow_checksum_readback": true,
+    "independent_external_binary_hash": false
+  }
+}

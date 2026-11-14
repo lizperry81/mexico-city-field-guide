@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "kind": "non_destructive_detached_inspection_review_candidates",
+  "generated_at": "2026-11-14T17:04:37.089Z",
+  "branch": "research-persistence",
+  "source_replay_report_path": "research/reconciled/v4_1e303cb9b656/replay_report.json",
+  "detached_inspections_total": 37,
+  "replay_same_url_candidates": 9,
+  "replay_no_match": 28,
+  "source_identity_merges_applied": 0,
+  "review_candidates": [
+    {
+      "detached_source_id": "stg-src-1856-lerdo-edited-transcript",
+      "new_source_id": "STG-SRC-20261114-SF-LERDO",
+      "relationship": "likely_same_underlying_law_different_transcription_not_identical_imprint",
+      "disposition": "manual_editorial_identity_review_required",
+      "warning": "Original detached source metadata unavailable; same legal work does not imply same inspected printing."
+    },
+    {
+      "detached_source_id": "stg-src-1859-nationalization-decree",
+      "new_source_id": "STG-SRC-20261114-SF-NAC",
+      "relationship": "same_underlying_1859_law_potentially_different_source_edition",
+      "disposition": "manual_editorial_identity_review_required",
+      "warning": "Do not merge inspection claims about original editions without record of matching edition and URL."
+    },
+    {
+      "detached_source_id": "stg-src-inah-sanfrancisco-catalog",
+      "new_source_id": "STG-SRC-20261114-SF-INAH",
+      "relationship": "possible_same_institutional_catalog_potentially_same_ficha",
+      "disposition": "manual_editorial_identity_review_required",
+      "warning": "Prior inspection has no matching structured metadata in cumulative identity index; confirm item identifier 11735."
+    }
+  ],
+  "non_matches_not_inferred": [
+    "stg-src-1856-munguia-opposition",
+    "stg-src-1865-maximilian-properties",
+    "stg-src-unam-muco-history"
+  ],
+  "forced_joins_forbidden": true,
+  "editorially_approved": false
+}

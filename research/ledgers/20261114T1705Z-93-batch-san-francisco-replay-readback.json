@@ -1,0 +1,70 @@
+{
+  "schema_version": 2,
+  "kind": "verified_full_replay_and_github_readback",
+  "generated_at": "2026-11-14T17:04:37.089Z",
+  "branch": "research-persistence",
+  "input_research_commit_sha": "1e303cb9b656ebb415405569d0318bf399389dba",
+  "replay_snapshot_commit_sha": "0e4bd51bb5e6b8c54c6f8399b7cf194e925c8d4b",
+  "research_batch_path": "research/batches/20261114T1658Z-1856-1861-san-francisco-reforma-and-urban-streets.json",
+  "coverage_path": "research/coverage/20261114T1658Z-1856-1861-san-francisco-reforma-and-urban-streets-readiness.json",
+  "chapter_audit_path": "research/audits/20261114T1658Z-1856-1861-san-francisco-reforma-and-urban-streets-templo-discover-gates.json",
+  "preflight_path": "research/ledgers/20261114T1658Z-1856-1861-san-francisco-reforma-and-urban-streets-preflight.json",
+  "source_identity_candidate_review_path": "research/ledgers/20261114T1705Z-san-francisco-detached-identity-review-candidates.json",
+  "replay_report_path": "research/reconciled/v4_1e303cb9b656/replay_report.json",
+  "compressed_checksum_path": "research/reconciled/v4_1e303cb9b656/compressed_sha256.txt",
+  "compressed_binary_path": "research/reconciled/v4_1e303cb9b656/research_only.sqlite.gz",
+  "binary_git_blob_sha": "7076894fc033c93f44cdee1eb9231f56b4b157ee",
+  "report_git_blob_sha": "53d278d6ba8cc93e2844b1823195757e492873fb",
+  "checksum_git_blob_sha": "42aa6191c546b4bb326a8643352c3848bf34224b",
+  "workflows": [
+    {
+      "id": 43618847093,
+      "result": "success",
+      "html_url": "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/43618847093"
+    },
+    {
+      "id": 43618847066,
+      "result": "success",
+      "html_url": "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/43618847066"
+    }
+  ],
+  "before": {
+    "github_batches": 92,
+    "findings": 618,
+    "sources": 276,
+    "inspections": 314
+  },
+  "after": {
+    "github_batches": 93,
+    "findings": 629,
+    "sources": 283,
+    "inspections": 321
+  },
+  "canonical": {
+    "sources": 616,
+    "claims": 422,
+    "claim_sources": 403,
+    "canonical_findings": 68,
+    "canonical_source_inspections": 9
+  },
+  "canonical_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "integrity": {
+    "sqlite_integrity": "ok",
+    "foreign_key_violations": 0,
+    "canonical_tables_preserved": 88,
+    "canonical_rows_unchanged": true,
+    "compressed_sha256": "849c14010b5cf809b411577f403b26a3434f0cb8276f760f9fcc06d4a1e74569",
+    "uncompressed_sha256": "42dad16648e7439dccae8a620f9ae8f91fb5614025bdab3f5fdc1cb6ab482378",
+    "github_workflow_checksum_readback": true,
+    "independent_external_binary_hash": false
+  },
+  "unresolved": {
+    "source_metadata_collisions": 2,
+    "unknown_source_ids": 1,
+    "detached_inspections": 37,
+    "index_only": 1
+  },
+  "verification_method": "Both GitHub Actions workflows reported success. Replay GitHub Actions step recomputed gzip SHA256 from persisted git show, confirmed SQLite integrity/foreign keys and retained V97 records. Readback of replay_report.json and checksum contents via GitHub connector plus binary Git blob SHA from GitHub commit metadata; external independent compressed bytes download unavailable.",
+  "status": "verified_noncanonical_staging_publication_approval_false",
+  "ready_for_editorial_review": false
+}
