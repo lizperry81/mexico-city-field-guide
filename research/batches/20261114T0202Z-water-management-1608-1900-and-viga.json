@@ -385,5 +385,6 @@
     }
   ],
   "no_live_app_change": true,
-  "publication_approved": false
+  "publication_approved": false,
+  "replay_trigger_note": "Final write deliberately triggers 78-batch GitHub Actions reconciliation; staged records remain provisional and canonical V97 is not overwritten."
 }
