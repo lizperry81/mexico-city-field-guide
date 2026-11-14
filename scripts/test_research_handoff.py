@@ -12,6 +12,7 @@ import test_handoff_87_history  # 87-batch immutable readback and evidence safeg
 import test_handoff_88_history  # independent 88-batch full-binary and approval tests
 import test_handoff_89_history  # 89-batch workflow readback and no-publication tests
 import test_handoff_90_history  # 90-batch CUPA source-conflict and review-only tests
+import test_handoff_91_history  # 91-batch La Bombilla Git lineage and publication gates
 import test_handoff_unattributed  # missing source identity never becomes a verified citation
 from editorial_passage_inventory import HistoryPassages
 from check_research_handoff import audit_matrix_explicitly_unapproved
