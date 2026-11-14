@@ -1,8 +1,8 @@
 {
   "schema_version": 4,
   "kind": "research_to_app_handoff",
-  "generated_at": "2026-11-14T00:06:13.303Z",
-  "research_commit_sha": "7eb0311ce172b03da2e6402b4970f903e1d2a6e3",
+  "generated_at": "2026-11-14T01:03:41.416Z",
+  "research_commit_sha": "28d9d393f98fc89c0ad170d1f5a299a1ab46bfc1",
   "canonical_version": "V97",
   "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
   "canonical_status": "unchanged_provisional_V97_not_promoted",
@@ -14,15 +14,15 @@
     "source_inspections": 9
   },
   "staged_counts": {
-    "scope": "76 GitHub research batches; 444 distinct staged source-located candidate findings, no editorial approval",
-    "github_batches_replayed": 76,
-    "github_distinct_substantive_finding_ids": 444,
+    "scope": "77 GitHub research batches; 455 distinct staged candidate findings, none approved for publication",
+    "github_batches_replayed": 77,
+    "github_distinct_substantive_finding_ids": 455,
     "github_index_only_refs_total": 23,
     "github_index_only_refs_unresolved": 1,
-    "raw_batch_documents_in_new_sqlite": 76,
-    "github_inspection_entries": 194,
-    "github_inspection_payload_rows": 194,
-    "github_source_candidates": 156,
+    "raw_batch_documents_in_new_sqlite": 77,
+    "github_inspection_entries": 199,
+    "github_inspection_payload_rows": 199,
+    "github_source_candidates": 161,
     "unknown_source_refs": 1,
     "unknown_source_refs_with_inspection_metadata": [],
     "unknown_source_refs_without_inspection_metadata": [
@@ -35,24 +35,24 @@
     "detached_source_identity_review_pending": 37,
     "external_staging_semantic_join_verified": false,
     "source_id_provisional_recoveries_this_run": 0,
-    "new_scholarly_source_candidate_records_this_run": 9,
-    "new_source_inspection_metadata_this_run": 9,
-    "new_historical_finding_candidates_this_run": 12,
+    "new_scholarly_source_candidate_records_this_run": 5,
+    "new_source_inspection_metadata_this_run": 5,
+    "new_historical_finding_candidates_this_run": 11,
     "full_original_scholarly_books_examined_this_run": 0,
     "original_government_document_machine_text_sections_examined_this_run": 0,
     "curated_historic_photo_exhibit_partially_visually_examined_this_run": 0,
     "partial_scholarly_chapter_sections_examined_this_run": 0,
-    "scholarly_thesis_page_images_checked_this_run": 0,
+    "scholarly_thesis_page_images_checked_this_run": 3,
     "government_html_pages_examined_this_run": 0,
-    "institutional_search_index_excerpt_sources_examined_this_run": 6,
+    "institutional_search_index_excerpt_sources_examined_this_run": 2,
     "original_primary_speech_or_decree_examined_this_run": 0,
     "original_newspaper_excerpts_through_modern_republication_examined_this_run": 0,
     "original_1847_maps_catalog_metadata_examined_this_run": 2
   },
-  "versioned_research_sqlite_gz_path": "research/reconciled/v4_7eb0311ce172/research_only.sqlite.gz",
-  "versioned_research_sha256": "e8755955ec9d86271941db610464709a9547ee5bdce793d49dfd4ac02d7a4e91",
-  "compressed_sha256": "f1b11a6dffbdcafb3675d70c628cdec39e6e93b6de04fa127304f7c22c7713bb",
-  "replay_report_path": "research/reconciled/v4_7eb0311ce172/replay_report.json",
+  "versioned_research_sqlite_gz_path": "research/reconciled/v4_28d9d393f98f/research_only.sqlite.gz",
+  "versioned_research_sha256": "38e96a3a63f5ef8cd4c1d5363f5a562294671f94252f137fbfd50e6f50840794",
+  "compressed_sha256": "d1e8c99f5c206cfa149d78779c78558a4f932a2e8028f7776f712bf996d84116",
+  "replay_report_path": "research/reconciled/v4_28d9d393f98f/replay_report.json",
   "reconciliation_artifact_paths": [
     "research/ledgers/20261113T051238Z-github-full-replay-verified.json",
     "research/reconciled/v4_fd07cfbc7f22/replay_report.json",
@@ -119,7 +119,10 @@
     "research/ledgers/20261113T2309Z-75-batch-verification-and-github-binary-readback.json",
     "research/ledgers/20261114T0000Z-1847-molino-memorial-and-templo-field-evidence-source-reconciliation-ledger.json",
     "research/ledgers/20261114T0009Z-76-batch-verified-replay-and-readback.json",
-    "research/reconciled/v4_7eb0311ce172/replay_report.json"
+    "research/reconciled/v4_7eb0311ce172/replay_report.json",
+    "research/ledgers/20261114T0103Z-77-batch-verified-replay-and-readback.json",
+    "research/reconciled/v4_28d9d393f98f/replay_report.json",
+    "research/reconciled/v4_28d9d393f98f/compressed_sha256.txt"
   ],
   "chapter_audit_artifact_paths": [
     "research/audits/templo-mayor-discover-20261113.json",
@@ -140,7 +143,8 @@
     "research/audits/20261113T2100Z-templo-mayor-reader-blob-and-chronological-boundary.json",
     "research/audits/20261113T2204Z-templo-mayor-chronology-and-centenario-boundary.json",
     "research/audits/20261113T2304Z-templo-mayor-seven-evidence-gates-urban-memory-boundary.json",
-    "research/audits/20261114T0000Z-1847-molino-memorial-and-templo-field-evidence-templo-discover-evidence-gates.json"
+    "research/audits/20261114T0000Z-1847-molino-memorial-and-templo-field-evidence-templo-discover-evidence-gates.json",
+    "research/audits/20261114T0100Z-templo-mayor-discover-1978-responders-and-seven-gates.json"
   ],
   "coverage_artifact_paths": [
     "research/coverage/coverage-matrix-20261113-compact.json",
@@ -163,24 +167,25 @@
     "research/coverage/20261113T2100Z-1928-political-urban-councils-readiness.json",
     "research/coverage/20261113T2204Z-1910-columna-explanatory-readiness.json",
     "research/coverage/20261113T2304Z-1925-2010-national-remains-place-readiness.json",
-    "research/coverage/20261114T0000Z-1847-molino-memorial-and-templo-field-evidence-readiness.json"
+    "research/coverage/20261114T0000Z-1847-molino-memorial-and-templo-field-evidence-readiness.json",
+    "research/coverage/20261114T0100Z-city-government-fabric-and-1978-evidence-readiness.json"
   ],
   "evidence_status": {
-    "new_historical_finding_candidates_researched_this_run": 12,
+    "new_historical_finding_candidates_researched_this_run": 11,
     "recovered_legacy_source_identities_this_run": 0,
-    "new_source_candidate_records_this_run": 9,
-    "new_source_inspection_metadata_this_run": 9,
+    "new_source_candidate_records_this_run": 5,
+    "new_source_inspection_metadata_this_run": 5,
     "independently_corroborated_new_findings": 0,
     "ready_for_editorial_review": false,
     "publication_approved": false,
-    "original_1925_newspaper_fully_read": false,
-    "photo_rights_clearance": false,
-    "historical_evidence": "1847 Molino del Rey institutional indexed catalogs and military summaries, scholarly INAH journal abstract only, and LOC historic map catalog entries, plus INAH Templo Mayor institutional history pages. No original map pages, scholarly article full text or original primary battle manuscripts read.",
     "source_inspection_modes": {
-      "institutional_catalog_and_archival_record_search_index": 9,
-      "original_1847_map_high_res_images": 0,
-      "original_INAH_journal_full_text": 0
-    }
+      "original_scanned_thesis_pages_visually_inspected": 3,
+      "peer_reviewed_legal_article_machine_text_sections": 1,
+      "source_index_excerpt_only": 2,
+      "original_official_law_publications": 0,
+      "original_1978_rescue_log": 0
+    },
+    "historical_evidence": "1941/1970/1972/1987 governance and 1970s municipal office planning from published legal analysis and scanned 1987 UNAM thesis; 1978 rescue personnel and archaeology from two indexed specialist accounts. Primary laws and rescue log absent."
   },
   "ready_for_editorial_review": false,
   "ready_for_publication": false,
@@ -213,14 +218,19 @@
     "Original 1847 maps and INAH article full page images not inspected",
     "Templo Mayor original Gamio report, Triple Alliance dating and Nahuatl Codex comparison remain outstanding",
     "1847 SEDENA/INAH flour-vs-powder-mill description and conflicting casualties require original document comparison",
-    "2014 memorial Los Pinos location versus 'original site' label unresolved; current 2026 public access unknown"
+    "2014 memorial Los Pinos location versus 'original site' label unresolved; current 2026 public access unknown",
+    "Original 1973 DDF facilities study underlying the 1987 UNAM thesis not inspected; reported floor-area shortages are historical planning estimates, not verified modern measurements",
+    "Original 1941, 1970, 1972, and 1987 organic laws, historical delegación boundary maps and office inventories remain unexamined",
+    "1978 rescue personnel discrepancy between Matos and Barrera retrospective accounts; original field notebook needed",
+    "2009 legal history PDF page screenshot blocked with HTTP 403; machine-readable published text was inspected but not visually collated",
+    "Current public access to historical delegación buildings and 2026 Templo Mayor display itinerary not verified"
   ],
-  "consumer_instruction": "Do not publish or merge staged findings. Read verified replay/report and the seven Templo Mayor source gates, and only render material approved by editorial process.",
-  "immutable_handoff_path": "research/handoff/history/20261114T0009Z-1847-molino-templo-76-batch-verified.json",
-  "previous_manifest_generated_at": "2026-11-13T23:08:20.597Z",
-  "previous_manifest_blob_sha": "1df5a39695b55bc9c2b91bf2579064683076f113",
+  "consumer_instruction": "Do not publish or merge staged findings. Require independent editorial corroboration and present-day physical/site checks. Preserve historical administrative geography rather than mapping contemporary boundaries backward.",
+  "immutable_handoff_path": "research/handoff/history/20261114T0103Z-77-batch-government-buildings-and-templo-verified.json",
+  "previous_manifest_generated_at": "2026-11-14T00:06:13.303Z",
+  "previous_manifest_blob_sha": "308c26820c7ca2084a6e275076fa35f8ea617910",
   "handoff_history_append_only": true,
-  "verified_replay_commit_sha": "0f2f1da23c171b7a5e66af03b077a5e19b80f0e0",
+  "verified_replay_commit_sha": "1d372a0005c9e84942f9b284ea243c2056fc6026",
   "handoff_history_paths": [
     "research/handoff/history/20261113T0717Z-schema-tests-verified.json",
     "research/handoff/history/20261113T0812Z-detached37-replay-verified.json",
@@ -241,7 +251,8 @@
     "research/handoff/history/20261113T210631Z-1928-government-73-replay-verified.json",
     "research/handoff/history/20261113T220656Z-centenary-74-replay-verified.json",
     "research/handoff/history/20261113T2309Z-1925-mausoleum-75-replay-verified.json",
-    "research/handoff/history/20261114T0009Z-1847-molino-templo-76-batch-verified.json"
+    "research/handoff/history/20261114T0009Z-1847-molino-templo-76-batch-verified.json",
+    "research/handoff/history/20261114T0103Z-77-batch-government-buildings-and-templo-verified.json"
   ],
   "research_batch_artifact_paths": [
     "research/batches/20261113T0904Z-hospital-jesus-recovery-and-building-phases.json",
@@ -260,7 +271,8 @@
     "research/batches/20261113T2100Z-1928-municipal-democracy-legal-transitories-and-cabildo.json",
     "research/batches/20261113T2204Z-columna-centenario-building-and-public-memory.json",
     "research/batches/20261113T2304Z-1925-independence-mausoleum-and-2010-identification.json",
-    "research/batches/20261114T0000Z-1847-molino-memorial-and-templo-field-evidence.json"
+    "research/batches/20261114T0000Z-1847-molino-memorial-and-templo-field-evidence.json",
+    "research/batches/20261114T0100Z-government-buildings-1970-1987-and-1978-findspot.json"
   ],
   "source_identity_crosswalk_path": "research/ledgers/20261113T1803Z-reconciliation-69-batch-baseline-and-evidence.json",
   "handoff_contract_status": "verified_replay_and_GitHub_binary_readback_passed; research_only_noncanonical",
