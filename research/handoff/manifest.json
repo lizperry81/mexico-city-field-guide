@@ -1,8 +1,8 @@
 {
   "schema_version": 4,
   "kind": "research_to_app_handoff",
-  "generated_at": "2026-11-14T07:11:34.090Z",
-  "research_commit_sha": "44b53036df17492b23d215358717924ab6563d48",
+  "generated_at": "2026-11-14T08:10:54.335Z",
+  "research_commit_sha": "984c93b45dbe2067c1d83186282470ae956f79ec",
   "canonical_version": "V97",
   "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
   "canonical_status": "unchanged_provisional_V97_not_promoted",
@@ -14,15 +14,15 @@
     "source_inspections": 9
   },
   "staged_counts": {
-    "scope": "83 GitHub research batches; 519 provisional substantive finding candidates; 0 independently corroborated or publication approved",
-    "github_batches_replayed": 83,
-    "github_distinct_substantive_finding_ids": 519,
+    "scope": "84 GitHub research batches; 530 provisional substantive finding candidates; zero independently editorially corroborated or publication-approved",
+    "github_batches_replayed": 84,
+    "github_distinct_substantive_finding_ids": 530,
     "github_index_only_refs_total": 23,
     "github_index_only_refs_unresolved": 1,
-    "raw_batch_documents_in_new_sqlite": 83,
-    "github_inspection_entries": 246,
-    "github_inspection_payload_rows": 246,
-    "github_source_candidates": 208,
+    "raw_batch_documents_in_new_sqlite": 84,
+    "github_inspection_entries": 255,
+    "github_inspection_payload_rows": 255,
+    "github_source_candidates": 217,
     "unknown_source_refs": 1,
     "unknown_source_refs_with_inspection_metadata": [],
     "unknown_source_refs_without_inspection_metadata": [
@@ -35,29 +35,29 @@
     "detached_source_identity_review_pending": 37,
     "external_staging_semantic_join_verified": false,
     "source_id_provisional_recoveries_this_run": 0,
-    "new_scholarly_source_candidate_records_this_run": 3,
-    "new_source_inspection_metadata_this_run": 6,
+    "new_scholarly_source_candidate_records_this_run": 2,
+    "new_source_inspection_metadata_this_run": 9,
     "new_historical_finding_candidates_this_run": 11,
-    "new_source_candidates_all_types_this_run": 6,
+    "new_source_candidates_all_types_this_run": 9,
     "original_government_document_machine_text_sections_examined_this_run": 0,
     "original_newspaper_excerpts_through_modern_republication_examined_this_run": 0,
     "government_html_pages_examined_this_run": 0,
-    "institutional_direct_html_pages_examined_this_run": 0,
-    "peer_reviewed_abstracts_examined_this_run": 2,
+    "institutional_direct_html_pages_examined_this_run": 6,
+    "peer_reviewed_abstracts_examined_this_run": 1,
     "scholarly_thesis_page_images_checked_this_run": 0,
     "edited_original_primary_government_document_page_images_checked_this_run": 0,
     "peer_reviewed_archaeology_pdf_page_images_checked_this_run": 0,
     "original_1867_newspaper_page_images_checked_this_run": 0,
-    "collection_catalogue_html_pages_examined_this_run": 0,
+    "collection_catalogue_html_pages_examined_this_run": 2,
     "original_artist_contracts_inspected_this_run": 0,
     "historical_photo_image_rights_cleared_this_run": 0,
     "archival_finding_aid_page_images_inspected_this_run": 2,
     "edited_1824_1854_decree_transcriptions_text_checked_this_run": 2
   },
-  "versioned_research_sqlite_gz_path": "research/reconciled/v4_44b53036df17/research_only.sqlite.gz",
-  "versioned_research_sha256": "469037b89c1d9612a3984e5a131c2b21f6fe62ccf9425729f15932f13f42a232",
-  "compressed_sha256": "9366b3341ddf74bceb12eb5c19485aabb5f9ed50d990e0d174496cd206e5410a",
-  "replay_report_path": "research/reconciled/v4_44b53036df17/replay_report.json",
+  "versioned_research_sqlite_gz_path": "research/reconciled/v4_984c93b45dbe/research_only.sqlite.gz",
+  "versioned_research_sha256": "8c87fa8bc6fd848723d76e6d1d787ebed4eaa819573d3cffb12ea3ed527bbef6",
+  "compressed_sha256": "8388b6581173d59e5571bf67b405d72793542413c1fb0c9644c547498e43bcf6",
+  "replay_report_path": "research/reconciled/v4_984c93b45dbe/replay_report.json",
   "reconciliation_artifact_paths": [
     "research/ledgers/20261113T051238Z-github-full-replay-verified.json",
     "research/reconciled/v4_fd07cfbc7f22/replay_report.json",
@@ -148,7 +148,11 @@
     "research/ledgers/20261114T0702Z-1824-capital-and-ayuntamiento-preflight-and-locator-inventory.json",
     "research/reconciled/v4_44b53036df17/replay_report.json",
     "research/reconciled/v4_44b53036df17/compressed_sha256.txt",
-    "research/ledgers/20261114T0710Z-83-batch-replay-and-github-readback.json"
+    "research/ledgers/20261114T0710Z-83-batch-replay-and-github-readback.json",
+    "research/ledgers/20261114T0758Z-market-1934-public-education-and-templo-object-input-preflight.json",
+    "research/reconciled/v4_984c93b45dbe/replay_report.json",
+    "research/reconciled/v4_984c93b45dbe/compressed_sha256.txt",
+    "research/ledgers/20261114T0810Z-84-batch-market-github-binary-readback.json"
   ],
   "chapter_audit_artifact_paths": [
     "research/audits/templo-mayor-discover-20261113.json",
@@ -176,7 +180,8 @@
     "research/audits/20261114T0400Z-metro-1967-1970-pino-suarez-archaeology-templo-discover-evidence-gates.json",
     "research/audits/20261114T0500Z-1867-republic-return-zocalo-archaeology-templo-discover-evidence-gates.json",
     "research/audits/20261114T0600Z-san-ildefonso-1922-1926-muralism-and-templo-memory-templo-reader-gates.json",
-    "research/audits/20261114T0702Z-1824-capital-and-ayuntamiento-templo-discover-evidence-gates.json"
+    "research/audits/20261114T0702Z-1824-capital-and-ayuntamiento-templo-discover-evidence-gates.json",
+    "research/audits/20261114T0758Z-market-1934-public-education-and-templo-object-templo-evidence-locators.json"
   ],
   "coverage_artifact_paths": [
     "research/coverage/coverage-matrix-20261113-compact.json",
@@ -206,7 +211,8 @@
     "research/coverage/20261114T0400Z-metro-1967-1970-pino-suarez-archaeology-readiness.json",
     "research/coverage/20261114T0500Z-1867-republic-return-zocalo-archaeology-readiness.json",
     "research/coverage/20261114T0600Z-san-ildefonso-1922-1926-muralism-and-templo-memory-readiness.json",
-    "research/coverage/20261114T0702Z-1824-capital-and-ayuntamiento-readiness.json"
+    "research/coverage/20261114T0702Z-1824-capital-and-ayuntamiento-readiness.json",
+    "research/coverage/20261114T0758Z-market-1934-public-education-and-templo-object-readiness.json"
   ],
   "evidence_status": "staged_source_located_not_independently_corroborated_or_publication_approved",
   "ready_for_editorial_review": false,
@@ -285,14 +291,19 @@
     "1824 original decree and 1854 original gazette imprints not independently inspected; McGowan 2013 appendix text examined but PDF screenshot requests returned HTTP 502",
     "1824 city-council indexed minutes are descriptive summaries, NOT original act-book folios; original Jan 2, Jan 5 and Jan 8 pages require inspection",
     "Two-legua metric conversions and 55 km² versus approximately 220 km² circular area require defensible historical measurement, demarcation survey and GIS validation; no precise 1824 boundary line released",
-    "1843 Parián demolition journal article and early republican patrol article read as abstracts only; full articles and archives needed"
+    "1843 Parián demolition journal article and early republican patrol article read as abstracts only; full articles and archives needed",
+    "1933 construction programme, 1934 municipal contracts and Guillermo Rivas original Jan 1936 periodical pages not independently inspected",
+    "2025 INBAL Noguchi treatment stood at 40% on 2 October 2025; completion and current 2026 access not verified",
+    "Original 1934 artist assignments, Greenwood and O'Higgins original archival records, and exact market wall coordinates require confirmation",
+    "INAH Stage IVb describes outdoor Coyolxauhqui as copy; 2014 museum original-object location was search-index reviewed only (direct site 502); current display check outstanding",
+    "No individual historical-market or archaeological photograph reproduction permissions cleared"
   ],
   "consumer_instruction": "Do not auto-merge or publish: 83-batch research-only cumulative staging is verified but V97 remains unchanged. Distinguish candidate research extraction from editorial corroboration. Read immutable history, proof ledger and original-source restrictions before app use.",
-  "immutable_handoff_path": "research/handoff/history/20261114T0710Z-83-batch-federal-capital-verified.json",
-  "previous_manifest_generated_at": "2026-11-14T06:07:47.201Z",
-  "previous_manifest_blob_sha": "fe31a577aeeaf3d6ca61179abcebb8ae4734fea4",
+  "immutable_handoff_path": "research/handoff/history/20261114T0810Z-84-batch-market-templo-verified.json",
+  "previous_manifest_generated_at": "2026-11-14T07:11:34.090Z",
+  "previous_manifest_blob_sha": "7b2e4eaeed32fabaaee4f5bf3bd6dac8eb673910",
   "handoff_history_append_only": true,
-  "verified_replay_commit_sha": "3f0e5e80e651c177c5b9c1f71aee7516bae547ac",
+  "verified_replay_commit_sha": "fa5c22d5b979009038dab927a45a73ab0d1bf8b8",
   "handoff_history_paths": [
     "research/handoff/history/20261113T0717Z-schema-tests-verified.json",
     "research/handoff/history/20261113T0812Z-detached37-replay-verified.json",
@@ -320,7 +331,8 @@
     "research/handoff/history/20261114T0405Z-metro-80-batch-verified.json",
     "research/handoff/history/20261114T0500Z-81-batch-republic-restoration-verified.json",
     "research/handoff/history/20261114T0607Z-san-ildefonso-82-batch-verified.json",
-    "research/handoff/history/20261114T0710Z-83-batch-federal-capital-verified.json"
+    "research/handoff/history/20261114T0710Z-83-batch-federal-capital-verified.json",
+    "research/handoff/history/20261114T0810Z-84-batch-market-templo-verified.json"
   ],
   "research_batch_artifact_paths": [
     "research/batches/20261113T0904Z-hospital-jesus-recovery-and-building-phases.json",
@@ -346,18 +358,19 @@
     "research/batches/20261114T0400Z-metro-1967-1970-pino-suarez-archaeology.json",
     "research/batches/20261114T0500Z-1867-republic-return-zocalo-archaeology.json",
     "research/batches/20261114T0600Z-san-ildefonso-1922-1926-muralism-and-templo-memory.json",
-    "research/batches/20261114T0702Z-1824-capital-and-ayuntamiento.json"
+    "research/batches/20261114T0702Z-1824-capital-and-ayuntamiento.json",
+    "research/batches/20261114T0758Z-market-1934-public-education-and-templo-object.json"
   ],
   "source_identity_crosswalk_path": "research/ledgers/20261113T1803Z-reconciliation-69-batch-baseline-and-evidence.json",
-  "handoff_contract_status": "83_batch_replay_sqlite_integrity_github_binary_sha256_verified_noncanonical_unapproved",
+  "handoff_contract_status": "84_batch_replay_sqlite_integrity_github_binary_sha256_verified_noncanonical_unapproved",
   "replay_evidence": {
-    "verification_ledger": "research/ledgers/20261114T0710Z-83-batch-replay-and-github-readback.json",
-    "replay_report_path": "research/reconciled/v4_44b53036df17/replay_report.json",
-    "compressed_checksum_path": "research/reconciled/v4_44b53036df17/compressed_sha256.txt",
-    "readback_binary_git_blob_sha": "e8b9e84af754eaadb0ae2632038b7e46d179b90a",
-    "readback_report_git_blob_sha": "54a00d5e446e6096c787ec138721163b3d206a28",
+    "verification_ledger": "research/ledgers/20261114T0810Z-84-batch-market-github-binary-readback.json",
+    "replay_report_path": "research/reconciled/v4_984c93b45dbe/replay_report.json",
+    "compressed_checksum_path": "research/reconciled/v4_984c93b45dbe/compressed_sha256.txt",
+    "readback_binary_git_blob_sha": "4e158b628a046bd0a4f07b8028081d3f2fe72a65",
+    "readback_report_git_blob_sha": "3f8559a88c9726cb76430852c16a8038f4c5eb59",
     "workflow_definition": ".github/workflows/research-replay-staging.yml",
-    "snapshot_commit_sha": "3f0e5e80e651c177c5b9c1f71aee7516bae547ac"
+    "snapshot_commit_sha": "fa5c22d5b979009038dab927a45a73ab0d1bf8b8"
   },
   "research_lineage_commits": [
     "f4d9c526bf59dadacad39d79c7b35d3dc8aafe7f",
@@ -404,23 +417,28 @@
     "906b9e187f5996cff2c15af17ccfb3c24d4b2804",
     "51f993c62d14ac00778248b8de3d5b2ba4128df4",
     "44b53036df17492b23d215358717924ab6563d48",
-    "3f0e5e80e651c177c5b9c1f71aee7516bae547ac"
+    "3f0e5e80e651c177c5b9c1f71aee7516bae547ac",
+    "984c93b45dbe2067c1d83186282470ae956f79ec",
+    "fa5c22d5b979009038dab927a45a73ab0d1bf8b8",
+    "c5d38ecf6185dd95423f6718c8d025bbfe5bf6b4",
+    "416c1bfb91f3097d34a8158cb3901a13dc1f4ac3",
+    "7282d92fc1b35bbe7c59316d1945f98482ee57fa"
   ],
-  "prior_handoff_history_commit_sha": "51f993c62d14ac00778248b8de3d5b2ba4128df4",
-  "research_pipeline_status": "83_batches_replayed_noncanonical_staging_V97_unchanged_main_untouched_editorial_unapproved",
+  "prior_handoff_history_commit_sha": "7282d92fc1b35bbe7c59316d1945f98482ee57fa",
+  "research_pipeline_status": "84_batches_replayed_noncanonical_staging_V97_unchanged_main_untouched_editorial_unapproved",
   "input_timestamp_note": "20261114T0702Z is immutable batch identifier; generated_at is recorded in batch and verified handoff history.",
-  "verified_replay_commit_status": "verified_new_versioned_database_artifact_and_git_binary_sha256_readback; exact replay commit verified via GitHub branch",
+  "verified_replay_commit_status": "exact_snapshot_commit_and_GitHub_persisted_binary_sha256_verified",
   "verified_binary_readback": {
-    "commit_sha": "3f0e5e80e651c177c5b9c1f71aee7516bae547ac",
-    "git_blob_sha": "e8b9e84af754eaadb0ae2632038b7e46d179b90a",
-    "report_blob_sha": "54a00d5e446e6096c787ec138721163b3d206a28",
-    "compressed_sha256": "9366b3341ddf74bceb12eb5c19485aabb5f9ed50d990e0d174496cd206e5410a",
-    "uncompressed_sqlite_sha256": "469037b89c1d9612a3984e5a131c2b21f6fe62ccf9425729f15932f13f42a232",
-    "verified_report_path": "research/reconciled/v4_44b53036df17/replay_report.json",
+    "commit_sha": "fa5c22d5b979009038dab927a45a73ab0d1bf8b8",
+    "git_blob_sha": "4e158b628a046bd0a4f07b8028081d3f2fe72a65",
+    "report_blob_sha": "3f8559a88c9726cb76430852c16a8038f4c5eb59",
+    "compressed_sha256": "8388b6581173d59e5571bf67b405d72793542413c1fb0c9644c547498e43bcf6",
+    "uncompressed_sqlite_sha256": "8c87fa8bc6fd848723d76e6d1d787ebed4eaa819573d3cffb12ea3ed527bbef6",
+    "verified_report_path": "research/reconciled/v4_984c93b45dbe/replay_report.json",
     "sqlite_integrity": "ok",
     "foreign_key_violations": 0,
     "canonical_rows_unchanged": true,
     "compress_digest_recomputed_independently_from_github_fetched_base64": true
   },
-  "previous_immutable_handoff_path": "research/handoff/history/20261114T0607Z-san-ildefonso-82-batch-verified.json"
+  "previous_immutable_handoff_path": "research/handoff/history/20261114T0710Z-83-batch-federal-capital-verified.json"
 }
