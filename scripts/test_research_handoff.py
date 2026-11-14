@@ -205,6 +205,54 @@ cu_audit = {
 cu_items = parse_new_audit("research/audits/cu.json", cu_audit, "a"*40)
 assert len(cu_items) == 1 and cu_items[0]["publication_authorization"] is False
 assert cu_items[0]["reader_audit_matches_main_blob"] is True
+# The 80-batch Metro/Pino Suárez research did NOT re-read the reader.
+# A previously pinned HTML blob is useful for identifying proposed passages,
+# but must NEVER count as a fresh current-reader audit or publication approval.
+metro_stale = copy.deepcopy(cu_audit)
+metro_stale.pop("reader_blob_sha")
+metro_stale["reader_blob_sha_last_verified"] = "a" * 40
+metro_stale["reader_re_read_this_run"] = False
+metro_stale["gates"] = [
+    {"topic": "Pino Suárez and Templo Mayor were distinct rescue campaigns",
+     "reader_anchor": "In February 1978, electrical workers",
+     "status": "separate_1967_1968_1978_salvage_sites",
+     "uncertainty": "Original 1968 newspaper and excavation fieldbook absent",
+     "historical_addition": "Optional unapproved cross-period sidebar",
+     "source_locators": [
+         {"path": "research/batches/metro-80.json", "locator": "METRO-07"}
+     ]}
+]
+metro_items = parse_new_audit(
+    "research/audits/metro-80.json", metro_stale, "a" * 40)
+assert len(metro_items) == 1
+assert metro_items[0]["reader_audit_matches_main_blob"] is False
+assert metro_items[0]["review_state"] == "awaiting_human_stale_reader_blob_reaudit"
+assert metro_items[0]["publication_authorization"] is False
+assert metro_items[0]["editorial_passage_id"] is None
+assert metro_items[0]["source_id_confirmed"] is None
+assert metro_items[0]["remaining_source_check"] == (
+    "Original 1968 newspaper and excavation fieldbook absent")
+assert metro_items[0]["proposed_editorial_addition_unapproved"] == (
+    "Optional unapproved cross-period sidebar")
+assert metro_items[0]["source_locator_candidates_unverified"][0]["locator"] == "METRO-07"
+# Reject missing or conflicting stale pins, unsafe approval, and false
+# claims of a fresh re-read based only on a historical SHA.
+for mutation in (
+    {"reader_blob_sha_last_verified": None},
+    {"reader_blob_sha_last_verified": "b" * 40},
+    {"reader_blob_sha": "b" * 40},
+    {"reader_re_read_this_run": True},
+    {"no_publication_of_unverified_claims": False},
+    {"ready_for_editorial_review": True},
+    {"publication_approved": True},
+):
+    unsafe = dict(metro_stale, **mutation)
+    try:
+        parse_new_audit("research/audits/metro-80.json", unsafe, "a" * 40)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("Unsafe stale reader audit admitted: " + str(mutation))
 # Earlier 1910 modern-city boundary audits provide only previous-audit
 # pointers, never original-source corroboration or publication authority.
 boundary_audit = {
