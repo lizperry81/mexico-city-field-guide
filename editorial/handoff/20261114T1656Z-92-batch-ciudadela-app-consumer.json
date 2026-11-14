@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "kind": "app_private_research_handoff_and_release_verification",
+  "generated_at": "2026-11-14T16:56:00Z",
+  "branch": "main",
+  "consumed_research_commit_sha": "87103c4699c2c640d45dc18be8dba1736e27d992",
+  "research_branch_head_observed": "feb16bf01846b47892c47ad6b393082d95722156",
+  "research_manifest_path": "research-persistence:research/handoff/manifest.json",
+  "immutable_history": "research/handoff/history/20261114T1603Z-92-batch-ciudadela-verified.json",
+  "replay_commit_sha": "902bcb8b04a93ac743121cc1b2ce50fb5ee418f8",
+  "latest_audit": "research/audits/20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-templo-evidence-gates.json",
+  "latest_coverage": "research/coverage/20261114T1557Z-ciudadela-tobacco-labor-and-1841-image-readiness.json",
+  "latest_batch": "research/batches/20261114T1557Z-ciudadela-tobacco-labor-and-1841-image.json",
+  "verified_scope": {
+    "batch_count": 92,
+    "provisional_finding_candidates": 618,
+    "source_candidates": 276,
+    "source_inspection_entries": 314,
+    "unknown_source_refs": 1,
+    "metadata_collisions": 2,
+    "detached_identity_reviews_pending": 37,
+    "unresolved_index_only_ref": 1
+  },
+  "canonical": {
+    "status": "V97 unchanged, provisional",
+    "sources": 616,
+    "claims": 422,
+    "claim_source_links": 403,
+    "findings": 68
+  },
+  "new_research": {
+    "subject": "La Ciudadela tobacco factory, colonial manufacturing and women's labor, 1841/1843 representation source criticism",
+    "new_findings_staged": 11,
+    "new_sources_staged": 8,
+    "coverage_readiness": {
+      "substantial": 0,
+      "developing": 6,
+      "sparse": 5,
+      "missing": 1
+    },
+    "audits_pending_human_source_level_check": true,
+    "approved_for_editorial_publication": false,
+    "identified_gaps": [
+      "1790s workplace site cannot be presumed at the 1807 factory building",
+      "1776 and 1807 original records need checking",
+      "Miguel versus Agustín Constanzó naming conflict",
+      "historic lithograph reproduction rights and accessible present-day courtyard routes unverified"
+    ]
+  },
+  "app_implementation": [
+    "scripts/handoff_92_history.py",
+    "scripts/check_research_handoff.py",
+    "scripts/test_handoff_92_history.py",
+    ".github/workflows/pages.yml"
+  ],
+  "automated_validation": {
+    "workflow_id": 43618216984,
+    "validated_app_commit": "d78ae291f62b79bd75cdcc0f5647e93d3ca51d1e",
+    "build": "success",
+    "deployment": "success",
+    "private_review_queue_items": 227,
+    "reader_passages_pending_evidence_review": 13,
+    "immutable_git_artifact_identities_checked": 7,
+    "baseline_policy_check": "pass",
+    "historic_center_internal_cross_links_verified_live": 18
+  },
+  "editorial_baseline": {
+    "policy_path": "editorial/DISCOVER_APPROVED_BASELINE_2026-11-13.md",
+    "approved_chapter_verbatim_archive_present": false,
+    "blocker": "Nov 13 exact approved narrative wording not authenticated; differing DOCX review/rewrite variants are not the exact approved conversation text. Do not invent archive Markdown or checksum."
+  },
+  "publication": {
+    "new_historical_prose_published": false,
+    "staged_findings_promoted_to_canonical": 0,
+    "existing_8_explore_chapters_preserved": true,
+    "existing_claims_sources_preserved": true,
+    "homepage_modified": false,
+    "reader_feedback_modified": false
+  },
+  "limitations": [
+    "Live HTTP/iPhone-user-agent smoke tests do not substitute for physical Safari interaction testing",
+    "No new photographic rights are cleared",
+    "GitHub main branch protection remains unverified"
+  ]
+}
