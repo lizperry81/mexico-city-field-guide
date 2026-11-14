@@ -17,6 +17,8 @@ KINDS = {
     "templo_mayor_exact_reader_blob_and_urban_chronology_boundary",
     "chapter_level_claim_to_source_locator_audit",
     "templo_mayor_chapter_evidence_maintenance_and_1910_chronology_boundary",
+    "templo_mayor_discover_opening_chapter_source_locator_matrix_and_cross_period_boundary",
+    "templo_mayor_discover_opening_narrative_claim_to_source_locator_matrix",
 }
 
 
@@ -200,10 +202,13 @@ def parse_new_audit(path, doc, current_reader_blob):
         "templo_mayor_discover_cross_period_and_current_reader_evidence_gate",
         "templo_mayor_discover_exact_reader_seven_topic_source_locator_audit",
         "chapter_level_claim_to_source_locator_audit",
+        "templo_mayor_discover_opening_chapter_source_locator_matrix_and_cross_period_boundary",
+        "templo_mayor_discover_opening_narrative_claim_to_source_locator_matrix",
     }
     boundary_kind = "templo_mayor_exact_reader_blob_and_urban_chronology_boundary"
     if kind in gate_kinds | {boundary_kind}:
-        blob = doc.get("target_main_blob_sha") or doc.get("reader_blob_sha")
+        blob = (doc.get("target_main_blob_sha") or doc.get("reader_blob_sha")
+                or doc.get("previous_reader_blob_sha"))
         require(doc.get("branch") == "research-persistence" and
                 doc.get("target_branch_read_only") == "main" and
                 doc.get("target_path") == "poi/templo-mayor/reader.html" and
@@ -217,7 +222,15 @@ def parse_new_audit(path, doc, current_reader_blob):
             require(doc.get("reader_re_read_this_run") is True and
                     doc.get("no_publication_of_unverified_claims") is True,
                     "cross-period audit lacks nonpublication safeguards")
-        matches = blob == current_reader_blob
+        if kind in ("templo_mayor_discover_opening_chapter_source_locator_matrix_and_cross_period_boundary",
+                    "templo_mayor_discover_opening_narrative_claim_to_source_locator_matrix"):
+            require(doc.get("no_publication_of_unverified_claims") is True,
+                    "opening narrative audit lacks explicit nonpublication restriction")
+            if doc.get("reader_re_read_this_run") is False:
+                require(doc.get("previous_reader_blob_sha") == blob,
+                        "stale opening audit must declare its previous reader identity")
+        matches = (blob == current_reader_blob and
+                   doc.get("reader_re_read_this_run") is not False)
         if kind == boundary_kind:
             anchors = doc.get("reader_anchors")
             locators = doc.get("source_locator_matrix")
@@ -259,7 +272,7 @@ def parse_new_audit(path, doc, current_reader_blob):
                     "dated reader gate has no identifiable historical question")
             source_rows = (row["source_locator_matrix"]
                            if "source_locator_matrix" in row
-                           else row.get("source_locators"))
+                           else row.get("source_locators", row.get("locators")))
             require(isinstance(source_rows, list) and
                     (bool(source_rows) or
                      kind == "templo_mayor_discover_cross_period_and_current_reader_evidence_gate"),
@@ -279,8 +292,9 @@ def parse_new_audit(path, doc, current_reader_blob):
                                      "locator": "prior audit only; original source check pending"})
                     continue
                 source = (source_row.get("source_id") or source_row.get("source")
-                          or source_row.get("path"))
-                locator = source_row.get("pages") or source_row.get("locator")
+                          or source_row.get("path") or source_row.get("url"))
+                locator = (source_row.get("pages") or source_row.get("locator")
+                           or source_row.get("detail"))
                 require(text(source) and text(locator),
                         "dated reader gate has no source identity and page locator")
                 locators.append({"source": source, "locator": locator})
