@@ -491,7 +491,7 @@
     "1e303cb9b656ebb415405569d0318bf399389dba",
     "0e4bd51bb5e6b8c54c6f8399b7cf194e925c8d4b"
   ],
-  "prior_handoff_history_commit_sha": "902bcb8b04a93ac743121cc1b2ce50fb5ee418f8",
+  "prior_handoff_history_commit_sha": "feb16bf01846b47892c47ad6b393082d95722156",
   "research_pipeline_status": "93_batches_replayed_noncanonical_staging_V97_unchanged_main_untouched_editorial_unapproved",
   "input_timestamp_note": "Input batch added 11 findings, 7 source candidates and 7 inspections; 1856 exemption and independent street-decree difference researched. Original 1856 decree, plans, access and rights remain unverified.",
   "verified_replay_commit_status": "completed: both research workflows successful; workflow checked persisted GitHub compressed hash; independent external binary fetch unavailable",
