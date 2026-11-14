@@ -14,6 +14,8 @@ from handoff_new_audits import parse_new_audit
 # plus five TE28 reclassifications. Test both strict provenance encodings.
 assert verified_index_only_total(23, 23, 5, "research_to_app_handoff")
 assert verified_index_only_total(23, 23, 5, "immutable_research_batch_handoff")
+assert verified_index_only_total(23, 23, 5, "append_only_research_handoff_history")
+assert not verified_index_only_total(23, 18, 5, "append_only_research_handoff_history")
 assert verified_index_only_total(23, 18, 5, "verified_research_to_app_handoff_history")
 for bad in (
     (28, 23, 5, "research_to_app_handoff"),
@@ -43,6 +45,32 @@ _out = parse_new_audit("research/audits/gamio.json", _audit, _blob)
 assert len(_out) == 1 and _out[0]["publication_authorization"] is False
 assert _out[0]["review_state"] == "awaiting_human_stale_reader_blob_reaudit"
 assert _out[0]["source_locator_candidates_unverified"][0]["source"] == "S-1"
+
+# Batch 81 declares the freshly inspected reader as reader_blob_sha_verified.
+# When main advances, its findings must remain unapproved, stale-reader tasks.
+_verified81 = dict(_audit,
+    kind="chapter_level_claim_to_source_locator_audit",
+    reader_blob_sha_verified="b"*40,
+    reader_re_read_this_run=True,
+    no_publication_of_unverified_claims=True)
+_verified81.pop("target_main_blob_sha")
+_items81 = parse_new_audit("research/audits/batch81.json", _verified81, _blob)
+assert len(_items81) == 1
+assert _items81[0]["review_state"] == "awaiting_human_stale_reader_blob_reaudit"
+assert _items81[0]["publication_authorization"] is False
+for mutation in (
+    {"reader_blob_sha_verified": "incorrect"},
+    {"no_publication_of_unverified_claims": False},
+    {"ready_for_editorial_review": True},
+    {"publication_approved": True},
+):
+    unsafe = dict(_verified81, **mutation)
+    try:
+        parse_new_audit("research/audits/batch81.json", unsafe, _blob)
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("Unsafe 81-batch reader audit accepted: " + str(mutation))
 for mutation in (
     {"publication_approved": True},
     {"ready_for_editorial_review": True},
