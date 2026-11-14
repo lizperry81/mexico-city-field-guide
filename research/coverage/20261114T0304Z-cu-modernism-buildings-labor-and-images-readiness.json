@@ -1,0 +1,154 @@
+{
+  "schema_version": 3,
+  "kind": "period_x_theme_x_geography_explanatory_readiness_delta",
+  "generated_at": "2026-11-14T03:05:39.232Z",
+  "branch": "research-persistence",
+  "source_batch_path": "research/batches/20261114T0304Z-cu-modernism-buildings-labor-and-images.json",
+  "evidence_status": "noncanonical_source_located_cannot_publish",
+  "rating_definitions": {
+    "substantial": "Explanation independently corroborated at primary or specialized page level, with material observation and disputed context resolved.",
+    "developing": "Evidence supports a coherent specific explanation but lacks critical original documentation or current-site confirmation.",
+    "sparse": "Only partial/institutional account or limited interpretation; chapter not narratively ready.",
+    "missing": "No sufficient evidence to make the requested explanation or accessible field experience."
+  },
+  "cells": [
+    {
+      "period": "1943–1946",
+      "theme": "Campus relocation, land acquisition and rural urban edge",
+      "geography": "Historic Centre to Pedregal",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0304Z-CU-01",
+        "20261114T0304Z-CU-02"
+      ],
+      "evidence_gap": "Original land/decree text and affected property holders absent"
+    },
+    {
+      "period": "1949–1952",
+      "theme": "Campus infrastructure and dedication phases",
+      "geography": "Pedregal de San Ángel",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0304Z-CU-03"
+      ],
+      "evidence_gap": "Construction ledger and 1950 cornerstone documentation absent"
+    },
+    {
+      "period": "1954–1955",
+      "theme": "University access and women students",
+      "geography": "Ciudad Universitaria",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T0304Z-CU-04"
+      ],
+      "evidence_gap": "University statistical yearbook and social access research absent"
+    },
+    {
+      "period": "1950–1952",
+      "theme": "Construction-worker visibility in historic photographs",
+      "geography": "Campus Central CU",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0304Z-CU-05"
+      ],
+      "evidence_gap": "Catalog IDs credible; individual workers and exact site map missing"
+    },
+    {
+      "period": "1950–1952",
+      "theme": "Stadium volcanic landform and compacted embankments",
+      "geography": "Estadio Olímpico Universitario",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0304Z-CU-06"
+      ],
+      "evidence_gap": "Engineering plans and current external fabric unverified"
+    },
+    {
+      "period": "1952–1957",
+      "theme": "Rivera mural design and incompleteness",
+      "geography": "Stadium east facade",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T0304Z-CU-07"
+      ],
+      "evidence_gap": "Unexecuted mural plan unavailable"
+    },
+    {
+      "period": "1950s",
+      "theme": "Four facade national history iconography",
+      "geography": "Biblioteca Central",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0304Z-CU-08",
+        "20261114T0304Z-CU-11"
+      ],
+      "evidence_gap": "Exact iconographic diagram and original sketches absent"
+    },
+    {
+      "period": "1954–1956",
+      "theme": "Library opening date inconsistency",
+      "geography": "Biblioteca Central",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T0304Z-CU-09"
+      ],
+      "evidence_gap": "Find original 1956 notice and 1954 building functions"
+    },
+    {
+      "period": "1949–1953",
+      "theme": "Material, labor and economics of stone mosaics",
+      "geography": "Biblioteca Central",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T0304Z-CU-10"
+      ],
+      "evidence_gap": "O'Gorman memoir and project staffing originals missing"
+    },
+    {
+      "period": "1950s",
+      "theme": "Colonial cosmic models represented by mural",
+      "geography": "Biblioteca Central south facade",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0304Z-CU-11"
+      ],
+      "evidence_gap": "Scholar abstract only; full article and panel localization needed"
+    },
+    {
+      "period": "2026",
+      "theme": "Historic photographs licensed for in-app toggle",
+      "geography": "UNAM Central Campus",
+      "rating": "missing",
+      "finding_ids": [
+        "20261114T0304Z-CU-05",
+        "20261114T0304Z-CU-09"
+      ],
+      "evidence_gap": "UNAM rights permission and original photo provenance pending"
+    },
+    {
+      "period": "2026",
+      "theme": "Public route with verified access and exact site observation",
+      "geography": "Library–Rectorate–Stadium",
+      "rating": "missing",
+      "finding_ids": [
+        "20261114T0304Z-CU-06",
+        "20261114T0304Z-CU-07",
+        "20261114T0304Z-CU-08"
+      ],
+      "evidence_gap": "No current opening/entrance/route checks, should not publish walk"
+    }
+  ],
+  "summary": {
+    "total": 12,
+    "substantial": 0,
+    "developing": 6,
+    "sparse": 4,
+    "missing": 2,
+    "classification_finding_counts": {
+      "broad_history": 4,
+      "poi_ready_candidate": 5,
+      "specialist_technical": 2
+    }
+  },
+  "publication_approved": false
+}

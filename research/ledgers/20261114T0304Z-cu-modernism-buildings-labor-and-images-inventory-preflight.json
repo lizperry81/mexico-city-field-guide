@@ -1,0 +1,56 @@
+{
+  "schema_version": 2,
+  "kind": "git_batch_research_preflight",
+  "generated_at": "2026-11-14T03:05:39.232Z",
+  "branch": "research-persistence",
+  "observed_branch_head": "cf146da82156ee1b3ad17a711114593949654cee",
+  "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_counts": {
+    "sources": 616,
+    "claims": 422,
+    "claim_source_links": 403,
+    "findings": 68
+  },
+  "previous_replay_report_path": "research/reconciled/v4_48b6c89f7979/replay_report.json",
+  "previous_replay_sha256": "4300bf6a9617a360f250bddf9340528c052ee1cfcbe296fa3e9845533d14761b",
+  "before_verified_staged_counts": {
+    "batches": 78,
+    "findings": 464,
+    "source_candidates": 167,
+    "source_inspections": 205,
+    "unregistered_source_references": 1,
+    "metadata_conflicts": 2,
+    "detached_inspections": 37
+  },
+  "expected_after_if_replay_passes": {
+    "batches": 79,
+    "findings": 475,
+    "source_candidates": 176,
+    "source_inspections": 214
+  },
+  "new_batch_path": "research/batches/20261114T0304Z-cu-modernism-buildings-labor-and-images.json",
+  "coverage_path": "research/coverage/20261114T0304Z-cu-modernism-buildings-labor-and-images-readiness.json",
+  "audit_path": "research/audits/20261114T0304Z-cu-modernism-buildings-labor-and-images-templo-reader-evidence-boundaries.json",
+  "proposed_new_counts": {
+    "new_findings": 11,
+    "new_source_candidates": 9,
+    "new_inspections": 9
+  },
+  "inspection_evidence_quality": {
+    "institutional_web_pages_checked": 5,
+    "archival_catalog_records_checked": 2,
+    "peer_reviewed_abstracts_checked": 2,
+    "original_government_decrees_checked": 0,
+    "original_prints_or_negative_examined": 0
+  },
+  "potential_new_conflicts": [
+    "Original 1946 decree not inspected",
+    "1954 library listed as operating by UNAM Global vs April 1956 archive + scholarly source",
+    "1960s or 1950s dates of exact building/mosaic completion differ across sources",
+    "Historical photo rights not cleared"
+  ],
+  "pending_replay": true,
+  "not_canonical": true,
+  "not_publication_approved": true,
+  "preflight_status": "cross_source_finding_stage_only_unverified_count_increase_until_sqlite_replay_and_github_readback"
+}

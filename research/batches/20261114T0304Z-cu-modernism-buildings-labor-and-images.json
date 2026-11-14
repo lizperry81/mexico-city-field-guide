@@ -1,0 +1,489 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261114T0304Z-cu-modernism-buildings-labor-and-images",
+  "generated_at": "2026-11-14T03:05:39.232Z",
+  "branch": "research-persistence",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "storage_role": "immutable_noncanonical_research_batch",
+  "previous_verified_replay": "research/reconciled/v4_48b6c89f7979/replay_report.json",
+  "prior_verified_counts": {
+    "github_batches_replayed": 78,
+    "staged_findings": 464,
+    "source_candidates": 167,
+    "inspection_entries": 205,
+    "canonical_sources": 616,
+    "canonical_claims": 422,
+    "canonical_links": 403,
+    "canonical_findings": 68
+  },
+  "research_scope": "Eleven findings on the 1943–1956 Ciudad Universitaria relocation, 1946 land decree, 1950–1954 construction and teaching, documented work crews, Central Library mosaics and 1952 stadium. Four broad-history, five POI-oriented, two specialist-technical. Two archival photo catalog records inspected; no reproduction rights granted.",
+  "sources": [
+    {
+      "id": "STG-SRC-20261114-CU-UNAM-GLOBAL",
+      "title": "Ciudad Universitaria de la UNAM cumple 65 años",
+      "authors": "Iván Moreno / Gaceta UNAM",
+      "publication": "UNAM Global, 22 March 2019",
+      "url": "https://unamglobal.unam.mx/global_revista/ciudad-universitaria-de-la-unam-cumple-65-anos/",
+      "access_scope": "article HTML directly read, lines 20-60",
+      "status": "institutional_webpage_checked_original_sources_pending"
+    },
+    {
+      "id": "STG-SRC-20261114-CU-UNESCO",
+      "title": "Central University City Campus of the Universidad Nacional Autónoma de México",
+      "authors": "UNESCO World Heritage Centre",
+      "publication": "World Heritage property 1250, inscription 2007",
+      "url": "https://whc.unesco.org/en/list/1250",
+      "access_scope": "listing HTML directly read, lines 2-5 and 44-51",
+      "status": "institutional_webpage_checked_original_sources_pending"
+    },
+    {
+      "id": "STG-SRC-20261114-CU-IIE-EXHIBIT",
+      "title": "Ciudad Universitaria, UNAM: 70 años de historia",
+      "authors": "Instituto de Investigaciones Estéticas, UNAM",
+      "publication": "2022 exhibition introduction, page updated 2024",
+      "url": "https://www.esteticas.unam.mx/exposiciones/ciudad-universitaria/introduccion.html",
+      "access_scope": "curated archival exhibit introduction directly read, lines 0-18; NOT all photo objects inspected",
+      "status": "institutional_webpage_checked_original_sources_pending"
+    },
+    {
+      "id": "STG-SRC-20261114-CU-GACETA-STADIUM",
+      "title": "Cráter arquitectonizado",
+      "authors": "Patricia López Suárez",
+      "publication": "Gaceta UNAM, 17 November 2022",
+      "url": "https://www.gaceta.unam.mx/crater-arquitectonizado/",
+      "access_scope": "scholarly expert interview directly read, lines 6-26; original structural plans not examined",
+      "status": "institutional_webpage_checked_original_sources_pending"
+    },
+    {
+      "id": "STG-SRC-20261114-CU-AFMT-CKH216",
+      "title": "Proceso constructivo del campus central de Ciudad Universitaria, CKH000216",
+      "authors": "Saúl Molina Barbosa / Archivo Fotográfico Manuel Toussaint",
+      "publication": "Original gelatin silver photograph c.1950-1952; UNAM catalog metadata",
+      "url": "https://catalogoafmt.esteticas.unam.mx/index.php/Detail/objects/503839",
+      "access_scope": "UNAM archival catalog lines 2-22 directly read; image preview surfaced, original print negative not examined",
+      "status": "archival_catalog_metadata_checked_original_not_read"
+    },
+    {
+      "id": "STG-SRC-20261114-CU-AFMT-CKH064",
+      "title": "Biblioteca Central de la Ciudad Universitaria de la UNAM, CKH000064",
+      "authors": "Saúl Molina Barbosa / Archivo Fotográfico Manuel Toussaint",
+      "publication": "Original gelatin silver photograph 1952; UNAM catalog",
+      "url": "https://catalogoafmt.esteticas.unam.mx/index.php/Detail/objects/5579",
+      "access_scope": "UNAM archival catalog lines 2-23 directly read; image preview surfaced, original print not examined",
+      "status": "archival_catalog_metadata_checked_original_not_read"
+    },
+    {
+      "id": "STG-SRC-20261114-CU-CULTURA-OGORMAN",
+      "title": "El mural de la Biblioteca Central de la UNAM, ejemplo de la arquitectura de vanguardia de Juan O’Gorman",
+      "authors": "Secretaría de Cultura / Conaculta",
+      "publication": "press essay 17 January 2012 quoting O'Gorman 1973 autobiography",
+      "url": "https://www.cultura.gob.mx/noticias/efemerides/18240-el-mural-de-la-biblioteca-central-de-la-unam-ejemplo-de-la-arquitectura-de-vanguardia-de-juan-o%E2%80%99gorman.html",
+      "access_scope": "institutional HTML directly read lines 0-23; original autobiography NOT examined",
+      "status": "institutional_webpage_checked_original_sources_pending"
+    },
+    {
+      "id": "STG-SRC-20261114-CU-RESTREPO-2019",
+      "title": "The Central Library of the University City (UNAM), an embodiment of Mexico in the 1950’s",
+      "authors": "Luna Valeria Restrepo",
+      "publication": "Biblioteca Universitaria 2019, DOI 10.22201/dgb.0187750xp.2019.1.450",
+      "url": "https://bibliotecauniversitaria.dgb.unam.mx/rbu/article/view/450",
+      "access_scope": "scholarly abstract directly read lines 21-33; full article not examined",
+      "status": "scholarly_abstract_checked_full_article_not_read"
+    },
+    {
+      "id": "STG-SRC-20261114-CU-EDER-2011",
+      "title": "Tolomeo y Copérnico en el Nuevo Mundo. Juan O’Gorman y el muro sur de la Biblioteca Central",
+      "authors": "Rita Eder",
+      "publication": "Anales del Instituto de Investigaciones Estéticas 2011, DOI 10.22201/iie.18703062e.2011.98.2364",
+      "url": "https://www.analesiie.unam.mx/index.php/analesiie/article/view/2364",
+      "access_scope": "scholarly abstract directly read lines 16-49; HTML full article iframe not read",
+      "status": "scholarly_abstract_checked_full_article_not_read"
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "20261114T0304Z-CU-INS-01",
+      "source_id": "STG-SRC-20261114-CU-UNAM-GLOBAL",
+      "locator": "article HTML directly read, lines 20-60",
+      "access": "article HTML directly read, lines 20-60",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false
+    },
+    {
+      "id": "20261114T0304Z-CU-INS-02",
+      "source_id": "STG-SRC-20261114-CU-UNESCO",
+      "locator": "listing HTML directly read, lines 2-5 and 44-51",
+      "access": "listing HTML directly read, lines 2-5 and 44-51",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false
+    },
+    {
+      "id": "20261114T0304Z-CU-INS-03",
+      "source_id": "STG-SRC-20261114-CU-IIE-EXHIBIT",
+      "locator": "curated archival exhibit introduction directly read, lines 0-18; NOT all photo objects inspected",
+      "access": "curated archival exhibit introduction directly read, lines 0-18; NOT all photo objects inspected",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false
+    },
+    {
+      "id": "20261114T0304Z-CU-INS-04",
+      "source_id": "STG-SRC-20261114-CU-GACETA-STADIUM",
+      "locator": "scholarly expert interview directly read, lines 6-26; original structural plans not examined",
+      "access": "scholarly expert interview directly read, lines 6-26; original structural plans not examined",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false
+    },
+    {
+      "id": "20261114T0304Z-CU-INS-05",
+      "source_id": "STG-SRC-20261114-CU-AFMT-CKH216",
+      "locator": "UNAM archival catalog lines 2-22 directly read; image preview surfaced, original print negative not examined",
+      "access": "UNAM archival catalog lines 2-22 directly read; image preview surfaced, original print negative not examined",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": true
+    },
+    {
+      "id": "20261114T0304Z-CU-INS-06",
+      "source_id": "STG-SRC-20261114-CU-AFMT-CKH064",
+      "locator": "UNAM archival catalog lines 2-23 directly read; image preview surfaced, original print not examined",
+      "access": "UNAM archival catalog lines 2-23 directly read; image preview surfaced, original print not examined",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": true
+    },
+    {
+      "id": "20261114T0304Z-CU-INS-07",
+      "source_id": "STG-SRC-20261114-CU-CULTURA-OGORMAN",
+      "locator": "institutional HTML directly read lines 0-23; original autobiography NOT examined",
+      "access": "institutional HTML directly read lines 0-23; original autobiography NOT examined",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false
+    },
+    {
+      "id": "20261114T0304Z-CU-INS-08",
+      "source_id": "STG-SRC-20261114-CU-RESTREPO-2019",
+      "locator": "scholarly abstract directly read lines 21-33; full article not examined",
+      "access": "scholarly abstract directly read lines 21-33; full article not examined",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false
+    },
+    {
+      "id": "20261114T0304Z-CU-INS-09",
+      "source_id": "STG-SRC-20261114-CU-EDER-2011",
+      "locator": "scholarly abstract directly read lines 16-49; HTML full article iframe not read",
+      "access": "scholarly abstract directly read lines 16-49; HTML full article iframe not read",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false
+    }
+  ],
+  "findings": [
+    {
+      "id": "20261114T0304Z-CU-01",
+      "classification": "broad_history",
+      "assertion": "Before Ciudad Universitaria, university faculties were dispersed through adapted historic-centre buildings. UNAM's 2019 institutional historical account dates the selection of a Pedregal de San Ángel site to 1943, making relocation a history of urban decentralization, not simply a move to an already established university district.",
+      "date_or_range": "1943–1954",
+      "period": "Postrevolutionary education and urban expansion",
+      "themes": [
+        "higher education",
+        "urban decentralization"
+      ],
+      "geographies": [
+        "Centro Histórico",
+        "Pedregal de San Ángel"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-CU-UNAM-GLOBAL"
+      ],
+      "source_locator": "UNAM Global 2019 lines 27-32, 50-55",
+      "limitations": "Selection and displacement described retrospectively; original planning correspondence, property ownership and affected local residents not researched",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0304Z-CU-02",
+      "classification": "broad_history",
+      "assertion": "UNAM's published history dates the presidential expropriation decree for the Pedregal lands to 11 September 1946, under Manuel Ávila Camacho. This records a claim about institutional land acquisition, not proof that there were no compensation or local land-tenure disputes.",
+      "date_or_range": "1946-09-11",
+      "period": "Postrevolutionary land administration",
+      "themes": [
+        "land acquisition",
+        "state formation",
+        "university planning"
+      ],
+      "geographies": [
+        "Pedregal de San Ángel",
+        "Coyoacán"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-CU-UNAM-GLOBAL"
+      ],
+      "source_locator": "UNAM Global 2019 line 55",
+      "limitations": "Original Diario Oficial decree, parcel boundaries, compensation and property titles not checked",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0304Z-CU-03",
+      "classification": "broad_history",
+      "assertion": "Three events must be distinguished: infrastructure work began in 1949, the campus foundation stone was laid 5 June 1950 according to UNAM IIE, and the official Dedicación was held 20 November 1952. First classes and major institutional relocation followed in March 1954, so 'opened in 1952' does not mean the complete teaching move occurred that year.",
+      "date_or_range": "1949–1954",
+      "period": "Campus founding chronology",
+      "themes": [
+        "construction",
+        "state ceremony",
+        "teaching relocation"
+      ],
+      "geographies": [
+        "Ciudad Universitaria",
+        "Pedregal"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-CU-IIE-EXHIBIT",
+        "STG-SRC-20261114-CU-UNAM-GLOBAL",
+        "STG-SRC-20261114-CU-UNESCO"
+      ],
+      "source_locator": "IIE introduction lines 2-5; UNAM Global 2019 lines 25-38,55-60; UNESCO description lines 2-5",
+      "limitations": "Different institutional definitions of inauguration and commencement; first-stone ceremony records and first-day teaching registers unexamined",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0304Z-CU-04",
+      "classification": "broad_history",
+      "assertion": "The university's 2019 retrospective gives 6,933 CU students in its first year, including 935 women, and says enrollment reached 25,000 in 1955. These institutional figures invite analysis of access to higher education, but they do not establish the socio-economic distribution of students or the entirety of women enrolled across UNAM.",
+      "date_or_range": "1954–1955",
+      "period": "University access and gender",
+      "themes": [
+        "higher education",
+        "women students",
+        "institutional enrollment"
+      ],
+      "geographies": [
+        "Ciudad Universitaria"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-CU-UNAM-GLOBAL"
+      ],
+      "source_locator": "UNAM Global 2019 lines 35-43",
+      "limitations": "Original statistical yearbook and definition of first-year total not verified; 2019 source reports are historical numbers not current figures",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0304Z-CU-05",
+      "classification": "poi_ready_candidate",
+      "assertion": "A UNAM photo catalog identifies Saúl Molina Barbosa's 1950–1952 photograph CKH000216 as workers performing foundation and column-assembly work at the central campus; this is specific surviving documentation of labor normally omitted by accounts limited to celebrated architects.",
+      "date_or_range": "1950–1952",
+      "period": "Construction workforce and archives",
+      "themes": [
+        "workers",
+        "archival photography",
+        "concrete foundations"
+      ],
+      "geographies": [
+        "Campus Central CU"
+      ],
+      "poi_ids": [
+        "unam-campus-central"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-CU-AFMT-CKH216"
+      ],
+      "source_locator": "AFMT UNAM image CKH000216, catalog lines 7-22; visual preview of workers and site from catalog",
+      "limitations": "Exact photographed structure and worker identities unknown; preview is not a fully examined negative; rights clearance not established",
+      "learning_mode": "pre_read_with_historical_photo_toggle_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0304Z-CU-06",
+      "classification": "poi_ready_candidate",
+      "assertion": "UNAM's architecture interview explains that the Estadio Olímpico was formed around a natural Pedregal depression, excavating and compacting local volcanic material into an embankment-like structure. This gives visitors a physical construction detail to inspect instead of repeating unsubstantiated claims of an original 'charro hat' or butterfly-shaped design.",
+      "date_or_range": "1950–1952",
+      "period": "Volcanic landscape and modern engineering",
+      "themes": [
+        "volcanic material",
+        "earthwork",
+        "architecture"
+      ],
+      "geographies": [
+        "Estadio Olímpico Universitario",
+        "Pedregal"
+      ],
+      "poi_ids": [
+        "estadio-olimpico-universitario"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-CU-GACETA-STADIUM"
+      ],
+      "source_locator": "Gaceta UNAM 17 Nov 2022 lines 16-26; expert María de Lourdes Cruz González Franco",
+      "limitations": "Original structural calculations and field fabric not checked; designer-inspiration interpretations explicitly disputed by cited specialist",
+      "learning_mode": "field_candidate_exterior",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0304Z-CU-07",
+      "classification": "poi_ready_candidate",
+      "assertion": "On the stadium's eastern side Diego Rivera created a stone-relief work, 'La Universidad, la familia y el deporte en México'. Gaceta UNAM reports that Rivera had intended to extend comparable work around the exterior, but the scheme was not completed; visitors should not mistake the extant mural for a finished full-perimeter decoration.",
+      "date_or_range": "1952–1957",
+      "period": "Modern architecture and public art",
+      "themes": [
+        "mural",
+        "unfinished design",
+        "institutional identity"
+      ],
+      "geographies": [
+        "Estadio Olímpico Universitario"
+      ],
+      "poi_ids": [
+        "estadio-olimpico-universitario"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-CU-GACETA-STADIUM"
+      ],
+      "source_locator": "Gaceta UNAM 17 Nov 2022 lines 11-15",
+      "limitations": "Original artist design proposals and dates of interruptions absent; do not state definitive reason for non-completion",
+      "learning_mode": "field_candidate_exterior",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0304Z-CU-08",
+      "classification": "poi_ready_candidate",
+      "assertion": "The Central Library's four mosaic facades are intentionally differentiated: north references pre-Hispanic history; south conquest and colonial history; east twentieth-century social change; west the university and contemporary Mexico. The 1950s imagery records modern interpretations of earlier eras, not primary evidence of pre-Hispanic events.",
+      "date_or_range": "1950–1956",
+      "period": "National history through muralism",
+      "themes": [
+        "mosaics",
+        "historical representation",
+        "public art"
+      ],
+      "geographies": [
+        "Biblioteca Central CU"
+      ],
+      "poi_ids": [
+        "biblioteca-central-unam"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-CU-CULTURA-OGORMAN",
+        "STG-SRC-20261114-CU-EDER-2011"
+      ],
+      "source_locator": "Cultura/Conaculta O'Gorman 2012 article, historical facade summary; Eder 2011 journal abstract lines 46-49",
+      "limitations": "Full artist sketches and independent iconography monographs not yet collated; exact symbolic readings subject to interpretative debate",
+      "learning_mode": "field_candidate_4_facades",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0304Z-CU-09",
+      "classification": "poi_ready_candidate",
+      "assertion": "The Library's first public opening should not be dated to the campus's 1952 dedication. The UNAM photo archive explicitly records that Biblioteca Central opened to its university community in April 1956, agreeing with Restrepo's 2019 abstract, while UNAM Global 2019 loosely lists the library among 1954 campus units; this definitional conflict remains to be reconciled.",
+      "date_or_range": "1954–1956",
+      "period": "Public building use chronology",
+      "themes": [
+        "institutional opening",
+        "archival discrepancy",
+        "library"
+      ],
+      "geographies": [
+        "Biblioteca Central CU"
+      ],
+      "poi_ids": [
+        "biblioteca-central-unam"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-CU-AFMT-CKH064",
+        "STG-SRC-20261114-CU-RESTREPO-2019",
+        "STG-SRC-20261114-CU-UNAM-GLOBAL"
+      ],
+      "source_locator": "AFMT CKH000064 lines 19-20, Restrepo 2019 abstract lines 27-32; UNAM Global 2019 lines 35-38",
+      "limitations": "Original April 1956 opening notice and 1954 inventory needed; do not equate shell building/administrative functions with public access",
+      "learning_mode": "pre_read_and_field_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0304Z-CU-10",
+      "classification": "specialist_technical",
+      "assertion": "A 2012 Secretaría de Cultura essay quoting O'Gorman's 1973 autobiographical account describes a test of three rows of colored-stone mosaic before Carlos Lazo approved the full library scheme, and reports work by approximately 60 people, including stoneworkers and mural setters. This is an attributed later reproduction of an artist's account, not an independently verified employment register.",
+      "date_or_range": "1949–1953",
+      "period": "Mosaic construction economics and labor",
+      "themes": [
+        "stonework",
+        "mural prefabrication",
+        "workers",
+        "project approval"
+      ],
+      "geographies": [
+        "Biblioteca Central CU"
+      ],
+      "poi_ids": [
+        "biblioteca-central-unam"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-CU-CULTURA-OGORMAN"
+      ],
+      "source_locator": "Secretaría de Cultura 17 Jan 2012 lines 16-23, describing O'Gorman 1973 memoir",
+      "limitations": "Original 1973 autobiography not checked; quotation attribution and team count need confirmation with project payroll / memoir original",
+      "learning_mode": "specialist_pre_read",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0304Z-CU-11",
+      "classification": "specialist_technical",
+      "assertion": "Rita Eder's 2011 scholarly abstract interprets the Central Library's southern wall as presenting the competing Ptolemaic and Copernican cosmic models within a broader program about the collision and encounter of colonial cultures. This is a documented scholarly interpretation of a 1950s artwork, not a neutral illustration of colonial astronomy itself.",
+      "date_or_range": "1950s artwork representing 1500s–1700s",
+      "period": "Art-historical interpretation",
+      "themes": [
+        "cosmology",
+        "colonial iconography",
+        "cultural encounter"
+      ],
+      "geographies": [
+        "Biblioteca Central south facade"
+      ],
+      "poi_ids": [
+        "biblioteca-central-unam"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-CU-EDER-2011"
+      ],
+      "source_locator": "Eder 2011 Anales IIE DOI 10.22201/iie.18703062e.2011.98.2364, abstract lines 46-49",
+      "limitations": "Full Eder article not examined; visitor sightline and actual object-level panel matching not verified",
+      "learning_mode": "specialist_field_candidate",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    }
+  ],
+  "source_identity_policy": "New provenance IDs; URL/DOI overlaps with prior canonical sources are candidates only and must not auto-merge.",
+  "external_source_usage": "Institutional pages and two scholarly abstracts read; no original decree, architectural blueprint, university register or period photograph negative examined.",
+  "publication_approved": false,
+  "independently_corroborated_findings": 0,
+  "ready_for_editorial_review": false
+}

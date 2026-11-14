@@ -1,0 +1,126 @@
+{
+  "schema_version": 3,
+  "kind": "chapter_level_claim_to_source_locator_audit",
+  "generated_at": "2026-11-14T03:05:39.232Z",
+  "branch": "research-persistence",
+  "target_branch_read_only": "main",
+  "target_path": "poi/templo-mayor/reader.html",
+  "reader_re_read_this_run": true,
+  "reader_blob_sha": "0e0d2b741d05b059eadb267ec982d3d76e8150bb",
+  "source_batch_path": "research/batches/20261114T0304Z-cu-modernism-buildings-labor-and-images.json",
+  "gates": [
+    {
+      "topic": "Triple Alliance founding dates",
+      "reader_anchor": "In the late 1420s, Tenochtitlan joined Texcoco and Tlacopan in the Triple Alliance",
+      "status": "late_1420s_prudent_precision_unresolved",
+      "source_locators": [
+        {
+          "path": "research/audits/templo-mayor-discover-20261113T1427Z-triple-alliance-dating-contrast.json",
+          "locator": "prior documentary contrast of 1427/1428/1430"
+        }
+      ],
+      "uncertainty": "Original Indigenous and early-colonial accounts for chronology not collated; 1428 cannot be promoted as exact from current evidence",
+      "historical_addition": "Explain 1428 as conventional shorthand when evidence permits; disentangle Azcapotzalco defeat, alliance consolidation and tribute administration",
+      "placement": "advance_history"
+    },
+    {
+      "topic": "Temple construction stages",
+      "reader_anchor": "Archaeologists group the work into seven major stages",
+      "status": "stratigraphic_staging_qualified_not_newly_verified",
+      "source_locators": [
+        {
+          "path": "research/audits/20261113T1803Z-templo-mayor-gamio-1913-1914-primary-gates.json",
+          "locator": "exposed masonry and later construction stage classification"
+        }
+      ],
+      "uncertainty": "Phase drawings, IVb assignments and which construction phases lie on current route not rechecked",
+      "historical_addition": "Illustrate a specific sealed older stair beneath a later expansion, avoid implying every wall belongs to a universally dated year",
+      "placement": "advance_history_and_observation"
+    },
+    {
+      "topic": "Coatepec/Coyolxauhqui archaeological versus mythic argument",
+      "reader_anchor": "At the foot of the south stair of that platform lay a stone disk carved with the dismembered Coyolxauhqui",
+      "status": "positional_evidence_distinct_from_reenactment_hypothesis",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T0100Z-templo-mayor-discover-1978-responders-and-seven-gates.json",
+          "locator": "disk findspot and interpretation audit"
+        }
+      ],
+      "uncertainty": "Location supports possible spatial myth analogy, does not directly prove a specific ceremony was enacted on every occasion",
+      "historical_addition": "Use image of original in museum with rights clearance; explain original artifact versus outdoor replica and distinction between observed placement and interpretation",
+      "placement": "pre_read_and_field"
+    },
+    {
+      "topic": "Conquest and Tóxcatl",
+      "reader_anchor": "In May 1520, while Cortés was away",
+      "status": "indigenous_spanish_source_comparison_missing",
+      "source_locators": [
+        {
+          "path": "research/audits/20261113T2004Z-templo-mayor-exact-reader-source-gates.json",
+          "locator": "Florentine Codex Book 12 source folios not collated"
+        }
+      ],
+      "uncertainty": "Do not flatten the 1520 massacre into 1521 siege or assume single-source certainty",
+      "historical_addition": "Separate 1520 Tóxcatl violence, 1521 siege, and later urban building/reuse; map book 12 folio citations",
+      "placement": "advance_history"
+    },
+    {
+      "topic": "Gamio 1913 versus 1914",
+      "reader_anchor": "In 1913, archaeologist Manuel Gamio uncovered the pyramid’s southwest corner",
+      "status": "candidate_1914_text_correction_unapproved",
+      "source_locators": [
+        {
+          "path": "research/audits/20261113T1803Z-templo-mayor-gamio-1913-1914-primary-gates.json",
+          "locator": "1913 demolition planning versus 6–16 May 1914 excavation"
+        }
+      ],
+      "uncertainty": "Original signed May 1914 Gamio report still missing; reader's 1913 wording must be quarantined for editorial review",
+      "historical_addition": "Once verified, distinguish 1913 property demolition arrangements from May 1914 dig; include 1900 Batres and 1933 Cuevas episodes",
+      "placement": "advance_history"
+    },
+    {
+      "topic": "1978 Coyolxauhqui and Proyecto Templo Mayor",
+      "reader_anchor": "In February 1978, electrical workers digging near República de Argentina and República de Guatemala struck the carved Coyolxauhqui disk",
+      "status": "dated_discovery_retrospective_personnel_conflict",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T0100Z-templo-mayor-discover-1978-responders-and-seven-gates.json",
+          "locator": "Matos/Barrera differing lists of responders and first salvage"
+        }
+      ],
+      "uncertainty": "Original 1978 rescue field book unexamined, 1978–1982 excavation and 1987 museum opening separate",
+      "historical_addition": "Time-line February workmen, early archaeological rescue, later excavation seasons and museum; distinguish project growth from discovery moment",
+      "placement": "advance_history_and_field"
+    },
+    {
+      "topic": "Modern reconstruction of ancient national history on CU murals",
+      "reader_anchor": "In the late 1420s, Tenochtitlan joined Texcoco and Tlacopan in the Triple Alliance",
+      "status": "cross_period_interpretation_boundary",
+      "source_locators": [
+        {
+          "path": "research/batches/20261114T0304Z-cu-modernism-buildings-labor-and-images.json",
+          "locator": "20261114T0304Z-CU-08 and 20261114T0304Z-CU-11 on the 1950s Central Library interpretation"
+        },
+        {
+          "path": "research/audits/20261114T0202Z-water-management-1608-1900-and-viga-templo-discover-cross-period-gates.json",
+          "locator": "earlier chronological-boundary gate"
+        }
+      ],
+      "uncertainty": "O'Gorman's imagery is 1950s interpretation, not an independent primary account of Mexica history",
+      "historical_addition": "Add a separate crosslink from Templo Mayor advance read to UNAM mural chapter only when evidence and distinct historical layers are clear; no immediate changes to reader",
+      "placement": "separate_historical_chapter"
+    }
+  ],
+  "no_publication_of_unverified_claims": true,
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "blockers": [
+    "Exact 1428 triple alliance date source collation",
+    "Construction phase drawings and current field route",
+    "Original Gamio May 1914 report",
+    "Nahuatl/Spanish conquest folio comparison",
+    "1978 first-responder original logs",
+    "1950s murals cannot be used as pre-Hispanic primary sources"
+  ]
+}
