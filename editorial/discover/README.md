@@ -21,8 +21,11 @@ To publish an approved manuscript, supply:
 - Each paragraph as `{"text": "...", "evidence": [{"source_id": "...",
   "page_or_section": "...", "audit_status": "page_checked"}]}`.
   Do not use unverified identifiers or fabricated page locators.
-- Optional `deep_dives` on each chapter, using `title` and `text`.
-  Sidebars must also be editorially verified before approval.
+- Optional `deep_dives` on each chapter, using `title`, `text`, and a nonempty
+  `evidence` array with the same page-checked source-ID/locator contract as a
+  narrative paragraph. Their full text must also appear verbatim in the
+  chapter’s approved Markdown archive. A sidebar with no independently checked
+  source must stay in draft and cannot be published.
 
 **Verbatim preservation gate:** Before an approved manuscript can be built,
 each chapter also needs a user-approved, exact Markdown archive at
