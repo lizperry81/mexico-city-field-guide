@@ -208,7 +208,8 @@ def parse_new_audit(path, doc, current_reader_blob):
     boundary_kind = "templo_mayor_exact_reader_blob_and_urban_chronology_boundary"
     if kind in gate_kinds | {boundary_kind}:
         blob = (doc.get("target_main_blob_sha") or doc.get("reader_blob_sha")
-                or doc.get("previous_reader_blob_sha"))
+                or doc.get("previous_reader_blob_sha")
+                or doc.get("reader_blob_sha_last_verified"))
         require(doc.get("branch") == "research-persistence" and
                 doc.get("target_branch_read_only") == "main" and
                 doc.get("target_path") == "poi/templo-mayor/reader.html" and
@@ -219,9 +220,25 @@ def parse_new_audit(path, doc, current_reader_blob):
                 doc.get("ready_for_editorial_review") is False,
                 "dated reader audit lacks pinned main blob/nonpublication status")
         if kind == "chapter_level_claim_to_source_locator_audit":
-            require(doc.get("reader_re_read_this_run") is True and
+            reread = doc.get("reader_re_read_this_run")
+            require(type(reread) is bool and
                     doc.get("no_publication_of_unverified_claims") is True,
-                    "cross-period audit lacks nonpublication safeguards")
+                    "cross-period audit lacks explicit readback/nonpublication status")
+            if reread is False:
+                # A recent research batch can reference a *previously* audited
+                # main reader. Keep its gates in the private queue while
+                # explicitly marking the reader comparison stale, even when
+                # the historical blob still equals the current main blob.
+                require(doc.get("reader_blob_sha_last_verified") == blob and
+                        doc.get("reader_blob_sha") in (None, blob) and
+                        doc.get("target_main_blob_sha") in (None, blob),
+                        "stale reader audit has no consistent historical blob pin")
+            else:
+                # Merely renaming an old SHA to 'last verified' cannot turn a
+                # stale research audit into a freshly checked main reader.
+                require(doc.get("reader_blob_sha") == blob or
+                        doc.get("target_main_blob_sha") == blob,
+                        "fresh reader audit lacks an independently pinned main blob")
         if kind in ("templo_mayor_discover_opening_chapter_source_locator_matrix_and_cross_period_boundary",
                     "templo_mayor_discover_opening_narrative_claim_to_source_locator_matrix"):
             require(doc.get("no_publication_of_unverified_claims") is True,
