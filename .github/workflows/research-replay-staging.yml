@@ -64,10 +64,30 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add "$OUTPUT_DIR"
           git commit -m "research: immutable staged full replay for ${GITHUB_SHA:0:12} [skip ci]"
-          git push origin HEAD:research-persistence
-          git fetch origin research-persistence
-          test "$(git rev-parse HEAD)" = "$(git rev-parse origin/research-persistence)"
-          ACTUAL="$(git show "origin/research-persistence:$OUTPUT_DIR/research_only.sqlite.gz" | sha256sum | cut -d' ' -f1)"
-          EXPECTED="$(cut -d' ' -f1 "$OUTPUT_DIR/compressed_sha256.txt")"
-          test "$ACTUAL" = "$EXPECTED"
-          echo "Verified persisted research-only SQLite.gz and report at $OUTPUT_DIR"
+          # Allow concurrent audit/handoff changes but never rebase across changed
+          # source batches or pipeline code. A newer research input gets a new run.
+          for attempt in 1 2 3 4 5; do
+            git fetch origin research-persistence
+            if ! git merge-base --is-ancestor "$GITHUB_SHA" origin/research-persistence; then
+              echo "BLOCKED: branch diverged from pinned research inputs"
+              exit 1
+            fi
+            if ! git diff --quiet "$GITHUB_SHA" origin/research-persistence -- research/batches research/pipeline .github/workflows/research-replay-staging.yml; then
+              echo "BLOCKED: newer research input detected; stale replay refused"
+              exit 1
+            fi
+            git rebase origin/research-persistence
+            if git push origin HEAD:research-persistence; then
+              git fetch origin research-persistence
+              test "$(git rev-parse HEAD)" = "$(git rev-parse origin/research-persistence)"
+              ACTUAL="$(git show "origin/research-persistence:$OUTPUT_DIR/research_only.sqlite.gz" | sha256sum | cut -d' ' -f1)"
+              EXPECTED="$(cut -d' ' -f1 "$OUTPUT_DIR/compressed_sha256.txt")"
+              test "$ACTUAL" = "$EXPECTED"
+              git show "origin/research-persistence:$OUTPUT_DIR/replay_report.json" | python3 -c 'import json,sys;d=json.load(sys.stdin);assert d["sqlite_integrity"]=="ok" and d["foreign_key_violations"]==0 and d["canonical_rows_unchanged"]'
+              echo "Verified persisted immutable research-only snapshot at $OUTPUT_DIR"
+              exit 0
+            fi
+            echo "Retrying research-only fast-forward: $attempt"
+          done
+          echo "BLOCKED: concurrent commits prevented safe push; no forced updates"
+          exit 1
