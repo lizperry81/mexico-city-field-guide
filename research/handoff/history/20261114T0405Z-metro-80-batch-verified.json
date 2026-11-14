@@ -1,0 +1,64 @@
+{
+  "schema_version": 4,
+  "kind": "append_only_research_to_app_verified_handoff",
+  "generated_at": "2026-11-14T04:06:31.301Z",
+  "branch": "research-persistence",
+  "source_research_commit_sha": "69fe9b67d1ad51ea07615b3cb129d1530d42449c",
+  "verified_replay_commit_sha": "a0fd8ca3394971c522bed8cb65238d86073aa0e2",
+  "canonical_version": "V97",
+  "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_status": "unchanged_provisional",
+  "staged_counts": {
+    "batches": 80,
+    "findings": 486,
+    "source_candidates": 188,
+    "source_inspections": 226,
+    "canonical_sources": 616,
+    "canonical_claims": 422,
+    "canonical_links": 403,
+    "canonical_findings": 68
+  },
+  "versioned_research_sqlite_gz_path": "research/reconciled/v4_69fe9b67d1ad/research_only.sqlite.gz",
+  "versioned_research_sha256": "f13e636a3c99ce5821ba623049f345592c9e1b8af3d3d2ca4d3a27e46011e8eb",
+  "compressed_sha256": "abc6d543ef093cf6a8cbd185b046dc98f2c17e13ed240ea776849e6c3084e349",
+  "verified_replay_report_path": "research/reconciled/v4_69fe9b67d1ad/replay_report.json",
+  "github_binary_blob_sha": "c60df55ce2f047d6f1e4981b4154e9b1246d1315",
+  "github_report_blob_sha": "bde934d03eb69bb6cd14180082b0a5713789be64",
+  "batch_artifact_paths": [
+    "research/batches/20261114T0400Z-metro-1967-1970-pino-suarez-archaeology.json"
+  ],
+  "chapter_audit_artifact_paths": [
+    "research/audits/20261114T0400Z-metro-1967-1970-pino-suarez-archaeology-templo-discover-evidence-gates.json"
+  ],
+  "coverage_artifact_paths": [
+    "research/coverage/20261114T0400Z-metro-1967-1970-pino-suarez-archaeology-readiness.json"
+  ],
+  "verification_ledger_artifact_paths": [
+    "research/ledgers/20261114T0400Z-metro-1967-1970-pino-suarez-archaeology-source-inventory-and-preflight.json",
+    "research/ledgers/20261114T0405Z-metro-80-full-replay-github-readback-verified.json"
+  ],
+  "evidence_status": {
+    "new_findings": 11,
+    "new_sources": 12,
+    "new_inspections": 12,
+    "independent_corroboration": false,
+    "publication_approved": false,
+    "source_types": "institutional direct pages, indexed-only entries, 1968 press excerpt republished, modern participant interview, scholarly metadata; original 1967 decree/1968 print/1969 excavation reports not inspected"
+  },
+  "ready_for_editorial_review": false,
+  "ready_for_publication": false,
+  "canonical_promoted": false,
+  "blockers": [
+    "Original 1967 STC founding decree not directly examined; 1984 DOF amendment confirms its bibliographic reference only",
+    "Original 28 September 1968 El Universal page not examined; only modern republication and later archaeologist interview read",
+    "Original Jordi Gussinyer 1969 archaeological report, excavation plan, and Doris Heyden full paper unavailable",
+    "Metro STC original route maps and some institutional pages could not be fetched directly; indexed snippets are not full-source inspection",
+    "Templo Mayor primary 1428 chronicle evidence, 1914 Gamio report, 1520–1521 Indigenous/Spanish folios and original 1978 salvage logs remain unverified",
+    "Site access and STC station pictogram image reproduction rights not independently verified",
+    "Proposed botanical dataset source reference not registered",
+    "Two pre-existing cross-batch source metadata collisions unresolved",
+    "Thirty-seven detached source inspection records retain identities and need human reconciliation; same-URL scopes are not duplicate inspections",
+    "One pre-existing index-only finding reference still unresolved"
+  ],
+  "consumer_instruction": "Read-only research staging. Never auto-merge into canonical or publish candidate claims; require independently checked source locations and editorial clearance."
+}
