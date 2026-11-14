@@ -1,0 +1,70 @@
+{
+  "schema_version": 4,
+  "kind": "append_only_research_to_app_verified_history",
+  "generated_at": "2026-11-14T12:07:50.496Z",
+  "branch": "research-persistence",
+  "research_commit_sha": "764dbe6a6f82e80386e3dac6534e08cb09072fe5",
+  "verified_replay_commit_sha": "8cf560014163277feb832ed3293a3ba344d68496",
+  "canonical_version": "V97",
+  "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_status": "unchanged_provisional_V97_not_promoted",
+  "canonical": {
+    "sources": 616,
+    "claims": 422,
+    "claim_sources": 403,
+    "canonical_findings": 68,
+    "canonical_source_inspections": 9
+  },
+  "staged_counts": {
+    "github_batches": 88,
+    "findings": 574,
+    "sources": 249,
+    "source_inspections": 287
+  },
+  "versioned_research_sqlite_gz_path": "research/reconciled/v4_764dbe6a6f82/research_only.sqlite.gz",
+  "versioned_research_sha256": "fccc7b6538ee7803e97822705b12f58e2169a3b17e6f78171f90bdb16c96e0e2",
+  "compressed_sha256": "8219f4fe342355e90618c38784874949f05a26198e366eab1ab3ff1da8b09a43",
+  "replay_report_path": "research/reconciled/v4_764dbe6a6f82/replay_report.json",
+  "verification_ledger_path": "research/ledgers/20261114T1207Z-88-batch-1985-earthquake-binary-readback.json",
+  "source_batch_artifact_paths": [
+    "research/batches/20261114T1158Z-1985-earthquake-citizens-housing-and-memory.json"
+  ],
+  "coverage_artifact_paths": [
+    "research/coverage/20261114T1158Z-1985-earthquake-citizens-housing-and-memory-readiness.json"
+  ],
+  "chapter_audit_artifact_paths": [
+    "research/audits/20261114T1158Z-1985-earthquake-citizens-housing-and-memory-templo-discover-evidence-gates.json"
+  ],
+  "source_identity_conflicts": [
+    {
+      "source_id": "STG-SRC-MANZANILLA-LOPEZ-FRETER-1996",
+      "source_path": "20261112T060230Z-auto09.json",
+      "reason": "cross_batch_source_metadata_collision"
+    },
+    {
+      "source_id": "v95-sload-cave-2020",
+      "source_path": "20261112T080125Z-auto09-te28-2009.json",
+      "reason": "cross_batch_source_metadata_collision"
+    }
+  ],
+  "unknown_source_ids": [
+    "PROPOSE_SOURCE_SLOAD_2020_BOTANICAL_DATASET_NOT_IN_CANONICAL"
+  ],
+  "detached_inspections_pending": 37,
+  "evidence_status": "research_database_integrated_noncanonical_not_editorially_corroborated",
+  "ready_for_editorial_review": false,
+  "ready_for_publication": false,
+  "canonical_promoted": false,
+  "publication_approved": false,
+  "no_auto_merge": true,
+  "blockers": [
+    "37 detached inspection rows pending identity review",
+    "2 existing cross-batch source metadata conflicts",
+    "1 unregistered botanical dataset source ID",
+    "1 unresolved index-only finding ID",
+    "Original Sept 1985 rescue and engineering files not compared to 1986 reports",
+    "Sept 20 newspaper mortality counts provisional, not accepted final totals",
+    "Historic photos, rights, exact sites and Tlatelolco visitor routes not verified",
+    "Templo Mayor 1428, phase drawings, conquest and original 1978 salvage still require source comparison"
+  ]
+}

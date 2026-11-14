@@ -1,0 +1,96 @@
+{
+  "schema_version": 2,
+  "kind": "github_research_reconciliation_full_binary_readback",
+  "generated_at": "2026-11-14T12:07:50.496Z",
+  "repository": "lizperry81/mexico-city-field-guide",
+  "branch": "research-persistence",
+  "input_research_commit_sha": "764dbe6a6f82e80386e3dac6534e08cb09072fe5",
+  "replay_snapshot_commit_sha": "8cf560014163277feb832ed3293a3ba344d68496",
+  "workflow_run_url": "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/43592902688",
+  "validation_run_url": "https://github.com/lizperry81/mexico-city-field-guide/actions/runs/43592902742",
+  "workflow_runs_success": true,
+  "verified_file_blobs": {
+    "input": {
+      "path": "research/batches/20261114T1158Z-1985-earthquake-citizens-housing-and-memory.json",
+      "blob_sha": "13af7c5a94d1a21f8b5aaeaeccb8407ab656eff1"
+    },
+    "coverage": {
+      "path": "research/coverage/20261114T1158Z-1985-earthquake-citizens-housing-and-memory-readiness.json",
+      "blob_sha": "6cb9644923ac4931f455e8ceb4b7e8c58b2a6c84"
+    },
+    "chapter": {
+      "path": "research/audits/20261114T1158Z-1985-earthquake-citizens-housing-and-memory-templo-discover-evidence-gates.json",
+      "blob_sha": "74740bf544211b9e73f42891d9895f2223f89d91"
+    },
+    "report": {
+      "path": "research/reconciled/v4_764dbe6a6f82/replay_report.json",
+      "blob_sha": "12649267fb7bc3b1eab55f1f280b94540b6671d1"
+    },
+    "compressed": {
+      "path": "research/reconciled/v4_764dbe6a6f82/compressed_sha256.txt",
+      "blob_sha": "513c84c85462cc86b007d45b9b66a15d8d11bae3"
+    }
+  },
+  "versioned_sqlite_gz_path": "research/reconciled/v4_764dbe6a6f82/research_only.sqlite.gz",
+  "github_readback_sqlite_gz_git_blob_sha": "1c0ad0d1dad4ff38dcd683521e04abed9b7fd188",
+  "github_readback_compressed_size_bytes": 1038763,
+  "github_readback_compressed_sha256_independently_recomputed": "8219f4fe342355e90618c38784874949f05a26198e366eab1ab3ff1da8b09a43",
+  "committed_compressed_sha256": "8219f4fe342355e90618c38784874949f05a26198e366eab1ab3ff1da8b09a43",
+  "github_readback_hash_matches": true,
+  "uncompressed_sqlite_sha256_from_workflow_report": "fccc7b6538ee7803e97822705b12f58e2169a3b17e6f78171f90bdb16c96e0e2",
+  "sqlite_integrity": "ok",
+  "foreign_key_violations": 0,
+  "canonical_tables_preserved": 88,
+  "canonical_rows_unchanged": true,
+  "canonical_version": "V97",
+  "canonical_hash": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_counts": {
+    "sources": 616,
+    "claims": 422,
+    "claim_sources": 403,
+    "canonical_findings": 68,
+    "canonical_source_inspections": 9
+  },
+  "staged_before": {
+    "github_batches": 87,
+    "findings": 563,
+    "sources": 241,
+    "source_inspections": 279
+  },
+  "staged_after": {
+    "github_batches": 88,
+    "findings": 574,
+    "sources": 249,
+    "source_inspections": 287
+  },
+  "unresolved_source_ids": [
+    "PROPOSE_SOURCE_SLOAD_2020_BOTANICAL_DATASET_NOT_IN_CANONICAL"
+  ],
+  "unresolved_index_only_finding_ids": [
+    "STG20261111T1302Z-RECON-V87-PRIMARY-001"
+  ],
+  "source_metadata_collisions": [
+    {
+      "source_id": "STG-SRC-MANZANILLA-LOPEZ-FRETER-1996",
+      "source_path": "20261112T060230Z-auto09.json",
+      "reason": "cross_batch_source_metadata_collision"
+    },
+    {
+      "source_id": "v95-sload-cave-2020",
+      "source_path": "20261112T080125Z-auto09-te28-2009.json",
+      "reason": "cross_batch_source_metadata_collision"
+    }
+  ],
+  "detached_inspection_count": 37,
+  "source_identity_auto_merges": 0,
+  "canonical_promoted": false,
+  "publication_approved": false,
+  "ready_for_editorial_review": false,
+  "no_main_modification": true,
+  "verification_method": "Workflow uncompressed SHA256/integrity/foreign keys; complete GitHub base64 binary readback decoded and separately SHA-256 hashed; compared to committed compressed SHA256. No local decompression due disabled container network.",
+  "warnings": [
+    "Do not classify initial 20 September casualty estimates as final verified counts",
+    "Original newspaper scan verifies published report, not its accuracy",
+    "Modern Tlatelolco and 1985 photo reuse rights still require verification"
+  ]
+}
