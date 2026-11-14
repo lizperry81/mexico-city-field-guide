@@ -49,6 +49,9 @@ for folder, feedback_path in (
     assert re.search(r'<a id="skip-to-history" class="skip-link cdmx-no-comment" href="#history">Skip to the historical article</a>', text)
     assert "@POI@" not in text and "@GUIDE@" not in text
     assert {"history", "explore", "plan", "plaza", "twin-stairs", "museum-stone"} <= page.ids
+    # Expose progress before long, photo-rich stops on small screens.
+    assert '<select id="choose-stop" aria-describedby="stop-position"></select>' in text
+    assert '<p class="stop-position" id="stop-position"></p>' in text
     assert all(f"dossier-topic-{n}" in page.ids for n in range(1, 7))
     assert all(f"walk-{n}" in page.ids for n in range(1, 9))
     for marker in (
