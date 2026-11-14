@@ -1,0 +1,431 @@
+{
+  "schema_version": 2,
+  "batch_id": "20261114T0702Z-1824-capital-and-ayuntamiento",
+  "generated_at": "2026-11-14T07:07:15.604Z",
+  "branch": "research-persistence",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "storage_role": "immutable_noncanonical_research_batch",
+  "previous_verified_replay": "research/reconciled/v4_9883d491ab08/replay_report.json",
+  "prior_verified_counts": {
+    "github_batches_replayed": 82,
+    "staged_findings": 508,
+    "source_candidates": 202,
+    "inspection_entries": 240,
+    "canonical_sources": 616,
+    "canonical_claims": 422,
+    "canonical_links": 403,
+    "canonical_findings": 68
+  },
+  "research_scope": "11 provisional findings (5 broad political-history, 4 place-oriented urban-government observations, 2 specialist legal/cartographic evidence) on 1824–1854. One archival descriptive PDF inspected visually on two pages; edited 1824 and 1854 decrees parsed without screenshot (HTTP 502), plus journal abstracts and historical HTML. No source identity merges or editorial approval.",
+  "sources": [
+    {
+      "id": "STG-SRC-20261114-CAPITAL-MCGOWAN",
+      "title": "El Distrito Federal de dos leguas o cómo el Estado de México perdió su capital",
+      "authors": "Gerald L. McGowan",
+      "publication": "El Colegio Mexiquense / Gobierno del Estado de México, 2nd ed. 2013 (first 1991), ISBN 978-607-7761-41-9",
+      "url": "https://www6.cmq.edu.mx/redomex/images/archivos/pub_digitales/007.pdf",
+      "access_scope": "PDF extracted text, printed pp. 44–47, 210–211, 237–239, 250–251; 1824.11.18.2 decree; screenshot endpoint returned 502, no page images inspected",
+      "status": "scholarly_monograph_and_edited_primary_documents_full_text_selected_pages_visual_unverified"
+    },
+    {
+      "id": "STG-SRC-20261114-CAPITAL-IBERO-CABILDO",
+      "title": "1824 Ayuntamiento Ciudad de México — guía de actas de cabildo",
+      "authors": "Biblioteca Francisco Xavier Clavigero, Universidad Iberoamericana, archival index editors",
+      "publication": "Actas de Cabildo year 1824; modern descriptive register, not facsimile of manuscript minutes",
+      "url": "https://www.bib.ibero.mx/actasc/files/original/b8f349d75a25f69d990cc260aeb1d8bf.pdf",
+      "access_scope": "PDF text sections cabildo 545 Jan 1, 546 Jan 2, 549 Jan 5, 550 Jan 8; first two page images visually checked; index/abstract only",
+      "status": "institutional_archival_finding_aid_not_original_minutes"
+    },
+    {
+      "id": "STG-SRC-20261114-CAPITAL-FLORES",
+      "title": "La ciudad, sus guardianes y la justicia. Un estudio de su relación durante la vida republicana de la ciudad de México (1824-1846)",
+      "authors": "Graciela Flores Flores",
+      "publication": "Estudios de Historia Moderna y Contemporánea de México 57 (2019), pp.3–40 DOI 10.22201/iih.24485004e.2019.57.69978",
+      "url": "https://moderna.historicas.unam.mx/index.php/ehm/article/view/69978",
+      "access_scope": "Direct journal page, abstract lines 45–51 (1782 eight larger/32 smaller wards, watchmen, judges), full research body not inspected",
+      "status": "peer_reviewed_journal_abstract_only"
+    },
+    {
+      "id": "STG-SRC-20261114-CAPITAL-LORENZO",
+      "title": "Negociaciones para la modernización urbana: la demolición del mercado del Parián en la ciudad de México, 1843",
+      "authors": "María Dolores Lorenzo",
+      "publication": "Estudios de Historia Moderna y Contemporánea de México 38 (2009), journal abstract",
+      "url": "https://moderna.historicas.unam.mx/index.php/ehm/article/view/17763",
+      "access_scope": "Journal indexed abstract on negotiation between central government, municipality and merchants during 1843 Parián removal; original article not read",
+      "status": "peer_reviewed_journal_abstract_only"
+    },
+    {
+      "id": "STG-SRC-20261114-CAPITAL-LOZADA",
+      "title": "Soberanía popular e historia de la Ciudad de México",
+      "authors": "Guadalupe Lozada León",
+      "publication": "Relatos e Historias en México, historical popular article",
+      "url": "https://relatosehistorias.mx/node/922",
+      "access_scope": "Direct HTML lines 75–90: 1824 capital discussions, Querétaro alternative, federal arrangement, later political-rights argument; some modern mileage conversion differs",
+      "status": "historical_secondary_full_html_critical_distance_required"
+    },
+    {
+      "id": "STG-SRC-20261114-CAPITAL-MEMORIA",
+      "title": "Es creado el Distrito Federal (18 de noviembre de 1824)",
+      "authors": "Doralicia Carmona Dávila",
+      "publication": "Memoria Política de México historical chronology",
+      "url": "https://www.memoriapoliticademexico.org/Efemerides/11/18111824.html",
+      "access_scope": "Direct HTML lines 11–26, 1824 decree, 1836 centralism, 1847 restoration, 1857 changes; interpretive claims require original support",
+      "status": "secondary_editorial_historical_chronology"
+    }
+  ],
+  "source_inspections": [
+    {
+      "id": "20261114T0702Z-CAPITAL-INS-01",
+      "source_id": "STG-SRC-20261114-CAPITAL-MCGOWAN",
+      "locator": "PDF extracted text, printed pp. 44–47, 210–211, 237–239, 250–251; 1824.11.18.2 decree; screenshot endpoint returned 502, no page images inspected",
+      "access": "PDF extracted text, printed pp. 44–47, 210–211, 237–239, 250–251; 1824.11.18.2 decree; screenshot endpoint returned 502, no page images inspected",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": "PDF transcription of original decrees located but original 1824 imprint not inspected; screenshot service failed HTTP 502"
+    },
+    {
+      "id": "20261114T0702Z-CAPITAL-INS-02",
+      "source_id": "STG-SRC-20261114-CAPITAL-IBERO-CABILDO",
+      "locator": "PDF text sections cabildo 545 Jan 1, 546 Jan 2, 549 Jan 5, 550 Jan 8; first two page images visually checked; index/abstract only",
+      "access": "PDF text sections cabildo 545 Jan 1, 546 Jan 2, 549 Jan 5, 550 Jan 8; first two page images visually checked; index/abstract only",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": true,
+      "notes": "Finding aid only; two PDF pages visually inspected; cannot equate summaries with original act-book folios"
+    },
+    {
+      "id": "20261114T0702Z-CAPITAL-INS-03",
+      "source_id": "STG-SRC-20261114-CAPITAL-FLORES",
+      "locator": "Direct journal page, abstract lines 45–51 (1782 eight larger/32 smaller wards, watchmen, judges), full research body not inspected",
+      "access": "Direct journal page, abstract lines 45–51 (1782 eight larger/32 smaller wards, watchmen, judges), full research body not inspected",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": null
+    },
+    {
+      "id": "20261114T0702Z-CAPITAL-INS-04",
+      "source_id": "STG-SRC-20261114-CAPITAL-LORENZO",
+      "locator": "Journal indexed abstract on negotiation between central government, municipality and merchants during 1843 Parián removal; original article not read",
+      "access": "Journal indexed abstract on negotiation between central government, municipality and merchants during 1843 Parián removal; original article not read",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": null
+    },
+    {
+      "id": "20261114T0702Z-CAPITAL-INS-05",
+      "source_id": "STG-SRC-20261114-CAPITAL-LOZADA",
+      "locator": "Direct HTML lines 75–90: 1824 capital discussions, Querétaro alternative, federal arrangement, later political-rights argument; some modern mileage conversion differs",
+      "access": "Direct HTML lines 75–90: 1824 capital discussions, Querétaro alternative, federal arrangement, later political-rights argument; some modern mileage conversion differs",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": null
+    },
+    {
+      "id": "20261114T0702Z-CAPITAL-INS-06",
+      "source_id": "STG-SRC-20261114-CAPITAL-MEMORIA",
+      "locator": "Direct HTML lines 11–26, 1824 decree, 1836 centralism, 1847 restoration, 1857 changes; interpretive claims require original support",
+      "access": "Direct HTML lines 11–26, 1824 decree, 1836 centralism, 1847 restoration, 1857 changes; interpretive claims require original support",
+      "primary_original_examined": false,
+      "independent_corroboration": false,
+      "publication_approved": false,
+      "visual_preview_seen": false,
+      "notes": null
+    }
+  ],
+  "findings": [
+    {
+      "id": "20261114T0702Z-CAPITAL-01",
+      "classification": "broad_history",
+      "assertion": "The federal constitution's article 50(XXVIII) empowered Congress to choose a seat for supreme federal powers; the congressional decree of 18 November 1824 selected Mexico City. Choosing the capital was a legislative decision following debate over alternative sites, notably Querétaro.",
+      "date_or_range": "1824-10-04–1824-11-18",
+      "period": "Early Mexican Republic",
+      "themes": [
+        "federalism",
+        "capital selection"
+      ],
+      "geographies": [
+        "Plaza Mayor",
+        "Centro Histórico"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-CAPITAL-MCGOWAN",
+        "STG-SRC-20261114-CAPITAL-LOZADA"
+      ],
+      "source_locator": "McGowan document 1824.11.18.2, printed p.238 arts.1–2; Lozada León HTML lines 75–82",
+      "limitations": "Original 1824 decree imprint not viewed; later narrative conflates some voting events.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0702Z-CAPITAL-02",
+      "classification": "broad_history",
+      "assertion": "The 1824 law described a circle centered on the Plaza Mayor with a two-legua radius, while article 3 required federal and State of Mexico experts to demarcate it. The law's geometrical description is not an independently verified boundary survey or modern GPS polygon.",
+      "date_or_range": "1824-11-18",
+      "period": "Early Mexican Republic",
+      "themes": [
+        "jurisdiction",
+        "mapping",
+        "legal geography"
+      ],
+      "geographies": [
+        "Plaza Mayor",
+        "Valley of Mexico"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-CAPITAL-MCGOWAN"
+      ],
+      "source_locator": "McGowan documentary appendix 1824.11.18.2, printed p.238 arts.2–3",
+      "limitations": "Modern sources disagree on the number of meters per legua and on area; do not render exact map or accept 55 km² versus 220 km² uncritically.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0702Z-CAPITAL-03",
+      "classification": "broad_history",
+      "assertion": "The 1824 decree placed the district's political and economic government under federal jurisdiction, provided an interim federally appointed governor, and continued existing municipal-election arrangements where consistent with the new law. The capital did not thereby lose every municipal council overnight.",
+      "date_or_range": "1824-11-18",
+      "period": "Early Mexican Republic",
+      "themes": [
+        "local government",
+        "municipal representation"
+      ],
+      "geographies": [
+        "Mexico City",
+        "Federal District"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-CAPITAL-MCGOWAN",
+        "STG-SRC-20261114-CAPITAL-MEMORIA"
+      ],
+      "source_locator": "McGowan appendix, printed pp.238–239, arts.4–7; Memoria Política lines 15–16",
+      "limitations": "Do not substitute 1928 abolition of municipalities for 1824's distinct administrative arrangement.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0702Z-CAPITAL-04",
+      "classification": "broad_history",
+      "assertion": "At the November 18 1824 congressional sitting, separate commissions were assigned questions of State of Mexico compensation, political eligibility and rights of district residents, and district courts. Creation of a federal capital did not settle those jurisdictional questions in one act.",
+      "date_or_range": "1824-11-18",
+      "period": "Early Mexican Republic",
+      "themes": [
+        "representation",
+        "courts",
+        "state finance"
+      ],
+      "geographies": [
+        "Centro Histórico"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-CAPITAL-MCGOWAN"
+      ],
+      "source_locator": "McGowan ed. documentary appendix 1824.11.18.1, printed pp.237–238; El Sol 20 Nov 1824 p.669 and Águila Mexicana no.220 cited there",
+      "limitations": "Contemporaneous newspaper issues are cited by the historian's transcription, not independently opened.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0702Z-CAPITAL-05",
+      "classification": "broad_history",
+      "assertion": "The district was carved from the State of Mexico, prompting state authorities to relocate their capital; a 2013 edition of McGowan traces Texcoco (1827), San Agustín de las Cuevas/Tlalpan (1827–1830), and Toluca (1830). The federal district's institutional status later changed with 1836 centralism and the 1846–1847 federal restoration.",
+      "date_or_range": "1824–1847",
+      "period": "Early Mexican Republic",
+      "themes": [
+        "competing sovereignties",
+        "capital relocations"
+      ],
+      "geographies": [
+        "Mexico City",
+        "Texcoco",
+        "Tlalpan",
+        "Toluca"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-CAPITAL-MCGOWAN",
+        "STG-SRC-20261114-CAPITAL-MEMORIA"
+      ],
+      "source_locator": "McGowan 2013, foreword printed pp.11–12 and analysis pp.45–46; Memoria Política lines 16–20",
+      "limitations": "The 1836/1847 timeline is a regime-level summary; exact implementing acts should be checked.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0702Z-CAPITAL-06",
+      "classification": "poi_ready_candidate",
+      "assertion": "The decree specifies the Plaza Mayor as the CENTER of the proposed district. A guide can have visitors look across today's Zócalo and explain that a legal jurisdiction was defined from this public space rather than by Mexico City's contemporary administrative perimeter.",
+      "date_or_range": "1824-11-18",
+      "period": "Early Mexican Republic",
+      "themes": [
+        "historical geography",
+        "urban symbolism"
+      ],
+      "geographies": [
+        "Plaza de la Constitución / Zócalo"
+      ],
+      "poi_ids": [
+        "zocalo"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-CAPITAL-MCGOWAN"
+      ],
+      "source_locator": "McGowan appendix, printed p.238 art.2; contrast modern city layout only as interpretive prompt",
+      "limitations": "Do not claim a surviving 1824 boundary marker, physically measurable radius, or specific original survey origin point within plaza.",
+      "learning_mode": "onsite_field",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0702Z-CAPITAL-07",
+      "classification": "poi_ready_candidate",
+      "assertion": "The January 2, 1824 Ayuntamiento's descriptive register assigns named commissions for water and acequias, roads, markets, street lighting, paving, public hospitals, sanitation and schools. This documents the municipal government's everyday functions before the federal district decree.",
+      "date_or_range": "1824-01-02",
+      "period": "Early Mexican Republic",
+      "themes": [
+        "public services",
+        "municipal labor"
+      ],
+      "geographies": [
+        "Antiguo Palacio del Ayuntamiento / Plaza Mayor"
+      ],
+      "poi_ids": [
+        "antiguo-palacio-del-ayuntamiento"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-CAPITAL-IBERO-CABILDO"
+      ],
+      "source_locator": "Ibero Actas de Cabildo 1824 guide, cabildo 546 Jan 2, PDF p.2 (viewer index 1) visually checked",
+      "limitations": "This is a twentieth/twenty-first century index of minutes, not original handwritten cabildo folios; current building room mapping unverified.",
+      "learning_mode": "onsite_field",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0702Z-CAPITAL-08",
+      "classification": "poi_ready_candidate",
+      "assertion": "The descriptive index for the January 5, 1824 council session records an order to clear rubble from the Plaza Mayor and to put material on the San Cosme and Chapultepec causeways. The record connects Zócalo maintenance with movement of materials into peripheral infrastructure.",
+      "date_or_range": "1824-01-05",
+      "period": "Early Mexican Republic",
+      "themes": [
+        "public works",
+        "street maintenance"
+      ],
+      "geographies": [
+        "Plaza Mayor",
+        "Calzada de San Cosme",
+        "Chapultepec"
+      ],
+      "poi_ids": [
+        "zocalo"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-CAPITAL-IBERO-CABILDO"
+      ],
+      "source_locator": "Ibero Actas de Cabildo year 1824, cabildo no.549 Jan 5, extract lines 98–108; page image for this entry not examined",
+      "limitations": "Do not assume material was moved as ordered; index summarizes an instruction, not completion accounts or surviving fabric.",
+      "learning_mode": "onsite_field",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0702Z-CAPITAL-09",
+      "classification": "poi_ready_candidate",
+      "assertion": "A peer-reviewed study identifies the 1843 demolition of the Parián market in the Plaza Mayor as a contested modernization project involving central authorities, Ayuntamiento and Mexican and Spanish merchants. The place can teach the difference between aesthetic redesign and economic displacement.",
+      "date_or_range": "1843",
+      "period": "Centralist Republic",
+      "themes": [
+        "markets",
+        "urban clearance",
+        "merchant interests"
+      ],
+      "geographies": [
+        "Plaza Mayor / former Parián site"
+      ],
+      "poi_ids": [
+        "zocalo"
+      ],
+      "source_ids": [
+        "STG-SRC-20261114-CAPITAL-LORENZO"
+      ],
+      "source_locator": "Lorenzo, Estudios de Historia Moderna y Contemporánea de México no.38 (2009), journal abstract",
+      "limitations": "Only abstract consulted; need full article, historic footprint, compensation case records and mapping before visitor field claims.",
+      "learning_mode": "onsite_field",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0702Z-CAPITAL-10",
+      "classification": "specialist_technical",
+      "assertion": "The late-colonial 1782 division into eight cuarteles mayores and 32 menores continued as the background to early republican patrol and justice geography, according to Flores Flores's 2019 peer-reviewed research; court, watchmen and street lighting need separate archival identities rather than a generic 'police' institution.",
+      "date_or_range": "1782–1846",
+      "period": "Colonial-republican transition",
+      "themes": [
+        "urban security",
+        "historical cartography",
+        "legal geography"
+      ],
+      "geographies": [
+        "Centro Histórico",
+        "former cuarteles"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-CAPITAL-FLORES"
+      ],
+      "source_locator": "Flores Flores 2019, published article abstract lines 45–51, map links in article page entries 35–44",
+      "limitations": "Abstract only; maps and patrol registers not directly examined; modern lines cannot yet be reconstructed.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    },
+    {
+      "id": "20261114T0702Z-CAPITAL-11",
+      "classification": "specialist_technical",
+      "assertion": "The 16 February 1854 decree redefined the Distrito de México through named places reaching San Cristóbal Ecatepec, Tlalnepantla, Coyoacán, Tlalpan, Xochimilco and the middle of Lake Texcoco; it also specified three external prefectures with seats in Tlalnepantla, Tacubaya and Tlalpan. Its territorial vocabulary was no longer merely the 1824 two-league circle.",
+      "date_or_range": "1854-02-16",
+      "period": "Centralist Republic",
+      "themes": [
+        "legal cartography",
+        "territorial changes"
+      ],
+      "geographies": [
+        "Valley of Mexico",
+        "Tacubaya",
+        "Tlalpan",
+        "Lake Texcoco"
+      ],
+      "poi_ids": [],
+      "source_ids": [
+        "STG-SRC-20261114-CAPITAL-MCGOWAN"
+      ],
+      "source_locator": "McGowan edited document 1854.02.16, printed pp.250–251 arts.1–4",
+      "limitations": "Edited law transcription, not original gazette or an executed survey; do not portray later locations as within present CDMX without temporal layers.",
+      "learning_mode": "advance_history",
+      "evidence_status": "source_located_candidate_not_independently_corroborated",
+      "publication_approved": false
+    }
+  ],
+  "source_identity_policy": "Six new IDs are provisional; existing canonical/staged source identities must be compared by bibliographic fields/URL before any alias. Preserve all IDs and flag conflict rather than merge.",
+  "external_source_usage": "Six checked web sources; McGowan scholarly PDF selected text pages read, screenshot tool twice failed HTTP 502; Ibero 1824 act-register PDF two page images viewed, index not original manuscript. Flores and Lorenzo only journal abstracts; direct Lozada and Carmona HTML. No reproduction license, live field survey, original 1824 printed decree or original cabildo folio seen.",
+  "publication_approved": false,
+  "independently_corroborated_findings": 0,
+  "ready_for_editorial_review": false
+}

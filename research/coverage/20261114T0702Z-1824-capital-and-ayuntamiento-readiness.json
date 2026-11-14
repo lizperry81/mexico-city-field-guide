@@ -1,0 +1,168 @@
+{
+  "schema_version": 3,
+  "kind": "period_x_theme_x_geography_explanatory_readiness_delta",
+  "generated_at": "2026-11-14T07:07:15.604Z",
+  "branch": "research-persistence",
+  "source_batch_path": "research/batches/20261114T0702Z-1824-capital-and-ayuntamiento.json",
+  "evidence_status": "noncanonical_source_located_not_publication_approved",
+  "rating_definitions": {
+    "substantial": "Original documents compared against independent specialist study with a reliable place-based explanatory sequence and verified rights/access",
+    "developing": "Specific source-located explanation; critical independent primary, place geometry, rights or original minutes still missing",
+    "sparse": "Narrow/derivative, significant historical uncertainty, or no precise place map",
+    "missing": "Necessary source, map, field-check or image permission currently absent"
+  },
+  "cells": [
+    {
+      "period": "1824",
+      "theme": "Capital choice vs Querétaro",
+      "geography": "Plaza Mayor / Centro Histórico",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0702Z-CAPITAL-01",
+        "20261114T0702Z-CAPITAL-04"
+      ],
+      "evidence_gap": "Original congressional votes and 1824 newspaper page images not read"
+    },
+    {
+      "period": "1824",
+      "theme": "Circular federal jurisdiction",
+      "geography": "Zócalo and nearby villages",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0702Z-CAPITAL-02",
+        "20261114T0702Z-CAPITAL-06"
+      ],
+      "evidence_gap": "No original executed survey; two-legua conversion and modern area inconsistent"
+    },
+    {
+      "period": "1824",
+      "theme": "Federal governor and retained municipal offices",
+      "geography": "Antiguo Palacio del Ayuntamiento",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0702Z-CAPITAL-03",
+        "20261114T0702Z-CAPITAL-07"
+      ],
+      "evidence_gap": "City-council original manuscript and governor decrees not examined"
+    },
+    {
+      "period": "1824",
+      "theme": "Rights, tribunals and compensation unresolved",
+      "geography": "Mexico City / State of Mexico",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0702Z-CAPITAL-04",
+        "20261114T0702Z-CAPITAL-05"
+      ],
+      "evidence_gap": "Newspapers and later congressional committee reports not retrieved"
+    },
+    {
+      "period": "1824–1830",
+      "theme": "Loss of capital and state relocation",
+      "geography": "Texcoco / Tlalpan / Toluca",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T0702Z-CAPITAL-05"
+      ],
+      "evidence_gap": "No original Estado de México state government transfer decrees"
+    },
+    {
+      "period": "1824",
+      "theme": "Municipal services, water and markets",
+      "geography": "Palacio del Ayuntamiento / Centro Histórico",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0702Z-CAPITAL-07"
+      ],
+      "evidence_gap": "Only modern descriptive annual index; original records and present rooms missing"
+    },
+    {
+      "period": "1824",
+      "theme": "Plaza Mayor rubble clearance",
+      "geography": "Zócalo / San Cosme / Chapultepec",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T0702Z-CAPITAL-08"
+      ],
+      "evidence_gap": "Order to clear documented only in descriptive finding aid; execution unproven"
+    },
+    {
+      "period": "1843",
+      "theme": "Parián demolition and merchant interests",
+      "geography": "Plaza Mayor",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T0702Z-CAPITAL-09"
+      ],
+      "evidence_gap": "Peer-reviewed journal abstract only; full article and 1843 market footprint required"
+    },
+    {
+      "period": "1782–1846",
+      "theme": "Justice wards and night patrols",
+      "geography": "Central-city cuarteles",
+      "rating": "sparse",
+      "finding_ids": [
+        "20261114T0702Z-CAPITAL-10"
+      ],
+      "evidence_gap": "Article abstract only; original ward maps and court papers not examined"
+    },
+    {
+      "period": "1836–1847",
+      "theme": "Federal-centralist oscillation",
+      "geography": "Distrito Federal / Estado de México",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0702Z-CAPITAL-05"
+      ],
+      "evidence_gap": "Edited official decrees and boundaries uncollated"
+    },
+    {
+      "period": "1854",
+      "theme": "Expanded district and external prefectures",
+      "geography": "Tacubaya / Tlalpan / Texcoco basin",
+      "rating": "developing",
+      "finding_ids": [
+        "20261114T0702Z-CAPITAL-11"
+      ],
+      "evidence_gap": "Edited text, no original survey or temporally valid spatial polygons"
+    },
+    {
+      "period": "1824–1854",
+      "theme": "Verified GIS boundary overlay and landmarks",
+      "geography": "Zócalo to outer district",
+      "rating": "missing",
+      "finding_ids": [
+        "20261114T0702Z-CAPITAL-02",
+        "20261114T0702Z-CAPITAL-06",
+        "20261114T0702Z-CAPITAL-11"
+      ],
+      "evidence_gap": "No georeferenced original survey; numeric legua disagreement prevents precise interactive line"
+    },
+    {
+      "period": "2026",
+      "theme": "Historical images rights and present-day route",
+      "geography": "Zócalo / Ayuntamiento / San Cosme",
+      "rating": "missing",
+      "finding_ids": [
+        "20261114T0702Z-CAPITAL-06",
+        "20261114T0702Z-CAPITAL-07",
+        "20261114T0702Z-CAPITAL-08",
+        "20261114T0702Z-CAPITAL-09"
+      ],
+      "evidence_gap": "No rights clearance, current building access or field viewpoint check"
+    }
+  ],
+  "summary": {
+    "total": 13,
+    "substantial": 0,
+    "developing": 7,
+    "sparse": 4,
+    "missing": 2,
+    "classification_finding_counts": {
+      "broad_history": 5,
+      "poi_ready_candidate": 4,
+      "specialist_technical": 2
+    }
+  },
+  "publication_approved": false
+}

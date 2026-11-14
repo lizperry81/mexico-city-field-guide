@@ -1,0 +1,142 @@
+{
+  "schema_version": 3,
+  "kind": "chapter_level_claim_to_source_locator_audit",
+  "generated_at": "2026-11-14T07:07:15.604Z",
+  "branch": "research-persistence",
+  "target_branch_read_only": "main",
+  "target_path": "poi/templo-mayor/reader.html",
+  "reader_re_read_this_run": true,
+  "reader_blob_sha_verified": "f570da92e17087c3430f0e0b7339a0cf72071a3f",
+  "source_batch_path": "research/batches/20261114T0702Z-1824-capital-and-ayuntamiento.json",
+  "gates": [
+    {
+      "topic": "Triple Alliance 1428",
+      "reader_anchor": "In the late 1420s, Tenochtitlan joined Texcoco and Tlacopan",
+      "status": "source_gate_open",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T0600Z-san-ildefonso-1922-1926-muralism-and-templo-memory-templo-reader-gates.json",
+          "locator": "prior source-locator and chronology comparison pending"
+        }
+      ],
+      "uncertainty": "1427/1428/1430 traditions have not been checked against original Indigenous and Spanish manuscript chapters.",
+      "historical_addition": "Differentiate Azcapotzalco defeat, alliance formation and later tributary reach; retain 'late 1420s' as provisional.",
+      "placement": "advance_history"
+    },
+    {
+      "topic": "Temple construction stages",
+      "reader_anchor": "Archaeologists group the work into seven major stages",
+      "status": "source_gate_open",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T0600Z-san-ildefonso-1922-1926-muralism-and-templo-memory-templo-reader-gates.json",
+          "locator": "construction and archaeological sequence gate"
+        }
+      ],
+      "uncertainty": "Original INAH section drawings and individual construction deposits not collated; seven stages do not equal seven dedications.",
+      "historical_addition": "Explain Stage II sealed surviving shrines versus exposed Stage IVb platform, with ruler assignments requiring independent substantiation.",
+      "placement": "advance_history_then_field"
+    },
+    {
+      "topic": "Coatepec/Coyolxauhqui",
+      "reader_anchor": "At the foot of the south stair of that platform lay a stone disk",
+      "status": "source_gate_open",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T0600Z-san-ildefonso-1922-1926-muralism-and-templo-memory-templo-reader-gates.json",
+          "locator": "Coyolxauhqui stone archaeological and narrative comparison gate"
+        }
+      ],
+      "uncertainty": "Myth narrative, sculpture placement, and claims of historical ritual use are separate classes of evidence.",
+      "historical_addition": "Teach carved dismemberment and spatial relation to Huitzilopochtli staircase without asserting a ritual was witnessed.",
+      "placement": "advance_history_then_field"
+    },
+    {
+      "topic": "1520 Tóxcatl and 1521 conquest",
+      "reader_anchor": "In May 1520, while Cortés was away",
+      "status": "source_gate_open",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T0600Z-san-ildefonso-1922-1926-muralism-and-templo-memory-templo-reader-gates.json",
+          "locator": "conquest source review gate"
+        }
+      ],
+      "uncertainty": "Book 12 Nahuatl witnesses, Spanish accounts and stratigraphic traces not compared at passage level.",
+      "historical_addition": "Separate violence during Tóxcatl from the siege/ruin in 1521; do not use 1920s mural as eyewitness proof.",
+      "placement": "advance_history"
+    },
+    {
+      "topic": "Gamio 1913/1914",
+      "reader_anchor": "In 1913, archaeologist Manuel Gamio uncovered the pyramid’s southwest corner",
+      "status": "correction_candidate_unapproved",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T0600Z-san-ildefonso-1922-1926-muralism-and-templo-memory-templo-reader-gates.json",
+          "locator": "Gamio excavation date correction gate"
+        }
+      ],
+      "uncertainty": "1913 preparations versus May 1914 excavations remain unresolved until signed period report.",
+      "historical_addition": "Hold any date correction pending original Gamio publication and archaeological diaries.",
+      "placement": "advance_history"
+    },
+    {
+      "topic": "1978 Coyolxauhqui find",
+      "reader_anchor": "In February 1978, electrical workers digging near República de Argentina",
+      "status": "source_gate_open",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T0600Z-san-ildefonso-1922-1926-muralism-and-templo-memory-templo-reader-gates.json",
+          "locator": "Coyolxauhqui discovery and documentation gate"
+        }
+      ],
+      "uncertainty": "First responder and 21/22 Feb differences unverified against original rescue log.",
+      "historical_addition": "Keep sequence: electrical works discovery, archaeological rescue, 1978–1982 project, 1987 museum.",
+      "placement": "advance_history"
+    },
+    {
+      "topic": "1824 Plaza Mayor legal landmark versus Mexica precinct",
+      "reader_anchor": "The excavation beside the Metropolitan Cathedral exposes several generations",
+      "status": "new_cross_period_geography_boundary",
+      "source_locators": [
+        {
+          "url": "https://www6.cmq.edu.mx/redomex/images/archivos/pub_digitales/007.pdf",
+          "locator": "McGowan documentary appendix 1824.11.18.2, printed p.238 art.2"
+        },
+        {
+          "url": "https://www.bib.ibero.mx/actasc/files/original/b8f349d75a25f69d990cc260aeb1d8bf.pdf",
+          "locator": "Ibero year-1824 municipal index, cabildo 546–550"
+        }
+      ],
+      "uncertainty": "1824 district centered on Plaza Mayor, not the excavated temple; legal map center must not be substituted for Mexica city sacred precinct center.",
+      "historical_addition": "Optional distinct link: 'How the Plaza Mayor became the center of a federal district in 1824'; explain this is later political history, not evidence for 15th-century placement.",
+      "placement": "separate_advance_history_cross_link"
+    },
+    {
+      "topic": "Evidence and rights",
+      "reader_anchor": "See a photograph of the 1978 excavation",
+      "status": "field_and_rights_gate_open",
+      "source_locators": [
+        {
+          "path": "research/audits/20261114T0600Z-san-ildefonso-1922-1926-muralism-and-templo-memory-templo-reader-gates.json",
+          "locator": "historical photo and archaeology rights gate"
+        }
+      ],
+      "uncertainty": "No confirmed object-specific rights to 1824 town views or 1978 dig images; visually checked only archival index text, not artworks.",
+      "historical_addition": "Link to source catalogues; prohibit unlicensed images and avoid false on-site GPS circles.",
+      "placement": "photo_rights_review"
+    }
+  ],
+  "no_publication_of_unverified_claims": true,
+  "ready_for_editorial_review": false,
+  "publication_approved": false,
+  "blockers": [
+    "Original Triple Alliance chronological source collation missing",
+    "Construction sections/inscriptions not matched to field map",
+    "Coyolxauhqui archaeological deposition and myth evidence need separation",
+    "1520 Indigenous and Spanish narratives need passage-level citations",
+    "Original Gamio 1914 signed excavation publication unexamined",
+    "1978 rescue personnel and date discrepancies uncollated",
+    "1824 Plaza Mayor boundary not Mexica precinct geometry",
+    "No rights or visitor mapping verified"
+  ]
+}

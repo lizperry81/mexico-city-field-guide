@@ -1,0 +1,86 @@
+{
+  "schema_version": 2,
+  "kind": "noncanonical_research_input_preflight_pending_full_replay",
+  "generated_at": "2026-11-14T07:07:15.604Z",
+  "branch": "research-persistence",
+  "parent_head_to_verify": null,
+  "previous_manifest_blob_sha": "fe31a577aeeaf3d6ca61179abcebb8ae4734fea4",
+  "canonical_pin_sha256": "ac5a245a6c28aaf288237ca232ed51b74c42fd6292bdff931d65abc45a626846",
+  "canonical_version": "V97",
+  "canonical_counts": {
+    "sources": 616,
+    "claims": 422,
+    "links": 403,
+    "findings": 68
+  },
+  "prior_verified_counts": {
+    "github_batches_replayed": 82,
+    "staged_findings": 508,
+    "source_candidates": 202,
+    "inspection_entries": 240,
+    "canonical_sources": 616,
+    "canonical_claims": 422,
+    "canonical_links": 403,
+    "canonical_findings": 68
+  },
+  "expected_additions": {
+    "batch_documents": 1,
+    "finding_candidates": 11,
+    "source_candidates": 6,
+    "inspection_metadata": 6
+  },
+  "expected_totals_if_no_collisions": {
+    "batches": 83,
+    "findings": 519,
+    "sources": 208,
+    "inspections": 246
+  },
+  "batch_path": "research/batches/20261114T0702Z-1824-capital-and-ayuntamiento.json",
+  "coverage_path": "research/coverage/20261114T0702Z-1824-capital-and-ayuntamiento-readiness.json",
+  "chapter_audit_path": "research/audits/20261114T0702Z-1824-capital-and-ayuntamiento-templo-discover-evidence-gates.json",
+  "source_candidate_ids": [
+    "STG-SRC-20261114-CAPITAL-MCGOWAN",
+    "STG-SRC-20261114-CAPITAL-IBERO-CABILDO",
+    "STG-SRC-20261114-CAPITAL-FLORES",
+    "STG-SRC-20261114-CAPITAL-LORENZO",
+    "STG-SRC-20261114-CAPITAL-LOZADA",
+    "STG-SRC-20261114-CAPITAL-MEMORIA"
+  ],
+  "inspection_ids": [
+    "20261114T0702Z-CAPITAL-INS-01",
+    "20261114T0702Z-CAPITAL-INS-02",
+    "20261114T0702Z-CAPITAL-INS-03",
+    "20261114T0702Z-CAPITAL-INS-04",
+    "20261114T0702Z-CAPITAL-INS-05",
+    "20261114T0702Z-CAPITAL-INS-06"
+  ],
+  "finding_ids": [
+    "20261114T0702Z-CAPITAL-01",
+    "20261114T0702Z-CAPITAL-02",
+    "20261114T0702Z-CAPITAL-03",
+    "20261114T0702Z-CAPITAL-04",
+    "20261114T0702Z-CAPITAL-05",
+    "20261114T0702Z-CAPITAL-06",
+    "20261114T0702Z-CAPITAL-07",
+    "20261114T0702Z-CAPITAL-08",
+    "20261114T0702Z-CAPITAL-09",
+    "20261114T0702Z-CAPITAL-10",
+    "20261114T0702Z-CAPITAL-11"
+  ],
+  "input_access_gates": [
+    "McGowan 2013 PDF text and 1824/1854 edited decrees inspected; screenshots failed 502 and not claimed",
+    "Ibero 1824 act-index PDF pages 0–1 screenshot viewed, original council manuscript not viewed",
+    "Two UNAM scholarly article abstracts reviewed, full bodies not read",
+    "Two historical commentary HTML pages directly read",
+    "Two-legua radius modern conversion and geographic map unsettled"
+  ],
+  "expected_outstanding_prior_blockers": {
+    "detached_inspection_identity_reviews": 37,
+    "metadata_conflicts": 2,
+    "unregistered_botanical_reference": 1,
+    "index_only_unresolved": 1
+  },
+  "status": "preflight_only_replay_and_binary_readback_required_before_handoff",
+  "publication_approved": false,
+  "canonical_promoted": false
+}
